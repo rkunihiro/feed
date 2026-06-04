@@ -1,0 +1,9 @@
+{
+    "name": "feeds",
+    "version": "1.0.0",
+    "description": "Generate RSS feed",
+    "type": "module",
+    "scripts": {
+        "build:github-stars-release": "node github-stars-release.js"
+    }
+}

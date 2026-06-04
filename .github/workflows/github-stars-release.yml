@@ -1,0 +1,62 @@
+name: Update GitHub Stars Release Feed
+
+on:
+  schedule:
+    - cron: '0 22 * * *' # 毎日日本時間 7:00 AM (22:00 UTC) に実行
+  workflow_dispatch: # GitHub UIから手動実行できるようにする
+
+permissions:
+  contents: write
+
+jobs:
+  update-feed:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # すべてのブランチ履歴を取得し、gh-pagesへの切り替えを可能にする
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Run update script
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          npm run build:github-stars-release
+
+      - name: Deploy to gh-pages branch
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # 生成されたフィードXMLファイルを一時フォルダにバックアップ
+          cp docs/github-stars-release.xml /tmp/github-stars-release.xml
+          
+          # リモートブランチ情報をフェッチ
+          git fetch origin
+          
+          # gh-pages ブランチの有無を確認して切り替え
+          if git show-ref --verify --quiet refs/remotes/origin/gh-pages; then
+            git checkout gh-pages
+            git pull origin gh-pages
+          else
+            git checkout --orphan gh-pages
+            git rm -rf .
+          fi
+          
+          # docs ディレクトリを再作成し、バックアップからXMLを配置
+          mkdir -p docs
+          cp /tmp/github-stars-release.xml docs/github-stars-release.xml
+          
+          # gh-pages ブランチにコミット＆プッシュ
+          git add docs/github-stars-release.xml
+          if ! git diff --cached --quiet; then
+            git commit -m "deploy: update GitHub Stars Release feed on gh-pages docs/ [skip ci]"
+            git push origin gh-pages
+          else
+            echo "更新されたリリース情報はありません。"
+          fi
