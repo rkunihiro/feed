@@ -5,26 +5,199 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Thu, 04 Jun 2026 13:08:41 GMT</lastBuildDate>
+  <lastBuildDate>Thu, 04 Jun 2026 22:28:07 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
   <item>
-    <title>[PerryTS/perry] v0.5.1120</title>
-    <link>https://github.com/PerryTS/perry/releases/tag/v0.5.1120</link>
-    <guid isPermaLink="true">https://github.com/PerryTS/perry/releases/tag/v0.5.1120</guid>
-    <description><![CDATA[## Highlights
+    <title>[openai/codex] 0.138.0-alpha.4 (rust-v0.138.0-alpha.4)</title>
+    <link>https://github.com/openai/codex/releases/tag/rust-v0.138.0-alpha.4</link>
+    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.138.0-alpha.4</guid>
+    <description><![CDATA[Release 0.138.0-alpha.4]]></description>
+    <pubDate>Thu, 04 Jun 2026 22:01:10 GMT</pubDate>
+  </item>
+  <item>
+    <title>[sveltejs/svelte] svelte@5.56.2</title>
+    <link>https://github.com/sveltejs/svelte/releases/tag/svelte%405.56.2</link>
+    <guid isPermaLink="true">https://github.com/sveltejs/svelte/releases/tag/svelte%405.56.2</guid>
+    <description><![CDATA[### Patch Changes
 
-Completes the release-pipeline repair. v0.5.1117 fixed the `await-tests` gate (publishing resumed after ~90 dark versions); this release fixes the **second** blocker — the cross-host UI build matrix that was failing the publish legs.
+-   fix: properly track effect end node for async sibling component ([#18371](https://github.com/sveltejs/svelte/pull/18371))
 
-## Release fixes
+-   fix: prevent false-positive reactivity loss warning ([#18373](https://github.com/sveltejs/svelte/pull/18373))
 
-- **perry-ui-gtk4**: `set_source_pixbuf` is a `GdkCairoContextExt` trait method in gdk4 0.9, not a free function — fixed the call (`cr.set_source_pixbuf(...)`). This unblocks the linux-gnu build (gtk4 is bundled into the Linux tarball).
-- **perry-runtime** (android): fixed a `cfg(target_os="android")` log block referencing a mis-named binding (`path_str_for_log` → `_path_str_for_log`).
-- **release-packages.yml**: `fail-fast: false` on the primary build matrix so one platform's failure no longer cancels the others or skips npm/brew/apt/winget.
+-   chore: bump esrap dependency ([#18372](https://github.com/sveltejs/svelte/pull/18372))
 
-Plus the runtime/codegen work merged since v0.5.1117 (DataView BigInt64 accessors, BigInt64Array round-trip, X509/WebCrypto curve surface, child_process options, parity alignment, et
+-   fix: ignore declaration tags for animation directive ([#18366](https://github.com/sveltejs/svelte/pull/18366))
+
+-   fix: reject pending async deriveds on discard ([#18308](https://github.com/sveltejs/svelte/pull/18308))]]></description>
+    <pubDate>Thu, 04 Jun 2026 20:33:04 GMT</pubDate>
+  </item>
+  <item>
+    <title>[iii-hq/iii] iii 0.19.0-next.2 (iii/v0.19.0-next.2)</title>
+    <link>https://github.com/iii-hq/iii/releases/tag/iii/v0.19.0-next.2</link>
+    <guid isPermaLink="true">https://github.com/iii-hq/iii/releases/tag/iii/v0.19.0-next.2</guid>
+    <description><![CDATA[## What's Changed
+* fix: make queue/DLQ ops discoverable and typed, point skill docs at engine contracts by @andersonleal in https://github.com/iii-hq/iii/pull/1743
+* fix(website): true-quadratic hero chart, boxed destination tabs, nav overlap by @rohitg00 in https://github.com/iii-hq/iii/pull/1745
+* fix(iii-worker): replace existing bundle install on cross-project add by @andersonleal in https://github.com/iii-hq/iii/pull/1742
+* fix: issue with unregister trigger in custom triggers by @sergiofilhowz in https://github.com/iii-hq/iii/pull/1750
+* feat(website): one self-routing copy-prompt; llms.txt explains, AGENTS.md builds by @rohitg00 in https://github.com/iii-hq/iii/pull/1754
+* feat(engine): expose response_schema on triggers info by @andersonleal in https://github.com/iii-hq/iii/pull/1748
+* docs(changelog): add 0.19.0 entry for response_schema on triggers info by @andersonleal in https://github.com/iii-hq/iii/pull/1757
+* add opt-in skills rerender functionality to iii repository by
 
 ... (truncated)]]></description>
-    <pubDate>Thu, 04 Jun 2026 10:19:40 GMT</pubDate>
+    <pubDate>Thu, 04 Jun 2026 19:06:39 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1062.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1062.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1062.0</guid>
+    <description><![CDATA[#### 3.1062.0(2026-06-04)
+
+##### Chores
+
+* **scripts:**  include generated packages when validating declared imports 1-1 with used imports ([#8072](https://github.com/aws/aws-sdk-js-v3/pull/8072)) ([291ad366](https://github.com/aws/aws-sdk-js-v3/commit/291ad3664d63b413e6c9631ac0a833e5819ceeaa))
+
+##### Documentation Changes
+
+* **client-guardduty:**  Remove unsupported RDS field for filter ([5815da7f](https://github.com/aws/aws-sdk-js-v3/commit/5815da7f30f1bdfdcd45fa09c59d0a199a4e8e0a))
+
+##### New Features
+
+* **client-interconnect:**  Adding new BDD representation of endpoint ruleset ([34e23ef2](https://github.com/aws/aws-sdk-js-v3/commit/34e23ef23951a492d90749601a3c2e395177b019))
+* **client-ec2-instance-connect:**  Adding new BDD representation of endpoint ruleset ([c2a4981e](https://github.com/aws/aws-sdk-js-v3/commit/c2a4981e83ab456c1335204c4c5693cf2b4ef510))
+* **client-mq:**  BDD bulk update change rollout ([e058b8fd](https://github.com/aws/aws-sdk-js-v3/commit/e058b8fd7fb9bffbacde24
+
+... (truncated)]]></description>
+    <pubDate>Thu, 04 Jun 2026 18:58:06 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-06-04) (release-2026-06-04)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-06-04</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-06-04</guid>
+    <description><![CDATA[## General Highlights
+* **Dependency Update**: Update to smithy-go v1.27.1 to fix several union-related deserialization bugs in schema-serde-enabled services.
+* **Dependency Update**: Updated to the latest SDK module versions
+
+## Module Highlights
+* `github.com/aws/aws-sdk-go-v2`: v1.41.12
+  * **Bug Fix**: Replace usages of deprecated io/ioutil package with io.
+* `github.com/aws/aws-sdk-go-v2/service/amplifybackend`: [v1.33.0](service/amplifybackend/CHANGELOG.md#v1330-2026-06-04)
+  * **Feature**: Adding new BDD representation of endpoint ruleset
+* `github.com/aws/aws-sdk-go-v2/service/appflow`: [v1.52.0](service/appflow/CHANGELOG.md#v1520-2026-06-04)
+  * **Feature**: Adding new BDD representation of endpoint ruleset
+* `github.com/aws/aws-sdk-go-v2/service/appintegrations`: [v1.38.0](service/appintegrations/CHANGELOG.md#v1380-2026-06-04)
+  * **Feature**: Adding new BDD representation of endpoint ruleset
+* `github.com/aws/aws-sdk-go-v2/service/auditmanager`: [v1.47.0](service/auditmanage
+
+... (truncated)]]></description>
+    <pubDate>Thu, 04 Jun 2026 18:43:31 GMT</pubDate>
+  </item>
+  <item>
+    <title>[abiosoft/colima] v0.10.3</title>
+    <link>https://github.com/abiosoft/colima/releases/tag/v0.10.3</link>
+    <guid isPermaLink="true">https://github.com/abiosoft/colima/releases/tag/v0.10.3</guid>
+    <description><![CDATA[## Highlights
+
+This is an hotfix release to address a regression for Kubernetes runtime.
+
+## Commits
+
+* k3s: fix restart failure due to rsync by @abiosoft in https://github.com/abiosoft/colima/pull/1582
+
+
+**Full Changelog**: https://github.com/abiosoft/colima/compare/v0.10.2...v0.10.3]]></description>
+    <pubDate>Thu, 04 Jun 2026 17:14:15 GMT</pubDate>
+  </item>
+  <item>
+    <title>[ollama/ollama] v0.30.5</title>
+    <link>https://github.com/ollama/ollama/releases/tag/v0.30.5</link>
+    <guid isPermaLink="true">https://github.com/ollama/ollama/releases/tag/v0.30.5</guid>
+    <description><![CDATA[## What's Changed
+* Fix gemma4:12b floating point exception crash
+* integrations: hermes windows install by @BruceMacD in https://github.com/ollama/ollama/pull/16487
+
+**Full Changelog**: https://github.com/ollama/ollama/compare/v0.30.4...v0.30.5]]></description>
+    <pubDate>Thu, 04 Jun 2026 17:00:37 GMT</pubDate>
+  </item>
+  <item>
+    <title>[github/spec-kit] Spec Kit - 0.9.4 (v0.9.4)</title>
+    <link>https://github.com/github/spec-kit/releases/tag/v0.9.4</link>
+    <guid isPermaLink="true">https://github.com/github/spec-kit/releases/tag/v0.9.4</guid>
+    <description><![CDATA[## Install
+
+```bash
+uv tool install specify-cli --from git+https://github.com/github/spec-kit.git@v0.9.4
+specify init my-project
+```
+
+## What's Changed
+
+- chore: bump version to 0.9.4
+- feat(workflows): add JSON output for workflow run resume and status (#2814)
+- Update workflow-preset community catalog to v1.3.2 (#2841)
+- fix: recover active skills registration for extensions (#2803)
+- fix(cursor-agent): enable headless CLI dispatch end-to-end (-p --trust --approve-mcps --force + Windows .cmd shim resolution) (#2631)
+- Update Superpowers Implementation Bridge extension to v1.0.2 (#2852)
+- docs(agents): add PR review response guidance to AGENTS.md (#2850)
+- Allow `specify workflow run` to execute YAML files without a project (#2825)
+- feat(extensions): add --force flag to extension add for overwrite reinstall (#2530)
+- chore: release 0.9.3, begin 0.9.4.dev0 development (#2836)]]></description>
+    <pubDate>Thu, 04 Jun 2026 16:13:16 GMT</pubDate>
+  </item>
+  <item>
+    <title>[PerryTS/perry] v0.5.1122</title>
+    <link>https://github.com/PerryTS/perry/releases/tag/v0.5.1122</link>
+    <guid isPermaLink="true">https://github.com/PerryTS/perry/releases/tag/v0.5.1122</guid>
+    <description><![CDATA[Re-tag from a main that includes the #4399 AES-secret-key fix (the regression that failed v0.5.1121's cargo-test) plus the macos-x86_64 iOS-cross fix (v0.5.1121) and gtk4/android fixes (v0.5.1120). Marks the harmonyos/ink aspirational smokes continue-on-error so they can't re-block publish. This run should complete the full platform binaries + npm/brew/apt/winget publish.]]></description>
+    <pubDate>Thu, 04 Jun 2026 15:11:54 GMT</pubDate>
+  </item>
+  <item>
+    <title>[redwoodjs/sdk] v1.3.0-canary.6</title>
+    <link>https://github.com/redwoodjs/sdk/releases/tag/v1.3.0-canary.6</link>
+    <guid isPermaLink="true">https://github.com/redwoodjs/sdk/releases/tag/v1.3.0-canary.6</guid>
+    <description><![CDATA[## What's Changed
+* Ignore hash-only popstate navigation (#1216)
+* Fix server query re-export method metadata (#1217)
+
+**Full Changelog**: https://github.com/redwoodjs/sdk/compare/v1.3.0-canary.5...v1.3.0-canary.6]]></description>
+    <pubDate>Thu, 04 Jun 2026 15:08:56 GMT</pubDate>
+  </item>
+  <item>
+    <title>[remix-run/react-router] v7.17.0 (react-router@7.17.0)</title>
+    <link>https://github.com/remix-run/react-router/releases/tag/react-router%407.17.0</link>
+    <guid isPermaLink="true">https://github.com/remix-run/react-router/releases/tag/react-router%407.17.0</guid>
+    <description><![CDATA[See the changelog for release notes: https://github.com/remix-run/react-router/blob/main/CHANGELOG.md#v7170]]></description>
+    <pubDate>Thu, 04 Jun 2026 14:21:31 GMT</pubDate>
+  </item>
+  <item>
+    <title>[markedjs/marked] v18.0.5</title>
+    <link>https://github.com/markedjs/marked/releases/tag/v18.0.5</link>
+    <guid isPermaLink="true">https://github.com/markedjs/marked/releases/tag/v18.0.5</guid>
+    <description><![CDATA[## [18.0.5](https://github.com/markedjs/marked/compare/v18.0.4...v18.0.5) (2026-06-04)
+
+
+### Bug Fixes
+
+* parse empty list item with trailing space ([#3984](https://github.com/markedjs/marked/issues/3984)) ([b55410f](https://github.com/markedjs/marked/commit/b55410f846570a2dbdd1f1afe1d51c6a7dd2a188))]]></description>
+    <pubDate>Thu, 04 Jun 2026 14:17:49 GMT</pubDate>
+  </item>
+  <item>
+    <title>[anomalyco/opentui] Release v0.3.2 (v0.3.2)</title>
+    <link>https://github.com/anomalyco/opentui/releases/tag/v0.3.2</link>
+    <guid isPermaLink="true">https://github.com/anomalyco/opentui/releases/tag/v0.3.2</guid>
+    <description><![CDATA[## What's Changed
+* Fix sticky scroll re-engagement and document render hook limits by @kommander in https://github.com/anomalyco/opentui/pull/1144
+* Bug(linux): add musl native targets by @riggy2013 in https://github.com/anomalyco/opentui/pull/1114
+* feat(core): add DiffRenderable.getHunkRowOffsets for hunk navigation by @nexxeln in https://github.com/anomalyco/opentui/pull/1131
+* feat(core/markdown): add code block renderer helper by @kitlangton in https://github.com/anomalyco/opentui/pull/1146
+
+## New Contributors
+* @riggy2013 made their first contribution in https://github.com/anomalyco/opentui/pull/1114
+* @nexxeln made their first contribution in https://github.com/anomalyco/opentui/pull/1131
+
+**Full Changelog**: https://github.com/anomalyco/opentui/compare/v0.3.1...v0.3.2]]></description>
+    <pubDate>Thu, 04 Jun 2026 13:27:05 GMT</pubDate>
   </item>
   <item>
     <title>[warpdotdev/warp] Dev Release v0.2026.06.04.09.31.dev_00 (v0.2026.06.04.09.31.dev_00)</title>
@@ -102,13 +275,6 @@ A coordinated set of CloudFormation improvements lands together:
     <guid isPermaLink="true">https://github.com/lynx-family/lynx/releases/tag/3.8.1</guid>
     <description><![CDATA[No release notes provided.]]></description>
     <pubDate>Thu, 04 Jun 2026 05:05:23 GMT</pubDate>
-  </item>
-  <item>
-    <title>[openai/codex] 0.138.0-alpha.1 (rust-v0.138.0-alpha.1)</title>
-    <link>https://github.com/openai/codex/releases/tag/rust-v0.138.0-alpha.1</link>
-    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.138.0-alpha.1</guid>
-    <description><![CDATA[Release 0.138.0-alpha.1]]></description>
-    <pubDate>Thu, 04 Jun 2026 05:02:54 GMT</pubDate>
   </item>
   <item>
     <title>[sveltejs/kit] @sveltejs/kit@2.63.0</title>
@@ -194,31 +360,6 @@ Released on 2026-06-03.
     <pubDate>Wed, 03 Jun 2026 22:38:57 GMT</pubDate>
   </item>
   <item>
-    <title>[github/spec-kit] Spec Kit - 0.9.3 (v0.9.3)</title>
-    <link>https://github.com/github/spec-kit/releases/tag/v0.9.3</link>
-    <guid isPermaLink="true">https://github.com/github/spec-kit/releases/tag/v0.9.3</guid>
-    <description><![CDATA[## Install
-
-```bash
-uv tool install specify-cli --from git+https://github.com/github/spec-kit.git@v0.9.3
-specify init my-project
-```
-
-## What's Changed
-
-- chore: bump version to 0.9.3
-- fix: render script command hints with active agent separator (#2649)
-- chore(tests): fix ruff lint violations in tests/ (#2827)
-- fix(workflows): validate run_id in RunState.load before touching the … (#2813)
-- feat(cli): implement specify self upgrade (#2475)
-- feat(workflows): allow resume to accept updated workflow inputs (#2815)
-- catalog: rename "superpowers-bridge" to "superspec" (v1.0.1) (#2772)
-- fix(cli): force UTF-8 stdout/stderr on Windows to prevent UnicodeEncodeError (#2817)
-- fix(plan): clarify quickstart validation guide scope (#2805)
-- chore: release 0.9.2, begin 0.9.3.dev0 development (#2823)]]></description>
-    <pubDate>Wed, 03 Jun 2026 21:26:17 GMT</pubDate>
-  </item>
-  <item>
     <title>[bluesky-social/atproto] @atproto/api@0.20.9</title>
     <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/api%400.20.9</link>
     <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/api%400.20.9</guid>
@@ -226,61 +367,6 @@ specify init my-project
 
 - [#4827](https://github.com/bluesky-social/atproto/pull/4827) [`41a561e`](https://github.com/bluesky-social/atproto/commit/41a561e80a6c906e9a6ec8e29f8ea970ce9fe2e9) Thanks [@estrattonbailey](https://github.com/estrattonbailey)! - Add new lexicon for gallery embed type]]></description>
     <pubDate>Wed, 03 Jun 2026 21:00:01 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-js-v3] v3.1061.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1061.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1061.0</guid>
-    <description><![CDATA[#### 3.1061.0(2026-06-03)
-
-##### Chores
-
-* **middleware-sdk-s3:**  consolidate S3 internal packages ([#8026](https://github.com/aws/aws-sdk-js-v3/pull/8026)) ([12160940](https://github.com/aws/aws-sdk-js-v3/commit/121609400451d15166872f5dc2a2d8fe75c7d7f6))
-
-##### New Features
-
-* **client-rds:**  Adding new BDD representation of endpoint ruleset ([907053d5](https://github.com/aws/aws-sdk-js-v3/commit/907053d559e5b0a4d4e02ca679d919537b91dee5))
-* **client-securitylake:**  Adding new BDD representation of endpoint ruleset ([60fd3fe7](https://github.com/aws/aws-sdk-js-v3/commit/60fd3fe7e01d12537c8eb624948053b9dbbbabdb))
-* **client-appconfigdata:**  Adding new BDD representation of endpoint ruleset ([e648b968](https://github.com/aws/aws-sdk-js-v3/commit/e648b9684d6f5553212fa9890e2da3a37b3019c1))
-* **client-snow-device-management:**  Adding new BDD representation of endpoint ruleset ([3dd8d2ad](https://github.com/aws/aws-sdk-js-v3/commit/3dd8d2ad513c9a3d335dda1798cc2f93bc04f4d4))
-* **client-c
-
-... (truncated)]]></description>
-    <pubDate>Wed, 03 Jun 2026 18:53:41 GMT</pubDate>
-  </item>
-  <item>
-    <title>[ollama/ollama] v0.30.4</title>
-    <link>https://github.com/ollama/ollama/releases/tag/v0.30.4</link>
-    <guid isPermaLink="true">https://github.com/ollama/ollama/releases/tag/v0.30.4</guid>
-    <description><![CDATA[## What's Changed
-* llama.cpp version update by @dhiltgen in https://github.com/ollama/ollama/pull/16463
-* Kill llama-server during Windows cleanup by @dhiltgen in https://github.com/ollama/ollama/pull/16458
-
-
-## Known Issues
-* gemma4:12b crash with floating point exception
-
-**Full Changelog**: https://github.com/ollama/ollama/compare/v0.30.3...v0.30.4]]></description>
-    <pubDate>Wed, 03 Jun 2026 18:48:32 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-06-03.2) (release-2026-06-03.2)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-06-03.2</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-06-03.2</guid>
-    <description><![CDATA[## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/apigatewaymanagementapi`: [v1.30.0](service/apigatewaymanagementapi/CHANGELOG.md#v1300-2026-06-032)
-  * **Feature**: Adding new BDD representation of endpoint ruleset
-* `github.com/aws/aws-sdk-go-v2/service/appconfigdata`: [v1.24.0](service/appconfigdata/CHANGELOG.md#v1240-2026-06-032)
-  * **Feature**: Adding new BDD representation of endpoint ruleset
-* `github.com/aws/aws-sdk-go-v2/service/appfabric`: [v1.17.0](service/appfabric/CHANGELOG.md#v1170-2026-06-032)
-  * **Feature**: Adding new BDD representation of endpoint ruleset
-* `github.com/aws/aws-sdk-go-v2/service/applicationautoscaling`: [v1.42.0](service/applicationautoscaling/CHANGELOG.md#v1420-2026-06-032)
-  * **Feature**: Adding new BDD representation of endpoint ruleset
-* `github.com/aws/aws-sdk-go-v2/service/arcregionswitch`: [v1.9.0](service/arcregionswitch/CHANGELOG.md#v190-2026-06-032)
-  * **Feature**: ARC Region Switch now supports three new execution blocks for 
-
-... (truncated)]]></description>
-    <pubDate>Wed, 03 Jun 2026 18:42:14 GMT</pubDate>
   </item>
   <item>
     <title>[withastro/astro] astro@6.4.4</title>
@@ -296,24 +382,6 @@ specify init my-project
 
 ... (truncated)]]></description>
     <pubDate>Wed, 03 Jun 2026 17:37:11 GMT</pubDate>
-  </item>
-  <item>
-    <title>[iii-hq/iii] iii 0.18.0 (iii/v0.18.0)</title>
-    <link>https://github.com/iii-hq/iii/releases/tag/iii/v0.18.0</link>
-    <guid isPermaLink="true">https://github.com/iii-hq/iii/releases/tag/iii/v0.18.0</guid>
-    <description><![CDATA[## What's Changed
-* fix(docs): versioned links/assets respect the selected version by @guibeira in https://github.com/iii-hq/iii/pull/1732
-* feat(sdk)!: add helpers submodule across all SDKs by @guibeira in https://github.com/iii-hq/iii/pull/1703
-* chore: remove unused dependencies flagged by cargo-machete by @guibeira in https://github.com/iii-hq/iii/pull/1734
-* Change button label from 'implementation' to 'current' by @anthonyiscoding in https://github.com/iii-hq/iii/pull/1589
-* docs: rotate to 0.17.0 (catch-up for already-tagged release) by @guibeira in https://github.com/iii-hq/iii/pull/1733
-* fix(iii-worker): clearer sandbox daemon errors and accurate skill docs by @andersonleal in https://github.com/iii-hq/iii/pull/1736
-* feat(ci): docs version rotation in create-tag by @guibeira in https://github.com/iii-hq/iii/pull/1715
-* fix(iii-worker): warn when scripts.install is omitted by @guibeira in https://github.com/iii-hq/iii/pull/1741
-* feat(website): add hero copy prompt button by 
-
-... (truncated)]]></description>
-    <pubDate>Wed, 03 Jun 2026 17:04:32 GMT</pubDate>
   </item>
   <item>
     <title>[wailsapp/wails] Wails v3.0.0-alpha.98 (v3.0.0-alpha.98)</title>
@@ -380,28 +448,6 @@ go install github.com/wailsapp/wails/v3/cmd/wails3@v3.0.0-alpha.98
 
 ... (truncated)]]></description>
     <pubDate>Wed, 03 Jun 2026 13:41:42 GMT</pubDate>
-  </item>
-  <item>
-    <title>[abiosoft/colima] v0.10.2</title>
-    <link>https://github.com/abiosoft/colima/releases/tag/v0.10.2</link>
-    <guid isPermaLink="true">https://github.com/abiosoft/colima/releases/tag/v0.10.2</guid>
-    <description><![CDATA[## Highlights
-
-This is an incremental stability release with bug fixes and features.
-
-### Updates
-* New `--downloader` flag to retain curl for downloads. Supports `curl` or `native` (default).
-* Force stop with `colima stop --force` no longer attempts to stop the container runtime before stopping VM.
-* Support for user-provided containerd and buildkit config for the Containerd runtime.
-* Nested virtualization is now supported with `krunkit` vm type.
-* Soft delete (i.e. `colima delete` without `--force`) is now properly supported on Incus runtime, and container data would be auto-restored on recreation.
-* Cache directory can now be customized with the `COLIMA_CACHE_HOME` environment variable. The cache directory stores the downloaded assets used by Colima. 
-* Network address is now supported for the `krunkit` vm type.
-* Runtime is now displayed in `colima list` for stopped instances.
-* Custom generated disk images can now be used by setting the `--force-disk-image` flag in 
-
-... (truncated)]]></description>
-    <pubDate>Wed, 03 Jun 2026 13:35:43 GMT</pubDate>
   </item>
   <item>
     <title>[pingcap/tidb-operator] v2.2.0-alpha.0</title>
@@ -570,29 +616,6 @@ The webpack-compatible deterministic module id plugin is now exposed through the
     <pubDate>Tue, 02 Jun 2026 04:31:37 GMT</pubDate>
   </item>
   <item>
-    <title>[sveltejs/svelte] svelte@5.56.1</title>
-    <link>https://github.com/sveltejs/svelte/releases/tag/svelte%405.56.1</link>
-    <guid isPermaLink="true">https://github.com/sveltejs/svelte/releases/tag/svelte%405.56.1</guid>
-    <description><![CDATA[### Patch Changes
-
--   fix: error at compile time on duplicate snippet/declaration tag definitions ([#18351](https://github.com/sveltejs/svelte/pull/18351))
-
--   fix: parse declaration tag contents more robustly ([#18353](https://github.com/sveltejs/svelte/pull/18353))
-
--   fix: correctly transform references to earlier declarators in a declaration tag (e.g. `{let a = $state(0), b = $derived(a * 2)}`) ([#18348](https://github.com/sveltejs/svelte/pull/18348))
-
--   fix: avoid spurious `state_referenced_locally` warnings for `$derived` declarations in declaration tags ([#18348](https://github.com/sveltejs/svelte/pull/18348))
-
--   fix: tolerate whitespace before `let`/`const` in declaration tags ([#18348](https://github.com/sveltejs/svelte/pull/18348))
-
--   fix: prevent infinite loop when a tag's expression ends with a trailing `/` at the end of the input ([#18350](https://github.com/sveltejs/svelte/pull/18350))
-
--   fix: more robust parsing of declaration tags with regards to `type` ([#18
-
-... (truncated)]]></description>
-    <pubDate>Mon, 01 Jun 2026 22:42:27 GMT</pubDate>
-  </item>
-  <item>
     <title>[open-webui/open-webui] v0.9.6</title>
     <link>https://github.com/open-webui/open-webui/releases/tag/v0.9.6</link>
     <guid isPermaLink="true">https://github.com/open-webui/open-webui/releases/tag/v0.9.6</guid>
@@ -686,17 +709,6 @@ Contributed by Antoine du Hamel in [#63055](https://github.com/nodejs/node/pull/
     <pubDate>Mon, 01 Jun 2026 13:10:59 GMT</pubDate>
   </item>
   <item>
-    <title>[anomalyco/opentui] Release v0.3.1 (v0.3.1)</title>
-    <link>https://github.com/anomalyco/opentui/releases/tag/v0.3.1</link>
-    <guid isPermaLink="true">https://github.com/anomalyco/opentui/releases/tag/v0.3.1</guid>
-    <description><![CDATA[## What's Changed
-* feat(core): renderer: add split-footer replay reset by @simonklee in https://github.com/anomalyco/opentui/pull/1130
-
-
-**Full Changelog**: https://github.com/anomalyco/opentui/compare/v0.3.0...v0.3.1]]></description>
-    <pubDate>Mon, 01 Jun 2026 11:58:29 GMT</pubDate>
-  </item>
-  <item>
     <title>[vitejs/vite] v6.4.3</title>
     <link>https://github.com/vitejs/vite/releases/tag/v6.4.3</link>
     <guid isPermaLink="true">https://github.com/vitejs/vite/releases/tag/v6.4.3</guid>
@@ -711,20 +723,6 @@ Contributed by Antoine du Hamel in [#63055](https://github.com/nodejs/node/pull/
 
 -   [#473](https://github.com/import-js/eslint-import-resolver-typescript/pull/473) [`32c61ab`](https://github.com/import-js/eslint-import-resolver-typescript/commit/32c61abccf26bd2a2267f2e0e67d82e6f88d149a) Thanks [@leey0818](https://github.com/leey0818)! - fix: check tsconfig matching before using resolver]]></description>
     <pubDate>Mon, 01 Jun 2026 04:17:52 GMT</pubDate>
-  </item>
-  <item>
-    <title>[redwoodjs/sdk] v1.3.0-canary.5</title>
-    <link>https://github.com/redwoodjs/sdk/releases/tag/v1.3.0-canary.5</link>
-    <guid isPermaLink="true">https://github.com/redwoodjs/sdk/releases/tag/v1.3.0-canary.5</guid>
-    <description><![CDATA[## What's Changed
-* feat(deps): support Vite 8 (Rolldown) and use it as default by @justinvdm in https://github.com/redwoodjs/sdk/pull/1180
-* fix(vite): restore Vite 8 Rolldown optimizeDeps plugins by @justinvdm in https://github.com/redwoodjs/sdk/pull/1192
-* fix(release): treat explicit canary versions as canary releases by @justinvdm in https://github.com/redwoodjs/sdk/pull/1193
-* fix(vite): restore single-file worker output and tree-shaking on Vite 8 by @justinvdm in https://github.com/redwoodjs/sdk/pull/1202
-
-
-**Full Changelog**: https://github.com/redwoodjs/sdk/compare/v1.3.0-canary.4...v1.3.0-canary.5]]></description>
-    <pubDate>Sun, 31 May 2026 15:43:07 GMT</pubDate>
   </item>
   <item>
     <title>[privatenumber/tsx] v4.22.4</title>
@@ -840,13 +838,6 @@ It is just the first step in optimizing the package size. Expect further size re
     <pubDate>Fri, 29 May 2026 20:32:39 GMT</pubDate>
   </item>
   <item>
-    <title>[remix-run/react-router] v6.30.4 (react-router@6.30.4)</title>
-    <link>https://github.com/remix-run/react-router/releases/tag/react-router%406.30.4</link>
-    <guid isPermaLink="true">https://github.com/remix-run/react-router/releases/tag/react-router%406.30.4</guid>
-    <description><![CDATA[See the changelog for release notes: https://github.com/remix-run/react-router/blob/v6/CHANGELOG.md#v6304]]></description>
-    <pubDate>Fri, 29 May 2026 19:48:53 GMT</pubDate>
-  </item>
-  <item>
     <title>[runfinch/finch] v1.17.1</title>
     <link>https://github.com/runfinch/finch/releases/tag/v1.17.1</link>
     <guid isPermaLink="true">https://github.com/runfinch/finch/releases/tag/v1.17.1</guid>
@@ -866,16 +857,6 @@ It is just the first step in optimizing the package size. Expect further size re
 
 ---]]></description>
     <pubDate>Fri, 29 May 2026 17:22:59 GMT</pubDate>
-  </item>
-  <item>
-    <title>[panva/node-oidc-provider] v9.8.4</title>
-    <link>https://github.com/panva/node-oidc-provider/releases/tag/v9.8.4</link>
-    <guid isPermaLink="true">https://github.com/panva/node-oidc-provider/releases/tag/v9.8.4</guid>
-    <description><![CDATA[### Refactor
-
-* detect non-node runtimes before checking for LTS ([b3be0fd](https://github.com/panva/node-oidc-provider/commit/b3be0fd4885fa718df3959add2cceb04d464d608)), closes [#1424](https://github.com/panva/node-oidc-provider/issues/1424)
-* isolate SSRF dispatcher protection ([1f64996](https://github.com/panva/node-oidc-provider/commit/1f649965a3c62b1f8ee554abe08e59033ddd0f21))]]></description>
-    <pubDate>Fri, 29 May 2026 05:57:40 GMT</pubDate>
   </item>
 </channel>
 </rss>
