@@ -1,0 +1,9 @@
+# Dependency directories
+node_modules/
+
+# Build outputs (generated feeds on main branch)
+docs/
+
+# OS metadata
+.DS_Store
+Thumbs.db

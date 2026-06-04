@@ -35,6 +35,8 @@ jobs:
           
           # 生成されたフィードXMLファイルを一時フォルダにバックアップ
           cp docs/github-stars-release.xml /tmp/github-stars-release.xml
+          # チェックアウト時の競合を防ぐため、作業ツリーから削除
+          rm -f docs/github-stars-release.xml
           
           # リモートブランチ情報をフェッチ
           git fetch origin
@@ -52,8 +54,8 @@ jobs:
           mkdir -p docs
           cp /tmp/github-stars-release.xml docs/github-stars-release.xml
           
-          # gh-pages ブランチにコミット＆プッシュ
-          git add docs/github-stars-release.xml
+          # gh-pages ブランチにコミット＆プッシュ（強制追加フラグ -f を付与して .gitignore による影響を防ぐ）
+          git add -f docs/github-stars-release.xml
           if ! git diff --cached --quiet; then
             git commit -m "deploy: update GitHub Stars Release feed on gh-pages docs/ [skip ci]"
             git push origin gh-pages
