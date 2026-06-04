@@ -168,7 +168,7 @@ function formatTitle(repoName, name, tagName) {
         titlePart = `${cleanName} (${cleanTagName})`;
     }
 
-    return `${repoName}・${titlePart}`;
+    return `[${repoName}] ${titlePart}`;
 }
 
 /**
