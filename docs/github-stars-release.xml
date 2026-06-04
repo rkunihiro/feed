@@ -5,10 +5,10 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Thu, 04 Jun 2026 12:53:16 GMT</lastBuildDate>
+  <lastBuildDate>Thu, 04 Jun 2026 13:08:41 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
   <item>
-    <title>PerryTS/perry・v0.5.1120</title>
+    <title>[PerryTS/perry] v0.5.1120</title>
     <link>https://github.com/PerryTS/perry/releases/tag/v0.5.1120</link>
     <guid isPermaLink="true">https://github.com/PerryTS/perry/releases/tag/v0.5.1120</guid>
     <description><![CDATA[## Highlights
@@ -27,14 +27,14 @@ Plus the runtime/codegen work merged since v0.5.1117 (DataView BigInt64 accessor
     <pubDate>Thu, 04 Jun 2026 10:19:40 GMT</pubDate>
   </item>
   <item>
-    <title>warpdotdev/warp・Dev Release v0.2026.06.04.09.31.dev_00 (v0.2026.06.04.09.31.dev_00)</title>
+    <title>[warpdotdev/warp] Dev Release v0.2026.06.04.09.31.dev_00 (v0.2026.06.04.09.31.dev_00)</title>
     <link>https://github.com/warpdotdev/warp/releases/tag/v0.2026.06.04.09.31.dev_00</link>
     <guid isPermaLink="true">https://github.com/warpdotdev/warp/releases/tag/v0.2026.06.04.09.31.dev_00</guid>
     <description><![CDATA[Nightly Warp Dev release]]></description>
     <pubDate>Thu, 04 Jun 2026 09:31:51 GMT</pubDate>
   </item>
   <item>
-    <title>composer/composer・2.10.1</title>
+    <title>[composer/composer] 2.10.1</title>
     <link>https://github.com/composer/composer/releases/tag/2.10.1</link>
     <guid isPermaLink="true">https://github.com/composer/composer/releases/tag/2.10.1</guid>
     <description><![CDATA[* Security: Fixed shell escaping when opening an editor (#12903)
@@ -48,7 +48,7 @@ Plus the runtime/codegen work merged since v0.5.1117 (DataView BigInt64 accessor
     <pubDate>Thu, 04 Jun 2026 08:29:43 GMT</pubDate>
   </item>
   <item>
-    <title>BabylonJS/Babylon.js・9.11.0</title>
+    <title>[BabylonJS/Babylon.js] 9.11.0</title>
     <link>https://github.com/BabylonJS/Babylon.js/releases/tag/9.11.0</link>
     <guid isPermaLink="true">https://github.com/BabylonJS/Babylon.js/releases/tag/9.11.0</guid>
     <description><![CDATA[### Core
@@ -64,7 +64,7 @@ Plus the runtime/codegen work merged since v0.5.1117 (DataView BigInt64 accessor
     <pubDate>Thu, 04 Jun 2026 07:43:07 GMT</pubDate>
   </item>
   <item>
-    <title>nodejs/undici・v7.27.1</title>
+    <title>[nodejs/undici] v7.27.1</title>
     <link>https://github.com/nodejs/undici/releases/tag/v7.27.1</link>
     <guid isPermaLink="true">https://github.com/nodejs/undici/releases/tag/v7.27.1</guid>
     <description><![CDATA[## What's Changed
@@ -75,7 +75,7 @@ Plus the runtime/codegen work merged since v0.5.1117 (DataView BigInt64 accessor
     <pubDate>Thu, 04 Jun 2026 07:11:20 GMT</pubDate>
   </item>
   <item>
-    <title>floci-io/floci・1.5.22</title>
+    <title>[floci-io/floci] 1.5.22</title>
     <link>https://github.com/floci-io/floci/releases/tag/1.5.22</link>
     <guid isPermaLink="true">https://github.com/floci-io/floci/releases/tag/1.5.22</guid>
     <description><![CDATA[## 🎉 Highlights
@@ -97,21 +97,21 @@ A coordinated set of CloudFormation improvements lands together:
     <pubDate>Thu, 04 Jun 2026 06:51:41 GMT</pubDate>
   </item>
   <item>
-    <title>lynx-family/lynx・3.8.1</title>
+    <title>[lynx-family/lynx] 3.8.1</title>
     <link>https://github.com/lynx-family/lynx/releases/tag/3.8.1</link>
     <guid isPermaLink="true">https://github.com/lynx-family/lynx/releases/tag/3.8.1</guid>
     <description><![CDATA[No release notes provided.]]></description>
     <pubDate>Thu, 04 Jun 2026 05:05:23 GMT</pubDate>
   </item>
   <item>
-    <title>openai/codex・0.138.0-alpha.1 (rust-v0.138.0-alpha.1)</title>
+    <title>[openai/codex] 0.138.0-alpha.1 (rust-v0.138.0-alpha.1)</title>
     <link>https://github.com/openai/codex/releases/tag/rust-v0.138.0-alpha.1</link>
     <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.138.0-alpha.1</guid>
     <description><![CDATA[Release 0.138.0-alpha.1]]></description>
     <pubDate>Thu, 04 Jun 2026 05:02:54 GMT</pubDate>
   </item>
   <item>
-    <title>sveltejs/kit・@sveltejs/kit@2.63.0</title>
+    <title>[sveltejs/kit] @sveltejs/kit@2.63.0</title>
     <link>https://github.com/sveltejs/kit/releases/tag/%40sveltejs/kit%402.63.0</link>
     <guid isPermaLink="true">https://github.com/sveltejs/kit/releases/tag/%40sveltejs/kit%402.63.0</guid>
     <description><![CDATA[### Minor Changes
@@ -133,7 +133,7 @@ A coordinated set of CloudFormation improvements lands together:
     <pubDate>Thu, 04 Jun 2026 01:12:07 GMT</pubDate>
   </item>
   <item>
-    <title>vercel/next.js・v16.3.0-canary.40</title>
+    <title>[vercel/next.js] v16.3.0-canary.40</title>
     <link>https://github.com/vercel/next.js/releases/tag/v16.3.0-canary.40</link>
     <guid isPermaLink="true">https://github.com/vercel/next.js/releases/tag/v16.3.0-canary.40</guid>
     <description><![CDATA[### Misc Changes
@@ -159,7 +159,7 @@ A coordinated set of CloudFormation improvements lands together:
     <pubDate>Thu, 04 Jun 2026 00:16:12 GMT</pubDate>
   </item>
   <item>
-    <title>astral-sh/uv・0.11.19</title>
+    <title>[astral-sh/uv] 0.11.19</title>
     <link>https://github.com/astral-sh/uv/releases/tag/0.11.19</link>
     <guid isPermaLink="true">https://github.com/astral-sh/uv/releases/tag/0.11.19</guid>
     <description><![CDATA[## Release Notes
@@ -194,7 +194,7 @@ Released on 2026-06-03.
     <pubDate>Wed, 03 Jun 2026 22:38:57 GMT</pubDate>
   </item>
   <item>
-    <title>github/spec-kit・Spec Kit - 0.9.3 (v0.9.3)</title>
+    <title>[github/spec-kit] Spec Kit - 0.9.3 (v0.9.3)</title>
     <link>https://github.com/github/spec-kit/releases/tag/v0.9.3</link>
     <guid isPermaLink="true">https://github.com/github/spec-kit/releases/tag/v0.9.3</guid>
     <description><![CDATA[## Install
@@ -219,7 +219,7 @@ specify init my-project
     <pubDate>Wed, 03 Jun 2026 21:26:17 GMT</pubDate>
   </item>
   <item>
-    <title>bluesky-social/atproto・@atproto/api@0.20.9</title>
+    <title>[bluesky-social/atproto] @atproto/api@0.20.9</title>
     <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/api%400.20.9</link>
     <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/api%400.20.9</guid>
     <description><![CDATA[### Patch Changes
@@ -228,7 +228,7 @@ specify init my-project
     <pubDate>Wed, 03 Jun 2026 21:00:01 GMT</pubDate>
   </item>
   <item>
-    <title>aws/aws-sdk-js-v3・v3.1061.0</title>
+    <title>[aws/aws-sdk-js-v3] v3.1061.0</title>
     <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1061.0</link>
     <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1061.0</guid>
     <description><![CDATA[#### 3.1061.0(2026-06-03)
@@ -249,7 +249,7 @@ specify init my-project
     <pubDate>Wed, 03 Jun 2026 18:53:41 GMT</pubDate>
   </item>
   <item>
-    <title>ollama/ollama・v0.30.4</title>
+    <title>[ollama/ollama] v0.30.4</title>
     <link>https://github.com/ollama/ollama/releases/tag/v0.30.4</link>
     <guid isPermaLink="true">https://github.com/ollama/ollama/releases/tag/v0.30.4</guid>
     <description><![CDATA[## What's Changed
@@ -264,7 +264,7 @@ specify init my-project
     <pubDate>Wed, 03 Jun 2026 18:48:32 GMT</pubDate>
   </item>
   <item>
-    <title>aws/aws-sdk-go-v2・Release (2026-06-03.2) (release-2026-06-03.2)</title>
+    <title>[aws/aws-sdk-go-v2] Release (2026-06-03.2) (release-2026-06-03.2)</title>
     <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-06-03.2</link>
     <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-06-03.2</guid>
     <description><![CDATA[## Module Highlights
@@ -283,7 +283,7 @@ specify init my-project
     <pubDate>Wed, 03 Jun 2026 18:42:14 GMT</pubDate>
   </item>
   <item>
-    <title>withastro/astro・astro@6.4.4</title>
+    <title>[withastro/astro] astro@6.4.4</title>
     <link>https://github.com/withastro/astro/releases/tag/astro%406.4.4</link>
     <guid isPermaLink="true">https://github.com/withastro/astro/releases/tag/astro%406.4.4</guid>
     <description><![CDATA[### Patch Changes
@@ -298,7 +298,7 @@ specify init my-project
     <pubDate>Wed, 03 Jun 2026 17:37:11 GMT</pubDate>
   </item>
   <item>
-    <title>iii-hq/iii・iii 0.18.0 (iii/v0.18.0)</title>
+    <title>[iii-hq/iii] iii 0.18.0 (iii/v0.18.0)</title>
     <link>https://github.com/iii-hq/iii/releases/tag/iii/v0.18.0</link>
     <guid isPermaLink="true">https://github.com/iii-hq/iii/releases/tag/iii/v0.18.0</guid>
     <description><![CDATA[## What's Changed
@@ -316,7 +316,7 @@ specify init my-project
     <pubDate>Wed, 03 Jun 2026 17:04:32 GMT</pubDate>
   </item>
   <item>
-    <title>wailsapp/wails・Wails v3.0.0-alpha.98 (v3.0.0-alpha.98)</title>
+    <title>[wailsapp/wails] Wails v3.0.0-alpha.98 (v3.0.0-alpha.98)</title>
     <link>https://github.com/wailsapp/wails/releases/tag/v3.0.0-alpha.98</link>
     <guid isPermaLink="true">https://github.com/wailsapp/wails/releases/tag/v3.0.0-alpha.98</guid>
     <description><![CDATA[## Wails v3 Alpha Release - v3.0.0-alpha.98
@@ -337,7 +337,7 @@ go install github.com/wailsapp/wails/v3/cmd/wails3@v3.0.0-alpha.98
     <pubDate>Wed, 03 Jun 2026 16:37:09 GMT</pubDate>
   </item>
   <item>
-    <title>zed-industries/zed・v1.5.3</title>
+    <title>[zed-industries/zed] v1.5.3</title>
     <link>https://github.com/zed-industries/zed/releases/tag/v1.5.3</link>
     <guid isPermaLink="true">https://github.com/zed-industries/zed/releases/tag/v1.5.3</guid>
     <description><![CDATA[This week's release includes a new Mermaid renderer with faster and more accurate diagrams, clickable document links provided by language servers, and the ability to rename threads directly in the sidebar.
@@ -356,7 +356,7 @@ go install github.com/wailsapp/wails/v3/cmd/wails3@v3.0.0-alpha.98
     <pubDate>Wed, 03 Jun 2026 16:07:04 GMT</pubDate>
   </item>
   <item>
-    <title>denoland/deno・v2.8.2</title>
+    <title>[denoland/deno] v2.8.2</title>
     <link>https://github.com/denoland/deno/releases/tag/v2.8.2</link>
     <guid isPermaLink="true">https://github.com/denoland/deno/releases/tag/v2.8.2</guid>
     <description><![CDATA[### 2.8.2 / 2026.06.03
@@ -382,7 +382,7 @@ go install github.com/wailsapp/wails/v3/cmd/wails3@v3.0.0-alpha.98
     <pubDate>Wed, 03 Jun 2026 13:41:42 GMT</pubDate>
   </item>
   <item>
-    <title>abiosoft/colima・v0.10.2</title>
+    <title>[abiosoft/colima] v0.10.2</title>
     <link>https://github.com/abiosoft/colima/releases/tag/v0.10.2</link>
     <guid isPermaLink="true">https://github.com/abiosoft/colima/releases/tag/v0.10.2</guid>
     <description><![CDATA[## Highlights
@@ -404,7 +404,7 @@ This is an incremental stability release with bug fixes and features.
     <pubDate>Wed, 03 Jun 2026 13:35:43 GMT</pubDate>
   </item>
   <item>
-    <title>pingcap/tidb-operator・v2.2.0-alpha.0</title>
+    <title>[pingcap/tidb-operator] v2.2.0-alpha.0</title>
     <link>https://github.com/pingcap/tidb-operator/releases/tag/v2.2.0-alpha.0</link>
     <guid isPermaLink="true">https://github.com/pingcap/tidb-operator/releases/tag/v2.2.0-alpha.0</guid>
     <description><![CDATA[## What's Changed
@@ -420,7 +420,7 @@ This is an incremental stability release with bug fixes and features.
     <pubDate>Wed, 03 Jun 2026 08:57:04 GMT</pubDate>
   </item>
   <item>
-    <title>axios/axios・v1.17.0</title>
+    <title>[axios/axios] v1.17.0</title>
     <link>https://github.com/axios/axios/releases/tag/v1.17.0</link>
     <guid isPermaLink="true">https://github.com/axios/axios/releases/tag/v1.17.0</guid>
     <description><![CDATA[## v1.17.0 — June 1, 2026
@@ -444,7 +444,7 @@ This release adds Node HTTP zstd decompression, hardens config and release workf
     <pubDate>Wed, 03 Jun 2026 06:14:01 GMT</pubDate>
   </item>
   <item>
-    <title>vercel-labs/skills・v1.5.10</title>
+    <title>[vercel-labs/skills] v1.5.10</title>
     <link>https://github.com/vercel-labs/skills/releases/tag/v1.5.10</link>
     <guid isPermaLink="true">https://github.com/vercel-labs/skills/releases/tag/v1.5.10</guid>
     <description><![CDATA[## Changelog
@@ -465,7 +465,7 @@ This release adds Node HTTP zstd decompression, hardens config and release workf
     <pubDate>Wed, 03 Jun 2026 02:19:11 GMT</pubDate>
   </item>
   <item>
-    <title>containerd/containerd・containerd 2.1.8 (v2.1.8)</title>
+    <title>[containerd/containerd] containerd 2.1.8 (v2.1.8)</title>
     <link>https://github.com/containerd/containerd/releases/tag/v2.1.8</link>
     <guid isPermaLink="true">https://github.com/containerd/containerd/releases/tag/v2.1.8</guid>
     <description><![CDATA[Welcome to the v2.1.8 release of containerd!
@@ -495,7 +495,7 @@ https://github.com/containerd/containerd/i
     <pubDate>Tue, 02 Jun 2026 18:58:41 GMT</pubDate>
   </item>
   <item>
-    <title>web-infra-dev/rspack・v2.0.6</title>
+    <title>[web-infra-dev/rspack] v2.0.6</title>
     <link>https://github.com/web-infra-dev/rspack/releases/tag/v2.0.6</link>
     <guid isPermaLink="true">https://github.com/web-infra-dev/rspack/releases/tag/v2.0.6</guid>
     <description><![CDATA[## Highlights
@@ -520,7 +520,7 @@ The webpack-compatible deterministic module id plugin is now exposed through the
     <pubDate>Tue, 02 Jun 2026 09:48:56 GMT</pubDate>
   </item>
   <item>
-    <title>cloudflare/vinext・v0.0.55</title>
+    <title>[cloudflare/vinext] v0.0.55</title>
     <link>https://github.com/cloudflare/vinext/releases/tag/v0.0.55</link>
     <guid isPermaLink="true">https://github.com/cloudflare/vinext/releases/tag/v0.0.55</guid>
     <description><![CDATA[## What's Changed
@@ -546,7 +546,7 @@ The webpack-compatible deterministic module id plugin is now exposed through the
     <pubDate>Tue, 02 Jun 2026 09:48:29 GMT</pubDate>
   </item>
   <item>
-    <title>pnpm/pnpm・pnpm 11.5.1 (v11.5.1)</title>
+    <title>[pnpm/pnpm] pnpm 11.5.1 (v11.5.1)</title>
     <link>https://github.com/pnpm/pnpm/releases/tag/v11.5.1</link>
     <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v11.5.1</guid>
     <description><![CDATA[## Patch Changes
@@ -561,7 +561,7 @@ The webpack-compatible deterministic module id plugin is now exposed through the
     <pubDate>Tue, 02 Jun 2026 08:40:54 GMT</pubDate>
   </item>
   <item>
-    <title>open-cli-tools/concurrently・v10.0.3</title>
+    <title>[open-cli-tools/concurrently] v10.0.3</title>
     <link>https://github.com/open-cli-tools/concurrently/releases/tag/v10.0.3</link>
     <guid isPermaLink="true">https://github.com/open-cli-tools/concurrently/releases/tag/v10.0.3</guid>
     <description><![CDATA[Republish of https://github.com/open-cli-tools/concurrently/releases/tag/v10.0.1 with Trusted Publishing enabled (see #595)
@@ -570,7 +570,7 @@ The webpack-compatible deterministic module id plugin is now exposed through the
     <pubDate>Tue, 02 Jun 2026 04:31:37 GMT</pubDate>
   </item>
   <item>
-    <title>sveltejs/svelte・svelte@5.56.1</title>
+    <title>[sveltejs/svelte] svelte@5.56.1</title>
     <link>https://github.com/sveltejs/svelte/releases/tag/svelte%405.56.1</link>
     <guid isPermaLink="true">https://github.com/sveltejs/svelte/releases/tag/svelte%405.56.1</guid>
     <description><![CDATA[### Patch Changes
@@ -593,7 +593,7 @@ The webpack-compatible deterministic module id plugin is now exposed through the
     <pubDate>Mon, 01 Jun 2026 22:42:27 GMT</pubDate>
   </item>
   <item>
-    <title>open-webui/open-webui・v0.9.6</title>
+    <title>[open-webui/open-webui] v0.9.6</title>
     <link>https://github.com/open-webui/open-webui/releases/tag/v0.9.6</link>
     <guid isPermaLink="true">https://github.com/open-webui/open-webui/releases/tag/v0.9.6</guid>
     <description><![CDATA[### Added
@@ -605,7 +605,7 @@ The webpack-compatible deterministic module id plugin is now exposed through the
     <pubDate>Mon, 01 Jun 2026 21:57:03 GMT</pubDate>
   </item>
   <item>
-    <title>typescript-eslint/typescript-eslint・v8.60.1</title>
+    <title>[typescript-eslint/typescript-eslint] v8.60.1</title>
     <link>https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.60.1</link>
     <guid isPermaLink="true">https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.60.1</guid>
     <description><![CDATA[## 8.60.1 (2026-06-01)
@@ -626,7 +626,7 @@ You can read about our [versioning strategy](https://typescript-eslint.io/users/
     <pubDate>Mon, 01 Jun 2026 18:54:58 GMT</pubDate>
   </item>
   <item>
-    <title>oxc-project/oxc・oxlint v1.68.0 &amp; oxfmt v0.53.0 (apps_v1.68.0)</title>
+    <title>[oxc-project/oxc] oxlint v1.68.0 &amp; oxfmt v0.53.0 (apps_v1.68.0)</title>
     <link>https://github.com/oxc-project/oxc/releases/tag/apps_v1.68.0</link>
     <guid isPermaLink="true">https://github.com/oxc-project/oxc/releases/tag/apps_v1.68.0</guid>
     <description><![CDATA[## Table of Contents
@@ -654,14 +654,14 @@ You can read about our [versioning strategy](https://typescript-eslint.io/users/
     <pubDate>Mon, 01 Jun 2026 17:08:47 GMT</pubDate>
   </item>
   <item>
-    <title>remix-run/remix・v2.17.5 (remix@2.17.5)</title>
+    <title>[remix-run/remix] v2.17.5 (remix@2.17.5)</title>
     <link>https://github.com/remix-run/remix/releases/tag/remix%402.17.5</link>
     <guid isPermaLink="true">https://github.com/remix-run/remix/releases/tag/remix%402.17.5</guid>
     <description><![CDATA[See the changelog for the release notes: https://github.com/remix-run/remix/blob/v2/CHANGELOG.md#v2175]]></description>
     <pubDate>Mon, 01 Jun 2026 14:47:58 GMT</pubDate>
   </item>
   <item>
-    <title>nodejs/node・2026-06-01, Version 26.3.0 (Current), @aduh95 (v26.3.0)</title>
+    <title>[nodejs/node] 2026-06-01, Version 26.3.0 (Current), @aduh95 (v26.3.0)</title>
     <link>https://github.com/nodejs/node/releases/tag/v26.3.0</link>
     <guid isPermaLink="true">https://github.com/nodejs/node/releases/tag/v26.3.0</guid>
     <description><![CDATA[### Notable Changes
@@ -686,7 +686,7 @@ Contributed by Antoine du Hamel in [#63055](https://github.com/nodejs/node/pull/
     <pubDate>Mon, 01 Jun 2026 13:10:59 GMT</pubDate>
   </item>
   <item>
-    <title>anomalyco/opentui・Release v0.3.1 (v0.3.1)</title>
+    <title>[anomalyco/opentui] Release v0.3.1 (v0.3.1)</title>
     <link>https://github.com/anomalyco/opentui/releases/tag/v0.3.1</link>
     <guid isPermaLink="true">https://github.com/anomalyco/opentui/releases/tag/v0.3.1</guid>
     <description><![CDATA[## What's Changed
@@ -697,14 +697,14 @@ Contributed by Antoine du Hamel in [#63055](https://github.com/nodejs/node/pull/
     <pubDate>Mon, 01 Jun 2026 11:58:29 GMT</pubDate>
   </item>
   <item>
-    <title>vitejs/vite・v6.4.3</title>
+    <title>[vitejs/vite] v6.4.3</title>
     <link>https://github.com/vitejs/vite/releases/tag/v6.4.3</link>
     <guid isPermaLink="true">https://github.com/vitejs/vite/releases/tag/v6.4.3</guid>
     <description><![CDATA[Please refer to [CHANGELOG.md](https://github.com/vitejs/vite/blob/v6.4.3/packages/vite/CHANGELOG.md) for details.]]></description>
     <pubDate>Mon, 01 Jun 2026 10:39:31 GMT</pubDate>
   </item>
   <item>
-    <title>import-js/eslint-import-resolver-typescript・v4.4.5</title>
+    <title>[import-js/eslint-import-resolver-typescript] v4.4.5</title>
     <link>https://github.com/import-js/eslint-import-resolver-typescript/releases/tag/v4.4.5</link>
     <guid isPermaLink="true">https://github.com/import-js/eslint-import-resolver-typescript/releases/tag/v4.4.5</guid>
     <description><![CDATA[### Patch Changes
@@ -713,7 +713,7 @@ Contributed by Antoine du Hamel in [#63055](https://github.com/nodejs/node/pull/
     <pubDate>Mon, 01 Jun 2026 04:17:52 GMT</pubDate>
   </item>
   <item>
-    <title>redwoodjs/sdk・v1.3.0-canary.5</title>
+    <title>[redwoodjs/sdk] v1.3.0-canary.5</title>
     <link>https://github.com/redwoodjs/sdk/releases/tag/v1.3.0-canary.5</link>
     <guid isPermaLink="true">https://github.com/redwoodjs/sdk/releases/tag/v1.3.0-canary.5</guid>
     <description><![CDATA[## What's Changed
@@ -727,7 +727,7 @@ Contributed by Antoine du Hamel in [#63055](https://github.com/nodejs/node/pull/
     <pubDate>Sun, 31 May 2026 15:43:07 GMT</pubDate>
   </item>
   <item>
-    <title>privatenumber/tsx・v4.22.4</title>
+    <title>[privatenumber/tsx] v4.22.4</title>
     <link>https://github.com/privatenumber/tsx/releases/tag/v4.22.4</link>
     <guid isPermaLink="true">https://github.com/privatenumber/tsx/releases/tag/v4.22.4</guid>
     <description><![CDATA[## [4.22.4](https://github.com/privatenumber/tsx/compare/v4.22.3...v4.22.4) (2026-05-31)
@@ -743,7 +743,7 @@ This release is also available on:
     <pubDate>Sun, 31 May 2026 12:22:20 GMT</pubDate>
   </item>
   <item>
-    <title>styleframe-dev/styleframe・v3.8.0 (styleframe@3.8.0)</title>
+    <title>[styleframe-dev/styleframe] v3.8.0 (styleframe@3.8.0)</title>
     <link>https://github.com/styleframe-dev/styleframe/releases/tag/styleframe%403.8.0</link>
     <guid isPermaLink="true">https://github.com/styleframe-dev/styleframe/releases/tag/styleframe%403.8.0</guid>
     <description><![CDATA[## What's Changed
@@ -759,7 +759,7 @@ This release is also available on:
     <pubDate>Sun, 31 May 2026 11:44:48 GMT</pubDate>
   </item>
   <item>
-    <title>servo/servo・v0.2.0</title>
+    <title>[servo/servo] v0.2.0</title>
     <link>https://github.com/servo/servo/releases/tag/v0.2.0</link>
     <guid isPermaLink="true">https://github.com/servo/servo/releases/tag/v0.2.0</guid>
     <description><![CDATA[Servo 0.2.0 includes:
@@ -782,7 +782,7 @@ This release is also available on:
     <pubDate>Sun, 31 May 2026 09:08:51 GMT</pubDate>
   </item>
   <item>
-    <title>adobe/react-spectrum・React Aria Components v1.18.0 (react-aria-components@1.18.0)</title>
+    <title>[adobe/react-spectrum] React Aria Components v1.18.0 (react-aria-components@1.18.0)</title>
     <link>https://github.com/adobe/react-spectrum/releases/tag/react-aria-components%401.18.0</link>
     <guid isPermaLink="true">https://github.com/adobe/react-spectrum/releases/tag/react-aria-components%401.18.0</guid>
     <description><![CDATA[This release packs in several new features! [Calendar](https://react-aria.adobe.com/Calendar) now supports multiple date selection, as well as new [CalendarHeading](https://react-aria.adobe.com/Calendar#calendarheading), [CalendarMonthPicker](https://react-aria.adobe.com/Calendar#month-and-year-pickers), and [CalendarYearPicker](https://react-aria.adobe.com/Calendar#month-and-year-pickers) components that allow the user to jump to a different month or year. [RangeCalendar](https://react-aria.adobe.com/RangeCalendar#validation) now supports determining the available dates based on the first date a user selects. We have also added a [TableFooter](https://react-aria.adobe.com/Table#content) component, description and error messages for [Checkbox](https://react-aria.adobe.com/Checkbox#forms), [Radio](https://react-aria.adobe.com/RadioGroup), and [Switch](https://react-aria.adobe.com/Switch#forms), and a [SliderFill](https://react-aria.adobe.com/Slider#value-scale) component that simplifies
@@ -791,7 +791,7 @@ This release is also available on:
     <pubDate>Sat, 30 May 2026 16:34:18 GMT</pubDate>
   </item>
   <item>
-    <title>date-fns/date-fns・v5.0.0-alpha.0</title>
+    <title>[date-fns/date-fns] v5.0.0-alpha.0</title>
     <link>https://github.com/date-fns/date-fns/releases/tag/v5.0.0-alpha.0</link>
     <guid isPermaLink="true">https://github.com/date-fns/date-fns/releases/tag/v5.0.0-alpha.0</guid>
     <description><![CDATA[v5 focuses on reducing the date-fns package size. Compared to v4.3.0, this version reduces the zipped package size from `5.83 MB` down to `2.89 MB`.
@@ -806,7 +806,7 @@ It is just the first step in optimizing the package size. Expect further size re
     <pubDate>Fri, 29 May 2026 23:45:10 GMT</pubDate>
   </item>
   <item>
-    <title>go-playground/validator・v10.30.3</title>
+    <title>[go-playground/validator] v10.30.3</title>
     <link>https://github.com/go-playground/validator/releases/tag/v10.30.3</link>
     <guid isPermaLink="true">https://github.com/go-playground/validator/releases/tag/v10.30.3</guid>
     <description><![CDATA[## What's Changed
@@ -823,7 +823,7 @@ It is just the first step in optimizing the package size. Expect further size re
     <pubDate>Fri, 29 May 2026 23:26:24 GMT</pubDate>
   </item>
   <item>
-    <title>eslint/eslint・v10.4.1</title>
+    <title>[eslint/eslint] v10.4.1</title>
     <link>https://github.com/eslint/eslint/releases/tag/v10.4.1</link>
     <guid isPermaLink="true">https://github.com/eslint/eslint/releases/tag/v10.4.1</guid>
     <description><![CDATA[## Bug Fixes
@@ -840,14 +840,14 @@ It is just the first step in optimizing the package size. Expect further size re
     <pubDate>Fri, 29 May 2026 20:32:39 GMT</pubDate>
   </item>
   <item>
-    <title>remix-run/react-router・v6.30.4 (react-router@6.30.4)</title>
+    <title>[remix-run/react-router] v6.30.4 (react-router@6.30.4)</title>
     <link>https://github.com/remix-run/react-router/releases/tag/react-router%406.30.4</link>
     <guid isPermaLink="true">https://github.com/remix-run/react-router/releases/tag/react-router%406.30.4</guid>
     <description><![CDATA[See the changelog for release notes: https://github.com/remix-run/react-router/blob/v6/CHANGELOG.md#v6304]]></description>
     <pubDate>Fri, 29 May 2026 19:48:53 GMT</pubDate>
   </item>
   <item>
-    <title>runfinch/finch・v1.17.1</title>
+    <title>[runfinch/finch] v1.17.1</title>
     <link>https://github.com/runfinch/finch/releases/tag/v1.17.1</link>
     <guid isPermaLink="true">https://github.com/runfinch/finch/releases/tag/v1.17.1</guid>
     <description><![CDATA[## [1.17.1](https://github.com/runfinch/finch/compare/v1.17.0...v1.17.1) (2026-05-29)
@@ -868,7 +868,7 @@ It is just the first step in optimizing the package size. Expect further size re
     <pubDate>Fri, 29 May 2026 17:22:59 GMT</pubDate>
   </item>
   <item>
-    <title>panva/node-oidc-provider・v9.8.4</title>
+    <title>[panva/node-oidc-provider] v9.8.4</title>
     <link>https://github.com/panva/node-oidc-provider/releases/tag/v9.8.4</link>
     <guid isPermaLink="true">https://github.com/panva/node-oidc-provider/releases/tag/v9.8.4</guid>
     <description><![CDATA[### Refactor
