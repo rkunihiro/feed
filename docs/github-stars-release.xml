@@ -5,27 +5,183 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Fri, 05 Jun 2026 22:24:01 GMT</lastBuildDate>
+  <lastBuildDate>Sat, 06 Jun 2026 22:20:39 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
   <item>
-    <title>[sveltejs/kit] @sveltejs/adapter-vercel@7.0.0-next.0</title>
-    <link>https://github.com/sveltejs/kit/releases/tag/%40sveltejs/adapter-vercel%407.0.0-next.0</link>
-    <guid isPermaLink="true">https://github.com/sveltejs/kit/releases/tag/%40sveltejs/adapter-vercel%407.0.0-next.0</guid>
-    <description><![CDATA[### Major Changes
-
-
-- chore: use `rolldown` for edge function bundling ([#15432](https://github.com/sveltejs/kit/pull/15432))
-
-
-- breaking: edge function build target is now `es2022` ([#15432](https://github.com/sveltejs/kit/pull/15432))
-
-
-### Patch Changes
-
-- Updated dependencies [[`fa335bd`](https://github.com/sveltejs/kit/commit/fa335bd8af3a982d68c4d34b813b68887dc7cce8), [`3031d89`](https://github.com/sveltejs/kit/commit/3031d89087d49297e89b6566108a1a1105c38475), [`cb9d416`](https://github.com/sveltejs/kit/commit/cb9d416d05266b6237f2856fb94df5b8a9b04279), [`caf3a18`](https://github.com/sveltejs/kit/commit/caf3a18de6581ab7d454d6fa8ad37ebdbdef95e6), [`4777827`](https://github.com/sveltejs/kit/commit/4777827246727045cf0209399751377564e7951d), [`a2792e2`](https://github.com/sveltejs/kit/commit/a2792e2cdc2dee91c20c7bfd921a104b539abae5), [`ba36148`](https://github.com/sveltejs/kit/commit/ba36148577ed0bc2675034a3d57001d71d328cd1), [`48e8710`](https://github.com/sveltejs/kit/commit/48e87108
+    <title>[nodejs/undici] v8.4.0</title>
+    <link>https://github.com/nodejs/undici/releases/tag/v8.4.0</link>
+    <guid isPermaLink="true">https://github.com/nodejs/undici/releases/tag/v8.4.0</guid>
+    <description><![CDATA[## What's Changed
+* fix: register connect listener before initiating requests in close-and-destroy test by @mcollina in https://github.com/nodejs/undici/pull/5272
+* test: stabilize tls-cert-leak regression by @mcollina in https://github.com/nodejs/undici/pull/5306
+* fix: replace tspl with native test context in test/examples.js by @mcollina in https://github.com/nodejs/undici/pull/5300
+* http2: remove redundant request stream binding by @trivikr in https://github.com/nodejs/undici/pull/5302
+* test: limit cache-tests workers on Windows by @mcollina in https://github.com/nodejs/undici/pull/5309
+* test: use test context cleanup hooks in parser issue tests by @mcollina in https://github.com/nodejs/undici/pull/5282
+* Add redirect option to strip headers on redirect by @mcollina in https://github.com/nodejs/undici/pull/5281
+* chore(test): fix lint failure by @aduh95 in https://github.com/nodejs/undici/pull/5316
+* chore(ci): use `npm ci` instead of `npm install` by @aduh95 in https://github.c
 
 ... (truncated)]]></description>
-    <pubDate>Fri, 05 Jun 2026 21:56:47 GMT</pubDate>
+    <pubDate>Sat, 06 Jun 2026 16:02:53 GMT</pubDate>
+  </item>
+  <item>
+    <title>[bluesky-social/social-app] v1.123.0 (1.123.0)</title>
+    <link>https://github.com/bluesky-social/social-app/releases/tag/1.123.0</link>
+    <guid isPermaLink="true">https://github.com/bluesky-social/social-app/releases/tag/1.123.0</guid>
+    <description><![CDATA[## What's Changed
+* [Chat] Add OpenGraph card for chat invite links by @mozzius in https://github.com/bluesky-social/social-app/pull/10629
+* Refactor and improve seo schema.org data by @blackmichael in https://github.com/bluesky-social/social-app/pull/10613
+* Update presentation of DM header by @ds-boyce in https://github.com/bluesky-social/social-app/pull/10619
+* Moar Standard Site Tweaks by @estrattonbailey in https://github.com/bluesky-social/social-app/pull/10641
+* Disable other chat settings when a chat is locked by @ds-boyce in https://github.com/bluesky-social/social-app/pull/10623
+* Colocate all chat log event handlers by @ds-boyce in https://github.com/bluesky-social/social-app/pull/10632
+* Prevent silent Denis failures in the future by @estrattonbailey in https://github.com/bluesky-social/social-app/pull/10645
+* Fix spacing when no description in SS pub card by @estrattonbailey in https://github.com/bluesky-social/social-app/pull/10648
+* Bump version to v1.123.0 by @
+
+... (truncated)]]></description>
+    <pubDate>Sat, 06 Jun 2026 15:31:19 GMT</pubDate>
+  </item>
+  <item>
+    <title>[chakra-ui/ark] @ark-ui/vue@5.37.1</title>
+    <link>https://github.com/chakra-ui/ark/releases/tag/%40ark-ui/vue%405.37.1</link>
+    <guid isPermaLink="true">https://github.com/chakra-ui/ark/releases/tag/%40ark-ui/vue%405.37.1</guid>
+    <description><![CDATA[# @ark-ui/vue
+
+## [5.37.1] - 2026-06-06
+
+### Fixed
+
+- **Date Input**: Fix `DateInput.Segment` to stay in sync with the latest segment state while typing.
+
+- - **Date Input**: Fix segment placeholders for locales with explicit script subtags.
+  - **Drawer**: Fix flickering when a controlled drawer is swiped or backdrop-closed while the `open` setter is async
+    (e.g. the History API or a delayed state update).
+  - **Image Cropper**: Fix `getCroppedImage` and `getCropData` returning the wrong region when the image is shown at a
+    size different from its natural resolution (e.g. `width` / `height` of `100%`).
+  - **Pin Input**: Fix `data-filled` being set on every input on first render.
+  - **Signature Pad**: Fix the `dir` prop being accepted but never forwarded to the DOM.
+
+## [5.37.0] - 2026-05-26
+
+### Added
+
+- **Floating Components**: Add `data-side` to placement-aware parts so you can style them based on the current placement
+  (`top`, `bottom`, `left`, `right`).
+
+  > Affects Color
+
+... (truncated)]]></description>
+    <pubDate>Sat, 06 Jun 2026 15:17:17 GMT</pubDate>
+  </item>
+  <item>
+    <title>[PerryTS/perry] v0.5.1125</title>
+    <link>https://github.com/PerryTS/perry/releases/tag/v0.5.1125</link>
+    <guid isPermaLink="true">https://github.com/PerryTS/perry/releases/tag/v0.5.1125</guid>
+    <description><![CDATA[feat(compile): `--windows-subsystem` override + tier-3 Apple link dedup + pointer-width portability
+
+- **`--windows-subsystem auto|console|windows`** flag + `perry.toml [windows] subsystem` fallback. Lets a GUI app that doesn't import `perry/ui` suppress the auto console window; precedence CLI > perry.toml > import heuristic; unknown values are a hard error.
+- **Tier-3 Apple (tvOS/watchOS) link dedup** — localize std panic/unwind shims (`__rust_drop_panic`, `rust_begin_unwind`, …) so `-Zbuild-std` runtime+stdlib stop colliding with `ld64.lld: duplicate symbol`.
+- **Pointer-width portability** — compare alloc size as `u64` against `1u64<<34` in gc/barrier, gc/copying, timer, typedarray (fixes 32-bit overflow on arm64_32 watchOS / wasm32); widen `tm_gmtoff` cast.
+
+See CHANGELOG.md for full detail.]]></description>
+    <pubDate>Sat, 06 Jun 2026 11:37:42 GMT</pubDate>
+  </item>
+  <item>
+    <title>[warpdotdev/warp] Dev Release v0.2026.06.06.09.03.dev_00 (v0.2026.06.06.09.03.dev_00)</title>
+    <link>https://github.com/warpdotdev/warp/releases/tag/v0.2026.06.06.09.03.dev_00</link>
+    <guid isPermaLink="true">https://github.com/warpdotdev/warp/releases/tag/v0.2026.06.06.09.03.dev_00</guid>
+    <description><![CDATA[Nightly Warp Dev release]]></description>
+    <pubDate>Sat, 06 Jun 2026 09:03:28 GMT</pubDate>
+  </item>
+  <item>
+    <title>[zed-industries/zed] v1.6.1-pre</title>
+    <link>https://github.com/zed-industries/zed/releases/tag/v1.6.1-pre</link>
+    <guid isPermaLink="true">https://github.com/zed-industries/zed/releases/tag/v1.6.1-pre</guid>
+    <description><![CDATA[- Fix crash that could occur when unsplitting a side by side diff view ([#58694](https://github.com/zed-industries/zed/pull/58694))
+- Fixed symlinked files showing the entire file as changed in the git diff/gutter. ([#58679](https://github.com/zed-industries/zed/pull/58679))
+- acp: Fix for certain ACP Registry agent downloads not starting ([#58632](https://github.com/zed-industries/zed/pull/58632))
+- Fixed high CPU usage when using Zeta in some cases (thanks @clupprich!) ([#58590](https://github.com/zed-industries/zed/pull/58590))
+- Fixed a crash that could occur while streaming agent edits containing multibyte characters. ([#58451](https://github.com/zed-industries/zed/pull/58451))
+- Fixed an issue where Zed would stop responding to file system changes in some cases ([#58692](https://github.com/zed-industries/zed/pull/58692)]]></description>
+    <pubDate>Sat, 06 Jun 2026 04:22:47 GMT</pubDate>
+  </item>
+  <item>
+    <title>[openclaw/openclaw] openclaw 2026.6.5-beta.1 (v2026.6.5-beta.1)</title>
+    <link>https://github.com/openclaw/openclaw/releases/tag/v2026.6.5-beta.1</link>
+    <guid isPermaLink="true">https://github.com/openclaw/openclaw/releases/tag/v2026.6.5-beta.1</guid>
+    <description><![CDATA[## 2026.6.5
+
+### Highlights
+
+- QQBot now strips model reasoning/thinking scaffolding before native delivery, preventing raw `<thinking>` content from leaking into channel replies. (#89913, #90132) Thanks @openperf.
+- MCP tool results now coerce `resource_link`, `resource`, `audio`, malformed image, and future non-text/image blocks at the materialize boundary, preventing Anthropic 400s and poisoned session history after a tool returns richer MCP content. (#90710, #90728) Thanks @RanSHammer and @849261680.
+- Anthropic extended-thinking sessions recover after prompt-cache expiry or Gateway restart because stream start events wait for `message_start`, letting pre-generation signature errors trigger the existing recovery retry. (#90667, #90697) Thanks @openperf.
+- Parallel is now a bundled `web_search` provider with `PARALLEL_API_KEY` discovery, guarded endpoint handling, cache-safe session ids, onboarding picker support, and docs. (#85158) Thanks @NormallyGaussian.
+- Google Vertex ADC user
+
+... (truncated)]]></description>
+    <pubDate>Sat, 06 Jun 2026 03:36:51 GMT</pubDate>
+  </item>
+  <item>
+    <title>[openai/codex] 0.138.0-alpha.6 (rust-v0.138.0-alpha.6)</title>
+    <link>https://github.com/openai/codex/releases/tag/rust-v0.138.0-alpha.6</link>
+    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.138.0-alpha.6</guid>
+    <description><![CDATA[Release 0.138.0-alpha.6]]></description>
+    <pubDate>Sat, 06 Jun 2026 03:23:40 GMT</pubDate>
+  </item>
+  <item>
+    <title>[iii-hq/iii] iii 0.19.0 (iii/v0.19.0)</title>
+    <link>https://github.com/iii-hq/iii/releases/tag/iii/v0.19.0</link>
+    <guid isPermaLink="true">https://github.com/iii-hq/iii/releases/tag/iii/v0.19.0</guid>
+    <description><![CDATA[## What's Changed
+* fix: make queue/DLQ ops discoverable and typed, point skill docs at engine contracts by @andersonleal in https://github.com/iii-hq/iii/pull/1743
+* fix(website): true-quadratic hero chart, boxed destination tabs, nav overlap by @rohitg00 in https://github.com/iii-hq/iii/pull/1745
+* fix(iii-worker): replace existing bundle install on cross-project add by @andersonleal in https://github.com/iii-hq/iii/pull/1742
+* fix: issue with unregister trigger in custom triggers by @sergiofilhowz in https://github.com/iii-hq/iii/pull/1750
+* feat(website): one self-routing copy-prompt; llms.txt explains, AGENTS.md builds by @rohitg00 in https://github.com/iii-hq/iii/pull/1754
+* feat(engine): expose response_schema on triggers info by @andersonleal in https://github.com/iii-hq/iii/pull/1748
+* docs(changelog): add 0.19.0 entry for response_schema on triggers info by @andersonleal in https://github.com/iii-hq/iii/pull/1757
+* add opt-in skills rerender functionality to iii repository by
+
+... (truncated)]]></description>
+    <pubDate>Sat, 06 Jun 2026 00:10:06 GMT</pubDate>
+  </item>
+  <item>
+    <title>[vercel/next.js] v16.3.0-canary.42</title>
+    <link>https://github.com/vercel/next.js/releases/tag/v16.3.0-canary.42</link>
+    <guid isPermaLink="true">https://github.com/vercel/next.js/releases/tag/v16.3.0-canary.42</guid>
+    <description><![CDATA[### Misc Changes
+
+- [turbopack] Treat local `const` assignments as side-effect free: #94294
+- [turbopack] Remove worker helpers from the default runtime: #94372
+- Extract App Shell from static prefetches: #94095
+- docs: correct wording and casing in turbopack tracing guide: #94469
+- Turbopack: refactor ServerActionManifestAsset to be lazy: #94377
+- docs: typos and errors outside docs, error, examples folders: #94472
+- Update vendored lodash to 4.18.1: #94473
+- chore: reword cacheComponents jsDoc to lead with partial prerendering: #94474
+- Upgrade React from `f0dfee38-20260529` to `43bcbf80-20260603`: #94440
+- Turbopack: Perform issue filtering without turbo-task functions: #93885
+- Keep Instant DevTools locked when opening error overlay: #94357
+- Revert "ci: run Linux Playwright jobs in prebuilt Microsoft container (#93794)": #94366
+- fix(deps): bump @vercel/nft@1.10.2: #93979
+- Simplify turbo-tasks-backend: collapse single-impl traits and remove redundant Arc layers: #93983
+- Turbopac
+
+... (truncated)]]></description>
+    <pubDate>Sat, 06 Jun 2026 00:03:57 GMT</pubDate>
+  </item>
+  <item>
+    <title>[sveltejs/kit] @sveltejs/kit@3.0.0-next.1</title>
+    <link>https://github.com/sveltejs/kit/releases/tag/%40sveltejs/kit%403.0.0-next.1</link>
+    <guid isPermaLink="true">https://github.com/sveltejs/kit/releases/tag/%40sveltejs/kit%403.0.0-next.1</guid>
+    <description><![CDATA[### Patch Changes
+
+
+- fix: reinstate `$app/environment` as an alias for `$app/env`, in case dependencies import it ([#15964](https://github.com/sveltejs/kit/pull/15964))]]></description>
+    <pubDate>Fri, 05 Jun 2026 23:31:19 GMT</pubDate>
   </item>
   <item>
     <title>[aws/aws-sdk-go-v2] Release (2026-06-05.2) (release-2026-06-05.2)</title>
@@ -40,23 +196,6 @@
     <pubDate>Fri, 05 Jun 2026 21:21:19 GMT</pubDate>
   </item>
   <item>
-    <title>[iii-hq/iii] iii 0.19.0-next.4 (iii/v0.19.0-next.4)</title>
-    <link>https://github.com/iii-hq/iii/releases/tag/iii/v0.19.0-next.4</link>
-    <guid isPermaLink="true">https://github.com/iii-hq/iii/releases/tag/iii/v0.19.0-next.4</guid>
-    <description><![CDATA[## What's Changed
-* fix: make queue/DLQ ops discoverable and typed, point skill docs at engine contracts by @andersonleal in https://github.com/iii-hq/iii/pull/1743
-* fix(website): true-quadratic hero chart, boxed destination tabs, nav overlap by @rohitg00 in https://github.com/iii-hq/iii/pull/1745
-* fix(iii-worker): replace existing bundle install on cross-project add by @andersonleal in https://github.com/iii-hq/iii/pull/1742
-* fix: issue with unregister trigger in custom triggers by @sergiofilhowz in https://github.com/iii-hq/iii/pull/1750
-* feat(website): one self-routing copy-prompt; llms.txt explains, AGENTS.md builds by @rohitg00 in https://github.com/iii-hq/iii/pull/1754
-* feat(engine): expose response_schema on triggers info by @andersonleal in https://github.com/iii-hq/iii/pull/1748
-* docs(changelog): add 0.19.0 entry for response_schema on triggers info by @andersonleal in https://github.com/iii-hq/iii/pull/1757
-* add opt-in skills rerender functionality to iii repository by
-
-... (truncated)]]></description>
-    <pubDate>Fri, 05 Jun 2026 20:03:41 GMT</pubDate>
-  </item>
-  <item>
     <title>[ollama/ollama] v0.30.6</title>
     <link>https://github.com/ollama/ollama/releases/tag/v0.30.6</link>
     <guid isPermaLink="true">https://github.com/ollama/ollama/releases/tag/v0.30.6</guid>
@@ -67,13 +206,6 @@
 
 **Full Changelog**: https://github.com/ollama/ollama/compare/v0.30.5...v0.30.6]]></description>
     <pubDate>Fri, 05 Jun 2026 20:00:18 GMT</pubDate>
-  </item>
-  <item>
-    <title>[openai/codex] rusty-v8-v149.2.0</title>
-    <link>https://github.com/openai/codex/releases/tag/rusty-v8-v149.2.0</link>
-    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rusty-v8-v149.2.0</guid>
-    <description><![CDATA[No release notes provided.]]></description>
-    <pubDate>Fri, 05 Jun 2026 19:26:02 GMT</pubDate>
   </item>
   <item>
     <title>[aws/aws-sdk-js-v3] v3.1063.0</title>
@@ -148,18 +280,42 @@ specify init my-project
     <pubDate>Fri, 05 Jun 2026 17:40:04 GMT</pubDate>
   </item>
   <item>
+    <title>[anomalyco/opencode] v1.16.2</title>
+    <link>https://github.com/anomalyco/opencode/releases/tag/v1.16.2</link>
+    <guid isPermaLink="true">https://github.com/anomalyco/opencode/releases/tag/v1.16.2</guid>
+    <description><![CDATA[## Core
+
+### Bugfixes
+
+- Reasoning summaries now only run on providers that support them, avoiding GPT-5 request failures on compatible backends.
+- Edit operations now refuse loose matches that could overwrite the wrong code or replace an existing file by mistake.
+- Fixed Bedrock sessions hanging before a model response starts. (@alblez)
+
+### Improvements
+
+- Diff viewer now supports next and previous hunk navigation.
+- Terminal themes now refresh after live terminal reloads without stale colors or broken highlighting.
+- Running subagents can now be sent to the background so you can keep working.
+- Sessions now persist system context updates during long-running conversations.
+- Added Snowflake Cortex provider support. (@kameshsampath)
+
+## TUI
+
+### Bugfixes
+
+- Fixed the external editor fallback so attach-mode sessions still open when the original project path is unavailable locally. (@pcadena-lila)
+- Permission replies now route through the correct session directory.
+- `/mo` now prefers 
+
+... (truncated)]]></description>
+    <pubDate>Fri, 05 Jun 2026 15:58:51 GMT</pubDate>
+  </item>
+  <item>
     <title>[uptrace/uptrace] v2.1.0-beta.7</title>
     <link>https://github.com/uptrace/uptrace/releases/tag/v2.1.0-beta.7</link>
     <guid isPermaLink="true">https://github.com/uptrace/uptrace/releases/tag/v2.1.0-beta.7</guid>
     <description><![CDATA[[CHANGELOG](https://github.com/uptrace/uptrace/blob/master/CHANGELOG.md)]]></description>
     <pubDate>Fri, 05 Jun 2026 11:50:55 GMT</pubDate>
-  </item>
-  <item>
-    <title>[warpdotdev/warp] Dev Release v0.2026.06.05.09.22.dev_00 (v0.2026.06.05.09.22.dev_00)</title>
-    <link>https://github.com/warpdotdev/warp/releases/tag/v0.2026.06.05.09.22.dev_00</link>
-    <guid isPermaLink="true">https://github.com/warpdotdev/warp/releases/tag/v0.2026.06.05.09.22.dev_00</guid>
-    <description><![CDATA[Nightly Warp Dev release]]></description>
-    <pubDate>Fri, 05 Jun 2026 09:22:07 GMT</pubDate>
   </item>
   <item>
     <title>[pnpm/pnpm] pnpm 11.5.2 (v11.5.2)</title>
@@ -173,29 +329,6 @@ specify init my-project
 
 ... (truncated)]]></description>
     <pubDate>Fri, 05 Jun 2026 06:50:59 GMT</pubDate>
-  </item>
-  <item>
-    <title>[vercel/next.js] v16.3.0-canary.41</title>
-    <link>https://github.com/vercel/next.js/releases/tag/v16.3.0-canary.41</link>
-    <guid isPermaLink="true">https://github.com/vercel/next.js/releases/tag/v16.3.0-canary.41</guid>
-    <description><![CDATA[### Misc Changes
-
-- make `TaskInput::is_resolved` inlinable everywhere: #94213
-- [App Shells] staged shell rendering in cached navs: #94441
-- [App Shells] staged shell rendering during build: #94442
-- docs: fix typos in `testing.md`: #94446
-- Keep the dev React debug channel on Node streams end to end: #94433
-- test: pin material-ui link fixture dependencies: #94354
-- Revert "Keep the dev React debug channel on Node streams end to end": #94459
-- [turbopack] Only ship top-level async support in the runtime when needed: #94376
-- Reland the debug channel on native Node streams, fixed for React 18: #94462
-- Allow `unstable_retry` from TS plugin check in Next.js Error APIs: #94460
-- docs: fix typos in contribution guide: #94375
-
-### Credits 
-
-Huge thanks to @lukesandberg, @lubieowoce, @RazinShafayet2007, @unstubbable, @timneutkens, @eps1lon, @sampoder, and @devjiwonchoi for helping!]]></description>
-    <pubDate>Fri, 05 Jun 2026 00:04:21 GMT</pubDate>
   </item>
   <item>
     <title>[sveltejs/svelte] svelte@5.56.2</title>
@@ -229,13 +362,6 @@ This is an hotfix release to address a regression for Kubernetes runtime.
 
 **Full Changelog**: https://github.com/abiosoft/colima/compare/v0.10.2...v0.10.3]]></description>
     <pubDate>Thu, 04 Jun 2026 17:14:15 GMT</pubDate>
-  </item>
-  <item>
-    <title>[PerryTS/perry] v0.5.1122</title>
-    <link>https://github.com/PerryTS/perry/releases/tag/v0.5.1122</link>
-    <guid isPermaLink="true">https://github.com/PerryTS/perry/releases/tag/v0.5.1122</guid>
-    <description><![CDATA[Re-tag from a main that includes the #4399 AES-secret-key fix (the regression that failed v0.5.1121's cargo-test) plus the macos-x86_64 iOS-cross fix (v0.5.1121) and gtk4/android fixes (v0.5.1120). Marks the harmonyos/ink aspirational smokes continue-on-error so they can't re-block publish. This run should complete the full platform binaries + npm/brew/apt/winget publish.]]></description>
-    <pubDate>Thu, 04 Jun 2026 15:11:54 GMT</pubDate>
   </item>
   <item>
     <title>[redwoodjs/sdk] v1.3.0-canary.6</title>
@@ -313,17 +439,6 @@ This is an hotfix release to address a regression for Kubernetes runtime.
 
 ... (truncated)]]></description>
     <pubDate>Thu, 04 Jun 2026 07:43:07 GMT</pubDate>
-  </item>
-  <item>
-    <title>[nodejs/undici] v7.27.1</title>
-    <link>https://github.com/nodejs/undici/releases/tag/v7.27.1</link>
-    <guid isPermaLink="true">https://github.com/nodejs/undici/releases/tag/v7.27.1</guid>
-    <description><![CDATA[## What's Changed
-* fix: preserve raw headers in dispatch handler bridge by @mcollina in https://github.com/nodejs/undici/pull/5345
-
-
-**Full Changelog**: https://github.com/nodejs/undici/compare/v7.27.0...v7.27.1]]></description>
-    <pubDate>Thu, 04 Jun 2026 07:11:20 GMT</pubDate>
   </item>
   <item>
     <title>[floci-io/floci] 1.5.22</title>
@@ -433,25 +548,6 @@ go install github.com/wailsapp/wails/v3/cmd/wails3@v3.0.0-alpha.98
 
 **⚠️ Alpha Warning:** This is pre-release software and may contain bugs or incomplete features.]]></description>
     <pubDate>Wed, 03 Jun 2026 16:37:09 GMT</pubDate>
-  </item>
-  <item>
-    <title>[zed-industries/zed] v1.5.3</title>
-    <link>https://github.com/zed-industries/zed/releases/tag/v1.5.3</link>
-    <guid isPermaLink="true">https://github.com/zed-industries/zed/releases/tag/v1.5.3</guid>
-    <description><![CDATA[This week's release includes a new Mermaid renderer with faster and more accurate diagrams, clickable document links provided by language servers, and the ability to rename threads directly in the sidebar.
-
-## Features
-
-### AI
-
-- Agent: Made the Skill Creator window resizable and its contents scrollable when the window is smaller than the form. ([#57754](https://github.com/zed-industries/zed/pull/57754))
-- Agent: Improved `read_file` tool output rendering with a line-number gutter. ([#56779](https://github.com/zed-industries/zed/pull/56779))
-- Agent: Improved scrolling smoothness when expanding `read_file` tool calls with large file outlines. ([#57287](https://github.com/zed-industries/zed/pull/57287))
-- Agent: Improved visibility of pending tool call confirmations when they are scrolled out of view in the Agent Panel. ([#57632](https://github.com/zed-industries/zed/pull/57632))
-- Agent: Added a notification indicator to collapsed project headers in the sidebar when a thread 
-
-... (truncated)]]></description>
-    <pubDate>Wed, 03 Jun 2026 16:07:04 GMT</pubDate>
   </item>
   <item>
     <title>[denoland/deno] v2.8.2</title>
@@ -786,64 +882,6 @@ This release is also available on:
 
 ... (truncated)]]></description>
     <pubDate>Sun, 31 May 2026 09:08:51 GMT</pubDate>
-  </item>
-  <item>
-    <title>[adobe/react-spectrum] React Aria Components v1.18.0 (react-aria-components@1.18.0)</title>
-    <link>https://github.com/adobe/react-spectrum/releases/tag/react-aria-components%401.18.0</link>
-    <guid isPermaLink="true">https://github.com/adobe/react-spectrum/releases/tag/react-aria-components%401.18.0</guid>
-    <description><![CDATA[This release packs in several new features! [Calendar](https://react-aria.adobe.com/Calendar) now supports multiple date selection, as well as new [CalendarHeading](https://react-aria.adobe.com/Calendar#calendarheading), [CalendarMonthPicker](https://react-aria.adobe.com/Calendar#month-and-year-pickers), and [CalendarYearPicker](https://react-aria.adobe.com/Calendar#month-and-year-pickers) components that allow the user to jump to a different month or year. [RangeCalendar](https://react-aria.adobe.com/RangeCalendar#validation) now supports determining the available dates based on the first date a user selects. We have also added a [TableFooter](https://react-aria.adobe.com/Table#content) component, description and error messages for [Checkbox](https://react-aria.adobe.com/Checkbox#forms), [Radio](https://react-aria.adobe.com/RadioGroup), and [Switch](https://react-aria.adobe.com/Switch#forms), and a [SliderFill](https://react-aria.adobe.com/Slider#value-scale) component that simplifies
-
-... (truncated)]]></description>
-    <pubDate>Sat, 30 May 2026 16:34:18 GMT</pubDate>
-  </item>
-  <item>
-    <title>[date-fns/date-fns] v5.0.0-alpha.0</title>
-    <link>https://github.com/date-fns/date-fns/releases/tag/v5.0.0-alpha.0</link>
-    <guid isPermaLink="true">https://github.com/date-fns/date-fns/releases/tag/v5.0.0-alpha.0</guid>
-    <description><![CDATA[v5 focuses on reducing the date-fns package size. Compared to v4.3.0, this version reduces the zipped package size from `5.83 MB` down to `2.89 MB`.
-
-It removes the CDN scripts from the `date-fns` package and moves them to a separate `@date-fns/cdn` package.
-
-It is just the first step in optimizing the package size. Expect further size reduction in the future versions.
-
-### Changed
-
-- **BREAKING**: The CDN scripts are now available via the `@date-fns/cdn` npm package instead of `date-fns`. Users relying on the latest CDN version (e.g., `https://cdn.jsdelivr.net/npm/date-fns/cdn.min.js`) would be served a polyfill that inserts a script with the correct URL (`https://cdn.jsdelivr.net/npm/@date-fns/cdn/cdn.min.js`) into the page.]]></description>
-    <pubDate>Fri, 29 May 2026 23:45:10 GMT</pubDate>
-  </item>
-  <item>
-    <title>[go-playground/validator] v10.30.3</title>
-    <link>https://github.com/go-playground/validator/releases/tag/v10.30.3</link>
-    <guid isPermaLink="true">https://github.com/go-playground/validator/releases/tag/v10.30.3</guid>
-    <description><![CDATA[## What's Changed
-* Fix/issue 1550 UUID case insensitive by @leo-jp-edwards in https://github.com/go-playground/validator/pull/1551
-* Feat: Add NoneOf Validation by @Carmen-Shannon in https://github.com/go-playground/validator/pull/1554
-* Add bcp47_strict_language_tag validator by @bfabio in https://github.com/go-playground/validator/pull/1489
-* chore(deps): bump golang.org/x/text from 0.35.0 to 0.36.0 by @dependabot[bot] in https://github.com/go-playground/validator/pull/1558
-* chore(deps): bump golang.org/x/crypto from 0.49.0 to 0.50.0 by @dependabot[bot] in https://github.com/go-playground/validator/pull/1559
-* Add CLAUDE.md with repo guidance for Claude Code by @deankarn in https://github.com/go-playground/validator/pull/1564
-* Reduce build size with dead code elimination by @zemzale in https://github.com/go-playground/validator/pull/1542
-* Refactored out detectFileMIMEType, matchesMIMEType logic for reuse. Added standalone isMIMEType validator for flexibility by @dapzthele
-
-... (truncated)]]></description>
-    <pubDate>Fri, 29 May 2026 23:26:24 GMT</pubDate>
-  </item>
-  <item>
-    <title>[eslint/eslint] v10.4.1</title>
-    <link>https://github.com/eslint/eslint/releases/tag/v10.4.1</link>
-    <guid isPermaLink="true">https://github.com/eslint/eslint/releases/tag/v10.4.1</guid>
-    <description><![CDATA[## Bug Fixes
-* [`e557467`](https://github.com/eslint/eslint/commit/e557467db7496220eebcbe2ac5ea6d38c12bb1ec) fix: update `@eslint/plugin-kit` version to 0.7.2 (#20930) (Francesco Trotta)
-* [`d4ce898`](https://github.com/eslint/eslint/commit/d4ce898796ca22c3b96aa70d3014cb85f4bac1cd) fix: propagate failures from delegated commands (#20917) (Minh Vu)
-* [`f4f3507`](https://github.com/eslint/eslint/commit/f4f3507460bc016b5be979c05d2969793f570cbf) fix: prefer-arrow-callback invalid autofix with newline after `async` (#20916) (kuldeep kumar)
-* [`c5bc78b`](https://github.com/eslint/eslint/commit/c5bc78b37e08b9054a11f0cc2d81808bb24acb85) fix: false positive for reference in `finally` block (#20655) (Tanuj Kanti)
-* [`27538c0`](https://github.com/eslint/eslint/commit/27538c01f5df4e9306f6f4ba867b2dd6307fae59) fix: add missing CodePath and CodePathSegment types (#20853) (Pixel998)
-
-## Documentation
-* [`61b0add`](https://github.com/eslint/eslint/commit/61b0add61ffc52665562be7bb96f526690a78b30) docs:
-
-... (truncated)]]></description>
-    <pubDate>Fri, 29 May 2026 20:32:39 GMT</pubDate>
   </item>
 </channel>
 </rss>
