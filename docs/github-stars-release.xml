@@ -5,22 +5,74 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Sat, 06 Jun 2026 22:20:39 GMT</lastBuildDate>
+  <lastBuildDate>Sun, 07 Jun 2026 09:02:44 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[floci-io/floci] 1.5.23</title>
+    <link>https://github.com/floci-io/floci/releases/tag/1.5.23</link>
+    <guid isPermaLink="true">https://github.com/floci-io/floci/releases/tag/1.5.23</guid>
+    <description><![CDATA[## 🎉 Highlights
+
+This release lands **AppSync Phase 2** with a full Schema Registry and CRUDL completion, brings broad **Glue conformance** improvements, and adds **ECS volume mounts** and **EKS-aware IAM**. CloudWatch Logs gains ARN-as-identifier support and there's a meaningful set of fixes across DynamoDB, EC2, Step Functions, and SNS mobile push. Quarkus is bumped to 3.36.0. Welcome to the 5 first-time contributors.
+
+### 🆕 AppSync Phase 2: Schema Registry + CRUDL
+
+AppSync moves from Phase 1 management API to a much fuller implementation: **Schema Registry**, model fixes, CRUDL completion, and **AWS scalar type** support (#1185). GraphQL workloads that depend on schema introspection and the full data-source surface should work end to end.
+
+### 🪨 Glue conformance pass
+
+Five coordinated Glue improvements land this cycle:
+- **User-defined functions** support (#1187)
+- **`DeleteDatabase`** action (#1181)
+- **Table version checks** enforced (#1184, #1211)
+- **Glue view t
+
+... (truncated)]]></description>
+    <pubDate>Sun, 07 Jun 2026 06:55:06 GMT</pubDate>
+  </item>
+  <item>
+    <title>[PerryTS/perry] v0.5.1129</title>
+    <link>https://github.com/PerryTS/perry/releases/tag/v0.5.1129</link>
+    <guid isPermaLink="true">https://github.com/PerryTS/perry/releases/tag/v0.5.1129</guid>
+    <description><![CDATA[## Highlights
+- **Native TC39 Temporal API** via `temporal_rs` — 8 Temporal types plus `Temporal.Now`, and the full options-/fields-object method surface (`round`/`total`, `with*`, conversions) (#4716, #4727).
+- **Major test262 parity gains** across built-ins: String 60%→79%, Number 86%→97%, plus broad Array/Promise/Object/BigInt/TypedArray spec-compliance work.
+- **New compile target: aarch64-linux (linux-arm64)** (#4737).
+
+## Features
+- feat(compile): aarch64-linux target (#4737)
+- feat(class): static accessors, JS-canonical numeric keys, default-aware method `.length` (#4736)
+- feat(class): public class-element semantics — accessor keys, prototype-ref setters, static-method descriptors, grammar early errors (#4730)
+- feat(temporal): native TC39 Temporal API — 8 types + `Temporal.Now` (#4716)
+- feat(temporal): options-/fields-object methods — round/total, with*, conversions (#4727)
+- feat(compile): embed comctl32 v6 manifest so Windows UI apps get themed controls (#4683)
+
+## Fixes
+- 
+
+... (truncated)]]></description>
+    <pubDate>Sun, 07 Jun 2026 06:01:36 GMT</pubDate>
+  </item>
   <item>
     <title>[nodejs/undici] v8.4.0</title>
     <link>https://github.com/nodejs/undici/releases/tag/v8.4.0</link>
     <guid isPermaLink="true">https://github.com/nodejs/undici/releases/tag/v8.4.0</guid>
     <description><![CDATA[## What's Changed
-* fix: register connect listener before initiating requests in close-and-destroy test by @mcollina in https://github.com/nodejs/undici/pull/5272
-* test: stabilize tls-cert-leak regression by @mcollina in https://github.com/nodejs/undici/pull/5306
-* fix: replace tspl with native test context in test/examples.js by @mcollina in https://github.com/nodejs/undici/pull/5300
-* http2: remove redundant request stream binding by @trivikr in https://github.com/nodejs/undici/pull/5302
-* test: limit cache-tests workers on Windows by @mcollina in https://github.com/nodejs/undici/pull/5309
-* test: use test context cleanup hooks in parser issue tests by @mcollina in https://github.com/nodejs/undici/pull/5282
-* Add redirect option to strip headers on redirect by @mcollina in https://github.com/nodejs/undici/pull/5281
-* chore(test): fix lint failure by @aduh95 in https://github.com/nodejs/undici/pull/5316
-* chore(ci): use `npm ci` instead of `npm install` by @aduh95 in https://github.c
+* fix: register connect listener before initiating requests in close-and-destroy test by @mcollina in 
+* test: stabilize tls-cert-leak regression by @mcollina in 
+* fix: replace tspl with native test context in test/examples.js by @mcollina in 
+* http2: remove redundant request stream binding by @trivikr in 
+* test: limit cache-tests workers on Windows by @mcollina in 
+* test: use test context cleanup hooks in parser issue tests by @mcollina in 
+* Add redirect option to strip headers on redirect by @mcollina in 
+* chore(test): fix lint failure by @aduh95 in 
+* chore(ci): use `npm ci` instead of `npm install` by @aduh95 in 
+* docs: clarify formData security considerations by @mcollina in 
+* docs: add EventSource server example by @Will-thom in 
+* fix(core): simplify `addAbortListener` util by @aduh95 in 
+* build(deps-dev): bump ws from 8.20.0 to 8.21.0 by @dependabot[bot] in 
+* build(deps-dev): bump jsondiffpatch from 0.7.3 to 0.7.6 by @dependabot[bot] in 
+* docs: matc
 
 ... (truncated)]]></description>
     <pubDate>Sat, 06 Jun 2026 16:02:53 GMT</pubDate>
@@ -30,15 +82,22 @@
     <link>https://github.com/bluesky-social/social-app/releases/tag/1.123.0</link>
     <guid isPermaLink="true">https://github.com/bluesky-social/social-app/releases/tag/1.123.0</guid>
     <description><![CDATA[## What's Changed
-* [Chat] Add OpenGraph card for chat invite links by @mozzius in https://github.com/bluesky-social/social-app/pull/10629
-* Refactor and improve seo schema.org data by @blackmichael in https://github.com/bluesky-social/social-app/pull/10613
-* Update presentation of DM header by @ds-boyce in https://github.com/bluesky-social/social-app/pull/10619
-* Moar Standard Site Tweaks by @estrattonbailey in https://github.com/bluesky-social/social-app/pull/10641
-* Disable other chat settings when a chat is locked by @ds-boyce in https://github.com/bluesky-social/social-app/pull/10623
-* Colocate all chat log event handlers by @ds-boyce in https://github.com/bluesky-social/social-app/pull/10632
-* Prevent silent Denis failures in the future by @estrattonbailey in https://github.com/bluesky-social/social-app/pull/10645
-* Fix spacing when no description in SS pub card by @estrattonbailey in https://github.com/bluesky-social/social-app/pull/10648
-* Bump version to v1.123.0 by @
+* [Chat] Add OpenGraph card for chat invite links by @mozzius in 
+* Refactor and improve seo schema.org data by @blackmichael in 
+* Update presentation of DM header by @ds-boyce in 
+* Moar Standard Site Tweaks by @estrattonbailey in 
+* Disable other chat settings when a chat is locked by @ds-boyce in 
+* Colocate all chat log event handlers by @ds-boyce in 
+* Prevent silent Denis failures in the future by @estrattonbailey in 
+* Fix spacing when no description in SS pub card by @estrattonbailey in 
+* Bump version to v1.123.0 by @mozzius in 
+* Bump golang.org/x/crypto from 0.40.0 to 0.45.0 in /bskyweb by @dependabot[bot] in 
+* Use `pnpm` to handle node/pnpm versions in Dockerfile by @mozzius in 
+* [Chat] Add other chat route handlers to bskyweb by @mozzius in 
+* Fix layout of NotFound screen and convert to ALF by @ds-boyce in 
+* Refactor notification settings as dialogs by @ds-boyce in 
+* Fix email verification dialog by @mozzius in 
+* [Chat] Add chat dis
 
 ... (truncated)]]></description>
     <pubDate>Sat, 06 Jun 2026 15:31:19 GMT</pubDate>
@@ -56,132 +115,57 @@
 - **Date Input**: Fix `DateInput.Segment` to stay in sync with the latest segment state while typing.
 
 - - **Date Input**: Fix segment placeholders for locales with explicit script subtags.
-  - **Drawer**: Fix flickering when a controlled drawer is swiped or backdrop-closed while the `open` setter is async
-    (e.g. the History API or a delayed state update).
-  - **Image Cropper**: Fix `getCroppedImage` and `getCropData` returning the wrong region when the image is shown at a
-    size different from its natural resolution (e.g. `width` / `height` of `100%`).
-  - **Pin Input**: Fix `data-filled` being set on every input on first render.
-  - **Signature Pad**: Fix the `dir` prop being accepted but never forwarded to the DOM.
+ - **Drawer**: Fix flickering when a controlled drawer is swiped or backdrop-closed while the `open` setter is async
+ (e.g. the History API or a delayed state update).
+ - **Image Cropper**: Fix `getCroppedImage` and `getCropData` returning the wrong region when the image is shown at a
+ size different from its natural resolution (e.g. `width` / `height` of `100%`).
+ - **Pin Input**: Fix `data-filled` being set on every input on first render.
+ - **Signature Pad**: Fix the `dir` prop being accepted but never forwarded to the DOM.
 
 ## [5.37.0] - 2026-05-26
 
 ### Added
 
 - **Floating Components**: Add `data-side` to placement-aware parts so you can style them based on the current placement
-  (`top`, `bottom`, `left`, `right`).
+ (`top`, `bottom`, `left`, `right`).
 
-  > Affects Color
+ > Affects Color Picker, Com
 
 ... (truncated)]]></description>
     <pubDate>Sat, 06 Jun 2026 15:17:17 GMT</pubDate>
   </item>
   <item>
-    <title>[PerryTS/perry] v0.5.1125</title>
-    <link>https://github.com/PerryTS/perry/releases/tag/v0.5.1125</link>
-    <guid isPermaLink="true">https://github.com/PerryTS/perry/releases/tag/v0.5.1125</guid>
-    <description><![CDATA[feat(compile): `--windows-subsystem` override + tier-3 Apple link dedup + pointer-width portability
-
-- **`--windows-subsystem auto|console|windows`** flag + `perry.toml [windows] subsystem` fallback. Lets a GUI app that doesn't import `perry/ui` suppress the auto console window; precedence CLI > perry.toml > import heuristic; unknown values are a hard error.
-- **Tier-3 Apple (tvOS/watchOS) link dedup** — localize std panic/unwind shims (`__rust_drop_panic`, `rust_begin_unwind`, …) so `-Zbuild-std` runtime+stdlib stop colliding with `ld64.lld: duplicate symbol`.
-- **Pointer-width portability** — compare alloc size as `u64` against `1u64<<34` in gc/barrier, gc/copying, timer, typedarray (fixes 32-bit overflow on arm64_32 watchOS / wasm32); widen `tm_gmtoff` cast.
-
-See CHANGELOG.md for full detail.]]></description>
-    <pubDate>Sat, 06 Jun 2026 11:37:42 GMT</pubDate>
-  </item>
-  <item>
-    <title>[warpdotdev/warp] Dev Release v0.2026.06.06.09.03.dev_00 (v0.2026.06.06.09.03.dev_00)</title>
-    <link>https://github.com/warpdotdev/warp/releases/tag/v0.2026.06.06.09.03.dev_00</link>
-    <guid isPermaLink="true">https://github.com/warpdotdev/warp/releases/tag/v0.2026.06.06.09.03.dev_00</guid>
-    <description><![CDATA[Nightly Warp Dev release]]></description>
-    <pubDate>Sat, 06 Jun 2026 09:03:28 GMT</pubDate>
-  </item>
-  <item>
-    <title>[zed-industries/zed] v1.6.1-pre</title>
-    <link>https://github.com/zed-industries/zed/releases/tag/v1.6.1-pre</link>
-    <guid isPermaLink="true">https://github.com/zed-industries/zed/releases/tag/v1.6.1-pre</guid>
-    <description><![CDATA[- Fix crash that could occur when unsplitting a side by side diff view ([#58694](https://github.com/zed-industries/zed/pull/58694))
-- Fixed symlinked files showing the entire file as changed in the git diff/gutter. ([#58679](https://github.com/zed-industries/zed/pull/58679))
-- acp: Fix for certain ACP Registry agent downloads not starting ([#58632](https://github.com/zed-industries/zed/pull/58632))
-- Fixed high CPU usage when using Zeta in some cases (thanks @clupprich!) ([#58590](https://github.com/zed-industries/zed/pull/58590))
-- Fixed a crash that could occur while streaming agent edits containing multibyte characters. ([#58451](https://github.com/zed-industries/zed/pull/58451))
-- Fixed an issue where Zed would stop responding to file system changes in some cases ([#58692](https://github.com/zed-industries/zed/pull/58692)]]></description>
-    <pubDate>Sat, 06 Jun 2026 04:22:47 GMT</pubDate>
-  </item>
-  <item>
-    <title>[openclaw/openclaw] openclaw 2026.6.5-beta.1 (v2026.6.5-beta.1)</title>
-    <link>https://github.com/openclaw/openclaw/releases/tag/v2026.6.5-beta.1</link>
-    <guid isPermaLink="true">https://github.com/openclaw/openclaw/releases/tag/v2026.6.5-beta.1</guid>
-    <description><![CDATA[## 2026.6.5
-
-### Highlights
-
-- QQBot now strips model reasoning/thinking scaffolding before native delivery, preventing raw `<thinking>` content from leaking into channel replies. (#89913, #90132) Thanks @openperf.
-- MCP tool results now coerce `resource_link`, `resource`, `audio`, malformed image, and future non-text/image blocks at the materialize boundary, preventing Anthropic 400s and poisoned session history after a tool returns richer MCP content. (#90710, #90728) Thanks @RanSHammer and @849261680.
-- Anthropic extended-thinking sessions recover after prompt-cache expiry or Gateway restart because stream start events wait for `message_start`, letting pre-generation signature errors trigger the existing recovery retry. (#90667, #90697) Thanks @openperf.
-- Parallel is now a bundled `web_search` provider with `PARALLEL_API_KEY` discovery, guarded endpoint handling, cache-safe session ids, onboarding picker support, and docs. (#85158) Thanks @NormallyGaussian.
-- Google Vertex ADC user
-
-... (truncated)]]></description>
-    <pubDate>Sat, 06 Jun 2026 03:36:51 GMT</pubDate>
-  </item>
-  <item>
-    <title>[openai/codex] 0.138.0-alpha.6 (rust-v0.138.0-alpha.6)</title>
-    <link>https://github.com/openai/codex/releases/tag/rust-v0.138.0-alpha.6</link>
-    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.138.0-alpha.6</guid>
-    <description><![CDATA[Release 0.138.0-alpha.6]]></description>
-    <pubDate>Sat, 06 Jun 2026 03:23:40 GMT</pubDate>
+    <title>[zed-industries/zed] v1.5.4</title>
+    <link>https://github.com/zed-industries/zed/releases/tag/v1.5.4</link>
+    <guid isPermaLink="true">https://github.com/zed-industries/zed/releases/tag/v1.5.4</guid>
+    <description><![CDATA[- Fix crash that could occur when unsplitting a side by side diff view (#58695)
+- acp: Fix for certain ACP Registry agent downloads not starting (#58633)
+- Update both `editor: go to diagnostic` and `editor: go to previous diagnostic` to prefer activating the diagnostic under the cursor before jumping to the next or previous diagnostic, respectively (#58603)
+- Fixed high CPU usage when using Zeta in some cases (thanks @clupprich!) (#58591)
+- Fixed a crash that could occur while streaming agent edits containing multibyte characters. (#58452)
+- Fixed an issue where Zed would stop responding to file system changes in some cases (#58692]]></description>
+    <pubDate>Sat, 06 Jun 2026 04:38:15 GMT</pubDate>
   </item>
   <item>
     <title>[iii-hq/iii] iii 0.19.0 (iii/v0.19.0)</title>
     <link>https://github.com/iii-hq/iii/releases/tag/iii/v0.19.0</link>
     <guid isPermaLink="true">https://github.com/iii-hq/iii/releases/tag/iii/v0.19.0</guid>
     <description><![CDATA[## What's Changed
-* fix: make queue/DLQ ops discoverable and typed, point skill docs at engine contracts by @andersonleal in https://github.com/iii-hq/iii/pull/1743
-* fix(website): true-quadratic hero chart, boxed destination tabs, nav overlap by @rohitg00 in https://github.com/iii-hq/iii/pull/1745
-* fix(iii-worker): replace existing bundle install on cross-project add by @andersonleal in https://github.com/iii-hq/iii/pull/1742
-* fix: issue with unregister trigger in custom triggers by @sergiofilhowz in https://github.com/iii-hq/iii/pull/1750
-* feat(website): one self-routing copy-prompt; llms.txt explains, AGENTS.md builds by @rohitg00 in https://github.com/iii-hq/iii/pull/1754
-* feat(engine): expose response_schema on triggers info by @andersonleal in https://github.com/iii-hq/iii/pull/1748
-* docs(changelog): add 0.19.0 entry for response_schema on triggers info by @andersonleal in https://github.com/iii-hq/iii/pull/1757
-* add opt-in skills rerender functionality to iii repository by
+* fix: make queue/DLQ ops discoverable and typed, point skill docs at engine contracts by @andersonleal in 
+* fix(website): true-quadratic hero chart, boxed destination tabs, nav overlap by @rohitg00 in 
+* fix(iii-worker): replace existing bundle install on cross-project add by @andersonleal in 
+* fix: issue with unregister trigger in custom triggers by @sergiofilhowz in 
+* feat(website): one self-routing copy-prompt; llms.txt explains, AGENTS.md builds by @rohitg00 in 
+* feat(engine): expose response_schema on triggers info by @andersonleal in 
+* docs(changelog): add 0.19.0 entry for response_schema on triggers info by @andersonleal in 
+* add opt-in skills rerender functionality to iii repository by @anthonyiscoding in 
+* feat(sdk/go): add official Go SDK for the iii worker protocol by @MarcusElwin in 
+* feat(observability): add `trace` trigger type by @ytallo in 
+* fix(website): stop session replay recording the animated SVG firehose by @rohitg00 in 
+* refactor(rust
 
 ... (truncated)]]></description>
     <pubDate>Sat, 06 Jun 2026 00:10:06 GMT</pubDate>
-  </item>
-  <item>
-    <title>[vercel/next.js] v16.3.0-canary.42</title>
-    <link>https://github.com/vercel/next.js/releases/tag/v16.3.0-canary.42</link>
-    <guid isPermaLink="true">https://github.com/vercel/next.js/releases/tag/v16.3.0-canary.42</guid>
-    <description><![CDATA[### Misc Changes
-
-- [turbopack] Treat local `const` assignments as side-effect free: #94294
-- [turbopack] Remove worker helpers from the default runtime: #94372
-- Extract App Shell from static prefetches: #94095
-- docs: correct wording and casing in turbopack tracing guide: #94469
-- Turbopack: refactor ServerActionManifestAsset to be lazy: #94377
-- docs: typos and errors outside docs, error, examples folders: #94472
-- Update vendored lodash to 4.18.1: #94473
-- chore: reword cacheComponents jsDoc to lead with partial prerendering: #94474
-- Upgrade React from `f0dfee38-20260529` to `43bcbf80-20260603`: #94440
-- Turbopack: Perform issue filtering without turbo-task functions: #93885
-- Keep Instant DevTools locked when opening error overlay: #94357
-- Revert "ci: run Linux Playwright jobs in prebuilt Microsoft container (#93794)": #94366
-- fix(deps): bump @vercel/nft@1.10.2: #93979
-- Simplify turbo-tasks-backend: collapse single-impl traits and remove redundant Arc layers: #93983
-- Turbopac
-
-... (truncated)]]></description>
-    <pubDate>Sat, 06 Jun 2026 00:03:57 GMT</pubDate>
-  </item>
-  <item>
-    <title>[sveltejs/kit] @sveltejs/kit@3.0.0-next.1</title>
-    <link>https://github.com/sveltejs/kit/releases/tag/%40sveltejs/kit%403.0.0-next.1</link>
-    <guid isPermaLink="true">https://github.com/sveltejs/kit/releases/tag/%40sveltejs/kit%403.0.0-next.1</guid>
-    <description><![CDATA[### Patch Changes
-
-
-- fix: reinstate `$app/environment` as an alias for `$app/env`, in case dependencies import it ([#15964](https://github.com/sveltejs/kit/pull/15964))]]></description>
-    <pubDate>Fri, 05 Jun 2026 23:31:19 GMT</pubDate>
   </item>
   <item>
     <title>[aws/aws-sdk-go-v2] Release (2026-06-05.2) (release-2026-06-05.2)</title>
@@ -192,19 +176,28 @@ See CHANGELOG.md for full detail.]]></description>
 
 ## Module Highlights
 * `github.com/aws/aws-sdk-go-v2/feature/s3/transfermanager`: [v0.2.8](feature/s3/transfermanager/CHANGELOG.md#v028-2026-06-052)
-  * **Bug Fix**: Fix the concurrent reader to return cached read error instead of panic when called again]]></description>
+ * **Bug Fix**: Fix the concurrent reader to return cached read error instead of panic when called again]]></description>
     <pubDate>Fri, 05 Jun 2026 21:21:19 GMT</pubDate>
   </item>
   <item>
     <title>[ollama/ollama] v0.30.6</title>
     <link>https://github.com/ollama/ollama/releases/tag/v0.30.6</link>
     <guid isPermaLink="true">https://github.com/ollama/ollama/releases/tag/v0.30.6</guid>
-    <description><![CDATA[## What's Changed
-* `ollama launch omp` now integrates with [Oh My Pi](https://omp.sh), an AI coding agent with IDE integration
+    <description><![CDATA[# New models
+- Gemma 4 QAT weights: the Gemma 4 family is now optimized with Quantization-Aware Training (QAT) to dramatically reduce memory requirements and maximize on-device performance. Look for the tags ending in `-qat`:
+ - `gemma4:e2b-it-qat`
+ - `gemma4:e4b-it-qat`
+ - `gemma4:12b-it-qat`
+ - `gemma4:26b-a4b-it-qat`
+ - `gemma4:31b-it-qat`
+
+
+## What's Changed
+* `ollama launch omp` now integrates with Oh My Pi, an AI coding agent with IDE integration
 * MLX embedding layers now use NVFP4 global scale for improved quantization on Apple Silicon
 
 
-**Full Changelog**: https://github.com/ollama/ollama/compare/v0.30.5...v0.30.6]]></description>
+**Full Changelog**:]]></description>
     <pubDate>Fri, 05 Jun 2026 20:00:18 GMT</pubDate>
   </item>
   <item>
@@ -215,44 +208,30 @@ See CHANGELOG.md for full detail.]]></description>
 
 ##### Chores
 
-*  update author URL in package.json ([#8080](https://github.com/aws/aws-sdk-js-v3/pull/8080)) ([9bd1a86b](https://github.com/aws/aws-sdk-js-v3/commit/9bd1a86b9bec0f69c58dcfdda481c9e1797dd73f))
-* **crt-loader:**  update to latest aws-crt ([#8079](https://github.com/aws/aws-sdk-js-v3/pull/8079)) ([8c2bdabd](https://github.com/aws/aws-sdk-js-v3/commit/8c2bdabd5826c8914eb1904880eade3c81ca6be4))
+* update author URL in package.json (#8080) (9bd1a86b)
+* **crt-loader:** update to latest aws-crt (#8079) (8c2bdabd)
 
 ##### New Features
 
-* **clients:**  update client endpoints as of 2026-06-05 ([fe9a398f](https://github.com/aws/aws-sdk-js-v3/commit/fe9a398fbfb3d324e4b67c7677fc63f62933f283))
-* **client-sagemaker:**  This release adds support for MLflow experiment tracking in SageMaker inference optimization. CreateAIRecommendationJob and CreateAIBenchmarkJob now accept an optional OutputConfig.MlflowConfig (MLflow App ARN, experiment, run name) to stream benchmark metrics and artifacts to your own MLflow App. ([39430442](https://github.com/aws/aws-sdk-js-v3/commit/3943044
+* **clients:** update client endpoints as of 2026-06-05 (fe9a398f)
+* **client-sagemaker:** This release adds support for MLflow experiment tracking in SageMaker inference optimization. CreateAIRecommendationJob and CreateAIBenchmarkJob now accept an optional OutputConfig.MlflowConfig (MLflow App ARN, experiment, run name) to stream benchmark metrics and artifacts to your own MLflow App. (39430442)
+* **client-emr-serverless:** Adds support for updating max capacity and custom fields while application is started (6c9cce08)
+* **client-dynamodb:** Adding new BDD representation of endpoint ruleset (416005d4)
+* **client-mediaconvert:** Adds support for configurable number of Clear Lead segments at the beginning of encrypted output. Adds support for multiple trickplay variants. (40eb4c6b)
+* **client-payment-cryptogra
 
 ... (truncated)]]></description>
     <pubDate>Fri, 05 Jun 2026 18:51:56 GMT</pubDate>
   </item>
   <item>
-    <title>[remix-run/remix] remix v3.0.0-beta.4 (remix@3.0.0-beta.4)</title>
-    <link>https://github.com/remix-run/remix/releases/tag/remix%403.0.0-beta.4</link>
-    <guid isPermaLink="true">https://github.com/remix-run/remix/releases/tag/remix%403.0.0-beta.4</guid>
-    <description><![CDATA[### Pre-release Changes
+    <title>[remix-run/remix] static-middleware v0.4.12 (static-middleware@0.4.12)</title>
+    <link>https://github.com/remix-run/remix/releases/tag/static-middleware%400.4.12</link>
+    <guid isPermaLink="true">https://github.com/remix-run/remix/releases/tag/static-middleware%400.4.12</guid>
+    <description><![CDATA[### Patch Changes
 
-- BREAKING CHANGE: Middleware consumed through `remix/router` and `remix/fetch-router` must now explicitly continue the request chain by calling `next()` or return a `Response`. Middleware that returned `undefined` without calling `next()` now throws at runtime instead of implicitly continuing.
-
-  Update context-loading middleware to return the downstream response:
-
-  ```ts
-  function loadUser(): Middleware {
-    return (context, next) => {
-      context.set(CurrentUser, user)
-      return next()
-    }
-  }
-  ```
-
-- Improve Node compatibility for the `remix/assert` entrypoint.
-
-  The default export is now callable as an alias for `assert.ok`, failure errors expose Node-style metadata, expected-error/message handling more closely follows `node:assert/strict`, strict/deep equality now handles `Object.is` and built-in object comparisons more consistently with Node, and `assert.partialDeepEqual` is available for strict partial deep comparisons.
-
-- Add `router.mount(
-
-... (truncated)]]></description>
-    <pubDate>Fri, 05 Jun 2026 18:28:23 GMT</pubDate>
+- Bumped `@remix-run/*` dependencies:
+ - `fetch-router@0.20.0`]]></description>
+    <pubDate>Fri, 05 Jun 2026 18:28:22 GMT</pubDate>
   </item>
   <item>
     <title>[github/spec-kit] Spec Kit - 0.9.5 (v0.9.5)</title>
@@ -261,7 +240,7 @@ See CHANGELOG.md for full detail.]]></description>
     <description><![CDATA[## Install
 
 ```bash
-uv tool install specify-cli --from git+https://github.com/github/spec-kit.git@v0.9.5
+uv tool install specify-cli --from git+
 specify init my-project
 ```
 
@@ -311,13 +290,6 @@ specify init my-project
     <pubDate>Fri, 05 Jun 2026 15:58:51 GMT</pubDate>
   </item>
   <item>
-    <title>[uptrace/uptrace] v2.1.0-beta.7</title>
-    <link>https://github.com/uptrace/uptrace/releases/tag/v2.1.0-beta.7</link>
-    <guid isPermaLink="true">https://github.com/uptrace/uptrace/releases/tag/v2.1.0-beta.7</guid>
-    <description><![CDATA[[CHANGELOG](https://github.com/uptrace/uptrace/blob/master/CHANGELOG.md)]]></description>
-    <pubDate>Fri, 05 Jun 2026 11:50:55 GMT</pubDate>
-  </item>
-  <item>
     <title>[pnpm/pnpm] pnpm 11.5.2 (v11.5.2)</title>
     <link>https://github.com/pnpm/pnpm/releases/tag/v11.5.2</link>
     <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v11.5.2</guid>
@@ -336,15 +308,15 @@ specify init my-project
     <guid isPermaLink="true">https://github.com/sveltejs/svelte/releases/tag/svelte%405.56.2</guid>
     <description><![CDATA[### Patch Changes
 
--   fix: properly track effect end node for async sibling component ([#18371](https://github.com/sveltejs/svelte/pull/18371))
+- fix: properly track effect end node for async sibling component (#18371)
 
--   fix: prevent false-positive reactivity loss warning ([#18373](https://github.com/sveltejs/svelte/pull/18373))
+- fix: prevent false-positive reactivity loss warning (#18373)
 
--   chore: bump esrap dependency ([#18372](https://github.com/sveltejs/svelte/pull/18372))
+- chore: bump esrap dependency (#18372)
 
--   fix: ignore declaration tags for animation directive ([#18366](https://github.com/sveltejs/svelte/pull/18366))
+- fix: ignore declaration tags for animation directive (#18366)
 
--   fix: reject pending async deriveds on discard ([#18308](https://github.com/sveltejs/svelte/pull/18308))]]></description>
+- fix: reject pending async deriveds on discard (#18308)]]></description>
     <pubDate>Thu, 04 Jun 2026 20:33:04 GMT</pubDate>
   </item>
   <item>
@@ -357,40 +329,41 @@ This is an hotfix release to address a regression for Kubernetes runtime.
 
 ## Commits
 
-* k3s: fix restart failure due to rsync by @abiosoft in https://github.com/abiosoft/colima/pull/1582
+* k3s: fix restart failure due to rsync by @abiosoft in 
 
 
-**Full Changelog**: https://github.com/abiosoft/colima/compare/v0.10.2...v0.10.3]]></description>
+**Full Changelog**:]]></description>
     <pubDate>Thu, 04 Jun 2026 17:14:15 GMT</pubDate>
   </item>
   <item>
-    <title>[redwoodjs/sdk] v1.3.0-canary.6</title>
-    <link>https://github.com/redwoodjs/sdk/releases/tag/v1.3.0-canary.6</link>
-    <guid isPermaLink="true">https://github.com/redwoodjs/sdk/releases/tag/v1.3.0-canary.6</guid>
+    <title>[redwoodjs/sdk] v1.2.11</title>
+    <link>https://github.com/redwoodjs/sdk/releases/tag/v1.2.11</link>
+    <guid isPermaLink="true">https://github.com/redwoodjs/sdk/releases/tag/v1.2.11</guid>
     <description><![CDATA[## What's Changed
-* Ignore hash-only popstate navigation (#1216)
-* Fix server query re-export method metadata (#1217)
+* Ignore hash-only popstate navigation by @peterp in 
+* Fix server query re-export method metadata by @peterp in 
 
-**Full Changelog**: https://github.com/redwoodjs/sdk/compare/v1.3.0-canary.5...v1.3.0-canary.6]]></description>
-    <pubDate>Thu, 04 Jun 2026 15:08:56 GMT</pubDate>
+
+**Full Changelog**:]]></description>
+    <pubDate>Thu, 04 Jun 2026 14:26:49 GMT</pubDate>
   </item>
   <item>
     <title>[remix-run/react-router] v7.17.0 (react-router@7.17.0)</title>
     <link>https://github.com/remix-run/react-router/releases/tag/react-router%407.17.0</link>
     <guid isPermaLink="true">https://github.com/remix-run/react-router/releases/tag/react-router%407.17.0</guid>
-    <description><![CDATA[See the changelog for release notes: https://github.com/remix-run/react-router/blob/main/CHANGELOG.md#v7170]]></description>
+    <description><![CDATA[See the changelog for release notes:]]></description>
     <pubDate>Thu, 04 Jun 2026 14:21:31 GMT</pubDate>
   </item>
   <item>
     <title>[markedjs/marked] v18.0.5</title>
     <link>https://github.com/markedjs/marked/releases/tag/v18.0.5</link>
     <guid isPermaLink="true">https://github.com/markedjs/marked/releases/tag/v18.0.5</guid>
-    <description><![CDATA[## [18.0.5](https://github.com/markedjs/marked/compare/v18.0.4...v18.0.5) (2026-06-04)
+    <description><![CDATA[## 18.0.5 (2026-06-04)
 
 
 ### Bug Fixes
 
-* parse empty list item with trailing space ([#3984](https://github.com/markedjs/marked/issues/3984)) ([b55410f](https://github.com/markedjs/marked/commit/b55410f846570a2dbdd1f1afe1d51c6a7dd2a188))]]></description>
+* parse empty list item with trailing space (#3984) (b55410f)]]></description>
     <pubDate>Thu, 04 Jun 2026 14:17:49 GMT</pubDate>
   </item>
   <item>
@@ -398,16 +371,16 @@ This is an hotfix release to address a regression for Kubernetes runtime.
     <link>https://github.com/anomalyco/opentui/releases/tag/v0.3.2</link>
     <guid isPermaLink="true">https://github.com/anomalyco/opentui/releases/tag/v0.3.2</guid>
     <description><![CDATA[## What's Changed
-* Fix sticky scroll re-engagement and document render hook limits by @kommander in https://github.com/anomalyco/opentui/pull/1144
-* Bug(linux): add musl native targets by @riggy2013 in https://github.com/anomalyco/opentui/pull/1114
-* feat(core): add DiffRenderable.getHunkRowOffsets for hunk navigation by @nexxeln in https://github.com/anomalyco/opentui/pull/1131
-* feat(core/markdown): add code block renderer helper by @kitlangton in https://github.com/anomalyco/opentui/pull/1146
+* Fix sticky scroll re-engagement and document render hook limits by @kommander in 
+* Bug(linux): add musl native targets by @riggy2013 in 
+* feat(core): add DiffRenderable.getHunkRowOffsets for hunk navigation by @nexxeln in 
+* feat(core/markdown): add code block renderer helper by @kitlangton in 
 
 ## New Contributors
-* @riggy2013 made their first contribution in https://github.com/anomalyco/opentui/pull/1114
-* @nexxeln made their first contribution in https://github.com/anomalyco/opentui/pull/1131
+* @riggy2013 made their first contribution in 
+* @nexxeln made their first contribution in 
 
-**Full Changelog**: https://github.com/anomalyco/opentui/compare/v0.3.1...v0.3.2]]></description>
+**Full Changelog**:]]></description>
     <pubDate>Thu, 04 Jun 2026 13:27:05 GMT</pubDate>
   </item>
   <item>
@@ -415,13 +388,13 @@ This is an hotfix release to address a regression for Kubernetes runtime.
     <link>https://github.com/composer/composer/releases/tag/2.10.1</link>
     <guid isPermaLink="true">https://github.com/composer/composer/releases/tag/2.10.1</guid>
     <description><![CDATA[* Security: Fixed shell escaping when opening an editor (#12903)
-  * Security: Verify backup phar signature before restoring it when using self-update --rollback (#12918)
-  * Fixed `source-fallback` also disabling fallbacks to dist install when source is the preferred install method (#12888)
-  * Fixed source -> dist package updates wiping the .git dir without checking for local changes first (#12912)
-  * Fixed GitHub token prompt happening multiple times on parallel auth failures (#12913)
-  * Fixed warnings from Composer repositories being printed twice in some cases (#12907)
+ * Security: Verify backup phar signature before restoring it when using self-update --rollback (#12918)
+ * Fixed `source-fallback` also disabling fallbacks to dist install when source is the preferred install method (#12888)
+ * Fixed source -> dist package updates wiping the .git dir without checking for local changes first (#12912)
+ * Fixed GitHub token prompt happening multiple times on parallel auth failures (#12913)
+ * Fixed warnings from Composer repositories being printed twice in some cases (#12907)
 
-**Full Changelog**: https://github.com/composer/composer/compare/2.10.0...2.10.1]]></description>
+**Full Changelog**:]]></description>
     <pubDate>Thu, 04 Jun 2026 08:29:43 GMT</pubDate>
   </item>
   <item>
@@ -430,37 +403,33 @@ This is an hotfix release to address a regression for Kubernetes runtime.
     <guid isPermaLink="true">https://github.com/BabylonJS/Babylon.js/releases/tag/9.11.0</guid>
     <description><![CDATA[### Core
 
-- Add WGSL shader paths for GUI3D and GPU particles - by [matthargett](https://github.com/matthargett) ([#18460](https://github.com/BabylonJS/Babylon.js/pull/18460))
-- fix(FlowGraph): allow CancelDelay to cancel the first scheduled delay - by [marns](https://github.com/marns) ([#18517](https://github.com/BabylonJS/Babylon.js/pull/18517))
-- Move custom frame requester to AbstractEngine to enable 120fps support in BabylonNative - by [matthargett](https://github.com/matthargett) ([#18521](https://github.com/BabylonJS/Babylon.js/pull/18521))
-- Add RegisterPBRMaterial alias to RegisterPbrMaterial - by [RaananW](https://github.com/RaananW) ([#18528](https://github.com/BabylonJS/Babylon.js/pull/18528))
-- Add waveform analyzer data to AudioEngineV2 - [_New Feature_] by [RaananW](https://github.com/RaananW) ([#18529](https://github.com/BabylonJS/Babylon.js/pull/18529))
-- Native: prefer setRenderResetCallback with legacy setDeviceLostCallback fallback - by [bghgary](https://github.com/
+- Add WGSL shader paths for GUI3D and GPU particles - by matthargett (#18460)
+- fix(FlowGraph): allow CancelDelay to cancel the first scheduled delay - by marns (#18517)
+- Move custom frame requester to AbstractEngine to enable 120fps support in BabylonNative - by matthargett (#18521)
+- Add RegisterPBRMaterial alias to RegisterPbrMaterial - by RaananW (#18528)
+- Add waveform analyzer data to AudioEngineV2 - [_New Feature_] by RaananW (#18529)
+- Native: prefer setRenderResetCallback with legacy setDeviceLostCallback fallback - by bghgary (#18518)
+
+### GUI
+
+- feat(mcp): Add MCP servers for Babylon.js graph editors - [_New Feature_] by RaananW (#18344)
+- Add WGSL shader paths for GUI3D and GPU particles - by matthargett (#18460)
+
+### Inspector
+
+- Add WGSL shader paths for GUI3D and GPU particles - by matthargett (#18460)
+- Add an option to disable teaching moments - [_New Feature_] by ryantrem (#18508)
+
+### Loaders
+
+- Viewer NRG Support - by MiiBond (#18495)
+
+### Viewer
+
+- Viewe
 
 ... (truncated)]]></description>
     <pubDate>Thu, 04 Jun 2026 07:43:07 GMT</pubDate>
-  </item>
-  <item>
-    <title>[floci-io/floci] 1.5.22</title>
-    <link>https://github.com/floci-io/floci/releases/tag/1.5.22</link>
-    <guid isPermaLink="true">https://github.com/floci-io/floci/releases/tag/1.5.22</guid>
-    <description><![CDATA[## 🎉 Highlights
-
-This release adds a brand-new service, **AWS AppSync**, lands a substantial **CloudFormation overhaul** (ECS + ELBv2 provisioning, persistence, rollback, ApiGatewayV2 updates), brings **SES configuration set destinations to SNS** plus suppression-list send-time enforcement, and unlocks **EKS clusters reachable from the host**. SNS gets mock mobile push, S3 gains SSE-C enforcement, and the spawned-container DNS path now resolves public hostnames. Welcome to the 7 first-time contributors.
-
-### 🆕 New service: AWS AppSync
-
-Floci now emulates **AWS AppSync** (Phase 1 management API), enabling local testing of GraphQL API provisioning and configuration workflows (#1108). Documentation is included (#1149).
-
-### 🧱 CloudFormation overhaul
-
-A coordinated set of CloudFormation improvements lands together:
-- **ECS resources** provisionable via CloudFormation (#1120)
-- **ELBv2 resources** provisionable via CloudFormation (#1121)
-- **Stacks persist across restart** (
-
-... (truncated)]]></description>
-    <pubDate>Thu, 04 Jun 2026 06:51:41 GMT</pubDate>
   </item>
   <item>
     <title>[lynx-family/lynx] 3.8.1</title>
@@ -468,6 +437,24 @@ A coordinated set of CloudFormation improvements lands together:
     <guid isPermaLink="true">https://github.com/lynx-family/lynx/releases/tag/3.8.1</guid>
     <description><![CDATA[No release notes provided.]]></description>
     <pubDate>Thu, 04 Jun 2026 05:05:23 GMT</pubDate>
+  </item>
+  <item>
+    <title>[openai/codex] 0.137.0 (rust-v0.137.0)</title>
+    <link>https://github.com/openai/codex/releases/tag/rust-v0.137.0</link>
+    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.137.0</guid>
+    <description><![CDATA[## New Features
+- TUI controls now support F13-F24 keybindings, paste in searchable menus, and a compact reasoning-only status/title item (#25329, #25400, #25504).
+- Enterprise/admin flows now show monthly credit limits and can apply cloud-managed config bundles, including EDU workspaces (#24812, #24617, #24619, #24620, #24622, #25963).
+- Remote-control clients can start pairing and list or revoke controller grants through app-server v2 RPCs (#25675, #25785).
+- Plugin workflows gained machine-readable `codex plugin list --json` output and cached remote catalog suggestions (#25330, #25457).
+- Hosted web and image tools are available in more code-mode flows, with standalone web searches able to run in parallel (#25176, #25702, #25890, #25923).
+- Multi-agent v2 keeps runtime choice with each thread and exposes cleaner follow-up and metadata defaults for spawned agents (#25266, #25636, #25720, #25721, #25722, #25841, #26114).
+
+## Bug Fixes
+- Cancelling a submitted prompt before visible out
+
+... (truncated)]]></description>
+    <pubDate>Thu, 04 Jun 2026 01:17:20 GMT</pubDate>
   </item>
   <item>
     <title>[astral-sh/uv] 0.11.19</title>
@@ -479,27 +466,44 @@ Released on 2026-06-03.
 
 ### Python
 
-- Add CPython 3.15.0b2 ([#19531](https://github.com/astral-sh/uv/pull/19531))
+- Add CPython 3.15.0b2 (#19531)
 
 ### Enhancements
 
-- Always compute SHA256 for remote distributions ([#19662](https://github.com/astral-sh/uv/pull/19662))
-- Add PyEmscripten platform (PEP 783) ([#19629](https://github.com/astral-sh/uv/pull/19629))
-- Add Pyodide 2025 target triple ([#19653](https://github.com/astral-sh/uv/pull/19653))
+- Always compute SHA256 for remote distributions (#19662)
+- Add PyEmscripten platform (PEP 783) (#19629)
+- Add Pyodide 2025 target triple (#19653)
 
 ### Preview features
 
-- Make preview features for commands have names that aren't ambiguous with the command ([#19645](https://github.com/astral-sh/uv/pull/19645))
-- Respect `--isolated` in `uv check` ([#19666](https://github.com/astral-sh/uv/pull/19666))
+- Make preview features for commands have names that aren't ambiguous with the command (#19645)
+- Respect `--isolated` in `uv check` (#19666)
 
 ### Bug fixes
 
-- Continue tool uninstall after dangling receipts ([#19623](https://github.com/astral-sh/uv/pull/19623))
-- Skip Unix-specific installation steps when cross-installing Windows Python distributions ([#19424](https://github.com/astral-sh/uv/pull/19424))
+- Continue tool uninstall after dangling receipts (#19623)
+- Skip Unix-specific installation steps when cross-installing Windows Python distributions (#19424)
 
 ## Install uv 0.11.19
 
-### Install pre
+### Install prebuilt binaries via shell script
+
+```sh
+curl --proto '=https' --tlsv1.2 -LsSf | sh
+```
+
+### Install prebuilt binaries via powershell script
+
+```sh
+powershell -ExecutionPolicy Bypass -c "irm | iex"
+```
+
+## Download uv 0.11.19
+
+| File | Platform | Checksum |
+|--------|----------|----------|
+| uv-aarch64-apple-darwin.tar.gz | Apple Silicon macOS | checksum |
+| uv-x86_64
 
 ... (truncated)]]></description>
     <pubDate>Wed, 03 Jun 2026 22:38:57 GMT</pubDate>
@@ -510,8 +514,23 @@ Released on 2026-06-03.
     <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/api%400.20.9</guid>
     <description><![CDATA[### Patch Changes
 
-- [#4827](https://github.com/bluesky-social/atproto/pull/4827) [`41a561e`](https://github.com/bluesky-social/atproto/commit/41a561e80a6c906e9a6ec8e29f8ea970ce9fe2e9) Thanks [@estrattonbailey](https://github.com/estrattonbailey)! - Add new lexicon for gallery embed type]]></description>
+- #4827 `41a561e` Thanks @estrattonbailey! - Add new lexicon for gallery embed type]]></description>
     <pubDate>Wed, 03 Jun 2026 21:00:01 GMT</pubDate>
+  </item>
+  <item>
+    <title>[openclaw/openclaw] openclaw 2026.6.1 (v2026.6.1)</title>
+    <link>https://github.com/openclaw/openclaw/releases/tag/v2026.6.1</link>
+    <guid isPermaLink="true">https://github.com/openclaw/openclaw/releases/tag/v2026.6.1</guid>
+    <description><![CDATA[### Highlights
+
+- Agents and CLI-backed runtimes recover more cleanly from interrupted tool calls, stale session bindings, compaction handoffs, and media delivery retries. (#88129, #88136, #88141, #88162, #88182)
+- Channels and mobile delivery are steadier across Telegram, WhatsApp, iMessage, Slack, Discord, Microsoft Teams, Google Chat, Google Meet, and iOS realtime Talk. (#88096, #88105, #88183, #88231)
+- Provider and plugin requests now bound more timers, retries, OAuth/device-code lifetimes, media downloads, local service probes, and generated-content polling paths before they can hang a run.
+- Skills, session metadata, gateway runtime state, plugin metadata, memory watchers, and store writes do less repeated work on hot paths while keeping config, dispatch, and Linux file-watch behavior stable. (#89185, #89188, #85351) Thanks @RomneyDa and @NianJiuZst.
+- Skills and plugin loading now handle stale disabled snapshots and loader failures more clearly, so channel turns avoid disabled 
+
+... (truncated)]]></description>
+    <pubDate>Wed, 03 Jun 2026 19:35:12 GMT</pubDate>
   </item>
   <item>
     <title>[withastro/astro] astro@6.4.4</title>
@@ -519,35 +538,18 @@ Released on 2026-06-03.
     <guid isPermaLink="true">https://github.com/withastro/astro/releases/tag/astro%406.4.4</guid>
     <description><![CDATA[### Patch Changes
 
--   [#16926](https://github.com/withastro/astro/pull/16926) [`1b39ae8`](https://github.com/withastro/astro/commit/1b39ae8485406937501d8a734afe2a464d671064) Thanks [@narendraio](https://github.com/narendraio)! - Prevents `App.match()` from throwing on request paths that contain an invalid percent-sequence.
+- #16926 `1b39ae8` Thanks @narendraio! - Prevents `App.match` from throwing on request paths that contain an invalid percent-sequence.
 
--   [#16924](https://github.com/withastro/astro/pull/16924) [`2c0bc94`](https://github.com/withastro/astro/commit/2c0bc943d96d602b429ce3ecbb379d01a46903b5) Thanks [@astrobot-houston](https://github.com/astrobot-houston)! - Fixes an issue where editing a client-side component (e.g. with `client:idle`, `client:load`, etc.) caused an unnecessary full program reload of the backend during development.
+- #16924 `2c0bc94` Thanks @astrobot-houston! - Fixes an issue where editing a client-side component (e.g. with `client:idle`, `client:load`, etc.) caused an unnecessary full program reload of the backend during development.
 
--   [#16958](https://github.com/withastro/astro/pull/16958) [`2c1d50f`](https://github.com/withastro/astro/commit/2c1d50f5f9d557d7cdc17fd75f3a10fd203699c9) Thanks [@fkatsuhiro](https://github.com/fkatsuhiro)! - Fixes a bug where static file endpoints using `getStaticPaths
+- #16958 `2c1d50f` Thanks @fkatsuhiro! - Fixes a bug where static file endpoints using `getStaticPaths` with `.html` in dynamic param values (e.g. `{ path: 'file.html' }`) would fail with a `NoMatchingStaticPathFound` error during build. The `.html` suffix is no longer incorrectly stripped from endpoint route pathnames.
+
+- #16855 `c610cda` Thanks @astrobot-houston! - Fixes dynamic routes returning 500 "TypeError: Missing parameter" when using domain-based i18n routing in SSR.
+
+- #16946 `606c37b` Thanks @ematipico! - Fixes `Astro.routePattern` to preserve original casing of dynamic parameter names from filenames. 
 
 ... (truncated)]]></description>
     <pubDate>Wed, 03 Jun 2026 17:37:11 GMT</pubDate>
-  </item>
-  <item>
-    <title>[wailsapp/wails] Wails v3.0.0-alpha.98 (v3.0.0-alpha.98)</title>
-    <link>https://github.com/wailsapp/wails/releases/tag/v3.0.0-alpha.98</link>
-    <guid isPermaLink="true">https://github.com/wailsapp/wails/releases/tag/v3.0.0-alpha.98</guid>
-    <description><![CDATA[## Wails v3 Alpha Release - v3.0.0-alpha.98
-
-## Fixed
-- Fix WebKit UI freeze on Linux when idle (e.g. with the inspector open) by no longer forcing `SA_ONSTACK` on `SIGUSR1`, which broke JavaScriptCore's GC thread synchronisation (#5527)
-
----
-
-🤖 This is an automated nightly release generated from the latest changes on master.
-
-**Installation:**
-```bash
-go install github.com/wailsapp/wails/v3/cmd/wails3@v3.0.0-alpha.98
-```
-
-**⚠️ Alpha Warning:** This is pre-release software and may contain bugs or incomplete features.]]></description>
-    <pubDate>Wed, 03 Jun 2026 16:37:09 GMT</pubDate>
   </item>
   <item>
     <title>[denoland/deno] v2.8.2</title>
@@ -556,40 +558,31 @@ go install github.com/wailsapp/wails/v3/cmd/wails3@v3.0.0-alpha.98
     <description><![CDATA[### 2.8.2 / 2026.06.03
 
 - feat(compile): improve --bundle dependency resolution and add --minify
-  (#34536)
+ (#34536)
 - feat(compile): scope --bundle npm embed to packages actually reached (#34532)
 - feat(ext/crypto): add ChaCha20-Poly1305, SHAKE, cSHAKE, TurboSHAKE, SHA-3 HMAC
-  (#34417)
+ (#34417)
 - feat(ext/crypto): add ML-DSA (FIPS 204) post-quantum signatures (#34448)
 - feat(ext/crypto): implement ML-KEM (FIPS 203) post-quantum KEM (#34447)
 - feat(ext/node): env/global proxy support for node:http and node:https (#34257)
 - feat(ext/node): support DENO_SERVE_ADDRESS override in node:http servers
-  (#34662)
+ (#34662)
 - feat(jupyter): rewrite kernel in JS, drop zeromq/runtimelib deps (#34083)
 - feat(lsp): autocomplete jsr:/npm:/node: in deno.json(c) imports (#34724)
 - feat(publish): unfurl import specifiers in Wasm modules (#34549)
 - feat(task): support --env-file flag (#34508)
 - feat(task): support exclusion groups in task name wildcards (#34506)
-- feat(unstable): add --bundle flag to `deno compil
+- feat(unstable): add --bundle flag to `deno compile` 
 
 ... (truncated)]]></description>
     <pubDate>Wed, 03 Jun 2026 13:41:42 GMT</pubDate>
   </item>
   <item>
-    <title>[pingcap/tidb-operator] v2.2.0-alpha.0</title>
-    <link>https://github.com/pingcap/tidb-operator/releases/tag/v2.2.0-alpha.0</link>
-    <guid isPermaLink="true">https://github.com/pingcap/tidb-operator/releases/tag/v2.2.0-alpha.0</guid>
-    <description><![CDATA[## What's Changed
-* chore(deps): bump golang from `a95d3d1` to `3760478` in /image by @dependabot[bot] in https://github.com/pingcap/tidb-operator/pull/6827
-* chore(deps): bump github.com/aws/smithy-go from 1.24.3 to 1.25.0 in the aws group across 1 directory by @dependabot[bot] in https://github.com/pingcap/tidb-operator/pull/6830
-* feat(metrics): add per-instance abnormal_instance gauge for stuck-state alerts by @fgksgf in https://github.com/pingcap/tidb-operator/pull/6835
-* feat: support data volume mount for tikv worker by @liubog2008 in https://github.com/pingcap/tidb-operator/pull/6842
-* fix(metrics): centralize abnormal_instance observe/clear at reconcile entry by @fgksgf in https://github.com/pingcap/tidb-operator/pull/6840
-* chore(deps): bump golang from `3760478` to `869a73a` in /image by @dependabot[bot] in https://github.com/pingcap/tidb-operator/pull/6846
-* chore(deps): bump golang from `869a73a` to `8cd78ec` in /image by @dependabot[bot] in https://github.com/pingc
-
-... (truncated)]]></description>
-    <pubDate>Wed, 03 Jun 2026 08:57:04 GMT</pubDate>
+    <title>[warpdotdev/warp] Stable Release v0.2026.06.03.09.49.stable_00 (v0.2026.06.03.09.49.stable_00)</title>
+    <link>https://github.com/warpdotdev/warp/releases/tag/v0.2026.06.03.09.49.stable_00</link>
+    <guid isPermaLink="true">https://github.com/warpdotdev/warp/releases/tag/v0.2026.06.03.09.49.stable_00</guid>
+    <description><![CDATA[Warp Stable release]]></description>
+    <pubDate>Wed, 03 Jun 2026 09:49:25 GMT</pubDate>
   </item>
   <item>
     <title>[axios/axios] v1.17.0</title>
@@ -646,22 +639,40 @@ The eighth patch release for containerd 2.1 contains various fixes and updates.
 
 ### Security Updates
 
-* [**CVE-2026-46680**](https://github.com/containerd/containerd/security/advisories/GHSA-fqw6-gf59-qr4w)
+* **CVE-2026-46680**
 
 ### Highlights
 
 #### Runtime
 
-* Fix handling of out-of-range USER values in OCI spec to avoid unexpected username/group lookups ([#13497](https://github.com/containerd/containerd/pull/13497))
-* Fix bugs in sandbox service affecting sandbox creation configuration and event publishing ([#13272](https://github.com/containerd/containerd/pull/13272))
-* Set AppArmor abi conditionally to support versions < 3.0 ([#13274](https://github.com/containerd/containerd/pull/13274))
+* Fix handling of out-of-range USER values in OCI spec to avoid unexpected username/group lookups (#13497)
+* Fix bugs in sandbox service affecting sandbox creation configuration and event publishing (#13272)
+* Set AppArmor abi conditionally to support versions < 3.0 (#13274)
 
 #### Snapshotters
 
-* Support both "volatile" and "fsync=volatile" mount options for volatile snapshotter ([#13297](https://github.com/containerd/containerd/pull/13297))
+* Support both "volatile" and "fsync=volatile" mount options for volatile snapshotter (#13297)
 
 Please try out the release binaries and report any issues at
-https://github.com/containerd/containerd/i
+
+
+### Contributors
+
+* Wei Fu
+* Brian Goff
+* Chris Henzie
+* Samuel Karp
+* LEI WANG
+* William Myers
+
+### Changes
+<details><summary>12 commits</summary>
+<p>
+
+* Prepare release notes for v2.1.8 (#13489)
+ * `07f2265d4` Prepare release notes for v2.1.8
+* oci: return explicit error for out-of-range USER values (#13497)
+ * `2054cc54c` oci: return expli
 
 ... (truncated)]]></description>
     <pubDate>Tue, 02 Jun 2026 18:58:41 GMT</pubDate>
@@ -721,9 +732,9 @@ The webpack-compatible deterministic module id plugin is now exposed through the
     <title>[open-cli-tools/concurrently] v10.0.3</title>
     <link>https://github.com/open-cli-tools/concurrently/releases/tag/v10.0.3</link>
     <guid isPermaLink="true">https://github.com/open-cli-tools/concurrently/releases/tag/v10.0.3</guid>
-    <description><![CDATA[Republish of https://github.com/open-cli-tools/concurrently/releases/tag/v10.0.1 with Trusted Publishing enabled (see #595)
+    <description><![CDATA[Republish of with Trusted Publishing enabled (see #595)
 
-**Full Changelog**: https://github.com/open-cli-tools/concurrently/compare/v10.0.2...v10.0.3]]></description>
+**Full Changelog**:]]></description>
     <pubDate>Tue, 02 Jun 2026 04:31:37 GMT</pubDate>
   </item>
   <item>
@@ -732,11 +743,32 @@ The webpack-compatible deterministic module id plugin is now exposed through the
     <guid isPermaLink="true">https://github.com/open-webui/open-webui/releases/tag/v0.9.6</guid>
     <description><![CDATA[### Added
 
-- 📦 **Official knowledge base sync tool.** A new companion tool from Open WebUI, oikb, keeps a knowledge base in sync with a local directory, GitHub repo, S3 bucket, Confluence space, or any of more than 40 other sources, uploading only new and changed files using the incremental sync support added in this release. [oikb](https://github.com/open-webui/oikb)
-- 📂 **Smart directory sync for knowledge bases.** Local directories can now be synced into a knowledge base in one action: file checksums are compared against what's already stored, and only added or modified files are uploaded while removed files and orphaned subdirectories are cleaned up, with the directory structure mirrored automatically and per-file progress shown throughout. [#19190](https://github.com/open-webui/open-webui/issues/19190), [#19394](https://github.com/open-webui/open-webui/issues/19394), [Commit](https://github.com/open-webui/open-webui/commit/60c9db1cb81d021589cb49bee8744a799b51211f), [Commit](http
+- 📦 **Official knowledge base sync tool.** A new companion tool from Open WebUI, oikb, keeps a knowledge base in sync with a local directory, GitHub repo, S3 bucket, Confluence space, or any of more than 40 other sources, uploading only new and changed files using the incremental sync support added in this release. oikb
+- 📂 **Smart directory sync for knowledge bases.** Local directories can now be synced into a knowledge base in one action: file checksums are compared against what's already stored, and only added or modified files are uploaded while removed files and orphaned subdirectories are cleaned up, with the directory structure mirrored automatically and per-file progress shown throughout. #19190, #19394, Commit, Commit, Commit, Commit, Commit, Commit
+- 🗂️ **Knowledge base folders.** Files inside a knowledge base can now be organized into nested folders, with breadcrumb navigation that makes it much easier to manage and find content in large collections. Commit, Co
 
 ... (truncated)]]></description>
     <pubDate>Mon, 01 Jun 2026 21:57:03 GMT</pubDate>
+  </item>
+  <item>
+    <title>[vercel/next.js] 15.5.19 (v15.5.19)</title>
+    <link>https://github.com/vercel/next.js/releases/tag/v15.5.19</link>
+    <guid isPermaLink="true">https://github.com/vercel/next.js/releases/tag/v15.5.19</guid>
+    <description><![CDATA[> [!NOTE]
+> This release is backporting bug fixes. It does **not** include all pending features/changes on canary.
+
+### Core Changes
+
+- [15.5.x] Don't drop `FormData` entries (#94244)
+
+### Other
+
+- [15.5.x] Fix CI (#94281)
+
+### Credits
+
+Huge thanks to @eps1lon for helping!]]></description>
+    <pubDate>Mon, 01 Jun 2026 20:09:02 GMT</pubDate>
   </item>
   <item>
     <title>[typescript-eslint/typescript-eslint] v8.60.1</title>
@@ -746,17 +778,17 @@ The webpack-compatible deterministic module id plugin is now exposed through the
 
 ### 🩹 Fixes
 
-- **eslint-plugin:** respect ECMAScript line terminators in ts-comment rules ([#12352](https://github.com/typescript-eslint/typescript-eslint/pull/12352))
-- **eslint-plugin:** [no-shadow] correct rule to match ESLint v10 handling ([#12182](https://github.com/typescript-eslint/typescript-eslint/pull/12182))
+- **eslint-plugin:** respect ECMAScript line terminators in ts-comment rules (#12352)
+- **eslint-plugin:** [no-shadow] correct rule to match ESLint v10 handling (#12182)
 
 ### ❤️ Thank You
 
 - lumir
 - Nevette Bailey @nevette-bailey
 
-See [GitHub Releases](https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.60.1) for more information.
+See GitHub Releases for more information.
 
-You can read about our [versioning strategy](https://typescript-eslint.io/users/versioning) and [releases](https://typescript-eslint.io/users/releases) on our website.]]></description>
+You can read about our versioning strategy and releases on our website.]]></description>
     <pubDate>Mon, 01 Jun 2026 18:54:58 GMT</pubDate>
   </item>
   <item>
@@ -802,12 +834,14 @@ of Node.js 26. This change serves to communicate that risk. At present, our
 intention remains to continue shipping universal binaries supporting both Apple
 Silicon and Intel-based Macs for as long as practical.
 
-Contributed by Antoine du Hamel in [#63055](https://github.com/nodejs/node/pull/63055).
+Contributed by Antoine du Hamel in #63055.
 
 #### Other notable changes
 
-* \[[`a2a4b33dd8`](https://github.com/nodejs/node/commit/a2a4b33dd8)] - **(SEMVER-MINOR)** **buffer**: increase `Buffer.poolSize` default to 64 KiB (Matteo Collina) [#63597](https://github.com/nodejs/node/pull/63597)
-* \[[`051a2152f7`](https://github.com/nodejs/node/commit/051a2152f7)] - **crypto**: update root certificates to NSS 3.123.1 (Node.js G
+* \[`a2a4b33dd8`] - **(SEMVER-MINOR)** **buffer**: increase `Buffer.poolSize` default to 64 KiB (Matteo Collina) #63597
+* \[`051a2152f7`] - **crypto**: update root certificates to NSS 3.123.1 (Node.js GitHub Bot) #63527
+* \[`49462eca37`] - **(SEMVER-MINOR)** **http**: add `httpValidation` option to configure header value validation (RajeshKumar11) #61597
+* \[`97b7ab19bd`] - **(SEMVER-MINOR)** 
 
 ... (truncated)]]></description>
     <pubDate>Mon, 01 Jun 2026 13:10:59 GMT</pubDate>
@@ -816,7 +850,7 @@ Contributed by Antoine du Hamel in [#63055](https://github.com/nodejs/node/pull/
     <title>[vitejs/vite] v6.4.3</title>
     <link>https://github.com/vitejs/vite/releases/tag/v6.4.3</link>
     <guid isPermaLink="true">https://github.com/vitejs/vite/releases/tag/v6.4.3</guid>
-    <description><![CDATA[Please refer to [CHANGELOG.md](https://github.com/vitejs/vite/blob/v6.4.3/packages/vite/CHANGELOG.md) for details.]]></description>
+    <description><![CDATA[Please refer to CHANGELOG.md for details.]]></description>
     <pubDate>Mon, 01 Jun 2026 10:39:31 GMT</pubDate>
   </item>
   <item>
@@ -825,23 +859,23 @@ Contributed by Antoine du Hamel in [#63055](https://github.com/nodejs/node/pull/
     <guid isPermaLink="true">https://github.com/import-js/eslint-import-resolver-typescript/releases/tag/v4.4.5</guid>
     <description><![CDATA[### Patch Changes
 
--   [#473](https://github.com/import-js/eslint-import-resolver-typescript/pull/473) [`32c61ab`](https://github.com/import-js/eslint-import-resolver-typescript/commit/32c61abccf26bd2a2267f2e0e67d82e6f88d149a) Thanks [@leey0818](https://github.com/leey0818)! - fix: check tsconfig matching before using resolver]]></description>
+- #473 `32c61ab` Thanks @leey0818! - fix: check tsconfig matching before using resolver]]></description>
     <pubDate>Mon, 01 Jun 2026 04:17:52 GMT</pubDate>
   </item>
   <item>
     <title>[privatenumber/tsx] v4.22.4</title>
     <link>https://github.com/privatenumber/tsx/releases/tag/v4.22.4</link>
     <guid isPermaLink="true">https://github.com/privatenumber/tsx/releases/tag/v4.22.4</guid>
-    <description><![CDATA[## [4.22.4](https://github.com/privatenumber/tsx/compare/v4.22.3...v4.22.4) (2026-05-31)
+    <description><![CDATA[## 4.22.4 (2026-05-31)
 
 
 ### Bug Fixes
 
-* resolve CommonJS directory requires inside dependencies ([#803](https://github.com/privatenumber/tsx/issues/803)) ([1ce8463](https://github.com/privatenumber/tsx/commit/1ce846335b7c445a3328c7d27f06424949356d97))
+* resolve CommonJS directory requires inside dependencies (#803) (1ce8463)
 
 ---
 This release is also available on:
-- [npm package (@latest dist-tag)](https://www.npmjs.com/package/tsx/v/4.22.4)]]></description>
+- npm package (@latest dist-tag)]]></description>
     <pubDate>Sun, 31 May 2026 12:22:20 GMT</pubDate>
   </item>
   <item>
@@ -849,13 +883,17 @@ This release is also available on:
     <link>https://github.com/styleframe-dev/styleframe/releases/tag/styleframe%403.8.0</link>
     <guid isPermaLink="true">https://github.com/styleframe-dev/styleframe/releases/tag/styleframe%403.8.0</guid>
     <description><![CDATA[## What's Changed
-* feat(transpiler): add build-time utility class name shortening by @alexgrozav in https://github.com/styleframe-dev/styleframe/pull/226
-* feat(theme): add chat-message recipe with avatar, content, actions sub-parts by @alexgrozav in https://github.com/styleframe-dev/styleframe/pull/222
-* docs: restructure tooling/integrations as top-level sections and add Storybook guide by @alexgrozav in https://github.com/styleframe-dev/styleframe/pull/227
-* feat(scanner): add dynamic utility creation for unmatched CSS properties by @alexgrozav in https://github.com/styleframe-dev/styleframe/pull/228
-* feat(figma): add Figma export/import CLI commands and improve token handling by @alexgrozav in https://github.com/styleframe-dev/styleframe/pull/229
-* bench: add benchmark measuring utility classes output vs tailwind by @alexgrozav in https://github.com/styleframe-dev/styleframe/pull/230
-* fix(cli): update `styleframe init` dependency versions from ^2.0.0 to ^3.0.0 by @alexgro
+* feat(transpiler): add build-time utility class name shortening by @alexgrozav in 
+* feat(theme): add chat-message recipe with avatar, content, actions sub-parts by @alexgrozav in 
+* docs: restructure tooling/integrations as top-level sections and add Storybook guide by @alexgrozav in 
+* feat(scanner): add dynamic utility creation for unmatched CSS properties by @alexgrozav in 
+* feat(figma): add Figma export/import CLI commands and improve token handling by @alexgrozav in 
+* bench: add benchmark measuring utility classes output vs tailwind by @alexgrozav in 
+* fix(cli): update `styleframe init` dependency versions from ^2.0.0 to ^3.0.0 by @alexgrozav in 
+* chore(plugin): update importree from v1 to v2 by @alexgrozav in 
+* chore: migrate from Vite 7 to Vite 8 with Rolldown and oxc by @alexgrozav in 
+* feat(plugin): add recipe-level tree-shaking by @alexgrozav in 
+* refactor(transpiler): split DTS output into standalone types and module shims by @alexgrozav
 
 ... (truncated)]]></description>
     <pubDate>Sun, 31 May 2026 11:44:48 GMT</pubDate>
@@ -875,13 +913,86 @@ This release is also available on:
 - **&lt;template shadowrootslotassignment>** (@simonwuelker, #44246)
 - **&lt;video>** playback on OpenHarmony (@rayguo17, #43208)
 - **‘minimum-scale’** and **‘maximum-scale’** values in **&lt;meta name=viewport>** (@shubhamg13, #40098, #43715)
-- **‘color-mix()’** with **any number of &lt;color> values** (@Loirooriol, #43890)
+- **‘color-mix’** with **any number of &lt;color> values** (@Loirooriol, #43890)
 - **‘&amp;::before’** and **‘&amp;::after’** in **‘::details-content’** (@Loirooriol, #43878)
 - **‘revert-rule’** (@Loirooriol, #43878)
-- **‘tab-size’** (@mrobinson, @SimonSapin, #44
+- **‘tab-size’** (@mrobinson, @SimonSapin, #4448
 
 ... (truncated)]]></description>
     <pubDate>Sun, 31 May 2026 09:08:51 GMT</pubDate>
+  </item>
+  <item>
+    <title>[adobe/react-spectrum] React Aria Components v1.18.0 (react-aria-components@1.18.0)</title>
+    <link>https://github.com/adobe/react-spectrum/releases/tag/react-aria-components%401.18.0</link>
+    <guid isPermaLink="true">https://github.com/adobe/react-spectrum/releases/tag/react-aria-components%401.18.0</guid>
+    <description><![CDATA[This release packs in several new features! Calendar now supports multiple date selection, as well as new CalendarHeading, CalendarMonthPicker, and CalendarYearPicker components that allow the user to jump to a different month or year. RangeCalendar now supports determining the available dates based on the first date a user selects. We have also added a TableFooter component, description and error messages for Checkbox, Radio, and Switch, and a SliderFill component that simplifies the process of styling the fill portion in a Slider.
+
+Full Release Notes]]></description>
+    <pubDate>Sat, 30 May 2026 16:34:18 GMT</pubDate>
+  </item>
+  <item>
+    <title>[date-fns/date-fns] v4.4.0</title>
+    <link>https://github.com/date-fns/date-fns/releases/tag/v4.4.0</link>
+    <guid isPermaLink="true">https://github.com/date-fns/date-fns/releases/tag/v4.4.0</guid>
+    <description><![CDATA[This release revisits the approach to CDN usage and introduces a new package, `@date-fns/cdn` and deprecates the `date-fns` CDN scripts. It allowed reducing the zipped package size from `5.83 MB` down to `3.96 MB` without introducing any breaking changes.
+
+In `v5.0.0-alpha.0` where CDN scripts are completely removed from `date-fns` the change is more significant and brings the zipped package size down to `2.89 MB`.
+
+It is just the first step in optimizing the package size. Expect further size reduction in the future v4 and v5 versions.
+
+### Changed
+
+- **DEPRECATED**: The `date-fns` CDN scripts are now deprecated and will be removed in the next major release. Please switch to the new `@date-fns/cdn` package for CDN usage.
+
+- Removed CDN source maps to reduce the package size. If you rely on them, please switch to the new `@date-fns/cdn` package that still includes them.]]></description>
+    <pubDate>Fri, 29 May 2026 23:33:36 GMT</pubDate>
+  </item>
+  <item>
+    <title>[go-playground/validator] v10.30.3</title>
+    <link>https://github.com/go-playground/validator/releases/tag/v10.30.3</link>
+    <guid isPermaLink="true">https://github.com/go-playground/validator/releases/tag/v10.30.3</guid>
+    <description><![CDATA[## What's Changed
+* Fix/issue 1550 UUID case insensitive by @leo-jp-edwards in 
+* Feat: Add NoneOf Validation by @Carmen-Shannon in 
+* Add bcp47_strict_language_tag validator by @bfabio in 
+* chore(deps): bump golang.org/x/text from 0.35.0 to 0.36.0 by @dependabot[bot] in 
+* chore(deps): bump golang.org/x/crypto from 0.49.0 to 0.50.0 by @dependabot[bot] in 
+* Add CLAUDE.md with repo guidance for Claude Code by @deankarn in 
+* Reduce build size with dead code elimination by @zemzale in 
+* Refactored out detectFileMIMEType, matchesMIMEType logic for reuse. Added standalone isMIMEType validator for flexibility by @dapzthelegend in 
+* feat(translations): add timezone support for en and ja locales by @dedyf5 in 
+* docs: use errors.As in README and translations example by @eyupcanakman in 
+* docs: fix typos by @rymiyamoto in 
+* feat: add origin validator for web origin URLs by @ahmedkamalio in 
+* fix: reject hostnames with trailing hyphen in RFC 952 validator by @ahmedkamalio in
+
+... (truncated)]]></description>
+    <pubDate>Fri, 29 May 2026 23:26:24 GMT</pubDate>
+  </item>
+  <item>
+    <title>[eslint/eslint] v10.4.1</title>
+    <link>https://github.com/eslint/eslint/releases/tag/v10.4.1</link>
+    <guid isPermaLink="true">https://github.com/eslint/eslint/releases/tag/v10.4.1</guid>
+    <description><![CDATA[## Bug Fixes
+* `e557467` fix: update `@eslint/plugin-kit` version to 0.7.2 (#20930) (Francesco Trotta)
+* `d4ce898` fix: propagate failures from delegated commands (#20917) (Minh Vu)
+* `f4f3507` fix: prefer-arrow-callback invalid autofix with newline after `async` (#20916) (kuldeep kumar)
+* `c5bc78b` fix: false positive for reference in `finally` block (#20655) (Tanuj Kanti)
+* `27538c0` fix: add missing CodePath and CodePathSegment types (#20853) (Pixel998)
+
+## Documentation
+* `61b0add` docs: remove deprecated rule from related rules of `max-params` (#20921) (Tanuj Kanti)
+* `305d5b9` docs: remove deprecated rules from related rules section (#20911) (Tanuj Kanti)
+* `49b0202` docs: fix `display: none` of ad (#20901) (Tanuj Kanti)
+* `9067f94` docs: switch build to Node.js 24 (#20893) (Milos Djermanovic)
+* `c91b041` docs: Update README (GitHub Actions Bot)
+* `e349265` docs: clarify semver strings in rule deprecation objects (#20885) (Milos Djermanovic)
+
+## Chores
+* `b0e466b` test: add `data
+
+... (truncated)]]></description>
+    <pubDate>Fri, 29 May 2026 20:32:39 GMT</pubDate>
   </item>
 </channel>
 </rss>
