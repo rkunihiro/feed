@@ -79,13 +79,15 @@ async function getAllStarredReleases(username, token) {
           }
           nodes {
             nameWithOwner
-            releases(first: 1, orderBy: {field: CREATED_AT, direction: DESC}) {
+            releases(first: 10, orderBy: {field: CREATED_AT, direction: DESC}) {
               nodes {
                 name
                 tagName
                 publishedAt
                 description
                 url
+                isPrerelease
+                isDraft
               }
             }
           }
@@ -111,7 +113,19 @@ async function getAllStarredReleases(username, token) {
         }
 
         for (const repo of starred.nodes) {
-            const latestRelease = repo.releases?.nodes?.[0];
+            const releaseNodes = repo.releases?.nodes || [];
+            const latestRelease = releaseNodes.find(release => {
+                if (release.isPrerelease || release.isDraft) {
+                    return false;
+                }
+                const tagName = (release.tagName || "").toLowerCase();
+                const name = (release.name || "").toLowerCase();
+                if (tagName.includes("alpha") || name.includes("alpha") ||
+                    tagName.includes("beta") || name.includes("beta")) {
+                    return false;
+                }
+                return true;
+            });
             if (latestRelease) {
                 releases.push({
                     repoName: repo.nameWithOwner,
@@ -178,7 +192,10 @@ function formatTitle(repoName, name, tagName) {
 function formatDescription(description) {
     if (!description) return "No release notes provided.";
 
-    let desc = description.trim();
+    // URLを除外する
+    let desc = removeUrls(description);
+
+    desc = desc.trim();
     const maxLen = 1000;
 
     if (desc.length > maxLen) {
@@ -187,6 +204,31 @@ function formatDescription(description) {
 
     // CDATAブロックの終了タグ ]]> をエスケープする
     return desc.replace(/]]>/g, "]]&gt;");
+}
+
+/**
+ * リリースの説明文からURLを削除・クリーンアップする
+ */
+function removeUrls(text) {
+    if (!text) return "";
+
+    // 1. マークダウン画像を削除する: ![alt](url) -> 空文字
+    let cleanText = text.replace(/!\[([^\]]*)\]\(\s*https?:\/\/[^\s)]+\s*\)/g, "");
+
+    // 2. マークダウンリンクをリンクテキストのみにする: [text](url) -> text
+    cleanText = cleanText.replace(/\[([^\]]+)\]\(\s*https?:\/\/[^\s)]+\s*\)/g, "$1");
+
+    // 3. 生のURL (http://... もしくは https://...) を削除する
+    cleanText = cleanText.replace(/https?:\/\/[^\s<>'")]+/g, "");
+
+    // 4. URL削除によって空になった丸括弧や角括弧を削除する
+    cleanText = cleanText.replace(/\(\s*\)/g, "");
+    cleanText = cleanText.replace(/\[\s*\]/g, "");
+
+    // 5. 連続する余分なスペースを1つに集約する（改行は維持）
+    cleanText = cleanText.replace(/ +/g, " ");
+
+    return cleanText;
 }
 
 /**
