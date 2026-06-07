@@ -5,8 +5,37 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Sun, 07 Jun 2026 09:02:44 GMT</lastBuildDate>
+  <lastBuildDate>Sun, 07 Jun 2026 22:20:44 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[anomalyco/opentui] Release v0.3.4 (v0.3.4)</title>
+    <link>https://github.com/anomalyco/opentui/releases/tag/v0.3.4</link>
+    <guid isPermaLink="true">https://github.com/anomalyco/opentui/releases/tag/v0.3.4</guid>
+    <description><![CDATA[## What's Changed
+* Fix markdown blank scrollbox by @kommander in 
+
+
+**Full Changelog**:]]></description>
+    <pubDate>Sun, 07 Jun 2026 19:44:43 GMT</pubDate>
+  </item>
+  <item>
+    <title>[sveltejs/svelte] svelte@5.56.3</title>
+    <link>https://github.com/sveltejs/svelte/releases/tag/svelte%405.56.3</link>
+    <guid isPermaLink="true">https://github.com/sveltejs/svelte/releases/tag/svelte%405.56.3</guid>
+    <description><![CDATA[### Patch Changes
+
+- fix: ignore errors that occur in destroyed effects (#18384)
+
+- fix: type BigInts in `$state.snapshot(...)` return values (#18388)]]></description>
+    <pubDate>Sun, 07 Jun 2026 18:30:29 GMT</pubDate>
+  </item>
+  <item>
+    <title>[denoland/rusty_v8] v149.3.0</title>
+    <link>https://github.com/denoland/rusty_v8/releases/tag/v149.3.0</link>
+    <guid isPermaLink="true">https://github.com/denoland/rusty_v8/releases/tag/v149.3.0</guid>
+    <description><![CDATA[No release notes provided.]]></description>
+    <pubDate>Sun, 07 Jun 2026 15:55:32 GMT</pubDate>
+  </item>
   <item>
     <title>[floci-io/floci] 1.5.23</title>
     <link>https://github.com/floci-io/floci/releases/tag/1.5.23</link>
@@ -303,23 +332,6 @@ specify init my-project
     <pubDate>Fri, 05 Jun 2026 06:50:59 GMT</pubDate>
   </item>
   <item>
-    <title>[sveltejs/svelte] svelte@5.56.2</title>
-    <link>https://github.com/sveltejs/svelte/releases/tag/svelte%405.56.2</link>
-    <guid isPermaLink="true">https://github.com/sveltejs/svelte/releases/tag/svelte%405.56.2</guid>
-    <description><![CDATA[### Patch Changes
-
-- fix: properly track effect end node for async sibling component (#18371)
-
-- fix: prevent false-positive reactivity loss warning (#18373)
-
-- chore: bump esrap dependency (#18372)
-
-- fix: ignore declaration tags for animation directive (#18366)
-
-- fix: reject pending async deriveds on discard (#18308)]]></description>
-    <pubDate>Thu, 04 Jun 2026 20:33:04 GMT</pubDate>
-  </item>
-  <item>
     <title>[abiosoft/colima] v0.10.3</title>
     <link>https://github.com/abiosoft/colima/releases/tag/v0.10.3</link>
     <guid isPermaLink="true">https://github.com/abiosoft/colima/releases/tag/v0.10.3</guid>
@@ -365,23 +377,6 @@ This is an hotfix release to address a regression for Kubernetes runtime.
 
 * parse empty list item with trailing space (#3984) (b55410f)]]></description>
     <pubDate>Thu, 04 Jun 2026 14:17:49 GMT</pubDate>
-  </item>
-  <item>
-    <title>[anomalyco/opentui] Release v0.3.2 (v0.3.2)</title>
-    <link>https://github.com/anomalyco/opentui/releases/tag/v0.3.2</link>
-    <guid isPermaLink="true">https://github.com/anomalyco/opentui/releases/tag/v0.3.2</guid>
-    <description><![CDATA[## What's Changed
-* Fix sticky scroll re-engagement and document render hook limits by @kommander in 
-* Bug(linux): add musl native targets by @riggy2013 in 
-* feat(core): add DiffRenderable.getHunkRowOffsets for hunk navigation by @nexxeln in 
-* feat(core/markdown): add code block renderer helper by @kitlangton in 
-
-## New Contributors
-* @riggy2013 made their first contribution in 
-* @nexxeln made their first contribution in 
-
-**Full Changelog**:]]></description>
-    <pubDate>Thu, 04 Jun 2026 13:27:05 GMT</pubDate>
   </item>
   <item>
     <title>[composer/composer] 2.10.1</title>
@@ -968,31 +963,6 @@ It is just the first step in optimizing the package size. Expect further size re
 
 ... (truncated)]]></description>
     <pubDate>Fri, 29 May 2026 23:26:24 GMT</pubDate>
-  </item>
-  <item>
-    <title>[eslint/eslint] v10.4.1</title>
-    <link>https://github.com/eslint/eslint/releases/tag/v10.4.1</link>
-    <guid isPermaLink="true">https://github.com/eslint/eslint/releases/tag/v10.4.1</guid>
-    <description><![CDATA[## Bug Fixes
-* `e557467` fix: update `@eslint/plugin-kit` version to 0.7.2 (#20930) (Francesco Trotta)
-* `d4ce898` fix: propagate failures from delegated commands (#20917) (Minh Vu)
-* `f4f3507` fix: prefer-arrow-callback invalid autofix with newline after `async` (#20916) (kuldeep kumar)
-* `c5bc78b` fix: false positive for reference in `finally` block (#20655) (Tanuj Kanti)
-* `27538c0` fix: add missing CodePath and CodePathSegment types (#20853) (Pixel998)
-
-## Documentation
-* `61b0add` docs: remove deprecated rule from related rules of `max-params` (#20921) (Tanuj Kanti)
-* `305d5b9` docs: remove deprecated rules from related rules section (#20911) (Tanuj Kanti)
-* `49b0202` docs: fix `display: none` of ad (#20901) (Tanuj Kanti)
-* `9067f94` docs: switch build to Node.js 24 (#20893) (Milos Djermanovic)
-* `c91b041` docs: Update README (GitHub Actions Bot)
-* `e349265` docs: clarify semver strings in rule deprecation objects (#20885) (Milos Djermanovic)
-
-## Chores
-* `b0e466b` test: add `data
-
-... (truncated)]]></description>
-    <pubDate>Fri, 29 May 2026 20:32:39 GMT</pubDate>
   </item>
 </channel>
 </rss>
