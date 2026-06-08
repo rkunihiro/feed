@@ -5,8 +5,278 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Sun, 07 Jun 2026 22:20:44 GMT</lastBuildDate>
+  <lastBuildDate>Mon, 08 Jun 2026 22:29:05 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[sveltejs/kit] @sveltejs/kit@2.64.0</title>
+    <link>https://github.com/sveltejs/kit/releases/tag/%40sveltejs/kit%402.64.0</link>
+    <guid isPermaLink="true">https://github.com/sveltejs/kit/releases/tag/%40sveltejs/kit%402.64.0</guid>
+    <description><![CDATA[### Minor Changes
+
+
+- feat: allow commands to receive `File` objects (#15978)
+
+
+### Patch Changes
+
+
+- fix: avoid server components from being bundled if SSR is turned off for a route (#15982)]]></description>
+    <pubDate>Mon, 08 Jun 2026 20:24:17 GMT</pubDate>
+  </item>
+  <item>
+    <title>[bluesky-social/atproto] @atproto/ozone@0.2.2</title>
+    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/ozone%400.2.2</link>
+    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/ozone%400.2.2</guid>
+    <description><![CDATA[### Patch Changes
+
+- #5054 `dfce9df` Thanks @gcwill70! - add chat.bsky.moderation.getConvos to ozone
+
+- Updated dependencies [`da8818f`]:
+ - @atproto/api@0.20.11]]></description>
+    <pubDate>Mon, 08 Jun 2026 19:35:28 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1064.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1064.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1064.0</guid>
+    <description><![CDATA[#### 3.1064.0(2026-06-08)
+
+##### Chores
+
+* **scripts:** update pkg json linting (#8082) (86792c5e)
+
+##### New Features
+
+* **client-cost-optimization-hub:** Adds new Idle Recommendation types in the Cost Optimization Hub API (872710e9)
+* **client-deadline:** Added optional identityCenterRegion parameter to AssociateMember APIs to allow managing memberships for users and groups in other regions. (5f03ea0e)
+* **client-devops-agent:** Add Asset APIs for managing versioned assets and asset files in AWS DevOps Agent agent spaces. (bcef9614)
+* **client-mgn:** AWS Transform discovery tool now supported as network migration input source. You can now use the AWS Transform Discovery tool as a source for network migration alongside modelizeIT, enabling hybrid network migrations for environments running both VMware and non-VMware workloads. (2cff08e6)
+* **client-mediapackagev2:** Adds support for DASH Audio Timeline Patternization. This enables your DASH manifests to templatize the repeating patter
+
+... (truncated)]]></description>
+    <pubDate>Mon, 08 Jun 2026 19:10:31 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-06-08) (release-2026-06-08)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-06-08</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-06-08</guid>
+    <description><![CDATA[## General Highlights
+* **Dependency Update**: Updated to the latest SDK module versions
+
+## Module Highlights
+* `github.com/aws/aws-sdk-go-v2`: v1.42.0
+ * **Feature**: Add preview of standard retry changes behind AWS_NEW_RETRIES_2026 flag
+* `github.com/aws/aws-sdk-go-v2/service/computeoptimizer`: [v1.53.0](service/computeoptimizer/CHANGELOG.md#v1530-2026-06-08)
+ * **Feature**: Adds new Idle Recommendation Resource types in the AWS Compute Optimizer API
+* `github.com/aws/aws-sdk-go-v2/service/costoptimizationhub`: [v1.24.0](service/costoptimizationhub/CHANGELOG.md#v1240-2026-06-08)
+ * **Feature**: Adds new Idle Recommendation types in the Cost Optimization Hub API
+* `github.com/aws/aws-sdk-go-v2/service/deadline`: [v1.33.0](service/deadline/CHANGELOG.md#v1330-2026-06-08)
+ * **Feature**: Added optional identityCenterRegion parameter to AssociateMember APIs to allow managing memberships for users and groups in other regions.
+* `github.com/aws/aws-sdk-go-v2/service/devopsagent`: [v1.6.0](
+
+... (truncated)]]></description>
+    <pubDate>Mon, 08 Jun 2026 19:00:14 GMT</pubDate>
+  </item>
+  <item>
+    <title>[typescript-eslint/typescript-eslint] v8.61.0</title>
+    <link>https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.61.0</link>
+    <guid isPermaLink="true">https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.61.0</guid>
+    <description><![CDATA[## 8.61.0 (2026-06-08)
+
+### 🚀 Features
+
+- **ast-spec:** change type of `UnaryExpression.prefix` to always `true` (#12372)
+- **ast-spec:** tighten types of `ArrowFunction`, `YieldExpression`, `TSTypePredicate` (#12373)
+
+### 🩹 Fixes
+
+- **rule-schema-to-typescript-types:** respect ECMAScript line terminators (#12374)
+
+### ❤️ Thank You
+
+- Kirk Waiblinger @kirkwaiblinger
+- lumir
+
+See GitHub Releases for more information.
+
+You can read about our versioning strategy and releases on our website.]]></description>
+    <pubDate>Mon, 08 Jun 2026 18:00:19 GMT</pubDate>
+  </item>
+  <item>
+    <title>[open-circle/valibot] v1.7.1 (to-json-schema) (v1.7.1-to-json-schema)</title>
+    <link>https://github.com/open-circle/valibot/releases/tag/v1.7.1-to-json-schema</link>
+    <guid isPermaLink="true">https://github.com/open-circle/valibot/releases/tag/v1.7.1-to-json-schema</guid>
+    <description><![CDATA[Many thanks to @dinwwwh and @chatman-media for contributing to this release.
+
+- Fix `$ref` generation to encode definition keys containing `/` or `~` as JSON Pointer tokens (pull request #1482)]]></description>
+    <pubDate>Mon, 08 Jun 2026 16:36:34 GMT</pubDate>
+  </item>
+  <item>
+    <title>[oxc-project/oxc] oxc crates_v0.135.0 (crates_v0.135.0)</title>
+    <link>https://github.com/oxc-project/oxc/releases/tag/crates_v0.135.0</link>
+    <guid isPermaLink="true">https://github.com/oxc-project/oxc/releases/tag/crates_v0.135.0</guid>
+    <description><![CDATA[### 💥 BREAKING CHANGES
+
+- ee4dc73 ast: [**BREAKING**] Add `#[non_exhaustive]` to AST nodes (#23046) (overlookmotel)
+- 4c35362 ast: [**BREAKING**] Add `AstBuilder::template_element_escape_raw` and `template_element_escape_raw_with_lone_surrogates` methods (#23047) (overlookmotel)
+
+### 🚀 Features
+
+- b846ab2 react_compiler: Integrate the Rust port of the React Compiler (#22942) (Boshen)
+- 5b8dd68 parser: Report TS1255 for invalid class definite assertions (#22917) (camc314)
+- 85efabf semantic: Make building the class table optional, off by default (#22862) (Boshen)
+
+### 🐛 Bug Fixes
+
+- 556acdc codegen: Parenthesize TS-cast assignment targets (#23112) (Boshen)
+- 37169ff codegen: Don't emit space between postfix `--` and `>` when minifying (#23036) (Boshen)
+- a4b1bf7 codegen: Drop redundant whitespace in minified TypeScript output (#23038) (Boshen)
+- cf53285 parser: Report reserved type-declaration names in the parser (#23035) (Boshen)
+- 4e44969 ast: Fix UB in `escape_template_element_raw
+
+... (truncated)]]></description>
+    <pubDate>Mon, 08 Jun 2026 14:44:21 GMT</pubDate>
+  </item>
+  <item>
+    <title>[denoland/rusty_v8] v150.0.0</title>
+    <link>https://github.com/denoland/rusty_v8/releases/tag/v150.0.0</link>
+    <guid isPermaLink="true">https://github.com/denoland/rusty_v8/releases/tag/v150.0.0</guid>
+    <description><![CDATA[No release notes provided.]]></description>
+    <pubDate>Mon, 08 Jun 2026 13:44:57 GMT</pubDate>
+  </item>
+  <item>
+    <title>[nestjs/nest] v11.1.26</title>
+    <link>https://github.com/nestjs/nest/releases/tag/v11.1.26</link>
+    <guid isPermaLink="true">https://github.com/nestjs/nest/releases/tag/v11.1.26</guid>
+    <description><![CDATA[## What's Changed
+* fix(core): post sse endpoint empty response #17098 by @kamilmysliwiec in 
+
+
+**Full Changelog**:]]></description>
+    <pubDate>Mon, 08 Jun 2026 12:37:55 GMT</pubDate>
+  </item>
+  <item>
+    <title>[honojs/hono] v4.12.24</title>
+    <link>https://github.com/honojs/hono/releases/tag/v4.12.24</link>
+    <guid isPermaLink="true">https://github.com/honojs/hono/releases/tag/v4.12.24</guid>
+    <description><![CDATA[## What's Changed
+* docs(contribution): simplifyAI Usage Policy by @yusukebe in 
+* chore: remove @types/glob by @rtritto in 
+* fix(bearer-auth): mention verifyToken in missing-options error message by @tan7vir in 
+* refactor(language): Test/improve tests on languages middleware by @iNeoO in 
+* fix(utils/ipaddr): expand "::" to eight zero groups by @youcefzemmar in 
+* fix: clean up config files trailing comma, stale excludes, typesVersions gaps, jsr paths by @Mohammad-Faiz-Cloud-Engineer in 
+* refactor(timing): Test/add test for middleware timing by @iNeoO in 
+* fix(utils/ipaddr): render the unspecified address binary as "::" by @sarathfrancis90 in 
+
+**Full Changelog**:]]></description>
+    <pubDate>Mon, 08 Jun 2026 11:16:30 GMT</pubDate>
+  </item>
+  <item>
+    <title>[nodejs/undici] v8.4.1</title>
+    <link>https://github.com/nodejs/undici/releases/tag/v8.4.1</link>
+    <guid isPermaLink="true">https://github.com/nodejs/undici/releases/tag/v8.4.1</guid>
+    <description><![CDATA[## What's Changed
+* test: avoid localhost lookup in fetch cookies tests by @mcollina in 
+* fix: prevent race condition between onEnd and onTrailers in HTTP/2 client (#5216) by @mcollina in 
+* fix(dns): skip requests without origin by @marko1olo in 
+* docs: add Getting Started guide by @AliMahmoudDev in 
+* docs: fix code examples that crash at runtime and other inaccuracies by @AliMahmoudDev in 
+* fix: handle paused parser on socket end (issue #5360) by @mcollina in 
+* fix(client): reject pipelined TLS altname errors by @marko1olo in 
+* docs: fix multiple inaccuracies in API documentation by @AliMahmoudDev in 
+* docs: fix remaining broken links in API documentation by @AliMahmoudDev in 
+
+## New Contributors
+* @marko1olo made their first contribution in 
+
+**Full Changelog**:]]></description>
+    <pubDate>Mon, 08 Jun 2026 10:52:40 GMT</pubDate>
+  </item>
+  <item>
+    <title>[chakra-ui/ark] @ark-ui/vue@5.37.2</title>
+    <link>https://github.com/chakra-ui/ark/releases/tag/%40ark-ui/vue%405.37.2</link>
+    <guid isPermaLink="true">https://github.com/chakra-ui/ark/releases/tag/%40ark-ui/vue%405.37.2</guid>
+    <description><![CDATA[# @ark-ui/vue
+
+## [5.37.2] - 2026-06-08
+
+### Fixed
+
+- Fix declaration file output paths so published package export maps resolve to existing types.
+
+## [5.37.1] - 2026-06-06
+
+### Fixed
+
+- **Date Input**: Fix `DateInput.Segment` to stay in sync with the latest segment state while typing.
+
+- - **Date Input**: Fix segment placeholders for locales with explicit script subtags.
+ - **Drawer**: Fix flickering when a controlled drawer is swiped or backdrop-closed while the `open` setter is async
+ (e.g. the History API or a delayed state update).
+ - **Image Cropper**: Fix `getCroppedImage` and `getCropData` returning the wrong region when the image is shown at a
+ size different from its natural resolution (e.g. `width` / `height` of `100%`).
+ - **Pin Input**: Fix `data-filled` being set on every input on first render.
+ - **Signature Pad**: Fix the `dir` prop being accepted but never forwarded to the DOM.
+
+## [5.37.0] - 2026-05-26
+
+### Added
+
+- **Floating Components**: Add `data-side` to placeme
+
+... (truncated)]]></description>
+    <pubDate>Mon, 08 Jun 2026 09:57:56 GMT</pubDate>
+  </item>
+  <item>
+    <title>[cloudflare/vinext] vinext@0.1.0</title>
+    <link>https://github.com/cloudflare/vinext/releases/tag/vinext%400.1.0</link>
+    <guid isPermaLink="true">https://github.com/cloudflare/vinext/releases/tag/vinext%400.1.0</guid>
+    <description><![CDATA[Today's release contains several app router bundling improvements like code splitting and lazy loading for faster cold starts, and minification by default for smaller bundles. Several CLI crashes were fixed for large projects, and more Next.js parity gaps were addressed.
+
+Vinext now supports additional configuration for caching -- the Vite plugin supports a cache object, where adapters for a data cache and a cdn cache can be supplied. The cdn adapter is intended to be used for route-level caching, while the data adapter is used for everything else, and is used for route caching in the absence of a cdn adapter. This is intended to replace manual setup in the Worker.
+
+```ts
+import vinext from "vinext";
+import { kvDataAdapter } from "@vinext/cloudflare/cache/kv-data-adapter";
+
+vinext({
+ cache: { data: kvDataAdapter },
+});
+```
+
+### Features
+
+#### Cache
+
+- extract Cloudflare cache adapters into @vinext/cloudflare (#1748)
+- configure cache adapters from vite plugin config (#1733)
+- split CDN
+
+... (truncated)]]></description>
+    <pubDate>Mon, 08 Jun 2026 09:46:51 GMT</pubDate>
+  </item>
+  <item>
+    <title>[ollama/ollama] v0.30.7</title>
+    <link>https://github.com/ollama/ollama/releases/tag/v0.30.7</link>
+    <guid isPermaLink="true">https://github.com/ollama/ollama/releases/tag/v0.30.7</guid>
+    <description><![CDATA[Ollama Launch now supports Hermes Desktop, a native desktop interface for the Hermes agent. Run it alongside your Hermes agent to get a visual interface for managing conversations, integrations, and messaging apps.
+
+```
+ollama launch hermes-desktop
+```
+<img width="2556" height="1716" alt="image" src="" />
+
+What's Changed
+
+- Hermes Desktop is now available via `ollama launch hermes-desktop` with native Windows configuration path support
+- OpenAI-compatible API models list now aligns with available model tags
+- Added documentation describing the llama.cpp update process
+- Updated Zod schema examples to use the native toJSONSchema helper
+
+Full Changelog:]]></description>
+    <pubDate>Sun, 07 Jun 2026 21:51:48 GMT</pubDate>
+  </item>
   <item>
     <title>[anomalyco/opentui] Release v0.3.4 (v0.3.4)</title>
     <link>https://github.com/anomalyco/opentui/releases/tag/v0.3.4</link>
@@ -28,13 +298,6 @@
 
 - fix: type BigInts in `$state.snapshot(...)` return values (#18388)]]></description>
     <pubDate>Sun, 07 Jun 2026 18:30:29 GMT</pubDate>
-  </item>
-  <item>
-    <title>[denoland/rusty_v8] v149.3.0</title>
-    <link>https://github.com/denoland/rusty_v8/releases/tag/v149.3.0</link>
-    <guid isPermaLink="true">https://github.com/denoland/rusty_v8/releases/tag/v149.3.0</guid>
-    <description><![CDATA[No release notes provided.]]></description>
-    <pubDate>Sun, 07 Jun 2026 15:55:32 GMT</pubDate>
   </item>
   <item>
     <title>[floci-io/floci] 1.5.23</title>
@@ -83,30 +346,6 @@ Five coordinated Glue improvements land this cycle:
     <pubDate>Sun, 07 Jun 2026 06:01:36 GMT</pubDate>
   </item>
   <item>
-    <title>[nodejs/undici] v8.4.0</title>
-    <link>https://github.com/nodejs/undici/releases/tag/v8.4.0</link>
-    <guid isPermaLink="true">https://github.com/nodejs/undici/releases/tag/v8.4.0</guid>
-    <description><![CDATA[## What's Changed
-* fix: register connect listener before initiating requests in close-and-destroy test by @mcollina in 
-* test: stabilize tls-cert-leak regression by @mcollina in 
-* fix: replace tspl with native test context in test/examples.js by @mcollina in 
-* http2: remove redundant request stream binding by @trivikr in 
-* test: limit cache-tests workers on Windows by @mcollina in 
-* test: use test context cleanup hooks in parser issue tests by @mcollina in 
-* Add redirect option to strip headers on redirect by @mcollina in 
-* chore(test): fix lint failure by @aduh95 in 
-* chore(ci): use `npm ci` instead of `npm install` by @aduh95 in 
-* docs: clarify formData security considerations by @mcollina in 
-* docs: add EventSource server example by @Will-thom in 
-* fix(core): simplify `addAbortListener` util by @aduh95 in 
-* build(deps-dev): bump ws from 8.20.0 to 8.21.0 by @dependabot[bot] in 
-* build(deps-dev): bump jsondiffpatch from 0.7.3 to 0.7.6 by @dependabot[bot] in 
-* docs: matc
-
-... (truncated)]]></description>
-    <pubDate>Sat, 06 Jun 2026 16:02:53 GMT</pubDate>
-  </item>
-  <item>
     <title>[bluesky-social/social-app] v1.123.0 (1.123.0)</title>
     <link>https://github.com/bluesky-social/social-app/releases/tag/1.123.0</link>
     <guid isPermaLink="true">https://github.com/bluesky-social/social-app/releases/tag/1.123.0</guid>
@@ -130,38 +369,6 @@ Five coordinated Glue improvements land this cycle:
 
 ... (truncated)]]></description>
     <pubDate>Sat, 06 Jun 2026 15:31:19 GMT</pubDate>
-  </item>
-  <item>
-    <title>[chakra-ui/ark] @ark-ui/vue@5.37.1</title>
-    <link>https://github.com/chakra-ui/ark/releases/tag/%40ark-ui/vue%405.37.1</link>
-    <guid isPermaLink="true">https://github.com/chakra-ui/ark/releases/tag/%40ark-ui/vue%405.37.1</guid>
-    <description><![CDATA[# @ark-ui/vue
-
-## [5.37.1] - 2026-06-06
-
-### Fixed
-
-- **Date Input**: Fix `DateInput.Segment` to stay in sync with the latest segment state while typing.
-
-- - **Date Input**: Fix segment placeholders for locales with explicit script subtags.
- - **Drawer**: Fix flickering when a controlled drawer is swiped or backdrop-closed while the `open` setter is async
- (e.g. the History API or a delayed state update).
- - **Image Cropper**: Fix `getCroppedImage` and `getCropData` returning the wrong region when the image is shown at a
- size different from its natural resolution (e.g. `width` / `height` of `100%`).
- - **Pin Input**: Fix `data-filled` being set on every input on first render.
- - **Signature Pad**: Fix the `dir` prop being accepted but never forwarded to the DOM.
-
-## [5.37.0] - 2026-05-26
-
-### Added
-
-- **Floating Components**: Add `data-side` to placement-aware parts so you can style them based on the current placement
- (`top`, `bottom`, `left`, `right`).
-
- > Affects Color Picker, Com
-
-... (truncated)]]></description>
-    <pubDate>Sat, 06 Jun 2026 15:17:17 GMT</pubDate>
   </item>
   <item>
     <title>[zed-industries/zed] v1.5.4</title>
@@ -195,62 +402,6 @@ Five coordinated Glue improvements land this cycle:
 
 ... (truncated)]]></description>
     <pubDate>Sat, 06 Jun 2026 00:10:06 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-06-05.2) (release-2026-06-05.2)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-06-05.2</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-06-05.2</guid>
-    <description><![CDATA[## General Highlights
-* **Bug Fix**: Undo the initial wave of schema-serde releases due to several customer-reported regressions.
-
-## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/feature/s3/transfermanager`: [v0.2.8](feature/s3/transfermanager/CHANGELOG.md#v028-2026-06-052)
- * **Bug Fix**: Fix the concurrent reader to return cached read error instead of panic when called again]]></description>
-    <pubDate>Fri, 05 Jun 2026 21:21:19 GMT</pubDate>
-  </item>
-  <item>
-    <title>[ollama/ollama] v0.30.6</title>
-    <link>https://github.com/ollama/ollama/releases/tag/v0.30.6</link>
-    <guid isPermaLink="true">https://github.com/ollama/ollama/releases/tag/v0.30.6</guid>
-    <description><![CDATA[# New models
-- Gemma 4 QAT weights: the Gemma 4 family is now optimized with Quantization-Aware Training (QAT) to dramatically reduce memory requirements and maximize on-device performance. Look for the tags ending in `-qat`:
- - `gemma4:e2b-it-qat`
- - `gemma4:e4b-it-qat`
- - `gemma4:12b-it-qat`
- - `gemma4:26b-a4b-it-qat`
- - `gemma4:31b-it-qat`
-
-
-## What's Changed
-* `ollama launch omp` now integrates with Oh My Pi, an AI coding agent with IDE integration
-* MLX embedding layers now use NVFP4 global scale for improved quantization on Apple Silicon
-
-
-**Full Changelog**:]]></description>
-    <pubDate>Fri, 05 Jun 2026 20:00:18 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-js-v3] v3.1063.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1063.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1063.0</guid>
-    <description><![CDATA[#### 3.1063.0(2026-06-05)
-
-##### Chores
-
-* update author URL in package.json (#8080) (9bd1a86b)
-* **crt-loader:** update to latest aws-crt (#8079) (8c2bdabd)
-
-##### New Features
-
-* **clients:** update client endpoints as of 2026-06-05 (fe9a398f)
-* **client-sagemaker:** This release adds support for MLflow experiment tracking in SageMaker inference optimization. CreateAIRecommendationJob and CreateAIBenchmarkJob now accept an optional OutputConfig.MlflowConfig (MLflow App ARN, experiment, run name) to stream benchmark metrics and artifacts to your own MLflow App. (39430442)
-* **client-emr-serverless:** Adds support for updating max capacity and custom fields while application is started (6c9cce08)
-* **client-dynamodb:** Adding new BDD representation of endpoint ruleset (416005d4)
-* **client-mediaconvert:** Adds support for configurable number of Clear Lead segments at the beginning of encrypted output. Adds support for multiple trickplay variants. (40eb4c6b)
-* **client-payment-cryptogra
-
-... (truncated)]]></description>
-    <pubDate>Fri, 05 Jun 2026 18:51:56 GMT</pubDate>
   </item>
   <item>
     <title>[remix-run/remix] static-middleware v0.4.12 (static-middleware@0.4.12)</title>
@@ -504,15 +655,6 @@ powershell -ExecutionPolicy Bypass -c "irm | iex"
     <pubDate>Wed, 03 Jun 2026 22:38:57 GMT</pubDate>
   </item>
   <item>
-    <title>[bluesky-social/atproto] @atproto/api@0.20.9</title>
-    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/api%400.20.9</link>
-    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/api%400.20.9</guid>
-    <description><![CDATA[### Patch Changes
-
-- #4827 `41a561e` Thanks @estrattonbailey! - Add new lexicon for gallery embed type]]></description>
-    <pubDate>Wed, 03 Jun 2026 21:00:01 GMT</pubDate>
-  </item>
-  <item>
     <title>[openclaw/openclaw] openclaw 2026.6.1 (v2026.6.1)</title>
     <link>https://github.com/openclaw/openclaw/releases/tag/v2026.6.1</link>
     <guid isPermaLink="true">https://github.com/openclaw/openclaw/releases/tag/v2026.6.1</guid>
@@ -698,32 +840,6 @@ The webpack-compatible deterministic module id plugin is now exposed through the
     <pubDate>Tue, 02 Jun 2026 09:48:56 GMT</pubDate>
   </item>
   <item>
-    <title>[cloudflare/vinext] v0.0.55</title>
-    <link>https://github.com/cloudflare/vinext/releases/tag/v0.0.55</link>
-    <guid isPermaLink="true">https://github.com/cloudflare/vinext/releases/tag/v0.0.55</guid>
-    <description><![CDATA[## What's Changed
-
-### New Features
-
-- Added experimental `appShells` configuration option with validation support
-- Added support for Sparkle experimental flags: `varyParams`, `optimisticRouting`, and `cachedNavigations`
-- Added layout safety observation foundations for improved skip optimization
-- Added static layout reuse proof model for better performance analysis
-
-### Bug Fixes
-
-- Fixed app router navigation to better align with Next.js behavior
-- Fixed Pages Router to properly run `_document.getInitialProps` with renderPage enhancers
-- Fixed Head component to preserve charset and viewport defaults during client hydration
-- Fixed Pages Router to deduplicate in-flight `_next/data` fetches by URL to prevent redundant requests
-- Fixed Head component to match Next.js charset/viewport ordering and properly merge `_document.getInitialProps` head elements
-- Fixed TypeScript `next.config` loading to keep packages externalized
-- Fixed TypeScript config resolution to properly handle `baseUr
-
-... (truncated)]]></description>
-    <pubDate>Tue, 02 Jun 2026 09:48:29 GMT</pubDate>
-  </item>
-  <item>
     <title>[open-cli-tools/concurrently] v10.0.3</title>
     <link>https://github.com/open-cli-tools/concurrently/releases/tag/v10.0.3</link>
     <guid isPermaLink="true">https://github.com/open-cli-tools/concurrently/releases/tag/v10.0.3</guid>
@@ -764,55 +880,6 @@ The webpack-compatible deterministic module id plugin is now exposed through the
 
 Huge thanks to @eps1lon for helping!]]></description>
     <pubDate>Mon, 01 Jun 2026 20:09:02 GMT</pubDate>
-  </item>
-  <item>
-    <title>[typescript-eslint/typescript-eslint] v8.60.1</title>
-    <link>https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.60.1</link>
-    <guid isPermaLink="true">https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.60.1</guid>
-    <description><![CDATA[## 8.60.1 (2026-06-01)
-
-### 🩹 Fixes
-
-- **eslint-plugin:** respect ECMAScript line terminators in ts-comment rules (#12352)
-- **eslint-plugin:** [no-shadow] correct rule to match ESLint v10 handling (#12182)
-
-### ❤️ Thank You
-
-- lumir
-- Nevette Bailey @nevette-bailey
-
-See GitHub Releases for more information.
-
-You can read about our versioning strategy and releases on our website.]]></description>
-    <pubDate>Mon, 01 Jun 2026 18:54:58 GMT</pubDate>
-  </item>
-  <item>
-    <title>[oxc-project/oxc] oxlint v1.68.0 &amp; oxfmt v0.53.0 (apps_v1.68.0)</title>
-    <link>https://github.com/oxc-project/oxc/releases/tag/apps_v1.68.0</link>
-    <guid isPermaLink="true">https://github.com/oxc-project/oxc/releases/tag/apps_v1.68.0</guid>
-    <description><![CDATA[## Table of Contents
-
-- [Oxlint v1.68.0](#oxlint-v1.68.0)
-- [Oxfmt v0.53.0](#oxfmt-v0.53.0)
-
-## Oxlint v1.68.0
-### 🚀 Features
-
-- 81b86eb parser: Report TS1095 for setter with return type (#22889) (camc314)
-- 3f05c5e linter: Expose `override::exclude_files` option (#22884) (camc314)
-- e4b1f46 linter/typescript: Implement `method-signature-style` rule (#22679) (Mikhail Baev)
-- bc462ca linter/vue: Implement no-reserved-component-names rule (#22741) (bab)
-- ef9e751 linter/vue: Implement component-definition-name-casing rule (#22818) (bab)
-- d67f51a linter/vue: Implement require-prop-type-constructor rule (#22708) (bab)
-- 1444f82 linter/promise/spec-only: Add `Promise.try` to `Promise` static methods (#22812) (Ben Saufley)
-- 8422e8b linter/jsdoc: Implement `require-yields-description` rule (#22805) (Mikhail Baev)
-- fe93f97 linter/eslint: Implement `prefer-named-capture-group` rule (#22759) (Sebastian Poxhofer)
-- 1a7798b linter: Add suggestion for `unicorn/no-new-array` (#22682) (Sysix)
-
-##
-
-... (truncated)]]></description>
-    <pubDate>Mon, 01 Jun 2026 17:08:47 GMT</pubDate>
   </item>
   <item>
     <title>[nodejs/node] 2026-06-01, Version 26.3.0 (Current), @aduh95 (v26.3.0)</title>
@@ -892,77 +959,6 @@ This release is also available on:
 
 ... (truncated)]]></description>
     <pubDate>Sun, 31 May 2026 11:44:48 GMT</pubDate>
-  </item>
-  <item>
-    <title>[servo/servo] v0.2.0</title>
-    <link>https://github.com/servo/servo/releases/tag/v0.2.0</link>
-    <guid isPermaLink="true">https://github.com/servo/servo/releases/tag/v0.2.0</guid>
-    <description><![CDATA[Servo 0.2.0 includes:
-
-- **revamped browser UI** on Android, with a new **history view**
-- improved support for **Chinese**, **Japanese**, and **Korean** languages
-- **interactive pretty-printer** for **JSON files** loaded as the top-level document
-- improved **Inspector**, **Console**, and **Debugger** tabs when using the Firefox DevTools
-- improved **tab navigation**, **focus handling**, and **keyboard input**
-- **&lt;select multiple>** (@lukewarlow, @mrobinson, #43189)
-- **&lt;template shadowrootslotassignment>** (@simonwuelker, #44246)
-- **&lt;video>** playback on OpenHarmony (@rayguo17, #43208)
-- **‘minimum-scale’** and **‘maximum-scale’** values in **&lt;meta name=viewport>** (@shubhamg13, #40098, #43715)
-- **‘color-mix’** with **any number of &lt;color> values** (@Loirooriol, #43890)
-- **‘&amp;::before’** and **‘&amp;::after’** in **‘::details-content’** (@Loirooriol, #43878)
-- **‘revert-rule’** (@Loirooriol, #43878)
-- **‘tab-size’** (@mrobinson, @SimonSapin, #4448
-
-... (truncated)]]></description>
-    <pubDate>Sun, 31 May 2026 09:08:51 GMT</pubDate>
-  </item>
-  <item>
-    <title>[adobe/react-spectrum] React Aria Components v1.18.0 (react-aria-components@1.18.0)</title>
-    <link>https://github.com/adobe/react-spectrum/releases/tag/react-aria-components%401.18.0</link>
-    <guid isPermaLink="true">https://github.com/adobe/react-spectrum/releases/tag/react-aria-components%401.18.0</guid>
-    <description><![CDATA[This release packs in several new features! Calendar now supports multiple date selection, as well as new CalendarHeading, CalendarMonthPicker, and CalendarYearPicker components that allow the user to jump to a different month or year. RangeCalendar now supports determining the available dates based on the first date a user selects. We have also added a TableFooter component, description and error messages for Checkbox, Radio, and Switch, and a SliderFill component that simplifies the process of styling the fill portion in a Slider.
-
-Full Release Notes]]></description>
-    <pubDate>Sat, 30 May 2026 16:34:18 GMT</pubDate>
-  </item>
-  <item>
-    <title>[date-fns/date-fns] v4.4.0</title>
-    <link>https://github.com/date-fns/date-fns/releases/tag/v4.4.0</link>
-    <guid isPermaLink="true">https://github.com/date-fns/date-fns/releases/tag/v4.4.0</guid>
-    <description><![CDATA[This release revisits the approach to CDN usage and introduces a new package, `@date-fns/cdn` and deprecates the `date-fns` CDN scripts. It allowed reducing the zipped package size from `5.83 MB` down to `3.96 MB` without introducing any breaking changes.
-
-In `v5.0.0-alpha.0` where CDN scripts are completely removed from `date-fns` the change is more significant and brings the zipped package size down to `2.89 MB`.
-
-It is just the first step in optimizing the package size. Expect further size reduction in the future v4 and v5 versions.
-
-### Changed
-
-- **DEPRECATED**: The `date-fns` CDN scripts are now deprecated and will be removed in the next major release. Please switch to the new `@date-fns/cdn` package for CDN usage.
-
-- Removed CDN source maps to reduce the package size. If you rely on them, please switch to the new `@date-fns/cdn` package that still includes them.]]></description>
-    <pubDate>Fri, 29 May 2026 23:33:36 GMT</pubDate>
-  </item>
-  <item>
-    <title>[go-playground/validator] v10.30.3</title>
-    <link>https://github.com/go-playground/validator/releases/tag/v10.30.3</link>
-    <guid isPermaLink="true">https://github.com/go-playground/validator/releases/tag/v10.30.3</guid>
-    <description><![CDATA[## What's Changed
-* Fix/issue 1550 UUID case insensitive by @leo-jp-edwards in 
-* Feat: Add NoneOf Validation by @Carmen-Shannon in 
-* Add bcp47_strict_language_tag validator by @bfabio in 
-* chore(deps): bump golang.org/x/text from 0.35.0 to 0.36.0 by @dependabot[bot] in 
-* chore(deps): bump golang.org/x/crypto from 0.49.0 to 0.50.0 by @dependabot[bot] in 
-* Add CLAUDE.md with repo guidance for Claude Code by @deankarn in 
-* Reduce build size with dead code elimination by @zemzale in 
-* Refactored out detectFileMIMEType, matchesMIMEType logic for reuse. Added standalone isMIMEType validator for flexibility by @dapzthelegend in 
-* feat(translations): add timezone support for en and ja locales by @dedyf5 in 
-* docs: use errors.As in README and translations example by @eyupcanakman in 
-* docs: fix typos by @rymiyamoto in 
-* feat: add origin validator for web origin URLs by @ahmedkamalio in 
-* fix: reject hostnames with trailing hyphen in RFC 952 validator by @ahmedkamalio in
-
-... (truncated)]]></description>
-    <pubDate>Fri, 29 May 2026 23:26:24 GMT</pubDate>
   </item>
 </channel>
 </rss>
