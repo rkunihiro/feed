@@ -5,8 +5,228 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Tue, 09 Jun 2026 22:28:39 GMT</lastBuildDate>
+  <lastBuildDate>Wed, 10 Jun 2026 22:34:05 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[cli/cli] GitHub CLI 2.94.0 (v2.94.0)</title>
+    <link>https://github.com/cli/cli/releases/tag/v2.94.0</link>
+    <guid isPermaLink="true">https://github.com/cli/cli/releases/tag/v2.94.0</guid>
+    <description><![CDATA[## Issue types, sub-issues, and relationships in `gh issue`
+
+<img width="2784" height="1494" alt="issue-view-monas-cafe-with-frame" src="" />
+
+
+This release brings GitHub's advanced issue features to `gh issue create`, `edit`, `view`, and `list`. You can set and view an issue's type, organize work with sub-issues, and track blocked-by and blocking relationships without leaving the command line:
+
+```shell
+# Set an issue's type
+gh issue create --type Bug
+gh issue edit 123 --type Bug
+
+# Organize work with sub-issues
+gh issue create --parent 100
+gh issue edit 100 --add-sub-issue 123
+
+# Track blocked-by and blocking relationships
+gh issue create --blocked-by 200
+gh issue edit 123 --add-blocking 300
+```
+
+Issue types and sub-issues are available on GitHub.com and GHES 3.17+; relationships require GHES 3.19+.
+
+## Manage discussions with `gh discussion`
+
+<img width="2784" height="1179" alt="discussion-view-monas-cafe-with-frame" src="" />
+
+
+This release introduces th
+
+... (truncated)]]></description>
+    <pubDate>Wed, 10 Jun 2026 21:47:49 GMT</pubDate>
+  </item>
+  <item>
+    <title>[bluesky-social/atproto] @atproto/bsky@0.0.241</title>
+    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/bsky%400.0.241</link>
+    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/bsky%400.0.241</guid>
+    <description><![CDATA[### Patch Changes
+
+- #5069 `b9ef557` Thanks @rafaeleyng! - add internal.bsky.actor.getProfiles endpoint
+
+- Updated dependencies [`c4bcb12`]:
+ - @atproto/api@0.20.13]]></description>
+    <pubDate>Wed, 10 Jun 2026 19:34:22 GMT</pubDate>
+  </item>
+  <item>
+    <title>[denoland/rusty_v8] v149.4.0</title>
+    <link>https://github.com/denoland/rusty_v8/releases/tag/v149.4.0</link>
+    <guid isPermaLink="true">https://github.com/denoland/rusty_v8/releases/tag/v149.4.0</guid>
+    <description><![CDATA[No release notes provided.]]></description>
+    <pubDate>Wed, 10 Jun 2026 19:09:26 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1066.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1066.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1066.0</guid>
+    <description><![CDATA[#### 3.1066.0(2026-06-10)
+
+##### New Features
+
+* **client-amp:** Adds supports for out-of-order sample ingestion (default 1-minute window) and a configurable rule query offset to reduce data loss and improve alerting accuracy. (7c5a6413)
+* **client-medialive:** Adding premixer settings to pid and track audio inputs in MediaLIve to allow greater control over mixing audio from multiple source streams including support for AudioPidSelectors made up of multiple audio PIDs. (82f4fa6a)
+* **client-ec2:** This release adds support for AMI Watermark which a structured identifier that helps in tracking AMI provenance (e4a7c0b8)
+* **client-signin:** AWS Sign-In now allows customers to control access to the AWS Management Console using resource-based policies. With this release customers can restrict console access based on network perimeters such as VPC IDs, VPC endpoints, and IP addresses. (7ac0cf5f)
+* **client-ecs:** Amazon ECS Managed Daemon task definitions now support pidMode and ipcMode par
+
+... (truncated)]]></description>
+    <pubDate>Wed, 10 Jun 2026 18:57:04 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-06-10) (release-2026-06-10)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-06-10</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-06-10</guid>
+    <description><![CDATA[## General Highlights
+* **Dependency Update**: Updated to the latest SDK module versions
+
+## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/service/amp`: [v1.44.0](service/amp/CHANGELOG.md#v1440-2026-06-10)
+ * **Feature**: Adds supports for out-of-order sample ingestion (default 1-minute window) and a configurable rule query offset to reduce data loss and improve alerting accuracy.
+* `github.com/aws/aws-sdk-go-v2/service/connecthealth`: [v1.3.0](service/connecthealth/CHANGELOG.md#v130-2026-06-10)
+ * **Feature**: Add support for MedicalScribeBinaryAudioEvent in the Medical Scribe streaming input. This new event type lets you send audio as a raw binary payload instead of a base64-encoded value
+* `github.com/aws/aws-sdk-go-v2/service/ec2`: [v1.307.0](service/ec2/CHANGELOG.md#v13070-2026-06-10)
+ * **Feature**: This release adds support for AMI Watermark which a structured identifier that helps in tracking AMI provenance
+* `github.com/aws/aws-sdk-go-v2/service/ecs`: [v1.83.0](service/ecs
+
+... (truncated)]]></description>
+    <pubDate>Wed, 10 Jun 2026 18:48:14 GMT</pubDate>
+  </item>
+  <item>
+    <title>[zed-industries/zed] v1.6.3</title>
+    <link>https://github.com/zed-industries/zed/releases/tag/v1.6.3</link>
+    <guid isPermaLink="true">https://github.com/zed-industries/zed/releases/tag/v1.6.3</guid>
+    <description><![CDATA[This week's release includes the ability to open a Git diff for a single file in its own dedicated tab from the Git panel, "Fast mode" for Anthropic and OpenAI models in the agent panel, shareable agent skill links, split diff mode in the commit history view, total added/removed line counts in the Git panel, and the ability to open files from the file finder without dismissing it.
+
+## Features
+
+### AI
+
+- Agent: Added a way to share skills via links. (#58009)
+- Agent: Added support for symlinked global skill directories. (#58095; thanks David3u)
+- Agent: Added a manual way to trigger the Rules to Skills migration. (#58278)
+- Agent: Improved project skills support in remote workspaces. (#58094)
+- Agent: Improved skill creation toast confirmation by making it auto-dismissed. (#57855)
+- Agent: Added Claude Opus 4.8 BYOK support. (#57984)
+- Agent: Added a right-click menu to thread items in the sidebar, allowing to regenerate a thread title, rename a thread title, open the threa
+
+... (truncated)]]></description>
+    <pubDate>Wed, 10 Jun 2026 18:33:08 GMT</pubDate>
+  </item>
+  <item>
+    <title>[anomalyco/opencode] v1.17.3</title>
+    <link>https://github.com/anomalyco/opencode/releases/tag/v1.17.3</link>
+    <guid isPermaLink="true">https://github.com/anomalyco/opencode/releases/tag/v1.17.3</guid>
+    <description><![CDATA[Fixed issue with 1.17.2 desktop crashing]]></description>
+    <pubDate>Wed, 10 Jun 2026 18:00:28 GMT</pubDate>
+  </item>
+  <item>
+    <title>[withastro/astro] @astrojs/netlify@7.0.13</title>
+    <link>https://github.com/withastro/astro/releases/tag/%40astrojs/netlify%407.0.13</link>
+    <guid isPermaLink="true">https://github.com/withastro/astro/releases/tag/%40astrojs/netlify%407.0.13</guid>
+    <description><![CDATA[### Patch Changes
+
+- #17018 `1310277` Thanks @matthewp! - Hardens `remotePatterns` regex generation to match canonical wildcard semantics more strictly
+
+- Updated dependencies \:
+ - @astrojs/underscore-redirects@1.0.3]]></description>
+    <pubDate>Wed, 10 Jun 2026 17:28:46 GMT</pubDate>
+  </item>
+  <item>
+    <title>[astral-sh/uv] 0.11.20</title>
+    <link>https://github.com/astral-sh/uv/releases/tag/0.11.20</link>
+    <guid isPermaLink="true">https://github.com/astral-sh/uv/releases/tag/0.11.20</guid>
+    <description><![CDATA[## Release Notes
+
+Released on 2026-06-10.
+
+### Enhancements
+
+- Add `--emit-index-url` and `--emit-find-links` to `uv export` (#18370)
+- Add `--find-links` support for `uv pip list` (#16103)
+- Group executable install errors during `uv python install` (#19691)
+- Use ICF in macOS release builds to reduce binary sizes (#19615)
+
+### Preview features
+
+- Add initial hidden `uv upgrade` command (#19678)
+- Reject Git revisions in `uv upgrade` (#19742)
+
+### Configuration
+
+- Recognize `UV_NO_INSTALL_PROJECT`, `UV_NO_INSTALL_WORKSPACE`, `UV_NO_INSTALL_LOCAL` (#19323)
+
+### Performance
+
+- Speed up discovery of large workspaces (#18311)
+
+### Bug fixes
+
+- Allow unknown preview flags with a warning again (#19669)
+- Apply dependency exclusions to direct requirements (#19699)
+- Avoid following external symlinks during cache clean (#19682)
+- Avoid following symlinks during cache prune (#19543)
+- Fix Git cache keys for worktrees and packed refs (#19706)
+- Make resolver error handling iterative to avoid st
+
+... (truncated)]]></description>
+    <pubDate>Wed, 10 Jun 2026 17:21:19 GMT</pubDate>
+  </item>
+  <item>
+    <title>[web-infra-dev/rspack] v2.0.8</title>
+    <link>https://github.com/web-infra-dev/rspack/releases/tag/v2.0.8</link>
+    <guid isPermaLink="true">https://github.com/web-infra-dev/rspack/releases/tag/v2.0.8</guid>
+    <description><![CDATA[## What's Changed
+### Bug Fixes 🐞
+* fix: temporarily revert JS parser changes causing runtime errors by @CPunisher in 
+### Other Changes
+* chore: bind walltime bench to dedicated CPUs by @deanjingshui in 
+* chore(ci): update rsdoctor action by @yifancong in 
+
+**Full Changelog**:]]></description>
+    <pubDate>Wed, 10 Jun 2026 16:03:28 GMT</pubDate>
+  </item>
+  <item>
+    <title>[pnpm/pnpm] pnpm 10.34.2 (v10.34.2)</title>
+    <link>https://github.com/pnpm/pnpm/releases/tag/v10.34.2</link>
+    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v10.34.2</guid>
+    <description><![CDATA[## Patch Changes
+
+* Package-manager bootstrap traffic is now resolved through trusted registries and trusted network config. When pnpm downloads the pnpm version requested by a repository's `packageManager` field, the registry it fetches from (and the proxy/TLS settings used for that traffic) now come exclusively from trusted config sources — CLI options, env config, user and global `.npmrc` — defaulting to the public npm registry, instead of the repository's project/workspace settings.
+* pnpm now verifies the npm registry signature of a package-manager binary before spawning it. When the `packageManager` field (or `pnpm self-update`) makes pnpm download another pnpm version, the staged install is verified corepack-style: the integrity recorded in the staged lockfile must carry a valid npm registry signature for the exact `name@version`, validated against npm's public signing keys that ship embedded in the pnpm CLI. Verification fails closed — a tampered download, an unsigned packag
+
+... (truncated)]]></description>
+    <pubDate>Wed, 10 Jun 2026 14:04:24 GMT</pubDate>
+  </item>
+  <item>
+    <title>[vercel/next.js] v16.2.9</title>
+    <link>https://github.com/vercel/next.js/releases/tag/v16.2.9</link>
+    <guid isPermaLink="true">https://github.com/vercel/next.js/releases/tag/v16.2.9</guid>
+    <description><![CDATA[Empty release to ensure `next@latest` points at a stable release. Next.js only allows publishing with Trusted Publishing enabled. In order to fix NPM dist-tags, we have to release a new version. Updating dist-tags is not possible with Trusted Publishing.]]></description>
+    <pubDate>Wed, 10 Jun 2026 12:30:06 GMT</pubDate>
+  </item>
+  <item>
+    <title>[microsoft/WindowsAppSDK] Windows App SDK 2.2.0 (v2.2.0)</title>
+    <link>https://github.com/microsoft/WindowsAppSDK/releases/tag/v2.2.0</link>
+    <guid isPermaLink="true">https://github.com/microsoft/WindowsAppSDK/releases/tag/v2.2.0</guid>
+    <description><![CDATA[## Windows App SDK 2.2.0
+
+WinAppSDK 2.2.0 is the latest stable servicing release for 2.0, with a new Windows AI video upscaling API, a first-class `ApplicationData` entry point for unpackaged apps, additions to `XamlBindingHelper`, and a batch of WinUI and Windows ML reliability fixes.
+
+### What's new in WinAppSDK 2.2.0:
+
+- **Video Super Resolution AI API.** The new `Microsoft.Windows.AI.Video.VideoScaler` API delivers real-time video enhancement through advanced AI upscaling, optimized for streams featuring people in conversation. It enables developers to provide sharper, clearer visuals across conferencing, streaming, and editing platforms, even under poor network conditions. The API supports customization of output resolution, frame rate, and regions of interest, with compatibility for multiple video formats including BGR, RGB, and NV12. `VideoScaler` is disposable, and includes a capability check so apps can validate VSR support at runtime. Explicit Windows ML initialization 
+
+... (truncated)]]></description>
+    <pubDate>Tue, 09 Jun 2026 23:30:51 GMT</pubDate>
+  </item>
   <item>
     <title>[PerryTS/perry] v0.5.1151</title>
     <link>https://github.com/PerryTS/perry/releases/tag/v0.5.1151</link>
@@ -68,14 +288,6 @@ specify init my-project
     <pubDate>Tue, 09 Jun 2026 22:12:04 GMT</pubDate>
   </item>
   <item>
-    <title>[zed-industries/zed] v1.5.5</title>
-    <link>https://github.com/zed-industries/zed/releases/tag/v1.5.5</link>
-    <guid isPermaLink="true">https://github.com/zed-industries/zed/releases/tag/v1.5.5</guid>
-    <description><![CDATA[- Add Claude Fable 5 to Anthropic BYOK. (#58957)
-- Fixed a bug where clicking the button to trust a git repository would do nothing. (#58716)]]></description>
-    <pubDate>Tue, 09 Jun 2026 21:22:59 GMT</pubDate>
-  </item>
-  <item>
     <title>[openai/codex] 0.139.0 (rust-v0.139.0)</title>
     <link>https://github.com/openai/codex/releases/tag/rust-v0.139.0</link>
     <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.139.0</guid>
@@ -91,46 +303,6 @@ specify init my-project
 
 ... (truncated)]]></description>
     <pubDate>Tue, 09 Jun 2026 20:13:29 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-js-v3] v3.1065.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1065.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1065.0</guid>
-    <description><![CDATA[#### 3.1065.0(2026-06-09)
-
-##### Chores
-
-* **lib-transfer-manager:** sort scripts alphabetically (#8087) (0441d8b7)
-
-##### New Features
-
-* **clients:** update client endpoints as of 2026-06-09 (935d71be)
-* **client-timestream-write:** Adding new BDD representation of endpoint ruleset (45148681)
-* **client-cloudwatch:** This release adds the APIs (AssociateDatasetKmsKey, DisassociateDatasetKmsKey, GetDataset) to manage encryption at rest for OpenTelemetry metrics in CloudWatch using AWS KMS customer managed keys. (67566cd6)
-* **client-marketplace-commerce-analytics:** Adding new BDD representation of endpoint ruleset (0adb8bd9)
-* **client-bedrock:** Adds support for the Amazon Bedrock account-level data retention APIs PutAccountDataRetention and GetAccountDataRetention. (9acf4f7f)
-* **client-odb:** Releases Autonomous Database Serverless APIs, autonomousDatabaseOciIntegrationIamRoles, linkedOciTenancyId, linkedOciCompartmentId, and subscriptionErrors fields in GetOciOnboardingStatus API
-
-... (truncated)]]></description>
-    <pubDate>Tue, 09 Jun 2026 19:32:32 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-06-09) (release-2026-06-09)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-06-09</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-06-09</guid>
-    <description><![CDATA[## General Highlights
-* **Dependency Update**: Updated to the latest SDK module versions
-
-## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/bedrock`: [v1.64.0](service/bedrock/CHANGELOG.md#v1640-2026-06-09)
- * **Feature**: Adds support for the Amazon Bedrock account-level data retention APIs PutAccountDataRetention and GetAccountDataRetention.
-* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcore`: [v1.29.0](service/bedrockagentcore/CHANGELOG.md#v1290-2026-06-09)
- * **Feature**: Add RetryableConflictException (HTTP 409) to InvokeAgentRuntimeCommand and GetAgentCard to prevent orphaned VMs during concurrent session access. The SDK automatically retries this exception with backoff. Enforcement is not yet active and will be enabled in a future service update.
-* `github.com/aws/aws-sdk-go-v2/service/cloudwatch`: [v1.59.0](service/cloudwatch/CHANGELOG.md#v1590-2026-06-09)
- * **Feature**: This release adds the APIs (AssociateDatasetKmsKey, DisassociateDatasetKmsKey, GetDataset)
-
-... (truncated)]]></description>
-    <pubDate>Tue, 09 Jun 2026 18:49:55 GMT</pubDate>
   </item>
   <item>
     <title>[openclaw/openclaw] openclaw 2026.6.5 (v2026.6.5)</title>
@@ -183,19 +355,6 @@ SCRAM-based authentication (the default mechanism for username/password connecti
 
 **Full Changelog**:]]></description>
     <pubDate>Tue, 09 Jun 2026 13:12:19 GMT</pubDate>
-  </item>
-  <item>
-    <title>[withastro/astro] astro@6.4.5</title>
-    <link>https://github.com/withastro/astro/releases/tag/astro%406.4.5</link>
-    <guid isPermaLink="true">https://github.com/withastro/astro/releases/tag/astro%406.4.5</guid>
-    <description><![CDATA[### Patch Changes
-
-- #16985 `4ecff32` Thanks @maximslo! - Fixes the `experimental.logger` destination not being used for the "Server listening on..." startup message. The logger is now resolved before the server starts listening, and `adapterLogger` re-creates itself when the underlying logger changes so the startup message uses the correct destination.
-
-- #16947 `e0703a6` Thanks @ematipico! - Fixes `Astro.request.url` not reflecting validated `X-Forwarded-Proto`/`X-Forwarded-Host` headers when `security.allowedDomains` is configured. Previously, only `Astro.url` was updated with the forwarded origin while `Astro.request.url` retained the socket-derived URL, causing the two to diverge behind TLS-terminating proxies.
-
-- #16997 `dc45246` Thanks @matthewp! - Reverts a change to `isNode` runtime detection that caused a significant build time regression for Cloudflare adapter users with large prerendered sites]]></description>
-    <pubDate>Tue, 09 Jun 2026 12:46:16 GMT</pubDate>
   </item>
   <item>
     <title>[prettier/prettier] 3.8.4</title>
@@ -305,18 +464,6 @@ Affects: `hono/body-limit` on AWS Lambda (`hono/aws-lambda`, `hono/lambda-edge`)
     <pubDate>Mon, 08 Jun 2026 20:24:17 GMT</pubDate>
   </item>
   <item>
-    <title>[bluesky-social/atproto] @atproto/ozone@0.2.2</title>
-    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/ozone%400.2.2</link>
-    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/ozone%400.2.2</guid>
-    <description><![CDATA[### Patch Changes
-
-- #5054 `dfce9df` Thanks @gcwill70! - add chat.bsky.moderation.getConvos to ozone
-
-- Updated dependencies [`da8818f`]:
- - @atproto/api@0.20.11]]></description>
-    <pubDate>Mon, 08 Jun 2026 19:35:28 GMT</pubDate>
-  </item>
-  <item>
     <title>[typescript-eslint/typescript-eslint] v8.61.0</title>
     <link>https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.61.0</link>
     <guid isPermaLink="true">https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.61.0</guid>
@@ -375,13 +522,6 @@ You can read about our versioning strategy and releases on our website.]]></desc
 
 ... (truncated)]]></description>
     <pubDate>Mon, 08 Jun 2026 14:44:21 GMT</pubDate>
-  </item>
-  <item>
-    <title>[denoland/rusty_v8] v150.0.0</title>
-    <link>https://github.com/denoland/rusty_v8/releases/tag/v150.0.0</link>
-    <guid isPermaLink="true">https://github.com/denoland/rusty_v8/releases/tag/v150.0.0</guid>
-    <description><![CDATA[No release notes provided.]]></description>
-    <pubDate>Mon, 08 Jun 2026 13:44:57 GMT</pubDate>
   </item>
   <item>
     <title>[nestjs/nest] v11.1.26</title>
@@ -541,50 +681,6 @@ Five coordinated Glue improvements land this cycle:
     <pubDate>Fri, 05 Jun 2026 18:28:22 GMT</pubDate>
   </item>
   <item>
-    <title>[anomalyco/opencode] v1.16.2</title>
-    <link>https://github.com/anomalyco/opencode/releases/tag/v1.16.2</link>
-    <guid isPermaLink="true">https://github.com/anomalyco/opencode/releases/tag/v1.16.2</guid>
-    <description><![CDATA[## Core
-
-### Bugfixes
-
-- Reasoning summaries now only run on providers that support them, avoiding GPT-5 request failures on compatible backends.
-- Edit operations now refuse loose matches that could overwrite the wrong code or replace an existing file by mistake.
-- Fixed Bedrock sessions hanging before a model response starts. (@alblez)
-
-### Improvements
-
-- Diff viewer now supports next and previous hunk navigation.
-- Terminal themes now refresh after live terminal reloads without stale colors or broken highlighting.
-- Running subagents can now be sent to the background so you can keep working.
-- Sessions now persist system context updates during long-running conversations.
-- Added Snowflake Cortex provider support. (@kameshsampath)
-
-## TUI
-
-### Bugfixes
-
-- Fixed the external editor fallback so attach-mode sessions still open when the original project path is unavailable locally. (@pcadena-lila)
-- Permission replies now route through the correct session directory.
-- `/mo` now prefers 
-
-... (truncated)]]></description>
-    <pubDate>Fri, 05 Jun 2026 15:58:51 GMT</pubDate>
-  </item>
-  <item>
-    <title>[pnpm/pnpm] pnpm 11.5.2 (v11.5.2)</title>
-    <link>https://github.com/pnpm/pnpm/releases/tag/v11.5.2</link>
-    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v11.5.2</guid>
-    <description><![CDATA[## Patch Changes
-
-* Peer dependency resolution now reuses the peer contexts already recorded in the lockfile when those providers are still present in the dependency graph and still satisfy the peer ranges. This avoids unnecessary peer-context rewrites during lockfile regeneration. Current manifest choices remain authoritative: a newly added, explicitly updated, or aliased direct provider, a changed nested provider, or a locked version that no longer satisfies the range still takes precedence.
-
-* The lockfile verifier now checks that a registry entry pinning an explicit `tarball` URL points at the artifact the registry's own metadata lists for that `name@version`. Previously a tampered lockfile could pair a trusted `name@version` with an attacker-chosen tarball URL (and a matching integrity for those bytes), so the install fetched the attacker's bytes. A mismatch — or any entry that can't be confirmed against the registry — is rejected with `ERR_PNPM_TARBALL_URL_MISMATCH`. Non-regi
-
-... (truncated)]]></description>
-    <pubDate>Fri, 05 Jun 2026 06:50:59 GMT</pubDate>
-  </item>
-  <item>
     <title>[abiosoft/colima] v0.10.3</title>
     <link>https://github.com/abiosoft/colima/releases/tag/v0.10.3</link>
     <guid isPermaLink="true">https://github.com/abiosoft/colima/releases/tag/v0.10.3</guid>
@@ -673,58 +769,6 @@ This is an hotfix release to address a regression for Kubernetes runtime.
     <guid isPermaLink="true">https://github.com/lynx-family/lynx/releases/tag/3.8.1</guid>
     <description><![CDATA[No release notes provided.]]></description>
     <pubDate>Thu, 04 Jun 2026 05:05:23 GMT</pubDate>
-  </item>
-  <item>
-    <title>[astral-sh/uv] 0.11.19</title>
-    <link>https://github.com/astral-sh/uv/releases/tag/0.11.19</link>
-    <guid isPermaLink="true">https://github.com/astral-sh/uv/releases/tag/0.11.19</guid>
-    <description><![CDATA[## Release Notes
-
-Released on 2026-06-03.
-
-### Python
-
-- Add CPython 3.15.0b2 (#19531)
-
-### Enhancements
-
-- Always compute SHA256 for remote distributions (#19662)
-- Add PyEmscripten platform (PEP 783) (#19629)
-- Add Pyodide 2025 target triple (#19653)
-
-### Preview features
-
-- Make preview features for commands have names that aren't ambiguous with the command (#19645)
-- Respect `--isolated` in `uv check` (#19666)
-
-### Bug fixes
-
-- Continue tool uninstall after dangling receipts (#19623)
-- Skip Unix-specific installation steps when cross-installing Windows Python distributions (#19424)
-
-## Install uv 0.11.19
-
-### Install prebuilt binaries via shell script
-
-```sh
-curl --proto '=https' --tlsv1.2 -LsSf | sh
-```
-
-### Install prebuilt binaries via powershell script
-
-```sh
-powershell -ExecutionPolicy Bypass -c "irm | iex"
-```
-
-## Download uv 0.11.19
-
-| File | Platform | Checksum |
-|--------|----------|----------|
-| uv-aarch64-apple-darwin.tar.gz | Apple Silicon macOS | checksum |
-| uv-x86_64
-
-... (truncated)]]></description>
-    <pubDate>Wed, 03 Jun 2026 22:38:57 GMT</pubDate>
   </item>
   <item>
     <title>[denoland/deno] v2.8.2</title>
@@ -853,31 +897,6 @@ Please try out the release binaries and report any issues at
     <pubDate>Tue, 02 Jun 2026 18:58:41 GMT</pubDate>
   </item>
   <item>
-    <title>[web-infra-dev/rspack] v2.0.6</title>
-    <link>https://github.com/web-infra-dev/rspack/releases/tag/v2.0.6</link>
-    <guid isPermaLink="true">https://github.com/web-infra-dev/rspack/releases/tag/v2.0.6</guid>
-    <description><![CDATA[## Highlights
-
-### React Server Components: enforce `server-only` / `client-only` boundaries
-
-RSC builds now validate the `server-only` and `client-only` marker packages. Importing a `client-only` module from a server-graph module (or a `server-only` module from a client-graph module) is reported as a diagnostic. This marker-package validation always runs and is independent of `disableClientApiChecks`, which now only scopes the React client-API checks.
-
-```js
-// server component (server graph)
-import 'client-only'; // ❌ reported: client-only imported in a server module
-
-// client component (client graph)
-import 'server-only'; // ❌ reported: server-only imported in a client module
-```
-
-### Expose `DeterministicModuleIdsPlugin`
-
-The webpack-compatible deterministic module id plugin is now exposed through the JS API as `rspack.ids.DeterministicModuleIdsPlugin`, giving you fine-grained control over module ids for long-term caching. It supports the webpack options `test`, `m
-
-... (truncated)]]></description>
-    <pubDate>Tue, 02 Jun 2026 09:48:56 GMT</pubDate>
-  </item>
-  <item>
     <title>[open-cli-tools/concurrently] v10.0.3</title>
     <link>https://github.com/open-cli-tools/concurrently/releases/tag/v10.0.3</link>
     <guid isPermaLink="true">https://github.com/open-cli-tools/concurrently/releases/tag/v10.0.3</guid>
@@ -898,49 +917,6 @@ The webpack-compatible deterministic module id plugin is now exposed through the
 
 ... (truncated)]]></description>
     <pubDate>Mon, 01 Jun 2026 21:57:03 GMT</pubDate>
-  </item>
-  <item>
-    <title>[nodejs/node] 2026-06-01, Version 26.3.0 (Current), @aduh95 (v26.3.0)</title>
-    <link>https://github.com/nodejs/node/releases/tag/v26.3.0</link>
-    <guid isPermaLink="true">https://github.com/nodejs/node/releases/tag/v26.3.0</guid>
-    <description><![CDATA[### Notable Changes
-
-#### Potential changes to macOS Universal Binary availability
-
-With Apple and its ecosystem progressively dropping support for Intel-based
-architectures, it has become apparent that the Node.js project may not be able
-to maintain the universal binaries we currently distribute for the full lifetime
-of Node.js 26. This change serves to communicate that risk. At present, our
-intention remains to continue shipping universal binaries supporting both Apple
-Silicon and Intel-based Macs for as long as practical.
-
-Contributed by Antoine du Hamel in #63055.
-
-#### Other notable changes
-
-* \[`a2a4b33dd8`] - **(SEMVER-MINOR)** **buffer**: increase `Buffer.poolSize` default to 64 KiB (Matteo Collina) #63597
-* \[`051a2152f7`] - **crypto**: update root certificates to NSS 3.123.1 (Node.js GitHub Bot) #63527
-* \[`49462eca37`] - **(SEMVER-MINOR)** **http**: add `httpValidation` option to configure header value validation (RajeshKumar11) #61597
-* \[`97b7ab19bd`] - **(SEMVER-MINOR)** 
-
-... (truncated)]]></description>
-    <pubDate>Mon, 01 Jun 2026 13:10:59 GMT</pubDate>
-  </item>
-  <item>
-    <title>[vitejs/vite] v6.4.3</title>
-    <link>https://github.com/vitejs/vite/releases/tag/v6.4.3</link>
-    <guid isPermaLink="true">https://github.com/vitejs/vite/releases/tag/v6.4.3</guid>
-    <description><![CDATA[Please refer to CHANGELOG.md for details.]]></description>
-    <pubDate>Mon, 01 Jun 2026 10:39:31 GMT</pubDate>
-  </item>
-  <item>
-    <title>[import-js/eslint-import-resolver-typescript] v4.4.5</title>
-    <link>https://github.com/import-js/eslint-import-resolver-typescript/releases/tag/v4.4.5</link>
-    <guid isPermaLink="true">https://github.com/import-js/eslint-import-resolver-typescript/releases/tag/v4.4.5</guid>
-    <description><![CDATA[### Patch Changes
-
-- #473 `32c61ab` Thanks @leey0818! - fix: check tsconfig matching before using resolver]]></description>
-    <pubDate>Mon, 01 Jun 2026 04:17:52 GMT</pubDate>
   </item>
 </channel>
 </rss>
