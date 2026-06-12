@@ -5,38 +5,241 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Thu, 11 Jun 2026 22:32:54 GMT</lastBuildDate>
+  <lastBuildDate>Fri, 12 Jun 2026 22:29:25 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
   <item>
-    <title>[bluesky-social/atproto] @atproto/common@0.6.2</title>
-    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/common%400.6.2</link>
-    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/common%400.6.2</guid>
-    <description><![CDATA[### Patch Changes
-
-- #5080 `b2c098f` Thanks @devinivy! - Make rmIfExists more robust to partial failures.
-
-- #5078 `cc329bf` Thanks @jcalabro! - Add `coalesceByteStream` utility to coalesce a byte stream into chunks with a minimal size.]]></description>
-    <pubDate>Thu, 11 Jun 2026 20:08:53 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-js-v3] v3.1067.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1067.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1067.0</guid>
-    <description><![CDATA[#### 3.1067.0(2026-06-11)
+    <title>[aws/aws-sdk-js-v3] v3.1068.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1068.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1068.0</guid>
+    <description><![CDATA[#### 3.1068.0(2026-06-12)
 
 ##### Documentation Changes
 
-* suggest UndiciHttpHandler as an alternative request handler (#8092) (bd18a9f0)
+* **client-iam:** Updating documentation for select service-specific credential APIs (f572228a)
 
 ##### New Features
 
-* **client-eks:** Introduce new CreateCluster parameters for Amazon EKS local clusters on AWS Outposts. Added etcdInstanceType for configuring the EC2 instance type for dedicated etcd instances, and spreadLevel for configuring the placement group spread level for Kubernetes control plane and etcd instances. (383363d5)
-* **client-omics:** Adds support for workflowName in the ListRuns API response. (fa2f4604)
-* **client-neptune:** Amazon Neptune now supports IPv6 dual-stack networking. You can create and manage Neptune DB clusters accessible over both IPv4 and IPv6 by specifying NetworkType as DUAL in CreateDBCluster, ModifyDBCluster, RestoreDBClusterFromSnapshot, and RestoreDBClusterToPointInTime API operations (ae089f94)
-* **client-bedrock-agentcore:** Adds support to perform cross account data plane actions on an AgentCore Memory
+* **clients:** update client endpoints as of 2026-06-12 (3f89d039)
+* **client-acm:** Certificate transparency logging opt-out is no longer available. Per compliance requirements, all public ACM certificates are automatically recorded in certificate transparency logs. The CertificateTransparencyLoggingPreference option is deprecated. (ca60b0f9)
+* **client-eks:** Patches missing enum values for EKS updates (c2df34dc)
+* **client-sagemaker-runtime:** Added support for inline request payloads to the InvokeEndpointAsync operation to allow users to provide the inference payload directly in the request Body (up to 128,000 bytes) as an alternative to uploading the payload to Amazon S3 and passing InputLocation. (c4e229dd)
+* **client-glue:** Adds support for retrieving Apache Iceberg table metadata via GetTable. Use the new A
 
 ... (truncated)]]></description>
-    <pubDate>Thu, 11 Jun 2026 18:51:49 GMT</pubDate>
+    <pubDate>Fri, 12 Jun 2026 18:56:44 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-06-12) (release-2026-06-12)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-06-12</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-06-12</guid>
+    <description><![CDATA[## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/service/acm`: [v1.40.0](service/acm/CHANGELOG.md#v1400-2026-06-12)
+ * **Feature**: Certificate transparency logging opt-out is no longer available. Per compliance requirements, all public ACM certificates are automatically recorded in certificate transparency logs. The CertificateTransparencyLoggingPreference option is deprecated.
+* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcore`: [v1.30.0](service/bedrockagentcore/CHANGELOG.md#v1300-2026-06-12)
+ * **Feature**: Added tagging and CMK support across optimization, an explanation field in recommendation output, and an insights feature to identify failure patterns, extract user intents, and summarize execution behavior
+* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcorecontrol`: [v1.44.0](service/bedrockagentcorecontrol/CHANGELOG.md#v1440-2026-06-12)
+ * **Feature**: Added tagging and CMK support for optimizations and an insights feature to identify failure patterns, extract u
+
+... (truncated)]]></description>
+    <pubDate>Fri, 12 Jun 2026 18:41:22 GMT</pubDate>
+  </item>
+  <item>
+    <title>[podman-container-tools/podman] v5.8.3</title>
+    <link>https://github.com/podman-container-tools/podman/releases/tag/v5.8.3</link>
+    <guid isPermaLink="true">https://github.com/podman-container-tools/podman/releases/tag/v5.8.3</guid>
+    <description><![CDATA[### Security
+- This release addresses CVE-2026-44517, where building a Dockerfile using a `ADD` or `COPY` instruction accessing a malicious Git repository or tar archive could cause files outside the build context directory to be included in the build context or copied into the build. Please see GHSA-49p4-px3h-rq49 for more details.
+
+### Misc
+- Updated Buildah to v1.43.2
+- Updated gvisor-tap-vsock to v0.8.9]]></description>
+    <pubDate>Fri, 12 Jun 2026 17:58:07 GMT</pubDate>
+  </item>
+  <item>
+    <title>[eslint/eslint] v10.5.0</title>
+    <link>https://github.com/eslint/eslint/releases/tag/v10.5.0</link>
+    <guid isPermaLink="true">https://github.com/eslint/eslint/releases/tag/v10.5.0</guid>
+    <description><![CDATA[## Features
+* `5ca8c52` feat: correct stack tracking in max-nested-callbacks (#20973) (Pixel998)
+* `b565783` feat: report no-with violations at the with keyword (#20971) (Pixel998)
+* `2ce032f` feat: report max-lines-per-function violations at function head (#20966) (Pixel998)
+* `732cb3e` feat: report max-nested-callbacks violations at function head (#20967) (Pixel998)
+* `f9c138a` feat: report max-depth violations on keywords (#20943) (Pixel998)
+* `bdb496c` feat: correct max-depth handling for else-if chains (#20944) (Pixel998)
+* `c296873` feat: update error loc in `max-statements` to function header (#20907) (Taejin Kim)
+
+## Documentation
+* `8ae1b5b` docs: Update README (GitHub Actions Bot)
+* `ca7eb90` docs: update Node.js prerequisites to include ICU support (#20962) (Francesco Trotta)
+* `f99b47a` docs: Update README (GitHub Actions Bot)
+* `acf03d4` docs: clarify precedence of parserOptions over languageOptions (#20926) (sethamus)
+
+## Chores
+* `b18bf58` chore: update ecosystem plugins
+
+... (truncated)]]></description>
+    <pubDate>Fri, 12 Jun 2026 17:54:47 GMT</pubDate>
+  </item>
+  <item>
+    <title>[ollama/ollama] v0.30.8</title>
+    <link>https://github.com/ollama/ollama/releases/tag/v0.30.8</link>
+    <guid isPermaLink="true">https://github.com/ollama/ollama/releases/tag/v0.30.8</guid>
+    <description><![CDATA[## What's Changed
+* Fixed `ollama launch` selecting the wrong provider in some cases
+* Improved prompt caching by decoupling it from context shift for better KV cache reuse
+* More stable MLX inference with hardened linear and embedding layers
+* MLX runner now creates snapshots during prompt processing and speculative decoding for improved reliability
+* Improved recurrent model support with per-boundary states from the gated-delta kernels
+
+**Full Changelog**:]]></description>
+    <pubDate>Fri, 12 Jun 2026 17:04:52 GMT</pubDate>
+  </item>
+  <item>
+    <title>[bluesky-social/atproto] @atproto/oauth-provider-ui@0.7.3</title>
+    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/oauth-provider-ui%400.7.3</link>
+    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/oauth-provider-ui%400.7.3</guid>
+    <description><![CDATA[### Patch Changes
+
+- #5089 `85b4eb8` Thanks @matthieusieben! - Improve UX when the browser fails to redirect the user after the OAuth flow ends
+
+- #5089 `85b4eb8` Thanks @matthieusieben! - Fix error page no longer showing "This request has expired" when navigating back to the authorization page]]></description>
+    <pubDate>Fri, 12 Jun 2026 15:53:59 GMT</pubDate>
+  </item>
+  <item>
+    <title>[biomejs/biome] Biome CLI v2.5.0 (@biomejs/biome@2.5.0)</title>
+    <link>https://github.com/biomejs/biome/releases/tag/%40biomejs/biome%402.5.0</link>
+    <guid isPermaLink="true">https://github.com/biomejs/biome/releases/tag/%40biomejs/biome%402.5.0</guid>
+    <description><![CDATA[## 2.5.0
+
+### Minor Changes
+
+- #9539 `f0615fd` Thanks @ematipico! - Added a new reporter called `concise`. When `--reporter=concise` is passed the commands `format`, `lint`, `check` and `ci`, the diagnostics are printed in a compact manner:
+
+ ```
+ ! index.ts:2:10: lint/correctness/noUnusedImports: Several of these imports are unused.
+ ! main.ts:9:7: lint/correctness/noUnusedVariables: This variable f is unused.
+ × index.ts:8:5: lint/suspicious/noImplicitAnyLet: This variable implicitly has the any type.
+ × main.ts:2:10: lint/suspicious/noRedeclare: Shouldn't redeclare 'z'. Consider to delete it or rename it.
+ ```
+
+- #9495 `2056b23` Thanks @aviraldua93! - Added the `useKeyWithClickEvents` a11y lint rule for HTML files (`.html`, `.vue`, `.svelte`, `.astro`). This is a port of the existing JSX rule. The rule enforces that elements with an `onclick` handler also have at least one keyboard event handler (`onkeydown`, `onkeyup`, or `onkeypress`) to ensure keyboard accessibility.
+
+ Inherently
+
+... (truncated)]]></description>
+    <pubDate>Fri, 12 Jun 2026 12:09:51 GMT</pubDate>
+  </item>
+  <item>
+    <title>[openclaw/openclaw] openclaw 2026.6.6 (v2026.6.6)</title>
+    <link>https://github.com/openclaw/openclaw/releases/tag/v2026.6.6</link>
+    <guid isPermaLink="true">https://github.com/openclaw/openclaw/releases/tag/v2026.6.6</guid>
+    <description><![CDATA[### Highlights
+
+- Security boundaries are substantially tighter across transcripts, sandbox binds, host environment inheritance, MCP stdio, Codex HTTP access, native search policy, elevated sender checks, deleted-agent ACP bypasses, loopback tools, Discord moderation, and Teams group actions; exec approvals now fail closed on timeout. (#91529, #91618, #91615, #91619, #91741, #91745, #91746, #91748, #91749, #91750, #91751, #91752, #91763, #89938) Thanks @joshavant, @pgondhi987, @mmaps, @eleqtrizit, @shakkernerd, and @drobison00.
+- Telegram delivery is safer and more coherent: account-scoped topics route to the right agent, streamed text survives tool calls, `/compact` works on generic ingress, callback handling uses concrete APIs, draft chunking is shared, durable dispatch dedupe moved into the SDK, and unauthorized DM text stays out of cache and prompt context. (#91189, #88682, #89588, #90212, #91876, #91874, #91904, #91478, #91915) Thanks @codysai001, @alexzhu0, @joelnishanth, @snowzl
+
+... (truncated)]]></description>
+    <pubDate>Fri, 12 Jun 2026 11:04:42 GMT</pubDate>
+  </item>
+  <item>
+    <title>[cloudflare/vinext] @vinext/cloudflare@0.1.1</title>
+    <link>https://github.com/cloudflare/vinext/releases/tag/%40vinext/cloudflare%400.1.1</link>
+    <guid isPermaLink="true">https://github.com/cloudflare/vinext/releases/tag/%40vinext/cloudflare%400.1.1</guid>
+    <description><![CDATA[### Bug Fixes
+
+- **Cloudflare:** update cache adapter jsdoc and examples (#1898)
+
+### Contributors
+
+- @james-elicx]]></description>
+    <pubDate>Fri, 12 Jun 2026 10:31:14 GMT</pubDate>
+  </item>
+  <item>
+    <title>[ant-design/ant-design] 6.4.4</title>
+    <link>https://github.com/ant-design/ant-design/releases/tag/6.4.4</link>
+    <guid isPermaLink="true">https://github.com/ant-design/ant-design/releases/tag/6.4.4</guid>
+    <description><![CDATA[- 🛠 Fix build failures in Vite, Yarn PnP, Node 25 and other strict ESM environments caused by deep path imports of rc-component packages. #58115 @li-jia-nan @QDyanbing
+- 🛠 Fix multiple components rendering empty wrapper DOM nodes when ReactNode content is an empty string. #58160 @QDyanbing
+- Descriptions
+ - 🐞 Fix Descriptions width being unexpectedly inflated when nested inside a Table. #58203 @18062706139fcz
+ - 🐞 Fix Descriptions responsive `column` value not behaving as expected. #58058 @kfylaktopoulos
+- Radio
+ - 🐞 Fix Radio.Group button style border radius and adjacent border display issue in vertical layout. #58317 @QDyanbing
+ - 🐞 Fix Radio checked state not updating on click in uncontrolled mode. #57917 @QDyanbing
+- Table
+ - 🐞 Fix Table incorrect semantic DOM structure in `virtual` mode. #58134 @meet-student
+ - ⌨️ Improve Table filter dropdown accessibility by marking the wrapper container as presentational. #58164 @ug-hero
+- Tour
+ - ⌨️ Fix Tour previous button text color r
+
+... (truncated)]]></description>
+    <pubDate>Fri, 12 Jun 2026 06:25:32 GMT</pubDate>
+  </item>
+  <item>
+    <title>[anomalyco/opencode] v1.17.4</title>
+    <link>https://github.com/anomalyco/opencode/releases/tag/v1.17.4</link>
+    <guid isPermaLink="true">https://github.com/anomalyco/opencode/releases/tag/v1.17.4</guid>
+    <description><![CDATA[## Core
+
+### Improvements
+
+- Added `cwd` support for local MCP servers so they can start from a workspace-relative directory. (@Grantmartin2002)
+- Added connector-based authentication flows and support for stored provider credentials.
+- Added v2 API endpoints to create and fetch sessions, list session questions, and resolve the active location.
+- File reads now return raw content with the correct content type for API and SDK clients.
+- MCP server log notifications are now surfaced in opencode logs.
+
+### Bugfixes
+
+- Fixed Gemini tool schemas that used multi-type fields so compatible tools keep working. (@Killusions)
+- Content-filtered model responses now surface as visible errors instead of failing silently. (@kkdawkins)
+- Fixed MCP auth and debug requests dropping configured headers.
+- Snapshot creation now reuses source Git objects to avoid long re-hashing delays on huge repos. (@dmtrKovalenko)
+- Fixed MCP catalog request timeouts not applying when listing prompts, resources, or tools
+
+... (truncated)]]></description>
+    <pubDate>Fri, 12 Jun 2026 02:19:40 GMT</pubDate>
+  </item>
+  <item>
+    <title>[pnpm/pnpm] pnpm 11.6 (v11.6.0)</title>
+    <link>https://github.com/pnpm/pnpm/releases/tag/v11.6.0</link>
+    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v11.6.0</guid>
+    <description><![CDATA[### ⚠️ Security fix — environment variables in a project `.npmrc` (action may be required)
+
+Following GHSA-3qhv-2rgh-x77r, pnpm no longer expands `${ENV_VAR}` placeholders that come from a **repository-controlled** config file, because a malicious repository could otherwise use them to leak your environment secrets (npm tokens, CI job tokens, etc.) to an attacker-controlled registry during install. This applies to:
+
+- the project/workspace `.npmrc` — `registry`, `@scope:registry`, proxy URLs, URL-scoped keys (`//host/…`), and credential values (`_authToken`, `_auth`, `_password`, `username`, `tokenHelper`, `cert`, `key`);
+- registry URLs in `pnpm-workspace.yaml`.
+
+Environment variables are **still** expanded in trusted config: your user-level `~/.npmrc`, the global config, CLI options, and environment config.
+
+**If your authentication broke after upgrading**, move the token out of the committed `.npmrc`:
+
+```sh
+# Writes to your user/global config, not the repository:
+pnpm 
+
+... (truncated)]]></description>
+    <pubDate>Thu, 11 Jun 2026 23:08:38 GMT</pubDate>
+  </item>
+  <item>
+    <title>[evanw/esbuild] v0.28.1</title>
+    <link>https://github.com/evanw/esbuild/releases/tag/v0.28.1</link>
+    <guid isPermaLink="true">https://github.com/evanw/esbuild/releases/tag/v0.28.1</guid>
+    <description><![CDATA[* Disallow ``\`` in local development server HTTP requests (GHSA-g7r4-m6w7-qqqr)
+
+ This release fixes a security issue where HTTP requests to esbuild's local development server could traverse outside of the serve directory on Windows using a ``\`` backslash character. It happened due to the use of Go's `path.Clean` function, which only handles Unix-style `/` characters. HTTP requests with paths containing ``\`` are no longer allowed.
+
+ Thanks to @dellalibera for reporting this issue.
+
+* Add integrity checks to the Deno API (GHSA-gv7w-rqvm-qjhr)
+
+ The previous release of esbuild added integrity checks to esbuild's npm install script. This release also adds integrity checks to esbuild's Deno install script. Now esbuild's Deno API will also fail with an error if the downloaded esbuild binary contains something other than the expected content.
+
+ Note that esbuild's Deno API installs from `registry.npmjs.org` by default, but allows the `NPM_CONFIG_REGISTRY` environment variable to
+
+... (truncated)]]></description>
+    <pubDate>Thu, 11 Jun 2026 22:47:14 GMT</pubDate>
   </item>
   <item>
     <title>[anomalyco/opentui] Release v0.4.1 (v0.4.1)</title>
@@ -54,22 +257,6 @@
 
 **Full Changelog**:]]></description>
     <pubDate>Thu, 11 Jun 2026 18:47:02 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-06-11) (release-2026-06-11)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-06-11</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-06-11</guid>
-    <description><![CDATA[## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcorecontrol`: [v1.43.0](service/bedrockagentcorecontrol/CHANGELOG.md#v1430-2026-06-11)
- * **Feature**: Supports deterministic metadata for AgentCore Memory
-* `github.com/aws/aws-sdk-go-v2/service/eks`: [v1.85.0](service/eks/CHANGELOG.md#v1850-2026-06-11)
- * **Feature**: Introduce new CreateCluster parameters for Amazon EKS local clusters on AWS Outposts. Added etcdInstanceType for configuring the EC2 instance type for dedicated etcd instances, and spreadLevel for configuring the placement group spread level for Kubernetes control plane and etcd instances.
-* `github.com/aws/aws-sdk-go-v2/service/healthlake`: [v1.38.0](service/healthlake/CHANGELOG.md#v1380-2026-06-11)
- * **Feature**: Adds the UpdateFHIRDatastore API and adds analytics, NLP, and profile configuration support to CreateFHIRDatastore and DescribeFHIRDatastore.
-* `github.com/aws/aws-sdk-go-v2/service/neptune`: [v1.46.0](service/neptune/CHANGELOG.md#v1460
-
-... (truncated)]]></description>
-    <pubDate>Thu, 11 Jun 2026 18:36:30 GMT</pubDate>
   </item>
   <item>
     <title>[astral-sh/uv] 0.11.21</title>
@@ -108,24 +295,6 @@ Released on 2026-06-11.
 
 ... (truncated)]]></description>
     <pubDate>Thu, 11 Jun 2026 18:20:26 GMT</pubDate>
-  </item>
-  <item>
-    <title>[pnpm/pnpm] pnpm 10.34.3 (v10.34.3)</title>
-    <link>https://github.com/pnpm/pnpm/releases/tag/v10.34.3</link>
-    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v10.34.3</guid>
-    <description><![CDATA[### ⚠️ Security fix — environment variables in a project `.npmrc` (action may be required)
-
-Following GHSA-3qhv-2rgh-x77r, pnpm no longer expands `${ENV_VAR}` placeholders that come from a **repository-controlled** config file, because a malicious repository could otherwise use them to leak your environment secrets (npm tokens, CI job tokens, etc.) to an attacker-controlled registry during install. This applies to:
-
-- the project/workspace `.npmrc` — `registry`, `@scope:registry`, proxy URLs, URL-scoped keys (`//host/…`), and credential values (`_authToken`, `_auth`, `_password`, `username`, `tokenHelper`, `cert`, `key`);
-- registry URLs in `pnpm-workspace.yaml`.
-
-This release also closes a bypass where a project `.npmrc` could set `userconfig`, `globalconfig`, or `prefix` to make pnpm load a repo-supplied file as *trusted* config (via `@pnpm/npm-conf@3.0.3`).
-
-Environment variables are **still** expanded in trusted config: your user-level `~/.npmrc`, the global config, CLI op
-
-... (truncated)]]></description>
-    <pubDate>Thu, 11 Jun 2026 17:04:59 GMT</pubDate>
   </item>
   <item>
     <title>[denoland/deno] v2.8.3</title>
@@ -416,13 +585,6 @@ This release introduces th
     <pubDate>Wed, 10 Jun 2026 18:33:08 GMT</pubDate>
   </item>
   <item>
-    <title>[anomalyco/opencode] v1.17.3</title>
-    <link>https://github.com/anomalyco/opencode/releases/tag/v1.17.3</link>
-    <guid isPermaLink="true">https://github.com/anomalyco/opencode/releases/tag/v1.17.3</guid>
-    <description><![CDATA[Fixed issue with 1.17.2 desktop crashing]]></description>
-    <pubDate>Wed, 10 Jun 2026 18:00:28 GMT</pubDate>
-  </item>
-  <item>
     <title>[withastro/astro] @astrojs/netlify@7.0.13</title>
     <link>https://github.com/withastro/astro/releases/tag/%40astrojs/netlify%407.0.13</link>
     <guid isPermaLink="true">https://github.com/withastro/astro/releases/tag/%40astrojs/netlify%407.0.13</guid>
@@ -492,38 +654,6 @@ WinAppSDK 2.2.0 is the latest stable servicing release for 2.0, with a new Windo
     <pubDate>Tue, 09 Jun 2026 22:18:11 GMT</pubDate>
   </item>
   <item>
-    <title>[openai/codex] 0.139.0 (rust-v0.139.0)</title>
-    <link>https://github.com/openai/codex/releases/tag/rust-v0.139.0</link>
-    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.139.0</guid>
-    <description><![CDATA[## New Features
-- Code mode can now call standalone web search directly, including from nested JavaScript tool calls, and receive plaintext search results. (#26719)
-- Tool and connector input schemas now preserve `oneOf` and `allOf`, and large schemas keep more shallow structure when compacted, improving compatibility with richer MCP tools. (#24118, #27084)
-- `codex doctor` now includes editor and pager environment details in the local report while redacting raw values in JSON output. (#27081)
-- Plugin marketplace automation is more informative and responsive: `codex plugin marketplace list --json` now includes each marketplace source, and plugin lists can return from the cached remote catalog before refreshing in the background. (#27009, #26932)
-
-## Bug Fixes
-- `codex resume --last "..."` and `codex fork --last "..."` now treat the trailing argument as the initial prompt instead of misreading it as a session ID. (#26818)
-- MCP startup warnings from subagents now stay in the thread tha
-
-... (truncated)]]></description>
-    <pubDate>Tue, 09 Jun 2026 20:13:29 GMT</pubDate>
-  </item>
-  <item>
-    <title>[openclaw/openclaw] openclaw 2026.6.5 (v2026.6.5)</title>
-    <link>https://github.com/openclaw/openclaw/releases/tag/v2026.6.5</link>
-    <guid isPermaLink="true">https://github.com/openclaw/openclaw/releases/tag/v2026.6.5</guid>
-    <description><![CDATA[### Highlights
-
-- QQBot now strips model reasoning/thinking scaffolding before native delivery, preventing raw `<thinking>` content from leaking into channel replies. (#89913, #90132) Thanks @openperf.
-- MCP tool results now coerce `resource_link`, `resource`, `audio`, malformed image, and future non-text/image blocks at the materialize boundary, preventing Anthropic 400s and poisoned session history after a tool returns richer MCP content. (#90710, #90728) Thanks @RanSHammer and @849261680.
-- Anthropic extended-thinking sessions recover after prompt-cache expiry or Gateway restart because stream start events wait for `message_start`, letting pre-generation signature errors trigger the existing recovery retry. (#90667, #90697) Thanks @openperf.
-- Parallel is now a bundled `web_search` provider with `PARALLEL_API_KEY` discovery, guarded endpoint handling, cache-safe session ids, onboarding picker support, and docs. (#85158) Thanks @NormallyGaussian.
-- Google Vertex ADC users get static 
-
-... (truncated)]]></description>
-    <pubDate>Tue, 09 Jun 2026 18:13:20 GMT</pubDate>
-  </item>
-  <item>
     <title>[mongodb/node-mongodb-native] v7.3.0</title>
     <link>https://github.com/mongodb/node-mongodb-native/releases/tag/v7.3.0</link>
     <guid isPermaLink="true">https://github.com/mongodb/node-mongodb-native/releases/tag/v7.3.0</guid>
@@ -568,36 +698,6 @@ SCRAM-based authentication (the default mechanism for username/password connecti
 
 🔗 Changelog]]></description>
     <pubDate>Tue, 09 Jun 2026 11:31:30 GMT</pubDate>
-  </item>
-  <item>
-    <title>[cloudflare/vinext] vinext@0.1.1</title>
-    <link>https://github.com/cloudflare/vinext/releases/tag/vinext%400.1.1</link>
-    <guid isPermaLink="true">https://github.com/cloudflare/vinext/releases/tag/vinext%400.1.1</guid>
-    <description><![CDATA[### Bug Fixes
-
-#### App Router
-
-- match Pages navigation params in hybrid builds (#1741)
-- include route pattern in repeated-slash Link warning (#1554) (#1855)
-- scroll to top with hoisted children and loading.js (#1368) (#1857)
-- resolve explicit parallel slot with no page (#1535) (#1852)
-- propagate "use cache" tags to route-handler ISR entries (#1453) (#1848)
-- resolve query-only Link href against current path (#1540) (#1844)
-- render built-in fallback when global-error.tsx throws (#1548) (#1837)
-- clear useLinkStatus pending after interrupted navigation (#1527) (#1839)
-- respect reactMaxHeadersLength for preload Link header (#1552) (#1841)
-- preserve \_rsc query across redirects (#1529) (#1838)
-- apply trailingSlash to route handler request URL (#1827) (#1835)
-- restore scroll snapshots on back (#1743)
-- isolate page CSS chunks in production (#1738)
-
-#### Build
-
-- correct CSS ordering for global-not-found (#1549) (#1858)
-- exclude Vite build manifests from Cloudflare asset uploads 
-
-... (truncated)]]></description>
-    <pubDate>Tue, 09 Jun 2026 11:13:37 GMT</pubDate>
   </item>
   <item>
     <title>[honojs/hono] v4.12.25</title>
@@ -748,27 +848,6 @@ You can read about our versioning strategy and releases on our website.]]></desc
     <pubDate>Mon, 08 Jun 2026 09:57:56 GMT</pubDate>
   </item>
   <item>
-    <title>[ollama/ollama] v0.30.7</title>
-    <link>https://github.com/ollama/ollama/releases/tag/v0.30.7</link>
-    <guid isPermaLink="true">https://github.com/ollama/ollama/releases/tag/v0.30.7</guid>
-    <description><![CDATA[Ollama Launch now supports Hermes Desktop, a native desktop interface for the Hermes agent. Run it alongside your Hermes agent to get a visual interface for managing conversations, integrations, and messaging apps.
-
-```
-ollama launch hermes-desktop
-```
-<img width="2556" height="1716" alt="image" src="" />
-
-What's Changed
-
-- Hermes Desktop is now available via `ollama launch hermes-desktop` with native Windows configuration path support
-- OpenAI-compatible API models list now aligns with available model tags
-- Added documentation describing the llama.cpp update process
-- Updated Zod schema examples to use the native toJSONSchema helper
-
-Full Changelog:]]></description>
-    <pubDate>Sun, 07 Jun 2026 21:51:48 GMT</pubDate>
-  </item>
-  <item>
     <title>[sveltejs/svelte] svelte@5.56.3</title>
     <link>https://github.com/sveltejs/svelte/releases/tag/svelte%405.56.3</link>
     <guid isPermaLink="true">https://github.com/sveltejs/svelte/releases/tag/svelte%405.56.3</guid>
@@ -851,100 +930,6 @@ This is an hotfix release to address a regression for Kubernetes runtime.
     <guid isPermaLink="true">https://github.com/warpdotdev/warp/releases/tag/v0.2026.06.03.09.49.stable_00</guid>
     <description><![CDATA[Warp Stable release]]></description>
     <pubDate>Wed, 03 Jun 2026 09:49:25 GMT</pubDate>
-  </item>
-  <item>
-    <title>[axios/axios] v1.17.0</title>
-    <link>https://github.com/axios/axios/releases/tag/v1.17.0</link>
-    <guid isPermaLink="true">https://github.com/axios/axios/releases/tag/v1.17.0</guid>
-    <description><![CDATA[## v1.17.0 — June 1, 2026
-
-This release adds Node HTTP zstd decompression, hardens config and release workflows, and fixes authentication, header, proxy, and type-handling regressions.
-
-## 🔒 Security Fixes
-
-* **Config Hardening:** Guarded `socketPath`, `params`, and `paramsSerializer` reads with own-property checks to prevent inherited prototype values from affecting request behavior, including SSRF-sensitive paths. (__#10901__, __#10922__)
-* **Release Publishing:** Switched the publish workflow to npm staged publishing for safer, auditable package releases with provenance. (__#10926__)
-
-## 🚀 New Features
-
-* **HTTP Compression:** Added Node HTTP adapter support for zstd response decompression, with `transitional.advertiseZstdAcceptEncoding` controlling whether `zstd` is advertised in `Accept-Encoding`. (__#6792__, __#10920__)
-
-## 🐛 Bug Fixes
-
-* **Authentication Handling:** Restored Basic auth on same-origin Node redirects while continuing to strip credentials cross-or
-
-... (truncated)]]></description>
-    <pubDate>Wed, 03 Jun 2026 06:14:01 GMT</pubDate>
-  </item>
-  <item>
-    <title>[containerd/containerd] containerd 2.1.8 (v2.1.8)</title>
-    <link>https://github.com/containerd/containerd/releases/tag/v2.1.8</link>
-    <guid isPermaLink="true">https://github.com/containerd/containerd/releases/tag/v2.1.8</guid>
-    <description><![CDATA[Welcome to the v2.1.8 release of containerd!
-
-The eighth patch release for containerd 2.1 contains various fixes and updates.
-
-### Security Updates
-
-* **CVE-2026-46680**
-
-### Highlights
-
-#### Runtime
-
-* Fix handling of out-of-range USER values in OCI spec to avoid unexpected username/group lookups (#13497)
-* Fix bugs in sandbox service affecting sandbox creation configuration and event publishing (#13272)
-* Set AppArmor abi conditionally to support versions < 3.0 (#13274)
-
-#### Snapshotters
-
-* Support both "volatile" and "fsync=volatile" mount options for volatile snapshotter (#13297)
-
-Please try out the release binaries and report any issues at
-
-
-### Contributors
-
-* Wei Fu
-* Brian Goff
-* Chris Henzie
-* Samuel Karp
-* LEI WANG
-* William Myers
-
-### Changes
-<details><summary>12 commits</summary>
-<p>
-
-* Prepare release notes for v2.1.8 (#13489)
- * `07f2265d4` Prepare release notes for v2.1.8
-* oci: return explicit error for out-of-range USER values (#13497)
- * `2054cc54c` oci: return expli
-
-... (truncated)]]></description>
-    <pubDate>Tue, 02 Jun 2026 18:58:41 GMT</pubDate>
-  </item>
-  <item>
-    <title>[open-cli-tools/concurrently] v10.0.3</title>
-    <link>https://github.com/open-cli-tools/concurrently/releases/tag/v10.0.3</link>
-    <guid isPermaLink="true">https://github.com/open-cli-tools/concurrently/releases/tag/v10.0.3</guid>
-    <description><![CDATA[Republish of with Trusted Publishing enabled (see #595)
-
-**Full Changelog**:]]></description>
-    <pubDate>Tue, 02 Jun 2026 04:31:37 GMT</pubDate>
-  </item>
-  <item>
-    <title>[open-webui/open-webui] v0.9.6</title>
-    <link>https://github.com/open-webui/open-webui/releases/tag/v0.9.6</link>
-    <guid isPermaLink="true">https://github.com/open-webui/open-webui/releases/tag/v0.9.6</guid>
-    <description><![CDATA[### Added
-
-- 📦 **Official knowledge base sync tool.** A new companion tool from Open WebUI, oikb, keeps a knowledge base in sync with a local directory, GitHub repo, S3 bucket, Confluence space, or any of more than 40 other sources, uploading only new and changed files using the incremental sync support added in this release. oikb
-- 📂 **Smart directory sync for knowledge bases.** Local directories can now be synced into a knowledge base in one action: file checksums are compared against what's already stored, and only added or modified files are uploaded while removed files and orphaned subdirectories are cleaned up, with the directory structure mirrored automatically and per-file progress shown throughout. #19190, #19394, Commit, Commit, Commit, Commit, Commit, Commit
-- 🗂️ **Knowledge base folders.** Files inside a knowledge base can now be organized into nested folders, with breadcrumb navigation that makes it much easier to manage and find content in large collections. Commit, Co
-
-... (truncated)]]></description>
-    <pubDate>Mon, 01 Jun 2026 21:57:03 GMT</pubDate>
   </item>
 </channel>
 </rss>
