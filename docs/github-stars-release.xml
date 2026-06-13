@@ -5,8 +5,104 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Fri, 12 Jun 2026 22:29:25 GMT</lastBuildDate>
+  <lastBuildDate>Sat, 13 Jun 2026 22:21:05 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[anomalyco/opencode] v1.17.5</title>
+    <link>https://github.com/anomalyco/opencode/releases/tag/v1.17.5</link>
+    <guid isPermaLink="true">https://github.com/anomalyco/opencode/releases/tag/v1.17.5</guid>
+    <description><![CDATA[## Core
+### Improvements
+- Added external browser OAuth for the Snowflake Cortex provider (@santigc6)
+- Improved project copy management and move-session flows in v2
+
+### Bugfixes
+- Recovered expired MCP sessions instead of leaving MCP tools disconnected
+- Cleared closed MCP clients so stale MCP connections do not linger
+- Returned structured MCP tool output in a readable form
+- Fixed duplicate renderable IDs that could break TUI rendering
+- Fixed commands using `$ARGUMENTS` so file contents are not injected twice (@verdverm)
+
+## TUI
+### Bugfixes
+- Added auth headers to `RunCommand` fetch requests (@OpeOginni)
+
+## Desktop
+### Improvements
+- Brought v2 visibility settings to the web app
+- Refreshed the oc-2 color theme (@arvsrn)
+
+### Bugfixes
+- Made the terminal resize gutter easier to grab
+- Faded overflowing titlebar tabs instead of clipping them abruptly
+
+**Thank you to 5 community contributors:**
+- @verdverm:
+ - fix(tui): double file content injection in commands using $ARGUMENTS (#
+
+... (truncated)]]></description>
+    <pubDate>Sat, 13 Jun 2026 19:59:05 GMT</pubDate>
+  </item>
+  <item>
+    <title>[opencontainers/runc] runc 1.4.3 -- &quot;The best way to irritate him is to feed his grandmother to the Ravenous Bugblatter Beast of Traal.&quot; (v1.4.3)</title>
+    <link>https://github.com/opencontainers/runc/releases/tag/v1.4.3</link>
+    <guid isPermaLink="true">https://github.com/opencontainers/runc/releases/tag/v1.4.3</guid>
+    <description><![CDATA[This is the third patch release of the 1.4.z series of runc. Among some
+performance improvements and bugfixes, it includes a fix for a
+low-severity vulnerability ([CVE-2026-41579]) and users are encouraged to
+update. As it was a low-severity vulnerability and it was reported by
+multiple people, we decided to release it publicly with NO EMBARGO.
+
+### Security ###
+
+This release includes a fix for the following low-severity security issue:
+
+- [CVE-2026-41579] allowed a malicious image with a `/dev` symlink to have
+ limited write access to the host filesystem in ways that our analysis
+ indicates was too limited to be problematic in practice. This bug was very
+ similar to those fixed in [CVE-2025-31133], [CVE-2025-52565],
+ [CVE-2025-31133] and was simply missed at the time when we hardened the
+ rootfs preparation code. We have conducted a deeper audit and not found any
+ other problematic cases.
+
+[CVE-2026-41579]: 
+[CVE-2026-41579]: 
+[CVE-2025-31133]: 
+[CVE-2025-52565]: 
+
+... (truncated)]]></description>
+    <pubDate>Sat, 13 Jun 2026 17:23:20 GMT</pubDate>
+  </item>
+  <item>
+    <title>[axios/axios] v1.18.0</title>
+    <link>https://github.com/axios/axios/releases/tag/v1.18.0</link>
+    <guid isPermaLink="true">https://github.com/axios/axios/releases/tag/v1.18.0</guid>
+    <description><![CDATA[## v1.18.0 — June 13, 2026
+
+This release hardens redirect and URL handling, improves the validateStatus configuration semantics, and includes updates to documentation, dependencies, and release metadata.
+
+## 🔒 Security Fixes
+
+* **Redirect Header Safety:** Added Node HTTP adapter support for stripping caller-specified sensitive headers on cross-origin redirects, helping prevent custom auth headers such as API keys from leaking to another origin. (__#10892__)
+
+* **URL And Request Hardening:** Rejects malformed `http:` and `https:` URLs that omit `//` with `ERR_INVALID_URL`, while tightening prototype-pollution-safe config reads, stream size limits, FormData depth handling, data URL sizing, and local `NO_PROXY` matching. (__#11000__)
+
+## 🐛 Bug Fixes
+
+* **Status Validation:** Added `transitional.validateStatusUndefinedResolves` so applications can opt in to treating `validateStatus: undefined` like the option was omitted, while `validateStatus: null` remains the explicit way 
+
+... (truncated)]]></description>
+    <pubDate>Sat, 13 Jun 2026 12:00:31 GMT</pubDate>
+  </item>
+  <item>
+    <title>[bluesky-social/atproto] @atproto/api@0.20.15</title>
+    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/api%400.20.15</link>
+    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/api%400.20.15</guid>
+    <description><![CDATA[### Patch Changes
+
+- #5090 `b3c4bc6` Thanks @ds-boyce! - update chat lexicons]]></description>
+    <pubDate>Sat, 13 Jun 2026 11:39:24 GMT</pubDate>
+  </item>
   <item>
     <title>[aws/aws-sdk-js-v3] v3.1068.0</title>
     <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1068.0</link>
@@ -95,17 +191,6 @@
     <pubDate>Fri, 12 Jun 2026 17:04:52 GMT</pubDate>
   </item>
   <item>
-    <title>[bluesky-social/atproto] @atproto/oauth-provider-ui@0.7.3</title>
-    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/oauth-provider-ui%400.7.3</link>
-    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/oauth-provider-ui%400.7.3</guid>
-    <description><![CDATA[### Patch Changes
-
-- #5089 `85b4eb8` Thanks @matthieusieben! - Improve UX when the browser fails to redirect the user after the OAuth flow ends
-
-- #5089 `85b4eb8` Thanks @matthieusieben! - Fix error page no longer showing "This request has expired" when navigating back to the authorization page]]></description>
-    <pubDate>Fri, 12 Jun 2026 15:53:59 GMT</pubDate>
-  </item>
-  <item>
     <title>[biomejs/biome] Biome CLI v2.5.0 (@biomejs/biome@2.5.0)</title>
     <link>https://github.com/biomejs/biome/releases/tag/%40biomejs/biome%402.5.0</link>
     <guid isPermaLink="true">https://github.com/biomejs/biome/releases/tag/%40biomejs/biome%402.5.0</guid>
@@ -174,31 +259,6 @@
 
 ... (truncated)]]></description>
     <pubDate>Fri, 12 Jun 2026 06:25:32 GMT</pubDate>
-  </item>
-  <item>
-    <title>[anomalyco/opencode] v1.17.4</title>
-    <link>https://github.com/anomalyco/opencode/releases/tag/v1.17.4</link>
-    <guid isPermaLink="true">https://github.com/anomalyco/opencode/releases/tag/v1.17.4</guid>
-    <description><![CDATA[## Core
-
-### Improvements
-
-- Added `cwd` support for local MCP servers so they can start from a workspace-relative directory. (@Grantmartin2002)
-- Added connector-based authentication flows and support for stored provider credentials.
-- Added v2 API endpoints to create and fetch sessions, list session questions, and resolve the active location.
-- File reads now return raw content with the correct content type for API and SDK clients.
-- MCP server log notifications are now surfaced in opencode logs.
-
-### Bugfixes
-
-- Fixed Gemini tool schemas that used multi-type fields so compatible tools keep working. (@Killusions)
-- Content-filtered model responses now surface as visible errors instead of failing silently. (@kkdawkins)
-- Fixed MCP auth and debug requests dropping configured headers.
-- Snapshot creation now reuses source Git objects to avoid long re-hashing delays on huge repos. (@dmtrKovalenko)
-- Fixed MCP catalog request timeouts not applying when listing prompts, resources, or tools
-
-... (truncated)]]></description>
-    <pubDate>Fri, 12 Jun 2026 02:19:40 GMT</pubDate>
   </item>
   <item>
     <title>[pnpm/pnpm] pnpm 11.6 (v11.6.0)</title>
@@ -585,18 +645,6 @@ This release introduces th
     <pubDate>Wed, 10 Jun 2026 18:33:08 GMT</pubDate>
   </item>
   <item>
-    <title>[withastro/astro] @astrojs/netlify@7.0.13</title>
-    <link>https://github.com/withastro/astro/releases/tag/%40astrojs/netlify%407.0.13</link>
-    <guid isPermaLink="true">https://github.com/withastro/astro/releases/tag/%40astrojs/netlify%407.0.13</guid>
-    <description><![CDATA[### Patch Changes
-
-- #17018 `1310277` Thanks @matthewp! - Hardens `remotePatterns` regex generation to match canonical wildcard semantics more strictly
-
-- Updated dependencies \:
- - @astrojs/underscore-redirects@1.0.3]]></description>
-    <pubDate>Wed, 10 Jun 2026 17:28:46 GMT</pubDate>
-  </item>
-  <item>
     <title>[web-infra-dev/rspack] v2.0.8</title>
     <link>https://github.com/web-infra-dev/rspack/releases/tag/v2.0.8</link>
     <guid isPermaLink="true">https://github.com/web-infra-dev/rspack/releases/tag/v2.0.8</guid>
@@ -923,13 +971,6 @@ This is an hotfix release to address a regression for Kubernetes runtime.
     <guid isPermaLink="true">https://github.com/lynx-family/lynx/releases/tag/3.8.1</guid>
     <description><![CDATA[No release notes provided.]]></description>
     <pubDate>Thu, 04 Jun 2026 05:05:23 GMT</pubDate>
-  </item>
-  <item>
-    <title>[warpdotdev/warp] Stable Release v0.2026.06.03.09.49.stable_00 (v0.2026.06.03.09.49.stable_00)</title>
-    <link>https://github.com/warpdotdev/warp/releases/tag/v0.2026.06.03.09.49.stable_00</link>
-    <guid isPermaLink="true">https://github.com/warpdotdev/warp/releases/tag/v0.2026.06.03.09.49.stable_00</guid>
-    <description><![CDATA[Warp Stable release]]></description>
-    <pubDate>Wed, 03 Jun 2026 09:49:25 GMT</pubDate>
   </item>
 </channel>
 </rss>
