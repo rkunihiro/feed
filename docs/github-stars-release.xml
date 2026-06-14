@@ -5,43 +5,128 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Sat, 13 Jun 2026 22:21:05 GMT</lastBuildDate>
+  <lastBuildDate>Sun, 14 Jun 2026 22:23:18 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
   <item>
-    <title>[anomalyco/opencode] v1.17.5</title>
-    <link>https://github.com/anomalyco/opencode/releases/tag/v1.17.5</link>
-    <guid isPermaLink="true">https://github.com/anomalyco/opencode/releases/tag/v1.17.5</guid>
-    <description><![CDATA[## Core
-### Improvements
-- Added external browser OAuth for the Snowflake Cortex provider (@santigc6)
-- Improved project copy management and move-session flows in v2
-
-### Bugfixes
-- Recovered expired MCP sessions instead of leaving MCP tools disconnected
-- Cleared closed MCP clients so stale MCP connections do not linger
-- Returned structured MCP tool output in a readable form
-- Fixed duplicate renderable IDs that could break TUI rendering
-- Fixed commands using `$ARGUMENTS` so file contents are not injected twice (@verdverm)
-
-## TUI
-### Bugfixes
-- Added auth headers to `RunCommand` fetch requests (@OpeOginni)
-
-## Desktop
-### Improvements
-- Brought v2 visibility settings to the web app
-- Refreshed the oc-2 color theme (@arvsrn)
-
-### Bugfixes
-- Made the terminal resize gutter easier to grab
-- Faded overflowing titlebar tabs instead of clipping them abruptly
-
-**Thank you to 5 community contributors:**
-- @verdverm:
- - fix(tui): double file content injection in commands using $ARGUMENTS (#
+    <title>[styleframe-dev/styleframe] v3.9.0 (styleframe@3.9.0)</title>
+    <link>https://github.com/styleframe-dev/styleframe/releases/tag/styleframe%403.9.0</link>
+    <guid isPermaLink="true">https://github.com/styleframe-dev/styleframe/releases/tag/styleframe%403.9.0</guid>
+    <description><![CDATA[## What's Changed
+* chore: ensure all published packages include LICENSE by @alexgrozav in 
+* docs: add Input recipe docs page and standardize doc-recipe conventions by @alexgrozav in 
+* build(dts): bundle type declarations across packages on build by @alexgrozav in 
+* docs: restructure subnav into theme sub-tabs and reorganize content by @alexgrozav in 
+* docs: disable og-image runtime endpoint (zero-runtime mode) by @alexgrozav in 
+* feat(theme): add textarea recipe (full parity with input) by @alexgrozav in 
+* feat(theme): add Checkbox, CheckboxField, and CheckboxGroup recipes by @alexgrozav in 
+* feat(theme): add Select recipe with multi-select chip support by @alexgrozav in 
+* docs: prebundle @vueuse/core, motion-v, and posthog-js in optimizeDeps by @alexgrozav in 
+* feat(theme): add Radio, RadioField, and RadioGroup recipes by @alexgrozav in 
+* feat(theme): add Avatar and AvatarGroup recipes by @alexgrozav in 
+* feat(theme): add FieldGroup recipe, consolidate field gr
 
 ... (truncated)]]></description>
-    <pubDate>Sat, 13 Jun 2026 19:59:05 GMT</pubDate>
+    <pubDate>Sun, 14 Jun 2026 19:52:08 GMT</pubDate>
+  </item>
+  <item>
+    <title>[anomalyco/opencode] v1.17.7</title>
+    <link>https://github.com/anomalyco/opencode/releases/tag/v1.17.7</link>
+    <guid isPermaLink="true">https://github.com/anomalyco/opencode/releases/tag/v1.17.7</guid>
+    <description><![CDATA[## Core
+
+### Bugfixes
+
+- Plugin client requests now reuse the active server instead of assuming the default local port.
+- ACP shell tool calls now show the command and working directory from the start.
+- Plugin-provided shell environment variables now apply to PTY sessions.
+
+### Improvements
+
+- MCP servers can now receive the current workspace as a client root.
+
+## TUI
+
+### Bugfixes
+
+- MCP debug now uses the SDK's latest protocol version.
+
+## Desktop
+
+### Bugfixes
+
+- The new session route now stays scoped to its own draft server, so prompts and state target the right workspace.
+
+## SDK
+
+### Improvements
+
+- SDK clients now refresh model and provider availability when integrations change, and credential update and remove calls accept `location`.]]></description>
+    <pubDate>Sun, 14 Jun 2026 18:49:23 GMT</pubDate>
+  </item>
+  <item>
+    <title>[fastapi/fastapi] 0.137.0</title>
+    <link>https://github.com/fastapi/fastapi/releases/tag/0.137.0</link>
+    <guid isPermaLink="true">https://github.com/fastapi/fastapi/releases/tag/0.137.0</guid>
+    <description><![CDATA[### Breaking Changes
+
+* ♻️ Refactor internals to preserve `APIRouter` and `APIRoute` instances. PR #15745 by @tiangolo.
+
+Unblocks ✨ SO MANY THINGS ✨
+
+Before this, `router.include_router(other_router)` would take each path operation from `other_router` and "clone" it, or recreate it from scratch.
+
+This would mean that in the end there was only one top level router, part of the app.
+
+The way it is structured here is that there are a few additional classes to handle intermediate metadata for router and route inclusion. That way the information of "router X includes Y and Y includes Z" is stored somewhere, without affecting (recreating / clonning) the final route.
+
+#### Non Objectives
+
+Dependencies for 404: previously I intended to support dependencies that would be executed even for 404, but that would conflict with the fact that a router could _not_ find a match, but the next router _did_ find a match. Executing dependencies in the router that did not find a match would not
+
+... (truncated)]]></description>
+    <pubDate>Sun, 14 Jun 2026 12:51:11 GMT</pubDate>
+  </item>
+  <item>
+    <title>[PerryTS/perry] v0.5.1167</title>
+    <link>https://github.com/PerryTS/perry/releases/tag/v0.5.1167</link>
+    <guid isPermaLink="true">https://github.com/PerryTS/perry/releases/tag/v0.5.1167</guid>
+    <description><![CDATA[## v0.5.1167 — fix(runtime): relink node:http/net — restore `js_node_system_error_value` (#5124)
+
+Release-blocking regression fix folded in via #5124. PR #5112 (Next.js
+standalone walls) refactored `crates/perry-runtime/src/error.rs` and dropped the
+`#[no_mangle] pub unsafe extern "C" fn js_node_system_error_value` definition
+**and** its `#[used] KEEP_JS_NODE_SYSTEM_ERROR_VALUE` anchor, while `perry-ffi`'s
+`error::system_error_value` still calls that symbol. The result: compiling any
+program that links the http/net extension archive failed at the link step with
+`undefined reference to 'js_node_system_error_value'` (`collect2: ld returned 1`).
+
+It went unseen because perry-runtime's own `cargo test` builds with the full
+feature set, so the symbol was present there — only the auto-optimize compile
+path (minimal feature set, extension archives linked after LTO) hit it. The
+`issue_4903_listen_callback_deferred` integration tests, which actually run
+`perry compile` on a net program, are wha
+
+... (truncated)]]></description>
+    <pubDate>Sun, 14 Jun 2026 11:10:02 GMT</pubDate>
+  </item>
+  <item>
+    <title>[sveltejs/kit] @sveltejs/kit@2.65.1</title>
+    <link>https://github.com/sveltejs/kit/releases/tag/%40sveltejs/kit%402.65.1</link>
+    <guid isPermaLink="true">https://github.com/sveltejs/kit/releases/tag/%40sveltejs/kit%402.65.1</guid>
+    <description><![CDATA[### Patch Changes
+
+
+- fix: avoid importing the Vite development client code into builds with a non-standard `NODE_ENV` (#16023)
+
+
+- fix: don't emit the unused bundle and stylesheet files when using `bundleStrategy: 'inline'` (#16025)
+
+
+- fix: reset queries before navigating when `invalidateAll` is set (#16014)
+
+
+- fix: regression in loading assets for absolute path apps (#16026)]]></description>
+    <pubDate>Sun, 14 Jun 2026 07:06:27 GMT</pubDate>
   </item>
   <item>
     <title>[opencontainers/runc] runc 1.4.3 -- &quot;The best way to irritate him is to feed his grandmother to the Ravenous Bugblatter Beast of Traal.&quot; (v1.4.3)</title>
@@ -409,25 +494,6 @@ specify init my-project
     <pubDate>Thu, 11 Jun 2026 12:56:04 GMT</pubDate>
   </item>
   <item>
-    <title>[PerryTS/perry] v0.5.1159</title>
-    <link>https://github.com/PerryTS/perry/releases/tag/v0.5.1159</link>
-    <guid isPermaLink="true">https://github.com/PerryTS/perry/releases/tag/v0.5.1159</guid>
-    <description><![CDATA[## Security release
-
-Fixes a path traversal / arbitrary file write in `perry publish` — **GHSA-x55v-q459-68ch** (CVSS 4.0 8.6, High, CWE-22).
-
-`perry publish` trusted the build server's `ArtifactReady.artifact_name` and `download_path` verbatim when constructing the local destination path. A malicious or compromised hub could deliver a traversal payload (e.g. `../../.ssh/authorized_keys`) to write downloaded content outside the chosen output directory (arbitrary file write), and in the self-hosted-hub local-copy path could copy out arbitrary local files (arbitrary read). The primary multi-victim vector is a malicious PR setting `[publish] server = "…"` in a repo's `perry.toml`; CI runs receive no confirmation prompt.
-
-**All versions through v0.5.1158 are affected. Upgrade to v0.5.1159.**
-
-- fix(publish): sanitize server-controlled artifact path — reduce `artifact_name` to a bare, traversal-free filename and gate the `download_path` local-copy shortcut to loopback hubs (#4989)
-
-Reported
-
-... (truncated)]]></description>
-    <pubDate>Thu, 11 Jun 2026 10:23:22 GMT</pubDate>
-  </item>
-  <item>
     <title>[BabylonJS/Babylon.js] 9.12.0</title>
     <link>https://github.com/BabylonJS/Babylon.js/releases/tag/9.12.0</link>
     <guid isPermaLink="true">https://github.com/BabylonJS/Babylon.js/releases/tag/9.12.0</guid>
@@ -519,25 +585,6 @@ Options:
  --help, -h Display this help message
 ```]]></description>
     <pubDate>Thu, 11 Jun 2026 03:13:13 GMT</pubDate>
-  </item>
-  <item>
-    <title>[sveltejs/kit] @sveltejs/kit@2.65.0</title>
-    <link>https://github.com/sveltejs/kit/releases/tag/%40sveltejs/kit%402.65.0</link>
-    <guid isPermaLink="true">https://github.com/sveltejs/kit/releases/tag/%40sveltejs/kit%402.65.0</guid>
-    <description><![CDATA[### Minor Changes
-
-
-- feat: allow queries to refresh other queries (#16012)
-
-
-### Patch Changes
-
-
-- fix: dedupe remote data (#15991)
-
-
-- fix: skip client build if all routes have CSR disabled (#15936)]]></description>
-    <pubDate>Thu, 11 Jun 2026 00:46:24 GMT</pubDate>
   </item>
   <item>
     <title>[vercel-labs/skills] v1.5.11</title>
@@ -950,27 +997,6 @@ This is an hotfix release to address a regression for Kubernetes runtime.
 
 * parse empty list item with trailing space (#3984) (b55410f)]]></description>
     <pubDate>Thu, 04 Jun 2026 14:17:49 GMT</pubDate>
-  </item>
-  <item>
-    <title>[composer/composer] 2.10.1</title>
-    <link>https://github.com/composer/composer/releases/tag/2.10.1</link>
-    <guid isPermaLink="true">https://github.com/composer/composer/releases/tag/2.10.1</guid>
-    <description><![CDATA[* Security: Fixed shell escaping when opening an editor (#12903)
- * Security: Verify backup phar signature before restoring it when using self-update --rollback (#12918)
- * Fixed `source-fallback` also disabling fallbacks to dist install when source is the preferred install method (#12888)
- * Fixed source -> dist package updates wiping the .git dir without checking for local changes first (#12912)
- * Fixed GitHub token prompt happening multiple times on parallel auth failures (#12913)
- * Fixed warnings from Composer repositories being printed twice in some cases (#12907)
-
-**Full Changelog**:]]></description>
-    <pubDate>Thu, 04 Jun 2026 08:29:43 GMT</pubDate>
-  </item>
-  <item>
-    <title>[lynx-family/lynx] 3.8.1</title>
-    <link>https://github.com/lynx-family/lynx/releases/tag/3.8.1</link>
-    <guid isPermaLink="true">https://github.com/lynx-family/lynx/releases/tag/3.8.1</guid>
-    <description><![CDATA[No release notes provided.]]></description>
-    <pubDate>Thu, 04 Jun 2026 05:05:23 GMT</pubDate>
   </item>
 </channel>
 </rss>
