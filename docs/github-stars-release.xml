@@ -5,8 +5,256 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Mon, 15 Jun 2026 22:38:35 GMT</lastBuildDate>
+  <lastBuildDate>Tue, 16 Jun 2026 22:36:30 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[github/spec-kit] Spec Kit - 0.10.4 (v0.10.4)</title>
+    <link>https://github.com/github/spec-kit/releases/tag/v0.10.4</link>
+    <guid isPermaLink="true">https://github.com/github/spec-kit/releases/tag/v0.10.4</guid>
+    <description><![CDATA[## Install
+
+```bash
+uv tool install specify-cli --from git+
+specify init my-project
+```
+
+## What's Changed
+
+- chore: bump version to 0.10.4
+- fix: fail loudly when a fan-out 'items' expression does not resolve to a list (#2957)
+- refactor: move preset command handlers to presets/_commands.py (PR-6/8) (#2826)
+- Update agent-parity-governance preset to v0.3.0 (#2982)
+- Update cross-platform-governance preset to v0.2.0 (#2983)
+- Add Data Model Diagram extension to community catalog (#2922)
+- Add Spec Kit TLDR extension to community catalog (#3007)
+- docs: add guide for handling complex features (#3004)
+- Add Loop Engineering extension to community catalog (#3002)
+- Update MemoryLint extension to v1.5.1 (#3000)
+- chore: release 0.10.3, begin 0.10.4.dev0 development (#2999)]]></description>
+    <pubDate>Tue, 16 Jun 2026 20:34:44 GMT</pubDate>
+  </item>
+  <item>
+    <title>[BabylonJS/Babylon.js] 9.12.1</title>
+    <link>https://github.com/BabylonJS/Babylon.js/releases/tag/9.12.1</link>
+    <guid isPermaLink="true">https://github.com/BabylonJS/Babylon.js/releases/tag/9.12.1</guid>
+    <description><![CDATA[### Core
+
+- Add NullEngine multiview render-state testability - by matthargett (#18576)
+- Fix GeospatialCamera zoom-while-rotating and updateFlyToDestination - [_Bug Fix_] by georginahalpern (#18582)
+- Fix camera frozen in UMD build (inertia undefined): use local field instead of super.inertia accessor - by georginahalpern (#18580)
+- Fix FreeCamera/FlyCamera input regression: apply active input below the legacy epsilon glide cutoff - [_Bug Fix_] by georginahalpern (#18578)
+- Coalesce shared delay-loaded geometry/mesh file requests - [_Bug Fix_] by georginahalpern (#18570)
+- GS Streaming - by CedricGuillemet (#18563)
+- fix(core): restore Buffers/buffer.align side effect for Native engine - by CedricGuillemet (#18565)
+- Fix(GreasedLine): guard grl_offsets behind GREASED_LINE_USE_OFFSETS in GLSL shaders (match WGSL) - by bkaradzic-microsoft (#18571)
+- Port framerate-independent camera movement and configurable input to FreeCamera and FlyCamera - by georginahalpern (#18573)
+- Move scissor 
+
+... (truncated)]]></description>
+    <pubDate>Tue, 16 Jun 2026 19:25:33 GMT</pubDate>
+  </item>
+  <item>
+    <title>[sveltejs/kit] @sveltejs/adapter-cloudflare@7.2.9</title>
+    <link>https://github.com/sveltejs/kit/releases/tag/%40sveltejs/adapter-cloudflare%407.2.9</link>
+    <guid isPermaLink="true">https://github.com/sveltejs/kit/releases/tag/%40sveltejs/adapter-cloudflare%407.2.9</guid>
+    <description><![CDATA[### Patch Changes
+
+
+- fix: avoid type collision with user defined `App.Platform` `env` property (#16043)
+
+- Updated dependencies [`80cc084`, `cc68acb`, `d33bc6b`, `f3f0c94`, `5ced880`, `a34e663`, `ab190ae`, `7751d60`, `1cfc838`, `c3b2c34`, `82bcb7d`]:
+ - @sveltejs/kit@2.65.2]]></description>
+    <pubDate>Tue, 16 Jun 2026 19:00:47 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1070.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1070.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1070.0</guid>
+    <description><![CDATA[#### 3.1070.0(2026-06-16)
+
+##### Chores
+
+* **scripts:** speed up esm-to-cjs transform (#8107) (9063e305)
+
+##### New Features
+
+* **clients:** update client endpoints as of 2026-06-16 (dc044784)
+* **client-sagemaker:** Add EnableDetailedObservability to Endpoint MetricsConfig. Publishes GPU, host, and framework-native inference metrics to CloudWatch with per-inference-component, availability-zone, and instance dimensions. Adds Inference Component provisioning lifecycle and multi-AZ placement metrics. (97bb02cf)
+* **client-outposts:** Adds support for creating an order from quotes. (d4389889)
+* **client-s3vectors:** Amazon S3 Vectors now supports paginated QueryVectors requests, returning up to 10,000 results per query. (8b2ef7f2)
+* **client-partnercentral-selling:** Added Prospecting APIs to convert engagements into AI-enriched leads with scoring insights. Extended Engagement APIs with ProspectingResult and Lead contexts. Added CoSell Scoring to GetAwsOpportunitySummary- quality score, t
+
+... (truncated)]]></description>
+    <pubDate>Tue, 16 Jun 2026 19:00:30 GMT</pubDate>
+  </item>
+  <item>
+    <title>[iii-hq/iii] iii 0.19.4 (iii/v0.19.4)</title>
+    <link>https://github.com/iii-hq/iii/releases/tag/iii/v0.19.4</link>
+    <guid isPermaLink="true">https://github.com/iii-hq/iii/releases/tag/iii/v0.19.4</guid>
+    <description><![CDATA[## What's Changed
+* Chore/docs gaps 3 by @anthonyiscoding in 
+* feat(worker-api): typed iii.worker.yaml manifest, worker::validate/status, and LLM-operable worker::* surfaces by @andersonleal in 
+* feat(engine): iii-http consumes the configuration worker for its own config by @andersonleal in 
+* fix(observability): stop shutdownOtel hanging when the engine is unreachable by @CryptoQuaternions in 
+* fix: support TLS OTLP observability export by @guibeira in 
+* feat(ci): isolated per-branch alpha release flow by @guibeira in 
+* Autogenerate CLI Docs and Improve CLI Documentation by @anthonyiscoding in 
+* docs(changelog): collapse the Changelog tab to a single index page by @guibeira in 
+* fix(ci): use counter_prefix in release version notice by @guibeira in 
+* feat(engine): runtime-configurable iii-state via the configuration worker by @andersonleal in 
+
+## New Contributors
+* @CryptoQuaternions made their first contribution in 
+
+**Full Changelog**:]]></description>
+    <pubDate>Tue, 16 Jun 2026 18:55:31 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-06-16) (release-2026-06-16)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-06-16</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-06-16</guid>
+    <description><![CDATA[## General Highlights
+* **Dependency Update**: Updated to the latest SDK module versions
+
+## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/service/directconnect`: [v1.40.0](service/directconnect/CHANGELOG.md#v1400-2026-06-16)
+ * **Feature**: Added VIF rate limiting support for AWS Direct Connect, allowing customers to set bandwidth allocations on virtual interfaces to manage traffic on dedicated connections.
+* `github.com/aws/aws-sdk-go-v2/service/outposts`: [v1.62.0](service/outposts/CHANGELOG.md#v1620-2026-06-16)
+ * **Feature**: Adds support for creating an order from quotes.
+* `github.com/aws/aws-sdk-go-v2/service/partnercentralselling`: [v1.19.0](service/partnercentralselling/CHANGELOG.md#v1190-2026-06-16)
+ * **Feature**: Added Prospecting APIs to convert engagements into AI-enriched leads with scoring insights. Extended Engagement APIs with ProspectingResult and Lead contexts. Added CoSell Scoring to GetAwsOpportunitySummary- quality score, trend, agent-driven recommendations,
+
+... (truncated)]]></description>
+    <pubDate>Tue, 16 Jun 2026 18:49:54 GMT</pubDate>
+  </item>
+  <item>
+    <title>[fastify/fastify-vite] @fastify/vite@9.1.0</title>
+    <link>https://github.com/fastify/fastify-vite/releases/tag/%40fastify/vite%409.1.0</link>
+    <guid isPermaLink="true">https://github.com/fastify/fastify-vite/releases/tag/%40fastify/vite%409.1.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- bbab7c8: Align the renderer typings with the actual runtime contract and export the shared renderer types so TypeScript renderer packages can build against them instead of redeclaring them. Also widens `reply.html` to allow string and stream returns and a synchronous `createHtmlFunction`. Type-only.]]></description>
+    <pubDate>Tue, 16 Jun 2026 17:42:31 GMT</pubDate>
+  </item>
+  <item>
+    <title>[openclaw/openclaw] openclaw 2026.6.8 (v2026.6.8)</title>
+    <link>https://github.com/openclaw/openclaw/releases/tag/v2026.6.8</link>
+    <guid isPermaLink="true">https://github.com/openclaw/openclaw/releases/tag/v2026.6.8</guid>
+    <description><![CDATA[### Highlights
+
+- Telegram and WhatsApp channel delivery are richer and less brittle: Telegram can send structured rich text with tables, lists, expandable blockquotes, preserved intentional line breaks, prompt-preserving CLI backend delivery, retired native draft migration, and safer rich-media boundaries, while WhatsApp now honors configured ACP bindings. (#92679, #93164, #84082, #89421, #92513) Thanks @obviyus, @jzakirov, @spacegeologist, and @TurboTheTurtle.
+- Agent and Gateway recovery is sharper across account-scoped DM sends, generated media completions, auto-reply message-tool final replies, reset archive fallback reads, restart shutdown aborts, yielded subagent pauses, trusted subagent thinking override fallback, yielded cron media, heartbeat dedupe, session identity prompts, and unknown OpenAI agent selector rejection. (#92788, #91246, #92879, #91357, #92631, #92412, #92146, #91287, #92468, #92510) Thanks @yetval, @TurboTheTurtle, @masatohoshino, @CadanHu, @ooiuuii, @openperf
+
+... (truncated)]]></description>
+    <pubDate>Tue, 16 Jun 2026 16:32:26 GMT</pubDate>
+  </item>
+  <item>
+    <title>[remix-run/react-router] v7.18.0 (react-router@7.18.0)</title>
+    <link>https://github.com/remix-run/react-router/releases/tag/react-router%407.18.0</link>
+    <guid isPermaLink="true">https://github.com/remix-run/react-router/releases/tag/react-router%407.18.0</guid>
+    <description><![CDATA[See the changelog for release notes:]]></description>
+    <pubDate>Tue, 16 Jun 2026 14:13:25 GMT</pubDate>
+  </item>
+  <item>
+    <title>[cloudflare/vinext] vinext@0.1.4</title>
+    <link>https://github.com/cloudflare/vinext/releases/tag/vinext%400.1.4</link>
+    <guid isPermaLink="true">https://github.com/cloudflare/vinext/releases/tag/vinext%400.1.4</guid>
+    <description><![CDATA[### Bug Fixes
+
+#### Pages
+
+- emit canonical **NEXT_DATA** JSON (#2043)
+- re-enter filesystem routes after rewrites (#2041)
+- apply Document renderPage enhancers (#2034)
+- interpolate same-segment rewrite params (#2030)
+- honor basePath in dev module loaders (#2033)
+- route hybrid form data requests (#2029)
+- preserve rewritten URLs during navigation (#2028)
+
+#### Misc
+
+- **Build:** preserve lazy RSC framework chunks (#2074)
+- **Middleware:** fail closed for unsafe matchers (#2078)
+- **Build:** strip server-side Pages data export transforms from client (#2055)
+- **Fonts:** detect trailing comma past comments when injecting font options (#2051)
+- **Csp:** match script-src-elem/attr when extracting script nonce (#2049)
+- **Script:** register src beforeInteractive scripts and mark hoisted output (#2019)
+- **i18n:** match NEXT_LOCALE cookie case-insensitively (#2050)
+- **Metadata:** gate twitter app and player tags on card type (#2053)
+- **Config:** support tsconfig extends array form (#205
+
+... (truncated)]]></description>
+    <pubDate>Tue, 16 Jun 2026 13:47:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>[bluesky-social/atproto] @atproto/lex-schema@0.1.4</title>
+    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/lex-schema%400.1.4</link>
+    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/lex-schema%400.1.4</guid>
+    <description><![CDATA[### Patch Changes
+
+- #4967 `9fc720c` Thanks @matthieusieben! - Use TypeScript 7 to build package
+
+- Updated dependencies [`9fc720c`]:
+ - @atproto/lex-data@0.1.2
+ - @atproto/syntax@0.6.2]]></description>
+    <pubDate>Tue, 16 Jun 2026 12:44:34 GMT</pubDate>
+  </item>
+  <item>
+    <title>[heroui-inc/heroui] v3.2.0</title>
+    <link>https://github.com/heroui-inc/heroui/releases/tag/v3.2.0</link>
+    <guid isPermaLink="true">https://github.com/heroui-inc/heroui/releases/tag/v3.2.0</guid>
+    <description><![CDATA[## What's inside
+
+- React Aria 1.18.0
+- Calendar → week/day views, multi-select, year picker
+- Table → SortableColumnHeader
+- Autocomplete → Virtualizer
+- Tooltip → delay theme vars
+- Toggles → new Field composition
+
+## Breaking Changes
+
+`Radio`, `Checkbox`, and `Switch` move to an explicit `*.Content` composition — `*.Control` nests inside `*.Content`, the label is plain text inside `*.Content` (no nested `<Label>`), and `Description`/`FieldError` become siblings of `*.Content`.
+
+## What's Changed
+* fix(docs): broken component links by @wingkwong in 
+* chore(docs): add dark mode guide (cn) by @wingkwong in 
+* fix(docs): broken redirects by @wingkwong in 
+* docs(native): add v1.0.4 release notes and component updates by @vvv-sss in 
+* chore(docs): update cn docs for pr6580 & sync missing changes by @wingkwong in 
+* fix(toast): defer success/error toast after promise to avoid ViewTransition collision by @aosmcleod in 
+* fix(styles): cap modal/alert-dialog scroll-insi
+
+... (truncated)]]></description>
+    <pubDate>Tue, 16 Jun 2026 02:31:04 GMT</pubDate>
+  </item>
+  <item>
+    <title>[project-tsurugi/tsurugidb] 1.11.0</title>
+    <link>https://github.com/project-tsurugi/tsurugidb/releases/tag/1.11.0</link>
+    <guid isPermaLink="true">https://github.com/project-tsurugi/tsurugidb/releases/tag/1.11.0</guid>
+    <description><![CDATA[### Release Notes
+- Tsurugi 1.11.0 - Release Notes (en)
+- Tsurugi 1.11.0 - Release Notes (ja)
+- Tsurugi 1.11.0 - Changelog
+- Tsurugi 1.11.0 - Known Issues (en)
+- Tsurugi 1.11.0 - Known Issues (ja)
+
+#### Download installer archive
+
+```sh
+curl -OL 
+```
+
+#### Download Docker image
+
+```sh
+docker pull ghcr.io/project-tsurugi/tsurugidb:1.11.0
+```
+
+> [!WARNING] 
+The `Source code (zip)` or `Source code (tar.gz)` in `Assets` are automatically generated links by GitHub, and these archives does not contain files needed for installation.]]></description>
+    <pubDate>Tue, 16 Jun 2026 02:13:06 GMT</pubDate>
+  </item>
   <item>
     <title>[openai/codex] 0.140.0 (rust-v0.140.0)</title>
     <link>https://github.com/openai/codex/releases/tag/rust-v0.140.0</link>
@@ -48,48 +296,6 @@ This release fixes batched writes to split by full wire-message size instead of 
 
 ... (truncated)]]></description>
     <pubDate>Mon, 15 Jun 2026 20:18:56 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-js-v3] v3.1069.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1069.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1069.0</guid>
-    <description><![CDATA[#### 3.1069.0(2026-06-15)
-
-##### Chores
-
-* **scripts:**
- * apply esm-to-cjs transform to rollup bundles (#8103) (96759918)
- * tuning the build graph (#8095) (67981c5a)
-
-##### Documentation Changes
-
-* **client-rds:** Adding support for RDS SQL Server BYOM and DB2 Community Edition (db75dc76)
-
-##### New Features
-
-* **client-bedrock-runtime:** InvokeGuardrailChecks API evaluates prompts and responses against safety checks (content filters, prompt attacks, sensitive info) without creating guardrail resources. It's a detect-only API, returning numeric scores so you can build adaptive logic as per your application. (4b1fd023)
-* **client-cloudwatch-logs:** Added endTimeOffset parameter to Scheduled Queries APIs (Create, Update, Get) enabling bounded time window configuration. Introduced scheduleType filter (CUSTOMER MANAGED, AWS MANAGED) for ListScheduledQueries and exposed it in Get and Update responses. (e1318840)
-* **client-workspaces:** Added a validation for null check for ImageIds in De
-
-... (truncated)]]></description>
-    <pubDate>Mon, 15 Jun 2026 19:47:42 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-06-15) (release-2026-06-15)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-06-15</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-06-15</guid>
-    <description><![CDATA[## General Highlights
-* **Dependency Update**: Updated to the latest SDK module versions
-
-## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/bedrockruntime`: [v1.54.0](service/bedrockruntime/CHANGELOG.md#v1540-2026-06-15)
- * **Feature**: InvokeGuardrailChecks API evaluates prompts and responses against safety checks (content filters, prompt attacks, sensitive info) without creating guardrail resources. It's a detect-only API, returning numeric scores so you can build adaptive logic as per your application.
-* `github.com/aws/aws-sdk-go-v2/service/cloudwatchlogs`: [v1.76.0](service/cloudwatchlogs/CHANGELOG.md#v1760-2026-06-15)
- * **Feature**: Added endTimeOffset parameter to Scheduled Queries APIs (Create, Update, Get) enabling bounded time window configuration. Introduced scheduleType filter (CUSTOMER MANAGED, AWS MANAGED) for ListScheduledQueries and exposed it in Get and Update responses.
-* `github.com/aws/aws-sdk-go-v2/service/datazone`: [v1.63.0](service/datazone/CHANGELOG
-
-... (truncated)]]></description>
-    <pubDate>Mon, 15 Jun 2026 19:37:29 GMT</pubDate>
   </item>
   <item>
     <title>[panva/node-oidc-provider] v9.8.5</title>
@@ -167,27 +373,6 @@ You can read about our versioning strategy and releases on our website.]]></desc
 
 **Full Changelog**:]]></description>
     <pubDate>Mon, 15 Jun 2026 15:51:32 GMT</pubDate>
-  </item>
-  <item>
-    <title>[iii-hq/iii] iii 0.19.3 (iii/v0.19.3)</title>
-    <link>https://github.com/iii-hq/iii/releases/tag/iii/v0.19.3</link>
-    <guid isPermaLink="true">https://github.com/iii-hq/iii/releases/tag/iii/v0.19.3</guid>
-    <description><![CDATA[## What's Changed
-* fix(sdk/go): route connection-scoped replies through a per-connection queue by @MarcusElwin in 
-* fix(observability): tree-correct trace detail stream and cut span flush latency by @ytallo in 
-* feat(ci): checkbox-based contributor license agreement by @anthonyiscoding in 
-* Remove @tonymotiatest from contributors list by @anthonyiscoding in 
-* adjust bot message by @anthonyiscoding in 
-* docs(changelog): 0.19.2 SDK bugfix entries by @guibeira in 
-* fix(iii-worker,engine): kill the zombie-worker leak — engine-death cascade for daemons, VMs, watchers, and workers by @andersonleal in 
-* Chore/templates rename file per language by @anthonyiscoding in 
-* Cleanup readme badges by @anthonyiscoding in 
-* fix(iii-worker): stop daemon EPIPE panic when engine dies with broken stdio by @guibeira in 
-* enhance(build): add full make build target with PATH instructions by @andersonleal in 
-
-
-**Full Changelog**:]]></description>
-    <pubDate>Mon, 15 Jun 2026 14:00:54 GMT</pubDate>
   </item>
   <item>
     <title>[oxc-project/oxc] oxlint v1.70.0 &amp; oxfmt v0.55.0 (apps_v1.70.0)</title>
@@ -279,48 +464,6 @@ New WebStorage API, available via page.localStorage and page.sessionStorage, rea
 
 ... (truncated)]]></description>
     <pubDate>Mon, 15 Jun 2026 10:05:19 GMT</pubDate>
-  </item>
-  <item>
-    <title>[cloudflare/vinext] vinext@0.1.3</title>
-    <link>https://github.com/cloudflare/vinext/releases/tag/vinext%400.1.3</link>
-    <guid isPermaLink="true">https://github.com/cloudflare/vinext/releases/tag/vinext%400.1.3</guid>
-    <description><![CDATA[### Bug Fixes
-
-#### App Router
-
-- align router autoscroll with Next (#2004)
-- recover SSR shell render errors via **next_error** document (#1908)
-- preserve front redirects through fallback route handlers (#2000)
-- expose active source page on window.next (#1995)
-- fold typeof window before resolution (#1956)
-- support extensionless variable imports (#1958)
-- preserve page notFound precedence during metadata failure (#1957)
-
-#### Deploy
-
-- preserve app module identity with deployment ids (#2005)
-- prevent Windows shell injection (#1946)
-- improve deployment id parity (#1949)
-
-#### Pages
-
-- preserve app props for GSSP requests (#1996)
-- preserve module identity with deployment ids (#2012)
-- harden cookie parsing (#1947)
-
-#### Pages Router
-
-- pass rewrite URL to edge API requests (#1998)
-- block fallback shell for crawler UAs on prerender (#1543) (#1663)
-- restore scroll across reload history traversal (#1905)
-
-#### Router
-
-- honor hybrid pages route priority (#1997)
-- share Pages Router
-
-... (truncated)]]></description>
-    <pubDate>Mon, 15 Jun 2026 09:55:53 GMT</pubDate>
   </item>
   <item>
     <title>[nestjs/nest] v11.1.27</title>
@@ -449,25 +592,6 @@ path (minimal feature set, extension archives linked after LTO) hit it. The
     <pubDate>Sun, 14 Jun 2026 11:10:02 GMT</pubDate>
   </item>
   <item>
-    <title>[sveltejs/kit] @sveltejs/kit@2.65.1</title>
-    <link>https://github.com/sveltejs/kit/releases/tag/%40sveltejs/kit%402.65.1</link>
-    <guid isPermaLink="true">https://github.com/sveltejs/kit/releases/tag/%40sveltejs/kit%402.65.1</guid>
-    <description><![CDATA[### Patch Changes
-
-
-- fix: avoid importing the Vite development client code into builds with a non-standard `NODE_ENV` (#16023)
-
-
-- fix: don't emit the unused bundle and stylesheet files when using `bundleStrategy: 'inline'` (#16025)
-
-
-- fix: reset queries before navigating when `invalidateAll` is set (#16014)
-
-
-- fix: regression in loading assets for absolute path apps (#16026)]]></description>
-    <pubDate>Sun, 14 Jun 2026 07:06:27 GMT</pubDate>
-  </item>
-  <item>
     <title>[opencontainers/runc] runc 1.4.3 -- &quot;The best way to irritate him is to feed his grandmother to the Ravenous Bugblatter Beast of Traal.&quot; (v1.4.3)</title>
     <link>https://github.com/opencontainers/runc/releases/tag/v1.4.3</link>
     <guid isPermaLink="true">https://github.com/opencontainers/runc/releases/tag/v1.4.3</guid>
@@ -517,15 +641,6 @@ This release hardens redirect and URL handling, improves the validateStatus conf
 
 ... (truncated)]]></description>
     <pubDate>Sat, 13 Jun 2026 12:00:31 GMT</pubDate>
-  </item>
-  <item>
-    <title>[bluesky-social/atproto] @atproto/api@0.20.15</title>
-    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/api%400.20.15</link>
-    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/api%400.20.15</guid>
-    <description><![CDATA[### Patch Changes
-
-- #5090 `b3c4bc6` Thanks @ds-boyce! - update chat lexicons]]></description>
-    <pubDate>Sat, 13 Jun 2026 11:39:24 GMT</pubDate>
   </item>
   <item>
     <title>[podman-container-tools/podman] v5.8.3</title>
@@ -601,18 +716,6 @@ This release hardens redirect and URL handling, improves the validateStatus conf
 
 ... (truncated)]]></description>
     <pubDate>Fri, 12 Jun 2026 12:09:51 GMT</pubDate>
-  </item>
-  <item>
-    <title>[openclaw/openclaw] openclaw 2026.6.6 (v2026.6.6)</title>
-    <link>https://github.com/openclaw/openclaw/releases/tag/v2026.6.6</link>
-    <guid isPermaLink="true">https://github.com/openclaw/openclaw/releases/tag/v2026.6.6</guid>
-    <description><![CDATA[### Highlights
-
-- Security boundaries are substantially tighter across transcripts, sandbox binds, host environment inheritance, MCP stdio, Codex HTTP access, native search policy, elevated sender checks, deleted-agent ACP bypasses, loopback tools, Discord moderation, and Teams group actions; exec approvals now fail closed on timeout. (#91529, #91618, #91615, #91619, #91741, #91745, #91746, #91748, #91749, #91750, #91751, #91752, #91763, #89938) Thanks @joshavant, @pgondhi987, @mmaps, @eleqtrizit, @shakkernerd, and @drobison00.
-- Telegram delivery is safer and more coherent: account-scoped topics route to the right agent, streamed text survives tool calls, `/compact` works on generic ingress, callback handling uses concrete APIs, draft chunking is shared, durable dispatch dedupe moved into the SDK, and unauthorized DM text stays out of cache and prompt context. (#91189, #88682, #89588, #90212, #91876, #91874, #91904, #91478, #91915) Thanks @codysai001, @alexzhu0, @joelnishanth, @snowzl
-
-... (truncated)]]></description>
-    <pubDate>Fri, 12 Jun 2026 11:04:42 GMT</pubDate>
   </item>
   <item>
     <title>[ant-design/ant-design] 6.4.4</title>
@@ -734,56 +837,6 @@ Released on 2026-06-11.
 
 ... (truncated)]]></description>
     <pubDate>Thu, 11 Jun 2026 15:57:47 GMT</pubDate>
-  </item>
-  <item>
-    <title>[github/spec-kit] Spec Kit - 0.10.2 (v0.10.2)</title>
-    <link>https://github.com/github/spec-kit/releases/tag/v0.10.2</link>
-    <guid isPermaLink="true">https://github.com/github/spec-kit/releases/tag/v0.10.2</guid>
-    <description><![CDATA[## Install
-
-```bash
-uv tool install specify-cli --from git+
-specify init my-project
-```
-
-## What's Changed
-
-- chore: bump version to 0.10.2
-- Add Research Harness extension to community catalog (#2935)
-- Add Coding Standards Drift Control extension to community catalog (#2934)
-- Add Spec Trace extension to community catalog (#2527)
-- fix(extensions): preserve argument-hint in extension Claude SKILL.md (#2916)
-- fix(presets): harden preset URL installs against unsafe redirects (#2911)
-- fix: skip recovered files during refresh_managed overwrite check (#2918) (#2919)
-- Update multi-model-review extension to v0.1.1 (#2900)
-- feat: add category and effect as first-class fields in extension schema (#2899)
-- chore(catalog): add Jira Integration (Sync Engine) extension (#2895)
-- chore: release 0.10.1, begin 0.10.2.dev0 development (#2910)]]></description>
-    <pubDate>Thu, 11 Jun 2026 12:56:04 GMT</pubDate>
-  </item>
-  <item>
-    <title>[BabylonJS/Babylon.js] 9.12.0</title>
-    <link>https://github.com/BabylonJS/Babylon.js/releases/tag/9.12.0</link>
-    <guid isPermaLink="true">https://github.com/BabylonJS/Babylon.js/releases/tag/9.12.0</guid>
-    <description><![CDATA[### Addons
-
-- Atmosphere import updates - by kircher1 (#18536)
-
-### Core
-
-- fix(Gsplat): Sort Worker Message Starvation in GaussianSplattingMesh - by raymondyfei (#18554)
-- Accept AbstractEngine in ThinRenderTargetTexture constructor - by AmoebaChant (#18557)
-- Fix CSG2 boolean operations for right-handed (glTF) meshes - [_Bug Fix_] by deltakosh (#18556)
-- Warn when uniform-stored bone matrices risk overflowing the vertex-uniform budget - by matthargett (#18543)
-- Fix PhysicsAggregate mutating caller's options object - [_Bug Fix_] by CedricGuillemet (#18555)
-- Fix NME post process / smart filter / procedural modes failing with 404 shader errors - [_Bug Fix_] by deltakosh (#18549)
-- Fix reentrant remove behavior - by CedricGuillemet (#18552)
-- incorrect side effect setting in rendeing pipline - by RaananW (#18546)
-- FrameGraph Geometry Renderer: Fix screenspace texture clear in reverse Z mode - [_Bug Fix_] by Popov72 (#18545)
-- Support SSAO2 with world-space normals - by matthargett (#1
-
-... (truncated)]]></description>
-    <pubDate>Thu, 11 Jun 2026 07:44:23 GMT</pubDate>
   </item>
   <item>
     <title>[esm-dev/esm.sh] CLI v0.1.1 (v0.1.1)</title>
@@ -974,73 +1027,6 @@ WinAppSDK 2.2.0 is the latest stable servicing release for 2.0, with a new Windo
 
 ... (truncated)]]></description>
     <pubDate>Tue, 09 Jun 2026 23:30:51 GMT</pubDate>
-  </item>
-  <item>
-    <title>[mongodb/node-mongodb-native] v7.3.0</title>
-    <link>https://github.com/mongodb/node-mongodb-native/releases/tag/v7.3.0</link>
-    <guid isPermaLink="true">https://github.com/mongodb/node-mongodb-native/releases/tag/v7.3.0</guid>
-    <description><![CDATA[> [!IMPORTANT]
-> A future minor release will raise the minimum supported MongoDB Server version from 4.2 to 4.4. This is in accordance with MongoDB Software Lifecycle Schedules. Support for MongoDB Server 4.2 will be dropped in a future release!
-
-## 7.3.0 (2026-06-04)
-
-The MongoDB Node.js team is pleased to announce version 7.3.0 of the `mongodb` package!
-
-## Release Notes
-
-
-
-### `maxWireVersion` is bumped to `29`
-
-Max wire version & max server version bumped in preparation for MongoDB LTS (v9.0).
-
-### Fixed SCRAM authentication for non-Node.js runtimes (e.g., Deno)
-
-SCRAM-based authentication (the default mechanism for username/password connections) was broken when using the driver in non-Node.js environments such as Deno. The root cause was an implicit `toString` call on byte arrays that produced incorrect output outside of Node.js. This fix ensures explicit UTF-8 string conversion is used throughout the SCRAM implementation, restoring authentication in Deno and othe
-
-... (truncated)]]></description>
-    <pubDate>Tue, 09 Jun 2026 16:11:17 GMT</pubDate>
-  </item>
-  <item>
-    <title>[redwoodjs/sdk] v1.2.12</title>
-    <link>https://github.com/redwoodjs/sdk/releases/tag/v1.2.12</link>
-    <guid isPermaLink="true">https://github.com/redwoodjs/sdk/releases/tag/v1.2.12</guid>
-    <description><![CDATA[## What's Changed
-* fix(db): skip Cloudflare internal _cf_* tables during migration introspection by @justinvdm in 
-
-
-**Full Changelog**:]]></description>
-    <pubDate>Tue, 09 Jun 2026 13:12:19 GMT</pubDate>
-  </item>
-  <item>
-    <title>[prettier/prettier] 3.8.4</title>
-    <link>https://github.com/prettier/prettier/releases/tag/3.8.4</link>
-    <guid isPermaLink="true">https://github.com/prettier/prettier/releases/tag/3.8.4</guid>
-    <description><![CDATA[- Markdown: Fix blank lines between list items and nested sub-lists being removed in Markdown/MDX ( by @byplayer)
-
-🔗 Changelog]]></description>
-    <pubDate>Tue, 09 Jun 2026 11:31:30 GMT</pubDate>
-  </item>
-  <item>
-    <title>[honojs/hono] v4.12.25</title>
-    <link>https://github.com/honojs/hono/releases/tag/v4.12.25</link>
-    <guid isPermaLink="true">https://github.com/honojs/hono/releases/tag/v4.12.25</guid>
-    <description><![CDATA[## Security fixes
-
-This release includes fixes for the following security issues:
-
-### CORS Middleware reflects any Origin with credentials when `origin` defaults to the wildcard
-
-Affects: `hono/cors`. Fixes the wildcard origin reflecting the request `Origin` and sending `Access-Control-Allow-Credentials: true` when `credentials: true` is set without an explicit `origin`, where any site a logged-in user visited could make credentialed cross-origin requests and read responses from cookie-authenticated endpoints. GHSA-88fw-hqm2-52qc
-
-### Body Limit Middleware can be bypassed on AWS Lambda by understating `Content-Length`
-
-Affects: `hono/body-limit` on AWS Lambda (`hono/aws-lambda`, `hono/lambda-edge`). Fixes the request being built with the client-declared `Content-Length` while the body is delivered fully buffered, where a client could declare a small `Content-Length` with a much larger body and slip past the configured size limit. GHSA-rv63-4mwf-qqc2
-
-### Path traversal in 
-
-... (truncated)]]></description>
-    <pubDate>Tue, 09 Jun 2026 03:30:10 GMT</pubDate>
   </item>
 </channel>
 </rss>
