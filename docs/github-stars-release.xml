@@ -5,12 +5,212 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Tue, 16 Jun 2026 22:36:30 GMT</lastBuildDate>
+  <lastBuildDate>Wed, 17 Jun 2026 22:31:52 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
   <item>
-    <title>[github/spec-kit] Spec Kit - 0.10.4 (v0.10.4)</title>
-    <link>https://github.com/github/spec-kit/releases/tag/v0.10.4</link>
-    <guid isPermaLink="true">https://github.com/github/spec-kit/releases/tag/v0.10.4</guid>
+    <title>[mongodb/mongo-go-driver] MongoDB Go Driver 2.6.2 (v2.6.2)</title>
+    <link>https://github.com/mongodb/mongo-go-driver/releases/tag/v2.6.2</link>
+    <guid isPermaLink="true">https://github.com/mongodb/mongo-go-driver/releases/tag/v2.6.2</guid>
+    <description><![CDATA[The MongoDB Go Driver Team is pleased to release version 2.6.2 of the official MongoDB Go Driver.
+
+## Release Highlights
+
+This release excludes non-I/O TLS errors from backpressure labels, aligning error labeling more closely with the CMAP specification. This fixes cases where protocol-level TLS handshake failures, such as certificate validation, hostname mismatch, fatal alerts, or malformed record headers, could be incorrectly classified as overload-related errors. As a result, these failures are handled more accurately during connection establishment and SDAM/pool error processing.
+
+<!-- Release notes generated using configuration in .github/release.yml at v2.6.2 -->
+
+## What's Changed
+### 🐛 Fixed
+* GODRIVER-3906 Exclude tls.RecordHeaderError from backpressure labels by @matthewdale in 
+
+**Full Changelog**: 
+
+For a full list of tickets included in this release, please see the list of fixed issues.
+
+Documentation for the Go Driver can be found on pkg.go.dev and the Mo
+
+... (truncated)]]></description>
+    <pubDate>Wed, 17 Jun 2026 22:15:38 GMT</pubDate>
+  </item>
+  <item>
+    <title>[anomalyco/opencode] v1.17.8</title>
+    <link>https://github.com/anomalyco/opencode/releases/tag/v1.17.8</link>
+    <guid isPermaLink="true">https://github.com/anomalyco/opencode/releases/tag/v1.17.8</guid>
+    <description><![CDATA[## Core
+### Improvements
+- Session timelines load much faster and avoid flicker or scroll jumps.
+
+### Bugfixes
+- OpenAI-compatible providers now accept MCP tool schemas that previously failed validation. (@jquense)
+- Cloudflare AI Gateway now receives the configured API key correctly. (@keefetang)
+- MCP tools without declared schema properties now work with providers that expect object properties.
+- Long-running MCP tools now keep their timeout alive when they report progress. (@Nomadcxx)
+- The MCP OAuth callback server now shuts down once authorization finishes or is cancelled.
+- MCP tool failures now surface the server's error text instead of a generic failure.
+- MCP OAuth error pages now escape provider error text correctly.
+
+## Desktop
+### Improvements
+- Added a Home tab toggle so you can quickly switch between Home and your last tab.
+- The new desktop file and folder picker is faster and easier to navigate in the v2 layout.
+
+**Thank you to 3 community contributors:**
+- @Nomadcxx:
+
+
+... (truncated)]]></description>
+    <pubDate>Wed, 17 Jun 2026 21:27:18 GMT</pubDate>
+  </item>
+  <item>
+    <title>[bluesky-social/atproto] @atproto/oauth-client@0.7.4</title>
+    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/oauth-client%400.7.4</link>
+    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/oauth-client%400.7.4</guid>
+    <description><![CDATA[### Patch Changes
+
+- #5101 `9cc6b33` Thanks @ryanda9910! - Avoid relying on `AbortSignal.timeout`, which is not implemented in every runtime this package targets (notably React Native / Expo) and caused `TypeError: AbortSignal.timeout is not a function` during the OAuth login flow. A `timeoutSignal` helper now feature-detects the native static method and falls back to an `AbortController` + `setTimeout` when it is missing.]]></description>
+    <pubDate>Wed, 17 Jun 2026 20:09:36 GMT</pubDate>
+  </item>
+  <item>
+    <title>[PerryTS/perry] v0.5.1180</title>
+    <link>https://github.com/PerryTS/perry/releases/tag/v0.5.1180</link>
+    <guid isPermaLink="true">https://github.com/PerryTS/perry/releases/tag/v0.5.1180</guid>
+    <description><![CDATA[Native TypeScript compiler — 130 commits since v0.5.1167. Highlights below; full diff: v0.5.1167...v0.5.1180.
+
+## Highlights
+- **npm packages compile natively at much higher fidelity** — extensive CJS-wrap and resolution fixes for ajv, pino, commander, execa, hono, semver/joi/winston, uuid, dayjs.
+- **Intl support expanded** — `getCanonicalLocales`, `supportedValuesOf`, `formatToParts`, plus `ListFormat`/`RelativeTimeFormat`/`PluralRules` (#5320).
+- **Codegen & lowering perf** — outlined inline allocator (~17% faster), shared constructor symbol (~2.5x), O(1) HIR registry/scope/closure-capture analysis, smaller IR.
+- **Binary size** — per-app feature gating (regex/Temporal/URL/normalize/segmenter), devirtualized native-module dispatch (−20% hello-world __text), gated dgram/diagnostics.
+
+## Features
+- feat(intl): getCanonicalLocales, supportedValuesOf, formatToParts + ListFormat/RelativeTimeFormat/PluralRules (#5320)
+- feat(hir): Annex B B.3.3 sloppy block-level function hoisting (#5319)
+
+... (truncated)]]></description>
+    <pubDate>Wed, 17 Jun 2026 20:04:34 GMT</pubDate>
+  </item>
+  <item>
+    <title>[cli/cli] GitHub CLI 2.95.0 (v2.95.0)</title>
+    <link>https://github.com/cli/cli/releases/tag/v2.95.0</link>
+    <guid isPermaLink="true">https://github.com/cli/cli/releases/tag/v2.95.0</guid>
+    <description><![CDATA[## Read repository files and directories with `gh repo read-file` and `gh repo read-dir`
+
+Two new preview commands read repository contents without cloning:
+
+```shell
+# Read a single file to stdout
+gh repo read-file README.md --repo cli/cli
+
+# Read from a specific branch, tag, or commit
+gh repo read-file go.mod --ref v2.94.0 --repo cli/cli
+
+# Write a file to disk (use --clobber to overwrite)
+gh repo read-file README.md --output ./README.md --repo cli/cli
+
+# List the entries in a directory
+gh repo read-dir script --repo cli/cli
+```
+
+Both commands default to the repository's default branch, accept `--ref` to target any branch, tag, or commit, and support `--json`, `--jq`, and `--template` for scripting. This makes it easy for agents and automation to inspect a repo without a full checkout.
+
+> [!NOTE]
+> `gh repo read-file` and `gh repo read-dir` are in preview and subject to change without notice.
+
+## What's Changed
+
+### ✨ Features
+
+* feat: add `repo read-file` 
+
+... (truncated)]]></description>
+    <pubDate>Wed, 17 Jun 2026 19:55:07 GMT</pubDate>
+  </item>
+  <item>
+    <title>[remix-run/react-router] v8.0.0 (react-router@8.0.0)</title>
+    <link>https://github.com/remix-run/react-router/releases/tag/react-router%408.0.0</link>
+    <guid isPermaLink="true">https://github.com/remix-run/react-router/releases/tag/react-router%408.0.0</guid>
+    <description><![CDATA[See the changelog for release notes:]]></description>
+    <pubDate>Wed, 17 Jun 2026 19:19:48 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1071.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1071.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1071.0</guid>
+    <description><![CDATA[#### 3.1071.0(2026-06-17)
+
+##### New Features
+
+* **client-partnercentral-selling:** Cosell Resonate AND Prospecing API Launch with ARN correction (7e8c98ab)
+* **client-compute-optimizer-automation:** This launch adds IfExists comparison operators to Compute Optimizer Automation rule criteria, so a rule can include recommended actions whose specified attribute isn't present. (ab2c616d)
+* **client-bedrock-agent:** Launching Bedrock Managed Knowledge Bases. Added support for resource-based policies on Knowledge Base resources, enabling cross-account access for Managed Knowledge Bases. (de0affe4)
+* **client-securityagent:** Updated AWS Security Agent SDK model with new APIs for threat modeling, code review, security requirements, and additional integration providers. (9c3d3351)
+* **client-opensearch:** Adds support for configuring IAM Identity Center options on existing OpenSearch applications via the UpdateApplication API. (94f06a20)
+* **client-glue:** This release adds support for Search
+
+... (truncated)]]></description>
+    <pubDate>Wed, 17 Jun 2026 18:47:17 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-06-17) (release-2026-06-17)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-06-17</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-06-17</guid>
+    <description><![CDATA[## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/service/bedrockagent`: [v1.55.0](service/bedrockagent/CHANGELOG.md#v1550-2026-06-17)
+ * **Feature**: Launching Bedrock Managed Knowledge Bases. Added support for resource-based policies on Knowledge Base resources, enabling cross-account access for Managed Knowledge Bases.
+* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcore`: [v1.31.0](service/bedrockagentcore/CHANGELOG.md#v1310-2026-06-17)
+ * **Feature**: AgentCore Harness service will be Generally Available at NYS 2026 with this Treb release. Harness will support invoking specific endpoints via the qualifier parameter, AWS Skills for pre-built agent capabilities, and improved validation for skill git source URLs.
+* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcorecontrol`: [v1.45.0](service/bedrockagentcorecontrol/CHANGELOG.md#v1450-2026-06-17)
+ * **Feature**: AgentCore Gateway now supports inference targets to LLM providers (direct config or built-in connectors), HTTP pa
+
+... (truncated)]]></description>
+    <pubDate>Wed, 17 Jun 2026 18:46:56 GMT</pubDate>
+  </item>
+  <item>
+    <title>[heroui-inc/heroui] v3.2.1</title>
+    <link>https://github.com/heroui-inc/heroui/releases/tag/v3.2.1</link>
+    <guid isPermaLink="true">https://github.com/heroui-inc/heroui/releases/tag/v3.2.1</guid>
+    <description><![CDATA[## What's Inside
+
+- 📦 @heroui/react → no longer bundles its own copy of react-aria
+- 💬 Tooltip → duplicate-instance issues fixed
+- 🔧 SwitchGroup → horizontal layout fix
+
+## What's Changed
+* chore(docs): add missing typography in component category by @wingkwong in 
+* fix(react): externalize react-aria subpaths to prevent vendored copy by @wingkwong in 
+* fix(switch-group): add missing switch-group-items by @wingkwong in 
+* V3.2.1 by @wingkwong in 
+
+
+**Full Changelog**:]]></description>
+    <pubDate>Wed, 17 Jun 2026 16:40:12 GMT</pubDate>
+  </item>
+  <item>
+    <title>[zed-industries/zed] v1.7.2</title>
+    <link>https://github.com/zed-industries/zed/releases/tag/v1.7.2</link>
+    <guid isPermaLink="true">https://github.com/zed-industries/zed/releases/tag/v1.7.2</guid>
+    <description><![CDATA[This week's release includes automatic agent context compaction that you can also trigger manually with the new `/compact` command, cleaner and more legible Markdown preview styling, and support for running custom git commands on git graph branches and tags.
+
+## Features
+
+### AI
+
+- Agent: Added auto-compaction and `/compact` to Zed Agent. (#58931)
+- Agent: Improved agent skills management by moving it into the settings UI. (#58701)
+- Agent: Improved how we communicate problems relative to skills, in both the agent panel and the settings UI. (#58838)
+- Agent: Improved the UX of the thread import flow. (#57791)
+- Agent: Improved auto scroll location when using read-file tool. (#58640; thanks liigo)
+- Agent: Show context window usage and cost metrics for external agents that support it. (#58680)
+- Agent: Allow deleting sessions from history for external agents that support it. (#58680)
+- Agent: Allow loading skills whose descriptions exceed the 1024-byte limit by showing warn
+
+... (truncated)]]></description>
+    <pubDate>Wed, 17 Jun 2026 15:41:19 GMT</pubDate>
+  </item>
+  <item>
+    <title>[github/spec-kit] Spec Kit - 0.11.1 (v0.11.1)</title>
+    <link>https://github.com/github/spec-kit/releases/tag/v0.11.1</link>
+    <guid isPermaLink="true">https://github.com/github/spec-kit/releases/tag/v0.11.1</guid>
     <description><![CDATA[## Install
 
 ```bash
@@ -20,18 +220,148 @@ specify init my-project
 
 ## What's Changed
 
-- chore: bump version to 0.10.4
-- fix: fail loudly when a fan-out 'items' expression does not resolve to a list (#2957)
-- refactor: move preset command handlers to presets/_commands.py (PR-6/8) (#2826)
-- Update agent-parity-governance preset to v0.3.0 (#2982)
-- Update cross-platform-governance preset to v0.2.0 (#2983)
-- Add Data Model Diagram extension to community catalog (#2922)
-- Add Spec Kit TLDR extension to community catalog (#3007)
-- docs: add guide for handling complex features (#3004)
-- Add Loop Engineering extension to community catalog (#3002)
-- Update MemoryLint extension to v1.5.1 (#3000)
-- chore: release 0.10.3, begin 0.10.4.dev0 development (#2999)]]></description>
-    <pubDate>Tue, 16 Jun 2026 20:34:44 GMT</pubDate>
+- chore: bump version to 0.11.1
+- chore: ignore Copilot dogfooding scaffolding in .gitignore (#3019)
+- docs: clarify Taskify specify command (#3016)
+- docs: document evolving specs in existing projects (#2902)
+- feat(workflows): opt-in output_format: json exposes parsed shell stdout as output.data (#2963)
+- fix: non-zero exit code when a workflow run ends failed or aborted (#2959)
+- fix(skills): preserve non-ASCII characters in skill frontmatter (#2917)
+- fix: prevent extension self-install from deleting source dir (#2990) (#2991)
+- fix: disable Rich Live transient mode on Windows to prevent PS 5.1 hang (#2938)
+- Update a11y-governance preset to v0.4.0 (#2981)
+- chore: release 0.11.0, begin 0.11.1.dev0 development (#3012)]]></description>
+    <pubDate>Wed, 17 Jun 2026 15:29:29 GMT</pubDate>
+  </item>
+  <item>
+    <title>[arktypeio/arktype] @arktype/type@2.2.1</title>
+    <link>https://github.com/arktypeio/arktype/releases/tag/%40arktype/type%402.2.1</link>
+    <guid isPermaLink="true">https://github.com/arktypeio/arktype/releases/tag/%40arktype/type%402.2.1</guid>
+    <description><![CDATA[No release notes provided.]]></description>
+    <pubDate>Wed, 17 Jun 2026 14:42:50 GMT</pubDate>
+  </item>
+  <item>
+    <title>[withastro/astro] astro@6.4.8</title>
+    <link>https://github.com/withastro/astro/releases/tag/astro%406.4.8</link>
+    <guid isPermaLink="true">https://github.com/withastro/astro/releases/tag/astro%406.4.8</guid>
+    <description><![CDATA[### Patch Changes
+
+- #17109 `27c80ea` Thanks @ematipico! - Harden the limits on the number of decoding on the URL.]]></description>
+    <pubDate>Wed, 17 Jun 2026 14:10:22 GMT</pubDate>
+  </item>
+  <item>
+    <title>[tauri-apps/tauri] tauri-cli v2.11.3 (tauri-cli-v2.11.3)</title>
+    <link>https://github.com/tauri-apps/tauri/releases/tag/tauri-cli-v2.11.3</link>
+    <guid isPermaLink="true">https://github.com/tauri-apps/tauri/releases/tag/tauri-cli-v2.11.3</guid>
+    <description><![CDATA[<details>
+<summary><em><h4>Cargo Audit</h4></em></summary>
+
+```
+Fetching advisory database from `
+ Loaded 1133 security advisories (from /home/runner/.cargo/advisory-db)
+ Updating crates.io index
+ Scanning Cargo.lock for vulnerabilities (1085 crate dependencies)
+Crate: atk
+Version: 0.18.2
+Warning: unmaintained
+Title: gtk-rs GTK3 bindings - no longer maintained
+Date: 2024-03-04
+ID: RUSTSEC-2024-0413
+URL: 
+
+Crate: atk-sys
+Version: 0.18.2
+Warning: unmaintained
+Title: gtk-rs GTK3 bindings - no longer maintained
+Date: 2024-03-04
+ID: RUSTSEC-2024-0416
+URL: 
+
+Crate: fxhash
+Version: 0.2.1
+Warning: unmaintained
+Title: fxhash - no longer maintained
+Date: 2025-09-05
+ID: RUSTSEC-2025-0057
+URL: 
+
+Crate: gdk
+Version: 0.18.2
+Warning: unmaintained
+Title: gtk-rs GTK3 bindings - no longer maintained
+Date: 2024-03-04
+ID: RUSTSEC-2024-0412
+URL: 
+
+Crate: gdk-sys
+Version: 0.18.2
+Warning: unmaintained
+Title: gtk-rs GTK3 bindings - no longer maintained
+Date: 2024-03-04
+ID: RUSTSEC-2024-0418
+URL: 
+
+Crate: gdkw
+
+... (truncated)]]></description>
+    <pubDate>Wed, 17 Jun 2026 13:48:47 GMT</pubDate>
+  </item>
+  <item>
+    <title>[web-infra-dev/rspack] v1.7.12</title>
+    <link>https://github.com/web-infra-dev/rspack/releases/tag/v1.7.12</link>
+    <guid isPermaLink="true">https://github.com/web-infra-dev/rspack/releases/tag/v1.7.12</guid>
+    <description><![CDATA[<!-- Release notes generated using configuration in .github/release.yml at v1.7.12 -->
+
+## What's Changed
+### Bug Fixes 🐞
+* fix: align timing logger with webpack phase boundaries by @hardfist in 
+### Document Updates 📖
+* docs(v1): add algolia site verification meta by @SoonIter in 
+* docs: use rspack-v1 algolia index on v1 site by @SoonIter in 
+### Other Changes
+* chore: release 1.7.11 by @LingyuCoder in 
+* chore(backport): use OIDC to publish crates by @stormslowly in 
+* chore(release): crate 0.7.11 by @stormslowly in 
+* chore: change CodSpeed baseline branch from main to v1.x by @stormslowly in 
+* fix: correct mf manifest expose assets by @2heal1 in 
+* ci: pin release artifact download action by @2heal1 in 
+
+
+**Full Changelog**:]]></description>
+    <pubDate>Wed, 17 Jun 2026 12:44:37 GMT</pubDate>
+  </item>
+  <item>
+    <title>[redwoodjs/sdk] v1.2.13</title>
+    <link>https://github.com/redwoodjs/sdk/releases/tag/v1.2.13</link>
+    <guid isPermaLink="true">https://github.com/redwoodjs/sdk/releases/tag/v1.2.13</guid>
+    <description><![CDATA[## What's Changed
+* fix(deps): resolve pnpm audit advisories by @justinvdm in 
+* fix(use-synced-state): prevent duplicate activeSubscriptions entries on reconnect by @justinvdm in 
+
+
+**Full Changelog**:]]></description>
+    <pubDate>Wed, 17 Jun 2026 10:52:43 GMT</pubDate>
+  </item>
+  <item>
+    <title>[djkotori/rpgcobo-tool] v0.1.4</title>
+    <link>https://github.com/djkotori/rpgcobo-tool/releases/tag/v0.1.4</link>
+    <guid isPermaLink="true">https://github.com/djkotori/rpgcobo-tool/releases/tag/v0.1.4</guid>
+    <description><![CDATA[**RPG-Cobo Tool v0.1.4**
+
+This version includes the following bug fixes and feature additions.
+
+- Implemented new Event Role "Moving Terrain"
+- Implemented Screen Space Shadows that casts shadows from lights in dark scenes (tentative implementation).
+- Improved the ability to specify calculation formulas for the main parameters of the Enemy.
+- Bugfixed where NoEntry tool makes only 8 blocks height collision.
+- Fixed an issue where it was difficult to move the selected object in the forward direction of the camera in the Map Editor.
+- Fixed a case where an error occurred when specifying the base position in the Chara Action Tool.
+- Fixed a bug that caused an error when the player moved the character using the "Move Character" command.
+- Bugfix when set the movement action to "Walk around" or "Chasing 1" in a custom event, an error will occur and the game will be forced to close.
+- Bugfix when the number of party members is set to 1 in the system settings, the player characte
+
+... (truncated)]]></description>
+    <pubDate>Tue, 16 Jun 2026 23:29:38 GMT</pubDate>
   </item>
   <item>
     <title>[BabylonJS/Babylon.js] 9.12.1</title>
@@ -67,27 +397,6 @@ specify init my-project
     <pubDate>Tue, 16 Jun 2026 19:00:47 GMT</pubDate>
   </item>
   <item>
-    <title>[aws/aws-sdk-js-v3] v3.1070.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1070.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1070.0</guid>
-    <description><![CDATA[#### 3.1070.0(2026-06-16)
-
-##### Chores
-
-* **scripts:** speed up esm-to-cjs transform (#8107) (9063e305)
-
-##### New Features
-
-* **clients:** update client endpoints as of 2026-06-16 (dc044784)
-* **client-sagemaker:** Add EnableDetailedObservability to Endpoint MetricsConfig. Publishes GPU, host, and framework-native inference metrics to CloudWatch with per-inference-component, availability-zone, and instance dimensions. Adds Inference Component provisioning lifecycle and multi-AZ placement metrics. (97bb02cf)
-* **client-outposts:** Adds support for creating an order from quotes. (d4389889)
-* **client-s3vectors:** Amazon S3 Vectors now supports paginated QueryVectors requests, returning up to 10,000 results per query. (8b2ef7f2)
-* **client-partnercentral-selling:** Added Prospecting APIs to convert engagements into AI-enriched leads with scoring insights. Extended Engagement APIs with ProspectingResult and Lead contexts. Added CoSell Scoring to GetAwsOpportunitySummary- quality score, t
-
-... (truncated)]]></description>
-    <pubDate>Tue, 16 Jun 2026 19:00:30 GMT</pubDate>
-  </item>
-  <item>
     <title>[iii-hq/iii] iii 0.19.4 (iii/v0.19.4)</title>
     <link>https://github.com/iii-hq/iii/releases/tag/iii/v0.19.4</link>
     <guid isPermaLink="true">https://github.com/iii-hq/iii/releases/tag/iii/v0.19.4</guid>
@@ -110,24 +419,6 @@ specify init my-project
     <pubDate>Tue, 16 Jun 2026 18:55:31 GMT</pubDate>
   </item>
   <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-06-16) (release-2026-06-16)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-06-16</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-06-16</guid>
-    <description><![CDATA[## General Highlights
-* **Dependency Update**: Updated to the latest SDK module versions
-
-## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/directconnect`: [v1.40.0](service/directconnect/CHANGELOG.md#v1400-2026-06-16)
- * **Feature**: Added VIF rate limiting support for AWS Direct Connect, allowing customers to set bandwidth allocations on virtual interfaces to manage traffic on dedicated connections.
-* `github.com/aws/aws-sdk-go-v2/service/outposts`: [v1.62.0](service/outposts/CHANGELOG.md#v1620-2026-06-16)
- * **Feature**: Adds support for creating an order from quotes.
-* `github.com/aws/aws-sdk-go-v2/service/partnercentralselling`: [v1.19.0](service/partnercentralselling/CHANGELOG.md#v1190-2026-06-16)
- * **Feature**: Added Prospecting APIs to convert engagements into AI-enriched leads with scoring insights. Extended Engagement APIs with ProspectingResult and Lead contexts. Added CoSell Scoring to GetAwsOpportunitySummary- quality score, trend, agent-driven recommendations,
-
-... (truncated)]]></description>
-    <pubDate>Tue, 16 Jun 2026 18:49:54 GMT</pubDate>
-  </item>
-  <item>
     <title>[fastify/fastify-vite] @fastify/vite@9.1.0</title>
     <link>https://github.com/fastify/fastify-vite/releases/tag/%40fastify/vite%409.1.0</link>
     <guid isPermaLink="true">https://github.com/fastify/fastify-vite/releases/tag/%40fastify/vite%409.1.0</guid>
@@ -140,20 +431,16 @@ specify init my-project
     <title>[openclaw/openclaw] openclaw 2026.6.8 (v2026.6.8)</title>
     <link>https://github.com/openclaw/openclaw/releases/tag/v2026.6.8</link>
     <guid isPermaLink="true">https://github.com/openclaw/openclaw/releases/tag/v2026.6.8</guid>
-    <description><![CDATA[### Highlights
+    <description><![CDATA[## 2026.6.8
 
-- Telegram and WhatsApp channel delivery are richer and less brittle: Telegram can send structured rich text with tables, lists, expandable blockquotes, preserved intentional line breaks, prompt-preserving CLI backend delivery, retired native draft migration, and safer rich-media boundaries, while WhatsApp now honors configured ACP bindings. (#92679, #93164, #84082, #89421, #92513) Thanks @obviyus, @jzakirov, @spacegeologist, and @TurboTheTurtle.
-- Agent and Gateway recovery is sharper across account-scoped DM sends, generated media completions, auto-reply message-tool final replies, reset archive fallback reads, restart shutdown aborts, yielded subagent pauses, trusted subagent thinking override fallback, yielded cron media, heartbeat dedupe, session identity prompts, and unknown OpenAI agent selector rejection. (#92788, #91246, #92879, #91357, #92631, #92412, #92146, #91287, #92468, #92510) Thanks @yetval, @TurboTheTurtle, @masatohoshino, @CadanHu, @ooiuuii, @openperf
+### Highlights
+
+- **Richer channel delivery:** Telegram and WhatsApp are less brittle: Telegram renders structured text with tables, lists, expandable blockquotes, preserved intentional line breaks, and CLI-backed replies, while WhatsApp now honors configured ACP bindings. (#92679, #93164, #84082, #89421, #92513) Thanks @obviyus, @vincentkoc, @jzakirov, @spacegeologist, @TurboTheTurtle, @mcaxtr, and @myrzka.
+- **More reliable agent runs:** account-scoped DM sends, generated media completions, auto-reply message-tool final replies, reset archive fallback reads, restart shutdown aborts, yielded subagent pauses, and session identity prompts all stay on the correct recovery path. (#92788, #91246, #92879, #91357, #92631, #92468) Thanks @yetval, @TurboTheTurtle, @masatohoshino, @CadanHu, @vincentkoc, @ooiuuii, @openperf, @zhangguiping-xydt, @QQSHI13, @kumaxs, and @aleps001.
+- **Safer model routing:** new GLM-5.2 and Claude Haiku 4.5 catalog support arrives with normalized provid
 
 ... (truncated)]]></description>
     <pubDate>Tue, 16 Jun 2026 16:32:26 GMT</pubDate>
-  </item>
-  <item>
-    <title>[remix-run/react-router] v7.18.0 (react-router@7.18.0)</title>
-    <link>https://github.com/remix-run/react-router/releases/tag/react-router%407.18.0</link>
-    <guid isPermaLink="true">https://github.com/remix-run/react-router/releases/tag/react-router%407.18.0</guid>
-    <description><![CDATA[See the changelog for release notes:]]></description>
-    <pubDate>Tue, 16 Jun 2026 14:13:25 GMT</pubDate>
   </item>
   <item>
     <title>[cloudflare/vinext] vinext@0.1.4</title>
@@ -185,48 +472,6 @@ specify init my-project
 
 ... (truncated)]]></description>
     <pubDate>Tue, 16 Jun 2026 13:47:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>[bluesky-social/atproto] @atproto/lex-schema@0.1.4</title>
-    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/lex-schema%400.1.4</link>
-    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/lex-schema%400.1.4</guid>
-    <description><![CDATA[### Patch Changes
-
-- #4967 `9fc720c` Thanks @matthieusieben! - Use TypeScript 7 to build package
-
-- Updated dependencies [`9fc720c`]:
- - @atproto/lex-data@0.1.2
- - @atproto/syntax@0.6.2]]></description>
-    <pubDate>Tue, 16 Jun 2026 12:44:34 GMT</pubDate>
-  </item>
-  <item>
-    <title>[heroui-inc/heroui] v3.2.0</title>
-    <link>https://github.com/heroui-inc/heroui/releases/tag/v3.2.0</link>
-    <guid isPermaLink="true">https://github.com/heroui-inc/heroui/releases/tag/v3.2.0</guid>
-    <description><![CDATA[## What's inside
-
-- React Aria 1.18.0
-- Calendar → week/day views, multi-select, year picker
-- Table → SortableColumnHeader
-- Autocomplete → Virtualizer
-- Tooltip → delay theme vars
-- Toggles → new Field composition
-
-## Breaking Changes
-
-`Radio`, `Checkbox`, and `Switch` move to an explicit `*.Content` composition — `*.Control` nests inside `*.Content`, the label is plain text inside `*.Content` (no nested `<Label>`), and `Description`/`FieldError` become siblings of `*.Content`.
-
-## What's Changed
-* fix(docs): broken component links by @wingkwong in 
-* chore(docs): add dark mode guide (cn) by @wingkwong in 
-* fix(docs): broken redirects by @wingkwong in 
-* docs(native): add v1.0.4 release notes and component updates by @vvv-sss in 
-* chore(docs): update cn docs for pr6580 & sync missing changes by @wingkwong in 
-* fix(toast): defer success/error toast after promise to avoid ViewTransition collision by @aosmcleod in 
-* fix(styles): cap modal/alert-dialog scroll-insi
-
-... (truncated)]]></description>
-    <pubDate>Tue, 16 Jun 2026 02:31:04 GMT</pubDate>
   </item>
   <item>
     <title>[project-tsurugi/tsurugidb] 1.11.0</title>
@@ -276,26 +521,17 @@ The `Source code (zip)` or `Source code (tar.gz)` in `Assets` are automatically 
     <pubDate>Mon, 15 Jun 2026 21:06:37 GMT</pubDate>
   </item>
   <item>
-    <title>[mongodb/mongo-go-driver] MongoDB Go Driver 2.6.1 (v2.6.1)</title>
-    <link>https://github.com/mongodb/mongo-go-driver/releases/tag/v2.6.1</link>
-    <guid isPermaLink="true">https://github.com/mongodb/mongo-go-driver/releases/tag/v2.6.1</guid>
-    <description><![CDATA[The MongoDB Go Driver Team is pleased to release version 2.6.1 of the official MongoDB Go Driver.
+    <title>[ollama/ollama] v0.30.9</title>
+    <link>https://github.com/ollama/ollama/releases/tag/v0.30.9</link>
+    <guid isPermaLink="true">https://github.com/ollama/ollama/releases/tag/v0.30.9</guid>
+    <description><![CDATA[## What's Changed
+* Support for Cohere2Moe architecture
+* Fixed LFM2 parser/render for cases where thinking was not emitted
+* Fixed issue where `ollama launch claude` and other coding agent or assistant use cases would only output one token
+* Ollama will now return an error if a single message is larger than the current context window
 
-## Release Highlights
-
-This release fixes batched writes to split by full wire-message size instead of document payload size, preventing near-limit InsertMany failures; fixes unmarshaling of null and undefined values into raw BSON types such as bson.Raw, bsoncore.Document, and bsoncore.Array; and fixes mongo.ErrorCodes to return codes for ClientBulkWriteException, including duplicate-key errors from client bulk writes.
-
-<!-- Release notes generated using configuration in .github/release.yml at v2.6.1 -->
-
-## What's Changed
-### 🐛 Fixed
-* GODRIVER-3858 Split write batches by wire-message size, not document payload by @koenno in 
-* GODRIVER-3858 split write batches by wire-message size, not document payload by @qingyang-hu in 
-* GODRIVER-3924 Fix bug of unmarshaling null. by @qingyang-hu in 
-* GODRIVER-3832: Fix mongo.ErrorCodes with ClientBulkWriteException (… by @prestonvasqu
-
-... (truncated)]]></description>
-    <pubDate>Mon, 15 Jun 2026 20:18:56 GMT</pubDate>
+**Full Changelog**:]]></description>
+    <pubDate>Mon, 15 Jun 2026 19:55:07 GMT</pubDate>
   </item>
   <item>
     <title>[panva/node-oidc-provider] v9.8.5</title>
@@ -415,23 +651,6 @@ You can read about our versioning strategy and releases on our website.]]></desc
     <pubDate>Mon, 15 Jun 2026 11:27:57 GMT</pubDate>
   </item>
   <item>
-    <title>[withastro/astro] astro@6.4.7</title>
-    <link>https://github.com/withastro/astro/releases/tag/astro%406.4.7</link>
-    <guid isPermaLink="true">https://github.com/withastro/astro/releases/tag/astro%406.4.7</guid>
-    <description><![CDATA[### Patch Changes
-
-- #17035 `197e50e` Thanks @astrobot-houston! - Fixes `getRelativeLocaleUrl`, `getAbsoluteLocaleUrl`, and `getAbsoluteLocaleUrlList` to strip trailing slashes when `trailingSlash: 'never'` is configured
-
-- #16967 `3719765` Thanks @astrobot-houston! - Fixes double URL-encoded paths returning 400 Bad Request on on-demand routes
-
- Previously, any URL containing a double-encoded character (like `%255B`, which is `` encoded twice) was unconditionally rejected with a `400 Bad Request` before middleware or route handlers could run. This broke embedded tools like Sanity Studio whose client-side router legitimately produces double-encoded URLs.
-
- The fix replaces the rejection approach with iterative decoding — multi-level percent-encoding is now fully resolved to its canonical form before being passed to middleware and route matching. This preserves the security fix for CVE-2025-66202 (middleware authorization bypass via double encoding) because middleware now always sees the
-
-... (truncated)]]></description>
-    <pubDate>Mon, 15 Jun 2026 10:47:24 GMT</pubDate>
-  </item>
-  <item>
     <title>[microsoft/playwright] v1.61.0</title>
     <link>https://github.com/microsoft/playwright/releases/tag/v1.61.0</link>
     <guid isPermaLink="true">https://github.com/microsoft/playwright/releases/tag/v1.61.0</guid>
@@ -534,64 +753,6 @@ Beyond the existing real-Docker-backed RDS engines, **provisioning lifecycle** i
     <pubDate>Sun, 14 Jun 2026 19:52:08 GMT</pubDate>
   </item>
   <item>
-    <title>[anomalyco/opencode] v1.17.7</title>
-    <link>https://github.com/anomalyco/opencode/releases/tag/v1.17.7</link>
-    <guid isPermaLink="true">https://github.com/anomalyco/opencode/releases/tag/v1.17.7</guid>
-    <description><![CDATA[## Core
-
-### Bugfixes
-
-- Plugin client requests now reuse the active server instead of assuming the default local port.
-- ACP shell tool calls now show the command and working directory from the start.
-- Plugin-provided shell environment variables now apply to PTY sessions.
-
-### Improvements
-
-- MCP servers can now receive the current workspace as a client root.
-
-## TUI
-
-### Bugfixes
-
-- MCP debug now uses the SDK's latest protocol version.
-
-## Desktop
-
-### Bugfixes
-
-- The new session route now stays scoped to its own draft server, so prompts and state target the right workspace.
-
-## SDK
-
-### Improvements
-
-- SDK clients now refresh model and provider availability when integrations change, and credential update and remove calls accept `location`.]]></description>
-    <pubDate>Sun, 14 Jun 2026 18:49:23 GMT</pubDate>
-  </item>
-  <item>
-    <title>[PerryTS/perry] v0.5.1167</title>
-    <link>https://github.com/PerryTS/perry/releases/tag/v0.5.1167</link>
-    <guid isPermaLink="true">https://github.com/PerryTS/perry/releases/tag/v0.5.1167</guid>
-    <description><![CDATA[## v0.5.1167 — fix(runtime): relink node:http/net — restore `js_node_system_error_value` (#5124)
-
-Release-blocking regression fix folded in via #5124. PR #5112 (Next.js
-standalone walls) refactored `crates/perry-runtime/src/error.rs` and dropped the
-`#[no_mangle] pub unsafe extern "C" fn js_node_system_error_value` definition
-**and** its `#[used] KEEP_JS_NODE_SYSTEM_ERROR_VALUE` anchor, while `perry-ffi`'s
-`error::system_error_value` still calls that symbol. The result: compiling any
-program that links the http/net extension archive failed at the link step with
-`undefined reference to 'js_node_system_error_value'` (`collect2: ld returned 1`).
-
-It went unseen because perry-runtime's own `cargo test` builds with the full
-feature set, so the symbol was present there — only the auto-optimize compile
-path (minimal feature set, extension archives linked after LTO) hit it. The
-`issue_4903_listen_callback_deferred` integration tests, which actually run
-`perry compile` on a net program, are wha
-
-... (truncated)]]></description>
-    <pubDate>Sun, 14 Jun 2026 11:10:02 GMT</pubDate>
-  </item>
-  <item>
     <title>[opencontainers/runc] runc 1.4.3 -- &quot;The best way to irritate him is to feed his grandmother to the Ravenous Bugblatter Beast of Traal.&quot; (v1.4.3)</title>
     <link>https://github.com/opencontainers/runc/releases/tag/v1.4.3</link>
     <guid isPermaLink="true">https://github.com/opencontainers/runc/releases/tag/v1.4.3</guid>
@@ -678,20 +839,6 @@ This release hardens redirect and URL handling, improves the validateStatus conf
 
 ... (truncated)]]></description>
     <pubDate>Fri, 12 Jun 2026 17:54:47 GMT</pubDate>
-  </item>
-  <item>
-    <title>[ollama/ollama] v0.30.8</title>
-    <link>https://github.com/ollama/ollama/releases/tag/v0.30.8</link>
-    <guid isPermaLink="true">https://github.com/ollama/ollama/releases/tag/v0.30.8</guid>
-    <description><![CDATA[## What's Changed
-* Fixed `ollama launch` selecting the wrong provider in some cases
-* Improved prompt caching by decoupling it from context shift for better KV cache reuse
-* More stable MLX inference with hardened linear and embedding layers
-* MLX runner now creates snapshots during prompt processing and speculative decoding for improved reliability
-* Improved recurrent model support with per-boundary states from the gated-delta kernels
-
-**Full Changelog**:]]></description>
-    <pubDate>Fri, 12 Jun 2026 17:04:52 GMT</pubDate>
   </item>
   <item>
     <title>[biomejs/biome] Biome CLI v2.5.0 (@biomejs/biome@2.5.0)</title>
@@ -901,132 +1048,6 @@ Options:
 
 @andrewckor,@ergunsh @mnhkahn]]></description>
     <pubDate>Thu, 11 Jun 2026 00:06:25 GMT</pubDate>
-  </item>
-  <item>
-    <title>[bluesky-social/social-app] 1.124.0</title>
-    <link>https://github.com/bluesky-social/social-app/releases/tag/1.124.0</link>
-    <guid isPermaLink="true">https://github.com/bluesky-social/social-app/releases/tag/1.124.0</guid>
-    <description><![CDATA[## What's Changed
-* Add plural formatting to "Group name is too long" strings by @surfdude29 in 
-* [Chat] Fix overflowing chat names by @mozzius in 
-* Fix alignment of error screen by @ds-boyce in 
-* Use new listConvoRequests endpoint by @ds-boyce in 
-* Add Leave chat button to settings for chat owners by @ds-boyce in 
-* Show accept/reject footer for empty request convos by @mozzius in 
-* [Chat] Invite link dialog tweaks by @mozzius in 
-* Block posting of invalid chat invites by @ds-boyce in 
-* [Chat] Fix footer logic by @mozzius in 
-* [Chat] Rename invite route to /chat/ by @mozzius in 
-* Refactor photo embed analytics to post:photoEmbed:* namespace by @vineyardbovines in 
-* [Chat] Centralize conversation report-subject resolution by @mozzius in 
-* Add fade-in animation to chat footer/composer by @ds-boyce in 
-* Open edit chat name dialog via tap by @ds-boyce in 
-* Remove TODO for uninviting group chat members by @ds-boyce in 
-* Only show Message option if chat member 
-
-... (truncated)]]></description>
-    <pubDate>Wed, 10 Jun 2026 22:51:20 GMT</pubDate>
-  </item>
-  <item>
-    <title>[cli/cli] GitHub CLI 2.94.0 (v2.94.0)</title>
-    <link>https://github.com/cli/cli/releases/tag/v2.94.0</link>
-    <guid isPermaLink="true">https://github.com/cli/cli/releases/tag/v2.94.0</guid>
-    <description><![CDATA[## Issue types, sub-issues, and relationships in `gh issue`
-
-<img width="2784" height="1494" alt="issue-view-monas-cafe-with-frame" src="" />
-
-
-This release brings GitHub's advanced issue features to `gh issue create`, `edit`, `view`, and `list`. You can set and view an issue's type, organize work with sub-issues, and track blocked-by and blocking relationships without leaving the command line:
-
-```shell
-# Set an issue's type
-gh issue create --type Bug
-gh issue edit 123 --type Bug
-
-# Organize work with sub-issues
-gh issue create --parent 100
-gh issue edit 100 --add-sub-issue 123
-
-# Track blocked-by and blocking relationships
-gh issue create --blocked-by 200
-gh issue edit 123 --add-blocking 300
-```
-
-Issue types and sub-issues are available on GitHub.com and GHES 3.17+; relationships require GHES 3.19+.
-
-## Manage discussions with `gh discussion`
-
-<img width="2784" height="1179" alt="discussion-view-monas-cafe-with-frame" src="" />
-
-
-This release introduces th
-
-... (truncated)]]></description>
-    <pubDate>Wed, 10 Jun 2026 21:47:49 GMT</pubDate>
-  </item>
-  <item>
-    <title>[denoland/rusty_v8] v149.4.0</title>
-    <link>https://github.com/denoland/rusty_v8/releases/tag/v149.4.0</link>
-    <guid isPermaLink="true">https://github.com/denoland/rusty_v8/releases/tag/v149.4.0</guid>
-    <description><![CDATA[No release notes provided.]]></description>
-    <pubDate>Wed, 10 Jun 2026 19:09:26 GMT</pubDate>
-  </item>
-  <item>
-    <title>[zed-industries/zed] v1.6.3</title>
-    <link>https://github.com/zed-industries/zed/releases/tag/v1.6.3</link>
-    <guid isPermaLink="true">https://github.com/zed-industries/zed/releases/tag/v1.6.3</guid>
-    <description><![CDATA[This week's release includes the ability to open a Git diff for a single file in its own dedicated tab from the Git panel, "Fast mode" for Anthropic and OpenAI models in the agent panel, shareable agent skill links, split diff mode in the commit history view, total added/removed line counts in the Git panel, and the ability to open files from the file finder without dismissing it.
-
-## Features
-
-### AI
-
-- Agent: Added a way to share skills via links. (#58009)
-- Agent: Added support for symlinked global skill directories. (#58095; thanks David3u)
-- Agent: Added a manual way to trigger the Rules to Skills migration. (#58278)
-- Agent: Improved project skills support in remote workspaces. (#58094)
-- Agent: Improved skill creation toast confirmation by making it auto-dismissed. (#57855)
-- Agent: Added Claude Opus 4.8 BYOK support. (#57984)
-- Agent: Added a right-click menu to thread items in the sidebar, allowing to regenerate a thread title, rename a thread title, open the threa
-
-... (truncated)]]></description>
-    <pubDate>Wed, 10 Jun 2026 18:33:08 GMT</pubDate>
-  </item>
-  <item>
-    <title>[web-infra-dev/rspack] v2.0.8</title>
-    <link>https://github.com/web-infra-dev/rspack/releases/tag/v2.0.8</link>
-    <guid isPermaLink="true">https://github.com/web-infra-dev/rspack/releases/tag/v2.0.8</guid>
-    <description><![CDATA[## What's Changed
-### Bug Fixes 🐞
-* fix: temporarily revert JS parser changes causing runtime errors by @CPunisher in 
-### Other Changes
-* chore: bind walltime bench to dedicated CPUs by @deanjingshui in 
-* chore(ci): update rsdoctor action by @yifancong in 
-
-**Full Changelog**:]]></description>
-    <pubDate>Wed, 10 Jun 2026 16:03:28 GMT</pubDate>
-  </item>
-  <item>
-    <title>[vercel/next.js] v16.2.9</title>
-    <link>https://github.com/vercel/next.js/releases/tag/v16.2.9</link>
-    <guid isPermaLink="true">https://github.com/vercel/next.js/releases/tag/v16.2.9</guid>
-    <description><![CDATA[Empty release to ensure `next@latest` points at a stable release. Next.js only allows publishing with Trusted Publishing enabled. In order to fix NPM dist-tags, we have to release a new version. Updating dist-tags is not possible with Trusted Publishing.]]></description>
-    <pubDate>Wed, 10 Jun 2026 12:30:06 GMT</pubDate>
-  </item>
-  <item>
-    <title>[microsoft/WindowsAppSDK] Windows App SDK 2.2.0 (v2.2.0)</title>
-    <link>https://github.com/microsoft/WindowsAppSDK/releases/tag/v2.2.0</link>
-    <guid isPermaLink="true">https://github.com/microsoft/WindowsAppSDK/releases/tag/v2.2.0</guid>
-    <description><![CDATA[## Windows App SDK 2.2.0
-
-WinAppSDK 2.2.0 is the latest stable servicing release for 2.0, with a new Windows AI video upscaling API, a first-class `ApplicationData` entry point for unpackaged apps, additions to `XamlBindingHelper`, and a batch of WinUI and Windows ML reliability fixes.
-
-### What's new in WinAppSDK 2.2.0:
-
-- **Video Super Resolution AI API.** The new `Microsoft.Windows.AI.Video.VideoScaler` API delivers real-time video enhancement through advanced AI upscaling, optimized for streams featuring people in conversation. It enables developers to provide sharper, clearer visuals across conferencing, streaming, and editing platforms, even under poor network conditions. The API supports customization of output resolution, frame rate, and regions of interest, with compatibility for multiple video formats including BGR, RGB, and NV12. `VideoScaler` is disposable, and includes a capability check so apps can validate VSR support at runtime. Explicit Windows ML initialization 
-
-... (truncated)]]></description>
-    <pubDate>Tue, 09 Jun 2026 23:30:51 GMT</pubDate>
   </item>
 </channel>
 </rss>
