@@ -5,8 +5,52 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Fri, 19 Jun 2026 22:17:42 GMT</lastBuildDate>
+  <lastBuildDate>Sat, 20 Jun 2026 22:23:15 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[redwoodjs/sdk] v1.3.0</title>
+    <link>https://github.com/redwoodjs/sdk/releases/tag/v1.3.0</link>
+    <guid isPermaLink="true">https://github.com/redwoodjs/sdk/releases/tag/v1.3.0</guid>
+    <description><![CDATA[## What's Changed
+* feat(client): add opt-in recovery for missing client chunks after deploy by @justinvdm in 
+* feat(use-synced-state): add opt-in hibernation transport by @justinvdm in 
+
+
+**Full Changelog**:]]></description>
+    <pubDate>Sat, 20 Jun 2026 08:02:02 GMT</pubDate>
+  </item>
+  <item>
+    <title>[fastapi/fastapi] 0.138.0</title>
+    <link>https://github.com/fastapi/fastapi/releases/tag/0.138.0</link>
+    <guid isPermaLink="true">https://github.com/fastapi/fastapi/releases/tag/0.138.0</guid>
+    <description><![CDATA[### Features
+
+* ✨ Add support for `app.frontend("/", directory="dist")` and `router.frontend("/", directory="dist")`. PR #15800 by @tiangolo.
+ * Read the docs: Frontend.
+
+### Docs
+
+* 📝 Fix typo in release notes. PR #15807 by @tiangolo.
+* 📝 Add `app.frontend` instructions to Agent Library Skill. PR #15805 by @tiangolo.
+* 📝 Update release notes link. PR #15802 by @tiangolo.
+* ✏️ Update white space characters in bigger apps. PR #15801 by @tiangolo.
+* ✏️ Fix grammar, typos, and broken links in docs. PR #15694 by @YuriiMotov.
+
+### Translations
+
+* 🌐 Enable Hindi docs translations. PR #15554 by @YuriiMotov.
+
+### Internal
+
+* 🐛 Fix failing test, update format for raised errors. PR #15804 by @tiangolo.
+* 👷 Fix test-alls-green. PR #15803 by @tiangolo.
+* 🔧 Enable checking `release-notes.md` for typos. PR #15796 by @YuriiMotov.
+* 📝 Tweak wording about deploying to FastAPI Cloud. PR #15793 by @tiangolo.
+* 🔨 Use `gpt-5.5` model in `translate.py`, specify `-chat` to avo
+
+... (truncated)]]></description>
+    <pubDate>Sat, 20 Jun 2026 01:17:47 GMT</pubDate>
+  </item>
   <item>
     <title>[github/spec-kit] Spec Kit - 0.11.3 (v0.11.3)</title>
     <link>https://github.com/github/spec-kit/releases/tag/v0.11.3</link>
@@ -515,31 +559,6 @@ Report bugs on GitHub after checking that they haven't been reported:
     <pubDate>Thu, 18 Jun 2026 07:05:04 GMT</pubDate>
   </item>
   <item>
-    <title>[fastapi/fastapi] 0.137.2</title>
-    <link>https://github.com/fastapi/fastapi/releases/tag/0.137.2</link>
-    <guid isPermaLink="true">https://github.com/fastapi/fastapi/releases/tag/0.137.2</guid>
-    <description><![CDATA[### Features
-
-* ✨ Add `iter_route_contexts` for advanced use cases that used to use `router.routes` (e.g. Jupyverse). PR #15785 by @tiangolo.
-
-### Translations
-
-* 🌐 Fix broken Markdown in Korean custom response docs. PR #15774 by @kooqooo.
-* 🌐 Update translations for fr (update-outdated). PR #15761 by @tiangolo.
-* 🌐 Update translations for zh-hant (update-outdated). PR #15760 by @tiangolo.
-* 🌐 Update translations for de (update-outdated). PR #15759 by @tiangolo.
-* 🌐 Update translations for ko (update-outdated). PR #15757 by @tiangolo.
-* 🌐 Update translations for uk (update-outdated). PR #15756 by @tiangolo.
-* 🌐 Update translations for zh (update-outdated). PR #15755 by @tiangolo.
-* 🌐 Update translations for tr (update-outdated). PR #15754 by @tiangolo.
-* 🌐 Update translations for pt (update-outdated). PR #15753 by @tiangolo.
-* 🌐 Update translations for es (update-outdated). PR #15752 by @tiangolo.
-* 🌐 Update translations for ja (update-outdated). PR #15751 by
-
-... (truncated)]]></description>
-    <pubDate>Thu, 18 Jun 2026 06:57:26 GMT</pubDate>
-  </item>
-  <item>
     <title>[openai/codex] 0.141.0 (rust-v0.141.0)</title>
     <link>https://github.com/openai/codex/releases/tag/rust-v0.141.0</link>
     <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.141.0</guid>
@@ -810,18 +829,6 @@ Crate: gdkw
 
 **Full Changelog**:]]></description>
     <pubDate>Wed, 17 Jun 2026 12:44:37 GMT</pubDate>
-  </item>
-  <item>
-    <title>[redwoodjs/sdk] v1.2.13</title>
-    <link>https://github.com/redwoodjs/sdk/releases/tag/v1.2.13</link>
-    <guid isPermaLink="true">https://github.com/redwoodjs/sdk/releases/tag/v1.2.13</guid>
-    <description><![CDATA[## What's Changed
-* fix(deps): resolve pnpm audit advisories by @justinvdm in 
-* fix(use-synced-state): prevent duplicate activeSubscriptions entries on reconnect by @justinvdm in 
-
-
-**Full Changelog**:]]></description>
-    <pubDate>Wed, 17 Jun 2026 10:52:43 GMT</pubDate>
   </item>
   <item>
     <title>[iii-hq/iii] iii 0.19.4 (iii/v0.19.4)</title>
