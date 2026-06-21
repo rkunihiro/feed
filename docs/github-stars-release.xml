@@ -5,8 +5,90 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Sat, 20 Jun 2026 22:23:15 GMT</lastBuildDate>
+  <lastBuildDate>Sun, 21 Jun 2026 22:23:39 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[axios/axios] v1.18.1</title>
+    <link>https://github.com/axios/axios/releases/tag/v1.18.1</link>
+    <guid isPermaLink="true">https://github.com/axios/axios/releases/tag/v1.18.1</guid>
+    <description><![CDATA[## v1.18.1 — June 21, 2026
+
+This release focuses on Node HTTP adapter fixes, safer AxiosError serialisation, runtime/type correctness fixes, documentation updates, and dependency maintenance.
+
+## 🐛 Bug Fixes
+
+- AxiosError Serialisation: Made AxiosError#cause non-enumerable to prevent circular JSON serialisation failures when errors include nested causes. (#10913)
+- Node HTTP Adapter: Guarded socket.setKeepAlive for proxy agent streams, accepted path-only URLs when socketPath is configured, deferred environment proxy handling to Node, and explicitly passed maxBodyLength through to follow-redirects. (#10917, #10930, #10942, #10993)
+- Runtime and Type Correctness: Fixed several runtime crashes, type definition mismatches, and incorrect error handling paths. (#10959, #11021)
+- AxiosURLSearchParams: Switched the encoder callback to an arrow function so `encoder.call(this)` receives the `AxiosURLSearchParams` instance correctly. (#11019)
+
+## 🔧 Maintenance & Chores
+
+- Documenta
+
+... (truncated)]]></description>
+    <pubDate>Sun, 21 Jun 2026 17:25:10 GMT</pubDate>
+  </item>
+  <item>
+    <title>[sindresorhus/got] v15.0.6</title>
+    <link>https://github.com/sindresorhus/got/releases/tag/v15.0.6</link>
+    <guid isPermaLink="true">https://github.com/sindresorhus/got/releases/tag/v15.0.6</guid>
+    <description><![CDATA[- Fix `searchParams` setter dropping the value when a URL is set (#2454) 5772bf2
+
+---]]></description>
+    <pubDate>Sun, 21 Jun 2026 17:13:49 GMT</pubDate>
+  </item>
+  <item>
+    <title>[openclaw/openclaw] openclaw 2026.6.9 (v2026.6.9)</title>
+    <link>https://github.com/openclaw/openclaw/releases/tag/v2026.6.9</link>
+    <guid isPermaLink="true">https://github.com/openclaw/openclaw/releases/tag/v2026.6.9</guid>
+    <description><![CDATA[## 2026.6.9
+
+### Highlights
+
+- **Richer Telegram delivery:** Telegram now sends rich HTML, preserves rich markdown and sticker paths, renders progress drafts and command output more faithfully, normalizes HTML tables safely, and keeps mentions and spooled handlers on the right delivery path. (#93286, #93164, #93124, #93364, #93130, #93088, #93281, #94891, #94856) Thanks @obviyus, @vincentkoc, @goutamadwant, @kesslerio, @NianJiuZst, @SweetSophia, @Marvinthebored, @aaajiao, @zhangqueping, and @jairrab.
+- **More dependable agent recovery:** retries, terminal outcomes, usage after compaction, session history repair, and reply reconciliation now keep more interrupted or partial turns moving toward a visible final result. (#92191, #93073, #93228, #93084, #93469, #93291, #90943) Thanks @ai-hpc, @lml2468, @fuller-stack-dev, @Hollychou924, @leno23, @de1tydev, @425072024, @wuwahe3, @drvoss, @yetval, @sandieman2, and @vincentkoc.
+- **A stronger Codex integration:** Codex gains automatic plugin ap
+
+... (truncated)]]></description>
+    <pubDate>Sun, 21 Jun 2026 01:44:28 GMT</pubDate>
+  </item>
+  <item>
+    <title>[anomalyco/opencode] v1.17.9</title>
+    <link>https://github.com/anomalyco/opencode/releases/tag/v1.17.9</link>
+    <guid isPermaLink="true">https://github.com/anomalyco/opencode/releases/tag/v1.17.9</guid>
+    <description><![CDATA[## Core
+
+### Bugfixes
+
+- Honor configured agent step limits by forcing a final text response instead of failing mid-run.
+- Fix Devstral model detection when provider IDs use different casing. (@Robin1987China)
+- Pass configured custom headers to Copilot model requests.
+
+### Improvements
+
+- Add `high` and `max` thinking variants for GLM-5.2 across supported providers. (@imranshaiedi-byte)
+- Stop wrapping follow-up user messages in a steering reminder so prompt caching stays effective.
+
+## TUI
+
+### Bugfixes
+
+- Only show the background subagent shortcut when the server supports it.
+
+**Thank you to 4 community contributors:**
+- @Grantmartin2002:
+ - fix(core): fix command docs in customize-opencode skill (#32718)
+- @Robin1987China:
+ - fix(opencode): use toLowerCase for Devstral model detection (#33109)
+- @kimnamu:
+ - fix(experimental llm pkg): forward topK to Converse via additionalModelRequestFields (#33030)
+- @imranshaiedi-byte:
+ - feat(opencode): expose High/Max thinking variants for GLM
+
+... (truncated)]]></description>
+    <pubDate>Sun, 21 Jun 2026 00:03:11 GMT</pubDate>
+  </item>
   <item>
     <title>[redwoodjs/sdk] v1.3.0</title>
     <link>https://github.com/redwoodjs/sdk/releases/tag/v1.3.0</link>
@@ -559,24 +641,6 @@ Report bugs on GitHub after checking that they haven't been reported:
     <pubDate>Thu, 18 Jun 2026 07:05:04 GMT</pubDate>
   </item>
   <item>
-    <title>[openai/codex] 0.141.0 (rust-v0.141.0)</title>
-    <link>https://github.com/openai/codex/releases/tag/rust-v0.141.0</link>
-    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.141.0</guid>
-    <description><![CDATA[## New Features
-
-- Remote executors now use authenticated, end-to-end encrypted Noise relay channels. (#26242, #26245)
-- Cross-platform remote execution now preserves executor-native working directories and shells, including filesystem permission paths across app-server and exec-server boundaries. (#27819, #27995, #28032, #28122, #28165, #28367)
-- Selected executor plugins can activate their stdio MCP servers per thread; plugin discovery also adds a created-by-me marketplace and auth-specific curated catalogs. (#27870, #27884, #27893, #28203, #28383)
-- App-server clients can list immediate child threads, correlate external-agent imports with detailed results, and read or redeem rate-limit reset credits. (#26662, #28008, #28143)
-- Realtime clients can explicitly append speech, control how Codex responses enter conversations, and omit startup context. (#27917, #28405)
-- TUI input prompts can auto-resolve after inactivity, with a countdown that pauses on interaction. (#28235)
-
-## Bug Fixe
-
-... (truncated)]]></description>
-    <pubDate>Thu, 18 Jun 2026 04:43:06 GMT</pubDate>
-  </item>
-  <item>
     <title>[nodejs/node] 2026-06-18, Version 26.3.1 (Current), @aduh95 (v26.3.1)</title>
     <link>https://github.com/nodejs/node/releases/tag/v26.3.1</link>
     <guid isPermaLink="true">https://github.com/nodejs/node/releases/tag/v26.3.1</guid>
@@ -612,35 +676,6 @@ Report bugs on GitHub after checking that they haven't been reported:
 
 **Full Changelog**:]]></description>
     <pubDate>Thu, 18 Jun 2026 02:19:23 GMT</pubDate>
-  </item>
-  <item>
-    <title>[anomalyco/opencode] v1.17.8</title>
-    <link>https://github.com/anomalyco/opencode/releases/tag/v1.17.8</link>
-    <guid isPermaLink="true">https://github.com/anomalyco/opencode/releases/tag/v1.17.8</guid>
-    <description><![CDATA[## Core
-### Improvements
-- Session timelines load much faster and avoid flicker or scroll jumps.
-
-### Bugfixes
-- OpenAI-compatible providers now accept MCP tool schemas that previously failed validation. (@jquense)
-- Cloudflare AI Gateway now receives the configured API key correctly. (@keefetang)
-- MCP tools without declared schema properties now work with providers that expect object properties.
-- Long-running MCP tools now keep their timeout alive when they report progress. (@Nomadcxx)
-- The MCP OAuth callback server now shuts down once authorization finishes or is cancelled.
-- MCP tool failures now surface the server's error text instead of a generic failure.
-- MCP OAuth error pages now escape provider error text correctly.
-
-## Desktop
-### Improvements
-- Added a Home tab toggle so you can quickly switch between Home and your last tab.
-- The new desktop file and folder picker is faster and easier to navigate in the v2 layout.
-
-**Thank you to 3 community contributors:**
-- @Nomadcxx:
-
-
-... (truncated)]]></description>
-    <pubDate>Wed, 17 Jun 2026 21:27:18 GMT</pubDate>
   </item>
   <item>
     <title>[bluesky-social/atproto] @atproto/oauth-client@0.7.4</title>
@@ -862,21 +897,6 @@ Crate: gdkw
     <pubDate>Tue, 16 Jun 2026 17:42:31 GMT</pubDate>
   </item>
   <item>
-    <title>[openclaw/openclaw] openclaw 2026.6.8 (v2026.6.8)</title>
-    <link>https://github.com/openclaw/openclaw/releases/tag/v2026.6.8</link>
-    <guid isPermaLink="true">https://github.com/openclaw/openclaw/releases/tag/v2026.6.8</guid>
-    <description><![CDATA[## 2026.6.8
-
-### Highlights
-
-- **Richer channel delivery:** Telegram and WhatsApp are less brittle: Telegram renders structured text with tables, lists, expandable blockquotes, preserved intentional line breaks, and CLI-backed replies, while WhatsApp now honors configured ACP bindings. (#92679, #93164, #84082, #89421, #92513) Thanks @obviyus, @vincentkoc, @jzakirov, @spacegeologist, @TurboTheTurtle, @mcaxtr, @myrzka, and @dmorn.
-- **More reliable agent runs:** account-scoped DM sends, generated media completions, auto-reply message-tool final replies, reset archive fallback reads, restart shutdown aborts, yielded subagent pauses, and session identity prompts all stay on the correct recovery path. (#92788, #91246, #92879, #91357, #92631, #92468) Thanks @yetval, @TurboTheTurtle, @masatohoshino, @CadanHu, @vincentkoc, @ooiuuii, @openperf, @zhangguiping-xydt, @QQSHI13, @kumaxs, and @aleps001.
-- **Safer model routing:** new GLM-5.2 and Claude Haiku 4.5 catalog support arrives with normalize
-
-... (truncated)]]></description>
-    <pubDate>Tue, 16 Jun 2026 16:32:26 GMT</pubDate>
-  </item>
-  <item>
     <title>[project-tsurugi/tsurugidb] 1.11.0</title>
     <link>https://github.com/project-tsurugi/tsurugidb/releases/tag/1.11.0</link>
     <guid isPermaLink="true">https://github.com/project-tsurugi/tsurugidb/releases/tag/1.11.0</guid>
@@ -1061,27 +1081,6 @@ New WebStorage API, available via page.localStorage and page.sessionStorage, rea
 
 ... (truncated)]]></description>
     <pubDate>Sun, 14 Jun 2026 19:52:08 GMT</pubDate>
-  </item>
-  <item>
-    <title>[axios/axios] v1.18.0</title>
-    <link>https://github.com/axios/axios/releases/tag/v1.18.0</link>
-    <guid isPermaLink="true">https://github.com/axios/axios/releases/tag/v1.18.0</guid>
-    <description><![CDATA[## v1.18.0 — June 13, 2026
-
-This release hardens redirect and URL handling, improves the validateStatus configuration semantics, and includes updates to documentation, dependencies, and release metadata.
-
-## 🔒 Security Fixes
-
-* **Redirect Header Safety:** Added Node HTTP adapter support for stripping caller-specified sensitive headers on cross-origin redirects, helping prevent custom auth headers such as API keys from leaking to another origin. (__#10892__)
-
-* **URL And Request Hardening:** Rejects malformed `http:` and `https:` URLs that omit `//` with `ERR_INVALID_URL`, while tightening prototype-pollution-safe config reads, stream size limits, FormData depth handling, data URL sizing, and local `NO_PROXY` matching. (__#11000__)
-
-## 🐛 Bug Fixes
-
-* **Status Validation:** Added `transitional.validateStatusUndefinedResolves` so applications can opt in to treating `validateStatus: undefined` like the option was omitted, while `validateStatus: null` remains the explicit way 
-
-... (truncated)]]></description>
-    <pubDate>Sat, 13 Jun 2026 12:00:31 GMT</pubDate>
   </item>
   <item>
     <title>[podman-container-tools/podman] v5.8.3</title>
