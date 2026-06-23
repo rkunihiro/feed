@@ -5,8 +5,404 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Mon, 22 Jun 2026 22:31:14 GMT</lastBuildDate>
+  <lastBuildDate>Tue, 23 Jun 2026 22:23:33 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[astral-sh/uv] 0.11.24</title>
+    <link>https://github.com/astral-sh/uv/releases/tag/0.11.24</link>
+    <guid isPermaLink="true">https://github.com/astral-sh/uv/releases/tag/0.11.24</guid>
+    <description><![CDATA[## Release Notes
+
+Released on 2026-06-23.
+
+### Python
+
+- Add CPython 3.15.0b3 (#19964)
+
+### Preview features
+
+- Make project environments relocatable under preview (#19965)
+
+### Performance
+
+- Use a compact index for lazy version maps (#19959)
+
+### Bug fixes
+
+- Allow disabling `exclude-newer` (#19934)
+- Avoid archive id collisions (#19949)
+- Reapply "Fix transparent Python upgrades in project environments" (#19928)
+- Clean up partial tool entrypoint installs (#19966)
+- Fix relocatable `activate.fish` and broaden Fish version support (#19856)
+
+## Install uv 0.11.24
+
+### Install prebuilt binaries via shell script
+
+```sh
+curl --proto '=https' --tlsv1.2 -LsSf | sh
+```
+
+### Install prebuilt binaries via powershell script
+
+```sh
+powershell -ExecutionPolicy Bypass -c "irm | iex"
+```
+
+## Download uv 0.11.24
+
+| File | Platform | Checksum |
+|--------|----------|----------|
+| uv-aarch64-apple-darwin.tar.gz | Apple Silicon macOS | checksum |
+| uv-x86_64-apple-darwin.tar.gz | Intel macOS | checksum
+
+... (truncated)]]></description>
+    <pubDate>Tue, 23 Jun 2026 21:16:31 GMT</pubDate>
+  </item>
+  <item>
+    <title>[vercel-labs/skills] v1.5.13</title>
+    <link>https://github.com/vercel-labs/skills/releases/tag/v1.5.13</link>
+    <guid isPermaLink="true">https://github.com/vercel-labs/skills/releases/tag/v1.5.13</guid>
+    <description><![CDATA[## Changelog
+
+- Allow filtering skills by owner (#1505)
+- Add Eve subagent support to skills add/list/remove/update (#1467)
+
+## Contributors
+
+@haydenbleasel,@quuu]]></description>
+    <pubDate>Tue, 23 Jun 2026 20:41:31 GMT</pubDate>
+  </item>
+  <item>
+    <title>[microsoft/playwright] v1.61.1</title>
+    <link>https://github.com/microsoft/playwright/releases/tag/v1.61.1</link>
+    <guid isPermaLink="true">https://github.com/microsoft/playwright/releases/tag/v1.61.1</guid>
+    <description><![CDATA[### Bug Fixes
+
+- #41365 [Bug]: Expect.Extend matcher with same name as default matcher in same expect instance overrides default matchers implementation to custom matcher
+- #41351 [Bug]: Playwright UI mode: apiRequestContext._wrapApiCall reports unexpected number of bytes (same test passes in headed mode)
+- #41360 [Bug]: Trace viewer: message times in websockets are downscaled by 1000
+- #41311 [Bug]: [Regression]: Sync loader throws "context.conditions?.includes is not a function" on Node 22.15
+- #41371 [Regression]: Sync ESM loader (registerHooks) fails to resolve extensionless .ts subpath imports across pnpm workspace symlinks]]></description>
+    <pubDate>Tue, 23 Jun 2026 19:47:55 GMT</pubDate>
+  </item>
+  <item>
+    <title>[sveltejs/svelte] svelte@5.56.4</title>
+    <link>https://github.com/sveltejs/svelte/releases/tag/svelte%405.56.4</link>
+    <guid isPermaLink="true">https://github.com/sveltejs/svelte/releases/tag/svelte%405.56.4</guid>
+    <description><![CDATA[### Patch Changes
+
+- fix: include wrapping parentheses in `{@const}` declarator `end` position (#18436)
+
+- fix: always unset reactivity context after restoring it (#18453)
+
+- fix: don't notify `searchParams` subscribers when the URL changes without affecting the search string (#18425)
+
+- fix: strip `?` from optional parameters in `<script lang="ts">` so generated JavaScript is valid (#18448)]]></description>
+    <pubDate>Tue, 23 Jun 2026 18:48:43 GMT</pubDate>
+  </item>
+  <item>
+    <title>[nodejs/node] 2026-06-23, Version 22.23.1 &apos;Jod&apos; (LTS), @RafaelGSS (v22.23.1)</title>
+    <link>https://github.com/nodejs/node/releases/tag/v22.23.1</link>
+    <guid isPermaLink="true">https://github.com/nodejs/node/releases/tag/v22.23.1</guid>
+    <description><![CDATA[This release includes a fix for an unexpected behavior introduced
+by the recent security release (22.23.0).
+
+### Commits
+
+* \[`41d2ee13be`] - **build**: switch coverage-windows to `windows-2022` (Richard Lau) #63940
+* \[`eaa292549e`] - **http**: avoid stream listeners on idle agent sockets (Matteo Collina) #64004]]></description>
+    <pubDate>Tue, 23 Jun 2026 16:44:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>[withastro/astro] @astrojs/markdown-satteri@0.3.2</title>
+    <link>https://github.com/withastro/astro/releases/tag/%40astrojs/markdown-satteri%400.3.2</link>
+    <guid isPermaLink="true">https://github.com/withastro/astro/releases/tag/%40astrojs/markdown-satteri%400.3.2</guid>
+    <description><![CDATA[### Patch Changes
+
+- #17165 `3b5e994` Thanks @Princesseuh! - Fixes headings being listed twice in a page's `headings` metadata when an integration (such as Starlight) assigns heading IDs with its own heading pass before adding anchor links]]></description>
+    <pubDate>Tue, 23 Jun 2026 16:22:59 GMT</pubDate>
+  </item>
+  <item>
+    <title>[pnpm/pnpm] pnpm 11.9 (v11.9.0)</title>
+    <link>https://github.com/pnpm/pnpm/releases/tag/v11.9.0</link>
+    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v11.9.0</guid>
+    <description><![CDATA[## Minor Changes
+
+- bae694f: Some registries generate tarballs on-demand and cannot provide an integrity checksum in their package metadata. In that case pnpm now computes the integrity from the downloaded tarball and stores it in the lockfile, so the entry is verifiable on subsequent installs instead of being written without an integrity (which would fail the next install). This also applies to `--lockfile-only`: the tarball is downloaded so its integrity can be computed. A lockfile entry that is still missing its integrity is rejected as a `ERR_PNPM_MISSING_TARBALL_INTEGRITY` lockfile verification violation (the install fails closed) rather than being silently re-fetched.
+- 6c35a43: Added `--exclude-peers` to `pnpm sbom`. With `auto-install-peers` (the default), peer dependencies resolve into the lockfile and are otherwise indistinguishable from the package's own dependencies. The flag drops peer dependencies (and any transitive subtree reachable only through them) from the SBOM. 
+
+... (truncated)]]></description>
+    <pubDate>Tue, 23 Jun 2026 15:55:03 GMT</pubDate>
+  </item>
+  <item>
+    <title>[bluesky-social/atproto] @atproto/dev-env@0.5.16</title>
+    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/dev-env%400.5.16</link>
+    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/dev-env%400.5.16</guid>
+    <description><![CDATA[### Patch Changes
+
+- Updated dependencies [`a67858d`]:
+ - @atproto/bsky@0.0.246
+ - @atproto/api@0.20.19
+ - @atproto/pds@0.5.7]]></description>
+    <pubDate>Tue, 23 Jun 2026 15:30:51 GMT</pubDate>
+  </item>
+  <item>
+    <title>[github/spec-kit] Spec Kit - 0.11.6 (v0.11.6)</title>
+    <link>https://github.com/github/spec-kit/releases/tag/v0.11.6</link>
+    <guid isPermaLink="true">https://github.com/github/spec-kit/releases/tag/v0.11.6</guid>
+    <description><![CDATA[## Install
+
+```bash
+uv tool install specify-cli --from git+
+specify init my-project
+```
+
+## What's Changed
+
+- chore: bump version to 0.11.6
+- [extension] Update Spec Kit Preview extension to v1.1.0 and sync Firebender agent lists (#3116)
+- Add Spec Kit Discovery Extension to community catalog (#3119)
+- Update Architecture Workflow extension to v1.2.1 (#3118)
+- docs: clarify project-defined constitution articles (#2994)
+- Add Intake extension to community catalog (#3117)
+- feat: add Firebender integration (Android Studio / IntelliJ) (#3077)
+- Update DocGuard — CDD Enforcement extension to v0.28.0 (#3115)
+- chore: sync issue template agent lists (#3052)
+- fix(shared-infra): remove stale managed scripts the core no longer ships (#3076) (#3098)
+- chore: release 0.11.5, begin 0.11.6.dev0 development (#3105)]]></description>
+    <pubDate>Tue, 23 Jun 2026 14:41:52 GMT</pubDate>
+  </item>
+  <item>
+    <title>[cloudflare/vinext] vinext@0.1.8</title>
+    <link>https://github.com/cloudflare/vinext/releases/tag/vinext%400.1.8</link>
+    <guid isPermaLink="true">https://github.com/cloudflare/vinext/releases/tag/vinext%400.1.8</guid>
+    <description><![CDATA[### Bug Fixes
+
+#### App Router
+
+- exclude dev overlay from production client bundle (#2284)
+- match interception route precedence (#2231)
+- preserve global error details (#2249)
+- restore cache and parallel route parity (#2261)
+- canonicalize initial history URL (#2250)
+
+#### Misc
+
+- **Build:** apply default server externals (#2257)
+- **SSR:** ignore runtime renderer import in Vite (#2288)
+- **Router:** ignore stale initial popstate with i18n (#2230)
+- **Middleware:** run on missing build assets (#2242)
+- **Headers:** strip internal dev request ID headers (#2260)
+- **Pages Router:** allow server-only in API routes (#2234)
+- **Config:** make vite-tsconfig-paths an optional peer (#2258)
+
+### Performance
+
+- **App Router:** skip speculative page probes for HTML renders (#2226)
+- **Link:** omit Pages runtime in app-only builds (#2225)
+- **Client:** omit unused server action client (#2222)
+- **App:** omit unused PPR runtime (#2223)
+- **App:** omit unused file metadata runtime (#2224)
+
+### Co
+
+... (truncated)]]></description>
+    <pubDate>Tue, 23 Jun 2026 12:54:52 GMT</pubDate>
+  </item>
+  <item>
+    <title>[vitejs/vite] create-vite@9.1.0</title>
+    <link>https://github.com/vitejs/vite/releases/tag/create-vite%409.1.0</link>
+    <guid isPermaLink="true">https://github.com/vitejs/vite/releases/tag/create-vite%409.1.0</guid>
+    <description><![CDATA[Please refer to CHANGELOG.md for details.]]></description>
+    <pubDate>Tue, 23 Jun 2026 11:43:13 GMT</pubDate>
+  </item>
+  <item>
+    <title>[iii-hq/iii] iii 0.19.6 (iii/v0.19.6)</title>
+    <link>https://github.com/iii-hq/iii/releases/tag/iii/v0.19.6</link>
+    <guid isPermaLink="true">https://github.com/iii-hq/iii/releases/tag/iii/v0.19.6</guid>
+    <description><![CDATA[## What's Changed
+* fix(ci): grant id-token: write to alpha-release (fixes startup_failure) by @guibeira in 
+* fix(ci): alpha-release publishes iii-helpers + fixes worker payload by @guibeira in 
+* Update README.md to include configuration worker by @rohitg00 in 
+* docs(changelog): sync entries to real GitHub releases by @guibeira in 
+* fix(iii-worker): rerun install on `worker add --force` when dependencies change by @andersonleal in 
+* feat(ci): trigger downstream validations after release by @guibeira in 
+* feat(engine): runtime-configurable iii-pubsub via the configuration worker by @andersonleal in 
+* feat(engine): runtime-configurable iii-stream via the configuration worker by @andersonleal in 
+* feat(iii-cron): consume the configuration worker (runtime adapter hot-swap) by @andersonleal in 
+* docs: guide users through the "KVM not accessible" worker error by @guibeira in 
+* feat(iii-queue): consume the configuration worker for runtime config by @andersonleal in 
+* feat(engine): 
+
+... (truncated)]]></description>
+    <pubDate>Tue, 23 Jun 2026 11:18:55 GMT</pubDate>
+  </item>
+  <item>
+    <title>[web-infra-dev/rspack] v2.1.0-rc.0</title>
+    <link>https://github.com/web-infra-dev/rspack/releases/tag/v2.1.0-rc.0</link>
+    <guid isPermaLink="true">https://github.com/web-infra-dev/rspack/releases/tag/v2.1.0-rc.0</guid>
+    <description><![CDATA[## What's Changed
+### New Features 🎉
+* feat: make persistent cache max generations default to 3 by @ahabhgk in 
+### Performance 🚀
+* perf: optimize compilation entrypoints getter by @chenjiahan in 
+* perf: reduce asset wrapper overhead by @chenjiahan in 
+* perf(deps): bump camino to 1.2.3 by @stormslowly in 
+* perf(ci): drop debuginfo from the whole ci profile by @stormslowly in 
+### Bug Fixes 🐞
+* fix(types): align wasm loading types by @chenjiahan in 
+* fix(split-chunks): align max size grouping with webpack by @intellild in 
+* fix(rstest): fallback to automock for missing manual mocks by @9aoy in 
+* fix(css): preserve undeclared css module idents by @intellild in 
+* fix(mf): stabilize consume shared runtime output by @2heal1 in 
+* fix(cache): default context_dependencies snapshot strategy to timestamp by @hardfist in 
+### Refactor 🔨
+* refactor: merge webpack api parser plugins by @LingyuCoder in 
+### Document 📖
+* docs: fix duplicate createRequire parser docs by 
+
+... (truncated)]]></description>
+    <pubDate>Tue, 23 Jun 2026 11:13:16 GMT</pubDate>
+  </item>
+  <item>
+    <title>[redwoodjs/sdk] v1.3.2</title>
+    <link>https://github.com/redwoodjs/sdk/releases/tag/v1.3.2</link>
+    <guid isPermaLink="true">https://github.com/redwoodjs/sdk/releases/tag/v1.3.2</guid>
+    <description><![CDATA[## What's Changed
+* fix(vite): serve vendor barrels from temp files and re-scan on HMR by @chrisvdm in 
+
+## New Contributors
+* @chrisvdm made their first contribution in 
+
+**Full Changelog**:]]></description>
+    <pubDate>Tue, 23 Jun 2026 10:01:41 GMT</pubDate>
+  </item>
+  <item>
+    <title>[biomejs/biome] Biome CLI v2.5.1 (@biomejs/biome@2.5.1)</title>
+    <link>https://github.com/biomejs/biome/releases/tag/%40biomejs/biome%402.5.1</link>
+    <guid isPermaLink="true">https://github.com/biomejs/biome/releases/tag/%40biomejs/biome%402.5.1</guid>
+    <description><![CDATA[## 2.5.1
+
+### Patch Changes
+
+- #10722 `f8a303d` Thanks @denbezrukov! - Fixed CSS formatter output for comments between import media queries.
+
+ ```diff
+ -@import url("print.css") print,
+ -/* comment */
+ -screen;
+ +@import url("print.css") print, /* comment */ screen;
+ ```
+
+- #10738 `9fdc560` Thanks @JamBalaya56562! - Fixed #9899: the `json` and `json-pretty` reporters now escape backslashes in a diagnostic's `location.path`. Previously, paths containing backslashes (such as Windows-style paths) were emitted unescaped, producing invalid JSON.
+
+ ```diff
+ - "path": "src\account\setup-passkey.tsx",
+ + "path": "src\\account\\setup-passkey.tsx",
+ ```
+
+- #10626 `5f837df` Thanks @tom-groves! - Fixed #10625: `biome migrate` no longer emits an invalid trailing comma when a renamed rule (such as `noConsoleLog` → `noConsole`) is the last member of its rule group. Previously this produced malformed output that aborted the migration of a strict-JSON `biome.json` with a parsing error.
+
+- #10535 `c245f
+
+... (truncated)]]></description>
+    <pubDate>Tue, 23 Jun 2026 07:50:58 GMT</pubDate>
+  </item>
+  <item>
+    <title>[floci-io/floci] 1.5.27</title>
+    <link>https://github.com/floci-io/floci/releases/tag/1.5.27</link>
+    <guid isPermaLink="true">https://github.com/floci-io/floci/releases/tag/1.5.27</guid>
+    <description><![CDATA[## 🎉 Highlights
+
+This release adds **four new services** (S3 Vectors, MemoryDB, CodePipeline, EC2 Network ACLs), brings **Neptune openCypher via neo4j**, lands meaningful **DynamoDB conformance work**, and ships **state persistence across restart** for ECS, CodeBuild, and Config. SAM-driven CloudFormation patterns also get a substantial boost. Welcome to the 7 first-time contributors.
+
+### 🆕 Four new services
+
+- **AWS S3 Vectors** — vector search service support (#1435)
+- **Amazon MemoryDB** — with mock mode (#1420)
+- **AWS CodePipeline** — emulation lands (#1469)
+- **EC2 Network ACLs** — VPC network ACL support (#1473)
+
+### 🕸️ Neptune: openCypher via neo4j
+
+Neptune now supports a **neo4j backend for openCypher** queries, selectable via `NEPTUNE_DB_TYPE` (#1449). The existing Gremlin-via-TinkerGraph backend remains in place, so graph workloads using either query language work locally.
+
+### 🪨 DynamoDB conformance pass
+
+A coordinated DynamoDB pass:
+- **`TableId`, `T
+
+... (truncated)]]></description>
+    <pubDate>Tue, 23 Jun 2026 06:43:42 GMT</pubDate>
+  </item>
+  <item>
+    <title>[honojs/hono] v4.12.27</title>
+    <link>https://github.com/honojs/hono/releases/tag/v4.12.27</link>
+    <guid isPermaLink="true">https://github.com/honojs/hono/releases/tag/v4.12.27</guid>
+    <description><![CDATA[## Security fixes
+
+This release includes fixes for the following security issues:
+
+### hono/jsx does not isolate context per request
+
+Affects: `hono/jsx`, `hono/jsx-renderer`. During SSR, context was stored process-wide instead of per request, so `useContext`/`useRequestContext` read after an `await` in an async component could return another concurrent request's value — leading to cross-request data disclosure or authorization checks against the wrong request. GHSA-hvrm-45r6-mjfj
+
+### Server-Side XSS via JSX escaping bypass in cx
+
+Affects: `hono/css`. `cx` marked its composed class name as already-escaped without escaping the input, so untrusted input passed as a class name could break out of the JSX `class` attribute during SSR and inject markup (XSS). GHSA-w62v-xxxg-mg59
+
+### API Gateway v1 adapter can drop a repeated request header value
+
+Affects: `hono/aws-lambda`. The API Gateway v1 (and VPC Lattice) adapter de-duplicated repeated header values by substring instead 
+
+... (truncated)]]></description>
+    <pubDate>Tue, 23 Jun 2026 02:51:19 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1075.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1075.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1075.0</guid>
+    <description><![CDATA[#### 3.1075.0(2026-06-23)
+
+##### New Features
+
+* **client-kafka:** Amazon MSK Replicator now supports mTLS authentication when connecting to external Apache Kafka clusters, enabling customers to replicate data from clusters that require mutual TLS for client authentication. This capability is supported when replicating to Amazon MSK Express brokers. (005f9529)
+
+
+---
+
+For list of updated packages, view **updated-packages.md** in **assets-3.1075.0.zip**]]></description>
+    <pubDate>Tue, 23 Jun 2026 02:03:36 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-06-23) (release-2026-06-23)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-06-23</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-06-23</guid>
+    <description><![CDATA[## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/service/kafka`: [v1.54.0](service/kafka/CHANGELOG.md#v1540-2026-06-23)
+ * **Feature**: Amazon MSK Replicator now supports mTLS authentication when connecting to external Apache Kafka clusters, enabling customers to replicate data from clusters that require mutual TLS for client authentication. This capability is supported when replicating to Amazon MSK Express brokers.]]></description>
+    <pubDate>Tue, 23 Jun 2026 01:53:52 GMT</pubDate>
+  </item>
+  <item>
+    <title>[sveltejs/kit] @sveltejs/kit@2.67.0</title>
+    <link>https://github.com/sveltejs/kit/releases/tag/%40sveltejs/kit%402.67.0</link>
+    <guid isPermaLink="true">https://github.com/sveltejs/kit/releases/tag/%40sveltejs/kit%402.67.0</guid>
+    <description><![CDATA[### Minor Changes
+
+
+- feat: add `prerender.handleInvalidUrl` option for invalid URLs discovered while crawling (#16088)
+
+
+### Patch Changes
+
+
+- fix: support `exactOptionalPropertyTypes` for optional form schema fields (#15866)
+
+
+- fix: avoid unnecessarily overriding a user's Vite 8 `codeSplitting` setting (#16118)]]></description>
+    <pubDate>Mon, 22 Jun 2026 22:33:00 GMT</pubDate>
+  </item>
   <item>
     <title>[openai/codex] 0.142.0 (rust-v0.142.0)</title>
     <link>https://github.com/openai/codex/releases/tag/rust-v0.142.0</link>
@@ -22,68 +418,6 @@
 
 ... (truncated)]]></description>
     <pubDate>Mon, 22 Jun 2026 22:19:53 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-js-v3] v3.1074.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1074.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1074.0</guid>
-    <description><![CDATA[#### 3.1074.0(2026-06-22)
-
-##### Chores
-
-* **xml-builder:**
- * move testing devDeps to root, remove unused nodable dep (#8118) (ed82880d)
- * parse XML internally (#7863) (74d0a071)
-
-##### Documentation Changes
-
-* typo in contributing.md (#8116) (87ff33d3)
-
-##### New Features
-
-* **clients:** update client endpoints as of 2026-06-22 (3a55a333)
-* **client-cloudwatch-logs:** CloudWatch Logs Updates - New APIs introduced to support syslog ingestion to a log group. For more information, see CloudWatch Logs API documentation. (01a3b513)
-* **client-bedrock-agentcore:** Adds an optional extractionMode field to CreateEvent. SKIP retains the event in short-term memory but excludes it from long-term memory extraction. (749753ad)
-* **client-omics:** Adds support for scratch ephemeral storage mounted at tmp (331e3023)
-* **client-application-signals:** Application Signals now supports dynamic instrumentation and Service Events telemetry. Add instrumentation at runtime without restarts, and use fine-g
-
-... (truncated)]]></description>
-    <pubDate>Mon, 22 Jun 2026 19:35:22 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-06-22) (release-2026-06-22)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-06-22</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-06-22</guid>
-    <description><![CDATA[## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/applicationsignals`: [v1.23.0](service/applicationsignals/CHANGELOG.md#v1230-2026-06-22)
- * **Feature**: Application Signals now supports dynamic instrumentation and Service Events telemetry. Add instrumentation at runtime without restarts, and use fine-grained profiling data to quickly pinpoint latency and error root causes.
-* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcore`: [v1.32.0](service/bedrockagentcore/CHANGELOG.md#v1320-2026-06-22)
- * **Feature**: Adds an optional extractionMode field to CreateEvent. SKIP retains the event in short-term memory but excludes it from long-term memory extraction.
-* `github.com/aws/aws-sdk-go-v2/service/cloudwatchlogs`: [v1.78.0](service/cloudwatchlogs/CHANGELOG.md#v1780-2026-06-22)
- * **Feature**: CloudWatch Logs Updates - New APIs introduced to support syslog ingestion to a log group. For more information, see CloudWatch Logs API documentation.
-* `github.com/aws/aws-sdk-go-v2/se
-
-... (truncated)]]></description>
-    <pubDate>Mon, 22 Jun 2026 19:25:03 GMT</pubDate>
-  </item>
-  <item>
-    <title>[bluesky-social/atproto] @atproto/pds@0.5.7</title>
-    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/pds%400.5.7</link>
-    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/pds%400.5.7</guid>
-    <description><![CDATA[### Patch Changes
-
-- #5116 `39f5c01` Thanks @matthieusieben! - Update undici dependency to v8.5.0
-
-- #5117 `8a4c88b` Thanks @matthieusieben! - Make BackgroundQueue implementation more resilient
-
-- #5117 `8a4c88b` Thanks @matthieusieben! - Make tests less flaky in CI
-
-- #5117 `8a4c88b` Thanks @matthieusieben! - Use http-terminator to close http server
-
-- Updated dependencies [`39f5c01`]:
- - @atproto-labs/fetch-node@0.3.2
- - @atproto/oauth-provider@0.19.1]]></description>
-    <pubDate>Mon, 22 Jun 2026 19:21:04 GMT</pubDate>
   </item>
   <item>
     <title>[typescript-eslint/typescript-eslint] v8.62.0</title>
@@ -118,32 +452,6 @@ You can read about our versioning strategy and releases on our website.]]></desc
     <pubDate>Mon, 22 Jun 2026 17:47:28 GMT</pubDate>
   </item>
   <item>
-    <title>[github/spec-kit] Spec Kit - 0.11.4 (v0.11.4)</title>
-    <link>https://github.com/github/spec-kit/releases/tag/v0.11.4</link>
-    <guid isPermaLink="true">https://github.com/github/spec-kit/releases/tag/v0.11.4</guid>
-    <description><![CDATA[## Install
-
-```bash
-uv tool install specify-cli --from git+
-specify init my-project
-```
-
-## What's Changed
-
-- chore: bump version to 0.11.4
-- [extension] Add Tasks to GitHub Project extension to community catalog (#3090)
-- Update Linear Integration extension to v0.7.0 (#3089)
-- fix: fail loudly on an unknown workflow expression filter (#3074)
-- fix: anchor lib/ and lib64/ patterns to repo root in .gitignore (#3083)
-- fix(build): include specify_cli.bundler.lib in built distribution (#3085)
-- Harden command registration path handling (#3088)
-- fix(presets): preserve argument-hint in preset SKILL.md generation (#2978)
-- feat: surface gate detail in the workflow run/resume --json payload (#2965)
-- feat: add `specify bundle` command (#3070)
-- chore: release 0.11.3, begin 0.11.4.dev0 development (#3072)]]></description>
-    <pubDate>Mon, 22 Jun 2026 16:12:53 GMT</pubDate>
-  </item>
-  <item>
     <title>[oxc-project/oxc] oxlint v1.71.0 &amp; oxfmt v0.56.0 (apps_v1.71.0)</title>
     <link>https://github.com/oxc-project/oxc/releases/tag/apps_v1.71.0</link>
     <guid isPermaLink="true">https://github.com/oxc-project/oxc/releases/tag/apps_v1.71.0</guid>
@@ -169,87 +477,6 @@ specify init my-project
 
 ... (truncated)]]></description>
     <pubDate>Mon, 22 Jun 2026 12:31:30 GMT</pubDate>
-  </item>
-  <item>
-    <title>[redwoodjs/sdk] v1.3.1</title>
-    <link>https://github.com/redwoodjs/sdk/releases/tag/v1.3.1</link>
-    <guid isPermaLink="true">https://github.com/redwoodjs/sdk/releases/tag/v1.3.1</guid>
-    <description><![CDATA[## What's Changed
-* feat(use-synced-state): import-condition shim for staged hibernation rollout by @justinvdm in 
-
-
-**Full Changelog**:]]></description>
-    <pubDate>Mon, 22 Jun 2026 12:25:17 GMT</pubDate>
-  </item>
-  <item>
-    <title>[withastro/astro] @astrojs/cloudflare@14.0.0</title>
-    <link>https://github.com/withastro/astro/releases/tag/%40astrojs/cloudflare%4014.0.0</link>
-    <guid isPermaLink="true">https://github.com/withastro/astro/releases/tag/%40astrojs/cloudflare%4014.0.0</guid>
-    <description><![CDATA[### Major Changes
-
-- #15819 `cafec4e` Thanks @delucis! - Upgrade to Vite v8
-
-### Minor Changes
-
-- #16335 `9a53f77` Thanks @ascorbic! - Adds an opt-in CDN cache provider for Astro route caching on Cloudflare Workers
-
- > [!WARNING]
- > This provider requires the Cloudflare Workers Cache feature, which is currently in private beta. It is opt-in: nothing changes unless you import `cacheCloudflare` and set it as your provider. But without beta access it does not work and should not be used. Cloudflare Workers run in front of the cache, so cached responses are never served, and calling `cache.invalidate` throws an error.
-
- #### Setup
-
- Import `cacheCloudflare` from `@astrojs/cloudflare/cache` and set it as your cache provider:
-
- ```js
- import { defineConfig } from 'astro/config';
- import cloudflare from '@astrojs/cloudflare';
- import { cacheCloudflare } from '@astrojs/cloudflare/cache';
-
- export default defineConfig({
- adapter: cloudflare,
- cache: {
- provider: cacheCloudflare,
- },
- });
- ```
-
-
-
-... (truncated)]]></description>
-    <pubDate>Mon, 22 Jun 2026 10:10:56 GMT</pubDate>
-  </item>
-  <item>
-    <title>[cloudflare/vinext] vinext@0.1.7</title>
-    <link>https://github.com/cloudflare/vinext/releases/tag/vinext%400.1.7</link>
-    <guid isPermaLink="true">https://github.com/cloudflare/vinext/releases/tag/vinext%400.1.7</guid>
-    <description><![CDATA[### Bug Fixes
-
-- **Image:** emit hoisted var for local image import binding to avoid TDZ (#2067)
-- **Dynamic:** render ssr:false loading with pastDelay:true to match client (#1967) (#2064)
-- **Actions:** dedupe Set-Cookie on no-JS non-redirect action responses (#1976) (#2063)
-- **RSC:** only short-circuit well-known signal digests so real errors reach onRequestError (#2066)
-
-### Performance
-
-#### App
-
-- omit unused server action runtime (#2206)
-- omit unused metadata route runtime (#2196)
-- omit unused middleware runtime (#2194)
-
-#### Misc
-
-- **Server:** skip duplicate App RSC vary merge (#2177)
-- **Server:** reuse App SSR bfcache metadata (#2182)
-- **Client:** preserve additional route-owned shims (#2205)
-- **Dev:** externalize SSR React runtime (#2191)
-- **App Router:** isolate action request detection (#2188)
-- **Client:** preserve App Router route chunk boundaries (#2189)
-- **OG:** use MagicString positional overwrites instead of repeated replaceAll (#2202)
-- **Dev Server:** memoiz
-
-... (truncated)]]></description>
-    <pubDate>Mon, 22 Jun 2026 09:27:30 GMT</pubDate>
   </item>
   <item>
     <title>[djkotori/rpgcobo-tool] v0.1.6</title>
@@ -398,47 +625,6 @@ This release focuses on Node HTTP adapter fixes, safer AxiosError serialisation,
     <pubDate>Sat, 20 Jun 2026 01:17:47 GMT</pubDate>
   </item>
   <item>
-    <title>[astral-sh/uv] 0.11.23</title>
-    <link>https://github.com/astral-sh/uv/releases/tag/0.11.23</link>
-    <guid isPermaLink="true">https://github.com/astral-sh/uv/releases/tag/0.11.23</guid>
-    <description><![CDATA[## Release Notes
-
-Released on 2026-06-19.
-
-### Bug fixes
-
-- Revert "Fix transparent Python upgrades in project environments" to mitigate unintended breakage in `pre-commit-uv` (#19925)
-- Restore old behavior where workspace members "hidden" by an intermediate `pyproject.toml` would be treated as standalone projects (#19926)
-
-## Install uv 0.11.23
-
-### Install prebuilt binaries via shell script
-
-```sh
-curl --proto '=https' --tlsv1.2 -LsSf | sh
-```
-
-### Install prebuilt binaries via powershell script
-
-```sh
-powershell -ExecutionPolicy Bypass -c "irm | iex"
-```
-
-## Download uv 0.11.23
-
-| File | Platform | Checksum |
-|--------|----------|----------|
-| uv-aarch64-apple-darwin.tar.gz | Apple Silicon macOS | checksum |
-| uv-x86_64-apple-darwin.tar.gz | Intel macOS | checksum |
-| uv-aarch64-pc-windows-msvc.zip | ARM64 Windows | checksum |
-| uv-i686-pc-windows-msvc.zip | x86 Windows | checksum |
-| uv-x86_64-pc-windows-msvc.zip | x64 Windows | checksum |
-| uv-aarch64-unknown-linux-gnu.tar.gz | A
-
-... (truncated)]]></description>
-    <pubDate>Fri, 19 Jun 2026 18:42:52 GMT</pubDate>
-  </item>
-  <item>
     <title>[opencontainers/runc] runc v1.5.0 -- &quot;Why do we even have that lever?!&quot; (v1.5.0)</title>
     <link>https://github.com/opencontainers/runc/releases/tag/v1.5.0</link>
     <guid isPermaLink="true">https://github.com/opencontainers/runc/releases/tag/v1.5.0</guid>
@@ -469,34 +655,6 @@ release:
 
 ... (truncated)]]></description>
     <pubDate>Fri, 19 Jun 2026 11:44:13 GMT</pubDate>
-  </item>
-  <item>
-    <title>[floci-io/floci] 1.5.26</title>
-    <link>https://github.com/floci-io/floci/releases/tag/1.5.26</link>
-    <guid isPermaLink="true">https://github.com/floci-io/floci/releases/tag/1.5.26</guid>
-    <description><![CDATA[## 🎉 Highlights
-
-This release adds **Amazon DocumentDB**, brings a massive **CloudFormation provisioning push** covering nine resource types, lights up the **floci-ui console on demand**, and lands meaningful SSM, Auto Scaling, and Cognito improvements. Welcome to the 4 first-time contributors.
-
-### 🆕 New service: Amazon DocumentDB
-
-**Amazon DocumentDB** emulation lands (#1341), with docs included (#1386). Local testing of MongoDB-compatible workflows that depend on DocumentDB is now possible without standing up a real cluster.
-
-### 🧱 CloudFormation: nine new resource types
-
-Easily the biggest CloudFormation push to date. Templates can now provision:
-
-- **EC2 instances** (#1366)
-- **EC2 VPC/subnet** persistence so references survive restart (#1364)
-- **RDS resources** (#1367)
-- **EKS clusters and node groups** (#1368)
-- **CloudWatch Logs log groups** (#1369)
-- **CloudWatch metric alarms** (#1371)
-- **Auto Scaling groups and launch configurations** (#1372)
-- **Kine
-
-... (truncated)]]></description>
-    <pubDate>Fri, 19 Jun 2026 06:24:47 GMT</pubDate>
   </item>
   <item>
     <title>[continuedev/continue] v2.0.0-vscode</title>
@@ -557,81 +715,11 @@ Please try out the release binaries and report any issues at
     <pubDate>Thu, 18 Jun 2026 23:20:04 GMT</pubDate>
   </item>
   <item>
-    <title>[pnpm/pnpm] pnpm 10.34.4 (v10.34.4)</title>
-    <link>https://github.com/pnpm/pnpm/releases/tag/v10.34.4</link>
-    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v10.34.4</guid>
-    <description><![CDATA[## Patch Changes
-
-* 352ae48: Security: validate config dependency names and versions before using them to build filesystem paths. A `pnpm-workspace.yaml` with a traversal-shaped `configDependencies` name (such as `../../PWNED`) or version (such as `../../../PWNED`) could previously cause `pnpm install` to create symlinks or write package files outside `node_modules/.pnpm-config` and the store. Names must now be valid npm package names and versions must be exact semver versions. See GHSA-qrv3-253h-g69c.
-
-* 352ae48: Reject path-traversal and reserved dependency aliases (such as `../../../escape`, `.bin`, `.pnpm`, or `node_modules`) that come from a lockfile rather than a freshly resolved manifest. A crafted lockfile alias could otherwise be joined directly under a hoisted `node_modules` directory, letting package files be written outside the intended install root or overwrite pnpm-owned layout.
-
- The `nodeLinker: hoisted` graph builder now validates each alias at the directory sink
-
-... (truncated)]]></description>
-    <pubDate>Thu, 18 Jun 2026 22:52:00 GMT</pubDate>
-  </item>
-  <item>
     <title>[remix-run/react-router] v8.0.1 (react-router@8.0.1)</title>
     <link>https://github.com/remix-run/react-router/releases/tag/react-router%408.0.1</link>
     <guid isPermaLink="true">https://github.com/remix-run/react-router/releases/tag/react-router%408.0.1</guid>
     <description><![CDATA[See the changelog for release notes:]]></description>
     <pubDate>Thu, 18 Jun 2026 19:20:58 GMT</pubDate>
-  </item>
-  <item>
-    <title>[sveltejs/kit] @sveltejs/kit@2.66.0</title>
-    <link>https://github.com/sveltejs/kit/releases/tag/%40sveltejs/kit%402.66.0</link>
-    <guid isPermaLink="true">https://github.com/sveltejs/kit/releases/tag/%40sveltejs/kit%402.66.0</guid>
-    <description><![CDATA[### Minor Changes
-
-
-- feat: precompress prerendered `.md` and `.mdx` files (#15893)
-
-
-- feat: warn the user when they forget to make boolean inputs optional in their form schemas (#15804)
-
-
-### Patch Changes
-
-
-- fix: blur active element before component update during navigation so that blur/focusout handlers fire while old component data is still valid (#15452)
-
-
-- fix: ensure `base` is available from `$service-worker` during development (#15882)
-
-
-- fix: use correct relative asset paths when rendering an error page for a missing `__data.json` request (#15884)
-
-
-- fix: preserve active `for await` consumers across `query.live` reconnects (#16022)
-
-
-- fix: settle `query.live` reconnect promise on all exit paths, preventing `invalidateAll` from deadlocking when a live query is offline or interrupted (#16022)
-
-
-- fix: preserve last value when a `query.live` stream completes without yielding on reconnect (#16022)
-
-
-- fix: remove `types: ['node']` from generated tsconfig to avoid errors when
-
-... (truncated)]]></description>
-    <pubDate>Thu, 18 Jun 2026 18:37:08 GMT</pubDate>
-  </item>
-  <item>
-    <title>[vercel-labs/skills] v1.5.12</title>
-    <link>https://github.com/vercel-labs/skills/releases/tag/v1.5.12</link>
-    <guid isPermaLink="true">https://github.com/vercel-labs/skills/releases/tag/v1.5.12</guid>
-    <description><![CDATA[## Changelog
-
-- Improve eve flow (#1459)
-- Support eve agent (#1458)
-- Fix local skills overwrite during all-agent installs (#1422)
-- Create manifest.json (#1409)
-
-## Contributors
-
-@mnhkahn,@quuu]]></description>
-    <pubDate>Thu, 18 Jun 2026 17:38:28 GMT</pubDate>
   </item>
   <item>
     <title>[adobe/react-spectrum] React Aria Components v1.19.0 (react-aria-components@1.19.0)</title>
@@ -767,43 +855,6 @@ Report bugs on GitHub after checking that they haven't been reported:
 
 ... (truncated)]]></description>
     <pubDate>Thu, 18 Jun 2026 07:05:04 GMT</pubDate>
-  </item>
-  <item>
-    <title>[nodejs/node] 2026-06-18, Version 26.3.1 (Current), @aduh95 (v26.3.1)</title>
-    <link>https://github.com/nodejs/node/releases/tag/v26.3.1</link>
-    <guid isPermaLink="true">https://github.com/nodejs/node/releases/tag/v26.3.1</guid>
-    <description><![CDATA[This is a security release.
-
-### Notable Changes
-
-* (CVE-2026-48618) tls: normalize hostname for server identity checks (Matteo Collina) – High
-* (CVE-2026-48933) crypto: guard WebCrypto cipher output length (Filip Skokan) – High
-* (CVE-2026-48615) lib,test: redact proxy credentials in tunnel errors (Matteo Collina) – Medium
-* (CVE-2026-48619) http2: cap originSet size to prevent unbounded memory growth (Matteo Collina) – Medium
-* (CVE-2026-48928) tls: fix case-sensitive SNI context matching (Matteo Collina) – Medium
-* (CVE-2026-48930) dns,net: reject hostnames with embedded NUL bytes (Matteo Collina) – Medium
-* (CVE-2026-48934) tls: bind reusable sessions to authenticated host (Matteo Collina) – Medium
-* (CVE-2026-48617) permission: handle process.chdir on writereport (RafaelGSS) – Low
-* (CVE-2026-48931) http: fix response queue poisoning in http.Agent (Matteo Collina) – Low
-* (CVE-2026-48935) permission: disable FileHandle utimes with permission model (RafaelGSS) – Low
-* (CVE-2026-48
-
-... (truncated)]]></description>
-    <pubDate>Thu, 18 Jun 2026 04:37:39 GMT</pubDate>
-  </item>
-  <item>
-    <title>[honojs/hono] v4.12.26</title>
-    <link>https://github.com/honojs/hono/releases/tag/v4.12.26</link>
-    <guid isPermaLink="true">https://github.com/honojs/hono/releases/tag/v4.12.26</guid>
-    <description><![CDATA[## What's Changed
-* fix(lambda-edge): satisfy Deno lib types for Content-Length body encoding by @yusukebe in 
-* ci: publish to npm from CI with OIDC trusted publishing by @yusukebe in 
-* chore: remove unused devcontainer and gitpod configs by @yusukebe in 
-* chore: replace arg and glob with Bun native APIs in build script by @yusukebe in 
-
-
-**Full Changelog**:]]></description>
-    <pubDate>Thu, 18 Jun 2026 02:19:23 GMT</pubDate>
   </item>
   <item>
     <title>[cli/cli] GitHub CLI 2.95.0 (v2.95.0)</title>
@@ -961,52 +1012,6 @@ Crate: gdkw
     <pubDate>Wed, 17 Jun 2026 13:48:47 GMT</pubDate>
   </item>
   <item>
-    <title>[web-infra-dev/rspack] v1.7.12</title>
-    <link>https://github.com/web-infra-dev/rspack/releases/tag/v1.7.12</link>
-    <guid isPermaLink="true">https://github.com/web-infra-dev/rspack/releases/tag/v1.7.12</guid>
-    <description><![CDATA[<!-- Release notes generated using configuration in .github/release.yml at v1.7.12 -->
-
-## What's Changed
-### Bug Fixes 🐞
-* fix: align timing logger with webpack phase boundaries by @hardfist in 
-### Document Updates 📖
-* docs(v1): add algolia site verification meta by @SoonIter in 
-* docs: use rspack-v1 algolia index on v1 site by @SoonIter in 
-### Other Changes
-* chore: release 1.7.11 by @LingyuCoder in 
-* chore(backport): use OIDC to publish crates by @stormslowly in 
-* chore(release): crate 0.7.11 by @stormslowly in 
-* chore: change CodSpeed baseline branch from main to v1.x by @stormslowly in 
-* fix: correct mf manifest expose assets by @2heal1 in 
-* ci: pin release artifact download action by @2heal1 in 
-
-
-**Full Changelog**:]]></description>
-    <pubDate>Wed, 17 Jun 2026 12:44:37 GMT</pubDate>
-  </item>
-  <item>
-    <title>[iii-hq/iii] iii 0.19.4 (iii/v0.19.4)</title>
-    <link>https://github.com/iii-hq/iii/releases/tag/iii/v0.19.4</link>
-    <guid isPermaLink="true">https://github.com/iii-hq/iii/releases/tag/iii/v0.19.4</guid>
-    <description><![CDATA[## What's Changed
-* Chore/docs gaps 3 by @anthonyiscoding in 
-* feat(worker-api): typed iii.worker.yaml manifest, worker::validate/status, and LLM-operable worker::* surfaces by @andersonleal in 
-* feat(engine): iii-http consumes the configuration worker for its own config by @andersonleal in 
-* fix(observability): stop shutdownOtel hanging when the engine is unreachable by @CryptoQuaternions in 
-* fix: support TLS OTLP observability export by @guibeira in 
-* feat(ci): isolated per-branch alpha release flow by @guibeira in 
-* Autogenerate CLI Docs and Improve CLI Documentation by @anthonyiscoding in 
-* docs(changelog): collapse the Changelog tab to a single index page by @guibeira in 
-* fix(ci): use counter_prefix in release version notice by @guibeira in 
-* feat(engine): runtime-configurable iii-state via the configuration worker by @andersonleal in 
-
-## New Contributors
-* @CryptoQuaternions made their first contribution in 
-
-**Full Changelog**:]]></description>
-    <pubDate>Tue, 16 Jun 2026 18:55:31 GMT</pubDate>
-  </item>
-  <item>
     <title>[project-tsurugi/tsurugidb] 1.11.0</title>
     <link>https://github.com/project-tsurugi/tsurugidb/releases/tag/1.11.0</link>
     <guid isPermaLink="true">https://github.com/project-tsurugi/tsurugidb/releases/tag/1.11.0</guid>
@@ -1046,112 +1051,6 @@ The `Source code (zip)` or `Source code (tar.gz)` in `Assets` are automatically 
 
 * note helpers requiring deployment customization (567e551)]]></description>
     <pubDate>Mon, 15 Jun 2026 19:28:58 GMT</pubDate>
-  </item>
-  <item>
-    <title>[devcontainers/images] v0.4.28</title>
-    <link>https://github.com/devcontainers/images/releases/tag/v0.4.28</link>
-    <guid isPermaLink="true">https://github.com/devcontainers/images/releases/tag/v0.4.28</guid>
-    <description><![CDATA[## What's Changed
-* [base-alpine] - Alpine invalid tag `alpinelatest` removal by @Kaniska244 in 
-* [miniconda]- security update for cryptography (GHSA-m959-cc7f-wv43) by @sireeshajonnalagadda in 
-* Security updates for GHSA-58pv-8j8x-9vj2: jaraco.context and GHSA-8rrh-rw8j-w5fx: wheel by @Copilot in 
-* [universal] - Fix vulnerability issues GHSA-mf9w-mj56-hr94 and GHSA-p423-j2cm-9vmq by @Kaniska244 in 
-* [anaconda] & [miniconda] - Security Updates for dotenv, lxml, nbconvert, GitPython by @V-Subhankar-infy in 
-
-## New Contributors
-* @V-Subhankar-infy made their first contribution in 
-
-**Full Changelog**:]]></description>
-    <pubDate>Mon, 15 Jun 2026 18:36:41 GMT</pubDate>
-  </item>
-  <item>
-    <title>[nodejs/undici] v6.27.0</title>
-    <link>https://github.com/nodejs/undici/releases/tag/v6.27.0</link>
-    <guid isPermaLink="true">https://github.com/nodejs/undici/releases/tag/v6.27.0</guid>
-    <description><![CDATA[# ⚠️ Security Release
-
-This release line addresses **4 security advisories**.
-
-> **Action required:** Upgrade to **undici 6.27.0** or later.
->
-> ```sh
-> npm install undici@^6.27.0
-> ```
-
-> **Note on patched version:** the v6 fixes shipped in **v6.27.0**, not `6.26.0`
-> — `v6.26.0` contains only the chunked-EOF fix (#5308) and the version bump, none
-> of the security fixes below.
-
-The v6 line is **not** affected by the SOCKS5 advisories (GHSA-vmh5-mc38-953g,
-GHSA-hm92-r4w5-c3mj), the shared-cache disclosure (GHSA-pr7r-676h-xcf6), or the
-8.x-only WebSocket regression (GHSA-38rv-x7px-6hhq).
-
-## Summary
-
-| Advisory | CVE | Severity (CVSS) | Fixed in | Fix commit |
-| --- | --- | --- | --- | --- |
-| GHSA-vxpw-j846-p89q | CVE-2026-12151 | High (7.5) | 6.27.0 | `b7f252e7` |
-| GHSA-p88m-4jfj-68fv | CVE-2026-9679 | Moderate (5.9) | 6.27.0 | `25efa447` |
-| GHSA-g8m3-5g58-fq7m | CVE-2026-11525 | Low (3.7) | 6.27.0 | `25efa447` |
-| GHSA-35p6-xmwp-9g52 | CVE-2026-6733 | Low (3.7) | 6.27.0 | `f4c31d6
-
-... (truncated)]]></description>
-    <pubDate>Mon, 15 Jun 2026 15:51:32 GMT</pubDate>
-  </item>
-  <item>
-    <title>[podman-desktop/podman-desktop] v1.28.2</title>
-    <link>https://github.com/podman-desktop/podman-desktop/releases/tag/v1.28.2</link>
-    <guid isPermaLink="true">https://github.com/podman-desktop/podman-desktop/releases/tag/v1.28.2</guid>
-    <description><![CDATA[## What's Changed
-* fix: resolve GHSA-39q2-94rc-95cp in dompurify by @benoitf in 
-* fix(troubleshooting): remove malformed leading ellipsis from waiting-for-response strings by @vancura in 
-* chore(deps-dev): bump the typescript-eslint group with 3 updates by @dependabot[bot] in 
-* chore(main): prefer-import-in-mock by @axel7083 in 
-* chore(deps-dev): bump the tailwindcss group across 1 directory with 3 updates by @dependabot[bot] in 
-* chore(deps): bump @fortawesome/react-fontawesome from 3.3.0 to 3.3.1 in the fortawesome group across 1 directory by @dependabot[bot] in 
-* chore(fix): fixing compose e2e tests to handle new flow by @cbr7 in 
-* refactor: extracted duplicated code to function by @gastoner in 
-* chore: 📢 Bump version to 1.28.0 by @podman-desktop-bot in 
-* refactor(network): replace raw Tailwind colors with color-registry tokens in CreateNetwork by @vancura in 
-* fix(ui): increase spinner segment opacity for better contrast by @vancura in 
-* refactor(color-regi
-
-... (truncated)]]></description>
-    <pubDate>Mon, 15 Jun 2026 12:45:09 GMT</pubDate>
-  </item>
-  <item>
-    <title>[microsoft/playwright] v1.61.0</title>
-    <link>https://github.com/microsoft/playwright/releases/tag/v1.61.0</link>
-    <guid isPermaLink="true">https://github.com/microsoft/playwright/releases/tag/v1.61.0</guid>
-    <description><![CDATA[## 🔑 WebAuthn passkeys
-
-New Credentials virtual authenticator, available via browserContext.credentials, lets tests register passkeys and answer `navigator.credentials.create` / `navigator.credentials.get` ceremonies in the page — no real hardware key required, works in all browsers:
-
-```js
-const context = await browser.newContext;
-
-// Seed a passkey your backend provisioned for a test user.
-await context.credentials.create('example.com', {
- id: credentialId,
- userHandle,
- privateKey,
- publicKey,
-});
-await context.credentials.install;
-
-const page = await context.newPage;
-await page.goto('');
-// The page's navigator.credentials.get is answered with the seeded passkey.
-```
-
-You can also let the app register a passkey once in a setup test, read it back with credentials.get, and seed it into later tests — see Credentials for details.
-
-## 🗃️ Web Storage
-
-New WebStorage API, available via page.localStorage and page.sessionStorage, reads and writes the page's storag
-
-... (truncated)]]></description>
-    <pubDate>Mon, 15 Jun 2026 10:05:19 GMT</pubDate>
   </item>
 </channel>
 </rss>
