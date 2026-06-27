@@ -5,8 +5,118 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Fri, 26 Jun 2026 22:23:44 GMT</lastBuildDate>
+  <lastBuildDate>Sat, 27 Jun 2026 22:19:54 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[dprint/dprint] 0.55.0</title>
+    <link>https://github.com/dprint/dprint/releases/tag/0.55.0</link>
+    <guid isPermaLink="true">https://github.com/dprint/dprint/releases/tag/0.55.0</guid>
+    <description><![CDATA[dprint is a pluggable and configurable code formatting platform that unifies all your formatters.
+
+This substantial release adds npm specifier plugins, brings dprint to many more CPU architectures, adds richer LSP support, and gives you finer-grained configuration with per-file overrides and config inheritance.
+
+It includes two behaviour changes worth reading before you upgrade.
+
+## Highlights
+
+- 📦 **npm specifier plugins** — reference plugins with `npm:@scope/name@version`
+- 🏗️ **Runs on many more architectures** — Windows on ARM, Android (Termux), ppc64le, and LoongArch
+- 💡 **LSP completions & hover** for dprint configuration files
+- 🔀 **`dprint fmt --dirty`** — format only the files with uncommitted git changes
+- 🎛️ **Per-file plugin config overrides** — apply different plugin options to specific files
+- 🧬 **`"inherit": true`** for nested configuration files
+- ⚠️ **Plugin associations are now additive** (behaviour change)
+- ⚠️ **Globs are now case-sensitive** (b
+
+... (truncated)]]></description>
+    <pubDate>Sat, 27 Jun 2026 18:54:41 GMT</pubDate>
+  </item>
+  <item>
+    <title>[ant-design/ant-design] 6.5.0</title>
+    <link>https://github.com/ant-design/ant-design/releases/tag/6.5.0</link>
+    <guid isPermaLink="true">https://github.com/ant-design/ant-design/releases/tag/6.5.0</guid>
+    <description><![CDATA[- 🔥 Add the antd `DESIGN.md` design-language file and publish it at ant.design/design.md, helping AI design tools understand Ant Design visual language, component archetypes, and theme tokens. #58011 #58356 #58489 @afc163
+- 📦 Optimize the antd full bundle size: compared with 6.4.5, size-limit reports `antd.min.js` down from `437.05 KB` to `432.44 KB`, and `antd-with-locales.min.js` down from `514.19 KB` to `506.84 KB`. The main gains come from slimmer DatePicker and TimePicker runtime code in `@rc-component/picker`, plus Icon/Upload avoiding extra TwoTone runtime in the full bundle. #58403 #58497 @QDyanbing @afc163
+- Icon
+ - 🔥 Add built-in Icon entries for Anthropic, Claude, Gemini, Mistral, DeepSeek, Qwen, Perplexity, HuggingFace, Ollama, Replicate, ElevenLabs, Telegram, Mastodon, Threads and Snapchat. #58524 @afc163
+ <img alt="New icons in Ant Design 6.5.0" src="" width="960" />
+ - 📦 Optimize Icon and Upload default icon imports by upgrading `@ant-design/icons` to `6.3.1` and swi
+
+... (truncated)]]></description>
+    <pubDate>Sat, 27 Jun 2026 15:54:13 GMT</pubDate>
+  </item>
+  <item>
+    <title>[prettier/prettier] 3.9.0</title>
+    <link>https://github.com/prettier/prettier/releases/tag/3.9.0</link>
+    <guid isPermaLink="true">https://github.com/prettier/prettier/releases/tag/3.9.0</guid>
+    <description><![CDATA[diff
+
+🔗 Prettier 3.9: Major parser upgrades and Formatting improvements]]></description>
+    <pubDate>Sat, 27 Jun 2026 10:28:04 GMT</pubDate>
+  </item>
+  <item>
+    <title>[web-infra-dev/rspack] v2.1.1</title>
+    <link>https://github.com/web-infra-dev/rspack/releases/tag/v2.1.1</link>
+    <guid isPermaLink="true">https://github.com/web-infra-dev/rspack/releases/tag/v2.1.1</guid>
+    <description><![CDATA[## What's Changed
+
+### New Features 🎉
+* feat(rsdoctor): add dependencyId and loc to export usage edges by @JSerFeng in 
+
+### Performance 🚀
+
+* perf(devtool): add persistent cache for SourceMapDevToolPlugin by @SyMind in 
+
+### Bug Fixes 🐞
+
+* fix(css): add guard for link.parentNode in css runtime by @BeiyanYunyi in 
+* fix: revert cjs export assignment side effects optimization by @chenjiahan in 
+
+### Other Changes
+
+* docs: v2.1 release blog by @ahabhgk in 
+* refactor(runtime): structure runtime requirements by @LingyuCoder in 
+* chore(deps): update dependency @rslint/core to v0.6.3 by @renovate[bot] in 
+* chore(deps): update dependency @module-federation/runtime-tools to v2.6.0 by @renovate[bot] in 
+
+## New Contributors
+* @BeiyanYunyi made their first contribution in 
+
+**Full Changelog**:]]></description>
+    <pubDate>Sat, 27 Jun 2026 03:27:12 GMT</pubDate>
+  </item>
+  <item>
+    <title>[astral-sh/uv] 0.11.25</title>
+    <link>https://github.com/astral-sh/uv/releases/tag/0.11.25</link>
+    <guid isPermaLink="true">https://github.com/astral-sh/uv/releases/tag/0.11.25</guid>
+    <description><![CDATA[## Release Notes
+
+Released on 2026-06-26.
+
+### Security
+
+This release updates our tar library, astral-tokio-tar, to v0.6.3, which includes over 20 changes that harden our tar handling against parser differentials. uv may reject source distributions with malformed or ambiguous content that were previously accepted.
+
+See the upstream commits for a full list of changes.
+
+### Enhancements
+
+- Add a full "lockfile" to tool receipts (#18937)
+- Allow scoped overrides to add dependencies (#19974)
+- Avoid writing redundant lockfile markers with `tool.uv.environments` (#19933)
+- Factor supported environments out of lockfile markers (#19969)
+- Recommend our own build backend in the build frontend (#19994)
+- Reject wheels with multiple .dist-info directories (#19986)
+- Simplify dependency markers under parent reachability (#19971)
+- Support scoped dependency exclusions (#19977)
+- Support scoped dependency overrides (#19970)
+- Explain why files are skipped in registry index parsing (#19983)
+
+### Pre
+
+... (truncated)]]></description>
+    <pubDate>Sat, 27 Jun 2026 00:49:49 GMT</pubDate>
+  </item>
   <item>
     <title>[openai/codex] 0.142.3 (rust-v0.142.3)</title>
     <link>https://github.com/openai/codex/releases/tag/rust-v0.142.3</link>
@@ -105,16 +215,6 @@ specify init my-project
     <pubDate>Fri, 26 Jun 2026 13:04:32 GMT</pubDate>
   </item>
   <item>
-    <title>[prettier/prettier] 3.8.5</title>
-    <link>https://github.com/prettier/prettier/releases/tag/3.8.5</link>
-    <guid isPermaLink="true">https://github.com/prettier/prettier/releases/tag/3.8.5</guid>
-    <description><![CDATA[- Fix Flow variance annotation print (#19022 by @marcoww6)
-
-
-🔗 Changelog]]></description>
-    <pubDate>Fri, 26 Jun 2026 13:00:46 GMT</pubDate>
-  </item>
-  <item>
     <title>[redwoodjs/sdk] v1.5.0</title>
     <link>https://github.com/redwoodjs/sdk/releases/tag/v1.5.0</link>
     <guid isPermaLink="true">https://github.com/redwoodjs/sdk/releases/tag/v1.5.0</guid>
@@ -160,30 +260,6 @@ i
 
 ... (truncated)]]></description>
     <pubDate>Fri, 26 Jun 2026 09:10:38 GMT</pubDate>
-  </item>
-  <item>
-    <title>[web-infra-dev/rspack] v2.1.0</title>
-    <link>https://github.com/web-infra-dev/rspack/releases/tag/v2.1.0</link>
-    <guid isPermaLink="true">https://github.com/web-infra-dev/rspack/releases/tag/v2.1.0</guid>
-    <description><![CDATA[## What's Changed
-## 🎉 See Announcing Rspack 2.1 for more details.
-### New Features 🎉
-* feat: expose module error JS API by @SyMind in 
-* feat(cache): log persistent cache read and write timings by @hardfist in 
-* feat(module_graph): expose `getProvidedExports` to JS API by @logonoff in 
-* feat: support drop inactive branch dependencies for member expr by @ahabhgk in 
-* feat(runtime): introduce experimental.runtimeMode by @LingyuCoder in 
-* feat: support branch guarded export presence for `in` on ESM imports by @ahabhgk in 
-* feat: bump swc to support react compiler by @CPunisher in 
-* feat(runtime): runtime internals of rspack runtime mode by @LingyuCoder in 
-* feat(rsdoctor): expose export usage graph by @JSerFeng in 
-* feat: enable pureFunctions by default by @JSerFeng in 
-* feat(cache): add maxAge and maxGenerations for persistent cache cleanup by @matthewdavis-oai in 
-* feat: make persistent cache max generations default to 3 by @ahabhgk in 
-* feat: rename persist
-
-... (truncated)]]></description>
-    <pubDate>Fri, 26 Jun 2026 08:59:18 GMT</pubDate>
   </item>
   <item>
     <title>[project-tsurugi/tsurugidb] 1.11.1</title>
@@ -662,58 +738,6 @@ Read more:
     <pubDate>Wed, 24 Jun 2026 03:06:38 GMT</pubDate>
   </item>
   <item>
-    <title>[astral-sh/uv] 0.11.24</title>
-    <link>https://github.com/astral-sh/uv/releases/tag/0.11.24</link>
-    <guid isPermaLink="true">https://github.com/astral-sh/uv/releases/tag/0.11.24</guid>
-    <description><![CDATA[## Release Notes
-
-Released on 2026-06-23.
-
-### Python
-
-- Add CPython 3.15.0b3 (#19964)
-
-### Preview features
-
-- Make project environments relocatable under preview (#19965)
-
-### Performance
-
-- Use a compact index for lazy version maps (#19959)
-
-### Bug fixes
-
-- Allow disabling `exclude-newer` (#19934)
-- Avoid archive id collisions (#19949)
-- Reapply "Fix transparent Python upgrades in project environments" (#19928)
-- Clean up partial tool entrypoint installs (#19966)
-- Fix relocatable `activate.fish` and broaden Fish version support (#19856)
-
-## Install uv 0.11.24
-
-### Install prebuilt binaries via shell script
-
-```sh
-curl --proto '=https' --tlsv1.2 -LsSf | sh
-```
-
-### Install prebuilt binaries via powershell script
-
-```sh
-powershell -ExecutionPolicy Bypass -c "irm | iex"
-```
-
-## Download uv 0.11.24
-
-| File | Platform | Checksum |
-|--------|----------|----------|
-| uv-aarch64-apple-darwin.tar.gz | Apple Silicon macOS | checksum |
-| uv-x86_64-apple-darwin.tar.gz | Intel macOS | checksum
-
-... (truncated)]]></description>
-    <pubDate>Tue, 23 Jun 2026 21:16:31 GMT</pubDate>
-  </item>
-  <item>
     <title>[vercel-labs/skills] v1.5.13</title>
     <link>https://github.com/vercel-labs/skills/releases/tag/v1.5.13</link>
     <guid isPermaLink="true">https://github.com/vercel-labs/skills/releases/tag/v1.5.13</guid>
@@ -973,47 +997,6 @@ This version includes the following bug fixes and feature additions.
 - Fixed a bug where changing properties did not work at the Plugin Manager. 
 - Fixed minor bugs.]]></description>
     <pubDate>Mon, 22 Jun 2026 06:34:12 GMT</pubDate>
-  </item>
-  <item>
-    <title>[ant-design/ant-design] 6.4.5</title>
-    <link>https://github.com/ant-design/ant-design/releases/tag/6.4.5</link>
-    <guid isPermaLink="true">https://github.com/ant-design/ant-design/releases/tag/6.4.5</guid>
-    <description><![CDATA[- 🐞 Fix Dropdown vertical menu overflowing the viewport when the trigger is centered, keeping all menu items reachable. #58214 @18062706139fcz
-- 🐞 Fix Alert `actions` spacing not taking effect when hashed styles are enabled. #58314 @QDyanbing
-- ⌨️ Fix Table not applying `aria-*` attributes to fixed header tables when `scroll` creates multiple tables. #58339 @biubiukam
-- 💄 Fix Pagination quick jumper input not following ConfigProvider `variant` styles. #58371 @biubiukam
-- 🌐 Localization
- - 🇳🇴 Fill missing nb_NO (Norwegian) locale keys. #58439 @arvindfroi
----
-- 🐞 修复 Dropdown 纵向菜单在触发器位于屏幕中部时溢出视口、顶部菜单项无法点击的问题。#58214 @18062706139fcz
-- 🐞 修复 Alert 在开启 hashed 样式时 `actions` 间距不生效的问题。#58314 @QDyanbing
-- ⌨️ 修复 Table 在 `scroll` 生成多个 table 时，固定表头 table 未应用 `aria-*` 属性的问题。#58339 @biubiukam
-- 💄 修复 Pagination 快速跳转输入框未跟随 ConfigProvider `variant` 样式的问题。#58371 @biubiukam
-- 🌐 国际化
- - 🇳🇴 补充 nb_NO（挪威语）缺失的 locale 本地化键值。#58439 @arvindfroi]]></description>
-    <pubDate>Mon, 22 Jun 2026 06:13:44 GMT</pubDate>
-  </item>
-  <item>
-    <title>[axios/axios] v1.18.1</title>
-    <link>https://github.com/axios/axios/releases/tag/v1.18.1</link>
-    <guid isPermaLink="true">https://github.com/axios/axios/releases/tag/v1.18.1</guid>
-    <description><![CDATA[## v1.18.1 — June 21, 2026
-
-This release focuses on Node HTTP adapter fixes, safer AxiosError serialisation, runtime/type correctness fixes, documentation updates, and dependency maintenance.
-
-## 🐛 Bug Fixes
-
-- AxiosError Serialisation: Made AxiosError#cause non-enumerable to prevent circular JSON serialisation failures when errors include nested causes. (#10913)
-- Node HTTP Adapter: Guarded socket.setKeepAlive for proxy agent streams, accepted path-only URLs when socketPath is configured, deferred environment proxy handling to Node, and explicitly passed maxBodyLength through to follow-redirects. (#10917, #10930, #10942, #10993)
-- Runtime and Type Correctness: Fixed several runtime crashes, type definition mismatches, and incorrect error handling paths. (#10959, #11021)
-- AxiosURLSearchParams: Switched the encoder callback to an arrow function so `encoder.call(this)` receives the `AxiosURLSearchParams` instance correctly. (#11019)
-
-## 🔧 Maintenance & Chores
-
-- Documenta
-
-... (truncated)]]></description>
-    <pubDate>Sun, 21 Jun 2026 17:25:10 GMT</pubDate>
   </item>
 </channel>
 </rss>
