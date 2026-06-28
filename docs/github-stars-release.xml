@@ -5,31 +5,134 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Sat, 27 Jun 2026 22:19:54 GMT</lastBuildDate>
+  <lastBuildDate>Sun, 28 Jun 2026 22:19:37 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
   <item>
-    <title>[dprint/dprint] 0.55.0</title>
-    <link>https://github.com/dprint/dprint/releases/tag/0.55.0</link>
-    <guid isPermaLink="true">https://github.com/dprint/dprint/releases/tag/0.55.0</guid>
-    <description><![CDATA[dprint is a pluggable and configurable code formatting platform that unifies all your formatters.
+    <title>[tauri-apps/tauri] tauri-cli v2.11.4 (tauri-cli-v2.11.4)</title>
+    <link>https://github.com/tauri-apps/tauri/releases/tag/tauri-cli-v2.11.4</link>
+    <guid isPermaLink="true">https://github.com/tauri-apps/tauri/releases/tag/tauri-cli-v2.11.4</guid>
+    <description><![CDATA[<details>
+<summary><em><h4>Cargo Audit</h4></em></summary>
 
-This substantial release adds npm specifier plugins, brings dprint to many more CPU architectures, adds richer LSP support, and gives you finer-grained configuration with per-file overrides and config inheritance.
+```
+Fetching advisory database from `
+ Loaded 1139 security advisories (from /home/runner/.cargo/advisory-db)
+ Updating crates.io index
+ Scanning Cargo.lock for vulnerabilities (1086 crate dependencies)
+Crate: atk
+Version: 0.18.2
+Warning: unmaintained
+Title: gtk-rs GTK3 bindings - no longer maintained
+Date: 2024-03-04
+ID: RUSTSEC-2024-0413
+URL: 
 
-It includes two behaviour changes worth reading before you upgrade.
+Crate: atk-sys
+Version: 0.18.2
+Warning: unmaintained
+Title: gtk-rs GTK3 bindings - no longer maintained
+Date: 2024-03-04
+ID: RUSTSEC-2024-0416
+URL: 
 
-## Highlights
+Crate: fxhash
+Version: 0.2.1
+Warning: unmaintained
+Title: fxhash - no longer maintained
+Date: 2025-09-05
+ID: RUSTSEC-2025-0057
+URL: 
 
-- 📦 **npm specifier plugins** — reference plugins with `npm:@scope/name@version`
-- 🏗️ **Runs on many more architectures** — Windows on ARM, Android (Termux), ppc64le, and LoongArch
-- 💡 **LSP completions & hover** for dprint configuration files
-- 🔀 **`dprint fmt --dirty`** — format only the files with uncommitted git changes
-- 🎛️ **Per-file plugin config overrides** — apply different plugin options to specific files
-- 🧬 **`"inherit": true`** for nested configuration files
-- ⚠️ **Plugin associations are now additive** (behaviour change)
-- ⚠️ **Globs are now case-sensitive** (b
+Crate: gdk
+Version: 0.18.2
+Warning: unmaintained
+Title: gtk-rs GTK3 bindings - no longer maintained
+Date: 2024-03-04
+ID: RUSTSEC-2024-0412
+URL: 
+
+Crate: gdk-sys
+Version: 0.18.2
+Warning: unmaintained
+Title: gtk-rs GTK3 bindings - no longer maintained
+Date: 2024-03-04
+ID: RUSTSEC-2024-0418
+URL: 
+
+Crate: gdkw
 
 ... (truncated)]]></description>
-    <pubDate>Sat, 27 Jun 2026 18:54:41 GMT</pubDate>
+    <pubDate>Sun, 28 Jun 2026 17:02:17 GMT</pubDate>
+  </item>
+  <item>
+    <title>[open-circle/valibot] v1.4.2</title>
+    <link>https://github.com/open-circle/valibot/releases/tag/v1.4.2</link>
+    <guid isPermaLink="true">https://github.com/open-circle/valibot/releases/tag/v1.4.2</guid>
+    <description><![CDATA[Many thanks to @Faze-up and @chatman-media for contributing to this release.
+
+- Fix word count actions to cache the `Intl.Segmenter` for non-primitive locales, preventing it from being recreated on every `words`, `minWords`, `maxWords` and `notWords` validation (pull request #1521)
+- Fix `flatten` method to handle issue path keys that collide with `Object.prototype` members like `toString` instead of throwing a `TypeError` (pull request #1522)
+- Fix `intersect` schema to merge object keys that collide with `Object.prototype` members like `toString` instead of failing to merge them (pull request #1522)]]></description>
+    <pubDate>Sun, 28 Jun 2026 15:14:12 GMT</pubDate>
+  </item>
+  <item>
+    <title>[redwoodjs/sdk] v1.5.1</title>
+    <link>https://github.com/redwoodjs/sdk/releases/tag/v1.5.1</link>
+    <guid isPermaLink="true">https://github.com/redwoodjs/sdk/releases/tag/v1.5.1</guid>
+    <description><![CDATA[## What's Changed
+* chore: upgrade Vite to 8.1.0 by @justinvdm in 
+* fix(use-synced-state): remove idle hibernation socket timeout by @justinvdm in 
+
+
+**Full Changelog**:]]></description>
+    <pubDate>Sun, 28 Jun 2026 15:03:22 GMT</pubDate>
+  </item>
+  <item>
+    <title>[sindresorhus/got] v15.0.7</title>
+    <link>https://github.com/sindresorhus/got/releases/tag/v15.0.7</link>
+    <guid isPermaLink="true">https://github.com/sindresorhus/got/releases/tag/v15.0.7</guid>
+    <description><![CDATA[- Fix: Preserve request body on cross-origin 307 and 308 redirects (#2460) aee9249
+
+---]]></description>
+    <pubDate>Sun, 28 Jun 2026 09:47:52 GMT</pubDate>
+  </item>
+  <item>
+    <title>[dprint/dprint] 0.55.1</title>
+    <link>https://github.com/dprint/dprint/releases/tag/0.55.1</link>
+    <guid isPermaLink="true">https://github.com/dprint/dprint/releases/tag/0.55.1</guid>
+    <description><![CDATA[## Changes
+
+* fix(npm): resolve node_modules from config dir
+(#1194)
+
+## Install
+
+Run `dprint upgrade` or see 
+
+## Checksums
+
+|Artifact|SHA-256 Checksum|
+|:--|:--|
+|dprint-x86_64-apple-darwin.zip|21f9784b3edf3b0a686932b4387359ebd83fba798ac2f7e2ba1e7b8c9f674e3e|
+|dprint-aarch64-apple-darwin.zip|94a9ce5ca91dbb609d4f22f2ccf28d8b422627c0944c6ee63d1beecac28f8cd4|
+|dprint-x86_64-pc-windows-msvc.zip|dfdee60f04810c14df310696ce680da7ece599cd27b162f77906adc80d5e9679|
+|dprint-x86_64-pc-windows-msvc-installer.exe|bb244f445a0f7f022c550b0239d7bde00319ea55a1be1ccafdd0b8f52b47042b|
+|dprint-aarch64-pc-windows-msvc.zip|a4e3f6921eba2db72d00a4ae35ed1bd6ff49eed610815f8b13f3b64fe12d7b17|
+|dprint-x86_64-unknown-linux-gnu.zip|14f40c47b2a1c79ced321b62bf177f88f064d7b11c41f1ee28488ee0d9391bb2|
+|dprint-x86_64-unknown-linux-musl.zip|7ce856d5999585e58666701eab5e0291abfb63953884d5dd0268001c89d74b8d|
+|dprint-aarch64-unknown-linux-gnu.zip|f5ea3a5c196b0bcd91aa0af7b5ef7366dbf87e8315a6797c47bff081a8d4
+
+... (truncated)]]></description>
+    <pubDate>Sun, 28 Jun 2026 05:34:56 GMT</pubDate>
+  </item>
+  <item>
+    <title>[prettier/prettier] 3.9.1</title>
+    <link>https://github.com/prettier/prettier/releases/tag/3.9.1</link>
+    <guid isPermaLink="true">https://github.com/prettier/prettier/releases/tag/3.9.1</guid>
+    <description><![CDATA[- CLI: Fix ignored file has been cached incorrectly (#19483 by @kovsu)
+
+🔗 Changelog]]></description>
+    <pubDate>Sat, 27 Jun 2026 23:06:22 GMT</pubDate>
   </item>
   <item>
     <title>[ant-design/ant-design] 6.5.0</title>
@@ -44,15 +147,6 @@ It includes two behaviour changes worth reading before you upgrade.
 
 ... (truncated)]]></description>
     <pubDate>Sat, 27 Jun 2026 15:54:13 GMT</pubDate>
-  </item>
-  <item>
-    <title>[prettier/prettier] 3.9.0</title>
-    <link>https://github.com/prettier/prettier/releases/tag/3.9.0</link>
-    <guid isPermaLink="true">https://github.com/prettier/prettier/releases/tag/3.9.0</guid>
-    <description><![CDATA[diff
-
-🔗 Prettier 3.9: Major parser upgrades and Formatting improvements]]></description>
-    <pubDate>Sat, 27 Jun 2026 10:28:04 GMT</pubDate>
   </item>
   <item>
     <title>[web-infra-dev/rspack] v2.1.1</title>
@@ -213,53 +307,6 @@ specify init my-project
 
 - Add frames to ProfilingPlugin TracingStartedInBrowser event so the trace loads in Chrome DevTools. (by @alexander-akait in #21269)]]></description>
     <pubDate>Fri, 26 Jun 2026 13:04:32 GMT</pubDate>
-  </item>
-  <item>
-    <title>[redwoodjs/sdk] v1.5.0</title>
-    <link>https://github.com/redwoodjs/sdk/releases/tag/v1.5.0</link>
-    <guid isPermaLink="true">https://github.com/redwoodjs/sdk/releases/tag/v1.5.0</guid>
-    <description><![CDATA[## Vite 8 support
-
-This release adds Vite 8 support to RedwoodSDK.
-
-The SDK plugin layer now works with Vite 8's Rolldown-based build and dependency optimizer pipeline. Vite 8 is the default path in the SDK test apps going forward.
-
-This is not intended to force every app to upgrade Vite on the same day. `rwsdk@1.5.0` still accepts Vite `^6.2.6`, `7.x`, and `8.x`, so existing Vite 6/7 apps can update RedwoodSDK first and move to Vite 8 when ready.
-
-## Upgrade notes
-
-For apps moving to Vite 8:
-
-```sh
-pnpm add rwsdk@1.5.0
-pnpm add -D vite@latest
-```
-
-If your app uses `@vitejs/plugin-react`, upgrade that package too:
-
-```sh
-pnpm add -D @vitejs/plugin-react@latest
-```
-
-If your Vite config passes Babel plugins through `react({ babel: ... })`, move that config to `@rolldown/plugin-babel`. `@vitejs/plugin-react` v6 no longer accepts the `babel` option.
-
-Before:
-
-```ts
-react({
- babel: {
- plugins: ['babel-plugin-react-compiler'],
- },
-})
-```
-
-After:
-
-```ts
-i
-
-... (truncated)]]></description>
-    <pubDate>Fri, 26 Jun 2026 09:10:38 GMT</pubDate>
   </item>
   <item>
     <title>[project-tsurugi/tsurugidb] 1.11.1</title>
@@ -948,55 +995,6 @@ See GitHub Releases for more information.
 
 You can read about our versioning strategy and releases on our website.]]></description>
     <pubDate>Mon, 22 Jun 2026 18:22:39 GMT</pubDate>
-  </item>
-  <item>
-    <title>[fastify/fastify-vite] @fastify/react@1.1.8</title>
-    <link>https://github.com/fastify/fastify-vite/releases/tag/%40fastify/react%401.1.8</link>
-    <guid isPermaLink="true">https://github.com/fastify/fastify-vite/releases/tag/%40fastify/react%401.1.8</guid>
-    <description><![CDATA[### Patch Changes
-
-- 5657db4: Fix React renderer virtual module resolution under Vite 8 and skip preload generation when Vite closes a dev server without a production bundle.]]></description>
-    <pubDate>Mon, 22 Jun 2026 17:47:28 GMT</pubDate>
-  </item>
-  <item>
-    <title>[oxc-project/oxc] oxlint v1.71.0 &amp; oxfmt v0.56.0 (apps_v1.71.0)</title>
-    <link>https://github.com/oxc-project/oxc/releases/tag/apps_v1.71.0</link>
-    <guid isPermaLink="true">https://github.com/oxc-project/oxc/releases/tag/apps_v1.71.0</guid>
-    <description><![CDATA[## Table of Contents
-
-- [Oxlint v1.71.0](#oxlint-v1.71.0)
-- [Oxfmt v0.56.0](#oxfmt-v0.56.0)
-
-## Oxlint v1.71.0
-
-### 🚀 Features
-
-- ff65285 linter: `no-restricted-globals` add missing upstream options (#23663) (Sysix)
-- 7b8bd89 linter/typescript: Implement suggestion for `no-unnecessary-type-constraint` rule (#23646) (Mikhail Baev)
-- 0dc2405 linter: Add schema for `eslint/no-restricted-properties` (#23619) (Sysix)
-- b638d0e linter: Add schema for `node/callback-return` (#23615) (Sysix)
-- eb8bedc linter: Add schema for `import/extensions` (#23557) (WaterWhisperer)
-- 46f3625 linter: Implement node/no-sync rule (#23589) (fujitani sora)
-- b01739a linter: Add schema for `unicorn/numeric-separators-style` (#23554) (Mikhail Baev)
-- 68afd2a linter/node: Implement `no-mixed-requires` rule (#23539) (fujitani sora)
-- 59d8893 linter: `unicorn/numeric-separators-style` support missing options (#23524) (Sysix)
-- a421215 linter: Add schema for `eslint/prefer-destructuring` (#23410) (
-
-... (truncated)]]></description>
-    <pubDate>Mon, 22 Jun 2026 12:31:30 GMT</pubDate>
-  </item>
-  <item>
-    <title>[djkotori/rpgcobo-tool] v0.1.6</title>
-    <link>https://github.com/djkotori/rpgcobo-tool/releases/tag/v0.1.6</link>
-    <guid isPermaLink="true">https://github.com/djkotori/rpgcobo-tool/releases/tag/v0.1.6</guid>
-    <description><![CDATA[**RPG-Cobo Tool v0.1.6**
-
-This version includes the following bug fixes and feature additions.
-
-- Implemented new feature "Realtime battle".
-- Fixed a bug where changing properties did not work at the Plugin Manager. 
-- Fixed minor bugs.]]></description>
-    <pubDate>Mon, 22 Jun 2026 06:34:12 GMT</pubDate>
   </item>
 </channel>
 </rss>
