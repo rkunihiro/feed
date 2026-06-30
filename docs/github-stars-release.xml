@@ -5,8 +5,429 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Mon, 29 Jun 2026 22:21:50 GMT</lastBuildDate>
+  <lastBuildDate>Tue, 30 Jun 2026 22:24:50 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[ollama/ollama] v0.31.1</title>
+    <link>https://github.com/ollama/ollama/releases/tag/v0.31.1</link>
+    <guid isPermaLink="true">https://github.com/ollama/ollama/releases/tag/v0.31.1</guid>
+    <description><![CDATA[## What's Changed
+* mlx: tighten up gemma4 moe loading code by @pdevine in 
+* mlx: bump to latest version to include new small batch matmul kernel @jessegross @dhiltgen 
+* llama.cpp: bump to b9840 @dhiltgen
+* improved gemma4 MTP performance @jessegross 
+
+**Full Changelog**:]]></description>
+    <pubDate>Tue, 30 Jun 2026 22:10:17 GMT</pubDate>
+  </item>
+  <item>
+    <title>[bluesky-social/atproto] @atproto/xrpc-server@0.11.5</title>
+    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/xrpc-server%400.11.5</link>
+    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/xrpc-server%400.11.5</guid>
+    <description><![CDATA[### Patch Changes
+
+- Updated dependencies [`8bcba69`, `8bcba69`]:
+ - @atproto/lex-client@0.2.0]]></description>
+    <pubDate>Tue, 30 Jun 2026 21:18:08 GMT</pubDate>
+  </item>
+  <item>
+    <title>[tauri-apps/tauri] tauri-build v1.5.7-edition2024.0 (tauri-build-v1.5.7-edition2024.0)</title>
+    <link>https://github.com/tauri-apps/tauri/releases/tag/tauri-build-v1.5.7-edition2024.0</link>
+    <guid isPermaLink="true">https://github.com/tauri-apps/tauri/releases/tag/tauri-build-v1.5.7-edition2024.0</guid>
+    <description><![CDATA[Updating crates.io index
+ Locking 644 packages to latest compatible versions
+ Adding aes-gcm v0.10.3 (available: v0.11.0)
+ Adding base64 v0.21.7 (available: v0.22.1)
+ Adding cargo_toml v0.22.3 (available: v1.0.0)
+ Adding clap v3.2.25 (available: v4.6.1)
+ Adding cocoa v0.24.1 (available: v0.26.1)
+ Adding ctor v0.2.9 (available: v1.0.7)
+ Adding generic-array v0.14.7 (available: v0.14.9)
+ Adding getrandom v0.2.17 (available: v0.4.3)
+ Adding glib v0.15.12 (available: v0.22.8)
+ Adding gtk v0.15.5 (available: v0.18.2)
+ Adding html5ever v0.26.0 (available: v0.39.0)
+ Adding http v0.2.12 (available: v1.4.2)
+ Adding hyper v0.14.32 (available: v1.10.1)
+ Adding ico v0.4.0 (available: v0.5.0)
+ Adding indexmap v1.9.3 (available: v2.14.0)
+ Adding infer v0.13.0 (available: v0.19.0)
+ Adding json-patch v2.0.0 (available: v4.2.0)
+ Adding json5 v0.4.1 (available: v1.3.1)
+ Adding mockito v0.31.1 (available: v1.7.2)
+ Adding nix v0.26.4 (available: v0.31.3)
+ Adding open v3.2.0 (available: v5.3.6)
+ Adding phf
+
+... (truncated)]]></description>
+    <pubDate>Tue, 30 Jun 2026 21:04:59 GMT</pubDate>
+  </item>
+  <item>
+    <title>[anomalyco/opencode] v1.17.12</title>
+    <link>https://github.com/anomalyco/opencode/releases/tag/v1.17.12</link>
+    <guid isPermaLink="true">https://github.com/anomalyco/opencode/releases/tag/v1.17.12</guid>
+    <description><![CDATA[## Core
+### Bugfixes
+- Enable adaptive thinking for Claude Sonnet 5.
+- Prefer MCP content responses over structured output when both are present.
+- Reconnect MCP servers after OAuth even if the server was disabled. (@MaxAnderson95)
+- Request MCP refresh-token scope during OAuth.
+- Show MCP OAuth completion errors instead of a generic failure.
+- Refresh cached remote skills.
+- Preserve skill resource paths.
+- Pick better default small models across providers.
+- Scope MCP auth status to each server URL.
+
+## TUI
+### Improvements
+- Add a yolo mode to auto-approve permissions.
+- Pass ServerAuth headers through external served TUI connections. (@OpeOginni)
+
+## Desktop
+### Improvements
+- Autocomplete MCP resources in the composer.
+- Add workspace controls when starting a new session.
+- Show stored token and cost totals in the session context. (@OpeOginni)
+
+### Bugfixes
+- Autocomplete configured references in prompts.
+- Restore the prompt cursor when the composer regains focus.
+- Remember the 
+
+... (truncated)]]></description>
+    <pubDate>Tue, 30 Jun 2026 19:48:04 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1077.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1077.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1077.0</guid>
+    <description><![CDATA[#### 3.1077.0(2026-06-30)
+
+##### Chores
+
+* **codegen:** sync for internal checksum impls and IMDSv2 region fallback (#8134) (c4b42a44)
+* **client-iot-events-data:** remove IoTEventsData (#8131) (3544e8d5)
+* **client-panorama:** remove Panorama (#8133) (8941c2b3)
+* **client-simspaceweaver:** remove SimSpaceWeaver (#8132) (8b14e09b)
+* **client-iot-events:** remove IoTEvents (#8130) (85fbe9a0)
+* **checksums:** add crc32c and sha1 checksums (#8126) (ea8faa08)
+* **packages:** clean up remaining react-native dist-cjs instructions (#8128) (00460bb4)
+
+##### Documentation Changes
+
+* **client-ecs:** Updated threshold configuration documentation. (aab4f35f)
+
+##### New Features
+
+* **clients:** update client endpoints as of 2026-06-30 (f1848891)
+* **client-observabilityadmin:** Organization and account level telemetry rule via Observability Admin and CloudWatch pipelines for metrics (35b4d8a2)
+* **client-datazone:** Amazon DataZone now supports SNOWFLAKE as a connection type in the CreateConnection
+
+... (truncated)]]></description>
+    <pubDate>Tue, 30 Jun 2026 19:10:52 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-06-30) (release-2026-06-30)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-06-30</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-06-30</guid>
+    <description><![CDATA[## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/service/acm`: [v1.41.0](service/acm/CHANGELOG.md#v1410-2026-06-30)
+ * **Feature**: AWS Certificate Manager now supports the Automatic Certificate Management Environment (ACME) protocol to issue public certificates. ACME is an industry-standard protocol for automating certificate lifecycle on customer-managed infrastructure such as on-premises servers and Kubernetes clusters.
+* `github.com/aws/aws-sdk-go-v2/service/autoscaling`: [v1.68.0](service/autoscaling/CHANGELOG.md#v1680-2026-06-30)
+ * **Feature**: This release adds support for a new reservations-then-balanced capacity distribution strategy, which first attempts to launch instances into your Capacity Reservations and then balances remaining capacity across healthy Availability Zones.
+* `github.com/aws/aws-sdk-go-v2/service/cleanrooms`: [v1.46.0](service/cleanrooms/CHANGELOG.md#v1460-2026-06-30)
+ * **Feature**: Adds support for intermediate tables in AWS Clean Rooms collaboration
+
+... (truncated)]]></description>
+    <pubDate>Tue, 30 Jun 2026 19:00:38 GMT</pubDate>
+  </item>
+  <item>
+    <title>[vitejs/vite] v8.1.2</title>
+    <link>https://github.com/vitejs/vite/releases/tag/v8.1.2</link>
+    <guid isPermaLink="true">https://github.com/vitejs/vite/releases/tag/v8.1.2</guid>
+    <description><![CDATA[Please refer to CHANGELOG.md for details.]]></description>
+    <pubDate>Tue, 30 Jun 2026 16:46:03 GMT</pubDate>
+  </item>
+  <item>
+    <title>[runfinch/finch] v1.17.2</title>
+    <link>https://github.com/runfinch/finch/releases/tag/v1.17.2</link>
+    <guid isPermaLink="true">https://github.com/runfinch/finch/releases/tag/v1.17.2</guid>
+    <description><![CDATA[## 1.17.2 (2026-06-30)
+
+
+### Build System or External Dependencies
+
+* **deps:** bump github.com/containerd/containerd/v2 (1b328cd)
+* **deps:** bump github.com/containerd/containerd/v2 (c2025af)
+* **deps:** bump github.com/containerd/containerd/v2 from 2.2.1 to 2.2.4 (#1746) (c2025af)
+* **deps:** bump github.com/containerd/containerd/v2 from 2.2.4 to 2.2.5 (#1763) (1b328cd)
+* **deps:** bump github.com/docker/cli (73676d5)
+* **deps:** bump github.com/docker/cli from 29.2.0+incompatible to 29.5.3+incompatible in the docker group across 1 directory (#1667) (73676d5)
+* **deps:** bump github.com/docker/cli from 29.5.3+incompatible to 29.6.0+incompatible in the docker group (#1764) (979aad8)
+* **deps:** bump github.com/docker/cli in the docker group (979aad8)
+* **deps:** bump go.opentelemetry.io/otel from 1.39.0 to 1.41.0 (#1741) (b55aa37)
+* **deps:** Bump submodules and dependencies (#1766) (f862071)
+* **deps:** bump the project-dependency group across 1 directory with 11 updates (#1770) (92
+
+... (truncated)]]></description>
+    <pubDate>Tue, 30 Jun 2026 16:19:20 GMT</pubDate>
+  </item>
+  <item>
+    <title>[openclaw/openclaw] openclaw 2026.6.11 (v2026.6.11)</title>
+    <link>https://github.com/openclaw/openclaw/releases/tag/v2026.6.11</link>
+    <guid isPermaLink="true">https://github.com/openclaw/openclaw/releases/tag/v2026.6.11</guid>
+    <description><![CDATA[### Highlights
+
+- **More capable channel control:** Slack relay mode, native Mattermost `/oc_queue`, and per-DM model overrides make channel operations easier to automate and tune. (#94707, #95546, #95120) Thanks @sjf-oa, @amknight, @xydigit-zt, @thomaszta, and @gandalf-at-lerian.
+- **Richer operator workflows:** `openclaw agent --message-file` and the RAFT CLI wake bridge add practical file-driven and remote wake-up paths. (#93351, #95497) Thanks @ooiuuii and @vincentkoc.
+- **Safer plugin distribution:** additional official plugins are externalized cleanly, with bundled plugin icon metadata available to installed clients. (#95683, #95845) Thanks @vincentkoc and @Patrick-Erichsen.
+- **Stronger mobile operations:** Android settings detail panels improve configuration visibility and control on mobile. (#95148) Thanks @Tosko4.
+- **More reliable agent turns:** Codex partial deltas, harness activation, and long-context prompt-cache stability reduce lost progress and inconsistent runs. (#954
+
+... (truncated)]]></description>
+    <pubDate>Tue, 30 Jun 2026 16:06:39 GMT</pubDate>
+  </item>
+  <item>
+    <title>[astral-sh/uv] 0.11.26</title>
+    <link>https://github.com/astral-sh/uv/releases/tag/0.11.26</link>
+    <guid isPermaLink="true">https://github.com/astral-sh/uv/releases/tag/0.11.26</guid>
+    <description><![CDATA[## Release Notes
+
+Released on 2026-06-30.
+
+### Performance
+
+- Adapt uv to IDs-only PubGrub dependencies (#20048)
+- Avoid allocations in `ForkMap::contains` (#20023)
+- Reuse resolver work across PubGrub iterations (#20020)
+- Speed up candidate selection for disjoint ranges (#20026)
+
+### Bug fixes
+
+- Warn when the build cache is inside the source directory (#20056)
+
+## Install uv 0.11.26
+
+### Install prebuilt binaries via shell script
+
+```sh
+curl --proto '=https' --tlsv1.2 -LsSf | sh
+```
+
+### Install prebuilt binaries via powershell script
+
+```sh
+powershell -ExecutionPolicy Bypass -c "irm | iex"
+```
+
+## Download uv 0.11.26
+
+| File | Platform | Checksum |
+|--------|----------|----------|
+| uv-aarch64-apple-darwin.tar.gz | Apple Silicon macOS | checksum |
+| uv-x86_64-apple-darwin.tar.gz | Intel macOS | checksum |
+| uv-aarch64-pc-windows-msvc.zip | ARM64 Windows | checksum |
+| uv-i686-pc-windows-msvc.zip | x86 Windows | checksum |
+| uv-x86_64-pc-windows-msvc.zip | x64 Windows | checksum |
+|
+
+... (truncated)]]></description>
+    <pubDate>Tue, 30 Jun 2026 14:53:17 GMT</pubDate>
+  </item>
+  <item>
+    <title>[github/spec-kit] Spec Kit - 0.12.2 (v0.12.2)</title>
+    <link>https://github.com/github/spec-kit/releases/tag/v0.12.2</link>
+    <guid isPermaLink="true">https://github.com/github/spec-kit/releases/tag/v0.12.2</guid>
+    <description><![CDATA[## Install
+
+```bash
+uv tool install specify-cli --from git+
+specify init my-project
+```
+
+## What's Changed
+
+- chore: bump version to 0.12.2
+- fix(scripts): portable uppercase for branch-name acronym retention (bash 3.2) (#3192)
+- chore: retire Windsurf integration — absorbed into Cognition Devin (#3168) (#3213)
+- [extension] Update Intake extension to v0.1.3 (#3254)
+- feat(workflows): honor max_concurrency in fan-out via a bounded thread pool (#3224)
+- Update Architecture Workflow extension to v1.2.2 (#3255)
+- Add Repository Governance extension to community catalog (#3252)
+- Update Workflow Preset to v1.3.11 (#3251)
+- chore: retire iflow integration — product discontinued (#3166) (#3211)
+- docs(codebuddy): fix dead install links and CodeBuddy capitalization (#3172) (#3216)
+- fix: reject host-less catalog URLs in base and preset validators (#3209) (#3227)
+- chore: release 0.12.1, begin 0.12.2.dev0 development (#3253)]]></description>
+    <pubDate>Tue, 30 Jun 2026 14:37:05 GMT</pubDate>
+  </item>
+  <item>
+    <title>[withastro/astro] @astrojs/cloudflare@14.0.2</title>
+    <link>https://github.com/withastro/astro/releases/tag/%40astrojs/cloudflare%4014.0.2</link>
+    <guid isPermaLink="true">https://github.com/withastro/astro/releases/tag/%40astrojs/cloudflare%4014.0.2</guid>
+    <description><![CDATA[### Patch Changes
+
+- #17049 `ffceaa2` Thanks @astrobot-houston! - Fixes prerender errors being silently swallowed when pages throw during rendering in workerd, causing `astro build` to exit 0 and emit truncated HTML. The response body is now fully buffered inside workerd before being sent back to the build process, so streaming errors are caught and surfaced as build failures with clear error messages.
+
+- Updated dependencies \:
+ - @astrojs/underscore-redirects@1.0.3]]></description>
+    <pubDate>Tue, 30 Jun 2026 12:18:55 GMT</pubDate>
+  </item>
+  <item>
+    <title>[pbatard/rufus] Rufus 4.15 (v4.15)</title>
+    <link>https://github.com/pbatard/rufus/releases/tag/v4.15</link>
+    <guid isPermaLink="true">https://github.com/pbatard/rufus/releases/tag/v4.15</guid>
+    <description><![CDATA[* Add RISC-V 64 support to UEFI:NTFS
+* Improve the guards for using the _"silent"_ Windows installation option
+* Improve the ability to cancel during write retries
+* Improve progress reporting for compressed image extraction
+* Fix unrestricted XML entity expansion and integer overflow in ezxml parser (courtesy of @esadowski4) [GHSA-55r2-34wg-8mv9]
+* Fix _"silent"_ Windows installation failing at 75% in most cases [#2960]
+* Fix a crash during boot when using UEFI:NTFS on Snapdragon X based ARM64 platforms [#2934]
+* Fix first WUE option always being checked by default [#2965]
+* Fix an infinite loop when using Windows ISOs that contain multiple WIMs
+* Fix _"Enable runtime UEFI media validation"_ checkbox not always being properly enabled
+* Other WUE improvements/fixes for OneDrive removal and username validation (with thanks to @christian8641) [#2984, #2991]]]></description>
+    <pubDate>Tue, 30 Jun 2026 11:28:34 GMT</pubDate>
+  </item>
+  <item>
+    <title>[web-infra-dev/rspack] v2.1.2</title>
+    <link>https://github.com/web-infra-dev/rspack/releases/tag/v2.1.2</link>
+    <guid isPermaLink="true">https://github.com/web-infra-dev/rspack/releases/tag/v2.1.2</guid>
+    <description><![CDATA[## What's Changed
+## Highlights 💡
+
+### Support `import.meta` style module variables
+
+<!-- obsidian --><p>Rspack now exposes more module variables through <code>import.meta</code>, which aligns better with the ESM specification than CommonJS-style injected globals. When authoring ESM modules, <code>import.meta</code> is now the recommended way to access these runtime values.</p>
+<p>The newly supported <code>import.meta</code> properties are:</p>
+
+New import.meta API | Existing runtime variable
+-- | --
+`import.meta.rspackPublicPath` | `__webpack_public_path__`
+`import.meta.rspackBaseUri` | `__webpack_base_uri__`
+`import.meta.rspackShareScopes` | `__webpack_share_scopes__`
+`import.meta.rspackInitSharing` | `__webpack_init_sharing__`
+`import.meta.rspackNonce` | `__webpack_nonce__`
+`import.meta.rspackUniqueId` | `__rspack_unique_id__`
+`import.meta.rspackVersion` | `__rspack_version__`
+`import.meta.rspackHash` | `__webpack_hash__`
+
+
+
+### New Features 🎉
+* feat: support
+
+... (truncated)]]></description>
+    <pubDate>Tue, 30 Jun 2026 08:25:25 GMT</pubDate>
+  </item>
+  <item>
+    <title>[floci-io/floci] 1.5.29</title>
+    <link>https://github.com/floci-io/floci/releases/tag/1.5.29</link>
+    <guid isPermaLink="true">https://github.com/floci-io/floci/releases/tag/1.5.29</guid>
+    <description><![CDATA[## 🎉 Highlights
+
+This release adds **AppSync Phase 4** with a full VTL engine, lands **cross-account assumed-role routing**, ships **state reset and nuke endpoints**, and brings substantial **ECS conformance** improvements alongside persistence work for Transcribe vocabularies. Welcome to first-time contributor @dnlopes.
+
+### 🧩 AppSync Phase 4: VTL Engine
+
+The AppSync VTL story completes its build-out across four releases (Phase 1 through Phase 4). This release lands a **full VTL Engine** (#1288), evaluating template logic end to end. Combined with the Phase 3 `$util` runtime library, AppSync resolver templates now execute with real semantics rather than fixture responses.
+
+### 🔐 IAM: cross-account assumed-role credentials
+
+A meaningful identity improvement: **assumed-role credentials now route to the target account** (#1549). Multi-account testing patterns that rely on `sts:AssumeRole` to switch contexts now behave correctly, which unlocks more realistic enterprise-style 
+
+... (truncated)]]></description>
+    <pubDate>Tue, 30 Jun 2026 05:36:11 GMT</pubDate>
+  </item>
+  <item>
+    <title>[prettier/prettier] 3.9.4</title>
+    <link>https://github.com/prettier/prettier/releases/tag/3.9.4</link>
+    <guid isPermaLink="true">https://github.com/prettier/prettier/releases/tag/3.9.4</guid>
+    <description><![CDATA[- Angular: Format `@content(name)` -> `@content (name)` to align with other block syntax (#19499 by @fisker)
+
+🔗 Changelog]]></description>
+    <pubDate>Tue, 30 Jun 2026 01:21:45 GMT</pubDate>
+  </item>
+  <item>
+    <title>[vercel-labs/skills] v1.5.14</title>
+    <link>https://github.com/vercel-labs/skills/releases/tag/v1.5.14</link>
+    <guid isPermaLink="true">https://github.com/vercel-labs/skills/releases/tag/v1.5.14</guid>
+    <description><![CDATA[## Changelog
+
+- fix: remove obsolete OpenClaw install warning (#1280)
+
+## Contributors
+
+@Patrick-Erichsen]]></description>
+    <pubDate>Mon, 29 Jun 2026 23:32:57 GMT</pubDate>
+  </item>
+  <item>
+    <title>[oxc-project/oxc] oxlint v1.72.0 &amp; oxfmt v0.57.0 (apps_v1.72.0)</title>
+    <link>https://github.com/oxc-project/oxc/releases/tag/apps_v1.72.0</link>
+    <guid isPermaLink="true">https://github.com/oxc-project/oxc/releases/tag/apps_v1.72.0</guid>
+    <description><![CDATA[## Table of Contents
+
+- [Oxlint v1.72.0](#oxlint-v1.72.0)
+- [Oxfmt v0.57.0](#oxfmt-v0.57.0)
+
+## Oxlint v1.72.0
+### 💥 BREAKING CHANGES
+
+- 88f4455 str: [**BREAKING**] `Str` and `Ident` methods take `&GetAllocator` (#23781) (overlookmotel)
+
+### 🚀 Features
+
+- 2428c50 linter/react: Implement suggestion for `no-unknown-property` rule (#23936) (Mikhail Baev)
+- f2091b3 ast: Unify old and new `AstBuilder`s (#23875) (overlookmotel)
+- 1c8f50c linter: Add schema for `eslint/no-restricted-import` (#23642) (Sysix)
+
+### 🐛 Bug Fixes
+
+- d8c6b55 linter/unicorn/custom-error-definition: Handle non-ascii class names (#23939) (camc314)
+- 7cb85c4 linter/eslint/no-negated-condition: Add autofix for negated conditions (#23825) (Yagiz Nizipli)
+- f7d1f50 oxlint, oxfmt: Enable `disable_old_builder` Cargo feature for `oxc_ast` crate (#23886) (overlookmotel)
+- d891990 linter/jsx-a11y/role-supports-aria-props: Ignore nullish prop values (#23865) (Mikhail Baev)
+- 94b6599 linter: Deduplicate missing plugin errors (
+
+... (truncated)]]></description>
+    <pubDate>Mon, 29 Jun 2026 23:11:48 GMT</pubDate>
+  </item>
+  <item>
+    <title>[rancher-sandbox/rancher-desktop] Rancher Desktop 1.23.1 (v1.23.1)</title>
+    <link>https://github.com/rancher-sandbox/rancher-desktop/releases/tag/v1.23.1</link>
+    <guid isPermaLink="true">https://github.com/rancher-sandbox/rancher-desktop/releases/tag/v1.23.1</guid>
+    <description><![CDATA[This is the 1.23.1 release of Rancher Desktop, an open source desktop application to bring Kubernetes and container management to macOS, Windows, and Linux.
+
+## Installers
+
+* Windows
+* macOS x86_64
+* macOS aarch64
+* Linux install notes
+
+## Rancher Desktop 2.0 Alpha 1 is available
+
+The first alpha of Rancher Desktop 2.0 is out: a ground-up rewrite that runs with or without the GUI and installs alongside Rancher Desktop without touching it. It is an early tech preview, not for production. For what it is and how to try it, see Welcome to Rancher Desktop 2.0 on our blog.
+
+## New Contributors
+
+Thank you to our new contributors: @linghengqian, @endemics, @cm-iwata, @maximumschmidt, @immanuwell, @officialasishkumar, and @edwinbalani!
+
+## Release Notes for 1.23.1
+
+### Kubernetes portforwarding on macOS and Linux has been fixed
+
+In the 1.23.0 release Kubernetes port were not being forwarded to the host. This has been fixed.
+
+## Release Notes for 1.23.0
+
+### What's New
+
+
+... (truncated)]]></description>
+    <pubDate>Mon, 29 Jun 2026 22:34:42 GMT</pubDate>
+  </item>
   <item>
     <title>[webpack/webpack] v5.108.3</title>
     <link>https://github.com/webpack/webpack/releases/tag/v5.108.3</link>
@@ -28,32 +449,6 @@
     <pubDate>Mon, 29 Jun 2026 20:49:44 GMT</pubDate>
   </item>
   <item>
-    <title>[github/spec-kit] Spec Kit - 0.12.0 (v0.12.0)</title>
-    <link>https://github.com/github/spec-kit/releases/tag/v0.12.0</link>
-    <guid isPermaLink="true">https://github.com/github/spec-kit/releases/tag/v0.12.0</guid>
-    <description><![CDATA[## Install
-
-```bash
-uv tool install specify-cli --from git+
-specify init my-project
-```
-
-## What's Changed
-
-- chore: bump version to 0.12.0
-- feat: make agent-context extension a full opt-in (#3097)
-- docs(workflows): add the built-in 'init' step type to the Step Types table (#3234)
-- fix(workflows): gate validate must not crash on non-string options (#3233)
-- fix(workflows): make pipe-filter detection quote-aware in expressions (#3232)
-- fix(workflows): reject a fan-in wait_for that names an unknown step at validation (#3225)
-- fix(scripts): warn when spec template is missing in create-new-feature.ps1 (parity with bash) (#3230)
-- fix(scripts): count subdirectory-only dirs as non-empty in PowerShell (parity with bash) (#3137)
-- fix(scripts): drop HAS_GIT from PowerShell git-extension output (parity with bash) (#3195)
-- Update Product Spec Extension to v1.0.1 (#3226)
-- chore: release 0.11.10, begin 0.11.11.dev0 development (#3240)]]></description>
-    <pubDate>Mon, 29 Jun 2026 20:34:37 GMT</pubDate>
-  </item>
-  <item>
     <title>[open-webui/open-webui] v0.10.1</title>
     <link>https://github.com/open-webui/open-webui/releases/tag/v0.10.1</link>
     <guid isPermaLink="true">https://github.com/open-webui/open-webui/releases/tag/v0.10.1</guid>
@@ -61,30 +456,6 @@ specify init my-project
 
 - 🤝 **Shared folder read-only chats no longer sign users out.** Opening or reading chats from shared folders now keeps the current session active when a resource-level access error is returned, instead of incorrectly showing "Session expired. Please sign in again."]]></description>
     <pubDate>Mon, 29 Jun 2026 19:38:44 GMT</pubDate>
-  </item>
-  <item>
-    <title>[oxc-project/oxc] oxc crates_v0.138.0 (crates_v0.138.0)</title>
-    <link>https://github.com/oxc-project/oxc/releases/tag/crates_v0.138.0</link>
-    <guid isPermaLink="true">https://github.com/oxc-project/oxc/releases/tag/crates_v0.138.0</guid>
-    <description><![CDATA[### 💥 BREAKING CHANGES
-
-- 94fbacb ast: [**BREAKING**] Only export `AstBuilder` and `NONE` in `builder` module (#23876) (overlookmotel)
-- 8de5122 ecmascript: [**BREAKING**] Switch to new `AstBuilder` (#23834) (overlookmotel)
-- dc0ef38 transformer: [**BREAKING**] Switch to new `AstBuilder` (#23831) (overlookmotel)
-- 88f4455 str: [**BREAKING**] `Str` and `Ident` methods take `&GetAllocator` (#23781) (overlookmotel)
-- 36009dd allocator: [**BREAKING**] `GetAllocator::allocator` take `&self` (#23676) (overlookmotel)
-- bd74f9d allocator: [**BREAKING**] Rename `AllocatorAccessor` trait to `GetAllocator` (#23675) (overlookmotel)
-
-### 🚀 Features
-
-- 326fe25 transformer_plugins: Support `typeof` `define` keys (#23605) (Alexander Lichter)
-- f2091b3 ast: Unify old and new `AstBuilder`s (#23875) (overlookmotel)
-- cd1fd12 codegen: Expose `Codegen::print_string` API (#23785) (camc314)
-- 785461b ast: Add custom builder methods to AST types (#23651) (overlookmotel)
-- 05d1357 ast: Add AST creation metho
-
-... (truncated)]]></description>
-    <pubDate>Mon, 29 Jun 2026 19:18:29 GMT</pubDate>
   </item>
   <item>
     <title>[cloudflare/vinext] @vinext/cloudflare@0.2.0</title>
@@ -101,51 +472,6 @@ specify init my-project
 
 - @james-elicx]]></description>
     <pubDate>Mon, 29 Jun 2026 18:48:01 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-js-v3] v3.1076.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1076.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1076.0</guid>
-    <description><![CDATA[#### 3.1076.0(2026-06-29)
-
-##### Chores
-
-* **codegen:**
- * sync for checksum impls, hostLabel validation (#8127) (aa94fa04)
- * sync for CBOR serde performance and retry fixes (#8125) (b6d6a759)
-* **scripts:** drop bundler support in dist-cjs (use dist-es instead) (#8124) (775bc034)
-
-##### Documentation Changes
-
-* **client-elasticache:** Updated documentation for the ApplyImmediately parameter in ModifyCacheCluster and ModifyReplicationGroup to clarify modification behavior. (e9e0072f)
-* **client-rds-data:** Updated documentation to remove Aurora Serverless V1 references. (c5f50784)
-
-##### New Features
-
-* **client-glue:** Added the UpdateAsset operation to set the business name and description for an existing AWS Glue Data Catalog asset. (fe604af0)
-* **client-appconfig:** AWS AppConfig introduces Experimentation tools - enhanced capabilities within AWS AppConfig that enable you to run AB tests, multivariate tests, and gradual feature rollouts across your application stack. (2b8591de)
-* 
-
-... (truncated)]]></description>
-    <pubDate>Mon, 29 Jun 2026 18:45:57 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-06-29) (release-2026-06-29)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-06-29</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-06-29</guid>
-    <description><![CDATA[## General Highlights
-* **Dependency Update**: Updated to the latest SDK module versions
-
-## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/appconfig`: [v1.45.0](service/appconfig/CHANGELOG.md#v1450-2026-06-29)
- * **Feature**: AWS AppConfig introduces Experimentation tools - enhanced capabilities within AWS AppConfig that enable you to run AB tests, multivariate tests, and gradual feature rollouts across your application stack.
-* `github.com/aws/aws-sdk-go-v2/service/cloudwatch`: [v1.60.0](service/cloudwatch/CHANGELOG.md#v1600-2026-06-29)
- * **Feature**: This release adds the API (PutLogAlarm) to manage a new CloudWatch resource, Log Based Alarms. Log Based Alarms allows customers to alarm directly on CloudWatch Logs query results.
-* `github.com/aws/aws-sdk-go-v2/service/connectcampaignsv2`: [v1.15.0](service/connectcampaignsv2/CHANGELOG.md#v1150-2026-06-29)
- * **Feature**: Adding new attributes to PutProfileOutboundRequest API that will create an outbound request call for t
-
-... (truncated)]]></description>
-    <pubDate>Mon, 29 Jun 2026 18:36:07 GMT</pubDate>
   </item>
   <item>
     <title>[beercss/beercss] v4.0.22</title>
@@ -239,16 +565,6 @@ You can read about our versioning strategy and releases on our website.]]></desc
     <pubDate>Mon, 29 Jun 2026 12:43:58 GMT</pubDate>
   </item>
   <item>
-    <title>[prettier/prettier] 3.9.3</title>
-    <link>https://github.com/prettier/prettier/releases/tag/3.9.3</link>
-    <guid isPermaLink="true">https://github.com/prettier/prettier/releases/tag/3.9.3</guid>
-    <description><![CDATA[- Markdown: Fix unexpected removal of characters in liquid syntax ( by @seiyab)
-- TypeScript: Allow decorators to be used with declare on class fields ( by @evoactivity)
-
-🔗 Changelog]]></description>
-    <pubDate>Mon, 29 Jun 2026 11:38:44 GMT</pubDate>
-  </item>
-  <item>
     <title>[djkotori/rpgcobo-tool] v0.1.7</title>
     <link>https://github.com/djkotori/rpgcobo-tool/releases/tag/v0.1.7</link>
     <guid isPermaLink="true">https://github.com/djkotori/rpgcobo-tool/releases/tag/v0.1.7</guid>
@@ -292,63 +608,6 @@ This version includes the following bug fixes and feature additions.
 
 Full Changelog:]]></description>
     <pubDate>Mon, 29 Jun 2026 05:04:25 GMT</pubDate>
-  </item>
-  <item>
-    <title>[tauri-apps/tauri] tauri-cli v2.11.4 (tauri-cli-v2.11.4)</title>
-    <link>https://github.com/tauri-apps/tauri/releases/tag/tauri-cli-v2.11.4</link>
-    <guid isPermaLink="true">https://github.com/tauri-apps/tauri/releases/tag/tauri-cli-v2.11.4</guid>
-    <description><![CDATA[<details>
-<summary><em><h4>Cargo Audit</h4></em></summary>
-
-```
-Fetching advisory database from `
- Loaded 1139 security advisories (from /home/runner/.cargo/advisory-db)
- Updating crates.io index
- Scanning Cargo.lock for vulnerabilities (1086 crate dependencies)
-Crate: atk
-Version: 0.18.2
-Warning: unmaintained
-Title: gtk-rs GTK3 bindings - no longer maintained
-Date: 2024-03-04
-ID: RUSTSEC-2024-0413
-URL: 
-
-Crate: atk-sys
-Version: 0.18.2
-Warning: unmaintained
-Title: gtk-rs GTK3 bindings - no longer maintained
-Date: 2024-03-04
-ID: RUSTSEC-2024-0416
-URL: 
-
-Crate: fxhash
-Version: 0.2.1
-Warning: unmaintained
-Title: fxhash - no longer maintained
-Date: 2025-09-05
-ID: RUSTSEC-2025-0057
-URL: 
-
-Crate: gdk
-Version: 0.18.2
-Warning: unmaintained
-Title: gtk-rs GTK3 bindings - no longer maintained
-Date: 2024-03-04
-ID: RUSTSEC-2024-0412
-URL: 
-
-Crate: gdk-sys
-Version: 0.18.2
-Warning: unmaintained
-Title: gtk-rs GTK3 bindings - no longer maintained
-Date: 2024-03-04
-ID: RUSTSEC-2024-0418
-URL: 
-
-Crate: gdkw
-
-... (truncated)]]></description>
-    <pubDate>Sun, 28 Jun 2026 17:02:17 GMT</pubDate>
   </item>
   <item>
     <title>[open-circle/valibot] v1.4.2</title>
@@ -412,69 +671,6 @@ Run `dprint upgrade` or see
 
 ... (truncated)]]></description>
     <pubDate>Sat, 27 Jun 2026 15:54:13 GMT</pubDate>
-  </item>
-  <item>
-    <title>[web-infra-dev/rspack] v2.1.1</title>
-    <link>https://github.com/web-infra-dev/rspack/releases/tag/v2.1.1</link>
-    <guid isPermaLink="true">https://github.com/web-infra-dev/rspack/releases/tag/v2.1.1</guid>
-    <description><![CDATA[## What's Changed
-
-### New Features 🎉
-* feat(rsdoctor): add dependencyId and loc to export usage edges by @JSerFeng in 
-
-### Performance 🚀
-
-* perf(devtool): add persistent cache for SourceMapDevToolPlugin by @SyMind in 
-
-### Bug Fixes 🐞
-
-* fix(css): add guard for link.parentNode in css runtime by @BeiyanYunyi in 
-* fix: revert cjs export assignment side effects optimization by @chenjiahan in 
-
-### Other Changes
-
-* docs: v2.1 release blog by @ahabhgk in 
-* refactor(runtime): structure runtime requirements by @LingyuCoder in 
-* chore(deps): update dependency @rslint/core to v0.6.3 by @renovate[bot] in 
-* chore(deps): update dependency @module-federation/runtime-tools to v2.6.0 by @renovate[bot] in 
-
-## New Contributors
-* @BeiyanYunyi made their first contribution in 
-
-**Full Changelog**:]]></description>
-    <pubDate>Sat, 27 Jun 2026 03:27:12 GMT</pubDate>
-  </item>
-  <item>
-    <title>[astral-sh/uv] 0.11.25</title>
-    <link>https://github.com/astral-sh/uv/releases/tag/0.11.25</link>
-    <guid isPermaLink="true">https://github.com/astral-sh/uv/releases/tag/0.11.25</guid>
-    <description><![CDATA[## Release Notes
-
-Released on 2026-06-26.
-
-### Security
-
-This release updates our tar library, astral-tokio-tar, to v0.6.3, which includes over 20 changes that harden our tar handling against parser differentials. uv may reject source distributions with malformed or ambiguous content that were previously accepted.
-
-See the upstream commits for a full list of changes.
-
-### Enhancements
-
-- Add a full "lockfile" to tool receipts (#18937)
-- Allow scoped overrides to add dependencies (#19974)
-- Avoid writing redundant lockfile markers with `tool.uv.environments` (#19933)
-- Factor supported environments out of lockfile markers (#19969)
-- Recommend our own build backend in the build frontend (#19994)
-- Reject wheels with multiple .dist-info directories (#19986)
-- Simplify dependency markers under parent reachability (#19971)
-- Support scoped dependency exclusions (#19977)
-- Support scoped dependency overrides (#19970)
-- Explain why files are skipped in registry index parsing (#19983)
-
-### Pre
-
-... (truncated)]]></description>
-    <pubDate>Sat, 27 Jun 2026 00:49:49 GMT</pubDate>
   </item>
   <item>
     <title>[eslint/eslint] v10.6.0</title>
@@ -547,28 +743,6 @@ The `Source code (zip)` or `Source code (tar.gz)` in `Assets` are automatically 
     <pubDate>Fri, 26 Jun 2026 07:31:17 GMT</pubDate>
   </item>
   <item>
-    <title>[floci-io/floci] 1.5.28</title>
-    <link>https://github.com/floci-io/floci/releases/tag/1.5.28</link>
-    <guid isPermaLink="true">https://github.com/floci-io/floci/releases/tag/1.5.28</guid>
-    <description><![CDATA[## 🎉 Highlights
-
-This release adds **two new services** (AWS IoT Core and Elastic Beanstalk Query API), brings **AppSync Phase 3** with the `$util` runtime library, lands **Kafka pipe sources for EventBridge Pipes**, and ships **Steampipe read API support**. ECS gets EFS volumes, MemoryDB gets ACL-based auth, and there's substantial conformance work across Cognito, RDS, and Lambda. Welcome to the 7 first-time contributors.
-
-### 🆕 Two new services
-
-- **AWS IoT Core** (#1359) — local testing of MQTT-based IoT workflows
-- **AWS Elastic Beanstalk** Query API (initial support) (#1362)
-
-### 🧩 AppSync Phase 3: `$util` runtime for VTL
-
-AppSync continues its phased build-out. **Phase 3** lands the **`$util` runtime library for VTL resolvers** (#1223). Resolver templates that depend on `$util.dynamodb`, `$util.qr`, `$util.error`, and similar utilities now work, which closes one of the largest remaining gaps for real-world AppSync templates.
-
-### 📨 EventBridge Pipes: Kafka source
-
-... (truncated)]]></description>
-    <pubDate>Fri, 26 Jun 2026 05:48:35 GMT</pubDate>
-  </item>
-  <item>
     <title>[facebook/lexical] v0.46.0</title>
     <link>https://github.com/facebook/lexical/releases/tag/v0.46.0</link>
     <guid isPermaLink="true">https://github.com/facebook/lexical/releases/tag/v0.46.0</guid>
@@ -622,49 +796,6 @@ When a session has causal consistency enabled, write operations now include `rea
 
 ... (truncated)]]></description>
     <pubDate>Thu, 25 Jun 2026 21:48:29 GMT</pubDate>
-  </item>
-  <item>
-    <title>[rancher-sandbox/rancher-desktop] Rancher Desktop 1.23 (v1.23.0)</title>
-    <link>https://github.com/rancher-sandbox/rancher-desktop/releases/tag/v1.23.0</link>
-    <guid isPermaLink="true">https://github.com/rancher-sandbox/rancher-desktop/releases/tag/v1.23.0</guid>
-    <description><![CDATA[This is the 1.23.0 release of Rancher Desktop, an open source desktop application to bring Kubernetes and container management to macOS, Windows, and Linux.
-
-## Installers
-
-* Windows
-* macOS x86_64
-* macOS aarch64
-* Linux install notes
-
-## Rancher Desktop 2.0 Alpha 1 is available
-
-The first alpha of Rancher Desktop 2.0 is out: a ground-up rewrite that runs with or without the GUI and installs alongside Rancher Desktop without touching it. It is an early tech preview, not for production. For what it is and how to try it, see Welcome to Rancher Desktop 2.0 on our blog.
-
-## New Contributors
-
-Thank you to our new contributors: @linghengqian, @endemics, @cm-iwata, @maximumschmidt, @immanuwell, @officialasishkumar, and @edwinbalani!
-
-## Release Notes for 1.23.0
-
-### What's New
-
-#### Dark mode preference
-
-Rancher Desktop now lets you choose between dark, light, and system themes under Preferences > Behavior. Previous versions always followed the OS theme. (#5905)
-
-###
-
-... (truncated)]]></description>
-    <pubDate>Thu, 25 Jun 2026 20:20:43 GMT</pubDate>
-  </item>
-  <item>
-    <title>[withastro/astro] @astrojs/upgrade@0.7.3</title>
-    <link>https://github.com/withastro/astro/releases/tag/%40astrojs/upgrade%400.7.3</link>
-    <guid isPermaLink="true">https://github.com/withastro/astro/releases/tag/%40astrojs/upgrade%400.7.3</guid>
-    <description><![CDATA[### Patch Changes
-
-- #17188 `675d11d` Thanks @astrobot-houston! - Fixes `@astrojs/upgrade` showing a generic error when pnpm's `minimumReleaseAge` policy blocks installation. The error message now explains that pnpm's policy blocked the update and suggests running the install command manually.]]></description>
-    <pubDate>Thu, 25 Jun 2026 16:17:21 GMT</pubDate>
   </item>
   <item>
     <title>[servo/servo] v0.3.0</title>
@@ -725,45 +856,6 @@ Read more:
 
 ... (truncated)]]></description>
     <pubDate>Thu, 25 Jun 2026 15:00:40 GMT</pubDate>
-  </item>
-  <item>
-    <title>[bluesky-social/atproto] @atproto/oauth-provider@0.19.6</title>
-    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/oauth-provider%400.19.6</link>
-    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/oauth-provider%400.19.6</guid>
-    <description><![CDATA[### Patch Changes
-
-- #5147 `af02ea1` Thanks @joefitter! - Allow same-site OAuth authorization page requests.]]></description>
-    <pubDate>Thu, 25 Jun 2026 13:18:12 GMT</pubDate>
-  </item>
-  <item>
-    <title>[anomalyco/opencode] v1.17.11</title>
-    <link>https://github.com/anomalyco/opencode/releases/tag/v1.17.11</link>
-    <guid isPermaLink="true">https://github.com/anomalyco/opencode/releases/tag/v1.17.11</guid>
-    <description><![CDATA[## Core
-### Improvements
-- Add session snapshots and revert controls so you can roll a session back to an earlier message, including file changes.
-
-### Bugfixes
-- Always print the MCP OAuth URL so manual sign-in still works when opening the browser flow.
-
-## Desktop
-### Improvements
-- Add Chrome-style tab cycle shortcuts with `mod+1` through `mod+9`.
-- Add draggable tabs. (@arvsrn)
-- Improve the empty home state when you have no sessions. (@arvsrn)
-- Restyle the jump-to-latest button in the v2 session view. (@arvsrn)
-- Improve the redesigned desktop layout, including better titlebar tabs and archived sessions. (@arvsrn)
-
-### Bugfixes
-- Keep prompt drafts attached to the correct project server.
-- Restore consistent titlebar tab sizing and layout.
-- Restore home actions when session lists are empty or still loading.
-- Keep todo docks in place when switching between sessions.
-- Automatically close tabs for sessions that no longer exist.
-- Keep provider dialogs, prompt rollbacks, and async
-
-... (truncated)]]></description>
-    <pubDate>Thu, 25 Jun 2026 12:09:29 GMT</pubDate>
   </item>
   <item>
     <title>[lynx-family/lynx] 3.9.0</title>
@@ -852,36 +944,6 @@ Read more:
     <pubDate>Thu, 25 Jun 2026 07:21:23 GMT</pubDate>
   </item>
   <item>
-    <title>[ollama/ollama] v0.30.11</title>
-    <link>https://github.com/ollama/ollama/releases/tag/v0.30.11</link>
-    <guid isPermaLink="true">https://github.com/ollama/ollama/releases/tag/v0.30.11</guid>
-    <description><![CDATA[## What's Changed
-* launch: add thinking capability detection to opencode by @hoyyeva in 
-* launch: auto-install Claude Code by @hoyyeva in 
-* launch: auto-install opencode when missing by @hoyyeva in 
-* discover: fix inverted iGPU/dGPU Vulkan classification on Windows hybrid graphics by @Sahil170595 in 
-* mlxrunner: unify and tune speculative decoding by @jessegross in 
-* launch/codex: detect model drift when Codex App UI switches by @BruceMacD in 
-* llama: add sm_86 architecture to cuda_v13_windows preset by @anishesg in 
-* llm: size mmproj offload by projector memory by @dhiltgen in 
-* docs: document max think level by @ParthSareen in 
-* llm: preserve generation headroom for shifted prompts by @ParthSareen in 
-* llama: default qwen2.5vl window attention metadata by @dhiltgen in 
-* llm: use host Vulkan loader on Windows by @dhiltgen in 
-* mlx: update and fix CUDA JIT packaging by @dhiltgen in 
-* llm: fix ollama ps double-counting mmap'd weights on partial offload by @di
-
-... (truncated)]]></description>
-    <pubDate>Thu, 25 Jun 2026 01:52:05 GMT</pubDate>
-  </item>
-  <item>
-    <title>[vitejs/vite] v7.3.6</title>
-    <link>https://github.com/vitejs/vite/releases/tag/v7.3.6</link>
-    <guid isPermaLink="true">https://github.com/vitejs/vite/releases/tag/v7.3.6</guid>
-    <description><![CDATA[Please refer to CHANGELOG.md for details.]]></description>
-    <pubDate>Thu, 25 Jun 2026 01:50:44 GMT</pubDate>
-  </item>
-  <item>
     <title>[nodejs/node] 2026-06-24, Version 26.4.0 (Current), @aduh95 (v26.4.0)</title>
     <link>https://github.com/nodejs/node/releases/tag/v26.4.0</link>
     <guid isPermaLink="true">https://github.com/nodejs/node/releases/tag/v26.4.0</guid>
@@ -904,78 +966,34 @@ Read more:
     <pubDate>Wed, 24 Jun 2026 23:38:11 GMT</pubDate>
   </item>
   <item>
-    <title>[iii-hq/iii] iii 0.20.0 (iii/v0.20.0)</title>
-    <link>https://github.com/iii-hq/iii/releases/tag/iii/v0.20.0</link>
-    <guid isPermaLink="true">https://github.com/iii-hq/iii/releases/tag/iii/v0.20.0</guid>
-    <description><![CDATA[## What's Changed
-* refactor(sdk)!: cross-language parity, @iii-dev/helpers, and submodule reorg by @guibeira in 
+    <title>[sindresorhus/eslint-plugin-unicorn] v69.0.0</title>
+    <link>https://github.com/sindresorhus/eslint-plugin-unicorn/releases/tag/v69.0.0</link>
+    <guid isPermaLink="true">https://github.com/sindresorhus/eslint-plugin-unicorn/releases/tag/v69.0.0</guid>
+    <description><![CDATA[## New rules
 
+- `consistent-tuple-labels` (#3389) fb89880d
+- `no-invalid-well-known-symbol-methods` (#3433) a81ab49a
+- `no-late-event-control` (#3440) 898d9c5d
+- `prefer-abort-signal-timeout` (#3441) 5a59e198
+- `prefer-aggregate-error` (#3436) e11cb92c
+- `prefer-dom-node-replace-children` (#3399) 5c838347
+- `prefer-error-is-error` (#3438) d50d8763
+- `prefer-observer-apis` (#3398) 9c62a056
+- `prefer-promise-try` (#3435) 704d1415
+- `prefer-set-methods` (#3439) 75c2bb3a
+- `prefer-toggle-attribute` (#3396) da04c21c
+- `prefer-url-search-parameters` (#3395) b410701e
 
-**Full Changelog**:]]></description>
-    <pubDate>Wed, 24 Jun 2026 20:53:17 GMT</pubDate>
-  </item>
-  <item>
-    <title>[zed-industries/zed] v1.8.2</title>
-    <link>https://github.com/zed-industries/zed/releases/tag/v1.8.2</link>
-    <guid isPermaLink="true">https://github.com/zed-industries/zed/releases/tag/v1.8.2</guid>
-    <description><![CDATA[This week's release includes the ability to create a new worktree right from the sidebar's new-thread button, a new `agent.terminal_init_command` setting to automatically run a command when opening a new agent terminal thread, a `workspace: reset pane sizes` command to reset all panes to equal sizes, and new `editor: select inside delimiters` / `editor: select around delimiters` actions for expanding a selection through nested brackets and quotes.
+## Improvements
 
-## Features
-
-### AI
-
-- Sidebar: Enabled creating a new worktree from the sidebar's "new thread" icon button. (#59341)
-- Sidebar: Improved the archive "Search all threads" view so you can filter by project name, not just by thread title — handy when many projects are open. (#58214; thanks KevinLaveto)
-- Agent: Improved edit tool performance with a more succinct success response. (#59335)
-- Agent: Improved scroll smoothness while a response is streaming. (#59002)
-- Agent: Improved truncation of long configuration button labels for ex
-
-... (truncated)]]></description>
-    <pubDate>Wed, 24 Jun 2026 17:07:24 GMT</pubDate>
-  </item>
-  <item>
-    <title>[wailsapp/wails] webview2 v1.0.27 (webview2/v1.0.27)</title>
-    <link>https://github.com/wailsapp/wails/releases/tag/webview2/v1.0.27</link>
-    <guid isPermaLink="true">https://github.com/wailsapp/wails/releases/tag/webview2/v1.0.27</guid>
-    <description><![CDATA[## webview2 v1.0.27
-
-- ci(webview2): fix release build (cross-compile Windows + complete go.sum) (#5671)
-
-**Full diff:**]]></description>
-    <pubDate>Wed, 24 Jun 2026 13:21:48 GMT</pubDate>
-  </item>
-  <item>
-    <title>[anomalyco/opentui] Release v0.4.2 (v0.4.2)</title>
-    <link>https://github.com/anomalyco/opentui/releases/tag/v0.4.2</link>
-    <guid isPermaLink="true">https://github.com/anomalyco/opentui/releases/tag/v0.4.2</guid>
-    <description><![CDATA[## What's Changed
-* handle threaded output backpressure + stale fps by @kommander in 
-* fix(solid): share catalogue across entry points by @simonklee in 
-* terminal: probe OSC 52 clipboard support by @simonklee in 
-* clipboard: fix OSC 52 target handling by @simonklee in 
-* fix: scroll position and selection by @simonklee in 
-
-
-**Full Changelog**:]]></description>
-    <pubDate>Wed, 24 Jun 2026 06:58:25 GMT</pubDate>
-  </item>
-  <item>
-    <title>[openclaw/openclaw] openclaw 2026.6.10 (v2026.6.10)</title>
-    <link>https://github.com/openclaw/openclaw/releases/tag/v2026.6.10</link>
-    <guid isPermaLink="true">https://github.com/openclaw/openclaw/releases/tag/v2026.6.10</guid>
-    <description><![CDATA[Automatic fast mode starts short conversations quickly, then returns longer or fallback work to normal mode without losing visible state. Provider routing, channel progress, session identity, and trusted tool policies are more reliable, with smaller improvements spanning provider setup, diagnostics, and transcript tooling.
-
-### Highlights
-
-#### Automatic fast mode
-
-- Adds `/fast auto` so short conversational calls can start quickly, while longer or fallback work returns to normal mode with the effective state still visible. PR #85104, Issue #85087. Thanks @alexph-dev and @vincentkoc.
-- Shows the effective automatic fast-mode state in status instead of reducing it to on/off, and avoids carrying a cleared Codex service-tier choice into later runs. 8845f2f. Thanks @vincentkoc.
-- Keeps automatic fast-mode timing consistent when a turn switches to a fallback model. 075091d. Thanks @vincentkoc.
-- Keeps the original fast-mode timing and progress behavior when a live model switch retries a tur
+- `comment-content`: Don't mutate commented-out multi-line code (#3413) bef80c86
+- `consistent-boolean-name`: Add `ignore` option and plural prefixes (#3423) 7cc1d9ec
+- `consistent-boolean-name`: Don't crash on Svelte `{#each}` bindings (#3417) effc0e1a
+- `consistent-conditional-object-spread`: Treat `undefined`/`null` fallback as an empty branch (#3401) 38eebbd5
+- `custom-error-definition`:
 
 ... (truncated)]]></description>
-    <pubDate>Wed, 24 Jun 2026 03:06:38 GMT</pubDate>
+    <pubDate>Wed, 24 Jun 2026 22:15:51 GMT</pubDate>
   </item>
 </channel>
 </rss>
