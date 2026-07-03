@@ -5,8 +5,103 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Thu, 02 Jul 2026 22:20:42 GMT</lastBuildDate>
+  <lastBuildDate>Fri, 03 Jul 2026 22:52:55 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[anomalyco/opentui] Release v0.4.3 (v0.4.3)</title>
+    <link>https://github.com/anomalyco/opentui/releases/tag/v0.4.3</link>
+    <guid isPermaLink="true">https://github.com/anomalyco/opentui/releases/tag/v0.4.3</guid>
+    <description><![CDATA[## What's Changed
+* fix(core): guard lifecycle passes loop against destroyed renderables by @anerli in 
+* core: fix Select test assertions by @simonklee in 
+* renderer: isolate tests from the host terminal environment by @simonklee in 
+* fix(ffi): preserve borrowed pointer owners by @simonklee in 
+* Reduce Yoga callback pressure for native text measurement by @kommander in 
+* refactor(core): remove unused ADDED/REMOVED LayoutEvents by @posva in 
+* fix(core): identity-based child management, resolves duplicate-id culling corruption by @kommander in 
+* solid: fix plugin subpath resolution by @simonklee in 
+
+## New Contributors
+* @anerli made their first contribution in 
+* @posva made their first contribution in 
+
+**Full Changelog**:]]></description>
+    <pubDate>Fri, 03 Jul 2026 18:39:39 GMT</pubDate>
+  </item>
+  <item>
+    <title>[privatenumber/tsx] v4.23.0</title>
+    <link>https://github.com/privatenumber/tsx/releases/tag/v4.23.0</link>
+    <guid isPermaLink="true">https://github.com/privatenumber/tsx/releases/tag/v4.23.0</guid>
+    <description><![CDATA[# 4.23.0 (2026-07-03)
+
+
+### Bug Fixes
+
+* avoid redundant filesystem probes during module resolution (257bbbb), closes privatenumber/tsx#809
+
+
+### Features
+
+* add multi-scenario startup benchmark suite (c178197), closes privatenumber/tsx#809 #809 hi#signal privatenumber/tsx#145 #809
+
+---
+This release is also available on:
+- npm package (@latest dist-tag)]]></description>
+    <pubDate>Fri, 03 Jul 2026 14:25:07 GMT</pubDate>
+  </item>
+  <item>
+    <title>[cloudflare/vinext] vinext@0.2.1</title>
+    <link>https://github.com/cloudflare/vinext/releases/tag/vinext%400.2.1</link>
+    <guid isPermaLink="true">https://github.com/cloudflare/vinext/releases/tag/vinext%400.2.1</guid>
+    <description><![CDATA[### Bug Fixes
+
+#### App Router
+
+- limit mounted slot cache variants (#2497)
+- omit pending RSC cache state for query renders (#2488)
+- isolate global not-found css (#2444)
+- expose app rewrites to pages data clients (#2468)
+- publish committed no-prefetch navigations (#2469)
+- cache segment prefetches by rendered search params (#2477)
+- skip readiness waits for speculative prerenders (#2457)
+- align app static ISR lifecycle (#2472)
+- reuse metadata rewrite prefetches (#2455)
+- avoid runtime route-tree prefetch sizing (#2467)
+- start optimistic prefetches immediately (#2440)
+- normalize rsc reference validation ids (#2480)
+- send deployment id on RSC responses (#2452)
+- separate header-only full-route rsc requests (#2445)
+- preserve app rewrite filtering (#2441)
+- revalidate dynamic intercepted actions (#2443)
+- evict segment prefetches under memory pressure (#2466)
+- honor basePath false rewrites (#2370)
+- preserve rewritten route identity (#2358)
+- support styled-jsx from next (#2341)
+
+... (truncated)]]></description>
+    <pubDate>Fri, 03 Jul 2026 09:42:09 GMT</pubDate>
+  </item>
+  <item>
+    <title>[floci-io/floci] 1.5.30</title>
+    <link>https://github.com/floci-io/floci/releases/tag/1.5.30</link>
+    <guid isPermaLink="true">https://github.com/floci-io/floci/releases/tag/1.5.30</guid>
+    <description><![CDATA[## 🎉 Highlights
+
+This release adds **Amazon MQ** and **VPC Flow Logs**, brings a major **Step Functions** feature push (state machine versions, ECS integrations, ResultSelector, cross-account execution), lands **CloudFormation StackSets** with account-aware provisioning, and ships **HTTPS on port 443** with Lambda cert trust. IAM gains **AssumeRole trust policy enforcement** and **STS session policies**. Service count is now officially **68**. Welcome to the 4 first-time contributors.
+
+### 🆕 New: Amazon MQ
+
+**Amazon MQ** broker control plane lands (#1642), backed by **RabbitMQ**. Messaging workloads that depend on Amazon MQ can now be exercised locally with a real message broker rather than a mock, continuing the real-Docker-backed pattern from RDS, ElastiCache, MSK, and OpenSearch.
+
+### 🌐 New: VPC Flow Logs
+
+EC2 gains **VPC Flow Logs** support (#1611), enabling local testing of network observability pipelines that consume flow logs from VPCs, subnets, or ENIs.
+
+### 🧩 S
+
+... (truncated)]]></description>
+    <pubDate>Fri, 03 Jul 2026 07:08:09 GMT</pubDate>
+  </item>
   <item>
     <title>[cli/cli] GitHub CLI 2.96.0 (v2.96.0)</title>
     <link>https://github.com/cli/cli/releases/tag/v2.96.0</link>
@@ -100,22 +195,6 @@ gh release download v2.96.0 --repo cli/cli
 
  Replaces the fragile `findPlugin`/`hasPlugin` config-hook re-invocation pattern with direct iteration of `viteConfig.environments`, which is always available after Vite resolves its config. Also uses `isRunnableDevEnvironment(envConfig).runner` where available to avoid creating duplicate `ModuleRunner` instances for cross-environment imports.]]></description>
     <pubDate>Thu, 02 Jul 2026 16:33:14 GMT</pubDate>
-  </item>
-  <item>
-    <title>[privatenumber/tsx] v4.22.5</title>
-    <link>https://github.com/privatenumber/tsx/releases/tag/v4.22.5</link>
-    <guid isPermaLink="true">https://github.com/privatenumber/tsx/releases/tag/v4.22.5</guid>
-    <description><![CDATA[## 4.22.5 (2026-07-02)
-
-
-### Bug Fixes
-
-* isolate hook state per async module.register registration (a305f36)
-
----
-This release is also available on:
-- npm package (@latest dist-tag)]]></description>
-    <pubDate>Thu, 02 Jul 2026 15:02:49 GMT</pubDate>
   </item>
   <item>
     <title>[redwoodjs/sdk] v1.5.5</title>
@@ -736,25 +815,6 @@ New import.meta API | Existing runtime variable
     <pubDate>Tue, 30 Jun 2026 08:25:25 GMT</pubDate>
   </item>
   <item>
-    <title>[floci-io/floci] 1.5.29</title>
-    <link>https://github.com/floci-io/floci/releases/tag/1.5.29</link>
-    <guid isPermaLink="true">https://github.com/floci-io/floci/releases/tag/1.5.29</guid>
-    <description><![CDATA[## 🎉 Highlights
-
-This release adds **AppSync Phase 4** with a full VTL engine, lands **cross-account assumed-role routing**, ships **state reset and nuke endpoints**, and brings substantial **ECS conformance** improvements alongside persistence work for Transcribe vocabularies. Welcome to first-time contributor @dnlopes.
-
-### 🧩 AppSync Phase 4: VTL Engine
-
-The AppSync VTL story completes its build-out across four releases (Phase 1 through Phase 4). This release lands a **full VTL Engine** (#1288), evaluating template logic end to end. Combined with the Phase 3 `$util` runtime library, AppSync resolver templates now execute with real semantics rather than fixture responses.
-
-### 🔐 IAM: cross-account assumed-role credentials
-
-A meaningful identity improvement: **assumed-role credentials now route to the target account** (#1549). Multi-account testing patterns that rely on `sts:AssumeRole` to switch contexts now behave correctly, which unlocks more realistic enterprise-style 
-
-... (truncated)]]></description>
-    <pubDate>Tue, 30 Jun 2026 05:36:11 GMT</pubDate>
-  </item>
-  <item>
     <title>[prettier/prettier] 3.9.4</title>
     <link>https://github.com/prettier/prettier/releases/tag/3.9.4</link>
     <guid isPermaLink="true">https://github.com/prettier/prettier/releases/tag/3.9.4</guid>
@@ -861,22 +921,6 @@ In the 1.23.0 release Kubernetes port were not being forwarded to the host. This
     <guid isPermaLink="true">https://github.com/remix-run/react-router/releases/tag/react-router%408.1.0</guid>
     <description><![CDATA[See the changelog for release notes:]]></description>
     <pubDate>Mon, 29 Jun 2026 20:49:44 GMT</pubDate>
-  </item>
-  <item>
-    <title>[cloudflare/vinext] @vinext/cloudflare@0.2.0</title>
-    <link>https://github.com/cloudflare/vinext/releases/tag/%40vinext/cloudflare%400.2.0</link>
-    <guid isPermaLink="true">https://github.com/cloudflare/vinext/releases/tag/%40vinext/cloudflare%400.2.0</guid>
-    <description><![CDATA[### Features
-
-- **Build:** support prerender vite config (#2415)
-- **Cloudflare:** move deploy command to cloudflare package (#2405)
-- **Init:** scaffold for cloudflare and node (#2279)
-- **Images:** configure image optimization via vinext({ images }) adapter (#1873)
-
-### Contributors
-
-- @james-elicx]]></description>
-    <pubDate>Mon, 29 Jun 2026 18:48:01 GMT</pubDate>
   </item>
   <item>
     <title>[beercss/beercss] v4.0.23</title>
@@ -1020,20 +1064,6 @@ Run `dprint upgrade` or see
 
 ... (truncated)]]></description>
     <pubDate>Sun, 28 Jun 2026 05:34:56 GMT</pubDate>
-  </item>
-  <item>
-    <title>[ant-design/ant-design] 6.5.0</title>
-    <link>https://github.com/ant-design/ant-design/releases/tag/6.5.0</link>
-    <guid isPermaLink="true">https://github.com/ant-design/ant-design/releases/tag/6.5.0</guid>
-    <description><![CDATA[- 🔥 Add the antd `DESIGN.md` design-language file and publish it at ant.design/design.md, helping AI design tools understand Ant Design visual language, component archetypes, and theme tokens. #58011 #58356 #58489 @afc163
-- 📦 Optimize the antd full bundle size: compared with 6.4.5, size-limit reports `antd.min.js` down from `437.05 KB` to `432.44 KB`, and `antd-with-locales.min.js` down from `514.19 KB` to `506.84 KB`. The main gains come from slimmer DatePicker and TimePicker runtime code in `@rc-component/picker`, plus Icon/Upload avoiding extra TwoTone runtime in the full bundle. #58403 #58497 @QDyanbing @afc163
-- Icon
- - 🔥 Add built-in Icon entries for Anthropic, Claude, Gemini, Mistral, DeepSeek, Qwen, Perplexity, HuggingFace, Ollama, Replicate, ElevenLabs, Telegram, Mastodon, Threads and Snapchat. #58524 @afc163
- <img alt="New icons in Ant Design 6.5.0" src="" width="960" />
- - 📦 Optimize Icon and Upload default icon imports by upgrading `@ant-design/icons` to `6.3.1` and swi
-
-... (truncated)]]></description>
-    <pubDate>Sat, 27 Jun 2026 15:54:13 GMT</pubDate>
   </item>
 </channel>
 </rss>
