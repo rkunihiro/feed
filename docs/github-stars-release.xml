@@ -5,8 +5,102 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Fri, 03 Jul 2026 22:52:55 GMT</lastBuildDate>
+  <lastBuildDate>Sat, 04 Jul 2026 22:44:42 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[pnpm/pnpm] pnpm 11.10 (v11.10.0)</title>
+    <link>https://github.com/pnpm/pnpm/releases/tag/v11.10.0</link>
+    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v11.10.0</guid>
+    <description><![CDATA[## Minor Changes
+
+* e2e3c81: Added the `issues` command as an alias of `bugs`, so `pnpm issues` opens the package's bug tracker URL in the browser.
+
+* 8491f8e: Added the `prefix` command which prints the current package prefix directory (or global prefix directory if `-g` / `--global` is used).
+
+* 3425e80: Added an `_auth` setting for configuring registry authentication as a single structured (URL-keyed) value. It can be set in the **global** pnpm config (`config.yaml`) or, for CI, via the `pnpm_config__auth` environment variable. The env form sidesteps the GitHub Actions / bash / zsh limitation that broke the existing `pnpm_config_//host/:_authToken=…` form (env var names containing `/`, `:`, or `.` are silently dropped). Closes pnpm/pnpm#12314.
+
+ The value is keyed by registry URL so each secret is explicitly bound to the host that may receive it. Registry URL keys must use `http` or `https` and must not include credentials, query strings, or fragments:
+
+ ```sh
+ export pnp
+
+... (truncated)]]></description>
+    <pubDate>Sat, 04 Jul 2026 19:58:37 GMT</pubDate>
+  </item>
+  <item>
+    <title>[webpack/webpack] v5.108.4</title>
+    <link>https://github.com/webpack/webpack/releases/tag/v5.108.4</link>
+    <guid isPermaLink="true">https://github.com/webpack/webpack/releases/tag/v5.108.4</guid>
+    <description><![CDATA[### Patch Changes
+
+- Speed up non-CSS-Modules parsing by not building unused selector AST nodes. (by @alexander-akait in #21324)
+
+- Speed up non-CSS-Modules CSS parsing by dropping value tokens nothing reads. (by @alexander-akait in #21324)
+
+- Resolve HTML asset URLs against the document `<base href>`. (by @alexander-akait in #21329)
+
+- Add HTML integration tests: generateError output, ignored src, null-char parse. (by @aryanraj45 in #21328)
+
+- Reduce CPU and memory overhead of HTML and CSS parsing and code generation. (by @alexander-akait in #21332)
+
+- Reduce HTML parser memory and CPU by skipping unused AST nodes. (by @alexander-akait in #21323)
+
+- Reduce HTML parser memory by storing the AST in struct-of-arrays form. (by @alexander-akait in #21331)
+
+- Key the provided-exports cache on a lazy barrel's still-lazy re-export targets. (by @hai-x in #21326)
+
+- Default `output.globalObject` to `globalThis` for universal targets. (by @alexander-akait in #21314)
+
+- Pass through `new URL(...)
+
+... (truncated)]]></description>
+    <pubDate>Sat, 04 Jul 2026 18:09:51 GMT</pubDate>
+  </item>
+  <item>
+    <title>[wailsapp/wails] webview2 v1.0.28 (webview2/v1.0.28)</title>
+    <link>https://github.com/wailsapp/wails/releases/tag/webview2/v1.0.28</link>
+    <guid isPermaLink="true">https://github.com/wailsapp/wails/releases/tag/webview2/v1.0.28</guid>
+    <description><![CDATA[## webview2 v1.0.28
+
+- [v3][windows] Re-enable WebView2 monitor-scale detection to fix mixed-DPI GPU-process crash (#5732) (#5734)
+
+**Full diff:**]]></description>
+    <pubDate>Sat, 04 Jul 2026 13:35:04 GMT</pubDate>
+  </item>
+  <item>
+    <title>[nodejs/undici] v8.7.0</title>
+    <link>https://github.com/nodejs/undici/releases/tag/v8.7.0</link>
+    <guid isPermaLink="true">https://github.com/nodejs/undici/releases/tag/v8.7.0</guid>
+    <description><![CDATA[## What's Changed
+* test: guard balanced-pool error port lookup by @mcollina in 
+* perf: optimize http/2 request hot path by @mcollina in 
+* fix: do not reject open-ended Range values in simpleRangeHeaderValue by @spokodev in 
+* fix(eventsource): set use-URL-credentials flag by @Ram-blip in 
+* test: deflake connect-timeout watchdog by @mcollina in 
+* docs: correct npm script name and JSON syntax in examples by @lenoxfernando in 
+* fix: reject non-ascii octets in validateCookiePath by @spokodev in 
+* fix(readable): ignore late consume chunks by @marko1olo in 
+* fix(h2): destroy the stream on abort instead of relying on close by @staylor in 
+* fix: ignore an unparseable Set-Cookie Expires attribute by @spokodev in 
+* docs: add reproduction guide and update bug report template by @mcollina in 
+* fix(h2): guard onResponse against a 'response' event delivered after completion by @staylor in 
+* fix(h2): requeue request on GOAWAY'd session instead of crashing by @staylor in 
+* fix: add static
+
+... (truncated)]]></description>
+    <pubDate>Sat, 04 Jul 2026 12:00:28 GMT</pubDate>
+  </item>
+  <item>
+    <title>[PerryTS/perry] v0.5.1220</title>
+    <link>https://github.com/PerryTS/perry/releases/tag/v0.5.1220</link>
+    <guid isPermaLink="true">https://github.com/PerryTS/perry/releases/tag/v0.5.1220</guid>
+    <description><![CDATA[Distribution follow-up to v0.5.1219 (see its notes for the full 394-commit changelog since v0.5.1182 — NestJS, current-thread async runtime, type lowering, the test262 waves, and more). The v0.5.1219 brew/apt/winget/workers channels never published due to a release-packaging dispatch bug; this release ships those channels plus:
+
+- **fix(link): dedup wrapper-bundled perry-runtime in wrappers-first links** (#5920, #5921)
+- fix(transform): keep comma-sequence operands ahead of hoisted awaits (#5925, #5926)
+- ci: auto-opt archive cache eviction in the test gate (#5892) and release-packages workflow_dispatch tag-fallback repo pinning]]></description>
+    <pubDate>Sat, 04 Jul 2026 01:31:58 GMT</pubDate>
+  </item>
   <item>
     <title>[anomalyco/opentui] Release v0.4.3 (v0.4.3)</title>
     <link>https://github.com/anomalyco/opentui/releases/tag/v0.4.3</link>
@@ -206,29 +300,6 @@ gh release download v2.96.0 --repo cli/cli
 
 **Full Changelog**:]]></description>
     <pubDate>Thu, 02 Jul 2026 14:13:37 GMT</pubDate>
-  </item>
-  <item>
-    <title>[nodejs/undici] v8.6.0</title>
-    <link>https://github.com/nodejs/undici/releases/tag/v8.6.0</link>
-    <guid isPermaLink="true">https://github.com/nodejs/undici/releases/tag/v8.6.0</guid>
-    <description><![CDATA[## What's Changed
-* build(deps-dev): bump proxy from 4.0.0 to 4.1.0 by @dependabot[bot] in 
-* update accept-encoding header in fetch by @KhafraDev in 
-* fix: drop response chunks after the response stream is destroyed (#5356) by @cesarvspr in 
-* fix: handle incomplete multi-byte UTF-8 sequences in setEncoding by @joecwu in 
-* fix(retry): keep flow-control wired to the active connection across resumes by @bogomya in 
-* test: cover connect lookup option by @vibhor-aggr in 
-* test: fail on unexpected reconnect disconnect by @vibhor-aggr in 
-* build(deps-dev): bump esbuild from 0.28.0 to 0.28.1 by @dependabot[bot] in 
-* fix(proxy): fail the request when the CONNECT tunnel drops instead of looping by @cesarvspr in 
-* feat(docs): migrate to doc-kit by @avivkeller in 
-* build(deps-dev): bump undici from 6.25.0 to 6.27.0 by @dependabot[bot] in 
-* fetch: fix issue 4058 by @KhafraDev in 
-* docs: add Interceptors API reference page by @enjoykumawat in 
-* Document H1 keep-alive trust tradeoff by @
-
-... (truncated)]]></description>
-    <pubDate>Thu, 02 Jul 2026 13:45:45 GMT</pubDate>
   </item>
   <item>
     <title>[sindresorhus/got] v15.1.0</title>
@@ -903,19 +974,6 @@ In the 1.23.0 release Kubernetes port were not being forwarded to the host. This
     <pubDate>Mon, 29 Jun 2026 22:34:42 GMT</pubDate>
   </item>
   <item>
-    <title>[webpack/webpack] v5.108.3</title>
-    <link>https://github.com/webpack/webpack/releases/tag/v5.108.3</link>
-    <guid isPermaLink="true">https://github.com/webpack/webpack/releases/tag/v5.108.3</guid>
-    <description><![CDATA[### Patch Changes
-
-- Speed up CSS parsing and reduce CSS AST node memory. (by @alexander-akait in #21285)
-
-- Fix HMR codegen crash for harmony accept with unresolved imports. (by @xiaoxiaojx in #21302)
-
-- Match harmony accept dependencies by module reference so HMR codegen handles imports without a module or chunk id. (by @alexander-akait in #21303)]]></description>
-    <pubDate>Mon, 29 Jun 2026 22:00:22 GMT</pubDate>
-  </item>
-  <item>
     <title>[remix-run/react-router] v8.1.0 (react-router@8.1.0)</title>
     <link>https://github.com/remix-run/react-router/releases/tag/react-router%408.1.0</link>
     <guid isPermaLink="true">https://github.com/remix-run/react-router/releases/tag/react-router%408.1.0</guid>
@@ -1010,60 +1068,6 @@ This version includes the following bug fixes and feature additions.
 - Implemented the "★Favorite" function to the color picker popup.
 - Fixed minor bugs.]]></description>
     <pubDate>Mon, 29 Jun 2026 09:13:01 GMT</pubDate>
-  </item>
-  <item>
-    <title>[inokawa/virtua] 0.49.2</title>
-    <link>https://github.com/inokawa/virtua/releases/tag/0.49.2</link>
-    <guid isPermaLink="true">https://github.com/inokawa/virtua/releases/tag/0.49.2</guid>
-    <description><![CDATA[## What's Changed
-* Remove @babel/plugin-transform-react-pure-annotations by @inokawa in 
-* Keep the top-anchored item pinned when rows above it grow by @ocavue in 
-
-## New Contributors
-* @ocavue made their first contribution in 
-
-**Full Changelog**:]]></description>
-    <pubDate>Mon, 29 Jun 2026 08:53:40 GMT</pubDate>
-  </item>
-  <item>
-    <title>[open-circle/valibot] v1.4.2</title>
-    <link>https://github.com/open-circle/valibot/releases/tag/v1.4.2</link>
-    <guid isPermaLink="true">https://github.com/open-circle/valibot/releases/tag/v1.4.2</guid>
-    <description><![CDATA[Many thanks to @Faze-up and @chatman-media for contributing to this release.
-
-- Fix word count actions to cache the `Intl.Segmenter` for non-primitive locales, preventing it from being recreated on every `words`, `minWords`, `maxWords` and `notWords` validation (pull request #1521)
-- Fix `flatten` method to handle issue path keys that collide with `Object.prototype` members like `toString` instead of throwing a `TypeError` (pull request #1522)
-- Fix `intersect` schema to merge object keys that collide with `Object.prototype` members like `toString` instead of failing to merge them (pull request #1522)]]></description>
-    <pubDate>Sun, 28 Jun 2026 15:14:12 GMT</pubDate>
-  </item>
-  <item>
-    <title>[dprint/dprint] 0.55.1</title>
-    <link>https://github.com/dprint/dprint/releases/tag/0.55.1</link>
-    <guid isPermaLink="true">https://github.com/dprint/dprint/releases/tag/0.55.1</guid>
-    <description><![CDATA[## Changes
-
-* fix(npm): resolve node_modules from config dir
-(#1194)
-
-## Install
-
-Run `dprint upgrade` or see 
-
-## Checksums
-
-|Artifact|SHA-256 Checksum|
-|:--|:--|
-|dprint-x86_64-apple-darwin.zip|21f9784b3edf3b0a686932b4387359ebd83fba798ac2f7e2ba1e7b8c9f674e3e|
-|dprint-aarch64-apple-darwin.zip|94a9ce5ca91dbb609d4f22f2ccf28d8b422627c0944c6ee63d1beecac28f8cd4|
-|dprint-x86_64-pc-windows-msvc.zip|dfdee60f04810c14df310696ce680da7ece599cd27b162f77906adc80d5e9679|
-|dprint-x86_64-pc-windows-msvc-installer.exe|bb244f445a0f7f022c550b0239d7bde00319ea55a1be1ccafdd0b8f52b47042b|
-|dprint-aarch64-pc-windows-msvc.zip|a4e3f6921eba2db72d00a4ae35ed1bd6ff49eed610815f8b13f3b64fe12d7b17|
-|dprint-x86_64-unknown-linux-gnu.zip|14f40c47b2a1c79ced321b62bf177f88f064d7b11c41f1ee28488ee0d9391bb2|
-|dprint-x86_64-unknown-linux-musl.zip|7ce856d5999585e58666701eab5e0291abfb63953884d5dd0268001c89d74b8d|
-|dprint-aarch64-unknown-linux-gnu.zip|f5ea3a5c196b0bcd91aa0af7b5ef7366dbf87e8315a6797c47bff081a8d4
-
-... (truncated)]]></description>
-    <pubDate>Sun, 28 Jun 2026 05:34:56 GMT</pubDate>
   </item>
 </channel>
 </rss>
