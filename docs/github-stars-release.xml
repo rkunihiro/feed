@@ -5,8 +5,279 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Wed, 08 Jul 2026 22:54:02 GMT</lastBuildDate>
+  <lastBuildDate>Thu, 09 Jul 2026 23:00:42 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[bluesky-social/atproto] @atproto/oauth-provider-ui@0.8.7</title>
+    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/oauth-provider-ui%400.8.7</link>
+    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/oauth-provider-ui%400.8.7</guid>
+    <description><![CDATA[### Patch Changes
+
+- Updated dependencies :
+ - @atproto/oauth-provider-api@0.7.6]]></description>
+    <pubDate>Thu, 09 Jul 2026 22:18:20 GMT</pubDate>
+  </item>
+  <item>
+    <title>[facebook/lexical] v0.47.0</title>
+    <link>https://github.com/facebook/lexical/releases/tag/v0.47.0</link>
+    <guid isPermaLink="true">https://github.com/facebook/lexical/releases/tag/v0.47.0</guid>
+    <description><![CDATA[v0.47.0 is a monthly release with a lot of bug fixes, particularly related to IME and composition, and is headlined by two new experimental packages:
+
+- `@lexical/mdast` (#8794) — a micromark/mdast-based alternative to `@lexical/markdown`. Parsing, serialization, and markdown shortcuts all go through the same parser used by `remark`, so CommonMark + GFM compliance comes for free and there is no second grammar to keep in sync. The original syntax of each construct is preserved on the nodes, so re-serializing produces minimally different Markdown. `@lexical/markdown` remains the supported default for production apps. See the new Markdown with `@lexical/mdast` guide.
+- `@lexical/a11y` (#8591) — framework-agnostic accessibility helpers (ARIA live regions, focus management, roving tab index, focus trap) usable from React, Svelte, Vue, Solid, or vanilla DOM, with React wrappers shipping from `@lexical/react`. The playground adopts them as part of a WCAG AA reference pass, and the keyboard
+
+... (truncated)]]></description>
+    <pubDate>Thu, 09 Jul 2026 22:07:08 GMT</pubDate>
+  </item>
+  <item>
+    <title>[pnpm/pnpm] pnpm 11.11 (v11.11.0)</title>
+    <link>https://github.com/pnpm/pnpm/releases/tag/v11.11.0</link>
+    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v11.11.0</guid>
+    <description><![CDATA[## Minor Changes
+
+* 508b8c2: Added the `pnpm access` command for managing package access and visibility on the registry, supporting listing packages and collaborators, getting and setting package status and MFA requirements, and granting or revoking team access.
+
+## Patch Changes
+
+* c70e33e: Allow `allowBuilds` entries for git-hosted packages to match by repository URL without pinning the resolved commit hash. This lets trusted git repositories keep running their build scripts after branch updates without approving each new commit, while package-name-only rules still do not approve git-hosted artifacts.
+* 3067e4f: Reduced peak memory usage during cold-cache dependency resolution. The metadata fetch is memoized for the whole resolution phase, and it was retaining each package's raw registry response body (used only to mirror the response to disk) for that entire time. The memoized cache now holds a body-less copy, so the raw body only lives as long as the call that writes the dis
+
+... (truncated)]]></description>
+    <pubDate>Thu, 09 Jul 2026 20:43:29 GMT</pubDate>
+  </item>
+  <item>
+    <title>[zed-industries/zed] v1.10.1</title>
+    <link>https://github.com/zed-industries/zed/releases/tag/v1.10.1</link>
+    <guid isPermaLink="true">https://github.com/zed-industries/zed/releases/tag/v1.10.1</guid>
+    <description><![CDATA[- open_ai: Added support for GPT 5.6 Sol/Terra/Luna (#60699)
+- cli: Fixed an issue where the previous workspace would not be restored when using `cli_default_open_behavior: new_window` and no path was provided (#60672)]]></description>
+    <pubDate>Thu, 09 Jul 2026 19:36:47 GMT</pubDate>
+  </item>
+  <item>
+    <title>[iii-hq/iii] iii 0.21.4 (iii/v0.21.4)</title>
+    <link>https://github.com/iii-hq/iii/releases/tag/iii/v0.21.4</link>
+    <guid isPermaLink="true">https://github.com/iii-hq/iii/releases/tag/iii/v0.21.4</guid>
+    <description><![CDATA[## What's Changed
+* docs: complete missed 0.21.x version rotation by @guibeira in 
+* docs: update configuration management details and add new configuration page by @sergiofilhowz in 
+* feat(observability): making observability worker a required one by @sergiofilhowz in 
+* fix(docker): make the engine boot cleanly in Docker (writable /app/config + seed-strip noise) by @guibeira in 
+
+
+**Full Changelog**:]]></description>
+    <pubDate>Thu, 09 Jul 2026 19:32:23 GMT</pubDate>
+  </item>
+  <item>
+    <title>[anomalyco/opencode] v1.17.18</title>
+    <link>https://github.com/anomalyco/opencode/releases/tag/v1.17.18</link>
+    <guid isPermaLink="true">https://github.com/anomalyco/opencode/releases/tag/v1.17.18</guid>
+    <description><![CDATA[## Core
+
+### Bugfixes
+
+- Prevent crashes and bad pricing data when GitHub Copilot returns models with a zero billing batch size.
+
+### Improvements
+
+- Add a model-specific system prompt for Meta Muse Spark.]]></description>
+    <pubDate>Thu, 09 Jul 2026 18:51:45 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1084.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1084.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1084.0</guid>
+    <description><![CDATA[#### 3.1084.0(2026-07-09)
+
+##### New Features
+
+* **client-connect:** Amazon Connect - Added DeleteContactData API to support PII deletion of customer endpoint, additional email recipients and email subject. (87f4ae0e)
+* **client-guardduty:** Adding "AI Analyst" enum value for detector (20518a4f)
+* **client-synthetics:** CloudWatch Synthetics adds support for customer managed KMS keys for canary environment variables. Customers can now encrypt their canary's Lambda function environment variables at rest using their own AWS KMS key, providing additional control over data protection. (c7379151)
+* **client-ec2:** Added support for additional override parameters in CreateFleet, including LaunchTemplateSpecificationUserData, KeyName, IamInstanceProfile, and MetadataOptions. The CreateFleet response now also includes SubnetId, AvailabilityZone, and AvailabilityZoneId for launched instances. (6fcc95d1)
+* **client-ivs:** adds support for AWS IVS ad configuration APIs to allow for a postRollConf
+
+... (truncated)]]></description>
+    <pubDate>Thu, 09 Jul 2026 18:50:30 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-07-09) (release-2026-07-09)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-07-09</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-07-09</guid>
+    <description><![CDATA[## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/service/connect`: [v1.182.0](service/connect/CHANGELOG.md#v11820-2026-07-09)
+ * **Feature**: Amazon Connect - Added DeleteContactData API to support PII deletion of customer endpoint, additional email recipients and email subject.
+* `github.com/aws/aws-sdk-go-v2/service/ec2`: [v1.315.0](service/ec2/CHANGELOG.md#v13150-2026-07-09)
+ * **Feature**: Added support for additional override parameters in CreateFleet, including LaunchTemplateSpecificationUserData, KeyName, IamInstanceProfile, and MetadataOptions. The CreateFleet response now also includes SubnetId, AvailabilityZone, and AvailabilityZoneId for launched instances.
+* `github.com/aws/aws-sdk-go-v2/service/guardduty`: [v1.82.0](service/guardduty/CHANGELOG.md#v1820-2026-07-09)
+ * **Feature**: Adding "AI Analyst" enum value for detector
+* `github.com/aws/aws-sdk-go-v2/service/ivs`: [v1.54.0](service/ivs/CHANGELOG.md#v1540-2026-07-09)
+ * **Feature**: adds support for AWS IVS ad confi
+
+... (truncated)]]></description>
+    <pubDate>Thu, 09 Jul 2026 18:38:42 GMT</pubDate>
+  </item>
+  <item>
+    <title>[markedjs/marked] v18.0.6</title>
+    <link>https://github.com/markedjs/marked/releases/tag/v18.0.6</link>
+    <guid isPermaLink="true">https://github.com/markedjs/marked/releases/tag/v18.0.6</guid>
+    <description><![CDATA[## 18.0.6 (2026-07-09)
+
+
+### Bug Fixes
+
+* Avoid O(n^2) backtracking in inline link href regex (#4013) (a009808)
+* Fix ordered lists after blockquotes (#4003) (33928d0)
+* keep trailing text on HTML block close line for PI, declarations, and CDATA (#3991) (bbb84c8)]]></description>
+    <pubDate>Thu, 09 Jul 2026 17:06:34 GMT</pubDate>
+  </item>
+  <item>
+    <title>[openai/codex] 0.144.0 (rust-v0.144.0)</title>
+    <link>https://github.com/openai/codex/releases/tag/rust-v0.144.0</link>
+    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.144.0</guid>
+    <description><![CDATA[## New Features
+
+- Usage-limit reset credits now show their type and expiration, and let you choose which credit to redeem. (#30488)
+- Added a `writes` app-approval mode that allows declared read-only actions while prompting for writes. (#30482)
+- MCP tools can now request authentication interactively without an experimental opt-in. (#28772)
+- App-server hosts can provide Codex authentication at runtime and redirect successful logins to a hosted page. (#28745, #31274)
+- Global pnunen installs are now detected so diagnostics and updates use the correct package manager. (#31503)
+- Selecting Ultra reasoning now warns when high multi-agent concurrency could increase usage quickly. (#31621)
+
+## Bug Fixes
+
+- Resumed ChatGPT threads recover when compaction references a retired model by retrying with the currently selected model. (#30319)
+- Fixed Code Mode crashes in Intel macOS release binaries. (#30953)
+- Windows sandbox sessions can delete files in writable roots and access the managed prim
+
+... (truncated)]]></description>
+    <pubDate>Thu, 09 Jul 2026 16:47:12 GMT</pubDate>
+  </item>
+  <item>
+    <title>[prettier/prettier] 3.9.5</title>
+    <link>https://github.com/prettier/prettier/releases/tag/3.9.5</link>
+    <guid isPermaLink="true">https://github.com/prettier/prettier/releases/tag/3.9.5</guid>
+    <description><![CDATA[🔗 Changelog]]></description>
+    <pubDate>Thu, 09 Jul 2026 16:22:50 GMT</pubDate>
+  </item>
+  <item>
+    <title>[github/spec-kit] Spec Kit - 0.12.9 (v0.12.9)</title>
+    <link>https://github.com/github/spec-kit/releases/tag/v0.12.9</link>
+    <guid isPermaLink="true">https://github.com/github/spec-kit/releases/tag/v0.12.9</guid>
+    <description><![CDATA[## Install
+
+```bash
+uv tool install specify-cli --from git+
+specify init my-project
+```
+
+## What's Changed
+
+- chore: bump version to 0.12.9
+- fix(integrations): skip Windows Store python3 alias stub in resolve_python_interpreter (#3385)
+- fix(integrations): escape control characters in SKILL.md frontmatter (#3399)
+- fix(workflows): apply chained expression filters left-to-right (#3339)
+- fix(scripts): resolve invoke_separator by parse success, not python3 availability (#3304) (#3320)
+- fix(shared-infra): refresh_shared_templates preserves recovered user files (#3378)
+- fix(agents): resolve skill placeholders in Goose (yaml) command output (#3374)
+- fix(bundler): enforce version pin on bundled preset/extension installs (#3377)
+- Update Golden Demo extension to v0.3.0 (#3394)
+- test: isolate integration test home (#3144)
+- chore: release 0.12.8, begin 0.12.9.dev0 development (#3410)]]></description>
+    <pubDate>Thu, 09 Jul 2026 13:30:28 GMT</pubDate>
+  </item>
+  <item>
+    <title>[rust-lang/rust] Rust 1.97.0 (1.97.0)</title>
+    <link>https://github.com/rust-lang/rust/releases/tag/1.97.0</link>
+    <guid isPermaLink="true">https://github.com/rust-lang/rust/releases/tag/1.97.0</guid>
+    <description><![CDATA[<a id="1.97.0-Language"></a>
+
+## Language
+
+- Consider `Result<T, Uninhabited>` and `ControlFlow<Uninhabited, T>` to be equivalent to `T` for must use lint
+- Add allow-by-default `dead_code_pub_in_binary` lint for unused pub items in binary crates
+- Stabilize the `div32`, `lam-bh`, `lamcas`, `ld-seq-sa` and `scq` target features
+- Stabilize `cfg(target_has_atomic_primitive_alignment)`
+- Allow trailing `self` in imports in more cases
+
+<a id="1.97.0-Platform-Support"></a>
+
+## Platform Support
+
+- nvptx64-nvidia-cuda: drop support for old architectures and old ISAs
+
+Refer to Rust's platform support page for more information on Rust's tiered platform support.
+
+<a id="1.97.0-Stabilized-APIs"></a>
+
+## Stabilized APIs
+
+- `Default for RepeatN`
+- `Copy for ffi::FromBytesUntilNulError`
+- `Send for std::fs::File` on UEFI
+- `<{integer}>::isolate_highest_one`
+- `<{integer}>::isolate_lowest_one`
+- `<{integer}>::highest_one`
+- `<{integer}>::lowest_one`
+- `<{integer}>::bit_width`
+- `NonZero<{integer}>::
+
+... (truncated)]]></description>
+    <pubDate>Thu, 09 Jul 2026 12:25:16 GMT</pubDate>
+  </item>
+  <item>
+    <title>[bluesky-social/social-app] v1.127.1 (1.127.1)</title>
+    <link>https://github.com/bluesky-social/social-app/releases/tag/1.127.1</link>
+    <guid isPermaLink="true">https://github.com/bluesky-social/social-app/releases/tag/1.127.1</guid>
+    <description><![CDATA[## What's Changed
+* Lazy-load mediabunny on web by @mozzius in 
+* Fix Android crash in chat keyboard scroll (part 2) by @mozzius in 
+* Bump golang.org/x/crypto from 0.51.0 to 0.52.0 in /bskyweb by @dependabot[bot] in 
+* Add more search placeholders by @ds-boyce in 
+* Revert "Add more search placeholders (#11089)" by @ds-boyce in 
+* Bump version to v1.128.0 by @mozzius in 
+* Adjust AA device signals copy by @estrattonbailey in 
+* Update advanced search UI by @ds-boyce in 
+* use source file for web video compression by @vineyardbovines in 
+* Update mergeRefs util for React 19 by @ds-boyce in 
+* Revert "Remove `react-native-dotenv` (#10706)" by @mozzius in 
+* Fix search typeahead performance with absolute overlay by @mozzius in 
+* v1.127.1 Release prep by @mozzius in 
+
+
+**Full Changelog**:]]></description>
+    <pubDate>Thu, 09 Jul 2026 11:07:23 GMT</pubDate>
+  </item>
+  <item>
+    <title>[BabylonJS/Babylon.js] 9.16.0</title>
+    <link>https://github.com/BabylonJS/Babylon.js/releases/tag/9.16.0</link>
+    <guid isPermaLink="true">https://github.com/BabylonJS/Babylon.js/releases/tag/9.16.0</guid>
+    <description><![CDATA[### Addons
+
+- fix(addons): render atmosphere PBR materials in their creation frame - by RaananW (#18670)
+
+### Core
+
+- Add an `emitRateControl` setter to `GPUParticleSystem` - by VicenteCartas (#18674)
+- Preserve particle texture settings when serializing by reference - by VicenteCartas (#18673)
+- Fix ParticleSystem.clone / GPUParticleSystem.clone changing the particle texture - [_Bug Fix_] by VicenteCartas (#18672)
+- fix: restore side-effect registrations dropped by the 9.15 pure/non-pure split - by RaananW (#18671)
+- fix(AudioV2): propagate live loopStart/loopEnd changes to playing static sounds - by RaananW (#18669)
+- WebGPU projection layer + render target provider - by RaananW (#18655)
+- fix(AudioV2): resume looping static sound from correct position with loopStart/loopEnd - by RaananW (#18661)
+- Fix lighting volume WGSL depth texture binding - by matthargett (#18658)
+- TC39 migration: flip experimentalDecorators to Stage 3 decorators (atomic) - by RaananW (#18647)
+- fix(core): shr
+
+... (truncated)]]></description>
+    <pubDate>Thu, 09 Jul 2026 07:39:26 GMT</pubDate>
+  </item>
+  <item>
+    <title>[vitejs/vite] plugin-legacy@8.2.0</title>
+    <link>https://github.com/vitejs/vite/releases/tag/plugin-legacy%408.2.0</link>
+    <guid isPermaLink="true">https://github.com/vitejs/vite/releases/tag/plugin-legacy%408.2.0</guid>
+    <description><![CDATA[Please refer to CHANGELOG.md for details.]]></description>
+    <pubDate>Thu, 09 Jul 2026 04:45:33 GMT</pubDate>
+  </item>
   <item>
     <title>[podman-container-tools/podman] v6.0.1</title>
     <link>https://github.com/podman-container-tools/podman/releases/tag/v6.0.1</link>
@@ -25,97 +296,11 @@
     <pubDate>Wed, 08 Jul 2026 20:15:01 GMT</pubDate>
   </item>
   <item>
-    <title>[iii-hq/iii] iii 0.21.3 (iii/v0.21.3)</title>
-    <link>https://github.com/iii-hq/iii/releases/tag/iii/v0.21.3</link>
-    <guid isPermaLink="true">https://github.com/iii-hq/iii/releases/tag/iii/v0.21.3</guid>
-    <description><![CDATA[## What's Changed
-* Update README #1 badge by @rohitg00 in 
-* feat: creating tech spec folder by @sergiofilhowz in 
-* feat(website): resolve pretty URLs via CloudFront KVS, drop per-page terraform apply by @ytallo in 
-* fix(website): restore clean /privacy-policy footer link by @ytallo in 
-* docs(blog): add Loop Engineering Is Just Software Engineering post by @rohitg00 in 
-* fix(infra): default manage_apex/www_records to true (prevent DNS destroy on apply) by @ytallo in 
-* feat(engine): honor W3C tracestate on inbound HTTP and surface distributed traces by @guibeira in 
-* Sync compose env_file fixture for generated Docker projects by @snvtac in 
-* fix(configuration): numeric fields can be used with env variables by @sergiofilhowz in 
-* feat(iii-queue): add RabbitMQ priority queue support by @ytallo in 
-* docs: contributor SOP for next->latest version release by @guibeira in 
-* fix(sdk/node): reconnect ChannelWriter after a dropped WebSocket by @chrisayl in 
-* feat: engine::register_tr
-
-... (truncated)]]></description>
-    <pubDate>Wed, 08 Jul 2026 20:06:53 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-js-v3] v3.1082.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1082.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1082.0</guid>
-    <description><![CDATA[#### 3.1082.0(2026-07-08)
-
-##### Chores
-
-* **codegen:**
- * sync for isolatedModules tsconfig and server metrics recorder (#8174) (f8b4987c)
- * upgrade smithyVersion to 1.72.0 (#8170) (492bd59e)
-* **lib-dynamodb:** enable isolatedModules (#8173) (bcbb55e6)
-* use isolatedModules for types (#8164) (f274899d)
-* **deps:**
- * bump versions which are not code generated (#8171) (7279203b)
- * bump '@smithy/core' to ^3.29.1 (#8167) (8f43c790)
-
-##### New Features
-
-* **client-ecs:** Amazon ECS now automatically detects the correct CPU architecture for Express Mode services. (a273b757)
-* **client-appconfig:** Update ExperimentRun APIs to support ConflictExceptions. (d985124f)
-* **client-resiliencehubv2:** Next Generation Resilience Hub now supports filtering and sorting failure mode assessments, resource type filtering in ListResources, cross-region and cross-account topology edges, data recovery achievability status, and more granular dependency discovery progress tracking. (572ad2cf)
-* **client-e
-
-... (truncated)]]></description>
-    <pubDate>Wed, 08 Jul 2026 18:53:40 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-07-08) (release-2026-07-08)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-07-08</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-07-08</guid>
-    <description><![CDATA[## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/feature/s3/transfermanager`: [v0.3.0](feature/s3/transfermanager/CHANGELOG.md#v030-2026-07-08)
- * **Feature**: Add RequestChecksumCalculation config.
-* `github.com/aws/aws-sdk-go-v2/service/appconfig`: [v1.47.0](service/appconfig/CHANGELOG.md#v1470-2026-07-08)
- * **Feature**: Update ExperimentRun APIs to support ConflictExceptions.
-* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcorecontrol`: [v1.47.0](service/bedrockagentcorecontrol/CHANGELOG.md#v1470-2026-07-08)
- * **Feature**: AgentCore Gateway now supports mapping allowed scopes to separate advertised scopes on the inbound authorizer.
-* `github.com/aws/aws-sdk-go-v2/service/ec2`: [v1.314.0](service/ec2/CHANGELOG.md#v13140-2026-07-08)
- * **Feature**: Replace Root Volume now supports a VolumeId parameter. This allows the customer to pass in a pre-prepared volume as the target root volume for an RRV workflow.
-* `github.com/aws/aws-sdk-go-v2/service/ecs`: [v1.88.0](service/ecs/CH
-
-... (truncated)]]></description>
-    <pubDate>Wed, 08 Jul 2026 18:44:54 GMT</pubDate>
-  </item>
-  <item>
     <title>[remix-run/react-router] v8.2.0 (react-router@8.2.0)</title>
     <link>https://github.com/remix-run/react-router/releases/tag/react-router%408.2.0</link>
     <guid isPermaLink="true">https://github.com/remix-run/react-router/releases/tag/react-router%408.2.0</guid>
     <description><![CDATA[See the changelog for release notes:]]></description>
     <pubDate>Wed, 08 Jul 2026 17:22:41 GMT</pubDate>
-  </item>
-  <item>
-    <title>[zed-industries/zed] v1.10.0</title>
-    <link>https://github.com/zed-industries/zed/releases/tag/v1.10.0</link>
-    <guid isPermaLink="true">https://github.com/zed-industries/zed/releases/tag/v1.10.0</guid>
-    <description><![CDATA[This week's release includes llama.cpp as a new language model provider, a new `git.inline_blame.location` setting to control where current-line blame is shown (inline or status bar), and disabling format-on-save by default, alongside the move of LLM providers, external agents, and MCP servers into the settings editor, plus a bunch of bug fixes.
-
-## Features
-
-### AI
-
-- Agent: Added setting to exclude project rules files from commit message generation prompts (`agent.commit_message_include_project_rules`). (#56867; thanks ilavisharma)
-- Added llama.cpp as a language model provider. (#59964; thanks hanouticelina)
-- Agent: Changed the default behavior of queued messages for the Zed agent so that they get send at the end of the generation. The ability to steer them (i.e., send the message at the end of a turn boundary) is still possible to be toggled. (#59310)
-- Improved agent thread summary and title generation to respect compaction boundaries. (#60141)
-- Agent: Made label trunc
-
-... (truncated)]]></description>
-    <pubDate>Wed, 08 Jul 2026 16:12:33 GMT</pubDate>
   </item>
   <item>
     <title>[withastro/astro] astro@7.0.7</title>
@@ -142,41 +327,6 @@
     <guid isPermaLink="true">https://github.com/microsoft/typescript-go/releases/tag/typescript/v7.0.2</guid>
     <description><![CDATA[]]></description>
     <pubDate>Wed, 08 Jul 2026 15:58:56 GMT</pubDate>
-  </item>
-  <item>
-    <title>[bluesky-social/atproto] @atproto/bsky@0.0.256</title>
-    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/bsky%400.0.256</link>
-    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/bsky%400.0.256</guid>
-    <description><![CDATA[### Patch Changes
-
-- #5208 `af43bdb` Thanks @estrattonbailey! - Lift auth requirement for searchPostsV2, maintain v1-v2 parity for results and auth handling.]]></description>
-    <pubDate>Wed, 08 Jul 2026 15:22:48 GMT</pubDate>
-  </item>
-  <item>
-    <title>[github/spec-kit] Spec Kit - 0.12.8 (v0.12.8)</title>
-    <link>https://github.com/github/spec-kit/releases/tag/v0.12.8</link>
-    <guid isPermaLink="true">https://github.com/github/spec-kit/releases/tag/v0.12.8</guid>
-    <description><![CDATA[## Install
-
-```bash
-uv tool install specify-cli --from git+
-specify init my-project
-```
-
-## What's Changed
-
-- chore: bump version to 0.12.8
-- [extension] Add LLM Wiki extension to community catalog (#3361)
-- Docs: Document missing CLI flags and integrations (#3182)
-- Docs: Remove Cursor from CLI check list in README (#3184)
-- feat(extensions): port update-agent-context to Python (#3387)
-- fix(scripts): fall through to grep/sed when python3 is a broken stub in feature.json parser (#3312)
-- fix(toml): escape control characters so generated command files parse (#3341)
-- fix(cli): exit cleanly on malformed IPv6 URLs in `extension`/`preset`/`workflow add` (#3369)
-- fix(github-http): return None on malformed GHES port instead of raising (#3379)
-- fix(integrations): guard _sha256 against unreadable managed files (#3376)
-- chore: release 0.12.7, begin 0.12.8.dev0 development (#3398)]]></description>
-    <pubDate>Wed, 08 Jul 2026 14:39:40 GMT</pubDate>
   </item>
   <item>
     <title>[denoland/deno] v2.9.2</title>
@@ -303,26 +453,6 @@ Welcome to our newest releaser, Stewart X Addison. Future Node.js releases may b
     <pubDate>Wed, 08 Jul 2026 01:43:13 GMT</pubDate>
   </item>
   <item>
-    <title>[openai/codex] 0.143.0 (rust-v0.143.0)</title>
-    <link>https://github.com/openai/codex/releases/tag/rust-v0.143.0</link>
-    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.143.0</guid>
-    <description><![CDATA[## New Features
-
-- Remote plugins are now enabled by default, with richer catalog rows, npm marketplace sources, and visible remote/local versions. (#30297, #26705, #29375, #30981)
-- Codex can route authentication and Responses API traffic through macOS and Windows system proxies, including PAC and WPAD configurations. (#26708, #26709, #31335)
-- Added `codex remote-control pair` for generating manual pairing codes from a running daemon. (#29913)
-- Added Amazon Bedrock GPT-5.6 Sol, Terra, and Luna models, with first-class support for `max` reasoning effort. (#30285, #30467)
-- MCP tools now use tool search by default, and ChatGPT-hosted MCP servers can explicitly use session authentication. (#29486, #29733)
-- App-server clients can inspect environments, list descendant threads, and fork history through a specific turn. (#30291, #29591, #30277)
-
-## Bug Fixes
-
-- Fixed Windows ConPTY input handling for line endings and backspace, plus sandbox credential retry edge cases. (#29734, #29624, #2
-
-... (truncated)]]></description>
-    <pubDate>Wed, 08 Jul 2026 01:31:10 GMT</pubDate>
-  </item>
-  <item>
     <title>[sveltejs/kit] @sveltejs/kit@2.69.2</title>
     <link>https://github.com/sveltejs/kit/releases/tag/%40sveltejs/kit%402.69.2</link>
     <guid isPermaLink="true">https://github.com/sveltejs/kit/releases/tag/%40sveltejs/kit%402.69.2</guid>
@@ -442,29 +572,6 @@ Since v6.17.0, `MongoClient.close` has eagerly closed checked-out (in-use) conne
     <pubDate>Tue, 07 Jul 2026 20:08:06 GMT</pubDate>
   </item>
   <item>
-    <title>[bluesky-social/social-app] v1.127.0 (1.127.0)</title>
-    <link>https://github.com/bluesky-social/social-app/releases/tag/1.127.0</link>
-    <guid isPermaLink="true">https://github.com/bluesky-social/social-app/releases/tag/1.127.0</guid>
-    <description><![CDATA[## What's Changed
-* Use correct param name for setup-bundletool action by @ds-boyce in 
-* WSOD when trying to create account from starter pack on non-default provider by @c960657 in 
-* Replace react-native-compressor video path with native expo-bluesky-video-compress module [APP-2428] by @vineyardbovines in 
-* Always scroll to bottom of chat after sending a message by @ds-boyce in 
-* Cull unused files by @mozzius in 
-* Remove `react-native-dotenv` by @mozzius in 
-* Update search input with `useAutocomplete` by @ds-boyce in 
-* Always set `allTime` to `true` for search v2 by @ds-boyce in 
-* Avoid leaking previous messages via replies by @ds-boyce in 
-* Use latest fingerprint-native action by @ds-boyce in 
-* Bump the actions group with 3 updates by @dependabot[bot] in 
-* Bump actions/checkout from 6.0.3 to 7.0.0 by @dependabot[bot] in 
-* Route iOS notification settings intent into the app by @mozzius in 
-* Rename root file from `js` to `ts`, improve platform splitting by @mo
-
-... (truncated)]]></description>
-    <pubDate>Tue, 07 Jul 2026 17:24:52 GMT</pubDate>
-  </item>
-  <item>
     <title>[panva/node-oidc-provider] v9.9.1</title>
     <link>https://github.com/panva/node-oidc-provider/releases/tag/v9.9.1</link>
     <guid isPermaLink="true">https://github.com/panva/node-oidc-provider/releases/tag/v9.9.1</guid>
@@ -472,36 +579,6 @@ Since v6.17.0, `MongoClient.close` has eagerly closed checked-out (in-use) conne
 
 * ignore stale clients during logout confirmation (7216f2b)]]></description>
     <pubDate>Tue, 07 Jul 2026 16:02:12 GMT</pubDate>
-  </item>
-  <item>
-    <title>[anomalyco/opencode] v1.17.15</title>
-    <link>https://github.com/anomalyco/opencode/releases/tag/v1.17.15</link>
-    <guid isPermaLink="true">https://github.com/anomalyco/opencode/releases/tag/v1.17.15</guid>
-    <description><![CDATA[## Core
-### Bugfixes
-- Better classify Z.ai context-window overflow errors so oversized requests surface the right failure mode (@fengjikui)
-- Handle unavailable config directories more gracefully when reading config files
-
-## Desktop
-### Improvements
-- Restore model details tooltips in the model picker (@arvsrn)
-- Refresh the v2 command palette to better match the rest of the new desktop UI (@arvsrn)
-
-### Bugfixes
-- Make terminal shortcuts take priority when the terminal is focused
-- Show unread state on tabs with pending questions
-- Keep session tab titles available after reloads while session data is still loading
-- Apply theme changes only after you select them in Settings
-- Fix macOS titlebar appearance mismatches in Sequoia and adjust traffic light placement (@arvsrn)
-
-**Thank you to 3 community contributors:**
-- @arvsrn:
- - feat(app): align cmd k menu with v2 styles (#35152)
- - feat(app): visual improvements (#35134)
- - feat(app): reintroduce model context tooltip in model selec
-
-... (truncated)]]></description>
-    <pubDate>Tue, 07 Jul 2026 15:31:38 GMT</pubDate>
   </item>
   <item>
     <title>[web-infra-dev/rspack] v2.1.3</title>
@@ -815,37 +892,6 @@ This version includes the following bug fixes and feature additions.
     <pubDate>Mon, 06 Jul 2026 00:24:18 GMT</pubDate>
   </item>
   <item>
-    <title>[rust-lang/rust] Rust 1.96.1 (1.96.1)</title>
-    <link>https://github.com/rust-lang/rust/releases/tag/1.96.1</link>
-    <guid isPermaLink="true">https://github.com/rust-lang/rust/releases/tag/1.96.1</guid>
-    <description><![CDATA[<a id="1.96.1"></a>
-
-- Cargo: fix timeout/retry behavior
-- Cargo: apply patches for CVE-2025-15661, CVE-2026-55199, and CVE-2026-55200 to libssh2
-- rustc: fix miscompilation in MIR optimization]]></description>
-    <pubDate>Sun, 05 Jul 2026 23:50:27 GMT</pubDate>
-  </item>
-  <item>
-    <title>[pnpm/pnpm] pnpm 11.10 (v11.10.0)</title>
-    <link>https://github.com/pnpm/pnpm/releases/tag/v11.10.0</link>
-    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v11.10.0</guid>
-    <description><![CDATA[## Minor Changes
-
-* e2e3c81: Added the `issues` command as an alias of `bugs`, so `pnpm issues` opens the package's bug tracker URL in the browser.
-
-* 8491f8e: Added the `prefix` command which prints the current package prefix directory (or global prefix directory if `-g` / `--global` is used).
-
-* 3425e80: Added an `_auth` setting for configuring registry authentication as a single structured (URL-keyed) value. It can be set in the **global** pnpm config (`config.yaml`) or, for CI, via the `pnpm_config__auth` environment variable. The env form sidesteps the GitHub Actions / bash / zsh limitation that broke the existing `pnpm_config_//host/:_authToken=…` form (env var names containing `/`, `:`, or `.` are silently dropped). Closes pnpm/pnpm#12314.
-
- The value is keyed by registry URL so each secret is explicitly bound to the host that may receive it. Registry URL keys must use `http` or `https` and must not include credentials, query strings, or fragments:
-
- ```sh
- export pnp
-
-... (truncated)]]></description>
-    <pubDate>Sat, 04 Jul 2026 19:58:37 GMT</pubDate>
-  </item>
-  <item>
     <title>[webpack/webpack] v5.108.4</title>
     <link>https://github.com/webpack/webpack/releases/tag/v5.108.4</link>
     <guid isPermaLink="true">https://github.com/webpack/webpack/releases/tag/v5.108.4</guid>
@@ -907,127 +953,6 @@ This version includes the following bug fixes and feature additions.
 - fix(transform): keep comma-sequence operands ahead of hoisted awaits (#5925, #5926)
 - ci: auto-opt archive cache eviction in the test gate (#5892) and release-packages workflow_dispatch tag-fallback repo pinning]]></description>
     <pubDate>Sat, 04 Jul 2026 01:31:58 GMT</pubDate>
-  </item>
-  <item>
-    <title>[anomalyco/opentui] Release v0.4.3 (v0.4.3)</title>
-    <link>https://github.com/anomalyco/opentui/releases/tag/v0.4.3</link>
-    <guid isPermaLink="true">https://github.com/anomalyco/opentui/releases/tag/v0.4.3</guid>
-    <description><![CDATA[## What's Changed
-* fix(core): guard lifecycle passes loop against destroyed renderables by @anerli in 
-* core: fix Select test assertions by @simonklee in 
-* renderer: isolate tests from the host terminal environment by @simonklee in 
-* fix(ffi): preserve borrowed pointer owners by @simonklee in 
-* Reduce Yoga callback pressure for native text measurement by @kommander in 
-* refactor(core): remove unused ADDED/REMOVED LayoutEvents by @posva in 
-* fix(core): identity-based child management, resolves duplicate-id culling corruption by @kommander in 
-* solid: fix plugin subpath resolution by @simonklee in 
-
-## New Contributors
-* @anerli made their first contribution in 
-* @posva made their first contribution in 
-
-**Full Changelog**:]]></description>
-    <pubDate>Fri, 03 Jul 2026 18:39:39 GMT</pubDate>
-  </item>
-  <item>
-    <title>[privatenumber/tsx] v4.23.0</title>
-    <link>https://github.com/privatenumber/tsx/releases/tag/v4.23.0</link>
-    <guid isPermaLink="true">https://github.com/privatenumber/tsx/releases/tag/v4.23.0</guid>
-    <description><![CDATA[# 4.23.0 (2026-07-03)
-
-
-### Bug Fixes
-
-* avoid redundant filesystem probes during module resolution (257bbbb), closes privatenumber/tsx#809
-
-
-### Features
-
-* add multi-scenario startup benchmark suite (c178197), closes privatenumber/tsx#809 #809 hi#signal privatenumber/tsx#145 #809
-
----
-This release is also available on:
-- npm package (@latest dist-tag)]]></description>
-    <pubDate>Fri, 03 Jul 2026 14:25:07 GMT</pubDate>
-  </item>
-  <item>
-    <title>[cloudflare/vinext] vinext@0.2.1</title>
-    <link>https://github.com/cloudflare/vinext/releases/tag/vinext%400.2.1</link>
-    <guid isPermaLink="true">https://github.com/cloudflare/vinext/releases/tag/vinext%400.2.1</guid>
-    <description><![CDATA[### Bug Fixes
-
-#### App Router
-
-- limit mounted slot cache variants (#2497)
-- omit pending RSC cache state for query renders (#2488)
-- isolate global not-found css (#2444)
-- expose app rewrites to pages data clients (#2468)
-- publish committed no-prefetch navigations (#2469)
-- cache segment prefetches by rendered search params (#2477)
-- skip readiness waits for speculative prerenders (#2457)
-- align app static ISR lifecycle (#2472)
-- reuse metadata rewrite prefetches (#2455)
-- avoid runtime route-tree prefetch sizing (#2467)
-- start optimistic prefetches immediately (#2440)
-- normalize rsc reference validation ids (#2480)
-- send deployment id on RSC responses (#2452)
-- separate header-only full-route rsc requests (#2445)
-- preserve app rewrite filtering (#2441)
-- revalidate dynamic intercepted actions (#2443)
-- evict segment prefetches under memory pressure (#2466)
-- honor basePath false rewrites (#2370)
-- preserve rewritten route identity (#2358)
-- support styled-jsx from next (#2341)
-
-... (truncated)]]></description>
-    <pubDate>Fri, 03 Jul 2026 09:42:09 GMT</pubDate>
-  </item>
-  <item>
-    <title>[cli/cli] GitHub CLI 2.96.0 (v2.96.0)</title>
-    <link>https://github.com/cli/cli/releases/tag/v2.96.0</link>
-    <guid isPermaLink="true">https://github.com/cli/cli/releases/tag/v2.96.0</guid>
-    <description><![CDATA[## Security
-
-A security vulnerability has been identified, and fixed, that could allow command execution on a user's computer when connecting to a malicious Codespace via `gh codespace jupyter`.
-
-Users of `gh codespace jupyter` are advised to update gh to version v2.96.0 as soon as possible.
-
-For more information see: 
-
-## Download release assets without authentication
-
-`gh release download` now works against public repositories without authentication, matching `gh extension install`. A token is still used when one is present:
-
-```shell
-# Download assets from a public repository, no login required
-gh release download v2.96.0 --repo cli/cli
-```
-
-## What's Changed
-
-### ✨ Features
-
-* Allow `gh release download` without authentication on public repositories by @BagToad in #13723
-* Detect additional third-party coding agents by @BagToad in #13722
-* Support `antigravity-cli` and `antigravity2.0` in `gh skill` by @BagToad in #13784
-
-### 🐛 Fixes
-
-* fix: show checks 
-
-... (truncated)]]></description>
-    <pubDate>Thu, 02 Jul 2026 21:31:04 GMT</pubDate>
-  </item>
-  <item>
-    <title>[fastify/fastify-vite] @fastify/vite@9.1.1</title>
-    <link>https://github.com/fastify/fastify-vite/releases/tag/%40fastify/vite%409.1.1</link>
-    <guid isPermaLink="true">https://github.com/fastify/fastify-vite/releases/tag/%40fastify/vite%409.1.1</guid>
-    <description><![CDATA[### Patch Changes
-
-- e70066c: Refactor environment discovery to iterate `viteConfig.environments` directly
-
- Replaces the fragile `findPlugin`/`hasPlugin` config-hook re-invocation pattern with direct iteration of `viteConfig.environments`, which is always available after Vite resolves its config. Also uses `isRunnableDevEnvironment(envConfig).runner` where available to avoid creating duplicate `ModuleRunner` instances for cross-environment imports.]]></description>
-    <pubDate>Thu, 02 Jul 2026 16:33:14 GMT</pubDate>
   </item>
 </channel>
 </rss>
