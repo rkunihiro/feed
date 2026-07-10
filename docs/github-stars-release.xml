@@ -5,8 +5,226 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Thu, 09 Jul 2026 23:00:42 GMT</lastBuildDate>
+  <lastBuildDate>Fri, 10 Jul 2026 22:48:11 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[eslint/eslint] v10.7.0</title>
+    <link>https://github.com/eslint/eslint/releases/tag/v10.7.0</link>
+    <guid isPermaLink="true">https://github.com/eslint/eslint/releases/tag/v10.7.0</guid>
+    <description><![CDATA[## Features
+* `cf2a9bf` feat: add errorClassNames option to preserve-caught-error rule (#21032) (sethamus)
+* `f8b873a` feat: max-nested-callbacks option for constructor callbacks (#21063) (fnx)
+* `557fde8` feat: support computed `Number.parseInt` member access in `radix` rule (#21041) (Pixel)
+* `0b4a73b` feat: add suggestions to no-compare-neg-zero (#21034) (den$)
+* `96cdd42` feat: report invalid signed numeric radix values in `radix` rule (#21030) (Pixel)
+
+## Bug Fixes
+* `3e7bf15` fix: apply `ignoreClassesWithImplements` to class expressions (#21069) (Pixel)
+* `0d7d70c` fix: insert cause outside wrapping parens in preserve-caught-error (#21062) (Mahin Anowar)
+* `75ec753` fix: handle static template literals in `eqeqeq` rule (#21058) (Pixel)
+* `b717a22` fix: prevent `eqeqeq` null option from reporting non-equality operators (#21057) (Pixel)
+* `e35b05f` fix: avoid `no-invalid-regexp` false positive for shadowed RegExp (#21051) (Pixel)
+* `a3172b6` fix: avoid `no-control-regex` false posi
+
+... (truncated)]]></description>
+    <pubDate>Fri, 10 Jul 2026 21:22:56 GMT</pubDate>
+  </item>
+  <item>
+    <title>[github/spec-kit] Spec Kit - 0.12.11 (v0.12.11)</title>
+    <link>https://github.com/github/spec-kit/releases/tag/v0.12.11</link>
+    <guid isPermaLink="true">https://github.com/github/spec-kit/releases/tag/v0.12.11</guid>
+    <description><![CDATA[## Install
+
+```bash
+uv tool install specify-cli --from git+
+specify init my-project
+```
+
+## What's Changed
+
+- chore: bump version to 0.12.11
+- fix(agent-context): discover nested plan.md in scoped layouts (#3024) (#3301)
+- fix(auth): return no matches, not raw ValueError, for a malformed URL (#3437)
+- fix(catalogs): raise catalog error, not raw ValueError, on a malformed URL (#3435)
+- fix(bundler): raise BundlerError, not raw ValueError, on a malformed catalog URL (#3433)
+- chore: add pre-commit config and fix trailing whitespace/end-of-file (#3430)
+- Add EARS Requirements Syntax extension to community catalog (#3407)
+- Add Spec Kit Figma extension to community catalog (#3408)
+- fix(workflows): report validation errors instead of crashing on non-string workflow.yml scalars (#3421)
+- fix(templates): remove self-referencing path in plan-template.md note (#3417)
+- chore: release 0.12.10, begin 0.12.11.dev0 development (#3453)]]></description>
+    <pubDate>Fri, 10 Jul 2026 19:28:14 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1085.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1085.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1085.0</guid>
+    <description><![CDATA[#### 3.1085.0(2026-07-10)
+
+##### New Features
+
+* **clients:** update client endpoints as of 2026-07-10 (dffbeab0)
+* **client-quicksight:** Provides CreateKnowledgeBase and UpdateKnowledgeBase APIs (42de5523)
+* **client-inspector2:** Support for 3 day and 7 day ECR re-scan durations (4b0b5c86)
+* **client-lambda:** Added TelemetryConfig support for Managed Instances Capacity Provider, enabling customers to configure system log level and custom log group for managed instance logging. (63388139)
+* **client-sagemaker:** Release support for g4d, c6g, c7g, c8g instance types for SageMaker HyperPod (800976de)
+* **client-ec2:** New Amazon EC2 instances. M9g, M9gd, C9g, and C9gd on AWS Graviton5. C8in, M8in, and R8in add 600 Gbps network. C8ib, M8ib, and R8ib add 300 Gbps EBS. C8ine, M8ine, M8idn, R8idn, M8idb, and R8idb round out Intel Xeon 6. Mac-m3ultra with Apple M3 Ultra. G7 with NVIDIA RTX PRO 4500 Blackwell GPUs. (35aaf387)
+* **client-license-manager:** Added the ResetUsage field to the C
+
+... (truncated)]]></description>
+    <pubDate>Fri, 10 Jul 2026 18:50:49 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-07-10) (release-2026-07-10)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-07-10</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-07-10</guid>
+    <description><![CDATA[## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/service/cloudwatch`: [v1.63.0](service/cloudwatch/CHANGELOG.md#v1630-2026-07-10)
+ * **Feature**: CloudWatch now assigns a unique identifier to each anomaly detector. PutAnomalyDetector and DescribeAnomalyDetectors return this AnomalyDetectorId, which you can use to describe or delete a specific anomaly detector directly.
+* `github.com/aws/aws-sdk-go-v2/service/ec2`: [v1.316.0](service/ec2/CHANGELOG.md#v13160-2026-07-10)
+ * **Feature**: New Amazon EC2 instances. M9g, M9gd, C9g, and C9gd on AWS Graviton5. C8in, M8in, and R8in add 600 Gbps network. C8ib, M8ib, and R8ib add 300 Gbps EBS. C8ine, M8ine, M8idn, R8idn, M8idb, and R8idb round out Intel Xeon 6. Mac-m3ultra with Apple M3 Ultra. G7 with NVIDIA RTX PRO 4500 Blackwell GPUs.
+* `github.com/aws/aws-sdk-go-v2/service/inspector2`: [v1.52.0](service/inspector2/CHANGELOG.md#v1520-2026-07-10)
+ * **Feature**: Support for 3 day and 7 day ECR re-scan durations
+* `github.com/aws/aws-sdk-go-v2
+
+... (truncated)]]></description>
+    <pubDate>Fri, 10 Jul 2026 18:44:13 GMT</pubDate>
+  </item>
+  <item>
+    <title>[mongodb/mongo-go-driver] MongoDB Go Driver 2.8.0 (v2.8.0)</title>
+    <link>https://github.com/mongodb/mongo-go-driver/releases/tag/v2.8.0</link>
+    <guid isPermaLink="true">https://github.com/mongodb/mongo-go-driver/releases/tag/v2.8.0</guid>
+    <description><![CDATA[The MongoDB Go Driver Team is pleased to release version 2.8.0 of the official MongoDB Go Driver.
+
+## Release Highlights
+
+This release supports the general availability of Queryable Encryption string queries. The query types `prefix`, `suffix`, and `substring` are added as generally available for MongoDB 9.0+ and libmongocrypt 1.20.0. The query types `prefixPreview`, `suffixPreview`, and `substringPreview` remain experimental for 8.2–8.x servers and may be removed in a future release.
+
+Other key facts:
+- The algorithm `TextPreview` is replaced with `String`.
+- API rename: `options.Text` → `options.String`; `TextOptions*` → `StringOptions*`; `EncryptOptionsBuilder.SetTextOptions` → `SetStringOptions`.
+
+<!-- Release notes generated using configuration in .github/release.yml at v2.8.0 -->
+
+## What's Changed
+### ✨ New Features
+* GODRIVER-3863: Add QE prefix and suffix GA by @prestonvasquez in 
+* GODRIVER-4002: Add substring to QE GA by @prestonvasquez in 
+### 📦 Dependency 
+
+... (truncated)]]></description>
+    <pubDate>Fri, 10 Jul 2026 16:37:06 GMT</pubDate>
+  </item>
+  <item>
+    <title>[pnpm/pnpm] pnpm 10.34.5 (v10.34.5)</title>
+    <link>https://github.com/pnpm/pnpm/releases/tag/v10.34.5</link>
+    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v10.34.5</guid>
+    <description><![CDATA[## Patch Changes
+
+* 78e29fe: Prevent a crafted `pnpm-lock.yaml` from writing package content outside the virtual store. A dependency path key whose name reconstructs to a path-traversal sequence (e.g. `../../../tmp/x@1.0.0`) is now rejected by the isolated (virtual-store) linker and the Plug'n'Play resolver map, matching the containment already applied to the hoisted linker. Under the global virtual store, a traversal in the version-derived path segment (e.g. a snapshot `version: "../../x"`) is now rejected at `iterateHashedGraphNodes`, the single point every global-virtual-store slot path funnels through.
+* 78e29fe: Fixed a path traversal vulnerability where a dependency whose manifest `name` was a scoped path traversal (e.g. `@x/../../../<path>`) could be written outside `node_modules` to an attacker-controlled location during `pnpm install`, even with `--ignore-scripts`. The isolated linker now validates the package name before using it as a directory name, matching the existing 
+
+... (truncated)]]></description>
+    <pubDate>Fri, 10 Jul 2026 11:39:29 GMT</pubDate>
+  </item>
+  <item>
+    <title>[honojs/hono] v4.12.29</title>
+    <link>https://github.com/honojs/hono/releases/tag/v4.12.29</link>
+    <guid isPermaLink="true">https://github.com/honojs/hono/releases/tag/v4.12.29</guid>
+    <description><![CDATA[## What's Changed
+* fix(client): merge function headers with per-request headers by @yusukebe in 
+* chore: fix no-op tsc in test script by @yusukebe in 
+* fix(lambda-edge): resolve the handler with the value passed to the callback by @yusukebe in 
+* docs(language): add JSDoc @example to languageDetector by @codebybilal18 in 
+* test(workerd): add `compatibilityDate` by @yusukebe in 
+* fix(lambda-edge): base64 encode content-encoded response bodies by @yusukebe in 
+* fix(aws-lambda): treat any non-identity content-encoding as binary by @yusukebe in 
+* fix(types): strip extra properties from array types in JSONParsed by @Arman-Luthra in 
+* fix(trie-router): match empty wildcard remainder after regexp param by @usualoma in 
+* fix(etag): treat If-None-Match: `*` as a match by @yusukebe in 
+
+## New Contributors
+* @codebybilal18 made their first contribution in 
+* @Arman-Luthra made their first contribution in 
+
+**Full Changelog**:]]></description>
+    <pubDate>Fri, 10 Jul 2026 09:33:30 GMT</pubDate>
+  </item>
+  <item>
+    <title>[zed-industries/zed] v1.10.2</title>
+    <link>https://github.com/zed-industries/zed/releases/tag/v1.10.2</link>
+    <guid isPermaLink="true">https://github.com/zed-industries/zed/releases/tag/v1.10.2</guid>
+    <description><![CDATA[- agent: Added GPT 5.6 Sol & Terra for ChatGPT subscription. Note: GPT 5.6 Luna is not available yet, since OpenAI has not unlocked access for third-party clients (#60745)]]></description>
+    <pubDate>Fri, 10 Jul 2026 09:27:05 GMT</pubDate>
+  </item>
+  <item>
+    <title>[denoland/rusty_v8] v150.1.0</title>
+    <link>https://github.com/denoland/rusty_v8/releases/tag/v150.1.0</link>
+    <guid isPermaLink="true">https://github.com/denoland/rusty_v8/releases/tag/v150.1.0</guid>
+    <description><![CDATA[No release notes provided.]]></description>
+    <pubDate>Fri, 10 Jul 2026 09:26:44 GMT</pubDate>
+  </item>
+  <item>
+    <title>[containerd/containerd] containerd 2.3.3 (v2.3.3)</title>
+    <link>https://github.com/containerd/containerd/releases/tag/v2.3.3</link>
+    <guid isPermaLink="true">https://github.com/containerd/containerd/releases/tag/v2.3.3</guid>
+    <description><![CDATA[Welcome to the v2.3.3 release of containerd!
+
+The third patch release for containerd 2.3 contains various fixes and updates.
+
+### Highlights
+
+* Set SystemTemp environment variable on Windows so temp directory overrides work for SYSTEM services (#13694)
+
+#### Container Runtime Interface (CRI)
+
+* Fix nil pointer dereference in NRI GetIPs during pod sandbox teardown or container exit (#13697)
+* Reject CreateContainer calls when the target sandbox is not running (#13668)
+* Ensure sandbox shutdown on RunPodSandbox hook failures to avoid mount leaks (#13645)
+
+#### Image Distribution
+
+* Surface OCI error bodies in registry 403 responses by falling back to GET requests (#13738)
+
+#### Snapshotters
+
+* Align default 4K mkfs block size for EROFS across all platforms (#13632)
+
+Please try out the release binaries and report any issues at
+
+
+### Contributors
+
+* Maksym Pavlenko
+* Samuel Karp
+* Chris Henzie
+* Phil Estes
+* Sebastiaan van Stijn
+* Akihiro Suda
+* Austin Vazquez
+* Chris Crone
+* Derek McGowan
+
+... (truncated)]]></description>
+    <pubDate>Fri, 10 Jul 2026 00:04:40 GMT</pubDate>
+  </item>
+  <item>
+    <title>[openai/codex] 0.144.1 (rust-v0.144.1)</title>
+    <link>https://github.com/openai/codex/releases/tag/rust-v0.144.1</link>
+    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.144.1</guid>
+    <description><![CDATA[## Bug Fixes
+
+- Fixed standalone installs failing when GitHub returns compact or reordered release metadata. (#31913)
+- Ensured macOS package installs expose the code-mode host alongside the `codex` executable. (#31913)
+- Kept code mode working when the companion host binary is unavailable by falling back to the embedded runtime. (#31913)
+
+## Changelog
+
+Full Changelog: 
+
+- #31913 [0.144] Backport installer and code-mode reliability fixes @bolinfest]]></description>
+    <pubDate>Thu, 09 Jul 2026 23:02:40 GMT</pubDate>
+  </item>
   <item>
     <title>[bluesky-social/atproto] @atproto/oauth-provider-ui@0.8.7</title>
     <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/oauth-provider-ui%400.8.7</link>
@@ -28,30 +246,6 @@
 
 ... (truncated)]]></description>
     <pubDate>Thu, 09 Jul 2026 22:07:08 GMT</pubDate>
-  </item>
-  <item>
-    <title>[pnpm/pnpm] pnpm 11.11 (v11.11.0)</title>
-    <link>https://github.com/pnpm/pnpm/releases/tag/v11.11.0</link>
-    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v11.11.0</guid>
-    <description><![CDATA[## Minor Changes
-
-* 508b8c2: Added the `pnpm access` command for managing package access and visibility on the registry, supporting listing packages and collaborators, getting and setting package status and MFA requirements, and granting or revoking team access.
-
-## Patch Changes
-
-* c70e33e: Allow `allowBuilds` entries for git-hosted packages to match by repository URL without pinning the resolved commit hash. This lets trusted git repositories keep running their build scripts after branch updates without approving each new commit, while package-name-only rules still do not approve git-hosted artifacts.
-* 3067e4f: Reduced peak memory usage during cold-cache dependency resolution. The metadata fetch is memoized for the whole resolution phase, and it was retaining each package's raw registry response body (used only to mirror the response to disk) for that entire time. The memoized cache now holds a body-less copy, so the raw body only lives as long as the call that writes the dis
-
-... (truncated)]]></description>
-    <pubDate>Thu, 09 Jul 2026 20:43:29 GMT</pubDate>
-  </item>
-  <item>
-    <title>[zed-industries/zed] v1.10.1</title>
-    <link>https://github.com/zed-industries/zed/releases/tag/v1.10.1</link>
-    <guid isPermaLink="true">https://github.com/zed-industries/zed/releases/tag/v1.10.1</guid>
-    <description><![CDATA[- open_ai: Added support for GPT 5.6 Sol/Terra/Luna (#60699)
-- cli: Fixed an issue where the previous workspace would not be restored when using `cli_default_open_behavior: new_window` and no path was provided (#60672)]]></description>
-    <pubDate>Thu, 09 Jul 2026 19:36:47 GMT</pubDate>
   </item>
   <item>
     <title>[iii-hq/iii] iii 0.21.4 (iii/v0.21.4)</title>
@@ -83,40 +277,6 @@
     <pubDate>Thu, 09 Jul 2026 18:51:45 GMT</pubDate>
   </item>
   <item>
-    <title>[aws/aws-sdk-js-v3] v3.1084.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1084.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1084.0</guid>
-    <description><![CDATA[#### 3.1084.0(2026-07-09)
-
-##### New Features
-
-* **client-connect:** Amazon Connect - Added DeleteContactData API to support PII deletion of customer endpoint, additional email recipients and email subject. (87f4ae0e)
-* **client-guardduty:** Adding "AI Analyst" enum value for detector (20518a4f)
-* **client-synthetics:** CloudWatch Synthetics adds support for customer managed KMS keys for canary environment variables. Customers can now encrypt their canary's Lambda function environment variables at rest using their own AWS KMS key, providing additional control over data protection. (c7379151)
-* **client-ec2:** Added support for additional override parameters in CreateFleet, including LaunchTemplateSpecificationUserData, KeyName, IamInstanceProfile, and MetadataOptions. The CreateFleet response now also includes SubnetId, AvailabilityZone, and AvailabilityZoneId for launched instances. (6fcc95d1)
-* **client-ivs:** adds support for AWS IVS ad configuration APIs to allow for a postRollConf
-
-... (truncated)]]></description>
-    <pubDate>Thu, 09 Jul 2026 18:50:30 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-07-09) (release-2026-07-09)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-07-09</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-07-09</guid>
-    <description><![CDATA[## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/connect`: [v1.182.0](service/connect/CHANGELOG.md#v11820-2026-07-09)
- * **Feature**: Amazon Connect - Added DeleteContactData API to support PII deletion of customer endpoint, additional email recipients and email subject.
-* `github.com/aws/aws-sdk-go-v2/service/ec2`: [v1.315.0](service/ec2/CHANGELOG.md#v13150-2026-07-09)
- * **Feature**: Added support for additional override parameters in CreateFleet, including LaunchTemplateSpecificationUserData, KeyName, IamInstanceProfile, and MetadataOptions. The CreateFleet response now also includes SubnetId, AvailabilityZone, and AvailabilityZoneId for launched instances.
-* `github.com/aws/aws-sdk-go-v2/service/guardduty`: [v1.82.0](service/guardduty/CHANGELOG.md#v1820-2026-07-09)
- * **Feature**: Adding "AI Analyst" enum value for detector
-* `github.com/aws/aws-sdk-go-v2/service/ivs`: [v1.54.0](service/ivs/CHANGELOG.md#v1540-2026-07-09)
- * **Feature**: adds support for AWS IVS ad confi
-
-... (truncated)]]></description>
-    <pubDate>Thu, 09 Jul 2026 18:38:42 GMT</pubDate>
-  </item>
-  <item>
     <title>[markedjs/marked] v18.0.6</title>
     <link>https://github.com/markedjs/marked/releases/tag/v18.0.6</link>
     <guid isPermaLink="true">https://github.com/markedjs/marked/releases/tag/v18.0.6</guid>
@@ -131,59 +291,11 @@
     <pubDate>Thu, 09 Jul 2026 17:06:34 GMT</pubDate>
   </item>
   <item>
-    <title>[openai/codex] 0.144.0 (rust-v0.144.0)</title>
-    <link>https://github.com/openai/codex/releases/tag/rust-v0.144.0</link>
-    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.144.0</guid>
-    <description><![CDATA[## New Features
-
-- Usage-limit reset credits now show their type and expiration, and let you choose which credit to redeem. (#30488)
-- Added a `writes` app-approval mode that allows declared read-only actions while prompting for writes. (#30482)
-- MCP tools can now request authentication interactively without an experimental opt-in. (#28772)
-- App-server hosts can provide Codex authentication at runtime and redirect successful logins to a hosted page. (#28745, #31274)
-- Global pnunen installs are now detected so diagnostics and updates use the correct package manager. (#31503)
-- Selecting Ultra reasoning now warns when high multi-agent concurrency could increase usage quickly. (#31621)
-
-## Bug Fixes
-
-- Resumed ChatGPT threads recover when compaction references a retired model by retrying with the currently selected model. (#30319)
-- Fixed Code Mode crashes in Intel macOS release binaries. (#30953)
-- Windows sandbox sessions can delete files in writable roots and access the managed prim
-
-... (truncated)]]></description>
-    <pubDate>Thu, 09 Jul 2026 16:47:12 GMT</pubDate>
-  </item>
-  <item>
     <title>[prettier/prettier] 3.9.5</title>
     <link>https://github.com/prettier/prettier/releases/tag/3.9.5</link>
     <guid isPermaLink="true">https://github.com/prettier/prettier/releases/tag/3.9.5</guid>
     <description><![CDATA[🔗 Changelog]]></description>
     <pubDate>Thu, 09 Jul 2026 16:22:50 GMT</pubDate>
-  </item>
-  <item>
-    <title>[github/spec-kit] Spec Kit - 0.12.9 (v0.12.9)</title>
-    <link>https://github.com/github/spec-kit/releases/tag/v0.12.9</link>
-    <guid isPermaLink="true">https://github.com/github/spec-kit/releases/tag/v0.12.9</guid>
-    <description><![CDATA[## Install
-
-```bash
-uv tool install specify-cli --from git+
-specify init my-project
-```
-
-## What's Changed
-
-- chore: bump version to 0.12.9
-- fix(integrations): skip Windows Store python3 alias stub in resolve_python_interpreter (#3385)
-- fix(integrations): escape control characters in SKILL.md frontmatter (#3399)
-- fix(workflows): apply chained expression filters left-to-right (#3339)
-- fix(scripts): resolve invoke_separator by parse success, not python3 availability (#3304) (#3320)
-- fix(shared-infra): refresh_shared_templates preserves recovered user files (#3378)
-- fix(agents): resolve skill placeholders in Goose (yaml) command output (#3374)
-- fix(bundler): enforce version pin on bundled preset/extension installs (#3377)
-- Update Golden Demo extension to v0.3.0 (#3394)
-- test: isolate integration test home (#3144)
-- chore: release 0.12.8, begin 0.12.9.dev0 development (#3410)]]></description>
-    <pubDate>Thu, 09 Jul 2026 13:30:28 GMT</pubDate>
   </item>
   <item>
     <title>[rust-lang/rust] Rust 1.97.0 (1.97.0)</title>
@@ -842,29 +954,6 @@ go install github.com/wailsapp/wails/v2/cmd/wails@v2.13.0
     <pubDate>Mon, 06 Jul 2026 10:44:59 GMT</pubDate>
   </item>
   <item>
-    <title>[honojs/hono] v4.12.28</title>
-    <link>https://github.com/honojs/hono/releases/tag/v4.12.28</link>
-    <guid isPermaLink="true">https://github.com/honojs/hono/releases/tag/v4.12.28</guid>
-    <description><![CDATA[## What's Changed
-* fix(serve-static): treat empty string content as found by @yusukebe in 
-* docs(MIGRATION): fix req.raw.headers reference (property, not method) by @EduardF1 in 
-* chore: don't publish `*.tsbuildinfo` by @yusukebe in 
-* fix(utils/body,validator): normalize Content-Type media type for case-insensitive matching by @yusukebe in 
-* fix: avoid circular dependency between body.ts and request.ts by @usualoma in 
-* fix(bun): report the requested subprotocol on WSContext.protocol by @greymoth-jp in 
-* chore: bump `devDependencies` by @yusukebe in 
-* fix(aws-lambda): detect V2 events by request context, not rawPath alone by @VihaanAgarwal in 
-* docs(context-storage): fix JSDoc by @yusukebe in 
-
-## New Contributors
-* @EduardF1 made their first contribution in 
-* @greymoth-jp made their first contribution in 
-* @VihaanAgarwal made their first contribution in 
-
-**Full Changelog**:]]></description>
-    <pubDate>Mon, 06 Jul 2026 10:08:05 GMT</pubDate>
-  </item>
-  <item>
     <title>[djkotori/rpgcobo-tool] v0.1.8</title>
     <link>https://github.com/djkotori/rpgcobo-tool/releases/tag/v0.1.8</link>
     <guid isPermaLink="true">https://github.com/djkotori/rpgcobo-tool/releases/tag/v0.1.8</guid>
@@ -882,77 +971,6 @@ This version includes the following bug fixes and feature additions.
 
 *Note: There are native code updates. Please be aware of the behavior of your Windows antivirus.*]]></description>
     <pubDate>Mon, 06 Jul 2026 00:42:46 GMT</pubDate>
-  </item>
-  <item>
-    <title>[esm-dev/esm.sh] Server v137_6 (v137_6)</title>
-    <link>https://github.com/esm-dev/esm.sh/releases/tag/v137_6</link>
-    <guid isPermaLink="true">https://github.com/esm-dev/esm.sh/releases/tag/v137_6</guid>
-    <description><![CDATA[* Upgrade `esbuild` to `0.28.1`.
-* Fix shard S3 meta cache paths. (#1372)]]></description>
-    <pubDate>Mon, 06 Jul 2026 00:24:18 GMT</pubDate>
-  </item>
-  <item>
-    <title>[webpack/webpack] v5.108.4</title>
-    <link>https://github.com/webpack/webpack/releases/tag/v5.108.4</link>
-    <guid isPermaLink="true">https://github.com/webpack/webpack/releases/tag/v5.108.4</guid>
-    <description><![CDATA[### Patch Changes
-
-- Speed up non-CSS-Modules parsing by not building unused selector AST nodes. (by @alexander-akait in #21324)
-
-- Speed up non-CSS-Modules CSS parsing by dropping value tokens nothing reads. (by @alexander-akait in #21324)
-
-- Resolve HTML asset URLs against the document `<base href>`. (by @alexander-akait in #21329)
-
-- Add HTML integration tests: generateError output, ignored src, null-char parse. (by @aryanraj45 in #21328)
-
-- Reduce CPU and memory overhead of HTML and CSS parsing and code generation. (by @alexander-akait in #21332)
-
-- Reduce HTML parser memory and CPU by skipping unused AST nodes. (by @alexander-akait in #21323)
-
-- Reduce HTML parser memory by storing the AST in struct-of-arrays form. (by @alexander-akait in #21331)
-
-- Key the provided-exports cache on a lazy barrel's still-lazy re-export targets. (by @hai-x in #21326)
-
-- Default `output.globalObject` to `globalThis` for universal targets. (by @alexander-akait in #21314)
-
-- Pass through `new URL(...)
-
-... (truncated)]]></description>
-    <pubDate>Sat, 04 Jul 2026 18:09:51 GMT</pubDate>
-  </item>
-  <item>
-    <title>[nodejs/undici] v8.7.0</title>
-    <link>https://github.com/nodejs/undici/releases/tag/v8.7.0</link>
-    <guid isPermaLink="true">https://github.com/nodejs/undici/releases/tag/v8.7.0</guid>
-    <description><![CDATA[## What's Changed
-* test: guard balanced-pool error port lookup by @mcollina in 
-* perf: optimize http/2 request hot path by @mcollina in 
-* fix: do not reject open-ended Range values in simpleRangeHeaderValue by @spokodev in 
-* fix(eventsource): set use-URL-credentials flag by @Ram-blip in 
-* test: deflake connect-timeout watchdog by @mcollina in 
-* docs: correct npm script name and JSON syntax in examples by @lenoxfernando in 
-* fix: reject non-ascii octets in validateCookiePath by @spokodev in 
-* fix(readable): ignore late consume chunks by @marko1olo in 
-* fix(h2): destroy the stream on abort instead of relying on close by @staylor in 
-* fix: ignore an unparseable Set-Cookie Expires attribute by @spokodev in 
-* docs: add reproduction guide and update bug report template by @mcollina in 
-* fix(h2): guard onResponse against a 'response' event delivered after completion by @staylor in 
-* fix(h2): requeue request on GOAWAY'd session instead of crashing by @staylor in 
-* fix: add static
-
-... (truncated)]]></description>
-    <pubDate>Sat, 04 Jul 2026 12:00:28 GMT</pubDate>
-  </item>
-  <item>
-    <title>[PerryTS/perry] v0.5.1220</title>
-    <link>https://github.com/PerryTS/perry/releases/tag/v0.5.1220</link>
-    <guid isPermaLink="true">https://github.com/PerryTS/perry/releases/tag/v0.5.1220</guid>
-    <description><![CDATA[Distribution follow-up to v0.5.1219 (see its notes for the full 394-commit changelog since v0.5.1182 — NestJS, current-thread async runtime, type lowering, the test262 waves, and more). The v0.5.1219 brew/apt/winget/workers channels never published due to a release-packaging dispatch bug; this release ships those channels plus:
-
-- **fix(link): dedup wrapper-bundled perry-runtime in wrappers-first links** (#5920, #5921)
-- fix(transform): keep comma-sequence operands ahead of hoisted awaits (#5925, #5926)
-- ci: auto-opt archive cache eviction in the test gate (#5892) and release-packages workflow_dispatch tag-fallback repo pinning]]></description>
-    <pubDate>Sat, 04 Jul 2026 01:31:58 GMT</pubDate>
   </item>
 </channel>
 </rss>
