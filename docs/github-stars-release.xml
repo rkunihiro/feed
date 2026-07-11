@@ -5,8 +5,93 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Fri, 10 Jul 2026 22:48:11 GMT</lastBuildDate>
+  <lastBuildDate>Sat, 11 Jul 2026 22:35:35 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[pnpm/pnpm] pnpm 11.12 (v11.12.0)</title>
+    <link>https://github.com/pnpm/pnpm/releases/tag/v11.12.0</link>
+    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v11.12.0</guid>
+    <description><![CDATA[## Minor Changes
+
+* a897ef7: Custom fetchers exported from a pnpmfile can now delegate by returning a `{ delegate: <resolution> }` envelope: pnpm rewrites the package's resolution to the delegated shape and runs the built-in fetcher on it. This is the portable delegation form that also works in pacquet, where `cafs` and `fetchers` cannot be passed to the hook. Related to pnpm/pnpm#11685.
+
+## Patch Changes
+
+* 2b02764: The changed-packages filter (`--filter "...[<since>]"`) no longer allows an option-like `<since>` value (such as `--output=<path>`) to be interpreted as a git option — git now rejects it as a bad revision. The repository root is also resolved to the nearest `.git` entry, so the filter works in a git worktree checked out inside another repository's tree.
+
+* 43711ce: `pnpm outdated` no longer checks the registry for dependencies that are resolved from local `link:`, `file:`, or `workspace:` references in the lockfile #12827.
+
+* 3c6718b: Fixed a deadlock in peer dep
+
+... (truncated)]]></description>
+    <pubDate>Sat, 11 Jul 2026 21:15:22 GMT</pubDate>
+  </item>
+  <item>
+    <title>[floci-io/floci] 1.5.32</title>
+    <link>https://github.com/floci-io/floci/releases/tag/1.5.32</link>
+    <guid isPermaLink="true">https://github.com/floci-io/floci/releases/tag/1.5.32</guid>
+    <description><![CDATA[## 🎉 Highlights
+
+This release adds **AWS Lightsail**, brings **AppSync Phase 5** completing the four-release AppSync build-out, lands **EventBridge Pipes enrichment**, and ships a substantial **ECS conformance push** with EFS ownership, secrets resolution, and awsvpc port allocation. S3 gains **auth enforcement**, Step Functions payload templates get more capable, and a CloudFormation architectural refactor kicks off. Welcome to the 2 first-time contributors.
+
+### 🆕 New: AWS Lightsail
+
+**AWS Lightsail** emulation lands (#1583). Simple compute workloads that use Lightsail rather than EC2 can now be tested locally, extending Floci's compute coverage beyond the enterprise-tier services.
+
+### 🧩 AppSync Phase 5 (complete build-out)
+
+The AppSync journey completes with **Phase 5** (#1590): Management API coverage expansion, AWS behavior alignment, and async schema creation. Across five phases (Phase 1 → 5 spanning 1.5.22 through this release), AppSync has grown from a management-
+
+... (truncated)]]></description>
+    <pubDate>Sat, 11 Jul 2026 07:46:49 GMT</pubDate>
+  </item>
+  <item>
+    <title>[open-cli-tools/concurrently] v9.2.4</title>
+    <link>https://github.com/open-cli-tools/concurrently/releases/tag/v9.2.4</link>
+    <guid isPermaLink="true">https://github.com/open-cli-tools/concurrently/releases/tag/v9.2.4</guid>
+    <description><![CDATA[- upgrade shell-quote to 1.9.0 - #597, #600
+
+**Full Changelog**:]]></description>
+    <pubDate>Sat, 11 Jul 2026 05:44:47 GMT</pubDate>
+  </item>
+  <item>
+    <title>[inokawa/virtua] 0.49.3</title>
+    <link>https://github.com/inokawa/virtua/releases/tag/0.49.3</link>
+    <guid isPermaLink="true">https://github.com/inokawa/virtua/releases/tag/0.49.3</guid>
+    <description><![CDATA[## What's Changed
+* Add itemProps prop to Svelte VList/Virtualizer by @kbaratyants in 
+
+## New Contributors
+* @kbaratyants made their first contribution in 
+
+**Full Changelog**:]]></description>
+    <pubDate>Sat, 11 Jul 2026 02:35:52 GMT</pubDate>
+  </item>
+  <item>
+    <title>[vercel-labs/skills] v1.5.16</title>
+    <link>https://github.com/vercel-labs/skills/releases/tag/v1.5.16</link>
+    <guid isPermaLink="true">https://github.com/vercel-labs/skills/releases/tag/v1.5.16</guid>
+    <description><![CDATA[## Changelog
+
+- test: allow LFS clone test time on Windows (#1628)
+- test: restore CI and cover LFS-less clones (#1627)
+- Update modules + simplegit fix (#1626)
+- feat: add install telemetry metadata (#1625)
+- fix(update): preserve non-GitHub lock source URLs (#1614)
+- fix(git): block ext transport (#1611)
+- fix(installer): preserve copy modes and Claude symlinks (#1598)
+- docs(find-skills): remove non-existent `npx skills check` command (#1594)
+- fix: never spawn skill updates through a shell (#1592)
+- fix(detect-agent): ignore Cursor integrated terminal false positives (#1549)
+- Add ZCode agent support (#1527)
+- fix(update): preserve failure exit code (#1522)
+- chore: upgrade @clack/prompts to v1.2.0 (#971)
+
+## Contributors
+
+@DodoCode0,@Soykervinn @chenlinxi890-spec,@crskzn @quuu,@syf2211 @walkerdustin,@yearth]]></description>
+    <pubDate>Fri, 10 Jul 2026 23:04:11 GMT</pubDate>
+  </item>
   <item>
     <title>[eslint/eslint] v10.7.0</title>
     <link>https://github.com/eslint/eslint/releases/tag/v10.7.0</link>
@@ -114,18 +199,6 @@ Other key facts:
 
 ... (truncated)]]></description>
     <pubDate>Fri, 10 Jul 2026 16:37:06 GMT</pubDate>
-  </item>
-  <item>
-    <title>[pnpm/pnpm] pnpm 10.34.5 (v10.34.5)</title>
-    <link>https://github.com/pnpm/pnpm/releases/tag/v10.34.5</link>
-    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v10.34.5</guid>
-    <description><![CDATA[## Patch Changes
-
-* 78e29fe: Prevent a crafted `pnpm-lock.yaml` from writing package content outside the virtual store. A dependency path key whose name reconstructs to a path-traversal sequence (e.g. `../../../tmp/x@1.0.0`) is now rejected by the isolated (virtual-store) linker and the Plug'n'Play resolver map, matching the containment already applied to the hoisted linker. Under the global virtual store, a traversal in the version-derived path segment (e.g. a snapshot `version: "../../x"`) is now rejected at `iterateHashedGraphNodes`, the single point every global-virtual-store slot path funnels through.
-* 78e29fe: Fixed a path traversal vulnerability where a dependency whose manifest `name` was a scoped path traversal (e.g. `@x/../../../<path>`) could be written outside `node_modules` to an attacker-controlled location during `pnpm install`, even with `--ignore-scripts`. The isolated linker now validates the package name before using it as a directory name, matching the existing 
-
-... (truncated)]]></description>
-    <pubDate>Fri, 10 Jul 2026 11:39:29 GMT</pubDate>
   </item>
   <item>
     <title>[honojs/hono] v4.12.29</title>
@@ -717,29 +790,6 @@ Since v6.17.0, `MongoClient.close` has eagerly closed checked-out (in-use) conne
     <pubDate>Tue, 07 Jul 2026 08:30:54 GMT</pubDate>
   </item>
   <item>
-    <title>[floci-io/floci] 1.5.31</title>
-    <link>https://github.com/floci-io/floci/releases/tag/1.5.31</link>
-    <guid isPermaLink="true">https://github.com/floci-io/floci/releases/tag/1.5.31</guid>
-    <description><![CDATA[## 🎉 Highlights
-
-This release brings **CloudWatch Logs Insights**, adds **RDS Data API for PostgreSQL**, introduces **RDS mock mode** and **read-only Cloud Control APIs**, and lands substantial persistence and performance work. Lambda cold starts speed up with read-only code mounting, and multiple services join the durable-state family. Welcome to the 2 first-time contributors.
-
-### 🔍 CloudWatch Logs Insights
-
-**Logs Insights query support** lands (#1448), enabling local execution of the query DSL for log analysis workflows. This closes one of the more requested CloudWatch Logs gaps.
-
-### 🐘 RDS Data API for PostgreSQL
-
-The **RDS Data API** now supports PostgreSQL (#1720), extending the MySQL-backed Data API added in 1.5.25. Serverless SQL workflows against both engines now work locally.
-
-### 🎭 RDS mock mode
-
-**Mock mode** for RDS lets clusters and instances be created **without Docker** (#1655). Useful for CI environments that don't have Docker-in-Docker, or for fast 
-
-... (truncated)]]></description>
-    <pubDate>Tue, 07 Jul 2026 05:51:18 GMT</pubDate>
-  </item>
-  <item>
     <title>[azat-io/eslint-plugin-perfectionist] v5.10.0</title>
     <link>https://github.com/azat-io/eslint-plugin-perfectionist/releases/tag/v5.10.0</link>
     <guid isPermaLink="true">https://github.com/azat-io/eslint-plugin-perfectionist/releases/tag/v5.10.0</guid>
@@ -784,21 +834,6 @@ The **RDS Data API** now supports PostgreSQL (#1720), extending the MySQL-backed
 
 ... (truncated)]]></description>
     <pubDate>Tue, 07 Jul 2026 03:11:03 GMT</pubDate>
-  </item>
-  <item>
-    <title>[vercel-labs/skills] v1.5.15</title>
-    <link>https://github.com/vercel-labs/skills/releases/tag/v1.5.15</link>
-    <guid isPermaLink="true">https://github.com/vercel-labs/skills/releases/tag/v1.5.15</guid>
-    <description><![CDATA[## Changelog
-
-- Revert "fix: block unsafe git transports" (#1596)
-- fix: authenticate private repo tree fetches during update (#1595)
-- fix: block unsafe git transports (#1589)
-
-## Contributors
-
-@quuu]]></description>
-    <pubDate>Tue, 07 Jul 2026 00:36:50 GMT</pubDate>
   </item>
   <item>
     <title>[ollama/ollama] v0.31.2</title>
@@ -925,52 +960,6 @@ Additionally, we backported 24 security related changes to the LTS. View the ful
 
 **Full Changelog**:]]></description>
     <pubDate>Mon, 06 Jul 2026 12:13:24 GMT</pubDate>
-  </item>
-  <item>
-    <title>[wailsapp/wails] Wails v2.13.0 (v2.13.0)</title>
-    <link>https://github.com/wailsapp/wails/releases/tag/v2.13.0</link>
-    <guid isPermaLink="true">https://github.com/wailsapp/wails/releases/tag/v2.13.0</guid>
-    <description><![CDATA[## Installation
-
-```bash
-go install github.com/wailsapp/wails/v2/cmd/wails@v2.13.0
-```
-
-## Changes
-
-### Added
-
-- Added example demonstrating events usage in the documentation `#5026` by `@iamhabbeboy`
-
-
-### Added
-
-- Added Kira to the community showcase by @thiennguyen93
-
-### Fixed
-
-- Fixed wake (experimental `WAILS_USE_WAKE=true` build runner) running precondition `sh:` strings without template expansion, causing a spurious "garble is required for obfuscated builds" error on every build by @leaanthony
-- Fixed nil pointer crash in `application.Quit` when called before `Run` or after `Run` returned early #5452 by @c-tonneslan]]></description>
-    <pubDate>Mon, 06 Jul 2026 10:44:59 GMT</pubDate>
-  </item>
-  <item>
-    <title>[djkotori/rpgcobo-tool] v0.1.8</title>
-    <link>https://github.com/djkotori/rpgcobo-tool/releases/tag/v0.1.8</link>
-    <guid isPermaLink="true">https://github.com/djkotori/rpgcobo-tool/releases/tag/v0.1.8</guid>
-    <description><![CDATA[**RPG-Cobo Tool v0.1.8**
-
-This version includes the following bug fixes and feature additions.
-
-- Fixed a bug where large files could not be uploaded via TLS communication.
-- Fixed encoding problem of ADPCM, OggVorbis
-- Implemented the ability to add audio voices in the voice editor. Also, fixed some unimplemented editing operations.
-- When the automatic backups count is exceeded, old backups are now deleted.
-- An Equip item setting was added that prohibits equipping other type at the same time.
-- Added a function to upload projects for Contests.
-- Fixed minor bugs.
-
-*Note: There are native code updates. Please be aware of the behavior of your Windows antivirus.*]]></description>
-    <pubDate>Mon, 06 Jul 2026 00:42:46 GMT</pubDate>
   </item>
 </channel>
 </rss>
