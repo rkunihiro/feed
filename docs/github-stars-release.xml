@@ -5,16 +5,330 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Tue, 14 Jul 2026 22:44:39 GMT</lastBuildDate>
+  <lastBuildDate>Wed, 15 Jul 2026 22:45:51 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
   <item>
-    <title>[anomalyco/opencode] v1.18.1</title>
-    <link>https://github.com/anomalyco/opencode/releases/tag/v1.18.1</link>
-    <guid isPermaLink="true">https://github.com/anomalyco/opencode/releases/tag/v1.18.1</guid>
-    <description><![CDATA[## Desktop
+    <title>[bluesky-social/atproto] @atproto/ozone@0.2.16</title>
+    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/ozone%400.2.16</link>
+    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/ozone%400.2.16</guid>
+    <description><![CDATA[### Patch Changes
+
+- Updated dependencies [`33f4416`]:
+ - @atproto/api@0.20.29]]></description>
+    <pubDate>Wed, 15 Jul 2026 19:21:15 GMT</pubDate>
+  </item>
+  <item>
+    <title>[zed-industries/zed] v1.11.3</title>
+    <link>https://github.com/zed-industries/zed/releases/tag/v1.11.3</link>
+    <guid isPermaLink="true">https://github.com/zed-industries/zed/releases/tag/v1.11.3</guid>
+    <description><![CDATA[This week's release includes dedicated Staged Changes and Unstaged Changes multibuffers where you can review, stage, unstage, or restore individual hunks; Git Graph improvements including configurable columns and full commit messages rendered as Markdown; and a preview pane in the project symbols picker.
+
+## Features
+
+### AI
+
+- Agent: Added support for searching (`cmd-f` on macOS, `ctrl-f` on Linux/Windows) inside of terminal threads. (#60292)
+- Added "Agent Panel" and "Git Panel" items to the "View" menu. (#60356)
+- Improved the agent panel's turn-end actions: thread feedback is now also available via "Positive Feedback" and "Negative Feedback" slash commands (typed as `/helpful` and `/not-helpful`) in the message editor, a new copy button copies the last agent response, and "Open Thread as Markdown" moved into the agent panel menu. (#59974)
+- Agent: Improved onboarding experience when installing ACP agents. (#60452)
+- ACP: Added support for boolean toggles in ACP session co
+
+... (truncated)]]></description>
+    <pubDate>Wed, 15 Jul 2026 19:10:38 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1088.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1088.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1088.0</guid>
+    <description><![CDATA[#### 3.1088.0(2026-07-15)
+
+##### Chores
+
+* **util-endpoints:** update aws partitions.json (aae92a20)
+* **endpoints:** update endpoints model (cad792d7)
+* **models:** update API models (417f625f)
+* **codegen:**
+ * sync to use typesVersions entries for submodules (#8195) (d43e5bfc)
+ * smithy-aws-typescript-codegen 0.51.0 (#8187) (b349797a)
+* migrate eslint/prettier to oxlint/oxfmt (#8192) (7d144094)
+* **scripts:** reorganize static analysis validations (#8191) (4871e098)
+
+##### Documentation Changes
+
+* add TypeScript version support policy (#8196) (4e30692b)
+
+##### New Features
+
+* **client-rds:** Adds support for modifying EngineLifecycleSupport on DB instances and DB clusters through ModifyDBInstance and ModifyDBCluster. (faa78bc9)
+* **client-healthlake:** AWS HealthLake now offers data transformation in Preview to convert CSV and C-CDA data to FHIR R4. Customers can maintain reusable mapping profiles, run sync or async jobs with provenance tracking and drift detection, and use an AI ag
+
+... (truncated)]]></description>
+    <pubDate>Wed, 15 Jul 2026 18:48:45 GMT</pubDate>
+  </item>
+  <item>
+    <title>[astral-sh/uv] 0.11.29</title>
+    <link>https://github.com/astral-sh/uv/releases/tag/0.11.29</link>
+    <guid isPermaLink="true">https://github.com/astral-sh/uv/releases/tag/0.11.29</guid>
+    <description><![CDATA[## Release Notes
+
+Released on 2026-07-15.
+
+### Python
+
+- Use gzip-compressed artifacts for PyPy downloads (#20265)
+
+### Enhancements
+
+- Add JSON output to `uv tree` (#19978)
+- Add CUDA 13.2 as a supported PyTorch backend (#20267)
+- Prefer local artifacts over URLs when installing from `pylock.toml` (#20393)
+- Clarify diagnostics for unsatisfiable direct requirement ranges (#20227)
+- Include the selected project name in missing-extra errors (#20358)
+
+### Preview features
+
+- Preserve extras and dependency-group conflict context when selecting locked project tools (#20078)
+- Split OSV audit queries that exceed the service's 1,000-package limit (#20398)
+- Apply OSV fixed-version information only to the matching package and ecosystem (#20399)
+- Skip the virtualenv distutils monkeypatch on Python 3.10 and later (#20222)
+- Report invalid `uv audit --service-url` values instead of panicking (#20374)
+- Include preview settings in the published SchemaStore schema (#20304)
+
+### Performance
+
+- Red
+
+... (truncated)]]></description>
+    <pubDate>Wed, 15 Jul 2026 18:44:43 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-07-15) (release-2026-07-15)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-07-15</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-07-15</guid>
+    <description><![CDATA[## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcorecontrol`: [v1.48.0](service/bedrockagentcorecontrol/CHANGELOG.md#v1480-2026-07-15)
+ * **Feature**: Fix HarnessEndpointArn pattern to match the actual service-emitted ARN format ('harness-endpoint' instead of 'endpoint'). Add additionalParams to Gemini model configuration for passing provider-specific parameters through to the model unchanged.
+* `github.com/aws/aws-sdk-go-v2/service/comprehendmedical`: [v1.35.0](service/comprehendmedical/CHANGELOG.md#v1350-2026-07-15)
+ * **Feature**: Enable schema-based serialization.
+* `github.com/aws/aws-sdk-go-v2/service/computeoptimizer`: [v1.56.0](service/computeoptimizer/CHANGELOG.md#v1560-2026-07-15)
+ * **Feature**: Enable schema-based serialization.
+* `github.com/aws/aws-sdk-go-v2/service/elasticloadbalancingv2`: [v1.57.0](service/elasticloadbalancingv2/CHANGELOG.md#v1570-2026-07-15)
+ * **Feature**: This release adds support for the IpAddressType field on SourceIpConfig
+
+... (truncated)]]></description>
+    <pubDate>Wed, 15 Jul 2026 18:40:29 GMT</pubDate>
+  </item>
+  <item>
+    <title>[anomalyco/opencode] v1.18.2</title>
+    <link>https://github.com/anomalyco/opencode/releases/tag/v1.18.2</link>
+    <guid isPermaLink="true">https://github.com/anomalyco/opencode/releases/tag/v1.18.2</guid>
+    <description><![CDATA[## Core
+
 ### Bugfixes
-- Fixed spacing between model provider sections in Settings.]]></description>
-    <pubDate>Tue, 14 Jul 2026 21:37:54 GMT</pubDate>
+
+- Stopped subagents from launching nested subagents by default, with a configurable `subagent_depth` limit when needed.
+- Improved default reasoning depth for Meta models.
+
+## Desktop
+
+### Improvements
+
+- Added `Mod+N` as another shortcut for opening a new tab.
+
+### Bugfixes
+
+- Restored the Help button in release builds.
+- Kept sessions with `null` archive times visible instead of dropping them from the home list.
+- Hid the drawer close button on Windows where it conflicts with the window chrome.
+
+**Thank you to 1 community contributor:**
+- @BB-84C:
+ - fix(core): tolerate AlreadyExists in FSUtil.ensureDir (#36542)]]></description>
+    <pubDate>Wed, 15 Jul 2026 16:15:38 GMT</pubDate>
+  </item>
+  <item>
+    <title>[denoland/deno] v2.9.3</title>
+    <link>https://github.com/denoland/deno/releases/tag/v2.9.3</link>
+    <guid isPermaLink="true">https://github.com/denoland/deno/releases/tag/v2.9.3</guid>
+    <description><![CDATA[### 2.9.3 / 2026.07.15
+
+- feat(cli): `deno add --no-save` and `--save-optional` (#36039)
+- feat(cli): add --min-dep-age alias (#35914)
+- feat(compile): support aarch64-pc-windows-msvc target (#36004)
+- feat(ext/fetch): add `http2MaxHeaderListSize` option to
+ `Deno.createHttpClient` (#33194)
+- fix(bundle): preserve raw imports in watch mode (#36040)
+- fix(canvas): don't hold SurfaceData mut borrow over window resize (#35993)
+- fix(config): reject out-of-range minimum dependency ages (#36051)
+- fix(core): block user ext imports after resolution (#36012)
+- fix(core): deactivate idle TTY write handles (#35886)
+- fix(core): restrict extension loaders to internal modules (#36013)
+- fix(core): root slow op string coercions (#36018)
+- fix(desktop): don't let op_desktop_send_error_report target caller-supplied
+ URLs (#35940)
+- fix(ext/http): don't panic recycling cancelled record on native response
+ (#36053)
+- fix(ext/napi): don't free threadsafe function on abort while refs r
+
+... (truncated)]]></description>
+    <pubDate>Wed, 15 Jul 2026 15:35:06 GMT</pubDate>
+  </item>
+  <item>
+    <title>[github/spec-kit] Spec Kit - 0.12.16 (v0.12.16)</title>
+    <link>https://github.com/github/spec-kit/releases/tag/v0.12.16</link>
+    <guid isPermaLink="true">https://github.com/github/spec-kit/releases/tag/v0.12.16</guid>
+    <description><![CDATA[## Install
+
+```bash
+uv tool install specify-cli --from git+
+specify init my-project
+```
+
+## What's Changed
+
+- chore: bump version to 0.12.16
+- fix(workflows): raise a clear error, not a cryptic crash, on non-string filter args (#3522)
+- feat(workflows): expose workflow source directory to steps (#3469)
+- fix(workflows): fan-out max_concurrency .inf falls back to sequential, not crash (#3521)
+- Update Coding Standards Drift Control extension to v0.4.0 (#3540)
+- fix(presets): seed constitution from preset constitution-template (#3272) (#3276)
+- docs: add PyPI as second supported install route (#3425) (#3516)
+- fix(workflows): fail while/do-while steps on non-list steps instead of crashing (#3519)
+- Add PatchWarden Evidence Pack extension to community catalog (#3514)
+- feat(extensions): port git extension scripts to Python (#3400)
+- chore: release 0.12.15, begin 0.12.16.dev0 development (#3513)]]></description>
+    <pubDate>Wed, 15 Jul 2026 14:25:43 GMT</pubDate>
+  </item>
+  <item>
+    <title>[floci-io/floci] 1.5.33</title>
+    <link>https://github.com/floci-io/floci/releases/tag/1.5.33</link>
+    <guid isPermaLink="true">https://github.com/floci-io/floci/releases/tag/1.5.33</guid>
+    <description><![CDATA[## 🎉 Highlights
+
+This release adds **EKS Fargate profiles**, brings **Step Functions JSONata workflow variables**, expands **Cognito** with `GlobalSignOut` and `RevokeToken`, and lands substantial **S3 conformance work** on ACLs, replication, encryption defaults, and error handling. IAM gets S3 list condition context, and lifecycle management improves for process-bound containers. Welcome to the 7 first-time contributors.
+
+### ☸️ EKS Fargate profiles
+
+**EKS Fargate profiles** support lands (#1523), extending the EKS + managed node groups story from 1.5.24. Real EKS provisioning patterns that use Fargate for serverless container execution now work locally.
+
+### 🧩 Step Functions: JSONata `Assign`
+
+Step Functions now supports **JSONata workflow variables** via the `Assign` field (#1824). Recent AWS additions to Step Functions expression language now work locally — state machines using JSONata syntax for variable manipulation can be tested end to end.
+
+### 🔐 Cognito: sign-ou
+
+... (truncated)]]></description>
+    <pubDate>Wed, 15 Jul 2026 05:53:55 GMT</pubDate>
+  </item>
+  <item>
+    <title>[biomejs/biome] Biome CLI v2.5.4 (@biomejs/biome@2.5.4)</title>
+    <link>https://github.com/biomejs/biome/releases/tag/%40biomejs/biome%402.5.4</link>
+    <guid isPermaLink="true">https://github.com/biomejs/biome/releases/tag/%40biomejs/biome%402.5.4</guid>
+    <description><![CDATA[## 2.5.4
+
+### Patch Changes
+
+- #10665 `55ff995` Thanks @dyc3! - Improved the performance of the HTML parser slightly in our synthetic benchmarks.
+
+- #10894 `f4fb10e` Thanks @ematipico! - Fixed #6392: On-type formatting no longer moves comments before an `if` statement into its body.
+
+- #10939 `f2799db` Thanks @Netail! - Fixed #10930: `noLabelWithoutControl` now correctly detects text interpolation in Astro, Svelte & Vue as valid accessible content.
+
+- #10945 `ae15d98` Thanks @Netail! - Fixed #10942: Svelte directives don't throw an accidental debug log anymore.
+
+- #10842 `5e1abfe` Thanks @JamBalaya56562! - Fixed #9196: `biome check --write --unsafe` no longer hangs forever when applying the `noCommentText` code fix.
+
+ The rule's fix now wraps the comment in a real JSX expression container (`{/* comment */}`) instead of re-inserting the braces as plain JSX text, so the fixed code is no longer reported again by the same rule.
+
+- #10891 `ecca79e` Thanks @ematipico! - Fixed `#10885`: preve
+
+... (truncated)]]></description>
+    <pubDate>Wed, 15 Jul 2026 04:10:08 GMT</pubDate>
+  </item>
+  <item>
+    <title>[project-tsurugi/tsurugidb] 1.11.2</title>
+    <link>https://github.com/project-tsurugi/tsurugidb/releases/tag/1.11.2</link>
+    <guid isPermaLink="true">https://github.com/project-tsurugi/tsurugidb/releases/tag/1.11.2</guid>
+    <description><![CDATA[### Release Notes
+- Tsurugi 1.11.2 - Release Notes (en)
+- Tsurugi 1.11.2 - Release Notes (ja)
+- Tsurugi 1.11.2 - Changelog
+- Tsurugi 1.11.0 - Known Issues (en)
+- Tsurugi 1.11.0 - Known Issues (ja)
+
+#### Download installer archive
+
+```sh
+curl -OL 
+```
+
+#### Download Docker image
+
+```sh
+docker pull ghcr.io/project-tsurugi/tsurugidb:1.11.2
+```
+
+> [!WARNING] 
+The `Source code (zip)` or `Source code (tar.gz)` in `Assets` are automatically generated links by GitHub, and these archives does not contain files needed for installation.]]></description>
+    <pubDate>Wed, 15 Jul 2026 02:15:18 GMT</pubDate>
+  </item>
+  <item>
+    <title>[sindresorhus/eslint-plugin-unicorn] v72.0.0</title>
+    <link>https://github.com/sindresorhus/eslint-plugin-unicorn/releases/tag/v72.0.0</link>
+    <guid isPermaLink="true">https://github.com/sindresorhus/eslint-plugin-unicorn/releases/tag/v72.0.0</guid>
+    <description><![CDATA[## Breaking
+
+- `prefer-minimal-ternary`: Rename `checkVaryingCallee` option to `checkVaryingBase` (#3508) 825b7b9b
+
+## New rules
+
+- `no-missing-local-resource` (#3528) 12a33c61
+- `no-multiple-promise-resolver-calls` (#3523) 81ab092c
+- `no-shorthand-property-overrides` (#3527) 91a4c4d9
+- `no-transition-all` (#3529) 5ef2fcf0
+- `no-unnecessary-string-trim` (#3517) a6516727
+- `no-useless-re-export` (#3540) 96afe553
+- `prefer-explicit-viewport-units` (#3532) 449e6369
+- `prefer-then-catch` (#3526) a17e5a29
+- `require-frontmatter-fields` (#3525) dfd91cdd
+
+## Improvements
+
+- Improve performance (#3531) 8233f950
+- `consistent-boolean-name`: Support Vue refs (#3555) 79e79d5f
+- `no-incorrect-template-string-interpolation`: Ignore Unicode code point escapes (#3513) 36fdf1aa
+- `no-negated-comparison`: Ignore relational comparisons with optional chaining (#3512) 7b7e28a7
+- `no-top-level-side-effects`: Ignore `<script setup>` (#3542) af8fd60b
+- `no-unnecessary-array-flat-map`: 
+
+... (truncated)]]></description>
+    <pubDate>Tue, 14 Jul 2026 23:23:56 GMT</pubDate>
+  </item>
+  <item>
+    <title>[microsoft/WindowsAppSDK] Windows App SDK 1.8.10 (1.8.260710003) (v1.8.10)</title>
+    <link>https://github.com/microsoft/WindowsAppSDK/releases/tag/v1.8.10</link>
+    <guid isPermaLink="true">https://github.com/microsoft/WindowsAppSDK/releases/tag/v1.8.10</guid>
+    <description><![CDATA[## Windows App SDK 1.8.10 (1.8.260710003)
+
+WinAppSDK 1.8.10 is the latest stable servicing release for 1.8, with a reliability fix for `Microsoft.UI.System.ThemeSettings`.
+
+### Bug fixes:
+| Bug Fix | Runtime Compatibility Change |
+|---------|------------------------------------|
+| Fixed an issue where `Microsoft.UI.System.ThemeSettings` could crash an app if it was destroyed on a background thread, for example when destroyed by the .NET garbage collector. | ThemeSettings_OffThreadDestructorFix |
+
+**To see everything that's new and changed, see the full Windows App SDK 1.8.10 release notes.**
+
+### Try it out
+- Download the 1.8.260710003 NuGet package to use WinAppSDK 1.8 in your app.
+
+### Getting started
+
+To get started using Windows App SDK to develop Windows apps, check out the following documentation:
+- Install developer tools.
+- Create a WinUI 3 app.
+- Continue your development journey.]]></description>
+    <pubDate>Tue, 14 Jul 2026 23:15:35 GMT</pubDate>
   </item>
   <item>
     <title>[iii-hq/iii] iii 0.21.6 (iii/v0.21.6)</title>
@@ -54,45 +368,6 @@ Run `dprint upgrade` or see
 
 ... (truncated)]]></description>
     <pubDate>Tue, 14 Jul 2026 19:11:11 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-js-v3] v3.1087.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1087.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1087.0</guid>
-    <description><![CDATA[#### 3.1087.0(2026-07-14)
-
-##### Chores
-
-* **codegen:** sync for codegen and include OAuthIAM operation for signin list (#8190) (a20c28de)
-* **deps-dev:** bump yarn to 4.17.1 (#8188) (b2a5750c)
-
-##### New Features
-
-* **client-mq:** This release adds storage size parameter for Amazon MQ for RabbitMQ cluster deployment broker on engine version RabbitMQ 4.2. You can now set a configurable storage size within a range of sizes dependent on broker instance size. (a19e4c8b)
-* **client-connect:** This release adds SearchRules API which can be used to search for rules within an Amazon Connect instance. (f29288c7)
-* **client-ssm:** Update AWS Systems Manager Automation Targets to be correct max value. (7506cef1)
-* **client-servicediscovery:** Fixed Cloud Map endpoint resolution to correctly route to the dualstack endpoint when dualstack is enabled. (f853718e)
-* **client-lambda:** AWS Lambda now returns a new DependencyError value in StateReasonCode and LastUpdateStatusReasonCode to provide more 
-
-... (truncated)]]></description>
-    <pubDate>Tue, 14 Jul 2026 18:46:57 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-07-14) (release-2026-07-14)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-07-14</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-07-14</guid>
-    <description><![CDATA[## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/connect`: [v1.183.0](service/connect/CHANGELOG.md#v11830-2026-07-14)
- * **Feature**: This release adds SearchRules API which can be used to search for rules within an Amazon Connect instance.
-* `github.com/aws/aws-sdk-go-v2/service/drs`: [v1.41.0](service/drs/CHANGELOG.md#v1410-2026-07-14)
- * **Feature**: Fast recovery of EC2 based drs workloads by skipping the conversion step
-* `github.com/aws/aws-sdk-go-v2/service/emrcontainers`: [v1.43.0](service/emrcontainers/CHANGELOG.md#v1430-2026-07-14)
- * **Feature**: Introduced 5 new fields across 3 APIs as part of Spark Connect server launch for EMR on EKS. The fields added are sessionIdleTimeoutInMinutes, sessionEnabled, endpointToken, authProxyUrl and encryptionKeyArn.
-* `github.com/aws/aws-sdk-go-v2/service/lambda`: [v1.99.0](service/lambda/CHANGELOG.md#v1990-2026-07-14)
- * **Feature**: AWS Lambda now returns a new DependencyError value in StateReasonCode and LastUpdateStatusReas
-
-... (truncated)]]></description>
-    <pubDate>Tue, 14 Jul 2026 18:39:03 GMT</pubDate>
   </item>
   <item>
     <title>[godotengine/godot] 4.7.1-stable</title>
@@ -155,32 +430,6 @@ Report bugs on GitHub after checking that they haven't been reported:
 
 ... (truncated)]]></description>
     <pubDate>Tue, 14 Jul 2026 17:32:29 GMT</pubDate>
-  </item>
-  <item>
-    <title>[github/spec-kit] Spec Kit - 0.12.15 (v0.12.15)</title>
-    <link>https://github.com/github/spec-kit/releases/tag/v0.12.15</link>
-    <guid isPermaLink="true">https://github.com/github/spec-kit/releases/tag/v0.12.15</guid>
-    <description><![CDATA[## Install
-
-```bash
-uv tool install specify-cli --from git+
-specify init my-project
-```
-
-## What's Changed
-
-- chore: bump version to 0.12.15
-- Update Autonomous Run Governance preset to v0.1.4 (#3511)
-- fix(workflows): raise catalog error, not raw ValueError, on a malformed catalog URL (#3484)
-- fix(workflows): evaluate 'in'/'not in' safely on a non-iterable right operand (#3447) (#3468)
-- fix: add trailing newline to init-options.json output (#3509)
-- feat(workflows): align workflow CLI with extension command surface (#3419)
-- fix(extensions): stop env-var config leaking across prefix-colliding extension IDs (#3497)
-- fix(integrations): escape control characters in goose recipe YAML renderer (#3384)
-- [extension] Update DocGuard — CDD Enforcement extension to v0.32.0 (#3489)
-- [extension] Add Multi-Repo Branch Sync extension to community catalog (#3411)
-- chore: release 0.12.14, begin 0.12.15.dev0 development (#3506)]]></description>
-    <pubDate>Tue, 14 Jul 2026 14:50:22 GMT</pubDate>
   </item>
   <item>
     <title>[web-infra-dev/rspack] v2.1.4</title>
@@ -470,13 +719,6 @@ This release is also available on:
     <pubDate>Mon, 13 Jul 2026 03:13:34 GMT</pubDate>
   </item>
   <item>
-    <title>[zed-industries/zed] v1.10.3</title>
-    <link>https://github.com/zed-industries/zed/releases/tag/v1.10.3</link>
-    <guid isPermaLink="true">https://github.com/zed-industries/zed/releases/tag/v1.10.3</guid>
-    <description><![CDATA[- Fixed an issue with npm v12 that could cause language server startup failures (#60870)]]></description>
-    <pubDate>Mon, 13 Jul 2026 00:42:21 GMT</pubDate>
-  </item>
-  <item>
     <title>[honojs/hono] v4.12.30</title>
     <link>https://github.com/honojs/hono/releases/tag/v4.12.30</link>
     <guid isPermaLink="true">https://github.com/honojs/hono/releases/tag/v4.12.30</guid>
@@ -518,25 +760,6 @@ To install Ant 12.2.1d8040ee.1:
 curl -fsSL | bash
 ```]]></description>
     <pubDate>Sat, 11 Jul 2026 21:18:32 GMT</pubDate>
-  </item>
-  <item>
-    <title>[floci-io/floci] 1.5.32</title>
-    <link>https://github.com/floci-io/floci/releases/tag/1.5.32</link>
-    <guid isPermaLink="true">https://github.com/floci-io/floci/releases/tag/1.5.32</guid>
-    <description><![CDATA[## 🎉 Highlights
-
-This release adds **AWS Lightsail**, brings **AppSync Phase 5** completing the four-release AppSync build-out, lands **EventBridge Pipes enrichment**, and ships a substantial **ECS conformance push** with EFS ownership, secrets resolution, and awsvpc port allocation. S3 gains **auth enforcement**, Step Functions payload templates get more capable, and a CloudFormation architectural refactor kicks off. Welcome to the 2 first-time contributors.
-
-### 🆕 New: AWS Lightsail
-
-**AWS Lightsail** emulation lands (#1583). Simple compute workloads that use Lightsail rather than EC2 can now be tested locally, extending Floci's compute coverage beyond the enterprise-tier services.
-
-### 🧩 AppSync Phase 5 (complete build-out)
-
-The AppSync journey completes with **Phase 5** (#1590): Management API coverage expansion, AWS behavior alignment, and async schema creation. Across five phases (Phase 1 → 5 spanning 1.5.22 through this release), AppSync has grown from a management-
-
-... (truncated)]]></description>
-    <pubDate>Sat, 11 Jul 2026 07:46:49 GMT</pubDate>
   </item>
   <item>
     <title>[open-cli-tools/concurrently] v9.2.4</title>
@@ -681,16 +904,6 @@ Please try out the release binaries and report any issues at
     <pubDate>Fri, 10 Jul 2026 00:04:40 GMT</pubDate>
   </item>
   <item>
-    <title>[bluesky-social/atproto] @atproto/oauth-provider-ui@0.8.7</title>
-    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/oauth-provider-ui%400.8.7</link>
-    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/oauth-provider-ui%400.8.7</guid>
-    <description><![CDATA[### Patch Changes
-
-- Updated dependencies :
- - @atproto/oauth-provider-api@0.7.6]]></description>
-    <pubDate>Thu, 09 Jul 2026 22:18:20 GMT</pubDate>
-  </item>
-  <item>
     <title>[facebook/lexical] v0.47.0</title>
     <link>https://github.com/facebook/lexical/releases/tag/v0.47.0</link>
     <guid isPermaLink="true">https://github.com/facebook/lexical/releases/tag/v0.47.0</guid>
@@ -824,31 +1037,6 @@ Refer to Rust's platform support page for more information on Rust's tiered plat
     <pubDate>Wed, 08 Jul 2026 15:58:56 GMT</pubDate>
   </item>
   <item>
-    <title>[denoland/deno] v2.9.2</title>
-    <link>https://github.com/denoland/deno/releases/tag/v2.9.2</link>
-    <guid isPermaLink="true">https://github.com/denoland/deno/releases/tag/v2.9.2</guid>
-    <description><![CDATA[### 2.9.2 / 2026.07.08
-
-- feat(desktop): autodetect React Router framework (#35557)
-- feat(desktop): enable `--hmr` for Vite and Nuxt (#35851)
-- feat(desktop): run HMR by framework dev server (#35722)
-- feat(desktop): window opacity and transparency APIs (#35646)
-- feat(desktop): wire --exclude-unused-npm through to compile (#35740)
-- feat(ext/node): implement v8.setHeapSnapshotNearHeapLimit (#35694)
-- feat(ext/telemetry): honor OTEL_ATTRIBUTE_VALUE_LENGTH_LIMIT (#35068)
-- feat(inspector): start inspector server on SIGUSR1 (#35738)
-- feat(node): implement getTestContext in node:test (#35678)
-- feat: support wildcard patterns in minimumDependencyAge.exclude (#35746)
-- fix(check): don't interleave errors with "Check" lines in a workspace (#35687)
-- fix(compile): bump libsui to 0.16.1 to survive eu-strip in flatpak (#35699)
-- fix(compile): bump libsui to 0.16.3 to fix segfault under gVisor/Cloud Run
- (#35701)
-- fix(core): don't drain microtasks in mod_evaluate_sync mid-eva
-
-... (truncated)]]></description>
-    <pubDate>Wed, 08 Jul 2026 14:36:21 GMT</pubDate>
-  </item>
-  <item>
     <title>[nodejs/node] 2026-07-08, Version 26.5.0 (Current), @richardlau (v26.5.0)</title>
     <link>https://github.com/nodejs/node/releases/tag/v26.5.0</link>
     <guid isPermaLink="true">https://github.com/nodejs/node/releases/tag/v26.5.0</guid>
@@ -874,114 +1062,6 @@ Welcome to our newest releaser, Stewart X Addison. Future Node.js releases may b
 
 ... (truncated)]]></description>
     <pubDate>Wed, 08 Jul 2026 11:59:40 GMT</pubDate>
-  </item>
-  <item>
-    <title>[redwoodjs/sdk] v1.5.7</title>
-    <link>https://github.com/redwoodjs/sdk/releases/tag/v1.5.7</link>
-    <guid isPermaLink="true">https://github.com/redwoodjs/sdk/releases/tag/v1.5.7</guid>
-    <description><![CDATA[## What's Changed
-* fix(vite): honor optimizeDeps.exclude for directive node_modules files by @chrisvdm in 
-
-
-**Full Changelog**:]]></description>
-    <pubDate>Wed, 08 Jul 2026 09:16:39 GMT</pubDate>
-  </item>
-  <item>
-    <title>[nestjs/nest] v11.1.28</title>
-    <link>https://github.com/nestjs/nest/releases/tag/v11.1.28</link>
-    <guid isPermaLink="true">https://github.com/nestjs/nest/releases/tag/v11.1.28</guid>
-    <description><![CDATA[## v11.1.28 (2026-07-08)
-
-#### Bug fixes
-* `core`
- * #17239 fix(core): trigger teardown of SSE producer Observable on client disconnect with interceptor (@jyx-07)
-* `common`
- * #17257 fix(common): Add missing exception classes to HttpErrorByCode (@Se3do)
-* `websockets`
- * #17188 fix(websockets): correct type guard to check value not key (@Se3do)
-
-#### Enhancements
-* `core`
- * #17241 feat(core): include auto-converted route in legacy route path warning (@ronielli)
-
-#### Dependencies
-* `platform-fastify`
- * #17262 chore(deps): bump fastify from 5.8.5 to 5.10.0 ([@dependabot[bot]])
-* `platform-express`
- * #17164 fix(deps): update dependency multer to v2.2.0 [security] ([@renovate[bot]])
-
-#### Committers: 4
-- Mohammed Said (@Se3do)
-- Ronielli (@ronielli)
-- greymoth (@greymoth-jp)
-- 종윤 (@jyx-07)]]></description>
-    <pubDate>Wed, 08 Jul 2026 08:33:50 GMT</pubDate>
-  </item>
-  <item>
-    <title>[biomejs/biome] Biome CLI v2.5.3 (@biomejs/biome@2.5.3)</title>
-    <link>https://github.com/biomejs/biome/releases/tag/%40biomejs/biome%402.5.3</link>
-    <guid isPermaLink="true">https://github.com/biomejs/biome/releases/tag/%40biomejs/biome%402.5.3</guid>
-    <description><![CDATA[## 2.5.3
-
-### Patch Changes
-
-- #10815 `86613d5` Thanks @WaterWhisperer! - Fixed a parser panic reported in #10708: Biome now recovers when unsupported CSS Modules `@value` rules or scoped `@keyframes` names end at EOF.
-
-- #10534 `da9b403` Thanks @Mokto! - Fixed `noUnusedVariables` false positives in Svelte files: Svelte store subscriptions (`$store` references in templates now keep the underlying `store` binding from being flagged), and `$bindable` props that are only written to in the script block (write-only is intentional for bindable props) are no longer reported as unused.
-
-- #10827 `098ba41` Thanks @Aqu1bp! - Fixed #10698: The `noUnsafeOptionalChaining` rule now reports unsafe optional chains wrapped in TypeScript `as`, `satisfies`, type assertion, and instantiation expressions, such as `new (value?.constructor as Constructor)`.
-
-- #10773 `3c6513d` Thanks @otkrickey! - Fixed #10772: `useVueValidVOn` no longer reports a missing handler for v-on directives using a verb modifier (`.
-
-... (truncated)]]></description>
-    <pubDate>Wed, 08 Jul 2026 08:15:22 GMT</pubDate>
-  </item>
-  <item>
-    <title>[mswjs/msw] v2.15.0</title>
-    <link>https://github.com/mswjs/msw/releases/tag/v2.15.0</link>
-    <guid isPermaLink="true">https://github.com/mswjs/msw/releases/tag/v2.15.0</guid>
-    <description><![CDATA[## v2.15.0 (2026-07-08)
-
-### Features
-
-- **sse:** invoke `finalize` on response stream end (#2741) (7fae0cc0954b20c739ae8e95a24eefc8a78710e8) @kettanaito]]></description>
-    <pubDate>Wed, 08 Jul 2026 01:43:13 GMT</pubDate>
-  </item>
-  <item>
-    <title>[astral-sh/uv] 0.11.28</title>
-    <link>https://github.com/astral-sh/uv/releases/tag/0.11.28</link>
-    <guid isPermaLink="true">https://github.com/astral-sh/uv/releases/tag/0.11.28</guid>
-    <description><![CDATA[## Release Notes
-
-Released on 2026-07-07.
-
-### Security
-
-This release updates our ZIP library, astral-async-zip, to v0.0.20, which includes 15 changes that harden our ZIP handling against parser differentials. uv may reject ZIP archives with malformed or ambiguous content that were previously accepted.
-
-See the upstream commits for a full list of changes.
-
-### Python
-
-- Upgrade GraalPy to 25.1.3 (#20069)
-
-### Enhancements
-
-- Improve trace logs for unexpected error chains (#20220)
-- Move lockfile update guidance to a hint (#20219)
-- Preserve indentation for multiline error causes (#20156)
-- Render user errors with their cause chains (#20217)
-- Route final command errors through the printer to respect `-q` and `-qq` (#20163)
-- Use standard rendering for `uv build` errors (#20159)
-- Use standard rendering for tool requirement errors (#20160)
-
-### Performance
-
-- Only compile bytecode for installed distributions in `uv pip install` (#19914)
-- Avoid allocating URL-safe Git revisions (#20194)
-
-... (truncated)]]></description>
-    <pubDate>Tue, 07 Jul 2026 23:14:13 GMT</pubDate>
   </item>
 </channel>
 </rss>
