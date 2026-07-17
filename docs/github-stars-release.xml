@@ -5,8 +5,190 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Thu, 16 Jul 2026 22:45:50 GMT</lastBuildDate>
+  <lastBuildDate>Fri, 17 Jul 2026 22:37:17 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[pnpm/pnpm] pnpm 11.14 (v11.14.0)</title>
+    <link>https://github.com/pnpm/pnpm/releases/tag/v11.14.0</link>
+    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v11.14.0</guid>
+    <description><![CDATA[## Minor Changes
+
+* `peerDependencies` now accept dependency specifiers that carry a scheme — a named-registry spec (`<registry>:<version>`), an `npm:` alias, or a `file:`/git/URL spec — instead of rejecting them with `ERR_PNPM_INVALID_PEER_DEPENDENCY_SPECIFICATION` #13095. Such a peer is matched against the semver range carried by the specifier (`work:5.x.x` is checked as `5.x.x`, `npm:bar@^5` as `^5`), or against `*` when it carries no version, while the original specifier still selects the package to auto-install. Bare `name@version` values, which are almost always a mistake, are still rejected.
+
+* Added `pnpm doctor`, which diagnoses the pnpm installation and the environment it runs in: the versions and install method, whether the global bin directory is on `PATH`, whether the store and cache are writable, which link strategies (reflink, hardlink, symlink) the store's filesystem supports, registry connectivity, and an offline `file:` install that exercises the resolve/store/lin
+
+... (truncated)]]></description>
+    <pubDate>Fri, 17 Jul 2026 22:18:40 GMT</pubDate>
+  </item>
+  <item>
+    <title>[redwoodjs/sdk] v1.5.9</title>
+    <link>https://github.com/redwoodjs/sdk/releases/tag/v1.5.9</link>
+    <guid isPermaLink="true">https://github.com/redwoodjs/sdk/releases/tag/v1.5.9</guid>
+    <description><![CDATA[## What's Changed
+* Fix HMR-triggered runDirectiveScan to only happen on import change by @chrisvdm in 
+* Strip optimizer query strings from module IDs before normalizing by @justinvdm in 
+
+
+**Full Changelog**:]]></description>
+    <pubDate>Fri, 17 Jul 2026 19:26:58 GMT</pubDate>
+  </item>
+  <item>
+    <title>[github/spec-kit] Spec Kit - 0.13.0 (v0.13.0)</title>
+    <link>https://github.com/github/spec-kit/releases/tag/v0.13.0</link>
+    <guid isPermaLink="true">https://github.com/github/spec-kit/releases/tag/v0.13.0</guid>
+    <description><![CDATA[## Install
+
+```bash
+uv tool install specify-cli --from git+
+specify init my-project
+```
+
+## What's Changed
+
+- chore: bump version to 0.13.0
+- fix(auth): Azure DevOps az-CLI token acquisition returns None on undecodable output (#3527)
+- feat(extensions): add assess idea assessment pipeline extension (#3568)
+- fix(bundle): surface a clean BundlerError on a malformed bundle download URL (#3586)
+- Add OKF Knowledge Bundle Generator extension to community catalog (#3585)
+- Update Autonomous Run Governance preset to v0.2.2 (#3584)
+- docs: update extension guide PyPI upgrade guidance (#3578)
+- fix(presets): raise PresetValidationError, not raw ValueError, on malformed catalog URL (#3576)
+- chore(deps): bump github/codeql-action/init from 4.36.2 to 4.37.1 (#3571)
+- docs: align README hero tagline and subtitle with docs/index.md (#3581)
+- chore: release 0.12.18, begin 0.12.19.dev0 development (#3583)]]></description>
+    <pubDate>Fri, 17 Jul 2026 18:58:41 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1090.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1090.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1090.0</guid>
+    <description><![CDATA[#### 3.1090.0(2026-07-17)
+
+##### New Features
+
+* **clients:** update client endpoints as of 2026-07-17 (857153f3)
+* **client-kinesis-analytics-v2:** Support for Flink 2.3 in Managed Service for Apache Flink (1ad0421f)
+* **client-gameliftstreams:** Amazon GameLift Streams now supports assigning an IAM role to a stream session, enabling your application to securely access resources in your AWS account, such as Amazon S3 buckets and DynamoDB tables. (cf945cdb)
+* **client-rds:** Adds the AssociatedRoles parameter to CreateDBCluster, RestoreDBClusterFromSnapshot, RestoreDBClusterToPointInTime, and RestoreDBClusterFromS3, letting customers associate IAM roles with an Aurora DB cluster at create or restore time instead of calling AddRoleToDBCluster afterward. (48b74a43)
+* **client-odb:** Adds support for sourcing Autonomous Database admin and wallet passwords from customer-managed AWS Secrets Manager secrets, including password source configuration and summaries, and enabling or disabling the
+
+... (truncated)]]></description>
+    <pubDate>Fri, 17 Jul 2026 18:50:51 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-07-17) (release-2026-07-17)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-07-17</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-07-17</guid>
+    <description><![CDATA[## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/service/cognitoidentityprovider`: [v1.65.0](service/cognitoidentityprovider/CHANGELOG.md#v1650-2026-07-17)
+ * **Feature**: Amazon Cognito user pools now support sending SMS via AWS End User Messaging. A new EumsSms object in SmsConfigurationType lets you deliver MFA and verification texts through AWS End User Messaging, alongside the existing Amazon SNS option.
+* `github.com/aws/aws-sdk-go-v2/service/gameliftstreams`: [v1.14.0](service/gameliftstreams/CHANGELOG.md#v1140-2026-07-17)
+ * **Feature**: Amazon GameLift Streams now supports assigning an IAM role to a stream session, enabling your application to securely access resources in your AWS account, such as Amazon S3 buckets and DynamoDB tables.
+* `github.com/aws/aws-sdk-go-v2/service/kinesisanalyticsv2`: [v1.40.0](service/kinesisanalyticsv2/CHANGELOG.md#v1400-2026-07-17)
+ * **Feature**: Support for Flink 2.3 in Managed Service for Apache Flink
+* `github.com/aws/aws-sdk-go-v2/servic
+
+... (truncated)]]></description>
+    <pubDate>Fri, 17 Jul 2026 18:46:19 GMT</pubDate>
+  </item>
+  <item>
+    <title>[sveltejs/kit] @sveltejs/kit@2.70.0</title>
+    <link>https://github.com/sveltejs/kit/releases/tag/%40sveltejs/kit%402.70.0</link>
+    <guid isPermaLink="true">https://github.com/sveltejs/kit/releases/tag/%40sveltejs/kit%402.70.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- feat: move `defineEnvVars` to `@sveltejs/kit/env` (#16378)
+
+### Patch Changes
+
+- fix: enable CSRF protection in builds with a non-production `NODE_ENV` value (#16313)]]></description>
+    <pubDate>Fri, 17 Jul 2026 13:54:08 GMT</pubDate>
+  </item>
+  <item>
+    <title>[withastro/astro] astro@7.1.1</title>
+    <link>https://github.com/withastro/astro/releases/tag/astro%407.1.1</link>
+    <guid isPermaLink="true">https://github.com/withastro/astro/releases/tag/astro%407.1.1</guid>
+    <description><![CDATA[### Patch Changes
+
+- #17399 `4b03702` Thanks @matthewp! - Fixes encoded request paths being routed incorrectly when using domain-based i18n]]></description>
+    <pubDate>Fri, 17 Jul 2026 12:35:04 GMT</pubDate>
+  </item>
+  <item>
+    <title>[anomalyco/opentui] Release v0.4.5 (v0.4.5)</title>
+    <link>https://github.com/anomalyco/opentui/releases/tag/v0.4.5</link>
+    <guid isPermaLink="true">https://github.com/anomalyco/opentui/releases/tag/v0.4.5</guid>
+    <description><![CDATA[## What's Changed
+* core: add relocatable Node runtime assets by @simonklee in 
+
+
+**Full Changelog**:]]></description>
+    <pubDate>Fri, 17 Jul 2026 11:01:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>[tokio-rs/tokio] Tokio v1.53.0 (tokio-1.53.0)</title>
+    <link>https://github.com/tokio-rs/tokio/releases/tag/tokio-1.53.0</link>
+    <guid isPermaLink="true">https://github.com/tokio-rs/tokio/releases/tag/tokio-1.53.0</guid>
+    <description><![CDATA[# 1.53.0 (July 17th, 2026)
+
+### Added
+
+- fs: implement `From<OwnedFd>` and `From<OwnedHandle>` for `File` ([#8266])
+- metrics: add task schedule latency metric ([#7986])
+- net: add `SocketAddr` methods to Unix sockets ([#8144])
+
+### Changed
+
+- io: add `#[inline]` to IO trait impls for in-memory types ([#8242])
+- net: implement UCred::pid on FreeBSD ([#8086])
+- net: support Nuttx target os ([#8259])
+- signal: refactor global variables on Windows ([#8231])
+- sync: `mpsc::{Receiver,UnboundedReceiver}` now drops waker on drop, even if there are still senders ([#8095])
+- taskdump: support taskdumps on s390x ([#8192])
+- time: add `#[track_caller]` to `timeout_at` ([#8077])
+- time: consolidate mutex locks on spurious poll ([#8124])
+- time: defer waker clone on spurious poll ([#8107])
+- time: move lazy-registration state into `Sleep` ([#8132])
+- tracing: remove unnecessary span clone ([#8126])
+
+### Fixed
+
+- io: do not treat zero-length reads as EOF in `Chain` ([#8251])
+
+... (truncated)]]></description>
+    <pubDate>Fri, 17 Jul 2026 08:14:35 GMT</pubDate>
+  </item>
+  <item>
+    <title>[bluesky-social/atproto] @atproto/bsky@0.0.262</title>
+    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/bsky%400.0.262</link>
+    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/bsky%400.0.262</guid>
+    <description><![CDATA[### Patch Changes
+
+- #5244 `38ee7f0` Thanks @ds-boyce! - Create new searchStarterPacksV2 endpoint
+
+- Updated dependencies [`f8267c3`, `38ee7f0`]:
+ - @atproto/lex@0.3.0
+ - @atproto/api@0.20.30
+ - @atproto/xrpc-server@0.11.10
+ - @atproto/sync@0.3.12
+ - @atproto-labs/xrpc-utils@0.1.9]]></description>
+    <pubDate>Fri, 17 Jul 2026 04:05:49 GMT</pubDate>
+  </item>
+  <item>
+    <title>[microsoft/WindowsAppSDK] Windows App SDK 2.3.1 (v2.3.1)</title>
+    <link>https://github.com/microsoft/WindowsAppSDK/releases/tag/v2.3.1</link>
+    <guid isPermaLink="true">https://github.com/microsoft/WindowsAppSDK/releases/tag/v2.3.1</guid>
+    <description><![CDATA[## Windows App SDK 2.3.1
+
+Windows App SDK 2.3.1 is the latest stable release on the 2.x line, with a new structured JSON output API for Phi Silica, the `XamlOptionalChanges` API for opting into XAML breaking changes, an unstable `CompositionEngine` Limited Access Feature, Video Super Resolution improvements, ARM64EC support for Windows ML, a broad set of XAML performance optimizations, and a batch of reliability fixes.
+
+### What's new in WinAppSDK 2.3.1:
+
+- **Structured JSON output for Phi Silica.** The new `LanguageModel.GenerateStructuredJsonResponseAsync` API generates language-model responses constrained to a caller-supplied JSON Schema, so apps get well-formed, schema-conformant output instead of free-form text they have to parse themselves.
+- **`XamlOptionalChanges`.** A new API that lets apps opt into optional breaking changes before XAML initialization. In the same release, the `DISABLE_XAML_GENERATED_MAIN` preprocessor constant now renames the generated `main` method (C
+
+... (truncated)]]></description>
+    <pubDate>Fri, 17 Jul 2026 02:44:26 GMT</pubDate>
+  </item>
   <item>
     <title>[sveltejs/svelte] svelte@5.56.6</title>
     <link>https://github.com/sveltejs/svelte/releases/tag/svelte%405.56.6</link>
@@ -17,32 +199,6 @@
 
 - fix: rerun derived that had an abort controller on reconnection (#18551)]]></description>
     <pubDate>Thu, 16 Jul 2026 22:26:47 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-js-v3] v3.1089.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1089.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1089.0</guid>
-    <description><![CDATA[#### 3.1089.0(2026-07-16)
-
-##### Chores
-
-* enable pkg json sorting (#8200) (926898ee)
-* remove redundant type assertions (#8193) (b41fbb0e)
-
-##### Documentation Changes
-
-* **client-s3:** Documentation update for removing the 30 day minimum restriction for transition to Standard-IA or OneZone-IA storage classes (91723d24)
-* **client-redshift:** Amazon Redshift - Added support for rg.large and rg.12xlarge node types in CreateCluster, ModifyCluster, and ResizeCluster API operations. (50989cf0)
-
-##### New Features
-
-* **clients:** update client endpoints as of 2026-07-16 (c9150fe6)
-* **client-chime-sdk-voice:** Marked CreateProxySession, DeleteProxySession, GetProxySession, ListProxySessions, UpdateProxySession, PutVoiceConnectorProxy, DeleteVoiceConnectorProxy, and GetVoiceConnectorProxy as deprecated. (d706c456)
-* **client-emr:** Amazon EMR updates the Session object returned by GetSession API (863234ad)
-* **client-omics:** Adds support for returning the task UUID (universally unique iden
-
-... (truncated)]]></description>
-    <pubDate>Thu, 16 Jul 2026 20:04:35 GMT</pubDate>
   </item>
   <item>
     <title>[facebook/lexical] v0.48.0</title>
@@ -58,45 +214,6 @@
 
 ... (truncated)]]></description>
     <pubDate>Thu, 16 Jul 2026 19:16:13 GMT</pubDate>
-  </item>
-  <item>
-    <title>[anomalyco/opentui] Release v0.4.4 (v0.4.4)</title>
-    <link>https://github.com/anomalyco/opentui/releases/tag/v0.4.4</link>
-    <guid isPermaLink="true">https://github.com/anomalyco/opentui/releases/tag/v0.4.4</guid>
-    <description><![CDATA[## What's Changed
-* ci: update Node.js to 26.4.0 by @simonklee in 
-* fix(core): preserve narrow table columns by @kitlangton in 
-* Add MP3 and FLAC audio streaming by @kommander in 
-* fix(core/audio): Fix audio decoder error reporting race by @simonklee in 
-* agents: align guidance with current workflows by @simonklee in 
-* fix(test): work around a node 26.4 crash by @simonklee in 
-* fix(react): correct useTimeline autoplay condition by @simonklee in 
-* fix(core): stop console auto-scroll when hidden by @simonklee in 
-* fix(solid): preserve dynamic text entities by @simonklee in 
-
-
-**Full Changelog**:]]></description>
-    <pubDate>Thu, 16 Jul 2026 18:58:17 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-07-16) (release-2026-07-16)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-07-16</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-07-16</guid>
-    <description><![CDATA[## General Highlights
-* **Dependency Update**: Updated to the latest SDK module versions
-
-## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/chimesdkvoice`: [v1.31.0](service/chimesdkvoice/CHANGELOG.md#v1310-2026-07-16)
- * **Feature**: Marked CreateProxySession, DeleteProxySession, GetProxySession, ListProxySessions, UpdateProxySession, PutVoiceConnectorProxy, DeleteVoiceConnectorProxy, and GetVoiceConnectorProxy as deprecated.
-* `github.com/aws/aws-sdk-go-v2/service/emr`: [v1.63.0](service/emr/CHANGELOG.md#v1630-2026-07-16)
- * **Feature**: Amazon EMR updates the Session object returned by GetSession API
-* `github.com/aws/aws-sdk-go-v2/service/omics`: [v1.48.0](service/omics/CHANGELOG.md#v1480-2026-07-16)
- * **Feature**: Adds support for returning the task UUID (universally unique identifier) in GetRunTask and ListRunTasks responses
-* `github.com/aws/aws-sdk-go-v2/service/redshift`: [v1.64.2](service/redshift/CHANGELOG.md#v1642-2026-07-16)
- * **Documentation**: Amazon Redshif
-
-... (truncated)]]></description>
-    <pubDate>Thu, 16 Jul 2026 18:41:13 GMT</pubDate>
   </item>
   <item>
     <title>[vercel-labs/skills] v1.5.19</title>
@@ -168,17 +285,6 @@
     <pubDate>Thu, 16 Jul 2026 14:24:29 GMT</pubDate>
   </item>
   <item>
-    <title>[redwoodjs/sdk] v1.5.8</title>
-    <link>https://github.com/redwoodjs/sdk/releases/tag/v1.5.8</link>
-    <guid isPermaLink="true">https://github.com/redwoodjs/sdk/releases/tag/v1.5.8</guid>
-    <description><![CDATA[## What's Changed
-* fix(vite): scope directive and barrel setup to SDK environments by @chrisvdm in 
-
-
-**Full Changelog**:]]></description>
-    <pubDate>Thu, 16 Jul 2026 13:59:03 GMT</pubDate>
-  </item>
-  <item>
     <title>[denoland/rusty_v8] v150.2.0</title>
     <link>https://github.com/denoland/rusty_v8/releases/tag/v150.2.0</link>
     <guid isPermaLink="true">https://github.com/denoland/rusty_v8/releases/tag/v150.2.0</guid>
@@ -200,24 +306,6 @@
     <pubDate>Thu, 16 Jul 2026 13:32:54 GMT</pubDate>
   </item>
   <item>
-    <title>[tokio-rs/tokio] Tokio v1.52.4 (tokio-1.52.4)</title>
-    <link>https://github.com/tokio-rs/tokio/releases/tag/tokio-1.52.4</link>
-    <guid isPermaLink="true">https://github.com/tokio-rs/tokio/releases/tag/tokio-1.52.4</guid>
-    <description><![CDATA[# 1.52.4 (July 16th, 2026)
-
-### Fixed
-
-- runtime: don't skip the driver when `before_park` schedules work ([#8222])
-
-### Fixed (unstable)
-
-- taskdump: remove crate disambiguators from output ([#8264])
-
-[#8264]: 
-[#8222]:]]></description>
-    <pubDate>Thu, 16 Jul 2026 13:24:53 GMT</pubDate>
-  </item>
-  <item>
     <title>[rust-lang/rust] Rust 1.97.1 (1.97.1)</title>
     <link>https://github.com/rust-lang/rust/releases/tag/1.97.1</link>
     <guid isPermaLink="true">https://github.com/rust-lang/rust/releases/tag/1.97.1</guid>
@@ -225,59 +313,6 @@
 
 - rustc: Fix miscompilation in LLVM optimization This backports an LLVM submodule bump to include the LLVM-side fix and a revert of the rustc change that is one known trigger for the bug. The rustc side revert should not be strictly necessary but is done out of abundance of caution.]]></description>
     <pubDate>Thu, 16 Jul 2026 12:29:15 GMT</pubDate>
-  </item>
-  <item>
-    <title>[github/spec-kit] Spec Kit - 0.12.17 (v0.12.17)</title>
-    <link>https://github.com/github/spec-kit/releases/tag/v0.12.17</link>
-    <guid isPermaLink="true">https://github.com/github/spec-kit/releases/tag/v0.12.17</guid>
-    <description><![CDATA[## Install
-
-```bash
-uv tool install specify-cli --from git+
-specify init my-project
-```
-
-## What's Changed
-
-- chore: bump version to 0.12.17
-- fix(extensions): resolve __SPECKIT_COMMAND tokens in auto-registered skills (#3544)
-- fix(workflows): fail if/switch steps on non-list branch instead of crashing (#3515)
-- feat(integrations): add Grok Build skills-based integration (#3535)
-- fix(extensions/git): reject negative -Number in create-new-feature-branch.ps1 (#3538)
-- test: cover preset constitution seeding through init CLI (#3297)
-- fix(integration): preserve ai_skills on `use` for skills-mode Copilot (#3550) (#3551)
-- [extension] Add Figma Starter extension to community catalog (#3547)
-- [extension] Add Spec-Kit BDD extension to community catalog (#3548)
-- [extension] Update Quality Gates (Enforcement Layer) extension to v0.3.2 (#3542)
-- chore: release 0.12.16, begin 0.12.17.dev0 development (#3549)]]></description>
-    <pubDate>Thu, 16 Jul 2026 12:27:42 GMT</pubDate>
-  </item>
-  <item>
-    <title>[withastro/astro] astro@7.1.0</title>
-    <link>https://github.com/withastro/astro/releases/tag/astro%407.1.0</link>
-    <guid isPermaLink="true">https://github.com/withastro/astro/releases/tag/astro%407.1.0</guid>
-    <description><![CDATA[### Minor Changes
-
-- #17302 `5f4dc03` Thanks @astrobot-houston! - Adds a new `deferRender` option to the `glob` content loader
-
- When set to `true`, renderable entries (such as Markdown) are not rendered during content sync. Instead, rendering is deferred until the entry is actually rendered in a page, using the same on-demand path that `.mdx` files already use.
-
- This reduces memory usage during `astro build` for large collections whose rendered output is much larger than the source — for example, Markdown that uses heavy rehype plugins like `rehype-katex`. Such builds could previously run out of memory while storing the eagerly-rendered HTML for every entry.
-
- ```js
- // src/content.config.ts
- import { defineCollection } from 'astro:content';
- import { glob } from 'astro/loaders';
-
- const docs = defineCollection({
- loader: glob({ pattern: '**/*.md', base: 'src/content/docs', deferRender: true }),
- });
- ```
-
- By default `deferRender` is `false`, preserving the existing behavior of rend
-
-... (truncated)]]></description>
-    <pubDate>Thu, 16 Jul 2026 12:17:14 GMT</pubDate>
   </item>
   <item>
     <title>[BabylonJS/Babylon.js] 9.17.0</title>
@@ -343,26 +378,6 @@ Full Changelog:
 
 - #33455 [release/0.144] fix(core) expand is_dangerous_command @dylan-hurd-oai]]></description>
     <pubDate>Thu, 16 Jul 2026 02:54:48 GMT</pubDate>
-  </item>
-  <item>
-    <title>[pnpm/pnpm] pnpm 11.13.1 (v11.13.1)</title>
-    <link>https://github.com/pnpm/pnpm/releases/tag/v11.13.1</link>
-    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v11.13.1</guid>
-    <description><![CDATA[## Patch Changes
-- Fixed `pnpm pack` applying workspace-root ignore rules when a workspace package has its own `.npmignore` file.
-- Keep the interactive `minimumReleaseAge` approval prompt visible during `pnpm install`. The progress reporter now pauses its redraws while a prompt is waiting for input instead of overwriting it, so the install no longer hangs on a question the user cannot see #13019.
-- Fixed `pnpm self-update` failing to link native platform binaries stored in sibling global virtual store slots.]]></description>
-    <pubDate>Thu, 16 Jul 2026 00:22:33 GMT</pubDate>
-  </item>
-  <item>
-    <title>[bluesky-social/atproto] @atproto/ozone@0.2.16</title>
-    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/ozone%400.2.16</link>
-    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/ozone%400.2.16</guid>
-    <description><![CDATA[### Patch Changes
-
-- Updated dependencies [`33f4416`]:
- - @atproto/api@0.20.29]]></description>
-    <pubDate>Wed, 15 Jul 2026 19:21:15 GMT</pubDate>
   </item>
   <item>
     <title>[zed-industries/zed] v1.11.3</title>
@@ -552,32 +567,6 @@ The `Source code (zip)` or `Source code (tar.gz)` in `Assets` are automatically 
     <pubDate>Tue, 14 Jul 2026 23:23:56 GMT</pubDate>
   </item>
   <item>
-    <title>[microsoft/WindowsAppSDK] Windows App SDK 1.8.10 (1.8.260710003) (v1.8.10)</title>
-    <link>https://github.com/microsoft/WindowsAppSDK/releases/tag/v1.8.10</link>
-    <guid isPermaLink="true">https://github.com/microsoft/WindowsAppSDK/releases/tag/v1.8.10</guid>
-    <description><![CDATA[## Windows App SDK 1.8.10 (1.8.260710003)
-
-WinAppSDK 1.8.10 is the latest stable servicing release for 1.8, with a reliability fix for `Microsoft.UI.System.ThemeSettings`.
-
-### Bug fixes:
-| Bug Fix | Runtime Compatibility Change |
-|---------|------------------------------------|
-| Fixed an issue where `Microsoft.UI.System.ThemeSettings` could crash an app if it was destroyed on a background thread, for example when destroyed by the .NET garbage collector. | ThemeSettings_OffThreadDestructorFix |
-
-**To see everything that's new and changed, see the full Windows App SDK 1.8.10 release notes.**
-
-### Try it out
-- Download the 1.8.260710003 NuGet package to use WinAppSDK 1.8 in your app.
-
-### Getting started
-
-To get started using Windows App SDK to develop Windows apps, check out the following documentation:
-- Install developer tools.
-- Create a WinUI 3 app.
-- Continue your development journey.]]></description>
-    <pubDate>Tue, 14 Jul 2026 23:15:35 GMT</pubDate>
-  </item>
-  <item>
     <title>[iii-hq/iii] iii 0.21.6 (iii/v0.21.6)</title>
     <link>https://github.com/iii-hq/iii/releases/tag/iii/v0.21.6</link>
     <guid isPermaLink="true">https://github.com/iii-hq/iii/releases/tag/iii/v0.21.6</guid>
@@ -741,19 +730,6 @@ This release brings together 3,063 contributions from 532 contributors.
 
 ... (truncated)]]></description>
     <pubDate>Mon, 13 Jul 2026 22:33:14 GMT</pubDate>
-  </item>
-  <item>
-    <title>[sveltejs/kit] @sveltejs/kit@2.69.3</title>
-    <link>https://github.com/sveltejs/kit/releases/tag/%40sveltejs/kit%402.69.3</link>
-    <guid isPermaLink="true">https://github.com/sveltejs/kit/releases/tag/%40sveltejs/kit%402.69.3</guid>
-    <description><![CDATA[### Patch Changes
-
-- fix: detect destructured `load` and `actions` exports during type generation (#16329)
-
-- fix: ensure CSS URL references are absolute when `paths.relative` is `false` (#16315)
-
-- fix: align MAX_COOKIE_SIZE with RFC 6265bis (#16322)]]></description>
-    <pubDate>Mon, 13 Jul 2026 21:05:08 GMT</pubDate>
   </item>
   <item>
     <title>[typescript-eslint/typescript-eslint] v8.64.0</title>
