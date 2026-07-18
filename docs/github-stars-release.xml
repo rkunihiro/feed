@@ -5,20 +5,42 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Fri, 17 Jul 2026 22:37:17 GMT</lastBuildDate>
+  <lastBuildDate>Sat, 18 Jul 2026 22:14:36 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
   <item>
-    <title>[pnpm/pnpm] pnpm 11.14 (v11.14.0)</title>
-    <link>https://github.com/pnpm/pnpm/releases/tag/v11.14.0</link>
-    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v11.14.0</guid>
-    <description><![CDATA[## Minor Changes
+    <title>[openai/codex] 0.144.6 (rust-v0.144.6)</title>
+    <link>https://github.com/openai/codex/releases/tag/rust-v0.144.6</link>
+    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.144.6</guid>
+    <description><![CDATA[## Bug Fixes
 
-* `peerDependencies` now accept dependency specifiers that carry a scheme — a named-registry spec (`<registry>:<version>`), an `npm:` alias, or a `file:`/git/URL spec — instead of rejecting them with `ERR_PNPM_INVALID_PEER_DEPENDENCY_SPECIFICATION` #13095. Such a peer is matched against the semver range carried by the specifier (`work:5.x.x` is checked as `5.x.x`, `npm:bar@^5` as `^5`), or against `*` when it carries no version, while the original specifier still selects the package to auto-install. Bare `name@version` values, which are almost always a mistake, are still rejected.
+- Refreshed bundled instructions for GPT-5.6 Sol, Terra, and Luna, and corrected their context windows to 272,000 tokens. (#33972, #34009)
 
-* Added `pnpm doctor`, which diagnoses the pnpm installation and the environment it runs in: the versions and install method, whether the global bin directory is on `PATH`, whether the store and cache are writable, which link strategies (reflink, hardlink, symlink) the store's filesystem supports, registry connectivity, and an offline `file:` install that exercises the resolve/store/lin
+## Changelog
+
+Full Changelog: 
+
+- #33972 Backport refreshed bundled model metadata to 0.144 @sayan-oai
+- #34009 Narrow 0.144 hotfix to GPT-5.6 prompts and context @sayan-oai]]></description>
+    <pubDate>Sat, 18 Jul 2026 13:51:52 GMT</pubDate>
+  </item>
+  <item>
+    <title>[pnpm/pnpm] pnpm 11.15 (v11.15.0)</title>
+    <link>https://github.com/pnpm/pnpm/releases/tag/v11.15.0</link>
+    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v11.15.0</guid>
+    <description><![CDATA[### Minor Changes
+
+* Optional peer dependencies declared only via `peerDependenciesMeta` (for example `debug`'s `supports-color` peer) are now resolved from a satisfying version already present in the dependency graph, the same way explicitly declared optional peer dependencies are. Previously such peers were only resolved this way when the package's metadata was read back from the lockfile, so an unrelated dependency change could rewrite peer resolutions across the whole lockfile.
+
+### Patch Changes
+
+* Updated `adm-zip` to prevent crafted ZIP archives from causing excessive memory allocation.
+
+* `pnpm version -r` no longer writes a versioning-ledger entry with no consumed intents as a bare `intents:` key, which the next run failed to read with `ERR_PNPM_INVALID_VERSIONING_LEDGER`. Empty intent lists are now written as `intents: `, and the ledger reader accepts the bare form left by earlier releases.
+
+* Fixed pnpr workspace resolution to preserve project names and versions fo
 
 ... (truncated)]]></description>
-    <pubDate>Fri, 17 Jul 2026 22:18:40 GMT</pubDate>
+    <pubDate>Sat, 18 Jul 2026 12:52:03 GMT</pubDate>
   </item>
   <item>
     <title>[redwoodjs/sdk] v1.5.9</title>
@@ -363,21 +385,6 @@ Windows App SDK 2.3.1 is the latest stable release on the 2.x line, with a new s
 
 **Full Changelog**:]]></description>
     <pubDate>Thu, 16 Jul 2026 03:27:23 GMT</pubDate>
-  </item>
-  <item>
-    <title>[openai/codex] 0.144.5 (rust-v0.144.5)</title>
-    <link>https://github.com/openai/codex/releases/tag/rust-v0.144.5</link>
-    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.144.5</guid>
-    <description><![CDATA[## Bug Fixes
-
-- Improved dangerous-command detection, including more forced `rm` forms, and provides clearer rejection reasons when commands are denied. (#33455)
-
-## Changelog
-
-Full Changelog: 
-
-- #33455 [release/0.144] fix(core) expand is_dangerous_command @dylan-hurd-oai]]></description>
-    <pubDate>Thu, 16 Jul 2026 02:54:48 GMT</pubDate>
   </item>
   <item>
     <title>[zed-industries/zed] v1.11.3</title>
