@@ -5,8 +5,33 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Sat, 18 Jul 2026 22:14:36 GMT</lastBuildDate>
+  <lastBuildDate>Sun, 19 Jul 2026 22:15:33 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[sveltejs/kit] @sveltejs/kit@2.70.1</title>
+    <link>https://github.com/sveltejs/kit/releases/tag/%40sveltejs/kit%402.70.1</link>
+    <guid isPermaLink="true">https://github.com/sveltejs/kit/releases/tag/%40sveltejs/kit%402.70.1</guid>
+    <description><![CDATA[### Patch Changes
+
+- docs: update links to hooks documentation (#16417)]]></description>
+    <pubDate>Sun, 19 Jul 2026 00:50:10 GMT</pubDate>
+  </item>
+  <item>
+    <title>[honojs/hono] v4.12.31</title>
+    <link>https://github.com/honojs/hono/releases/tag/v4.12.31</link>
+    <guid isPermaLink="true">https://github.com/honojs/hono/releases/tag/v4.12.31</guid>
+    <description><![CDATA[## What's Changed
+* test(context): assert case-insensitive header names in response helpers by @yusukebe in 
+* chore(benchmark): add app.fetch overhead benchmark by @yusukebe in 
+* refactor(aws-lambada): remove FIXME in `@ts-expect-error` by @yusukebe in 
+* fix(utils/body): reuse cached formData in `parseBody` by @yusukebe in 
+* fix(request): fix multipart boundary mismatch in `cloneRawRequest` by @yusukebe in 
+* fix(sse): emit retry feild when retry is `0` by @yusukebe in 
+* test(validator): fix misspelled identifier in transform type test by @yusukebe in 
+
+**Full Changelog**:]]></description>
+    <pubDate>Sat, 18 Jul 2026 23:16:12 GMT</pubDate>
+  </item>
   <item>
     <title>[openai/codex] 0.144.6 (rust-v0.144.6)</title>
     <link>https://github.com/openai/codex/releases/tag/rust-v0.144.6</link>
@@ -112,19 +137,6 @@ specify init my-project
 
 ... (truncated)]]></description>
     <pubDate>Fri, 17 Jul 2026 18:46:19 GMT</pubDate>
-  </item>
-  <item>
-    <title>[sveltejs/kit] @sveltejs/kit@2.70.0</title>
-    <link>https://github.com/sveltejs/kit/releases/tag/%40sveltejs/kit%402.70.0</link>
-    <guid isPermaLink="true">https://github.com/sveltejs/kit/releases/tag/%40sveltejs/kit%402.70.0</guid>
-    <description><![CDATA[### Minor Changes
-
-- feat: move `defineEnvVars` to `@sveltejs/kit/env` (#16378)
-
-### Patch Changes
-
-- fix: enable CSRF protection in builds with a non-production `NODE_ENV` value (#16313)]]></description>
-    <pubDate>Fri, 17 Jul 2026 13:54:08 GMT</pubDate>
   </item>
   <item>
     <title>[withastro/astro] astro@7.1.1</title>
@@ -808,22 +820,6 @@ You can read about our versioning strategy and releases on our website.]]></desc
 This release is also available on:
 - npm package (@latest dist-tag)]]></description>
     <pubDate>Mon, 13 Jul 2026 03:13:34 GMT</pubDate>
-  </item>
-  <item>
-    <title>[honojs/hono] v4.12.30</title>
-    <link>https://github.com/honojs/hono/releases/tag/v4.12.30</link>
-    <guid isPermaLink="true">https://github.com/honojs/hono/releases/tag/v4.12.30</guid>
-    <description><![CDATA[## What's Changed
-* chore(benchmark/routers): bump deps in 
-* chore(benchmark): remove not used benchmarks in 
-* chore: update to ts6 in prep for ts7 in 
-* fix(cache): deduplicate Cache-Control directives case-insensitively in 
-* fix(compress): do not compress 206 Partial Content responses in 
-* fix(client): replaceUrlParam should not match a param that prefixes another in 
-* fix(method-override): set duplex when forwarding a stream body in query mode in 
-
-**Full Changelog**:]]></description>
-    <pubDate>Mon, 13 Jul 2026 00:36:06 GMT</pubDate>
   </item>
   <item>
     <title>[theMackabu/ant] v12.2.1d8040ee.1</title>
