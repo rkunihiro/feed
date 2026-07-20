@@ -5,8 +5,324 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Sun, 19 Jul 2026 22:15:33 GMT</lastBuildDate>
+  <lastBuildDate>Mon, 20 Jul 2026 22:18:01 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[nextauthjs/next-auth] @auth/azure-tables-adapter@1.11.3</title>
+    <link>https://github.com/nextauthjs/next-auth/releases/tag/%40auth/azure-tables-adapter%401.11.3</link>
+    <guid isPermaLink="true">https://github.com/nextauthjs/next-auth/releases/tag/%40auth/azure-tables-adapter%401.11.3</guid>
+    <description><![CDATA[## Other
+
+ - **@auth/core**: dependency update (8a933f95)]]></description>
+    <pubDate>Mon, 20 Jul 2026 21:54:47 GMT</pubDate>
+  </item>
+  <item>
+    <title>[astral-sh/uv] 0.11.30</title>
+    <link>https://github.com/astral-sh/uv/releases/tag/0.11.30</link>
+    <guid isPermaLink="true">https://github.com/astral-sh/uv/releases/tag/0.11.30</guid>
+    <description><![CDATA[## Release Notes
+
+Released on 2026-07-20.
+
+### Python
+
+- Add CPython 3.15.0b4 (#20519)
+
+### Preview features
+
+- Allow `uv workspace metadata --sync` to target the active virtual environment with `--active` (#20500)
+- Reuse centralized project environments when workspaces are accessed through symlinks (#20436)
+
+### Performance
+
+- Skip resolver candidates whose files are all excluded by `exclude-newer` (#20460)
+- Limit parallel cache reads to reduce resolver scheduling and allocation overhead (#20427)
+- Accelerate lockfile serialization with `toml_writer` (#20450)
+- Compact cached Simple API distribution metadata and hashes (#20463, #20483)
+- Decode stale cache entries in a single blocking task (#20486)
+- Decode cached payloads outside resolver workers (#20464)
+- Cache resolver Python requirement markers (#20461)
+- Reuse resolver fork markers while recording preferences (#20462)
+
+### Bug fixes
+
+- Prevent skipped tar-wheel entries from causing unrelated files to be removed during uninstal
+
+... (truncated)]]></description>
+    <pubDate>Mon, 20 Jul 2026 20:48:06 GMT</pubDate>
+  </item>
+  <item>
+    <title>[sveltejs/svelte] svelte@5.56.7</title>
+    <link>https://github.com/sveltejs/svelte/releases/tag/svelte%405.56.7</link>
+    <guid isPermaLink="true">https://github.com/sveltejs/svelte/releases/tag/svelte%405.56.7</guid>
+    <description><![CDATA[### Patch Changes
+
+- chore: provide `indent` option for `print` (#18474)]]></description>
+    <pubDate>Mon, 20 Jul 2026 19:31:02 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1091.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1091.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1091.0</guid>
+    <description><![CDATA[#### 3.1091.0(2026-07-20)
+
+##### Documentation Changes
+
+* **client-organizations:** Updated InvalidInputException error documentation to clarify that the service validates free-text field values against common cross-site scripting (XSS) patterns. (6ac1bf08)
+* **client-marketplace-metering:** For new SaaS product integrations, CustomerIdentifier is not populated in ResolveCustomer responses and is not supported in BatchMeterUsage. Use CustomerAWSAccountId and LicenseArn instead. (f1ff8983)
+
+##### New Features
+
+* **client-quicksight:** Adds support for custom permissions for Triggers, allowing administrators to control user access to Schedule, Inbound Email and Quick Event triggers. (fbe7d94d)
+* **client-bedrock-agentcore:** Add W3C trace context headers (traceparent, tracestate, baggage) and X-Amzn-Trace-Id to InvokeHarness request for end-to-end observability propagation. Add toolResultMetadata to the streaming content block delta for MCP tool result meta delivery without oversized SSE
+
+... (truncated)]]></description>
+    <pubDate>Mon, 20 Jul 2026 18:45:57 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-07-20) (release-2026-07-20)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-07-20</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-07-20</guid>
+    <description><![CDATA[## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcore`: [v1.34.0](service/bedrockagentcore/CHANGELOG.md#v1340-2026-07-20)
+ * **Feature**: Add W3C trace context headers (traceparent, tracestate, baggage) and X-Amzn-Trace-Id to InvokeHarness request for end-to-end observability propagation. Add toolResultMetadata to the streaming content block delta for MCP tool result meta delivery without oversized SSE frames.
+* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcorecontrol`: [v1.49.0](service/bedrockagentcorecontrol/CHANGELOG.md#v1490-2026-07-20)
+ * **Feature**: This release adds support for specifying a connector version on Gateway targets to pin the connector's tool schema. It also introduces web-search connector version 1.2.0, which adds agent-side domain filtering, published date range filtering, and admin-side domain allowlisting.
+* `github.com/aws/aws-sdk-go-v2/service/marketplacemetering`: [v1.38.3](service/marketplacemetering/CHANGELOG.md#v1383-2026-07-2
+
+... (truncated)]]></description>
+    <pubDate>Mon, 20 Jul 2026 18:39:43 GMT</pubDate>
+  </item>
+  <item>
+    <title>[withastro/astro] astro@7.1.3</title>
+    <link>https://github.com/withastro/astro/releases/tag/astro%407.1.3</link>
+    <guid isPermaLink="true">https://github.com/withastro/astro/releases/tag/astro%407.1.3</guid>
+    <description><![CDATA[### Patch Changes
+
+- #17427 `630b382` Thanks @astrobot-houston! - Fixes image optimization during `astro build` using too many parallel processes in CPU-limited containers. Builds now respect the container's CPU limit, reducing peak memory usage and avoiding out-of-memory crashes.
+ </content>
+ </invoke>]]></description>
+    <pubDate>Mon, 20 Jul 2026 17:47:40 GMT</pubDate>
+  </item>
+  <item>
+    <title>[typescript-eslint/typescript-eslint] v8.65.0</title>
+    <link>https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.65.0</link>
+    <guid isPermaLink="true">https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.65.0</guid>
+    <description><![CDATA[## 8.65.0 (2026-07-20)
+
+### 🚀 Features
+
+- add warning when TS 7 is detected (#12529)
+- **eslint-plugin:** [no-restricted-imports] deprecate extension rule (#12527, #19562, #11889)
+- **eslint-plugin:** [no-shadow] specialized error on enum declaration and member shadowing (#12578)
+- **parser:** add onUnsupportedTypeScriptVersion option to error on unsupported TypeScript versions (#12465)
+- **typescript-estree:** throw for invalid import defer syntax (#12552)
+
+### 🩹 Fixes
+
+- **eslint-plugin:** [prefer-string-starts-ends-with] handle escaped $ ending regex literals (#12515)
+- **eslint-plugin:** [unbound-method] report unbound methods accessed via member expression on union types (#12448)
+- **eslint-plugin:** [no-unnecessary-parameter-property-assignment] don't flag computed assignments with a variable key (#12568)
+
+### ❤️ Thank You
+
+- Evyatar Daud @StyleShit
+- Josh Goldberg ✨
+- Kirk Waiblinger @kirkwaiblinger
+- Serhii Leniv @Serhii-Leniv
+- 송재욱
+
+See GitHub Releases for more information.
+
+
+... (truncated)]]></description>
+    <pubDate>Mon, 20 Jul 2026 17:38:21 GMT</pubDate>
+  </item>
+  <item>
+    <title>[bluesky-social/atproto] @atproto/pds@0.5.20</title>
+    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/pds%400.5.20</link>
+    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/pds%400.5.20</guid>
+    <description><![CDATA[### Patch Changes
+
+- Updated dependencies [`0af78cf`]:
+ - @atproto/aws@0.3.8]]></description>
+    <pubDate>Mon, 20 Jul 2026 17:38:20 GMT</pubDate>
+  </item>
+  <item>
+    <title>[tokio-rs/tokio] Tokio v1.53.1 (tokio-1.53.1)</title>
+    <link>https://github.com/tokio-rs/tokio/releases/tag/tokio-1.53.1</link>
+    <guid isPermaLink="true">https://github.com/tokio-rs/tokio/releases/tag/tokio-1.53.1</guid>
+    <description><![CDATA[# 1.53.1 (July 20th, 2026)
+
+### Fixed
+
+- signal: restore MSRV by removing `OnceLock::wait` from the Windows handler ([#8300])
+
+### Fixed (unstable)
+
+- time: fix alt timer cancellation and insertion race ([#8252])
+
+### Documented
+
+- runtime: remove dead link definition in Runtime::block_on ([#8301])
+
+[#8252]: 
+[#8300]: 
+[#8301]:]]></description>
+    <pubDate>Mon, 20 Jul 2026 17:06:31 GMT</pubDate>
+  </item>
+  <item>
+    <title>[anomalyco/opencode] v1.18.4</title>
+    <link>https://github.com/anomalyco/opencode/releases/tag/v1.18.4</link>
+    <guid isPermaLink="true">https://github.com/anomalyco/opencode/releases/tag/v1.18.4</guid>
+    <description><![CDATA[## Core
+
+### Improvements
+
+- Use adaptive thinking controls for Kimi models on Anthropic-compatible providers, with summarized reasoning output by default. (@chouqin)
+
+### Bugfixes
+
+- Reduce OpenAI provider header timeouts during slow connection setup.
+- Respect provider-defined reasoning options instead of falling back to the wrong reasoning controls.
+- Restore Azure Cognitive Services endpoint support for Azure-hosted models.
+
+## Desktop
+
+### Improvements
+
+- Sync the embedded terminal theme with the app theme.
+- Improve the review panel so open file tabs can stay aligned with the current diff view.
+- Rewrite the v2 prompt input for more reliable command, context, shell, attachment, and history interactions.
+- Improve review panel resizing and sticky controls.
+
+### Bugfixes
+
+- Preserve command drafts in the command menu.
+- Avoid session view failures when message parent links are missing.
+- Prevent sending empty prompt text parts.
+- Restore model variant selection accessibility.
+- Sho
+
+... (truncated)]]></description>
+    <pubDate>Mon, 20 Jul 2026 15:28:21 GMT</pubDate>
+  </item>
+  <item>
+    <title>[nodejs/undici] v8.8.0</title>
+    <link>https://github.com/nodejs/undici/releases/tag/v8.8.0</link>
+    <guid isPermaLink="true">https://github.com/nodejs/undici/releases/tag/v8.8.0</guid>
+    <description><![CDATA[## What's Changed
+* fetch: use ReadableStreamTee for cloning streams by @KhafraDev in 
+* fix(benchmarks): adjust got after v15 upgrade by @slagiewka in 
+* feat(mock): support asynchronous reply options callbacks by @Develop-KIM in 
+* docs: clarify proxy threat model by @mcollina in 
+* docs: clarify MockAgent pool usage by @vibhor-aggr in 
+* docs: clarify parser timeout precision by @vibhor-aggr in 
+* fix: handle flat alternating header arrays in cache normalizeHeaders by @mcollina in 
+* chore(benchmarks): require(esm) on ESM-only packages by @slagiewka in 
+* fix: run idle socket validation off setImmediate instead of setTimeout by @carlotestor in 
+* docs: add custom interceptor example by @vibhor-aggr in 
+* fix(h1): ignore type of service errors by @mcollina in 
+* fix(fetch): convert null init in Response.json by @Ram-blip in 
+* fix(redirect): remove body headers after POST-to-GET by @Ram-blip in 
+* build(deps-dev): bump fast-check from 4.8.0 to 4.9.0 by @dependabot[bot] in 
+* fix(h2):
+
+... (truncated)]]></description>
+    <pubDate>Mon, 20 Jul 2026 15:15:17 GMT</pubDate>
+  </item>
+  <item>
+    <title>[panva/node-oidc-provider] v9.10.0</title>
+    <link>https://github.com/panva/node-oidc-provider/releases/tag/v9.10.0</link>
+    <guid isPermaLink="true">https://github.com/panva/node-oidc-provider/releases/tag/v9.10.0</guid>
+    <description><![CDATA[### Features
+
+* Experimental support for OpenID for Verifiable Credential Issuance (43a5a88)
+* update Attestation-Based Client Authentication to -10 (b833e2f)]]></description>
+    <pubDate>Mon, 20 Jul 2026 11:42:52 GMT</pubDate>
+  </item>
+  <item>
+    <title>[lynx-family/lynx] 4.0.0</title>
+    <link>https://github.com/lynx-family/lynx/releases/tag/4.0.0</link>
+    <guid isPermaLink="true">https://github.com/lynx-family/lynx/releases/tag/4.0.0</guid>
+    <description><![CDATA[### Related Dependencies
+
+```js
+// Android:
+org.lynxsdk.lynx:primjs:4.0.0
+
+// iOS
+pod 'PrimJS', '4.0.0', :subspecs => ['quickjs', 'napi']
+
+// Harmony
+@lynx/primjs: 4.0.0
+```
+
+### ✨ Features
+
+
+- [Feature][DevTool] Support RTS VM source debugging (a3bf00c) @ci_lynx
+
+
+- [Feature][Style] Implement commit side-effect replay for new styling pipeline (472840a) @usczz
+
+
+- [Feature][Frame] Report intrinsic frame size via layoutchange (6202e5b) @pilipala195
+
+
+- [Feature][DevTool] Support RTS VM source debugging (d7e1071) @ci_lynx
+
+
+- [Feature][Frame] Add frame load metrics typings (7bc8bd1) @pilipala195
+
+
+- [Feature] Support event attributes in element templates (7f99227) @ShouruiSong
+
+
+- [Feature][Clay][Live] Support `x-live-ng` on Windows (ad2ac86) @ci_lynx
+
+
+- [Feature][CSS] Integrate adopted stylesheets into CSSFragmentDecorator (92b7881) @zhongyr
+
+
+- [Feature][DevTool] Support RTS VM source debugging (a2ea55c) @ci_lynx
+
+
+- [Feature] Add CSS media q
+
+... (truncated)]]></description>
+    <pubDate>Mon, 20 Jul 2026 08:27:41 GMT</pubDate>
+  </item>
+  <item>
+    <title>[podman-desktop/podman-desktop] v1.28.3</title>
+    <link>https://github.com/podman-desktop/podman-desktop/releases/tag/v1.28.3</link>
+    <guid isPermaLink="true">https://github.com/podman-desktop/podman-desktop/releases/tag/v1.28.3</guid>
+    <description><![CDATA[## What's Changed
+* feat: updated podman to 5.8.5 (backport #18288) by @mergify[bot] in 
+
+
+**Full Changelog**:]]></description>
+    <pubDate>Mon, 20 Jul 2026 08:23:56 GMT</pubDate>
+  </item>
+  <item>
+    <title>[pnpm/pnpm] pnpm 11.15.1 (v11.15.1)</title>
+    <link>https://github.com/pnpm/pnpm/releases/tag/v11.15.1</link>
+    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v11.15.1</guid>
+    <description><![CDATA[## Patch Changes
+
+* `pnpm install` now detects a `supportedArchitectures` change and re-evaluates previously skipped platform-specific optional dependencies, instead of reporting the project as up to date and leaving the packages for the old architecture set in place.
+
+* `pnpm setup` now removes leftover v10-layout shims at the top of `PNPM_HOME`, so `pnpm self-update` no longer warns about a v10 installation layout after PATH has been migrated to the v11 `PNPM_HOME/bin` layout. Applies to both the TypeScript CLI and pacquet.
+
+ In the TypeScript CLI, `self-update` also no longer treats a dangling legacy shim (one whose install target was garbage-collected) as a real v10 layout, so the warning can no longer fire on dead shim files.
+
+ Closes pnpm/pnpm#12496.
+
+* Completed pnpm runtime installation parity for Node.js, Deno, and Bun, including runtime failure policy, target architecture selection, and dependency runtime engines. Runtime failure overrides now preserve explicit runt
+
+... (truncated)]]></description>
+    <pubDate>Sun, 19 Jul 2026 22:32:13 GMT</pubDate>
+  </item>
   <item>
     <title>[sveltejs/kit] @sveltejs/kit@2.70.1</title>
     <link>https://github.com/sveltejs/kit/releases/tag/%40sveltejs/kit%402.70.1</link>
@@ -49,25 +365,6 @@ Full Changelog:
     <pubDate>Sat, 18 Jul 2026 13:51:52 GMT</pubDate>
   </item>
   <item>
-    <title>[pnpm/pnpm] pnpm 11.15 (v11.15.0)</title>
-    <link>https://github.com/pnpm/pnpm/releases/tag/v11.15.0</link>
-    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v11.15.0</guid>
-    <description><![CDATA[### Minor Changes
-
-* Optional peer dependencies declared only via `peerDependenciesMeta` (for example `debug`'s `supports-color` peer) are now resolved from a satisfying version already present in the dependency graph, the same way explicitly declared optional peer dependencies are. Previously such peers were only resolved this way when the package's metadata was read back from the lockfile, so an unrelated dependency change could rewrite peer resolutions across the whole lockfile.
-
-### Patch Changes
-
-* Updated `adm-zip` to prevent crafted ZIP archives from causing excessive memory allocation.
-
-* `pnpm version -r` no longer writes a versioning-ledger entry with no consumed intents as a bare `intents:` key, which the next run failed to read with `ERR_PNPM_INVALID_VERSIONING_LEDGER`. Empty intent lists are now written as `intents: `, and the ledger reader accepts the bare form left by earlier releases.
-
-* Fixed pnpr workspace resolution to preserve project names and versions fo
-
-... (truncated)]]></description>
-    <pubDate>Sat, 18 Jul 2026 12:52:03 GMT</pubDate>
-  </item>
-  <item>
     <title>[redwoodjs/sdk] v1.5.9</title>
     <link>https://github.com/redwoodjs/sdk/releases/tag/v1.5.9</link>
     <guid isPermaLink="true">https://github.com/redwoodjs/sdk/releases/tag/v1.5.9</guid>
@@ -106,48 +403,6 @@ specify init my-project
     <pubDate>Fri, 17 Jul 2026 18:58:41 GMT</pubDate>
   </item>
   <item>
-    <title>[aws/aws-sdk-js-v3] v3.1090.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1090.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1090.0</guid>
-    <description><![CDATA[#### 3.1090.0(2026-07-17)
-
-##### New Features
-
-* **clients:** update client endpoints as of 2026-07-17 (857153f3)
-* **client-kinesis-analytics-v2:** Support for Flink 2.3 in Managed Service for Apache Flink (1ad0421f)
-* **client-gameliftstreams:** Amazon GameLift Streams now supports assigning an IAM role to a stream session, enabling your application to securely access resources in your AWS account, such as Amazon S3 buckets and DynamoDB tables. (cf945cdb)
-* **client-rds:** Adds the AssociatedRoles parameter to CreateDBCluster, RestoreDBClusterFromSnapshot, RestoreDBClusterToPointInTime, and RestoreDBClusterFromS3, letting customers associate IAM roles with an Aurora DB cluster at create or restore time instead of calling AddRoleToDBCluster afterward. (48b74a43)
-* **client-odb:** Adds support for sourcing Autonomous Database admin and wallet passwords from customer-managed AWS Secrets Manager secrets, including password source configuration and summaries, and enabling or disabling the
-
-... (truncated)]]></description>
-    <pubDate>Fri, 17 Jul 2026 18:50:51 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-07-17) (release-2026-07-17)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-07-17</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-07-17</guid>
-    <description><![CDATA[## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/cognitoidentityprovider`: [v1.65.0](service/cognitoidentityprovider/CHANGELOG.md#v1650-2026-07-17)
- * **Feature**: Amazon Cognito user pools now support sending SMS via AWS End User Messaging. A new EumsSms object in SmsConfigurationType lets you deliver MFA and verification texts through AWS End User Messaging, alongside the existing Amazon SNS option.
-* `github.com/aws/aws-sdk-go-v2/service/gameliftstreams`: [v1.14.0](service/gameliftstreams/CHANGELOG.md#v1140-2026-07-17)
- * **Feature**: Amazon GameLift Streams now supports assigning an IAM role to a stream session, enabling your application to securely access resources in your AWS account, such as Amazon S3 buckets and DynamoDB tables.
-* `github.com/aws/aws-sdk-go-v2/service/kinesisanalyticsv2`: [v1.40.0](service/kinesisanalyticsv2/CHANGELOG.md#v1400-2026-07-17)
- * **Feature**: Support for Flink 2.3 in Managed Service for Apache Flink
-* `github.com/aws/aws-sdk-go-v2/servic
-
-... (truncated)]]></description>
-    <pubDate>Fri, 17 Jul 2026 18:46:19 GMT</pubDate>
-  </item>
-  <item>
-    <title>[withastro/astro] astro@7.1.1</title>
-    <link>https://github.com/withastro/astro/releases/tag/astro%407.1.1</link>
-    <guid isPermaLink="true">https://github.com/withastro/astro/releases/tag/astro%407.1.1</guid>
-    <description><![CDATA[### Patch Changes
-
-- #17399 `4b03702` Thanks @matthewp! - Fixes encoded request paths being routed incorrectly when using domain-based i18n]]></description>
-    <pubDate>Fri, 17 Jul 2026 12:35:04 GMT</pubDate>
-  </item>
-  <item>
     <title>[anomalyco/opentui] Release v0.4.5 (v0.4.5)</title>
     <link>https://github.com/anomalyco/opentui/releases/tag/v0.4.5</link>
     <guid isPermaLink="true">https://github.com/anomalyco/opentui/releases/tag/v0.4.5</guid>
@@ -157,55 +412,6 @@ specify init my-project
 
 **Full Changelog**:]]></description>
     <pubDate>Fri, 17 Jul 2026 11:01:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>[tokio-rs/tokio] Tokio v1.53.0 (tokio-1.53.0)</title>
-    <link>https://github.com/tokio-rs/tokio/releases/tag/tokio-1.53.0</link>
-    <guid isPermaLink="true">https://github.com/tokio-rs/tokio/releases/tag/tokio-1.53.0</guid>
-    <description><![CDATA[# 1.53.0 (July 17th, 2026)
-
-### Added
-
-- fs: implement `From<OwnedFd>` and `From<OwnedHandle>` for `File` ([#8266])
-- metrics: add task schedule latency metric ([#7986])
-- net: add `SocketAddr` methods to Unix sockets ([#8144])
-
-### Changed
-
-- io: add `#[inline]` to IO trait impls for in-memory types ([#8242])
-- net: implement UCred::pid on FreeBSD ([#8086])
-- net: support Nuttx target os ([#8259])
-- signal: refactor global variables on Windows ([#8231])
-- sync: `mpsc::{Receiver,UnboundedReceiver}` now drops waker on drop, even if there are still senders ([#8095])
-- taskdump: support taskdumps on s390x ([#8192])
-- time: add `#[track_caller]` to `timeout_at` ([#8077])
-- time: consolidate mutex locks on spurious poll ([#8124])
-- time: defer waker clone on spurious poll ([#8107])
-- time: move lazy-registration state into `Sleep` ([#8132])
-- tracing: remove unnecessary span clone ([#8126])
-
-### Fixed
-
-- io: do not treat zero-length reads as EOF in `Chain` ([#8251])
-
-... (truncated)]]></description>
-    <pubDate>Fri, 17 Jul 2026 08:14:35 GMT</pubDate>
-  </item>
-  <item>
-    <title>[bluesky-social/atproto] @atproto/bsky@0.0.262</title>
-    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/bsky%400.0.262</link>
-    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/bsky%400.0.262</guid>
-    <description><![CDATA[### Patch Changes
-
-- #5244 `38ee7f0` Thanks @ds-boyce! - Create new searchStarterPacksV2 endpoint
-
-- Updated dependencies [`f8267c3`, `38ee7f0`]:
- - @atproto/lex@0.3.0
- - @atproto/api@0.20.30
- - @atproto/xrpc-server@0.11.10
- - @atproto/sync@0.3.12
- - @atproto-labs/xrpc-utils@0.1.9]]></description>
-    <pubDate>Fri, 17 Jul 2026 04:05:49 GMT</pubDate>
   </item>
   <item>
     <title>[microsoft/WindowsAppSDK] Windows App SDK 2.3.1 (v2.3.1)</title>
@@ -222,17 +428,6 @@ Windows App SDK 2.3.1 is the latest stable release on the 2.x line, with a new s
 
 ... (truncated)]]></description>
     <pubDate>Fri, 17 Jul 2026 02:44:26 GMT</pubDate>
-  </item>
-  <item>
-    <title>[sveltejs/svelte] svelte@5.56.6</title>
-    <link>https://github.com/sveltejs/svelte/releases/tag/svelte%405.56.6</link>
-    <guid isPermaLink="true">https://github.com/sveltejs/svelte/releases/tag/svelte%405.56.6</guid>
-    <description><![CDATA[### Patch Changes
-
-- perf: skip unnecessary blocker analysis when compiling components without top-level await (#18548)
-
-- fix: rerun derived that had an abort controller on reconnection (#18551)]]></description>
-    <pubDate>Thu, 16 Jul 2026 22:26:47 GMT</pubDate>
   </item>
   <item>
     <title>[facebook/lexical] v0.48.0</title>
@@ -264,25 +459,6 @@ Windows App SDK 2.3.1 is the latest stable release on the 2.x line, with a new s
 
 @KarimPwnz,@jonathanhefner @quuu]]></description>
     <pubDate>Thu, 16 Jul 2026 17:54:07 GMT</pubDate>
-  </item>
-  <item>
-    <title>[anomalyco/opencode] v1.18.3</title>
-    <link>https://github.com/anomalyco/opencode/releases/tag/v1.18.3</link>
-    <guid isPermaLink="true">https://github.com/anomalyco/opencode/releases/tag/v1.18.3</guid>
-    <description><![CDATA[## Core
-### Improvements
-- Added an Up Arrow shortcut to close the subagent picker when the first item is selected.
-
-## Desktop
-### Bugfixes
-- Fixed home page scrolling so sticky headers and the session list behave correctly.
-- Fixed startup readiness so WSL server loading is included before the desktop app reports ready.
-- Removed the inactive help button from the app layout.
-- Fixed custom agent selector visibility when custom agents are available.
-
-### Improvements
-- Home page command palette search can now find and open sessions.]]></description>
-    <pubDate>Thu, 16 Jul 2026 15:34:33 GMT</pubDate>
   </item>
   <item>
     <title>[fastapi/fastapi] 0.139.2</title>
@@ -416,42 +592,6 @@ Windows App SDK 2.3.1 is the latest stable release on the 2.x line, with a new s
 
 ... (truncated)]]></description>
     <pubDate>Wed, 15 Jul 2026 19:10:38 GMT</pubDate>
-  </item>
-  <item>
-    <title>[astral-sh/uv] 0.11.29</title>
-    <link>https://github.com/astral-sh/uv/releases/tag/0.11.29</link>
-    <guid isPermaLink="true">https://github.com/astral-sh/uv/releases/tag/0.11.29</guid>
-    <description><![CDATA[## Release Notes
-
-Released on 2026-07-15.
-
-### Python
-
-- Use gzip-compressed artifacts for PyPy downloads (#20265)
-
-### Enhancements
-
-- Add JSON output to `uv tree` (#19978)
-- Add CUDA 13.2 as a supported PyTorch backend (#20267)
-- Prefer local artifacts over URLs when installing from `pylock.toml` (#20393)
-- Clarify diagnostics for unsatisfiable direct requirement ranges (#20227)
-- Include the selected project name in missing-extra errors (#20358)
-
-### Preview features
-
-- Preserve extras and dependency-group conflict context when selecting locked project tools (#20078)
-- Split OSV audit queries that exceed the service's 1,000-package limit (#20398)
-- Apply OSV fixed-version information only to the matching package and ecosystem (#20399)
-- Skip the virtualenv distutils monkeypatch on Python 3.10 and later (#20222)
-- Report invalid `uv audit --service-url` values instead of panicking (#20374)
-- Include preview settings in the published SchemaStore schema (#20304)
-
-### Performance
-
-- Red
-
-... (truncated)]]></description>
-    <pubDate>Wed, 15 Jul 2026 18:44:43 GMT</pubDate>
   </item>
   <item>
     <title>[denoland/deno] v2.9.3</title>
@@ -751,32 +891,6 @@ This release brings together 3,063 contributions from 532 contributors.
     <pubDate>Mon, 13 Jul 2026 22:33:14 GMT</pubDate>
   </item>
   <item>
-    <title>[typescript-eslint/typescript-eslint] v8.64.0</title>
-    <link>https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.64.0</link>
-    <guid isPermaLink="true">https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.64.0</guid>
-    <description><![CDATA[## 8.64.0 (2026-07-13)
-
-### 🚀 Features
-
-- support parsing `import defer` (#12513)
-- **eslint-plugin:** [no-loop-func] support `using` / `await using` declarations and deprecate the rule (#12500)
-- **typescript-estree:** throw for invalid definite assignment in class properties (#12543)
-
-### 🩹 Fixes
-
-- **eslint-plugin:** [require-array-sort-compare] handle constrained arrays (#12512)
-
-### ❤️ Thank You
-
-- Evyatar Daud @StyleShit
-- 송재욱
-
-See GitHub Releases for more information.
-
-You can read about our versioning strategy and releases on our website.]]></description>
-    <pubDate>Mon, 13 Jul 2026 17:38:19 GMT</pubDate>
-  </item>
-  <item>
     <title>[ant-design/ant-design] 6.5.1</title>
     <link>https://github.com/ant-design/ant-design/releases/tag/6.5.1</link>
     <guid isPermaLink="true">https://github.com/ant-design/ant-design/releases/tag/6.5.1</guid>
@@ -869,118 +983,6 @@ curl -fsSL | bash
 
 **Full Changelog**:]]></description>
     <pubDate>Sat, 11 Jul 2026 02:35:52 GMT</pubDate>
-  </item>
-  <item>
-    <title>[eslint/eslint] v10.7.0</title>
-    <link>https://github.com/eslint/eslint/releases/tag/v10.7.0</link>
-    <guid isPermaLink="true">https://github.com/eslint/eslint/releases/tag/v10.7.0</guid>
-    <description><![CDATA[## Features
-* `cf2a9bf` feat: add errorClassNames option to preserve-caught-error rule (#21032) (sethamus)
-* `f8b873a` feat: max-nested-callbacks option for constructor callbacks (#21063) (fnx)
-* `557fde8` feat: support computed `Number.parseInt` member access in `radix` rule (#21041) (Pixel)
-* `0b4a73b` feat: add suggestions to no-compare-neg-zero (#21034) (den$)
-* `96cdd42` feat: report invalid signed numeric radix values in `radix` rule (#21030) (Pixel)
-
-## Bug Fixes
-* `3e7bf15` fix: apply `ignoreClassesWithImplements` to class expressions (#21069) (Pixel)
-* `0d7d70c` fix: insert cause outside wrapping parens in preserve-caught-error (#21062) (Mahin Anowar)
-* `75ec753` fix: handle static template literals in `eqeqeq` rule (#21058) (Pixel)
-* `b717a22` fix: prevent `eqeqeq` null option from reporting non-equality operators (#21057) (Pixel)
-* `e35b05f` fix: avoid `no-invalid-regexp` false positive for shadowed RegExp (#21051) (Pixel)
-* `a3172b6` fix: avoid `no-control-regex` false posi
-
-... (truncated)]]></description>
-    <pubDate>Fri, 10 Jul 2026 21:22:56 GMT</pubDate>
-  </item>
-  <item>
-    <title>[mongodb/mongo-go-driver] MongoDB Go Driver 2.8.0 (v2.8.0)</title>
-    <link>https://github.com/mongodb/mongo-go-driver/releases/tag/v2.8.0</link>
-    <guid isPermaLink="true">https://github.com/mongodb/mongo-go-driver/releases/tag/v2.8.0</guid>
-    <description><![CDATA[The MongoDB Go Driver Team is pleased to release version 2.8.0 of the official MongoDB Go Driver.
-
-## Release Highlights
-
-This release supports the general availability of Queryable Encryption string queries. The query types `prefix`, `suffix`, and `substring` are added as generally available for MongoDB 9.0+ and libmongocrypt 1.20.0. The query types `prefixPreview`, `suffixPreview`, and `substringPreview` remain experimental for 8.2–8.x servers and may be removed in a future release.
-
-Other key facts:
-- The algorithm `TextPreview` is replaced with `String`.
-- API rename: `options.Text` → `options.String`; `TextOptions*` → `StringOptions*`; `EncryptOptionsBuilder.SetTextOptions` → `SetStringOptions`.
-
-<!-- Release notes generated using configuration in .github/release.yml at v2.8.0 -->
-
-## What's Changed
-### ✨ New Features
-* GODRIVER-3863: Add QE prefix and suffix GA by @prestonvasquez in 
-* GODRIVER-4002: Add substring to QE GA by @prestonvasquez in 
-### 📦 Dependency 
-
-... (truncated)]]></description>
-    <pubDate>Fri, 10 Jul 2026 16:37:06 GMT</pubDate>
-  </item>
-  <item>
-    <title>[containerd/containerd] containerd 2.3.3 (v2.3.3)</title>
-    <link>https://github.com/containerd/containerd/releases/tag/v2.3.3</link>
-    <guid isPermaLink="true">https://github.com/containerd/containerd/releases/tag/v2.3.3</guid>
-    <description><![CDATA[Welcome to the v2.3.3 release of containerd!
-
-The third patch release for containerd 2.3 contains various fixes and updates.
-
-### Highlights
-
-* Set SystemTemp environment variable on Windows so temp directory overrides work for SYSTEM services (#13694)
-
-#### Container Runtime Interface (CRI)
-
-* Fix nil pointer dereference in NRI GetIPs during pod sandbox teardown or container exit (#13697)
-* Reject CreateContainer calls when the target sandbox is not running (#13668)
-* Ensure sandbox shutdown on RunPodSandbox hook failures to avoid mount leaks (#13645)
-
-#### Image Distribution
-
-* Surface OCI error bodies in registry 403 responses by falling back to GET requests (#13738)
-
-#### Snapshotters
-
-* Align default 4K mkfs block size for EROFS across all platforms (#13632)
-
-Please try out the release binaries and report any issues at
-
-
-### Contributors
-
-* Maksym Pavlenko
-* Samuel Karp
-* Chris Henzie
-* Phil Estes
-* Sebastiaan van Stijn
-* Akihiro Suda
-* Austin Vazquez
-* Chris Crone
-* Derek McGowan
-
-... (truncated)]]></description>
-    <pubDate>Fri, 10 Jul 2026 00:04:40 GMT</pubDate>
-  </item>
-  <item>
-    <title>[markedjs/marked] v18.0.6</title>
-    <link>https://github.com/markedjs/marked/releases/tag/v18.0.6</link>
-    <guid isPermaLink="true">https://github.com/markedjs/marked/releases/tag/v18.0.6</guid>
-    <description><![CDATA[## 18.0.6 (2026-07-09)
-
-
-### Bug Fixes
-
-* Avoid O(n^2) backtracking in inline link href regex (#4013) (a009808)
-* Fix ordered lists after blockquotes (#4003) (33928d0)
-* keep trailing text on HTML block close line for PI, declarations, and CDATA (#3991) (bbb84c8)]]></description>
-    <pubDate>Thu, 09 Jul 2026 17:06:34 GMT</pubDate>
-  </item>
-  <item>
-    <title>[prettier/prettier] 3.9.5</title>
-    <link>https://github.com/prettier/prettier/releases/tag/3.9.5</link>
-    <guid isPermaLink="true">https://github.com/prettier/prettier/releases/tag/3.9.5</guid>
-    <description><![CDATA[🔗 Changelog]]></description>
-    <pubDate>Thu, 09 Jul 2026 16:22:50 GMT</pubDate>
   </item>
 </channel>
 </rss>
