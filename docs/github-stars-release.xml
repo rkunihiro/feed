@@ -5,16 +5,292 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Mon, 20 Jul 2026 22:18:01 GMT</lastBuildDate>
+  <lastBuildDate>Tue, 21 Jul 2026 22:16:57 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
   <item>
-    <title>[nextauthjs/next-auth] @auth/azure-tables-adapter@1.11.3</title>
-    <link>https://github.com/nextauthjs/next-auth/releases/tag/%40auth/azure-tables-adapter%401.11.3</link>
-    <guid isPermaLink="true">https://github.com/nextauthjs/next-auth/releases/tag/%40auth/azure-tables-adapter%401.11.3</guid>
-    <description><![CDATA[## Other
+    <title>[aws/aws-sdk-js-v3] v3.1092.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1092.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1092.0</guid>
+    <description><![CDATA[#### 3.1092.0(2026-07-21)
 
- - **@auth/core**: dependency update (8a933f95)]]></description>
-    <pubDate>Mon, 20 Jul 2026 21:54:47 GMT</pubDate>
+##### Documentation Changes
+
+* **client-securityhub:** Security Hub standard and control multicloud API documentation updates (2e19bf93)
+
+##### New Features
+
+* **client-redshift:** Amazon Redshift - Added support for managing Query Editor V2 IAM Identity Center applications via new CreateQev2IdcApplication, DescribeQev2IdcApplications, ModifyQev2IdcApplication, and DeleteQev2IdcApplication API operations. (17507f23)
+* **client-inspector2:** GA date - July 21st 2026, remove Tags field from ListCodeSecurityIntegration and ListCodeSecurityScanConfiguration. (33a1778d)
+* **client-emr-containers:** Added support for the DeleteSecurityConfiguration API, which allows customers to delete security configurations in Amazon EMR on EKS. Also added authenticationConfiguration in securityConfigurationdata structure. (e344cea9)
+* **client-redshift-data:** update the workgroupArn to include EUSC partition, tests in THF Gamma and Prod no issue (4f372fc5)
+* **client-invoicing:
+
+... (truncated)]]></description>
+    <pubDate>Tue, 21 Jul 2026 18:46:07 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-07-21) (release-2026-07-21)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-07-21</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-07-21</guid>
+    <description><![CDATA[## General Highlights
+* **Feature**: Add an option to clients to disable clock skew
+* **Dependency Update**: Updated to the latest SDK module versions
+
+## Module Highlights
+* `github.com/aws/aws-sdk-go-v2`: v1.43.0
+ * **Bug Fix**: Update Clock Skew logic to match internal specification
+* `github.com/aws/aws-sdk-go-v2/service/emrcontainers`: [v1.44.0](service/emrcontainers/CHANGELOG.md#v1440-2026-07-21)
+ * **Feature**: Added support for the DeleteSecurityConfiguration API, which allows customers to delete security configurations in Amazon EMR on EKS. Also added authenticationConfiguration in securityConfigurationdata structure.
+* `github.com/aws/aws-sdk-go-v2/service/entityresolution`: [v1.30.0](service/entityresolution/CHANGELOG.md#v1300-2026-07-21)
+ * **Feature**: Add support for real time matching with AWS Entity Resolution matching workflows with advanced rule sets.
+* `github.com/aws/aws-sdk-go-v2/service/inspector2`: [v1.53.0](service/inspector2/CHANGELOG.md#v1530-2026-07-21)
+ * **
+
+... (truncated)]]></description>
+    <pubDate>Tue, 21 Jul 2026 18:41:46 GMT</pubDate>
+  </item>
+  <item>
+    <title>[openai/codex] 0.145.0 (rust-v0.145.0)</title>
+    <link>https://github.com/openai/codex/releases/tag/rust-v0.145.0</link>
+    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.145.0</guid>
+    <description><![CDATA[## New Features
+
+- Added experimental paginated thread history with efficient resume, search, persisted names, sub-agent support, and memories. (#33364, #33907, #34085, #34229, #34386)
+- Expanded `/import` to migrate Cursor and Claude Code settings, MCP servers, plugins, sessions, commands, and project-scoped memories. (#31672, #33411, #33426, #33444)
+- Added experimental Amazon Bedrock login, custom endpoint and authentication support, and GPT-5.6 Sol as the default Bedrock model. (#31327, #33170, #33175, #32288, #33695)
+- Added audio inputs and tool outputs, including common local audio formats, and introduced streaming realtime V3 conversations. (#33261, #33856, #33932, #34080, #34385)
+- Stabilized the opt-in multi-agent V2 experience with configurable sub-agent models, reasoning levels, concurrency, restored roles, and improved agent navigation. (#33550, #33631, #33657, #33841, #34383)
+- Added secure, clickable inline visualization links in the terminal UI. (#33925, #34217, #34346)
+
+... (truncated)]]></description>
+    <pubDate>Tue, 21 Jul 2026 18:21:04 GMT</pubDate>
+  </item>
+  <item>
+    <title>[github/spec-kit] Spec Kit - 0.13.2 (v0.13.2)</title>
+    <link>https://github.com/github/spec-kit/releases/tag/v0.13.2</link>
+    <guid isPermaLink="true">https://github.com/github/spec-kit/releases/tag/v0.13.2</guid>
+    <description><![CDATA[## Install
+
+```bash
+uv tool install specify-cli --from git+
+specify init my-project
+```
+
+## What's Changed
+
+- chore: bump version to 0.13.2
+- fix(workflows): reject a non-string 'command' in command-step (#3596)
+- fix(workflows): fail gate step loudly on a malformed 'options' (#3595)
+- fix(extensions): re-validate catalog URL after redirects (HTTPS parity/security) (#3524)
+- Add community bundle submission automation (#3553)
+- fix(presets): re-validate catalog URL after redirects (HTTPS parity/security) (#3523)
+- feat(scripts): port create-new-feature, setup-plan and setup-tasks to Python (#3386)
+- fix(agents): parse frontmatter on the --- delimiter line, not any --- substring (#3590)
+- [bug-fix] Fix reinstall-overwrites-kept-config: preserve config on plain reinstall after --keep-config (#3449)
+- feat: update Bob integration to skills-based layout for Bob 2.0 (#3415)
+- Update OKF Knowledge Bundle Generator to v0.3.0 (#3608)
+- Add Test Coverage Drift Control extension to community cata
+
+... (truncated)]]></description>
+    <pubDate>Tue, 21 Jul 2026 17:47:40 GMT</pubDate>
+  </item>
+  <item>
+    <title>[fastify/fastify-vite] @fastify/vite@9.2.0</title>
+    <link>https://github.com/fastify/fastify-vite/releases/tag/%40fastify/vite%409.2.0</link>
+    <guid isPermaLink="true">https://github.com/fastify/fastify-vite/releases/tag/%40fastify/vite%409.2.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- 58d7d59: Expose "resolvePkgDir" function in utils so @fastify/react can use it to resolve relative paths in vite's `build.outDir` config.]]></description>
+    <pubDate>Tue, 21 Jul 2026 17:36:10 GMT</pubDate>
+  </item>
+  <item>
+    <title>[bluesky-social/atproto] @atproto/ozone@0.2.18</title>
+    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/ozone%400.2.18</link>
+    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/ozone%400.2.18</guid>
+    <description><![CDATA[### Patch Changes
+
+- Updated dependencies [`3358df6`, `7fab73c`]:
+ - @atproto/xrpc-server@0.11.11
+ - @atproto/api@0.20.31]]></description>
+    <pubDate>Tue, 21 Jul 2026 17:22:42 GMT</pubDate>
+  </item>
+  <item>
+    <title>[vercel/next.js] v15.5.21</title>
+    <link>https://github.com/vercel/next.js/releases/tag/v15.5.21</link>
+    <guid isPermaLink="true">https://github.com/vercel/next.js/releases/tag/v15.5.21</guid>
+    <description><![CDATA[This release contains security fixes for the following advisories:
+
+High:
+
+- Denial of Service in App Router using Server Actions
+- Middleware / Proxy bypass in App Router applications using Turbopack and single locale
+- Server-Side Request Forgery in rewrites via attacker-controlled destination hostname
+- Server-Side Request Forgery in Server Actions on custom servers
+
+
+Moderate: 
+
+- Cache confusion of response bodies for requests with bodies
+- Cache confusion of response bodies for requests with bodies containing invalid UTF-8 byte sequences
+- Denial of Service in the Image Optimization API using SVGs
+- Unauthenticated disclosure of internal Server Function endpoints
+- Unbounded Server Action payload in Edge runtime]]></description>
+    <pubDate>Tue, 21 Jul 2026 16:58:17 GMT</pubDate>
+  </item>
+  <item>
+    <title>[oxc-project/oxc] oxc crates_v0.141.0 (crates_v0.141.0)</title>
+    <link>https://github.com/oxc-project/oxc/releases/tag/crates_v0.141.0</link>
+    <guid isPermaLink="true">https://github.com/oxc-project/oxc/releases/tag/crates_v0.141.0</guid>
+    <description><![CDATA[### 💥 BREAKING CHANGES
+
+- 5293431 str: [**BREAKING**] Move `IdentBuildHasher` to `oxc_str` crate (#24717) (overlookmotel)
+- 54cc121 ast: [**BREAKING**] Split `MetaProperty` into `ImportMeta` and `NewTarget` (#24557) (camc314)
+
+### 🚀 Features
+
+- 87823d0 minifier: Merge combined assign expression in conditional expression (#24707) (sapphi-red)
+- 03a54c9 minifier: Merge assign expression against member expression in conditional expression (#24706) (sapphi-red)
+- effd3c8 allocator: Add `Vec::from_raw_parts_in` (#24732) (overlookmotel)
+- ddacf61 semantic: Add context notes for strict assignments (#24728) (camc314)
+- 7e9b84a data_structures: Add `implements!` macro (#24721) (overlookmotel)
+- 39e141b data_structures: Add `const_str_eq` function (#24720) (overlookmotel)
+- cc3d17f semantic: Add context notes for reserved keyword diagnostic (#24715) (camc314)
+- 4c71560 parser: More friendly error for spread element in dynamic imports (#24705) (sapphi-red)
+- 7b045cd minfier: Drop last break fro
+
+... (truncated)]]></description>
+    <pubDate>Tue, 21 Jul 2026 15:16:54 GMT</pubDate>
+  </item>
+  <item>
+    <title>[withastro/astro] @astrojs/language-server@2.16.13</title>
+    <link>https://github.com/withastro/astro/releases/tag/%40astrojs/language-server%402.16.13</link>
+    <guid isPermaLink="true">https://github.com/withastro/astro/releases/tag/%40astrojs/language-server%402.16.13</guid>
+    <description><![CDATA[### Patch Changes
+
+- #17465 `6a1c1d8` Thanks @florian-lefebvre! - Fixes a case where errors in files included in tsconfig project references would never be caught]]></description>
+    <pubDate>Tue, 21 Jul 2026 12:34:27 GMT</pubDate>
+  </item>
+  <item>
+    <title>[web-infra-dev/rspack] v2.1.5</title>
+    <link>https://github.com/web-infra-dev/rspack/releases/tag/v2.1.5</link>
+    <guid isPermaLink="true">https://github.com/web-infra-dev/rspack/releases/tag/v2.1.5</guid>
+    <description><![CDATA[## What's Changed
+### Bug Fixes 🐞
+* fix: respect runtime mode in mf identifiers by @LingyuCoder in 
+* fix(rsc): preserve multiple referenced client exports by @SyMind in 
+* fix: preserve createRequire.resolve with literal import.meta.url when requireResolve is disabled by @JSerFeng in 
+* fix(css): preserve inline match resource imports by @LingyuCoder in 
+* fix: short-circuit optional import.meta calls by @LingyuCoder in 
+* fix(rsc): preserve exports for dynamic client references by @SyMind in 
+* fix(stats): avoid live chunk access when serializing stale stats by @SyMind in 
+* fix(rstest): register hoisted mocks before importActual imports by @fi3ework in 
+* fix(watcher): run FsWatcher on a single owner task to fix concurrent &mut races by @stormslowly in 
+* fix(worker): add module type when options are omitted in module output by @elecmonkey in 
+* fix: include output path in chunk render cache keys by @ahabhgk in 
+* fix: support real content hash update hooks by @LingyuC
+
+... (truncated)]]></description>
+    <pubDate>Tue, 21 Jul 2026 11:56:09 GMT</pubDate>
+  </item>
+  <item>
+    <title>[biomejs/biome] Biome CLI v2.5.5 (@biomejs/biome@2.5.5)</title>
+    <link>https://github.com/biomejs/biome/releases/tag/%40biomejs/biome%402.5.5</link>
+    <guid isPermaLink="true">https://github.com/biomejs/biome/releases/tag/%40biomejs/biome%402.5.5</guid>
+    <description><![CDATA[## 2.5.5
+
+### Patch Changes
+
+- #10972 `ab8c21b` Thanks @ematipico! - Fixed `useExhaustiveSwitchCases` for unions of bigint literals. The rule now reports missing bigint cases and compares bigint literals by value, including binary, octal, hexadecimal, and separator-containing spellings. For example, this switch now reports the missing `2n` case:
+
+ ```ts
+ declare const value: 1n | 2n;
+ switch (value) {
+ case 1n:
+ break;
+ }
+ ```
+
+- #10972 `ab8c21b` Thanks @ematipico! - Fixed false positives in `noBaseToString` and `useNullishCoalescing` when member, stringification, or nullish inference cannot complete. These rules now suppress diagnostics instead of reporting from partial type information. For example, neither expression is reported when a recursive type cannot be fully resolved:
+
+ ```ts
+ type Recursive = Recursive;
+ declare const value: Recursive;
+
+ String(value);
+ value || "fallback";
+ ```
+
+- #10977 `0bf7486` Thanks @ematipico! - Fixed #10922: the action `useSortedAttributes` no longe
+
+... (truncated)]]></description>
+    <pubDate>Tue, 21 Jul 2026 08:02:44 GMT</pubDate>
+  </item>
+  <item>
+    <title>[prettier/prettier] 3.9.6</title>
+    <link>https://github.com/prettier/prettier/releases/tag/3.9.6</link>
+    <guid isPermaLink="true">https://github.com/prettier/prettier/releases/tag/3.9.6</guid>
+    <description><![CDATA[## What's Changed
+
+* Preserve quotes for methods named `new` ( by @kovsu)
+* Support `import defer` in `typescript` parser ( by @fisker)
+* Added a new official plugin `@prettier/plugin-yuku` 🚀 ( by @fisker)
+
+
+🔗 Changelog]]></description>
+    <pubDate>Tue, 21 Jul 2026 05:52:55 GMT</pubDate>
+  </item>
+  <item>
+    <title>[markedjs/marked] v18.0.7</title>
+    <link>https://github.com/markedjs/marked/releases/tag/v18.0.7</link>
+    <guid isPermaLink="true">https://github.com/markedjs/marked/releases/tag/v18.0.7</guid>
+    <description><![CDATA[## 18.0.7 (2026-07-21)
+
+
+### Bug Fixes
+
+* Avoid O(n^2) backtracking in HTML block close and tilde interrupt regexes (#4014) (f945fc5), closes #3991
+* Avoid O(n^2) masked source rebuild in inline tokenizer (#4017) (9154f8f)
+* keep empty list after blockquote as a sibling block (#4004) (3f144a0)
+* preserve code spans adjacent to tildes (#4012) (0de7188)
+* Recognize setext headings whose first line starts with # (#4015) (f056437), closes #1
+* treat a line of only tabs as a blank line between paragraphs (#4007) (bc2f121)]]></description>
+    <pubDate>Tue, 21 Jul 2026 01:50:39 GMT</pubDate>
+  </item>
+  <item>
+    <title>[djkotori/rpgcobo-tool] v0.1.11</title>
+    <link>https://github.com/djkotori/rpgcobo-tool/releases/tag/v0.1.11</link>
+    <guid isPermaLink="true">https://github.com/djkotori/rpgcobo-tool/releases/tag/v0.1.11</guid>
+    <description><![CDATA[RPG-Cobo Tool v0.1.11
+
+This version includes the following bug fixes and feature additions.
+
+- Added feature to specify random range for variable properties.
+- Fixed a bug where automatic macro execution and automatic execution (parallel) were not executed.
+- Corrected like HP does not exceed the maximum value when the maximum HP is reduced in options.
+- Fixed an issue where MP could not be recovered using the "Walk Damage/Heal" option.
+- Fixed a bug where an error occurred when determining the condition of "Own Item".
+- Fixed an issue where items could be purchased even if the money less than 0.
+- Added "Exit Game" menu to the main menu screen. Additionally, we have added an "Exit Game" menu to the title screen.
+- Improved touchpad operability.
+- Added property definition documentation.
+- Implemented picture import in the "Enemy Picture" and "Event Picture" editors. Import is possible via drag and drop and right click.
+- Fixed an issue where items and skills that add/rem
+
+... (truncated)]]></description>
+    <pubDate>Tue, 21 Jul 2026 01:08:06 GMT</pubDate>
+  </item>
+  <item>
+    <title>[nextauthjs/next-auth] next-auth@4.24.15</title>
+    <link>https://github.com/nextauthjs/next-auth/releases/tag/next-auth%404.24.15</link>
+    <guid isPermaLink="true">https://github.com/nextauthjs/next-auth/releases/tag/next-auth%404.24.15</guid>
+    <description><![CDATA[Security patch release for the 4.x line.
+
+- `getToken` now returns `null` instead of throwing when the `Authorization` header contains a malformed Bearer value.
+- OAuth `state`, `nonce`, and PKCE check cookies are now bound to the provider that created them and are rejected when a different provider handles the callback. Sign-ins in flight across the upgrade fail once and succeed on retry.
+- Email addresses are Unicode-normalized (NFKC) before validation in the email sign-in flow, closing a homoglyph `@` bypass.
+- An explicitly configured `NEXTAUTH_URL` now takes precedence over the auto-detected forwarded host in trusted-host mode.
+- Restores CommonJS compatibility by pinning `uuid` to `^11.1.1`; the 14.x line is ESM-only and broke `require` on Node versions below 20.19.]]></description>
+    <pubDate>Mon, 20 Jul 2026 23:22:47 GMT</pubDate>
   </item>
   <item>
     <title>[astral-sh/uv] 0.11.30</title>
@@ -61,50 +337,6 @@ Released on 2026-07-20.
     <pubDate>Mon, 20 Jul 2026 19:31:02 GMT</pubDate>
   </item>
   <item>
-    <title>[aws/aws-sdk-js-v3] v3.1091.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1091.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1091.0</guid>
-    <description><![CDATA[#### 3.1091.0(2026-07-20)
-
-##### Documentation Changes
-
-* **client-organizations:** Updated InvalidInputException error documentation to clarify that the service validates free-text field values against common cross-site scripting (XSS) patterns. (6ac1bf08)
-* **client-marketplace-metering:** For new SaaS product integrations, CustomerIdentifier is not populated in ResolveCustomer responses and is not supported in BatchMeterUsage. Use CustomerAWSAccountId and LicenseArn instead. (f1ff8983)
-
-##### New Features
-
-* **client-quicksight:** Adds support for custom permissions for Triggers, allowing administrators to control user access to Schedule, Inbound Email and Quick Event triggers. (fbe7d94d)
-* **client-bedrock-agentcore:** Add W3C trace context headers (traceparent, tracestate, baggage) and X-Amzn-Trace-Id to InvokeHarness request for end-to-end observability propagation. Add toolResultMetadata to the streaming content block delta for MCP tool result meta delivery without oversized SSE
-
-... (truncated)]]></description>
-    <pubDate>Mon, 20 Jul 2026 18:45:57 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-07-20) (release-2026-07-20)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-07-20</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-07-20</guid>
-    <description><![CDATA[## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcore`: [v1.34.0](service/bedrockagentcore/CHANGELOG.md#v1340-2026-07-20)
- * **Feature**: Add W3C trace context headers (traceparent, tracestate, baggage) and X-Amzn-Trace-Id to InvokeHarness request for end-to-end observability propagation. Add toolResultMetadata to the streaming content block delta for MCP tool result meta delivery without oversized SSE frames.
-* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcorecontrol`: [v1.49.0](service/bedrockagentcorecontrol/CHANGELOG.md#v1490-2026-07-20)
- * **Feature**: This release adds support for specifying a connector version on Gateway targets to pin the connector's tool schema. It also introduces web-search connector version 1.2.0, which adds agent-side domain filtering, published date range filtering, and admin-side domain allowlisting.
-* `github.com/aws/aws-sdk-go-v2/service/marketplacemetering`: [v1.38.3](service/marketplacemetering/CHANGELOG.md#v1383-2026-07-2
-
-... (truncated)]]></description>
-    <pubDate>Mon, 20 Jul 2026 18:39:43 GMT</pubDate>
-  </item>
-  <item>
-    <title>[withastro/astro] astro@7.1.3</title>
-    <link>https://github.com/withastro/astro/releases/tag/astro%407.1.3</link>
-    <guid isPermaLink="true">https://github.com/withastro/astro/releases/tag/astro%407.1.3</guid>
-    <description><![CDATA[### Patch Changes
-
-- #17427 `630b382` Thanks @astrobot-houston! - Fixes image optimization during `astro build` using too many parallel processes in CPU-limited containers. Builds now respect the container's CPU limit, reducing peak memory usage and avoiding out-of-memory crashes.
- </content>
- </invoke>]]></description>
-    <pubDate>Mon, 20 Jul 2026 17:47:40 GMT</pubDate>
-  </item>
-  <item>
     <title>[typescript-eslint/typescript-eslint] v8.65.0</title>
     <link>https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.65.0</link>
     <guid isPermaLink="true">https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.65.0</guid>
@@ -137,16 +369,6 @@ See GitHub Releases for more information.
 
 ... (truncated)]]></description>
     <pubDate>Mon, 20 Jul 2026 17:38:21 GMT</pubDate>
-  </item>
-  <item>
-    <title>[bluesky-social/atproto] @atproto/pds@0.5.20</title>
-    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/pds%400.5.20</link>
-    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/pds%400.5.20</guid>
-    <description><![CDATA[### Patch Changes
-
-- Updated dependencies [`0af78cf`]:
- - @atproto/aws@0.3.8]]></description>
-    <pubDate>Mon, 20 Jul 2026 17:38:20 GMT</pubDate>
   </item>
   <item>
     <title>[tokio-rs/tokio] Tokio v1.53.1 (tokio-1.53.1)</title>
@@ -349,22 +571,6 @@ pod 'PrimJS', '4.0.0', :subspecs => ['quickjs', 'napi']
     <pubDate>Sat, 18 Jul 2026 23:16:12 GMT</pubDate>
   </item>
   <item>
-    <title>[openai/codex] 0.144.6 (rust-v0.144.6)</title>
-    <link>https://github.com/openai/codex/releases/tag/rust-v0.144.6</link>
-    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.144.6</guid>
-    <description><![CDATA[## Bug Fixes
-
-- Refreshed bundled instructions for GPT-5.6 Sol, Terra, and Luna, and corrected their context windows to 272,000 tokens. (#33972, #34009)
-
-## Changelog
-
-Full Changelog: 
-
-- #33972 Backport refreshed bundled model metadata to 0.144 @sayan-oai
-- #34009 Narrow 0.144 hotfix to GPT-5.6 prompts and context @sayan-oai]]></description>
-    <pubDate>Sat, 18 Jul 2026 13:51:52 GMT</pubDate>
-  </item>
-  <item>
     <title>[redwoodjs/sdk] v1.5.9</title>
     <link>https://github.com/redwoodjs/sdk/releases/tag/v1.5.9</link>
     <guid isPermaLink="true">https://github.com/redwoodjs/sdk/releases/tag/v1.5.9</guid>
@@ -375,32 +581,6 @@ Full Changelog:
 
 **Full Changelog**:]]></description>
     <pubDate>Fri, 17 Jul 2026 19:26:58 GMT</pubDate>
-  </item>
-  <item>
-    <title>[github/spec-kit] Spec Kit - 0.13.0 (v0.13.0)</title>
-    <link>https://github.com/github/spec-kit/releases/tag/v0.13.0</link>
-    <guid isPermaLink="true">https://github.com/github/spec-kit/releases/tag/v0.13.0</guid>
-    <description><![CDATA[## Install
-
-```bash
-uv tool install specify-cli --from git+
-specify init my-project
-```
-
-## What's Changed
-
-- chore: bump version to 0.13.0
-- fix(auth): Azure DevOps az-CLI token acquisition returns None on undecodable output (#3527)
-- feat(extensions): add assess idea assessment pipeline extension (#3568)
-- fix(bundle): surface a clean BundlerError on a malformed bundle download URL (#3586)
-- Add OKF Knowledge Bundle Generator extension to community catalog (#3585)
-- Update Autonomous Run Governance preset to v0.2.2 (#3584)
-- docs: update extension guide PyPI upgrade guidance (#3578)
-- fix(presets): raise PresetValidationError, not raw ValueError, on malformed catalog URL (#3576)
-- chore(deps): bump github/codeql-action/init from 4.36.2 to 4.37.1 (#3571)
-- docs: align README hero tagline and subtitle with docs/index.md (#3581)
-- chore: release 0.12.18, begin 0.12.19.dev0 development (#3583)]]></description>
-    <pubDate>Fri, 17 Jul 2026 18:58:41 GMT</pubDate>
   </item>
   <item>
     <title>[anomalyco/opentui] Release v0.4.5 (v0.4.5)</title>
@@ -500,20 +680,6 @@ Windows App SDK 2.3.1 is the latest stable release on the 2.x line, with a new s
     <guid isPermaLink="true">https://github.com/denoland/rusty_v8/releases/tag/v150.2.0</guid>
     <description><![CDATA[No release notes provided.]]></description>
     <pubDate>Thu, 16 Jul 2026 13:53:21 GMT</pubDate>
-  </item>
-  <item>
-    <title>[djkotori/rpgcobo-tool] v0.1.10</title>
-    <link>https://github.com/djkotori/rpgcobo-tool/releases/tag/v0.1.10</link>
-    <guid isPermaLink="true">https://github.com/djkotori/rpgcobo-tool/releases/tag/v0.1.10</guid>
-    <description><![CDATA[This version includes the following bug fixes and feature additions.
-
-- Fixed an issue where shader compilation took an abnormally long time in WebGL.
-- Fixed a shader that made a compile error in WebGL and OpenGLES.
-- Optimized to improve drawing quality in WebGL.
-- Added a system setting to adjust the jump height.
-- Fixed a bug where the player chara could not play animations with the "Animation" command.
-- Fixed an issue where the "Place Picture" command would stop due to an error.]]></description>
-    <pubDate>Thu, 16 Jul 2026 13:32:54 GMT</pubDate>
   </item>
   <item>
     <title>[rust-lang/rust] Rust 1.97.1 (1.97.1)</title>
@@ -642,31 +808,6 @@ Step Functions now supports **JSONata workflow variables** via the `Assign` fiel
     <pubDate>Wed, 15 Jul 2026 05:53:55 GMT</pubDate>
   </item>
   <item>
-    <title>[biomejs/biome] Biome CLI v2.5.4 (@biomejs/biome@2.5.4)</title>
-    <link>https://github.com/biomejs/biome/releases/tag/%40biomejs/biome%402.5.4</link>
-    <guid isPermaLink="true">https://github.com/biomejs/biome/releases/tag/%40biomejs/biome%402.5.4</guid>
-    <description><![CDATA[## 2.5.4
-
-### Patch Changes
-
-- #10665 `55ff995` Thanks @dyc3! - Improved the performance of the HTML parser slightly in our synthetic benchmarks.
-
-- #10894 `f4fb10e` Thanks @ematipico! - Fixed #6392: On-type formatting no longer moves comments before an `if` statement into its body.
-
-- #10939 `f2799db` Thanks @Netail! - Fixed #10930: `noLabelWithoutControl` now correctly detects text interpolation in Astro, Svelte & Vue as valid accessible content.
-
-- #10945 `ae15d98` Thanks @Netail! - Fixed #10942: Svelte directives don't throw an accidental debug log anymore.
-
-- #10842 `5e1abfe` Thanks @JamBalaya56562! - Fixed #9196: `biome check --write --unsafe` no longer hangs forever when applying the `noCommentText` code fix.
-
- The rule's fix now wraps the comment in a real JSX expression container (`{/* comment */}`) instead of re-inserting the braces as plain JSX text, so the fixed code is no longer reported again by the same rule.
-
-- #10891 `ecca79e` Thanks @ematipico! - Fixed `#10885`: preve
-
-... (truncated)]]></description>
-    <pubDate>Wed, 15 Jul 2026 04:10:08 GMT</pubDate>
-  </item>
-  <item>
     <title>[project-tsurugi/tsurugidb] 1.11.2</title>
     <link>https://github.com/project-tsurugi/tsurugidb/releases/tag/1.11.2</link>
     <guid isPermaLink="true">https://github.com/project-tsurugi/tsurugidb/releases/tag/1.11.2</guid>
@@ -785,64 +926,6 @@ Report bugs on GitHub after checking that they haven't been reported:
     <pubDate>Tue, 14 Jul 2026 18:03:10 GMT</pubDate>
   </item>
   <item>
-    <title>[web-infra-dev/rspack] v2.1.4</title>
-    <link>https://github.com/web-infra-dev/rspack/releases/tag/v2.1.4</link>
-    <guid isPermaLink="true">https://github.com/web-infra-dev/rspack/releases/tag/v2.1.4</guid>
-    <description><![CDATA[## Highlights
-
-### Fine-grained `import.meta` parser options
-
-`module.parser.javascript.importMeta` now accepts an object so each known `import.meta` property can be configured independently, on top of the existing `true` / `false` / `'preserve-unknown'` values. Properties set to `false` are preserved for runtime evaluation, omitted properties keep their default behavior, and unknown properties are preserved. Both webpack-compatible keys (`dirname`, `filename`, `main`, `url`, `webpack`, `webpackContext`) and Rspack-specific keys (`rspackHash`, `rspackPublicPath`, `glob`, ...) are supported.
-
-```js title="rspack.config.mjs"
-export default {
- module: {
- parser: {
- javascript: {
- importMeta: {
- // keep `import.meta.url` for runtime evaluation
- url: false,
- // keep the compile-time replacement of `import.meta.webpack`
- webpack: true,
- },
- },
- },
- },
-};
-```
-
-### Static worker URL output
-
-`module.parser.javascript.worker` now accepts an object form with `alias` and `
-
-... (truncated)]]></description>
-    <pubDate>Tue, 14 Jul 2026 14:10:08 GMT</pubDate>
-  </item>
-  <item>
-    <title>[oxc-project/oxc] oxc crates_v0.140.0 (crates_v0.140.0)</title>
-    <link>https://github.com/oxc-project/oxc/releases/tag/crates_v0.140.0</link>
-    <guid isPermaLink="true">https://github.com/oxc-project/oxc/releases/tag/crates_v0.140.0</guid>
-    <description><![CDATA[### 🚀 Features
-
-- 5b20828 minifier: Extract sequence expression from expressions (#22003) (Armano)
-- 616bfa2 minifier: Remove unreachable code after terminating statements (#24441) (Dunqing)
-- ddab89a data_structures: Add `likely` and `unlikely` functions (#24368) (overlookmotel)
-- a3a39f9 react_compiler: Implement enableEmitHookGuards codegen (#24329) (Boshen)
-- b79eef7 minifier: Apply De Morgan's law to negated comparison chains in jump guards and loop tests (#24279) (Dunqing)
-- 34ff7b4 minifier: Drop write-only property assignments to unused local bindings by default (#24112) (Dunqing)
-- 1b829d8 semantic: Record const enums in EnumData (#24268) (Dunqing)
-- ba0944c semantic: Add `Scoping::set_symbol_span` (#24221) (camc314)
-
-### 🐛 Bug Fixes
-
-- edf781d minifier: Keep reads of never-assigned uninitialized bindings (#24452) (Dunqing)
-- 7d33363 minifier: Preserve guaranteed throws from class heritage evaluation (#24349) (Dunqing)
-- 058a62f semantic: Track ambient contexts in `SemanticB
-
-... (truncated)]]></description>
-    <pubDate>Tue, 14 Jul 2026 07:09:20 GMT</pubDate>
-  </item>
-  <item>
     <title>[opencontainers/runc] runc v1.5.1 -- &quot;El lujo es vulgaridad, dijo, y me conquistó.&quot; (v1.5.1)</title>
     <link>https://github.com/opencontainers/runc/releases/tag/v1.5.1</link>
     <guid isPermaLink="true">https://github.com/opencontainers/runc/releases/tag/v1.5.1</guid>
@@ -908,81 +991,6 @@ This release brings together 3,063 contributions from 532 contributors.
 
 ... (truncated)]]></description>
     <pubDate>Mon, 13 Jul 2026 12:51:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>[privatenumber/tsx] v4.23.1</title>
-    <link>https://github.com/privatenumber/tsx/releases/tag/v4.23.1</link>
-    <guid isPermaLink="true">https://github.com/privatenumber/tsx/releases/tag/v4.23.1</guid>
-    <description><![CDATA[## 4.23.1 (2026-07-13)
-
-
-### Bug Fixes
-
-* support tsImport after global preload (8d4ffc2)
-* **watch:** avoid clearing piped output (95d0672)
-* **watch:** treat script and dependency paths literally (79fddde)
-
-
-### Performance Improvements
-
-* index transform cache lazily (e818ad6)
-* load esbuild lazily in CLI (d067938)
-* map Node TypeScript formats directly (cdcc623)
-* use sync module hooks on Node v22.22.3+ (f8992f1)
-
----
-This release is also available on:
-- npm package (@latest dist-tag)]]></description>
-    <pubDate>Mon, 13 Jul 2026 03:13:34 GMT</pubDate>
-  </item>
-  <item>
-    <title>[theMackabu/ant] v12.2.1d8040ee.1</title>
-    <link>https://github.com/theMackabu/ant/releases/tag/v12.2.1d8040ee.1</link>
-    <guid isPermaLink="true">https://github.com/theMackabu/ant/releases/tag/v12.2.1d8040ee.1</guid>
-    <description><![CDATA[## Ant 12.2.1d8040ee.1
-
-### (Revised) A portability hotfix for Ant 12.2. You might have to use the install link if your previous install is broken.
-
-- Fixed macOS release binaries failing to start on machines without Homebrew's `libcares.2.dylib` installed.
-- Added the `spawn(command, options)` and `spawnSync(command, options)` overloads.
-- Added `cwd`, `shell`, `env`, and `stdio` option handling to `spawnSync`.
-
----
-
-To upgrade to Ant 12.2.1d8040ee.1:
-
-```bash
-ant upgrade
-```
-
-To install Ant 12.2.1d8040ee.1:
-
-```bash
-curl -fsSL | bash
-```]]></description>
-    <pubDate>Sat, 11 Jul 2026 21:18:32 GMT</pubDate>
-  </item>
-  <item>
-    <title>[open-cli-tools/concurrently] v9.2.4</title>
-    <link>https://github.com/open-cli-tools/concurrently/releases/tag/v9.2.4</link>
-    <guid isPermaLink="true">https://github.com/open-cli-tools/concurrently/releases/tag/v9.2.4</guid>
-    <description><![CDATA[- upgrade shell-quote to 1.9.0 - #597, #600
-
-**Full Changelog**:]]></description>
-    <pubDate>Sat, 11 Jul 2026 05:44:47 GMT</pubDate>
-  </item>
-  <item>
-    <title>[inokawa/virtua] 0.49.3</title>
-    <link>https://github.com/inokawa/virtua/releases/tag/0.49.3</link>
-    <guid isPermaLink="true">https://github.com/inokawa/virtua/releases/tag/0.49.3</guid>
-    <description><![CDATA[## What's Changed
-* Add itemProps prop to Svelte VList/Virtualizer by @kbaratyants in 
-
-## New Contributors
-* @kbaratyants made their first contribution in 
-
-**Full Changelog**:]]></description>
-    <pubDate>Sat, 11 Jul 2026 02:35:52 GMT</pubDate>
   </item>
 </channel>
 </rss>
