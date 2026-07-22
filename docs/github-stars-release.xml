@@ -5,49 +5,211 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Tue, 21 Jul 2026 22:16:57 GMT</lastBuildDate>
+  <lastBuildDate>Wed, 22 Jul 2026 22:19:45 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
   <item>
-    <title>[aws/aws-sdk-js-v3] v3.1092.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1092.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1092.0</guid>
-    <description><![CDATA[#### 3.1092.0(2026-07-21)
+    <title>[pnpm/pnpm] pnpm 11.16 (v11.16.0)</title>
+    <link>https://github.com/pnpm/pnpm/releases/tag/v11.16.0</link>
+    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v11.16.0</guid>
+    <description><![CDATA[## Minor Changes
+
+* The first release of a package now publishes the version written in its manifest verbatim, instead of bumping off it. `pnpm version -r` and `pnpm change status` check the registry for each release's current version; when that version is not yet published, the package debuts at it and its pending changesets apply only from the next release. A newly added package seeded at `1100.0.0` with a `minor` changeset is therefore published as `1100.0.0` rather than skipping straight to `1100.1.0`.
+
+* Added a `--changeset` flag to `pnpm update`. Set `update.changeset` to `true` in `pnpm-workspace.yaml` to enable this behavior by default, and use `--no-changeset` to override the setting for one update. After the update completes, pnpm writes a `.changeset/pnpm-update-<suffix>.md` file declaring a patch bump for every workspace package whose `dependencies` or `optionalDependencies` were changed by the update and a major bump when `peerDependencies` changed, including packages
+
+... (truncated)]]></description>
+    <pubDate>Wed, 22 Jul 2026 20:36:06 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1093.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1093.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1093.0</guid>
+    <description><![CDATA[#### 3.1093.0(2026-07-22)
 
 ##### Documentation Changes
 
-* **client-securityhub:** Security Hub standard and control multicloud API documentation updates (2e19bf93)
+* **client-elastic-load-balancing-v2:** This adds CLI examples for the IpAddressType field on SourceIpConfig, enabling Network Load Balancer listener rules to match traffic based on whether the source IP is IPv4 or IPv6. (2e38710d)
 
 ##### New Features
 
-* **client-redshift:** Amazon Redshift - Added support for managing Query Editor V2 IAM Identity Center applications via new CreateQev2IdcApplication, DescribeQev2IdcApplications, ModifyQev2IdcApplication, and DeleteQev2IdcApplication API operations. (17507f23)
-* **client-inspector2:** GA date - July 21st 2026, remove Tags field from ListCodeSecurityIntegration and ListCodeSecurityScanConfiguration. (33a1778d)
-* **client-emr-containers:** Added support for the DeleteSecurityConfiguration API, which allows customers to delete security configurations in Amazon EMR on EKS. Also added authenticationConfiguration in securityConfigurationdata structure. (e344cea9)
-* **client-redshift-data:** update the workgroupArn to include EUSC partition, tests in THF Gamma and Prod no issue (4f372fc5)
-* **client-invoicing:
+* **clients:** update client endpoints as of 2026-07-22 (8e084a49)
+* **client-arc-region-switch:** Adds support for a client token in StartPlanExecution to make plan execution requests idempotent for safe retries. (6cfe2c05)
+* **client-pcs:** AWS PCS Node Lifecycle Actions provides a structured way to run custom scripts at defined points in a compute node's lifecycle directly through the AWS PCS compute node group API. (c3c4289a)
+* **client-partnercentral-account:** Adds Qualifications Association APIs that enable partners to associate a subsidiary account's qualifications with a primary account. Once associated, qualifications are shared across all connected accounts and scorecards
 
 ... (truncated)]]></description>
-    <pubDate>Tue, 21 Jul 2026 18:46:07 GMT</pubDate>
+    <pubDate>Wed, 22 Jul 2026 18:45:04 GMT</pubDate>
   </item>
   <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-07-21) (release-2026-07-21)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-07-21</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-07-21</guid>
-    <description><![CDATA[## General Highlights
-* **Feature**: Add an option to clients to disable clock skew
-* **Dependency Update**: Updated to the latest SDK module versions
-
-## Module Highlights
-* `github.com/aws/aws-sdk-go-v2`: v1.43.0
- * **Bug Fix**: Update Clock Skew logic to match internal specification
-* `github.com/aws/aws-sdk-go-v2/service/emrcontainers`: [v1.44.0](service/emrcontainers/CHANGELOG.md#v1440-2026-07-21)
- * **Feature**: Added support for the DeleteSecurityConfiguration API, which allows customers to delete security configurations in Amazon EMR on EKS. Also added authenticationConfiguration in securityConfigurationdata structure.
-* `github.com/aws/aws-sdk-go-v2/service/entityresolution`: [v1.30.0](service/entityresolution/CHANGELOG.md#v1300-2026-07-21)
- * **Feature**: Add support for real time matching with AWS Entity Resolution matching workflows with advanced rule sets.
-* `github.com/aws/aws-sdk-go-v2/service/inspector2`: [v1.53.0](service/inspector2/CHANGELOG.md#v1530-2026-07-21)
- * **
+    <title>[aws/aws-sdk-go-v2] Release (2026-07-22) (release-2026-07-22)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-07-22</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-07-22</guid>
+    <description><![CDATA[## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/service/amp`: [v1.47.0](service/amp/CHANGELOG.md#v1470-2026-07-22)
+ * **Feature**: Add CloudWatch dataset destinations for Amazon Managed Service for Prometheus collectors.
+* `github.com/aws/aws-sdk-go-v2/service/arcregionswitch`: [v1.12.0](service/arcregionswitch/CHANGELOG.md#v1120-2026-07-22)
+ * **Feature**: Adds support for a client token in StartPlanExecution to make plan execution requests idempotent for safe retries.
+* `github.com/aws/aws-sdk-go-v2/service/cloudwatch`: [v1.65.0](service/cloudwatch/CHANGELOG.md#v1650-2026-07-22)
+ * **Feature**: Adds documented value constraints for CloudWatch Log Alarm scheduled query configuration fields, and makes LogGroupIdentifiers optional for log alarms.
+* `github.com/aws/aws-sdk-go-v2/service/elasticloadbalancingv2`: [v1.58.1](service/elasticloadbalancingv2/CHANGELOG.md#v1581-2026-07-22)
+ * **Documentation**: This adds CLI examples for the IpAddressType field on SourceIpConfig, enabling N
 
 ... (truncated)]]></description>
-    <pubDate>Tue, 21 Jul 2026 18:41:46 GMT</pubDate>
+    <pubDate>Wed, 22 Jul 2026 18:39:56 GMT</pubDate>
+  </item>
+  <item>
+    <title>[iii-hq/iii] iii 0.22.0 (iii/v0.22.0)</title>
+    <link>https://github.com/iii-hq/iii/releases/tag/iii/v0.22.0</link>
+    <guid isPermaLink="true">https://github.com/iii-hq/iii/releases/tag/iii/v0.22.0</guid>
+    <description><![CDATA[**Full Changelog**:]]></description>
+    <pubDate>Wed, 22 Jul 2026 17:34:19 GMT</pubDate>
+  </item>
+  <item>
+    <title>[remix-run/react-router] v8.3.0 (react-router@8.3.0)</title>
+    <link>https://github.com/remix-run/react-router/releases/tag/react-router%408.3.0</link>
+    <guid isPermaLink="true">https://github.com/remix-run/react-router/releases/tag/react-router%408.3.0</guid>
+    <description><![CDATA[See the changelog for release notes:]]></description>
+    <pubDate>Wed, 22 Jul 2026 15:05:28 GMT</pubDate>
+  </item>
+  <item>
+    <title>[github/spec-kit] Spec Kit - 0.13.4 (v0.13.4)</title>
+    <link>https://github.com/github/spec-kit/releases/tag/v0.13.4</link>
+    <guid isPermaLink="true">https://github.com/github/spec-kit/releases/tag/v0.13.4</guid>
+    <description><![CDATA[## Install
+
+```bash
+uv tool install specify-cli --from git+
+specify init my-project
+```
+
+## What's Changed
+
+- chore: bump version to 0.13.4
+- docs(concepts): document the spec-of-specs feature breakdown approach (#3648)
+- fix(scripts): git-ext PowerShell emits the '# To persist' SPECIFY_FEATURE hint (parity) (#3632)
+- fix(integrations): validate cached catalog shape before returning it (#3627)
+- fix(bundler): reject non-list 'catalogs' in bundle-catalogs.yml with a clean error (#3623)
+- fix(bundler): guard lazy .hostname ValueError in catalog add_source (#3644)
+- Add Intake Authoring Governance preset to community catalog (#3643)
+- feat: add Factory Droid CLI integration (#822) (#3587)
+- docs(installation): document the 'py' (Python) script type (#3640)
+- fix(init): show hyphenated /speckit-<name> in Next Steps for Forge projects (#3642)
+- fix(extensions): render hyphenated hook invocations for Forge projects (#3641)
+- fix(workflows): workflow add detects local YAML files case-insensit
+
+... (truncated)]]></description>
+    <pubDate>Wed, 22 Jul 2026 14:31:45 GMT</pubDate>
+  </item>
+  <item>
+    <title>[vercel-labs/skills] v1.5.20</title>
+    <link>https://github.com/vercel-labs/skills/releases/tag/v1.5.20</link>
+    <guid isPermaLink="true">https://github.com/vercel-labs/skills/releases/tag/v1.5.20</guid>
+    <description><![CDATA[## Changelog
+
+- test: make warning sanitization coverage Windows-safe (#1755)
+- fix: honor GH_HOST for GitHub Enterprise shorthand (#1752)
+- Add Grok Build agent support (#1708)
+- feat: add Kimchi agent support (#1707)
+- fix(update): support full-depth skill updates (#1705)
+- fix: apply claude-code symlink exemption to blob install path (#1608)
+- fix: clean up upstream-deleted skills whose lock key differs from folder name (#1570)
+- feat: show skill origin in list output (#1450)
+- fix: remove missing skills from lock files during update/uninstall (#1357)
+- fix: warn instead of silently skipping malformed SKILL.md files (#1058) (#1059)
+- fix(cli): exit 1 on unknown command and honour subcommand --help (#1040)
+
+## Contributors
+
+@ADM-NKH,@IsmaelMartinez @Ygilany,@akunzai @fabio-barboza,@jaryalarshita @paymog,@quuu @yearth]]></description>
+    <pubDate>Wed, 22 Jul 2026 04:35:21 GMT</pubDate>
+  </item>
+  <item>
+    <title>[podman-container-tools/podman] v6.0.2</title>
+    <link>https://github.com/podman-container-tools/podman/releases/tag/v6.0.2</link>
+    <guid isPermaLink="true">https://github.com/podman-container-tools/podman/releases/tag/v6.0.2</guid>
+    <description><![CDATA[### Bugfixes
+- Fixed a bug where `podman machine` VMs created by the WSL provider on Windows were not properly cleaned up if the `podman machine init` command failed (#27036).
+- Fixed a bug where the Windows installer for Podman would, when installing for all users, incorrectly modify the path of only the user installing Podman (#29160).
+- Fixed a bug where the remote Podman client would throw errors when run on a Linux system that was not using Cgroups v2 (#29241).
+
+### Misc
+- Updated Buildah to v1.44.1]]></description>
+    <pubDate>Wed, 22 Jul 2026 03:02:34 GMT</pubDate>
+  </item>
+  <item>
+    <title>[astral-sh/uv] 0.11.31</title>
+    <link>https://github.com/astral-sh/uv/releases/tag/0.11.31</link>
+    <guid isPermaLink="true">https://github.com/astral-sh/uv/releases/tag/0.11.31</guid>
+    <description><![CDATA[## Release Notes
+
+Released on 2026-07-21.
+
+### Enhancements
+
+- Allow workspace sources to reference members in another workspace by path (#18401)
+- Support `.venv` files containing paths to centralized project environments (#20022)
+- Update bundled Windows timezone data to IANA 2026c (#20554)
+
+### Preview features
+
+- Add an index-specific `hash-algorithm` setting for lockfile generation (#20605)
+
+### Configuration
+
+- Add `audit.malware-check` and `audit.malware-check-url` settings (#20587)
+
+### Performance
+
+- Avoid quadratic work when deduplicating transitive conflicts (#20578)
+
+### Bug fixes
+
+- Suggest `--emit-build-options` for unsupported `uv pip compile --emit-options` (#20582)
+- Reject source distributions and wheels with mismatched package names (#20432)
+- Avoid retrying TLS certificate verification failures (#16245)
+- Avoid warnings about `uv_build` settings for in-tree build backends (#20153)
+
+## Install uv 0.11.31
+
+### Install prebuilt binaries via shell script
+
+```sh
+curl --p
+
+... (truncated)]]></description>
+    <pubDate>Wed, 22 Jul 2026 01:49:40 GMT</pubDate>
+  </item>
+  <item>
+    <title>[oxc-project/oxc] oxlint v1.75.0 &amp; oxfmt v0.60.0 (apps_v1.75.0)</title>
+    <link>https://github.com/oxc-project/oxc/releases/tag/apps_v1.75.0</link>
+    <guid isPermaLink="true">https://github.com/oxc-project/oxc/releases/tag/apps_v1.75.0</guid>
+    <description><![CDATA[## Table of Contents
+
+- [Oxlint v1.75.0](#oxlint-v1.75.0)
+- [Oxfmt v0.60.0](#oxfmt-v0.60.0)
+
+## Oxlint v1.75.0
+
+### 🏆 Highlights
+
+- Announcing Type-Aware Linting Stable
+
+### 🚀 Features
+
+- dd18383 linter/node: Implement no-top-level-await rule (#24634) (Connor Shea)
+- 16a65f2 linter/react: Implement function-component-definition rule (#24471) (Cole Ellison)
+- 7f1f585 linter: Reuse `jest/padding-around-test-blocks` for `vitest/padding-around-test-blocks` (#24519) (Mikhail Baev)
+- 99978a8 linter/import/consistent-type-specifier-style: Support `prefer-top-level-if-only-type-imports` option (#24502) (camc314)
+
+### 🐛 Bug Fixes
+
+- e81b2ff oxlint,oxfmt: Report error for invalid glob patterns (#24744) (leaysgur)
+- 0184ad6 linter/unicorn/no-useless-undefined: Preserve valid parameter defaults (#24686) (camc314)
+- 8694167 linter/eslint/prefer-destructuring: Handle typed declarations (#24616) (camc314)
+- 477cf0f linter/eslint/no-throw-literal: Handle assigned errors (#245
+
+... (truncated)]]></description>
+    <pubDate>Tue, 21 Jul 2026 23:22:20 GMT</pubDate>
   </item>
   <item>
     <title>[openai/codex] 0.145.0 (rust-v0.145.0)</title>
@@ -64,35 +226,6 @@
 
 ... (truncated)]]></description>
     <pubDate>Tue, 21 Jul 2026 18:21:04 GMT</pubDate>
-  </item>
-  <item>
-    <title>[github/spec-kit] Spec Kit - 0.13.2 (v0.13.2)</title>
-    <link>https://github.com/github/spec-kit/releases/tag/v0.13.2</link>
-    <guid isPermaLink="true">https://github.com/github/spec-kit/releases/tag/v0.13.2</guid>
-    <description><![CDATA[## Install
-
-```bash
-uv tool install specify-cli --from git+
-specify init my-project
-```
-
-## What's Changed
-
-- chore: bump version to 0.13.2
-- fix(workflows): reject a non-string 'command' in command-step (#3596)
-- fix(workflows): fail gate step loudly on a malformed 'options' (#3595)
-- fix(extensions): re-validate catalog URL after redirects (HTTPS parity/security) (#3524)
-- Add community bundle submission automation (#3553)
-- fix(presets): re-validate catalog URL after redirects (HTTPS parity/security) (#3523)
-- feat(scripts): port create-new-feature, setup-plan and setup-tasks to Python (#3386)
-- fix(agents): parse frontmatter on the --- delimiter line, not any --- substring (#3590)
-- [bug-fix] Fix reinstall-overwrites-kept-config: preserve config on plain reinstall after --keep-config (#3449)
-- feat: update Bob integration to skills-based layout for Bob 2.0 (#3415)
-- Update OKF Knowledge Bundle Generator to v0.3.0 (#3608)
-- Add Test Coverage Drift Control extension to community cata
-
-... (truncated)]]></description>
-    <pubDate>Tue, 21 Jul 2026 17:47:40 GMT</pubDate>
   </item>
   <item>
     <title>[fastify/fastify-vite] @fastify/vite@9.2.0</title>
@@ -136,30 +269,6 @@ Moderate:
 - Unauthenticated disclosure of internal Server Function endpoints
 - Unbounded Server Action payload in Edge runtime]]></description>
     <pubDate>Tue, 21 Jul 2026 16:58:17 GMT</pubDate>
-  </item>
-  <item>
-    <title>[oxc-project/oxc] oxc crates_v0.141.0 (crates_v0.141.0)</title>
-    <link>https://github.com/oxc-project/oxc/releases/tag/crates_v0.141.0</link>
-    <guid isPermaLink="true">https://github.com/oxc-project/oxc/releases/tag/crates_v0.141.0</guid>
-    <description><![CDATA[### 💥 BREAKING CHANGES
-
-- 5293431 str: [**BREAKING**] Move `IdentBuildHasher` to `oxc_str` crate (#24717) (overlookmotel)
-- 54cc121 ast: [**BREAKING**] Split `MetaProperty` into `ImportMeta` and `NewTarget` (#24557) (camc314)
-
-### 🚀 Features
-
-- 87823d0 minifier: Merge combined assign expression in conditional expression (#24707) (sapphi-red)
-- 03a54c9 minifier: Merge assign expression against member expression in conditional expression (#24706) (sapphi-red)
-- effd3c8 allocator: Add `Vec::from_raw_parts_in` (#24732) (overlookmotel)
-- ddacf61 semantic: Add context notes for strict assignments (#24728) (camc314)
-- 7e9b84a data_structures: Add `implements!` macro (#24721) (overlookmotel)
-- 39e141b data_structures: Add `const_str_eq` function (#24720) (overlookmotel)
-- cc3d17f semantic: Add context notes for reserved keyword diagnostic (#24715) (camc314)
-- 4c71560 parser: More friendly error for spread element in dynamic imports (#24705) (sapphi-red)
-- 7b045cd minfier: Drop last break fro
-
-... (truncated)]]></description>
-    <pubDate>Tue, 21 Jul 2026 15:16:54 GMT</pubDate>
   </item>
   <item>
     <title>[withastro/astro] @astrojs/language-server@2.16.13</title>
@@ -291,41 +400,6 @@ This version includes the following bug fixes and feature additions.
 - An explicitly configured `NEXTAUTH_URL` now takes precedence over the auto-detected forwarded host in trusted-host mode.
 - Restores CommonJS compatibility by pinning `uuid` to `^11.1.1`; the 14.x line is ESM-only and broke `require` on Node versions below 20.19.]]></description>
     <pubDate>Mon, 20 Jul 2026 23:22:47 GMT</pubDate>
-  </item>
-  <item>
-    <title>[astral-sh/uv] 0.11.30</title>
-    <link>https://github.com/astral-sh/uv/releases/tag/0.11.30</link>
-    <guid isPermaLink="true">https://github.com/astral-sh/uv/releases/tag/0.11.30</guid>
-    <description><![CDATA[## Release Notes
-
-Released on 2026-07-20.
-
-### Python
-
-- Add CPython 3.15.0b4 (#20519)
-
-### Preview features
-
-- Allow `uv workspace metadata --sync` to target the active virtual environment with `--active` (#20500)
-- Reuse centralized project environments when workspaces are accessed through symlinks (#20436)
-
-### Performance
-
-- Skip resolver candidates whose files are all excluded by `exclude-newer` (#20460)
-- Limit parallel cache reads to reduce resolver scheduling and allocation overhead (#20427)
-- Accelerate lockfile serialization with `toml_writer` (#20450)
-- Compact cached Simple API distribution metadata and hashes (#20463, #20483)
-- Decode stale cache entries in a single blocking task (#20486)
-- Decode cached payloads outside resolver workers (#20464)
-- Cache resolver Python requirement markers (#20461)
-- Reuse resolver fork markers while recording preferences (#20462)
-
-### Bug fixes
-
-- Prevent skipped tar-wheel entries from causing unrelated files to be removed during uninstal
-
-... (truncated)]]></description>
-    <pubDate>Mon, 20 Jul 2026 20:48:06 GMT</pubDate>
   </item>
   <item>
     <title>[sveltejs/svelte] svelte@5.56.7</title>
@@ -527,25 +601,6 @@ pod 'PrimJS', '4.0.0', :subspecs => ['quickjs', 'napi']
     <pubDate>Mon, 20 Jul 2026 08:23:56 GMT</pubDate>
   </item>
   <item>
-    <title>[pnpm/pnpm] pnpm 11.15.1 (v11.15.1)</title>
-    <link>https://github.com/pnpm/pnpm/releases/tag/v11.15.1</link>
-    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v11.15.1</guid>
-    <description><![CDATA[## Patch Changes
-
-* `pnpm install` now detects a `supportedArchitectures` change and re-evaluates previously skipped platform-specific optional dependencies, instead of reporting the project as up to date and leaving the packages for the old architecture set in place.
-
-* `pnpm setup` now removes leftover v10-layout shims at the top of `PNPM_HOME`, so `pnpm self-update` no longer warns about a v10 installation layout after PATH has been migrated to the v11 `PNPM_HOME/bin` layout. Applies to both the TypeScript CLI and pacquet.
-
- In the TypeScript CLI, `self-update` also no longer treats a dangling legacy shim (one whose install target was garbage-collected) as a real v10 layout, so the warning can no longer fire on dead shim files.
-
- Closes pnpm/pnpm#12496.
-
-* Completed pnpm runtime installation parity for Node.js, Deno, and Bun, including runtime failure policy, target architecture selection, and dependency runtime engines. Runtime failure overrides now preserve explicit runt
-
-... (truncated)]]></description>
-    <pubDate>Sun, 19 Jul 2026 22:32:13 GMT</pubDate>
-  </item>
-  <item>
     <title>[sveltejs/kit] @sveltejs/kit@2.70.1</title>
     <link>https://github.com/sveltejs/kit/releases/tag/%40sveltejs/kit%402.70.1</link>
     <guid isPermaLink="true">https://github.com/sveltejs/kit/releases/tag/%40sveltejs/kit%402.70.1</guid>
@@ -623,22 +678,6 @@ Windows App SDK 2.3.1 is the latest stable release on the 2.x line, with a new s
 
 ... (truncated)]]></description>
     <pubDate>Thu, 16 Jul 2026 19:16:13 GMT</pubDate>
-  </item>
-  <item>
-    <title>[vercel-labs/skills] v1.5.19</title>
-    <link>https://github.com/vercel-labs/skills/releases/tag/v1.5.19</link>
-    <guid isPermaLink="true">https://github.com/vercel-labs/skills/releases/tag/v1.5.19</guid>
-    <description><![CDATA[## Changelog
-
-- fix: avoid flicker when redrawing prompts (#1713)
-- feat: improve grouped skill selection (#1706)
-- fix: allow list git protocols (#1702)
-- chore: require Node.js 22.20 or newer (#1701)
-
-## Contributors
-
-@KarimPwnz,@jonathanhefner @quuu]]></description>
-    <pubDate>Thu, 16 Jul 2026 17:54:07 GMT</pubDate>
   </item>
   <item>
     <title>[fastapi/fastapi] 0.139.2</title>
@@ -867,17 +906,6 @@ The `Source code (zip)` or `Source code (tar.gz)` in `Assets` are automatically 
     <pubDate>Tue, 14 Jul 2026 23:23:56 GMT</pubDate>
   </item>
   <item>
-    <title>[iii-hq/iii] iii 0.21.6 (iii/v0.21.6)</title>
-    <link>https://github.com/iii-hq/iii/releases/tag/iii/v0.21.6</link>
-    <guid isPermaLink="true">https://github.com/iii-hq/iii/releases/tag/iii/v0.21.6</guid>
-    <description><![CDATA[## What's Changed
-* fix(iii-worker,sdk): propagate managed worker name to SDKs via III_WORKER_NAME by @sergiofilhowz in 
-
-
-**Full Changelog**:]]></description>
-    <pubDate>Tue, 14 Jul 2026 19:32:51 GMT</pubDate>
-  </item>
-  <item>
     <title>[dprint/dprint] 0.55.2</title>
     <link>https://github.com/dprint/dprint/releases/tag/0.55.2</link>
     <guid isPermaLink="true">https://github.com/dprint/dprint/releases/tag/0.55.2</guid>
@@ -952,45 +980,6 @@ as a "work t
 
 ... (truncated)]]></description>
     <pubDate>Tue, 14 Jul 2026 01:36:25 GMT</pubDate>
-  </item>
-  <item>
-    <title>[openclaw/openclaw] openclaw 2026.7.1 (v2026.7.1)</title>
-    <link>https://github.com/openclaw/openclaw/releases/tag/v2026.7.1</link>
-    <guid isPermaLink="true">https://github.com/openclaw/openclaw/releases/tag/v2026.7.1</guid>
-    <description><![CDATA[## 2026.7.1
-
-OpenClaw v2026.7.1 brings major Control UI and onboarding overhauls, major updates to the official iOS, Android, and macOS apps, expanded model and provider support including GPT-5.6 compatibility, Tencent Hy3, and Meta Muse Spark 1.1, and stronger Codex and connected coding-agent workflows. Telegram, Slack, Discord, and Apple Messages each receive substantial updates, while Gateway crash loops, scheduled work, remote browser control, workspace terminals, sessions, and goals also improve. There are also many general fixes and refinements throughout OpenClaw.
-
-Read the full release notes
-
-This release brings together 3,063 contributions from 532 contributors.
-
-### Highlights
-
-- **Control UI overhaul:** conversations are easier to organize and work with side by side, with live Tasks, clearer chat controls, better usage and cost views, files, downloads, pairing, approvals, and Gateway health kept close to the conversation.
-- **Easier setup from install to first chat:** guided
-
-... (truncated)]]></description>
-    <pubDate>Mon, 13 Jul 2026 22:33:14 GMT</pubDate>
-  </item>
-  <item>
-    <title>[ant-design/ant-design] 6.5.1</title>
-    <link>https://github.com/ant-design/ant-design/releases/tag/6.5.1</link>
-    <guid isPermaLink="true">https://github.com/ant-design/ant-design/releases/tag/6.5.1</guid>
-    <description><![CDATA[- 💄 Fix AutoComplete custom input background color being applied twice in the `filled` variant. #58669 @QDyanbing
-- 🐞 Fix Avatar, List, Pagination, Steps, and Table not responding to breakpoint changes after responsive configuration is enabled dynamically. #58654 @li-jia-nan
-- ⌨️ Fix Button, Checkbox, Switch, Splitter, and BorderBeam pseudo-element transitions and animations so they respect `prefers-reduced-motion`. #58685 @li-jia-nan
-- 🐞 Fix Button icon vertical alignment when used in Card `extra`. #58584 @zombieJ
-- ConfigProvider
- - 🐞 Fix ConfigProvider with StyleProvider `layer` causing missing styles in some components. #58559 @fireairforce
- - 🐞 Fix ConfigProvider CSS variable prefix not updating when `prefixCls` changes dynamically. #58652 @li-jia-nan
-- 🐞 Fix Descriptions content columns collapsing to near-zero width when nested in Popover. #58583 @zombieJ
-- 🐞 Fix Dropdown positioning and interaction when its child component does not support `ref`. #58662 @afc163
-- Form
- - 
-
-... (truncated)]]></description>
-    <pubDate>Mon, 13 Jul 2026 12:51:00 GMT</pubDate>
   </item>
 </channel>
 </rss>
