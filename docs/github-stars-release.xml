@@ -5,8 +5,45 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Fri, 24 Jul 2026 22:20:59 GMT</lastBuildDate>
+  <lastBuildDate>Sat, 25 Jul 2026 22:16:25 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[inokawa/virtua] 0.50.0</title>
+    <link>https://github.com/inokawa/virtua/releases/tag/0.50.0</link>
+    <guid isPermaLink="true">https://github.com/inokawa/virtua/releases/tag/0.50.0</guid>
+    <description><![CDATA[## What's Changed
+* Add more unit tests by @inokawa in 
+* Migrate rollup to vite build by @inokawa in 
+* Support angular by @inokawa in 
+
+
+**Full Changelog**:]]></description>
+    <pubDate>Sat, 25 Jul 2026 14:26:14 GMT</pubDate>
+  </item>
+  <item>
+    <title>[ollama/ollama] v0.32.4</title>
+    <link>https://github.com/ollama/ollama/releases/tag/v0.32.4</link>
+    <guid isPermaLink="true">https://github.com/ollama/ollama/releases/tag/v0.32.4</guid>
+    <description><![CDATA[## What's Changed
+- Support Laguna on Apple GPUs via the MLX engine
+- Quantize draft-model output heads at the requested type when creating speculative-decoding drafts.
+- Fixed Qwen3 MoE decoding for differently-quantized experts, plus faster packed gate/up projection (~4–9% on M5 Max).
+
+**Full Changelog**:]]></description>
+    <pubDate>Sat, 25 Jul 2026 02:22:12 GMT</pubDate>
+  </item>
+  <item>
+    <title>[bluesky-social/atproto] @atproto/dev-env@0.5.39</title>
+    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/dev-env%400.5.39</link>
+    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/dev-env%400.5.39</guid>
+    <description><![CDATA[### Patch Changes
+
+- Updated dependencies [`102503c`, `5c5df26`]:
+ - @atproto/bsky@0.0.267
+ - @atproto/api@0.20.34
+ - @atproto/ozone@0.2.21]]></description>
+    <pubDate>Fri, 24 Jul 2026 22:34:24 GMT</pubDate>
+  </item>
   <item>
     <title>[anomalyco/opencode] v1.18.5</title>
     <link>https://github.com/anomalyco/opencode/releases/tag/v1.18.5</link>
@@ -64,10 +101,8 @@
     <description><![CDATA[## 🧱 New component testing model
 
 Component testing moves to a **stories and galleries** model.
-A **story** wraps your component in one specific scenario — hard-coded props, mock data, providers — and a
-
-**gallery** page that you serve renders stories on demand. The new fixtures.mount fixture navigates
-to the gallery, mounts a story by id, and returns a Locator scoped to the story's root element:
+A **story** wraps your component in one specific scenario — hard-coded props, mock data, providers — and a **gallery** page that you serve renders stories on demand.
+The new fixtures.mount fixture navigates to the gallery, mounts a story by id, and returns a Locator scoped to the story's root element:
 
 ```js
 test('click should expand', async ({ mount }) => {
@@ -77,14 +112,11 @@ test('click should expand', async ({ mount }) => {
 });
 ```
 
-Pass a story type as a template argument to type-check its props, and use `update(props)` /
-`unmount` on the returned locator to re-render or tear down within a test.
+Pass a story type as a template argument to type-check its props, and use `update(props)` / `unmount` on the returned locator to re-render or tear down within a test.
 
 ## 🛑 Cancel operations with AbortSignal
 
-Most operations and web-first assertions now accept a `signal` option that takes an
-`AbortSignal`, letting you
-cancel long-running actions, na
+Most operations and web-first assertions now accept a `signal` option that takes an `AbortSignal`, letting you cancel long-ru
 
 ... (truncated)]]></description>
     <pubDate>Fri, 24 Jul 2026 21:55:03 GMT</pubDate>
@@ -379,15 +411,6 @@ powershell -ExecutionPolicy Bypass -c "irm |
     <pubDate>Thu, 23 Jul 2026 19:19:31 GMT</pubDate>
   </item>
   <item>
-    <title>[bluesky-social/atproto] @atproto/api@0.20.33</title>
-    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/api%400.20.33</link>
-    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/api%400.20.33</guid>
-    <description><![CDATA[### Patch Changes
-
-- #5261 `5d6dae2` Thanks @estrattonbailey! - Support platform-specific Age Assurance config]]></description>
-    <pubDate>Thu, 23 Jul 2026 17:47:08 GMT</pubDate>
-  </item>
-  <item>
     <title>[pnpm/pnpm] pnpm 11.17 (v11.17.0)</title>
     <link>https://github.com/pnpm/pnpm/releases/tag/v11.17.0</link>
     <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v11.17.0</guid>
@@ -454,22 +477,6 @@ powershell -ExecutionPolicy Bypass -c "irm |
     <guid isPermaLink="true">https://github.com/vitejs/vite/releases/tag/plugin-legacy%408.2.2</guid>
     <description><![CDATA[Please refer to CHANGELOG.md for details.]]></description>
     <pubDate>Thu, 23 Jul 2026 04:45:07 GMT</pubDate>
-  </item>
-  <item>
-    <title>[ollama/ollama] v0.32.3</title>
-    <link>https://github.com/ollama/ollama/releases/tag/v0.32.3</link>
-    <guid isPermaLink="true">https://github.com/ollama/ollama/releases/tag/v0.32.3</guid>
-    <description><![CDATA[## What's Changed
-
-- Fixed model downloads that stall before sending data.
-- Improved integrations: restored Claude Code Channels, fixed Anthropic thinking streams, and made Hermes Desktop respect `--force-build`.
-- Expanded GPU support with CUDA on Windows ARM64, B200 support through CUDA 12, and lower memory use on Linux CUDA/ROCm iGPUs.
-- Added chat, thinking, and tool calling support for Laguna 2.1 models, including a Metal inference fix.
-- Fixed GLM tool calls being silently dropped at the end of generation.
-- Updated the MLX and llama.cpp engines.
-
-**Full Changelog**:]]></description>
-    <pubDate>Thu, 23 Jul 2026 00:44:28 GMT</pubDate>
   </item>
   <item>
     <title>[zed-industries/zed] v1.12.0</title>
@@ -571,22 +578,6 @@ powershell -ExecutionPolicy Bypass -c "irm |
 
 ... (truncated)]]></description>
     <pubDate>Tue, 21 Jul 2026 23:22:20 GMT</pubDate>
-  </item>
-  <item>
-    <title>[openai/codex] 0.145.0 (rust-v0.145.0)</title>
-    <link>https://github.com/openai/codex/releases/tag/rust-v0.145.0</link>
-    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.145.0</guid>
-    <description><![CDATA[## New Features
-
-- Added experimental paginated thread history with efficient resume, search, persisted names, sub-agent support, and memories. (#33364, #33907, #34085, #34229, #34386)
-- Expanded `/import` to migrate Cursor and Claude Code settings, MCP servers, plugins, sessions, commands, and project-scoped memories. (#31672, #33411, #33426, #33444)
-- Added experimental Amazon Bedrock login, custom endpoint and authentication support, and GPT-5.6 Sol as the default Bedrock model. (#31327, #33170, #33175, #32288, #33695)
-- Added audio inputs and tool outputs, including common local audio formats, and introduced streaming realtime V3 conversations. (#33261, #33856, #33932, #34080, #34385)
-- Stabilized the opt-in multi-agent V2 experience with configurable sub-agent models, reasoning levels, concurrency, restored roles, and improved agent navigation. (#33550, #33631, #33657, #33841, #34383)
-- Added secure, clickable inline visualization links in the terminal UI. (#33925, #34217, #34346)
-
-... (truncated)]]></description>
-    <pubDate>Tue, 21 Jul 2026 18:21:04 GMT</pubDate>
   </item>
   <item>
     <title>[fastify/fastify-vite] @fastify/vite@9.2.0</title>
