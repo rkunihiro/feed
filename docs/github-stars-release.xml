@@ -5,8 +5,51 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Sat, 25 Jul 2026 22:16:25 GMT</lastBuildDate>
+  <lastBuildDate>Sun, 26 Jul 2026 22:17:18 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[axios/axios] v1.19.0</title>
+    <link>https://github.com/axios/axios/releases/tag/v1.19.0</link>
+    <guid isPermaLink="true">https://github.com/axios/axios/releases/tag/v1.19.0</guid>
+    <description><![CDATA[## v1.19.0 - July 22, 2026
+
+This release raises the form-data security floor, adds configuration and type-system capabilities, and fixes NO_PROXY matching, interceptor errors, progress reporting, and serialization edge cases.
+
+## 🔒 Security Fixes
+
+- Multipart Form Data: Raised the form-data dependency floor to ^4.0.6, preventing fresh installations from resolving versions affected by the CRLF injection vulnerability GHSA-hmw2-7cc7-3qxx . (#11028)
+
+## 🚀 New Features
+
+- Configuration Extensibility: Preserved own-enumerable symbol-keyed fields through mergeConfig and added a generic params type across public TypeScript declarations, responses, errors,
+ adapters, and serializers. (#11043, #11081)
+- Header Parameter Parsing: Added the opt-in AxiosHeaders.parseParameters parser for quote-aware, RFC-style HTTP parameter parsing while preserving legacy parsing behavior. (#11051)
+- HTTP Status Codes: Added the missing Cloudflare 520 WebServerReturnsAnUnknownError status and match
+
+... (truncated)]]></description>
+    <pubDate>Sun, 26 Jul 2026 14:13:32 GMT</pubDate>
+  </item>
+  <item>
+    <title>[esm-dev/esm.sh] Server v137_7 (v137_7)</title>
+    <link>https://github.com/esm-dev/esm.sh/releases/tag/v137_7</link>
+    <guid isPermaLink="true">https://github.com/esm-dev/esm.sh/releases/tag/v137_7</guid>
+    <description><![CDATA[* Prevent npm credentials from leaking to cross-origin tarball URLs. (#1375)
+* Harden module and web path handling against path traversal. (#1375, #1376, #1377)
+* Add a trusted CDN origin configuration for generated URLs. (#1381)]]></description>
+    <pubDate>Sun, 26 Jul 2026 07:20:34 GMT</pubDate>
+  </item>
+  <item>
+    <title>[vercel/next.js] v16.2.12</title>
+    <link>https://github.com/vercel/next.js/releases/tag/v16.2.12</link>
+    <guid isPermaLink="true">https://github.com/vercel/next.js/releases/tag/v16.2.12</guid>
+    <description><![CDATA[## What's Changed
+* Backport/docs fixes 16.2 - July round by @icyJoseph in 
+* [Backport] Fixes to support TypeScript 7 by @lukesandberg in 
+
+
+**Full Changelog**:]]></description>
+    <pubDate>Sat, 25 Jul 2026 23:55:42 GMT</pubDate>
+  </item>
   <item>
     <title>[inokawa/virtua] 0.50.0</title>
     <link>https://github.com/inokawa/virtua/releases/tag/0.50.0</link>
@@ -589,29 +632,6 @@ powershell -ExecutionPolicy Bypass -c "irm |
     <pubDate>Tue, 21 Jul 2026 17:36:10 GMT</pubDate>
   </item>
   <item>
-    <title>[vercel/next.js] v15.5.21</title>
-    <link>https://github.com/vercel/next.js/releases/tag/v15.5.21</link>
-    <guid isPermaLink="true">https://github.com/vercel/next.js/releases/tag/v15.5.21</guid>
-    <description><![CDATA[This release contains security fixes for the following advisories:
-
-High:
-
-- Denial of Service in App Router using Server Actions
-- Middleware / Proxy bypass in App Router applications using Turbopack and single locale
-- Server-Side Request Forgery in rewrites via attacker-controlled destination hostname
-- Server-Side Request Forgery in Server Actions on custom servers
-
-
-Moderate: 
-
-- Cache confusion of response bodies for requests with bodies
-- Cache confusion of response bodies for requests with bodies containing invalid UTF-8 byte sequences
-- Denial of Service in the Image Optimization API using SVGs
-- Unauthenticated disclosure of internal Server Function endpoints
-- Unbounded Server Action payload in Edge runtime]]></description>
-    <pubDate>Tue, 21 Jul 2026 16:58:17 GMT</pubDate>
-  </item>
-  <item>
     <title>[withastro/astro] @astrojs/language-server@2.16.13</title>
     <link>https://github.com/withastro/astro/releases/tag/%40astrojs/language-server%402.16.13</link>
     <guid isPermaLink="true">https://github.com/withastro/astro/releases/tag/%40astrojs/language-server%402.16.13</guid>
@@ -880,37 +900,6 @@ pod 'PrimJS', '4.0.0', :subspecs => ['quickjs', 'napi']
 
 **Full Changelog**:]]></description>
     <pubDate>Fri, 17 Jul 2026 11:01:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>[microsoft/WindowsAppSDK] Windows App SDK 2.3.1 (v2.3.1)</title>
-    <link>https://github.com/microsoft/WindowsAppSDK/releases/tag/v2.3.1</link>
-    <guid isPermaLink="true">https://github.com/microsoft/WindowsAppSDK/releases/tag/v2.3.1</guid>
-    <description><![CDATA[## Windows App SDK 2.3.1
-
-Windows App SDK 2.3.1 is the latest stable release on the 2.x line, with a new structured JSON output API for Phi Silica, the `XamlOptionalChanges` API for opting into XAML breaking changes, an unstable `CompositionEngine` Limited Access Feature, Video Super Resolution improvements, ARM64EC support for Windows ML, a broad set of XAML performance optimizations, and a batch of reliability fixes.
-
-### What's new in WinAppSDK 2.3.1:
-
-- **Structured JSON output for Phi Silica.** The new `LanguageModel.GenerateStructuredJsonResponseAsync` API generates language-model responses constrained to a caller-supplied JSON Schema, so apps get well-formed, schema-conformant output instead of free-form text they have to parse themselves.
-- **`XamlOptionalChanges`.** A new API that lets apps opt into optional breaking changes before XAML initialization. In the same release, the `DISABLE_XAML_GENERATED_MAIN` preprocessor constant now renames the generated `main` method (C
-
-... (truncated)]]></description>
-    <pubDate>Fri, 17 Jul 2026 02:44:26 GMT</pubDate>
-  </item>
-  <item>
-    <title>[facebook/lexical] v0.48.0</title>
-    <link>https://github.com/facebook/lexical/releases/tag/v0.48.0</link>
-    <guid isPermaLink="true">https://github.com/facebook/lexical/releases/tag/v0.48.0</guid>
-    <description><![CDATA[v0.48.0 is a maintenance release focused on bug fixes across Markdown, tables, lists, links, and selection. It's headlined by a fix for a v0.46.0 regression that broke native text drag-and-drop (#8842) and a couple of notable security hardening fixes. It also adds a handful of new features, including an `MdastHtmlExtension` with examples for authoring custom Markdown constructs (collapsibles, `kbd`, alerts, footnotes), a customizable Yjs shared-type root name for collaborative editing, and new table row manipulation helpers.
-
-## New APIs & Features
-
-* `@lexical/table` — Added `$moveTableRow` for reordering table rows, plus the previously missing `$unmergeCellNode` export (#8833)
-* `@lexical/yjs` / `@lexical/react` — The Yjs shared-type root name is now customizable, so Lexical can share a Yjs document with other content that uses a different root key (#8841)
-* `@lexical/extension` / `@lexical/mdast` — Added `MdastHtmlExtension` and Markdown custom-construct examples (collapsible 
-
-... (truncated)]]></description>
-    <pubDate>Thu, 16 Jul 2026 19:16:13 GMT</pubDate>
   </item>
 </channel>
 </rss>
