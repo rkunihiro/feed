@@ -5,8 +5,233 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Sun, 26 Jul 2026 22:17:18 GMT</lastBuildDate>
+  <lastBuildDate>Mon, 27 Jul 2026 22:20:43 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[webpack/webpack] v5.109.1</title>
+    <link>https://github.com/webpack/webpack/releases/tag/v5.109.1</link>
+    <guid isPermaLink="true">https://github.com/webpack/webpack/releases/tag/v5.109.1</guid>
+    <description><![CDATA[### Patch Changes
+
+- Fix stray semicolon emitted before an imported call following a parenthesized sequence element. (by @alexander-akait in #21533)
+
+- Make `require(esm)` `module.exports` re-export analysis independent of module processing order. (by @alexander-akait in #21521)
+
+- Ignore ERR_SERVER_NOT_RUNNING on lazy-compilation backend dispose so `compiler.close` succeeds on Bun. (by @alexander-akait in #21521)
+
+- Name the failing key when DefinePlugin fails to evaluate a `typeof` value. (by @alexander-akait in #21503)
+
+- Improve Deno compatibility: guard `setNoDelay` and force-close connections on lazy-compilation backend dispose, and return a real `ArrayBuffer` from the Node async/sync wasm loader so `WebAssembly.instantiate` accepts it. (by @alexander-akait in #21524)
+
+- Speed up the HTML parser and cut its peak memory: module-scope helpers/state and tokenizer callbacks, plus exact AST column pre-sizing. (by @alexander-akait in #21492)
+
+- Track CommonJS build dependencies by pars
+
+... (truncated)]]></description>
+    <pubDate>Mon, 27 Jul 2026 21:58:06 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1096.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1096.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1096.0</guid>
+    <description><![CDATA[#### 3.1096.0(2026-07-27)
+
+##### New Features
+
+* **clients:** update client endpoints as of 2026-07-27 (24e536ee)
+* **client-bcm-data-exports:** With this release, customers can configure their data exports to deliver CSV reports in ZIP compressed format. (bf6df63c)
+* **client-glue:** Adds BatchGetDataQualityRulesetEvaluationRun API to retrieve multiple runs in one call, ObservationScope and ObservationMode parameters for anomaly detection, writing evaluation results to Data Catalog tables, and custom log group paths for recommendation runs. (70d8b71e)
+* **client-sagemaker:** This release adds LoRA adapters, training plans, and new instance types to SageMaker inference optimization. CreateAIRecommendationJob accepts optional AdapterSource and CreateOptimizationJob accepts optional TrainingPlanArns and the ml.g7e and ml.p6-b200 families. (587c6437)
+* **client-account:** This release adds support for the GetPrimaryEmailUpdateStatus API operation, which allows customers to retrieve the cu
+
+... (truncated)]]></description>
+    <pubDate>Mon, 27 Jul 2026 18:50:11 GMT</pubDate>
+  </item>
+  <item>
+    <title>[panva/node-oidc-provider] v9.11.1</title>
+    <link>https://github.com/panva/node-oidc-provider/releases/tag/v9.11.1</link>
+    <guid isPermaLink="true">https://github.com/panva/node-oidc-provider/releases/tag/v9.11.1</guid>
+    <description><![CDATA[### Fixes
+
+* correct typos and grammar in user-facing messages (1be723e)
+* derive server challenges from the clock rather than a timer (ba9d960), closes #1438
+* don't dereference a skipped refresh token lookup (fe6f90e)
+* don't emit grant.revoked twice during logout (a41d043)
+* only recognize dpop_jkt when DPoP is enabled (8c38630)
+* use the effective scope when resolving ID Token claims (ab1f41b)
+
+
+### Documentation
+
+* correct stale configuration documentation (6096bef)
+* document the missing emitted events (c295623)
+
+
+### Refactor
+
+* remove unused OIDCContext resolvedClaims (5fe6807)]]></description>
+    <pubDate>Mon, 27 Jul 2026 18:46:29 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-07-27) (release-2026-07-27)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-07-27</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-07-27</guid>
+    <description><![CDATA[## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/service/account`: [v1.35.0](service/account/CHANGELOG.md#v1350-2026-07-27)
+ * **Feature**: This release adds support for the GetPrimaryEmailUpdateStatus API operation, which allows customers to retrieve the current status of a primary email address update request for an AWS account. The operation returns status information including whether the update is pending, completed, or failed.
+* `github.com/aws/aws-sdk-go-v2/service/bcmdataexports`: [v1.19.0](service/bcmdataexports/CHANGELOG.md#v1190-2026-07-27)
+ * **Feature**: With this release, customers can configure their data exports to deliver CSV reports in ZIP compressed format.
+* `github.com/aws/aws-sdk-go-v2/service/cleanrooms`: [v1.49.0](service/cleanrooms/CHANGELOG.md#v1490-2026-07-27)
+ * **Feature**: This release adds support for the CR.8X worker type for SQL (32 vCPU)
+* `github.com/aws/aws-sdk-go-v2/service/cleanroomsml`: [v1.27.0](service/cleanroomsml/CHANGELOG.md#v1270-2026-07
+
+... (truncated)]]></description>
+    <pubDate>Mon, 27 Jul 2026 18:44:09 GMT</pubDate>
+  </item>
+  <item>
+    <title>[zed-industries/zed] v1.12.1</title>
+    <link>https://github.com/zed-industries/zed/releases/tag/v1.12.1</link>
+    <guid isPermaLink="true">https://github.com/zed-industries/zed/releases/tag/v1.12.1</guid>
+    <description><![CDATA[- Added Claude Opus 5 support for Anthropic and Amazon Bedrock BYOK providers. (#61609)
+- Fixed an issue where hover documentation could have too many line breaks. (#61715)]]></description>
+    <pubDate>Mon, 27 Jul 2026 18:30:09 GMT</pubDate>
+  </item>
+  <item>
+    <title>[modelcontextprotocol/typescript-sdk] 1.30.0</title>
+    <link>https://github.com/modelcontextprotocol/typescript-sdk/releases/tag/1.30.0</link>
+    <guid isPermaLink="true">https://github.com/modelcontextprotocol/typescript-sdk/releases/tag/1.30.0</guid>
+    <description><![CDATA[## What's Changed
+* fix(server): prioritize zod issues and format them by @mozmo15 in 
+* chore(ci): switch publish to OIDC trusted publishing by @felixweinberger in 
+* Add end-to-end test suite by @felixweinberger in 
+* v1 stdio buffer limit by @KKonstantinov in 
+* fix: support Zod 3.25 method literals by @mattzcarey in 
+* Validate Content-Type by parsed media type instead of substring match (v1.x) by @felixweinberger in 
+* fix: send SSE keep-alive comment frames from Streamable HTTP server transport (v1.x) by @mattzcarey in 
+* fix(deps): widen @hono/node-server past GHSA-frvp-7c67-39w9 by @arimu1 in 
+* Fix SSE keep-alive timer lifecycle in Streamable HTTP server transport (v1.x) by @felixweinberger in 
+* chore: bump version to 1.30.0 by @felixweinberger in 
+
+## New Contributors
+* @mozmo15 made their first contribution in 
+* @arimu1 made their first contribution in 
+
+**Full Changelog**:]]></description>
+    <pubDate>Mon, 27 Jul 2026 17:54:36 GMT</pubDate>
+  </item>
+  <item>
+    <title>[fastapi/fastapi] 0.140.7</title>
+    <link>https://github.com/fastapi/fastapi/releases/tag/0.140.7</link>
+    <guid isPermaLink="true">https://github.com/fastapi/fastapi/releases/tag/0.140.7</guid>
+    <description><![CDATA[### Refactors
+
+* ⚡️ Avoid flattening dependencies for OpenAPI. PR #16076 by @tiangolo.
+
+### Internal
+
+* ⬆️ Upgrade latest-changes to 0.7.1. PR #16077 by @tiangolo.
+* 👷 Add OpenAPI dependency benchmarks. PR #16075 by @tiangolo.]]></description>
+    <pubDate>Mon, 27 Jul 2026 17:33:02 GMT</pubDate>
+  </item>
+  <item>
+    <title>[oxc-project/oxc] oxlint v1.76.0 &amp; oxfmt v0.61.0 (apps_v1.76.0)</title>
+    <link>https://github.com/oxc-project/oxc/releases/tag/apps_v1.76.0</link>
+    <guid isPermaLink="true">https://github.com/oxc-project/oxc/releases/tag/apps_v1.76.0</guid>
+    <description><![CDATA[## Table of Contents
+
+- [Oxlint v1.76.0](#oxlint-v1.76.0)
+- [Oxfmt v0.61.0](#oxfmt-v0.61.0)
+
+## Oxlint v1.76.0
+### 🚀 Features
+
+- 8d31dfa linter: Verify eslint/no-restricted-globals config schema (#24598) (vigneshwar)
+- 7069621 linter: Verify jest/vitest prefer-lowercase-title config schema (#24724) (Bartok)
+- 016cf2a linter/oxc: Add bad-match-all-arg rule (#24900) (camc314)
+- cdc941e linter/n: Implement `exports-style` rule (#24087) (Mikhail Baev)
+- 1ad6f6c linter/eslint: Implement `id-denylist` rule (#24632) (Mikhail Baev)
+- 678bbb5 linter/typescript-eslint: Implement suggestion for `class-literal-property-style` rule (#24766) (Mikhail Baev)
+
+### 🐛 Bug Fixes
+
+- a5f3a0e linter: Mark missing suggestions as pending (#24956) (Mikhail Baev)
+- a065946 oxlint: Absolutize explicit CLI paths even with --no-ignore (#24646) (Bez Sahara)
+- 17688bb linter/jsx-a11y/interactive-supports-focus: Match eslint behavior for custom components (#24780) (Cole Ellison)
+- 0aef19e linter/typescript/no-confus
+
+... (truncated)]]></description>
+    <pubDate>Mon, 27 Jul 2026 15:59:01 GMT</pubDate>
+  </item>
+  <item>
+    <title>[withastro/astro] @astrojs/cloudflare@14.1.5</title>
+    <link>https://github.com/withastro/astro/releases/tag/%40astrojs/cloudflare%4014.1.5</link>
+    <guid isPermaLink="true">https://github.com/withastro/astro/releases/tag/%40astrojs/cloudflare%4014.1.5</guid>
+    <description><![CDATA[### Patch Changes
+
+- #17376 `0216368` Thanks @astrobot-houston! - Fixes a bug where an explicit `cache: { enabled: false }` in your wrangler config was overridden and forced to `true` when a Workers cache provider was configured
+
+- Updated dependencies \:
+ - @astrojs/underscore-redirects@1.0.3]]></description>
+    <pubDate>Mon, 27 Jul 2026 13:10:34 GMT</pubDate>
+  </item>
+  <item>
+    <title>[open-webui/open-webui] v0.11.0</title>
+    <link>https://github.com/open-webui/open-webui/releases/tag/v0.11.0</link>
+    <guid isPermaLink="true">https://github.com/open-webui/open-webui/releases/tag/v0.11.0</guid>
+    <description><![CDATA[### Added
+
+- 🎨 **Redesigned interface.** Open WebUI has been visually rebuilt from the ground up. All aspects of the User Interface, from the chat view to the admin panel. Now with a narrower conversation column, lighter typography, tidier spacing, consistent menus and dropdowns, clearly outlined text boxes, and settings rearranged. Commit, Commit, Commit, Commit, Commit, Commit, Commit, Commit, Commit, Commit, Commit, Commit, Commit, Commit, Commit, Commit, Commit, Commit, Commit, Commit, Commit, Commit, Commit, Commit, Commit, Commit, Commit, Commit, Commit, Commit, Commit, Commit, Commit, Commit, Commit, #27178, Commit, Commit
+- 🤖 **Sub-agents.** Administrators can now enable sub-agents, which let a model hand parts of a task to background helper agents that run their own tool-driven conversations and report results back into the chat, tuned through new "ENABLE_SUBAGENTS", concurrency, iteration, and system-prompt settings. Commit, Commit, Commit, Commit
+- 📂 **Folder pages.** Ope
+
+... (truncated)]]></description>
+    <pubDate>Mon, 27 Jul 2026 09:30:15 GMT</pubDate>
+  </item>
+  <item>
+    <title>[anomalyco/opencode] v1.18.7</title>
+    <link>https://github.com/anomalyco/opencode/releases/tag/v1.18.7</link>
+    <guid isPermaLink="true">https://github.com/anomalyco/opencode/releases/tag/v1.18.7</guid>
+    <description><![CDATA[## Desktop
+### Bugfixes
+- Remove the extra titlebar inset in fullscreen on macOS.
+- Keep command palette entries from reappearing incorrectly when shadowed commands are removed.
+- Add scrolling to the project selector dropdown when the list is long. (@david1gp)
+
+**Thank you to 2 community contributors:**
+- @ProdigyRahul:
+ - fix(ui): keep mutable selects open (#39027)
+- @david1gp:
+ - fix(app): add scroll to project selector dropdown (#39016)]]></description>
+    <pubDate>Mon, 27 Jul 2026 07:33:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>[jsdom/jsdom] v30.0.0</title>
+    <link>https://github.com/jsdom/jsdom/releases/tag/v30.0.0</link>
+    <guid isPermaLink="true">https://github.com/jsdom/jsdom/releases/tag/v30.0.0</guid>
+    <description><![CDATA[Breaking changes:
+
+- Node.js minimum version raised to `^22.22.2 || ^24.15.0 || >=26.0.0`.
+
+Other changes:
+
+* Added `CSS.escape` and `CSS.supports` functions. (@asamuzaK)
+* Added `'background-position-x'` and `'background-position-y'` CSS properties. (@olagokemills)
+* Fixed `getComputedStyle` to convert length values into pixels. (@asamuzaK)
+* Fixed CSS function serialization, e.g., in the return value of `getPropertyValue`. (@asamuzaK)
+* Fixed the type of error thrown by `document.evaluate` (@dokson)]]></description>
+    <pubDate>Mon, 27 Jul 2026 07:19:09 GMT</pubDate>
+  </item>
+  <item>
+    <title>[ollama/ollama] v0.32.5</title>
+    <link>https://github.com/ollama/ollama/releases/tag/v0.32.5</link>
+    <guid isPermaLink="true">https://github.com/ollama/ollama/releases/tag/v0.32.5</guid>
+    <description><![CDATA[## What's Changed
+
+* Fixed an MLX Metal bug that could reduce output quality for NVFP4 models, particularly Laguna.
+
+**Full Changelog**:]]></description>
+    <pubDate>Mon, 27 Jul 2026 01:25:40 GMT</pubDate>
+  </item>
   <item>
     <title>[axios/axios] v1.19.0</title>
     <link>https://github.com/axios/axios/releases/tag/v1.19.0</link>
@@ -64,18 +289,6 @@ This release raises the form-data security floor, adds configuration and type-sy
     <pubDate>Sat, 25 Jul 2026 14:26:14 GMT</pubDate>
   </item>
   <item>
-    <title>[ollama/ollama] v0.32.4</title>
-    <link>https://github.com/ollama/ollama/releases/tag/v0.32.4</link>
-    <guid isPermaLink="true">https://github.com/ollama/ollama/releases/tag/v0.32.4</guid>
-    <description><![CDATA[## What's Changed
-- Support Laguna on Apple GPUs via the MLX engine
-- Quantize draft-model output heads at the requested type when creating speculative-decoding drafts.
-- Fixed Qwen3 MoE decoding for differently-quantized experts, plus faster packed gate/up projection (~4–9% on M5 Max).
-
-**Full Changelog**:]]></description>
-    <pubDate>Sat, 25 Jul 2026 02:22:12 GMT</pubDate>
-  </item>
-  <item>
     <title>[bluesky-social/atproto] @atproto/dev-env@0.5.39</title>
     <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/dev-env%400.5.39</link>
     <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/dev-env%400.5.39</guid>
@@ -86,38 +299,6 @@ This release raises the form-data security floor, adds configuration and type-sy
  - @atproto/api@0.20.34
  - @atproto/ozone@0.2.21]]></description>
     <pubDate>Fri, 24 Jul 2026 22:34:24 GMT</pubDate>
-  </item>
-  <item>
-    <title>[anomalyco/opencode] v1.18.5</title>
-    <link>https://github.com/anomalyco/opencode/releases/tag/v1.18.5</link>
-    <guid isPermaLink="true">https://github.com/anomalyco/opencode/releases/tag/v1.18.5</guid>
-    <description><![CDATA[## Core
-### Bugfixes
-- Improve Claude adaptive thinking handling across more response shapes.
-- Avoid OpenAI Responses phase handling that could break some conversations.
-- Preserve grep symlink paths in search results. (@remixz)
-- Preserve Mistral reasoning history across turns.
-- Stabilize Mistral prompt caching.
-- Use the correct prompt cache keys for each SDK.
-- Fix MiniMax M3 thinking variant selection.
-
-## Desktop
-### Improvements
-- Support the current server terminal transport.
-- Support current-server review data in the desktop app.
-- Update server discovery flows for current servers.
-- Support current-server session actions, including prompts and commands.
-- Render current-server session timelines.
-- Stream current-server events in the desktop app.
-- Detect legacy and current servers so the desktop app can work with both.
-
-### Bugfixes
-- Restore optimistic timeline updates while responses are still streaming.
-- Hide legacy-only features when connected to current servers.
-- Pre
-
-... (truncated)]]></description>
-    <pubDate>Fri, 24 Jul 2026 22:18:16 GMT</pubDate>
   </item>
   <item>
     <title>[sveltejs/svelte] svelte@5.56.8</title>
@@ -163,28 +344,6 @@ Most operations and web-first assertions now accept a `signal` option that takes
 
 ... (truncated)]]></description>
     <pubDate>Fri, 24 Jul 2026 21:55:03 GMT</pubDate>
-  </item>
-  <item>
-    <title>[fastapi/fastapi] 0.140.0</title>
-    <link>https://github.com/fastapi/fastapi/releases/tag/0.140.0</link>
-    <guid isPermaLink="true">https://github.com/fastapi/fastapi/releases/tag/0.140.0</guid>
-    <description><![CDATA[### Refactors
-
-* ⚡️ Reduce memory usage in dependencies. PR #16049 by @tiangolo.
-
-### Docs
-
-* 📝 Fix links in docs. PR #15967 by @YuriiMotov.
-* 📝 Add Library Skills documentation. PR #16041 by @tiangolo.
-* 📝 Update docs to use uv projects by default. PR #16032 by @tiangolo.
-* 📝 Restructure FastAPI People and related pages. PR #16015 by @tiangolo.
-
-### Internal
-
-* 👷 Add CI memory benchmark. PR #16046 by @tiangolo.
-* 👥 Update FastAPI People - Sponsors. PR #16027 by @tiangolo.
-* 🔥 Remove now-obsolete scripts to generate data for FastAPI People. PR #16016 by @tiangolo.]]></description>
-    <pubDate>Fri, 24 Jul 2026 21:16:20 GMT</pubDate>
   </item>
   <item>
     <title>[open-cli-tools/concurrently] v10.0.4</title>
@@ -254,50 +413,6 @@ specify init my-project
 
 ... (truncated)]]></description>
     <pubDate>Fri, 24 Jul 2026 20:15:28 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-js-v3] v3.1095.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1095.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1095.0</guid>
-    <description><![CDATA[#### 3.1095.0(2026-07-24)
-
-##### Chores
-
-* **codegen:** sync for CBOR large map deser, event-streams exceptions, endpoints features, ChecksumStream fix (#8218) (bb564e57)
-* **core/protocols:** JSON serde consistency testing and perf tuning (#8214) (8dac2514)
-
-##### Documentation Changes
-
-* **client-odb:** Documentation-only update to clarify the operation-specific valid values for the externalIdType field. (e1f6b3ae)
-
-##### New Features
-
-* **clients:** update client endpoints as of 2026-07-24 (f84113a7)
-* **client-neptune-graph:** Update validations for Tag Keys and KMS Key ARNs. (9109ccf7)
-* **client-cognito-identity-provider:** Amazon Cognito user pools now support the AdminGetUserAuthFactors operation, which lets administrators retrieve the configured authentication factors (such as password, SMS, email, and TOTP) available for a specific user in a user pool. (fb3d908c)
-* **client-dynamodb:** Endpoint test standardizations (2e9ccdb4)
-* **client-rtbfabric:** The deprecated inboundLin
-
-... (truncated)]]></description>
-    <pubDate>Fri, 24 Jul 2026 18:44:14 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-07-24) (release-2026-07-24)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-07-24</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-07-24</guid>
-    <description><![CDATA[## General Highlights
-* **Dependency Update**: Updated to the latest SDK module versions
-
-## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/applicationinsights`: [v1.38.0](service/applicationinsights/CHANGELOG.md#v1380-2026-07-24)
- * **Feature**: This release adds Smithy RPC v2 CBOR as an additional protocol alongside the existing AWS JSON 1.1. The SDK will prioritize its most performant protocol.
-* `github.com/aws/aws-sdk-go-v2/service/artifact`: [v1.20.0](service/artifact/CHANGELOG.md#v1200-2026-07-24)
- * **Feature**: Added the PutComplianceInquiryFeedback API, enabling customers to submit feedback on compliance inquiry responses. Customers can rate responses as helpful or not helpful and provide optional reason codes and comments.
-* `github.com/aws/aws-sdk-go-v2/service/cognitoidentityprovider`: [v1.67.0](service/cognitoidentityprovider/CHANGELOG.md#v1670-2026-07-24)
- * **Feature**: Amazon Cognito user pools now support the AdminGetUserAuthFactors operation, which lets ad
-
-... (truncated)]]></description>
-    <pubDate>Fri, 24 Jul 2026 18:41:42 GMT</pubDate>
   </item>
   <item>
     <title>[bluesky-social/social-app] v1.129.0 (1.129.0)</title>
@@ -435,25 +550,6 @@ powershell -ExecutionPolicy Bypass -c "irm |
     <pubDate>Thu, 23 Jul 2026 19:32:19 GMT</pubDate>
   </item>
   <item>
-    <title>[webpack/webpack] v5.109.0</title>
-    <link>https://github.com/webpack/webpack/releases/tag/v5.109.0</link>
-    <guid isPermaLink="true">https://github.com/webpack/webpack/releases/tag/v5.109.0</guid>
-    <description><![CDATA[### Minor Changes
-
-- Default `experiments.typescript` to `"auto"`, enabling built-in TypeScript support on Node.js >= 22.6 when no TypeScript loader is registered. (by @alexander-akait in #21477)
-
-- Default `experiments.css`, `experiments.html` and `experiments.asyncWebAssembly` to `"auto"`, enabling built-in support unless a loader is registered for those files; modules with inline or hook-injected loaders (e.g. html-webpack-plugin templates) keep being parsed as JavaScript. (by @alexander-akait in #21477)
-
-- Add `output.resourceHints` to emit resource hints (`preload`/`prefetch`/`modulepreload`/`preconnect`), on by default for ESM output, plus `module.parser.<type>.urlHints`, `css.fontPreload` and `javascript.dynamicImportCssPreload`. (by @alexander-akait in #21477)
-
-- Add built-in build progress via `infrastructureLogging.progress`, plus `estimatedTime`, `phaseTimings`, progress bar `width` and `progressBar: "auto"` on `ProgressPlugin`. (by @alexander-akait in #21477)
-
-- Concatenate
-
-... (truncated)]]></description>
-    <pubDate>Thu, 23 Jul 2026 19:19:31 GMT</pubDate>
-  </item>
-  <item>
     <title>[pnpm/pnpm] pnpm 11.17 (v11.17.0)</title>
     <link>https://github.com/pnpm/pnpm/releases/tag/v11.17.0</link>
     <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v11.17.0</guid>
@@ -522,25 +618,6 @@ powershell -ExecutionPolicy Bypass -c "irm |
     <pubDate>Thu, 23 Jul 2026 04:45:07 GMT</pubDate>
   </item>
   <item>
-    <title>[zed-industries/zed] v1.12.0</title>
-    <link>https://github.com/zed-industries/zed/releases/tag/v1.12.0</link>
-    <guid isPermaLink="true">https://github.com/zed-industries/zed/releases/tag/v1.12.0</guid>
-    <description><![CDATA[This week's release includes Staged and Unstaged grouping in the Git Panel and multi-select in the File Finder and Text Finder.
-
-## Shipped by the Zed Guild 🛡️
-
-- Improved branch filtering with all, local, and remote options in the branch picker. (#60857; thanks chirivelli)
-- Settings UI: Improved support for window widths below 900 px. (#60786; thanks feitreim)
-- Improved semantic token highlighting to distinguish function parameters from local variables. (#60949; thanks lingyaochu)
-- Fixed workspace diagnostics being cleared when closing a buffer. (#59875; thanks lingyaochu)
-- Git: Fixed the GPG signing passphrase prompt appearing on every commit when `gpg-agent` had the passphrase cached or the key was unprotected. (#61265; thanks RemcoSmitsDev)
-- Fixed toolchain selection being ignored when Pyright or Basedpyright settings were configured without specifying a Python interpreter path. (#59990; thanks lingyaochu)
-- Fixed window management controls being grayed out and unav
-
-... (truncated)]]></description>
-    <pubDate>Thu, 23 Jul 2026 00:16:36 GMT</pubDate>
-  </item>
-  <item>
     <title>[iii-hq/iii] iii 0.22.0 (iii/v0.22.0)</title>
     <link>https://github.com/iii-hq/iii/releases/tag/iii/v0.22.0</link>
     <guid isPermaLink="true">https://github.com/iii-hq/iii/releases/tag/iii/v0.22.0</guid>
@@ -591,38 +668,6 @@ powershell -ExecutionPolicy Bypass -c "irm |
     <pubDate>Wed, 22 Jul 2026 03:02:34 GMT</pubDate>
   </item>
   <item>
-    <title>[oxc-project/oxc] oxlint v1.75.0 &amp; oxfmt v0.60.0 (apps_v1.75.0)</title>
-    <link>https://github.com/oxc-project/oxc/releases/tag/apps_v1.75.0</link>
-    <guid isPermaLink="true">https://github.com/oxc-project/oxc/releases/tag/apps_v1.75.0</guid>
-    <description><![CDATA[## Table of Contents
-
-- [Oxlint v1.75.0](#oxlint-v1.75.0)
-- [Oxfmt v0.60.0](#oxfmt-v0.60.0)
-
-## Oxlint v1.75.0
-
-### 🏆 Highlights
-
-- Announcing Type-Aware Linting Stable
-
-### 🚀 Features
-
-- dd18383 linter/node: Implement no-top-level-await rule (#24634) (Connor Shea)
-- 16a65f2 linter/react: Implement function-component-definition rule (#24471) (Cole Ellison)
-- 7f1f585 linter: Reuse `jest/padding-around-test-blocks` for `vitest/padding-around-test-blocks` (#24519) (Mikhail Baev)
-- 99978a8 linter/import/consistent-type-specifier-style: Support `prefer-top-level-if-only-type-imports` option (#24502) (camc314)
-
-### 🐛 Bug Fixes
-
-- e81b2ff oxlint,oxfmt: Report error for invalid glob patterns (#24744) (leaysgur)
-- 0184ad6 linter/unicorn/no-useless-undefined: Preserve valid parameter defaults (#24686) (camc314)
-- 8694167 linter/eslint/prefer-destructuring: Handle typed declarations (#24616) (camc314)
-- 477cf0f linter/eslint/no-throw-literal: Handle assigned errors (#245
-
-... (truncated)]]></description>
-    <pubDate>Tue, 21 Jul 2026 23:22:20 GMT</pubDate>
-  </item>
-  <item>
     <title>[fastify/fastify-vite] @fastify/vite@9.2.0</title>
     <link>https://github.com/fastify/fastify-vite/releases/tag/%40fastify/vite%409.2.0</link>
     <guid isPermaLink="true">https://github.com/fastify/fastify-vite/releases/tag/%40fastify/vite%409.2.0</guid>
@@ -630,15 +675,6 @@ powershell -ExecutionPolicy Bypass -c "irm |
 
 - 58d7d59: Expose "resolvePkgDir" function in utils so @fastify/react can use it to resolve relative paths in vite's `build.outDir` config.]]></description>
     <pubDate>Tue, 21 Jul 2026 17:36:10 GMT</pubDate>
-  </item>
-  <item>
-    <title>[withastro/astro] @astrojs/language-server@2.16.13</title>
-    <link>https://github.com/withastro/astro/releases/tag/%40astrojs/language-server%402.16.13</link>
-    <guid isPermaLink="true">https://github.com/withastro/astro/releases/tag/%40astrojs/language-server%402.16.13</guid>
-    <description><![CDATA[### Patch Changes
-
-- #17465 `6a1c1d8` Thanks @florian-lefebvre! - Fixes a case where errors in files included in tsconfig project references would never be caught]]></description>
-    <pubDate>Tue, 21 Jul 2026 12:34:27 GMT</pubDate>
   </item>
   <item>
     <title>[web-infra-dev/rspack] v2.1.5</title>
@@ -797,16 +833,6 @@ See GitHub Releases for more information.
     <pubDate>Mon, 20 Jul 2026 17:06:31 GMT</pubDate>
   </item>
   <item>
-    <title>[panva/node-oidc-provider] v9.10.0</title>
-    <link>https://github.com/panva/node-oidc-provider/releases/tag/v9.10.0</link>
-    <guid isPermaLink="true">https://github.com/panva/node-oidc-provider/releases/tag/v9.10.0</guid>
-    <description><![CDATA[### Features
-
-* Experimental support for OpenID for Verifiable Credential Issuance (43a5a88)
-* update Attestation-Based Client Authentication to -10 (b833e2f)]]></description>
-    <pubDate>Mon, 20 Jul 2026 11:42:52 GMT</pubDate>
-  </item>
-  <item>
     <title>[lynx-family/lynx] 4.0.0</title>
     <link>https://github.com/lynx-family/lynx/releases/tag/4.0.0</link>
     <guid isPermaLink="true">https://github.com/lynx-family/lynx/releases/tag/4.0.0</guid>
@@ -868,38 +894,6 @@ pod 'PrimJS', '4.0.0', :subspecs => ['quickjs', 'napi']
 
 **Full Changelog**:]]></description>
     <pubDate>Mon, 20 Jul 2026 08:23:56 GMT</pubDate>
-  </item>
-  <item>
-    <title>[sveltejs/kit] @sveltejs/kit@2.70.1</title>
-    <link>https://github.com/sveltejs/kit/releases/tag/%40sveltejs/kit%402.70.1</link>
-    <guid isPermaLink="true">https://github.com/sveltejs/kit/releases/tag/%40sveltejs/kit%402.70.1</guid>
-    <description><![CDATA[### Patch Changes
-
-- docs: update links to hooks documentation (#16417)]]></description>
-    <pubDate>Sun, 19 Jul 2026 00:50:10 GMT</pubDate>
-  </item>
-  <item>
-    <title>[redwoodjs/sdk] v1.5.9</title>
-    <link>https://github.com/redwoodjs/sdk/releases/tag/v1.5.9</link>
-    <guid isPermaLink="true">https://github.com/redwoodjs/sdk/releases/tag/v1.5.9</guid>
-    <description><![CDATA[## What's Changed
-* Fix HMR-triggered runDirectiveScan to only happen on import change by @chrisvdm in 
-* Strip optimizer query strings from module IDs before normalizing by @justinvdm in 
-
-
-**Full Changelog**:]]></description>
-    <pubDate>Fri, 17 Jul 2026 19:26:58 GMT</pubDate>
-  </item>
-  <item>
-    <title>[anomalyco/opentui] Release v0.4.5 (v0.4.5)</title>
-    <link>https://github.com/anomalyco/opentui/releases/tag/v0.4.5</link>
-    <guid isPermaLink="true">https://github.com/anomalyco/opentui/releases/tag/v0.4.5</guid>
-    <description><![CDATA[## What's Changed
-* core: add relocatable Node runtime assets by @simonklee in 
-
-
-**Full Changelog**:]]></description>
-    <pubDate>Fri, 17 Jul 2026 11:01:00 GMT</pubDate>
   </item>
 </channel>
 </rss>
