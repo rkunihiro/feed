@@ -5,8 +5,278 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Wed, 29 Jul 2026 22:17:45 GMT</lastBuildDate>
+  <lastBuildDate>Thu, 30 Jul 2026 22:20:52 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[fastify/fastify-vite] @fastify/react@1.2.2</title>
+    <link>https://github.com/fastify/fastify-vite/releases/tag/%40fastify/react%401.2.2</link>
+    <guid isPermaLink="true">https://github.com/fastify/fastify-vite/releases/tag/%40fastify/react%401.2.2</guid>
+    <description><![CDATA[### Patch Changes
+
+- Updated dependencies [03cf160]
+ - @fastify/vite@10.0.0]]></description>
+    <pubDate>Thu, 30 Jul 2026 19:34:31 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1099.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1099.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1099.0</guid>
+    <description><![CDATA[#### 3.1099.0(2026-07-30)
+
+##### Chores
+
+* update vscode repo settings (#8236) (10f5fc09)
+
+##### New Features
+
+* **clients:** update client endpoints as of 2026-07-30 (e93ec43a)
+* **client-pricing-plan-manager:** Adds support for Public PricingPlanManager SDK (f5af47b6)
+* **client-securityagent:** Adds support for providing a branch override when configured integrated repositories (0f5a2dd0)
+* **client-iam:** Improved IAM Policy Simulator accuracy. Simulator now evaluates SCP conditions and resource scoping, returns explicitDeny for explicit SCP denials, and reports accurate cross-account decisions. (d8cd86e4)
+* **client-network-firewall:** Adds UPDATING field to Container Association Status (65a8fd3f)
+* **client-kafka:** Amazon MSK Express brokers now support streaming tables for Apache Iceberg, continuously materializing Apache Kafka topics as Iceberg tables in Amazon S3 Tables. Express brokers also now support data delivery to Amazon S3 general purpose buckets. (16236255)
+* **client
+
+... (truncated)]]></description>
+    <pubDate>Thu, 30 Jul 2026 18:47:46 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-07-30) (release-2026-07-30)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-07-30</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-07-30</guid>
+    <description><![CDATA[## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcorecontrol`: [v1.53.0](service/bedrockagentcorecontrol/CHANGELOG.md#v1530-2026-07-30)
+ * **Feature**: Adds support for configuring models through the OpenResponses API for custom evaluators. CreateEvaluator and UpdateEvaluator now accept an OpenResponses model configuration for LLM-as-a-Judge evaluations.
+* `github.com/aws/aws-sdk-go-v2/service/iam`: [v1.57.0](service/iam/CHANGELOG.md#v1570-2026-07-30)
+ * **Feature**: Improved IAM Policy Simulator accuracy. Simulator now evaluates SCP conditions and resource scoping, returns explicitDeny for explicit SCP denials, and reports accurate cross-account decisions.
+* `github.com/aws/aws-sdk-go-v2/service/kafka`: [v1.57.0](service/kafka/CHANGELOG.md#v1570-2026-07-30)
+ * **Feature**: Amazon MSK Express brokers now support streaming tables for Apache Iceberg, continuously materializing Apache Kafka topics as Iceberg tables in Amazon S3 Tables. Express brokers also now supp
+
+... (truncated)]]></description>
+    <pubDate>Thu, 30 Jul 2026 18:44:09 GMT</pubDate>
+  </item>
+  <item>
+    <title>[beercss/beercss] v5.0.0</title>
+    <link>https://github.com/beercss/beercss/releases/tag/v5.0.0</link>
+    <guid isPermaLink="true">https://github.com/beercss/beercss/releases/tag/v5.0.0</guid>
+    <description><![CDATA[### CHANGELOG 5.0.0
+
+### 🚀 Added
+- Updated icon fonts 
+- Added support for modules. The bundle can be reduced by up to 10x 😮 
+
+### 🩹 Fixed
+- Fixed `round` helper on some use cases of `button` 
+- The `no-round` helper is back and now is rendering square corners 
+- Fixed color theme on `nav` element 
+
+### ⚠️ Breaking changes
+- Updated `button` inside `nav` `group` element
+
+---
+
+### Added support for modules. The bundle can be reduced by up to 10x 😮
+
+Read the fully docs here 
+
+---
+
+### Updated default `button` inside `nav` `group` element
+
+```html
+// Before
+
+<nav class="group">
+ <button class="left-round">Button</button>
+ <button class="no-round">Button</button>
+ <button class="no-round">Button</button>
+ <button class="right-round">Button</button>
+</nav>
+```
+
+```html
+// After
+
+<nav class="group">
+ <button class="left-round">Button</button>
+ <button>Button</button>
+ <button>Button</button>
+ <button class="right-round">Button</button>
+</nav>
+`
+
+... (truncated)]]></description>
+    <pubDate>Thu, 30 Jul 2026 17:27:31 GMT</pubDate>
+  </item>
+  <item>
+    <title>[devcontainers/images] v0.4.30</title>
+    <link>https://github.com/devcontainers/images/releases/tag/v0.4.30</link>
+    <guid isPermaLink="true">https://github.com/devcontainers/images/releases/tag/v0.4.30</guid>
+    <description><![CDATA[## What's Changed
+* Use boolean values in README.md for Java features by @s-h-a-d-o-w in 
+* [javascript]: Remove support for EOL Node20 & Add support for Node26 (trixie&bookworm) by @V-Subhankar-infy in 
+* Set LANG=C.UTF-8 in javascript-node and typescript-node images by @Kaniska244 with @Copilot in 
+* [universal] - Removing obsolete NVS (`GHSA-r4q5-vmmm-2653`) and patching pip for Python 3.13.8 (`GHSA-jp4c-xjxw-mgf9`) by @Kaniska244 in 
+* [anaconda]: Security updates for Python Packages: click & idna by @V-Subhankar-infy in 
+* Use GitHub App token instead of PAT in release workflows by @abdurriq in 
+
+## New Contributors
+* @s-h-a-d-o-w made their first contribution in 
+
+**Full Changelog**:]]></description>
+    <pubDate>Thu, 30 Jul 2026 16:38:39 GMT</pubDate>
+  </item>
+  <item>
+    <title>[microsoft/playwright] v1.62.1</title>
+    <link>https://github.com/microsoft/playwright/releases/tag/v1.62.1</link>
+    <guid isPermaLink="true">https://github.com/microsoft/playwright/releases/tag/v1.62.1</guid>
+    <description><![CDATA[### Bug Fixes
+
+- #41989 [Regression]: tsconfig "extends" bare specifier isn't resolved via node_modules walk-up like tsc (fatal since 1.62)
+- #41998 [Regression]: directory-form tsconfig project references ("path": "../pkg") fail to resolve (fatal since 1.62)
+- #41985 Accessibility snapshot drops button name when text is nested inside spans with aria-hidden SVG
+- #42000 [Regression]: page.evaluate arg of a branded primitive type (string & { brand }) no longer type-checks since 1.62
+- #42013 [BUG]Image-type actionable elements are not presented in the snapshot.]]></description>
+    <pubDate>Thu, 30 Jul 2026 16:35:55 GMT</pubDate>
+  </item>
+  <item>
+    <title>[facebook/lexical] v0.49.0</title>
+    <link>https://github.com/facebook/lexical/releases/tag/v0.49.0</link>
+    <guid isPermaLink="true">https://github.com/facebook/lexical/releases/tag/v0.49.0</guid>
+    <description><![CDATA[v0.49.0 is a monthly release headlined by the completion of the `$config` protocol migration for Lexical's built-in node classes (#8640), a breaking change that replaces per-node `getType`/`clone`/`importJSON`/`importDOM`/`transform` boilerplate with runtime-synthesized behavior. It ships with a cluster of follow-up fixes hardening the synthesized `getType` and `clone` (including a stack overflow in compiled builds), an opt-in sticky horizontal scrollbar for overflowing tables, and a broad batch of fixes across tables, Markdown, HTML, code highlighting, and selection.
+
+## Breaking Changes
+
+* `lexical` — Built-in node classes are ported to the `$config` protocol. The static `importJSON`, `importDOM`, `clone`, and `transform` methods are no longer present on ported nodes; use the higher-level equivalents instead (`LexicalEditor.parseEditorState`/`$generateNodesFromDOM`, the `$cloneWithProperties` helper, and extensions or `$transform` in `$config`). `getType` is unchanged and safe to
+
+... (truncated)]]></description>
+    <pubDate>Thu, 30 Jul 2026 16:18:43 GMT</pubDate>
+  </item>
+  <item>
+    <title>[bluesky-social/atproto] @atproto/pds@0.5.22</title>
+    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/pds%400.5.22</link>
+    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/pds%400.5.22</guid>
+    <description><![CDATA[### Patch Changes
+
+- #5277 `44c6cef` Thanks @blackmichael! - add blobUploadLimit to com.atproto.server.describeServer
+
+- #5266 `f136380` Thanks @matthieusieben! - Errors thrown by the scope-reference cache (redis or in-memory) are now logged via the OAuth logger (previously they were silently ignored on read) while continuing to degrade to a cache miss and a refetch from entryway rather than breaking token verification.
+
+- Updated dependencies [`f136380`, `87e6a95`, `87e6a95`, `f136380`, `9556dcb`, `87e6a95`, `f136380`, `f136380`, `f136380`, `37989bb`, `87e6a95`, `87e6a95`, `87e6a95`, `f136380`]:
+ - @atproto/oauth-provider@0.21.0
+ - @atproto-labs/simple-store@0.5.0
+ - @atproto/oauth-scopes@0.5.7
+ - @atproto-labs/simple-store-memory@0.2.5
+ - @atproto-labs/simple-store-redis@0.1.5
+ - @atproto-labs/fetch-node@0.3.6
+ - @atproto/xrpc@0.8.7
+ - @atproto/xrpc-server@0.11.12
+ - @atproto-labs/xrpc-utils@0.1.11
+ - @atproto/lex@0.3.1]]></description>
+    <pubDate>Thu, 30 Jul 2026 15:49:45 GMT</pubDate>
+  </item>
+  <item>
+    <title>[anomalyco/opencode] v1.18.10</title>
+    <link>https://github.com/anomalyco/opencode/releases/tag/v1.18.10</link>
+    <guid isPermaLink="true">https://github.com/anomalyco/opencode/releases/tag/v1.18.10</guid>
+    <description><![CDATA[## Core
+- Discover available Modal models automatically. (@devennavani)
+
+## Desktop
+### Improvements
+- Prevent adding the same attachment more than once.
+- Always show the new session button.
+- Improve toast notifications with better stacking, dismissal, and mobile layout.
+- Refine tab hover, active, and overflow states.
+
+### Bugfixes
+- Repair malformed saved tabs so broken tab state no longer persists across launches. (@OpeOginni)
+- Hide the model variant selector until model data finishes loading.
+- Preserve the custom agent picker for existing users.
+
+**Thank you to 3 community contributors:**
+- @lakshyaag-tavily:
+ - docs(ecosystem): add opencode-tavily plugin (#38709)
+- @devennavani:
+ - feat: discover Modal models (#39066)
+- @OpeOginni:
+ - fix(app): repair malformed persisted tabs (#39645)]]></description>
+    <pubDate>Thu, 30 Jul 2026 14:43:53 GMT</pubDate>
+  </item>
+  <item>
+    <title>[vitejs/vite] create-vite@9.1.2</title>
+    <link>https://github.com/vitejs/vite/releases/tag/create-vite%409.1.2</link>
+    <guid isPermaLink="true">https://github.com/vitejs/vite/releases/tag/create-vite%409.1.2</guid>
+    <description><![CDATA[Please refer to CHANGELOG.md for details.]]></description>
+    <pubDate>Thu, 30 Jul 2026 12:03:27 GMT</pubDate>
+  </item>
+  <item>
+    <title>[github/spec-kit] Spec Kit - 0.15.0 (v0.15.0)</title>
+    <link>https://github.com/github/spec-kit/releases/tag/v0.15.0</link>
+    <guid isPermaLink="true">https://github.com/github/spec-kit/releases/tag/v0.15.0</guid>
+    <description><![CDATA[## Install
+
+```bash
+uv tool install specify-cli --from git+
+specify init my-project
+```
+
+## What's Changed
+
+- chore: bump version to 0.15.0
+- Add yolo to community workflow catalog (#3864)
+- fix(workflows): guard the shell step's timeout check against OverflowError (#3865)
+- Add Intent Reconciliation extension to community catalog (#3858)
+- fix(workflows): validate prompt step 'timeout' like the shell step (#3847)
+- fix: add utf-8 encoding to registry file open calls (#3816)
+- fix: eliminate TOCTOU race in file unlink calls (#3815)
+- test(workflows): name the condition-rejection tests for the real boundary (#3808)
+- fix: eliminate TOCTOU race in file unlink calls (#3811)
+- fix(presets): escape user-supplied catalog name/URL in add/remove output (#3806)
+- fix: add missing utf-8 encoding to registry file open calls (#3810)
+- [bug-fix] Fix upgrade-overwrites-copilot-skills: pass force=True to extension skill re-registration after upgrade (#3853)
+- fix(integrations): don't abort uninstall 
+
+... (truncated)]]></description>
+    <pubDate>Thu, 30 Jul 2026 12:01:11 GMT</pubDate>
+  </item>
+  <item>
+    <title>[BabylonJS/Babylon.js] 9.19.0</title>
+    <link>https://github.com/BabylonJS/Babylon.js/releases/tag/9.19.0</link>
+    <guid isPermaLink="true">https://github.com/BabylonJS/Babylon.js/releases/tag/9.19.0</guid>
+    <description><![CDATA[### Core
+
+- Restore transitive side-effect registrations - [_Bug Fix_] by RaananW (#18751)
+
+### Loaders
+
+- Restore transitive side-effect registrations - [_Bug Fix_] by RaananW (#18751)]]></description>
+    <pubDate>Thu, 30 Jul 2026 07:41:03 GMT</pubDate>
+  </item>
+  <item>
+    <title>[vercel-labs/skills] v1.5.21</title>
+    <link>https://github.com/vercel-labs/skills/releases/tag/v1.5.21</link>
+    <guid isPermaLink="true">https://github.com/vercel-labs/skills/releases/tag/v1.5.21</guid>
+    <description><![CDATA[## Changelog
+
+- fix preserve well-known install urls (#1811)
+- refactor: share zip extraction without yauzl (#1809)
+- feat: support installing from direct archive URLs (#1671)
+
+## Contributors
+
+@lanzhi-lee,@quuu]]></description>
+    <pubDate>Thu, 30 Jul 2026 00:05:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>[sveltejs/kit] @sveltejs/kit@2.70.2</title>
+    <link>https://github.com/sveltejs/kit/releases/tag/%40sveltejs/kit%402.70.2</link>
+    <guid isPermaLink="true">https://github.com/sveltejs/kit/releases/tag/%40sveltejs/kit%402.70.2</guid>
+    <description><![CDATA[### Patch Changes
+
+- fix: prevent quadratic backtracking in `Accept` header content negotiation (#1)]]></description>
+    <pubDate>Wed, 29 Jul 2026 22:58:50 GMT</pubDate>
+  </item>
   <item>
     <title>[rancher-sandbox/rancher-desktop] Rancher Desktop 1.24 (v1.24.0)</title>
     <link>https://github.com/rancher-sandbox/rancher-desktop/releases/tag/v1.24.0</link>
@@ -38,91 +308,6 @@ Pick your language under Preferences > Application > General. Along with English
 
 ... (truncated)]]></description>
     <pubDate>Wed, 29 Jul 2026 21:34:21 GMT</pubDate>
-  </item>
-  <item>
-    <title>[BabylonJS/Babylon.js] 9.18.2</title>
-    <link>https://github.com/BabylonJS/Babylon.js/releases/tag/9.18.2</link>
-    <guid isPermaLink="true">https://github.com/BabylonJS/Babylon.js/releases/tag/9.18.2</guid>
-    <description><![CDATA[### Core
-
-- build: update dependencies and clear npm audit findings - by RaananW (#18744)
-- Fix pure engine disposal without loading screen registration - [_Bug Fix_] by RaananW (#18747)
-- fix(AudioV2): spatialize MediaStream/WebRTC sound sources out of the box - by RaananW (#18745)
-- Fix .babylonproj transform node duplication - [_Bug Fix_] by georginahalpern (#18742)
-
-### GUI
-
-- build: update dependencies and clear npm audit findings - by RaananW (#18744)
-
-### Inspector
-
-- build: update dependencies and clear npm audit findings - by RaananW (#18744)
-
-### Loaders
-
-- build: update dependencies and clear npm audit findings - by RaananW (#18744)
-
-### Lottie Player
-
-- Replace the Lottie player's sprite atlas with a stencil-then-cover vector renderer - by VicenteCartas (#18743)
-
-### Playground
-
-- build: update dependencies and clear npm audit findings - by RaananW (#18744)
-
-### Serializers
-
-- build: update dependencies and clear npm audit findings - by RaananW (#18744)
-
-### Smart Filters
-
-
-
-... (truncated)]]></description>
-    <pubDate>Wed, 29 Jul 2026 21:18:32 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-js-v3] v3.1098.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1098.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1098.0</guid>
-    <description><![CDATA[#### 3.1098.0(2026-07-29)
-
-##### Chores
-
-* **codegen:** sync for CBOR v2 codec (#8233) (e40ebac1)
-* **core/protocols:** expose v2 JSON codecs (#8232) (e6fa5566)
-
-##### Documentation Changes
-
-* **client-database-migration-service:** Updated documentation for various DMS Schema Conversion operations (aea8b4eb)
-
-##### New Features
-
-* **clients:** update client endpoints as of 2026-07-29 (d2fe87e7)
-* **client-iotsitewise:** We have released a new set of APIs in support of a major new feature within AWS IoT SiteWise called Scenario Discover. Please see user guide about the feature and the API guide in public documentation for new APIs. (61dd73b2)
-* **client-glue:** Adding filtering, partitioning, and VPC support to AWS Glue REST API connector (d43351c5)
-* **client-wafv2:** AWS WAF now supports pre-parse text transformations, letting you normalize raw query strings before parsing, available on rule statements that use SingleQueryArgument or AllQueryArguments as the FieldToMatch. AWS WAF also
-
-... (truncated)]]></description>
-    <pubDate>Wed, 29 Jul 2026 18:47:05 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-07-29) (release-2026-07-29)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-07-29</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-07-29</guid>
-    <description><![CDATA[## General Highlights
-* **Dependency Update**: Updated to the latest SDK module versions
-
-## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/databasemigrationservice`: [v1.66.2](service/databasemigrationservice/CHANGELOG.md#v1662-2026-07-29)
- * **Documentation**: Updated documentation for various DMS Schema Conversion operations
-* `github.com/aws/aws-sdk-go-v2/service/ec2`: [v1.318.0](service/ec2/CHANGELOG.md#v13180-2026-07-29)
- * **Feature**: This release adds support for policy-based routing on AWS Transit Gateway, enabling you to route traffic based on 5-tuple matching (source IP, destination IP, source port, destination port, and protocol) using new policy table entry APIs that direct matching traffic to a target route table.
-* `github.com/aws/aws-sdk-go-v2/service/gameliftstreams`: [v1.17.0](service/gameliftstreams/CHANGELOG.md#v1170-2026-07-29)
- * **Feature**: Adds ListApplicationShaderCaches API to retrieve shader cache metadata for applications and adds stream URLs, w
-
-... (truncated)]]></description>
-    <pubDate>Wed, 29 Jul 2026 18:42:26 GMT</pubDate>
   </item>
   <item>
     <title>[fastapi/fastapi] 0.141.1</title>
@@ -190,35 +375,6 @@ Pick your language under Preferences > Application > General. Along with English
 - Updated dependencies \:
  - @astrojs/underscore-redirects@1.0.3]]></description>
     <pubDate>Wed, 29 Jul 2026 14:21:56 GMT</pubDate>
-  </item>
-  <item>
-    <title>[github/spec-kit] Spec Kit - 0.14.4 (v0.14.4)</title>
-    <link>https://github.com/github/spec-kit/releases/tag/v0.14.4</link>
-    <guid isPermaLink="true">https://github.com/github/spec-kit/releases/tag/v0.14.4</guid>
-    <description><![CDATA[## Install
-
-```bash
-uv tool install specify-cli --from git+
-specify init my-project
-```
-
-## What's Changed
-
-- chore: bump version to 0.14.4
-- fix(bundler): degrade non-UTF-8 config reads into BundlerError (#3784)
-- fix(workflows): escape the step-progress line so step ids render (and `/` stops failing the run) (#3783)
-- Update Agent Parity Governance preset to v0.4.1 (#3830)
-- fix(integrations): reject empty --commands-dir in generic raw_options (#3714)
-- fix(presets): guard non-list/non-mapping provides.templates in PresetManifest (#3712)
-- fix(auth): resolve az via shutil.which so azure-cli token works on Windows (#3709)
-- fix(workflows): reject falsy non-mapping workflow-catalogs.yml top level (#3707)
-- fix(integrations): render hyphenated /speckit-<name> for Droid (always-slash agent) (#3688)
-- [preset] Update A11Y Governance preset to v0.4.2 (#3828)
-- [preset] Update Parallel Autonomous Run Governance to v0.2.4 (#3825)
-- fix: correct Optional type annotation for _resolved_dir para
-
-... (truncated)]]></description>
-    <pubDate>Wed, 29 Jul 2026 12:09:19 GMT</pubDate>
   </item>
   <item>
     <title>[web-infra-dev/rspack] v2.1.7</title>
@@ -346,29 +502,6 @@ There are no breaking changes to the configuration of the uv build backend. If y
 
 ... (truncated)]]></description>
     <pubDate>Tue, 28 Jul 2026 18:58:12 GMT</pubDate>
-  </item>
-  <item>
-    <title>[anomalyco/opencode] v1.18.9</title>
-    <link>https://github.com/anomalyco/opencode/releases/tag/v1.18.9</link>
-    <guid isPermaLink="true">https://github.com/anomalyco/opencode/releases/tag/v1.18.9</guid>
-    <description><![CDATA[## Core
-### Bugfixes
-- Restored compatibility with legacy MCP SDK clients.
-
-## Desktop
-### Bugfixes
-- Fixed a Solid cleanup crash that could break navigation in the desktop app.
-- Fixed home session loading so the session list can update without suspending the whole page.
-
-### Improvements
-- Removed the extra vertical borders from the V2 home projects view.
-- Added an opt-in V2 desktop sidecar backed by the bundled CLI service.
-- Added collapsible model provider sections in V2 settings.
-
-**Thank you to 1 community contributor:**
-- @roborew:
- - fix(desktop): patch @dnd-kit/solid to preserve core scroll plugins (#38119)]]></description>
-    <pubDate>Tue, 28 Jul 2026 18:15:01 GMT</pubDate>
   </item>
   <item>
     <title>[webpack/webpack] v5.109.2</title>
@@ -547,6 +680,28 @@ There are no breaking changes to the configuration of the uv build backend. If y
     <pubDate>Mon, 27 Jul 2026 15:59:01 GMT</pubDate>
   </item>
   <item>
+    <title>[podman-desktop/podman-desktop] v1.29.0</title>
+    <link>https://github.com/podman-desktop/podman-desktop/releases/tag/v1.29.0</link>
+    <guid isPermaLink="true">https://github.com/podman-desktop/podman-desktop/releases/tag/v1.29.0</guid>
+    <description><![CDATA[## What's Changed
+* chore(deps): add jsonc-parser for SchemaStore sync by @simonrey1 in 
+* feat(renderer): modernize StatusDot with SVG icons and a11y improvements by @vancura in 
+* chore(deps-dev): bump eslint-plugin-storybook from 10.4.2 to 10.4.3 by @dependabot[bot] in 
+* chore(deps-dev): bump the storybook group with 5 updates by @dependabot[bot] in 
+* chore: fix pnpm-lock duplicated entries by @benoitf in 
+* chore(deps-dev): bump prettier from 3.8.3 to 3.8.4 by @dependabot[bot] in 
+* chore(deps-dev): bump the typescript-eslint group across 1 directory with 3 updates by @dependabot[bot] in 
+* chore(deps): bump semver from 7.8.3 to 7.8.4 by @dependabot[bot] in 
+* chore(test): decrease version before testing app update by 2 by @odockal in 
+* chore(deps): bump electron from 42.3.3 to 42.4.0 by @dependabot[bot] in 
+* chore: 📢 Bump version to 1.29.0 by @podman-desktop-bot in 
+* fix(ci): update podman org in TF install script by @amisskii in 
+* fix(extension/kind): incorrec
+
+... (truncated)]]></description>
+    <pubDate>Mon, 27 Jul 2026 14:25:08 GMT</pubDate>
+  </item>
+  <item>
     <title>[open-webui/open-webui] v0.11.0</title>
     <link>https://github.com/open-webui/open-webui/releases/tag/v0.11.0</link>
     <guid isPermaLink="true">https://github.com/open-webui/open-webui/releases/tag/v0.11.0</guid>
@@ -618,18 +773,6 @@ This release raises the form-data security floor, adds configuration and type-sy
     <pubDate>Sat, 25 Jul 2026 14:26:14 GMT</pubDate>
   </item>
   <item>
-    <title>[bluesky-social/atproto] @atproto/dev-env@0.5.39</title>
-    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/dev-env%400.5.39</link>
-    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/dev-env%400.5.39</guid>
-    <description><![CDATA[### Patch Changes
-
-- Updated dependencies [`102503c`, `5c5df26`]:
- - @atproto/bsky@0.0.267
- - @atproto/api@0.20.34
- - @atproto/ozone@0.2.21]]></description>
-    <pubDate>Fri, 24 Jul 2026 22:34:24 GMT</pubDate>
-  </item>
-  <item>
     <title>[sveltejs/svelte] svelte@5.56.8</title>
     <link>https://github.com/sveltejs/svelte/releases/tag/svelte%405.56.8</link>
     <guid isPermaLink="true">https://github.com/sveltejs/svelte/releases/tag/svelte%405.56.8</guid>
@@ -646,33 +789,6 @@ This release raises the form-data security floor, adds configuration and type-sy
     <guid isPermaLink="true">https://github.com/denoland/rusty_v8/releases/tag/v150.4.0</guid>
     <description><![CDATA[No release notes provided.]]></description>
     <pubDate>Fri, 24 Jul 2026 22:03:11 GMT</pubDate>
-  </item>
-  <item>
-    <title>[microsoft/playwright] v1.62.0</title>
-    <link>https://github.com/microsoft/playwright/releases/tag/v1.62.0</link>
-    <guid isPermaLink="true">https://github.com/microsoft/playwright/releases/tag/v1.62.0</guid>
-    <description><![CDATA[## 🧱 New component testing model
-
-Component testing moves to a **stories and galleries** model.
-A **story** wraps your component in one specific scenario — hard-coded props, mock data, providers — and a **gallery** page that you serve renders stories on demand.
-The new fixtures.mount fixture navigates to the gallery, mounts a story by id, and returns a Locator scoped to the story's root element:
-
-```js
-test('click should expand', async ({ mount }) => {
- const component = await mount('components/Expandable/Stateful');
- await component.getByRole('button').click;
- await expect(component.getByTestId('expanded')).toHaveValue('true');
-});
-```
-
-Pass a story type as a template argument to type-check its props, and use `update(props)` / `unmount` on the returned locator to re-render or tear down within a test.
-
-## 🛑 Cancel operations with AbortSignal
-
-Most operations and web-first assertions now accept a `signal` option that takes an `AbortSignal`, letting you cancel long-ru
-
-... (truncated)]]></description>
-    <pubDate>Fri, 24 Jul 2026 21:55:03 GMT</pubDate>
   </item>
   <item>
     <title>[open-cli-tools/concurrently] v10.0.4</title>
@@ -769,113 +885,6 @@ GHSA-4cwx-7wf7-3272 and GHSA-jr45-8vmc-qm54 affect the cache interceptor in Undi
 
 ... (truncated)]]></description>
     <pubDate>Fri, 24 Jul 2026 04:23:43 GMT</pubDate>
-  </item>
-  <item>
-    <title>[riot/riot] v10.1.5</title>
-    <link>https://github.com/riot/riot/releases/tag/v10.1.5</link>
-    <guid isPermaLink="true">https://github.com/riot/riot/releases/tag/v10.1.5</guid>
-    <description><![CDATA[- Fix]]></description>
-    <pubDate>Thu, 23 Jul 2026 19:32:19 GMT</pubDate>
-  </item>
-  <item>
-    <title>[denoland/deno] v2.9.4</title>
-    <link>https://github.com/denoland/deno/releases/tag/v2.9.4</link>
-    <guid isPermaLink="true">https://github.com/denoland/deno/releases/tag/v2.9.4</guid>
-    <description><![CDATA[### 2.9.4 / 2026.07.23
-
-- feat(desktop): enable `--hmr` for React Router (#35900)
-- feat(ext/node): add a byteLength/length parameter to
- Buffer.indexOf/lastIndexOf/includes (#35872)
-- feat(ext/node): support raw chacha20 cipher in crypto.createCipheriv (#36016)
-- feat: upgrade V8 to 150.2.0 (#36098)
-- fix(add): support --minimum-dependency-age flag in deno add/remove (#36099)
-- fix(cache): store Web Cache under origin data (#36145)
-- fix(canvas): require FFI permission for native window handles (#36080)
-- fix(clean): reject symlinked node_modules cleanup roots (#36190)
-- fix(compile): bump libsui to 0.16.4 to fix Windows resource SizeOfImage
- (#36242)
-- fix(core): allow dynamic imports during cached module evaluation (#36258)
-- fix(core): bound error graph conversion (#36070)
-- fix(core): enforce JSON requests in FsModuleLoader (#36137)
-- fix(core): handle malformed error constructors (#36071)
-- fix(core): stop rejected dynamic imports before loading (#36136)
-- fix(d
-
-... (truncated)]]></description>
-    <pubDate>Thu, 23 Jul 2026 16:59:31 GMT</pubDate>
-  </item>
-  <item>
-    <title>[vitejs/vite] plugin-legacy@8.2.2</title>
-    <link>https://github.com/vitejs/vite/releases/tag/plugin-legacy%408.2.2</link>
-    <guid isPermaLink="true">https://github.com/vitejs/vite/releases/tag/plugin-legacy%408.2.2</guid>
-    <description><![CDATA[Please refer to CHANGELOG.md for details.]]></description>
-    <pubDate>Thu, 23 Jul 2026 04:45:07 GMT</pubDate>
-  </item>
-  <item>
-    <title>[iii-hq/iii] iii 0.22.0 (iii/v0.22.0)</title>
-    <link>https://github.com/iii-hq/iii/releases/tag/iii/v0.22.0</link>
-    <guid isPermaLink="true">https://github.com/iii-hq/iii/releases/tag/iii/v0.22.0</guid>
-    <description><![CDATA[**Full Changelog**:]]></description>
-    <pubDate>Wed, 22 Jul 2026 17:34:19 GMT</pubDate>
-  </item>
-  <item>
-    <title>[vercel-labs/skills] v1.5.20</title>
-    <link>https://github.com/vercel-labs/skills/releases/tag/v1.5.20</link>
-    <guid isPermaLink="true">https://github.com/vercel-labs/skills/releases/tag/v1.5.20</guid>
-    <description><![CDATA[## Changelog
-
-- test: make warning sanitization coverage Windows-safe (#1755)
-- fix: honor GH_HOST for GitHub Enterprise shorthand (#1752)
-- Add Grok Build agent support (#1708)
-- feat: add Kimchi agent support (#1707)
-- fix(update): support full-depth skill updates (#1705)
-- fix: apply claude-code symlink exemption to blob install path (#1608)
-- fix: clean up upstream-deleted skills whose lock key differs from folder name (#1570)
-- feat: show skill origin in list output (#1450)
-- fix: remove missing skills from lock files during update/uninstall (#1357)
-- fix: warn instead of silently skipping malformed SKILL.md files (#1058) (#1059)
-- fix(cli): exit 1 on unknown command and honour subcommand --help (#1040)
-
-## Contributors
-
-@ADM-NKH,@IsmaelMartinez @Ygilany,@akunzai @fabio-barboza,@jaryalarshita @paymog,@quuu @yearth]]></description>
-    <pubDate>Wed, 22 Jul 2026 04:35:21 GMT</pubDate>
-  </item>
-  <item>
-    <title>[podman-container-tools/podman] v6.0.2</title>
-    <link>https://github.com/podman-container-tools/podman/releases/tag/v6.0.2</link>
-    <guid isPermaLink="true">https://github.com/podman-container-tools/podman/releases/tag/v6.0.2</guid>
-    <description><![CDATA[### Bugfixes
-- Fixed a bug where `podman machine` VMs created by the WSL provider on Windows were not properly cleaned up if the `podman machine init` command failed (#27036).
-- Fixed a bug where the Windows installer for Podman would, when installing for all users, incorrectly modify the path of only the user installing Podman (#29160).
-- Fixed a bug where the remote Podman client would throw errors when run on a Linux system that was not using Cgroups v2 (#29241).
-
-### Misc
-- Updated Buildah to v1.44.1]]></description>
-    <pubDate>Wed, 22 Jul 2026 03:02:34 GMT</pubDate>
-  </item>
-  <item>
-    <title>[fastify/fastify-vite] @fastify/vite@9.2.0</title>
-    <link>https://github.com/fastify/fastify-vite/releases/tag/%40fastify/vite%409.2.0</link>
-    <guid isPermaLink="true">https://github.com/fastify/fastify-vite/releases/tag/%40fastify/vite%409.2.0</guid>
-    <description><![CDATA[### Minor Changes
-
-- 58d7d59: Expose "resolvePkgDir" function in utils so @fastify/react can use it to resolve relative paths in vite's `build.outDir` config.]]></description>
-    <pubDate>Tue, 21 Jul 2026 17:36:10 GMT</pubDate>
-  </item>
-  <item>
-    <title>[prettier/prettier] 3.9.6</title>
-    <link>https://github.com/prettier/prettier/releases/tag/3.9.6</link>
-    <guid isPermaLink="true">https://github.com/prettier/prettier/releases/tag/3.9.6</guid>
-    <description><![CDATA[## What's Changed
-
-* Preserve quotes for methods named `new` ( by @kovsu)
-* Support `import defer` in `typescript` parser ( by @fisker)
-* Added a new official plugin `@prettier/plugin-yuku` 🚀 ( by @fisker)
-
-
-🔗 Changelog]]></description>
-    <pubDate>Tue, 21 Jul 2026 05:52:55 GMT</pubDate>
   </item>
 </channel>
 </rss>
