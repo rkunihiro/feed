@@ -5,8 +5,306 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Thu, 30 Jul 2026 22:20:52 GMT</lastBuildDate>
+  <lastBuildDate>Fri, 31 Jul 2026 22:18:38 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-07-31.2) (release-2026-07-31.2)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-07-31.2</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-07-31.2</guid>
+    <description><![CDATA[## General Highlights
+* **Dependency Update**: Updated to the latest SDK module versions
+* **Dependency Update**: Upgrade to smithy-go v1.27.6 to fix various serde issues in HTTP binding services.
+
+## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/service/amp`: [v1.48.0](service/amp/CHANGELOG.md#v1480-2026-07-312)
+ * **Feature**: Amazon Managed Service for Prometheus adds support for an Amazon OpenSearch Service exporter for managed collectors.
+* `github.com/aws/aws-sdk-go-v2/service/bedrockruntime`: [v1.57.0](service/bedrockruntime/CHANGELOG.md#v1570-2026-07-312)
+ * **Feature**: Added support for mid-conversation tool changes in the Amazon Bedrock Converse and ConverseStream APIs
+* `github.com/aws/aws-sdk-go-v2/service/billing`: [v1.14.0](service/billing/CHANGELOG.md#v1140-2026-07-312)
+ * **Feature**: Adds GetEnterpriseSupportChargeSummary, GetEnterpriseSupportContractDetails, and ListEnterpriseSupportLinkedAccountCharges. These APIs provide first-time programmatic access to billin
+
+... (truncated)]]></description>
+    <pubDate>Fri, 31 Jul 2026 20:38:59 GMT</pubDate>
+  </item>
+  <item>
+    <title>[astral-sh/uv] 0.12.1</title>
+    <link>https://github.com/astral-sh/uv/releases/tag/0.12.1</link>
+    <guid isPermaLink="true">https://github.com/astral-sh/uv/releases/tag/0.12.1</guid>
+    <description><![CDATA[## Release Notes
+
+Released on 2026-07-31.
+
+### Enhancements
+
+- Add package-specific pre-release policies with `--prerelease-package` (#20837)
+- Support local HTML files as flat indexes (#20802)
+- Add Xonsh virtual environment activation scripts (`activate.xsh`) (#19740)
+- Preserve filesystem paths passed to `uv add --index` when updating `pyproject.toml` (#20817)
+
+### Preview features
+
+- Add automatic fixes to `uv check` with `--fix` (#20793)
+- Avoid rejecting unchanged metadata-free lockfiles when workspace dependencies share direct sources (#20847)
+- Honor direct URL constraints when validating metadata-free lockfiles (#20796)
+- Ignore malformed PEP 723 scripts discovered during project checks (#20784)
+- Use ty's native script exclusion in `uv check` (#20742)
+
+### Performance
+
+- Parse canonical uv lockfiles directly, with a fallback for other valid TOML syntax (#20648)
+- Accelerate SHA-256 hashing on non-Windows ARM64 platforms (#20805)
+
+### Bug fixes
+
+- Flush shell startup file upda
+
+... (truncated)]]></description>
+    <pubDate>Fri, 31 Jul 2026 19:43:31 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1101.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1101.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1101.0</guid>
+    <description><![CDATA[#### 3.1101.0(2026-07-31)
+
+##### New Features
+
+* **client-resiliencehubv2:** Adding support for new testing capability in AWS Resilience Hub. (105876ce)
+* **client-cloudwatch-logs:** Amazon CloudWatch Logs now lets you create and update lookup tables directly from CloudWatch Logs query results by passing a queryId, and configure a lookup table as a scheduled query destination so it refreshes automatically with the latest query results on each run. (6f5f75a0)
+* **client-network-firewall:** Doc Updates for Container Attributes (82107b32)
+* **client-billing:** Adds GetEnterpriseSupportChargeSummary, GetEnterpriseSupportContractDetails, and ListEnterpriseSupportLinkedAccountCharges. These APIs provide first-time programmatic access to billing data for Enterprise Support usage previously only available upon request through AWS Concierge or Support. (643d01c5)
+* **client-quicksight:** Adding TopicV2 management APIs, adding possibility to use Topics in Analysis (087bb505)
+* **client-connectca
+
+... (truncated)]]></description>
+    <pubDate>Fri, 31 Jul 2026 18:47:51 GMT</pubDate>
+  </item>
+  <item>
+    <title>[adobe/react-spectrum] React Aria Components v1.20.0 (react-aria-components@1.20.0)</title>
+    <link>https://github.com/adobe/react-spectrum/releases/tag/react-aria-components%401.20.0</link>
+    <guid isPermaLink="true">https://github.com/adobe/react-spectrum/releases/tag/react-aria-components%401.20.0</guid>
+    <description><![CDATA[This release includes many new components and features!
+
+* The new PreviewTrigger component shows a Popover on hover, focus, or long press. Unlike Tooltip, it may include interactive content, useful for hoverable link previews.
+* TokenField (alpha) allows users to enter text with inline tokens. Use it to build AI prompt fields, tag inputs, structured search fields, mention inputs, and multi-select comboboxes.
+* MenuTrigger now supports trigger="contextMenu", enabling accessible context menus via mouse, keyboard, and touch input.
+* A simpler API to implement keyboard shortcuts to useKeyboard.
+* Support for interactive components like textfields inside Table rows.
+
+Finally, the React Aria and React Stately hook documentation has been completely rewritten! The new docs use the same styles as our React Aria Components examples, and show how to use both components and hooks together.
+
+Full Release Notes]]></description>
+    <pubDate>Fri, 31 Jul 2026 17:11:02 GMT</pubDate>
+  </item>
+  <item>
+    <title>[heroui-inc/heroui] v3.2.3</title>
+    <link>https://github.com/heroui-inc/heroui/releases/tag/v3.2.3</link>
+    <guid isPermaLink="true">https://github.com/heroui-inc/heroui/releases/tag/v3.2.3</guid>
+    <description><![CDATA[## What's Inside
+- 🔽 ComboBox → multiple selection
+- 🌐 RTL → logical CSS properties across all styles
+- 📦 react-aria → moved to peerDependencies, single shared copy
+- 🎨 tailwind-variants 3.3.0
+- 🔧 ScrollShadow, Spinner, InputOTP, Table & Button fixes
+
+## What's Changed
+* fix(docs): frameworks tabs by @wingkwong in 
+* docs(combo-box): remove unsupported props from API reference by @wingkwong in 
+* docs(spinner): correct default color to "accent" in API reference by @wingkwong in 
+* fix(docs): use theme tokens in styling examples by @wingkwong in 
+* fix(docs): correct typos in accordion demo/docs and `bgsurface` class name by @daveycodez in 
+* docs(avatar): document custom image composition with asChild by @wingkwong in 
+* fix(combo-box): custom indicator demo by @wingkwong in 
+* docs(native): add v1.0.6 release notes by @vvv-sss in 
+* chore(docs): refresh agent guidance files by @wingkwong in 
+* refactor(docs): add cursor to theme toggle by @wingkwong in 
+* feat(d
+
+... (truncated)]]></description>
+    <pubDate>Fri, 31 Jul 2026 14:38:48 GMT</pubDate>
+  </item>
+  <item>
+    <title>[github/spec-kit] Spec Kit - 0.15.1 (v0.15.1)</title>
+    <link>https://github.com/github/spec-kit/releases/tag/v0.15.1</link>
+    <guid isPermaLink="true">https://github.com/github/spec-kit/releases/tag/v0.15.1</guid>
+    <description><![CDATA[## Install
+
+```bash
+uv tool install specify-cli --from git+
+specify init my-project
+```
+
+## What's Changed
+
+- chore: bump version to 0.15.1
+- fix: escape Rich markup in `workflow resolve` output (#3879)
+- chore(deps): bump actions/stale from 10.4.0 to 11.0.0 (#3877)
+- chore(deps): bump actions/setup-python from 6.3.0 to 7.0.0 (#3876)
+- feat: support tar archives for installs (#3874)
+- fix: eliminate TOCTOU race in file unlink calls (#3819)
+- fix(scripts): tolerate an unusable integration.json in the Python helper (#3785)
+- fix(catalogs): validate the port in the shared catalog-URL validator, like its mirrors do (#3804)
+- feat(presets): add opt-in constitution-sync preset (#3873)
+- fix: reject non-object workflow caches (#3860)
+- Harden extension URL download cache against symlink and junction races (#3869)
+- fix: escape workflow step metadata (#3863)
+- [bug-fix] Fix bundle-update-force-mislead: add refresh to DefaultPrimitiveInstaller (#3452)
+- fix: use chunked read for extension manif
+
+... (truncated)]]></description>
+    <pubDate>Fri, 31 Jul 2026 13:38:30 GMT</pubDate>
+  </item>
+  <item>
+    <title>[lynx-family/lynx] 4.0.1</title>
+    <link>https://github.com/lynx-family/lynx/releases/tag/4.0.1</link>
+    <guid isPermaLink="true">https://github.com/lynx-family/lynx/releases/tag/4.0.1</guid>
+    <description><![CDATA[No release notes provided.]]></description>
+    <pubDate>Fri, 31 Jul 2026 13:32:02 GMT</pubDate>
+  </item>
+  <item>
+    <title>[podman-desktop/podman-desktop] v1.29.1</title>
+    <link>https://github.com/podman-desktop/podman-desktop/releases/tag/v1.29.1</link>
+    <guid isPermaLink="true">https://github.com/podman-desktop/podman-desktop/releases/tag/v1.29.1</guid>
+    <description><![CDATA[- fixes arm64 Windows installer 
+
+**Full Changelog**:]]></description>
+    <pubDate>Fri, 31 Jul 2026 13:13:28 GMT</pubDate>
+  </item>
+  <item>
+    <title>[bluesky-social/atproto] @atproto/common@0.7.3</title>
+    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/common%400.7.3</link>
+    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/common%400.7.3</guid>
+    <description><![CDATA[### Patch Changes
+
+- Updated dependencies [`95aa1d6`]:
+ - @atproto/lex-cbor@0.1.5
+ - @atproto/lex-data@0.1.6
+ - @atproto/common-web@0.5.7]]></description>
+    <pubDate>Fri, 31 Jul 2026 11:55:15 GMT</pubDate>
+  </item>
+  <item>
+    <title>[honojs/hono] v4.12.33</title>
+    <link>https://github.com/honojs/hono/releases/tag/v4.12.33</link>
+    <guid isPermaLink="true">https://github.com/honojs/hono/releases/tag/v4.12.33</guid>
+    <description><![CDATA[## What's Changed
+* fix(cookie): relax name validation when parsing Cookie header in 
+* chore: bump `@hono/node-server` in 
+* fix(jsx): handle useSyncExternalStore subscription and snapshot changes in 
+* chore: remove undici in favor of global fetch in 
+
+**Full Changelog**:]]></description>
+    <pubDate>Fri, 31 Jul 2026 10:42:51 GMT</pubDate>
+  </item>
+  <item>
+    <title>[servo/servo] 0.4.0</title>
+    <link>https://github.com/servo/servo/releases/tag/0.4.0</link>
+    <guid isPermaLink="true">https://github.com/servo/servo/releases/tag/0.4.0</guid>
+    <description><![CDATA[See our June blog post for a curated overview of the changes in this release.
+
+## Trying out the Servo Tech Demo
+
+[troubleshooting guide]: 
+
+### Linux
+
+If you see an error `loading shared libraries` when starting servo on Linux, please refer to the [troubleshooting guide].
+
+### HarmonyOS
+
+Please note that the `servo-aarch64-linux-ohos.hap` attached here is signed for OpenHarmony, not HarmonyOS.
+For HarmonyOS self-signing is currently required - You can download the `servo-aarch64-linux-ohos.so` shared library and use DevEco Studio to follow the instructions in the ArkTS Servo Demo repository
+
+
+## What's Changed
+
+Please check out our June blog post to get a curated overview over the recent changes.
+
+<details>
+ <summary>Generated Release notes</summary>
+
+## What's Changed
+* deps: Bump `sha3` to 0.12 by @kkoyung in 
+* webgpu: Use SecureContext on namespaces by @sagudev in 
+* layout: fix UA stylesheet for `<input type="radio"/>` by @RichardTjokroutomo in 
+* Imple
+
+... (truncated)]]></description>
+    <pubDate>Fri, 31 Jul 2026 10:36:55 GMT</pubDate>
+  </item>
+  <item>
+    <title>[pnpm/pnpm] pnpm 11.19 (v11.19.0)</title>
+    <link>https://github.com/pnpm/pnpm/releases/tag/v11.19.0</link>
+    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v11.19.0</guid>
+    <description><![CDATA[## Minor Changes
+
+* `pnpm login` no longer requires an interactive terminal when the registry supports web-based login: without a TTY it prints the authentication URL (skipping the QR code and the "Press ENTER to open the URL in your browser" prompt) and polls the registry until the browser approval completes. Only the classic username/password login still fails with `ERR_PNPM_LOGIN_NON_INTERACTIVE` in a non-interactive terminal.
+
+* The `save-prefix` setting now accepts `=`: newly added dependencies are saved with an explicit `=` operator (`=1.2.3`) instead of the setting being silently treated as the default `^`.
+
+## Patch Changes
+
+* `allowBuilds` entries can now approve git-hosted packages that pnpm downloads as a tarball, such as `github:` dependencies (which are fetched from `codeload.github.com` rather than cloned), by their repository URL without the resolved commit hash. This matches the hashless `git+` matching already supported for cloned git dependencies. For example:
+
+... (truncated)]]></description>
+    <pubDate>Fri, 31 Jul 2026 09:10:30 GMT</pubDate>
+  </item>
+  <item>
+    <title>[ant-design/ant-design] 6.5.3</title>
+    <link>https://github.com/ant-design/ant-design/releases/tag/6.5.3</link>
+    <guid isPermaLink="true">https://github.com/ant-design/ant-design/releases/tag/6.5.3</guid>
+    <description><![CDATA[- Input
+ - 🐞 Fix Input.OTP using `type="text"` when `mask` is a string while preserving explicit `type` values. #58835 @QDyanbing
+ - 🐞 Fix Input.OTP displaying the original value when `mask` is `true`. #58805 @cyphercodes
+ - 💄 Fix Input.TextArea resize handle rendering as a dot on touch devices. #58812 @pupuking723
+- Typography
+ - ⚡️ Improve Typography ellipsis tooltip performance in large lists. #58806 @lkxdsb
+ - 🐞 Fix Typography editable textarea font size not matching the edited content. #58551 @gaurav0107
+- 🐞 Fix DatePicker.RangePicker submitting unconfirmed partial values on blur when using `showTime` and `allowEmpty`. #58803 @zombieJ
+- 🐞 Fix Form.Item `useStatus` returning stale errors and warnings when the validation status remains unchanged. #58815 @afc163
+- 🐞 Fix Slider triggering `onFocus` and `onBlur` callbacks multiple times. #58711 @QDyanbing
+- 🐞 Fix Spin standalone indicators being mispositioned when nested in another Spin. #58801 @QDyanbing
+- 🐞 Fix Table control
+
+... (truncated)]]></description>
+    <pubDate>Fri, 31 Jul 2026 07:52:58 GMT</pubDate>
+  </item>
+  <item>
+    <title>[djkotori/rpgcobo-tool] v0.1.14</title>
+    <link>https://github.com/djkotori/rpgcobo-tool/releases/tag/v0.1.14</link>
+    <guid isPermaLink="true">https://github.com/djkotori/rpgcobo-tool/releases/tag/v0.1.14</guid>
+    <description><![CDATA[This version includes the following bug fixes and feature additions.
+
+- Fixed an issue where debugging could not be started when the "Maximum Members" in system settings was set to more than 5.
+- Fixed a bug where the correct vox file was not loaded when MagicVoxel was started from "Edit Voxel" in a project with a path that included a full-width folder.
+- Fixed an issue where an error would occur during the "Get" operation of the event command "Table Operation".
+- Added the ability to copy and paste maps from the map list in the map side view. This copy and paste is also possible between projects.
+- Corrected the "Encounting Area" specification in the Encounter Group Settings to correctly perform random encounters.
+- Fixed a bug where an error occurred when retrieving the "item possession" variable (NUM_I000, etc.).]]></description>
+    <pubDate>Fri, 31 Jul 2026 04:48:18 GMT</pubDate>
+  </item>
+  <item>
+    <title>[cli/cli] GitHub CLI 2.97.0 (v2.97.0)</title>
+    <link>https://github.com/cli/cli/releases/tag/v2.97.0</link>
+    <guid isPermaLink="true">https://github.com/cli/cli/releases/tag/v2.97.0</guid>
+    <description><![CDATA[## Security
+
+Four security vulnerabilities have been identified, and fixed, in this release. Users are advised to update gh to version `v2.97.0` as soon as possible.
+
+Several commands (including `gh gist view`, `gh api`, `gh pr diff`, `gh release download --output -`, `gh codespace logs`, `gh skills preview`, and `gh agent-task view`/`create`) printed externally controlled content without neutralizing terminal escape sequences, allowing escape sequence injection into a user's terminal.
+
+See for more information.
+
+Some request URLs were built without escaping their variable path components, so a value containing URL path metacharacters could alter the request path and cause `gh` to address a different resource than intended.
+
+See for more information.
+
+`gh auth status` (without `--show-token`) could print a portion of the authentication token in plaintext for token types whose format contains an underscore after the prefix, such as `github_pat_*`, `ghs_*`, and `ghu_*`.
+
+Se
+
+... (truncated)]]></description>
+    <pubDate>Fri, 31 Jul 2026 02:04:00 GMT</pubDate>
+  </item>
   <item>
     <title>[fastify/fastify-vite] @fastify/react@1.2.2</title>
     <link>https://github.com/fastify/fastify-vite/releases/tag/%40fastify/react%401.2.2</link>
@@ -18,48 +316,10 @@
     <pubDate>Thu, 30 Jul 2026 19:34:31 GMT</pubDate>
   </item>
   <item>
-    <title>[aws/aws-sdk-js-v3] v3.1099.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1099.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1099.0</guid>
-    <description><![CDATA[#### 3.1099.0(2026-07-30)
-
-##### Chores
-
-* update vscode repo settings (#8236) (10f5fc09)
-
-##### New Features
-
-* **clients:** update client endpoints as of 2026-07-30 (e93ec43a)
-* **client-pricing-plan-manager:** Adds support for Public PricingPlanManager SDK (f5af47b6)
-* **client-securityagent:** Adds support for providing a branch override when configured integrated repositories (0f5a2dd0)
-* **client-iam:** Improved IAM Policy Simulator accuracy. Simulator now evaluates SCP conditions and resource scoping, returns explicitDeny for explicit SCP denials, and reports accurate cross-account decisions. (d8cd86e4)
-* **client-network-firewall:** Adds UPDATING field to Container Association Status (65a8fd3f)
-* **client-kafka:** Amazon MSK Express brokers now support streaming tables for Apache Iceberg, continuously materializing Apache Kafka topics as Iceberg tables in Amazon S3 Tables. Express brokers also now support data delivery to Amazon S3 general purpose buckets. (16236255)
-* **client
-
-... (truncated)]]></description>
-    <pubDate>Thu, 30 Jul 2026 18:47:46 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-07-30) (release-2026-07-30)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-07-30</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-07-30</guid>
-    <description><![CDATA[## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcorecontrol`: [v1.53.0](service/bedrockagentcorecontrol/CHANGELOG.md#v1530-2026-07-30)
- * **Feature**: Adds support for configuring models through the OpenResponses API for custom evaluators. CreateEvaluator and UpdateEvaluator now accept an OpenResponses model configuration for LLM-as-a-Judge evaluations.
-* `github.com/aws/aws-sdk-go-v2/service/iam`: [v1.57.0](service/iam/CHANGELOG.md#v1570-2026-07-30)
- * **Feature**: Improved IAM Policy Simulator accuracy. Simulator now evaluates SCP conditions and resource scoping, returns explicitDeny for explicit SCP denials, and reports accurate cross-account decisions.
-* `github.com/aws/aws-sdk-go-v2/service/kafka`: [v1.57.0](service/kafka/CHANGELOG.md#v1570-2026-07-30)
- * **Feature**: Amazon MSK Express brokers now support streaming tables for Apache Iceberg, continuously materializing Apache Kafka topics as Iceberg tables in Amazon S3 Tables. Express brokers also now supp
-
-... (truncated)]]></description>
-    <pubDate>Thu, 30 Jul 2026 18:44:09 GMT</pubDate>
-  </item>
-  <item>
-    <title>[beercss/beercss] v5.0.0</title>
-    <link>https://github.com/beercss/beercss/releases/tag/v5.0.0</link>
-    <guid isPermaLink="true">https://github.com/beercss/beercss/releases/tag/v5.0.0</guid>
-    <description><![CDATA[### CHANGELOG 5.0.0
+    <title>[beercss/beercss] v5.0.1</title>
+    <link>https://github.com/beercss/beercss/releases/tag/v5.0.1</link>
+    <guid isPermaLink="true">https://github.com/beercss/beercss/releases/tag/v5.0.1</guid>
+    <description><![CDATA[### CHANGELOG 5.0.1
 
 ### 🚀 Added
 - Updated icon fonts 
@@ -153,29 +413,6 @@ Read the fully docs here
     <pubDate>Thu, 30 Jul 2026 16:18:43 GMT</pubDate>
   </item>
   <item>
-    <title>[bluesky-social/atproto] @atproto/pds@0.5.22</title>
-    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/pds%400.5.22</link>
-    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/pds%400.5.22</guid>
-    <description><![CDATA[### Patch Changes
-
-- #5277 `44c6cef` Thanks @blackmichael! - add blobUploadLimit to com.atproto.server.describeServer
-
-- #5266 `f136380` Thanks @matthieusieben! - Errors thrown by the scope-reference cache (redis or in-memory) are now logged via the OAuth logger (previously they were silently ignored on read) while continuing to degrade to a cache miss and a refetch from entryway rather than breaking token verification.
-
-- Updated dependencies [`f136380`, `87e6a95`, `87e6a95`, `f136380`, `9556dcb`, `87e6a95`, `f136380`, `f136380`, `f136380`, `37989bb`, `87e6a95`, `87e6a95`, `87e6a95`, `f136380`]:
- - @atproto/oauth-provider@0.21.0
- - @atproto-labs/simple-store@0.5.0
- - @atproto/oauth-scopes@0.5.7
- - @atproto-labs/simple-store-memory@0.2.5
- - @atproto-labs/simple-store-redis@0.1.5
- - @atproto-labs/fetch-node@0.3.6
- - @atproto/xrpc@0.8.7
- - @atproto/xrpc-server@0.11.12
- - @atproto-labs/xrpc-utils@0.1.11
- - @atproto/lex@0.3.1]]></description>
-    <pubDate>Thu, 30 Jul 2026 15:49:45 GMT</pubDate>
-  </item>
-  <item>
     <title>[anomalyco/opencode] v1.18.10</title>
     <link>https://github.com/anomalyco/opencode/releases/tag/v1.18.10</link>
     <guid isPermaLink="true">https://github.com/anomalyco/opencode/releases/tag/v1.18.10</guid>
@@ -209,36 +446,6 @@ Read the fully docs here
     <guid isPermaLink="true">https://github.com/vitejs/vite/releases/tag/create-vite%409.1.2</guid>
     <description><![CDATA[Please refer to CHANGELOG.md for details.]]></description>
     <pubDate>Thu, 30 Jul 2026 12:03:27 GMT</pubDate>
-  </item>
-  <item>
-    <title>[github/spec-kit] Spec Kit - 0.15.0 (v0.15.0)</title>
-    <link>https://github.com/github/spec-kit/releases/tag/v0.15.0</link>
-    <guid isPermaLink="true">https://github.com/github/spec-kit/releases/tag/v0.15.0</guid>
-    <description><![CDATA[## Install
-
-```bash
-uv tool install specify-cli --from git+
-specify init my-project
-```
-
-## What's Changed
-
-- chore: bump version to 0.15.0
-- Add yolo to community workflow catalog (#3864)
-- fix(workflows): guard the shell step's timeout check against OverflowError (#3865)
-- Add Intent Reconciliation extension to community catalog (#3858)
-- fix(workflows): validate prompt step 'timeout' like the shell step (#3847)
-- fix: add utf-8 encoding to registry file open calls (#3816)
-- fix: eliminate TOCTOU race in file unlink calls (#3815)
-- test(workflows): name the condition-rejection tests for the real boundary (#3808)
-- fix: eliminate TOCTOU race in file unlink calls (#3811)
-- fix(presets): escape user-supplied catalog name/URL in add/remove output (#3806)
-- fix: add missing utf-8 encoding to registry file open calls (#3810)
-- [bug-fix] Fix upgrade-overwrites-copilot-skills: pass force=True to extension skill re-registration after upgrade (#3853)
-- fix(integrations): don't abort uninstall 
-
-... (truncated)]]></description>
-    <pubDate>Thu, 30 Jul 2026 12:01:11 GMT</pubDate>
   </item>
   <item>
     <title>[BabylonJS/Babylon.js] 9.19.0</title>
@@ -395,21 +602,6 @@ Pick your language under Preferences > Application > General. Along with English
     <pubDate>Wed, 29 Jul 2026 09:21:11 GMT</pubDate>
   </item>
   <item>
-    <title>[pnpm/pnpm] pnpm 11.18 (v11.18.0)</title>
-    <link>https://github.com/pnpm/pnpm/releases/tag/v11.18.0</link>
-    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v11.18.0</guid>
-    <description><![CDATA[## Minor Changes
-
-* Fixed an installed optional dependency being left without one of its own required dependencies. When a package reached through `optionalDependencies` is installable on the current system but one of its regular `dependencies` is not, a lockfile-based install skipped that dependency and installed the parent anyway, so importing the parent failed with `MODULE_NOT_FOUND`. The dependency is now installed, and an install-check warning reports the incompatibility. A dependency is still only skipped when every path to it is optional, or when the package that pulls it in was itself skipped #13286.
-
-* `pnpm setup` now appends `PNPM_HOME` and the global bin directory to the GitHub Actions environment files (`GITHUB_ENV` and `GITHUB_PATH`), so later steps in the same job can run `pnpm add --global` and other global commands #9191.
-
-* Added support for `publishConfig.name`, which publishes a package under a different name than the one its manifest carries in the workspace.
-
-... (truncated)]]></description>
-    <pubDate>Wed, 29 Jul 2026 08:18:32 GMT</pubDate>
-  </item>
-  <item>
     <title>[esm-dev/esm.sh] Server v137_8 (v137_8)</title>
     <link>https://github.com/esm-dev/esm.sh/releases/tag/v137_8</link>
     <guid isPermaLink="true">https://github.com/esm-dev/esm.sh/releases/tag/v137_8</guid>
@@ -479,29 +671,6 @@ Two coordinated Step Functions capabilities:
     <guid isPermaLink="true">https://github.com/warpdotdev/warp/releases/tag/tui-screenshots-app5029</guid>
     <description><![CDATA[Temporary image host for PR #14439 screenshots. Can be deleted after review.]]></description>
     <pubDate>Tue, 28 Jul 2026 21:49:25 GMT</pubDate>
-  </item>
-  <item>
-    <title>[astral-sh/uv] 0.12.0</title>
-    <link>https://github.com/astral-sh/uv/releases/tag/0.12.0</link>
-    <guid isPermaLink="true">https://github.com/astral-sh/uv/releases/tag/0.12.0</guid>
-    <description><![CDATA[## Release Notes
-
-Released on 2026-07-28.
-
-Since we released uv 0.11.0 in March, we've accumulated changes that improve correctness, safety, and compatibility with specifications, but could break some workflows. This release contains those changes; many have been marked as breaking out of an abundance of caution.
-
-**We expect most users to be able to upgrade without making changes.**
-
-There are no breaking changes to the configuration of the uv build backend. If your `[build-system]` table includes an upper bound on `uv_build`, update it to allow `uv_build` 0.12, e.g., `uv_build>=0.11.32,<0.13`.
-
-### Breaking changes
-
-- **Define build systems by default with `uv init`** (#19197)
-
- Projects created with `uv init` now declare a build system and are packaged by default. This was the default project layout all the way back in v0.3, but we found that the use of the `hatchling` build system was confusing to newcomers and consequently dropped use of a build system by default in v0.4. Since th
-
-... (truncated)]]></description>
-    <pubDate>Tue, 28 Jul 2026 18:58:12 GMT</pubDate>
   </item>
   <item>
     <title>[webpack/webpack] v5.109.2</title>
@@ -591,19 +760,6 @@ There are no breaking changes to the configuration of the uv build backend. If y
     <pubDate>Tue, 28 Jul 2026 06:44:14 GMT</pubDate>
   </item>
   <item>
-    <title>[djkotori/rpgcobo-tool] v0.1.13</title>
-    <link>https://github.com/djkotori/rpgcobo-tool/releases/tag/v0.1.13</link>
-    <guid isPermaLink="true">https://github.com/djkotori/rpgcobo-tool/releases/tag/v0.1.13</guid>
-    <description><![CDATA[This version includes the following bug fixes and feature additions.
-
-- Implemented Auto battle.
-- You can now freely specify the text (like "Search", "Speak", "Attack") that will be displayed above the event when approaching.
-- Fixed a bug that caused an error when changing the weather with an event command.
-- Fixed an issue where encounter settings would not be displayed after deleting enemy data.
-- (DLL Changed) Fixed an issue where voxels could be missing or collapsed when drawing water blocks.]]></description>
-    <pubDate>Tue, 28 Jul 2026 03:10:58 GMT</pubDate>
-  </item>
-  <item>
     <title>[modelcontextprotocol/typescript-sdk] @modelcontextprotocol/fastify@2.0.0</title>
     <link>https://github.com/modelcontextprotocol/typescript-sdk/releases/tag/%40modelcontextprotocol/fastify%402.0.0</link>
     <guid isPermaLink="true">https://github.com/modelcontextprotocol/typescript-sdk/releases/tag/%40modelcontextprotocol/fastify%402.0.0</guid>
@@ -678,28 +834,6 @@ There are no breaking changes to the configuration of the uv build backend. If y
 
 ... (truncated)]]></description>
     <pubDate>Mon, 27 Jul 2026 15:59:01 GMT</pubDate>
-  </item>
-  <item>
-    <title>[podman-desktop/podman-desktop] v1.29.0</title>
-    <link>https://github.com/podman-desktop/podman-desktop/releases/tag/v1.29.0</link>
-    <guid isPermaLink="true">https://github.com/podman-desktop/podman-desktop/releases/tag/v1.29.0</guid>
-    <description><![CDATA[## What's Changed
-* chore(deps): add jsonc-parser for SchemaStore sync by @simonrey1 in 
-* feat(renderer): modernize StatusDot with SVG icons and a11y improvements by @vancura in 
-* chore(deps-dev): bump eslint-plugin-storybook from 10.4.2 to 10.4.3 by @dependabot[bot] in 
-* chore(deps-dev): bump the storybook group with 5 updates by @dependabot[bot] in 
-* chore: fix pnpm-lock duplicated entries by @benoitf in 
-* chore(deps-dev): bump prettier from 3.8.3 to 3.8.4 by @dependabot[bot] in 
-* chore(deps-dev): bump the typescript-eslint group across 1 directory with 3 updates by @dependabot[bot] in 
-* chore(deps): bump semver from 7.8.3 to 7.8.4 by @dependabot[bot] in 
-* chore(test): decrease version before testing app update by 2 by @odockal in 
-* chore(deps): bump electron from 42.3.3 to 42.4.0 by @dependabot[bot] in 
-* chore: 📢 Bump version to 1.29.0 by @podman-desktop-bot in 
-* fix(ci): update podman org in TF install script by @amisskii in 
-* fix(extension/kind): incorrec
-
-... (truncated)]]></description>
-    <pubDate>Mon, 27 Jul 2026 14:25:08 GMT</pubDate>
   </item>
   <item>
     <title>[open-webui/open-webui] v0.11.0</title>
@@ -782,109 +916,6 @@ This release raises the form-data security floor, adds configuration and type-sy
 
 - fix: preserve select selection when spread attributes omit value (#18561)]]></description>
     <pubDate>Fri, 24 Jul 2026 22:09:14 GMT</pubDate>
-  </item>
-  <item>
-    <title>[denoland/rusty_v8] v150.4.0</title>
-    <link>https://github.com/denoland/rusty_v8/releases/tag/v150.4.0</link>
-    <guid isPermaLink="true">https://github.com/denoland/rusty_v8/releases/tag/v150.4.0</guid>
-    <description><![CDATA[No release notes provided.]]></description>
-    <pubDate>Fri, 24 Jul 2026 22:03:11 GMT</pubDate>
-  </item>
-  <item>
-    <title>[open-cli-tools/concurrently] v10.0.4</title>
-    <link>https://github.com/open-cli-tools/concurrently/releases/tag/v10.0.4</link>
-    <guid isPermaLink="true">https://github.com/open-cli-tools/concurrently/releases/tag/v10.0.4</guid>
-    <description><![CDATA[## What's Changed
-* deps: upgrade shell-quote to 1.9.0 by @Mayvis in 
-* fix: avoid kill timeout exit delays by @rajanpanth in 
-
-## New Contributors
-* @Mayvis made their first contribution in 
-* @rajanpanth made their first contribution in 
-
-**Full Changelog**:]]></description>
-    <pubDate>Fri, 24 Jul 2026 21:03:05 GMT</pubDate>
-  </item>
-  <item>
-    <title>[eslint/eslint] v10.8.0</title>
-    <link>https://github.com/eslint/eslint/releases/tag/v10.8.0</link>
-    <guid isPermaLink="true">https://github.com/eslint/eslint/releases/tag/v10.8.0</guid>
-    <description><![CDATA[## Features
-* `2fee9bb` feat: export `ConfigObject` from `eslint/config` (#21082) (sethamus)
-
-## Bug Fixes
-* `6b8d2f7` fix: escape reserved characters in rule id in `html` formatter (#21129) (Francesco Trotta)
-* `9091071` fix: prevent `no-unreachable-loop` crash when all loop types are ignored (#21116) (Pixel)
-* `e23fafe` fix: prefer-object-spread add semicolon when adding parenthesis (#21081) (synthex-byte)
-* `20b5ad0` fix: quadratic-time regex in `prefer-template` (#21096) (Milos Djermanovic)
-* `8b6f6c0` fix: apply ignore configs to computed methods in class-methods-use-this (#21094) (Pixel)
-* `b2c608c` fix: NewExpression with parenthesized callee in `preserve-caught-error` (#21083) (Francesco Trotta)
-
-## Documentation
-* `6ddf858` docs: fix broken Specify Parser Options anchor link (#21106) (Minsu)
-* `784dfbe` docs: Clarify `no-eq-null` description (#21120) (Park Harin)
-* `7ec733a` docs: Fix typos and grammar in glossary (#21095) (Marry (Subin Yang))
-* `92bb13f` docs: replace quake l
-
-... (truncated)]]></description>
-    <pubDate>Fri, 24 Jul 2026 20:15:28 GMT</pubDate>
-  </item>
-  <item>
-    <title>[microsoft/WSL] 2.7.11</title>
-    <link>https://github.com/microsoft/WSL/releases/tag/2.7.11</link>
-    <guid isPermaLink="true">https://github.com/microsoft/WSL/releases/tag/2.7.11</guid>
-    <description><![CDATA[## What's Changed
-* Fix MoveDistribution VHD ownership restore to reuse the resolved file handle (backport to release/2.7) by @benhillis in 
-* Backport security fixes to release/2.7 by @benhillis in 
-
-**Full Changelog**:]]></description>
-    <pubDate>Fri, 24 Jul 2026 16:59:19 GMT</pubDate>
-  </item>
-  <item>
-    <title>[nodejs/undici] v6.28.0</title>
-    <link>https://github.com/nodejs/undici/releases/tag/v6.28.0</link>
-    <guid isPermaLink="true">https://github.com/nodejs/undici/releases/tag/v6.28.0</guid>
-    <description><![CDATA[## ⚠️ Security fixes
-
-- GHSA-m8rv-5g2x-5cg5: a malicious `type` property on a duck-typed blob-like HTTP/1.1 request body could inject CRLF sequences into the generated `content-type` header. Undici now coerces and validates the value before adding it to the request. Fixed by 740a0b7c.
-- GHSA-8xcm-r25x-g524: the retry interceptor could expose a stale `Content-Length` after resuming a partial response, potentially causing downstream response desynchronization, hangs, or corruption. Undici now rejects partial responses whose `Content-Length` is inconsistent with `Content-Range`. Fixed by cba3a52a, with corrected fixtures in 4fd5a0c6.
-- GHSA-v3r7-h72x-cjcm: unsanitized `domain` and `unparsed` values passed to `setCookie` could inject cookie attributes. Undici now validates cookie domains, paths, and unparsed attributes more strictly. Fixed by af748404.
-
-GHSA-4cwx-7wf7-3272 and GHSA-jr45-8vmc-qm54 affect the cache interceptor in Undici v7 and v8; Undici v6 is not in their affected ver
-
-... (truncated)]]></description>
-    <pubDate>Fri, 24 Jul 2026 12:55:33 GMT</pubDate>
-  </item>
-  <item>
-    <title>[honojs/hono] v4.12.32</title>
-    <link>https://github.com/honojs/hono/releases/tag/v4.12.32</link>
-    <guid isPermaLink="true">https://github.com/honojs/hono/releases/tag/v4.12.32</guid>
-    <description><![CDATA[## What's Changed
-* ci: enable reports for type & bundle size check in 
-* fix(aws-lambda): add jwt and lambda authorizer types for API Gateway v2 in 
-* fix(sse): emit empty id field to reset Last-Event-ID in 
-* test(cloudflare-workers): add coverage for onClose, onError, send, and close in Cloudflare Workers websocket adapter in 
-* fix: use `Object.create(null)` when parsing query, headers, and params in 
-* fix(secure-headers): keep CSP callbacks scoped to their header in 
-
-**Full Changelog**:]]></description>
-    <pubDate>Fri, 24 Jul 2026 08:56:41 GMT</pubDate>
-  </item>
-  <item>
-    <title>[ant-design/ant-design] 6.5.2</title>
-    <link>https://github.com/ant-design/ant-design/releases/tag/6.5.2</link>
-    <guid isPermaLink="true">https://github.com/ant-design/ant-design/releases/tag/6.5.2</guid>
-    <description><![CDATA[- 💄 Fix Button, Collapse, ColorPicker, Layout, Select, Space.Addon, Tree, and Typography borders not respecting the global `lineWidth` and `lineType` Design Tokens. #58740 #58741 #58742 #58743 #58745 #58755 @li-jia-nan @QDyanbing
-- 🐞 Fix BorderBeam, Checkbox, and Switch reduced-motion styles causing Lightning CSS minification failures. #58707 @QDyanbing
-- Tag
- - 💄 Fix Tag missing spacing and incorrect vertical alignment for bare `<svg>` icons from third-party icon libraries. #58723 @mohamedkhaled4053
- - 🐞 Fix Tag navigation being triggered when clicking the close icon with both `href` and `closable` set. #58720 @QDyanbing
-- 🐞 Fix Input.OTP dropping root DOM event handlers including `onPointerDown`, `onAnimationEnd`, `onTransitionEnd`, and `onScrollEnd`. #58697 react-component/util#794 @aojunhao123
-- 🐞 Fix Form triggering a hook-order warning in React 19 when using the UMD development build. #58417 @biubiukam
-- 💄 Fix Table missing the top border when a bordered nested table is wr
-
-... (truncated)]]></description>
-    <pubDate>Fri, 24 Jul 2026 04:23:43 GMT</pubDate>
   </item>
 </channel>
 </rss>
