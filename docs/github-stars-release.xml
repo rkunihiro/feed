@@ -5,8 +5,56 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Fri, 31 Jul 2026 22:18:38 GMT</lastBuildDate>
+  <lastBuildDate>Sat, 01 Aug 2026 22:16:53 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[denoland/rusty_v8] v152.0.0</title>
+    <link>https://github.com/denoland/rusty_v8/releases/tag/v152.0.0</link>
+    <guid isPermaLink="true">https://github.com/denoland/rusty_v8/releases/tag/v152.0.0</guid>
+    <description><![CDATA[No release notes provided.]]></description>
+    <pubDate>Sat, 01 Aug 2026 16:06:40 GMT</pubDate>
+  </item>
+  <item>
+    <title>[djkotori/rpgcobo-tool] v0.1.15</title>
+    <link>https://github.com/djkotori/rpgcobo-tool/releases/tag/v0.1.15</link>
+    <guid isPermaLink="true">https://github.com/djkotori/rpgcobo-tool/releases/tag/v0.1.15</guid>
+    <description><![CDATA[This is urgent bugfix release.
+
+- URGENT : Fixed a bug where pasting in the map side menu would register the map twice in the map group if it overwrote an existing map.
+- "Item Selection Dialog" has been added to the event command "Preset UI". Also, the "Chara Selection Dialog" has been improved.
+- Fixed a bug where an error occurred when saving in the icon editor.]]></description>
+    <pubDate>Sat, 01 Aug 2026 13:04:47 GMT</pubDate>
+  </item>
+  <item>
+    <title>[anomalyco/opencode] v1.18.11</title>
+    <link>https://github.com/anomalyco/opencode/releases/tag/v1.18.11</link>
+    <guid isPermaLink="true">https://github.com/anomalyco/opencode/releases/tag/v1.18.11</guid>
+    <description><![CDATA[## Core
+
+### Bugfixes
+
+- Stopped MCP SSE connections from getting stuck in reconnect loops after server error responses.
+- Fixed provider model configs that use interleaved reasoning fields like `reasoning_text` or custom field names.
+
+## Desktop
+
+### Bugfixes
+
+- Open external links in the system browser instead of inside the app.
+- Fixed stale session tab state in the desktop title bar. (@OpeOginni)
+- Open the legacy directory picker at your home folder when no home path is loaded yet.
+- Prevent the file tree tab from clipping when resized smaller. (@OpeOginni)
+- Fixed debug gutter labels and values misaligning.
+
+**Thank you to 2 community contributors:**
+- @devennavani:
+ - docs: add Modal provider setup (#39710)
+- @OpeOginni:
+ - fix(app): prevent file tree tab clipping (#39770)
+ - fix(app): prevent stale session tab reads (#39767)
+ - fix(app): prevent stale prompt control reads (#39842)]]></description>
+    <pubDate>Sat, 01 Aug 2026 11:44:45 GMT</pubDate>
+  </item>
   <item>
     <title>[aws/aws-sdk-go-v2] Release (2026-07-31.2) (release-2026-07-31.2)</title>
     <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-07-31.2</link>
@@ -269,20 +317,6 @@ Please check out our June blog post to get a curated overview over the recent ch
     <pubDate>Fri, 31 Jul 2026 07:52:58 GMT</pubDate>
   </item>
   <item>
-    <title>[djkotori/rpgcobo-tool] v0.1.14</title>
-    <link>https://github.com/djkotori/rpgcobo-tool/releases/tag/v0.1.14</link>
-    <guid isPermaLink="true">https://github.com/djkotori/rpgcobo-tool/releases/tag/v0.1.14</guid>
-    <description><![CDATA[This version includes the following bug fixes and feature additions.
-
-- Fixed an issue where debugging could not be started when the "Maximum Members" in system settings was set to more than 5.
-- Fixed a bug where the correct vox file was not loaded when MagicVoxel was started from "Edit Voxel" in a project with a path that included a full-width folder.
-- Fixed an issue where an error would occur during the "Get" operation of the event command "Table Operation".
-- Added the ability to copy and paste maps from the map list in the map side view. This copy and paste is also possible between projects.
-- Corrected the "Encounting Area" specification in the Encounter Group Settings to correctly perform random encounters.
-- Fixed a bug where an error occurred when retrieving the "item possession" variable (NUM_I000, etc.).]]></description>
-    <pubDate>Fri, 31 Jul 2026 04:48:18 GMT</pubDate>
-  </item>
-  <item>
     <title>[cli/cli] GitHub CLI 2.97.0 (v2.97.0)</title>
     <link>https://github.com/cli/cli/releases/tag/v2.97.0</link>
     <guid isPermaLink="true">https://github.com/cli/cli/releases/tag/v2.97.0</guid>
@@ -411,34 +445,6 @@ Read the fully docs here
 
 ... (truncated)]]></description>
     <pubDate>Thu, 30 Jul 2026 16:18:43 GMT</pubDate>
-  </item>
-  <item>
-    <title>[anomalyco/opencode] v1.18.10</title>
-    <link>https://github.com/anomalyco/opencode/releases/tag/v1.18.10</link>
-    <guid isPermaLink="true">https://github.com/anomalyco/opencode/releases/tag/v1.18.10</guid>
-    <description><![CDATA[## Core
-- Discover available Modal models automatically. (@devennavani)
-
-## Desktop
-### Improvements
-- Prevent adding the same attachment more than once.
-- Always show the new session button.
-- Improve toast notifications with better stacking, dismissal, and mobile layout.
-- Refine tab hover, active, and overflow states.
-
-### Bugfixes
-- Repair malformed saved tabs so broken tab state no longer persists across launches. (@OpeOginni)
-- Hide the model variant selector until model data finishes loading.
-- Preserve the custom agent picker for existing users.
-
-**Thank you to 3 community contributors:**
-- @lakshyaag-tavily:
- - docs(ecosystem): add opencode-tavily plugin (#38709)
-- @devennavani:
- - feat: discover Modal models (#39066)
-- @OpeOginni:
- - fix(app): repair malformed persisted tabs (#39645)]]></description>
-    <pubDate>Thu, 30 Jul 2026 14:43:53 GMT</pubDate>
   </item>
   <item>
     <title>[vitejs/vite] create-vite@9.1.2</title>
@@ -905,17 +911,6 @@ This release raises the form-data security floor, adds configuration and type-sy
 
 **Full Changelog**:]]></description>
     <pubDate>Sat, 25 Jul 2026 14:26:14 GMT</pubDate>
-  </item>
-  <item>
-    <title>[sveltejs/svelte] svelte@5.56.8</title>
-    <link>https://github.com/sveltejs/svelte/releases/tag/svelte%405.56.8</link>
-    <guid isPermaLink="true">https://github.com/sveltejs/svelte/releases/tag/svelte%405.56.8</guid>
-    <description><![CDATA[### Patch Changes
-
-- fix: call `onerror` and provide a working `reset` when hydrating a failed boundary (#18556)
-
-- fix: preserve select selection when spread attributes omit value (#18561)]]></description>
-    <pubDate>Fri, 24 Jul 2026 22:09:14 GMT</pubDate>
   </item>
 </channel>
 </rss>
