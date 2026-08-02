@@ -5,8 +5,54 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Sat, 01 Aug 2026 22:16:53 GMT</lastBuildDate>
+  <lastBuildDate>Sun, 02 Aug 2026 22:16:14 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[zed-industries/zed] v1.13.2</title>
+    <link>https://github.com/zed-industries/zed/releases/tag/v1.13.2</link>
+    <guid isPermaLink="true">https://github.com/zed-industries/zed/releases/tag/v1.13.2</guid>
+    <description><![CDATA[- Fixed Option+Left stopping to the left of punctuation between words Video URL: (#62065)
+- Fixed a panic when selections are added by tab-expanded column (#62063)
+- Fixed Gruvbox parameter colors (#61987)
+- Improved CLI documentation by adding the missing `--existing` option. (#61981)]]></description>
+    <pubDate>Sun, 02 Aug 2026 17:33:45 GMT</pubDate>
+  </item>
+  <item>
+    <title>[theMackabu/ant] v13.0.ca8e720d.0</title>
+    <link>https://github.com/theMackabu/ant/releases/tag/v13.0.ca8e720d.0</link>
+    <guid isPermaLink="true">https://github.com/theMackabu/ant/releases/tag/v13.0.ca8e720d.0</guid>
+    <description><![CDATA[## Changes
+
+A major release focused on sandboxes, Node compatibility, JavaScript correctness, runtime isolation, and Silver performance.
+
+This release makes Ant sandboxes message-driven and resource-aware. It completes large parts of the WHATWG URL surface and the Node event and child-process surfaces. It fixes direct `eval`, Proxy, optional-chain, BigInt, and Promise semantics. It also moves several global or unbounded runtime structures into isolate-owned state.
+
+#### Breaking changes
+
+- Removed sandbox forking support. Use `Sandbox.run`, `Sandbox.eval`, and the new message APIs for guest execution and communication.
+- Child-process `stdout` and `stderr` are now `Readable` streams, and `stdin` is now a `Writable` stream. Signal results now use Node-style symbolic signal names instead of numeric signal codes.
+- Renamed the asynchronous `fs.readBytes` API to `fs.stream` and removed `fs.readBytesSync`.
+- Replaced the embedder property-reference ABI: `js_propref_load` is now `
+
+... (truncated)]]></description>
+    <pubDate>Sun, 02 Aug 2026 15:53:27 GMT</pubDate>
+  </item>
+  <item>
+    <title>[privatenumber/tsx] v4.23.4</title>
+    <link>https://github.com/privatenumber/tsx/releases/tag/v4.23.4</link>
+    <guid isPermaLink="true">https://github.com/privatenumber/tsx/releases/tag/v4.23.4</guid>
+    <description><![CDATA[## 4.23.4 (2026-08-02)
+
+
+### Bug Fixes
+
+* **cli:** allow async process.once signal handlers to finish (#827) (2afc7bb)
+
+---
+This release is also available on:
+- npm package (@latest dist-tag)]]></description>
+    <pubDate>Sun, 02 Aug 2026 12:53:52 GMT</pubDate>
+  </item>
   <item>
     <title>[denoland/rusty_v8] v152.0.0</title>
     <link>https://github.com/denoland/rusty_v8/releases/tag/v152.0.0</link>
@@ -559,25 +605,6 @@ Pick your language under Preferences > Application > General. Along with English
     <pubDate>Wed, 29 Jul 2026 16:17:25 GMT</pubDate>
   </item>
   <item>
-    <title>[zed-industries/zed] v1.13.1</title>
-    <link>https://github.com/zed-industries/zed/releases/tag/v1.13.1</link>
-    <guid isPermaLink="true">https://github.com/zed-industries/zed/releases/tag/v1.13.1</guid>
-    <description><![CDATA[This week's release includes improved branch picker filtering and grouping, run-status indicators for runnable gutter controls, and editable image-viewer zoom levels.
-
-## Shipped by the Zed Guild 🛡️
-
-- Improved branch picker filtering, grouping, branch creation suggestions, and remote-provider icons. (#61215; thanks chirivelli)
-- Improved LSP Logs by showing request durations alongside RPC responses, making slow language server behavior easier to diagnose. (#61018; thanks aviatesk)
-- Improved solo diffs to show the full file by default while retaining Git change indicators in the scrollbar. (#60989; thanks chirivelli)
-- Deprecated Fast Mode for Opus 4.6 and Opus 4.7. (#61341; thanks tidely)
-- Fixed excessive memory usage when composing text with Fcitx5 on KDE Wayland. (#61079; thanks amtoaer)
-- Editor: Fixed a bug where selection boxes did not render when the cursor was offscreen. (#60054; thanks feitreim)
-- Fixed bottom dock clipping when resizing windows. (#61161; thanks a
-
-... (truncated)]]></description>
-    <pubDate>Wed, 29 Jul 2026 16:07:04 GMT</pubDate>
-  </item>
-  <item>
     <title>[withastro/astro] @astrojs/cloudflare@14.1.7</title>
     <link>https://github.com/withastro/astro/releases/tag/%40astrojs/cloudflare%4014.1.7</link>
     <guid isPermaLink="true">https://github.com/withastro/astro/releases/tag/%40astrojs/cloudflare%4014.1.7</guid>
@@ -886,31 +913,6 @@ This release raises the form-data security floor, adds configuration and type-sy
 
 ... (truncated)]]></description>
     <pubDate>Sun, 26 Jul 2026 14:13:32 GMT</pubDate>
-  </item>
-  <item>
-    <title>[vercel/next.js] v16.2.12</title>
-    <link>https://github.com/vercel/next.js/releases/tag/v16.2.12</link>
-    <guid isPermaLink="true">https://github.com/vercel/next.js/releases/tag/v16.2.12</guid>
-    <description><![CDATA[## What's Changed
-* Backport/docs fixes 16.2 - July round by @icyJoseph in 
-* [Backport] Fixes to support TypeScript 7 by @lukesandberg in 
-
-
-**Full Changelog**:]]></description>
-    <pubDate>Sat, 25 Jul 2026 23:55:42 GMT</pubDate>
-  </item>
-  <item>
-    <title>[inokawa/virtua] 0.50.0</title>
-    <link>https://github.com/inokawa/virtua/releases/tag/0.50.0</link>
-    <guid isPermaLink="true">https://github.com/inokawa/virtua/releases/tag/0.50.0</guid>
-    <description><![CDATA[## What's Changed
-* Add more unit tests by @inokawa in 
-* Migrate rollup to vite build by @inokawa in 
-* Support angular by @inokawa in 
-
-
-**Full Changelog**:]]></description>
-    <pubDate>Sat, 25 Jul 2026 14:26:14 GMT</pubDate>
   </item>
 </channel>
 </rss>
