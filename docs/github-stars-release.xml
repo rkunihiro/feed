@@ -5,8 +5,303 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Mon, 03 Aug 2026 22:20:01 GMT</lastBuildDate>
+  <lastBuildDate>Tue, 04 Aug 2026 22:22:03 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1103.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1103.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1103.0</guid>
+    <description><![CDATA[#### 3.1103.0(2026-08-04)
+
+##### Chores
+
+* **deps:** bump undici from 7.28.0 to 7.29.0 (#8248) (79818a11)
+
+##### Documentation Changes
+
+* **client-dsql:** UpdateCluster now checks the RemovePeerCluster permission on the specific cluster being removed, not a wildcard and docs now clarify how to set kmsEncryptionKey so the cluster uses the AWS-owned key. (473c65ca)
+* **client-organizations:** Improved accuracy of CloudTrail event documentation for AWS Organizations membership operations. (263633e3)
+
+##### New Features
+
+* **client-iam:** Updating endpoint generation logic (4f3cb1da)
+* **client-partnercentral-selling:** Partners can now create leads with only 5 required fields and free-text values for all other fields, reducing import friction. Engagement invitations now include enrichment data (propensity scores, lead readiness) directly in the response. (108bdedc)
+* **client-workspaces:** Added ClientExperiencePolicy to ClientProperties object for ModifyClientProperties and DescribeClien
+
+... (truncated)]]></description>
+    <pubDate>Tue, 04 Aug 2026 19:32:55 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-08-04) (release-2026-08-04)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-04</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-04</guid>
+    <description><![CDATA[## General Highlights
+* **Dependency Update**: Updated to the latest SDK module versions
+
+## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/service/dsql`: [v1.16.4](service/dsql/CHANGELOG.md#v1164-2026-08-04)
+ * **Documentation**: UpdateCluster now checks the RemovePeerCluster permission on the specific cluster being removed, not a wildcard and docs now clarify how to set kmsEncryptionKey so the cluster uses the AWS-owned key.
+* `github.com/aws/aws-sdk-go-v2/service/dynamodb`: [v1.63.0](service/dynamodb/CHANGELOG.md#v1630-2026-08-04)
+ * **Feature**: Vector indexes are a type of index in Amazon DynamoDB that enable similarity search on vector embedding stored in your table items. Vector indexes use approximate nearest neighbor search to find items whose vectors are most similar to a query vector that you provide.
+* `github.com/aws/aws-sdk-go-v2/service/ec2`: [v1.319.0](service/ec2/CHANGELOG.md#v13190-2026-08-04)
+ * **Feature**: Amazon EC2 now supports Application Status Checks, a new
+
+... (truncated)]]></description>
+    <pubDate>Tue, 04 Aug 2026 19:24:48 GMT</pubDate>
+  </item>
+  <item>
+    <title>[servo/servo] v0.4.0</title>
+    <link>https://github.com/servo/servo/releases/tag/v0.4.0</link>
+    <guid isPermaLink="true">https://github.com/servo/servo/releases/tag/v0.4.0</guid>
+    <description><![CDATA[This release is a re-release of the 0.4.0 release since we forgot the `v` prefix when creating the tag. Additionally, the macOS ServoShell binaries are now signed. 
+
+------------------------
+
+See our June blog post for a curated overview of the changes in this release.
+
+## Trying out the Servo Tech Demo
+
+[troubleshooting guide]: 
+
+### Linux
+
+If you see an error `loading shared libraries` when starting servo on Linux, please refer to the [troubleshooting guide].
+
+### HarmonyOS
+
+Please note that the `servo-aarch64-linux-ohos.hap` attached here is signed for OpenHarmony, not HarmonyOS.
+For HarmonyOS self-signing is currently required - You can download the `servo-aarch64-linux-ohos.so` shared library and use DevEco Studio to follow the instructions in the ArkTS Servo Demo repository
+
+
+## What's Changed
+
+Please check out our June blog post to get a curated overview over the recent changes.
+
+<details>
+ <summary>Generated Release notes</summary>
+
+## What's Changed
+
+... (truncated)]]></description>
+    <pubDate>Tue, 04 Aug 2026 18:09:39 GMT</pubDate>
+  </item>
+  <item>
+    <title>[BabylonJS/Babylon.js] 9.19.1</title>
+    <link>https://github.com/BabylonJS/Babylon.js/releases/tag/9.19.1</link>
+    <guid isPermaLink="true">https://github.com/BabylonJS/Babylon.js/releases/tag/9.19.1</guid>
+    <description><![CDATA[### Core
+
+- Fix clustered lighting WGSL validation on Firefox WebGPU - [_Bug Fix_] by Popov72 (#18761)
+- fix(physics): correct inverse inertia tensor rows in PhysicsCharacterController - by RaananW (#18756)
+- Prevent touch hover events from exhausting pointer slots - [_Bug Fix_] by RaananW (#18748)
+- Fix one-frame render flash when recreating a mesh in the same tick - by RaananW (#18755)
+- Fix: Gaussian Splatting sort padding reuses real splat data, causing splats stuck in front of the model - by raymondyfei (#18752)
+- Allow disabling Havok floating origin world regions - by BarthPaleologue (#18750)
+
+### Loaders
+
+- chore(deps): pin @adobe/spz to exact 0.2.0 in @dev/loaders - by RaananW (#18759)]]></description>
+    <pubDate>Tue, 04 Aug 2026 17:36:39 GMT</pubDate>
+  </item>
+  <item>
+    <title>[redwoodjs/sdk] v1.6.0</title>
+    <link>https://github.com/redwoodjs/sdk/releases/tag/v1.6.0</link>
+    <guid isPermaLink="true">https://github.com/redwoodjs/sdk/releases/tag/v1.6.0</guid>
+    <description><![CDATA[## What's Changed
+* fix(deps): resolve July dependency security audit findings by @justinvdm in 
+* chore(deps): update dependencies (2026-07-31) by @justinvdm in 
+* fix(client): make navigation commits non-interruptible and add commit watchdog by @justinvdm in 
+* feat(client-navigation): add first-class full-reload opt-out for navigation by @chrsnymn in 
+* fix(release): repair local releases in a repo-owned container by @justinvdm in 
+
+
+**Full Changelog**:]]></description>
+    <pubDate>Tue, 04 Aug 2026 15:30:06 GMT</pubDate>
+  </item>
+  <item>
+    <title>[biomejs/biome] Biome CLI v2.5.7 (@biomejs/biome@2.5.7)</title>
+    <link>https://github.com/biomejs/biome/releases/tag/%40biomejs/biome%402.5.7</link>
+    <guid isPermaLink="true">https://github.com/biomejs/biome/releases/tag/%40biomejs/biome%402.5.7</guid>
+    <description><![CDATA[## 2.5.7
+
+### Patch Changes
+
+- #10822 `c171b3b` Thanks @pkallos! - Added the option `ignoreIfStatements` to useNullishCoalescing. Biome now flags `if` statements that only assign to a nullish variable (such as `if (!a) { a = b }`) and can rewrite them to `??=`. When enabled, Biome ignores those `if` statements.
+
+- #11136 `e63354c` Thanks @AkashNaickar! - Added a new nursery rule `noExtendNative`, which reports extending the prototype of a built-in object.
+
+- #10094 `e007143` Thanks @THEjacob1000! - Added the nursery rule `noTailwindArbitraryValue`. Biome now reports Tailwind CSS arbitrary values such as `w-[400px]`, including in HTML/JSX class attributes, configured utility functions, and tagged templates.
+
+- #11184 `135f476` Thanks @subotac! - Fixed #11176: `noUnknownPseudoClass` now recognizes Vue's `:deep` pseudo-class inside `.vue` style blocks.
+
+- #8239 `a519f9d` Thanks @cormacrelf! - Fixed #8233, where Biome CLI in
+ stdin mode didn't work correctly when handling files in projects
+
+... (truncated)]]></description>
+    <pubDate>Tue, 04 Aug 2026 13:24:41 GMT</pubDate>
+  </item>
+  <item>
+    <title>[anomalyco/opencode] v1.18.13</title>
+    <link>https://github.com/anomalyco/opencode/releases/tag/v1.18.13</link>
+    <guid isPermaLink="true">https://github.com/anomalyco/opencode/releases/tag/v1.18.13</guid>
+    <description><![CDATA[## TUI
+### Bugfixes
+- GitHub pull request reviews now include the pull request number and URL in context.
+
+## Desktop
+### Bugfixes
+- Fixed several right-to-left layout issues across tabs, drawers, resizing, and titlebar interactions.
+- Fixed shared right-to-left UI behavior such as directional icons and drawer placement.
+- Sessions without titles now fall back to generated names instead of appearing blank.
+- Moved markdown parsing off the main thread to keep the app more responsive while rendering messages.
+
+### Improvements
+- Localized more desktop UI copy, including native menus, update dialogs, and help content.
+- Added early right-to-left layout support across the app and session views.
+- Added locale-aware plural rules so translated counts and summaries read correctly.
+- Expanded translation coverage and added more supported desktop languages.
+
+**Thank you to 1 community contributor:**
+- @amypoolside:
+ - docs: add Poolside provider setup (#39187)]]></description>
+    <pubDate>Tue, 04 Aug 2026 12:12:32 GMT</pubDate>
+  </item>
+  <item>
+    <title>[web-infra-dev/rspack] v2.1.8</title>
+    <link>https://github.com/web-infra-dev/rspack/releases/tag/v2.1.8</link>
+    <guid isPermaLink="true">https://github.com/web-infra-dev/rspack/releases/tag/v2.1.8</guid>
+    <description><![CDATA[## Highlights
+
+### Persistent cache storage options now align with webpack
+
+Rspack now supports `cache.name` and `cache.storage.location`, aligning with webpack's persistent cache semantics. `cache.storage.directory` is now the base directory, while the final cache location defaults to `<directory>/<cache.name>`. Default cache paths remain unchanged.
+
+If you previously used `storage.directory` as the exact cache path, migrate it to `storage.location`. Existing cache data is not migrated automatically.
+
+```diff
+cache: {
+ type: 'persistent',
+ storage: {
+ type: 'filesystem',
+- directory: '/custom/cache',
++ location: '/custom/cache',
+ },
+}
+```
+
+## What's Changed
+### New Features 🎉
+* feat(rstest): inject module origin for import.meta.rstest by @9aoy in 
+* feat: align persistent cache storage options with webpack by @hardfist in 
+* feat(hmr): emit css.c / css.r in the hot-update manifest for precise CSS updates by @stormslowly in 
+### Performance 🚀
+* perf: avoid cl
+
+... (truncated)]]></description>
+    <pubDate>Tue, 04 Aug 2026 11:09:32 GMT</pubDate>
+  </item>
+  <item>
+    <title>[mui/base-ui] v1.7.0</title>
+    <link>https://github.com/mui/base-ui/releases/tag/v1.7.0</link>
+    <guid isPermaLink="true">https://github.com/mui/base-ui/releases/tag/v1.7.0</guid>
+    <description><![CDATA[### General changes
+
+- Restore visible focus after keyboard close in Safari and Firefox (#5093) by @lyzno1
+- Type `render` callback props based on the rendered element (#5104) by @atomiks
+- Reduce popup bundle size (#5233) by @atomiks
+- Reduce store bundle size (#5250) by @atomiks
+- Keep unpositioned popups at the viewport origin (#5299) by @flaviendelangle
+- Correct layout and passive effect timing (#5337) by @atomiks
+- Remove redundant lifecycle synchronization (#5341) by @atomiks
+- Prevent stale cleanup from clearing registered part IDs (#5340) by @atomiks
+- Complete popup unmounting after a canceled exit transition (#5401) by @atomiks
+- Fix rendered trigger ID ownership (#5110) by @atomiks
+- Prevent unwanted flip with capped scrollable content (#5120) by @atomiks
+- Fix `collisionPadding` off-by-one on the biased side (#5143) by @atomiks
+- Reduce shared popup bundle size (#5192) by @atomiks
+- Mount popup subtrees synchronously when opening in React 17 (#5309) by @atom
+
+... (truncated)]]></description>
+    <pubDate>Tue, 04 Aug 2026 09:57:17 GMT</pubDate>
+  </item>
+  <item>
+    <title>[azat-io/eslint-plugin-perfectionist] v5.10.1</title>
+    <link>https://github.com/azat-io/eslint-plugin-perfectionist/releases/tag/v5.10.1</link>
+    <guid isPermaLink="true">https://github.com/azat-io/eslint-plugin-perfectionist/releases/tag/v5.10.1</guid>
+    <description><![CDATA[### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- Fix crash in typescript 7 &nbsp;-&nbsp; by @hugop95 <samp>(fbbc3)</samp>
+- Fix complex comments cases not being auto-fixed correctly &nbsp;-&nbsp; by @hugop95 <samp>(7a35d)</samp>
+- Respect ignored callback dependencies in nested calls &nbsp;-&nbsp; by @hugop95 <samp>(c9a11)</samp>
+- Take into account extended tsconfigs &nbsp;-&nbsp; by @hugop95 <samp>(93a26)</samp>
+
+##### &nbsp;&nbsp;&nbsp;&nbsp;View changes on GitHub]]></description>
+    <pubDate>Tue, 04 Aug 2026 05:39:02 GMT</pubDate>
+  </item>
+  <item>
+    <title>[markedjs/marked] v18.0.9</title>
+    <link>https://github.com/markedjs/marked/releases/tag/v18.0.9</link>
+    <guid isPermaLink="true">https://github.com/markedjs/marked/releases/tag/v18.0.9</guid>
+    <description><![CDATA[## 18.0.9 (2026-08-04)
+
+
+### Bug Fixes
+
+* an unmatched strong run before emphasis stays literal (#4008) (e8544e6)
+* Fix spurious deeper nesting in a blockquote continuation (#4030) (452f1ed)
+* pedantic **foo:** and **"word"** emphasis parsing (#3999) (823093f)]]></description>
+    <pubDate>Tue, 04 Aug 2026 04:33:31 GMT</pubDate>
+  </item>
+  <item>
+    <title>[anomalyco/opentui] Release v0.5.1 (v0.5.1)</title>
+    <link>https://github.com/anomalyco/opentui/releases/tag/v0.5.1</link>
+    <guid isPermaLink="true">https://github.com/anomalyco/opentui/releases/tag/v0.5.1</guid>
+    <description><![CDATA[## What's Changed
+* fix(core): accept trailing PNG whitespace by @kommander in 
+* feat(core): support ICC PNG profiles by @kommander in 
+
+
+**Full Changelog**:]]></description>
+    <pubDate>Tue, 04 Aug 2026 01:40:20 GMT</pubDate>
+  </item>
+  <item>
+    <title>[sindresorhus/eslint-plugin-unicorn] v73.0.0</title>
+    <link>https://github.com/sindresorhus/eslint-plugin-unicorn/releases/tag/v73.0.0</link>
+    <guid isPermaLink="true">https://github.com/sindresorhus/eslint-plugin-unicorn/releases/tag/v73.0.0</guid>
+    <description><![CDATA[## New rules
+
+- `consistent-arrow-return-style` (#3601) ae3c3d93
+- `iteration-fallback-style` (#3602) a61c2c5e
+- `no-barrel-files` (#3570) d900c09e
+- `no-unsafe-sqlite-interpolation` (#3582) a09869bc
+- `single-line-block-comment-style` (#3584) a0c2c576
+
+## Improvements
+
+- Improve performance (#3560) 7b7c7906
+- Harden rules (#3585) 9c2b0bb1
+- `consistent-boolean-name`: Add `wrappers` option (#3572) 78c5abf2
+- `consistent-boolean-name`: Add granular check options (#3591) a33b1c1e
+- `consistent-function-style`: Add `defaultExport` option (#3600) e78a7c96
+- `prefer-https`: Add `ignore` option (#3557) 7f7ec066
+- `comment-content`: Handle Unicode word boundaries (#3597) dd52b4a4
+- `import-style`: Ignore type-only imports (#3599) f2a62e37
+- `name-replacements`: Handle TypeScript parameter properties (#3575) fa0df7bd
+- `no-negated-comparison`: Never check relational operators (#3589) 6120423a
+- `no-this-outside-of-class`: Allow explicit TypeScript `this` parameters (#3596) 
+
+... (truncated)]]></description>
+    <pubDate>Tue, 04 Aug 2026 00:47:03 GMT</pubDate>
+  </item>
+  <item>
+    <title>[openclaw/openclaw] openclaw 2026.7.1-2 (v2026.7.1-2)</title>
+    <link>https://github.com/openclaw/openclaw/releases/tag/v2026.7.1-2</link>
+    <guid isPermaLink="true">https://github.com/openclaw/openclaw/releases/tag/v2026.7.1-2</guid>
+    <description><![CDATA[### Fixes
+
+- **npm plugin updates:** accept singleton-array metadata from newer npm clients so tracked official plugins can install and update to correction releases. (#108336)]]></description>
+    <pubDate>Tue, 04 Aug 2026 00:41:26 GMT</pubDate>
+  </item>
   <item>
     <title>[honojs/hono] v4.13.0</title>
     <link>https://github.com/honojs/hono/releases/tag/v4.13.0</link>
@@ -77,31 +372,6 @@ Here is `benchmarks/fetch` comparing v4.12 and v4.13 (`ROUNDS=5 ./compare.sh`, B
     <pubDate>Mon, 03 Aug 2026 20:36:44 GMT</pubDate>
   </item>
   <item>
-    <title>[aws/aws-sdk-js-v3] v3.1102.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1102.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1102.0</guid>
-    <description><![CDATA[#### 3.1102.0(2026-08-03)
-
-##### Chores
-
-* **scripts:** add api-extractor.json validation for packages with public annotations (#8242) (77c1c5c0)
-* **core/protocols:** switch to v2 JSON codecs (#8234) (54c1c236)
-
-##### Documentation Changes
-
-* **client-wafv2:** Updated descriptions for number of PreParseTextTransformations allowed per rule statement (b2440c3b)
-* **checksums:** populate readme with package overview (#8243) (353e67dd)
-
-##### New Features
-
-* **client-direct-connect:** Added route visibility support for AWS Direct Connect, allowing customers to call ListVirtualInterfaceRoutes to view the BGP routes including AS path and BGP communities advertised over their virtual interfaces. (12675348)
-* **client-mediaconvert:** Updates Kantar server URL validation to accept Fifty5Blue domain. Adds support for output to S3 Glacier Instant Retrieval. (01860cb3)
-* **client-network-firewall:** This launch allows customers to use Network Firewall as an explicit Proxy and protect their worklo
-
-... (truncated)]]></description>
-    <pubDate>Mon, 03 Aug 2026 19:08:29 GMT</pubDate>
-  </item>
-  <item>
     <title>[github/spec-kit] Spec Kit - 0.15.2 (v0.15.2)</title>
     <link>https://github.com/github/spec-kit/releases/tag/v0.15.2</link>
     <guid isPermaLink="true">https://github.com/github/spec-kit/releases/tag/v0.15.2</guid>
@@ -130,25 +400,6 @@ specify init my-project
 
 ... (truncated)]]></description>
     <pubDate>Mon, 03 Aug 2026 19:07:13 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-08-03) (release-2026-08-03)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-03</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-03</guid>
-    <description><![CDATA[## General Highlights
-* **Dependency Update**: Updated to the latest SDK module versions
-
-## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/directconnect`: [v1.44.0](service/directconnect/CHANGELOG.md#v1440-2026-08-03)
- * **Feature**: Added route visibility support for AWS Direct Connect, allowing customers to call ListVirtualInterfaceRoutes to view the BGP routes including AS path and BGP communities advertised over their virtual interfaces.
-* `github.com/aws/aws-sdk-go-v2/service/eksauth`: [v1.16.0](service/eksauth/CHANGELOG.md#v1160-2026-08-03)
- * **Feature**: Added eksNodeName, instanceId, and zone optional parameters to the AssumeRoleForPodIdentity API.
-* `github.com/aws/aws-sdk-go-v2/service/mediaconvert`: [v1.97.0](service/mediaconvert/CHANGELOG.md#v1970-2026-08-03)
- * **Feature**: Updates Kantar server URL validation to accept Fifty5Blue domain. Adds support for output to S3 Glacier Instant Retrieval.
-* `github.com/aws/aws-sdk-go-v2/service/networkfirewall`: [v1.67.0
-
-... (truncated)]]></description>
-    <pubDate>Mon, 03 Aug 2026 19:03:33 GMT</pubDate>
   </item>
   <item>
     <title>[chakra-ui/ark] @ark-ui/react@5.38.0</title>
@@ -313,33 +564,6 @@ You can read about our versioning strategy and releases on our website.]]></desc
     <pubDate>Mon, 03 Aug 2026 13:50:21 GMT</pubDate>
   </item>
   <item>
-    <title>[anomalyco/opentui] Release v0.5.0 (v0.5.0)</title>
-    <link>https://github.com/anomalyco/opentui/releases/tag/v0.5.0</link>
-    <guid isPermaLink="true">https://github.com/anomalyco/opentui/releases/tag/v0.5.0</guid>
-    <description><![CDATA[## What's Changed
-* perf(core): speed up Node FFI layout reads by @kommander in 
-* feat(core): add raw stdin logging by @opencode-agent[bot] in 
-* docs: update OpenTUI skill by @kommander in 
-* perf(core): reuse FFI struct storage by @kommander in 
-* fix(runtime): bundled asset path fallback by @simonklee in 
-* docs/audio: clarify engine lifecycle by @simonklee in 
-* core(renderer): write Windows console output with WriteConsoleW by @simonklee in 
-* feat(core): add audio input capture by @kommander in 
-* fix(core): prevent duplicate live frame timers by @kitlangton in 
-* fix(three): load Jimp only for image operations by @khughitt in 
-* fix(core): emit input handler errors by @opencode-agent[bot] in 
-* fix(react): support Node ESM imports by @neriousy in 
-* fix(core): emit render errors by @opencode-agent[bot] in 
-* fix(core): harden renderer resolution lifecycle by @kommander in 
-* feat(core): add native image rendering by @kommander in 
-
-## New Contributors
-* @opencode-agent[bot] mad
-
-... (truncated)]]></description>
-    <pubDate>Mon, 03 Aug 2026 12:18:10 GMT</pubDate>
-  </item>
-  <item>
     <title>[oxc-project/oxc] oxlint v1.77.0 &amp; oxfmt v0.62.0 (apps_v1.77.0)</title>
     <link>https://github.com/oxc-project/oxc/releases/tag/apps_v1.77.0</link>
     <guid isPermaLink="true">https://github.com/oxc-project/oxc/releases/tag/apps_v1.77.0</guid>
@@ -433,36 +657,6 @@ This release makes Ant sandboxes message-driven and resource-aware. It completes
 - "Item Selection Dialog" has been added to the event command "Preset UI". Also, the "Chara Selection Dialog" has been improved.
 - Fixed a bug where an error occurred when saving in the icon editor.]]></description>
     <pubDate>Sat, 01 Aug 2026 13:04:47 GMT</pubDate>
-  </item>
-  <item>
-    <title>[anomalyco/opencode] v1.18.11</title>
-    <link>https://github.com/anomalyco/opencode/releases/tag/v1.18.11</link>
-    <guid isPermaLink="true">https://github.com/anomalyco/opencode/releases/tag/v1.18.11</guid>
-    <description><![CDATA[## Core
-
-### Bugfixes
-
-- Stopped MCP SSE connections from getting stuck in reconnect loops after server error responses.
-- Fixed provider model configs that use interleaved reasoning fields like `reasoning_text` or custom field names.
-
-## Desktop
-
-### Bugfixes
-
-- Open external links in the system browser instead of inside the app.
-- Fixed stale session tab state in the desktop title bar. (@OpeOginni)
-- Open the legacy directory picker at your home folder when no home path is loaded yet.
-- Prevent the file tree tab from clipping when resized smaller. (@OpeOginni)
-- Fixed debug gutter labels and values misaligning.
-
-**Thank you to 2 community contributors:**
-- @devennavani:
- - docs: add Modal provider setup (#39710)
-- @OpeOginni:
- - fix(app): prevent file tree tab clipping (#39770)
- - fix(app): prevent stale session tab reads (#39767)
- - fix(app): prevent stale prompt control reads (#39842)]]></description>
-    <pubDate>Sat, 01 Aug 2026 11:44:45 GMT</pubDate>
   </item>
   <item>
     <title>[astral-sh/uv] 0.12.1</title>
@@ -560,42 +754,6 @@ Full Release Notes]]></description>
     <pubDate>Fri, 31 Jul 2026 13:13:28 GMT</pubDate>
   </item>
   <item>
-    <title>[servo/servo] 0.4.0</title>
-    <link>https://github.com/servo/servo/releases/tag/0.4.0</link>
-    <guid isPermaLink="true">https://github.com/servo/servo/releases/tag/0.4.0</guid>
-    <description><![CDATA[See our June blog post for a curated overview of the changes in this release.
-
-## Trying out the Servo Tech Demo
-
-[troubleshooting guide]: 
-
-### Linux
-
-If you see an error `loading shared libraries` when starting servo on Linux, please refer to the [troubleshooting guide].
-
-### HarmonyOS
-
-Please note that the `servo-aarch64-linux-ohos.hap` attached here is signed for OpenHarmony, not HarmonyOS.
-For HarmonyOS self-signing is currently required - You can download the `servo-aarch64-linux-ohos.so` shared library and use DevEco Studio to follow the instructions in the ArkTS Servo Demo repository
-
-
-## What's Changed
-
-Please check out our June blog post to get a curated overview over the recent changes.
-
-<details>
- <summary>Generated Release notes</summary>
-
-## What's Changed
-* deps: Bump `sha3` to 0.12 by @kkoyung in 
-* webgpu: Use SecureContext on namespaces by @sagudev in 
-* layout: fix UA stylesheet for `<input type="radio"/>` by @RichardTjokroutomo in 
-* Imple
-
-... (truncated)]]></description>
-    <pubDate>Fri, 31 Jul 2026 10:36:55 GMT</pubDate>
-  </item>
-  <item>
     <title>[ant-design/ant-design] 6.5.3</title>
     <link>https://github.com/ant-design/ant-design/releases/tag/6.5.3</link>
     <guid isPermaLink="true">https://github.com/ant-design/ant-design/releases/tag/6.5.3</guid>
@@ -649,10 +807,10 @@ Se
     <pubDate>Thu, 30 Jul 2026 19:34:31 GMT</pubDate>
   </item>
   <item>
-    <title>[beercss/beercss] v5.0.1</title>
-    <link>https://github.com/beercss/beercss/releases/tag/v5.0.1</link>
-    <guid isPermaLink="true">https://github.com/beercss/beercss/releases/tag/v5.0.1</guid>
-    <description><![CDATA[### CHANGELOG 5.0.1
+    <title>[beercss/beercss] v5.0.3</title>
+    <link>https://github.com/beercss/beercss/releases/tag/v5.0.3</link>
+    <guid isPermaLink="true">https://github.com/beercss/beercss/releases/tag/v5.0.3</guid>
+    <description><![CDATA[### CHANGELOG 5.0.3
 
 ### 🚀 Added
 - Updated icon fonts 
@@ -753,19 +911,6 @@ Read the fully docs here
     <pubDate>Thu, 30 Jul 2026 12:03:27 GMT</pubDate>
   </item>
   <item>
-    <title>[BabylonJS/Babylon.js] 9.19.0</title>
-    <link>https://github.com/BabylonJS/Babylon.js/releases/tag/9.19.0</link>
-    <guid isPermaLink="true">https://github.com/BabylonJS/Babylon.js/releases/tag/9.19.0</guid>
-    <description><![CDATA[### Core
-
-- Restore transitive side-effect registrations - [_Bug Fix_] by RaananW (#18751)
-
-### Loaders
-
-- Restore transitive side-effect registrations - [_Bug Fix_] by RaananW (#18751)]]></description>
-    <pubDate>Thu, 30 Jul 2026 07:41:03 GMT</pubDate>
-  </item>
-  <item>
     <title>[vercel-labs/skills] v1.5.21</title>
     <link>https://github.com/vercel-labs/skills/releases/tag/v1.5.21</link>
     <guid isPermaLink="true">https://github.com/vercel-labs/skills/releases/tag/v1.5.21</guid>
@@ -847,24 +992,6 @@ Pick your language under Preferences > Application > General. Along with English
     <pubDate>Wed, 29 Jul 2026 14:21:56 GMT</pubDate>
   </item>
   <item>
-    <title>[web-infra-dev/rspack] v2.1.7</title>
-    <link>https://github.com/web-infra-dev/rspack/releases/tag/v2.1.7</link>
-    <guid isPermaLink="true">https://github.com/web-infra-dev/rspack/releases/tag/v2.1.7</guid>
-    <description><![CDATA[> **Notice:** The `import.meta.env` experimental feature introduced in Rspack 2.1.6 has been removed in Rspack 2.1.7.
-
-## What's Changed
-### Performance 🚀
-* perf: share source code across diagnostics by @hardfist in 
-### Bug Fixes 🐞
-* fix: revert "feat: support import.meta.env" by @intellild in 
-* fix(binding): release module graph connection wrappers by @LingyuCoder in 
-### Other Changes
-* chore: release version 2.1.6 by @SyMind in 
-
-**Full Changelog**:]]></description>
-    <pubDate>Wed, 29 Jul 2026 09:21:11 GMT</pubDate>
-  </item>
-  <item>
     <title>[esm-dev/esm.sh] Server v137_8 (v137_8)</title>
     <link>https://github.com/esm-dev/esm.sh/releases/tag/v137_8</link>
     <guid isPermaLink="true">https://github.com/esm-dev/esm.sh/releases/tag/v137_8</guid>
@@ -891,112 +1018,6 @@ Two coordinated Step Functions capabilities:
 
 ... (truncated)]]></description>
     <pubDate>Wed, 29 Jul 2026 04:54:43 GMT</pubDate>
-  </item>
-  <item>
-    <title>[jsdom/jsdom] v30.0.1</title>
-    <link>https://github.com/jsdom/jsdom/releases/tag/v30.0.1</link>
-    <guid isPermaLink="true">https://github.com/jsdom/jsdom/releases/tag/v30.0.1</guid>
-    <description><![CDATA[* Fixed `getComputedStyle` with `calc` and other functions throwing an exception, which regressed in v30.0.0. (@asamuzaK)
-* Sped up up range operations on large documents (@leonidaz)]]></description>
-    <pubDate>Wed, 29 Jul 2026 04:19:47 GMT</pubDate>
-  </item>
-  <item>
-    <title>[openai/codex] 0.146.0 (rust-v0.146.0)</title>
-    <link>https://github.com/openai/codex/releases/tag/rust-v0.146.0</link>
-    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.146.0</guid>
-    <description><![CDATA[## New Features
-
-- Name new sessions with `/new` or `/clear`, pin important threads, and switch between side conversations without closing them. (#34605, #34840, #35011)
-- Support Agent Plugins manifests, workspace plugin publishing, and additional plugin marketplaces for Amazon Bedrock and Claude Code. (#35105, #35254, #34931, #34979)
-- Fork threads with paginated history, including temporary forks that do not appear in thread listings. (#35220, #35251)
-- Connect app-server to remote Code Mode hosts over WebSocket. (#35078, #35098)
-- Enable standalone web search for compatible custom model providers. (#34846)
-- Discover executor-provided skills and securely read their associated resources, including explicitly selected skills. (#35184, #35198)
-
-## Bug Fixes
-
-- Honor configured proxies across authentication, plugin downloads, MCP authorization, remote execution, WebSockets, redirects, and LM Studio connections. (#34479, #34509, #34655, #34678, #35023, #35056, #35239)
-- Keep MCP connect
-
-... (truncated)]]></description>
-    <pubDate>Wed, 29 Jul 2026 01:42:51 GMT</pubDate>
-  </item>
-  <item>
-    <title>[remix-run/react-router] v7.18.2 (react-router@7.18.2)</title>
-    <link>https://github.com/remix-run/react-router/releases/tag/react-router%407.18.2</link>
-    <guid isPermaLink="true">https://github.com/remix-run/react-router/releases/tag/react-router%407.18.2</guid>
-    <description><![CDATA[See the changelog for release notes:]]></description>
-    <pubDate>Tue, 28 Jul 2026 21:53:57 GMT</pubDate>
-  </item>
-  <item>
-    <title>[warpdotdev/warp] TUI Screenshots APP-5029 (delete after PR review) (tui-screenshots-app5029)</title>
-    <link>https://github.com/warpdotdev/warp/releases/tag/tui-screenshots-app5029</link>
-    <guid isPermaLink="true">https://github.com/warpdotdev/warp/releases/tag/tui-screenshots-app5029</guid>
-    <description><![CDATA[Temporary image host for PR #14439 screenshots. Can be deleted after review.]]></description>
-    <pubDate>Tue, 28 Jul 2026 21:49:25 GMT</pubDate>
-  </item>
-  <item>
-    <title>[webpack/webpack] v5.109.2</title>
-    <link>https://github.com/webpack/webpack/releases/tag/v5.109.2</link>
-    <guid isPermaLink="true">https://github.com/webpack/webpack/releases/tag/v5.109.2</guid>
-    <description><![CDATA[### Patch Changes
-
-- Resolve aliases pointing at a package directory whose name ends with `.js` again. (by @alexander-akait in #21542)
-
-- Name CSS sources in source maps by their resource path, without the `css ` prefix. (by @bjohansebas in #21536)
-
-- Delete no longer referenced files from the filesystem cache directory after storing the cache, age them by recorded time so restored caches are cleaned too, and collect every fully expired pack in one store instead of one per build. (by @bjohansebas in #21528)
-
-- Report `"universal"` as the loader context target for the universal target. (by @alexander-akait in #21540)
-
-- Skip `require.prop` in dead branches gated by inlined imported constants. (by @hai-x in #21517)
-
-- Annotate configuration options and public hooks in the generated types with the `@since` JSDoc tag. (by @bjohansebas in #21473)]]></description>
-    <pubDate>Tue, 28 Jul 2026 18:14:32 GMT</pubDate>
-  </item>
-  <item>
-    <title>[ValveSoftware/Proton] Proton 10.0-4b (proton-10.0-4b)</title>
-    <link>https://github.com/ValveSoftware/Proton/releases/tag/proton-10.0-4b</link>
-    <guid isPermaLink="true">https://github.com/ValveSoftware/Proton/releases/tag/proton-10.0-4b</guid>
-    <description><![CDATA[- Added Steamworks SDK 1.65 support]]></description>
-    <pubDate>Tue, 28 Jul 2026 10:33:40 GMT</pubDate>
-  </item>
-  <item>
-    <title>[biomejs/biome] Biome CLI v2.5.6 (@biomejs/biome@2.5.6)</title>
-    <link>https://github.com/biomejs/biome/releases/tag/%40biomejs/biome%402.5.6</link>
-    <guid isPermaLink="true">https://github.com/biomejs/biome/releases/tag/%40biomejs/biome%402.5.6</guid>
-    <description><![CDATA[## 2.5.6
-
-### Patch Changes
-
-- #11035 `0e4b03b` Thanks @ematipico! - Fixed a performance regression in `noMisusedPromises` that caused type inference to run repeatedly while linting a file.
-
-- #11043 `22ec076` Thanks @denbezrukov! - Fixed CSS formatting for multiline function arguments preceded by comments:
-
- ```diff
- .example {
- value: outer(
- 1,
- /* comment */
- nested(
- - first,
- - second
- - )
- + first,
- + second
- + )
- );
- }
- ```
-
-- #11007 `c9acb25` Thanks @BTF-Kabir-2020! - Fixed #9195: `useHookAtTopLevel` no longer reports hooks in named `forwardRef` components that receive a `ref` parameter.
-
-- #10152 `50a9bd8` Thanks @Zelys-DFKH! - Fixed #10131: Biome now correctly parses curried arrow functions in ternary consequents when the inner arrow's parameters use a destructuring pattern, e.g. `cond ? (x) => ({ a, b }) => body : alt`.
-
-- #11105 `8ffe2b9` Thanks @dadavidtseng! - Fixed #11092: The `noUselessTernary` quick fix now preserves operator spacing when simplifying or inverting bool
-
-... (truncated)]]></description>
-    <pubDate>Tue, 28 Jul 2026 09:55:21 GMT</pubDate>
   </item>
 </channel>
 </rss>
