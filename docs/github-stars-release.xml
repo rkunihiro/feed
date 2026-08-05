@@ -5,49 +5,254 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Tue, 04 Aug 2026 22:22:03 GMT</lastBuildDate>
+  <lastBuildDate>Wed, 05 Aug 2026 22:21:21 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
   <item>
-    <title>[aws/aws-sdk-js-v3] v3.1103.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1103.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1103.0</guid>
-    <description><![CDATA[#### 3.1103.0(2026-08-04)
+    <title>[anomalyco/opencode] v1.18.14</title>
+    <link>https://github.com/anomalyco/opencode/releases/tag/v1.18.14</link>
+    <guid isPermaLink="true">https://github.com/anomalyco/opencode/releases/tag/v1.18.14</guid>
+    <description><![CDATA[## Core
 
-##### Chores
+### Improvements
 
-* **deps:** bump undici from 7.28.0 to 7.29.0 (#8248) (79818a11)
+- Simplified xAI login to a single device-code flow that works better in headless and remote environments.
 
-##### Documentation Changes
+### Bugfixes
 
-* **client-dsql:** UpdateCluster now checks the RemovePeerCluster permission on the specific cluster being removed, not a wildcard and docs now clarify how to set kmsEncryptionKey so the cluster uses the AWS-owned key. (473c65ca)
-* **client-organizations:** Improved accuracy of CloudTrail event documentation for AWS Organizations membership operations. (263633e3)
+- Preserved structured mid-stream provider errors so compatible providers can retry failed responses.
+- Retried more transient provider and network errors instead of failing immediately.
+- Counted cache writes in ACP usage totals.
+- Logged remote workspace 5xx response bodies in the host logs to make proxy failures easier to debug. (@jamesmurdza)
+- Stopped sending the host `directory` path to remote workspaces so prompts resolve from the remote project root. (@jamesmurdza)
+- Waited for queued ACP session updates before ending a turn.
+
+**Thank you to 1 community contributor:**
+- @jamesmurdza:
+ - fix(server): don't forward host directory to remote workspace (#40136)
+ - fix(server): log upstream 5xx bodies from proxied workspace requests (#40135)]]></description>
+    <pubDate>Wed, 05 Aug 2026 20:58:55 GMT</pubDate>
+  </item>
+  <item>
+    <title>[astral-sh/uv] 0.12.2</title>
+    <link>https://github.com/astral-sh/uv/releases/tag/0.12.2</link>
+    <guid isPermaLink="true">https://github.com/astral-sh/uv/releases/tag/0.12.2</guid>
+    <description><![CDATA[## Release Notes
+
+Released on 2026-08-05.
+
+### Python
+
+- Add CPython 3.15.0rc1 (#20948)
+- Add CPython 3.14.7 (#20971)
+
+### Enhancements
+
+- Ensure diagnostic hints end with a newline to prevent malformed terminal output (#20959)
+
+### Preview features
+
+- Audit one or all installed tools with `uv tool audit` (#20921)
+- Report physically reclaimed disk space during cache cleanup with the `cache-physical-space` preview feature (#20925)
+
+### Configuration
+
+- Add `UV_RUN_RLIMIT_NOFILE` to set the open-file limit for commands launched by `uv run` (#20926)
+
+### Performance
+
+- Speed up `uv.lock` parsing for wheel entries (#20881)
+- Speed up `uv.lock` parsing for source distribution entries (#20882)
+- Speed up filename extraction from distribution URLs (#20879)
+- Reduce filesystem metadata lookups during bytecode compilation (#20928)
+- Reuse file metadata when building source distributions (#20927)
+
+### Bug fixes
+
+- Preserve compatibility with older uv versions when recording artifact sizes in ca
+
+... (truncated)]]></description>
+    <pubDate>Wed, 05 Aug 2026 19:22:56 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1104.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1104.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1104.0</guid>
+    <description><![CDATA[#### 3.1104.0(2026-08-05)
 
 ##### New Features
 
-* **client-iam:** Updating endpoint generation logic (4f3cb1da)
-* **client-partnercentral-selling:** Partners can now create leads with only 5 required fields and free-text values for all other fields, reducing import friction. Engagement invitations now include enrichment data (propensity scores, lead readiness) directly in the response. (108bdedc)
-* **client-workspaces:** Added ClientExperiencePolicy to ClientProperties object for ModifyClientProperties and DescribeClien
+* **client-deadline:** AWS Deadline Cloud now reports persistent volume costs alongside compute and license costs. Customers can view per-fleet storage costs in Usage Explorer by selecting the Usage Type grouping, helping them better understand the costs of their infrastructure. (f6649b9d)
+* **client-bedrock-agentcore-control:** Adding support for fine-grained access control for AgentCore Memory through managed AgentCore Gateway HTTP Connectors. (448fc0f7)
+* **client-glue:** Added the PutDataCatalogExportConfiguration to export Glue Data Catalog metadata to systems tables stored in S3 Tables. (31c69446)
+* **client-acm-pca:** Private Certificate Authority service now supports RSASSA-PSS signing algorithm. (203b57d1)
+* **client-ecs:** New enum values added for Agent Connectivity issues (13e0f989)
 
-... (truncated)]]></description>
-    <pubDate>Tue, 04 Aug 2026 19:32:55 GMT</pubDate>
+
+---
+
+For list of updated packages, view **updated-packages.md** in **assets-3.1104.0.zip**]]></description>
+    <pubDate>Wed, 05 Aug 2026 18:53:41 GMT</pubDate>
   </item>
   <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-08-04) (release-2026-08-04)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-04</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-04</guid>
+    <title>[aws/aws-sdk-go-v2] Release (2026-08-05) (release-2026-08-05)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-05</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-05</guid>
     <description><![CDATA[## General Highlights
 * **Dependency Update**: Updated to the latest SDK module versions
 
 ## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/dsql`: [v1.16.4](service/dsql/CHANGELOG.md#v1164-2026-08-04)
- * **Documentation**: UpdateCluster now checks the RemovePeerCluster permission on the specific cluster being removed, not a wildcard and docs now clarify how to set kmsEncryptionKey so the cluster uses the AWS-owned key.
-* `github.com/aws/aws-sdk-go-v2/service/dynamodb`: [v1.63.0](service/dynamodb/CHANGELOG.md#v1630-2026-08-04)
- * **Feature**: Vector indexes are a type of index in Amazon DynamoDB that enable similarity search on vector embedding stored in your table items. Vector indexes use approximate nearest neighbor search to find items whose vectors are most similar to a query vector that you provide.
-* `github.com/aws/aws-sdk-go-v2/service/ec2`: [v1.319.0](service/ec2/CHANGELOG.md#v13190-2026-08-04)
- * **Feature**: Amazon EC2 now supports Application Status Checks, a new
+* `github.com/aws/aws-sdk-go-v2/service/acmpca`: [v1.50.0](service/acmpca/CHANGELOG.md#v1500-2026-08-05)
+ * **Feature**: Private Certificate Authority service now supports RSASSA-PSS signing algorithm.
+* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcorecontrol`: [v1.54.0](service/bedrockagentcorecontrol/CHANGELOG.md#v1540-2026-08-05)
+ * **Feature**: Adding support for fine-grained access control for AgentCore Memory through managed AgentCore Gateway HTTP Connectors.
+* `github.com/aws/aws-sdk-go-v2/service/deadline`: [v1.36.0](service/deadline/CHANGELOG.md#v1360-2026-08-05)
+ * **Feature**: AWS Deadline Cloud now reports persistent volume costs alongside compute and license costs. Customers can view per-fleet storage costs in Usage Explorer by selecting the Usage Type grouping, helping them better understand the costs of their infrastructure.
+* `github.com/aws/aws-sdk-go-v2
 
 ... (truncated)]]></description>
-    <pubDate>Tue, 04 Aug 2026 19:24:48 GMT</pubDate>
+    <pubDate>Wed, 05 Aug 2026 18:46:26 GMT</pubDate>
+  </item>
+  <item>
+    <title>[zed-industries/zed] v1.14.2</title>
+    <link>https://github.com/zed-industries/zed/releases/tag/v1.14.2</link>
+    <guid isPermaLink="true">https://github.com/zed-industries/zed/releases/tag/v1.14.2</guid>
+    <description><![CDATA[This week's release includes sandboxing for the Agent's terminal commands and web fetches (check the blog post), support for undoing and redoing file operations in the Project Panel (documentation), a Skip Hooks option for commits, and configurable Agent Panel fonts.
+
+## Shipped by the Zed Guild 🛡️
+
+- Terminal: Fixed processes being left alive when the terminal was closed. (#61467; thanks feitreim)
+- Fixed a hang when the Zed Agent ran a `git` command with a pager configured. (#61999; thanks timvermeulen)
+- Fixed `editor: find all references` preview tabs becoming permanent tabs when any of their buffers had previously been edited. (#61021; thanks aviatesk)
+- Fixed a bug where selection mentions added with "Add to Agent Thread" did not open their referenced files. (#61621; thanks amtoaer)
+- Fixed a crash when copying and pasting using multiple cursors. (#61545; thanks timvermeulen)
+- Fixed an extra blank line appearing in Git clone error messages. (#61674; thanks lingyaochu)
+
+... (truncated)]]></description>
+    <pubDate>Wed, 05 Aug 2026 16:57:09 GMT</pubDate>
+  </item>
+  <item>
+    <title>[nodejs/node] 2026-08-05, Version 26.7.0 (Current), @aduh95 (v26.7.0)</title>
+    <link>https://github.com/nodejs/node/releases/tag/v26.7.0</link>
+    <guid isPermaLink="true">https://github.com/nodejs/node/releases/tag/v26.7.0</guid>
+    <description><![CDATA[### Notable Changes
+
+* \[`58717685a1`] - **(SEMVER-MINOR)** **crypto**: support loading private keys through STORE loaders (Filip Skokan) #63949
+* \[`44b940ee8c`] - **crypto**: update root certificates to NSS 3.125 (Node.js GitHub Bot) #64746
+* \[`c1e4f7365e`] - **(SEMVER-MINOR)** **lib**: add perfetto support (Chengzhong Wu) #64565
+* \[`11c2f9c642`] - **(SEMVER-MINOR)** **module**: implement `Symbol.dispose` in `ModuleHooks` (Remco Haszing) #63928
+* \[`a646319f61`] - **(SEMVER-MINOR)** **test\_runner**: add support for `--test-coverage-include-all` (avivkeller) #64830
+
+### Commits
+
+* \[`a2d3f891d3`] - **async\_hooks**: use validateBoolean for trackPromises (Soul Lee) #64731
+* \[`d7266cdd99`] - **benchmark**: fix calibrate-n option handling (Luan Muniz) #64146
+* \[`2e64293e3f`] - **buffer**: use Clamp conversion in Blob slice (Donghoon Kang) #64739
+* \[`5fda0958bd`] - **buffer**: validate copyArrayBuffer offsets against buffer length (Ilia Alshanetsky) #63904
+* \[`5298db40f9`] - **buil
+
+... (truncated)]]></description>
+    <pubDate>Wed, 05 Aug 2026 16:25:04 GMT</pubDate>
+  </item>
+  <item>
+    <title>[openai/codex] 0.146.1 (rust-v0.146.1)</title>
+    <link>https://github.com/openai/codex/releases/tag/rust-v0.146.1</link>
+    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.146.1</guid>
+    <description><![CDATA[## Bug Fixes
+
+- Apply safer automatic-review defaults for cyber-capable models and explain permission changes in the terminal interface. (#37057)
+
+## Changelog
+
+Full Changelog: 
+
+- #37057 [0.146] Backport safer cyber-model auto-review defaults @anp-oai]]></description>
+    <pubDate>Wed, 05 Aug 2026 15:55:06 GMT</pubDate>
+  </item>
+  <item>
+    <title>[vercel-labs/skills] v1.5.22</title>
+    <link>https://github.com/vercel-labs/skills/releases/tag/v1.5.22</link>
+    <guid isPermaLink="true">https://github.com/vercel-labs/skills/releases/tag/v1.5.22</guid>
+    <description><![CDATA[## Changelog
+
+- fix: discover skills nested under two categories (#1866)
+- fix(update): normalize GitHub shorthand for project deletion checks (#1865)
+- fix: preserve locked GitHub host during updates (#1837)
+- Surface skills added upstream to well-known sources during update (#1824)
+- Make skills update work for well-known installs (incl. skills.sh packs) (#1821)
+- Preselect all skills when installing a skills.sh pack (#1820)
+- Add MiniMax Code agent support (#1814)
+- fix(remove): keep the lock entry while another agent still uses the skill (#1786)
+- fix(find): show all registry results in non-interactive search (#1748)
+- fix: store local path sources in lockfile using portable source (#1743)
+
+## Contributors
+
+@AndreaCovelli,@IsmaelMartinez @SenseiMarv,@Ygilany @byapparov,@hetaoBackend @mlekhi,@quuu]]></description>
+    <pubDate>Wed, 05 Aug 2026 15:25:32 GMT</pubDate>
+  </item>
+  <item>
+    <title>[privatenumber/tsx] v4.23.8</title>
+    <link>https://github.com/privatenumber/tsx/releases/tag/v4.23.8</link>
+    <guid isPermaLink="true">https://github.com/privatenumber/tsx/releases/tag/v4.23.8</guid>
+    <description><![CDATA[## 4.23.8 (2026-08-05)
+
+
+### Bug Fixes
+
+* preserve package subpath resolution (be1315e)
+* preserve typeless ESM dependency exports (70dfc5e)
+
+---
+This release is also available on:
+- npm package (@latest dist-tag)]]></description>
+    <pubDate>Wed, 05 Aug 2026 15:06:55 GMT</pubDate>
+  </item>
+  <item>
+    <title>[github/spec-kit] Spec Kit - 0.16.0 (v0.16.0)</title>
+    <link>https://github.com/github/spec-kit/releases/tag/v0.16.0</link>
+    <guid isPermaLink="true">https://github.com/github/spec-kit/releases/tag/v0.16.0</guid>
+    <description><![CDATA[## Install
+
+```bash
+uv tool install specify-cli --from git+
+specify init my-project
+```
+
+**⚠️ Copilot default changed:** `specify init --integration copilot` now installs **skills** (`.github/skills/speckit-*/SKILL.md`) by default instead of commands. Use `--integration-options="--commands"` for the previous behavior; existing command-layout projects are preserved on upgrade.
+
+## What's Changed
+
+- chore: bump version to 0.16.0
+- fix: keep long frontmatter values on a single line (#3989)
+- fix: skip corrupted run state files in list_runs (#3817)
+- fix: skip corrupted run state files in list_runs (#3814)
+- Add July 2026 newsletter (#3987)
+- fix(presets): start fresh on a non-UTF-8 preset registry (#3955)
+- docs: clarify agent PR review prioritization (#3985)
+- fix(events): preserve a non-UTF-8 config.toml on hook install/teardown (#3963)
+- fix(extensions): treat an unreadable staged backup as a conflict (#3962)
+- fix(manifests): reject non-string requires.speckit_vers
+
+... (truncated)]]></description>
+    <pubDate>Wed, 05 Aug 2026 13:39:52 GMT</pubDate>
+  </item>
+  <item>
+    <title>[ollama/ollama] v0.32.6</title>
+    <link>https://github.com/ollama/ollama/releases/tag/v0.32.6</link>
+    <guid isPermaLink="true">https://github.com/ollama/ollama/releases/tag/v0.32.6</guid>
+    <description><![CDATA[## What's Changed
+ - Qwen3.5 is faster on Apple GPUs: the MLX engine now uses the model's MTP head for speculative decoding automatically
+ - `/v1/chat/completions` streaming now matches OpenAI's wire format: `role` only on the first chunk, `finish_reason` on its own chunk,
+ and usage in a separate chunk with `stream_options.include_usage`.
+ - Truncated OpenAI responses now report `finish_reason: "length"` instead of `"tool_calls"`.
+ - `ollama run kimi-k3` now offers `kimi-k3:cloud` for cloud-only models that publish no default tag, instead of failing.
+ - TUI fixes: pipe-delimited prose no longer renders as a table, Enter accepts the highlighted `@` file completion, and `/prompt`
+ scrolling is no longer laggy.
+ - Experimental image generation has been temporarily removed. Continue using 0.32.5 for image generation support
+ - Updated the MLX and llama.cpp engines.
+
+**Full Changelog**:]]></description>
+    <pubDate>Tue, 04 Aug 2026 18:49:20 GMT</pubDate>
   </item>
   <item>
     <title>[servo/servo] v0.4.0</title>
@@ -139,32 +344,6 @@ Please check out our June blog post to get a curated overview over the recent ch
 
 ... (truncated)]]></description>
     <pubDate>Tue, 04 Aug 2026 13:24:41 GMT</pubDate>
-  </item>
-  <item>
-    <title>[anomalyco/opencode] v1.18.13</title>
-    <link>https://github.com/anomalyco/opencode/releases/tag/v1.18.13</link>
-    <guid isPermaLink="true">https://github.com/anomalyco/opencode/releases/tag/v1.18.13</guid>
-    <description><![CDATA[## TUI
-### Bugfixes
-- GitHub pull request reviews now include the pull request number and URL in context.
-
-## Desktop
-### Bugfixes
-- Fixed several right-to-left layout issues across tabs, drawers, resizing, and titlebar interactions.
-- Fixed shared right-to-left UI behavior such as directional icons and drawer placement.
-- Sessions without titles now fall back to generated names instead of appearing blank.
-- Moved markdown parsing off the main thread to keep the app more responsive while rendering messages.
-
-### Improvements
-- Localized more desktop UI copy, including native menus, update dialogs, and help content.
-- Added early right-to-left layout support across the app and session views.
-- Added locale-aware plural rules so translated counts and summaries read correctly.
-- Expanded translation coverage and added more supported desktop languages.
-
-**Thank you to 1 community contributor:**
-- @amypoolside:
- - docs: add Poolside provider setup (#39187)]]></description>
-    <pubDate>Tue, 04 Aug 2026 12:12:32 GMT</pubDate>
   </item>
   <item>
     <title>[web-infra-dev/rspack] v2.1.8</title>
@@ -372,36 +551,6 @@ Here is `benchmarks/fetch` comparing v4.12 and v4.13 (`ROUNDS=5 ./compare.sh`, B
     <pubDate>Mon, 03 Aug 2026 20:36:44 GMT</pubDate>
   </item>
   <item>
-    <title>[github/spec-kit] Spec Kit - 0.15.2 (v0.15.2)</title>
-    <link>https://github.com/github/spec-kit/releases/tag/v0.15.2</link>
-    <guid isPermaLink="true">https://github.com/github/spec-kit/releases/tag/v0.15.2</guid>
-    <description><![CDATA[## Install
-
-```bash
-uv tool install specify-cli --from git+
-specify init my-project
-```
-
-## What's Changed
-
-- chore: bump version to 0.15.2
-- fix(presets): restore core skills instead of deleting them on preset remove (#3929)
-- fix(manifests): reject non-string metadata instead of crashing on it (#3943)
-- fix: narrow bare except Exception in invoke separator resolution (#3856)
-- fix(workflows): keep the init step's documented ignore_agent_tools default on an explicit null (#3889)
-- fix(kimi): preserve non-UTF-8 user skills (#3895)
-- fix(presets): tolerate non-UTF-8 legacy commands (#3896)
-- feat: allow overriding default init integration via SPECKIT_INTEGRATION_DEFAULT (#3952)
-- Add adrkit extension to community catalog (#3947)
-- feat(extensions): scaffold config templates on extension add/enable (#2000)
-- fix(events): skip non-UTF-8 extension manifests (#3900)
-- fix(workflows): fail a gate whose on_reject is not abort/skip/retry (#3888)
-- fix(presets): validate required manifest mappi
-
-... (truncated)]]></description>
-    <pubDate>Mon, 03 Aug 2026 19:07:13 GMT</pubDate>
-  </item>
-  <item>
     <title>[chakra-ui/ark] @ark-ui/react@5.38.0</title>
     <link>https://github.com/chakra-ui/ark/releases/tag/%40ark-ui/react%405.38.0</link>
     <guid isPermaLink="true">https://github.com/chakra-ui/ark/releases/tag/%40ark-ui/react%405.38.0</guid>
@@ -541,29 +690,6 @@ You can read about our versioning strategy and releases on our website.]]></desc
     <pubDate>Mon, 03 Aug 2026 14:20:27 GMT</pubDate>
   </item>
   <item>
-    <title>[nodejs/node] 2026-08-03, Version 26.6.0 (Current), @aduh95 (v26.6.0)</title>
-    <link>https://github.com/nodejs/node/releases/tag/v26.6.0</link>
-    <guid isPermaLink="true">https://github.com/nodejs/node/releases/tag/v26.6.0</guid>
-    <description><![CDATA[### Notable Changes
-
-* \[`5a36018abc`] - **doc**: add MikeMcC399 as collaborator (Mike McCready) #64656
-* \[`9b04f82d7b`] - **(SEMVER-MINOR)** **ffi**: add `getCurrentEventLoop` (Paolo Insogna) #64323
-* \[`bb51f2c960`] - **(SEMVER-MINOR)** **test\_runner**: add `context.log` and `test:log` event (Moshe Atlow) #64389
-* \[`56ce83b3ee`] - **(SEMVER-MINOR)** **test\_runner**: report `entryFile` in `TestStream` events (Moshe Atlow) #64309
-
-### Commits
-
-* \[`248ff9fa5c`] - **assert,util**: fix TypeError on Maps with null keys (Paul Bouchon) #64441
-* \[`3b5baceafe`] - **benchmark**: add bytes variant to webstreams async-iterator (Matteo Collina) #64291
-* \[`0a46d1ef66`] - **buffer**: normalize lone "\r" in Blob native line endings (Daijiro Wachi) #64115
-* \[`d9ada18b70`] - **buffer**: fix Blob.stream leaking source buffer (semimikoh) #63577
-* \[`d05993bcf6`] - **build**: merge multiple on download artifact (Chengzhong Wu) #64633
-* \[`6c25ac909a`] - **build**: extract temporal\_capi crate dire
-
-... (truncated)]]></description>
-    <pubDate>Mon, 03 Aug 2026 13:50:21 GMT</pubDate>
-  </item>
-  <item>
     <title>[oxc-project/oxc] oxlint v1.77.0 &amp; oxfmt v0.62.0 (apps_v1.77.0)</title>
     <link>https://github.com/oxc-project/oxc/releases/tag/apps_v1.77.0</link>
     <guid isPermaLink="true">https://github.com/oxc-project/oxc/releases/tag/apps_v1.77.0</guid>
@@ -593,32 +719,6 @@ You can read about our versioning strategy and releases on our website.]]></desc
 
 ... (truncated)]]></description>
     <pubDate>Mon, 03 Aug 2026 12:07:50 GMT</pubDate>
-  </item>
-  <item>
-    <title>[privatenumber/tsx] v4.23.5</title>
-    <link>https://github.com/privatenumber/tsx/releases/tag/v4.23.5</link>
-    <guid isPermaLink="true">https://github.com/privatenumber/tsx/releases/tag/v4.23.5</guid>
-    <description><![CDATA[## 4.23.5 (2026-08-02)
-
-
-### Bug Fixes
-
-* detect the Node inspector enabled via NODE_OPTIONS (3c1d051)
-
----
-This release is also available on:
-- npm package (@latest dist-tag)]]></description>
-    <pubDate>Sun, 02 Aug 2026 23:16:16 GMT</pubDate>
-  </item>
-  <item>
-    <title>[zed-industries/zed] v1.13.2</title>
-    <link>https://github.com/zed-industries/zed/releases/tag/v1.13.2</link>
-    <guid isPermaLink="true">https://github.com/zed-industries/zed/releases/tag/v1.13.2</guid>
-    <description><![CDATA[- Fixed Option+Left stopping to the left of punctuation between words Video URL: (#62065)
-- Fixed a panic when selections are added by tab-expanded column (#62063)
-- Fixed Gruvbox parameter colors (#61987)
-- Improved CLI documentation by adding the missing `--existing` option. (#61981)]]></description>
-    <pubDate>Sun, 02 Aug 2026 17:33:45 GMT</pubDate>
   </item>
   <item>
     <title>[theMackabu/ant] v13.0.ca8e720d.0</title>
@@ -657,41 +757,6 @@ This release makes Ant sandboxes message-driven and resource-aware. It completes
 - "Item Selection Dialog" has been added to the event command "Preset UI". Also, the "Chara Selection Dialog" has been improved.
 - Fixed a bug where an error occurred when saving in the icon editor.]]></description>
     <pubDate>Sat, 01 Aug 2026 13:04:47 GMT</pubDate>
-  </item>
-  <item>
-    <title>[astral-sh/uv] 0.12.1</title>
-    <link>https://github.com/astral-sh/uv/releases/tag/0.12.1</link>
-    <guid isPermaLink="true">https://github.com/astral-sh/uv/releases/tag/0.12.1</guid>
-    <description><![CDATA[## Release Notes
-
-Released on 2026-07-31.
-
-### Enhancements
-
-- Add package-specific pre-release policies with `--prerelease-package` (#20837)
-- Support local HTML files as flat indexes (#20802)
-- Add Xonsh virtual environment activation scripts (`activate.xsh`) (#19740)
-- Preserve filesystem paths passed to `uv add --index` when updating `pyproject.toml` (#20817)
-
-### Preview features
-
-- Add automatic fixes to `uv check` with `--fix` (#20793)
-- Avoid rejecting unchanged metadata-free lockfiles when workspace dependencies share direct sources (#20847)
-- Honor direct URL constraints when validating metadata-free lockfiles (#20796)
-- Ignore malformed PEP 723 scripts discovered during project checks (#20784)
-- Use ty's native script exclusion in `uv check` (#20742)
-
-### Performance
-
-- Parse canonical uv lockfiles directly, with a fallback for other valid TOML syntax (#20648)
-- Accelerate SHA-256 hashing on non-Windows ARM64 platforms (#20805)
-
-### Bug fixes
-
-- Flush shell startup file upda
-
-... (truncated)]]></description>
-    <pubDate>Fri, 31 Jul 2026 19:43:31 GMT</pubDate>
   </item>
   <item>
     <title>[adobe/react-spectrum] React Aria Components v1.20.0 (react-aria-components@1.20.0)</title>
@@ -911,21 +976,6 @@ Read the fully docs here
     <pubDate>Thu, 30 Jul 2026 12:03:27 GMT</pubDate>
   </item>
   <item>
-    <title>[vercel-labs/skills] v1.5.21</title>
-    <link>https://github.com/vercel-labs/skills/releases/tag/v1.5.21</link>
-    <guid isPermaLink="true">https://github.com/vercel-labs/skills/releases/tag/v1.5.21</guid>
-    <description><![CDATA[## Changelog
-
-- fix preserve well-known install urls (#1811)
-- refactor: share zip extraction without yauzl (#1809)
-- feat: support installing from direct archive URLs (#1671)
-
-## Contributors
-
-@lanzhi-lee,@quuu]]></description>
-    <pubDate>Thu, 30 Jul 2026 00:05:00 GMT</pubDate>
-  </item>
-  <item>
     <title>[sveltejs/kit] @sveltejs/kit@2.70.2</title>
     <link>https://github.com/sveltejs/kit/releases/tag/%40sveltejs/kit%402.70.2</link>
     <guid isPermaLink="true">https://github.com/sveltejs/kit/releases/tag/%40sveltejs/kit%402.70.2</guid>
@@ -990,34 +1040,6 @@ Pick your language under Preferences > Application > General. Along with English
 - Updated dependencies \:
  - @astrojs/underscore-redirects@1.0.3]]></description>
     <pubDate>Wed, 29 Jul 2026 14:21:56 GMT</pubDate>
-  </item>
-  <item>
-    <title>[esm-dev/esm.sh] Server v137_8 (v137_8)</title>
-    <link>https://github.com/esm-dev/esm.sh/releases/tag/v137_8</link>
-    <guid isPermaLink="true">https://github.com/esm-dev/esm.sh/releases/tag/v137_8</guid>
-    <description><![CDATA[* Fix redirect urls for `raw.esm.sh` hostname. (#1385)]]></description>
-    <pubDate>Wed, 29 Jul 2026 07:51:03 GMT</pubDate>
-  </item>
-  <item>
-    <title>[floci-io/floci] 1.5.34</title>
-    <link>https://github.com/floci-io/floci/releases/tag/1.5.34</link>
-    <guid isPermaLink="true">https://github.com/floci-io/floci/releases/tag/1.5.34</guid>
-    <description><![CDATA[## 🎉 Highlights
-
-This release adds **in-process CloudTrail with S3 data event emission**, brings **Step Functions HTTP invoke** and the **`States.JsonMerge` intrinsic**, ships **SES identity policies for authorization**, and lands **provenance and SBOM attestations** on published container images. Cognito hostname handling, CloudFormation IAM inline policies, and DynamoDB expression parsing all see meaningful conformance work. Welcome to the 7 first-time contributors.
-
-### 🔍 CloudTrail: in-process with S3 data event emission
-
-**In-process CloudTrail** with **S3 data event emission** lands (#1460). CloudTrail moves from lifecycle-only support to actually capturing and emitting events, so audit-log workflows that depend on CloudTrail data events can now be exercised end to end locally.
-
-### 🧩 Step Functions: HTTP invoke + `JsonMerge`
-
-Two coordinated Step Functions capabilities:
-- **HTTP invoke step** (#1503) — external HTTP endpoints callable directly from state machines
-
-
-... (truncated)]]></description>
-    <pubDate>Wed, 29 Jul 2026 04:54:43 GMT</pubDate>
   </item>
 </channel>
 </rss>
