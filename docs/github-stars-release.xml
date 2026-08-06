@@ -5,8 +5,184 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Wed, 05 Aug 2026 22:21:21 GMT</lastBuildDate>
+  <lastBuildDate>Thu, 06 Aug 2026 23:59:12 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[riot/riot] v10.1.6</title>
+    <link>https://github.com/riot/riot/releases/tag/v10.1.6</link>
+    <guid isPermaLink="true">https://github.com/riot/riot/releases/tag/v10.1.6</guid>
+    <description><![CDATA[- Fix]]></description>
+    <pubDate>Thu, 06 Aug 2026 19:40:25 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1105.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1105.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1105.0</guid>
+    <description><![CDATA[#### 3.1105.0(2026-08-06)
+
+##### Chores
+
+* **lib-dynamodb:** add error msg and fallback when incompatible client is supplied (#8231) (e663d41f)
+
+##### New Features
+
+* **clients:** update client endpoints as of 2026-08-06 (e4f7b32f)
+* **client-cloudwatch-logs:** This release adds index category support to the CloudWatch Logs DescribeFieldIndexes API. Customers can filter and identify DEFAULT, CUSTOM, AUTO, and INACTIVE field indexes. (e17fff6f)
+* **client-socialmessaging:** Add support for WhatsApp Conversions APIs. (5c29a869)
+* **client-gamelift:** Adds support for C8a, C8i, C9g, M8a, M8i, and M9g EC2 instance type families for managed EC2 and container fleets. Also adds explicit anchors on most string regexes. (30dfd63a)
+* **client-securityhub:** Security Hub is adding a new public API, ListFreeTrialStatusesV2 to describe the free trial statuses of the Security Hub service and its opt-in features. (e44b3582)
+* **client-bedrock-agentcore-control:** Add support for Gateway rate limits a
+
+... (truncated)]]></description>
+    <pubDate>Thu, 06 Aug 2026 19:05:19 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-08-06) (release-2026-08-06)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-06</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-06</guid>
+    <description><![CDATA[## General Highlights
+* **Dependency Update**: Updated to the latest SDK module versions
+
+## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/service/agentregistry`: [v1.0.0](service/agentregistry/CHANGELOG.md#v100-2026-08-06)
+ * **Release**: New AWS service client module
+ * **Feature**: Agent Registry's Public Preview release
+* `github.com/aws/aws-sdk-go-v2/service/agentregistrycontrol`: [v1.0.0](service/agentregistrycontrol/CHANGELOG.md#v100-2026-08-06)
+ * **Release**: New AWS service client module
+ * **Feature**: Agent Registry's Public Preview release
+* `github.com/aws/aws-sdk-go-v2/service/autoscaling`: [v1.71.0](service/autoscaling/CHANGELOG.md#v1710-2026-08-06)
+ * **Feature**: EC2 Auto Scaling now supports being managed by other AWS services via the operator field.
+* `github.com/aws/aws-sdk-go-v2/service/backup`: [v1.60.0](service/backup/CHANGELOG.md#v1600-2026-08-06)
+ * **Feature**: AWS Backup now lets you create read-only access points for Amazon S3 recovery points, enabling 
+
+... (truncated)]]></description>
+    <pubDate>Thu, 06 Aug 2026 19:02:15 GMT</pubDate>
+  </item>
+  <item>
+    <title>[denoland/deno] v2.9.5</title>
+    <link>https://github.com/denoland/deno/releases/tag/v2.9.5</link>
+    <guid isPermaLink="true">https://github.com/denoland/deno/releases/tag/v2.9.5</guid>
+    <description><![CDATA[### 2.9.5 / 2026.08.06
+
+- feat(add): `--unscoped` flag to alias packages by their unscoped name (#36319)
+- feat(task): add --members flag to run tasks in workspace members only (#35748)
+- feat: add Blob/Body textStream (#35616)
+- feat: add experimental QuickJS backend (#36194)
+- fix(bundle): avoid esbuild protocol deadlock (#36427)
+- fix(bundle): respect runtime file permissions (#36107)
+- fix(cjs): use loader sources for recursive analysis (#36111)
+- fix(cli): escape control characters in external metadata (#36198)
+- fix(core): don't resolve internal module imports with the user's import map
+ (#36303)
+- fix(crypto): add `"raw-secret"` to `KeyFormat` type (#35708)
+- fix(desktop): handle colored HMR URLs and page loads (#36316)
+- fix(desktop): retain update signature verification op (#36152)
+- fix(ext/crypto): allow deriveBits with length 0 (#36283)
+- fix(ext/napi): polyfill `uv_handle_size` and `uv_strerror` (#36308)
+- fix(ext/net): release completed QUIC stream resour
+
+... (truncated)]]></description>
+    <pubDate>Thu, 06 Aug 2026 15:05:43 GMT</pubDate>
+  </item>
+  <item>
+    <title>[bluesky-social/atproto] @atproto/identity@0.5.9</title>
+    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/identity%400.5.9</link>
+    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/identity%400.5.9</guid>
+    <description><![CDATA[### Patch Changes
+
+- Updated dependencies :
+ - @atproto/common-web@0.5.9]]></description>
+    <pubDate>Thu, 06 Aug 2026 13:52:47 GMT</pubDate>
+  </item>
+  <item>
+    <title>[vitejs/vite] plugin-legacy@8.2.3</title>
+    <link>https://github.com/vitejs/vite/releases/tag/plugin-legacy%408.2.3</link>
+    <guid isPermaLink="true">https://github.com/vitejs/vite/releases/tag/plugin-legacy%408.2.3</guid>
+    <description><![CDATA[Please refer to CHANGELOG.md for details.]]></description>
+    <pubDate>Thu, 06 Aug 2026 13:44:50 GMT</pubDate>
+  </item>
+  <item>
+    <title>[withastro/astro] @astrojs/solid-js@7.0.2</title>
+    <link>https://github.com/withastro/astro/releases/tag/%40astrojs/solid-js%407.0.2</link>
+    <guid isPermaLink="true">https://github.com/withastro/astro/releases/tag/%40astrojs/solid-js%407.0.2</guid>
+    <description><![CDATA[### Patch Changes
+
+- #17584 `5462b81` Thanks @astrobot-houston! - Fixes a build crash when a Solid island imports a package that ships pre-compiled browser artifacts via the `exports.solid` condition (e.g. `@kobalte/core`). Solid ecosystem packages are now bundled in non-client environments so that Vite resolves the correct export condition during prerendering.]]></description>
+    <pubDate>Thu, 06 Aug 2026 10:44:21 GMT</pubDate>
+  </item>
+  <item>
+    <title>[BabylonJS/Babylon.js] 9.20.0</title>
+    <link>https://github.com/BabylonJS/Babylon.js/releases/tag/9.20.0</link>
+    <guid isPermaLink="true">https://github.com/BabylonJS/Babylon.js/releases/tag/9.20.0</guid>
+    <description><![CDATA[### Core
+
+- Reuse graphics bindings and disable raw camera access - by RaananW (#18773)
+- Fix the per-eye clear wiping drawn frames, plus upright rendering and half-Z NDC - by RaananW (#18688)
+- Fix RawCubeTexture invertY crash on WebGPU - [_Bug Fix_] by Popov72 (#18767)
+
+### Loaders
+
+- Fix: respect camera layerMask in the transmission opaque texture - by RaananW (#18766)]]></description>
+    <pubDate>Thu, 06 Aug 2026 07:41:13 GMT</pubDate>
+  </item>
+  <item>
+    <title>[djkotori/rpgcobo-tool] v0.1.16</title>
+    <link>https://github.com/djkotori/rpgcobo-tool/releases/tag/v0.1.16</link>
+    <guid isPermaLink="true">https://github.com/djkotori/rpgcobo-tool/releases/tag/v0.1.16</guid>
+    <description><![CDATA[This version includes the following bug fixes and feature additions.
+
+- Improved the "Leveler Tool" in the Map Editor.
+ - Added an option to enable leveling only on the same plane as the height at the start of leveling.
+ - Added an option to allow only the same block as the block at the start of grading to be leveled.
+ - Added option to separate water and soil for leveling (enabled by default)
+ - Free blocks are now leveled in conjunction with block height.
+- Improved the fill mode of the "Pen tool" in the Map Editor.
+ - Added option to fill only the same plane.
+- Improved the "Water tool" in the Map Editor.
+ - You can now draw the water surface vertically using box filling.
+- Added settings for "Can Enter Water" and "Can Enter Hole" to stage settings. Both are disabled by default.
+- Data ID can now be specified on the right side of condition judgment
+- "Choices" Store data can now be selected from the preset UI
+- Minor improvements to Event Commands.
+- Optimized the sha
+
+... (truncated)]]></description>
+    <pubDate>Thu, 06 Aug 2026 07:21:44 GMT</pubDate>
+  </item>
+  <item>
+    <title>[privatenumber/tsx] v4.23.9</title>
+    <link>https://github.com/privatenumber/tsx/releases/tag/v4.23.9</link>
+    <guid isPermaLink="true">https://github.com/privatenumber/tsx/releases/tag/v4.23.9</guid>
+    <description><![CDATA[## 4.23.9 (2026-08-06)
+
+
+### Bug Fixes
+
+* map Node test locations (2f55884)
+* support data URLs in tsImport (b94f46f)
+
+---
+This release is also available on:
+- npm package (@latest dist-tag)]]></description>
+    <pubDate>Thu, 06 Aug 2026 06:33:12 GMT</pubDate>
+  </item>
+  <item>
+    <title>[floci-io/floci] 1.6.0</title>
+    <link>https://github.com/floci-io/floci/releases/tag/1.6.0</link>
+    <guid isPermaLink="true">https://github.com/floci-io/floci/releases/tag/1.6.0</guid>
+    <description><![CDATA[## 🎉 Highlights
+
+This release adds **three new services** — **Amazon MWAA**, **CloudWatch RUM**, and **Bedrock** with real LLM proxy — brings the **Lambda Extensions API**, lands a substantial **CloudFormation resource expansion**, and ships the **one-button release cut with ECR Public versioned publishing** infrastructure. This is the first release in the 1.6.x series, and the version bump reflects the depth of platform additions: real LLMs via a proxy backend, real Airflow, and Lambda extensions collectively unlock service categories that previously required real AWS accounts.
+
+### 🆕 Amazon MWAA backed by real Airflow
+
+**Amazon MWAA** (Managed Workflows for Apache Airflow) emulation lands (#2086), backed by a **real Airflow LocalExecutor**. Data engineering workflows that depend on Airflow DAG scheduling can now be exercised locally without provisioning real MWAA environments. Continues the real-Docker-backed pattern (Postgres, Redis, k3s, RabbitMQ, Redpanda, Valkey).
+
+### 
+
+... (truncated)]]></description>
+    <pubDate>Thu, 06 Aug 2026 05:32:56 GMT</pubDate>
+  </item>
   <item>
     <title>[anomalyco/opencode] v1.18.14</title>
     <link>https://github.com/anomalyco/opencode/releases/tag/v1.18.14</link>
@@ -72,45 +248,6 @@ Released on 2026-08-05.
 
 ... (truncated)]]></description>
     <pubDate>Wed, 05 Aug 2026 19:22:56 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-js-v3] v3.1104.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1104.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1104.0</guid>
-    <description><![CDATA[#### 3.1104.0(2026-08-05)
-
-##### New Features
-
-* **client-deadline:** AWS Deadline Cloud now reports persistent volume costs alongside compute and license costs. Customers can view per-fleet storage costs in Usage Explorer by selecting the Usage Type grouping, helping them better understand the costs of their infrastructure. (f6649b9d)
-* **client-bedrock-agentcore-control:** Adding support for fine-grained access control for AgentCore Memory through managed AgentCore Gateway HTTP Connectors. (448fc0f7)
-* **client-glue:** Added the PutDataCatalogExportConfiguration to export Glue Data Catalog metadata to systems tables stored in S3 Tables. (31c69446)
-* **client-acm-pca:** Private Certificate Authority service now supports RSASSA-PSS signing algorithm. (203b57d1)
-* **client-ecs:** New enum values added for Agent Connectivity issues (13e0f989)
-
-
----
-
-For list of updated packages, view **updated-packages.md** in **assets-3.1104.0.zip**]]></description>
-    <pubDate>Wed, 05 Aug 2026 18:53:41 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-08-05) (release-2026-08-05)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-05</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-05</guid>
-    <description><![CDATA[## General Highlights
-* **Dependency Update**: Updated to the latest SDK module versions
-
-## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/acmpca`: [v1.50.0](service/acmpca/CHANGELOG.md#v1500-2026-08-05)
- * **Feature**: Private Certificate Authority service now supports RSASSA-PSS signing algorithm.
-* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcorecontrol`: [v1.54.0](service/bedrockagentcorecontrol/CHANGELOG.md#v1540-2026-08-05)
- * **Feature**: Adding support for fine-grained access control for AgentCore Memory through managed AgentCore Gateway HTTP Connectors.
-* `github.com/aws/aws-sdk-go-v2/service/deadline`: [v1.36.0](service/deadline/CHANGELOG.md#v1360-2026-08-05)
- * **Feature**: AWS Deadline Cloud now reports persistent volume costs alongside compute and license costs. Customers can view per-fleet storage costs in Usage Explorer by selecting the Usage Type grouping, helping them better understand the costs of their infrastructure.
-* `github.com/aws/aws-sdk-go-v2
-
-... (truncated)]]></description>
-    <pubDate>Wed, 05 Aug 2026 18:46:26 GMT</pubDate>
   </item>
   <item>
     <title>[zed-industries/zed] v1.14.2</title>
@@ -189,23 +326,6 @@ Full Changelog:
 
 @AndreaCovelli,@IsmaelMartinez @SenseiMarv,@Ygilany @byapparov,@hetaoBackend @mlekhi,@quuu]]></description>
     <pubDate>Wed, 05 Aug 2026 15:25:32 GMT</pubDate>
-  </item>
-  <item>
-    <title>[privatenumber/tsx] v4.23.8</title>
-    <link>https://github.com/privatenumber/tsx/releases/tag/v4.23.8</link>
-    <guid isPermaLink="true">https://github.com/privatenumber/tsx/releases/tag/v4.23.8</guid>
-    <description><![CDATA[## 4.23.8 (2026-08-05)
-
-
-### Bug Fixes
-
-* preserve package subpath resolution (be1315e)
-* preserve typeless ESM dependency exports (70dfc5e)
-
----
-This release is also available on:
-- npm package (@latest dist-tag)]]></description>
-    <pubDate>Wed, 05 Aug 2026 15:06:55 GMT</pubDate>
   </item>
   <item>
     <title>[github/spec-kit] Spec Kit - 0.16.0 (v0.16.0)</title>
@@ -289,24 +409,6 @@ Please check out our June blog post to get a curated overview over the recent ch
 
 ... (truncated)]]></description>
     <pubDate>Tue, 04 Aug 2026 18:09:39 GMT</pubDate>
-  </item>
-  <item>
-    <title>[BabylonJS/Babylon.js] 9.19.1</title>
-    <link>https://github.com/BabylonJS/Babylon.js/releases/tag/9.19.1</link>
-    <guid isPermaLink="true">https://github.com/BabylonJS/Babylon.js/releases/tag/9.19.1</guid>
-    <description><![CDATA[### Core
-
-- Fix clustered lighting WGSL validation on Firefox WebGPU - [_Bug Fix_] by Popov72 (#18761)
-- fix(physics): correct inverse inertia tensor rows in PhysicsCharacterController - by RaananW (#18756)
-- Prevent touch hover events from exhausting pointer slots - [_Bug Fix_] by RaananW (#18748)
-- Fix one-frame render flash when recreating a mesh in the same tick - by RaananW (#18755)
-- Fix: Gaussian Splatting sort padding reuses real splat data, causing splats stuck in front of the model - by raymondyfei (#18752)
-- Allow disabling Havok floating origin world regions - by BarthPaleologue (#18750)
-
-### Loaders
-
-- chore(deps): pin @adobe/spz to exact 0.2.0 in @dev/loaders - by RaananW (#18759)]]></description>
-    <pubDate>Tue, 04 Aug 2026 17:36:39 GMT</pubDate>
   </item>
   <item>
     <title>[redwoodjs/sdk] v1.6.0</title>
@@ -528,29 +630,6 @@ Here is `benchmarks/fetch` comparing v4.12 and v4.13 (`ROUNDS=5 ./compare.sh`, B
     <pubDate>Mon, 03 Aug 2026 21:03:18 GMT</pubDate>
   </item>
   <item>
-    <title>[bluesky-social/atproto] @atproto/tap@0.4.0</title>
-    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/tap%400.4.0</link>
-    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/tap%400.4.0</guid>
-    <description><![CDATA[### Minor Changes
-
-- #5285 `d12f6ac` Thanks @devinivy! - **BREAKING:** `TapWebsocketOptions` now takes an explicit set of options rather than arbitrary `ws` `ClientOptions`, and adds a `headers` option for the upgrade request.
-
- `ackEvent` now resolves once the ack has been sent — or recorded for the next connection — rather than once it is confirmed delivered. Awaiting confirmed delivery from a handler could deadlock the channel (a bug that predates this change). Acks issued while disconnected are flushed when the next connection comes up, and Tap's at-least-once redelivery covers an ack lost with its connection.
-
- `onReconnectError`'s `initialSetup` argument now means "first attempt of this reconnect cycle" rather than "before the first-ever successful connection".
-
-### Patch Changes
-
-- #5295 `6a3d607` Thanks @matthieusieben! - Update vitest dependencies
-
-- #5301 `8c07338` Thanks @43081j! - Switch from destructured default imports to named imports of CommonJS dependencies.
-
-- Updated
-
-... (truncated)]]></description>
-    <pubDate>Mon, 03 Aug 2026 20:36:44 GMT</pubDate>
-  </item>
-  <item>
     <title>[chakra-ui/ark] @ark-ui/react@5.38.0</title>
     <link>https://github.com/chakra-ui/ark/releases/tag/%40ark-ui/react%405.38.0</link>
     <guid isPermaLink="true">https://github.com/chakra-ui/ark/releases/tag/%40ark-ui/react%405.38.0</guid>
@@ -746,17 +825,6 @@ This release makes Ant sandboxes message-driven and resource-aware. It completes
     <guid isPermaLink="true">https://github.com/denoland/rusty_v8/releases/tag/v152.0.0</guid>
     <description><![CDATA[No release notes provided.]]></description>
     <pubDate>Sat, 01 Aug 2026 16:06:40 GMT</pubDate>
-  </item>
-  <item>
-    <title>[djkotori/rpgcobo-tool] v0.1.15</title>
-    <link>https://github.com/djkotori/rpgcobo-tool/releases/tag/v0.1.15</link>
-    <guid isPermaLink="true">https://github.com/djkotori/rpgcobo-tool/releases/tag/v0.1.15</guid>
-    <description><![CDATA[This is urgent bugfix release.
-
-- URGENT : Fixed a bug where pasting in the map side menu would register the map twice in the map group if it overwrote an existing map.
-- "Item Selection Dialog" has been added to the event command "Preset UI". Also, the "Chara Selection Dialog" has been improved.
-- Fixed a bug where an error occurred when saving in the icon editor.]]></description>
-    <pubDate>Sat, 01 Aug 2026 13:04:47 GMT</pubDate>
   </item>
   <item>
     <title>[adobe/react-spectrum] React Aria Components v1.20.0 (react-aria-components@1.20.0)</title>
@@ -967,79 +1035,6 @@ Read the fully docs here
 
 ... (truncated)]]></description>
     <pubDate>Thu, 30 Jul 2026 16:18:43 GMT</pubDate>
-  </item>
-  <item>
-    <title>[vitejs/vite] create-vite@9.1.2</title>
-    <link>https://github.com/vitejs/vite/releases/tag/create-vite%409.1.2</link>
-    <guid isPermaLink="true">https://github.com/vitejs/vite/releases/tag/create-vite%409.1.2</guid>
-    <description><![CDATA[Please refer to CHANGELOG.md for details.]]></description>
-    <pubDate>Thu, 30 Jul 2026 12:03:27 GMT</pubDate>
-  </item>
-  <item>
-    <title>[sveltejs/kit] @sveltejs/kit@2.70.2</title>
-    <link>https://github.com/sveltejs/kit/releases/tag/%40sveltejs/kit%402.70.2</link>
-    <guid isPermaLink="true">https://github.com/sveltejs/kit/releases/tag/%40sveltejs/kit%402.70.2</guid>
-    <description><![CDATA[### Patch Changes
-
-- fix: prevent quadratic backtracking in `Accept` header content negotiation (#1)]]></description>
-    <pubDate>Wed, 29 Jul 2026 22:58:50 GMT</pubDate>
-  </item>
-  <item>
-    <title>[rancher-sandbox/rancher-desktop] Rancher Desktop 1.24 (v1.24.0)</title>
-    <link>https://github.com/rancher-sandbox/rancher-desktop/releases/tag/v1.24.0</link>
-    <guid isPermaLink="true">https://github.com/rancher-sandbox/rancher-desktop/releases/tag/v1.24.0</guid>
-    <description><![CDATA[This is the 1.24.0 release of Rancher Desktop, an open source desktop application to bring Kubernetes and container management to macOS, Windows, and Linux.
-
-<table width="100%"><tr><td style="border: 2px solid #d97706; border-radius: 6px; padding: 12px 16px;">
-<strong>⚠️ Auto-Update: If Rancher Desktop shows an error instead of a Restart Now button, install this release manually from the links below</strong>. On 1.23.0 and 1.23.1, the auto-update download fails the moment it starts, so it can't get to 1.24.0. This release fixes the updater, so from 1.24.0 onwards auto-updates install the way they should.
-</td></tr></table>
-
-## Installers
-
-* Windows
-* macOS x86_64
-* macOS aarch64
-* Linux install notes
-
-## New Contributors
-
-Thank you to our new contributor: @voidmatcha!
-
-## Release Notes for 1.24.0
-
-### What's New
-
-#### The interface speaks eight more languages
-
-Pick your language under Preferences > Application > General. Along with English, you can choose Chines
-
-... (truncated)]]></description>
-    <pubDate>Wed, 29 Jul 2026 21:34:21 GMT</pubDate>
-  </item>
-  <item>
-    <title>[fastapi/fastapi] 0.141.1</title>
-    <link>https://github.com/fastapi/fastapi/releases/tag/0.141.1</link>
-    <guid isPermaLink="true">https://github.com/fastapi/fastapi/releases/tag/0.141.1</guid>
-    <description><![CDATA[### Fixes
-
-* 🐛 Fix support for background tasks and headers from dependencies in `app.frontend`. PR #16105 by @tiangolo.
-
-### Docs
-
-* 📝 Document `FASTAPI_ENV` in FastAPI CLI guide. PR #16104 by @tiangolo.]]></description>
-    <pubDate>Wed, 29 Jul 2026 17:17:26 GMT</pubDate>
-  </item>
-  <item>
-    <title>[withastro/astro] @astrojs/cloudflare@14.1.7</title>
-    <link>https://github.com/withastro/astro/releases/tag/%40astrojs/cloudflare%4014.1.7</link>
-    <guid isPermaLink="true">https://github.com/withastro/astro/releases/tag/%40astrojs/cloudflare%4014.1.7</guid>
-    <description><![CDATA[### Patch Changes
-
-- #17543 `bbc1ec9` Thanks @ematipico! - Fixes a bug where Cloudflare couldn't load chunked collections via `experimental.collectionStorage: 'chunked'`.
-
-- Updated dependencies \:
- - @astrojs/underscore-redirects@1.0.3]]></description>
-    <pubDate>Wed, 29 Jul 2026 14:21:56 GMT</pubDate>
   </item>
 </channel>
 </rss>
