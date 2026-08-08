@@ -5,8 +5,69 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Fri, 07 Aug 2026 22:09:53 GMT</lastBuildDate>
+  <lastBuildDate>Sat, 08 Aug 2026 22:05:10 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[evanw/esbuild] v0.28.2</title>
+    <link>https://github.com/evanw/esbuild/releases/tag/v0.28.2</link>
+    <guid isPermaLink="true">https://github.com/evanw/esbuild/releases/tag/v0.28.2</guid>
+    <description><![CDATA[* Fix tree shaking bug due to TypeScript import alias (#4507)
+
+ This release fixes a bug that could cause esbuild to incorrectly tree-shake imports that are used in a TypeScript type alias under certain circumstances. Affected code uses a TypeScript-specific `import` assignment and looks something like this:
+
+ ```ts
+ import Base from './dep.js';
+ import Alias = Base.SomeType;
+ ```
+
+* Fix CSS minification bug involving `&` (#4497)
+
+ This release fixes a bug where esbuild's CSS minifier incorrectly removed a `&` when it was unsafe to do so. Here is an example:
+
+ ```css
+ /* Original code */
+ .a .b {
+ & .b:not(& .c) {
+ color: red;
+ }
+ }
+
+ /* Old output (with --minify) */
+ .a .b{.b:not(& .c){color:red}}
+
+ /* New output (with --minify) */
+ .a .b{& .b:not(& .c){color:red}}
+ ```
+
+ This should match `<span class="a"><span class="b"><span class="b">yes</span></span></span>` but not `<span class="a"><span class="b">no</span></span>`. The old output incorrectly matched both.
+
+* Avoid overwriting i
+
+... (truncated)]]></description>
+    <pubDate>Sat, 08 Aug 2026 19:58:58 GMT</pubDate>
+  </item>
+  <item>
+    <title>[openclaw/openclaw] openclaw 2026.6.34 (v2026.6.34)</title>
+    <link>https://github.com/openclaw/openclaw/releases/tag/v2026.6.34</link>
+    <guid isPermaLink="true">https://github.com/openclaw/openclaw/releases/tag/v2026.6.34</guid>
+    <description><![CDATA[## 2026.6.34
+
+### Highlights
+
+- **Safer browser and network boundaries:** sandboxed browser routes, trusted DNS targets, custom browser origins, and loopback provider endpoints now reject unsafe access paths. (#97958, #38290, #103075, #110693) Thanks @eleqtrizit, @brunowowk, @mosidevv, @pgondhi987, and @lsr911.
+- **More resilient agent and provider runs:** retained session writes, provider fallbacks, stream progress handling, and stdio failures now recover without silently ending active work. (#96100, #97128, #90908, #99803, #100521) Thanks @xialonglee, @sallyom, @richwilson-bloom, @LiuwqGit, @vincentkoc, @yetval, @shengting, and @cxbAsDev.
+- **Stronger channel recovery:** pending channel work resumes after recovery, acknowledgements are idempotent, and sustained Discord gateway bursts stay bounded. (#79811, #97041, #104919, #109108, #110954, #103793, #94016) Thanks @indulgeback, @cuiyuxin-gif, @Pick-cat, @Glucksberg, @evan-YM, @zhangguiping-xydt, @yetval, @sheyanmin, and @thomasthelen
+
+... (truncated)]]></description>
+    <pubDate>Sat, 08 Aug 2026 07:22:14 GMT</pubDate>
+  </item>
+  <item>
+    <title>[denoland/rusty_v8] v152.1.0</title>
+    <link>https://github.com/denoland/rusty_v8/releases/tag/v152.1.0</link>
+    <guid isPermaLink="true">https://github.com/denoland/rusty_v8/releases/tag/v152.1.0</guid>
+    <description><![CDATA[No release notes provided.]]></description>
+    <pubDate>Fri, 07 Aug 2026 23:21:35 GMT</pubDate>
+  </item>
   <item>
     <title>[eslint/eslint] v10.8.1</title>
     <link>https://github.com/eslint/eslint/releases/tag/v10.8.1</link>
@@ -765,15 +826,6 @@ cache: {
     <pubDate>Tue, 04 Aug 2026 00:47:03 GMT</pubDate>
   </item>
   <item>
-    <title>[openclaw/openclaw] openclaw 2026.7.1-2 (v2026.7.1-2)</title>
-    <link>https://github.com/openclaw/openclaw/releases/tag/v2026.7.1-2</link>
-    <guid isPermaLink="true">https://github.com/openclaw/openclaw/releases/tag/v2026.7.1-2</guid>
-    <description><![CDATA[### Fixes
-
-- **npm plugin updates:** accept singleton-array metadata from newer npm clients so tracked official plugins can install and update to correction releases. (#108336)]]></description>
-    <pubDate>Tue, 04 Aug 2026 00:41:26 GMT</pubDate>
-  </item>
-  <item>
     <title>[panva/node-oidc-provider] v9.11.2</title>
     <link>https://github.com/panva/node-oidc-provider/releases/tag/v9.11.2</link>
     <guid isPermaLink="true">https://github.com/panva/node-oidc-provider/releases/tag/v9.11.2</guid>
@@ -926,13 +978,6 @@ This release makes Ant sandboxes message-driven and resource-aware. It completes
     <pubDate>Sun, 02 Aug 2026 15:53:27 GMT</pubDate>
   </item>
   <item>
-    <title>[denoland/rusty_v8] v152.0.0</title>
-    <link>https://github.com/denoland/rusty_v8/releases/tag/v152.0.0</link>
-    <guid isPermaLink="true">https://github.com/denoland/rusty_v8/releases/tag/v152.0.0</guid>
-    <description><![CDATA[No release notes provided.]]></description>
-    <pubDate>Sat, 01 Aug 2026 16:06:40 GMT</pubDate>
-  </item>
-  <item>
     <title>[adobe/react-spectrum] React Aria Components v1.20.0 (react-aria-components@1.20.0)</title>
     <link>https://github.com/adobe/react-spectrum/releases/tag/react-aria-components%401.20.0</link>
     <guid isPermaLink="true">https://github.com/adobe/react-spectrum/releases/tag/react-aria-components%401.20.0</guid>
@@ -987,16 +1032,6 @@ Se
 
 ... (truncated)]]></description>
     <pubDate>Fri, 31 Jul 2026 02:04:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>[fastify/fastify-vite] @fastify/react@1.2.2</title>
-    <link>https://github.com/fastify/fastify-vite/releases/tag/%40fastify/react%401.2.2</link>
-    <guid isPermaLink="true">https://github.com/fastify/fastify-vite/releases/tag/%40fastify/react%401.2.2</guid>
-    <description><![CDATA[### Patch Changes
-
-- Updated dependencies [03cf160]
- - @fastify/vite@10.0.0]]></description>
-    <pubDate>Thu, 30 Jul 2026 19:34:31 GMT</pubDate>
   </item>
 </channel>
 </rss>
