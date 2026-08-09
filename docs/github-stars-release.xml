@@ -5,8 +5,48 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Sat, 08 Aug 2026 22:05:10 GMT</lastBuildDate>
+  <lastBuildDate>Sun, 09 Aug 2026 22:05:50 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[pnpm/pnpm] pnpm 11.21 (v11.21.0)</title>
+    <link>https://github.com/pnpm/pnpm/releases/tag/v11.21.0</link>
+    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v11.21.0</guid>
+    <description><![CDATA[## Minor Changes
+
+* Added interactive group selection to `pnpm update --global --interactive`.
+
+* Running `pnpm setup`, `pnpm self-update`, or a command that modifies the global installation (such as `pnpm add --global`) through `sudo` now prints a warning. pnpm keeps global packages and configuration in the invoking user's home directory, so running these commands as root silently operates on the root user's home directory instead of yours. They will fail with `ERR_PNPM_SUDO_NOT_SUPPORTED` in pnpm v12. Read-only global commands (such as `pnpm bin --global`) are unaffected.
+
+## Patch Changes
+
+* Fixed pnpm failing to start under asynchronous Node.js module loaders when no `.pnpmfile.mjs` exists pnpm/pnpm#11701.
+
+* Fixed `minimumReleaseAge` fallback for custom dist-tags so the selected version does not exceed the registry’s original tag target.
+
+* Removing a dependency from `package.json` and reinstalling no longer re-resolves the dependency graph. The importer's entry is dro
+
+... (truncated)]]></description>
+    <pubDate>Sun, 09 Aug 2026 14:25:31 GMT</pubDate>
+  </item>
+  <item>
+    <title>[panva/node-oidc-provider] v9.11.3</title>
+    <link>https://github.com/panva/node-oidc-provider/releases/tag/v9.11.3</link>
+    <guid isPermaLink="true">https://github.com/panva/node-oidc-provider/releases/tag/v9.11.3</guid>
+    <description><![CDATA[### Fixes
+
+* omit undefined response parameters (0c65aa6)
+
+### Refactor
+
+* drop the @koa/cors runtime dependency (4eca0f2)
+* drop the eta runtime dependency (f0da9d2)
+* drop the jsesc runtime dependency (b2f6c0c)
+* drop the nanoid runtime dependency (86a42da)
+* drop the quick-lru runtime dependency (e818a6d)
+* drop the raw-body runtime dependency (9312ca7)
+* replace @koa/router with an internal router (3b33e5f)]]></description>
+    <pubDate>Sat, 08 Aug 2026 23:57:12 GMT</pubDate>
+  </item>
   <item>
     <title>[evanw/esbuild] v0.28.2</title>
     <link>https://github.com/evanw/esbuild/releases/tag/v0.28.2</link>
@@ -39,9 +79,7 @@
  .a .b{& .b:not(& .c){color:red}}
  ```
 
- This should match `<span class="a"><span class="b"><span class="b">yes</span></span></span>` but not `<span class="a"><span class="b">no</span></span>`. The old output incorrectly matched both.
-
-* Avoid overwriting i
+ This should match `<span class="a"><span class="b"><span class="b">yes</span></span></span>` but not `<span class="a"><span class="b">no</span></span>`. The old output incorrectly matched 
 
 ... (truncated)]]></description>
     <pubDate>Sat, 08 Aug 2026 19:58:58 GMT</pubDate>
@@ -826,36 +864,6 @@ cache: {
     <pubDate>Tue, 04 Aug 2026 00:47:03 GMT</pubDate>
   </item>
   <item>
-    <title>[panva/node-oidc-provider] v9.11.2</title>
-    <link>https://github.com/panva/node-oidc-provider/releases/tag/v9.11.2</link>
-    <guid isPermaLink="true">https://github.com/panva/node-oidc-provider/releases/tag/v9.11.2</guid>
-    <description><![CDATA[### Fixes
-
-* **adapter:** apply memory entry expiration correctly (ff6c0d9)
-* **adapter:** isolate default memory storage per provider (b4d27aa)
-* **cimd:** bound the metadata document cache (62e1f66)
-* **grants:** isolate feature-specific grant parameters (5490fc9)
-
-### Refactor
-
-* **adapter:** maintain memory adapter indexes (3196032)
-* add cause to provider errors (b329354)
-* **dpop:** centralize replay detection (1d764c8)
-* ensure incoming Configuration is not mutated (e59fd60)
-* **grants:** share source lifecycle checks (d12f969)
-* **resources:** share access token validation (1770bcf)
-* retain memory entries through clock tolerance (72ea716)
-
-### Performance
-
-* **cimd:** coalesce concurrent document fetches (5248ff2)
-* **configuration:** reuse defaults during draft validation (1b1306d)
-* **jwt:** stop key iteration after successful crypto (d428277)
-* **models:** cache payload allowlists (1b781c9)
-* **params:** scan duplicate parameters once (b572798)]]></description>
-    <pubDate>Mon, 03 Aug 2026 18:01:19 GMT</pubDate>
-  </item>
-  <item>
     <title>[typescript-eslint/typescript-eslint] v8.66.0</title>
     <link>https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.66.0</link>
     <guid isPermaLink="true">https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.66.0</guid>
@@ -908,23 +916,6 @@ You can read about our versioning strategy and releases on our website.]]></desc
 
 ... (truncated)]]></description>
     <pubDate>Mon, 03 Aug 2026 15:06:41 GMT</pubDate>
-  </item>
-  <item>
-    <title>[pnpm/pnpm] pnpm 11.20 (v11.20.0)</title>
-    <link>https://github.com/pnpm/pnpm/releases/tag/v11.20.0</link>
-    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v11.20.0</guid>
-    <description><![CDATA[## Minor Changes
-
-* **Security fix.** Affects projects using `namedRegistries` on pnpm 11.1.0–11.19.x. It is **semi-breaking** for those projects — see "If you use named registries" below.
-
- The lockfile recorded no marker for which registry a package came from. Packages were keyed by `name@version` alone, and entry lookup went through `refToRelative(ref, name)`, so a dependency you declared against one registry could be satisfied by an entry that was actually resolved from another. When two registries served the same name and version, both collapsed onto a single `packages:` entry and whichever resolved first decided the tarball every consumer got.
-
- That is a package-substitution risk: a package you expect from your private registry could be installed from a different registry that publishes the same name and version, and the lockfile recorded nothing that would let you tell.
-
- Packages resolved from a named registry are now recorded under registry-qualified keys (`<name>@<re
-
-... (truncated)]]></description>
-    <pubDate>Mon, 03 Aug 2026 14:20:27 GMT</pubDate>
   </item>
   <item>
     <title>[oxc-project/oxc] oxlint v1.77.0 &amp; oxfmt v0.62.0 (apps_v1.77.0)</title>
