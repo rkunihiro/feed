@@ -5,8 +5,264 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Sun, 09 Aug 2026 22:05:50 GMT</lastBuildDate>
+  <lastBuildDate>Mon, 10 Aug 2026 22:11:06 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[github/spec-kit] Spec Kit - 0.16.2 (v0.16.2)</title>
+    <link>https://github.com/github/spec-kit/releases/tag/v0.16.2</link>
+    <guid isPermaLink="true">https://github.com/github/spec-kit/releases/tag/v0.16.2</guid>
+    <description><![CDATA[## Install
+
+```bash
+uv tool install specify-cli --from git+
+specify init my-project
+```
+
+## What's Changed
+
+- chore: bump version to 0.16.2
+- Add Command Code integration to spec-kit (#4019)
+- fix(workflows): strip a resolved condition before the true/false check (#3883)
+- fix(workflows): guard a non-string overlay edit 'operation' (#3881)
+- fix: bound response read in integration catalog fetch (#3818)
+- Fix bug-test Python dependency provisioning (#4030)
+- fix(bundle): escape Rich markup in bundle CLI error and status output (#4023)
+- fix(presets): skip an unreadable restore source in `preset remove` (#4020)
+- Add Keel Discovery extension to community catalog (#4035)
+- fix: show error details in preset catalog config read failure (#3840)
+- Update Reconcile Extension to v1.1.0 (#4034)
+- Add Model Routing Governance preset to community catalog (#4033)
+- fix: use missing_ok=True in integration JSON removal (#3846)
+- fix: use missing_ok=True in extension cache clear (#3845)
+- fix(extensio
+
+... (truncated)]]></description>
+    <pubDate>Mon, 10 Aug 2026 19:46:01 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1107.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1107.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1107.0</guid>
+    <description><![CDATA[#### 3.1107.0(2026-08-10)
+
+##### Chores
+
+* **codegen:**
+ * sync for omit staticContextParams on ClientInputEndpointParameters (#8258) (2b7601ed)
+ * smithy-aws-typescript-codegen 0.52.0 (#8255) (2e4482a6)
+
+##### New Features
+
+* **client-connect:** Added Malay language option to use AI to automatically fill evaluation forms in Malay (6f82fc3a)
+* **client-sagemaker:** Added PREFIX AWARE routing strategy and PrefixAwareRoutingConfig to CreateEndpointConfig. Configure PrefixLength and ConcurrencyThreshold to route requests that share the same prompt prefix to the same instance. (c0ce67e2)
+* **client-medialive:** Added VirtualSourceAddress to multicast output destinations for MediaLive Anywhere channels. Specifies the source IP address for outbound multicast packets when downstream networks enforce source-IP filtering. (dc24c644)
+* **client-elementalinference:** Added support for the SearchFixtures API and DataSourceConfiguration, enabling customers to map fixture event data onto clipping ou
+
+... (truncated)]]></description>
+    <pubDate>Mon, 10 Aug 2026 18:50:29 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-08-10) (release-2026-08-10)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-10</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-10</guid>
+    <description><![CDATA[## General Highlights
+* **Dependency Update**: Update to smithy-go v1.27.7.
+* **Dependency Update**: Updated to the latest SDK module versions
+
+## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/service/connect`: [v1.186.0](service/connect/CHANGELOG.md#v11860-2026-08-10)
+ * **Feature**: Added Malay language option to use AI to automatically fill evaluation forms in Malay
+* `github.com/aws/aws-sdk-go-v2/service/elementalinference`: [v1.6.0](service/elementalinference/CHANGELOG.md#v160-2026-08-10)
+ * **Feature**: Added support for the SearchFixtures API and DataSourceConfiguration, enabling customers to map fixture event data onto clipping outputs for improved feature accuracy.
+* `github.com/aws/aws-sdk-go-v2/service/medialive`: [v1.102.0](service/medialive/CHANGELOG.md#v11020-2026-08-10)
+ * **Feature**: Added VirtualSourceAddress to multicast output destinations for MediaLive Anywhere channels. Specifies the source IP address for outbound multicast packets when downstream networks enf
+
+... (truncated)]]></description>
+    <pubDate>Mon, 10 Aug 2026 18:46:20 GMT</pubDate>
+  </item>
+  <item>
+    <title>[typescript-eslint/typescript-eslint] v8.67.0</title>
+    <link>https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.67.0</link>
+    <guid isPermaLink="true">https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.67.0</guid>
+    <description><![CDATA[## 8.67.0 (2026-08-10)
+
+### 🚀 Features
+
+- **typescript-eslint:** export basic globs for using tseslint (#12105)
+
+### ❤️ Thank You
+
+- Evyatar Daud @StyleShit
+- Josh Goldberg ✨
+- Kirk Waiblinger @kirkwaiblinger
+
+See GitHub Releases for more information.
+
+You can read about our versioning strategy and releases on our website.]]></description>
+    <pubDate>Mon, 10 Aug 2026 17:18:26 GMT</pubDate>
+  </item>
+  <item>
+    <title>[ollama/ollama] v0.32.7</title>
+    <link>https://github.com/ollama/ollama/releases/tag/v0.32.7</link>
+    <guid isPermaLink="true">https://github.com/ollama/ollama/releases/tag/v0.32.7</guid>
+    <description><![CDATA[## Muse Glimmer
+
+> Note: Muse Glimmer is currently available via initial support via Ollama's MLX engine on Apple Silicon. Additional support and optimizations for Apple Silicon, NVIDIA, AMD, and other platforms will be available in the coming days.
+
+**Muse Glimmer**, Meta's newest open model and the first released by Meta Superintelligence Labs, is now available on Ollama. It's a 30B multimodal model purpose-built for agent workloads that run locally.
+
+With Ollama, you can now use Muse Glimmer to power coding agent applications such as Claude Code, Codex, Pi and more, as well as long-running personal assistants such as OpenClaw and Hermes.
+
+Ollama's MLX engine provides state-of-the-art performance on Apple Silicon for this model, with support for DFlash and image input as of Ollama 0.32.7.
+
+To download and run Muse Glimmer locally:
+
+```bash
+ollama run muse-glimmer:30b-mlx
+```
+
+To run Muse Glimmer on Apple Silicon with Claude Code, download Ollama and run:
+
+```bash
+o
+
+... (truncated)]]></description>
+    <pubDate>Mon, 10 Aug 2026 10:49:15 GMT</pubDate>
+  </item>
+  <item>
+    <title>[oxc-project/oxc] oxlint v1.78.0 &amp; oxfmt v0.63.0 (apps_v1.78.0)</title>
+    <link>https://github.com/oxc-project/oxc/releases/tag/apps_v1.78.0</link>
+    <guid isPermaLink="true">https://github.com/oxc-project/oxc/releases/tag/apps_v1.78.0</guid>
+    <description><![CDATA[## Table of Contents
+
+- [Oxlint v1.78.0](#oxlint-v1.78.0)
+- [Oxfmt v0.63.0](#oxfmt-v0.63.0)
+
+## Oxlint v1.78.0
+
+### 🚀 Features
+
+- ccb8fe8 linter/jsdoc: Implement `no-blank-blocks` rule (#25207) (Mikhail Baev)
+- d4a897c linter/eslint: Implement `one-var` rule (#24470) (Cole Ellison)
+- 5ab9340 linter/jsx-a11y/anchor-has-content: Add options to match eslint (#24571) (Cole Ellison)
+
+### 🐛 Bug Fixes
+
+- b746e00 linter/eslint/no-implicit-coercion: Preserve template coercion whitespace (#25470) (camc314)
+- a92c541 linter: Preserve source text for JS plugin ignore fixes (#25280) (Norcleeh)
+- 675c840 linter/eslint/prefer-promise-reject-errors: Handle parenthesized calls (#25378) (camc314)
+- 1703739 linter/unicorn/new-for-builtins: Ignore optional chains (#25411) (tanakalucky)
+- 95ece63 linter/unicorn/prefer-code-point: Downgrade the auto-fix to dangerous (#25412) (leemr)
+- c451a0e linter/vitest: Validate `consistent-test-filename` regex patterns (#25408) (Mikhail Baev)
+- 9
+
+... (truncated)]]></description>
+    <pubDate>Mon, 10 Aug 2026 10:46:10 GMT</pubDate>
+  </item>
+  <item>
+    <title>[nestjs/nest] v11.1.29</title>
+    <link>https://github.com/nestjs/nest/releases/tag/v11.1.29</link>
+    <guid isPermaLink="true">https://github.com/nestjs/nest/releases/tag/v11.1.29</guid>
+    <description><![CDATA[## What's Changed
+* fix(core): stop import lookup after first direct export match by @malekelkssas in 
+* chore: update multerExceptions constant by @bo0tzz in 
+* fix(microservices): correct pub/sub client type in redis listeners by @zaewc in 
+* feat(common): add override mimetype option to file type validator by @Ativ3k in 
+* fix(core): drop the g flag from middleware overlap regexes by @dchaudhari7177 in 
+* feat(core): support sse comments by @kyu4583 in 
+* fix(core): resolve barrier immediately when target count is zero by @ikrbasak in 
+* fix(common): exclude pipe options from validator options by @coxxny in 
+* fix(core): serialize SSE retry field when value is zero by @kyu4583 in 
+* fix(microservices): nullify grpcclient on close when tryshutdown fails by @Se3do in 
+* fix(express): map missing multer field nesting error by @Se3do in 
+
+## New Contributors
+* @malekelkssas made their first contribution in 
+* @hjc0930 made their first contribution in 
+* @bo0tzz made thei
+
+... (truncated)]]></description>
+    <pubDate>Mon, 10 Aug 2026 09:40:32 GMT</pubDate>
+  </item>
+  <item>
+    <title>[wailsapp/wails] Wails v2.14.0 (v2.14.0)</title>
+    <link>https://github.com/wailsapp/wails/releases/tag/v2.14.0</link>
+    <guid isPermaLink="true">https://github.com/wailsapp/wails/releases/tag/v2.14.0</guid>
+    <description><![CDATA[## Installation
+
+```bash
+go install github.com/wailsapp/wails/v2/cmd/wails@v2.14.0
+```
+
+## Changes
+
+### Fixed
+
+- Fixed nil pointer crash and swallowed network error when downloading the WebView2 bootstrapper, which made the app exit instead of showing the installation error dialog by @jannskiee]]></description>
+    <pubDate>Mon, 10 Aug 2026 09:36:33 GMT</pubDate>
+  </item>
+  <item>
+    <title>[ant-design/ant-design] 6.6.0</title>
+    <link>https://github.com/ant-design/ant-design/releases/tag/6.6.0</link>
+    <guid isPermaLink="true">https://github.com/ant-design/ant-design/releases/tag/6.6.0</guid>
+    <description><![CDATA[- 🔥 Add Listy component for high-performance virtualized lists with grouping, sticky headers, and imperative scrolling. #58724 @aojunhao123
+- ConfigProvider
+ - 🆕 Add ConfigProvider `focusOutline` theme token to control shared focus outlines across Input, Select, Rate, Steps, Splitter, and other components. #58647 #58708 @QDyanbing
+ - 🆕 Add ConfigProvider global `variant` configuration for Input.Search, Input.Password, and Input.OTP. #58784 @QDyanbing
+ - 🆕 Add ConfigProvider global `mouseEnterDelay` and `mouseLeaveDelay` configuration for Tooltip, Popover, and Popconfirm. #58892 @EmilyyyLiu
+- 🌐 Localization
+ - 🇦🇱 Add Albanian `sq_AL` locale support. #58618 @li-jia-nan
+- 🆕 Add Tree `useTree` for retrieving node paths and support `scrollTo({ autoExpand: true })` to expand target nodes before scrolling. #58841 @zombieJ
+- 🆕 Add FloatButton.BackTop `showProgress` to display the current scroll progress around the button. #58894 @ZQDesigned
+- 🆕 Add Table `expandable.forceRender` to r
+
+... (truncated)]]></description>
+    <pubDate>Mon, 10 Aug 2026 09:00:04 GMT</pubDate>
+  </item>
+  <item>
+    <title>[anomalyco/opencode] v1.18.16</title>
+    <link>https://github.com/anomalyco/opencode/releases/tag/v1.18.16</link>
+    <guid isPermaLink="true">https://github.com/anomalyco/opencode/releases/tag/v1.18.16</guid>
+    <description><![CDATA[## Core
+
+### Bugfixes
+
+- Ignore unknown top-level config fields instead of failing config parsing
+- Register projects opened from Home so they are available to the rest of the app
+
+## Desktop
+
+### Improvements
+
+- Open the project menu with a right-click in Home
+
+### Bugfixes
+
+- Fall back to listing and matching local directories when the project picker server does not support search
+- Use 词元 instead of 令牌 for token-related labels in Simplified Chinese (@Speechlessmanbilibili)
+- Keep the macOS app running after the last window closes and reopen a window when the app is activated
+
+**Thank you to 1 community contributor:**
+- @Speechlessmanbilibili:
+ - fix(i18n): use 词元 instead of 令牌 for token in zh locale (#40977)]]></description>
+    <pubDate>Mon, 10 Aug 2026 06:07:08 GMT</pubDate>
+  </item>
+  <item>
+    <title>[privatenumber/tsx] v4.23.12</title>
+    <link>https://github.com/privatenumber/tsx/releases/tag/v4.23.12</link>
+    <guid isPermaLink="true">https://github.com/privatenumber/tsx/releases/tag/v4.23.12</guid>
+    <description><![CDATA[## 4.23.12 (2026-08-10)
+
+
+### Bug Fixes
+
+* shim `import.meta` when tokens are split by comments or newlines (#829) (ed9d330), closes #828
+
+---
+This release is also available on:
+- npm package (@latest dist-tag)]]></description>
+    <pubDate>Mon, 10 Aug 2026 03:39:26 GMT</pubDate>
+  </item>
   <item>
     <title>[pnpm/pnpm] pnpm 11.21 (v11.21.0)</title>
     <link>https://github.com/pnpm/pnpm/releases/tag/v11.21.0</link>
@@ -133,71 +389,6 @@
     <pubDate>Fri, 07 Aug 2026 20:16:24 GMT</pubDate>
   </item>
   <item>
-    <title>[aws/aws-sdk-js-v3] v3.1106.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1106.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1106.0</guid>
-    <description><![CDATA[#### 3.1106.0(2026-08-07)
-
-##### New Features
-
-* **clients:** update client endpoints as of 2026-08-07 (c5d05426)
-* **client-amplify:** Increased the maximum allowed length of the oauthToken parameter in the CreateApp and UpdateApp APIs to support longer OAuth tokens issued by third-party Git providers. (b239e292)
-* **client-healthlake:** Adds provenanceEnabled to StartFHIRImportJob (18ac6efe)
-* **client-securityagent:** Added enableEmailMfa input field on Actor to enable email-based MFA during penetration tests. When enabled, a server-generated mfaForwardingAddress is returned. Set up a forwarding rule in your email provider to forward MFA emails to this address so the agent can complete email-based MFA login flows (e21d3919)
-* **client-mediapackagev2:** StreamNameOutputMode - a new optional field on MediaPackageV2 OriginEndpoints that lets customers choose whether egress manifests use numeric stream indices (default) or encoder-assigned stream names from the input (7f49cb06)
-* **clie
-
-... (truncated)]]></description>
-    <pubDate>Fri, 07 Aug 2026 18:54:10 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-08-07) (release-2026-08-07)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-07</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-07</guid>
-    <description><![CDATA[## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/connect`: [v1.185.0](service/connect/CHANGELOG.md#v11850-2026-08-07)
- * **Feature**: Supports updating the task template associated with in-progress task contacts using the new UpdateContactTaskTemplate API. This enables supervisors and developers to dynamically reassign task templates without creating a new task.
-* `github.com/aws/aws-sdk-go-v2/service/ec2`: [v1.321.0](service/ec2/CHANGELOG.md#v13210-2026-08-07)
- * **Feature**: This release adds support for BGP route protection in Amazon VPC IP Address Manager (IPAM), including route discovery, RPKI route protection findings, and delegated RPKI (Internet Registry Associations, routing policy registrations, and ROA management) for BYOIP prefixes.
-* `github.com/aws/aws-sdk-go-v2/service/healthlake`: [v1.43.0](service/healthlake/CHANGELOG.md#v1430-2026-08-07)
- * **Feature**: Adds provenanceEnabled to StartFHIRImportJob
-* `github.com/aws/aws-sdk-go-v2/service/mediapackagev2`: [v
-
-... (truncated)]]></description>
-    <pubDate>Fri, 07 Aug 2026 18:49:33 GMT</pubDate>
-  </item>
-  <item>
-    <title>[github/spec-kit] Spec Kit - 0.16.1 (v0.16.1)</title>
-    <link>https://github.com/github/spec-kit/releases/tag/v0.16.1</link>
-    <guid isPermaLink="true">https://github.com/github/spec-kit/releases/tag/v0.16.1</guid>
-    <description><![CDATA[## Install
-
-```bash
-uv tool install specify-cli --from git+
-specify init my-project
-```
-
-## What's Changed
-
-- chore: bump version to 0.16.1
-- fix(integrations): wrap a non-UTF-8 catalog response (#4011)
-- fix(events): skip an unreadable command template (#3956)
-- fix(bundle): wrap malformed YAML in a local .zip bundle manifest (#4013)
-- chore(deps): bump github/codeql-action/analyze from 4.37.3 to 4.37.5 (#4005)
-- chore(deps): bump DavidAnson/markdownlint-cli2-action (#4006)
-- fix(agent-context): recurse for nested plans in Python mtime fallback (#3757)
-- fix: add utf-8 encoding to extension and preset registry file I/O (#3834)
-- fix(init): escape user-supplied values in `specify init` output (#3787)
-- fix: bound response read in integration catalog fetch (#3812)
-- fix: use missing_ok for temp file cleanup to avoid masking errors (#3803)
-- fix(workflows): handle an unreadable run state in `workflow status` (#3999)
-- feat(init): scaffold managed .specify/.gitignore (#4000)
-- fix(scripts
-
-... (truncated)]]></description>
-    <pubDate>Fri, 07 Aug 2026 17:30:26 GMT</pubDate>
-  </item>
-  <item>
     <title>[astral-sh/uv] 0.12.3</title>
     <link>https://github.com/astral-sh/uv/releases/tag/0.12.3</link>
     <guid isPermaLink="true">https://github.com/astral-sh/uv/releases/tag/0.12.3</guid>
@@ -293,22 +484,6 @@ Released on 2026-08-07.
     <pubDate>Fri, 07 Aug 2026 13:09:06 GMT</pubDate>
   </item>
   <item>
-    <title>[privatenumber/tsx] v4.23.11</title>
-    <link>https://github.com/privatenumber/tsx/releases/tag/v4.23.11</link>
-    <guid isPermaLink="true">https://github.com/privatenumber/tsx/releases/tag/v4.23.11</guid>
-    <description><![CDATA[## 4.23.11 (2026-08-07)
-
-
-### Bug Fixes
-
-* preserve async ESM require fallback (55cbece)
-
----
-This release is also available on:
-- npm package (@latest dist-tag)]]></description>
-    <pubDate>Fri, 07 Aug 2026 12:46:22 GMT</pubDate>
-  </item>
-  <item>
     <title>[chakra-ui/ark] @ark-ui/solid@5.38.1</title>
     <link>https://github.com/chakra-ui/ark/releases/tag/%40ark-ui/solid%405.38.1</link>
     <guid isPermaLink="true">https://github.com/chakra-ui/ark/releases/tag/%40ark-ui/solid%405.38.1</guid>
@@ -391,41 +566,6 @@ This release is also available on:
     <pubDate>Fri, 07 Aug 2026 09:57:33 GMT</pubDate>
   </item>
   <item>
-    <title>[anomalyco/opencode] v1.18.15</title>
-    <link>https://github.com/anomalyco/opencode/releases/tag/v1.18.15</link>
-    <guid isPermaLink="true">https://github.com/anomalyco/opencode/releases/tag/v1.18.15</guid>
-    <description><![CDATA[## Core
-
-### Bugfixes
-
-- Chronological message ordering now stays correct even when imported or legacy message IDs are out of order.
-- Revert and fork actions now use real message chronology instead of message ID ordering.
-- Truncation cleanup now removes stale files by file timestamp more reliably.
-- Repeated compaction now keeps earlier tool-call history in summaries instead of dropping orphaned results.
-- Blob-based attachments now load correctly in the web UI. (@rexdotsh)
-
-## Desktop
-
-### Improvements
-
-- Added much broader locale coverage across the desktop app.
-- Export full session transcripts as JSON from the UI.
-
-### Bugfixes
-
-- Session timelines now respect chronological message boundaries more reliably.
-- Stored messages now stay ordered by creation time.
-- Session lists now sort by persisted activity time more reliably.
-- Language names now stay native in the locale picker.
-- Filled in missing translations across existing locales.
-
-**Thank you to 3 community contributors:**
-
-
-... (truncated)]]></description>
-    <pubDate>Fri, 07 Aug 2026 06:49:55 GMT</pubDate>
-  </item>
-  <item>
     <title>[honojs/hono] v4.13.1</title>
     <link>https://github.com/honojs/hono/releases/tag/v4.13.1</link>
     <guid isPermaLink="true">https://github.com/honojs/hono/releases/tag/v4.13.1</guid>
@@ -440,22 +580,6 @@ This release is also available on:
 
 **Full Changelog**:]]></description>
     <pubDate>Fri, 07 Aug 2026 06:45:21 GMT</pubDate>
-  </item>
-  <item>
-    <title>[ant-design/ant-design] 6.5.4</title>
-    <link>https://github.com/ant-design/ant-design/releases/tag/6.5.4</link>
-    <guid isPermaLink="true">https://github.com/ant-design/ant-design/releases/tag/6.5.4</guid>
-    <description><![CDATA[- 🐞 Fix Alert not showing the close button when the `closable` configuration object only contains `onClose`. #58885 @QDyanbing
-- 🐞 Fix Checkbox.Group crashing when `options` contains nullish entries or values. #58879 @GuillaumeZ2SS
-- 🐞 Fix App emitting an unnecessary CSS variable warning with `component={false}`, while warning when root props cannot be applied in this mode. #58877 @li-jia-nan
-- 🐞 Fix Table selecting disabled rows on other pages when selecting all data. #58843 @QDyanbing
-- 🐞 Fix Transfer deselect-all behavior after filtering. #58844 @thlovey
-- 🐞 Fix DatePicker `RangePicker` semantic callbacks not receiving forwarded props. #58905 @QDyanbing
-- 💄 Fix FloatButton.BackTop scroll animation not respecting `prefers-reduced-motion`. #58849 @li-jia-nan
-- 💄 Fix bare `<svg>` icons from third-party icon libraries being misaligned, missing spacing, or breaking onto separate lines in Breadcrumb, Collapse, Segmented, Tabs, and Tag. #58862 #58868 #58869 #58870 @mohamedkhaled405
-
-... (truncated)]]></description>
-    <pubDate>Fri, 07 Aug 2026 05:58:03 GMT</pubDate>
   </item>
   <item>
     <title>[openai/codex] 0.147.0 (rust-v0.147.0)</title>
@@ -661,24 +785,6 @@ This release adds **three new services** — **Amazon MWAA**, **CloudWatch RUM**
     <pubDate>Wed, 05 Aug 2026 15:25:32 GMT</pubDate>
   </item>
   <item>
-    <title>[ollama/ollama] v0.32.6</title>
-    <link>https://github.com/ollama/ollama/releases/tag/v0.32.6</link>
-    <guid isPermaLink="true">https://github.com/ollama/ollama/releases/tag/v0.32.6</guid>
-    <description><![CDATA[## What's Changed
- - Qwen3.5 is faster on Apple GPUs: the MLX engine now uses the model's MTP head for speculative decoding automatically
- - `/v1/chat/completions` streaming now matches OpenAI's wire format: `role` only on the first chunk, `finish_reason` on its own chunk,
- and usage in a separate chunk with `stream_options.include_usage`.
- - Truncated OpenAI responses now report `finish_reason: "length"` instead of `"tool_calls"`.
- - `ollama run kimi-k3` now offers `kimi-k3:cloud` for cloud-only models that publish no default tag, instead of failing.
- - TUI fixes: pipe-delimited prose no longer renders as a table, Enter accepts the highlighted `@` file completion, and `/prompt`
- scrolling is no longer laggy.
- - Experimental image generation has been temporarily removed. Continue using 0.32.5 for image generation support
- - Updated the MLX and llama.cpp engines.
-
-**Full Changelog**:]]></description>
-    <pubDate>Tue, 04 Aug 2026 18:49:20 GMT</pubDate>
-  </item>
-  <item>
     <title>[servo/servo] v0.4.0</title>
     <link>https://github.com/servo/servo/releases/tag/v0.4.0</link>
     <guid isPermaLink="true">https://github.com/servo/servo/releases/tag/v0.4.0</guid>
@@ -864,37 +970,6 @@ cache: {
     <pubDate>Tue, 04 Aug 2026 00:47:03 GMT</pubDate>
   </item>
   <item>
-    <title>[typescript-eslint/typescript-eslint] v8.66.0</title>
-    <link>https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.66.0</link>
-    <guid isPermaLink="true">https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.66.0</guid>
-    <description><![CDATA[## 8.66.0 (2026-08-03)
-
-### 🚀 Features
-
-- **typescript-estree:** handle import.defer as ImportExpression (#12609)
-
-### 🩹 Fixes
-
-- **eslint-plugin:** [no-unnecessary-type-conversion] ignore shadowed built-ins (#12590)
-- **eslint-plugin:** [prefer-nullish-coalescing] handle shadowed Boolean calls (#12591)
-- **eslint-plugin:** [no-useless-default-assignment] don't report defaults used by other overloads (#12607)
-- **eslint-plugin:** [no-unnecessary-type-parameters] check MappedType key remapping (#12588)
-- **eslint-plugin:** [class-literal-property-style] preserve type annotations and don't drop decorators (#12617)
-- **website:** list `onUnsupportedTypeScriptVersion` in parser options (#12585)
-
-### ❤️ Thank You
-
-- Evyatar Daud @StyleShit
-- Kirk Waiblinger @kirkwaiblinger
-- Steffen Schroeder
-- 송재욱
-
-See GitHub Releases for more information.
-
-You can read about our versioning strategy and releases on our website.]]></description>
-    <pubDate>Mon, 03 Aug 2026 17:34:06 GMT</pubDate>
-  </item>
-  <item>
     <title>[nodejs/undici] v8.10.0</title>
     <link>https://github.com/nodejs/undici/releases/tag/v8.10.0</link>
     <guid isPermaLink="true">https://github.com/nodejs/undici/releases/tag/v8.10.0</guid>
@@ -916,37 +991,6 @@ You can read about our versioning strategy and releases on our website.]]></desc
 
 ... (truncated)]]></description>
     <pubDate>Mon, 03 Aug 2026 15:06:41 GMT</pubDate>
-  </item>
-  <item>
-    <title>[oxc-project/oxc] oxlint v1.77.0 &amp; oxfmt v0.62.0 (apps_v1.77.0)</title>
-    <link>https://github.com/oxc-project/oxc/releases/tag/apps_v1.77.0</link>
-    <guid isPermaLink="true">https://github.com/oxc-project/oxc/releases/tag/apps_v1.77.0</guid>
-    <description><![CDATA[## Table of Contents
-
-- [Oxlint v1.77.0](#oxlint-v1.77.0)
-- [Oxfmt v0.62.0](#oxfmt-v0.62.0)
-
-## Oxlint v1.77.0
-### 💥 BREAKING CHANGES
-
-- 4120da0 semantic: [**BREAKING**] Return borrowed JSDoc so the parse cache works (#25186) (Connor Shea)
-- 067da8c ast: [**BREAKING**] Store single parameter in `TSIndexSignature::parameter` (#25154) (camc314)
-- 1bdedd1 ast: [**BREAKING**] Introduce `ExportDeclaration`, `ExportFromDeclaration` (#25095) (camc314)
-- c917f20 ast: [**BREAKING**] Introduce `ArrowFunctionBody` enum (#24987) (camc314)
-
-### 🚀 Features
-
-- 0b9f83c linter/oxc/bad-char-at-comparison: Expand coverage (#25001) (Mikhail Baev)
-- 1fb3d70 oxlint: Show file:line:col in github format annotation messages (#25020) (Faris Tristan Fabian)
-
-### 🐛 Bug Fixes
-
-- a64b65d linter/unicorn/new-for-builtins: Detect parenthesized member expression object (#25249) (tanakalucky)
-- 9d4592c linter: Reject duplicate JS plugin names (#25243) (camc314)
-- 3213e7a linter: Ignore unsigned shifts in prefer-math-
-
-... (truncated)]]></description>
-    <pubDate>Mon, 03 Aug 2026 12:07:50 GMT</pubDate>
   </item>
   <item>
     <title>[theMackabu/ant] v13.0.ca8e720d.0</title>
@@ -991,38 +1035,6 @@ Full Release Notes]]></description>
     <guid isPermaLink="true">https://github.com/lynx-family/lynx/releases/tag/4.0.1</guid>
     <description><![CDATA[No release notes provided.]]></description>
     <pubDate>Fri, 31 Jul 2026 13:32:02 GMT</pubDate>
-  </item>
-  <item>
-    <title>[podman-desktop/podman-desktop] v1.29.1</title>
-    <link>https://github.com/podman-desktop/podman-desktop/releases/tag/v1.29.1</link>
-    <guid isPermaLink="true">https://github.com/podman-desktop/podman-desktop/releases/tag/v1.29.1</guid>
-    <description><![CDATA[- fixes arm64 Windows installer 
-
-**Full Changelog**:]]></description>
-    <pubDate>Fri, 31 Jul 2026 13:13:28 GMT</pubDate>
-  </item>
-  <item>
-    <title>[cli/cli] GitHub CLI 2.97.0 (v2.97.0)</title>
-    <link>https://github.com/cli/cli/releases/tag/v2.97.0</link>
-    <guid isPermaLink="true">https://github.com/cli/cli/releases/tag/v2.97.0</guid>
-    <description><![CDATA[## Security
-
-Four security vulnerabilities have been identified, and fixed, in this release. Users are advised to update gh to version `v2.97.0` as soon as possible.
-
-Several commands (including `gh gist view`, `gh api`, `gh pr diff`, `gh release download --output -`, `gh codespace logs`, `gh skills preview`, and `gh agent-task view`/`create`) printed externally controlled content without neutralizing terminal escape sequences, allowing escape sequence injection into a user's terminal.
-
-See for more information.
-
-Some request URLs were built without escaping their variable path components, so a value containing URL path metacharacters could alter the request path and cause `gh` to address a different resource than intended.
-
-See for more information.
-
-`gh auth status` (without `--show-token`) could print a portion of the authentication token in plaintext for token types whose format contains an underscore after the prefix, such as `github_pat_*`, `ghs_*`, and `ghu_*`.
-
-Se
-
-... (truncated)]]></description>
-    <pubDate>Fri, 31 Jul 2026 02:04:00 GMT</pubDate>
   </item>
 </channel>
 </rss>
