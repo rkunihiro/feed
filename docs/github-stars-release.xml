@@ -5,8 +5,170 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Mon, 10 Aug 2026 22:11:06 GMT</lastBuildDate>
+  <lastBuildDate>Tue, 11 Aug 2026 22:13:27 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1108.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1108.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1108.0</guid>
+    <description><![CDATA[#### 3.1108.0(2026-08-11)
+
+##### Chores
+
+* **codegen:**
+ * update smithy-ts commit to bring in TS6 change (#8262) (785d467f)
+ * sync for operation-level endpoint defaults (#8260) (f50e0d94)
+* upgrade to typescript 6 (#8257) (edabd4a5)
+
+##### Documentation Changes
+
+* **client-textract:** Amazon A2I entered maintenance mode in July 2026 and now rejects StartHumanLoop requests from accounts that it does not recognize as existing customers. This update adds a corresponding note to the HumanLoopConfig parameter documentation so that the API Reference and SDK docs explain this behavior. (c1efbb87)
+* **client-organizations:** Documentation update for AWS Organizations that clarifies valid input values for the HandshakePartyType parameter in the InviteAccountToOrganization. API ORGANIZATION is valid in responses only. valid input values are ACCOUNT and EMAIL (389ab808)
+* **client-clouddirectory:** Added an end-of-support notice to Amazon Cloud Directory public CLI reference documentation. (afd
+
+... (truncated)]]></description>
+    <pubDate>Tue, 11 Aug 2026 20:06:50 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-08-11) (release-2026-08-11)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-11</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-11</guid>
+    <description><![CDATA[## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/service/accountaccess`: [v1.0.0](service/accountaccess/CHANGELOG.md#v100-2026-08-11)
+ * **Release**: New AWS service client module
+ * **Feature**: Adds SDK support for AWS IAM account access manager, a feature that enables mapping of IAM roles to the users and groups in AWS IAM Identity Center.
+* `github.com/aws/aws-sdk-go-v2/service/applicationdiscoveryservice`: [v1.39.0](service/applicationdiscoveryservice/CHANGELOG.md#v1390-2026-08-11)
+ * **Feature**: Enable schema-based (de)serialization for this service.
+* `github.com/aws/aws-sdk-go-v2/service/appmesh`: [v1.39.0](service/appmesh/CHANGELOG.md#v1390-2026-08-11)
+ * **Feature**: Enable schema-based (de)serialization for this service.
+* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcore`: [v1.38.0](service/bedrockagentcore/CHANGELOG.md#v1380-2026-08-11)
+ * **Feature**: Adding online eval arn as input for recommendation API
+* `github.com/aws/aws-sdk-go-v2/service/bedrockagentrunti
+
+... (truncated)]]></description>
+    <pubDate>Tue, 11 Aug 2026 18:48:18 GMT</pubDate>
+  </item>
+  <item>
+    <title>[withastro/astro] @astrojs/cloudflare@14.2.1</title>
+    <link>https://github.com/withastro/astro/releases/tag/%40astrojs/cloudflare%4014.2.1</link>
+    <guid isPermaLink="true">https://github.com/withastro/astro/releases/tag/%40astrojs/cloudflare%4014.2.1</guid>
+    <description><![CDATA[### Patch Changes
+
+- #17627 `ba6a9f6` Thanks @astrobot-houston! - Fixes the `astro` peer dependency range from `^7.0.0` to `^7.2.0`. The adapter imports symbols (`beginContentEntryCollection`, `beginImageCollection`, `endContentEntryCollection`, `endImageCollection`) from `astro/app` that were added in Astro 7.2.0, so earlier versions fail at build time with a `MISSING_EXPORT` error.
+
+- Updated dependencies \[`0891ac9`]:
+ - @astrojs/underscore-redirects@1.0.4]]></description>
+    <pubDate>Tue, 11 Aug 2026 16:44:15 GMT</pubDate>
+  </item>
+  <item>
+    <title>[bluesky-social/atproto] @atproto/oauth-provider@0.22.1</title>
+    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/oauth-provider%400.22.1</link>
+    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/oauth-provider%400.22.1</guid>
+    <description><![CDATA[### Patch Changes
+
+- Updated dependencies [`b4d71fc`]:
+ - @atproto/oauth-provider-ui@0.9.1]]></description>
+    <pubDate>Tue, 11 Aug 2026 16:07:55 GMT</pubDate>
+  </item>
+  <item>
+    <title>[web-infra-dev/rspack] v2.1.9</title>
+    <link>https://github.com/web-infra-dev/rspack/releases/tag/v2.1.9</link>
+    <guid isPermaLink="true">https://github.com/web-infra-dev/rspack/releases/tag/v2.1.9</guid>
+    <description><![CDATA[## What's Changed
+### New Features 🎉
+* feat: warn on unknown import.meta properties by @intellild in 
+* feat: add builds for binding-linux-(ppc64,s390x)-gnu by @logonoff in 
+* feat(create-rspack): support --no-git by @chenjiahan in 
+* feat: support caseSensitive in import.meta.glob by @intellild in 
+### Performance 🚀
+* perf(copy-plugin): cache and order static patterns by @LingyuCoder in 
+* perf: limit incremental HMR asset processing by @LingyuCoder in 
+* perf: avoid unnecessary call wrappers for runtime helpers by @LingyuCoder in 
+* perf: cache compilation assets proxy by @chenjiahan in 
+* perf(cache): avoid copying aligned archive buffers by @matthewdavis-oai in 
+* perf(json): avoid duplicating export dependency data by @matthewdavis-oai in 
+* perf: improve source map convert performance by @intellild in 
+### Bug Fixes 🐞
+* fix: improve circular real content hash error diagnostics by @LingyuCoder in 
+* fix: keep compilation dependency iterators disjoint by @LingyuC
+
+... (truncated)]]></description>
+    <pubDate>Tue, 11 Aug 2026 15:43:55 GMT</pubDate>
+  </item>
+  <item>
+    <title>[panva/openid-client] v6.8.5</title>
+    <link>https://github.com/panva/openid-client/releases/tag/v6.8.5</link>
+    <guid isPermaLink="true">https://github.com/panva/openid-client/releases/tag/v6.8.5</guid>
+    <description><![CDATA[### Fixes
+
+* **types:** expose custom fetch duplex option (a125bc8)
+* **types:** use portable oauth4webapi declarations (2cab98f)
+
+### Documentation
+
+* improve API index tables (c6e4ae3)
+* update README.md and SECURITY.md to reflect passed EOL dates (d3721c2)]]></description>
+    <pubDate>Tue, 11 Aug 2026 13:33:58 GMT</pubDate>
+  </item>
+  <item>
+    <title>[ollama/ollama] v0.32.9</title>
+    <link>https://github.com/ollama/ollama/releases/tag/v0.32.9</link>
+    <guid isPermaLink="true">https://github.com/ollama/ollama/releases/tag/v0.32.9</guid>
+    <description><![CDATA[## NVIDIA Nemotron 3.5 Lightning
+
+NVIDIA Nemotron 3.5 Lightning is an open 30B mixture-of-experts (MoE) model with 3B active parameters built for that execution layer of always-on agents. It is designed for harnesses like OpenClaw and Hermes Agent – all supported by the NVIDIA NemoClaw open source security and management stack for running always-on AI agents.
+
+```
+ollama run nemotron-3.5-lightning
+```
+
+## What's Changed
+* Added the Nemotron 3 architecture
+* Handle boundary condition in Muse Glimmer function calling parser
+
+**Full Changelog**:]]></description>
+    <pubDate>Tue, 11 Aug 2026 13:23:33 GMT</pubDate>
+  </item>
+  <item>
+    <title>[biomejs/biome] Biome CLI v2.5.8 (@biomejs/biome@2.5.8)</title>
+    <link>https://github.com/biomejs/biome/releases/tag/%40biomejs/biome%402.5.8</link>
+    <guid isPermaLink="true">https://github.com/biomejs/biome/releases/tag/%40biomejs/biome%402.5.8</guid>
+    <description><![CDATA[## 2.5.8
+
+### Patch Changes
+
+- #10710 `0a0fbc1` Thanks @dyc3! - Added a new nursery rule `useReactCompiler`, which reports diagnostics from React Compiler lint mode.
+
+- #11251 `ea9dd8a` Thanks @dyc3! - Improved performance of `noImportCycles`.
+
+- #11247 `52b44d6` Thanks @dyc3! - Added the nursery rule `noSvelteLegacyConst`, which disallows legacy Svelte `{@const}` tags and recommends declaration tags with `$derived`.
+
+ Invalid:
+
+ ```svelte
+ {#each boxes as box}
+ {@const area = box.width * box.height}
+ <p>{area}</p>
+ {/each}
+ ```
+
+ Valid:
+
+ ```svelte
+ {#each boxes as box}
+ {const area = $derived(box.width * box.height)}
+ <p>{area}</p>
+ {/each}
+ ```
+
+- #11252 `d5f5704` Thanks @Turtle-Hwan! - Fixed #11250: `useAwait` no longer reports async functions that contain an `await using` declaration.
+
+- #11143 `6be7be1` Thanks @vznh! - Fixed #11017: `noUselessUndefined` no longer reports `return undefined` when the enclosing function has a return type annotation other than `undefined` or `void`.
+
+
+... (truncated)]]></description>
+    <pubDate>Tue, 11 Aug 2026 08:52:51 GMT</pubDate>
+  </item>
   <item>
     <title>[github/spec-kit] Spec Kit - 0.16.2 (v0.16.2)</title>
     <link>https://github.com/github/spec-kit/releases/tag/v0.16.2</link>
@@ -40,47 +202,6 @@ specify init my-project
     <pubDate>Mon, 10 Aug 2026 19:46:01 GMT</pubDate>
   </item>
   <item>
-    <title>[aws/aws-sdk-js-v3] v3.1107.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1107.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1107.0</guid>
-    <description><![CDATA[#### 3.1107.0(2026-08-10)
-
-##### Chores
-
-* **codegen:**
- * sync for omit staticContextParams on ClientInputEndpointParameters (#8258) (2b7601ed)
- * smithy-aws-typescript-codegen 0.52.0 (#8255) (2e4482a6)
-
-##### New Features
-
-* **client-connect:** Added Malay language option to use AI to automatically fill evaluation forms in Malay (6f82fc3a)
-* **client-sagemaker:** Added PREFIX AWARE routing strategy and PrefixAwareRoutingConfig to CreateEndpointConfig. Configure PrefixLength and ConcurrencyThreshold to route requests that share the same prompt prefix to the same instance. (c0ce67e2)
-* **client-medialive:** Added VirtualSourceAddress to multicast output destinations for MediaLive Anywhere channels. Specifies the source IP address for outbound multicast packets when downstream networks enforce source-IP filtering. (dc24c644)
-* **client-elementalinference:** Added support for the SearchFixtures API and DataSourceConfiguration, enabling customers to map fixture event data onto clipping ou
-
-... (truncated)]]></description>
-    <pubDate>Mon, 10 Aug 2026 18:50:29 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-08-10) (release-2026-08-10)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-10</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-10</guid>
-    <description><![CDATA[## General Highlights
-* **Dependency Update**: Update to smithy-go v1.27.7.
-* **Dependency Update**: Updated to the latest SDK module versions
-
-## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/connect`: [v1.186.0](service/connect/CHANGELOG.md#v11860-2026-08-10)
- * **Feature**: Added Malay language option to use AI to automatically fill evaluation forms in Malay
-* `github.com/aws/aws-sdk-go-v2/service/elementalinference`: [v1.6.0](service/elementalinference/CHANGELOG.md#v160-2026-08-10)
- * **Feature**: Added support for the SearchFixtures API and DataSourceConfiguration, enabling customers to map fixture event data onto clipping outputs for improved feature accuracy.
-* `github.com/aws/aws-sdk-go-v2/service/medialive`: [v1.102.0](service/medialive/CHANGELOG.md#v11020-2026-08-10)
- * **Feature**: Added VirtualSourceAddress to multicast output destinations for MediaLive Anywhere channels. Specifies the source IP address for outbound multicast packets when downstream networks enf
-
-... (truncated)]]></description>
-    <pubDate>Mon, 10 Aug 2026 18:46:20 GMT</pubDate>
-  </item>
-  <item>
     <title>[typescript-eslint/typescript-eslint] v8.67.0</title>
     <link>https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.67.0</link>
     <guid isPermaLink="true">https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.67.0</guid>
@@ -100,34 +221,6 @@ See GitHub Releases for more information.
 
 You can read about our versioning strategy and releases on our website.]]></description>
     <pubDate>Mon, 10 Aug 2026 17:18:26 GMT</pubDate>
-  </item>
-  <item>
-    <title>[ollama/ollama] v0.32.7</title>
-    <link>https://github.com/ollama/ollama/releases/tag/v0.32.7</link>
-    <guid isPermaLink="true">https://github.com/ollama/ollama/releases/tag/v0.32.7</guid>
-    <description><![CDATA[## Muse Glimmer
-
-> Note: Muse Glimmer is currently available via initial support via Ollama's MLX engine on Apple Silicon. Additional support and optimizations for Apple Silicon, NVIDIA, AMD, and other platforms will be available in the coming days.
-
-**Muse Glimmer**, Meta's newest open model and the first released by Meta Superintelligence Labs, is now available on Ollama. It's a 30B multimodal model purpose-built for agent workloads that run locally.
-
-With Ollama, you can now use Muse Glimmer to power coding agent applications such as Claude Code, Codex, Pi and more, as well as long-running personal assistants such as OpenClaw and Hermes.
-
-Ollama's MLX engine provides state-of-the-art performance on Apple Silicon for this model, with support for DFlash and image input as of Ollama 0.32.7.
-
-To download and run Muse Glimmer locally:
-
-```bash
-ollama run muse-glimmer:30b-mlx
-```
-
-To run Muse Glimmer on Apple Silicon with Claude Code, download Ollama and run:
-
-```bash
-o
-
-... (truncated)]]></description>
-    <pubDate>Mon, 10 Aug 2026 10:49:15 GMT</pubDate>
   </item>
   <item>
     <title>[oxc-project/oxc] oxlint v1.78.0 &amp; oxfmt v0.63.0 (apps_v1.78.0)</title>
@@ -473,17 +566,6 @@ Released on 2026-08-07.
     <pubDate>Fri, 07 Aug 2026 15:56:51 GMT</pubDate>
   </item>
   <item>
-    <title>[bluesky-social/atproto] @atproto/lex@0.3.5</title>
-    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/lex%400.3.5</link>
-    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/lex%400.3.5</guid>
-    <description><![CDATA[### Patch Changes
-
-- Updated dependencies [`b66870d`]:
- - @atproto/lex-builder@0.1.12
- - @atproto/lex-installer@0.1.14]]></description>
-    <pubDate>Fri, 07 Aug 2026 13:09:06 GMT</pubDate>
-  </item>
-  <item>
     <title>[chakra-ui/ark] @ark-ui/solid@5.38.1</title>
     <link>https://github.com/chakra-ui/ark/releases/tag/%40ark-ui/solid%405.38.1</link>
     <guid isPermaLink="true">https://github.com/chakra-ui/ark/releases/tag/%40ark-ui/solid%405.38.1</guid>
@@ -657,15 +739,6 @@ Released on 2026-08-07.
     <pubDate>Thu, 06 Aug 2026 13:44:50 GMT</pubDate>
   </item>
   <item>
-    <title>[withastro/astro] @astrojs/solid-js@7.0.2</title>
-    <link>https://github.com/withastro/astro/releases/tag/%40astrojs/solid-js%407.0.2</link>
-    <guid isPermaLink="true">https://github.com/withastro/astro/releases/tag/%40astrojs/solid-js%407.0.2</guid>
-    <description><![CDATA[### Patch Changes
-
-- #17584 `5462b81` Thanks @astrobot-houston! - Fixes a build crash when a Solid island imports a package that ships pre-compiled browser artifacts via the `exports.solid` condition (e.g. `@kobalte/core`). Solid ecosystem packages are now bundled in non-client environments so that Vite resolves the correct export condition during prerendering.]]></description>
-    <pubDate>Thu, 06 Aug 2026 10:44:21 GMT</pubDate>
-  </item>
-  <item>
     <title>[BabylonJS/Babylon.js] 9.20.0</title>
     <link>https://github.com/BabylonJS/Babylon.js/releases/tag/9.20.0</link>
     <guid isPermaLink="true">https://github.com/BabylonJS/Babylon.js/releases/tag/9.20.0</guid>
@@ -821,62 +894,6 @@ Please check out our June blog post to get a curated overview over the recent ch
     <pubDate>Tue, 04 Aug 2026 18:09:39 GMT</pubDate>
   </item>
   <item>
-    <title>[biomejs/biome] Biome CLI v2.5.7 (@biomejs/biome@2.5.7)</title>
-    <link>https://github.com/biomejs/biome/releases/tag/%40biomejs/biome%402.5.7</link>
-    <guid isPermaLink="true">https://github.com/biomejs/biome/releases/tag/%40biomejs/biome%402.5.7</guid>
-    <description><![CDATA[## 2.5.7
-
-### Patch Changes
-
-- #10822 `c171b3b` Thanks @pkallos! - Added the option `ignoreIfStatements` to useNullishCoalescing. Biome now flags `if` statements that only assign to a nullish variable (such as `if (!a) { a = b }`) and can rewrite them to `??=`. When enabled, Biome ignores those `if` statements.
-
-- #11136 `e63354c` Thanks @AkashNaickar! - Added a new nursery rule `noExtendNative`, which reports extending the prototype of a built-in object.
-
-- #10094 `e007143` Thanks @THEjacob1000! - Added the nursery rule `noTailwindArbitraryValue`. Biome now reports Tailwind CSS arbitrary values such as `w-[400px]`, including in HTML/JSX class attributes, configured utility functions, and tagged templates.
-
-- #11184 `135f476` Thanks @subotac! - Fixed #11176: `noUnknownPseudoClass` now recognizes Vue's `:deep` pseudo-class inside `.vue` style blocks.
-
-- #8239 `a519f9d` Thanks @cormacrelf! - Fixed #8233, where Biome CLI in
- stdin mode didn't work correctly when handling files in projects
-
-... (truncated)]]></description>
-    <pubDate>Tue, 04 Aug 2026 13:24:41 GMT</pubDate>
-  </item>
-  <item>
-    <title>[web-infra-dev/rspack] v2.1.8</title>
-    <link>https://github.com/web-infra-dev/rspack/releases/tag/v2.1.8</link>
-    <guid isPermaLink="true">https://github.com/web-infra-dev/rspack/releases/tag/v2.1.8</guid>
-    <description><![CDATA[## Highlights
-
-### Persistent cache storage options now align with webpack
-
-Rspack now supports `cache.name` and `cache.storage.location`, aligning with webpack's persistent cache semantics. `cache.storage.directory` is now the base directory, while the final cache location defaults to `<directory>/<cache.name>`. Default cache paths remain unchanged.
-
-If you previously used `storage.directory` as the exact cache path, migrate it to `storage.location`. Existing cache data is not migrated automatically.
-
-```diff
-cache: {
- type: 'persistent',
- storage: {
- type: 'filesystem',
-- directory: '/custom/cache',
-+ location: '/custom/cache',
- },
-}
-```
-
-## What's Changed
-### New Features 🎉
-* feat(rstest): inject module origin for import.meta.rstest by @9aoy in 
-* feat: align persistent cache storage options with webpack by @hardfist in 
-* feat(hmr): emit css.c / css.r in the hot-update manifest for precise CSS updates by @stormslowly in 
-### Performance 🚀
-* perf: avoid cl
-
-... (truncated)]]></description>
-    <pubDate>Tue, 04 Aug 2026 11:09:32 GMT</pubDate>
-  </item>
-  <item>
     <title>[mui/base-ui] v1.7.0</title>
     <link>https://github.com/mui/base-ui/releases/tag/v1.7.0</link>
     <guid isPermaLink="true">https://github.com/mui/base-ui/releases/tag/v1.7.0</guid>
@@ -1028,13 +1045,6 @@ Finally, the React Aria and React Stately hook documentation has been completely
 
 Full Release Notes]]></description>
     <pubDate>Fri, 31 Jul 2026 17:11:02 GMT</pubDate>
-  </item>
-  <item>
-    <title>[lynx-family/lynx] 4.0.1</title>
-    <link>https://github.com/lynx-family/lynx/releases/tag/4.0.1</link>
-    <guid isPermaLink="true">https://github.com/lynx-family/lynx/releases/tag/4.0.1</guid>
-    <description><![CDATA[No release notes provided.]]></description>
-    <pubDate>Fri, 31 Jul 2026 13:32:02 GMT</pubDate>
   </item>
 </channel>
 </rss>
