@@ -5,48 +5,223 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Tue, 11 Aug 2026 22:13:27 GMT</lastBuildDate>
+  <lastBuildDate>Wed, 12 Aug 2026 22:13:04 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
   <item>
-    <title>[aws/aws-sdk-js-v3] v3.1108.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1108.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1108.0</guid>
-    <description><![CDATA[#### 3.1108.0(2026-08-11)
+    <title>[anomalyco/opentui] Release v0.5.2 (v0.5.2)</title>
+    <link>https://github.com/anomalyco/opentui/releases/tag/v0.5.2</link>
+    <guid isPermaLink="true">https://github.com/anomalyco/opentui/releases/tag/v0.5.2</guid>
+    <description><![CDATA[## What's Changed
+* bench: add JS benchmark by @simonklee in 
+* web: upgrade Astro by @simonklee in 
+* build(core): statically link libghostty by @jlongster in 
+* web: add pixel OpenTUI logo mark by @simonklee in 
+* bench: add Node JS benchmark runner by @simonklee in 
+* core: migrate to zig 0.16 by @simonklee in 
+* ci: limit native artifact upload to platform packages by @simonklee in 
+* test(core): remove network dependency from tree-sitter test by @simonklee in 
+* fix(web): pin Bun types to 1.3.14 by @simonklee in 
+* feat(core): add embedded terminal runtime by @jlongster in 
+* image: accept retained NativeImage sources by @simonklee in 
+* Clipboard and paste by @simonklee in 
+* render: bound streaming code highlights by @simonklee in 
 
-##### Chores
 
-* **codegen:**
- * update smithy-ts commit to bring in TS6 change (#8262) (785d467f)
- * sync for operation-level endpoint defaults (#8260) (f50e0d94)
-* upgrade to typescript 6 (#8257) (edabd4a5)
+**Full Changelog**:]]></description>
+    <pubDate>Wed, 12 Aug 2026 21:01:07 GMT</pubDate>
+  </item>
+  <item>
+    <title>[anomalyco/opencode] v1.18.17</title>
+    <link>https://github.com/anomalyco/opencode/releases/tag/v1.18.17</link>
+    <guid isPermaLink="true">https://github.com/anomalyco/opencode/releases/tag/v1.18.17</guid>
+    <description><![CDATA[## Core
+
+### Bugfixes
+
+- Made session compaction keep complete recent turns and produce clearer summaries for smaller models.
+- Added MERGE Gateway reasoning variants so those model options work correctly. (@MatthewFeroz)
+- Capped automatic session retries and added jitter to reduce repeated retry storms.
+- Enabled PDF attachments for GitHub Copilot models that advertise PDF vision support. (@stevenao)
+- Applied the correct sampling defaults to DeepSeek V4 Flash on supported providers.
+- Routed all Muse family models to the correct Meta system prompt. (@mreso)
+
+## Desktop
+
+### Bugfixes
+
+- Updated Chinese developer terminology to use more widely recognized translations.
+- Used the server's current default model instead of stale local config when choosing the default model.
+
+**Thank you to 6 community contributors:**
+- @mreso:
+ - fix(session): route all Muse family models to the Meta system prompt (#41581)
+- @OpeOginni:
+ - fix(ui): correct OC-2 weak icon color (#41504)
+- @peculiarnewbie:
+
+... (truncated)]]></description>
+    <pubDate>Wed, 12 Aug 2026 20:25:07 GMT</pubDate>
+  </item>
+  <item>
+    <title>[podman-container-tools/podman] v6.1.0</title>
+    <link>https://github.com/podman-container-tools/podman/releases/tag/v6.1.0</link>
+    <guid isPermaLink="true">https://github.com/podman-container-tools/podman/releases/tag/v6.1.0</guid>
+    <description><![CDATA[### Features
+- A new command has been added, `podman volume rename`, to allow renaming volumes. Volumes created using volume drivers and volumes that are currently used by a container cannot be renamed (#28189).
+- A new command has been added, `podman machine restart`, to allow easy restart of VMs managed by `podman machine` (#28366).
+- The `podman network rm` command now includes a new option, `--ignore`, which suppresses errors when attempting to remove networks that do not exist (#28363).
+- The `podman manifest push` command now includes two new options, `--retry` and `--retry-delay`, which allow pushes to be automatically retried on failure (#28590).
+- Quadlet `.container` units now support a new key, `ImageVolume=`, to configure how volumes from images are handled (#28875).
+- The `podman generate kube` command now includes support for generating container healthchecks as a `livenessProbe` (#22095).
+- A new option, `force_port_listen`, has been added to `containers.conf`. This is r
+
+... (truncated)]]></description>
+    <pubDate>Wed, 12 Aug 2026 20:12:23 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1109.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1109.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1109.0</guid>
+    <description><![CDATA[#### 3.1109.0(2026-08-12)
 
 ##### Documentation Changes
 
-* **client-textract:** Amazon A2I entered maintenance mode in July 2026 and now rejects StartHumanLoop requests from accounts that it does not recognize as existing customers. This update adds a corresponding note to the HumanLoopConfig parameter documentation so that the API Reference and SDK docs explain this behavior. (c1efbb87)
-* **client-organizations:** Documentation update for AWS Organizations that clarifies valid input values for the HandshakePartyType parameter in the InviteAccountToOrganization. API ORGANIZATION is valid in responses only. valid input values are ACCOUNT and EMAIL (389ab808)
-* **client-clouddirectory:** Added an end-of-support notice to Amazon Cloud Directory public CLI reference documentation. (afd
+* **client-glue:** Documentation updates for materialized views APIs. (dae03968)
+
+##### New Features
+
+* **client-quicksight:** Added APIs for DLP with Microsoft Purview (manage configs with label enforcement across Spaces, Chat, Knowledge Bases), Approval Workflows (CRUD for policies on asset sharing for Agents, Knowledge Bases, Spaces), and Limits Management (limit profiles for index storage and agent hours per user). (b8913fb5)
+* **client-odb:** Adds support for Oracle Exadata on Exascale Infrastructure (ExaDB-XS) resources including storage vaults and VM clusters. (9fa16070)
+* **client-mediaconnect:** AWS MediaConnect now supports tuning the internal recovery latency between Router Inputs and Outputs to prioritize stream quality versus end-to-end latency. (1ecada3c)
+* **client-dsql:** Improved validation of Kinesis stream ARN format to ensure only valid ARN characters are accepted (f571a2af)
+* **client-iam:** Introduced role ma
 
 ... (truncated)]]></description>
-    <pubDate>Tue, 11 Aug 2026 20:06:50 GMT</pubDate>
+    <pubDate>Wed, 12 Aug 2026 18:46:18 GMT</pubDate>
   </item>
   <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-08-11) (release-2026-08-11)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-11</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-11</guid>
+    <title>[aws/aws-sdk-go-v2] Release (2026-08-12) (release-2026-08-12)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-12</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-12</guid>
     <description><![CDATA[## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/accountaccess`: [v1.0.0](service/accountaccess/CHANGELOG.md#v100-2026-08-11)
- * **Release**: New AWS service client module
- * **Feature**: Adds SDK support for AWS IAM account access manager, a feature that enables mapping of IAM roles to the users and groups in AWS IAM Identity Center.
-* `github.com/aws/aws-sdk-go-v2/service/applicationdiscoveryservice`: [v1.39.0](service/applicationdiscoveryservice/CHANGELOG.md#v1390-2026-08-11)
- * **Feature**: Enable schema-based (de)serialization for this service.
-* `github.com/aws/aws-sdk-go-v2/service/appmesh`: [v1.39.0](service/appmesh/CHANGELOG.md#v1390-2026-08-11)
- * **Feature**: Enable schema-based (de)serialization for this service.
-* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcore`: [v1.38.0](service/bedrockagentcore/CHANGELOG.md#v1380-2026-08-11)
- * **Feature**: Adding online eval arn as input for recommendation API
-* `github.com/aws/aws-sdk-go-v2/service/bedrockagentrunti
+* `github.com/aws/aws-sdk-go-v2/service/glue`: [v1.152.2](service/glue/CHANGELOG.md#v11522-2026-08-12)
+ * **Documentation**: Documentation updates for materialized views APIs.
+* `github.com/aws/aws-sdk-go-v2/service/iam`: [v1.59.0](service/iam/CHANGELOG.md#v1590-2026-08-12)
+ * **Feature**: Introduced role manager, an IAM capability that automatically sets up the IAM roles your AWS services need. When you set up a supported service in the console, role manager creates a role for you or reuses an existing one from an AWS-managed template.
+* `github.com/aws/aws-sdk-go-v2/service/mediaconnect`: [v1.54.0](service/mediaconnect/CHANGELOG.md#v1540-2026-08-12)
+ * **Feature**: AWS MediaConnect now supports tuning the internal recovery latency between Router Inputs and Outputs to prioritize stream quality versus end-to-end latency.
+* `github.com/aws/aws-sdk-go-v2/service/odb`: [v1.16.0](service/odb/CHANGELOG.md#v1160-2026-08-12)
+ * **Feature**: Adds support for Oracle Exadata
 
 ... (truncated)]]></description>
-    <pubDate>Tue, 11 Aug 2026 18:48:18 GMT</pubDate>
+    <pubDate>Wed, 12 Aug 2026 18:44:21 GMT</pubDate>
+  </item>
+  <item>
+    <title>[sveltejs/svelte] svelte@5.56.9</title>
+    <link>https://github.com/sveltejs/svelte/releases/tag/svelte%405.56.9</link>
+    <guid isPermaLink="true">https://github.com/sveltejs/svelte/releases/tag/svelte%405.56.9</guid>
+    <description><![CDATA[### Patch Changes
+
+- fix: skip controlled each fast path while another batch is pending (#18625)
+
+- fix: better whitespace handling inside printer (#18638)
+
+- fix: don't duplicate comments in attributes (#18636)
+
+- fix: preserve CSS comments in the AST printer (#18637)]]></description>
+    <pubDate>Wed, 12 Aug 2026 18:12:41 GMT</pubDate>
+  </item>
+  <item>
+    <title>[containerd/containerd] containerd 2.2.7 (v2.2.7)</title>
+    <link>https://github.com/containerd/containerd/releases/tag/v2.2.7</link>
+    <guid isPermaLink="true">https://github.com/containerd/containerd/releases/tag/v2.2.7</guid>
+    <description><![CDATA[Welcome to the v2.2.7 release of containerd!
+
+The seventh patch release for containerd 2.2 contains various fixes and updates.
+
+### Highlights
+
+#### Container Runtime Interface (CRI)
+
+* Disable checkpoint restore in CreateContainer by default, requiring the enable_experimental_restore_via_create configuration option to enable (#13937)
+* Deprecate checkpoint restore in CreateContainer (#13872)
+* Support non-UTF-8 binary environment variable values in CRI (#13455)
+* Disable checkpoint restore codepaths when CRIU is not installed and add enable_criu configuration option (#13795)
+* Enable OCI runtime feature introspection for non-runc runtimes in CRI (#13779)
+
+#### Runtime
+
+* Enable log scrubbing by default on Windows (#13882)
+* Fix mount manager activation error when activation already exists (#13823)
+
+#### Breaking
+
+* Disable checkpoint restore in CreateContainer by default, requiring the enable_experimental_restore_via_create configuration option to enable (#13937)
+
+#### Deprecations
+
+*
+
+... (truncated)]]></description>
+    <pubDate>Wed, 12 Aug 2026 18:02:25 GMT</pubDate>
+  </item>
+  <item>
+    <title>[zed-industries/zed] v1.15.0</title>
+    <link>https://github.com/zed-industries/zed/releases/tag/v1.15.0</link>
+    <guid isPermaLink="true">https://github.com/zed-industries/zed/releases/tag/v1.15.0</guid>
+    <description><![CDATA[This week's release includes a new `git.diff_base` setting for choosing whether editor gutters, file-status colors, and `git: diff` show uncommitted changes against `HEAD` or all current-branch changes against the default branch's merge base, plus support for dragging files from the Project Panel to external apps on macOS and Linux Wayland; web developers also get linked editing for custom elements in JSX and TSX and Emmet completions in return and arrow-function bodies.
+
+## Shipped by the Zed Guild 🛡️
+
+- Added support for dragging files from the Project Panel to external macOS apps. (#58161; thanks notJoon)
+- Added the `multiple_selections` key context for assigning different keybindings when multiple selections are active. (#60018; thanks AidanV)
+- Agent: Fixed the first line of terminal output sometimes being hidden in the Agent Panel. (#61939; thanks timvermeulen)
+- Fixed Markdown previews scrolling vertically during horizontal scroll gestures. (#61797; thanks feitreim)
+- 
+
+... (truncated)]]></description>
+    <pubDate>Wed, 12 Aug 2026 15:53:56 GMT</pubDate>
+  </item>
+  <item>
+    <title>[djkotori/rpgcobo-tool] v0.1.20</title>
+    <link>https://github.com/djkotori/rpgcobo-tool/releases/tag/v0.1.20</link>
+    <guid isPermaLink="true">https://github.com/djkotori/rpgcobo-tool/releases/tag/v0.1.20</guid>
+    <description><![CDATA[This version includes the following bug fixes and feature additions.
+
+- (Key Feature) Added "Map Generator(α version)". It can be used from "Edit" ⇒ "Generate Map" in the map editor.
+- It is now possible to specify the data ID to be associated with the store type "Choice" when making a selection.
+- Fixed a bug where variables outside the specifications could be specified in the page selection conditions of custom events.
+- You can now specify the floor blending priority for map voxel floor blocks.
+- You can now set the door to open and close without placing an event.
+- Fixed minor bugs and improved usability in the map editor.
+- Added placement properties in the map asset editor.
+- Added the function to collapse child code blocks in the event editor.]]></description>
+    <pubDate>Wed, 12 Aug 2026 04:24:56 GMT</pubDate>
+  </item>
+  <item>
+    <title>[pingcap/tidb-operator] v1.6.6</title>
+    <link>https://github.com/pingcap/tidb-operator/releases/tag/v1.6.6</link>
+    <guid isPermaLink="true">https://github.com/pingcap/tidb-operator/releases/tag/v1.6.6</guid>
+    <description><![CDATA[We're glad to announce the v1.6.6 release of the TiDB Operator!
+
+Please refer to the CHANGELOG for all the changes in this release and our official documents to learn how to use TiDB Operator to manage TiDB clusters in Kubernetes.
+
+Docker images:
+
+```
+docker pull pingcap/tidb-operator:v1.6.6
+docker pull pingcap/tidb-backup-manager:v1.6.6
+```
+
+Helm Charts:
+
+```
+# helm repo add pingcap 
+# helm search repo pingcap --version=v1.6.6
+NAME 	CHART VERSION	APP VERSION 	DESCRIPTION 
+pingcap/tidb-operator 	v1.6.6		 v1.6.6	tidb-operator Helm chart for Kubernetes 
+```]]></description>
+    <pubDate>Wed, 12 Aug 2026 03:01:07 GMT</pubDate>
   </item>
   <item>
     <title>[withastro/astro] @astrojs/cloudflare@14.2.1</title>
@@ -311,34 +486,6 @@ go install github.com/wailsapp/wails/v2/cmd/wails@v2.14.0
 
 ... (truncated)]]></description>
     <pubDate>Mon, 10 Aug 2026 09:00:04 GMT</pubDate>
-  </item>
-  <item>
-    <title>[anomalyco/opencode] v1.18.16</title>
-    <link>https://github.com/anomalyco/opencode/releases/tag/v1.18.16</link>
-    <guid isPermaLink="true">https://github.com/anomalyco/opencode/releases/tag/v1.18.16</guid>
-    <description><![CDATA[## Core
-
-### Bugfixes
-
-- Ignore unknown top-level config fields instead of failing config parsing
-- Register projects opened from Home so they are available to the rest of the app
-
-## Desktop
-
-### Improvements
-
-- Open the project menu with a right-click in Home
-
-### Bugfixes
-
-- Fall back to listing and matching local directories when the project picker server does not support search
-- Use 词元 instead of 令牌 for token-related labels in Simplified Chinese (@Speechlessmanbilibili)
-- Keep the macOS app running after the last window closes and reopen a window when the app is activated
-
-**Thank you to 1 community contributor:**
-- @Speechlessmanbilibili:
- - fix(i18n): use 词元 instead of 令牌 for token in zh locale (#40977)]]></description>
-    <pubDate>Mon, 10 Aug 2026 06:07:08 GMT</pubDate>
   </item>
   <item>
     <title>[privatenumber/tsx] v4.23.12</title>
@@ -754,30 +901,6 @@ Released on 2026-08-07.
     <pubDate>Thu, 06 Aug 2026 07:41:13 GMT</pubDate>
   </item>
   <item>
-    <title>[djkotori/rpgcobo-tool] v0.1.16</title>
-    <link>https://github.com/djkotori/rpgcobo-tool/releases/tag/v0.1.16</link>
-    <guid isPermaLink="true">https://github.com/djkotori/rpgcobo-tool/releases/tag/v0.1.16</guid>
-    <description><![CDATA[This version includes the following bug fixes and feature additions.
-
-- Improved the "Leveler Tool" in the Map Editor.
- - Added an option to enable leveling only on the same plane as the height at the start of leveling.
- - Added an option to allow only the same block as the block at the start of grading to be leveled.
- - Added option to separate water and soil for leveling (enabled by default)
- - Free blocks are now leveled in conjunction with block height.
-- Improved the fill mode of the "Pen tool" in the Map Editor.
- - Added option to fill only the same plane.
-- Improved the "Water tool" in the Map Editor.
- - You can now draw the water surface vertically using box filling.
-- Added settings for "Can Enter Water" and "Can Enter Hole" to stage settings. Both are disabled by default.
-- Data ID can now be specified on the right side of condition judgment
-- "Choices" Store data can now be selected from the preset UI
-- Minor improvements to Event Commands.
-- Optimized the sha
-
-... (truncated)]]></description>
-    <pubDate>Thu, 06 Aug 2026 07:21:44 GMT</pubDate>
-  </item>
-  <item>
     <title>[floci-io/floci] 1.6.0</title>
     <link>https://github.com/floci-io/floci/releases/tag/1.6.0</link>
     <guid isPermaLink="true">https://github.com/floci-io/floci/releases/tag/1.6.0</guid>
@@ -793,24 +916,6 @@ This release adds **three new services** — **Amazon MWAA**, **CloudWatch RUM**
 
 ... (truncated)]]></description>
     <pubDate>Thu, 06 Aug 2026 05:32:56 GMT</pubDate>
-  </item>
-  <item>
-    <title>[zed-industries/zed] v1.14.2</title>
-    <link>https://github.com/zed-industries/zed/releases/tag/v1.14.2</link>
-    <guid isPermaLink="true">https://github.com/zed-industries/zed/releases/tag/v1.14.2</guid>
-    <description><![CDATA[This week's release includes sandboxing for the Agent's terminal commands and web fetches (check the blog post), support for undoing and redoing file operations in the Project Panel (documentation), a Skip Hooks option for commits, and configurable Agent Panel fonts.
-
-## Shipped by the Zed Guild 🛡️
-
-- Terminal: Fixed processes being left alive when the terminal was closed. (#61467; thanks feitreim)
-- Fixed a hang when the Zed Agent ran a `git` command with a pager configured. (#61999; thanks timvermeulen)
-- Fixed `editor: find all references` preview tabs becoming permanent tabs when any of their buffers had previously been edited. (#61021; thanks aviatesk)
-- Fixed a bug where selection mentions added with "Add to Agent Thread" did not open their referenced files. (#61621; thanks amtoaer)
-- Fixed a crash when copying and pasting using multiple cursors. (#61545; thanks timvermeulen)
-- Fixed an extra blank line appearing in Git clone error messages. (#61674; thanks lingyaochu)
-
-... (truncated)]]></description>
-    <pubDate>Wed, 05 Aug 2026 16:57:09 GMT</pubDate>
   </item>
   <item>
     <title>[nodejs/node] 2026-08-05, Version 26.7.0 (Current), @aduh95 (v26.7.0)</title>
@@ -944,107 +1049,6 @@ Please check out our June blog post to get a curated overview over the recent ch
 * Fix spurious deeper nesting in a blockquote continuation (#4030) (452f1ed)
 * pedantic **foo:** and **"word"** emphasis parsing (#3999) (823093f)]]></description>
     <pubDate>Tue, 04 Aug 2026 04:33:31 GMT</pubDate>
-  </item>
-  <item>
-    <title>[anomalyco/opentui] Release v0.5.1 (v0.5.1)</title>
-    <link>https://github.com/anomalyco/opentui/releases/tag/v0.5.1</link>
-    <guid isPermaLink="true">https://github.com/anomalyco/opentui/releases/tag/v0.5.1</guid>
-    <description><![CDATA[## What's Changed
-* fix(core): accept trailing PNG whitespace by @kommander in 
-* feat(core): support ICC PNG profiles by @kommander in 
-
-
-**Full Changelog**:]]></description>
-    <pubDate>Tue, 04 Aug 2026 01:40:20 GMT</pubDate>
-  </item>
-  <item>
-    <title>[sindresorhus/eslint-plugin-unicorn] v73.0.0</title>
-    <link>https://github.com/sindresorhus/eslint-plugin-unicorn/releases/tag/v73.0.0</link>
-    <guid isPermaLink="true">https://github.com/sindresorhus/eslint-plugin-unicorn/releases/tag/v73.0.0</guid>
-    <description><![CDATA[## New rules
-
-- `consistent-arrow-return-style` (#3601) ae3c3d93
-- `iteration-fallback-style` (#3602) a61c2c5e
-- `no-barrel-files` (#3570) d900c09e
-- `no-unsafe-sqlite-interpolation` (#3582) a09869bc
-- `single-line-block-comment-style` (#3584) a0c2c576
-
-## Improvements
-
-- Improve performance (#3560) 7b7c7906
-- Harden rules (#3585) 9c2b0bb1
-- `consistent-boolean-name`: Add `wrappers` option (#3572) 78c5abf2
-- `consistent-boolean-name`: Add granular check options (#3591) a33b1c1e
-- `consistent-function-style`: Add `defaultExport` option (#3600) e78a7c96
-- `prefer-https`: Add `ignore` option (#3557) 7f7ec066
-- `comment-content`: Handle Unicode word boundaries (#3597) dd52b4a4
-- `import-style`: Ignore type-only imports (#3599) f2a62e37
-- `name-replacements`: Handle TypeScript parameter properties (#3575) fa0df7bd
-- `no-negated-comparison`: Never check relational operators (#3589) 6120423a
-- `no-this-outside-of-class`: Allow explicit TypeScript `this` parameters (#3596) 
-
-... (truncated)]]></description>
-    <pubDate>Tue, 04 Aug 2026 00:47:03 GMT</pubDate>
-  </item>
-  <item>
-    <title>[nodejs/undici] v8.10.0</title>
-    <link>https://github.com/nodejs/undici/releases/tag/v8.10.0</link>
-    <guid isPermaLink="true">https://github.com/nodejs/undici/releases/tag/v8.10.0</guid>
-    <description><![CDATA[## What's Changed
-* feat: namespace h2 options by @metcoder95 in 
-* test: update WPT expectations by @mcollina in 
-* test: add cache/dedupe + dns re-dispatch integration tests by @GiHoon1123 in 
-* fix(websocket): support process.unref by @mcollina in 
-* fix(h2): ensure every request settles by @mcollina in 
-* fix(readable): consume a body whose end has already been emitted by @marko1olo in 
-* fix(retry): skip the content-length checkpoint for HEAD and for a 206 without content-range by @marko1olo in 
-* fix: revert idle socket validation to setTimeout(0) to prevent stall on idle event loop by @marceli1404 in 
-* fix(env-http-proxy-agent): match bare IPv6 addresses in no_proxy by @marko1olo in 
-* test: handle aggregate balanced pool errors by @marko1olo in 
-* fix(readable): keep body bytes that arrive after setEncoding by @mcollina in 
-* fix(socks5): evict unused origin pools by @Kkartik14 in 
-* fix: skip deduplication for upgrade requests by @Ram-blip in 
-* fix(retry): forward informatio
-
-... (truncated)]]></description>
-    <pubDate>Mon, 03 Aug 2026 15:06:41 GMT</pubDate>
-  </item>
-  <item>
-    <title>[theMackabu/ant] v13.0.ca8e720d.0</title>
-    <link>https://github.com/theMackabu/ant/releases/tag/v13.0.ca8e720d.0</link>
-    <guid isPermaLink="true">https://github.com/theMackabu/ant/releases/tag/v13.0.ca8e720d.0</guid>
-    <description><![CDATA[## Changes
-
-A major release focused on sandboxes, Node compatibility, JavaScript correctness, runtime isolation, and Silver performance.
-
-This release makes Ant sandboxes message-driven and resource-aware. It completes large parts of the WHATWG URL surface and the Node event and child-process surfaces. It fixes direct `eval`, Proxy, optional-chain, BigInt, and Promise semantics. It also moves several global or unbounded runtime structures into isolate-owned state.
-
-#### Breaking changes
-
-- Removed sandbox forking support. Use `Sandbox.run`, `Sandbox.eval`, and the new message APIs for guest execution and communication.
-- Child-process `stdout` and `stderr` are now `Readable` streams, and `stdin` is now a `Writable` stream. Signal results now use Node-style symbolic signal names instead of numeric signal codes.
-- Renamed the asynchronous `fs.readBytes` API to `fs.stream` and removed `fs.readBytesSync`.
-- Replaced the embedder property-reference ABI: `js_propref_load` is now `
-
-... (truncated)]]></description>
-    <pubDate>Sun, 02 Aug 2026 15:53:27 GMT</pubDate>
-  </item>
-  <item>
-    <title>[adobe/react-spectrum] React Aria Components v1.20.0 (react-aria-components@1.20.0)</title>
-    <link>https://github.com/adobe/react-spectrum/releases/tag/react-aria-components%401.20.0</link>
-    <guid isPermaLink="true">https://github.com/adobe/react-spectrum/releases/tag/react-aria-components%401.20.0</guid>
-    <description><![CDATA[This release includes many new components and features!
-
-* The new PreviewTrigger component shows a Popover on hover, focus, or long press. Unlike Tooltip, it may include interactive content, useful for hoverable link previews.
-* TokenField (alpha) allows users to enter text with inline tokens. Use it to build AI prompt fields, tag inputs, structured search fields, mention inputs, and multi-select comboboxes.
-* MenuTrigger now supports trigger="contextMenu", enabling accessible context menus via mouse, keyboard, and touch input.
-* A simpler API to implement keyboard shortcuts to useKeyboard.
-* Support for interactive components like textfields inside Table rows.
-
-Finally, the React Aria and React Stately hook documentation has been completely rewritten! The new docs use the same styles as our React Aria Components examples, and show how to use both components and hooks together.
-
-Full Release Notes]]></description>
-    <pubDate>Fri, 31 Jul 2026 17:11:02 GMT</pubDate>
   </item>
 </channel>
 </rss>
