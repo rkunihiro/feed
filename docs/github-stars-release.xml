@@ -5,39 +5,216 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Thu, 13 Aug 2026 22:13:22 GMT</lastBuildDate>
+  <lastBuildDate>Fri, 14 Aug 2026 22:03:37 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
   <item>
-    <title>[astral-sh/uv] 0.12.4</title>
-    <link>https://github.com/astral-sh/uv/releases/tag/0.12.4</link>
-    <guid isPermaLink="true">https://github.com/astral-sh/uv/releases/tag/0.12.4</guid>
+    <title>[astral-sh/uv] 0.12.5</title>
+    <link>https://github.com/astral-sh/uv/releases/tag/0.12.5</link>
+    <guid isPermaLink="true">https://github.com/astral-sh/uv/releases/tag/0.12.5</guid>
     <description><![CDATA[## Release Notes
 
-Released on 2026-08-13.
+Released on 2026-08-14.
+
+### Python
+
+- Add CPython 3.10.21, 3.11.16, and 3.12.14 (#21138)
+- Prefer newer versions and standard variants when selecting between equally prioritized Python interpreters (#21134)
 
 ### Enhancements
 
-- Prefer post-quantum key exchange and enable opt-in TLS diagnostics (#21054)
-- Accept whitespace before versions in noncompliant wildcard comparisons such as `Requires-Python: >= 3.5.*` (#21012)
-- Report a specific error when a PEP 723 closing tag contains trailing whitespace or other content (#20944)
-- Omit source-span carets from diagnostics for empty PEP 508 requirements (#21094)
+- Simplify errors and hints for invalid editable requirements, and redact credentials in requirement URLs (#21130)
 
 ### Preview features
 
-- Add `uv check --no-install-project` and respect `UV_NO_INSTALL_PROJECT` to install dependencies without building or installing the project (#21085)
-- Make the ty subprocess invoked by `uv check` honor uv's color and progress settings, including quiet mode (#21086)
-
-### Performance
-
-- Speed up resolutions with long runs of unavailable package versions by coalescing gaps in the resolver's version ranges (#20804)
-- Speed up Simple API parsing by deserializing PyPI and Pyx file metadata directly (#21041)
+- Allow `--index` and `--default-index` to select configured package indexes by name with the `index-by-name` preview feature (#17455)
+- Include distribution artifact URLs and hashes in CycloneDX SBOM exports by default (#21131)
+- Fall back to logical file sizes when using `cache-physical-space` on filesystems that do not support physical-space accounting (#21133)
 
 ### Bug fixes
 
-- Use
+- Resolve relative package index paths in PEP 723 scripts against the script directory (#21097)
+
+## Install uv 0.12.5
+
+### Install prebuilt binaries via shell script
+
+```sh
+curl --proto '=https' --tlsv1.2 -LsSf | sh
+```
+
+### Install p
 
 ... (truncated)]]></description>
-    <pubDate>Thu, 13 Aug 2026 21:16:08 GMT</pubDate>
+    <pubDate>Fri, 14 Aug 2026 19:57:52 GMT</pubDate>
+  </item>
+  <item>
+    <title>[ollama/ollama] v0.32.13</title>
+    <link>https://github.com/ollama/ollama/releases/tag/v0.32.13</link>
+    <guid isPermaLink="true">https://github.com/ollama/ollama/releases/tag/v0.32.13</guid>
+    <description><![CDATA[## What's Changed
+* qwen3.8: support developer instructions 
+
+
+**Full Changelog**:]]></description>
+    <pubDate>Fri, 14 Aug 2026 19:16:07 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1111.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1111.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1111.0</guid>
+    <description><![CDATA[#### 3.1111.0(2026-08-14)
+
+##### Chores
+
+* upgrade to typescript 7 (#8264) (ca81fbb7)
+* remove jest, use vitest for remaining test suites (#8263) (3a88aada)
+
+##### Documentation Changes
+
+* **client-redshift:** Amazon Redshift now unlocks a locked admin user account and resets the failed-login counter when you update the admin password using the ModifyCluster API. This option is available only when account lockout security is enabled. (b93cb20c)
+* **client-redshift-serverless:** Amazon Redshift now unlocks a locked admin user account and resets the failed-login counter when you update the admin password using the UpdateNamespace API. This option is available only when account lockout security is enabled. (197b4aa6)
+
+##### New Features
+
+* **clients:** update client endpoints as of 2026-08-14 (1e7a2806)
+* **client-bedrock-agentcore-control:** Adds AgentCore Payments support for CMK, Marketplace Subscriptions and QuickCreate (39108eb0)
+* **client-sagemaker:** Release support for g7.2xlarge
+
+... (truncated)]]></description>
+    <pubDate>Fri, 14 Aug 2026 18:50:23 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-08-14) (release-2026-08-14)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-14</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-14</guid>
+    <description><![CDATA[## General Highlights
+* **Dependency Update**: Update to smithy-go v1.27.8.
+* **Dependency Update**: Updated to the latest SDK module versions
+
+## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcore`: [v1.39.0](service/bedrockagentcore/CHANGELOG.md#v1390-2026-08-14)
+ * **Feature**: Add support for the Machine Payments Protocol (MPP) and x402 upto scheme payments protocol in Amazon Bedrock AgentCore Payments. Customers can now pay for MPP-gated resources and also pay services which requires upto scheme in x402
+* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcorecontrol`: [v1.56.0](service/bedrockagentcorecontrol/CHANGELOG.md#v1560-2026-08-14)
+ * **Feature**: Adds AgentCore Payments support for CMK, Marketplace Subscriptions and QuickCreate
+* `github.com/aws/aws-sdk-go-v2/service/bedrockagentruntime`: [v1.57.0](service/bedrockagentruntime/CHANGELOG.md#v1570-2026-08-14)
+ * **Feature**: Adds CheckIngestedDocumentAcl and GetIngestedDocumentAcl APIs to Amazon Bedro
+
+... (truncated)]]></description>
+    <pubDate>Fri, 14 Aug 2026 18:47:34 GMT</pubDate>
+  </item>
+  <item>
+    <title>[BabylonJS/Babylon.js] 9.21.2</title>
+    <link>https://github.com/BabylonJS/Babylon.js/releases/tag/9.21.2</link>
+    <guid isPermaLink="true">https://github.com/BabylonJS/Babylon.js/releases/tag/9.21.2</guid>
+    <description><![CDATA[### Core
+
+- Fix alpha-mode sentinel crash and report accurate caps and depth/stencil metadata - by bkaradzic-microsoft (#18804)
+- Fix three IBL rendering bugs: AreaLights prefilter type, OpenPBR anisotropic inlining, black diffuse fallback - by bkaradzic-microsoft (#18803)
+- Fix particle node material async shader creation - [_Bug Fix_] by VicenteCartas (#18802)
+
+### Inspector
+
+- Normalize editor module resolution across all build configs - [_Bug Fix_] by ryantrem (#18801)]]></description>
+    <pubDate>Fri, 14 Aug 2026 18:06:20 GMT</pubDate>
+  </item>
+  <item>
+    <title>[nestjs/nest] v11.2.1</title>
+    <link>https://github.com/nestjs/nest/releases/tag/v11.2.1</link>
+    <guid isPermaLink="true">https://github.com/nestjs/nest/releases/tag/v11.2.1</guid>
+    <description><![CDATA[## What's Changed
+* fix(core): early-return SSE abort issue by @kamilmysliwiec 
+
+**Full Changelog**:]]></description>
+    <pubDate>Fri, 14 Aug 2026 17:53:21 GMT</pubDate>
+  </item>
+  <item>
+    <title>[github/spec-kit] Spec Kit - 0.16.4 (v0.16.4)</title>
+    <link>https://github.com/github/spec-kit/releases/tag/v0.16.4</link>
+    <guid isPermaLink="true">https://github.com/github/spec-kit/releases/tag/v0.16.4</guid>
+    <description><![CDATA[## Install
+
+```bash
+uv tool install specify-cli --from git+
+specify init my-project
+```
+
+## What's Changed
+
+- chore: bump version to 0.16.4
+- Add SpecAssay preset to community catalog (#4123)
+- Update Intake Authoring Governance preset to v0.3.1 (#4121)
+- Update Superspec extension to v1.0.2 (#4120)
+- fix(taskstoissues): widen task-ID regex to match IDs longer than 3 digits (#4101)
+- Add Architecture Governance extension to community catalog (#4122)
+- fix(workflows): validate non-string step types (#4111)
+- Harden community submission workflow output allowlists (#4103)
+- chore(deps): bump github/codeql-action (init + analyze) from 4.37.5 to 4.37.6 (#4114)
+- Add SpecAssay Check extension to community catalog (#4113)
+- fix(integrations): dispatch goose commands via `goose run` (#2416) (#3781)
+- fix(powershell): stop Out-Null swallowing the AVAILABLE_DOCS status lines (#3891)
+- fix: remove TOCTOU race in RunState.load (#3839)
+- fix: decode the zipped manifest as UTF-8 before parsing (#395
+
+... (truncated)]]></description>
+    <pubDate>Fri, 14 Aug 2026 15:48:31 GMT</pubDate>
+  </item>
+  <item>
+    <title>[bluesky-social/atproto] @atproto-labs/opentelemetry-node@0.1.0</title>
+    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto-labs/opentelemetry-node%400.1.0</link>
+    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto-labs/opentelemetry-node%400.1.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- #5397 `aff31c8` Thanks @matthieusieben! - Extract the OpenTelemetry Node bootstrap out of the PDS into a new
+ `@atproto-labs/opentelemetry-node` package. It exposes a `setup` function from
+ its main entrypoint, plus two subpath entrypoints:
+
+ - `@atproto-labs/opentelemetry-node/conventions` re-exports
+ `@opentelemetry/semantic-conventions` alongside the atproto XRPC attribute keys.
+ - `@atproto-labs/opentelemetry-node/instrumentation` exposes
+ `getDefaultAtprotoInstrumentations`, the instrumentations common to atproto
+ services (which `setup` registers automatically).
+
+ As part of this move, the shared runtime instrumentation now enables
+ `captureUncaughtException`, so the PDS records uncaught exceptions as OTEL runtime
+ events when telemetry is enabled.]]></description>
+    <pubDate>Fri, 14 Aug 2026 10:35:36 GMT</pubDate>
+  </item>
+  <item>
+    <title>[remix-run/remix] ui v0.5.0 (ui@0.5.0)</title>
+    <link>https://github.com/remix-run/remix/releases/tag/ui%400.5.0</link>
+    <guid isPermaLink="true">https://github.com/remix-run/remix/releases/tag/ui%400.5.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- BREAKING CHANGE: Browser `resolveFrame` callbacks now receive a single options object instead of positional signal and target arguments. Update `resolveFrame(src, signal, target)` implementations to use `resolveFrame(src, options)` and read `options?.signal` and `options?.target`.
+
+- Added `frames` to the `app` object returned from `run`, mirroring the existing `handle.frames` API
+
+- Added `@remix-run/ui/dev/refresh` for development tooling that needs to reconcile mounted roots after component modules update.
+
+- Same-origin forms now progressively enhance into frame navigations when `run({ resolveFrame })` is configured. Native constraint validation runs before interception, submissions target the top frame by default, `rmx-target` selects a named frame, and `rmx-document` opts back into document navigation. For non-GET submissions, resolvers receive the browser's native `FormData` plus the selected method and encoding, and remain responsible for request encoding a
+
+... (truncated)]]></description>
+    <pubDate>Fri, 14 Aug 2026 00:52:42 GMT</pubDate>
+  </item>
+  <item>
+    <title>[vercel/next.js] v16.3.1</title>
+    <link>https://github.com/vercel/next.js/releases/tag/v16.3.1</link>
+    <guid isPermaLink="true">https://github.com/vercel/next.js/releases/tag/v16.3.1</guid>
+    <description><![CDATA[## What's Changed
+* [16.x] Turbopack: don't strip async-module runtime from shared runtime chunks by @lukesandberg in 
+* [16.x] [turbopack] Add `turbopack_ecmascript` and `turbopack_wasm`'s embeded FS to `internal_assets_conditions` by @lukesandberg in 
+* [16.x] [turbopack] Collapse nested promises in the analyzer by @sampoder in 
+* [16.x] fix(next/image): preserve image response after optimization by @styfle in 
+* [16.3.x] Default deploy e2e tests to the repo next version by @eps1lon in 
+* [backport] Bump @swc/helpers by @mischnic in 
+* [backport] [turbopack] Raise registration calls in hoisted modules to the top by @lukesandberg in 
+* [backport] Fix missing styled-jsx styles in Pages Router SSR on adapter builds by @lukesandberg in 
+* [backport] [turbopack] Fix HMR for dynamic imports evaluated from layouts by @lukesandberg in 
+* [backport] Restore the live `headers` view of the incoming request by @unstubbable in 
+* [backport] Allow literal exports in `'use cache'` files 
+
+... (truncated)]]></description>
+    <pubDate>Thu, 13 Aug 2026 22:48:45 GMT</pubDate>
   </item>
   <item>
     <title>[podman-container-tools/podman] v5.8.6</title>
@@ -70,38 +247,6 @@ Released on 2026-08-13.
     <pubDate>Thu, 13 Aug 2026 20:08:08 GMT</pubDate>
   </item>
   <item>
-    <title>[aws/aws-sdk-js-v3] v3.1110.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1110.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1110.0</guid>
-    <description><![CDATA[#### 3.1110.0(2026-08-13)
-
-##### New Features
-
-* **client-auto-scaling:** Amazon EC2 Auto Scaling now supports terminating multiple instances in a single TerminateInstanceInAutoScalingGroup call via the new InstanceIds parameter, returning an Activities list. LaunchInstances now returns IdempotentCallInProgressFault for duplicate client tokens. (ee707980)
-* **client-cleanrooms:** This release adds support for minimum aggregation thresholds and comparison controls to the Custom analysis rule type. (1f84f2ae)
-* **client-codecommit:** Added the GetBlobDifferences API operation, which returns line-level diffs between two blob versions without requiring a local clone. Returns structured hunks with context, additions, and deletions. Supports pagination for large diffs. (f1165c62)
-* **client-securityagent:** Add support for setting a maximum task-hour budget cap on penetration tests and code reviews, and for revalidating previously reported findings via a new REVALIDATION job type. (aba75d72)
-
-... (truncated)]]></description>
-    <pubDate>Thu, 13 Aug 2026 18:45:01 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-08-13) (release-2026-08-13)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-13</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-13</guid>
-    <description><![CDATA[## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/acm`: [v1.44.0](service/acm/CHANGELOG.md#v1440-2026-08-13)
- * **Feature**: This change allows customers to update their existing email-validated certificates to use the DNS validation method.
-* `github.com/aws/aws-sdk-go-v2/service/autoscaling`: [v1.72.0](service/autoscaling/CHANGELOG.md#v1720-2026-08-13)
- * **Feature**: Amazon EC2 Auto Scaling now supports terminating multiple instances in a single TerminateInstanceInAutoScalingGroup call via the new InstanceIds parameter, returning an Activities list. LaunchInstances now returns IdempotentCallInProgressFault for duplicate client tokens.
-* `github.com/aws/aws-sdk-go-v2/service/cleanrooms`: [v1.51.0](service/cleanrooms/CHANGELOG.md#v1510-2026-08-13)
- * **Feature**: This release adds support for minimum aggregation thresholds and comparison controls to the Custom analysis rule type.
-* `github.com/aws/aws-sdk-go-v2/service/codecommit`: [v1.38.0](service/codecommit/CHANGELOG.md#
-
-... (truncated)]]></description>
-    <pubDate>Thu, 13 Aug 2026 18:42:11 GMT</pubDate>
-  </item>
-  <item>
     <title>[microsoft/WindowsAppSDK] Windows App SDK 1.8.11 (1.8.260804001) (v1.8.11)</title>
     <link>https://github.com/microsoft/WindowsAppSDK/releases/tag/v1.8.11</link>
     <guid isPermaLink="true">https://github.com/microsoft/WindowsAppSDK/releases/tag/v1.8.11</guid>
@@ -118,50 +263,6 @@ WinAppSDK 1.8.11 is the latest stable servicing release for 1.8, with fixes for 
 
 ... (truncated)]]></description>
     <pubDate>Thu, 13 Aug 2026 17:43:51 GMT</pubDate>
-  </item>
-  <item>
-    <title>[github/spec-kit] Spec Kit - 0.16.3 (v0.16.3)</title>
-    <link>https://github.com/github/spec-kit/releases/tag/v0.16.3</link>
-    <guid isPermaLink="true">https://github.com/github/spec-kit/releases/tag/v0.16.3</guid>
-    <description><![CDATA[## Install
-
-```bash
-uv tool install specify-cli --from git+
-specify init my-project
-```
-
-## What's Changed
-
-- chore: bump version to 0.16.3
-- fix: narrow bare except Exception in VS Code settings merge (#3844)
-- feat(presets): list presets in resolution/precedence order (#4086) (#4104)
-- Fix: scaffold self-contained namespaced preset commands (#4076) (#4082)
-- Update Cross-Platform Governance preset to v0.2.2 (#4080)
-- fix(bundler): treat a blank active integration as indeterminate in FR-019 (#3886)
-- Integrate Junie with dot-to-hyphen behavior and command formatting (#4073)
-- Update A11Y Governance preset to v0.4.3 (#4074)
-- Fix Alquimia argument hints after folded descriptions (#4063)
-- fix: use bounded read for bundle download HTTP responses (#3764)
-- Update iSAQB Architecture Governance preset to v0.2.2 (#4056)
-- fix(claude): make argument-hint injection fold-aware for long descriptions (#4045)
-- Add SpecKit Grill Me extension to community catalog (#4052)
-- Update Architecture Gove
-
-... (truncated)]]></description>
-    <pubDate>Thu, 13 Aug 2026 15:37:18 GMT</pubDate>
-  </item>
-  <item>
-    <title>[bluesky-social/atproto] @atproto/oauth-client-expo@0.2.0</title>
-    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/oauth-client-expo%400.2.0</link>
-    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/oauth-client-expo%400.2.0</guid>
-    <description><![CDATA[### Minor Changes
-
-- #5371 `c7f39c5` Thanks @matthieusieben! - **Breaking**: `core-js`, `expo-web-browser`, `react-native-mmkv` and `react-native-url-polyfill` are now peer dependencies of `@atproto/oauth-client-expo`. You will need to install them in your project if you are using this package.
-
-### Patch Changes
-
-- #5371 `c7f39c5` Thanks @matthieusieben! - Update `react-native-mmkv` to version 4]]></description>
-    <pubDate>Thu, 13 Aug 2026 13:13:30 GMT</pubDate>
   </item>
   <item>
     <title>[honojs/hono] v4.13.2</title>
@@ -216,27 +317,6 @@ specify init my-project
 
 ... (truncated)]]></description>
     <pubDate>Thu, 13 Aug 2026 10:32:13 GMT</pubDate>
-  </item>
-  <item>
-    <title>[BabylonJS/Babylon.js] 9.21.0</title>
-    <link>https://github.com/BabylonJS/Babylon.js/releases/tag/9.21.0</link>
-    <guid isPermaLink="true">https://github.com/BabylonJS/Babylon.js/releases/tag/9.21.0</guid>
-    <description><![CDATA[### Core
-
-- GPU particles: re-bake gradient lookup textures in place for value edits - by increasinglyHuman (#18787)
-- Fix Zstd-compressed UASTC textures failing to load (bytesPlane = 0) - by alexchuber (#18793)
-- Fix NativeEngine command scope leaking when a render throws - by bkaradzic-microsoft (#18789)
-- Fix WebGPU vertex layout pipeline cache collisions - [_Bug Fix_] by Popov72 (#18791)
-- Feat: Stream Gaussian Splatting LOD as a part of a compound mesh - by raymondyfei (#18774)
-- Fix: texture view leak on WebGPU backend - by raymondyfei (#18784)
-- KHR_interactivity: importer update to the latest spec (refs, events, pointer selection, math ops) - by SergioRZMasson (#18615)
-- feat(XR): support CPU depth sensing on WebGPU - [_New Feature_] by RaananW (#18782)
-- Fix GreasedLine corrupting the shared TmpVectors scratch slot and Vector3.UpReadOnly - by bkaradzic-microsoft (#18781)
-- Disable Space Warp before session creation - [_Bug Fix_] by RaananW (#18780)
-- feat(XR): add WebGPU quad 
-
-... (truncated)]]></description>
-    <pubDate>Thu, 13 Aug 2026 07:40:52 GMT</pubDate>
   </item>
   <item>
     <title>[anomalyco/opencode] v1.18.18</title>
@@ -371,25 +451,6 @@ pingcap/tidb-operator 	v1.6.6		 v1.6.6	tidb-operator Helm chart for Kubernetes
     <pubDate>Tue, 11 Aug 2026 13:33:58 GMT</pubDate>
   </item>
   <item>
-    <title>[ollama/ollama] v0.32.9</title>
-    <link>https://github.com/ollama/ollama/releases/tag/v0.32.9</link>
-    <guid isPermaLink="true">https://github.com/ollama/ollama/releases/tag/v0.32.9</guid>
-    <description><![CDATA[## NVIDIA Nemotron 3.5 Lightning
-
-NVIDIA Nemotron 3.5 Lightning is an open 30B mixture-of-experts (MoE) model with 3B active parameters built for that execution layer of always-on agents. It is designed for harnesses like OpenClaw and Hermes Agent – all supported by the NVIDIA NemoClaw open source security and management stack for running always-on AI agents.
-
-```
-ollama run nemotron-3.5-lightning
-```
-
-## What's Changed
-* Added the Nemotron 3 architecture
-* Handle boundary condition in Muse Glimmer function calling parser
-
-**Full Changelog**:]]></description>
-    <pubDate>Tue, 11 Aug 2026 13:23:33 GMT</pubDate>
-  </item>
-  <item>
     <title>[biomejs/biome] Biome CLI v2.5.8 (@biomejs/biome@2.5.8)</title>
     <link>https://github.com/biomejs/biome/releases/tag/%40biomejs/biome%402.5.8</link>
     <guid isPermaLink="true">https://github.com/biomejs/biome/releases/tag/%40biomejs/biome%402.5.8</guid>
@@ -479,31 +540,6 @@ You can read about our versioning strategy and releases on our website.]]></desc
 
 ... (truncated)]]></description>
     <pubDate>Mon, 10 Aug 2026 10:46:10 GMT</pubDate>
-  </item>
-  <item>
-    <title>[nestjs/nest] v11.1.29</title>
-    <link>https://github.com/nestjs/nest/releases/tag/v11.1.29</link>
-    <guid isPermaLink="true">https://github.com/nestjs/nest/releases/tag/v11.1.29</guid>
-    <description><![CDATA[## What's Changed
-* fix(core): stop import lookup after first direct export match by @malekelkssas in 
-* chore: update multerExceptions constant by @bo0tzz in 
-* fix(microservices): correct pub/sub client type in redis listeners by @zaewc in 
-* feat(common): add override mimetype option to file type validator by @Ativ3k in 
-* fix(core): drop the g flag from middleware overlap regexes by @dchaudhari7177 in 
-* feat(core): support sse comments by @kyu4583 in 
-* fix(core): resolve barrier immediately when target count is zero by @ikrbasak in 
-* fix(common): exclude pipe options from validator options by @coxxny in 
-* fix(core): serialize SSE retry field when value is zero by @kyu4583 in 
-* fix(microservices): nullify grpcclient on close when tryshutdown fails by @Se3do in 
-* fix(express): map missing multer field nesting error by @Se3do in 
-
-## New Contributors
-* @malekelkssas made their first contribution in 
-* @hjc0930 made their first contribution in 
-* @bo0tzz made thei
-
-... (truncated)]]></description>
-    <pubDate>Mon, 10 Aug 2026 09:40:32 GMT</pubDate>
   </item>
   <item>
     <title>[wailsapp/wails] Wails v2.14.0 (v2.14.0)</title>
@@ -972,58 +1008,6 @@ Please check out our June blog post to get a curated overview over the recent ch
 * Fix spurious deeper nesting in a blockquote continuation (#4030) (452f1ed)
 * pedantic **foo:** and **"word"** emphasis parsing (#3999) (823093f)]]></description>
     <pubDate>Tue, 04 Aug 2026 04:33:31 GMT</pubDate>
-  </item>
-  <item>
-    <title>[sindresorhus/eslint-plugin-unicorn] v73.0.0</title>
-    <link>https://github.com/sindresorhus/eslint-plugin-unicorn/releases/tag/v73.0.0</link>
-    <guid isPermaLink="true">https://github.com/sindresorhus/eslint-plugin-unicorn/releases/tag/v73.0.0</guid>
-    <description><![CDATA[## New rules
-
-- `consistent-arrow-return-style` (#3601) ae3c3d93
-- `iteration-fallback-style` (#3602) a61c2c5e
-- `no-barrel-files` (#3570) d900c09e
-- `no-unsafe-sqlite-interpolation` (#3582) a09869bc
-- `single-line-block-comment-style` (#3584) a0c2c576
-
-## Improvements
-
-- Improve performance (#3560) 7b7c7906
-- Harden rules (#3585) 9c2b0bb1
-- `consistent-boolean-name`: Add `wrappers` option (#3572) 78c5abf2
-- `consistent-boolean-name`: Add granular check options (#3591) a33b1c1e
-- `consistent-function-style`: Add `defaultExport` option (#3600) e78a7c96
-- `prefer-https`: Add `ignore` option (#3557) 7f7ec066
-- `comment-content`: Handle Unicode word boundaries (#3597) dd52b4a4
-- `import-style`: Ignore type-only imports (#3599) f2a62e37
-- `name-replacements`: Handle TypeScript parameter properties (#3575) fa0df7bd
-- `no-negated-comparison`: Never check relational operators (#3589) 6120423a
-- `no-this-outside-of-class`: Allow explicit TypeScript `this` parameters (#3596) 
-
-... (truncated)]]></description>
-    <pubDate>Tue, 04 Aug 2026 00:47:03 GMT</pubDate>
-  </item>
-  <item>
-    <title>[nodejs/undici] v8.10.0</title>
-    <link>https://github.com/nodejs/undici/releases/tag/v8.10.0</link>
-    <guid isPermaLink="true">https://github.com/nodejs/undici/releases/tag/v8.10.0</guid>
-    <description><![CDATA[## What's Changed
-* feat: namespace h2 options by @metcoder95 in 
-* test: update WPT expectations by @mcollina in 
-* test: add cache/dedupe + dns re-dispatch integration tests by @GiHoon1123 in 
-* fix(websocket): support process.unref by @mcollina in 
-* fix(h2): ensure every request settles by @mcollina in 
-* fix(readable): consume a body whose end has already been emitted by @marko1olo in 
-* fix(retry): skip the content-length checkpoint for HEAD and for a 206 without content-range by @marko1olo in 
-* fix: revert idle socket validation to setTimeout(0) to prevent stall on idle event loop by @marceli1404 in 
-* fix(env-http-proxy-agent): match bare IPv6 addresses in no_proxy by @marko1olo in 
-* test: handle aggregate balanced pool errors by @marko1olo in 
-* fix(readable): keep body bytes that arrive after setEncoding by @mcollina in 
-* fix(socks5): evict unused origin pools by @Kkartik14 in 
-* fix: skip deduplication for upgrade requests by @Ram-blip in 
-* fix(retry): forward informatio
-
-... (truncated)]]></description>
-    <pubDate>Mon, 03 Aug 2026 15:06:41 GMT</pubDate>
   </item>
 </channel>
 </rss>
