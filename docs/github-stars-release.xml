@@ -5,8 +5,19 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Sat, 15 Aug 2026 22:02:04 GMT</lastBuildDate>
+  <lastBuildDate>Sun, 16 Aug 2026 22:01:49 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[ollama/ollama] v0.32.14</title>
+    <link>https://github.com/ollama/ollama/releases/tag/v0.32.14</link>
+    <guid isPermaLink="true">https://github.com/ollama/ollama/releases/tag/v0.32.14</guid>
+    <description><![CDATA[## What's Changed
+* llm: transcode WebP images for llama-server 
+* renderers/qwen: tolerate non-leading system messages
+
+**Full Changelog**:]]></description>
+    <pubDate>Sat, 15 Aug 2026 19:41:23 GMT</pubDate>
+  </item>
   <item>
     <title>[pnpm/pnpm] pnpm 11.22 (v11.22.0)</title>
     <link>https://github.com/pnpm/pnpm/releases/tag/v11.22.0</link>
@@ -91,17 +102,6 @@ curl --proto '=https' --tlsv1.2 -LsSf | sh
 
 ... (truncated)]]></description>
     <pubDate>Fri, 14 Aug 2026 19:57:52 GMT</pubDate>
-  </item>
-  <item>
-    <title>[ollama/ollama] v0.32.13</title>
-    <link>https://github.com/ollama/ollama/releases/tag/v0.32.13</link>
-    <guid isPermaLink="true">https://github.com/ollama/ollama/releases/tag/v0.32.13</guid>
-    <description><![CDATA[## What's Changed
-* qwen3.8: support developer instructions 
-
-
-**Full Changelog**:]]></description>
-    <pubDate>Fri, 14 Aug 2026 19:16:07 GMT</pubDate>
   </item>
   <item>
     <title>[aws/aws-sdk-js-v3] v3.1111.0</title>
