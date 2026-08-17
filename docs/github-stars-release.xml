@@ -5,8 +5,112 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Sun, 16 Aug 2026 22:01:49 GMT</lastBuildDate>
+  <lastBuildDate>Mon, 17 Aug 2026 22:03:34 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1112.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1112.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1112.0</guid>
+    <description><![CDATA[#### 3.1112.0(2026-08-17)
+
+##### New Features
+
+* **client-organizations:** Add new Transfer Responsibility error codes and document related CloudTrail events for accepting and terminating a Transfer Responsibility. (7ec26973)
+* **client-bedrock-agent-runtime:** AgenticRetrieveStream API now supports Amazon Bedrock AgentCore Memory. Use the new memoryConfiguration parameter to continue a session from short-term memory and retrieve from long-term memory. (cd02310c)
+* **client-ecr:** Documentation update for the ECR PutReplicationConfiguration API to increase the replication rule limit from 10 to 25 (dc406081)
+* **client-drs:** AWS Elastic Disaster Recovery (AWS DRS) now offers Recovery Plans to recover multi-server applications in the right order in one action. Define the launch sequence once, with ordered steps and wait times, and DRS runs it automatically. Validate with non-disruptive drills and monitor in real time. (3c0ff266)
+* **client-bedrock-agentcore-control:** Adds implementatio
+
+... (truncated)]]></description>
+    <pubDate>Mon, 17 Aug 2026 20:04:16 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-08-17) (release-2026-08-17)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-17</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-17</guid>
+    <description><![CDATA[## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcorecontrol`: [v1.57.0](service/bedrockagentcorecontrol/CHANGELOG.md#v1570-2026-08-17)
+ * **Feature**: Adds implementations of third-party evaluators, both managed-as-a-service and as templates within custom evaluators.
+* `github.com/aws/aws-sdk-go-v2/service/bedrockagentruntime`: [v1.58.0](service/bedrockagentruntime/CHANGELOG.md#v1580-2026-08-17)
+ * **Feature**: AgenticRetrieveStream API now supports Amazon Bedrock AgentCore Memory. Use the new memoryConfiguration parameter to continue a session from short-term memory and retrieve from long-term memory.
+* `github.com/aws/aws-sdk-go-v2/service/connect`: [v1.189.0](service/connect/CHANGELOG.md#v11890-2026-08-17)
+ * **Feature**: This release adds new APIs to create, describe, update, delete, and list extraction definitions, enabling customers to manage lifecycle of extraction definition resources. Additionally, this release adds new event sources for Rules related 
+
+... (truncated)]]></description>
+    <pubDate>Mon, 17 Aug 2026 20:03:57 GMT</pubDate>
+  </item>
+  <item>
+    <title>[chakra-ui/ark] @ark-ui/vue@5.38.2</title>
+    <link>https://github.com/chakra-ui/ark/releases/tag/%40ark-ui/vue%405.38.2</link>
+    <guid isPermaLink="true">https://github.com/chakra-ui/ark/releases/tag/%40ark-ui/vue%405.38.2</guid>
+    <description><![CDATA[# @ark-ui/vue
+
+## [5.38.2] - 2026-08-17
+
+### Fixed
+
+- - **Date Picker**
+ - Fix `translations` requiring every message. It's now `Partial`, so you can override one message and let the rest
+ fall back to the defaults.
+ - Fix the view trigger's `aria-label` naming the wrong view. In day view it announced "Switch to year view" while
+ the trigger actually switches to month view. The trigger also disables itself once there's no further view to
+ switch to.
+ - Fix dates between a range's start and end announcing the generic "Choose" label. They now announce "In range".
+ - **Escape Dismissal**: Fix `Escape` being ignored right after an overlay opens. Handlers registered a frame late, so
+ the overlay was painted and focus-trapped before it could listen. Under CPU load that gap grew well past one frame
+ and swallowed the keypress. They now register as soon as the layer mounts.
+ > Affects Dialog, Drawer, Menu, Popover, and anything else that closes on `Escape`.
+ - **Floating Panel**
+ - Fix closing
+
+... (truncated)]]></description>
+    <pubDate>Mon, 17 Aug 2026 18:05:09 GMT</pubDate>
+  </item>
+  <item>
+    <title>[stretchr/testify] v1.12.0</title>
+    <link>https://github.com/stretchr/testify/releases/tag/v1.12.0</link>
+    <guid isPermaLink="true">https://github.com/stretchr/testify/releases/tag/v1.12.0</guid>
+    <description><![CDATA[## What's Changed
+
+### Functional Changes
+* assert: make *AssertionFunc types just aliases by @dolmen in 
+
+### Fixes
+* mock: avoid panic when expected type is nil in Arguments.Diff by @mutaiib in 
+* mock: revert to pre-v1.11.0 argument matching behavior for mutating stringers by @brackendawson in 
+* suite: validate method signatures and continue execution for valid tests by @vyas-git in 
+* assert.PanicsWithError: report error message by @olivergondza in 
+* assert: IsIncreasing et al can return false w/out failing by @brackendawson in 
+* add type to error message of assert.Same by @egawata in 
+* mock.AssertExpectationsForObjects fix panic with wrong testObject type. by @brackendawson in 
+* assert: truncate very long objects in test failure messages by @brackendawson in 
+* assert: fix NotSubset error messages using %#v instead of %q (fixes #1800) by @nghiack7 in 
+* suite: prevent panic when SetupTest skips with HandleStats by @blackwell-systems in 
+
+### Documentation, Bu
+
+... (truncated)]]></description>
+    <pubDate>Mon, 17 Aug 2026 08:09:38 GMT</pubDate>
+  </item>
+  <item>
+    <title>[ant-design/ant-design] 6.6.1</title>
+    <link>https://github.com/ant-design/ant-design/releases/tag/6.6.1</link>
+    <guid isPermaLink="true">https://github.com/ant-design/ant-design/releases/tag/6.6.1</guid>
+    <description><![CDATA[- ♿ Improve localized accessible names for Upload actions and Modal and Notification close buttons. #58953 #58957 @nrps9909
+- 🌐 Improve Traditional Chinese terminology across localized components and use Taiwan-preferred week wording in DatePicker. #58947 #58951 @nrps9909
+- 🐞 Fix Upload dropping newly added files when async `onRemove` resolves. #58814 @afc163
+- 🐞 Fix Anchor triggering duplicate `onChange` callbacks on scroll when using `getCurrentAnchor`. #58834 @nikzanda
+- Form
+ - 🐞 Fix Form height fluctuation during rapid validation state changes. #59008 @waterWang
+ - 🐞 Fix Form vertical layout `labelCol.offset` being overridden by label margins. #58981 @nikzanda
+ - ♿ Improve Form complex-control guidance so labels can be explicitly associated with nested controls. #59001 @nrps9909
+ - 📝 Correct Form.Item `required` documentation to clarify that validation rules infer the required state when unset. #58989 @QDyanbing
+- Listy
+ - 💄 Improve Listy virtual scrollbar track hover feedb
+
+... (truncated)]]></description>
+    <pubDate>Mon, 17 Aug 2026 07:58:24 GMT</pubDate>
+  </item>
   <item>
     <title>[ollama/ollama] v0.32.14</title>
     <link>https://github.com/ollama/ollama/releases/tag/v0.32.14</link>
@@ -102,50 +206,6 @@ curl --proto '=https' --tlsv1.2 -LsSf | sh
 
 ... (truncated)]]></description>
     <pubDate>Fri, 14 Aug 2026 19:57:52 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-js-v3] v3.1111.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1111.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1111.0</guid>
-    <description><![CDATA[#### 3.1111.0(2026-08-14)
-
-##### Chores
-
-* upgrade to typescript 7 (#8264) (ca81fbb7)
-* remove jest, use vitest for remaining test suites (#8263) (3a88aada)
-
-##### Documentation Changes
-
-* **client-redshift:** Amazon Redshift now unlocks a locked admin user account and resets the failed-login counter when you update the admin password using the ModifyCluster API. This option is available only when account lockout security is enabled. (b93cb20c)
-* **client-redshift-serverless:** Amazon Redshift now unlocks a locked admin user account and resets the failed-login counter when you update the admin password using the UpdateNamespace API. This option is available only when account lockout security is enabled. (197b4aa6)
-
-##### New Features
-
-* **clients:** update client endpoints as of 2026-08-14 (1e7a2806)
-* **client-bedrock-agentcore-control:** Adds AgentCore Payments support for CMK, Marketplace Subscriptions and QuickCreate (39108eb0)
-* **client-sagemaker:** Release support for g7.2xlarge
-
-... (truncated)]]></description>
-    <pubDate>Fri, 14 Aug 2026 18:50:23 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-08-14) (release-2026-08-14)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-14</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-14</guid>
-    <description><![CDATA[## General Highlights
-* **Dependency Update**: Update to smithy-go v1.27.8.
-* **Dependency Update**: Updated to the latest SDK module versions
-
-## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcore`: [v1.39.0](service/bedrockagentcore/CHANGELOG.md#v1390-2026-08-14)
- * **Feature**: Add support for the Machine Payments Protocol (MPP) and x402 upto scheme payments protocol in Amazon Bedrock AgentCore Payments. Customers can now pay for MPP-gated resources and also pay services which requires upto scheme in x402
-* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcorecontrol`: [v1.56.0](service/bedrockagentcorecontrol/CHANGELOG.md#v1560-2026-08-14)
- * **Feature**: Adds AgentCore Payments support for CMK, Marketplace Subscriptions and QuickCreate
-* `github.com/aws/aws-sdk-go-v2/service/bedrockagentruntime`: [v1.57.0](service/bedrockagentruntime/CHANGELOG.md#v1570-2026-08-14)
- * **Feature**: Adds CheckIngestedDocumentAcl and GetIngestedDocumentAcl APIs to Amazon Bedro
-
-... (truncated)]]></description>
-    <pubDate>Fri, 14 Aug 2026 18:47:34 GMT</pubDate>
   </item>
   <item>
     <title>[BabylonJS/Babylon.js] 9.21.2</title>
@@ -588,24 +648,6 @@ go install github.com/wailsapp/wails/v2/cmd/wails@v2.14.0
     <pubDate>Mon, 10 Aug 2026 09:36:33 GMT</pubDate>
   </item>
   <item>
-    <title>[ant-design/ant-design] 6.6.0</title>
-    <link>https://github.com/ant-design/ant-design/releases/tag/6.6.0</link>
-    <guid isPermaLink="true">https://github.com/ant-design/ant-design/releases/tag/6.6.0</guid>
-    <description><![CDATA[- 🔥 Add Listy component for high-performance virtualized lists with grouping, sticky headers, and imperative scrolling. #58724 @aojunhao123
-- ConfigProvider
- - 🆕 Add ConfigProvider `focusOutline` theme token to control shared focus outlines across Input, Select, Rate, Steps, Splitter, and other components. #58647 #58708 @QDyanbing
- - 🆕 Add ConfigProvider global `variant` configuration for Input.Search, Input.Password, and Input.OTP. #58784 @QDyanbing
- - 🆕 Add ConfigProvider global `mouseEnterDelay` and `mouseLeaveDelay` configuration for Tooltip, Popover, and Popconfirm. #58892 @EmilyyyLiu
-- 🌐 Localization
- - 🇦🇱 Add Albanian `sq_AL` locale support. #58618 @li-jia-nan
-- 🆕 Add Tree `useTree` for retrieving node paths and support `scrollTo({ autoExpand: true })` to expand target nodes before scrolling. #58841 @zombieJ
-- 🆕 Add FloatButton.BackTop `showProgress` to display the current scroll progress around the button. #58894 @ZQDesigned
-- 🆕 Add Table `expandable.forceRender` to r
-
-... (truncated)]]></description>
-    <pubDate>Mon, 10 Aug 2026 09:00:04 GMT</pubDate>
-  </item>
-  <item>
     <title>[privatenumber/tsx] v4.23.12</title>
     <link>https://github.com/privatenumber/tsx/releases/tag/v4.23.12</link>
     <guid isPermaLink="true">https://github.com/privatenumber/tsx/releases/tag/v4.23.12</guid>
@@ -774,42 +816,6 @@ This release is also available on:
 
 **Full Changelog**:]]></description>
     <pubDate>Fri, 07 Aug 2026 15:56:51 GMT</pubDate>
-  </item>
-  <item>
-    <title>[chakra-ui/ark] @ark-ui/solid@5.38.1</title>
-    <link>https://github.com/chakra-ui/ark/releases/tag/%40ark-ui/solid%405.38.1</link>
-    <guid isPermaLink="true">https://github.com/chakra-ui/ark/releases/tag/%40ark-ui/solid%405.38.1</guid>
-    <description><![CDATA[# @ark-ui/solid
-
-## [5.38.1] - 2026-08-07
-
-### Fixed
-
-- Fixed `DateInput.Segment` resolving segments by `type`, so segments sharing a type all rendered the first match's
- text. Literal separators like `:` and `,` rendered as `/`.
-
-## [5.38.0] - 2026-08-01
-
-### Added
-
-- - **Number Input**: Add `largeStep` and `smallStep` props for configurable keyboard stepping. Hold `Shift` for
- `largeStep` (defaults to `10 * step`), `Alt` for `smallStep` (defaults to `step / 10`). The defaults match the
- previous behavior.
- ```jsx
- <NumberInput.Root largeStep={20} smallStep={0.5} />
- ```
- - **Slider**: Add `largeStep` prop, applied on `Shift` or `PageUp`/`PageDown` (defaults to `10 * step`). The default
- matches the previous behavior.
-
-- - **Autofocus Control**: Add `data-autofocus` and `data-no-autofocus` to decide what gets focus when an overlay opens.
- Mark chrome like the close button with `data-no-autofocus` to skip it, or mark the real target with
- `data-autofocus`.
- ```jsx
- <Dialog.Content>
- <D
-
-... (truncated)]]></description>
-    <pubDate>Fri, 07 Aug 2026 12:33:47 GMT</pubDate>
   </item>
   <item>
     <title>[inokawa/virtua] 0.50.1</title>
@@ -988,20 +994,6 @@ Please check out our June blog post to get a curated overview over the recent ch
 
 ... (truncated)]]></description>
     <pubDate>Tue, 04 Aug 2026 09:57:17 GMT</pubDate>
-  </item>
-  <item>
-    <title>[azat-io/eslint-plugin-perfectionist] v5.10.1</title>
-    <link>https://github.com/azat-io/eslint-plugin-perfectionist/releases/tag/v5.10.1</link>
-    <guid isPermaLink="true">https://github.com/azat-io/eslint-plugin-perfectionist/releases/tag/v5.10.1</guid>
-    <description><![CDATA[### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
-
-- Fix crash in typescript 7 &nbsp;-&nbsp; by @hugop95 <samp>(fbbc3)</samp>
-- Fix complex comments cases not being auto-fixed correctly &nbsp;-&nbsp; by @hugop95 <samp>(7a35d)</samp>
-- Respect ignored callback dependencies in nested calls &nbsp;-&nbsp; by @hugop95 <samp>(c9a11)</samp>
-- Take into account extended tsconfigs &nbsp;-&nbsp; by @hugop95 <samp>(93a26)</samp>
-
-##### &nbsp;&nbsp;&nbsp;&nbsp;View changes on GitHub]]></description>
-    <pubDate>Tue, 04 Aug 2026 05:39:02 GMT</pubDate>
   </item>
 </channel>
 </rss>
