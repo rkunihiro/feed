@@ -5,8 +5,188 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Tue, 18 Aug 2026 22:02:48 GMT</lastBuildDate>
+  <lastBuildDate>Wed, 19 Aug 2026 22:04:10 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1114.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1114.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1114.0</guid>
+    <description><![CDATA[#### 3.1114.0(2026-08-19)
+
+##### New Features
+
+* **client-eks:** Adds support for EKS cluster certificate authorities (CA) (a1316eae)
+* **client-bedrock-agentcore-control:** AgentCore Memory now supports Flexible Namespaces (65c89d6d)
+* **client-batch:** AWS Batch now supports managing CloudWatch Container Insights on compute environments via CreateComputeEnvironment and UpdateComputeEnvironment. (f77fc37f)
+* **client-redshift:** Amazon Redshift enhanced System Table retention that allows customers to store their system table data directly in S3 Tables in customer's account instead of Redshift Managed Storage (a46d1f96)
+* **client-bedrock-agentcore:** AgentCore Memory now supports Flexible Namespaces and Non-Conversational Payloads in CreateEvent API (a0d8fb6d)
+* **client-medialive:** AWS Elemental MediaLive now supports video cropping and output positioning. Use cropRectangle and outputPositionRectangle to position the encoded video within the output frame, with the surrounding area f
+
+... (truncated)]]></description>
+    <pubDate>Wed, 19 Aug 2026 19:18:38 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-08-19) (release-2026-08-19)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-19</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-19</guid>
+    <description><![CDATA[## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/service/accountaccess`: [v1.1.0](service/accountaccess/CHANGELOG.md#v110-2026-08-19)
+ * **Feature**: Adds throttling exceptions to operation outputs that were previously inconsistent with other operations.
+* `github.com/aws/aws-sdk-go-v2/service/batch`: [v1.69.0](service/batch/CHANGELOG.md#v1690-2026-08-19)
+ * **Feature**: AWS Batch now supports managing CloudWatch Container Insights on compute environments via CreateComputeEnvironment and UpdateComputeEnvironment.
+* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcore`: [v1.40.0](service/bedrockagentcore/CHANGELOG.md#v1400-2026-08-19)
+ * **Feature**: AgentCore Memory now supports Flexible Namespaces and Non-Conversational Payloads in CreateEvent API
+* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcorecontrol`: [v1.58.0](service/bedrockagentcorecontrol/CHANGELOG.md#v1580-2026-08-19)
+ * **Feature**: AgentCore Memory now supports Flexible Namespaces
+* `github.com/aws/aws-sdk-go-v
+
+... (truncated)]]></description>
+    <pubDate>Wed, 19 Aug 2026 19:16:07 GMT</pubDate>
+  </item>
+  <item>
+    <title>[zed-industries/zed] v1.16.1</title>
+    <link>https://github.com/zed-industries/zed/releases/tag/v1.16.1</link>
+    <guid isPermaLink="true">https://github.com/zed-industries/zed/releases/tag/v1.16.1</guid>
+    <description><![CDATA[This week's release includes Gemini 3.6 Flash support, collapsible grouped changes and optional stash messages in the Git Panel, zooming and horizontal scrolling for Mermaid diagrams, and a new setting for controlling whether the Terminal Panel opens automatically in new workspaces.
+
+## Shipped by the Zed Guild 🛡️
+
+- Improved Git Panel organization by making grouped change sections collapsible. (#62441; thanks chirivelli)
+- Linux: Improved memory usage. (#62192; thanks tidely)
+- Fixed a bug where update checks for extension-provided language servers could get stuck on flaky internet connections. (#62175; thanks vitallium)
+- Fixed directional focus navigation into the Git Panel's History tab. (#62215; thanks feeiyu)
+- Fixed language server RPC logs displaying untimed requests beneath an unrelated response's duration header. (#61452; thanks aviatesk)
+
+---
+
+*Learn about the Zed Guild.*
+
+## Features
+
+### AI
+
+- Added Gemini 3.6 Flash to the Google AI models. (#62010; than
+
+... (truncated)]]></description>
+    <pubDate>Wed, 19 Aug 2026 16:11:34 GMT</pubDate>
+  </item>
+  <item>
+    <title>[withastro/astro] @astrojs/markdown-satteri@0.3.7</title>
+    <link>https://github.com/withastro/astro/releases/tag/%40astrojs/markdown-satteri%400.3.7</link>
+    <guid isPermaLink="true">https://github.com/withastro/astro/releases/tag/%40astrojs/markdown-satteri%400.3.7</guid>
+    <description><![CDATA[### Patch Changes
+
+- #17731 `bc171af` Thanks @Princesseuh! - Updates Sätteri processor to v0.10.3. See its changelog for details on bugs fixed and features added.
+
+- Updated dependencies \[`05763a0`]:
+ - @astrojs/internal-helpers@0.10.4]]></description>
+    <pubDate>Wed, 19 Aug 2026 14:39:20 GMT</pubDate>
+  </item>
+  <item>
+    <title>[github/spec-kit] Spec Kit - 0.16.5 (v0.16.5)</title>
+    <link>https://github.com/github/spec-kit/releases/tag/v0.16.5</link>
+    <guid isPermaLink="true">https://github.com/github/spec-kit/releases/tag/v0.16.5</guid>
+    <description><![CDATA[## Install
+
+```bash
+uv tool install specify-cli --from git+
+specify init my-project
+```
+
+## What's Changed
+
+- chore: bump version to 0.16.5
+- fix(powershell): stop Out-Null swallowing setup-tasks AVAILABLE_DOCS lines (#4188)
+- fix: provision Spec Kit CLI and assess extension in feature-assess host setup steps (#4195)
+- fix: provision uv and Python for feature-assess workflow (#4193)
+- feat: add feature-assess agentic workflow that installs and runs Spec Kit (#4186)
+- [extension] Update Superpowers Implementation Bridge to v1.2.0 (#4183)
+- fix(init): stop specify init hanging on arrow-key pickers in agent harnesses (#4178)
+- [extension] Add DUBSAR Memory extension to community catalog (#4170)
+- Add AgentPay x402 extension to community catalog (#4174)
+- Update Keel Discovery extension to v0.2.0 (#4172)
+- fix: confine event hook script paths to the project tree (#4133)
+- Clarify extension catalog trust model in docs, help, and messaging (#4177)
+- Add pay-x402 community extension with corr
+
+... (truncated)]]></description>
+    <pubDate>Wed, 19 Aug 2026 14:18:52 GMT</pubDate>
+  </item>
+  <item>
+    <title>[stretchr/testify] v1.12.1</title>
+    <link>https://github.com/stretchr/testify/releases/tag/v1.12.1</link>
+    <guid isPermaLink="true">https://github.com/stretchr/testify/releases/tag/v1.12.1</guid>
+    <description><![CDATA[This is the first release which has the minimum dependencies practical in testify v1. The last remaining dependencies are github.com/stretchr/objx which itself has no dependencies, and go.yaml.in/yaml/v3. Removing objx would require v2, it cannot be vendored. Removing YAML would require vendoring the yaml library, which would do more harm than good. It's better to become aware of vulnerabilities in the official yaml package than to attempt to maintain our own.
+
+## What's Changed
+* Change yaml library to `go.yaml.in/yaml/v3` by @harryzcy in 
+* change yaml library to go.yaml.in/yaml/v3 by @boekkooi-impossiblecloud in 
+
+## New Contributors
+* @harryzcy made their first contribution in 
+* @boekkooi-impossiblecloud made their first contribution in 
+
+**Full Changelog**: 
+
+## What's Changed
+* Change yaml library to `go.yaml.in/yaml/v3` by @harryzcy in 
+* change yaml library to go.yaml.in/yaml/v3 by @boekkooi-impossiblecloud in 
+
+## New Contributors
+* @harryzcy made their first contri
+
+... (truncated)]]></description>
+    <pubDate>Wed, 19 Aug 2026 13:08:44 GMT</pubDate>
+  </item>
+  <item>
+    <title>[oxc-project/oxc] oxc crates_v0.146.0 (crates_v0.146.0)</title>
+    <link>https://github.com/oxc-project/oxc/releases/tag/crates_v0.146.0</link>
+    <guid isPermaLink="true">https://github.com/oxc-project/oxc/releases/tag/crates_v0.146.0</guid>
+    <description><![CDATA[### 🚀 Features
+
+- 83cb516 minifier: Improve negation of expressions in boolean context (#25755) (Armano)
+
+### 🐛 Bug Fixes
+
+- 82a790d codegen: Narrow printSync input type (#25871) (camc314)
+- 134fb22 isolated-declarations: Preserve unresolved parameter types (#25909) (Dunqing)
+- 526c2b3 codegen: Remove deprecated test APIs (#25889) (camc314)
+- 344a9b2 codegen: Align enum template sourcemaps (#25872) (camc314)
+
+### ⚡ Performance
+
+- 603b904 packages/codegen: Check `sourceText` only once (#25887) (overlookmotel)
+- 5ef0c93 minifier: Unwrap all unary exprs without creating dummy expressions (#25891) (Armano)
+- 8783524 packages/codegen: Remove loop from `growMappingBuffer` (#25886) (overlookmotel)
+- b6b14c0 packages/codegen: Remove redundant branch (#25885) (overlookmotel)
+- be6adf0 packages/sourcemap: Make `location` passed to `recordSourceMapping` always a number (#25884) (overlookmotel)
+- f720f15 packages/codegen: Take named-mapping only code off hot path in `recordSourceMapping` (#25883
+
+... (truncated)]]></description>
+    <pubDate>Wed, 19 Aug 2026 08:40:33 GMT</pubDate>
+  </item>
+  <item>
+    <title>[openai/codex] 0.148.0 (rust-v0.148.0)</title>
+    <link>https://github.com/openai/codex/releases/tag/rust-v0.148.0</link>
+    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.148.0</guid>
+    <description><![CDATA[## New Features
+
+- Export complete TUI conversations to Markdown with `/export`, either to the clipboard or a new file. (#37358)
+- Fork sessions with `codex exec fork`, and archive or restore sessions from the TUI resume picker. (#37367, #37369, #37371)
+- Draft prompts while the TUI initializes, with resume and fork progress shown during startup. (#38642, #38788)
+- View estimated thread credits or cost in `/status`, status lines, and terminal titles for eligible workspaces. (#38281, #38282)
+- Use Amazon Bedrock Runtime as a built-in provider with AWS profile, region, and GPT-5.6 routing support. (#38470)
+- Hooks can now run commands asynchronously and invoke MCP tools. (#37533, #38705)
+
+## Bug Fixes
+
+- Model switches and settings updates no longer leave stale instructions behind or change an active turn midstream. (#37260, #38785)
+- Resumed sessions now restore their persisted working directory and approval policy, with more accurate transcript previews. (#37198, #37368, #38605)
+- Turn
+
+... (truncated)]]></description>
+    <pubDate>Tue, 18 Aug 2026 22:26:03 GMT</pubDate>
+  </item>
   <item>
     <title>[microsoft/WSL] 2.7.12</title>
     <link>https://github.com/microsoft/WSL/releases/tag/2.7.12</link>
@@ -40,47 +220,6 @@
 
 @GeorgijGrigoriev,@Osamaali313 @Patrick-Erichsen,@dylanpulver @fenfenxu,@hcjmartin @initred,@quuu @statik]]></description>
     <pubDate>Tue, 18 Aug 2026 20:28:43 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-js-v3] v3.1113.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1113.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1113.0</guid>
-    <description><![CDATA[#### 3.1113.0(2026-08-18)
-
-##### Chores
-
-* **scripts:** prune stale lib-dynamodb files on copy during codegen (#8269) (0278e94b)
-
-##### Documentation Changes
-
-* **client-ec2:** Doc release for CreateImage support for instances with local snapshots in Outpost (59ed88c0)
-* **client-batch:** Update AWS Batch documentation with newer Fargate Supported configurations, notes, and fix broken Docker link re-directs. (c2ba4d77)
-
-##### New Features
-
-* **client-entityresolution:** Added ResourceNotFoundException to DeleteSchemaMapping, DeleteMatchingWorkflow, DeleteIdMappingWorkflow, and DeleteIdNamespace. These operations now return a 404 ResourceNotFoundException (previously a 200 Success) when the target resource does not exist. (860ccc20)
-* **client-outposts:** AWS Outposts now supports VPC Endpoint configuration in CreatePrivateConnectivityConfig, enabling scoped private connectivity with provisioning role creation for secure outpost installations (74c9d458)
-* **client-workspaces:** Amazon W
-
-... (truncated)]]></description>
-    <pubDate>Tue, 18 Aug 2026 18:52:13 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-08-18) (release-2026-08-18)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-18</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-18</guid>
-    <description><![CDATA[## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/feature/s3/transfermanager`: [v0.3.14](feature/s3/transfermanager/CHANGELOG.md#v0314-2026-08-18)
- * **Bug Fix**: Close each file transferred during directory upload/download to avoid leaking file handles
-* `github.com/aws/aws-sdk-go-v2/service/batch`: [v1.68.7](service/batch/CHANGELOG.md#v1687-2026-08-18)
- * **Documentation**: Update AWS Batch documentation with newer Fargate Supported configurations, notes, and fix broken Docker link re-directs.
-* `github.com/aws/aws-sdk-go-v2/service/ec2`: [v1.321.3](service/ec2/CHANGELOG.md#v13213-2026-08-18)
- * **Documentation**: Doc release for CreateImage support for instances with local snapshots in Outpost
-* `github.com/aws/aws-sdk-go-v2/service/entityresolution`: [v1.31.0](service/entityresolution/CHANGELOG.md#v1310-2026-08-18)
- * **Feature**: Added ResourceNotFoundException to DeleteSchemaMapping, DeleteMatchingWorkflow, DeleteIdMappingWorkflow, and DeleteIdNamespace. These operations now r
-
-... (truncated)]]></description>
-    <pubDate>Tue, 18 Aug 2026 18:51:20 GMT</pubDate>
   </item>
   <item>
     <title>[bluesky-social/social-app] 1.131.0</title>
@@ -128,49 +267,6 @@ Report bugs on GitHub after checking that they haven't been reported:
     <pubDate>Tue, 18 Aug 2026 16:12:28 GMT</pubDate>
   </item>
   <item>
-    <title>[zed-industries/zed] v1.15.1</title>
-    <link>https://github.com/zed-industries/zed/releases/tag/v1.15.1</link>
-    <guid isPermaLink="true">https://github.com/zed-industries/zed/releases/tag/v1.15.1</guid>
-    <description><![CDATA[- Fixed an issue where the Cursor ACP agent would fail to start (#62825)
-- Git: Fixed the GPG passphrase modal appearing on every commit for users whose configured pinentry (e.g. pinentry-mac with the macOS Keychain) can supply the passphrase without Zed's help. Zed now only prompts when gpg cannot obtain the passphrase on its own. (#62783)
-- Fixed array merging for extensions case (#62722)
-- Fixed project search not working in some non-Unicode files (#62591)]]></description>
-    <pubDate>Tue, 18 Aug 2026 16:05:04 GMT</pubDate>
-  </item>
-  <item>
-    <title>[oxc-project/oxc] oxlint v1.79.0 &amp; oxfmt v0.64.0 (apps_v1.79.0)</title>
-    <link>https://github.com/oxc-project/oxc/releases/tag/apps_v1.79.0</link>
-    <guid isPermaLink="true">https://github.com/oxc-project/oxc/releases/tag/apps_v1.79.0</guid>
-    <description><![CDATA[## Table of Contents
-
-- [Oxlint v1.79.0](#oxlint-v1.79.0)
-- [Oxfmt v0.64.0](#oxfmt-v0.64.0)
-
-## Oxlint v1.79.0
-### 💥 BREAKING CHANGES
-
-- 8c4552d linter: [**BREAKING**] Split react/react-compiler into per-category rules (#25500) (Boshen)
-
-See React Compiler Support for details.
-
-### 🚀 Features
-
-- 9b7394e linter/typescript/no-empty-object-type: Implement suggestion (#25833) (Mikhail Baev)
-
-### 🐛 Bug Fixes
-
-- 345f981 react_compiler: Skip node_modules by default (#25859) (Boshen)
-- 2f40afa linter/unicorn/no-array-callback-reference: Ignore effect library imports (#25857) (Michaël Bitard)
-- 7b565a0 linter: Align React Compiler rule categories (#25840) (Boshen)
-- 228e8e0 linter: Resolve inactive React compiler rules (#25830) (Boshen)
-- f8e4884 linter/eslint/no-useless-constructor: Allow parameter properties (#25811) (camc314)
-- e4b6993 linter: Report exhaustive effect dependencies (#25829) (Boshen)
-- 742e25f linter/eslint/no-return-assign: Anchor diagnostic on retu
-
-... (truncated)]]></description>
-    <pubDate>Tue, 18 Aug 2026 15:09:46 GMT</pubDate>
-  </item>
-  <item>
     <title>[sveltejs/kit] @sveltejs/kit@2.70.3</title>
     <link>https://github.com/sveltejs/kit/releases/tag/%40sveltejs/kit%402.70.3</link>
     <guid isPermaLink="true">https://github.com/sveltejs/kit/releases/tag/%40sveltejs/kit%402.70.3</guid>
@@ -193,16 +289,6 @@ See React Compiler Support for details.
     <description><![CDATA[This is urgent bugfix release.
 - Fixed an issue where the enemy's battle AI would use all commands set on the page each turn.]]></description>
     <pubDate>Tue, 18 Aug 2026 13:56:07 GMT</pubDate>
-  </item>
-  <item>
-    <title>[withastro/astro] @astrojs/preact@6.0.3</title>
-    <link>https://github.com/withastro/astro/releases/tag/%40astrojs/preact%406.0.3</link>
-    <guid isPermaLink="true">https://github.com/withastro/astro/releases/tag/%40astrojs/preact%406.0.3</guid>
-    <description><![CDATA[### Patch Changes
-
-- Updated dependencies \[`8c193f6`]:
- - @astrojs/internal-helpers@0.10.3]]></description>
-    <pubDate>Tue, 18 Aug 2026 13:37:20 GMT</pubDate>
   </item>
   <item>
     <title>[dprint/dprint] 0.56.0</title>
@@ -424,32 +510,6 @@ This release ships a complete Temporal implementation that passes 100% of the te
     <pubDate>Mon, 17 Aug 2026 18:05:09 GMT</pubDate>
   </item>
   <item>
-    <title>[stretchr/testify] v1.12.0</title>
-    <link>https://github.com/stretchr/testify/releases/tag/v1.12.0</link>
-    <guid isPermaLink="true">https://github.com/stretchr/testify/releases/tag/v1.12.0</guid>
-    <description><![CDATA[## What's Changed
-
-### Functional Changes
-* assert: make *AssertionFunc types just aliases by @dolmen in 
-
-### Fixes
-* mock: avoid panic when expected type is nil in Arguments.Diff by @mutaiib in 
-* mock: revert to pre-v1.11.0 argument matching behavior for mutating stringers by @brackendawson in 
-* suite: validate method signatures and continue execution for valid tests by @vyas-git in 
-* assert.PanicsWithError: report error message by @olivergondza in 
-* assert: IsIncreasing et al can return false w/out failing by @brackendawson in 
-* add type to error message of assert.Same by @egawata in 
-* mock.AssertExpectationsForObjects fix panic with wrong testObject type. by @brackendawson in 
-* assert: truncate very long objects in test failure messages by @brackendawson in 
-* assert: fix NotSubset error messages using %#v instead of %q (fixes #1800) by @nghiack7 in 
-* suite: prevent panic when SetupTest skips with HandleStats by @blackwell-systems in 
-
-### Documentation, Bu
-
-... (truncated)]]></description>
-    <pubDate>Mon, 17 Aug 2026 08:09:38 GMT</pubDate>
-  </item>
-  <item>
     <title>[ant-design/ant-design] 6.6.1</title>
     <link>https://github.com/ant-design/ant-design/releases/tag/6.6.1</link>
     <guid isPermaLink="true">https://github.com/ant-design/ant-design/releases/tag/6.6.1</guid>
@@ -573,37 +633,6 @@ curl --proto '=https' --tlsv1.2 -LsSf | sh
 
 **Full Changelog**:]]></description>
     <pubDate>Fri, 14 Aug 2026 17:53:21 GMT</pubDate>
-  </item>
-  <item>
-    <title>[github/spec-kit] Spec Kit - 0.16.4 (v0.16.4)</title>
-    <link>https://github.com/github/spec-kit/releases/tag/v0.16.4</link>
-    <guid isPermaLink="true">https://github.com/github/spec-kit/releases/tag/v0.16.4</guid>
-    <description><![CDATA[## Install
-
-```bash
-uv tool install specify-cli --from git+
-specify init my-project
-```
-
-## What's Changed
-
-- chore: bump version to 0.16.4
-- Add SpecAssay preset to community catalog (#4123)
-- Update Intake Authoring Governance preset to v0.3.1 (#4121)
-- Update Superspec extension to v1.0.2 (#4120)
-- fix(taskstoissues): widen task-ID regex to match IDs longer than 3 digits (#4101)
-- Add Architecture Governance extension to community catalog (#4122)
-- fix(workflows): validate non-string step types (#4111)
-- Harden community submission workflow output allowlists (#4103)
-- chore(deps): bump github/codeql-action (init + analyze) from 4.37.5 to 4.37.6 (#4114)
-- Add SpecAssay Check extension to community catalog (#4113)
-- fix(integrations): dispatch goose commands via `goose run` (#2416) (#3781)
-- fix(powershell): stop Out-Null swallowing the AVAILABLE_DOCS status lines (#3891)
-- fix: remove TOCTOU race in RunState.load (#3839)
-- fix: decode the zipped manifest as UTF-8 before parsing (#395
-
-... (truncated)]]></description>
-    <pubDate>Fri, 14 Aug 2026 15:48:31 GMT</pubDate>
   </item>
   <item>
     <title>[bluesky-social/atproto] @atproto-labs/opentelemetry-node@0.1.0</title>
@@ -923,32 +952,6 @@ This release is also available on:
     <guid isPermaLink="true">https://github.com/denoland/rusty_v8/releases/tag/v152.1.0</guid>
     <description><![CDATA[No release notes provided.]]></description>
     <pubDate>Fri, 07 Aug 2026 23:21:35 GMT</pubDate>
-  </item>
-  <item>
-    <title>[eslint/eslint] v10.8.1</title>
-    <link>https://github.com/eslint/eslint/releases/tag/v10.8.1</link>
-    <guid isPermaLink="true">https://github.com/eslint/eslint/releases/tag/v10.8.1</guid>
-    <description><![CDATA[## Bug Fixes
-* `18eb0a7` fix: prevent ASI hazard in `no-unused-labels` autofix (#21173) (dongkyu lee)
-* `151ba3f` fix: false positives in `getter-return` and `accessor-pairs` (#21163) (Grit)
-* `6898df9` fix: ignore meta-property names in `id-denylist` (#21166) (Pixel)
-* `4d7db66` fix: ignore meta-property names in `id-match` (#21167) (Pixel)
-* `677214e` fix: handle ASI hazards in no-unused-vars removeVar suggestion (#20935) (kuldeep kumar)
-
-## Documentation
-* `7d0cbf8` docs: Update README (GitHub Actions Bot)
-* `0a05812` docs: add missing backticks to `no-duplicate-imports.js` (#21183) (Lee Daeun)
-* `678c90b` docs: Update README (GitHub Actions Bot)
-* `8a10424` docs: Update README (GitHub Actions Bot)
-* `69bb948` docs: Update README (GitHub Actions Bot)
-
-## Chores
-* `0a14800` chore: update github/codeql-action action to v4.37.4 (#21196) (renovate[bot])
-* `05adcb1` test: fix failing ecosystem test for `eslint-plugin-unicorn` (#21191) (Lazizbek Ergashev)
-* `5611035` test: add error locat
-
-... (truncated)]]></description>
-    <pubDate>Fri, 07 Aug 2026 20:16:24 GMT</pubDate>
   </item>
 </channel>
 </rss>
