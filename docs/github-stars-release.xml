@@ -5,43 +5,361 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Wed, 19 Aug 2026 22:04:10 GMT</lastBuildDate>
+  <lastBuildDate>Thu, 20 Aug 2026 22:04:28 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
   <item>
-    <title>[aws/aws-sdk-js-v3] v3.1114.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1114.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1114.0</guid>
-    <description><![CDATA[#### 3.1114.0(2026-08-19)
+    <title>[BabylonJS/Babylon.js] 9.22.1</title>
+    <link>https://github.com/BabylonJS/Babylon.js/releases/tag/9.22.1</link>
+    <guid isPermaLink="true">https://github.com/BabylonJS/Babylon.js/releases/tag/9.22.1</guid>
+    <description><![CDATA[### Viewer
+
+- fix: improve Viewer Lite compatibility - [_Bug Fix_] by ryantrem (#18814)]]></description>
+    <pubDate>Thu, 20 Aug 2026 21:39:12 GMT</pubDate>
+  </item>
+  <item>
+    <title>[anomalyco/opentui] Release v0.5.6 (v0.5.6)</title>
+    <link>https://github.com/anomalyco/opentui/releases/tag/v0.5.6</link>
+    <guid isPermaLink="true">https://github.com/anomalyco/opentui/releases/tag/v0.5.6</guid>
+    <description><![CDATA[## What's Changed
+* ci: migrate npm publishing to OIDC by @kommander in 
+
+
+**Full Changelog**:]]></description>
+    <pubDate>Thu, 20 Aug 2026 21:20:06 GMT</pubDate>
+  </item>
+  <item>
+    <title>[openai/codex] 0.149.0 (rust-v0.149.0)</title>
+    <link>https://github.com/openai/codex/releases/tag/rust-v0.149.0</link>
+    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.149.0</guid>
+    <description><![CDATA[## New Features
+
+- Added an interactive `codex agents` dashboard for searching, starting, opening, renaming, and stopping tasks, with configurable shortcuts. (#39094, #39112, #39114, #39142)
+- Added `/cd`, `/pwd`, and `/cwd` commands for managing the working directory in TUI sessions. (#38894)
+- Added `codex queue` for sending messages to existing local or remote sessions. (#39092)
+- Expanded Vim editing with character replacement and more change motions such as `cw`, `c$`, and `cc`. (#39661)
+- `codex doctor` now diagnoses endpoint protection, network/proxy failures, desktop app state, and update connectivity. (#38827, #38918, #39060, #39074)
+- SDK users can now pass exact CLI config overrides and select `max` or `ultra` reasoning effort. (#38817, #39662)
+
+## Bug Fixes
+
+- Queued messages now wake idle sessions reliably, resolve duplicate session names more usefully, and preserve pasted or deferred command semantics. (#39034, #39385, #39604)
+- Resumed and forked threads now restore thei
+
+... (truncated)]]></description>
+    <pubDate>Thu, 20 Aug 2026 21:04:55 GMT</pubDate>
+  </item>
+  <item>
+    <title>[sveltejs/svelte] svelte@5.56.10</title>
+    <link>https://github.com/sveltejs/svelte/releases/tag/svelte%405.56.10</link>
+    <guid isPermaLink="true">https://github.com/sveltejs/svelte/releases/tag/svelte%405.56.10</guid>
+    <description><![CDATA[### Patch Changes
+
+- fix: preserve CSS escape sequences when printing selectors (#18667)
+
+- fix: parse `:nth-child(2n of.foo)` where `of` is not followed by whitespace (#18611)
+
+- fix: transform expressions inside labeled statements during server compilation (#18617)
+
+- docs: clarify that context lookup includes the current component and all ancestors (#18581)
+
+- fix: apply CSS custom properties with falsy values on components (#18634)
+
+- fix: correctly print `{#await ... catch x}` et al (#18645)
+
+- fix: ignore comments of Program node during migration script (#18656)
+
+- fix: reliably resolve append_style to its correct root (#18614)
+
+- fix: clean up removed capture event handlers from spread attributes (#18618)
+
+- fix: don't corrupt renderer type during SSR's legacy `bind:` retry loop (#18616)
+
+- fix: treat concise arrow function bodies as implicit returns when calculating blockers (#18613)
+
+- fix: give effect teardowns the value from before the first write in a flush (#18620)
+
+- fix:
+
+... (truncated)]]></description>
+    <pubDate>Thu, 20 Aug 2026 19:20:58 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-08-20) (release-2026-08-20)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-20</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-20</guid>
+    <description><![CDATA[## General Highlights
+* **Dependency Update**: Updated to the latest SDK module versions
+
+## Module Highlights
+* `github.com/aws/aws-sdk-go-v2`: v1.43.7
+ * **Bug Fix**: Make x-amz-checksum-* headers on presigner always show up as headers
+* `github.com/aws/aws-sdk-go-v2/feature/s3/manager`: [v1.22.44](feature/s3/manager/CHANGELOG.md#v12244-2026-08-20)
+ * **Bug Fix**: Fix flaky test from feature/s3/manager upload retry
+* `github.com/aws/aws-sdk-go-v2/service/amplify`: [v1.42.0](service/amplify/CHANGELOG.md#v1420-2026-08-20)
+ * **Feature**: Increased the maximum allowed length from 255 to 4,096 characters to support longer access tokens.
+* `github.com/aws/aws-sdk-go-v2/service/arcregionswitch`: [v1.14.0](service/arcregionswitch/CHANGELOG.md#v1140-2026-08-20)
+ * **Feature**: Adds support for Rds switchover read replica for Oracle databases in Region switch plans
+* `github.com/aws/aws-sdk-go-v2/service/batch`: [v1.70.0](service/batch/CHANGELOG.md#v1700-2026-08-20)
+ * **Feature**: AWS Batch 
+
+... (truncated)]]></description>
+    <pubDate>Thu, 20 Aug 2026 18:49:16 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1115.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1115.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1115.0</guid>
+    <description><![CDATA[#### 3.1115.0(2026-08-20)
+
+##### Documentation Changes
+
+* **client-pricing-plan-manager:** Documentation update for the CreateSubscription API to correct the default value of the approval mode parameter. The default value for paid subscriptions is MANUAL, not IMMEDIATE as previously documented. The default value remains IMMEDIATE for FREE tier subscriptions. (50d16ae3)
 
 ##### New Features
 
-* **client-eks:** Adds support for EKS cluster certificate authorities (CA) (a1316eae)
-* **client-bedrock-agentcore-control:** AgentCore Memory now supports Flexible Namespaces (65c89d6d)
-* **client-batch:** AWS Batch now supports managing CloudWatch Container Insights on compute environments via CreateComputeEnvironment and UpdateComputeEnvironment. (f77fc37f)
-* **client-redshift:** Amazon Redshift enhanced System Table retention that allows customers to store their system table data directly in S3 Tables in customer's account instead of Redshift Managed Storage (a46d1f96)
-* **client-bedrock-agentcore:** AgentCore Memory now supports Flexible Namespaces and Non-Conversational Payloads in CreateEvent API (a0d8fb6d)
-* **client-medialive:** AWS Elemental MediaLive now supports video cropping and output positioning. Use cropRectangle and outputPositionRectangle to position the encoded video within the output frame, with the surrounding area f
+* **client-sesv2:** Amazon SES now supports per-message tracking overrides. You can use the new ConfigurationOverrides parameter in SendEmail and SendBulkEmail to enable or disable open and click tracking for individual messages without changing your account-level or configuration set settings. (da56caa5)
+* **client-arc-region-switch:** Adds support for Rds switchover read replica for Oracle databases in Region switch plans (85ffb20a)
+* **client-ec2:** EC2 marks UEFI instance metadata field as sensitive. (c232746a)
+* **client-direct-connect:** This release adds custom route prefix pool allocations fo
 
 ... (truncated)]]></description>
-    <pubDate>Wed, 19 Aug 2026 19:18:38 GMT</pubDate>
+    <pubDate>Thu, 20 Aug 2026 18:47:19 GMT</pubDate>
   </item>
   <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-08-19) (release-2026-08-19)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-19</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-19</guid>
-    <description><![CDATA[## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/accountaccess`: [v1.1.0](service/accountaccess/CHANGELOG.md#v110-2026-08-19)
- * **Feature**: Adds throttling exceptions to operation outputs that were previously inconsistent with other operations.
-* `github.com/aws/aws-sdk-go-v2/service/batch`: [v1.69.0](service/batch/CHANGELOG.md#v1690-2026-08-19)
- * **Feature**: AWS Batch now supports managing CloudWatch Container Insights on compute environments via CreateComputeEnvironment and UpdateComputeEnvironment.
-* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcore`: [v1.40.0](service/bedrockagentcore/CHANGELOG.md#v1400-2026-08-19)
- * **Feature**: AgentCore Memory now supports Flexible Namespaces and Non-Conversational Payloads in CreateEvent API
-* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcorecontrol`: [v1.58.0](service/bedrockagentcorecontrol/CHANGELOG.md#v1580-2026-08-19)
- * **Feature**: AgentCore Memory now supports Flexible Namespaces
-* `github.com/aws/aws-sdk-go-v
+    <title>[denoland/rusty_v8] v152.2.0</title>
+    <link>https://github.com/denoland/rusty_v8/releases/tag/v152.2.0</link>
+    <guid isPermaLink="true">https://github.com/denoland/rusty_v8/releases/tag/v152.2.0</guid>
+    <description><![CDATA[No release notes provided.]]></description>
+    <pubDate>Thu, 20 Aug 2026 18:33:32 GMT</pubDate>
+  </item>
+  <item>
+    <title>[microsoft/TypeScript] TypeScript 7.0.2 (v7.0.2)</title>
+    <link>https://github.com/microsoft/TypeScript/releases/tag/v7.0.2</link>
+    <guid isPermaLink="true">https://github.com/microsoft/TypeScript/releases/tag/v7.0.2</guid>
+    <description><![CDATA[This tag was originally released at:]]></description>
+    <pubDate>Thu, 20 Aug 2026 18:09:49 GMT</pubDate>
+  </item>
+  <item>
+    <title>[rust-lang/rust] Rust 1.98.0 (1.98.0)</title>
+    <link>https://github.com/rust-lang/rust/releases/tag/1.98.0</link>
+    <guid isPermaLink="true">https://github.com/rust-lang/rust/releases/tag/1.98.0</guid>
+    <description><![CDATA[<a id="1.98.0-Language"></a>
+
+## Language
+
+- Allow shortening lifetime of `&mut` when unsize-coercing, even in an invariant position. For example, you can now coerce a `Cell<&'long mut i32>` to a `Cell<&'short mut dyn Send>`. Such shortenings were already previously allowed when coercing a `&mut` to a `&`, or coercing a `&` to a `&`.
+- Add deny-by-default `invalid_runtime_symbol_definitions` lint and warn-by-default `suspicious_runtime_symbol_definitions` lint
+ - The lints currently specifically targets `core` runtime symbols like `memcmp`, `memset`, `strlen`, ... and is planned to be expanded in the next few releases.
+- Add warn-by-default `c_void_returns` lint to check `core::ffi::c_void` as a return type
+
+<a id="1.98.0-Platform-Support"></a>
+
+## Platform Support
+
+- Add `powerpc64-unknown-linux-gnuelfv2` as Tier 3
+- Add `aarch64-unknown-linux-pauthtest` as Tier 3 target
+- Promote `thumbv7a-none-eabi` to Tier 2
+- Promote `thumbv7a-none-eabihf` to Tier 2
+- Promote `thumbv7r-none-eabi` 
 
 ... (truncated)]]></description>
-    <pubDate>Wed, 19 Aug 2026 19:16:07 GMT</pubDate>
+    <pubDate>Thu, 20 Aug 2026 18:05:33 GMT</pubDate>
+  </item>
+  <item>
+    <title>[oven-sh/bun] Bun v1.4 (bun-v1.4.0)</title>
+    <link>https://github.com/oven-sh/bun/releases/tag/bun-v1.4.0</link>
+    <guid isPermaLink="true">https://github.com/oven-sh/bun/releases/tag/bun-v1.4.0</guid>
+    <description><![CDATA[To install Bun v1.4
+```bash
+curl -fsSL | bash
+# or you can use npm
+# npm install -g bun
+```
+
+Windows:
+```bash
+powershell -c "irm bun.com/install.ps1|iex"
+```
+
+To upgrade to Bun v1.4.0:
+```bash
+bun upgrade
+```
+
+Read the blog post:
+<a href="">
+<img width="1672" height="941" alt="image (1)" src="" />
+</a>
+
+
+
+### Thank you
+
+Bun is free, open source, and MIT-licensed. We receive a lot of contributions from the community, and we'd like to thank everyone who fixed a bug or contributed since Bun v1.3.
+
+- @190n
+- @alanstott
+- @alii
+- @alinalihassan
+- @amdad121
+- @ant-kurt
+- @anthonybaldwin
+- @avarayr
+- @baboon-king
+- @billywhizz
+- @bmwalters
+- @Boshen
+- @braden-w
+- @c-stoeckl
+- @carlsmedstad
+- @chrislloyd
+- @cirospaciari
+- @coleleavitt
+- @connerlphillippi
+- @crishoj
+- @csvlad
+- @d4mr
+- @darwin808
+- @ddmoney420
+- @dioro
+- @djs5008
+- @dylan-conway
+- @Elfayer
+- @emwadde
+- @eroderust
+- @fraidev
+- @franklinfollis
+- @gameroman
+- @gaowhen
+-
+
+... (truncated)]]></description>
+    <pubDate>Thu, 20 Aug 2026 14:07:21 GMT</pubDate>
+  </item>
+  <item>
+    <title>[bluesky-social/social-app] 1.131.1</title>
+    <link>https://github.com/bluesky-social/social-app/releases/tag/1.131.1</link>
+    <guid isPermaLink="true">https://github.com/bluesky-social/social-app/releases/tag/1.131.1</guid>
+    <description><![CDATA[## What's Changed
+* Send beta user state with AppView requests by @ds-boyce in 
+* Add statsOptions to Webpack configuration by @abulenok in 
+* Clear the cached initial URL after handling a deep link by @mozzius in 
+* Bump anthropics/claude-code-action from 1.0.189 to 1.0.190 in the actions group by @dependabot[bot] in 
+* Only persist successful queries by @mozzius in 
+* Unblock React Compiler for PostFeed by @tomekzaw in 
+* Bump React Compiler to stable 1.0.0 by @tomekzaw in 
+* Bump version to v1.132.0 by @mozzius in 
+* Fix profile handle resolution errors by @mozzius in 
+* Invert password reveal eye icon by @mozzius in 
+* Fix MMKV persistence in Metro builds by @mozzius in 
+* Fix HLS playback in Chrome embeds by @mozzius in 
+* Log slow Blink database operations by @amckinley in 
+* translations by @vineyardbovines in 
+* Omit non-positive SEO comment counts by @blackmichael in 
+* Revert "Bump React Compiler to stable 1.0.0" by @mozzius in 
+
+
+**Full Changelog**:]]></description>
+    <pubDate>Thu, 20 Aug 2026 12:55:09 GMT</pubDate>
+  </item>
+  <item>
+    <title>[panva/openid-client] v6.8.7</title>
+    <link>https://github.com/panva/openid-client/releases/tag/v6.8.7</link>
+    <guid isPermaLink="true">https://github.com/panva/openid-client/releases/tag/v6.8.7</guid>
+    <description><![CDATA[### Fixes
+
+* allow destructuring the claims helper (38bd8c0), references #887]]></description>
+    <pubDate>Thu, 20 Aug 2026 11:19:03 GMT</pubDate>
+  </item>
+  <item>
+    <title>[go-chi/chi] v5.3.2</title>
+    <link>https://github.com/go-chi/chi/releases/tag/v5.3.2</link>
+    <guid isPermaLink="true">https://github.com/go-chi/chi/releases/tag/v5.3.2</guid>
+    <description><![CDATA[## What's Changed
+* feat(middleware): add text/markdown, text/csv, text/vtt to default compressible types by @VojtechVitek in 
+* docs: deployment recipe for middleware.ClientIPFromXFFTrustedProxies by @VojtechVitek in 
+* fix: don't drop handlers that collide with a Mount/Route pattern by @VojtechVitek in 
+* Don't duplicate methods in Allow: header for 405 responses by @flimzy in 
+* fix(middleware): reject catch-all compress wildcards by @VojtechVitek in 
+ * `middleware.NewCompressor(level, "/*")` never worked and silently compressed nothing. Instead of turning it into a compress-everything catch-all (as proposed in and ), we decided to reject both "/*" and "*/*" at construction and panic. Compressing every response wastes CPU on already-compressed types (zip, jpeg, png), which is why the middleware keeps a curated default list. Users should pass explicit content types.
+
+
+**Full Changelog**:]]></description>
+    <pubDate>Thu, 20 Aug 2026 10:04:47 GMT</pubDate>
+  </item>
+  <item>
+    <title>[inokawa/virtua] 0.50.3</title>
+    <link>https://github.com/inokawa/virtua/releases/tag/0.50.3</link>
+    <guid isPermaLink="true">https://github.com/inokawa/virtua/releases/tag/0.50.3</guid>
+    <description><![CDATA[## What's Changed
+* Refactor core by @inokawa in 
+* Stabilize CacheSnapshot by @inokawa in 
+* Fix angular handle by @inokawa in 
+
+
+**Full Changelog**:]]></description>
+    <pubDate>Thu, 20 Aug 2026 09:51:25 GMT</pubDate>
+  </item>
+  <item>
+    <title>[anomalyco/opencode] v1.18.19</title>
+    <link>https://github.com/anomalyco/opencode/releases/tag/v1.18.19</link>
+    <guid isPermaLink="true">https://github.com/anomalyco/opencode/releases/tag/v1.18.19</guid>
+    <description><![CDATA[## Core
+
+### Improvements
+
+- Added native OpenAI and Anthropic passthroughs for Cloudflare AI Gateway models.
+- Matched Codex rate limits more closely to ChatGPT subscription limits. (@GameOn223)
+
+### Bugfixes
+
+- Removed built-in Qwen sampling defaults that could send unsupported settings.
+- Properly show authenticated providers in `/connect`. (@OpeOginni)
+- Ignore malformed model pricing instead of breaking usage cost calculation.
+- Fall back when OpenAI websocket requests exceed message size limits.
+- Forward ChatGPT workspace compute residency to Codex requests.
+- Updated the default Console URL used by account connection flows.
+- Enabled web search when using the OpenCode Go provider.
+- Preserved compatibility with existing v1 databases.
+
+## Desktop
+
+### Bugfixes
+
+- Kept saved server details editable in the server dialog.
+
+**Thank you to 4 community contributors:**
+- @TechyAditya:
+ - fix(skills): Update global config path in documentation (#42337)
+- @GameOn223:
+ - tweak: match code
+
+... (truncated)]]></description>
+    <pubDate>Thu, 20 Aug 2026 06:22:06 GMT</pubDate>
+  </item>
+  <item>
+    <title>[vitejs/vite] v8.2.2</title>
+    <link>https://github.com/vitejs/vite/releases/tag/v8.2.2</link>
+    <guid isPermaLink="true">https://github.com/vitejs/vite/releases/tag/v8.2.2</guid>
+    <description><![CDATA[Please refer to CHANGELOG.md for details.]]></description>
+    <pubDate>Thu, 20 Aug 2026 04:08:13 GMT</pubDate>
+  </item>
+  <item>
+    <title>[ollama/ollama] v0.32.15</title>
+    <link>https://github.com/ollama/ollama/releases/tag/v0.32.15</link>
+    <guid isPermaLink="true">https://github.com/ollama/ollama/releases/tag/v0.32.15</guid>
+    <description><![CDATA[## What's Changed
+* New desktop onboarding flow on first launch
+* Caches resolved model metadata between requests, cutting time-to-first-token by roughly half (TTFT dropped from ~995 ms to ~524 ms in benchmarks)
+* Fixes a bug where chat and generate could wedge after a mid-stream parser error
+* **Qwen 3.8** system messages are now normalized so non-leading system messages are handled consistently
+* MLX and llama.cpp dependency updates
+
+## New Contributors
+* @gaugarg-nv made their first contribution in 
+
+**Full Changelog**:]]></description>
+    <pubDate>Wed, 19 Aug 2026 17:25:16 GMT</pubDate>
   </item>
   <item>
     <title>[zed-industries/zed] v1.16.1</title>
@@ -166,28 +484,6 @@ specify init my-project
     <pubDate>Wed, 19 Aug 2026 08:40:33 GMT</pubDate>
   </item>
   <item>
-    <title>[openai/codex] 0.148.0 (rust-v0.148.0)</title>
-    <link>https://github.com/openai/codex/releases/tag/rust-v0.148.0</link>
-    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.148.0</guid>
-    <description><![CDATA[## New Features
-
-- Export complete TUI conversations to Markdown with `/export`, either to the clipboard or a new file. (#37358)
-- Fork sessions with `codex exec fork`, and archive or restore sessions from the TUI resume picker. (#37367, #37369, #37371)
-- Draft prompts while the TUI initializes, with resume and fork progress shown during startup. (#38642, #38788)
-- View estimated thread credits or cost in `/status`, status lines, and terminal titles for eligible workspaces. (#38281, #38282)
-- Use Amazon Bedrock Runtime as a built-in provider with AWS profile, region, and GPT-5.6 routing support. (#38470)
-- Hooks can now run commands asynchronously and invoke MCP tools. (#37533, #38705)
-
-## Bug Fixes
-
-- Model switches and settings updates no longer leave stale instructions behind or change an active turn midstream. (#37260, #38785)
-- Resumed sessions now restore their persisted working directory and approval policy, with more accurate transcript previews. (#37198, #37368, #38605)
-- Turn
-
-... (truncated)]]></description>
-    <pubDate>Tue, 18 Aug 2026 22:26:03 GMT</pubDate>
-  </item>
-  <item>
     <title>[microsoft/WSL] 2.7.12</title>
     <link>https://github.com/microsoft/WSL/releases/tag/2.7.12</link>
     <guid isPermaLink="true">https://github.com/microsoft/WSL/releases/tag/2.7.12</guid>
@@ -220,31 +516,6 @@ specify init my-project
 
 @GeorgijGrigoriev,@Osamaali313 @Patrick-Erichsen,@dylanpulver @fenfenxu,@hcjmartin @initred,@quuu @statik]]></description>
     <pubDate>Tue, 18 Aug 2026 20:28:43 GMT</pubDate>
-  </item>
-  <item>
-    <title>[bluesky-social/social-app] 1.131.0</title>
-    <link>https://github.com/bluesky-social/social-app/releases/tag/1.131.0</link>
-    <guid isPermaLink="true">https://github.com/bluesky-social/social-app/releases/tag/1.131.0</guid>
-    <description><![CDATA[## What's Changed
-* Update claude action by @mozzius in 
-* Route Claude workflows through Agent Gateway by @amckinley in 
-* Bump version to v1.131.0 by @mozzius in 
-* claude: use Opus 4.8 for GitHub workflows by @amckinley in 
-* perf: skip minute-tick subscription for actors without a live status by @tomekzaw in 
-* Bump the actions group with 4 updates by @dependabot[bot] in 
-* Update pnpm to 11.21.0 by @mozzius in 
-* Fix appearance of post numbers on image posts by @ds-boyce in 
-* Disallow robots crawling compose intent paths by @blackmichael in 
-* Prevent last line of post text from being clipped on Android by @ds-boyce in 
-* Fix layout jog when rendering post numbers by @ds-boyce in 
-* algo team reply feedback by @jlgleason in 
-* Add asset licensing notices by @mozzius in 
-* Separate landing illustrations from splash assets by @mozzius in 
-* Fix frozen unknown device ID for new accounts by @ds-boyce in 
-* Client events for beta features settings page by @abenzer in 
-
-... (truncated)]]></description>
-    <pubDate>Tue, 18 Aug 2026 16:21:38 GMT</pubDate>
   </item>
   <item>
     <title>[godotengine/godot] 4.7.2-stable</title>
@@ -322,36 +593,6 @@ Run `dprint upgrade` or see
     <pubDate>Tue, 18 Aug 2026 13:11:58 GMT</pubDate>
   </item>
   <item>
-    <title>[panva/openid-client] v6.8.6</title>
-    <link>https://github.com/panva/openid-client/releases/tag/v6.8.6</link>
-    <guid isPermaLink="true">https://github.com/panva/openid-client/releases/tag/v6.8.6</guid>
-    <description><![CDATA[### Fixes
-
-* avoid undefined user-agent in fetchProtectedResource (492c3c3), references #885]]></description>
-    <pubDate>Tue, 18 Aug 2026 12:24:39 GMT</pubDate>
-  </item>
-  <item>
-    <title>[anomalyco/opentui] Release v0.5.4 (v0.5.4)</title>
-    <link>https://github.com/anomalyco/opentui/releases/tag/v0.5.4</link>
-    <guid isPermaLink="true">https://github.com/anomalyco/opentui/releases/tag/v0.5.4</guid>
-    <description><![CDATA[## What's Changed
-* ot web blue by @simonklee in 
-* web: add package index by @simonklee in 
-* web: improve documentation readability by @simonklee in 
-* packages: add remote facts for community entries by @simonklee in 
-* packages: declutter package headers by @simonklee in 
-* scrollback: add package index text by @simonklee in 
-* docs: add interactive core quickstart by @simonklee in 
-* docs: refactor website documentation by @simonklee in 
-* fix(core): use blocks fallback for forced Sixel placements on Kitty by @simonklee in 
-* renderer: clear stale mouse input by @simonklee in 
-* core: fix GNU Screen OSC 52 passthrough by @simonklee in 
-
-
-**Full Changelog**:]]></description>
-    <pubDate>Tue, 18 Aug 2026 11:35:42 GMT</pubDate>
-  </item>
-  <item>
     <title>[honojs/hono] v4.13.3</title>
     <link>https://github.com/honojs/hono/releases/tag/v4.13.3</link>
     <guid isPermaLink="true">https://github.com/honojs/hono/releases/tag/v4.13.3</guid>
@@ -387,18 +628,6 @@ This release is one of the largest in Floci's history: **nine new services** inc
 
 ... (truncated)]]></description>
     <pubDate>Tue, 18 Aug 2026 05:24:40 GMT</pubDate>
-  </item>
-  <item>
-    <title>[inokawa/virtua] 0.50.2</title>
-    <link>https://github.com/inokawa/virtua/releases/tag/0.50.2</link>
-    <guid isPermaLink="true">https://github.com/inokawa/virtua/releases/tag/0.50.2</guid>
-    <description><![CDATA[## What's Changed
-* Update vite config for vue by @inokawa in 
-* Improve SSR support in svelte by @inokawa in 
-
-
-**Full Changelog**:]]></description>
-    <pubDate>Tue, 18 Aug 2026 04:01:26 GMT</pubDate>
   </item>
   <item>
     <title>[markedjs/marked] v18.0.10</title>
@@ -529,17 +758,6 @@ This release ships a complete Temporal implementation that passes 100% of the te
     <pubDate>Mon, 17 Aug 2026 07:58:24 GMT</pubDate>
   </item>
   <item>
-    <title>[ollama/ollama] v0.32.14</title>
-    <link>https://github.com/ollama/ollama/releases/tag/v0.32.14</link>
-    <guid isPermaLink="true">https://github.com/ollama/ollama/releases/tag/v0.32.14</guid>
-    <description><![CDATA[## What's Changed
-* llm: transcode WebP images for llama-server 
-* renderers/qwen: tolerate non-leading system messages
-
-**Full Changelog**:]]></description>
-    <pubDate>Sat, 15 Aug 2026 19:41:23 GMT</pubDate>
-  </item>
-  <item>
     <title>[pnpm/pnpm] pnpm 11.22 (v11.22.0)</title>
     <link>https://github.com/pnpm/pnpm/releases/tag/v11.22.0</link>
     <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v11.22.0</guid>
@@ -610,21 +828,6 @@ curl --proto '=https' --tlsv1.2 -LsSf | sh
     <pubDate>Fri, 14 Aug 2026 19:57:52 GMT</pubDate>
   </item>
   <item>
-    <title>[BabylonJS/Babylon.js] 9.21.2</title>
-    <link>https://github.com/BabylonJS/Babylon.js/releases/tag/9.21.2</link>
-    <guid isPermaLink="true">https://github.com/BabylonJS/Babylon.js/releases/tag/9.21.2</guid>
-    <description><![CDATA[### Core
-
-- Fix alpha-mode sentinel crash and report accurate caps and depth/stencil metadata - by bkaradzic-microsoft (#18804)
-- Fix three IBL rendering bugs: AreaLights prefilter type, OpenPBR anisotropic inlining, black diffuse fallback - by bkaradzic-microsoft (#18803)
-- Fix particle node material async shader creation - [_Bug Fix_] by VicenteCartas (#18802)
-
-### Inspector
-
-- Normalize editor module resolution across all build configs - [_Bug Fix_] by ryantrem (#18801)]]></description>
-    <pubDate>Fri, 14 Aug 2026 18:06:20 GMT</pubDate>
-  </item>
-  <item>
     <title>[nestjs/nest] v11.2.1</title>
     <link>https://github.com/nestjs/nest/releases/tag/v11.2.1</link>
     <guid isPermaLink="true">https://github.com/nestjs/nest/releases/tag/v11.2.1</guid>
@@ -654,26 +857,6 @@ curl --proto '=https' --tlsv1.2 -LsSf | sh
  `captureUncaughtException`, so the PDS records uncaught exceptions as OTEL runtime
  events when telemetry is enabled.]]></description>
     <pubDate>Fri, 14 Aug 2026 10:35:36 GMT</pubDate>
-  </item>
-  <item>
-    <title>[vercel/next.js] v16.3.1</title>
-    <link>https://github.com/vercel/next.js/releases/tag/v16.3.1</link>
-    <guid isPermaLink="true">https://github.com/vercel/next.js/releases/tag/v16.3.1</guid>
-    <description><![CDATA[## What's Changed
-* [16.x] Turbopack: don't strip async-module runtime from shared runtime chunks by @lukesandberg in 
-* [16.x] [turbopack] Add `turbopack_ecmascript` and `turbopack_wasm`'s embeded FS to `internal_assets_conditions` by @lukesandberg in 
-* [16.x] [turbopack] Collapse nested promises in the analyzer by @sampoder in 
-* [16.x] fix(next/image): preserve image response after optimization by @styfle in 
-* [16.3.x] Default deploy e2e tests to the repo next version by @eps1lon in 
-* [backport] Bump @swc/helpers by @mischnic in 
-* [backport] [turbopack] Raise registration calls in hoisted modules to the top by @lukesandberg in 
-* [backport] Fix missing styled-jsx styles in Pages Router SSR on adapter builds by @lukesandberg in 
-* [backport] [turbopack] Fix HMR for dynamic imports evaluated from layouts by @lukesandberg in 
-* [backport] Restore the live `headers` view of the incoming request by @unstubbable in 
-* [backport] Allow literal exports in `'use cache'` files 
-
-... (truncated)]]></description>
-    <pubDate>Thu, 13 Aug 2026 22:48:45 GMT</pubDate>
   </item>
   <item>
     <title>[podman-container-tools/podman] v5.8.6</title>
@@ -736,31 +919,6 @@ WinAppSDK 1.8.11 is the latest stable servicing release for 1.8, with fixes for 
 
 ... (truncated)]]></description>
     <pubDate>Thu, 13 Aug 2026 10:32:13 GMT</pubDate>
-  </item>
-  <item>
-    <title>[anomalyco/opencode] v1.18.18</title>
-    <link>https://github.com/anomalyco/opencode/releases/tag/v1.18.18</link>
-    <guid isPermaLink="true">https://github.com/anomalyco/opencode/releases/tag/v1.18.18</guid>
-    <description><![CDATA[## Core
-### Bugfixes
-- Select the Kimi system prompt correctly for official Moonshot and Kimi providers
-- Fix xhigh reasoning effort for xai models]]></description>
-    <pubDate>Thu, 13 Aug 2026 01:15:04 GMT</pubDate>
-  </item>
-  <item>
-    <title>[sveltejs/svelte] svelte@5.56.9</title>
-    <link>https://github.com/sveltejs/svelte/releases/tag/svelte%405.56.9</link>
-    <guid isPermaLink="true">https://github.com/sveltejs/svelte/releases/tag/svelte%405.56.9</guid>
-    <description><![CDATA[### Patch Changes
-
-- fix: skip controlled each fast path while another batch is pending (#18625)
-
-- fix: better whitespace handling inside printer (#18638)
-
-- fix: don't duplicate comments in attributes (#18636)
-
-- fix: preserve CSS comments in the AST printer (#18637)]]></description>
-    <pubDate>Wed, 12 Aug 2026 18:12:41 GMT</pubDate>
   </item>
   <item>
     <title>[containerd/containerd] containerd 2.2.7 (v2.2.7)</title>
@@ -858,100 +1016,6 @@ go install github.com/wailsapp/wails/v2/cmd/wails@v2.14.0
 
 - Fixed nil pointer crash and swallowed network error when downloading the WebView2 bootstrapper, which made the app exit instead of showing the installation error dialog by @jannskiee]]></description>
     <pubDate>Mon, 10 Aug 2026 09:36:33 GMT</pubDate>
-  </item>
-  <item>
-    <title>[privatenumber/tsx] v4.23.12</title>
-    <link>https://github.com/privatenumber/tsx/releases/tag/v4.23.12</link>
-    <guid isPermaLink="true">https://github.com/privatenumber/tsx/releases/tag/v4.23.12</guid>
-    <description><![CDATA[## 4.23.12 (2026-08-10)
-
-
-### Bug Fixes
-
-* shim `import.meta` when tokens are split by comments or newlines (#829) (ed9d330), closes #828
-
----
-This release is also available on:
-- npm package (@latest dist-tag)]]></description>
-    <pubDate>Mon, 10 Aug 2026 03:39:26 GMT</pubDate>
-  </item>
-  <item>
-    <title>[panva/node-oidc-provider] v9.11.3</title>
-    <link>https://github.com/panva/node-oidc-provider/releases/tag/v9.11.3</link>
-    <guid isPermaLink="true">https://github.com/panva/node-oidc-provider/releases/tag/v9.11.3</guid>
-    <description><![CDATA[### Fixes
-
-* omit undefined response parameters (0c65aa6)
-
-### Refactor
-
-* drop the @koa/cors runtime dependency (4eca0f2)
-* drop the eta runtime dependency (f0da9d2)
-* drop the jsesc runtime dependency (b2f6c0c)
-* drop the nanoid runtime dependency (86a42da)
-* drop the quick-lru runtime dependency (e818a6d)
-* drop the raw-body runtime dependency (9312ca7)
-* replace @koa/router with an internal router (3b33e5f)]]></description>
-    <pubDate>Sat, 08 Aug 2026 23:57:12 GMT</pubDate>
-  </item>
-  <item>
-    <title>[evanw/esbuild] v0.28.2</title>
-    <link>https://github.com/evanw/esbuild/releases/tag/v0.28.2</link>
-    <guid isPermaLink="true">https://github.com/evanw/esbuild/releases/tag/v0.28.2</guid>
-    <description><![CDATA[* Fix tree shaking bug due to TypeScript import alias (#4507)
-
- This release fixes a bug that could cause esbuild to incorrectly tree-shake imports that are used in a TypeScript type alias under certain circumstances. Affected code uses a TypeScript-specific `import` assignment and looks something like this:
-
- ```ts
- import Base from './dep.js';
- import Alias = Base.SomeType;
- ```
-
-* Fix CSS minification bug involving `&` (#4497)
-
- This release fixes a bug where esbuild's CSS minifier incorrectly removed a `&` when it was unsafe to do so. Here is an example:
-
- ```css
- /* Original code */
- .a .b {
- & .b:not(& .c) {
- color: red;
- }
- }
-
- /* Old output (with --minify) */
- .a .b{.b:not(& .c){color:red}}
-
- /* New output (with --minify) */
- .a .b{& .b:not(& .c){color:red}}
- ```
-
- This should match `<span class="a"><span class="b"><span class="b">yes</span></span></span>` but not `<span class="a"><span class="b">no</span></span>`. The old output incorrectly matched 
-
-... (truncated)]]></description>
-    <pubDate>Sat, 08 Aug 2026 19:58:58 GMT</pubDate>
-  </item>
-  <item>
-    <title>[openclaw/openclaw] openclaw 2026.6.34 (v2026.6.34)</title>
-    <link>https://github.com/openclaw/openclaw/releases/tag/v2026.6.34</link>
-    <guid isPermaLink="true">https://github.com/openclaw/openclaw/releases/tag/v2026.6.34</guid>
-    <description><![CDATA[## 2026.6.34
-
-### Highlights
-
-- **Safer browser and network boundaries:** sandboxed browser routes, trusted DNS targets, custom browser origins, and loopback provider endpoints now reject unsafe access paths. (#97958, #38290, #103075, #110693) Thanks @eleqtrizit, @brunowowk, @mosidevv, @pgondhi987, and @lsr911.
-- **More resilient agent and provider runs:** retained session writes, provider fallbacks, stream progress handling, and stdio failures now recover without silently ending active work. (#96100, #97128, #90908, #99803, #100521) Thanks @xialonglee, @sallyom, @richwilson-bloom, @LiuwqGit, @vincentkoc, @yetval, @shengting, and @cxbAsDev.
-- **Stronger channel recovery:** pending channel work resumes after recovery, acknowledgements are idempotent, and sustained Discord gateway bursts stay bounded. (#79811, #97041, #104919, #109108, #110954, #103793, #94016) Thanks @indulgeback, @cuiyuxin-gif, @Pick-cat, @Glucksberg, @evan-YM, @zhangguiping-xydt, @yetval, @sheyanmin, and @thomasthelen
-
-... (truncated)]]></description>
-    <pubDate>Sat, 08 Aug 2026 07:22:14 GMT</pubDate>
-  </item>
-  <item>
-    <title>[denoland/rusty_v8] v152.1.0</title>
-    <link>https://github.com/denoland/rusty_v8/releases/tag/v152.1.0</link>
-    <guid isPermaLink="true">https://github.com/denoland/rusty_v8/releases/tag/v152.1.0</guid>
-    <description><![CDATA[No release notes provided.]]></description>
-    <pubDate>Fri, 07 Aug 2026 23:21:35 GMT</pubDate>
   </item>
 </channel>
 </rss>
