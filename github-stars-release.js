@@ -124,6 +124,17 @@ async function getAllStarredReleases(username, token) {
                     tagName.includes("beta") || name.includes("beta")) {
                     return false;
                 }
+
+                // SemVerのパッチバージョン（X.Y.ZでZが0以外）を除外する
+                // プレフィックス(モノレポ等)、4桁目のビルド番号、非数字サフィックス(rc, alpha等)に対応
+                const semverMatch = tagName.trim().match(/(?:^|[^0-9.])v?(\d+)\.(\d+)\.(\d+)(?:\.(\d+))?(?:[^0-9].*)?$/i);
+                if (semverMatch) {
+                    const patch = semverMatch[3];
+                    if (parseInt(patch, 10) !== 0) {
+                        return false;
+                    }
+                }
+
                 return true;
             });
             if (latestRelease) {
