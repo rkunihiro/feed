@@ -126,7 +126,8 @@ async function getAllStarredReleases(username, token) {
                 }
 
                 // SemVerのパッチバージョン（X.Y.ZでZが0以外）を除外する
-                const semverMatch = tagName.trim().match(/^v?(\d+)\.(\d+)\.(\d+)(?:-.*)?$/i);
+                // プレフィックス(モノレポ等)、4桁目のビルド番号、+で始まるビルドメタデータに対応
+                const semverMatch = tagName.trim().match(/(?:^|[^0-9.])v?(\d+)\.(\d+)\.(\d+)(?:\.(\d+))?(?:-.*)?(?:\+.*)?$/i);
                 if (semverMatch) {
                     const patch = semverMatch[3];
                     if (parseInt(patch, 10) !== 0) {
