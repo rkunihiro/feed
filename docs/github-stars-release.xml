@@ -5,23 +5,207 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Sun, 23 Aug 2026 22:02:45 GMT</lastBuildDate>
+  <lastBuildDate>Mon, 24 Aug 2026 22:04:22 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
   <item>
-    <title>[pnpm/pnpm] pnpm 11.23 (v11.23.0)</title>
-    <link>https://github.com/pnpm/pnpm/releases/tag/v11.23.0</link>
-    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v11.23.0</guid>
-    <description><![CDATA[## Minor Changes
+    <title>[pnpm/pnpm] pnpm 11.24 (v11.24.0)</title>
+    <link>https://github.com/pnpm/pnpm/releases/tag/v11.24.0</link>
+    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v11.24.0</guid>
+    <description><![CDATA[### Minor Changes
 
-* `pnpm config get` and `pnpm config list` now show the settings pnpm acts on under their documented names:
+- Added global build approvals pnpm/pnpm#14101.
 
- * `registries` shows the registries pnpm resolves from, merged across every source (`.npmrc`, `pnpm-workspace.yaml`, the global config, CLI flags), in the shape the setting is written in: keyed by registry URL, with the default registry declared as the bare `@` scope. Built-in routes are included — the `@jsr` scope and the `npmjs` and `gh` prefixes — unless pointed elsewhere. Previously `pnpm config get registries` printed `undefined`.
- * `update` and `audit` show the effective sections, whichever spelling set them. The deprecated internal spellings (`updateConfig`, `auditConfig`, `auditLevel`) are no longer listed.
- * `catalogs` shows the complete resolved catalog set — the singular `catalog` block is its `default` entry — whichever spelling declared it.
- * The `registry` and `@scope:registry` entries show the merged routes rather than raw `.npmrc` val
+### Patch Changes
+
+- Fixed pnpm v11 incorrectly reporting `confirmModulesPurge` as unrecognized when set in `pnpm-workspace.yaml`. The Rust CLI now identifies the unsupported option as a pnpm v11 setting instead of suggesting an unrelated setting.
+
+- `pnpm install --frozen-lockfile` no longer fails with `ERR_PNPM_FROZEN_LOCKFILE_WITH_OUTDATED_LOCKFILE` when the pinned pnpm version recorded in `pnpm-lock.yaml` has to be re-resolved before it can be installed. It runs the pnpm version the lockfile pins and leaves the lockfile unchanged #14124.
+
+- Under `nodeLinker: hoisted`, peer-resolution variants of an injected directory dependency (a `file:` snapshot) are materialized as separate copies again instead of collapsing onto the first-seen variant. Each copy keeps its own peer-resolved dependency set, so a project pinning one peer version no longer resolves another project's variant — Bit root components with con
 
 ... (truncated)]]></description>
-    <pubDate>Sun, 23 Aug 2026 14:41:02 GMT</pubDate>
+    <pubDate>Mon, 24 Aug 2026 19:10:25 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1117.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1117.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1117.0</guid>
+    <description><![CDATA[#### 3.1117.0(2026-08-24)
+
+##### Documentation Changes
+
+* **client-batch:** Doc Update, Add note that UpdatePolicy applies only to EC2 managed compute environments (26c213cf)
+
+##### New Features
+
+* **client-securityagent:** Adding private and self-signed certificate configuration support for penetration tests (42f6ecb8)
+* **client-bedrock:** Adds support for specifying an inference profile ID or ARN, or an application inference profile ARN as the target model in CreateAdvancedPromptOptimizationJob. (9110f46b)
+* **client-connect-contact-lens:** This release adds the ExtractedInformation segment to the ListRealtimeContactAnalysisSegments API, enabling customers to retrieve information extracted from real-time contact analysis. (9c5bda85)
+* **client-dsql:** Corrected the validation pattern on the ServiceName response field in the GetVpcEndpointServiceName API to match the values Amazon Aurora DSQL actually returns. (1b689a9f)
+* **client-connect:** This release adds the ExtractedInformatio
+
+... (truncated)]]></description>
+    <pubDate>Mon, 24 Aug 2026 18:54:50 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-08-24) (release-2026-08-24)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-24</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-24</guid>
+    <description><![CDATA[## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/service/batch`: [v1.70.1](service/batch/CHANGELOG.md#v1701-2026-08-24)
+ * **Documentation**: Doc Update, Add note that UpdatePolicy applies only to EC2 managed compute environments
+* `github.com/aws/aws-sdk-go-v2/service/bedrock`: [v1.67.0](service/bedrock/CHANGELOG.md#v1670-2026-08-24)
+ * **Feature**: Adds support for specifying an inference profile ID or ARN, or an application inference profile ARN as the target model in CreateAdvancedPromptOptimizationJob.
+* `github.com/aws/aws-sdk-go-v2/service/connect`: [v1.190.0](service/connect/CHANGELOG.md#v11900-2026-08-24)
+ * **Feature**: This release adds the ExtractedInformation segment to the ListRealtimeContactAnalysisSegmentsV2 API, enabling customers to retrieve information extracted from real-time contact analysis.
+* `github.com/aws/aws-sdk-go-v2/service/connectcontactlens`: [v1.37.0](service/connectcontactlens/CHANGELOG.md#v1370-2026-08-24)
+ * **Feature**: This release adds the Extr
+
+... (truncated)]]></description>
+    <pubDate>Mon, 24 Aug 2026 18:53:55 GMT</pubDate>
+  </item>
+  <item>
+    <title>[mongodb/node-mongodb-native] v7.6.0</title>
+    <link>https://github.com/mongodb/node-mongodb-native/releases/tag/v7.6.0</link>
+    <guid isPermaLink="true">https://github.com/mongodb/node-mongodb-native/releases/tag/v7.6.0</guid>
+    <description><![CDATA[## 7.6.0 (2026-08-21)
+
+The MongoDB Node.js team is pleased to announce version 7.6.0 of the `mongodb` package!
+
+## Release Notes
+
+
+
+### HTTP proxy support for KMS requests in CSFLE and Queryable Encryption
+
+In-use encryption can now route KMS requests through an HTTP proxy. Set `kmsConnectCallback` on your `ClientEncryption` or auto-encryption options to control how the driver connects to a KMS host. The callback receives the target `host` and `port` and returns a connected socket (for example, a tunnel
+opened with HTTP CONNECT); the driver then performs the KMS TLS handshake over that socket using the provider's configured TLS options. This unblocks CSFLE and Queryable Encryption in environments that require an HTTP forward proxy for outbound KMS traffic, which the existing SOCKS5 `proxyOptions` does not cover.
+
+```ts
+const clientEncryption = new ClientEncryption(keyVaultClient, {
+ keyVaultNamespace,
+ kmsProviders,
+ // Establish the KMS connection through your HTTP proxy; the driver a
+
+... (truncated)]]></description>
+    <pubDate>Mon, 24 Aug 2026 17:29:10 GMT</pubDate>
+  </item>
+  <item>
+    <title>[typescript-eslint/typescript-eslint] v8.68.0</title>
+    <link>https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.68.0</link>
+    <guid isPermaLink="true">https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.68.0</guid>
+    <description><![CDATA[## 8.68.0 (2026-08-24)
+
+### 🚀 Features
+
+- **eslint-plugin:** [strict-void-return] add fix suggestions (#12086)
+- **utils:** support ESLint rule meta.languages (#12663)
+
+### 🩹 Fixes
+
+- **eslint-plugin:** [unified-signatures] deduplicate types in report (#12656)
+- **eslint-plugin:** [return-await] prevent autofix from breaking code in arrow-functions (#12707)
+- **eslint-plugin:** [unified-signatures] report identical signatures (#12678)
+- **eslint-plugin:** [no-unnecessary-type-assertion] prevent stack overflow in recursive types (#12711)
+- **eslint-plugin:** [no-floating-promises] setting `ignoreVoid: false` results in false negative in ArrowFunctionExpression (#12646)
+- **eslint-plugin:** [no-empty-object-type] ignore suggestions that result in invalid interfaces and export defaults (#12739)
+- **website:** playground crashes on `extends` configs (#12608)
+- **website:** account for thanks.dev and out-of-band donors in sponsors list (#12735)
+
+### ❤️ Thank You
+
+- Evy
+
+... (truncated)]]></description>
+    <pubDate>Mon, 24 Aug 2026 17:25:28 GMT</pubDate>
+  </item>
+  <item>
+    <title>[esm-dev/esm.sh] Server v138 (v138)</title>
+    <link>https://github.com/esm-dev/esm.sh/releases/tag/v138</link>
+    <guid isPermaLink="true">https://github.com/esm-dev/esm.sh/releases/tag/v138</guid>
+    <description><![CDATA[* Replace `rex` with the Go standard HTTP package. (#1387)
+* Harden loaders and package extraction against trust bypasses. (#1389)
+* Upgrade `cjs-module-lexer` to 1.1.0.
+* Fix package `main` overriding `exports`. (#1392)
+* Fix nested package import conditions. (#1394)
+* Fix TypeScript declaration transformation correctness and performance. (#1395)
+* Fix source map export analysis. (#1396)]]></description>
+    <pubDate>Mon, 24 Aug 2026 14:51:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>[axios/axios] v1.20.0</title>
+    <link>https://github.com/axios/axios/releases/tag/v1.20.0</link>
+    <guid isPermaLink="true">https://github.com/axios/axios/releases/tag/v1.20.0</guid>
+    <description><![CDATA[## v1.20.0 — August 19, 2026
+
+This release hardens runtime option handling, adds RFC 9110 status-code aliases, fixes Node.js and XHR reliability issues, and refreshes project tooling and documentation.
+
+## ⚠️ Breaking Changes & Deprecations
+
+- HTTP Status Naming: Added ContentTooLarge (413) and UnprocessableContent (422), while retaining PayloadTooLarge and UnprocessableEntity as backward-compatible deprecated aliases. (#11082)
+
+## 🔒 Security Fixes
+
+- Runtime Option Handling: Hardened behavioral configuration reads against shared and foreign prototype pollution and normalized unsafe interceptor replacement objects. This also clarifies Fetch redirect and custom implementation behavior, HTTP/2 DNS and proxy handling, CIDR-based NO_PROXY matching, and malformed data URI rejection; see the PR for documented compatibility effects. (#11141)
+
+## 🐛 Bug Fixes
+
+- Interceptor Lifecycle: Prevented unbounded handler-array growth by trimming trailing ejected interceptors without chan
+
+... (truncated)]]></description>
+    <pubDate>Mon, 24 Aug 2026 13:40:40 GMT</pubDate>
+  </item>
+  <item>
+    <title>[oxc-project/oxc] oxlint v1.80.0 &amp; oxfmt v0.65.0 (apps_v1.80.0)</title>
+    <link>https://github.com/oxc-project/oxc/releases/tag/apps_v1.80.0</link>
+    <guid isPermaLink="true">https://github.com/oxc-project/oxc/releases/tag/apps_v1.80.0</guid>
+    <description><![CDATA[## Table of Contents
+
+- [Oxlint v1.80.0](#oxlint-v1.80.0)
+- [Oxfmt v0.65.0](#oxfmt-v0.65.0)
+
+## Oxlint v1.80.0
+### 🚀 Features
+
+- 70c3e35 linter/typescript/no-confusing-non-null-assertion: Implement suggestion (#26012) (Mikhail Baev)
+
+### 🐛 Bug Fixes
+
+- 17ae11c linter/oxc/double-comparisons: Handle grouped logical expressions (#26044) (camc314)
+- 8a353a7 linter/eslint/no-control-regex: Refine help message text (#25996) (Rahul Mishra)
+- 8a9bdbd estree: Include decorators in `FormalParameterRest ` spans (#26021) (camc314)
+- 8d94cd1 linter/eslint/no-useless-rename: Preserve type modifiers (#26020) (Cameron)
+- 2cde1f6 rust: Address nightly deprecations (#25998) (Boshen)
+- 51d36d7 linter/vue: Resolve `vue` imports via shared import helpers (#25903) (Connor Shea)
+- 83a68d2 linter/react/no-react-children: Resolve `react` imports by symbol (#25901) (Connor Shea)
+- 124e196 linter: Resolve globals by reference, not by name (#25905) (Connor Shea)
+- a701bcc linter: Remove invalid React compiler d
+
+... (truncated)]]></description>
+    <pubDate>Mon, 24 Aug 2026 13:39:23 GMT</pubDate>
+  </item>
+  <item>
+    <title>[vitejs/vite] create-vite@9.2.0</title>
+    <link>https://github.com/vitejs/vite/releases/tag/create-vite%409.2.0</link>
+    <guid isPermaLink="true">https://github.com/vitejs/vite/releases/tag/create-vite%409.2.0</guid>
+    <description><![CDATA[### Features
+
+* **create-vite:** add nub package manager support (#23019) (c31c499)
+
+### Bug Fixes
+
+* **create-vite:** update moved eslint-react plugin links in generated README (#23284) (1cbf7d6)
+* **deps:** update all non-major dependencies (#23136) (14454fd)
+* **deps:** update all non-major dependencies (#23217) (ba958bd)
+* **deps:** update all non-major dependencies (#23337) (d550815)
+* **deps:** update rolldown-related dependencies (#23070) (7ac6f7f)
+
+### Miscellaneous Chores
+
+* **create-vite:** mention experimental react compiler support (#23306) (1fb8afe)
+* replace prettier comment with oxfmt (#23318) (e79c471)
+* use oxfmt `sortImports` (#23319) (97ad042)]]></description>
+    <pubDate>Mon, 24 Aug 2026 04:58:55 GMT</pubDate>
   </item>
   <item>
     <title>[chakra-ui/ark] @ark-ui/vue@5.39.0</title>
@@ -84,52 +268,6 @@
 
 ... (truncated)]]></description>
     <pubDate>Fri, 21 Aug 2026 20:31:08 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-js-v3] v3.1116.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1116.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1116.0</guid>
-    <description><![CDATA[#### 3.1116.0(2026-08-21)
-
-##### Chores
-
-* **codegen:**
- * bump smithyVersion to 1.73.0 (#8273) (64f21cd0)
- * update to sync with the latest smithy-ts (#8272) (8369ada7)
-
-##### Documentation Changes
-
-* **client-backup:** Updating CLI Docs for Backup Audit Manager List Job Summaries APIs. (98f47ffe)
-* **client-wafv2:** DataProtectionConfig field Key Documentation Update (a8f1fb90)
-
-##### New Features
-
-* **client-cloudwatch:** Allows customers to specify an initial warm up period to wait for metrics to arrive when creating metric or log alarms (e354f162)
-* **client-device-farm:** Added support to CreateRemoveAccessSession for selecting a server version on the mobile WebDriver endpoint. (d91e09c8)
-* **client-bedrock-agentcore:** Increase spans count from 1k to 20k (e83264aa)
-* **client-kinesis:** Generate account endpoint for Kinesis Data Streams requests when the account ID is available (ed9966e2)
-* **client-bedrock-agentcore-control:** Update Dataset schema to THIRDPARTYEVALUATIONV1 (f0
-
-... (truncated)]]></description>
-    <pubDate>Fri, 21 Aug 2026 19:03:46 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-08-21) (release-2026-08-21)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-21</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-21</guid>
-    <description><![CDATA[## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/backup`: [v1.60.4](service/backup/CHANGELOG.md#v1604-2026-08-21)
- * **Documentation**: Updating CLI Docs for Backup Audit Manager List Job Summaries APIs.
-* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcorecontrol`: [v1.59.0](service/bedrockagentcorecontrol/CHANGELOG.md#v1590-2026-08-21)
- * **Feature**: Update Dataset schema to THIRDPARTYEVALUATIONV1
-* `github.com/aws/aws-sdk-go-v2/service/cloudwatch`: [v1.67.0](service/cloudwatch/CHANGELOG.md#v1670-2026-08-21)
- * **Feature**: Allows customers to specify an initial warm up period to wait for metrics to arrive when creating metric or log alarms
-* `github.com/aws/aws-sdk-go-v2/service/devicefarm`: [v1.43.0](service/devicefarm/CHANGELOG.md#v1430-2026-08-21)
- * **Feature**: Added support to CreateRemoveAccessSession for selecting a server version on the mobile WebDriver endpoint.
-* `github.com/aws/aws-sdk-go-v2/service/kinesis`: [v1.47.0](service/kinesis/CHANGELOG.md#v1470-2
-
-... (truncated)]]></description>
-    <pubDate>Fri, 21 Aug 2026 19:01:01 GMT</pubDate>
   </item>
   <item>
     <title>[eslint/eslint] v10.9.0</title>
@@ -243,27 +381,6 @@ For more information about semantic search see: "Improved Search for github issu
 
 ... (truncated)]]></description>
     <pubDate>Thu, 20 Aug 2026 22:15:58 GMT</pubDate>
-  </item>
-  <item>
-    <title>[openai/codex] 0.149.0 (rust-v0.149.0)</title>
-    <link>https://github.com/openai/codex/releases/tag/rust-v0.149.0</link>
-    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.149.0</guid>
-    <description><![CDATA[## New Features
-
-- Added an interactive `codex agents` dashboard for searching, starting, opening, renaming, and stopping tasks, with configurable shortcuts. (#39094, #39112, #39114, #39142)
-- Added `/cd`, `/pwd`, and `/cwd` commands for managing the working directory in TUI sessions. (#38894)
-- Added `codex queue` for sending messages to existing local or remote sessions. (#39092)
-- Expanded Vim editing with character replacement and more change motions such as `cw`, `c$`, and `cc`. (#39661)
-- `codex doctor` now diagnoses endpoint protection, network/proxy failures, desktop app state, and update connectivity. (#38827, #38918, #39060, #39074)
-- SDK users can now pass exact CLI config overrides and select `max` or `ultra` reasoning effort. (#38817, #39662)
-
-## Bug Fixes
-
-- Queued messages now wake idle sessions reliably, resolve duplicate session names more usefully, and preserve pasted or deferred command semantics. (#39034, #39385, #39604)
-- Resumed and forked threads now restore thei
-
-... (truncated)]]></description>
-    <pubDate>Thu, 20 Aug 2026 21:04:55 GMT</pubDate>
   </item>
   <item>
     <title>[denoland/rusty_v8] v152.2.0</title>
@@ -383,33 +500,6 @@ Bun is free, open source, and MIT-licensed. We receive a lot of contributions fr
 
 - Normalize editor module resolution across all build configs - [_Bug Fix_] by ryantrem (#18801)]]></description>
     <pubDate>Thu, 20 Aug 2026 07:42:53 GMT</pubDate>
-  </item>
-  <item>
-    <title>[oxc-project/oxc] oxc crates_v0.146.0 (crates_v0.146.0)</title>
-    <link>https://github.com/oxc-project/oxc/releases/tag/crates_v0.146.0</link>
-    <guid isPermaLink="true">https://github.com/oxc-project/oxc/releases/tag/crates_v0.146.0</guid>
-    <description><![CDATA[### 🚀 Features
-
-- 83cb516 minifier: Improve negation of expressions in boolean context (#25755) (Armano)
-
-### 🐛 Bug Fixes
-
-- 82a790d codegen: Narrow printSync input type (#25871) (camc314)
-- 134fb22 isolated-declarations: Preserve unresolved parameter types (#25909) (Dunqing)
-- 526c2b3 codegen: Remove deprecated test APIs (#25889) (camc314)
-- 344a9b2 codegen: Align enum template sourcemaps (#25872) (camc314)
-
-### ⚡ Performance
-
-- 603b904 packages/codegen: Check `sourceText` only once (#25887) (overlookmotel)
-- 5ef0c93 minifier: Unwrap all unary exprs without creating dummy expressions (#25891) (Armano)
-- 8783524 packages/codegen: Remove loop from `growMappingBuffer` (#25886) (overlookmotel)
-- b6b14c0 packages/codegen: Remove redundant branch (#25885) (overlookmotel)
-- be6adf0 packages/sourcemap: Make `location` passed to `recordSourceMapping` always a number (#25884) (overlookmotel)
-- f720f15 packages/codegen: Take named-mapping only code off hot path in `recordSourceMapping` (#25883
-
-... (truncated)]]></description>
-    <pubDate>Wed, 19 Aug 2026 08:40:33 GMT</pubDate>
   </item>
   <item>
     <title>[bluesky-social/social-app] 1.131.0</title>
@@ -652,27 +742,6 @@ Windows App SDK 2.4.0 is the latest stable release on the 2.x line, adding expan
 
 ... (truncated)]]></description>
     <pubDate>Wed, 12 Aug 2026 15:53:56 GMT</pubDate>
-  </item>
-  <item>
-    <title>[typescript-eslint/typescript-eslint] v8.67.0</title>
-    <link>https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.67.0</link>
-    <guid isPermaLink="true">https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.67.0</guid>
-    <description><![CDATA[## 8.67.0 (2026-08-10)
-
-### 🚀 Features
-
-- **typescript-eslint:** export basic globs for using tseslint (#12105)
-
-### ❤️ Thank You
-
-- Evyatar Daud @StyleShit
-- Josh Goldberg ✨
-- Kirk Waiblinger @kirkwaiblinger
-
-See GitHub Releases for more information.
-
-You can read about our versioning strategy and releases on our website.]]></description>
-    <pubDate>Mon, 10 Aug 2026 17:18:26 GMT</pubDate>
   </item>
   <item>
     <title>[wailsapp/wails] Wails v2.14.0 (v2.14.0)</title>
@@ -972,13 +1041,6 @@ Full Release Notes]]></description>
     <pubDate>Thu, 30 Jul 2026 16:18:43 GMT</pubDate>
   </item>
   <item>
-    <title>[vitejs/vite] v8.2.0</title>
-    <link>https://github.com/vitejs/vite/releases/tag/v8.2.0</link>
-    <guid isPermaLink="true">https://github.com/vitejs/vite/releases/tag/v8.2.0</guid>
-    <description><![CDATA[Please refer to CHANGELOG.md for details.]]></description>
-    <pubDate>Thu, 30 Jul 2026 12:00:47 GMT</pubDate>
-  </item>
-  <item>
     <title>[rancher-sandbox/rancher-desktop] Rancher Desktop 1.24 (v1.24.0)</title>
     <link>https://github.com/rancher-sandbox/rancher-desktop/releases/tag/v1.24.0</link>
     <guid isPermaLink="true">https://github.com/rancher-sandbox/rancher-desktop/releases/tag/v1.24.0</guid>
@@ -1018,13 +1080,6 @@ Pick your language under Preferences > Application > General. Along with English
 
 * ✨ Add `app.frontend(check_dir="auto")`, to make local development more convenient with `fastapi dev`. PR #16102 by @tiangolo.]]></description>
     <pubDate>Wed, 29 Jul 2026 14:47:36 GMT</pubDate>
-  </item>
-  <item>
-    <title>[esm-dev/esm.sh] Server v137_8 (v137_8)</title>
-    <link>https://github.com/esm-dev/esm.sh/releases/tag/v137_8</link>
-    <guid isPermaLink="true">https://github.com/esm-dev/esm.sh/releases/tag/v137_8</guid>
-    <description><![CDATA[* Fix redirect urls for `raw.esm.sh` hostname. (#1385)]]></description>
-    <pubDate>Wed, 29 Jul 2026 07:51:03 GMT</pubDate>
   </item>
   <item>
     <title>[warpdotdev/warp] TUI Screenshots APP-5029 (delete after PR review) (tui-screenshots-app5029)</title>
@@ -1112,23 +1167,6 @@ There are no breaking changes to the configuration of the uv build backend. If y
 
 ... (truncated)]]></description>
     <pubDate>Mon, 27 Jul 2026 09:30:15 GMT</pubDate>
-  </item>
-  <item>
-    <title>[jsdom/jsdom] v30.0.0</title>
-    <link>https://github.com/jsdom/jsdom/releases/tag/v30.0.0</link>
-    <guid isPermaLink="true">https://github.com/jsdom/jsdom/releases/tag/v30.0.0</guid>
-    <description><![CDATA[Breaking changes:
-
-- Node.js minimum version raised to `^22.22.2 || ^24.15.0 || >=26.0.0`.
-
-Other changes:
-
-* Added `CSS.escape` and `CSS.supports` functions. (@asamuzaK)
-* Added `'background-position-x'` and `'background-position-y'` CSS properties. (@olagokemills)
-* Fixed `getComputedStyle` to convert length values into pixels. (@asamuzaK)
-* Fixed CSS function serialization, e.g., in the return value of `getPropertyValue`. (@asamuzaK)
-* Fixed the type of error thrown by `document.evaluate` (@dokson)]]></description>
-    <pubDate>Mon, 27 Jul 2026 07:19:09 GMT</pubDate>
   </item>
 </channel>
 </rss>
