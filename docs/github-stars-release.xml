@@ -5,8 +5,50 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Mon, 24 Aug 2026 22:04:22 GMT</lastBuildDate>
+  <lastBuildDate>Tue, 25 Aug 2026 22:03:55 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-08-25) (release-2026-08-25)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-25</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-25</guid>
+    <description><![CDATA[## General Highlights
+* **Dependency Update**: Update to smithy-go v1.27.10.
+* **Dependency Update**: Updated to the latest SDK module versions
+
+## Module Highlights
+* `github.com/aws/aws-sdk-go-v2`: v1.43.8
+ * **Bug Fix**: Make X-Amz-Checksum-Mode appear on query parameters on presigned URLs
+* `github.com/aws/aws-sdk-go-v2/service/account`: [v1.36.0](service/account/CHANGELOG.md#v1360-2026-08-25)
+ * **Feature**: Enable schema-based (de)serialization for this service.
+* `github.com/aws/aws-sdk-go-v2/service/acmpca`: [v1.51.0](service/acmpca/CHANGELOG.md#v1510-2026-08-25)
+ * **Feature**: Enable schema-based (de)serialization for this service.
+* `github.com/aws/aws-sdk-go-v2/service/autoscaling`: [v1.73.0](service/autoscaling/CHANGELOG.md#v1730-2026-08-25)
+ * **Feature**: Adds support for Distribution Segments in mixed instances policies, providing ordered prioritization across On-Demand Capacity Reservations, Capacity Blocks, interruptible Capacity Reservations, and On-Demand capacity.
+
+
+... (truncated)]]></description>
+    <pubDate>Tue, 25 Aug 2026 19:59:50 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1118.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1118.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1118.0</guid>
+    <description><![CDATA[#### 3.1118.0(2026-08-25)
+
+##### Documentation Changes
+
+* **client-marketplace-metering:** Updated documentation to clarify duplicate-billing prevention and BatchMeterUsage retry guidance (32231025)
+
+##### New Features
+
+* **clients:** update client endpoints as of 2026-08-25 (c732c7ae)
+* **client-iot:** As part of this release, we are extending capability of AWS IoT Rules Engine to support IoT InfluxDB Action. The IoT InfluxDB action lets customers send messages from IoT sensors and applications to InfluxDB. (9e82d71c)
+* **client-iam-toolbox:** AWS Identity and Access Management (IAM) announces access troubleshooter, helping you debug access denied errors faster. Supported error messages now include an identifier you can use to retrieve detailed evaluations of the policies considered and their results. Preview in US East (N. Virginia). (3187bf7a)
+* **client-ec2:** Fleet feature to support Capacity Reservation Resource Groups with Amazon EC2 Capacity Blocks and interruptible Capacity Re
+
+... (truncated)]]></description>
+    <pubDate>Tue, 25 Aug 2026 19:59:49 GMT</pubDate>
+  </item>
   <item>
     <title>[pnpm/pnpm] pnpm 11.24 (v11.24.0)</title>
     <link>https://github.com/pnpm/pnpm/releases/tag/v11.24.0</link>
@@ -27,44 +69,6 @@
     <pubDate>Mon, 24 Aug 2026 19:10:25 GMT</pubDate>
   </item>
   <item>
-    <title>[aws/aws-sdk-js-v3] v3.1117.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1117.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1117.0</guid>
-    <description><![CDATA[#### 3.1117.0(2026-08-24)
-
-##### Documentation Changes
-
-* **client-batch:** Doc Update, Add note that UpdatePolicy applies only to EC2 managed compute environments (26c213cf)
-
-##### New Features
-
-* **client-securityagent:** Adding private and self-signed certificate configuration support for penetration tests (42f6ecb8)
-* **client-bedrock:** Adds support for specifying an inference profile ID or ARN, or an application inference profile ARN as the target model in CreateAdvancedPromptOptimizationJob. (9110f46b)
-* **client-connect-contact-lens:** This release adds the ExtractedInformation segment to the ListRealtimeContactAnalysisSegments API, enabling customers to retrieve information extracted from real-time contact analysis. (9c5bda85)
-* **client-dsql:** Corrected the validation pattern on the ServiceName response field in the GetVpcEndpointServiceName API to match the values Amazon Aurora DSQL actually returns. (1b689a9f)
-* **client-connect:** This release adds the ExtractedInformatio
-
-... (truncated)]]></description>
-    <pubDate>Mon, 24 Aug 2026 18:54:50 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-08-24) (release-2026-08-24)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-24</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-24</guid>
-    <description><![CDATA[## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/batch`: [v1.70.1](service/batch/CHANGELOG.md#v1701-2026-08-24)
- * **Documentation**: Doc Update, Add note that UpdatePolicy applies only to EC2 managed compute environments
-* `github.com/aws/aws-sdk-go-v2/service/bedrock`: [v1.67.0](service/bedrock/CHANGELOG.md#v1670-2026-08-24)
- * **Feature**: Adds support for specifying an inference profile ID or ARN, or an application inference profile ARN as the target model in CreateAdvancedPromptOptimizationJob.
-* `github.com/aws/aws-sdk-go-v2/service/connect`: [v1.190.0](service/connect/CHANGELOG.md#v11900-2026-08-24)
- * **Feature**: This release adds the ExtractedInformation segment to the ListRealtimeContactAnalysisSegmentsV2 API, enabling customers to retrieve information extracted from real-time contact analysis.
-* `github.com/aws/aws-sdk-go-v2/service/connectcontactlens`: [v1.37.0](service/connectcontactlens/CHANGELOG.md#v1370-2026-08-24)
- * **Feature**: This release adds the Extr
-
-... (truncated)]]></description>
-    <pubDate>Mon, 24 Aug 2026 18:53:55 GMT</pubDate>
-  </item>
-  <item>
     <title>[mongodb/node-mongodb-native] v7.6.0</title>
     <link>https://github.com/mongodb/node-mongodb-native/releases/tag/v7.6.0</link>
     <guid isPermaLink="true">https://github.com/mongodb/node-mongodb-native/releases/tag/v7.6.0</guid>
@@ -74,7 +78,10 @@ The MongoDB Node.js team is pleased to announce version 7.6.0 of the `mongodb` p
 
 ## Release Notes
 
+### Support for MongoDB 4.2 is removed
 
+> [!WARNING]
+> When the driver connects to a MongoDB server of version 4.2 or less, it will now throw an error.
 
 ### HTTP proxy support for KMS requests in CSFLE and Queryable Encryption
 
@@ -82,10 +89,7 @@ In-use encryption can now route KMS requests through an HTTP proxy. Set `kmsConn
 opened with HTTP CONNECT); the driver then performs the KMS TLS handshake over that socket using the provider's configured TLS options. This unblocks CSFLE and Queryable Encryption in environments that require an HTTP forward proxy for outbound KMS traffic, which the existing SOCKS5 `proxyOptions` does not cover.
 
 ```ts
-const clientEncryption = new ClientEncryption(keyVaultClient, {
- keyVaultNamespace,
- kmsProviders,
- // Establish the KMS connection through your HTTP proxy; the driver a
+c
 
 ... (truncated)]]></description>
     <pubDate>Mon, 24 Aug 2026 17:29:10 GMT</pubDate>
