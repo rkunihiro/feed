@@ -5,68 +5,137 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Tue, 25 Aug 2026 22:03:55 GMT</lastBuildDate>
+  <lastBuildDate>Wed, 26 Aug 2026 22:58:27 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
   <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-08-25) (release-2026-08-25)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-25</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-25</guid>
+    <title>[openai/codex] 0.150.0 (rust-v0.150.0)</title>
+    <link>https://github.com/openai/codex/releases/tag/rust-v0.150.0</link>
+    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.150.0</guid>
+    <description><![CDATA[## New Features
+
+- Reference other Codex tasks with `@` mentions, and ask agents to read, create, or message tasks from the terminal. (#40308, #40315)
+- `/copy` now offers a picker for full responses, individual code blocks, and blockquotes. (#39997)
+- Unnamed terminal tasks receive descriptive titles automatically, and `/rename` suggests an editable title based on the conversation. (#40492, #40495)
+- Markdown links appear as clickable labels in supported terminals, with visible URLs retained elsewhere. (#40471)
+- Bind shortcuts to cycle permission modes, and use `.` in Vim mode to repeat your last edit. (#39873, #40521)
+- New `Interrupt` hooks can run commands or MCP handlers when an active top-level turn is interrupted. (#40511)
+
+## Bug Fixes
+
+- Untrusted projects no longer supply project-level `AGENTS.md` instructions, and managed deny-read rules remain enforced after permission changes. (#39837, #40004)
+- Improved credential redaction in app-server diagnostics, including provider, 
+
+... (truncated)]]></description>
+    <pubDate>Wed, 26 Aug 2026 19:37:28 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-08-26) (release-2026-08-26)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-26</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-26</guid>
     <description><![CDATA[## General Highlights
-* **Dependency Update**: Update to smithy-go v1.27.10.
+* **Feature**: Stop registering the `ComputeContentLength` middleware in generated clients. `Content-Length` is now set when the request body is set via `SetStream`.
+* **Dependency Update**: Update to smithy-go v1.28.0.
 * **Dependency Update**: Updated to the latest SDK module versions
 
 ## Module Highlights
-* `github.com/aws/aws-sdk-go-v2`: v1.43.8
- * **Bug Fix**: Make X-Amz-Checksum-Mode appear on query parameters on presigned URLs
-* `github.com/aws/aws-sdk-go-v2/service/account`: [v1.36.0](service/account/CHANGELOG.md#v1360-2026-08-25)
- * **Feature**: Enable schema-based (de)serialization for this service.
-* `github.com/aws/aws-sdk-go-v2/service/acmpca`: [v1.51.0](service/acmpca/CHANGELOG.md#v1510-2026-08-25)
- * **Feature**: Enable schema-based (de)serialization for this service.
-* `github.com/aws/aws-sdk-go-v2/service/autoscaling`: [v1.73.0](service/autoscaling/CHANGELOG.md#v1730-2026-08-25)
- * **Feature**: Adds support for Distribution Segments in mixed instances policies, providing ordered prioritization across On-Demand Capacity Reservations, Capacity Blocks, interruptible Capacity Reservations, and On-Demand capacity.
-
+* `github.com/aws/aws-sdk-go-v2/service/devopsagent`: [v1.12.0](service/devopsagent/CHANGELOG.md#v1120-2026-08-26)
+ * **Feature**: AWS DevOps Agent now supports trigger filter groups for Release Readiness Review, letting you control when the capability auto-triggers based on webhook events and target branches.
+* `github.com/aws/aws-sdk-go-v2/service/ec2`: [v1.324.0](service/ec2/CHANGELOG.md#v13240-2026-08-26)
+ * **Feature**: Adds deleting state to possible VPC States.
+* `github.com/aws/aws-sdk-go-v2/service/licensemanagerusersubscriptions`: [v1.25.0](service/licensemanagerusersubscriptions/CHANGELOG.md#v1250-2026-08-26)
+ * **Feature**: Released support for Lice
 
 ... (truncated)]]></description>
-    <pubDate>Tue, 25 Aug 2026 19:59:50 GMT</pubDate>
+    <pubDate>Wed, 26 Aug 2026 19:10:13 GMT</pubDate>
   </item>
   <item>
-    <title>[aws/aws-sdk-js-v3] v3.1118.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1118.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1118.0</guid>
-    <description><![CDATA[#### 3.1118.0(2026-08-25)
+    <title>[aws/aws-sdk-js-v3] v3.1119.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1119.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1119.0</guid>
+    <description><![CDATA[#### 3.1119.0(2026-08-26)
 
-##### Documentation Changes
+##### Chores
 
-* **client-marketplace-metering:** Updated documentation to clarify duplicate-billing prevention and BatchMeterUsage retry guidance (32231025)
+* **codegen:** smithy-aws-typescript-codegen 0.53.0 (#8276) (dffb383b)
 
 ##### New Features
 
-* **clients:** update client endpoints as of 2026-08-25 (c732c7ae)
-* **client-iot:** As part of this release, we are extending capability of AWS IoT Rules Engine to support IoT InfluxDB Action. The IoT InfluxDB action lets customers send messages from IoT sensors and applications to InfluxDB. (9e82d71c)
-* **client-iam-toolbox:** AWS Identity and Access Management (IAM) announces access troubleshooter, helping you debug access denied errors faster. Supported error messages now include an identifier you can use to retrieve detailed evaluations of the policies considered and their results. Preview in US East (N. Virginia). (3187bf7a)
-* **client-ec2:** Fleet feature to support Capacity Reservation Resource Groups with Amazon EC2 Capacity Blocks and interruptible Capacity Re
+* **client-sagemaker:** Amazon SageMaker AI now supports ml.g7 instances for model optimization. You can now run model optimization jobs on ml.g7 instances, in supported AWS Regions. (6d5e1066)
+* **client-devops-agent:** AWS DevOps Agent now supports trigger filter groups for Release Readiness Review, letting you control when the capability auto-triggers based on webhook events and target branches. (bc3d53d5)
+* **client-license-manager-user-subscriptions:** Released support for License Expiry field in ListProductSubscriptions API (454d7f7f)
+* **client-ec2:** Adds deleting state to possible VPC States. (43091d55)
+* **client-network-firewall:** Adding new status enum for Firewalls. (4cb21cb3)
 
-... (truncated)]]></description>
-    <pubDate>Tue, 25 Aug 2026 19:59:49 GMT</pubDate>
+
+---
+
+For list of updated packages, view **updated-packages.md** in **assets-3.1119.0.zip**]]></description>
+    <pubDate>Wed, 26 Aug 2026 19:07:40 GMT</pubDate>
   </item>
   <item>
-    <title>[pnpm/pnpm] pnpm 11.24 (v11.24.0)</title>
-    <link>https://github.com/pnpm/pnpm/releases/tag/v11.24.0</link>
-    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v11.24.0</guid>
-    <description><![CDATA[### Minor Changes
+    <title>[pnpm/pnpm] pnpm 12 (v12.0.0)</title>
+    <link>https://github.com/pnpm/pnpm/releases/tag/v12.0.0</link>
+    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v12.0.0</guid>
+    <description><![CDATA[## Major Changes
 
-- Added global build approvals pnpm/pnpm#14101.
+- Git dependencies on known hosts (GitHub, GitLab, Bitbucket) are now treated as identities rather than transport choices. Every representation of the same repository — `github:owner/repo`, `owner/repo`, `git+ `git+ssh://git@…` — resolves through the host's canonical HTTPS URL, and the lockfile never records an SSH URL for them. Repositories whose archive endpoint is anonymously reachable resolve to the host's archive (fast tarball download); all others resolve to a `git` clone of the canonical HTTPS URL, which every machine with access to the repository can fetch.
 
-### Patch Changes
+ To reach a private hosted repository over SSH, configure the machine (not the project) with git's own URL rewriting, for example:
 
-- Fixed pnpm v11 incorrectly reporting `confirmModulesPurge` as unrecognized when set in `pnpm-workspace.yaml`. The Rust CLI now identifies the unsupported option as a pnpm v11 setting instead of suggesting an unrelated setting.
+ ```sh
+ git config --global url."git@github.com:".insteadOf 
+ ```
 
-- `pnpm install --frozen-lockfile` no longer fails with `ERR_PNPM_FROZEN_LOCKFILE_WITH_OUTDATED_LOCKFILE` when the pinned pnpm version recorded in `pnpm-lock.yaml` has to be re-resolved before it can be installed. It runs the pnpm version the lockfile pins and leaves the lockfile unchanged #14124.
-
-- Under `nodeLinker: hoisted`, peer-resolution variants of an injected directory dependency (a `file:` snapshot) are materialized as separate copies again instead of collapsing onto the first-seen variant. Each copy keeps its own peer-resolved dependency set, so a project pinning one peer version no longer resolves another project's variant — Bit root components with con
+ pnpm shells out to `git`, so the rewrite applies to all of pnpm's git operations automatically. URLs of unknown hosts (self-hosted servers) are unaffected and keep their exact URL, including SSH. URL
 
 ... (truncated)]]></description>
-    <pubDate>Mon, 24 Aug 2026 19:10:25 GMT</pubDate>
+    <pubDate>Wed, 26 Aug 2026 15:13:51 GMT</pubDate>
+  </item>
+  <item>
+    <title>[nodejs/node] 2026-08-26, Version 26.8.0 (Current), @aduh95 (v26.8.0)</title>
+    <link>https://github.com/nodejs/node/releases/tag/v26.8.0</link>
+    <guid isPermaLink="true">https://github.com/nodejs/node/releases/tag/v26.8.0</guid>
+    <description><![CDATA[### Notable Changes
+
+* \[`74234ee30e`] - **(SEMVER-MINOR)** **benchmark**: add --analyze mode to compare.js (James M Snell) #65416
+* \[`4232997fa2`] - **crypto**: update root certificates to NSS 3.126 (Node.js GitHub Bot) #65495
+* \[`f0531f1c87`] - **(SEMVER-MINOR)** **crypto**: enable SIV and GCM-SIV modes in Cipher/Decipher APIs (Filip Skokan) #63411
+* \[`3f4b80ebb5`] - **diagnostics\_channel**: mark TracingChannel as stable (Abdelrahman Awad) #64525
+* \[`753033c110`] - **(SEMVER-MINOR)** **lib,src**: improve histogram implementation (James M Snell) #65024
+* \[`3d7d277493`] - **(SEMVER-MINOR)** **net**: improve performance of net.BlockList (James M Snell) #64974
+* \[`9e8e9080fd`] - **(SEMVER-MINOR)** **perf\_hooks**: add statistical hypothesis testing to histogram (James M Snell) #65416
+* \[`c18b0aa54e`] - **repl**: add basic syntax highlighting (Aviv Keller) #64591
+* \[`58ea88e1d3`] - **(SEMVER-MINOR)** **sqlite**: add StatementSync.prototype.close (Guilherme Araújo) #64232
+* \[`7c6
+
+... (truncated)]]></description>
+    <pubDate>Wed, 26 Aug 2026 14:28:49 GMT</pubDate>
+  </item>
+  <item>
+    <title>[web-infra-dev/rspack] v2.2.0</title>
+    <link>https://github.com/web-infra-dev/rspack/releases/tag/v2.2.0</link>
+    <guid isPermaLink="true">https://github.com/web-infra-dev/rspack/releases/tag/v2.2.0</guid>
+    <description><![CDATA[## What's Changed
+
+## 🎉 See Announcing Rspack 2.2 for more details.
+
+### New Features 🎉
+* feat: implement generation-based memory cache eviction by @ahabhgk in 
+* feat: add idle cache compaction with interruption handling by @ahabhgk in 
+* feat(css): improve unicode handling and support more css modules cases, boost performance by @intellild in 
+* feat: integrate module code generation to the new cache by @ahabhgk in 
+* feat(cache): add fine-grained new cache options by @hardfist in 
+* feat(ids): add compat-hashed module ids by @LingyuCoder in 
+* feat: analyze dynamic imports in Promise.all destructuring by @JSerFeng in 
+* feat: integrate new cache into source map devtool plugin by @ahabhgk in 
+* feat(core): add compilation.runtimeTemplate by @kakiuwang-ui in 
+* feat(ids): add compact chunk ids by @LingyuCoder in 
+* feat(loader): support opt-in per-loader caching by @intellild in 
+### Performance 🚀
+* perf(binding): cache converted module original source by @SyMind i
+
+... (truncated)]]></description>
+    <pubDate>Wed, 26 Aug 2026 03:42:56 GMT</pubDate>
   </item>
   <item>
     <title>[mongodb/node-mongodb-native] v7.6.0</title>
@@ -246,6 +315,32 @@ This release hardens runtime option handling, adds RFC 9110 status-code aliases,
 
 ... (truncated)]]></description>
     <pubDate>Sat, 22 Aug 2026 09:25:27 GMT</pubDate>
+  </item>
+  <item>
+    <title>[ollama/ollama] v0.33.0</title>
+    <link>https://github.com/ollama/ollama/releases/tag/v0.33.0</link>
+    <guid isPermaLink="true">https://github.com/ollama/ollama/releases/tag/v0.33.0</guid>
+    <description><![CDATA[## What's Changed
+
+### Claude Desktop
+
+Developers can now easily configure Claude Desktop to seamlessly work with Ollama as a third-party gateway provider. 
+
+<img width="1298" height="780" alt="image" src="" />
+
+### Improved caching
+
+* Fixed a hang where agent clients that cancel long prefills
+* Prefill restore points are now trustworthy by construction: a cancelled prefill keeps every restore point it crossed, so retries resume where they stopped instead of restarting from scratch
+* Resumed prefills no longer record restore points that fail to cover what they claim; on models with recurrent layers this previously forced a request matching 46k of 47k tokens to reprocess from zero
+* Disabled Claude Code's "tokens left" token-countdown system message, which Ollama moved to the front of the prompt and broke the KV cache on every request
+
+### Other improvements
+
+* DeepSeek Harness launcher now falls back to `npx` when the global npm install fails, with Windows command-shim
+
+... (truncated)]]></description>
+    <pubDate>Fri, 21 Aug 2026 22:52:46 GMT</pubDate>
   </item>
   <item>
     <title>[ValveSoftware/Proton] Proton 11.0-2 (proton-11.0-2)</title>
@@ -673,27 +768,6 @@ This release ships a complete Temporal implementation that passes 100% of the te
     <pubDate>Fri, 14 Aug 2026 12:13:03 GMT</pubDate>
   </item>
   <item>
-    <title>[bluesky-social/atproto] @atproto-labs/opentelemetry-node@0.1.0</title>
-    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto-labs/opentelemetry-node%400.1.0</link>
-    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto-labs/opentelemetry-node%400.1.0</guid>
-    <description><![CDATA[### Minor Changes
-
-- #5397 `aff31c8` Thanks @matthieusieben! - Extract the OpenTelemetry Node bootstrap out of the PDS into a new
- `@atproto-labs/opentelemetry-node` package. It exposes a `setup` function from
- its main entrypoint, plus two subpath entrypoints:
-
- - `@atproto-labs/opentelemetry-node/conventions` re-exports
- `@opentelemetry/semantic-conventions` alongside the atproto XRPC attribute keys.
- - `@atproto-labs/opentelemetry-node/instrumentation` exposes
- `getDefaultAtprotoInstrumentations`, the instrumentations common to atproto
- services (which `setup` registers automatically).
-
- As part of this move, the shared runtime instrumentation now enables
- `captureUncaughtException`, so the PDS records uncaught exceptions as OTEL runtime
- events when telemetry is enabled.]]></description>
-    <pubDate>Fri, 14 Aug 2026 10:35:36 GMT</pubDate>
-  </item>
-  <item>
     <title>[microsoft/WindowsAppSDK] Windows App SDK 2.4.0 (v2.4.0)</title>
     <link>https://github.com/microsoft/WindowsAppSDK/releases/tag/v2.4.0</link>
     <guid isPermaLink="true">https://github.com/microsoft/WindowsAppSDK/releases/tag/v2.4.0</guid>
@@ -729,23 +803,6 @@ Windows App SDK 2.4.0 is the latest stable release on the 2.x line, adding expan
 
 ... (truncated)]]></description>
     <pubDate>Wed, 12 Aug 2026 20:12:23 GMT</pubDate>
-  </item>
-  <item>
-    <title>[zed-industries/zed] v1.15.0</title>
-    <link>https://github.com/zed-industries/zed/releases/tag/v1.15.0</link>
-    <guid isPermaLink="true">https://github.com/zed-industries/zed/releases/tag/v1.15.0</guid>
-    <description><![CDATA[This week's release includes a new `git.diff_base` setting for choosing whether editor gutters, file-status colors, and `git: diff` show uncommitted changes against `HEAD` or all current-branch changes against the default branch's merge base, plus support for dragging files from the Project Panel to external apps on macOS and Linux Wayland; web developers also get linked editing for custom elements in JSX and TSX and Emmet completions in return and arrow-function bodies.
-
-## Shipped by the Zed Guild 🛡️
-
-- Added support for dragging files from the Project Panel to external macOS apps. (#58161; thanks notJoon)
-- Added the `multiple_selections` key context for assigning different keybindings when multiple selections are active. (#60018; thanks AidanV)
-- Agent: Fixed the first line of terminal output sometimes being hidden in the Agent Panel. (#61939; thanks timvermeulen)
-- Fixed Markdown previews scrolling vertically during horizontal scroll gestures. (#61797; thanks feitreim)
-- 
-
-... (truncated)]]></description>
-    <pubDate>Wed, 12 Aug 2026 15:53:56 GMT</pubDate>
   </item>
   <item>
     <title>[wailsapp/wails] Wails v2.14.0 (v2.14.0)</title>
@@ -793,29 +850,6 @@ go install github.com/wailsapp/wails/v2/cmd/wails@v2.14.0
 
 **Full Changelog**:]]></description>
     <pubDate>Fri, 07 Aug 2026 10:23:43 GMT</pubDate>
-  </item>
-  <item>
-    <title>[nodejs/node] 2026-08-05, Version 26.7.0 (Current), @aduh95 (v26.7.0)</title>
-    <link>https://github.com/nodejs/node/releases/tag/v26.7.0</link>
-    <guid isPermaLink="true">https://github.com/nodejs/node/releases/tag/v26.7.0</guid>
-    <description><![CDATA[### Notable Changes
-
-* \[`58717685a1`] - **(SEMVER-MINOR)** **crypto**: support loading private keys through STORE loaders (Filip Skokan) #63949
-* \[`44b940ee8c`] - **crypto**: update root certificates to NSS 3.125 (Node.js GitHub Bot) #64746
-* \[`c1e4f7365e`] - **(SEMVER-MINOR)** **lib**: add perfetto support (Chengzhong Wu) #64565
-* \[`11c2f9c642`] - **(SEMVER-MINOR)** **module**: implement `Symbol.dispose` in `ModuleHooks` (Remco Haszing) #63928
-* \[`a646319f61`] - **(SEMVER-MINOR)** **test\_runner**: add support for `--test-coverage-include-all` (avivkeller) #64830
-
-### Commits
-
-* \[`a2d3f891d3`] - **async\_hooks**: use validateBoolean for trackPromises (Soul Lee) #64731
-* \[`d7266cdd99`] - **benchmark**: fix calibrate-n option handling (Luan Muniz) #64146
-* \[`2e64293e3f`] - **buffer**: use Clamp conversion in Blob slice (Donghoon Kang) #64739
-* \[`5fda0958bd`] - **buffer**: validate copyArrayBuffer offsets against buffer length (Ilia Alshanetsky) #63904
-* \[`5298db40f9`] - **buil
-
-... (truncated)]]></description>
-    <pubDate>Wed, 05 Aug 2026 16:25:04 GMT</pubDate>
   </item>
   <item>
     <title>[servo/servo] v0.4.0</title>
@@ -1158,19 +1192,6 @@ There are no breaking changes to the configuration of the uv build backend. If y
 
 ... (truncated)]]></description>
     <pubDate>Mon, 27 Jul 2026 14:25:08 GMT</pubDate>
-  </item>
-  <item>
-    <title>[open-webui/open-webui] v0.11.0</title>
-    <link>https://github.com/open-webui/open-webui/releases/tag/v0.11.0</link>
-    <guid isPermaLink="true">https://github.com/open-webui/open-webui/releases/tag/v0.11.0</guid>
-    <description><![CDATA[### Added
-
-- 🎨 **Redesigned interface.** Open WebUI has been visually rebuilt from the ground up. All aspects of the User Interface, from the chat view to the admin panel. Now with a narrower conversation column, lighter typography, tidier spacing, consistent menus and dropdowns, clearly outlined text boxes, and settings rearranged. Commit, Commit, Commit, Commit, Commit, Commit, Commit, Commit, Commit, Commit, Commit, Commit, Commit, Commit, Commit, Commit, Commit, Commit, Commit, Commit, Commit, Commit, Commit, Commit, Commit, Commit, Commit, Commit, Commit, Commit, Commit, Commit, Commit, Commit, Commit, #27178, Commit, Commit
-- 🤖 **Sub-agents.** Administrators can now enable sub-agents, which let a model hand parts of a task to background helper agents that run their own tool-driven conversations and report results back into the chat, tuned through new "ENABLE_SUBAGENTS", concurrency, iteration, and system-prompt settings. Commit, Commit, Commit, Commit
-- 📂 **Folder pages.** Ope
-
-... (truncated)]]></description>
-    <pubDate>Mon, 27 Jul 2026 09:30:15 GMT</pubDate>
   </item>
 </channel>
 </rss>
