@@ -5,44 +5,96 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Fri, 28 Aug 2026 00:52:35 GMT</lastBuildDate>
+  <lastBuildDate>Fri, 28 Aug 2026 22:16:54 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
   <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-08-27) (release-2026-08-27)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-27</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-27</guid>
-    <description><![CDATA[## General Highlights
-* **Feature**: Support connection read timeouts in the SDK. This is currently available on an opt-in basis by setting env `AWS_ENABLE_DEFAULT_SOCKET_TIMEOUT_2026=true`.
-* **Dependency Update**: Updated to the latest SDK module versions
+    <title>[sindresorhus/eslint-plugin-unicorn] v74.0.0</title>
+    <link>https://github.com/sindresorhus/eslint-plugin-unicorn/releases/tag/v74.0.0</link>
+    <guid isPermaLink="true">https://github.com/sindresorhus/eslint-plugin-unicorn/releases/tag/v74.0.0</guid>
+    <description><![CDATA[## Improvements
 
-## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/cloudwatchlogs`: [v1.84.0](service/cloudwatchlogs/CHANGELOG.md#v1840-2026-08-27)
- * **Feature**: Added resultCount to QueryStatistics in GetQueryResults. This field returns the total number of output rows in the final result set, helping customers programmatically determine whether a query produced results after all operations including post-aggregation filters.
-* `github.com/aws/aws-sdk-go-v2/service/codedeploy`: [v1.40.0](service/codedeploy/CHANGELOG.md#v1400-2026-08-27)
- * **Feature**: Added a deploymentMode parameter to CreateDeployment. Set it to RESTART to restart an EC2 and on-premises fleet, using the last successful revision, honoring Deployment Configuration.
-* 
+- Improve rule performance (#3618) 4ff2eab9
+- `comment-content`: Handle JSDoc syntax (#3616) bf7dca25
+- `consistent-arrow-return-style`: Fix indentation and `in` operator handling (#3621) 398606c5
+- `consistent-boolean-name`: Support possibly async boolean callbacks (#3624) 823bb1fb
+- `custom-error-definition`: Avoid requiring native `ErrorOptions` for custom bases (#3617) 96fd3710
+- `custom-error-definition`: Support TypeScript parameter properties (#3619) 872fd559
+- `expiring-todo-comments`: Add YAML support (#3625) e437f232
+- `name-replacements`: Allow `ProcessEnv` type (#3608) 2e19a940
+- `no-array-fill-with-reference-type`: Ignore canvas contexts (#3635) d7f5fa12
+- `no-empty-file`: Add YAML support (#3627) 043a5239
+- `no-nonstandard-builtin-properties`: Support stage 4 proposals (#3631) 0a24d748
+- `no-unnecessary-splice`: Fix false positives when the return value is used (#3611) cc58720b
+- `no-useless-else`: Fix false positive in mutable branch condit
 
 ... (truncated)]]></description>
-    <pubDate>Thu, 27 Aug 2026 19:31:01 GMT</pubDate>
+    <pubDate>Fri, 28 Aug 2026 19:44:39 GMT</pubDate>
   </item>
   <item>
-    <title>[aws/aws-sdk-js-v3] v3.1120.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1120.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1120.0</guid>
-    <description><![CDATA[#### 3.1120.0(2026-08-27)
+    <title>[aws/aws-sdk-go-v2] Release (2026-08-28.2) (release-2026-08-28.2)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-28.2</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-28.2</guid>
+    <description><![CDATA[## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/service/bedrockagent`: [v1.61.0](service/bedrockagent/CHANGELOG.md#v1610-2026-08-282)
+ * **Feature**: Adds an optional syncSchedule field to CreateDataSource and UpdateDataSource for Managed Knowledge Bases data source connectors, so a data source can sync automatically on a daily, weekly, or monthly schedule.
+* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcore`: [v1.43.0](service/bedrockagentcore/CHANGELOG.md#v1430-2026-08-282)
+ * **Feature**: AgentCore Memory now supports direct ingestion into long-term memory via IngestData API
+* `github.com/aws/aws-sdk-go-v2/service/cognitoidentityprovider`: [v1.70.0](service/cognitoidentityprovider/CHANGELOG.md#v1700-2026-08-282)
+ * **Feature**: Adds two new operations - GetClientToken which allows M2M auth through the SDK, and DescribeTermsByClient to find which Terms are associated with a user-pool client without knowing the Terms resource id.
+* `github.com/aws/aws-sdk-go-v2/service/ecs`:
 
-##### Documentation Changes
-
-* **client-opensearch:** Updating SDK and CLI documentation for AttachDataSource API. (d696fe76)
+... (truncated)]]></description>
+    <pubDate>Fri, 28 Aug 2026 18:56:55 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1121.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1121.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1121.0</guid>
+    <description><![CDATA[#### 3.1121.0(2026-08-28)
 
 ##### New Features
 
-* **client-lambda-microvms:** Added InsufficientCapacityException to RunMicrovm for capacity-related failures. Added lifecycle status field (AVAILABLE, DEPRECATED) to ListManagedMicrovmImageVersions. Added ConflictException to CreateMicrovmAuthToken and CreateMicrovmShellAuthToken for unregistered MicroVMs. (72a8ff80)
-* **client-codedeploy:** Added a deploymentMode parameter to CreateDeployment. Set it to RESTART to restart an EC2 and on-premises fleet, using the last successful revision, honoring Deployment Configuration. (78d4f964)
-* **client-cloudwatch-logs:** Added resultCount to QueryStatistics in GetQueryResults. This field returns the total number of output rows in the final result set, helping customers programmatically determine whether a query produced results after all operations including post-aggregati
+* **client-ecs:** Amazon Elastic Container Service - This release adds support for early success criteria on ECS rolling deployments, letting deployment complete once a configurable percentage of tasks are healthy, with configurable BLOCKING (required) or DEFERRED (asynchronous) cleanup of previous service revisions. (ef22d750)
+* **client-healthlake:** New HealthLake API, RestoreFHIRDatastore, providing the capability to restore active datastores to a point in time within the last 30 days or recover a deleted datastore from the delete snapshot. (62491742)
+* **client-bedrock-agentcore:** AgentCore Memory now supports direct ingestion into long-term memory via IngestData API (20d652de)
+* **client-partnercentral-selling:** Releasing PARC, new APN Program that lets sellers add solftware revenue details to aws opportunity summary (2b6350f0)
+* **client-cognito-identity-provider:** Adds two new operations - GetClientToken which allows M2M auth th
 
 ... (truncated)]]></description>
-    <pubDate>Thu, 27 Aug 2026 19:30:16 GMT</pubDate>
+    <pubDate>Fri, 28 Aug 2026 18:55:57 GMT</pubDate>
+  </item>
+  <item>
+    <title>[jestjs/jest] v30.5.0</title>
+    <link>https://github.com/jestjs/jest/releases/tag/v30.5.0</link>
+    <guid isPermaLink="true">https://github.com/jestjs/jest/releases/tag/v30.5.0</guid>
+    <description><![CDATA[On a personal note: King Harald V of Norway passed away this morning. He ascended the throne 35 years ago, two months before I was born. This release is dedicated to his memory. Hvil i fred 🇳🇴
+
+---
+
+This is a big release. It touches `jest-runtime`, `jest-resolve` and `jest-haste-map` in many places, and with this many changes there might be regressions 😬. If your suite behaves differently after upgrading, please open an issue.
+
+# Highlights
+
+## `whenCalledWith`
+
+Mock functions can now configure return values per argument list, contributed by @timkindberg (#16053):
+
+```js
+const fn = jest.fn;
+fn.whenCalledWith('apple').mockReturnValue('red');
+fn.whenCalledWith('banana').mockReturnValue('yellow');
+fn.whenCalledWith(expect.any(Number)).mockReturnValue('numeric');
+
+fn('apple'); // 'red'
+fn('banana'); // 'yellow'
+fn(42); // 'numeric'
+fn('grape'); // undefined
+```
+
+The returned object is a real `Mock`, so `mockReturnValueOnce`, `mockResolvedValue`, `mockImplementati
+
+... (truncated)]]></description>
+    <pubDate>Fri, 28 Aug 2026 08:29:30 GMT</pubDate>
   </item>
   <item>
     <title>[nestjs/nest] v12.0.0</title>
@@ -116,27 +168,6 @@ nest upgrade
 
 ... (truncated)]]></description>
     <pubDate>Thu, 27 Aug 2026 07:43:26 GMT</pubDate>
-  </item>
-  <item>
-    <title>[openai/codex] 0.150.0 (rust-v0.150.0)</title>
-    <link>https://github.com/openai/codex/releases/tag/rust-v0.150.0</link>
-    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.150.0</guid>
-    <description><![CDATA[## New Features
-
-- Reference other Codex tasks with `@` mentions, and ask agents to read, create, or message tasks from the terminal. (#40308, #40315)
-- `/copy` now offers a picker for full responses, individual code blocks, and blockquotes. (#39997)
-- Unnamed terminal tasks receive descriptive titles automatically, and `/rename` suggests an editable title based on the conversation. (#40492, #40495)
-- Markdown links appear as clickable labels in supported terminals, with visible URLs retained elsewhere. (#40471)
-- Bind shortcuts to cycle permission modes, and use `.` in Vim mode to repeat your last edit. (#39873, #40521)
-- New `Interrupt` hooks can run commands or MCP handlers when an active top-level turn is interrupted. (#40511)
-
-## Bug Fixes
-
-- Untrusted projects no longer supply project-level `AGENTS.md` instructions, and managed deny-read rules remain enforced after permission changes. (#39837, #40004)
-- Improved credential redaction in app-server diagnostics, including provider, 
-
-... (truncated)]]></description>
-    <pubDate>Wed, 26 Aug 2026 19:37:28 GMT</pubDate>
   </item>
   <item>
     <title>[pnpm/pnpm] pnpm 12 (v12.0.0)</title>
@@ -938,35 +969,6 @@ Please check out our June blog post to get a curated overview over the recent ch
 
 ... (truncated)]]></description>
     <pubDate>Tue, 04 Aug 2026 09:57:17 GMT</pubDate>
-  </item>
-  <item>
-    <title>[sindresorhus/eslint-plugin-unicorn] v73.0.0</title>
-    <link>https://github.com/sindresorhus/eslint-plugin-unicorn/releases/tag/v73.0.0</link>
-    <guid isPermaLink="true">https://github.com/sindresorhus/eslint-plugin-unicorn/releases/tag/v73.0.0</guid>
-    <description><![CDATA[## New rules
-
-- `consistent-arrow-return-style` (#3601) ae3c3d93
-- `iteration-fallback-style` (#3602) a61c2c5e
-- `no-barrel-files` (#3570) d900c09e
-- `no-unsafe-sqlite-interpolation` (#3582) a09869bc
-- `single-line-block-comment-style` (#3584) a0c2c576
-
-## Improvements
-
-- Improve performance (#3560) 7b7c7906
-- Harden rules (#3585) 9c2b0bb1
-- `consistent-boolean-name`: Add `wrappers` option (#3572) 78c5abf2
-- `consistent-boolean-name`: Add granular check options (#3591) a33b1c1e
-- `consistent-function-style`: Add `defaultExport` option (#3600) e78a7c96
-- `prefer-https`: Add `ignore` option (#3557) 7f7ec066
-- `comment-content`: Handle Unicode word boundaries (#3597) dd52b4a4
-- `import-style`: Ignore type-only imports (#3599) f2a62e37
-- `name-replacements`: Handle TypeScript parameter properties (#3575) fa0df7bd
-- `no-negated-comparison`: Never check relational operators (#3589) 6120423a
-- `no-this-outside-of-class`: Allow explicit TypeScript `this` parameters (#3596) 
-
-... (truncated)]]></description>
-    <pubDate>Tue, 04 Aug 2026 00:47:03 GMT</pubDate>
   </item>
   <item>
     <title>[honojs/hono] v4.13.0</title>
