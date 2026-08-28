@@ -5,8 +5,118 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Wed, 26 Aug 2026 22:58:27 GMT</lastBuildDate>
+  <lastBuildDate>Fri, 28 Aug 2026 00:52:35 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-08-27) (release-2026-08-27)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-27</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-27</guid>
+    <description><![CDATA[## General Highlights
+* **Feature**: Support connection read timeouts in the SDK. This is currently available on an opt-in basis by setting env `AWS_ENABLE_DEFAULT_SOCKET_TIMEOUT_2026=true`.
+* **Dependency Update**: Updated to the latest SDK module versions
+
+## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/service/cloudwatchlogs`: [v1.84.0](service/cloudwatchlogs/CHANGELOG.md#v1840-2026-08-27)
+ * **Feature**: Added resultCount to QueryStatistics in GetQueryResults. This field returns the total number of output rows in the final result set, helping customers programmatically determine whether a query produced results after all operations including post-aggregation filters.
+* `github.com/aws/aws-sdk-go-v2/service/codedeploy`: [v1.40.0](service/codedeploy/CHANGELOG.md#v1400-2026-08-27)
+ * **Feature**: Added a deploymentMode parameter to CreateDeployment. Set it to RESTART to restart an EC2 and on-premises fleet, using the last successful revision, honoring Deployment Configuration.
+* 
+
+... (truncated)]]></description>
+    <pubDate>Thu, 27 Aug 2026 19:31:01 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1120.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1120.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1120.0</guid>
+    <description><![CDATA[#### 3.1120.0(2026-08-27)
+
+##### Documentation Changes
+
+* **client-opensearch:** Updating SDK and CLI documentation for AttachDataSource API. (d696fe76)
+
+##### New Features
+
+* **client-lambda-microvms:** Added InsufficientCapacityException to RunMicrovm for capacity-related failures. Added lifecycle status field (AVAILABLE, DEPRECATED) to ListManagedMicrovmImageVersions. Added ConflictException to CreateMicrovmAuthToken and CreateMicrovmShellAuthToken for unregistered MicroVMs. (72a8ff80)
+* **client-codedeploy:** Added a deploymentMode parameter to CreateDeployment. Set it to RESTART to restart an EC2 and on-premises fleet, using the last successful revision, honoring Deployment Configuration. (78d4f964)
+* **client-cloudwatch-logs:** Added resultCount to QueryStatistics in GetQueryResults. This field returns the total number of output rows in the final result set, helping customers programmatically determine whether a query produced results after all operations including post-aggregati
+
+... (truncated)]]></description>
+    <pubDate>Thu, 27 Aug 2026 19:30:16 GMT</pubDate>
+  </item>
+  <item>
+    <title>[nestjs/nest] v12.0.0</title>
+    <link>https://github.com/nestjs/nest/releases/tag/v12.0.0</link>
+    <guid isPermaLink="true">https://github.com/nestjs/nest/releases/tag/v12.0.0</guid>
+    <description><![CDATA[# NestJS v12.0.0
+
+NestJS 12 is centered around **ESM-ready packages**, **first-class Standard Schema support** for validation and serialization, a **rebuilt CLI**, and **native observability** through the new `@nestjs/observe` SDK.
+
+Existing CommonJS applications keep working — migrating your own code to ESM is entirely optional.
+
+📖 Full migration guide 
+
+---
+
+## Upgrading
+
+Upgrade the CLI first, since the upgrade command ships with it:
+
+```bash
+npm i -g @nestjs/cli@latest
+```
+
+Then, from the root of your project:
+
+```bash
+nest upgrade
+```
+
+`nest upgrade` moves every `@nestjs/*` package to its v12-compatible major at once and applies the mechanical parts of the migration for you — `nest-cli.json` webpack options, the GraphQL `playground` → `graphiql` rename and subscriptions transport swap, the NATS package replacement, `@nestjs/config` validation options, Jest and Joi bumps — then prints a report of everything it changed and everything you still need to review
+
+... (truncated)]]></description>
+    <pubDate>Thu, 27 Aug 2026 12:23:49 GMT</pubDate>
+  </item>
+  <item>
+    <title>[webpack/webpack] v5.110.0</title>
+    <link>https://github.com/webpack/webpack/releases/tag/v5.110.0</link>
+    <guid isPermaLink="true">https://github.com/webpack/webpack/releases/tag/v5.110.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- Wrap concatenated modules in lazy `__webpack_require__.cw` accessors and inline `require`, keeping a wrapped body's names and side effects intact. (by @hai-x in #21519)
+
+- Add performance hints reporting what a build costs: duplicate packages and modules, circular dependencies, broad contexts, large modules and chunks, hotspots, `eval`, missing PURE annotations, polyfills, redundant dynamic imports, OS-dependent rules, cache effectiveness, how chunks load, what splitting refused, why an optimization was skipped, and rules, defines, externals, aliases and barrel reexports nothing uses. An oversized asset names its largest modules, and an entrypoint carrying the runtime recommends `optimization.runtimeChunk`. Enable every check not set individually with `performance.all`, report hints in stats only with `performance.hints: "stats"`, and get them in a stable order that leaves the build hashes unchanged. (by @alexander-akait in #21841)
+
+- Add the `descriptionRelativePa
+
+... (truncated)]]></description>
+    <pubDate>Thu, 27 Aug 2026 11:28:05 GMT</pubDate>
+  </item>
+  <item>
+    <title>[BabylonJS/Babylon.js] 9.23.0</title>
+    <link>https://github.com/BabylonJS/Babylon.js/releases/tag/9.23.0</link>
+    <guid isPermaLink="true">https://github.com/BabylonJS/Babylon.js/releases/tag/9.23.0</guid>
+    <description><![CDATA[### Core
+
+- Add WebXR persistent anchor lifecycle support - by RaananW (#18840)
+- Add WebXR room capture support - by RaananW (#18841)
+- Feat: Budget-driven and multi-camera-aware LOD for streaming Gaussian Splatting - by raymondyfei (#18834)
+- Share shader loading state across material instances - by sebavan (#18830)
+- Expose WebXR plane and mesh semantic labels - by RaananW (#18839)
+- Preserve WebXR light estimation on WebGPU - by RaananW (#18837)
+- Fix IES candela profile normalization - by sebavan (#18833)
+- Fix Gaussian splat readiness regression - [_Bug Fix_] by bghgary (#18836)
+- Fix Gaussian splat transform and proxy visibility updates - [_Bug Fix_] by CedricGuillemet (#18831)
+- Use pure targets for dynamic imports - by RaananW (#18827)
+- Feat: Non-binary voxel opacity + trace-time roulette for GSplat IBL shadows - by raymondyfei (#18815)
+- Fix overlay texture bindings leaking into shared PBR materials - by sebavan (#18828)
+- Fix wgsl in TBN Block - by sebavan (#18826)
+
+### GUI
+
+... (truncated)]]></description>
+    <pubDate>Thu, 27 Aug 2026 07:43:26 GMT</pubDate>
+  </item>
   <item>
     <title>[openai/codex] 0.150.0 (rust-v0.150.0)</title>
     <link>https://github.com/openai/codex/releases/tag/rust-v0.150.0</link>
@@ -27,50 +137,6 @@
 
 ... (truncated)]]></description>
     <pubDate>Wed, 26 Aug 2026 19:37:28 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-08-26) (release-2026-08-26)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-26</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-26</guid>
-    <description><![CDATA[## General Highlights
-* **Feature**: Stop registering the `ComputeContentLength` middleware in generated clients. `Content-Length` is now set when the request body is set via `SetStream`.
-* **Dependency Update**: Update to smithy-go v1.28.0.
-* **Dependency Update**: Updated to the latest SDK module versions
-
-## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/devopsagent`: [v1.12.0](service/devopsagent/CHANGELOG.md#v1120-2026-08-26)
- * **Feature**: AWS DevOps Agent now supports trigger filter groups for Release Readiness Review, letting you control when the capability auto-triggers based on webhook events and target branches.
-* `github.com/aws/aws-sdk-go-v2/service/ec2`: [v1.324.0](service/ec2/CHANGELOG.md#v13240-2026-08-26)
- * **Feature**: Adds deleting state to possible VPC States.
-* `github.com/aws/aws-sdk-go-v2/service/licensemanagerusersubscriptions`: [v1.25.0](service/licensemanagerusersubscriptions/CHANGELOG.md#v1250-2026-08-26)
- * **Feature**: Released support for Lice
-
-... (truncated)]]></description>
-    <pubDate>Wed, 26 Aug 2026 19:10:13 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-js-v3] v3.1119.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1119.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1119.0</guid>
-    <description><![CDATA[#### 3.1119.0(2026-08-26)
-
-##### Chores
-
-* **codegen:** smithy-aws-typescript-codegen 0.53.0 (#8276) (dffb383b)
-
-##### New Features
-
-* **client-sagemaker:** Amazon SageMaker AI now supports ml.g7 instances for model optimization. You can now run model optimization jobs on ml.g7 instances, in supported AWS Regions. (6d5e1066)
-* **client-devops-agent:** AWS DevOps Agent now supports trigger filter groups for Release Readiness Review, letting you control when the capability auto-triggers based on webhook events and target branches. (bc3d53d5)
-* **client-license-manager-user-subscriptions:** Released support for License Expiry field in ListProductSubscriptions API (454d7f7f)
-* **client-ec2:** Adds deleting state to possible VPC States. (43091d55)
-* **client-network-firewall:** Adding new status enum for Firewalls. (4cb21cb3)
-
-
----
-
-For list of updated packages, view **updated-packages.md** in **assets-3.1119.0.zip**]]></description>
-    <pubDate>Wed, 26 Aug 2026 19:07:40 GMT</pubDate>
   </item>
   <item>
     <title>[pnpm/pnpm] pnpm 12 (v12.0.0)</title>
@@ -586,21 +652,6 @@ Bun is free, open source, and MIT-licensed. We receive a lot of contributions fr
     <pubDate>Thu, 20 Aug 2026 14:07:21 GMT</pubDate>
   </item>
   <item>
-    <title>[BabylonJS/Babylon.js] 9.22.0</title>
-    <link>https://github.com/BabylonJS/Babylon.js/releases/tag/9.22.0</link>
-    <guid isPermaLink="true">https://github.com/BabylonJS/Babylon.js/releases/tag/9.22.0</guid>
-    <description><![CDATA[### Core
-
-- Fix alpha-mode sentinel crash and report accurate caps and depth/stencil metadata - by bkaradzic-microsoft (#18804)
-- Fix three IBL rendering bugs: AreaLights prefilter type, OpenPBR anisotropic inlining, black diffuse fallback - by bkaradzic-microsoft (#18803)
-- Fix particle node material async shader creation - [_Bug Fix_] by VicenteCartas (#18802)
-
-### Inspector
-
-- Normalize editor module resolution across all build configs - [_Bug Fix_] by ryantrem (#18801)]]></description>
-    <pubDate>Thu, 20 Aug 2026 07:42:53 GMT</pubDate>
-  </item>
-  <item>
     <title>[bluesky-social/social-app] 1.131.0</title>
     <link>https://github.com/bluesky-social/social-app/releases/tag/1.131.0</link>
     <guid isPermaLink="true">https://github.com/bluesky-social/social-app/releases/tag/1.131.0</guid>
@@ -743,29 +794,6 @@ This release ships a complete Temporal implementation that passes 100% of the te
 
 ... (truncated)]]></description>
     <pubDate>Mon, 17 Aug 2026 08:09:38 GMT</pubDate>
-  </item>
-  <item>
-    <title>[nestjs/nest] v11.2.0</title>
-    <link>https://github.com/nestjs/nest/releases/tag/v11.2.0</link>
-    <guid isPermaLink="true">https://github.com/nestjs/nest/releases/tag/v11.2.0</guid>
-    <description><![CDATA[## What's Changed
-* fix(core): share existing singleton providers with lazily loaded modules by @shariyerShazan in 
-* fix(common): match string file types containing regex metacharacters by @Jaybhade in 
-* fix(core): convert adjacent wildcard segments in legacy route converter by @eeshsaxena in 
-* fix(fastify): run middleware on routes excluded from global prefix by @Arun445 in 
-* fix(fastify): avoid double prefixing inherited middleware by @GiHoon1123 in 
-* fix(core): scan pre-registered dynamic imports of lazy modules by @johnnyhuirilef in 
-* feat(core,common,platform-fastify): add query http method support by @gacardinal in 
-* fix(common): exclude reverse-mapped keys from numeric enum validation in ParseEnumPipe by @LeSingh1 in 
-* test(testing): Add e2e integration tests for HTTP QUERY method (RFC 10008) by @brayanjeshua in 
-* feat(core): sse signal by @kamilmysliwiec in 
-* chore(deps): update dependency fastify to v5.12.0 by @renovate[bot] in 
-
-## New Contributors
-* @
-
-... (truncated)]]></description>
-    <pubDate>Fri, 14 Aug 2026 12:13:03 GMT</pubDate>
   </item>
   <item>
     <title>[microsoft/WindowsAppSDK] Windows App SDK 2.4.0 (v2.4.0)</title>
@@ -1170,28 +1198,6 @@ There are no breaking changes to the configuration of the uv build backend. If y
 
 ... (truncated)]]></description>
     <pubDate>Mon, 27 Jul 2026 23:55:50 GMT</pubDate>
-  </item>
-  <item>
-    <title>[podman-desktop/podman-desktop] v1.29.0</title>
-    <link>https://github.com/podman-desktop/podman-desktop/releases/tag/v1.29.0</link>
-    <guid isPermaLink="true">https://github.com/podman-desktop/podman-desktop/releases/tag/v1.29.0</guid>
-    <description><![CDATA[## What's Changed
-* chore(deps): add jsonc-parser for SchemaStore sync by @simonrey1 in 
-* feat(renderer): modernize StatusDot with SVG icons and a11y improvements by @vancura in 
-* chore(deps-dev): bump eslint-plugin-storybook from 10.4.2 to 10.4.3 by @dependabot[bot] in 
-* chore(deps-dev): bump the storybook group with 5 updates by @dependabot[bot] in 
-* chore: fix pnpm-lock duplicated entries by @benoitf in 
-* chore(deps-dev): bump prettier from 3.8.3 to 3.8.4 by @dependabot[bot] in 
-* chore(deps-dev): bump the typescript-eslint group across 1 directory with 3 updates by @dependabot[bot] in 
-* chore(deps): bump semver from 7.8.3 to 7.8.4 by @dependabot[bot] in 
-* chore(test): decrease version before testing app update by 2 by @odockal in 
-* chore(deps): bump electron from 42.3.3 to 42.4.0 by @dependabot[bot] in 
-* chore: 📢 Bump version to 1.29.0 by @podman-desktop-bot in 
-* fix(ci): update podman org in TF install script by @amisskii in 
-* fix(extension/kind): incorrec
-
-... (truncated)]]></description>
-    <pubDate>Mon, 27 Jul 2026 14:25:08 GMT</pubDate>
   </item>
 </channel>
 </rss>
