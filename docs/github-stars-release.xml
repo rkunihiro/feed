@@ -5,8 +5,109 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Fri, 28 Aug 2026 22:16:54 GMT</lastBuildDate>
+  <lastBuildDate>Sat, 29 Aug 2026 22:01:45 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[pnpm/pnpm] pnpm 11.25 (v11.25.0)</title>
+    <link>https://github.com/pnpm/pnpm/releases/tag/v11.25.0</link>
+    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v11.25.0</guid>
+    <description><![CDATA[## Minor Changes
+
+* Added an opt-in proof of concept that lets installs reuse a dependency's build output across machines, by publishing and restoring signed, organization-scoped artifacts through pnpr instead of running the lifecycle scripts locally.
+
+ Configure it with the new `remoteSideEffectsCache` setting. A workspace names the eligible `organization` and `packages`; everything describing the act of signing — `publish`, `keyId`, `builderId`, `trustedKeys`, `privateKey` and the provenance fields — is refused in `pnpm-workspace.yaml` and read from the global config file or the environment instead.
+
+* Added macOS and Windows x64 and arm64 support to remote shared build artifacts pnpm/pnpm#13771.
+
+* Added the `audit.ignorePrune` setting. When set to `true`, `pnpm audit --fix` removes ignored GHSA entries that no longer appear in the audit report.
+
+* Generalized the experimental shared-artifact protocol so candidates and signed payloads identify a discriminated subject. Depe
+
+... (truncated)]]></description>
+    <pubDate>Sat, 29 Aug 2026 14:20:10 GMT</pubDate>
+  </item>
+  <item>
+    <title>[openai/codex] 0.151.0 (rust-v0.151.0)</title>
+    <link>https://github.com/openai/codex/releases/tag/rust-v0.151.0</link>
+    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.151.0</guid>
+    <description><![CDATA[## New Features
+
+- Added a configurable grace period for discovering tools from optional MCP servers. (#41199)
+- Extensions can now inspect or replace MCP tool results before they reach the model. (#41202)
+- Plugin catalogs now combine per-repository configuration and report invalid project marketplaces without hiding valid plugins. (#41208)
+
+## Bug Fixes
+
+- Preserved restored permission profiles across TUI turns and prevented `/cd` from weakening sandbox restrictions. (#41192)
+- Kept tool availability and reasoning effort correct when switching models or falling back to another model. (#41195, #41206)
+- Improved remote sandbox enforcement using the executor’s actual home directory, operating system, and path conventions. (#41196, #41204, #41207, #41209)
+- Preserved structured MCP tool and resource errors in app-server responses. (#41196)
+- Counted nested subagent token usage toward root goal budgets. (#41183)
+- Prevented stale Guardian classifications from authorizing actions after pe
+
+... (truncated)]]></description>
+    <pubDate>Sat, 29 Aug 2026 09:55:39 GMT</pubDate>
+  </item>
+  <item>
+    <title>[sveltejs/svelte] svelte@5.57.0</title>
+    <link>https://github.com/sveltejs/svelte/releases/tag/svelte%405.57.0</link>
+    <guid isPermaLink="true">https://github.com/sveltejs/svelte/releases/tag/svelte%405.57.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- feat: export `RenderOutput`, `SyncRenderOutput`, `Csp` and `Sha256Source` from `svelte/server` (#18648)
+
+- feat: add `has` function to `createContext` (#18472)
+
+- feat: support `defaultValue` on `<select>` (#18591)
+
+- feat: add getOrInsert/getOrInsertComputed to SvelteMap (#18728)
+
+### Patch Changes
+
+- fix: block template store subscriptions on the promise that assigns the store (#18582)
+
+- fix: route $derived teardown errors through invoke_error_boundary (#18486)
+
+- fix: track SvelteDate snapshots in reactions (#18700)
+
+- fix: remove `<svelte:head>` anchors on unmount (#18697)
+
+- fix: warn on undeclared shorthand event handlers on `<svelte:window>`, `<svelte:document>` and `<svelte:body>` (#18480)
+
+- perf: reuse the cached value in the `<option>`/`<select>` value guard (#18713)
+
+- fix: prevent malformed AST output for `<select>` with static `value` attribute (#18449)
+
+- fix: apply ownership mutation ignores to binding assignments (#18718)
+
+- fix: prevent onoutroen
+
+... (truncated)]]></description>
+    <pubDate>Fri, 28 Aug 2026 23:31:40 GMT</pubDate>
+  </item>
+  <item>
+    <title>[panva/node-oidc-provider] v9.12.0</title>
+    <link>https://github.com/panva/node-oidc-provider/releases/tag/v9.12.0</link>
+    <guid isPermaLink="true">https://github.com/panva/node-oidc-provider/releases/tag/v9.12.0</guid>
+    <description><![CDATA[### Features
+
+* add grant helpers for custom grant implementers (ef311dc)
+* graduate Rich Authorization Requests (40d691b), references #1429
+
+### Fixes
+
+* ignore missing interaction policy removals (08a825f)
+
+### Documentation
+
+* generate extensibility contracts (da48c9e)
+* generate typed configuration defaults (feb9500)
+
+### Refactor
+
+* enforce configuration hook contracts (5c4d05b)]]></description>
+    <pubDate>Fri, 28 Aug 2026 22:23:03 GMT</pubDate>
+  </item>
   <item>
     <title>[sindresorhus/eslint-plugin-unicorn] v74.0.0</title>
     <link>https://github.com/sindresorhus/eslint-plugin-unicorn/releases/tag/v74.0.0</link>
@@ -168,25 +269,6 @@ nest upgrade
 
 ... (truncated)]]></description>
     <pubDate>Thu, 27 Aug 2026 07:43:26 GMT</pubDate>
-  </item>
-  <item>
-    <title>[pnpm/pnpm] pnpm 12 (v12.0.0)</title>
-    <link>https://github.com/pnpm/pnpm/releases/tag/v12.0.0</link>
-    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v12.0.0</guid>
-    <description><![CDATA[## Major Changes
-
-- Git dependencies on known hosts (GitHub, GitLab, Bitbucket) are now treated as identities rather than transport choices. Every representation of the same repository — `github:owner/repo`, `owner/repo`, `git+ `git+ssh://git@…` — resolves through the host's canonical HTTPS URL, and the lockfile never records an SSH URL for them. Repositories whose archive endpoint is anonymously reachable resolve to the host's archive (fast tarball download); all others resolve to a `git` clone of the canonical HTTPS URL, which every machine with access to the repository can fetch.
-
- To reach a private hosted repository over SSH, configure the machine (not the project) with git's own URL rewriting, for example:
-
- ```sh
- git config --global url."git@github.com:".insteadOf 
- ```
-
- pnpm shells out to `git`, so the rewrite applies to all of pnpm's git operations automatically. URLs of unknown hosts (self-hosted servers) are unaffected and keep their exact URL, including SSH. URL
-
-... (truncated)]]></description>
-    <pubDate>Wed, 26 Aug 2026 15:13:51 GMT</pubDate>
   </item>
   <item>
     <title>[nodejs/node] 2026-08-26, Version 26.8.0 (Current), @aduh95 (v26.8.0)</title>
@@ -864,23 +946,6 @@ Windows App SDK 2.4.0 is the latest stable release on the 2.x line, adding expan
     <pubDate>Wed, 12 Aug 2026 20:12:23 GMT</pubDate>
   </item>
   <item>
-    <title>[wailsapp/wails] Wails v2.14.0 (v2.14.0)</title>
-    <link>https://github.com/wailsapp/wails/releases/tag/v2.14.0</link>
-    <guid isPermaLink="true">https://github.com/wailsapp/wails/releases/tag/v2.14.0</guid>
-    <description><![CDATA[## Installation
-
-```bash
-go install github.com/wailsapp/wails/v2/cmd/wails@v2.14.0
-```
-
-## Changes
-
-### Fixed
-
-- Fixed nil pointer crash and swallowed network error when downloading the WebView2 bootstrapper, which made the app exit instead of showing the installation error dialog by @jannskiee]]></description>
-    <pubDate>Mon, 10 Aug 2026 09:36:33 GMT</pubDate>
-  </item>
-  <item>
     <title>[ant-design/ant-design] 6.6.0</title>
     <link>https://github.com/ant-design/ant-design/releases/tag/6.6.0</link>
     <guid isPermaLink="true">https://github.com/ant-design/ant-design/releases/tag/6.6.0</guid>
@@ -1155,51 +1220,6 @@ Pick your language under Preferences > Application > General. Along with English
     <guid isPermaLink="true">https://github.com/warpdotdev/warp/releases/tag/tui-screenshots-app5029</guid>
     <description><![CDATA[Temporary image host for PR #14439 screenshots. Can be deleted after review.]]></description>
     <pubDate>Tue, 28 Jul 2026 21:49:25 GMT</pubDate>
-  </item>
-  <item>
-    <title>[astral-sh/uv] 0.12.0</title>
-    <link>https://github.com/astral-sh/uv/releases/tag/0.12.0</link>
-    <guid isPermaLink="true">https://github.com/astral-sh/uv/releases/tag/0.12.0</guid>
-    <description><![CDATA[## Release Notes
-
-Released on 2026-07-28.
-
-Since we released uv 0.11.0 in March, we've accumulated changes that improve correctness, safety, and compatibility with specifications, but could break some workflows. This release contains those changes; many have been marked as breaking out of an abundance of caution.
-
-**We expect most users to be able to upgrade without making changes.**
-
-There are no breaking changes to the configuration of the uv build backend. If your `[build-system]` table includes an upper bound on `uv_build`, update it to allow `uv_build` 0.12, e.g., `uv_build>=0.11.32,<0.13`.
-
-### Breaking changes
-
-- **Define build systems by default with `uv init`** (#19197)
-
- Projects created with `uv init` now declare a build system and are packaged by default. This was the default project layout all the way back in v0.3, but we found that the use of the `hatchling` build system was confusing to newcomers and consequently dropped use of a build system by default in v0.4. Since th
-
-... (truncated)]]></description>
-    <pubDate>Tue, 28 Jul 2026 18:58:12 GMT</pubDate>
-  </item>
-  <item>
-    <title>[modelcontextprotocol/typescript-sdk] @modelcontextprotocol/fastify@2.0.0</title>
-    <link>https://github.com/modelcontextprotocol/typescript-sdk/releases/tag/%40modelcontextprotocol/fastify%402.0.0</link>
-    <guid isPermaLink="true">https://github.com/modelcontextprotocol/typescript-sdk/releases/tag/%40modelcontextprotocol/fastify%402.0.0</guid>
-    <description><![CDATA[### Patch Changes
-
-- #2402 `a400259` Thanks @felixweinberger! - First beta release of SDK v2 with support for the MCP 2026-07-28 specification
- revision. See the migration guides for upgrading from v1
- (`docs/migration/upgrade-to-v2.md`) and adopting the 2026-07-28 revision
- (`docs/migration/support-2026-07-28.md`).
-
-- #2405 `f172626` Thanks @mattzcarey! - Ship CommonJS builds alongside ESM. Each package now emits both `.mjs`/`.d.mts`
- and `.cjs`/`.d.cts` (via tsdown `format: ['esm', 'cjs']`), and its `exports` map
- adds a `require` condition so `require('@modelcontextprotocol/…')` works from
- CommonJS consumers. Output extensions are normalized across all packages
- (`@modelcontextprotocol/core` moves from `.js`/`.d.ts` to `.mjs`/`.d.mts`); the
- public import paths are unchanged.
-- Updated dependencies [`a400259`, `44797d7`, `1b90c96`, `f172626`, `561c6d8`, `ce2f65d`, `1480241`, `7c49b47`, `e0a0ab7`, `7e69735`, `3c7ddaf`, `8e1d2e9`, `e8de519`, `f413763`, `0ab5d14`, `24be404`, `470678d`
-
-... (truncated)]]></description>
-    <pubDate>Mon, 27 Jul 2026 23:55:50 GMT</pubDate>
   </item>
 </channel>
 </rss>
