@@ -5,8 +5,53 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Sat, 29 Aug 2026 22:01:45 GMT</lastBuildDate>
+  <lastBuildDate>Sun, 30 Aug 2026 22:02:00 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[dprint/dprint] 0.57.0</title>
+    <link>https://github.com/dprint/dprint/releases/tag/0.57.0</link>
+    <guid isPermaLink="true">https://github.com/dprint/dprint/releases/tag/0.57.0</guid>
+    <description><![CDATA[## Changes
+
+* feat: add a shebangs config for routing extensionless scripts to a plugin (#1230)
+* feat: add `--minimum-dependency-age` for npm dependencies (#1228)
+* feat: add `--diff-format unified` to `dprint check` and `dprint fmt --diff` (#1232)
+* feat: add `dprint check --json` flag (#1231)
+* perf: match glob patterns on the reader threads (#1234)
+* perf: cheaper per-file plugin resolution (#1233)
+
+## Install
+
+Run `dprint upgrade` or see 
+
+## Checksums
+
+|Artifact|SHA-256 Checksum|
+|:--|:--|
+|dprint-x86_64-apple-darwin.zip|41b6bb07d121d0506edd85d8176caf3d3909648089ee6c0b8b4f9c896791c14f|
+|dprint-aarch64-apple-darwin.zip|14bdbfb9b1e3ebd614d5ec08a068b04b0d0370d70c112723003dd9103a4c0c3a|
+|dprint-x86_64-pc-windows-msvc.zip|90e81a6106af4571893587acb4a1b1baa6b0879c60eec36497a08c03127410d1|
+|dprint-x86_64-pc-windows-msvc-installer.exe|f023d1770c2cf8a92471e7c95e2db184359911c14c2c070c9efc6cbb70ccc030|
+|dprint-aarch64-pc-windows-msvc.zip|42db2e31a7434c6d205fb71ec39b76a5d
+
+... (truncated)]]></description>
+    <pubDate>Sun, 30 Aug 2026 21:09:02 GMT</pubDate>
+  </item>
+  <item>
+    <title>[Tatsu-syo/noMeiryoUI] Version 3.5.0 (TAG-3.5.0)</title>
+    <link>https://github.com/Tatsu-syo/noMeiryoUI/releases/tag/TAG-3.5.0</link>
+    <guid isPermaLink="true">https://github.com/Tatsu-syo/noMeiryoUI/releases/tag/TAG-3.5.0</guid>
+    <description><![CDATA[- Windows 11 version 26H1の検出方法を修正しました。
+- 大サイズのアイコンを追加しました。
+- インストーラー版を追加しました。
+
+----
+
+- Fix Windows 11 version 26H1 detection.
+- Added large icons.
+- Added installer version.]]></description>
+    <pubDate>Sun, 30 Aug 2026 08:18:53 GMT</pubDate>
+  </item>
   <item>
     <title>[pnpm/pnpm] pnpm 11.25 (v11.25.0)</title>
     <link>https://github.com/pnpm/pnpm/releases/tag/v11.25.0</link>
@@ -790,37 +835,6 @@ Bun is free, open source, and MIT-licensed. We receive a lot of contributions fr
     <pubDate>Tue, 18 Aug 2026 16:21:38 GMT</pubDate>
   </item>
   <item>
-    <title>[dprint/dprint] 0.56.0</title>
-    <link>https://github.com/dprint/dprint/releases/tag/0.56.0</link>
-    <guid isPermaLink="true">https://github.com/dprint/dprint/releases/tag/0.56.0</guid>
-    <description><![CDATA[## Changes
-
-* feat: prefer plugins on the npm registry (#1215)
-* feat: add path completion hints to CLI args (#1217)
-* feat: support formatting directory args (#1196)
-* feat: format explicit paths outside the working directory (#1204)
-* fix: keep a duplicate plugin's checksum when deduping plugin sources (#1211)
-* fix: don't duplicate a plugin specified in both a config and its extended config (#1043) (#1208)
-* fix: apply implicit `node_modules` exclude and unanchored patterns in rebased scopes (#1210)
-* fix: resolve literal file and directory args without directory traversal (#1207)
-* fix: handle overflow panic in progress bars (#1223)
-
-## Install
-
-Run `dprint upgrade` or see 
-
-## Checksums
-
-|Artifact|SHA-256 Checksum|
-|:--|:--|
-|dprint-x86_64-apple-darwin.zip|466dd67e15fca266f3749008ef5d23ea7a6c657ef8204257dbb8c23636fc9aca|
-|dprint-aarch64-apple-darwin.zip|79f5c80a3ddebb4717a89a25a79ec1c50947d4cef141df243757925cb47d32e1|
-|dprint-x86_64-pc-windows-msvc.zip|cbcb0c
-
-... (truncated)]]></description>
-    <pubDate>Tue, 18 Aug 2026 13:11:58 GMT</pubDate>
-  </item>
-  <item>
     <title>[floci-io/floci] 1.7.0</title>
     <link>https://github.com/floci-io/floci/releases/tag/1.7.0</link>
     <guid isPermaLink="true">https://github.com/floci-io/floci/releases/tag/1.7.0</guid>
@@ -1213,13 +1227,6 @@ Pick your language under Preferences > Application > General. Along with English
 
 * ✨ Add `app.frontend(check_dir="auto")`, to make local development more convenient with `fastapi dev`. PR #16102 by @tiangolo.]]></description>
     <pubDate>Wed, 29 Jul 2026 14:47:36 GMT</pubDate>
-  </item>
-  <item>
-    <title>[warpdotdev/warp] TUI Screenshots APP-5029 (delete after PR review) (tui-screenshots-app5029)</title>
-    <link>https://github.com/warpdotdev/warp/releases/tag/tui-screenshots-app5029</link>
-    <guid isPermaLink="true">https://github.com/warpdotdev/warp/releases/tag/tui-screenshots-app5029</guid>
-    <description><![CDATA[Temporary image host for PR #14439 screenshots. Can be deleted after review.]]></description>
-    <pubDate>Tue, 28 Jul 2026 21:49:25 GMT</pubDate>
   </item>
 </channel>
 </rss>
