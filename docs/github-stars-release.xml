@@ -5,8 +5,211 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Sun, 30 Aug 2026 22:02:00 GMT</lastBuildDate>
+  <lastBuildDate>Mon, 31 Aug 2026 22:02:02 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[withastro/astro] @astrojs/mdx@8.0.0</title>
+    <link>https://github.com/withastro/astro/releases/tag/%40astrojs/mdx%408.0.0</link>
+    <guid isPermaLink="true">https://github.com/withastro/astro/releases/tag/%40astrojs/mdx%408.0.0</guid>
+    <description><![CDATA[### Major Changes
+
+- #17262 `f8e9458` Thanks @Princesseuh! - Moves MDX file processing to the Markdown processors.
+
+ '@astrojs/mdx' is still required to add MDX support to your project. However, it now delegates the MDX files processing to Markdown processors.
+
+ #### What should I do?
+
+ If you haven't explicitly installed a Markdown processor, you don't need to do anything.
+
+ Otherwise, ensure that your configured Markdown processor uses the following version:
+
+ - `@astrojs/markdown-satteri` 0.4.0 or later if you use `satteri`
+ - `@astrojs/markdown-remark` 7.3.0 or later if you use `unified`
+
+### Patch Changes
+
+- #17262 `f8e9458` Thanks @Princesseuh! - Fixes `.mdx` files still using `markdown.processor` when `extendMarkdownConfig` is `false`. They now use a clean default processor instead; pass `mdx({ processor })` to choose one explicitly.
+
+- #17262 `f8e9458` Thanks @Princesseuh! - Adds a warning when the deprecated `remarkPlugins`, `rehypePlugins`, `recmaPlugins` and `remarkRehype` o
+
+... (truncated)]]></description>
+    <pubDate>Mon, 31 Aug 2026 19:37:28 GMT</pubDate>
+  </item>
+  <item>
+    <title>[remix-run/remix] spa v0.1.0 (spa@0.1.0)</title>
+    <link>https://github.com/remix-run/remix/releases/tag/spa%400.1.0</link>
+    <guid isPermaLink="true">https://github.com/remix-run/remix/releases/tag/spa%400.1.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- Added the initial `@remix-run/spa` package with `render` middleware and a `run(router, { fallback? })` browser runtime for client-rendered Remix applications. Route handlers use `context.render` while the package preserves the router's `Request` to `Response` contract and hides the SPA response carrier.
+
+### Patch Changes
+
+- Bumped `@remix-run/*` dependencies:
+ - `render-middleware@0.2.0`
+ - `ui@0.8.0`]]></description>
+    <pubDate>Mon, 31 Aug 2026 18:59:34 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-08-31) (release-2026-08-31)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-31</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-31</guid>
+    <description><![CDATA[## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/service/acm`: [v1.47.0](service/acm/CHANGELOG.md#v1470-2026-08-31)
+ * **Feature**: Enable schema-based (de)serialization for this service.
+* `github.com/aws/aws-sdk-go-v2/service/agentregistry`: [v1.3.0](service/agentregistry/CHANGELOG.md#v130-2026-08-31)
+ * **Feature**: AWS Agent Registry becomes Generally Available
+* `github.com/aws/aws-sdk-go-v2/service/agentregistrycontrol`: [v1.3.0](service/agentregistrycontrol/CHANGELOG.md#v130-2026-08-31)
+ * **Feature**: AWS Agent Registry becomes Generally Available
+* `github.com/aws/aws-sdk-go-v2/service/amp`: [v1.51.0](service/amp/CHANGELOG.md#v1510-2026-08-31)
+ * **Feature**: Enable schema-based (de)serialization for this service.
+* `github.com/aws/aws-sdk-go-v2/service/amplify`: [v1.45.0](service/amplify/CHANGELOG.md#v1450-2026-08-31)
+ * **Feature**: Enable schema-based (de)serialization for this service.
+* `github.com/aws/aws-sdk-go-v2/service/appflow`: [v1.57.0](service/appflow/CHANGELO
+
+... (truncated)]]></description>
+    <pubDate>Mon, 31 Aug 2026 18:50:04 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1122.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1122.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1122.0</guid>
+    <description><![CDATA[#### 3.1122.0(2026-08-31)
+
+##### Documentation Changes
+
+* **client-controltower:** Updated the descriptions for the AWS Control Tower ListEnabledControls API parameters to make them more accurate and intuitive. (c54ac4e6)
+
+##### New Features
+
+* **client-pinpoint-sms-voice-v2:** AWS End User Messaging SMS now returns ConditionalBehavior on DescribeRegistrationFieldDefinitions, allowing you to programmatically discover which registration fields are required, optional, or disallowed based on the values of other fields in the same form. (9cbace13)
+* **client-customer-profiles:** This release introduces new APIs for segment membership events allowing segment definition membership events to be exported to a kinesis stream for downstream processing. Additionally, includes new calculated attribute statistic and 2 new segment dimension types. (be1a9dab)
+* **client-sagemaker:** Amazon SageMaker Batch Transform now supports G6e instances, powered by NVIDIA L40S Tensor Core GPUs. G6e instances are
+
+... (truncated)]]></description>
+    <pubDate>Mon, 31 Aug 2026 18:49:42 GMT</pubDate>
+  </item>
+  <item>
+    <title>[typescript-eslint/typescript-eslint] v8.69.0</title>
+    <link>https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.69.0</link>
+    <guid isPermaLink="true">https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.69.0</guid>
+    <description><![CDATA[## 8.69.0 (2026-08-31)
+
+### 🚀 Features
+
+- **eslint-plugin:** [no-misused-promises] add flagUnions option for checkConditionals (#12603)
+
+### 🩹 Fixes
+
+- **eslint-plugin:** [no-mixed-enums] use scope analysis instead of type checking for merged namespaces (#12731)
+- **eslint-plugin:** [unified-signatures] compare type parameters by constraint instead of name (#12741)
+- **eslint-plugin:** [no-meaningless-void-operator] report void on non-call expressions (#12727)
+- **website:** respect allowJs playground config (#12744)
+
+### ❤️ Thank You
+
+- Abdu Alim Arlikhozhaev @Arlikhozhaev
+- Evyatar Daud @StyleShit
+- Josh Goldberg ✨
+- wonbeanie @wonbeanie
+- Younsang Na @nayounsang
+
+See GitHub Releases for more information.
+
+You can read about our versioning strategy and releases on our website.]]></description>
+    <pubDate>Mon, 31 Aug 2026 17:06:30 GMT</pubDate>
+  </item>
+  <item>
+    <title>[inokawa/virtua] 0.51.0</title>
+    <link>https://github.com/inokawa/virtua/releases/tag/0.51.0</link>
+    <guid isPermaLink="true">https://github.com/inokawa/virtua/releases/tag/0.51.0</guid>
+    <description><![CDATA[## BREAKING CHANGES
+
+Dropped some legacy browser supports. Use polyfills instead.
+
+
+## What's Changed
+* Improve window driver by @inokawa in 
+* Correct jsdoc by @inokawa in 
+* Refactor RTL handling by @inokawa in 
+* Refactor smoke e2e by @inokawa in 
+* Delete store.spec.ts by @inokawa in 
+* Refactor feature detection for smooth scroll by @inokawa in 
+* Fix bug that scroll-behavior: smooth can break programmatic scroll by @inokawa in 
+* Fix bug that scroll position can jump back during fast scrolling by @inokawa in 
+
+
+**Full Changelog**:]]></description>
+    <pubDate>Mon, 31 Aug 2026 13:45:41 GMT</pubDate>
+  </item>
+  <item>
+    <title>[servo/servo] v0.5.0</title>
+    <link>https://github.com/servo/servo/releases/tag/v0.5.0</link>
+    <guid isPermaLink="true">https://github.com/servo/servo/releases/tag/v0.5.0</guid>
+    <description><![CDATA[See our July blog post for a curated overview of the changes in this release.
+
+## Trying out the Servo Tech Demo
+
+[troubleshooting guide]: 
+
+### Linux
+
+If you see an error `loading shared libraries` when starting servo on Linux, please refer to the [troubleshooting guide].
+
+### HarmonyOS
+
+Please note that the `servo-aarch64-linux-ohos.hap` attached here is signed for OpenHarmony, not HarmonyOS.
+For HarmonyOS self-signing is currently required - You can download the `servo-aarch64-linux-ohos.so` shared library and use DevEco Studio to follow the instructions in the ArkTS Servo Demo repository
+
+## What's Changed
+
+Please check out our July blog post to get a curated overview over the recent changes.
+
+<details>
+ <summary>Generated Release notes</summary>
+
+## What's Changed
+* android: Convert refresh button on large screen to Compose UI by @veyndan in 
+* script: Implement importKey and exportKey operation of Ed448 by @kkoyung in 
+* net: Avoid creating empty cookie m
+
+... (truncated)]]></description>
+    <pubDate>Mon, 31 Aug 2026 10:20:07 GMT</pubDate>
+  </item>
+  <item>
+    <title>[azat-io/eslint-plugin-perfectionist] v5.11.0</title>
+    <link>https://github.com/azat-io/eslint-plugin-perfectionist/releases/tag/v5.11.0</link>
+    <guid isPermaLink="true">https://github.com/azat-io/eslint-plugin-perfectionist/releases/tag/v5.11.0</guid>
+    <description><![CDATA[### &nbsp;&nbsp;&nbsp;🚀 Features
+
+- **sort-modules**: Support custom module block nodes &nbsp;-&nbsp; by @hugop95 <samp>(077f5)</samp>
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- Don&#39;t fail on tsconfig files without input files &nbsp;-&nbsp; by @azat-io <samp>(04183)</samp>
+- **sort-modules**: Detect decorator metadata dependencies &nbsp;-&nbsp; by @hugop95 <samp>(dbcd0)</samp>
+- **sort-objects**: Don&#39;t ignore callback dependencies by default &nbsp;-&nbsp; by @hugop95 <samp>(7fd2e)</samp>
+
+##### &nbsp;&nbsp;&nbsp;&nbsp;View changes on GitHub]]></description>
+    <pubDate>Mon, 31 Aug 2026 09:01:07 GMT</pubDate>
+  </item>
+  <item>
+    <title>[sindresorhus/got] v16.0.0</title>
+    <link>https://github.com/sindresorhus/got/releases/tag/v16.0.0</link>
+    <guid isPermaLink="true">https://github.com/sindresorhus/got/releases/tag/v16.0.0</guid>
+    <description><![CDATA[## Breaking changes
+
+- Rewrite HTTP/2 support and drop the `http2-wrapper` dependency (#2464) 1e157c4
+	- Got now has a built-in HTTP/2 client: ALPN negotiation, a pooled session cache with multiplexing, `GOAWAY` retirement, request and response trailers, informational (1xx) responses, abort signals, response caching, IPv6 authorities, and `h2c` through `h2session`.
+	- `agent.http2` is no longer an agent slot. It is only an opt-out flag now: pass `false` to skip session pooling. Passing an agent instance throws.
+	- Response headers no longer contain HTTP/2 pseudo-headers. Use `response.statusCode` instead of `response.headers[':status']`.
+	- A custom `agent.https` combined with `http2: true` makes Got use the native HTTP/1.1 path, because the built-in session pool does not support custom HTTPS agents.
+	- HTTP/2 proxy support is gone. It came from `http2-wrapper`. It was very buggy anyway.
+	- If `options.request` returns a request or response, it controls the transport and the HT
+
+... (truncated)]]></description>
+    <pubDate>Sun, 30 Aug 2026 23:03:47 GMT</pubDate>
+  </item>
   <item>
     <title>[dprint/dprint] 0.57.0</title>
     <link>https://github.com/dprint/dprint/releases/tag/0.57.0</link>
@@ -175,39 +378,6 @@ Run `dprint upgrade` or see
 
 ... (truncated)]]></description>
     <pubDate>Fri, 28 Aug 2026 19:44:39 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-08-28.2) (release-2026-08-28.2)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-28.2</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-28.2</guid>
-    <description><![CDATA[## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/bedrockagent`: [v1.61.0](service/bedrockagent/CHANGELOG.md#v1610-2026-08-282)
- * **Feature**: Adds an optional syncSchedule field to CreateDataSource and UpdateDataSource for Managed Knowledge Bases data source connectors, so a data source can sync automatically on a daily, weekly, or monthly schedule.
-* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcore`: [v1.43.0](service/bedrockagentcore/CHANGELOG.md#v1430-2026-08-282)
- * **Feature**: AgentCore Memory now supports direct ingestion into long-term memory via IngestData API
-* `github.com/aws/aws-sdk-go-v2/service/cognitoidentityprovider`: [v1.70.0](service/cognitoidentityprovider/CHANGELOG.md#v1700-2026-08-282)
- * **Feature**: Adds two new operations - GetClientToken which allows M2M auth through the SDK, and DescribeTermsByClient to find which Terms are associated with a user-pool client without knowing the Terms resource id.
-* `github.com/aws/aws-sdk-go-v2/service/ecs`:
-
-... (truncated)]]></description>
-    <pubDate>Fri, 28 Aug 2026 18:56:55 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-js-v3] v3.1121.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1121.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1121.0</guid>
-    <description><![CDATA[#### 3.1121.0(2026-08-28)
-
-##### New Features
-
-* **client-ecs:** Amazon Elastic Container Service - This release adds support for early success criteria on ECS rolling deployments, letting deployment complete once a configurable percentage of tasks are healthy, with configurable BLOCKING (required) or DEFERRED (asynchronous) cleanup of previous service revisions. (ef22d750)
-* **client-healthlake:** New HealthLake API, RestoreFHIRDatastore, providing the capability to restore active datastores to a point in time within the last 30 days or recover a deleted datastore from the delete snapshot. (62491742)
-* **client-bedrock-agentcore:** AgentCore Memory now supports direct ingestion into long-term memory via IngestData API (20d652de)
-* **client-partnercentral-selling:** Releasing PARC, new APN Program that lets sellers add solftware revenue details to aws opportunity summary (2b6350f0)
-* **client-cognito-identity-provider:** Adds two new operations - GetClientToken which allows M2M auth th
-
-... (truncated)]]></description>
-    <pubDate>Fri, 28 Aug 2026 18:55:57 GMT</pubDate>
   </item>
   <item>
     <title>[jestjs/jest] v30.5.0</title>
@@ -386,35 +556,6 @@ c
 
 ... (truncated)]]></description>
     <pubDate>Mon, 24 Aug 2026 17:29:10 GMT</pubDate>
-  </item>
-  <item>
-    <title>[typescript-eslint/typescript-eslint] v8.68.0</title>
-    <link>https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.68.0</link>
-    <guid isPermaLink="true">https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.68.0</guid>
-    <description><![CDATA[## 8.68.0 (2026-08-24)
-
-### 🚀 Features
-
-- **eslint-plugin:** [strict-void-return] add fix suggestions (#12086)
-- **utils:** support ESLint rule meta.languages (#12663)
-
-### 🩹 Fixes
-
-- **eslint-plugin:** [unified-signatures] deduplicate types in report (#12656)
-- **eslint-plugin:** [return-await] prevent autofix from breaking code in arrow-functions (#12707)
-- **eslint-plugin:** [unified-signatures] report identical signatures (#12678)
-- **eslint-plugin:** [no-unnecessary-type-assertion] prevent stack overflow in recursive types (#12711)
-- **eslint-plugin:** [no-floating-promises] setting `ignoreVoid: false` results in false negative in ArrowFunctionExpression (#12646)
-- **eslint-plugin:** [no-empty-object-type] ignore suggestions that result in invalid interfaces and export defaults (#12739)
-- **website:** playground crashes on `extends` configs (#12608)
-- **website:** account for thanks.dev and out-of-band donors in sponsors list (#12735)
-
-### ❤️ Thank You
-
-- Evy
-
-... (truncated)]]></description>
-    <pubDate>Mon, 24 Aug 2026 17:25:28 GMT</pubDate>
   </item>
   <item>
     <title>[esm-dev/esm.sh] Server v138 (v138)</title>
@@ -874,29 +1015,6 @@ This release ships a complete Temporal implementation that passes 100% of the te
     <pubDate>Tue, 18 Aug 2026 01:44:54 GMT</pubDate>
   </item>
   <item>
-    <title>[remix-run/remix] ui v0.7.0 (ui@0.7.0)</title>
-    <link>https://github.com/remix-run/remix/releases/tag/ui%400.7.0</link>
-    <guid isPermaLink="true">https://github.com/remix-run/remix/releases/tag/ui%400.7.0</guid>
-    <description><![CDATA[### Minor Changes
-
-- `run` now uses a default browser frame resolver when `resolveFrame` is omitted. Apps that supplied a resolver only to fetch frame HTML can remove it:
-
- ```diff
- let app = run({
- loadModule,
- - resolveFrame(src, options) {
- - return fetch(src, {
- - headers: { Accept: 'text/html' },
- - signal: options?.signal,
- - })
- - },
- })
- ```
-
- All `run` calls now enable frame reloads and same-origin link and form navigation through the Navigation API. The default resolver submits the requested method, encoding, and form data, and rejects non-OK responses. Keep a custom `resolveFrame` when the app needs custom request headers, body encoding, response handling, or error UI. Add `rmx-document` to a link or form to leave that navigation to the browser (see #11693).]]></description>
-    <pubDate>Mon, 17 Aug 2026 22:21:33 GMT</pubDate>
-  </item>
-  <item>
     <title>[stretchr/testify] v1.12.0</title>
     <link>https://github.com/stretchr/testify/releases/tag/v1.12.0</link>
     <guid isPermaLink="true">https://github.com/stretchr/testify/releases/tag/v1.12.0</guid>
@@ -988,42 +1106,6 @@ Windows App SDK 2.4.0 is the latest stable release on the 2.x line, adding expan
 
 **Full Changelog**:]]></description>
     <pubDate>Fri, 07 Aug 2026 10:23:43 GMT</pubDate>
-  </item>
-  <item>
-    <title>[servo/servo] v0.4.0</title>
-    <link>https://github.com/servo/servo/releases/tag/v0.4.0</link>
-    <guid isPermaLink="true">https://github.com/servo/servo/releases/tag/v0.4.0</guid>
-    <description><![CDATA[This release is a re-release of the 0.4.0 release since we forgot the `v` prefix when creating the tag. Additionally, the macOS ServoShell binaries are now signed. 
-
-------------------------
-
-See our June blog post for a curated overview of the changes in this release.
-
-## Trying out the Servo Tech Demo
-
-[troubleshooting guide]: 
-
-### Linux
-
-If you see an error `loading shared libraries` when starting servo on Linux, please refer to the [troubleshooting guide].
-
-### HarmonyOS
-
-Please note that the `servo-aarch64-linux-ohos.hap` attached here is signed for OpenHarmony, not HarmonyOS.
-For HarmonyOS self-signing is currently required - You can download the `servo-aarch64-linux-ohos.so` shared library and use DevEco Studio to follow the instructions in the ArkTS Servo Demo repository
-
-
-## What's Changed
-
-Please check out our June blog post to get a curated overview over the recent changes.
-
-<details>
- <summary>Generated Release notes</summary>
-
-## What's Changed
-
-... (truncated)]]></description>
-    <pubDate>Tue, 04 Aug 2026 18:09:39 GMT</pubDate>
   </item>
   <item>
     <title>[mui/base-ui] v1.7.0</title>
@@ -1138,95 +1220,6 @@ Finally, the React Aria and React Stately hook documentation has been completely
 
 Full Release Notes]]></description>
     <pubDate>Fri, 31 Jul 2026 17:11:02 GMT</pubDate>
-  </item>
-  <item>
-    <title>[fastify/fastify-vite] @fastify/vite@10.0.0</title>
-    <link>https://github.com/fastify/fastify-vite/releases/tag/%40fastify/vite%4010.0.0</link>
-    <guid isPermaLink="true">https://github.com/fastify/fastify-vite/releases/tag/%40fastify/vite%4010.0.0</guid>
-    <description><![CDATA[### Major Changes
-
-- 03cf160: Upgrade @fastify/static to v10.1.2
-
- Includes the security fixes released in @fastify/static v10.1.1 and v10.1.2.
-
- ### Breaking Changes
-
- - **`setHeaders` signature**: `@fastify/static` v10 passes the Fastify `Reply`
- object to the `setHeaders` callback in `fastifyStaticOptions` instead of the
- raw Node.js response.
- - **Header precedence**: Headers set in `setHeaders` now take precedence over the headers
- `@fastify/static` sets itself (e.g. `Cache-Control` from `maxAge`).
-
- ### Migration
-
- If you pass a `setHeaders` callback via `fastifyStaticOptions`:
-
- ```js
- // Before
- setHeaders(res) {
- res.setHeader('X-Custom-Header', 'value')
- }
-
- // After
- setHeaders(reply) {
- reply.header('X-Custom-Header', 'value')
- }
- ```]]></description>
-    <pubDate>Thu, 30 Jul 2026 19:34:10 GMT</pubDate>
-  </item>
-  <item>
-    <title>[facebook/lexical] v0.49.0</title>
-    <link>https://github.com/facebook/lexical/releases/tag/v0.49.0</link>
-    <guid isPermaLink="true">https://github.com/facebook/lexical/releases/tag/v0.49.0</guid>
-    <description><![CDATA[v0.49.0 is a monthly release headlined by the completion of the `$config` protocol migration for Lexical's built-in node classes (#8640), a breaking change that replaces per-node `getType`/`clone`/`importJSON`/`importDOM`/`transform` boilerplate with runtime-synthesized behavior. It ships with a cluster of follow-up fixes hardening the synthesized `getType` and `clone` (including a stack overflow in compiled builds), an opt-in sticky horizontal scrollbar for overflowing tables, and a broad batch of fixes across tables, Markdown, HTML, code highlighting, and selection.
-
-## Breaking Changes
-
-* `lexical` — Built-in node classes are ported to the `$config` protocol. The static `importJSON`, `importDOM`, `clone`, and `transform` methods are no longer present on ported nodes; use the higher-level equivalents instead (`LexicalEditor.parseEditorState`/`$generateNodesFromDOM`, the `$cloneWithProperties` helper, and extensions or `$transform` in `$config`). `getType` is unchanged and safe to
-
-... (truncated)]]></description>
-    <pubDate>Thu, 30 Jul 2026 16:18:43 GMT</pubDate>
-  </item>
-  <item>
-    <title>[rancher-sandbox/rancher-desktop] Rancher Desktop 1.24 (v1.24.0)</title>
-    <link>https://github.com/rancher-sandbox/rancher-desktop/releases/tag/v1.24.0</link>
-    <guid isPermaLink="true">https://github.com/rancher-sandbox/rancher-desktop/releases/tag/v1.24.0</guid>
-    <description><![CDATA[This is the 1.24.0 release of Rancher Desktop, an open source desktop application to bring Kubernetes and container management to macOS, Windows, and Linux.
-
-<table width="100%"><tr><td style="border: 2px solid #d97706; border-radius: 6px; padding: 12px 16px;">
-<strong>⚠️ Auto-Update: If Rancher Desktop shows an error instead of a Restart Now button, install this release manually from the links below</strong>. On 1.23.0 and 1.23.1, the auto-update download fails the moment it starts, so it can't get to 1.24.0. This release fixes the updater, so from 1.24.0 onwards auto-updates install the way they should.
-</td></tr></table>
-
-## Installers
-
-* Windows
-* macOS x86_64
-* macOS aarch64
-* Linux install notes
-
-## New Contributors
-
-Thank you to our new contributor: @voidmatcha!
-
-## Release Notes for 1.24.0
-
-### What's New
-
-#### The interface speaks eight more languages
-
-Pick your language under Preferences > Application > General. Along with English, you can choose Chines
-
-... (truncated)]]></description>
-    <pubDate>Wed, 29 Jul 2026 21:34:21 GMT</pubDate>
-  </item>
-  <item>
-    <title>[fastapi/fastapi] 0.141.0</title>
-    <link>https://github.com/fastapi/fastapi/releases/tag/0.141.0</link>
-    <guid isPermaLink="true">https://github.com/fastapi/fastapi/releases/tag/0.141.0</guid>
-    <description><![CDATA[### Features
-
-* ✨ Add `app.frontend(check_dir="auto")`, to make local development more convenient with `fastapi dev`. PR #16102 by @tiangolo.]]></description>
-    <pubDate>Wed, 29 Jul 2026 14:47:36 GMT</pubDate>
   </item>
 </channel>
 </rss>
