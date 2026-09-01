@@ -5,8 +5,194 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Mon, 31 Aug 2026 22:02:02 GMT</lastBuildDate>
+  <lastBuildDate>Tue, 01 Sep 2026 22:02:11 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[cli/cli] GitHub CLI 2.99.0 (v2.99.0)</title>
+    <link>https://github.com/cli/cli/releases/tag/v2.99.0</link>
+    <guid isPermaLink="true">https://github.com/cli/cli/releases/tag/v2.99.0</guid>
+    <description><![CDATA[## Attach images and videos to issues and pull requests
+
+The repeatable `--attach` flag uploads local images and videos and adds them to issue, pull request, or comment bodies. If a body already references the local path, `gh` replaces it with the uploaded URL; otherwise it appends the attachment:
+
+```shell
+# Attach files when creating or editing an issue
+gh issue create --attach './repro.png#The error state'
+gh issue edit 123 --attach ./walkthrough.mp4
+
+# Attach files when creating or editing a pull request
+gh pr create --attach ./before.png
+gh pr edit 456 --attach ./after.png
+
+# Attach files to comments
+gh issue comment 123 --attach ./repro.png
+gh pr comment 456 --attach ./result.mp4
+```
+
+Repeat the flag to attach multiple files in a single invocation. Attachments are available on GitHub.com and GitHub Enterprise Cloud.
+
+For more information see and 
+
+## Worktree support extended to `gh issue develop` 
+
+`gh issue develop` can now create a linked branch and che
+
+... (truncated)]]></description>
+    <pubDate>Tue, 01 Sep 2026 20:25:04 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1124.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1124.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1124.0</guid>
+    <description><![CDATA[#### 3.1124.0(2026-09-01)
+
+##### New Features
+
+* **clients:** update client endpoints as of 2026-09-01 (5f5319a0)
+* **client-lambda:** AWS Lambda now provides configurable control over S3 direct access, allowing you to explicitly enable or disable how functions stream file reads directly from S3 buckets. This gives you flexibility to tune data access behavior based on your workload requirements, independent of memory size. (b4738dbb)
+* **client-marketplace-discovery:** GetOfferTerms now returns renewalTerm for offers with pre-authorized renewals, exposing maxRenewals, lockoutPeriod, adjustmentDeadline, priceIncrease (fixed percentage or percentage range), and termTemplates (renewal payment schedules). Enables buyers to view renewal pricing and terms. (1fbc92ca)
+* **client-iotsitewise:** AWS IoT SiteWise Scenario Discovery now supports mounting Amazon S3 data directly into pipeline task containers via S3 Access Points, and configuring additional ephemeral storage per task. Mount configu
+
+... (truncated)]]></description>
+    <pubDate>Tue, 01 Sep 2026 18:47:52 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-09-01) (release-2026-09-01)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-01</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-01</guid>
+    <description><![CDATA[## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcorecontrol`: [v1.63.0](service/bedrockagentcorecontrol/CHANGELOG.md#v1630-2026-09-01)
+ * **Feature**: Online evaluation configurations now support up to 25 evaluators. CloudWatch Logs data sources for online evaluation now support up to 10 log groups.
+* `github.com/aws/aws-sdk-go-v2/service/ec2`: [v1.327.0](service/ec2/CHANGELOG.md#v13270-2026-09-01)
+ * **Feature**: Update UserData and UploadPolicy shapes to use SecureBlob
+* `github.com/aws/aws-sdk-go-v2/service/guardduty`: [v1.89.0](service/guardduty/CHANGELOG.md#v1890-2026-09-01)
+ * **Feature**: Amazon GuardDuty now supports custom detection rules, including APIs to manage rule associations and organization-level configurations.
+* `github.com/aws/aws-sdk-go-v2/service/iotsitewise`: [v1.60.0](service/iotsitewise/CHANGELOG.md#v1600-2026-09-01)
+ * **Feature**: AWS IoT SiteWise Scenario Discovery now supports mounting Amazon S3 data directly into pipeline task cont
+
+... (truncated)]]></description>
+    <pubDate>Tue, 01 Sep 2026 18:45:54 GMT</pubDate>
+  </item>
+  <item>
+    <title>[iii-hq/iii] iii 0.23.0 (iii/v0.23.0)</title>
+    <link>https://github.com/iii-hq/iii/releases/tag/iii/v0.23.0</link>
+    <guid isPermaLink="true">https://github.com/iii-hq/iii/releases/tag/iii/v0.23.0</guid>
+    <description><![CDATA[## What's Changed
+* docs(tech-specs): worker-compose tech pack + interactive deck by @guibeira in 
+* docs(install): provider-picking quickstart panel by @anthonyiscoding in 
+* feat: namespace as a runtime routing dimension (engine + SDKs) by @guibeira in 
+* fix(telemetry): rate-limit heartbeats, aggregate CLI usage, unhash worker names by @anthonyiscoding in 
+* fix(sdk): keep engine invocations in default namespace by @guibeira in 
+* Persist traces on disk + redesigned observability configuration UI by @ytallo in 
+* feat(compose): worker-compose daemon — declare a project, start it as a graph, supervise it by @guibeira in 
+* refactor(observability): trigger-driven trace updates — remove live streams and console polling by @ytallo in 
+* feat(compose): migrate worker lifecycle to Worker Compose by @guibeira in 
+* fix(observability): make trace archive eviction actually reclaim disk by @ytallo in 
+* (MOT-4419) feat(observability): return compact trace summaries by @ytallo in 
+* (MOT-4419)
+
+... (truncated)]]></description>
+    <pubDate>Tue, 01 Sep 2026 17:32:45 GMT</pubDate>
+  </item>
+  <item>
+    <title>[oxc-project/oxc] oxlint v1.81.0 &amp; oxfmt v0.66.0 (apps_v1.81.0)</title>
+    <link>https://github.com/oxc-project/oxc/releases/tag/apps_v1.81.0</link>
+    <guid isPermaLink="true">https://github.com/oxc-project/oxc/releases/tag/apps_v1.81.0</guid>
+    <description><![CDATA[## Table of Contents
+
+- [Oxlint v1.81.0](#oxlint-v1.81.0)
+- [Oxfmt v0.66.0](#oxfmt-v0.66.0)
+
+## Oxlint v1.81.0
+### 🚀 Features
+
+- 60b945d linter/nextjs/no-typos: Implement suggestion (#26091) (Mikhail Baev)
+
+### 🐛 Bug Fixes
+
+- 33ac4b0 linter/lsp: Prevent tsgolint from holding onto processes (#25570) (Adrian Schaedle)
+- baf4b1e linter/import/no-empty-named-blocks: Make empty value import removal a suggestion (#26155) (camc314)
+- 77cfaec linter/eslint/object-shorthand: Preserve `__proto__` semantics (#26154) (camc314)
+- fa3c082 linter/unicorn/prefer-set-size: Ignore shadowed `Set` constructors (#26153) (camc314)
+- e412cf2 linter: Clamp invalid JS plugin locations (#26144) (camc314)
+- d86c113 linter: Normalize reversed JS plugin locations (#26138) (camc314)
+- 73c09b2 linter/eslint/no-use-before-define: Run on JS, JSX files (#26114) (camc314)
+- 03ef0f2 linter/unicorn/no-useless-spread: Treat typed arrays as a distinct value hint (#26067) (Aadharsh Pannirselvam)
+- bd15905 linter/react/no-u
+
+... (truncated)]]></description>
+    <pubDate>Tue, 01 Sep 2026 15:17:51 GMT</pubDate>
+  </item>
+  <item>
+    <title>[floci-io/floci] 2.0.0</title>
+    <link>https://github.com/floci-io/floci/releases/tag/2.0.0</link>
+    <guid isPermaLink="true">https://github.com/floci-io/floci/releases/tag/2.0.0</guid>
+    <description><![CDATA[# 2.0.0 (2026-09-01)
+
+
+* fix(stepfunctions)!: reject JSONata top-level references at definition time (#2699) (5534460)
+
+
+### Bug Fixes
+
+* **acm:** correct wildcard validation record names (#2575) (88bf0a2)
+* **apigateway:** match measured JWT claim wire format and enforce route authorizationScopes (#2011) (4980210)
+* **apigateway:** pass RequestContext to ApiGatewayExecuteController in trailing-slash tests (#2394) (41953d8), closes #2377
+* **apigateway:** project HTTP API v2 cookies (#2391) (48880aa)
+* **apigateway:** report RestApi as available (#2816) (62dbd9d)
+* **apigateway:** route CORS preflight (OPTIONS) to deployed API integ… (#1955) (0e3391c), closes #1928
+* **apigateway:** support AWS type Lambda integration and fix duplicate Content-Type header (#2049) (72dfa63)
+* **apigateway:** support underscores in v2 path parameters (#2721) (c18af5b)
+* **apigatewayv2:** CloudFormation AuthorizationScopes pass-through and scope-ingestion hardening (follow-up to #2011) (#2431) (d0a96d8)
+*
+
+... (truncated)]]></description>
+    <pubDate>Tue, 01 Sep 2026 05:04:27 GMT</pubDate>
+  </item>
+  <item>
+    <title>[openai/codex] 0.152.0 (rust-v0.152.0)</title>
+    <link>https://github.com/openai/codex/releases/tag/rust-v0.152.0</link>
+    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.152.0</guid>
+    <description><![CDATA[## New Features
+
+- Vim mode supports `/` and `?` searches within drafts, highlighted matches, and repeat navigation with `n` and `N`. (#41586)
+- Rate-limit banners offer actions for checking usage, managing credits, resetting limits, and managing plans. (#41742)
+- The terminal UI and `codex exec` show credential-refresh progress, including Amazon Bedrock reauthentication. (#41239)
+- MCP server names can contain `:`, `@`, `/`, and `.`, supporting package-style names throughout CLI commands and authentication. (#41700)
+- Individual MCP tools support an `output_token_limit` setting, with consistent truncation across session resumes. (#41421)
+- App-server clients can configure `thread/shellCommand` timeouts, including deadlines longer than one hour. (#41384)
+
+## Bug Fixes
+
+- Vim-enabled composers now start fresh drafts in Insert mode, including after submitting messages or dispatching slash commands. (#41921)
+- Automatic approval reviews can retain longer messages and a larger conversation
+
+... (truncated)]]></description>
+    <pubDate>Tue, 01 Sep 2026 01:58:32 GMT</pubDate>
+  </item>
+  <item>
+    <title>[pnpm/pnpm] pnpm 12.2 (v12.2.0)</title>
+    <link>https://github.com/pnpm/pnpm/releases/tag/v12.2.0</link>
+    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v12.2.0</guid>
+    <description><![CDATA[## Minor Changes
+
+- Catalogs can now resolve workspace dependencies through the `workspace:` protocol.
+
+## Patch Changes
+
+- Fixed `pnpm audit --fix` failing with `ERR_PNPM_INVALID_FIX_OPTION` when used without a value, including when another flag follows it, as in `pnpm audit --fix --json` #13261. Fixed `pnpm audit --fix=override` ignoring the `saveExact` and `savePrefix` settings when writing vulnerability overrides #11523.
+
+- Authenticate Node.js runtime downloads from `nodeDownloadMirrors` with URL-scoped npm registry credentials, including bearer tokens, basic auth, and `tokenHelper` pnpm/pnpm#14334.
+
+- Fixed detached child processes being terminated after successful commands on Windows.
+
+- Sped up installs in large workspaces by resolving each named `workspace:` dependency (`workspace:*`, `workspace:^`, `workspace:1.2.3`) once and reusing it across every project that declares it, instead of re-resolving it per project.
+
+- Fixed `pnpm install --fix-lockfile` to derive
+
+... (truncated)]]></description>
+    <pubDate>Tue, 01 Sep 2026 00:01:41 GMT</pubDate>
+  </item>
   <item>
     <title>[withastro/astro] @astrojs/mdx@8.0.0</title>
     <link>https://github.com/withastro/astro/releases/tag/%40astrojs/mdx%408.0.0</link>
@@ -49,45 +235,6 @@
  - `render-middleware@0.2.0`
  - `ui@0.8.0`]]></description>
     <pubDate>Mon, 31 Aug 2026 18:59:34 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-08-31) (release-2026-08-31)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-31</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-08-31</guid>
-    <description><![CDATA[## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/acm`: [v1.47.0](service/acm/CHANGELOG.md#v1470-2026-08-31)
- * **Feature**: Enable schema-based (de)serialization for this service.
-* `github.com/aws/aws-sdk-go-v2/service/agentregistry`: [v1.3.0](service/agentregistry/CHANGELOG.md#v130-2026-08-31)
- * **Feature**: AWS Agent Registry becomes Generally Available
-* `github.com/aws/aws-sdk-go-v2/service/agentregistrycontrol`: [v1.3.0](service/agentregistrycontrol/CHANGELOG.md#v130-2026-08-31)
- * **Feature**: AWS Agent Registry becomes Generally Available
-* `github.com/aws/aws-sdk-go-v2/service/amp`: [v1.51.0](service/amp/CHANGELOG.md#v1510-2026-08-31)
- * **Feature**: Enable schema-based (de)serialization for this service.
-* `github.com/aws/aws-sdk-go-v2/service/amplify`: [v1.45.0](service/amplify/CHANGELOG.md#v1450-2026-08-31)
- * **Feature**: Enable schema-based (de)serialization for this service.
-* `github.com/aws/aws-sdk-go-v2/service/appflow`: [v1.57.0](service/appflow/CHANGELO
-
-... (truncated)]]></description>
-    <pubDate>Mon, 31 Aug 2026 18:50:04 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-js-v3] v3.1122.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1122.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1122.0</guid>
-    <description><![CDATA[#### 3.1122.0(2026-08-31)
-
-##### Documentation Changes
-
-* **client-controltower:** Updated the descriptions for the AWS Control Tower ListEnabledControls API parameters to make them more accurate and intuitive. (c54ac4e6)
-
-##### New Features
-
-* **client-pinpoint-sms-voice-v2:** AWS End User Messaging SMS now returns ConditionalBehavior on DescribeRegistrationFieldDefinitions, allowing you to programmatically discover which registration fields are required, optional, or disallowed based on the values of other fields in the same form. (9cbace13)
-* **client-customer-profiles:** This release introduces new APIs for segment membership events allowing segment definition membership events to be exported to a kinesis stream for downstream processing. Additionally, includes new calculated attribute statistic and 2 new segment dimension types. (be1a9dab)
-* **client-sagemaker:** Amazon SageMaker Batch Transform now supports G6e instances, powered by NVIDIA L40S Tensor Core GPUs. G6e instances are
-
-... (truncated)]]></description>
-    <pubDate>Mon, 31 Aug 2026 18:49:42 GMT</pubDate>
   </item>
   <item>
     <title>[typescript-eslint/typescript-eslint] v8.69.0</title>
@@ -254,47 +401,6 @@ Run `dprint upgrade` or see
 - Added large icons.
 - Added installer version.]]></description>
     <pubDate>Sun, 30 Aug 2026 08:18:53 GMT</pubDate>
-  </item>
-  <item>
-    <title>[pnpm/pnpm] pnpm 11.25 (v11.25.0)</title>
-    <link>https://github.com/pnpm/pnpm/releases/tag/v11.25.0</link>
-    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v11.25.0</guid>
-    <description><![CDATA[## Minor Changes
-
-* Added an opt-in proof of concept that lets installs reuse a dependency's build output across machines, by publishing and restoring signed, organization-scoped artifacts through pnpr instead of running the lifecycle scripts locally.
-
- Configure it with the new `remoteSideEffectsCache` setting. A workspace names the eligible `organization` and `packages`; everything describing the act of signing — `publish`, `keyId`, `builderId`, `trustedKeys`, `privateKey` and the provenance fields — is refused in `pnpm-workspace.yaml` and read from the global config file or the environment instead.
-
-* Added macOS and Windows x64 and arm64 support to remote shared build artifacts pnpm/pnpm#13771.
-
-* Added the `audit.ignorePrune` setting. When set to `true`, `pnpm audit --fix` removes ignored GHSA entries that no longer appear in the audit report.
-
-* Generalized the experimental shared-artifact protocol so candidates and signed payloads identify a discriminated subject. Depe
-
-... (truncated)]]></description>
-    <pubDate>Sat, 29 Aug 2026 14:20:10 GMT</pubDate>
-  </item>
-  <item>
-    <title>[openai/codex] 0.151.0 (rust-v0.151.0)</title>
-    <link>https://github.com/openai/codex/releases/tag/rust-v0.151.0</link>
-    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.151.0</guid>
-    <description><![CDATA[## New Features
-
-- Added a configurable grace period for discovering tools from optional MCP servers. (#41199)
-- Extensions can now inspect or replace MCP tool results before they reach the model. (#41202)
-- Plugin catalogs now combine per-repository configuration and report invalid project marketplaces without hiding valid plugins. (#41208)
-
-## Bug Fixes
-
-- Preserved restored permission profiles across TUI turns and prevented `/cd` from weakening sandbox restrictions. (#41192)
-- Kept tool availability and reasoning effort correct when switching models or falling back to another model. (#41195, #41206)
-- Improved remote sandbox enforcement using the executor’s actual home directory, operating system, and path conventions. (#41196, #41204, #41207, #41209)
-- Preserved structured MCP tool and resource errors in app-server responses. (#41196)
-- Counted nested subagent token usage toward root goal budgets. (#41183)
-- Prevented stale Guardian classifications from authorizing actions after pe
-
-... (truncated)]]></description>
-    <pubDate>Sat, 29 Aug 2026 09:55:39 GMT</pubDate>
   </item>
   <item>
     <title>[sveltejs/svelte] svelte@5.57.0</title>
@@ -594,35 +700,6 @@ This release hardens runtime option handling, adds RFC 9110 status-code aliases,
     <pubDate>Mon, 24 Aug 2026 13:40:40 GMT</pubDate>
   </item>
   <item>
-    <title>[oxc-project/oxc] oxlint v1.80.0 &amp; oxfmt v0.65.0 (apps_v1.80.0)</title>
-    <link>https://github.com/oxc-project/oxc/releases/tag/apps_v1.80.0</link>
-    <guid isPermaLink="true">https://github.com/oxc-project/oxc/releases/tag/apps_v1.80.0</guid>
-    <description><![CDATA[## Table of Contents
-
-- [Oxlint v1.80.0](#oxlint-v1.80.0)
-- [Oxfmt v0.65.0](#oxfmt-v0.65.0)
-
-## Oxlint v1.80.0
-### 🚀 Features
-
-- 70c3e35 linter/typescript/no-confusing-non-null-assertion: Implement suggestion (#26012) (Mikhail Baev)
-
-### 🐛 Bug Fixes
-
-- 17ae11c linter/oxc/double-comparisons: Handle grouped logical expressions (#26044) (camc314)
-- 8a353a7 linter/eslint/no-control-regex: Refine help message text (#25996) (Rahul Mishra)
-- 8a9bdbd estree: Include decorators in `FormalParameterRest ` spans (#26021) (camc314)
-- 8d94cd1 linter/eslint/no-useless-rename: Preserve type modifiers (#26020) (Cameron)
-- 2cde1f6 rust: Address nightly deprecations (#25998) (Boshen)
-- 51d36d7 linter/vue: Resolve `vue` imports via shared import helpers (#25903) (Connor Shea)
-- 83a68d2 linter/react/no-react-children: Resolve `react` imports by symbol (#25901) (Connor Shea)
-- 124e196 linter: Resolve globals by reference, not by name (#25905) (Connor Shea)
-- a701bcc linter: Remove invalid React compiler d
-
-... (truncated)]]></description>
-    <pubDate>Mon, 24 Aug 2026 13:39:23 GMT</pubDate>
-  </item>
-  <item>
     <title>[vitejs/vite] create-vite@9.2.0</title>
     <link>https://github.com/vitejs/vite/releases/tag/create-vite%409.2.0</link>
     <guid isPermaLink="true">https://github.com/vitejs/vite/releases/tag/create-vite%409.2.0</guid>
@@ -808,45 +885,6 @@ specify init my-project
     <pubDate>Thu, 20 Aug 2026 22:48:38 GMT</pubDate>
   </item>
   <item>
-    <title>[cli/cli] GitHub CLI 2.98.0 (v2.98.0)</title>
-    <link>https://github.com/cli/cli/releases/tag/v2.98.0</link>
-    <guid isPermaLink="true">https://github.com/cli/cli/releases/tag/v2.98.0</guid>
-    <description><![CDATA[## Security
-A security vulnerability has been identified, and fixed, that binds the local forwarded port to all available network interfaces by default.
-
-Users of `gh codespace ports forward` are advised to update `gh` to version `v2.98.0` as soon as possible.
-
-For more information see: 
-
-## Support worktrees in `pr checkout`
-
-Users can now checkout a pull request into a git worktree by using the new `--worktree PATH` flag in `gh pr checkout`:
-
-```shell
-gh pr checkout 12 --worktree ../wt-feature
-```
-
-## Add semantic search to `search issues`
-
-The `gh search issues` command now supports semantic search for issues. Users can select the search type by passing the `--search-type` flag:
-
-```shell
-gh search issues --search-type semantic ...
-
-gh search issues --search-type hybrid ...
-```
-
-For more information about semantic search see: "Improved Search for github issues is now generally available".
-
-## What's Changed
-
-### ✨ Features
-* Add --worktree flag to gh pr
-
-... (truncated)]]></description>
-    <pubDate>Thu, 20 Aug 2026 22:15:58 GMT</pubDate>
-  </item>
-  <item>
     <title>[denoland/rusty_v8] v152.2.0</title>
     <link>https://github.com/denoland/rusty_v8/releases/tag/v152.2.0</link>
     <guid isPermaLink="true">https://github.com/denoland/rusty_v8/releases/tag/v152.2.0</guid>
@@ -974,23 +1012,6 @@ Bun is free, open source, and MIT-licensed. We receive a lot of contributions fr
 
 ... (truncated)]]></description>
     <pubDate>Tue, 18 Aug 2026 16:21:38 GMT</pubDate>
-  </item>
-  <item>
-    <title>[floci-io/floci] 1.7.0</title>
-    <link>https://github.com/floci-io/floci/releases/tag/1.7.0</link>
-    <guid isPermaLink="true">https://github.com/floci-io/floci/releases/tag/1.7.0</guid>
-    <description><![CDATA[## 🎉 Highlights
-
-This release is one of the largest in Floci's history: **nine new services** including **Bedrock AgentCore**, **Lambda MicroVMs**, **CloudHSM v2**, **GuardDuty**, **SWF**, **S3 Tables**, **Managed Service for Apache Flink**, **Application Auto Scaling**, and **transit gateways**. **AppSync Phase 6** closes the six-release build-out. **CloudFront serves real content** from S3 and custom origins. **EKS gains IRSA** with real OIDC. Massive **CloudFormation resource push** (11 new resource types plus new intrinsics). **IAM seeds the full AWS managed policy catalog**. Following 1.6.0's platform-additions bump, 1.7.0 is a maturity-and-breadth release.
-
-### 🆕 Nine new services
-
-- **Bedrock AgentCore** — AgentCore control plane and `InvokeAgentRuntime` stub, extending the Bedrock story from 1.6.0 (#2316)
-- **Lambda MicroVMs** — service module and CloudFormation types for the new Lambda MicroVMs compute model (#2079)
-- **CloudHSM v2** — hardware security module emulat
-
-... (truncated)]]></description>
-    <pubDate>Tue, 18 Aug 2026 05:24:40 GMT</pubDate>
   </item>
   <item>
     <title>[theMackabu/ant] v14.0.ff84a70d.0</title>
@@ -1203,23 +1224,6 @@ Here is `benchmarks/fetch` comparing v4.12 and v4.13 (`ROUNDS=5 ./compare.sh`, B
 
 ... (truncated)]]></description>
     <pubDate>Mon, 03 Aug 2026 12:18:10 GMT</pubDate>
-  </item>
-  <item>
-    <title>[adobe/react-spectrum] React Aria Components v1.20.0 (react-aria-components@1.20.0)</title>
-    <link>https://github.com/adobe/react-spectrum/releases/tag/react-aria-components%401.20.0</link>
-    <guid isPermaLink="true">https://github.com/adobe/react-spectrum/releases/tag/react-aria-components%401.20.0</guid>
-    <description><![CDATA[This release includes many new components and features!
-
-* The new PreviewTrigger component shows a Popover on hover, focus, or long press. Unlike Tooltip, it may include interactive content, useful for hoverable link previews.
-* TokenField (alpha) allows users to enter text with inline tokens. Use it to build AI prompt fields, tag inputs, structured search fields, mention inputs, and multi-select comboboxes.
-* MenuTrigger now supports trigger="contextMenu", enabling accessible context menus via mouse, keyboard, and touch input.
-* A simpler API to implement keyboard shortcuts to useKeyboard.
-* Support for interactive components like textfields inside Table rows.
-
-Finally, the React Aria and React Stately hook documentation has been completely rewritten! The new docs use the same styles as our React Aria Components examples, and show how to use both components and hooks together.
-
-Full Release Notes]]></description>
-    <pubDate>Fri, 31 Jul 2026 17:11:02 GMT</pubDate>
   </item>
 </channel>
 </rss>
