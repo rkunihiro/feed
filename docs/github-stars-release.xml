@@ -5,8 +5,100 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Tue, 01 Sep 2026 22:02:11 GMT</lastBuildDate>
+  <lastBuildDate>Wed, 02 Sep 2026 22:02:28 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1125.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1125.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1125.0</guid>
+    <description><![CDATA[#### 3.1125.0(2026-09-02)
+
+##### New Features
+
+* **client-ec2:** This release adds support to retain interruptible Capacity Reservations in an active state when all capacity is reclaimed. (336c7896)
+* **client-sagemaker-featurestore-runtime:** Amazon SageMaker Feature Store now supports the UpdateRecord API, enabling partial updates to individual feature values in an existing Online Store record without rewriting the entire record. This reduces write payloads and latency for high-frequency feature-level writes . (71920960)
+* **client-sagemaker:** Amazon SageMaker Feature Store now supports the Standard V2 online store type, which enables feature-level writes to feature groups. You can select Standard V2 when creating a feature group, and update the storage type of an existing feature group via UpdateFeatureGroup. (5287db7f)
+* **client-odb:** Adds the ListFlexComponents API for listing the flex components available for a given DB system shape. (551174bf)
+* **client-mgn:** AWS Transform 
+
+... (truncated)]]></description>
+    <pubDate>Wed, 02 Sep 2026 18:43:57 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-09-02) (release-2026-09-02)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-02</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-02</guid>
+    <description><![CDATA[## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/service/appintegrations`: [v1.44.0](service/appintegrations/CHANGELOG.md#v1440-2026-09-02)
+ * **Feature**: This release adds a force parameter to DeleteApplication and a ConflictException to UpdateApplication, letting customers delete applications with existing associations in one call and get a clear error when an update conflicts with the application's current state.
+* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcore`: [v1.45.0](service/bedrockagentcore/CHANGELOG.md#v1450-2026-09-02)
+ * **Feature**: Batch evaluation now supports up to 10 CloudWatch log groups per CloudWatchLogsSource
+* `github.com/aws/aws-sdk-go-v2/service/ec2`: [v1.328.0](service/ec2/CHANGELOG.md#v13280-2026-09-02)
+ * **Feature**: This release adds support to retain interruptible Capacity Reservations in an active state when all capacity is reclaimed.
+* `github.com/aws/aws-sdk-go-v2/service/medialive`: [v1.108.0](service/medialive/CHANGELOG.md#v11080-2026-09
+
+... (truncated)]]></description>
+    <pubDate>Wed, 02 Sep 2026 18:43:34 GMT</pubDate>
+  </item>
+  <item>
+    <title>[zed-industries/zed] v1.18.0</title>
+    <link>https://github.com/zed-industries/zed/releases/tag/v1.18.0</link>
+    <guid isPermaLink="true">https://github.com/zed-industries/zed/releases/tag/v1.18.0</guid>
+    <description><![CDATA[This week's release includes refreshed Markdown preview styling, inline debugger values for C and C++, and File Finder history that persists across workspace sessions.
+
+## Shipped by the Zed Guild 🛡️
+
+- Fixed the inline assistant doing nothing when the model emitted reasoning before its tool call. (#61220; thanks aviatesk)
+- Fixed some Pyright and BasedPyright settings not being applied properly. (#62673; thanks lingyaochu)
+- Fixed bookmarks not disappearing from the gutter immediately after clearing all bookmarks. (#62847; thanks austincummings)
+- Fixed the LSP status tooltip to display the target script path for runtime-managed language servers. (#62919; thanks lingyaochu)
+
+---
+
+*Learn about the Zed Guild.*
+
+## Features
+
+### AI
+
+- Added support for GPT-5.6's 1M-token context window on Amazon Bedrock. (#63069; thanks 5herlocked)
+- Added Gemini 3.5 Flash-Lite to the Google AI models. (#63129; thanks ArneshBanerjee)
+- Added Grok 4.5 and Grok 4.6 to the xAI models. (#
+
+... (truncated)]]></description>
+    <pubDate>Wed, 02 Sep 2026 18:13:31 GMT</pubDate>
+  </item>
+  <item>
+    <title>[pnpm/pnpm] pnpm 12.3 (v12.3.0)</title>
+    <link>https://github.com/pnpm/pnpm/releases/tag/v12.3.0</link>
+    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v12.3.0</guid>
+    <description><![CDATA[## Minor Changes
+
+- Every context-aware global command (`node`, `deno`, `bun`, and the shims created with `pnpm shim add`) is now a native executable on every platform, so environment variables whose names are not valid shell identifiers reach these commands. On Windows, `<name>.exe` replaces the `.cmd` and `.ps1` shims for them. Shims written by earlier pnpm 12 releases are migrated on the next global install or self-update.
+
+- `pnpm remove` and `pnpm update` now accept `--trust-lockfile`, `--no-trust-lockfile`, `--trust-policy`, `--trust-policy-exclude` and `--trust-policy-ignore-after`, the same flags `pnpm install` and `pnpm add` take, so the supply-chain settings can be overridden for a single run. `pnpm remove` verifies the lockfile against the active policies the way `pnpm install` does, and `--trust-lockfile` skips that pass for every entry, not only the package being removed.
+
+ `pnpm` now also honors `--config.trust-lockfile=<value>`, and accepts the bare `--trust-lockfi
+
+... (truncated)]]></description>
+    <pubDate>Wed, 02 Sep 2026 16:28:57 GMT</pubDate>
+  </item>
+  <item>
+    <title>[Seldaek/monolog] 3.11.0</title>
+    <link>https://github.com/Seldaek/monolog/releases/tag/3.11.0</link>
+    <guid isPermaLink="true">https://github.com/Seldaek/monolog/releases/tag/3.11.0</guid>
+    <description><![CDATA[* Security: Fixed potential XSS in `BrowserConsoleHandler` when logging user provided content
+ * Added `RedactingFormatter` to automatically redact sensitive data from records, based on key names, `#[SensitiveParameter]` constructor params and/or regex patterns (#2041)
+ * Added `FrankenPhpHandler` to log records via FrankenPHP's frankenphp_log function (#2056)
+ * Added `LogMonsterHandler` which complains if the code did not log enough records before the process/request ends, like a dead man's switch for logs (#2039)
+ * Added `FILE_PER_HOUR` rotation mode to `RotatingFileHandler` (#2040)
+ * Added `ErrorHandler::captureStackTraces` to attach the stack trace of PHP errors to the records it generates (#2060)
+ * Added `NormalizerFormatter::setMaxTraceLength` to limit how many stack trace frames are included when normalizing exceptions (#2015)
+ * Added extension points to `TelegramBotHandler` to change the API URL (e.g. for a self-hosted Bot API server) and to send extra curl headers 
+
+... (truncated)]]></description>
+    <pubDate>Wed, 02 Sep 2026 12:41:06 GMT</pubDate>
+  </item>
   <item>
     <title>[cli/cli] GitHub CLI 2.99.0 (v2.99.0)</title>
     <link>https://github.com/cli/cli/releases/tag/v2.99.0</link>
@@ -39,39 +131,6 @@ For more information see and
 
 ... (truncated)]]></description>
     <pubDate>Tue, 01 Sep 2026 20:25:04 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-js-v3] v3.1124.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1124.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1124.0</guid>
-    <description><![CDATA[#### 3.1124.0(2026-09-01)
-
-##### New Features
-
-* **clients:** update client endpoints as of 2026-09-01 (5f5319a0)
-* **client-lambda:** AWS Lambda now provides configurable control over S3 direct access, allowing you to explicitly enable or disable how functions stream file reads directly from S3 buckets. This gives you flexibility to tune data access behavior based on your workload requirements, independent of memory size. (b4738dbb)
-* **client-marketplace-discovery:** GetOfferTerms now returns renewalTerm for offers with pre-authorized renewals, exposing maxRenewals, lockoutPeriod, adjustmentDeadline, priceIncrease (fixed percentage or percentage range), and termTemplates (renewal payment schedules). Enables buyers to view renewal pricing and terms. (1fbc92ca)
-* **client-iotsitewise:** AWS IoT SiteWise Scenario Discovery now supports mounting Amazon S3 data directly into pipeline task containers via S3 Access Points, and configuring additional ephemeral storage per task. Mount configu
-
-... (truncated)]]></description>
-    <pubDate>Tue, 01 Sep 2026 18:47:52 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-09-01) (release-2026-09-01)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-01</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-01</guid>
-    <description><![CDATA[## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcorecontrol`: [v1.63.0](service/bedrockagentcorecontrol/CHANGELOG.md#v1630-2026-09-01)
- * **Feature**: Online evaluation configurations now support up to 25 evaluators. CloudWatch Logs data sources for online evaluation now support up to 10 log groups.
-* `github.com/aws/aws-sdk-go-v2/service/ec2`: [v1.327.0](service/ec2/CHANGELOG.md#v13270-2026-09-01)
- * **Feature**: Update UserData and UploadPolicy shapes to use SecureBlob
-* `github.com/aws/aws-sdk-go-v2/service/guardduty`: [v1.89.0](service/guardduty/CHANGELOG.md#v1890-2026-09-01)
- * **Feature**: Amazon GuardDuty now supports custom detection rules, including APIs to manage rule associations and organization-level configurations.
-* `github.com/aws/aws-sdk-go-v2/service/iotsitewise`: [v1.60.0](service/iotsitewise/CHANGELOG.md#v1600-2026-09-01)
- * **Feature**: AWS IoT SiteWise Scenario Discovery now supports mounting Amazon S3 data directly into pipeline task cont
-
-... (truncated)]]></description>
-    <pubDate>Tue, 01 Sep 2026 18:45:54 GMT</pubDate>
   </item>
   <item>
     <title>[iii-hq/iii] iii 0.23.0 (iii/v0.23.0)</title>
@@ -169,29 +228,6 @@ For more information see and
 
 ... (truncated)]]></description>
     <pubDate>Tue, 01 Sep 2026 01:58:32 GMT</pubDate>
-  </item>
-  <item>
-    <title>[pnpm/pnpm] pnpm 12.2 (v12.2.0)</title>
-    <link>https://github.com/pnpm/pnpm/releases/tag/v12.2.0</link>
-    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v12.2.0</guid>
-    <description><![CDATA[## Minor Changes
-
-- Catalogs can now resolve workspace dependencies through the `workspace:` protocol.
-
-## Patch Changes
-
-- Fixed `pnpm audit --fix` failing with `ERR_PNPM_INVALID_FIX_OPTION` when used without a value, including when another flag follows it, as in `pnpm audit --fix --json` #13261. Fixed `pnpm audit --fix=override` ignoring the `saveExact` and `savePrefix` settings when writing vulnerability overrides #11523.
-
-- Authenticate Node.js runtime downloads from `nodeDownloadMirrors` with URL-scoped npm registry credentials, including bearer tokens, basic auth, and `tokenHelper` pnpm/pnpm#14334.
-
-- Fixed detached child processes being terminated after successful commands on Windows.
-
-- Sped up installs in large workspaces by resolving each named `workspace:` dependency (`workspace:*`, `workspace:^`, `workspace:1.2.3`) once and reusing it across every project that declares it, instead of re-resolving it per project.
-
-- Fixed `pnpm install --fix-lockfile` to derive
-
-... (truncated)]]></description>
-    <pubDate>Tue, 01 Sep 2026 00:01:41 GMT</pubDate>
   </item>
   <item>
     <title>[withastro/astro] @astrojs/mdx@8.0.0</title>
@@ -1174,56 +1210,6 @@ Here is `benchmarks/fetch` comparing v4.12 and v4.13 (`ROUNDS=5 ./compare.sh`, B
 
 ... (truncated)]]></description>
     <pubDate>Mon, 03 Aug 2026 21:55:37 GMT</pubDate>
-  </item>
-  <item>
-    <title>[nodejs/undici] v8.10.0</title>
-    <link>https://github.com/nodejs/undici/releases/tag/v8.10.0</link>
-    <guid isPermaLink="true">https://github.com/nodejs/undici/releases/tag/v8.10.0</guid>
-    <description><![CDATA[## What's Changed
-* feat: namespace h2 options by @metcoder95 in 
-* test: update WPT expectations by @mcollina in 
-* test: add cache/dedupe + dns re-dispatch integration tests by @GiHoon1123 in 
-* fix(websocket): support process.unref by @mcollina in 
-* fix(h2): ensure every request settles by @mcollina in 
-* fix(readable): consume a body whose end has already been emitted by @marko1olo in 
-* fix(retry): skip the content-length checkpoint for HEAD and for a 206 without content-range by @marko1olo in 
-* fix: revert idle socket validation to setTimeout(0) to prevent stall on idle event loop by @marceli1404 in 
-* fix(env-http-proxy-agent): match bare IPv6 addresses in no_proxy by @marko1olo in 
-* test: handle aggregate balanced pool errors by @marko1olo in 
-* fix(readable): keep body bytes that arrive after setEncoding by @mcollina in 
-* fix(socks5): evict unused origin pools by @Kkartik14 in 
-* fix: skip deduplication for upgrade requests by @Ram-blip in 
-* fix(retry): forward informatio
-
-... (truncated)]]></description>
-    <pubDate>Mon, 03 Aug 2026 15:06:41 GMT</pubDate>
-  </item>
-  <item>
-    <title>[anomalyco/opentui] Release v0.5.0 (v0.5.0)</title>
-    <link>https://github.com/anomalyco/opentui/releases/tag/v0.5.0</link>
-    <guid isPermaLink="true">https://github.com/anomalyco/opentui/releases/tag/v0.5.0</guid>
-    <description><![CDATA[## What's Changed
-* perf(core): speed up Node FFI layout reads by @kommander in 
-* feat(core): add raw stdin logging by @opencode-agent[bot] in 
-* docs: update OpenTUI skill by @kommander in 
-* perf(core): reuse FFI struct storage by @kommander in 
-* fix(runtime): bundled asset path fallback by @simonklee in 
-* docs/audio: clarify engine lifecycle by @simonklee in 
-* core(renderer): write Windows console output with WriteConsoleW by @simonklee in 
-* feat(core): add audio input capture by @kommander in 
-* fix(core): prevent duplicate live frame timers by @kitlangton in 
-* fix(three): load Jimp only for image operations by @khughitt in 
-* fix(core): emit input handler errors by @opencode-agent[bot] in 
-* fix(react): support Node ESM imports by @neriousy in 
-* fix(core): emit render errors by @opencode-agent[bot] in 
-* fix(core): harden renderer resolution lifecycle by @kommander in 
-* feat(core): add native image rendering by @kommander in 
-
-## New Contributors
-* @opencode-agent[bot] mad
-
-... (truncated)]]></description>
-    <pubDate>Mon, 03 Aug 2026 12:18:10 GMT</pubDate>
   </item>
 </channel>
 </rss>
