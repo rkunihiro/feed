@@ -5,40 +5,212 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Wed, 02 Sep 2026 22:02:28 GMT</lastBuildDate>
+  <lastBuildDate>Thu, 03 Sep 2026 22:02:13 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
   <item>
-    <title>[aws/aws-sdk-js-v3] v3.1125.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1125.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1125.0</guid>
-    <description><![CDATA[#### 3.1125.0(2026-09-02)
+    <title>[aws/aws-sdk-js-v3] v3.1126.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1126.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1126.0</guid>
+    <description><![CDATA[#### 3.1126.0(2026-09-03)
+
+##### Documentation Changes
+
+* **client-sfn:** Updates Step Functions API documentation around CloudTrail, Execution name reuse and sort order of ListExecutions API (8dda8b4b)
+* **client-elastic-load-balancing-v2:** This release adds support for sending TCP resets for Gateway Load Balancer when a flow's idle timeout expires, or when a target becomes unhealthy or is deregistered. This adds updates the CLI documentation. (a16f1659)
 
 ##### New Features
 
-* **client-ec2:** This release adds support to retain interruptible Capacity Reservations in an active state when all capacity is reclaimed. (336c7896)
-* **client-sagemaker-featurestore-runtime:** Amazon SageMaker Feature Store now supports the UpdateRecord API, enabling partial updates to individual feature values in an existing Online Store record without rewriting the entire record. This reduces write payloads and latency for high-frequency feature-level writes . (71920960)
-* **client-sagemaker:** Amazon SageMaker Feature Store now supports the Standard V2 online store type, which enables feature-level writes to feature groups. You can select Standard V2 when creating a feature group, and update the storage type of an existing feature group via UpdateFeatureGroup. (5287db7f)
-* **client-odb:** Adds the ListFlexComponents API for listing the flex components available for a given DB system shape. (551174bf)
-* **client-mgn:** AWS Transform 
+* **client-socialmessaging:** Adding support for WhatsApp Flows with endpoints. (3a3a6205)
+* **client-transfer:** AWS Transfer Family SFTP Connectors now support specifying an ordered list of AWS Secrets Manager version stages for secret retrieval. This enables seamless credential rotation workflows where external partners may take time to update their systems with new credentials. (e4bf3ecc)
+* **client-transcribe:** Amazon Transcribe now supports specifying up to 29 PII entity types in the ContentRedaction confi
 
 ... (truncated)]]></description>
-    <pubDate>Wed, 02 Sep 2026 18:43:57 GMT</pubDate>
+    <pubDate>Thu, 03 Sep 2026 18:46:56 GMT</pubDate>
   </item>
   <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-09-02) (release-2026-09-02)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-02</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-02</guid>
+    <title>[aws/aws-sdk-go-v2] Release (2026-09-03) (release-2026-09-03)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-03</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-03</guid>
     <description><![CDATA[## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/appintegrations`: [v1.44.0](service/appintegrations/CHANGELOG.md#v1440-2026-09-02)
- * **Feature**: This release adds a force parameter to DeleteApplication and a ConflictException to UpdateApplication, letting customers delete applications with existing associations in one call and get a clear error when an update conflicts with the application's current state.
-* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcore`: [v1.45.0](service/bedrockagentcore/CHANGELOG.md#v1450-2026-09-02)
- * **Feature**: Batch evaluation now supports up to 10 CloudWatch log groups per CloudWatchLogsSource
-* `github.com/aws/aws-sdk-go-v2/service/ec2`: [v1.328.0](service/ec2/CHANGELOG.md#v13280-2026-09-02)
- * **Feature**: This release adds support to retain interruptible Capacity Reservations in an active state when all capacity is reclaimed.
-* `github.com/aws/aws-sdk-go-v2/service/medialive`: [v1.108.0](service/medialive/CHANGELOG.md#v11080-2026-09
+* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcore`: [v1.46.0](service/bedrockagentcore/CHANGELOG.md#v1460-2026-09-03)
+ * **Feature**: Adds log group name prefix trace source selection, custom or source log group result destinations, and metrics namespace customization
+* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcorecontrol`: [v1.64.0](service/bedrockagentcorecontrol/CHANGELOG.md#v1640-2026-09-03)
+ * **Feature**: AgentCore Identity adds Consent Portal APIs to manage portals that let end users grant OAuth authorization for agents to access resources. AgentCore Evaluation adds trace source selection by log group prefix, custom or source log group result destinations, and metrics namespace customization.
+* `github.com/aws/aws-sdk-go-v2/service/connect`: [v1.195.0](service/connect/CHANGELOG.md#v11950-2026-09-03)
+ * **Feature**: This release enables TagOnCreate for Rule resource on CreateRule API. It also introduces a new field called PreEvaluationFilters 
 
 ... (truncated)]]></description>
-    <pubDate>Wed, 02 Sep 2026 18:43:34 GMT</pubDate>
+    <pubDate>Thu, 03 Sep 2026 18:45:31 GMT</pubDate>
+  </item>
+  <item>
+    <title>[microsoft/windows-rs] 74</title>
+    <link>https://github.com/microsoft/windows-rs/releases/tag/74</link>
+    <guid isPermaLink="true">https://github.com/microsoft/windows-rs/releases/tag/74</guid>
+    <description><![CDATA[More information: 
+
+## What's Changed
+* Add formatter to `windows-rdl` by @riverar in 
+* Add WinRT class support for `windows-rdl` by @kennykerr in 
+* Add delegate support for `windows-rdl` by @kennykerr in 
+* Updated metadata (10.0.26100.7705) by @kennykerr in 
+* Add nested types (structs) for `windows_rdl` by @riverar in 
+* Add generic type support for `windows-rdl` by @kennykerr in 
+* Formatting and type system improvements for `windows-rdl` by @kennykerr in 
+* Add WinRT array support for `windows-rdl` by @kennykerr in 
+* Complete generic parameter support for `windows-rdl` by @kennykerr in 
+* Improve path `super` support for `windows-rdl` by @kennykerr in 
+* Improve leading `super` keyword support for `windows-rdl` by @kennykerr in 
+* Fix nightly clippy warnings by @kennykerr in 
+* Add fixed array support for `windows-rdl` by @kennykerr in 
+* Add split writer and directory reader options for `windows-rdl` by @kennykerr in 
+* Bump actions/upload-artifact from 6 to 7
+
+... (truncated)]]></description>
+    <pubDate>Thu, 03 Sep 2026 16:48:32 GMT</pubDate>
+  </item>
+  <item>
+    <title>[BabylonJS/Babylon.js] 9.25.0</title>
+    <link>https://github.com/BabylonJS/Babylon.js/releases/tag/9.25.0</link>
+    <guid isPermaLink="true">https://github.com/BabylonJS/Babylon.js/releases/tag/9.25.0</guid>
+    <description><![CDATA[### Core
+
+- Fluid renderer: add opt-in per-particle size support - by tini2n (#18863)
+- Feat: Add white balance (Kelvin temperature + tint) to image processing - by raymondyfei (#18855)
+- Fix: IBL Shadows silent failure on Adreno mobile GPUs - by raymondyfei (#18865)
+- Fix wgsl output for PowBlock and TriPlanarBlock - by BarthPaleologue (#18869)
+- Fix OpenPBR backend consistency - [_Bug Fix_] by bghgary (#18861)
+- Harden experimental WebXR support for WebGPU - [_Bug Fix_] by RaananW (#18858)
+- Fix late notifications for Observable<void> - [_Bug Fix_] by sebavan (#18856)
+- Add dynamic WebXR viewport scaling - [_New Feature_] by RaananW (#18851)
+- Respect XRInputSource skipRendering - by RaananW (#18849)
+- Add WebXR composition layer controls and limits - by RaananW (#18848)
+- Add WebXR tracked sources support - by RaananW (#18844)
+- Add WebXR depth sensing lifecycle controls - [_New Feature_] by RaananW (#18842)
+- Add advanced WebXR controller haptics - [_New Feature_] by RaananW (#1884
+
+... (truncated)]]></description>
+    <pubDate>Thu, 03 Sep 2026 16:47:35 GMT</pubDate>
+  </item>
+  <item>
+    <title>[cli/cli] GitHub CLI 2.100.0 (v2.100.0)</title>
+    <link>https://github.com/cli/cli/releases/tag/v2.100.0</link>
+    <guid isPermaLink="true">https://github.com/cli/cli/releases/tag/v2.100.0</guid>
+    <description><![CDATA[## Experimental: Route GitHub API traffic through a custom host
+
+Organizations can now route a GitHub host's API traffic through a gateway using the new per-host `api_host` configuration:
+
+```shell
+# Route API traffic for github.com through a gateway
+gh config set api_host gh-gateway.example.com --host github.com
+
+# Read the configured API host
+gh config get api_host --host github.com
+```
+
+The original host remains in use for authentication, Git remotes, and browser URLs.
+
+> [!NOTE]
+> `api_host` is experimental and is not a security boundary. Requests may still reach the original host.
+
+## What's Changed
+
+### ✨ Features
+
+* Honor per-host `api_host` routing across GitHub API requests by @williammartin in #14104
+* Expose `api_host` through `gh config get` and `gh config set` by @williammartin in #14332
+* Add `webhook` as an official extension by @williammartin in #14326
+* Print full command help after command misuse when `gh` is invoked by a coding agent by @niik 
+
+... (truncated)]]></description>
+    <pubDate>Thu, 03 Sep 2026 15:43:20 GMT</pubDate>
+  </item>
+  <item>
+    <title>[bluesky-social/social-app] v1.132.0 (1.132.0)</title>
+    <link>https://github.com/bluesky-social/social-app/releases/tag/1.132.0</link>
+    <guid isPermaLink="true">https://github.com/bluesky-social/social-app/releases/tag/1.132.0</guid>
+    <description><![CDATA[## What's Changed
+* Drop package.json version by @vineyardbovines in 
+* Add Blink Prometheus listener by @amckinley in 
+* Fix "Tried to synchronously call a Remote Function" crash by @tomekzaw in 
+* Add graceful shutdown to Blink by @amckinley in 
+* Make Safelink event replay idempotent by @amckinley in 
+* Back to v1.132.0 by @mozzius in 
+* Fix hairline divider not visible by @abulenok in 
+* Reland "Bump React Compiler to stable 1.0.0" by @tomekzaw in 
+* [AA] Set `maxAge: Infinity` on age assurance cache by @mozzius in 
+* Adds a small padding for labeller avatars in group chat 'Add people' selector by @RetroSunstar in 
+* Explain trending topics in options menu by @vineyardbovines in 
+* [APP-2922] Fix cached starter pack navigation by @vineyardbovines in 
+* Overfetch trending topics before filtering by @ds-boyce in 
+* Revert "Send beta user state with AppView requests (#11474)" by @ds-boyce in 
+* Fix iOS message input height after sending by @mozzius in 
+* Send an intege
+
+... (truncated)]]></description>
+    <pubDate>Thu, 03 Sep 2026 10:51:43 GMT</pubDate>
+  </item>
+  <item>
+    <title>[withastro/astro] @astrojs/cloudflare@14.3.0</title>
+    <link>https://github.com/withastro/astro/releases/tag/%40astrojs/cloudflare%4014.3.0</link>
+    <guid isPermaLink="true">https://github.com/withastro/astro/releases/tag/%40astrojs/cloudflare%4014.3.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- #17795 `15e2deb` Thanks @matthewp! - Adds concurrent rendering support for `experimental.incrementalBuild`, including when using `@astrojs/cloudflare`
+
+ Incremental builds no longer disable caching when `build.concurrency` is greater than `1`. Projects that set `build.concurrency: 1` to keep the cache enabled can remove that workaround. Cloudflare builds also reduce serialization overhead for large prerendered pages.
+
+- #17887 `35aa62e` Thanks @matthewp! - Adds a Cloudflare `finalize` response handler for custom request handlers
+
+ Call `finalize` to apply cookies and Cloudflare CDN cache defaults to the response from an `astro/fetch` pipeline:
+
+ ```ts
+ import { astro, FetchState } from 'astro/fetch';
+ import { cf, finalize } from '@astrojs/cloudflare/fetch';
+
+ export default {
+ async fetch(request: Request, env: Env, context: ExecutionContext) {
+ const state = new FetchState(request);
+ const asset = await cf(state, env, context);
+ if (asset) return asset;
+
+ return 
+
+... (truncated)]]></description>
+    <pubDate>Thu, 03 Sep 2026 10:29:24 GMT</pubDate>
+  </item>
+  <item>
+    <title>[openai/codex] 0.153.0 (rust-v0.153.0)</title>
+    <link>https://github.com/openai/codex/releases/tag/rust-v0.153.0</link>
+    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.153.0</guid>
+    <description><![CDATA[## New Features
+
+- Vim mode now supports undo with `u` and redo with `Ctrl+R`, preserving complete drafts including pasted content and attachments. (#41941, #42140)
+- The plugin CLI can list, install, and remove plugins from remote marketplaces. (#42150)
+- Set `tui.auto_recap = false` to disable automatic recaps while keeping manual `/recap` available. (#42101)
+- TUI history shows complete patches, input sent to background terminals, and individual completed commands. (#41893, #42107)
+- Plus and Team users receive an earlier warning when less than half of their allowance remains in an approximately five-hour usage window. (#42142)
+
+## Bug Fixes
+
+- TUI sessions reconnect after an external app-server connection drops, preserving drafts and transcripts while keeping uncertain or queued submissions paused for review. (#41911, #41916, #41918)
+- Full Access skips Guardian reviews for confirmation-only actions. User approval mode skips background Guardian scoring and prewarming, while sensiti
+
+... (truncated)]]></description>
+    <pubDate>Thu, 03 Sep 2026 01:37:38 GMT</pubDate>
+  </item>
+  <item>
+    <title>[facebook/lexical] v0.50.0</title>
+    <link>https://github.com/facebook/lexical/releases/tag/v0.50.0</link>
+    <guid isPermaLink="true">https://github.com/facebook/lexical/releases/tag/v0.50.0</guid>
+    <description><![CDATA[v0.50.0 is a monthly release with a large number of PRs to improve correctness, accessibility, and performance. It also ships HMR support, compiled keyboard shortcut dispatch, and screen reader announcements for headings and auto-links, and build-time tree-shaking annotations (in a new `@lexical/compiler` package). We have upgraded to pnpm 11, so if you're working directly with the monorepo you will need to upgrade as well.
+
+### Breaking Changes
+
+* `lexical` — `LexicalNode.replace` no longer re-homes a named slot value. A slot value has no parent (its up-link is `__slotHost`), so replacing one through the tree API now fails with an actionable invariant instead of a generic parent error; use `$setSlot` on the owning host. `$setBlocksType` and the block converters skip slot values for the same reason (#8938, #8905, #8901)
+* `@lexical/clipboard` — The Lexical JSON clipboard payload (`application/x-lexical-editor`) now asks `excludeFromCopy('clone')` instead of `'html'`, matching the 
+
+... (truncated)]]></description>
+    <pubDate>Wed, 02 Sep 2026 22:18:26 GMT</pubDate>
   </item>
   <item>
     <title>[zed-industries/zed] v1.18.0</title>
@@ -98,39 +270,6 @@
 
 ... (truncated)]]></description>
     <pubDate>Wed, 02 Sep 2026 12:41:06 GMT</pubDate>
-  </item>
-  <item>
-    <title>[cli/cli] GitHub CLI 2.99.0 (v2.99.0)</title>
-    <link>https://github.com/cli/cli/releases/tag/v2.99.0</link>
-    <guid isPermaLink="true">https://github.com/cli/cli/releases/tag/v2.99.0</guid>
-    <description><![CDATA[## Attach images and videos to issues and pull requests
-
-The repeatable `--attach` flag uploads local images and videos and adds them to issue, pull request, or comment bodies. If a body already references the local path, `gh` replaces it with the uploaded URL; otherwise it appends the attachment:
-
-```shell
-# Attach files when creating or editing an issue
-gh issue create --attach './repro.png#The error state'
-gh issue edit 123 --attach ./walkthrough.mp4
-
-# Attach files when creating or editing a pull request
-gh pr create --attach ./before.png
-gh pr edit 456 --attach ./after.png
-
-# Attach files to comments
-gh issue comment 123 --attach ./repro.png
-gh pr comment 456 --attach ./result.mp4
-```
-
-Repeat the flag to attach multiple files in a single invocation. Attachments are available on GitHub.com and GitHub Enterprise Cloud.
-
-For more information see and 
-
-## Worktree support extended to `gh issue develop` 
-
-`gh issue develop` can now create a linked branch and che
-
-... (truncated)]]></description>
-    <pubDate>Tue, 01 Sep 2026 20:25:04 GMT</pubDate>
   </item>
   <item>
     <title>[iii-hq/iii] iii 0.23.0 (iii/v0.23.0)</title>
@@ -207,55 +346,6 @@ For more information see and
 
 ... (truncated)]]></description>
     <pubDate>Tue, 01 Sep 2026 05:04:27 GMT</pubDate>
-  </item>
-  <item>
-    <title>[openai/codex] 0.152.0 (rust-v0.152.0)</title>
-    <link>https://github.com/openai/codex/releases/tag/rust-v0.152.0</link>
-    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.152.0</guid>
-    <description><![CDATA[## New Features
-
-- Vim mode supports `/` and `?` searches within drafts, highlighted matches, and repeat navigation with `n` and `N`. (#41586)
-- Rate-limit banners offer actions for checking usage, managing credits, resetting limits, and managing plans. (#41742)
-- The terminal UI and `codex exec` show credential-refresh progress, including Amazon Bedrock reauthentication. (#41239)
-- MCP server names can contain `:`, `@`, `/`, and `.`, supporting package-style names throughout CLI commands and authentication. (#41700)
-- Individual MCP tools support an `output_token_limit` setting, with consistent truncation across session resumes. (#41421)
-- App-server clients can configure `thread/shellCommand` timeouts, including deadlines longer than one hour. (#41384)
-
-## Bug Fixes
-
-- Vim-enabled composers now start fresh drafts in Insert mode, including after submitting messages or dispatching slash commands. (#41921)
-- Automatic approval reviews can retain longer messages and a larger conversation
-
-... (truncated)]]></description>
-    <pubDate>Tue, 01 Sep 2026 01:58:32 GMT</pubDate>
-  </item>
-  <item>
-    <title>[withastro/astro] @astrojs/mdx@8.0.0</title>
-    <link>https://github.com/withastro/astro/releases/tag/%40astrojs/mdx%408.0.0</link>
-    <guid isPermaLink="true">https://github.com/withastro/astro/releases/tag/%40astrojs/mdx%408.0.0</guid>
-    <description><![CDATA[### Major Changes
-
-- #17262 `f8e9458` Thanks @Princesseuh! - Moves MDX file processing to the Markdown processors.
-
- '@astrojs/mdx' is still required to add MDX support to your project. However, it now delegates the MDX files processing to Markdown processors.
-
- #### What should I do?
-
- If you haven't explicitly installed a Markdown processor, you don't need to do anything.
-
- Otherwise, ensure that your configured Markdown processor uses the following version:
-
- - `@astrojs/markdown-satteri` 0.4.0 or later if you use `satteri`
- - `@astrojs/markdown-remark` 7.3.0 or later if you use `unified`
-
-### Patch Changes
-
-- #17262 `f8e9458` Thanks @Princesseuh! - Fixes `.mdx` files still using `markdown.processor` when `extendMarkdownConfig` is `false`. They now use a clean default processor instead; pass `mdx({ processor })` to choose one explicitly.
-
-- #17262 `f8e9458` Thanks @Princesseuh! - Adds a warning when the deprecated `remarkPlugins`, `rehypePlugins`, `recmaPlugins` and `remarkRehype` o
-
-... (truncated)]]></description>
-    <pubDate>Mon, 31 Aug 2026 19:37:28 GMT</pubDate>
   </item>
   <item>
     <title>[remix-run/remix] spa v0.1.0 (spa@0.1.0)</title>
@@ -601,31 +691,6 @@ nest upgrade
 
 ... (truncated)]]></description>
     <pubDate>Thu, 27 Aug 2026 11:28:05 GMT</pubDate>
-  </item>
-  <item>
-    <title>[BabylonJS/Babylon.js] 9.23.0</title>
-    <link>https://github.com/BabylonJS/Babylon.js/releases/tag/9.23.0</link>
-    <guid isPermaLink="true">https://github.com/BabylonJS/Babylon.js/releases/tag/9.23.0</guid>
-    <description><![CDATA[### Core
-
-- Add WebXR persistent anchor lifecycle support - by RaananW (#18840)
-- Add WebXR room capture support - by RaananW (#18841)
-- Feat: Budget-driven and multi-camera-aware LOD for streaming Gaussian Splatting - by raymondyfei (#18834)
-- Share shader loading state across material instances - by sebavan (#18830)
-- Expose WebXR plane and mesh semantic labels - by RaananW (#18839)
-- Preserve WebXR light estimation on WebGPU - by RaananW (#18837)
-- Fix IES candela profile normalization - by sebavan (#18833)
-- Fix Gaussian splat readiness regression - [_Bug Fix_] by bghgary (#18836)
-- Fix Gaussian splat transform and proxy visibility updates - [_Bug Fix_] by CedricGuillemet (#18831)
-- Use pure targets for dynamic imports - by RaananW (#18827)
-- Feat: Non-binary voxel opacity + trace-time roulette for GSplat IBL shadows - by raymondyfei (#18815)
-- Fix overlay texture bindings leaking into shared PBR materials - by sebavan (#18828)
-- Fix wgsl in TBN Block - by sebavan (#18826)
-
-### GUI
-
-... (truncated)]]></description>
-    <pubDate>Thu, 27 Aug 2026 07:43:26 GMT</pubDate>
   </item>
   <item>
     <title>[nodejs/node] 2026-08-26, Version 26.8.0 (Current), @aduh95 (v26.8.0)</title>
@@ -1025,31 +1090,6 @@ Bun is free, open source, and MIT-licensed. We receive a lot of contributions fr
     <pubDate>Thu, 20 Aug 2026 14:07:21 GMT</pubDate>
   </item>
   <item>
-    <title>[bluesky-social/social-app] 1.131.0</title>
-    <link>https://github.com/bluesky-social/social-app/releases/tag/1.131.0</link>
-    <guid isPermaLink="true">https://github.com/bluesky-social/social-app/releases/tag/1.131.0</guid>
-    <description><![CDATA[## What's Changed
-* Update claude action by @mozzius in 
-* Route Claude workflows through Agent Gateway by @amckinley in 
-* Bump version to v1.131.0 by @mozzius in 
-* claude: use Opus 4.8 for GitHub workflows by @amckinley in 
-* perf: skip minute-tick subscription for actors without a live status by @tomekzaw in 
-* Bump the actions group with 4 updates by @dependabot[bot] in 
-* Update pnpm to 11.21.0 by @mozzius in 
-* Fix appearance of post numbers on image posts by @ds-boyce in 
-* Disallow robots crawling compose intent paths by @blackmichael in 
-* Prevent last line of post text from being clipped on Android by @ds-boyce in 
-* Fix layout jog when rendering post numbers by @ds-boyce in 
-* algo team reply feedback by @jlgleason in 
-* Add asset licensing notices by @mozzius in 
-* Separate landing illustrations from splash assets by @mozzius in 
-* Fix frozen unknown device ID for new accounts by @ds-boyce in 
-* Client events for beta features settings page by @abenzer in 
-
-... (truncated)]]></description>
-    <pubDate>Tue, 18 Aug 2026 16:21:38 GMT</pubDate>
-  </item>
-  <item>
     <title>[theMackabu/ant] v14.0.ff84a70d.0</title>
     <link>https://github.com/theMackabu/ant/releases/tag/v14.0.ff84a70d.0</link>
     <guid isPermaLink="true">https://github.com/theMackabu/ant/releases/tag/v14.0.ff84a70d.0</guid>
@@ -1163,53 +1203,6 @@ Windows App SDK 2.4.0 is the latest stable release on the 2.x line, adding expan
 
 **Full Changelog**:]]></description>
     <pubDate>Fri, 07 Aug 2026 10:23:43 GMT</pubDate>
-  </item>
-  <item>
-    <title>[mui/base-ui] v1.7.0</title>
-    <link>https://github.com/mui/base-ui/releases/tag/v1.7.0</link>
-    <guid isPermaLink="true">https://github.com/mui/base-ui/releases/tag/v1.7.0</guid>
-    <description><![CDATA[### General changes
-
-- Restore visible focus after keyboard close in Safari and Firefox (#5093) by @lyzno1
-- Type `render` callback props based on the rendered element (#5104) by @atomiks
-- Reduce popup bundle size (#5233) by @atomiks
-- Reduce store bundle size (#5250) by @atomiks
-- Keep unpositioned popups at the viewport origin (#5299) by @flaviendelangle
-- Correct layout and passive effect timing (#5337) by @atomiks
-- Remove redundant lifecycle synchronization (#5341) by @atomiks
-- Prevent stale cleanup from clearing registered part IDs (#5340) by @atomiks
-- Complete popup unmounting after a canceled exit transition (#5401) by @atomiks
-- Fix rendered trigger ID ownership (#5110) by @atomiks
-- Prevent unwanted flip with capped scrollable content (#5120) by @atomiks
-- Fix `collisionPadding` off-by-one on the biased side (#5143) by @atomiks
-- Reduce shared popup bundle size (#5192) by @atomiks
-- Mount popup subtrees synchronously when opening in React 17 (#5309) by @atom
-
-... (truncated)]]></description>
-    <pubDate>Tue, 04 Aug 2026 09:57:17 GMT</pubDate>
-  </item>
-  <item>
-    <title>[honojs/hono] v4.13.0</title>
-    <link>https://github.com/honojs/hono/releases/tag/v4.13.0</link>
-    <guid isPermaLink="true">https://github.com/honojs/hono/releases/tag/v4.13.0</guid>
-    <description><![CDATA[Hono v4.13.0 is now available!
-
-The highlight of this release is performance: a batch of low-level optimizations makes the core request/response path significantly faster — up to 1.25x on common routes in our benchmark. This release also adds first-class support for the HTTP QUERY method, defined in RFC 10008, a new Method Not Allowed middleware, and more.
-
-## Performance improvements
-
-This release includes a series of small optimizations: skipping unnecessary `Headers` allocations, replacing regex tests with `indexOf`, allocating internal state lazily, and more.
-
-Here is `benchmarks/fetch` comparing v4.12 and v4.13 (`ROUNDS=5 ./compare.sh`, Bun 1.4.0, Apple Silicon — each measurement runs in a fresh process, and the variant order is reversed every round to avoid warm-up bias):
-
-| Benchmark | v4.12 | v4.13 | Speedup |
-| --- | ---: | ---: | ---: |
-| `ping` — `GET /` | 165.83 ns | 163.99 ns | 1.01x |
-| `query` — `GET /id/1?name=bun` | 674.40 ns | 616.99 ns | **1.09x** |
-| `
-
-... (truncated)]]></description>
-    <pubDate>Mon, 03 Aug 2026 21:55:37 GMT</pubDate>
   </item>
 </channel>
 </rss>
