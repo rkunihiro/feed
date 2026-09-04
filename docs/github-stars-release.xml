@@ -5,42 +5,140 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Thu, 03 Sep 2026 22:02:13 GMT</lastBuildDate>
+  <lastBuildDate>Fri, 04 Sep 2026 22:02:12 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
   <item>
-    <title>[aws/aws-sdk-js-v3] v3.1126.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1126.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1126.0</guid>
-    <description><![CDATA[#### 3.1126.0(2026-09-03)
+    <title>[adobe/react-spectrum] React Aria Components v1.21.0 (react-aria-components@1.21.0)</title>
+    <link>https://github.com/adobe/react-spectrum/releases/tag/react-aria-components%401.21.0</link>
+    <guid isPermaLink="true">https://github.com/adobe/react-spectrum/releases/tag/react-aria-components%401.21.0</guid>
+    <description><![CDATA[We're excited to welcome a brand new component to the family! The new NavigationTree component displays a hierarchical set of links, perfect for building sidebars and complex app navigation. It comes fully loaded with keyboard navigation, and support for nested routes.
 
-##### Documentation Changes
+Menu also gets a big upgrade this release: it now supports async loading and empty states! Load menu items from an API as the user scrolls with the new MenuLoadMoreItem and use renderEmptyState to show an indicator when data is loading or when the menu is empty.
 
-* **client-sfn:** Updates Step Functions API documentation around CloudTrail, Execution name reuse and sort order of ListExecutions API (8dda8b4b)
-* **client-elastic-load-balancing-v2:** This release adds support for sending TCP resets for Gateway Load Balancer when a flow's idle timeout expires, or when a target becomes unhealthy or is deregistered. This adds updates the CLI documentation. (a16f1659)
+Full Release Notes]]></description>
+    <pubDate>Fri, 04 Sep 2026 19:44:19 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1127.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1127.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1127.0</guid>
+    <description><![CDATA[#### 3.1127.0(2026-09-04)
 
 ##### New Features
 
-* **client-socialmessaging:** Adding support for WhatsApp Flows with endpoints. (3a3a6205)
-* **client-transfer:** AWS Transfer Family SFTP Connectors now support specifying an ordered list of AWS Secrets Manager version stages for secret retrieval. This enables seamless credential rotation workflows where external partners may take time to update their systems with new credentials. (e4bf3ecc)
-* **client-transcribe:** Amazon Transcribe now supports specifying up to 29 PII entity types in the ContentRedaction confi
+* **client-mediatailor:** Elemental MediaTailor now supports two new Monetization Functions lifecycle hooks, Post Ads Response and Pre Manifest Insertion, and a VAST Request function type that calls a VAST or VMAP ad server. This release also adds Yield Optimization with demand from Amazon Publisher Services. (c238a693)
+* **client-service-quotas:** Service Quotas adds the AdjustableAtLevel property to QuotaContext, indicating whether a quota is adjustable at the account or resource level. (f56bdf2c)
+* **client-bedrock:** New AWS REVIEW mode as supported data retention mode for Bedrock models (cbd9ea9a)
+* **client-ec2:** Adds support for ValidateSecurityGroupQuotasForInterface, an API that specifically authorized AWS services use to validate security group rule quotas before creating an elastic network interface. (f51c3b3e)
 
-... (truncated)]]></description>
-    <pubDate>Thu, 03 Sep 2026 18:46:56 GMT</pubDate>
+
+---
+
+For list of updated packages, view **updated-packages.md** in **assets-3.1127.0.zip**]]></description>
+    <pubDate>Fri, 04 Sep 2026 18:44:05 GMT</pubDate>
   </item>
   <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-09-03) (release-2026-09-03)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-03</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-03</guid>
-    <description><![CDATA[## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcore`: [v1.46.0](service/bedrockagentcore/CHANGELOG.md#v1460-2026-09-03)
- * **Feature**: Adds log group name prefix trace source selection, custom or source log group result destinations, and metrics namespace customization
-* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcorecontrol`: [v1.64.0](service/bedrockagentcorecontrol/CHANGELOG.md#v1640-2026-09-03)
- * **Feature**: AgentCore Identity adds Consent Portal APIs to manage portals that let end users grant OAuth authorization for agents to access resources. AgentCore Evaluation adds trace source selection by log group prefix, custom or source log group result destinations, and metrics namespace customization.
-* `github.com/aws/aws-sdk-go-v2/service/connect`: [v1.195.0](service/connect/CHANGELOG.md#v11950-2026-09-03)
- * **Feature**: This release enables TagOnCreate for Rule resource on CreateRule API. It also introduces a new field called PreEvaluationFilters 
+    <title>[aws/aws-sdk-go-v2] Release (2026-09-04) (release-2026-09-04)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-04</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-04</guid>
+    <description><![CDATA[## General Highlights
+* **Feature**: Stop registering the `spanRetryLoop` middleware in generated clients. The retry loop's tracing span is now opened by the retry middleware itself.
+* **Dependency Update**: Updated to the latest SDK module versions
+
+## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/service/bedrock`: [v1.71.0](service/bedrock/CHANGELOG.md#v1710-2026-09-04)
+ * **Feature**: New AWS REVIEW mode as supported data retention mode for Bedrock models
+* `github.com/aws/aws-sdk-go-v2/service/ec2`: [v1.329.0](service/ec2/CHANGELOG.md#v13290-2026-09-04)
+ * **Feature**: Adds support for ValidateSecurityGroupQuotasForInterface, an API that specifically authorized AWS services use to validate security group rule quotas before creating an elastic network interface.
+* `github.com/aws/aws-sdk-go-v2/service/mediatailor`: [v1.69.0](service/mediatailor/CHANGELOG.md#v1690-2026-09-04)
+ * **Feature**: Elemental MediaTailor now supports two new Monetization Functions lifecycle hooks, Post A
 
 ... (truncated)]]></description>
-    <pubDate>Thu, 03 Sep 2026 18:45:31 GMT</pubDate>
+    <pubDate>Fri, 04 Sep 2026 18:43:50 GMT</pubDate>
+  </item>
+  <item>
+    <title>[bluesky-social/atproto] @atproto/ozone@0.4.0</title>
+    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/ozone%400.4.0</link>
+    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/ozone%400.4.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- #5426 `ed0b7d3` Thanks @bigmoves! - Migrate Ozone onto `@atproto/lex`.
+
+ Ozone was the last package still generating its server stack with
+ `lex gen-server`. It now uses `lex build` like `pds` and `bsky`, and the legacy
+ `src/lexicon` tree is gone:
+
+ - All 95 route registrations moved from `server.<ns>.<method>` to
+ `server.add(schema, …)` from `@atproto/xrpc-server`.
+ - `AtpAgent` is replaced by `Client`; `CredentialSession` by `PasswordSession`
+ from `@atproto/lex-password-session`.
+ - Kysely schema types, config and auth credentials now carry the branded
+ scalars (`DidString`, `DatetimeString`, `AtUriString`, `UriString`), so
+ route params flow into the database and back out into views without casts.
+
+ `@atproto/api` and `@atproto/lexicon` move to `devDependencies` (the test suites
+ still drive the legacy client), and `@atproto/xrpc` and `@atproto/lex-cli` are
+ dropped entirely.
+
+ Two behaviour changes worth noting, both from validating against the Lexicon
+ sche
+
+... (truncated)]]></description>
+    <pubDate>Fri, 04 Sep 2026 17:54:57 GMT</pubDate>
+  </item>
+  <item>
+    <title>[eslint/eslint] v10.10.0</title>
+    <link>https://github.com/eslint/eslint/releases/tag/v10.10.0</link>
+    <guid isPermaLink="true">https://github.com/eslint/eslint/releases/tag/v10.10.0</guid>
+    <description><![CDATA[## Features
+* `264b434` feat: add `d` and `v` flags to `no-unexpected-multiline` (#21305) (Gihyeon Jeong / 정기현)
+* `c6cc6c5` feat: check `Object.prototype` property names in `new-cap` (#21269) (crimsonjay0)
+* `5661fa6` feat: no-extra-bind false negatives with class fields and static blocks (#21260) (synthex-byte)
+
+## Bug Fixes
+* `bb47dc6` fix: update dependency file-entry-cache to v11 (#20801) (Milos Djermanovic)
+* `427ac0a` fix: use format strings in debug calls (#21247) (Francesco Trotta)
+* `9d81532` fix: support `__proto__` in `/* exported */` comments (#21261) (sethamus)
+* `87e0a08` fix: prefer-object-has-own autofix breaks when Object is shadowed (#21282) (김채영)
+* `8e2cb14` fix: `new-cap` false positive for `UTC` calls with `properties: false` (#21275) (Pixel)
+* `9f4a364` fix: Ignore static imports in no-unreachable (#21276) (Taha Kotil)
+
+## Documentation
+* `2417cad` docs: Update README (GitHub Actions Bot)
+* `9cecb8a` docs: document `\c` control letter escapes in no-control-regex (
+
+... (truncated)]]></description>
+    <pubDate>Fri, 04 Sep 2026 14:30:17 GMT</pubDate>
+  </item>
+  <item>
+    <title>[mui/base-ui] v1.8.0</title>
+    <link>https://github.com/mui/base-ui/releases/tag/v1.8.0</link>
+    <guid isPermaLink="true">https://github.com/mui/base-ui/releases/tag/v1.8.0</guid>
+    <description><![CDATA[### General changes
+
+- Fix label association when a control unregisters (#5456) by @atomiks
+- Reduce animation completion work (#5535) by @atomiks
+- Fix prop and ref merging for lazy render elements (#5562) by @atomiks
+- Fix roving focus when items are added or removed (#5447) by @atomiks
+- Fix hover and focus interaction issues (#5037) by @atomiks
+- Improve trigger mount performance (#5426) by @atomiks
+- Fix disabled anchor tracking on scroll (#5478) by @atomiks
+- Fix transform origin for start/end alignment (#5015) by @atomiks
+- Remove duplicate options key from arrow middleware (#5606) by @atomiks
+- Register passive touch listeners (#5572) by @wanxiankai
+
+### Alert Dialog
+
+- Ignore outside clicks from presses that began before open (#5378) by @michaldudak
+
+### Autocomplete
+
+- Render groups with the rowgroup role in grid mode (#5564) by @atomiks
+- Allow opening and browsing the popup while `readOnly` (#5541) by @vikuscz
+- Move `aria-orientation` to the role owner
+
+... (truncated)]]></description>
+    <pubDate>Fri, 04 Sep 2026 08:56:56 GMT</pubDate>
   </item>
   <item>
     <title>[microsoft/windows-rs] 74</title>
@@ -912,31 +1010,6 @@ Developers can now easily configure Claude Desktop to seamlessly work with Ollam
     <pubDate>Fri, 21 Aug 2026 20:31:08 GMT</pubDate>
   </item>
   <item>
-    <title>[eslint/eslint] v10.9.0</title>
-    <link>https://github.com/eslint/eslint/releases/tag/v10.9.0</link>
-    <guid isPermaLink="true">https://github.com/eslint/eslint/releases/tag/v10.9.0</guid>
-    <description><![CDATA[## Features
-* `08de88e` feat: handle underflow in no-loss-of-precision (#21218) (Rithish S)
-* `55db479` feat: add checkConditionalExpressions to `no-unmodified-loop-condition` (#21175) (sethamus)
-
-## Bug Fixes
-* `2ba3025` fix: prevent unsafe `no-var` autofix with hoisted functions (#21213) (sethamus)
-* `8e69622` fix: Prevent no-var autofix when var is shadowed by catch parameter (#21204) (Yang Hyeonjong)
-* `684b579` fix: prefer-template invalid autofix creates a tagged template call (#21207) (김채영)
-
-## Documentation
-* `9ef407a` docs: use eslint.config.* wherever config file names are listed (#21216) (Marry (Subin Yang))
-* `87f66f4` docs: Update README (GitHub Actions Bot)
-* `585ef37` docs: update architecture documentation (#21112) (Francesco Trotta)
-* `f3993b0` docs: Update README (GitHub Actions Bot)
-* `ffc87d6` docs: fix broken links in Further Reading sections (#21203) (Minsu)
-* `1a761e1` docs: update moved JSX specification links (#21198) (Imran Mustafa)
-* `4d00ca4` docs: update ES
-
-... (truncated)]]></description>
-    <pubDate>Fri, 21 Aug 2026 13:05:50 GMT</pubDate>
-  </item>
-  <item>
     <title>[github/spec-kit] Spec Kit - 1.0.0 (v1.0.0)</title>
     <link>https://github.com/github/spec-kit/releases/tag/v1.0.0</link>
     <guid isPermaLink="true">https://github.com/github/spec-kit/releases/tag/v1.0.0</guid>
@@ -1157,52 +1230,6 @@ Windows App SDK 2.4.0 is the latest stable release on the 2.x line, adding expan
 
 ... (truncated)]]></description>
     <pubDate>Thu, 13 Aug 2026 17:43:40 GMT</pubDate>
-  </item>
-  <item>
-    <title>[podman-container-tools/podman] v6.1.0</title>
-    <link>https://github.com/podman-container-tools/podman/releases/tag/v6.1.0</link>
-    <guid isPermaLink="true">https://github.com/podman-container-tools/podman/releases/tag/v6.1.0</guid>
-    <description><![CDATA[### Features
-- A new command has been added, `podman volume rename`, to allow renaming volumes. Volumes created using volume drivers and volumes that are currently used by a container cannot be renamed (#28189).
-- A new command has been added, `podman machine restart`, to allow easy restart of VMs managed by `podman machine` (#28366).
-- The `podman network rm` command now includes a new option, `--ignore`, which suppresses errors when attempting to remove networks that do not exist (#28363).
-- The `podman manifest push` command now includes two new options, `--retry` and `--retry-delay`, which allow pushes to be automatically retried on failure (#28590).
-- Quadlet `.container` units now support a new key, `ImageVolume=`, to configure how volumes from images are handled (#28875).
-- The `podman generate kube` command now includes support for generating container healthchecks as a `livenessProbe` (#22095).
-- A new option, `force_port_listen`, has been added to `containers.conf`. This is r
-
-... (truncated)]]></description>
-    <pubDate>Wed, 12 Aug 2026 20:12:23 GMT</pubDate>
-  </item>
-  <item>
-    <title>[ant-design/ant-design] 6.6.0</title>
-    <link>https://github.com/ant-design/ant-design/releases/tag/6.6.0</link>
-    <guid isPermaLink="true">https://github.com/ant-design/ant-design/releases/tag/6.6.0</guid>
-    <description><![CDATA[- 🔥 Add Listy component for high-performance virtualized lists with grouping, sticky headers, and imperative scrolling. #58724 @aojunhao123
-- ConfigProvider
- - 🆕 Add ConfigProvider `focusOutline` theme token to control shared focus outlines across Input, Select, Rate, Steps, Splitter, and other components. #58647 #58708 @QDyanbing
- - 🆕 Add ConfigProvider global `variant` configuration for Input.Search, Input.Password, and Input.OTP. #58784 @QDyanbing
- - 🆕 Add ConfigProvider global `mouseEnterDelay` and `mouseLeaveDelay` configuration for Tooltip, Popover, and Popconfirm. #58892 @EmilyyyLiu
-- 🌐 Localization
- - 🇦🇱 Add Albanian `sq_AL` locale support. #58618 @li-jia-nan
-- 🆕 Add Tree `useTree` for retrieving node paths and support `scrollTo({ autoExpand: true })` to expand target nodes before scrolling. #58841 @zombieJ
-- 🆕 Add FloatButton.BackTop `showProgress` to display the current scroll progress around the button. #58894 @ZQDesigned
-- 🆕 Add Table `expandable.forceRender` to r
-
-... (truncated)]]></description>
-    <pubDate>Mon, 10 Aug 2026 09:00:04 GMT</pubDate>
-  </item>
-  <item>
-    <title>[redwoodjs/sdk] v1.7.0</title>
-    <link>https://github.com/redwoodjs/sdk/releases/tag/v1.7.0</link>
-    <guid isPermaLink="true">https://github.com/redwoodjs/sdk/releases/tag/v1.7.0</guid>
-    <description><![CDATA[## What's Changed
-* fix(deps): bump ip-address to 10.4.0 by @justinvdm in 
-* fix(client): recover failed client navigations instead of stranding the URL by @justinvdm in 
-
-
-**Full Changelog**:]]></description>
-    <pubDate>Fri, 07 Aug 2026 10:23:43 GMT</pubDate>
   </item>
 </channel>
 </rss>
