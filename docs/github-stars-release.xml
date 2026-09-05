@@ -5,8 +5,81 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Fri, 04 Sep 2026 22:02:12 GMT</lastBuildDate>
+  <lastBuildDate>Sat, 05 Sep 2026 22:02:05 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[microsoft/playwright] v1.63.0</title>
+    <link>https://github.com/microsoft/playwright/releases/tag/v1.63.0</link>
+    <guid isPermaLink="true">https://github.com/microsoft/playwright/releases/tag/v1.63.0</guid>
+    <description><![CDATA[## 🔒 Test locks
+
+Tests that access a shared resource — an external service, a global account setting — can now declare a named `lock`.
+Tests that share a lock name never run concurrently, across files, workers and projects, while
+everything else keeps running in parallel:
+
+```js
+test('update user settings', { lock: 'user-settings' }, async ({ page }) => {
+ // never runs at the same time as other tests holding 'user-settings'
+});
+```
+
+A test can hold multiple locks, and test.describe accepts a `lock` for the whole group.
+Learn more about test locks.
+
+## 🪟 Locate across frames
+
+page.frameLocator and frame.frameLocator called without a selector search in any frame of the
+subtree, so you no longer need to locate the iframe first:
+
+```js
+// Finds the button in any frame on the page.
+await page.frameLocator.getByRole('button').click;
+```
+
+The rest of the locator resolves inside a single frame, just like a regular locator, and an error is thrown when it
+matches ele
+
+... (truncated)]]></description>
+    <pubDate>Fri, 04 Sep 2026 22:40:31 GMT</pubDate>
+  </item>
+  <item>
+    <title>[mongodb/mongo-go-driver] MongoDB Go Driver 2.9.0 (v2.9.0)</title>
+    <link>https://github.com/mongodb/mongo-go-driver/releases/tag/v2.9.0</link>
+    <guid isPermaLink="true">https://github.com/mongodb/mongo-go-driver/releases/tag/v2.9.0</guid>
+    <description><![CDATA[The MongoDB Go Driver Team is pleased to release version 2.9.0 of the official MongoDB Go Driver.
+
+## Release Highlights
+
+> [!WARNING]
+> The minimum supported MongoDB server version is now 4.4.
+
+> [!WARNING]
+> The minimum supported Go version is now 1.25. The Go Driver supports the last 2 Go minor versions.
+
+### New `ext/awsauth` module
+
+The new `ext/awsauth` module adds support for all AWS authentication methods via the official AWS SDK for Go. Applications running on AWS can now use an `awsauth.CredentialsProvider` in `ClientOptions`, `ClientEncryptionOptions`, and `AutoEncryptionOptions`.
+
+For example, to configure a `mongo.Client` with the new `ext/awsauth` module:
+
+```go
+import (
+ "context"
+ "log"
+
+ "github.com/aws/aws-sdk-go-v2/config"
+ "go.mongodb.org/mongo-driver/ext/awsauth"
+ "go.mongodb.org/mongo-driver/v2/mongo"
+ "go.mongodb.org/mongo-driver/v2/mongo/options"
+)
+
+func main {
+	cfg, err := config.LoadDefaultConfig(context.Background)
+	if err != nil 
+
+... (truncated)]]></description>
+    <pubDate>Fri, 04 Sep 2026 22:30:30 GMT</pubDate>
+  </item>
   <item>
     <title>[adobe/react-spectrum] React Aria Components v1.21.0 (react-aria-components@1.21.0)</title>
     <link>https://github.com/adobe/react-spectrum/releases/tag/react-aria-components%401.21.0</link>
@@ -1183,53 +1256,6 @@ This release ships a complete Temporal implementation that passes 100% of the te
 
 ... (truncated)]]></description>
     <pubDate>Tue, 18 Aug 2026 01:44:54 GMT</pubDate>
-  </item>
-  <item>
-    <title>[stretchr/testify] v1.12.0</title>
-    <link>https://github.com/stretchr/testify/releases/tag/v1.12.0</link>
-    <guid isPermaLink="true">https://github.com/stretchr/testify/releases/tag/v1.12.0</guid>
-    <description><![CDATA[## What's Changed
-
-### Functional Changes
-* assert: make *AssertionFunc types just aliases by @dolmen in 
-
-### Fixes
-* mock: avoid panic when expected type is nil in Arguments.Diff by @mutaiib in 
-* mock: revert to pre-v1.11.0 argument matching behavior for mutating stringers by @brackendawson in 
-* suite: validate method signatures and continue execution for valid tests by @vyas-git in 
-* assert.PanicsWithError: report error message by @olivergondza in 
-* assert: IsIncreasing et al can return false w/out failing by @brackendawson in 
-* add type to error message of assert.Same by @egawata in 
-* mock.AssertExpectationsForObjects fix panic with wrong testObject type. by @brackendawson in 
-* assert: truncate very long objects in test failure messages by @brackendawson in 
-* assert: fix NotSubset error messages using %#v instead of %q (fixes #1800) by @nghiack7 in 
-* suite: prevent panic when SetupTest skips with HandleStats by @blackwell-systems in 
-
-### Documentation, Bu
-
-... (truncated)]]></description>
-    <pubDate>Mon, 17 Aug 2026 08:09:38 GMT</pubDate>
-  </item>
-  <item>
-    <title>[microsoft/WindowsAppSDK] Windows App SDK 2.4.0 (v2.4.0)</title>
-    <link>https://github.com/microsoft/WindowsAppSDK/releases/tag/v2.4.0</link>
-    <guid isPermaLink="true">https://github.com/microsoft/WindowsAppSDK/releases/tag/v2.4.0</guid>
-    <description><![CDATA[## Windows App SDK 2.4.0
-
-Windows App SDK 2.4.0 is the latest stable release on the 2.x line, adding expanded input support, more precise `LanguageModel` response statuses, and targeted reliability fixes across input, Storage Pickers, MRT Core, app runtime isolation, composition, and XAML tooling.
-
-### What's new in WinAppSDK 2.4.0:
-
-- **Expanded input support.** WinUI 3 apps can now use operating system touchpad and mouse haptics through `Windows.Devices.Haptics`, along with touchpad single-finger panning, when supported by the operating system and hardware.
-- **More precise `LanguageModel` response statuses.** The new `LanguageModelResponseStatus.UnsupportedLanguage` and `LanguageModelResponseStatus.LanguageMismatch` values let apps distinguish unsupported-language and input/output-language mismatch conditions from generic errors.
-
-### Bug fixes:
-| Bug Fix | Runtime Compatibility Change |
-|---------|------------------------------------|
-| Fixed a crash that could occur wh
-
-... (truncated)]]></description>
-    <pubDate>Thu, 13 Aug 2026 17:43:40 GMT</pubDate>
   </item>
 </channel>
 </rss>
