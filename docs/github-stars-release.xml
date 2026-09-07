@@ -5,8 +5,129 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Sun, 06 Sep 2026 22:01:54 GMT</lastBuildDate>
+  <lastBuildDate>Mon, 07 Sep 2026 22:01:56 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[typescript-eslint/typescript-eslint] v8.70.0</title>
+    <link>https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.70.0</link>
+    <guid isPermaLink="true">https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.70.0</guid>
+    <description><![CDATA[## 8.70.0 (2026-09-07)
+
+### 🚀 Features
+
+- **eslint-plugin:** [no-generated-empty-object-type] add rule (#12730)
+- **website:** generate per-page social preview cards (#12734)
+
+### 🩹 Fixes
+
+- use stable release of pnpm 12 (#12808)
+- update pnpm to 12.3.4 and dedupe Docusaurus packages (#12829)
+- **eslint-plugin:** [member-ordering] don't report fields that read fields declared before them (#12729)
+- **eslint-plugin:** [no-unnecessary-condition] no false positive on RHS of a nested logical expression (#12728)
+- **eslint-plugin:** [no-deprecated] report deprecated imported values used in object shorthand properties (#12780)
+- **project-service:** avoid discarded tsserver logs (#12748)
+- **typescript-estree:** clarify the parserOptions.project error message (#12817)
+
+### ❤️ Thank You
+
+- Barry @barry166
+- Evyatar Daud @StyleShit
+- Josh Goldberg
+- Josh Goldberg ✨ @JoshuaKGoldberg
+- Kirk Waiblinger @kirkwaiblinger
+- Ulrich Stark @ulrichstark
+- 송재욱
+
+See GitHub Releases for more information.
+
+
+... (truncated)]]></description>
+    <pubDate>Mon, 07 Sep 2026 17:06:49 GMT</pubDate>
+  </item>
+  <item>
+    <title>[oxc-project/oxc] oxc crates_v0.149.0 (crates_v0.149.0)</title>
+    <link>https://github.com/oxc-project/oxc/releases/tag/crates_v0.149.0</link>
+    <guid isPermaLink="true">https://github.com/oxc-project/oxc/releases/tag/crates_v0.149.0</guid>
+    <description><![CDATA[### 💥 BREAKING CHANGES
+
+- 66744f0 parser: [**BREAKING**] Rename `panicked` to `fatal_error` in `ParserReturn` (#26382) (overlookmotel)
+- 2c9a947 parser: [**BREAKING**] Reduce `MAX_LEN` to 256 bytes below `u32::MAX` (#26352) (overlookmotel)
+
+### 🚀 Features
+
+- 32bdc5b allocator: Construct `ArenaHashSet` with any `Default` hasher (#26372) (Dunqing)
+- a17de58 minifier: Process of return/throw in non last position and fix async * inlining (#26214) (Armano)
+- bfb4c57 parser: Distinguish unapplied no-side-effects comments (#26120) (碳苯 Carbon)
+- 1d9b9d3 ast: Add `GetNodeId` trait (#26145) (camc314)
+
+### 🐛 Bug Fixes
+
+- b156333 codegen: Order accessibility before abstract on accessors (#26392) (camc314)
+- 116c8b8 transformer/class-properties: Keep private methods in class-expression scope (#26308) (Changsu Seong)
+- 1400a0f parser: Require a string source after `export ... from` (#26389) (camc314)
+- 2da73b7 codegen: Print matching quoted import names as identifiers (#26386) (camc314)
+- 0a81d29
+
+... (truncated)]]></description>
+    <pubDate>Mon, 07 Sep 2026 14:41:19 GMT</pubDate>
+  </item>
+  <item>
+    <title>[project-tsurugi/tsurugidb] 1.12.0</title>
+    <link>https://github.com/project-tsurugi/tsurugidb/releases/tag/1.12.0</link>
+    <guid isPermaLink="true">https://github.com/project-tsurugi/tsurugidb/releases/tag/1.12.0</guid>
+    <description><![CDATA[### Release Notes
+- Tsurugi 1.12.0 - Release Notes (en)
+- Tsurugi 1.12.0 - Release Notes (ja)
+- Tsurugi 1.12.0 - Changelog
+- Tsurugi 1.12.0 - Known Issues (en)
+- Tsurugi 1.12.0 - Known Issues (ja)
+
+#### Download installer archive
+
+```sh
+curl -OL 
+```
+
+#### Download Docker image
+
+```sh
+docker pull ghcr.io/project-tsurugi/tsurugidb:1.12.0
+```
+
+> [!WARNING] 
+The `Source code (zip)` or `Source code (tar.gz)` in `Assets` are automatically generated links by GitHub, and these archives does not contain files needed for installation.]]></description>
+    <pubDate>Mon, 07 Sep 2026 05:25:59 GMT</pubDate>
+  </item>
+  <item>
+    <title>[lynx-family/lynx] 4.1.0</title>
+    <link>https://github.com/lynx-family/lynx/releases/tag/4.1.0</link>
+    <guid isPermaLink="true">https://github.com/lynx-family/lynx/releases/tag/4.1.0</guid>
+    <description><![CDATA[No release notes provided.]]></description>
+    <pubDate>Mon, 07 Sep 2026 01:47:18 GMT</pubDate>
+  </item>
+  <item>
+    <title>[pnpm/pnpm] pnpm 11.26 (v11.26.0)</title>
+    <link>https://github.com/pnpm/pnpm/releases/tag/v11.26.0</link>
+    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v11.26.0</guid>
+    <description><![CDATA[## Minor Changes
+
+* Catalogs can now resolve workspace dependencies through the `workspace:` protocol.
+
+* `pnpm remove` and `pnpm update` now accept `--trust-lockfile`, `--no-trust-lockfile`, `--trust-policy`, `--trust-policy-exclude`, and `--trust-policy-ignore-after`. `pnpm remove` checks the whole lockfile against the active policies unless `--trust-lockfile` is set.
+
+* Added `pnpm change check` for CI validation of package versions against the `versioning.epics` bands and `versioning.fixed` groups in `pnpm-workspace.yaml`.
+
+## Patch Changes
+
+* Fetch and tarball errors and retry logs now hide URL credentials, query strings, and fragments that could expose secrets.
+
+* Fixed a race during config dependency updates that could redirect a lockfile write through a symlink #14322.
+
+* `pnpm add --allow-build=!<pkg>` now correctly denies builds, including in global installs. `pnpm approve-builds <pkg>` and `pnpm approve-builds !<pkg>` now save decisions even when the package is
+
+... (truncated)]]></description>
+    <pubDate>Sun, 06 Sep 2026 23:50:11 GMT</pubDate>
+  </item>
   <item>
     <title>[microsoft/playwright] v1.63.0</title>
     <link>https://github.com/microsoft/playwright/releases/tag/v1.63.0</link>
@@ -412,21 +533,6 @@ The original host remains in use for authentication, Git remotes, and browser UR
     <pubDate>Wed, 02 Sep 2026 18:13:31 GMT</pubDate>
   </item>
   <item>
-    <title>[pnpm/pnpm] pnpm 12.3 (v12.3.0)</title>
-    <link>https://github.com/pnpm/pnpm/releases/tag/v12.3.0</link>
-    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v12.3.0</guid>
-    <description><![CDATA[## Minor Changes
-
-- Every context-aware global command (`node`, `deno`, `bun`, and the shims created with `pnpm shim add`) is now a native executable on every platform, so environment variables whose names are not valid shell identifiers reach these commands. On Windows, `<name>.exe` replaces the `.cmd` and `.ps1` shims for them. Shims written by earlier pnpm 12 releases are migrated on the next global install or self-update.
-
-- `pnpm remove` and `pnpm update` now accept `--trust-lockfile`, `--no-trust-lockfile`, `--trust-policy`, `--trust-policy-exclude` and `--trust-policy-ignore-after`, the same flags `pnpm install` and `pnpm add` take, so the supply-chain settings can be overridden for a single run. `pnpm remove` verifies the lockfile against the active policies the way `pnpm install` does, and `--trust-lockfile` skips that pass for every entry, not only the package being removed.
-
- `pnpm` now also honors `--config.trust-lockfile=<value>`, and accepts the bare `--trust-lockfi
-
-... (truncated)]]></description>
-    <pubDate>Wed, 02 Sep 2026 16:28:57 GMT</pubDate>
-  </item>
-  <item>
     <title>[Seldaek/monolog] 3.11.0</title>
     <link>https://github.com/Seldaek/monolog/releases/tag/3.11.0</link>
     <guid isPermaLink="true">https://github.com/Seldaek/monolog/releases/tag/3.11.0</guid>
@@ -462,35 +568,6 @@ The original host remains in use for authentication, Git remotes, and browser UR
 
 ... (truncated)]]></description>
     <pubDate>Tue, 01 Sep 2026 17:32:45 GMT</pubDate>
-  </item>
-  <item>
-    <title>[oxc-project/oxc] oxlint v1.81.0 &amp; oxfmt v0.66.0 (apps_v1.81.0)</title>
-    <link>https://github.com/oxc-project/oxc/releases/tag/apps_v1.81.0</link>
-    <guid isPermaLink="true">https://github.com/oxc-project/oxc/releases/tag/apps_v1.81.0</guid>
-    <description><![CDATA[## Table of Contents
-
-- [Oxlint v1.81.0](#oxlint-v1.81.0)
-- [Oxfmt v0.66.0](#oxfmt-v0.66.0)
-
-## Oxlint v1.81.0
-### 🚀 Features
-
-- 60b945d linter/nextjs/no-typos: Implement suggestion (#26091) (Mikhail Baev)
-
-### 🐛 Bug Fixes
-
-- 33ac4b0 linter/lsp: Prevent tsgolint from holding onto processes (#25570) (Adrian Schaedle)
-- baf4b1e linter/import/no-empty-named-blocks: Make empty value import removal a suggestion (#26155) (camc314)
-- 77cfaec linter/eslint/object-shorthand: Preserve `__proto__` semantics (#26154) (camc314)
-- fa3c082 linter/unicorn/prefer-set-size: Ignore shadowed `Set` constructors (#26153) (camc314)
-- e412cf2 linter: Clamp invalid JS plugin locations (#26144) (camc314)
-- d86c113 linter: Normalize reversed JS plugin locations (#26138) (camc314)
-- 73c09b2 linter/eslint/no-use-before-define: Run on JS, JSX files (#26114) (camc314)
-- 03ef0f2 linter/unicorn/no-useless-spread: Treat typed arrays as a distinct value hint (#26067) (Aadharsh Pannirselvam)
-- bd15905 linter/react/no-u
-
-... (truncated)]]></description>
-    <pubDate>Tue, 01 Sep 2026 15:17:51 GMT</pubDate>
   </item>
   <item>
     <title>[floci-io/floci] 2.0.0</title>
@@ -532,36 +609,6 @@ The original host remains in use for authentication, Git remotes, and browser UR
  - `render-middleware@0.2.0`
  - `ui@0.8.0`]]></description>
     <pubDate>Mon, 31 Aug 2026 18:59:34 GMT</pubDate>
-  </item>
-  <item>
-    <title>[typescript-eslint/typescript-eslint] v8.69.0</title>
-    <link>https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.69.0</link>
-    <guid isPermaLink="true">https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.69.0</guid>
-    <description><![CDATA[## 8.69.0 (2026-08-31)
-
-### 🚀 Features
-
-- **eslint-plugin:** [no-misused-promises] add flagUnions option for checkConditionals (#12603)
-
-### 🩹 Fixes
-
-- **eslint-plugin:** [no-mixed-enums] use scope analysis instead of type checking for merged namespaces (#12731)
-- **eslint-plugin:** [unified-signatures] compare type parameters by constraint instead of name (#12741)
-- **eslint-plugin:** [no-meaningless-void-operator] report void on non-call expressions (#12727)
-- **website:** respect allowJs playground config (#12744)
-
-### ❤️ Thank You
-
-- Abdu Alim Arlikhozhaev @Arlikhozhaev
-- Evyatar Daud @StyleShit
-- Josh Goldberg ✨
-- wonbeanie @wonbeanie
-- Younsang Na @nayounsang
-
-See GitHub Releases for more information.
-
-You can read about our versioning strategy and releases on our website.]]></description>
-    <pubDate>Mon, 31 Aug 2026 17:06:30 GMT</pubDate>
   </item>
   <item>
     <title>[inokawa/virtua] 0.51.0</title>
@@ -1163,99 +1210,6 @@ specify init my-project
 
 ... (truncated)]]></description>
     <pubDate>Thu, 20 Aug 2026 18:05:33 GMT</pubDate>
-  </item>
-  <item>
-    <title>[oven-sh/bun] Bun v1.4 (bun-v1.4.0)</title>
-    <link>https://github.com/oven-sh/bun/releases/tag/bun-v1.4.0</link>
-    <guid isPermaLink="true">https://github.com/oven-sh/bun/releases/tag/bun-v1.4.0</guid>
-    <description><![CDATA[To install Bun v1.4
-```bash
-curl -fsSL | bash
-# or you can use npm
-# npm install -g bun
-```
-
-Windows:
-```bash
-powershell -c "irm bun.com/install.ps1|iex"
-```
-
-To upgrade to Bun v1.4.0:
-```bash
-bun upgrade
-```
-
-Read the blog post:
-<a href="">
-<img width="1672" height="941" alt="image (1)" src="" />
-</a>
-
-
-
-### Thank you
-
-Bun is free, open source, and MIT-licensed. We receive a lot of contributions from the community, and we'd like to thank everyone who fixed a bug or contributed since Bun v1.3.
-
-- @190n
-- @alanstott
-- @alii
-- @alinalihassan
-- @amdad121
-- @ant-kurt
-- @anthonybaldwin
-- @avarayr
-- @baboon-king
-- @billywhizz
-- @bmwalters
-- @Boshen
-- @braden-w
-- @c-stoeckl
-- @carlsmedstad
-- @chrislloyd
-- @cirospaciari
-- @coleleavitt
-- @connerlphillippi
-- @crishoj
-- @csvlad
-- @d4mr
-- @darwin808
-- @ddmoney420
-- @dioro
-- @djs5008
-- @dylan-conway
-- @Elfayer
-- @emwadde
-- @eroderust
-- @fraidev
-- @franklinfollis
-- @gameroman
-- @gaowhen
--
-
-... (truncated)]]></description>
-    <pubDate>Thu, 20 Aug 2026 14:07:21 GMT</pubDate>
-  </item>
-  <item>
-    <title>[theMackabu/ant] v14.0.ff84a70d.0</title>
-    <link>https://github.com/theMackabu/ant/releases/tag/v14.0.ff84a70d.0</link>
-    <guid isPermaLink="true">https://github.com/theMackabu/ant/releases/tag/v14.0.ff84a70d.0</guid>
-    <description><![CDATA[## Changes
-
-This release ships a complete Temporal implementation that passes 100% of the test262 Temporal suite, the new `ant compile` command for packing applications into standalone executables, inline C compilation through `Ant.unsafe.c`, the `ant:syntax` parser module, and an asynchronous rewrite of `ant:shell`. Underneath, it lands a large overhaul of the string, property, inline-cache, garbage-collection, and regular-expression internals.
-
-#### Breaking changes
-
-- `ant:shell` commands now run asynchronously. `$` returns a promise that must be awaited or consumed through `.text`, `.json`, `.arrayBuffer`, `.bytes`, `.blob`, `.lines`, or `.nothrow`. Results now expose `stdout` and `stderr` as `Uint8Array` buffers and include `exitCode` and `signalCode`.
-- Built-in properties on `globalThis` are now non-enumerable, matching the specification.
-
-#### Highlights
-
-**Temporal**
-
-- Added a complete Temporal implementation: `Instant`, `PlainDate`, `PlainTime`, `PlainDateTime`,
-
-... (truncated)]]></description>
-    <pubDate>Tue, 18 Aug 2026 01:44:54 GMT</pubDate>
   </item>
 </channel>
 </rss>
