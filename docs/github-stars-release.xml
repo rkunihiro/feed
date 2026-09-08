@@ -5,8 +5,116 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Mon, 07 Sep 2026 22:01:56 GMT</lastBuildDate>
+  <lastBuildDate>Tue, 08 Sep 2026 22:02:35 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[nodejs/node] 2026-09-08, Version 24.21.0 &apos;Krypton&apos; (LTS), @aduh95 (v24.21.0)</title>
+    <link>https://github.com/nodejs/node/releases/tag/v24.21.0</link>
+    <guid isPermaLink="true">https://github.com/nodejs/node/releases/tag/v24.21.0</guid>
+    <description><![CDATA[### Notable Changes
+
+* \[`71106e1f17`] - **crypto**: update root certificates to NSS 3.126 (Node.js GitHub Bot) #65495
+* \[`afca0a912d`] - **(SEMVER-MINOR)** **crypto**: support loading private keys through STORE loaders (Filip Skokan) #63949
+* \[`6274fccbd9`] - **deps**: update OpenSSL to 3.5.8 (Node.js GitHub Bot) #65542
+* \[`53cba013c7`] - **deps**: update Undici to 7.29.1 (Node.js GitHub Bot) #65789
+* \[`0529772798`] - **(SEMVER-MINOR)** **lib,src**: improve histogram implementation (James M Snell) #65024
+* \[`41c7062b81`] - **(SEMVER-MINOR)** **net**: improve performance of `net.BlockList` (James M Snell) #64974
+* \[`5197b5a3c5`] - **(SEMVER-MINOR)** **perf\_hooks**: add statistical hypothesis testing to histogram (James M Snell) #65416
+* \[`35c635b032`] - **(SEMVER-MINOR)** **util**: add non-throwing `MIMEType.parse` (James M Snell) #64965
+
+### Commits
+
+* \[`84d706cb9b`] - **assert**: improve documentation wording (Kamal Rawal) #64953
+* \[`90d127db33`] - **(SEMVER-MINOR)** **benc
+
+... (truncated)]]></description>
+    <pubDate>Tue, 08 Sep 2026 21:51:09 GMT</pubDate>
+  </item>
+  <item>
+    <title>[mrdoob/three.js] r186</title>
+    <link>https://github.com/mrdoob/three.js/releases/tag/r186</link>
+    <guid isPermaLink="true">https://github.com/mrdoob/three.js/releases/tag/r186</guid>
+    <description><![CDATA[- Global
+ - Add linting for tsl/. #34488 (@ycw)
+ - Clean up. #34499 (@Mugen87)
+- AnimationObjectGroup
+ - Fix stale index bookkeeping in uncache and unsubscribe_. #34035 (@sean-kim05, @Mugen87)
+- Backend
+ - `Renderer`: Add `resetState` function. #33877 (@pepperoni505, @Mugen87)
+- Backends
+ - Don't scale render target viewports by the pixel ratio. #34333 (@mrdoob, @claude)
+- BatchedMesh
+ - Mark visibility dirty in setGeometryIdAt. #34096 (@wrangelvid)
+- BezierInterpolant
+ - Make `interpolate_` more robust. #33934 (@Mugen87)
+- Bindings
+ - Remove cached bind groups in `_destroyBindings`. #33954 (@Mugen87)
+ - Fix `_destroyBindings`. #34014 (@Mugen87)
+ - Fix stale storage buffer attributes. #34388 (@Mugen87)
+- BufferGeometry
+ - Clean up serialization/deserilization. #34044 (@Mugen87)
+- Core
+ - Fix some `copy` and `toJSON` implementations. #34083 (@Mugen87)
+ - Don't check against default values in `toJSON`. #34178 (@Mugen87)
+ - Initialize render targets with valid dimens
+
+... (truncated)]]></description>
+    <pubDate>Tue, 08 Sep 2026 19:16:16 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-09-08) (release-2026-09-08)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-08</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-08</guid>
+    <description><![CDATA[## General Highlights
+* **Dependency Update**: Updated to the latest SDK module versions
+
+## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/service/appflow`: [v1.60.0](service/appflow/CHANGELOG.md#v1600-2026-09-08)
+ * **Feature**: Amazon AppFlow now supports key pair (RSA private key) authentication for the Snowflake connector. You can provide a privateKey in SnowflakeConnectorProfileCredentials, and password is no longer required. This is a non-breaking, additive change available via the AWS SDK and CLI.
+* `github.com/aws/aws-sdk-go-v2/service/cloudtrail`: [v1.64.0](service/cloudtrail/CHANGELOG.md#v1640-2026-09-08)
+ * **Feature**: Adds support for the RecursiveLogging trail setting, which suppresses recursive events generated when CloudTrail delivers logs to a trail's destinations.
+* `github.com/aws/aws-sdk-go-v2/service/connect`: [v1.197.0](service/connect/CHANGELOG.md#v11970-2026-09-08)
+ * **Feature**: Releasing workload types feature. A proper launch announcement or details will
+
+... (truncated)]]></description>
+    <pubDate>Tue, 08 Sep 2026 18:43:57 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1128.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1128.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1128.0</guid>
+    <description><![CDATA[#### 3.1128.0(2026-09-08)
+
+##### New Features
+
+* **clients:** update client endpoints as of 2026-09-08 (bdcc40a7)
+* **client-ec2:** Adds the InterfaceTypes field to NetworkCardInfo in the DescribeInstanceTypes response. This field identifies the network interface types supported by each network card. (9336e689)
+* **client-appflow:** Amazon AppFlow now supports key pair (RSA private key) authentication for the Snowflake connector. You can provide a privateKey in SnowflakeConnectorProfileCredentials, and password is no longer required. This is a non-breaking, additive change available via the AWS SDK and CLI. (ec8753ad)
+* **client-sagemaker:** Add support for InstancePreferences list for multiple instance type input support on SageMaker Training and Processing (45153f6c)
+* **client-cloudtrail:** Adds support for the RecursiveLogging trail setting, which suppresses recursive events generated when CloudTrail delivers logs to a trail's destinations. (62a43c78)
+* **client-s3:** Adds support 
+
+... (truncated)]]></description>
+    <pubDate>Tue, 08 Sep 2026 18:43:18 GMT</pubDate>
+  </item>
+  <item>
+    <title>[pnpm/pnpm] pnpm 12.4 (v12.4.0)</title>
+    <link>https://github.com/pnpm/pnpm/releases/tag/v12.4.0</link>
+    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v12.4.0</guid>
+    <description><![CDATA[## Minor Changes
+
+- pnpm can now manage npm, Python, and Cargo dependencies in the same workspace. Enable `python.enabled` or `cargo.enabled` in `pnpm-workspace.yaml`, then use `pnpm install` to install them together.
+
+ - Add Python packages with `pnpm add pypi:<package>`. pnpm uses `pyproject.toml`, `pylock.toml`, and a managed `.venv`. Frozen and offline installs are supported, and `pnpm run` and `pnpm exec` make the environment's executables available #14566.
+ - Add Rust crates with `pnpm add crate:<package>`. pnpm supports crates.io and custom sparse registries configured with `cargo.indexUrl`. Registry authentication supports pnpm credentials and, for crates.io, `CARGO_REGISTRY_TOKEN` or `$CARGO_HOME/credentials.toml`.
+
+ Both ecosystems support faster dependency resolution through `pnprServer`, with local resolution as a fallback when the server does not support it.
+
+- Added `pnpm pipeline [name]` to install frozen dependencies and run workspace tasks declared in `pipelin
+
+... (truncated)]]></description>
+    <pubDate>Tue, 08 Sep 2026 11:27:26 GMT</pubDate>
+  </item>
   <item>
     <title>[typescript-eslint/typescript-eslint] v8.70.0</title>
     <link>https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.70.0</link>
@@ -106,29 +214,6 @@ The `Source code (zip)` or `Source code (tar.gz)` in `Assets` are automatically 
     <pubDate>Mon, 07 Sep 2026 01:47:18 GMT</pubDate>
   </item>
   <item>
-    <title>[pnpm/pnpm] pnpm 11.26 (v11.26.0)</title>
-    <link>https://github.com/pnpm/pnpm/releases/tag/v11.26.0</link>
-    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v11.26.0</guid>
-    <description><![CDATA[## Minor Changes
-
-* Catalogs can now resolve workspace dependencies through the `workspace:` protocol.
-
-* `pnpm remove` and `pnpm update` now accept `--trust-lockfile`, `--no-trust-lockfile`, `--trust-policy`, `--trust-policy-exclude`, and `--trust-policy-ignore-after`. `pnpm remove` checks the whole lockfile against the active policies unless `--trust-lockfile` is set.
-
-* Added `pnpm change check` for CI validation of package versions against the `versioning.epics` bands and `versioning.fixed` groups in `pnpm-workspace.yaml`.
-
-## Patch Changes
-
-* Fetch and tarball errors and retry logs now hide URL credentials, query strings, and fragments that could expose secrets.
-
-* Fixed a race during config dependency updates that could redirect a lockfile write through a symlink #14322.
-
-* `pnpm add --allow-build=!<pkg>` now correctly denies builds, including in global installs. `pnpm approve-builds <pkg>` and `pnpm approve-builds !<pkg>` now save decisions even when the package is
-
-... (truncated)]]></description>
-    <pubDate>Sun, 06 Sep 2026 23:50:11 GMT</pubDate>
-  </item>
-  <item>
     <title>[microsoft/playwright] v1.63.0</title>
     <link>https://github.com/microsoft/playwright/releases/tag/v1.63.0</link>
     <guid isPermaLink="true">https://github.com/microsoft/playwright/releases/tag/v1.63.0</guid>
@@ -211,44 +296,6 @@ Menu also gets a big upgrade this release: it now supports async loading and emp
 
 Full Release Notes]]></description>
     <pubDate>Fri, 04 Sep 2026 19:44:19 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-js-v3] v3.1127.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1127.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1127.0</guid>
-    <description><![CDATA[#### 3.1127.0(2026-09-04)
-
-##### New Features
-
-* **client-mediatailor:** Elemental MediaTailor now supports two new Monetization Functions lifecycle hooks, Post Ads Response and Pre Manifest Insertion, and a VAST Request function type that calls a VAST or VMAP ad server. This release also adds Yield Optimization with demand from Amazon Publisher Services. (c238a693)
-* **client-service-quotas:** Service Quotas adds the AdjustableAtLevel property to QuotaContext, indicating whether a quota is adjustable at the account or resource level. (f56bdf2c)
-* **client-bedrock:** New AWS REVIEW mode as supported data retention mode for Bedrock models (cbd9ea9a)
-* **client-ec2:** Adds support for ValidateSecurityGroupQuotasForInterface, an API that specifically authorized AWS services use to validate security group rule quotas before creating an elastic network interface. (f51c3b3e)
-
-
----
-
-For list of updated packages, view **updated-packages.md** in **assets-3.1127.0.zip**]]></description>
-    <pubDate>Fri, 04 Sep 2026 18:44:05 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-09-04) (release-2026-09-04)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-04</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-04</guid>
-    <description><![CDATA[## General Highlights
-* **Feature**: Stop registering the `spanRetryLoop` middleware in generated clients. The retry loop's tracing span is now opened by the retry middleware itself.
-* **Dependency Update**: Updated to the latest SDK module versions
-
-## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/bedrock`: [v1.71.0](service/bedrock/CHANGELOG.md#v1710-2026-09-04)
- * **Feature**: New AWS REVIEW mode as supported data retention mode for Bedrock models
-* `github.com/aws/aws-sdk-go-v2/service/ec2`: [v1.329.0](service/ec2/CHANGELOG.md#v13290-2026-09-04)
- * **Feature**: Adds support for ValidateSecurityGroupQuotasForInterface, an API that specifically authorized AWS services use to validate security group rule quotas before creating an elastic network interface.
-* `github.com/aws/aws-sdk-go-v2/service/mediatailor`: [v1.69.0](service/mediatailor/CHANGELOG.md#v1690-2026-09-04)
- * **Feature**: Elemental MediaTailor now supports two new Monetization Functions lifecycle hooks, Post A
-
-... (truncated)]]></description>
-    <pubDate>Fri, 04 Sep 2026 18:43:50 GMT</pubDate>
   </item>
   <item>
     <title>[bluesky-social/atproto] @atproto/ozone@0.4.0</title>
@@ -911,26 +958,6 @@ nest upgrade
     <pubDate>Thu, 27 Aug 2026 11:28:05 GMT</pubDate>
   </item>
   <item>
-    <title>[nodejs/node] 2026-08-26, Version 26.8.0 (Current), @aduh95 (v26.8.0)</title>
-    <link>https://github.com/nodejs/node/releases/tag/v26.8.0</link>
-    <guid isPermaLink="true">https://github.com/nodejs/node/releases/tag/v26.8.0</guid>
-    <description><![CDATA[### Notable Changes
-
-* \[`74234ee30e`] - **(SEMVER-MINOR)** **benchmark**: add --analyze mode to compare.js (James M Snell) #65416
-* \[`4232997fa2`] - **crypto**: update root certificates to NSS 3.126 (Node.js GitHub Bot) #65495
-* \[`f0531f1c87`] - **(SEMVER-MINOR)** **crypto**: enable SIV and GCM-SIV modes in Cipher/Decipher APIs (Filip Skokan) #63411
-* \[`3f4b80ebb5`] - **diagnostics\_channel**: mark TracingChannel as stable (Abdelrahman Awad) #64525
-* \[`753033c110`] - **(SEMVER-MINOR)** **lib,src**: improve histogram implementation (James M Snell) #65024
-* \[`3d7d277493`] - **(SEMVER-MINOR)** **net**: improve performance of net.BlockList (James M Snell) #64974
-* \[`9e8e9080fd`] - **(SEMVER-MINOR)** **perf\_hooks**: add statistical hypothesis testing to histogram (James M Snell) #65416
-* \[`c18b0aa54e`] - **repl**: add basic syntax highlighting (Aviv Keller) #64591
-* \[`58ea88e1d3`] - **(SEMVER-MINOR)** **sqlite**: add StatementSync.prototype.close (Guilherme Araújo) #64232
-* \[`7c6
-
-... (truncated)]]></description>
-    <pubDate>Wed, 26 Aug 2026 14:28:49 GMT</pubDate>
-  </item>
-  <item>
     <title>[web-infra-dev/rspack] v2.2.0</title>
     <link>https://github.com/web-infra-dev/rspack/releases/tag/v2.2.0</link>
     <guid isPermaLink="true">https://github.com/web-infra-dev/rspack/releases/tag/v2.2.0</guid>
@@ -1184,32 +1211,6 @@ specify init my-project
     <guid isPermaLink="true">https://github.com/denoland/rusty_v8/releases/tag/v152.2.0</guid>
     <description><![CDATA[No release notes provided.]]></description>
     <pubDate>Thu, 20 Aug 2026 18:33:32 GMT</pubDate>
-  </item>
-  <item>
-    <title>[rust-lang/rust] Rust 1.98.0 (1.98.0)</title>
-    <link>https://github.com/rust-lang/rust/releases/tag/1.98.0</link>
-    <guid isPermaLink="true">https://github.com/rust-lang/rust/releases/tag/1.98.0</guid>
-    <description><![CDATA[<a id="1.98.0-Language"></a>
-
-## Language
-
-- Allow shortening lifetime of `&mut` when unsize-coercing, even in an invariant position. For example, you can now coerce a `Cell<&'long mut i32>` to a `Cell<&'short mut dyn Send>`. Such shortenings were already previously allowed when coercing a `&mut` to a `&`, or coercing a `&` to a `&`.
-- Add deny-by-default `invalid_runtime_symbol_definitions` lint and warn-by-default `suspicious_runtime_symbol_definitions` lint
- - The lints currently specifically targets `core` runtime symbols like `memcmp`, `memset`, `strlen`, ... and is planned to be expanded in the next few releases.
-- Add warn-by-default `c_void_returns` lint to check `core::ffi::c_void` as a return type
-
-<a id="1.98.0-Platform-Support"></a>
-
-## Platform Support
-
-- Add `powerpc64-unknown-linux-gnuelfv2` as Tier 3
-- Add `aarch64-unknown-linux-pauthtest` as Tier 3 target
-- Promote `thumbv7a-none-eabi` to Tier 2
-- Promote `thumbv7a-none-eabihf` to Tier 2
-- Promote `thumbv7r-none-eabi` 
-
-... (truncated)]]></description>
-    <pubDate>Thu, 20 Aug 2026 18:05:33 GMT</pubDate>
   </item>
 </channel>
 </rss>
