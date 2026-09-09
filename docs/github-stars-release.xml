@@ -5,8 +5,100 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Tue, 08 Sep 2026 22:02:35 GMT</lastBuildDate>
+  <lastBuildDate>Wed, 09 Sep 2026 22:01:42 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-09-09) (release-2026-09-09)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-09</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-09</guid>
+    <description><![CDATA[## General Highlights
+* **Feature**: Stop registering the `retry.MetricsHeader` middleware in generated clients. The `Amz-Sdk-Request` header is now set by the retry middleware itself.
+* **Dependency Update**: Updated to the latest SDK module versions
+
+## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/feature/s3/transfermanager`: [v0.4.5](feature/s3/transfermanager/CHANGELOG.md#v045-2026-09-09)
+ * **Bug Fix**: Fix potential deadlock in GetObject calls.
+* `github.com/aws/aws-sdk-go-v2/service/connect`: [v1.198.0](service/connect/CHANGELOG.md#v11980-2026-09-09)
+ * **Feature**: Add metric configuration field to evaluation forms and ListEvaluationFormAIVersions API for retrieving AI-generated evaluation form versions
+* `github.com/aws/aws-sdk-go-v2/service/ec2`: [v1.331.0](service/ec2/CHANGELOG.md#v13310-2026-09-09)
+ * **Feature**: This release adds support for sharing Amazon EBS volumes across AWS accounts using AWS Resource Access Manager (RAM). Consuming accounts can view shared volu
+
+... (truncated)]]></description>
+    <pubDate>Wed, 09 Sep 2026 18:45:11 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1129.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1129.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1129.0</guid>
+    <description><![CDATA[#### 3.1129.0(2026-09-09)
+
+##### New Features
+
+* **client-elementalinference:** This release adds contextual metadata, a feed output type that generates a descriptive summary of your media content along with IAB taxonomy and GARM suitability classifications. It also adds feed resource policies for granting cross-account access to a feed. (249639c6)
+* **client-connect:** Add metric configuration field to evaluation forms and ListEvaluationFormAIVersions API for retrieving AI-generated evaluation form versions (abf73c4a)
+* **client-ec2:** This release adds support for sharing Amazon EBS volumes across AWS accounts using AWS Resource Access Manager (RAM). Consuming accounts can view shared volume metadata and create copies of shared volumes within the same Availability Zone, with optional re-encryption using their own KMS key. (2fd8923f)
+* **client-mediapackagev2:** Dynamic Multiview enables viewers to watch multiple live video streams in a single combined output. Viewers can select from 
+
+... (truncated)]]></description>
+    <pubDate>Wed, 09 Sep 2026 18:43:32 GMT</pubDate>
+  </item>
+  <item>
+    <title>[Seldaek/monolog] 3.12.0</title>
+    <link>https://github.com/Seldaek/monolog/releases/tag/3.12.0</link>
+    <guid isPermaLink="true">https://github.com/Seldaek/monolog/releases/tag/3.12.0</guid>
+    <description><![CDATA[* Added support for reading the timestamp of new records from a PSR-20 clock, via a new `$clock` constructor param and `Logger::setClock` (#2065)
+ * Added support for `#[WithMonologChannel]` on constructor/method parameters, so a channel can be bound to a single argument instead of the whole class (#2068)
+ * Fixed `TelegramBotHandler` breaking HTML markup when truncating or splitting long messages, open tags are now closed at the end of a chunk and reopened in the next one (#2066)
+ * Fixed `RedactingFormatter` not redacting secrets nested inside array values of sensitive keys (#2067)
+
+**Full Changelog**:]]></description>
+    <pubDate>Wed, 09 Sep 2026 08:46:10 GMT</pubDate>
+  </item>
+  <item>
+    <title>[open-circle/valibot] v1.5.0</title>
+    <link>https://github.com/open-circle/valibot/releases/tag/v1.5.0</link>
+    <guid isPermaLink="true">https://github.com/open-circle/valibot/releases/tag/v1.5.0</guid>
+    <description><![CDATA[Many thanks to @tats-u, @idleberg, @yslpn, @francisjohnjohnston-web, @MaxFreedomPollard, @mahirhir, @ItzXynx, @LeSingh1, @maxtaran2010, @ysknsid25, @cyyynthia, @spokodev and @sanjibani for contributing to this release.
+
+- Add `codePoints`, `maxCodePoints`, `minCodePoints` and `notCodePoints` validation actions to validate the number of Unicode code points (pull request #888)
+- Add `ksuid` validation action to validate KSUIDs (pull request #1370)
+- Change Standard Schema properties to use eager initialization for faster schema construction and replace internal `_getStandardProps` utility with `_standardSchema` (pull request #1534)
+- Change `url` action to use `URL.canParse` when available to avoid constructing URL objects (pull request #1608)
+- Fix `stringifyJson` action to preserve the dataset value when `JSON.stringify` returns `undefined` (pull request #1476)
+- Fix `literal` schema and `value`, `values`, `notValue` and `notValues` actions to treat `NaN` as equal to itself (pul
+
+... (truncated)]]></description>
+    <pubDate>Wed, 09 Sep 2026 05:44:29 GMT</pubDate>
+  </item>
+  <item>
+    <title>[remix-run/remix] render-middleware v0.3.0 (render-middleware@0.3.0)</title>
+    <link>https://github.com/remix-run/remix/releases/tag/render-middleware%400.3.0</link>
+    <guid isPermaLink="true">https://github.com/remix-run/remix/releases/tag/render-middleware%400.3.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- BREAKING CHANGE: `render({ assets })` now uses `assets.getScriptEntry` to resolve client entries from source files so their import maps are included in rendered documents and frame responses. Custom asset server implementations must provide `getScriptEntry` instead of `getHref` and `getPreloads`. It must return a `Promise` resolving to the following `ScriptEntry` shape:
+
+ ```ts
+ interface ScriptEntry {
+ href: string
+ preloads: string
+ importMap: {
+ imports: Record<string, string>
+ scopes?: Record<string, Record<string, string>>
+ }
+ }
+ ```
+
+ Apps using `createAssetServer` receive this integration automatically. Custom rendering setups can follow the asset server migration steps (see #11706).
+
+### Patch Changes
+
+- Bumped `@remix-run/*` dependencies:
+ - `assets@0.7.0`
+ - `fetch-router@0.22.0`
+ - `ui@0.9.0`]]></description>
+    <pubDate>Tue, 08 Sep 2026 23:07:59 GMT</pubDate>
+  </item>
   <item>
     <title>[nodejs/node] 2026-09-08, Version 24.21.0 &apos;Krypton&apos; (LTS), @aduh95 (v24.21.0)</title>
     <link>https://github.com/nodejs/node/releases/tag/v24.21.0</link>
@@ -60,42 +152,6 @@
 
 ... (truncated)]]></description>
     <pubDate>Tue, 08 Sep 2026 19:16:16 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-09-08) (release-2026-09-08)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-08</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-08</guid>
-    <description><![CDATA[## General Highlights
-* **Dependency Update**: Updated to the latest SDK module versions
-
-## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/appflow`: [v1.60.0](service/appflow/CHANGELOG.md#v1600-2026-09-08)
- * **Feature**: Amazon AppFlow now supports key pair (RSA private key) authentication for the Snowflake connector. You can provide a privateKey in SnowflakeConnectorProfileCredentials, and password is no longer required. This is a non-breaking, additive change available via the AWS SDK and CLI.
-* `github.com/aws/aws-sdk-go-v2/service/cloudtrail`: [v1.64.0](service/cloudtrail/CHANGELOG.md#v1640-2026-09-08)
- * **Feature**: Adds support for the RecursiveLogging trail setting, which suppresses recursive events generated when CloudTrail delivers logs to a trail's destinations.
-* `github.com/aws/aws-sdk-go-v2/service/connect`: [v1.197.0](service/connect/CHANGELOG.md#v11970-2026-09-08)
- * **Feature**: Releasing workload types feature. A proper launch announcement or details will
-
-... (truncated)]]></description>
-    <pubDate>Tue, 08 Sep 2026 18:43:57 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-js-v3] v3.1128.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1128.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1128.0</guid>
-    <description><![CDATA[#### 3.1128.0(2026-09-08)
-
-##### New Features
-
-* **clients:** update client endpoints as of 2026-09-08 (bdcc40a7)
-* **client-ec2:** Adds the InterfaceTypes field to NetworkCardInfo in the DescribeInstanceTypes response. This field identifies the network interface types supported by each network card. (9336e689)
-* **client-appflow:** Amazon AppFlow now supports key pair (RSA private key) authentication for the Snowflake connector. You can provide a privateKey in SnowflakeConnectorProfileCredentials, and password is no longer required. This is a non-breaking, additive change available via the AWS SDK and CLI. (ec8753ad)
-* **client-sagemaker:** Add support for InstancePreferences list for multiple instance type input support on SageMaker Training and Processing (45153f6c)
-* **client-cloudtrail:** Adds support for the RecursiveLogging trail setting, which suppresses recursive events generated when CloudTrail delivers logs to a trail's destinations. (62a43c78)
-* **client-s3:** Adds support 
-
-... (truncated)]]></description>
-    <pubDate>Tue, 08 Sep 2026 18:43:18 GMT</pubDate>
   </item>
   <item>
     <title>[pnpm/pnpm] pnpm 12.4 (v12.4.0)</title>
@@ -518,26 +574,6 @@ The original host remains in use for authentication, Git remotes, and browser UR
     <pubDate>Thu, 03 Sep 2026 10:29:24 GMT</pubDate>
   </item>
   <item>
-    <title>[openai/codex] 0.153.0 (rust-v0.153.0)</title>
-    <link>https://github.com/openai/codex/releases/tag/rust-v0.153.0</link>
-    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.153.0</guid>
-    <description><![CDATA[## New Features
-
-- Vim mode now supports undo with `u` and redo with `Ctrl+R`, preserving complete drafts including pasted content and attachments. (#41941, #42140)
-- The plugin CLI can list, install, and remove plugins from remote marketplaces. (#42150)
-- Set `tui.auto_recap = false` to disable automatic recaps while keeping manual `/recap` available. (#42101)
-- TUI history shows complete patches, input sent to background terminals, and individual completed commands. (#41893, #42107)
-- Plus and Team users receive an earlier warning when less than half of their allowance remains in an approximately five-hour usage window. (#42142)
-
-## Bug Fixes
-
-- TUI sessions reconnect after an external app-server connection drops, preserving drafts and transcripts while keeping uncertain or queued submissions paused for review. (#41911, #41916, #41918)
-- Full Access skips Guardian reviews for confirmation-only actions. User approval mode skips background Guardian scoring and prewarming, while sensiti
-
-... (truncated)]]></description>
-    <pubDate>Thu, 03 Sep 2026 01:37:38 GMT</pubDate>
-  </item>
-  <item>
     <title>[facebook/lexical] v0.50.0</title>
     <link>https://github.com/facebook/lexical/releases/tag/v0.50.0</link>
     <guid isPermaLink="true">https://github.com/facebook/lexical/releases/tag/v0.50.0</guid>
@@ -578,22 +614,6 @@ The original host remains in use for authentication, Git remotes, and browser UR
 
 ... (truncated)]]></description>
     <pubDate>Wed, 02 Sep 2026 18:13:31 GMT</pubDate>
-  </item>
-  <item>
-    <title>[Seldaek/monolog] 3.11.0</title>
-    <link>https://github.com/Seldaek/monolog/releases/tag/3.11.0</link>
-    <guid isPermaLink="true">https://github.com/Seldaek/monolog/releases/tag/3.11.0</guid>
-    <description><![CDATA[* Security: Fixed potential XSS in `BrowserConsoleHandler` when logging user provided content
- * Added `RedactingFormatter` to automatically redact sensitive data from records, based on key names, `#[SensitiveParameter]` constructor params and/or regex patterns (#2041)
- * Added `FrankenPhpHandler` to log records via FrankenPHP's frankenphp_log function (#2056)
- * Added `LogMonsterHandler` which complains if the code did not log enough records before the process/request ends, like a dead man's switch for logs (#2039)
- * Added `FILE_PER_HOUR` rotation mode to `RotatingFileHandler` (#2040)
- * Added `ErrorHandler::captureStackTraces` to attach the stack trace of PHP errors to the records it generates (#2060)
- * Added `NormalizerFormatter::setMaxTraceLength` to limit how many stack trace frames are included when normalizing exceptions (#2015)
- * Added extension points to `TelegramBotHandler` to change the API URL (e.g. for a self-hosted Bot API server) and to send extra curl headers 
-
-... (truncated)]]></description>
-    <pubDate>Wed, 02 Sep 2026 12:41:06 GMT</pubDate>
   </item>
   <item>
     <title>[iii-hq/iii] iii 0.23.0 (iii/v0.23.0)</title>
@@ -641,21 +661,6 @@ The original host remains in use for authentication, Git remotes, and browser UR
 
 ... (truncated)]]></description>
     <pubDate>Tue, 01 Sep 2026 05:04:27 GMT</pubDate>
-  </item>
-  <item>
-    <title>[remix-run/remix] spa v0.1.0 (spa@0.1.0)</title>
-    <link>https://github.com/remix-run/remix/releases/tag/spa%400.1.0</link>
-    <guid isPermaLink="true">https://github.com/remix-run/remix/releases/tag/spa%400.1.0</guid>
-    <description><![CDATA[### Minor Changes
-
-- Added the initial `@remix-run/spa` package with `render` middleware and a `run(router, { fallback? })` browser runtime for client-rendered Remix applications. Route handlers use `context.render` while the package preserves the router's `Request` to `Response` contract and hides the SPA response carrier.
-
-### Patch Changes
-
-- Bumped `@remix-run/*` dependencies:
- - `render-middleware@0.2.0`
- - `ui@0.8.0`]]></description>
-    <pubDate>Mon, 31 Aug 2026 18:59:34 GMT</pubDate>
   </item>
   <item>
     <title>[inokawa/virtua] 0.51.0</title>
