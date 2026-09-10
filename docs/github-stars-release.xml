@@ -5,42 +5,107 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Wed, 09 Sep 2026 22:01:42 GMT</lastBuildDate>
+  <lastBuildDate>Thu, 10 Sep 2026 22:01:41 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
   <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-09-09) (release-2026-09-09)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-09</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-09</guid>
-    <description><![CDATA[## General Highlights
-* **Feature**: Stop registering the `retry.MetricsHeader` middleware in generated clients. The `Amz-Sdk-Request` header is now set by the retry middleware itself.
-* **Dependency Update**: Updated to the latest SDK module versions
+    <title>[openai/codex] Python SDK 0.154.0 (python-v0.154.0)</title>
+    <link>https://github.com/openai/codex/releases/tag/python-v0.154.0</link>
+    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/python-v0.154.0</guid>
+    <description><![CDATA[Install with `pip install --upgrade openai-codex==0.154.0` (Python 3.10 or later). This release includes the matching `openai-codex-cli-bin==0.154.0` runtime.
 
-## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/feature/s3/transfermanager`: [v0.4.5](feature/s3/transfermanager/CHANGELOG.md#v045-2026-09-09)
- * **Bug Fix**: Fix potential deadlock in GetObject calls.
-* `github.com/aws/aws-sdk-go-v2/service/connect`: [v1.198.0](service/connect/CHANGELOG.md#v11980-2026-09-09)
- * **Feature**: Add metric configuration field to evaluation forms and ListEvaluationFormAIVersions API for retrieving AI-generated evaluation form versions
-* `github.com/aws/aws-sdk-go-v2/service/ec2`: [v1.331.0](service/ec2/CHANGELOG.md#v13310-2026-09-09)
- * **Feature**: This release adds support for sharing Amazon EBS volumes across AWS accounts using AWS Resource Access Manager (RAM). Consuming accounts can view shared volu
+- Add `max` and `ultra` reasoning-effort values. #39662
+- Add `ExternalMessage` to synchronous and asynchronous `run` and `turn` calls. External content can start a turn or join an active regular turn with tool-level authority; it does not grant user authorization. Consumers receive independent event streams. #44086
+- Add `include_turns` on resume/fork, `turn_service_tier` for one newly started turn, and `source` metadata. History selection changes the returned response, not model context. Existing defaults are preserved when these options are omitted. #44084
+- Refresh generated protocol models and notifications, and preserve completion events that arrive before a turn-start response. #44032, #44400
+
+Check these migrations when upgrading:
+
+- `HookMetadata` wraps its handler in `.root`. Replace accesses such as `hook.command` wit
 
 ... (truncated)]]></description>
-    <pubDate>Wed, 09 Sep 2026 18:45:11 GMT</pubDate>
+    <pubDate>Thu, 10 Sep 2026 19:51:43 GMT</pubDate>
   </item>
   <item>
-    <title>[aws/aws-sdk-js-v3] v3.1129.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1129.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1129.0</guid>
-    <description><![CDATA[#### 3.1129.0(2026-09-09)
+    <title>[aws/aws-sdk-js-v3] v3.1130.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1130.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1130.0</guid>
+    <description><![CDATA[#### 3.1130.0(2026-09-10)
 
 ##### New Features
 
-* **client-elementalinference:** This release adds contextual metadata, a feed output type that generates a descriptive summary of your media content along with IAB taxonomy and GARM suitability classifications. It also adds feed resource policies for granting cross-account access to a feed. (249639c6)
-* **client-connect:** Add metric configuration field to evaluation forms and ListEvaluationFormAIVersions API for retrieving AI-generated evaluation form versions (abf73c4a)
-* **client-ec2:** This release adds support for sharing Amazon EBS volumes across AWS accounts using AWS Resource Access Manager (RAM). Consuming accounts can view shared volume metadata and create copies of shared volumes within the same Availability Zone, with optional re-encryption using their own KMS key. (2fd8923f)
-* **client-mediapackagev2:** Dynamic Multiview enables viewers to watch multiple live video streams in a single combined output. Viewers can select from 
+* **clients:** update client endpoints as of 2026-09-10 (96951f65)
+* **client-outposts:** Added fields to identify Outpost generation and rack scaling configuration on Outpost and CatalogItem resources. (d6ec7dce)
+* **client-resiliencehubv2:** This release adds the ListTestRunSourceEvents and ListTestRunDependencies APIs, which return the alarm state changes during a test run and the dependencies the run blocked. (b918658d)
+* **client-bedrock-agent:** TwelveLabs Marengo 3.0 is now an embedding model option in Amazon Bedrock Managed Knowledge Base. Create multimodal embeddings for video, audio, and image content that capture visual scenes, speech, and video cues, not just transcribed text. (2671d465)
+* **client-ec2:** The CreateImage API now supports a BootModeOverride parameter to explicitly set UEFI boot mode on a new AMI, overriding the source instance's inherited boot mode. (c47027fb)
+* **client-sagemaker:** This release adds the abilit
 
 ... (truncated)]]></description>
-    <pubDate>Wed, 09 Sep 2026 18:43:32 GMT</pubDate>
+    <pubDate>Thu, 10 Sep 2026 18:45:26 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-09-10) (release-2026-09-10)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-10</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-10</guid>
+    <description><![CDATA[## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/service/bedrockagent`: [v1.65.0](service/bedrockagent/CHANGELOG.md#v1650-2026-09-10)
+ * **Feature**: TwelveLabs Marengo 3.0 is now an embedding model option in Amazon Bedrock Managed Knowledge Base. Create multimodal embeddings for video, audio, and image content that capture visual scenes, speech, and video cues, not just transcribed text.
+* `github.com/aws/aws-sdk-go-v2/service/ec2`: [v1.332.0](service/ec2/CHANGELOG.md#v13320-2026-09-10)
+ * **Feature**: The CreateImage API now supports a BootModeOverride parameter to explicitly set UEFI boot mode on a new AMI, overriding the source instance's inherited boot mode.
+* `github.com/aws/aws-sdk-go-v2/service/outposts`: [v1.74.0](service/outposts/CHANGELOG.md#v1740-2026-09-10)
+ * **Feature**: Added fields to identify Outpost generation and rack scaling configuration on Outpost and CatalogItem resources.
+* `github.com/aws/aws-sdk-go-v2/service/resiliencehubv2`: [v1.10.0](service/resilience
+
+... (truncated)]]></description>
+    <pubDate>Thu, 10 Sep 2026 18:42:10 GMT</pubDate>
+  </item>
+  <item>
+    <title>[vitejs/vite] v8.3.0</title>
+    <link>https://github.com/vitejs/vite/releases/tag/v8.3.0</link>
+    <guid isPermaLink="true">https://github.com/vitejs/vite/releases/tag/v8.3.0</guid>
+    <description><![CDATA[### Features
+
+* **build:** avoid settling seen preload dependencies for performance (#23446) (e6f6b3e)
+
+### Bug Fixes
+
+* handle CRLF line endings in code frame positions (#23219) (9913672)
+* only treat whole `node_modules` path segments as dependencies (fix #17467) (#23437) (ef0dc17)
+
+### Performance Improvements
+
+* **proxy:** pre-compile context matchers at server creation (#23263) (8abf700)]]></description>
+    <pubDate>Thu, 10 Sep 2026 11:25:16 GMT</pubDate>
+  </item>
+  <item>
+    <title>[BabylonJS/Babylon.js] 9.26.0</title>
+    <link>https://github.com/BabylonJS/Babylon.js/releases/tag/9.26.0</link>
+    <guid isPermaLink="true">https://github.com/BabylonJS/Babylon.js/releases/tag/9.26.0</guid>
+    <description><![CDATA[### Core
+
+- Add OpenUSD WebAssembly scene loader - [_New Feature_] by SergioRZMasson (#18882)
+- Add object ID geometry textures - [_New Feature_] by Popov72 (#18879)
+- Add opt-out for iOS ringer switch audio workaround - [_New Feature_] by RaananW (#18886)
+- WebGPU: key the leftover uniform buffer slots on the draw context, not on draw order - by increasinglyHuman (#18880)
+- Feat: Add IBL Shadows support to ShadowOnlyMaterial - [_New Feature_] by raymondyfei (#18873)
+
+### GUI
+
+- fixes Bounty #9: Add FlexPanel and em/rem GUI units - by Yabuku-xD (#18881)
+
+### Inspector
+
+- Add Gaussian splatting stream diagnostics to Inspector V2 - by CedricGuillemet (#18885)
+- Feat: HDR output & cloudiness for SkyMaterial - by raymondyfei (#18897)
+- Add Inspector v2 Explorer contribution APIs - by ryantrem (#18898)
+- Add initial Babylon Lite support to Inspector v2 - [_New Feature_] by ryantrem (#18889)
+
+### Loaders
+
+- Add Gaussian splatting stream diagnostics to Inspector V2 - by CedricGuillemet (#1888
+
+... (truncated)]]></description>
+    <pubDate>Thu, 10 Sep 2026 10:52:55 GMT</pubDate>
   </item>
   <item>
     <title>[Seldaek/monolog] 3.12.0</title>
@@ -270,6 +335,22 @@ The `Source code (zip)` or `Source code (tar.gz)` in `Assets` are automatically 
     <pubDate>Mon, 07 Sep 2026 01:47:18 GMT</pubDate>
   </item>
   <item>
+    <title>[ollama/ollama] v0.34.0</title>
+    <link>https://github.com/ollama/ollama/releases/tag/v0.34.0</link>
+    <guid isPermaLink="true">https://github.com/ollama/ollama/releases/tag/v0.34.0</guid>
+    <description><![CDATA[## Use Ollama models in ChatGPT Desktop
+
+Ollama models can now be used directly in ChatGPT Desktop, so you can keep your existing workflow while running open models. Setup is available from the Ollama app on MacOS.
+
+<img width="1374" height="1300" alt="CleanShot 2026-09-08 at 11 04 07 AM@2x" src="" />
+
+
+This release also improves structured output performance on Apple Silicon, adds support for OpenAI-compatible client tool search and response compaction.
+
+**Full Changelog**:]]></description>
+    <pubDate>Sat, 05 Sep 2026 23:49:00 GMT</pubDate>
+  </item>
+  <item>
     <title>[microsoft/playwright] v1.63.0</title>
     <link>https://github.com/microsoft/playwright/releases/tag/v1.63.0</link>
     <guid isPermaLink="true">https://github.com/microsoft/playwright/releases/tag/v1.63.0</guid>
@@ -462,29 +543,6 @@ Full Release Notes]]></description>
 
 ... (truncated)]]></description>
     <pubDate>Thu, 03 Sep 2026 16:48:32 GMT</pubDate>
-  </item>
-  <item>
-    <title>[BabylonJS/Babylon.js] 9.25.0</title>
-    <link>https://github.com/BabylonJS/Babylon.js/releases/tag/9.25.0</link>
-    <guid isPermaLink="true">https://github.com/BabylonJS/Babylon.js/releases/tag/9.25.0</guid>
-    <description><![CDATA[### Core
-
-- Fluid renderer: add opt-in per-particle size support - by tini2n (#18863)
-- Feat: Add white balance (Kelvin temperature + tint) to image processing - by raymondyfei (#18855)
-- Fix: IBL Shadows silent failure on Adreno mobile GPUs - by raymondyfei (#18865)
-- Fix wgsl output for PowBlock and TriPlanarBlock - by BarthPaleologue (#18869)
-- Fix OpenPBR backend consistency - [_Bug Fix_] by bghgary (#18861)
-- Harden experimental WebXR support for WebGPU - [_Bug Fix_] by RaananW (#18858)
-- Fix late notifications for Observable<void> - [_Bug Fix_] by sebavan (#18856)
-- Add dynamic WebXR viewport scaling - [_New Feature_] by RaananW (#18851)
-- Respect XRInputSource skipRendering - by RaananW (#18849)
-- Add WebXR composition layer controls and limits - by RaananW (#18848)
-- Add WebXR tracked sources support - by RaananW (#18844)
-- Add WebXR depth sensing lifecycle controls - [_New Feature_] by RaananW (#18842)
-- Add advanced WebXR controller haptics - [_New Feature_] by RaananW (#1884
-
-... (truncated)]]></description>
-    <pubDate>Thu, 03 Sep 2026 16:47:35 GMT</pubDate>
   </item>
   <item>
     <title>[cli/cli] GitHub CLI 2.100.0 (v2.100.0)</title>
@@ -1051,29 +1109,6 @@ This release hardens runtime option handling, adds RFC 9110 status-code aliases,
     <pubDate>Mon, 24 Aug 2026 13:40:40 GMT</pubDate>
   </item>
   <item>
-    <title>[vitejs/vite] create-vite@9.2.0</title>
-    <link>https://github.com/vitejs/vite/releases/tag/create-vite%409.2.0</link>
-    <guid isPermaLink="true">https://github.com/vitejs/vite/releases/tag/create-vite%409.2.0</guid>
-    <description><![CDATA[### Features
-
-* **create-vite:** add nub package manager support (#23019) (c31c499)
-
-### Bug Fixes
-
-* **create-vite:** update moved eslint-react plugin links in generated README (#23284) (1cbf7d6)
-* **deps:** update all non-major dependencies (#23136) (14454fd)
-* **deps:** update all non-major dependencies (#23217) (ba958bd)
-* **deps:** update all non-major dependencies (#23337) (d550815)
-* **deps:** update rolldown-related dependencies (#23070) (7ac6f7f)
-
-### Miscellaneous Chores
-
-* **create-vite:** mention experimental react compiler support (#23306) (1fb8afe)
-* replace prettier comment with oxfmt (#23318) (e79c471)
-* use oxfmt `sortImports` (#23319) (97ad042)]]></description>
-    <pubDate>Mon, 24 Aug 2026 04:58:55 GMT</pubDate>
-  </item>
-  <item>
     <title>[chakra-ui/ark] @ark-ui/vue@5.39.0</title>
     <link>https://github.com/chakra-ui/ark/releases/tag/%40ark-ui/vue%405.39.0</link>
     <guid isPermaLink="true">https://github.com/chakra-ui/ark/releases/tag/%40ark-ui/vue%405.39.0</guid>
@@ -1108,32 +1143,6 @@ This release hardens runtime option handling, adds RFC 9110 status-code aliases,
 
 ... (truncated)]]></description>
     <pubDate>Sat, 22 Aug 2026 09:25:27 GMT</pubDate>
-  </item>
-  <item>
-    <title>[ollama/ollama] v0.33.0</title>
-    <link>https://github.com/ollama/ollama/releases/tag/v0.33.0</link>
-    <guid isPermaLink="true">https://github.com/ollama/ollama/releases/tag/v0.33.0</guid>
-    <description><![CDATA[## What's Changed
-
-### Claude Desktop
-
-Developers can now easily configure Claude Desktop to seamlessly work with Ollama as a third-party gateway provider. 
-
-<img width="1298" height="780" alt="image" src="" />
-
-### Improved caching
-
-* Fixed a hang where agent clients that cancel long prefills
-* Prefill restore points are now trustworthy by construction: a cancelled prefill keeps every restore point it crossed, so retries resume where they stopped instead of restarting from scratch
-* Resumed prefills no longer record restore points that fail to cover what they claim; on models with recurrent layers this previously forced a request matching 46k of 47k tokens to reprocess from zero
-* Disabled Claude Code's "tokens left" token-countdown system message, which Ollama moved to the front of the prompt and broke the KV cache on every request
-
-### Other improvements
-
-* DeepSeek Harness launcher now falls back to `npx` when the global npm install fails, with Windows command-shim
-
-... (truncated)]]></description>
-    <pubDate>Fri, 21 Aug 2026 22:52:46 GMT</pubDate>
   </item>
   <item>
     <title>[ValveSoftware/Proton] Proton 11.0-2 (proton-11.0-2)</title>
@@ -1209,13 +1218,6 @@ specify init my-project
 
 ---]]></description>
     <pubDate>Thu, 20 Aug 2026 22:48:38 GMT</pubDate>
-  </item>
-  <item>
-    <title>[denoland/rusty_v8] v152.2.0</title>
-    <link>https://github.com/denoland/rusty_v8/releases/tag/v152.2.0</link>
-    <guid isPermaLink="true">https://github.com/denoland/rusty_v8/releases/tag/v152.2.0</guid>
-    <description><![CDATA[No release notes provided.]]></description>
-    <pubDate>Thu, 20 Aug 2026 18:33:32 GMT</pubDate>
   </item>
 </channel>
 </rss>
