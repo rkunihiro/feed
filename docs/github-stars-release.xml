@@ -5,8 +5,73 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Thu, 10 Sep 2026 22:01:41 GMT</lastBuildDate>
+  <lastBuildDate>Fri, 11 Sep 2026 22:02:08 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1131.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1131.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1131.0</guid>
+    <description><![CDATA[#### 3.1131.0(2026-09-11)
+
+##### Documentation Changes
+
+* **client-s3:** Updated S3 Object Lock Default Retention documentation. (996d6642)
+
+##### New Features
+
+* **clients:** update client endpoints as of 2026-09-11 (036bf165)
+* **client-lightsail:** Amazon Lightsail now lets you serve website content from a private Lightsail bucket through a Lightsail distribution. This release adds enablePrivateOriginAccess to the CreateDistribution and UpdateDistribution actions, plus new defaultRootObject and customErrorResponses options. (24e18ac6)
+* **client-batch:** Added new bulk job APIs (CancelJobs, TerminateJobs, TerminateServiceJobs) and new fields on ListJobs and ListServiceJobs responses. This allows customers to cancel or terminate multiple jobs in a single request. ListJobs and ListServiceJobs responses now include isCancelled and isTerminated fields. (036dd996)
+* **client-ecs:** This feature adds support for setting the cpu architecture type that should be used to launch tasks for an 
+
+... (truncated)]]></description>
+    <pubDate>Fri, 11 Sep 2026 18:47:36 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-09-11) (release-2026-09-11)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-11</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-11</guid>
+    <description><![CDATA[## General Highlights
+* **Dependency Update**: Updated to the latest SDK module versions
+
+## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/service/batch`: [v1.76.0](service/batch/CHANGELOG.md#v1760-2026-09-11)
+ * **Feature**: Added new bulk job APIs (CancelJobs, TerminateJobs, TerminateServiceJobs) and new fields on ListJobs and ListServiceJobs responses. This allows customers to cancel or terminate multiple jobs in a single request. ListJobs and ListServiceJobs responses now include isCancelled and isTerminated fields.
+* `github.com/aws/aws-sdk-go-v2/service/ecs`: [v1.98.0](service/ecs/CHANGELOG.md#v1980-2026-09-11)
+ * **Feature**: This feature adds support for setting the cpu architecture type that should be used to launch tasks for an Express Gateway Service.
+* `github.com/aws/aws-sdk-go-v2/service/invoicing`: [v1.19.0](service/invoicing/CHANGELOG.md#v1190-2026-09-11)
+ * **Feature**: Add ListProcurementPortals and ListProcurementPortalSuppliers APIs to retrieve AWS-supported 3rd
+
+... (truncated)]]></description>
+    <pubDate>Fri, 11 Sep 2026 18:46:12 GMT</pubDate>
+  </item>
+  <item>
+    <title>[bluesky-social/atproto] @atproto-labs/fetch-node@0.4.0</title>
+    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto-labs/fetch-node%400.4.0</link>
+    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto-labs/fetch-node%400.4.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- #5503 `f88aa58` Thanks @devinivy! - `safeFetchWrap` now applies its url policy — the protocol, custom port,
+ hostname, forbidden-domain-name and literal-IP checks — to every request it
+ issues, rather than only to the one it was handed. The policy runs again at
+ dispatch time, which is the layer that observes each redirect hop, and a hop is
+ refused before its connection is made.
+
+ The dispatcher is installed even when `ssrfProtection` (or `allowPrivateIps`)
+ relaxes the unicast requirement, so relaxing that no longer relaxes the
+ remaining checks along with it. As a consequence, a custom `dispatcher` can no
+ longer be supplied through the request init in that configuration.
+
+ This requires undici's `Dispatcher.compose`, which is feature-detected rather
+ than inferred from a version number: on a NodeJS whose bundled undici predates
+ it, constructing a safe fetch now throws instead of issuing requests without the
+ per-hop checks.
+
+ Redirect handling itself is unchan
+
+... (truncated)]]></description>
+    <pubDate>Fri, 11 Sep 2026 01:12:51 GMT</pubDate>
+  </item>
   <item>
     <title>[openai/codex] Python SDK 0.154.0 (python-v0.154.0)</title>
     <link>https://github.com/openai/codex/releases/tag/python-v0.154.0</link>
@@ -24,40 +89,6 @@ Check these migrations when upgrading:
 
 ... (truncated)]]></description>
     <pubDate>Thu, 10 Sep 2026 19:51:43 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-js-v3] v3.1130.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1130.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1130.0</guid>
-    <description><![CDATA[#### 3.1130.0(2026-09-10)
-
-##### New Features
-
-* **clients:** update client endpoints as of 2026-09-10 (96951f65)
-* **client-outposts:** Added fields to identify Outpost generation and rack scaling configuration on Outpost and CatalogItem resources. (d6ec7dce)
-* **client-resiliencehubv2:** This release adds the ListTestRunSourceEvents and ListTestRunDependencies APIs, which return the alarm state changes during a test run and the dependencies the run blocked. (b918658d)
-* **client-bedrock-agent:** TwelveLabs Marengo 3.0 is now an embedding model option in Amazon Bedrock Managed Knowledge Base. Create multimodal embeddings for video, audio, and image content that capture visual scenes, speech, and video cues, not just transcribed text. (2671d465)
-* **client-ec2:** The CreateImage API now supports a BootModeOverride parameter to explicitly set UEFI boot mode on a new AMI, overriding the source instance's inherited boot mode. (c47027fb)
-* **client-sagemaker:** This release adds the abilit
-
-... (truncated)]]></description>
-    <pubDate>Thu, 10 Sep 2026 18:45:26 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-09-10) (release-2026-09-10)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-10</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-10</guid>
-    <description><![CDATA[## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/bedrockagent`: [v1.65.0](service/bedrockagent/CHANGELOG.md#v1650-2026-09-10)
- * **Feature**: TwelveLabs Marengo 3.0 is now an embedding model option in Amazon Bedrock Managed Knowledge Base. Create multimodal embeddings for video, audio, and image content that capture visual scenes, speech, and video cues, not just transcribed text.
-* `github.com/aws/aws-sdk-go-v2/service/ec2`: [v1.332.0](service/ec2/CHANGELOG.md#v13320-2026-09-10)
- * **Feature**: The CreateImage API now supports a BootModeOverride parameter to explicitly set UEFI boot mode on a new AMI, overriding the source instance's inherited boot mode.
-* `github.com/aws/aws-sdk-go-v2/service/outposts`: [v1.74.0](service/outposts/CHANGELOG.md#v1740-2026-09-10)
- * **Feature**: Added fields to identify Outpost generation and rack scaling configuration on Outpost and CatalogItem resources.
-* `github.com/aws/aws-sdk-go-v2/service/resiliencehubv2`: [v1.10.0](service/resilience
-
-... (truncated)]]></description>
-    <pubDate>Thu, 10 Sep 2026 18:42:10 GMT</pubDate>
   </item>
   <item>
     <title>[vitejs/vite] v8.3.0</title>
@@ -433,36 +464,6 @@ Menu also gets a big upgrade this release: it now supports async loading and emp
 
 Full Release Notes]]></description>
     <pubDate>Fri, 04 Sep 2026 19:44:19 GMT</pubDate>
-  </item>
-  <item>
-    <title>[bluesky-social/atproto] @atproto/ozone@0.4.0</title>
-    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/ozone%400.4.0</link>
-    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/ozone%400.4.0</guid>
-    <description><![CDATA[### Minor Changes
-
-- #5426 `ed0b7d3` Thanks @bigmoves! - Migrate Ozone onto `@atproto/lex`.
-
- Ozone was the last package still generating its server stack with
- `lex gen-server`. It now uses `lex build` like `pds` and `bsky`, and the legacy
- `src/lexicon` tree is gone:
-
- - All 95 route registrations moved from `server.<ns>.<method>` to
- `server.add(schema, …)` from `@atproto/xrpc-server`.
- - `AtpAgent` is replaced by `Client`; `CredentialSession` by `PasswordSession`
- from `@atproto/lex-password-session`.
- - Kysely schema types, config and auth credentials now carry the branded
- scalars (`DidString`, `DatetimeString`, `AtUriString`, `UriString`), so
- route params flow into the database and back out into views without casts.
-
- `@atproto/api` and `@atproto/lexicon` move to `devDependencies` (the test suites
- still drive the legacy client), and `@atproto/xrpc` and `@atproto/lex-cli` are
- dropped entirely.
-
- Two behaviour changes worth noting, both from validating against the Lexicon
- sche
-
-... (truncated)]]></description>
-    <pubDate>Fri, 04 Sep 2026 17:54:57 GMT</pubDate>
   </item>
   <item>
     <title>[eslint/eslint] v10.10.0</title>
