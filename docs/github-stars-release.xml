@@ -5,8 +5,28 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Sat, 12 Sep 2026 22:02:05 GMT</lastBuildDate>
+  <lastBuildDate>Sun, 13 Sep 2026 22:01:54 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[axios/axios] v0.34.0</title>
+    <link>https://github.com/axios/axios/releases/tag/v0.34.0</link>
+    <guid isPermaLink="true">https://github.com/axios/axios/releases/tag/v0.34.0</guid>
+    <description><![CDATA[## v0.34.0 — September 13, 2026
+
+This release hardens request configuration and proxy handling, adds caller diagnostics and cancellation context, and tightens TypeScript header types.
+
+## ⚠️ Breaking Changes & Deprecations
+
+- Header Types: TypeScript now rejects header values that are Promises, functions, or objects with custom toString methods. Resolve promises, call functions, or explicitly convert objects before assigning header values. Supported scalar, array, and grouped headers remain available. (#11209)
+- Proxy Routing: NO_PROXY / no_proxy entries now support IPv4 and IPv6 CIDR ranges. Previously ineffective ranges now cause matching IP destinations to bypass the proxy; review existing ranges when upgrading. (#11172)
+
+## 🔒 Security Fixes
+
+- Request Configuration: Prevent inherited properties from influencing form serializer options, default request methods, headers on interceptor-returned configs, and HTTP redirect hooks. Applications relying on inherited options mus
+
+... (truncated)]]></description>
+    <pubDate>Sun, 13 Sep 2026 16:40:14 GMT</pubDate>
+  </item>
   <item>
     <title>[pnpm/pnpm] pnpm 11.27 (v11.27.0)</title>
     <link>https://github.com/pnpm/pnpm/releases/tag/v11.27.0</link>
@@ -1084,29 +1104,6 @@ c
 * Fix TypeScript declaration transformation correctness and performance. (#1395)
 * Fix source map export analysis. (#1396)]]></description>
     <pubDate>Mon, 24 Aug 2026 14:51:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>[axios/axios] v1.20.0</title>
-    <link>https://github.com/axios/axios/releases/tag/v1.20.0</link>
-    <guid isPermaLink="true">https://github.com/axios/axios/releases/tag/v1.20.0</guid>
-    <description><![CDATA[## v1.20.0 — August 19, 2026
-
-This release hardens runtime option handling, adds RFC 9110 status-code aliases, fixes Node.js and XHR reliability issues, and refreshes project tooling and documentation.
-
-## ⚠️ Breaking Changes & Deprecations
-
-- HTTP Status Naming: Added ContentTooLarge (413) and UnprocessableContent (422), while retaining PayloadTooLarge and UnprocessableEntity as backward-compatible deprecated aliases. (#11082)
-
-## 🔒 Security Fixes
-
-- Runtime Option Handling: Hardened behavioral configuration reads against shared and foreign prototype pollution and normalized unsafe interceptor replacement objects. This also clarifies Fetch redirect and custom implementation behavior, HTTP/2 DNS and proxy handling, CIDR-based NO_PROXY matching, and malformed data URI rejection; see the PR for documented compatibility effects. (#11141)
-
-## 🐛 Bug Fixes
-
-- Interceptor Lifecycle: Prevented unbounded handler-array growth by trimming trailing ejected interceptors without chan
-
-... (truncated)]]></description>
-    <pubDate>Mon, 24 Aug 2026 13:40:40 GMT</pubDate>
   </item>
   <item>
     <title>[chakra-ui/ark] @ark-ui/vue@5.39.0</title>
