@@ -5,8 +5,127 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Sun, 13 Sep 2026 22:01:54 GMT</lastBuildDate>
+  <lastBuildDate>Mon, 14 Sep 2026 22:02:10 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-09-14) (release-2026-09-14)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-14</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-14</guid>
+    <description><![CDATA[## General Highlights
+* **Dependency Update**: Updated to the latest SDK module versions
+
+## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/service/billingconductor`: [v1.39.0](service/billingconductor/CHANGELOG.md#v1390-2026-09-14)
+ * **Feature**: This release adds support for custom volume tiering. You can now define custom tiers on a pricing rule's tiering configuration, where each tier specifies a usage range and the rate applied to usage in that range.
+* `github.com/aws/aws-sdk-go-v2/service/codedeploy`: [v1.45.0](service/codedeploy/CHANGELOG.md#v1450-2026-09-14)
+ * **Feature**: AWS CodeDeploy now returns the deployment mode on GetDeployment and BatchGetDeployments. The new deploymentMode field on DeploymentInfo indicates whether a deployment used the standard deployment process or restarted the application using a previously installed revision (RESTART mode).
+* `github.com/aws/aws-sdk-go-v2/service/glue`: [v1.159.0](service/glue/CHANGELOG.md#v11590-2026-09-14)
+ * **Feature**: 
+
+... (truncated)]]></description>
+    <pubDate>Mon, 14 Sep 2026 19:33:08 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1132.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1132.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1132.0</guid>
+    <description><![CDATA[#### 3.1132.0(2026-09-14)
+
+##### New Features
+
+* **clients:** update client endpoints as of 2026-09-14 (8ab948b9)
+* **client-codedeploy:** AWS CodeDeploy now returns the deployment mode on GetDeployment and BatchGetDeployments. The new deploymentMode field on DeploymentInfo indicates whether a deployment used the standard deployment process or restarted the application using a previously installed revision (RESTART mode). (05f1a7a2)
+* **client-sts:** Increases the maximum session token size to 4,096 bytes and removes the packed policy size limit. Adds SessionTokenSize and SessionTokenUtilization fields and a new MinimumSessionTokenSize parameter. PackedPolicySize is deprecated. (906e0db8)
+* **client-imagebuilder:** This release adds a dryRun option to Image Builder create APIs (except CreateImage), structured failure context on failed images including component and distribution failure details, and step retry attempt tracking. (7ee2144d)
+* **client-glue:** Amazon Glue releasing the new
+
+... (truncated)]]></description>
+    <pubDate>Mon, 14 Sep 2026 19:31:51 GMT</pubDate>
+  </item>
+  <item>
+    <title>[oxc-project/oxc] oxlint v1.83.0 &amp; oxfmt v0.68.0 (apps_v1.83.0)</title>
+    <link>https://github.com/oxc-project/oxc/releases/tag/apps_v1.83.0</link>
+    <guid isPermaLink="true">https://github.com/oxc-project/oxc/releases/tag/apps_v1.83.0</guid>
+    <description><![CDATA[## Table of Contents
+
+- [Oxlint v1.83.0](#oxlint-v1.83.0)
+- [Oxfmt v0.68.0](#oxfmt-v0.68.0)
+
+## Oxlint v1.83.0
+### 🚀 Features
+
+- afe950d linter/react: Update lint rules to accomodate changes in React 19.3 (#26571) (Connor Shea)
+
+### 🐛 Bug Fixes
+
+- fb87ed7 linter/unicorn/prefer-array-flat-map: Report `.filter.flatMap` chains (#26626) (camc314)
+- 336b654 linter/unicorn/prefer-at: Report single-character substring calls (#26623) (camc314)
+- a5bba6d linter/eslint/no-unused-vars: Respect rest params after-used option (#26579) (Bartok)
+- c1470a2 linter/eslint/no-unused-vars: Preserve ambient implicit exports (#26582) (Dex Hunter)
+- 9a469d2 linter/unicorn/prefer-global-this: Preserve window event method references (#26611) (Dex Hunter)
+- aaff758 linter/unicorn/prefer-default-parameters: Report violation for `??=` and `||=` (#26607) (Bartok)
+- 2bed25a linter/unicorn/prefer-array-flat: Skip plain `concat` normalization (#26604) (im10furry)
+- 72bc7f2 oxlint: Replace backlashes path for "no js 
+
+... (truncated)]]></description>
+    <pubDate>Mon, 14 Sep 2026 12:12:16 GMT</pubDate>
+  </item>
+  <item>
+    <title>[esm-dev/esm.sh] Server v139 (v139)</title>
+    <link>https://github.com/esm-dev/esm.sh/releases/tag/v139</link>
+    <guid isPermaLink="true">https://github.com/esm-dev/esm.sh/releases/tag/v139</guid>
+    <description><![CDATA[* Add a cache purge page and API with proof-of-work, optional GitHub login, and Cloudflare cache purging. (#1405 by @steve02081504)
+* Invalidate stale `latest` resolution when a newer explicit version is requested. (#1398 by @steve02081504)
+* Limit GitHub repository installs and fetch raw assets directly. (#1401)
+* Remove the `web` package and consolidate internal helpers. (#1407)
+* Simplify build queue scheduling and shared results. (#1402)
+* Fix filesystem and S3 storage, import maps, and build handling. (#1404)
+* Fix package resolution, module responses, and HTTP caching. (#1403)
+* Fix sub-module duplication for packages with a `sideEffects` field. (#1399 by @leemr)
+* Upgrade `esbuild` to `0.28.2`. (#1408)]]></description>
+    <pubDate>Mon, 14 Sep 2026 09:38:20 GMT</pubDate>
+  </item>
+  <item>
+    <title>[webpack/webpack] v5.111.0</title>
+    <link>https://github.com/webpack/webpack/releases/tag/v5.111.0</link>
+    <guid isPermaLink="true">https://github.com/webpack/webpack/releases/tag/v5.111.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- Enable `output.module` by default with `futureDefaults` on ESM-capable targets. (by @alexander-akait in #22088)
+
+- Remove `experiments.outputModule`, set `output.module` to emit ESM instead. (by @alexander-akait in #22011)
+
+- Add `output.copy` to copy files and directories into the output directory. (by @alexander-akait in #21938)
+
+- Accept a file URL in any spelling Node reads where an absolute path is taken. (by @alexander-akait in #22012)
+
+- Minify inline CSS and JSON via `renderEmbeddedSource`, exporting webpack's own. (by @alexander-akait in #21993)
+
+- Export `cssMinify` and `htmlMinify` on `css.syntax` and `html.syntax`. (by @alexander-akait in #21953)
+
+- Make `processResult` async and let a tap rename the asset it rewrote. (by @alexander-akait in #21854)
+
+- Lower a CSS spelling a target cannot read and write a color fallback before one. (by @alexander-akait in #21926)
+
+- Allow optional filesystem cache build dependencies. (by @xiaoxiaojx in #21849)
+
+- Add `o
+
+... (truncated)]]></description>
+    <pubDate>Mon, 14 Sep 2026 06:11:20 GMT</pubDate>
+  </item>
+  <item>
+    <title>[open-circle/valibot] v1.3.0 (i18n) (v1.3.0-i18n)</title>
+    <link>https://github.com/open-circle/valibot/releases/tag/v1.3.0-i18n</link>
+    <guid isPermaLink="true">https://github.com/open-circle/valibot/releases/tag/v1.3.0-i18n</guid>
+    <description><![CDATA[Many thanks to @inkotany and @arvindfroi for contributing to this release.
+
+- Add translations for `codePoints`, `maxCodePoints`, `minCodePoints`, `notCodePoints`, `ksuid` and `isoDateTimeSecond` actions
+- Change Valibot peer dependency and generated JSR imports to v1.5.0
+- Add Kinyarwanda (rw) translations (pull request #1489)
+- Add Norwegian Nynorsk (nn) translations (pull request #1512)]]></description>
+    <pubDate>Mon, 14 Sep 2026 00:53:47 GMT</pubDate>
+  </item>
   <item>
     <title>[axios/axios] v0.34.0</title>
     <link>https://github.com/axios/axios/releases/tag/v0.34.0</link>
@@ -43,60 +162,6 @@ This release hardens request configuration and proxy handling, adds caller diagn
 
 ... (truncated)]]></description>
     <pubDate>Sat, 12 Sep 2026 21:22:42 GMT</pubDate>
-  </item>
-  <item>
-    <title>[open-circle/valibot] v1.8.0 (to-json-schema) (v1.8.0-to-json-schema)</title>
-    <link>https://github.com/open-circle/valibot/releases/tag/v1.8.0-to-json-schema</link>
-    <guid isPermaLink="true">https://github.com/open-circle/valibot/releases/tag/v1.8.0-to-json-schema</guid>
-    <description><![CDATA[Many thanks to @dylanpulver, @dzhu-amplify, @francisjohnjohnston-web, @idleberg, @jagregory, @lazerg, @LeSingh1, @MathurAditya724, @maximilliangrand, @MFA-G, @mrlubos, @rajanpanth, @sanjibani, @spokodev, @ysknsid25, and @yslpn for contributing to this release.
-
-- Add support for `ksuid` action (pull request #1370)
-- Add passthrough of other `metadata` action properties to support custom annotations and standard keywords like `format`, which take precedence over generated properties (pull request #1591)
-- Fix overlapping `values`, `notValue` and `notValues` actions to preserve all restrictions, including `value` actions for OpenAPI 3.0 (pull request #1613)
-- Fix `value` actions to report conflicting constant restrictions by default (pull request #1613)
-- Fix empty and duplicate requirements of `values` and `notValues` actions to produce valid enum restrictions or an impossible schema (pull request #1613)
-- Fix overlapping numeric, length, and object entry bounds to preserve the s
-
-... (truncated)]]></description>
-    <pubDate>Fri, 11 Sep 2026 23:05:04 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-js-v3] v3.1131.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1131.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1131.0</guid>
-    <description><![CDATA[#### 3.1131.0(2026-09-11)
-
-##### Documentation Changes
-
-* **client-s3:** Updated S3 Object Lock Default Retention documentation. (996d6642)
-
-##### New Features
-
-* **clients:** update client endpoints as of 2026-09-11 (036bf165)
-* **client-lightsail:** Amazon Lightsail now lets you serve website content from a private Lightsail bucket through a Lightsail distribution. This release adds enablePrivateOriginAccess to the CreateDistribution and UpdateDistribution actions, plus new defaultRootObject and customErrorResponses options. (24e18ac6)
-* **client-batch:** Added new bulk job APIs (CancelJobs, TerminateJobs, TerminateServiceJobs) and new fields on ListJobs and ListServiceJobs responses. This allows customers to cancel or terminate multiple jobs in a single request. ListJobs and ListServiceJobs responses now include isCancelled and isTerminated fields. (036dd996)
-* **client-ecs:** This feature adds support for setting the cpu architecture type that should be used to launch tasks for an 
-
-... (truncated)]]></description>
-    <pubDate>Fri, 11 Sep 2026 18:47:36 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-09-11) (release-2026-09-11)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-11</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-11</guid>
-    <description><![CDATA[## General Highlights
-* **Dependency Update**: Updated to the latest SDK module versions
-
-## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/batch`: [v1.76.0](service/batch/CHANGELOG.md#v1760-2026-09-11)
- * **Feature**: Added new bulk job APIs (CancelJobs, TerminateJobs, TerminateServiceJobs) and new fields on ListJobs and ListServiceJobs responses. This allows customers to cancel or terminate multiple jobs in a single request. ListJobs and ListServiceJobs responses now include isCancelled and isTerminated fields.
-* `github.com/aws/aws-sdk-go-v2/service/ecs`: [v1.98.0](service/ecs/CHANGELOG.md#v1980-2026-09-11)
- * **Feature**: This feature adds support for setting the cpu architecture type that should be used to launch tasks for an Express Gateway Service.
-* `github.com/aws/aws-sdk-go-v2/service/invoicing`: [v1.19.0](service/invoicing/CHANGELOG.md#v1190-2026-09-11)
- * **Feature**: Add ListProcurementPortals and ListProcurementPortalSuppliers APIs to retrieve AWS-supported 3rd
-
-... (truncated)]]></description>
-    <pubDate>Fri, 11 Sep 2026 18:46:12 GMT</pubDate>
   </item>
   <item>
     <title>[bluesky-social/atproto] @atproto-labs/fetch-node@0.4.0</title>
@@ -322,33 +387,6 @@ See GitHub Releases for more information.
 
 ... (truncated)]]></description>
     <pubDate>Mon, 07 Sep 2026 17:06:49 GMT</pubDate>
-  </item>
-  <item>
-    <title>[oxc-project/oxc] oxc crates_v0.149.0 (crates_v0.149.0)</title>
-    <link>https://github.com/oxc-project/oxc/releases/tag/crates_v0.149.0</link>
-    <guid isPermaLink="true">https://github.com/oxc-project/oxc/releases/tag/crates_v0.149.0</guid>
-    <description><![CDATA[### 💥 BREAKING CHANGES
-
-- 66744f0 parser: [**BREAKING**] Rename `panicked` to `fatal_error` in `ParserReturn` (#26382) (overlookmotel)
-- 2c9a947 parser: [**BREAKING**] Reduce `MAX_LEN` to 256 bytes below `u32::MAX` (#26352) (overlookmotel)
-
-### 🚀 Features
-
-- 32bdc5b allocator: Construct `ArenaHashSet` with any `Default` hasher (#26372) (Dunqing)
-- a17de58 minifier: Process of return/throw in non last position and fix async * inlining (#26214) (Armano)
-- bfb4c57 parser: Distinguish unapplied no-side-effects comments (#26120) (碳苯 Carbon)
-- 1d9b9d3 ast: Add `GetNodeId` trait (#26145) (camc314)
-
-### 🐛 Bug Fixes
-
-- b156333 codegen: Order accessibility before abstract on accessors (#26392) (camc314)
-- 116c8b8 transformer/class-properties: Keep private methods in class-expression scope (#26308) (Changsu Seong)
-- 1400a0f parser: Require a string source after `export ... from` (#26389) (camc314)
-- 2da73b7 codegen: Print matching quoted import names as identifiers (#26386) (camc314)
-- 0a81d29
-
-... (truncated)]]></description>
-    <pubDate>Mon, 07 Sep 2026 14:41:19 GMT</pubDate>
   </item>
   <item>
     <title>[project-tsurugi/tsurugidb] 1.12.0</title>
@@ -1026,21 +1064,6 @@ nest upgrade
     <pubDate>Thu, 27 Aug 2026 12:23:49 GMT</pubDate>
   </item>
   <item>
-    <title>[webpack/webpack] v5.110.0</title>
-    <link>https://github.com/webpack/webpack/releases/tag/v5.110.0</link>
-    <guid isPermaLink="true">https://github.com/webpack/webpack/releases/tag/v5.110.0</guid>
-    <description><![CDATA[### Minor Changes
-
-- Wrap concatenated modules in lazy `__webpack_require__.cw` accessors and inline `require`, keeping a wrapped body's names and side effects intact. (by @hai-x in #21519)
-
-- Add performance hints reporting what a build costs: duplicate packages and modules, circular dependencies, broad contexts, large modules and chunks, hotspots, `eval`, missing PURE annotations, polyfills, redundant dynamic imports, OS-dependent rules, cache effectiveness, how chunks load, what splitting refused, why an optimization was skipped, and rules, defines, externals, aliases and barrel reexports nothing uses. An oversized asset names its largest modules, and an entrypoint carrying the runtime recommends `optimization.runtimeChunk`. Enable every check not set individually with `performance.all`, report hints in stats only with `performance.hints: "stats"`, and get them in a stable order that leaves the build hashes unchanged. (by @alexander-akait in #21841)
-
-- Add the `descriptionRelativePa
-
-... (truncated)]]></description>
-    <pubDate>Thu, 27 Aug 2026 11:28:05 GMT</pubDate>
-  </item>
-  <item>
     <title>[web-infra-dev/rspack] v2.2.0</title>
     <link>https://github.com/web-infra-dev/rspack/releases/tag/v2.2.0</link>
     <guid isPermaLink="true">https://github.com/web-infra-dev/rspack/releases/tag/v2.2.0</guid>
@@ -1091,19 +1114,6 @@ c
 
 ... (truncated)]]></description>
     <pubDate>Mon, 24 Aug 2026 17:29:10 GMT</pubDate>
-  </item>
-  <item>
-    <title>[esm-dev/esm.sh] Server v138 (v138)</title>
-    <link>https://github.com/esm-dev/esm.sh/releases/tag/v138</link>
-    <guid isPermaLink="true">https://github.com/esm-dev/esm.sh/releases/tag/v138</guid>
-    <description><![CDATA[* Replace `rex` with the Go standard HTTP package. (#1387)
-* Harden loaders and package extraction against trust bypasses. (#1389)
-* Upgrade `cjs-module-lexer` to 1.1.0.
-* Fix package `main` overriding `exports`. (#1392)
-* Fix nested package import conditions. (#1394)
-* Fix TypeScript declaration transformation correctness and performance. (#1395)
-* Fix source map export analysis. (#1396)]]></description>
-    <pubDate>Mon, 24 Aug 2026 14:51:00 GMT</pubDate>
   </item>
   <item>
     <title>[chakra-ui/ark] @ark-ui/vue@5.39.0</title>
