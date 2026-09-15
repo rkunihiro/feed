@@ -5,42 +5,108 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Mon, 14 Sep 2026 22:02:10 GMT</lastBuildDate>
+  <lastBuildDate>Tue, 15 Sep 2026 22:02:15 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
   <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-09-14) (release-2026-09-14)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-14</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-14</guid>
+    <title>[aws/aws-sdk-go-v2] Release (2026-09-15) (release-2026-09-15)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-15</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-15</guid>
     <description><![CDATA[## General Highlights
 * **Dependency Update**: Updated to the latest SDK module versions
 
 ## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/billingconductor`: [v1.39.0](service/billingconductor/CHANGELOG.md#v1390-2026-09-14)
- * **Feature**: This release adds support for custom volume tiering. You can now define custom tiers on a pricing rule's tiering configuration, where each tier specifies a usage range and the rate applied to usage in that range.
-* `github.com/aws/aws-sdk-go-v2/service/codedeploy`: [v1.45.0](service/codedeploy/CHANGELOG.md#v1450-2026-09-14)
- * **Feature**: AWS CodeDeploy now returns the deployment mode on GetDeployment and BatchGetDeployments. The new deploymentMode field on DeploymentInfo indicates whether a deployment used the standard deployment process or restarted the application using a previously installed revision (RESTART mode).
-* `github.com/aws/aws-sdk-go-v2/service/glue`: [v1.159.0](service/glue/CHANGELOG.md#v11590-2026-09-14)
- * **Feature**: 
+* `github.com/aws/aws-sdk-go-v2/service/accessanalyzer`: [v1.57.0](service/accessanalyzer/CHANGELOG.md#v1570-2026-09-15)
+ * **Feature**: Enable schema-based (de)serialization for this service.
+* `github.com/aws/aws-sdk-go-v2/service/appconfig`: [v1.54.0](service/appconfig/CHANGELOG.md#v1540-2026-09-15)
+ * **Feature**: Enable schema-based (de)serialization for this service.
+* `github.com/aws/aws-sdk-go-v2/service/appconfigdata`: [v1.32.0](service/appconfigdata/CHANGELOG.md#v1320-2026-09-15)
+ * **Feature**: Enable schema-based (de)serialization for this service.
+* `github.com/aws/aws-sdk-go-v2/service/applicationautoscaling`: [v1.51.0](service/applicationautoscaling/CHANGELOG.md#v1510-2026-09-15)
+ * **Feature**: Enable schema-based (de)serialization for this service.
+* `github.com/aws/aws-sdk-go-v2/service/applicationinsights`: [v1.44.0](service/applicationinsights/CHANGELOG.md#
 
 ... (truncated)]]></description>
-    <pubDate>Mon, 14 Sep 2026 19:33:08 GMT</pubDate>
+    <pubDate>Tue, 15 Sep 2026 19:01:06 GMT</pubDate>
   </item>
   <item>
-    <title>[aws/aws-sdk-js-v3] v3.1132.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1132.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1132.0</guid>
-    <description><![CDATA[#### 3.1132.0(2026-09-14)
+    <title>[aws/aws-sdk-js-v3] v3.1133.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1133.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1133.0</guid>
+    <description><![CDATA[#### 3.1133.0(2026-09-15)
+
+##### Chores
+
+* **lib-transfer-manager:** add README file (#8291) (4b19968b)
 
 ##### New Features
 
-* **clients:** update client endpoints as of 2026-09-14 (8ab948b9)
-* **client-codedeploy:** AWS CodeDeploy now returns the deployment mode on GetDeployment and BatchGetDeployments. The new deploymentMode field on DeploymentInfo indicates whether a deployment used the standard deployment process or restarted the application using a previously installed revision (RESTART mode). (05f1a7a2)
-* **client-sts:** Increases the maximum session token size to 4,096 bytes and removes the packed policy size limit. Adds SessionTokenSize and SessionTokenUtilization fields and a new MinimumSessionTokenSize parameter. PackedPolicySize is deprecated. (906e0db8)
-* **client-imagebuilder:** This release adds a dryRun option to Image Builder create APIs (except CreateImage), structured failure context on failed images including component and distribution failure details, and step retry attempt tracking. (7ee2144d)
-* **client-glue:** Amazon Glue releasing the new
+* **client-direct-connect:** AWS Direct Connect is introducing flat-rate pricing, a simplified billing model that gives you a fixed monthly price for dedicated connectivity with no per-gigabyte data transfer out charges within the selected pricing tier. (b9956a5a)
+* **client-bedrock-agentcore-control:** Amazon Bedrock AgentCore Runtime now supports specifying the platform version of an agent runtime through the new platformVersion field on CreateAgentRuntime, UpdateAgentRuntime, and GetAgentRuntime. (d3a50d22)
+* **client-workspaces:** Added support for 4 new graphics-optimized compute types - Graphics.g7 (2xlarge, 4xlarge, 8xlarge, 12xlarge). (271c68d3)
+* **client-transfer:** AWS Transfer Family now preserves the original source IP address using Proxy Protocol v2 when you place a Network Load Balancer in front of your server for SFTP connections. (b1d62fea)
+
+
+---
 
 ... (truncated)]]></description>
-    <pubDate>Mon, 14 Sep 2026 19:31:51 GMT</pubDate>
+    <pubDate>Tue, 15 Sep 2026 18:53:37 GMT</pubDate>
+  </item>
+  <item>
+    <title>[remix-run/react-router] v8.4.0 (react-router@8.4.0)</title>
+    <link>https://github.com/remix-run/react-router/releases/tag/react-router%408.4.0</link>
+    <guid isPermaLink="true">https://github.com/remix-run/react-router/releases/tag/react-router%408.4.0</guid>
+    <description><![CDATA[See the changelog for release notes:]]></description>
+    <pubDate>Tue, 15 Sep 2026 15:22:42 GMT</pubDate>
+  </item>
+  <item>
+    <title>[cli/cli] GitHub CLI 2.101.0 (v2.101.0)</title>
+    <link>https://github.com/cli/cli/releases/tag/v2.101.0</link>
+    <guid isPermaLink="true">https://github.com/cli/cli/releases/tag/v2.101.0</guid>
+    <description><![CDATA[## Linux package repository signing key rotation
+
+GitHub CLI's APT and RPM repositories, along with individual RPM packages, are now signed only with the new PGP key (fingerprint: `7F38BBB59D064DBCB3D84D725612B36462313325`)
+
+> [!IMPORTANT]
+> Linux users who installed `gh` from the official APT or RPM repositories before April 8, 2026, and have not refreshed their keyring, may now see package installation or update failures. Follow the PGP signing key rotation guidance to check and update your keyring. Users on Windows or macOS, and users who installed `gh` through Homebrew, GitHub Releases, another package manager, or from source, are not affected.
+
+## Copy authentication codes to the clipboard by default
+
+`gh auth login` and `gh auth refresh` now copy OAuth device codes to the clipboard by default, saving a manual copy step during authentication.
+
+To persistently opt out, run:
+
+```shell
+gh config set clipboard disabled
+```
+
+Explicit clipboard options still take preced
+
+... (truncated)]]></description>
+    <pubDate>Tue, 15 Sep 2026 14:24:34 GMT</pubDate>
+  </item>
+  <item>
+    <title>[floci-io/floci] 2.1.0</title>
+    <link>https://github.com/floci-io/floci/releases/tag/2.1.0</link>
+    <guid isPermaLink="true">https://github.com/floci-io/floci/releases/tag/2.1.0</guid>
+    <description><![CDATA[# 2.1.0 (2026-09-15)
+
+
+### Bug Fixes
+
+* **acm:** reflect the requested ValidationDomain in DescribeCertificate (#3264) (922eb0b)
+* **acm:** reject RequestCertificate key algorithms real ACM does not support (#3044) (db6c419), closes #3027
+* **acm:** report SUCCESS domain validation once a certificate is issued (#3112) (9b28388)
+* **acm:** stop hex-shaped names becoming bogus IP address SANs (#3335) (7a7531a)
+* **amazonmq:** add configuration for AMQP and console host port ranges (#3315) (2d5a8f7)
+* **apigateway:** add missing authorizer arg to two VtlContext test calls (38056a0), closes #3560
+* **apigateway:** allow idempotent custom-id tags (#3430) (eb62225)
+* **apigateway:** answer an unmatched REST request with 403, not 404/405 (#3547) (fb82fb2)
+* **apigateway:** decode the ~0 JSON Pointer escape in stage method-settings patch paths (#3526) (bc44fc9)
+* **apigateway:** enforce ApiKeyRequired on REST API methods (#3537) (3b31c5a), closes #3507 #3507
+* **apigateway:** enforce AWS_IAM a
+
+... (truncated)]]></description>
+    <pubDate>Tue, 15 Sep 2026 04:56:15 GMT</pubDate>
   </item>
   <item>
     <title>[oxc-project/oxc] oxlint v1.83.0 &amp; oxfmt v0.68.0 (apps_v1.83.0)</title>
@@ -189,24 +255,6 @@ This release hardens request configuration and proxy handling, adds caller diagn
 
 ... (truncated)]]></description>
     <pubDate>Fri, 11 Sep 2026 01:12:51 GMT</pubDate>
-  </item>
-  <item>
-    <title>[openai/codex] Python SDK 0.154.0 (python-v0.154.0)</title>
-    <link>https://github.com/openai/codex/releases/tag/python-v0.154.0</link>
-    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/python-v0.154.0</guid>
-    <description><![CDATA[Install with `pip install --upgrade openai-codex==0.154.0` (Python 3.10 or later). This release includes the matching `openai-codex-cli-bin==0.154.0` runtime.
-
-- Add `max` and `ultra` reasoning-effort values. #39662
-- Add `ExternalMessage` to synchronous and asynchronous `run` and `turn` calls. External content can start a turn or join an active regular turn with tool-level authority; it does not grant user authorization. Consumers receive independent event streams. #44086
-- Add `include_turns` on resume/fork, `turn_service_tier` for one newly started turn, and `source` metadata. History selection changes the returned response, not model context. Existing defaults are preserved when these options are omitted. #44084
-- Refresh generated protocol models and notifications, and preserve completion events that arrive before a turn-start response. #44032, #44400
-
-Check these migrations when upgrading:
-
-- `HookMetadata` wraps its handler in `.root`. Replace accesses such as `hook.command` wit
-
-... (truncated)]]></description>
-    <pubDate>Thu, 10 Sep 2026 19:51:43 GMT</pubDate>
   </item>
   <item>
     <title>[vitejs/vite] v8.3.0</title>
@@ -603,39 +651,6 @@ Full Release Notes]]></description>
     <pubDate>Thu, 03 Sep 2026 16:48:32 GMT</pubDate>
   </item>
   <item>
-    <title>[cli/cli] GitHub CLI 2.100.0 (v2.100.0)</title>
-    <link>https://github.com/cli/cli/releases/tag/v2.100.0</link>
-    <guid isPermaLink="true">https://github.com/cli/cli/releases/tag/v2.100.0</guid>
-    <description><![CDATA[## Experimental: Route GitHub API traffic through a custom host
-
-Organizations can now route a GitHub host's API traffic through a gateway using the new per-host `api_host` configuration:
-
-```shell
-# Route API traffic for github.com through a gateway
-gh config set api_host gh-gateway.example.com --host github.com
-
-# Read the configured API host
-gh config get api_host --host github.com
-```
-
-The original host remains in use for authentication, Git remotes, and browser URLs.
-
-> [!NOTE]
-> `api_host` is experimental and is not a security boundary. Requests may still reach the original host.
-
-## What's Changed
-
-### ✨ Features
-
-* Honor per-host `api_host` routing across GitHub API requests by @williammartin in #14104
-* Expose `api_host` through `gh config get` and `gh config set` by @williammartin in #14332
-* Add `webhook` as an official extension by @williammartin in #14326
-* Print full command help after command misuse when `gh` is invoked by a coding agent by @niik 
-
-... (truncated)]]></description>
-    <pubDate>Thu, 03 Sep 2026 15:43:20 GMT</pubDate>
-  </item>
-  <item>
     <title>[bluesky-social/social-app] v1.132.0 (1.132.0)</title>
     <link>https://github.com/bluesky-social/social-app/releases/tag/1.132.0</link>
     <guid isPermaLink="true">https://github.com/bluesky-social/social-app/releases/tag/1.132.0</guid>
@@ -751,32 +766,6 @@ The original host remains in use for authentication, Git remotes, and browser UR
 
 ... (truncated)]]></description>
     <pubDate>Tue, 01 Sep 2026 17:32:45 GMT</pubDate>
-  </item>
-  <item>
-    <title>[floci-io/floci] 2.0.0</title>
-    <link>https://github.com/floci-io/floci/releases/tag/2.0.0</link>
-    <guid isPermaLink="true">https://github.com/floci-io/floci/releases/tag/2.0.0</guid>
-    <description><![CDATA[# 2.0.0 (2026-09-01)
-
-
-* fix(stepfunctions)!: reject JSONata top-level references at definition time (#2699) (5534460)
-
-
-### Bug Fixes
-
-* **acm:** correct wildcard validation record names (#2575) (88bf0a2)
-* **apigateway:** match measured JWT claim wire format and enforce route authorizationScopes (#2011) (4980210)
-* **apigateway:** pass RequestContext to ApiGatewayExecuteController in trailing-slash tests (#2394) (41953d8), closes #2377
-* **apigateway:** project HTTP API v2 cookies (#2391) (48880aa)
-* **apigateway:** report RestApi as available (#2816) (62dbd9d)
-* **apigateway:** route CORS preflight (OPTIONS) to deployed API integ… (#1955) (0e3391c), closes #1928
-* **apigateway:** support AWS type Lambda integration and fix duplicate Content-Type header (#2049) (72dfa63)
-* **apigateway:** support underscores in v2 path parameters (#2721) (c18af5b)
-* **apigatewayv2:** CloudFormation AuthorizationScopes pass-through and scope-ingestion hardening (follow-up to #2011) (#2431) (d0a96d8)
-*
-
-... (truncated)]]></description>
-    <pubDate>Tue, 01 Sep 2026 05:04:27 GMT</pubDate>
   </item>
   <item>
     <title>[inokawa/virtua] 0.51.0</title>
