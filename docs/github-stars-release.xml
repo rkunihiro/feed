@@ -5,51 +5,172 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Tue, 15 Sep 2026 22:02:15 GMT</lastBuildDate>
+  <lastBuildDate>Wed, 16 Sep 2026 22:02:10 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
   <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-09-15) (release-2026-09-15)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-15</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-15</guid>
-    <description><![CDATA[## General Highlights
-* **Dependency Update**: Updated to the latest SDK module versions
+    <title>[containerd/containerd] containerd 2.4.0 (v2.4.0)</title>
+    <link>https://github.com/containerd/containerd/releases/tag/v2.4.0</link>
+    <guid isPermaLink="true">https://github.com/containerd/containerd/releases/tag/v2.4.0</guid>
+    <description><![CDATA[Welcome to the v2.4.0 release of containerd!
 
-## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/accessanalyzer`: [v1.57.0](service/accessanalyzer/CHANGELOG.md#v1570-2026-09-15)
- * **Feature**: Enable schema-based (de)serialization for this service.
-* `github.com/aws/aws-sdk-go-v2/service/appconfig`: [v1.54.0](service/appconfig/CHANGELOG.md#v1540-2026-09-15)
- * **Feature**: Enable schema-based (de)serialization for this service.
-* `github.com/aws/aws-sdk-go-v2/service/appconfigdata`: [v1.32.0](service/appconfigdata/CHANGELOG.md#v1320-2026-09-15)
- * **Feature**: Enable schema-based (de)serialization for this service.
-* `github.com/aws/aws-sdk-go-v2/service/applicationautoscaling`: [v1.51.0](service/applicationautoscaling/CHANGELOG.md#v1510-2026-09-15)
- * **Feature**: Enable schema-based (de)serialization for this service.
-* `github.com/aws/aws-sdk-go-v2/service/applicationinsights`: [v1.44.0](service/applicationinsights/CHANGELOG.md#
+containerd 2.4 is a regular (non-LTS) release with a shorter support window,
+intended for users who want to adopt new features sooner. As the release
+following the 2.3 LTS, it is the point in the release cycle where previously
+deprecated features may be removed, so this release may include breaking
+changes; check the notes below and clear any deprecation warnings from your
+current version before upgrading.
+
+Users prioritizing stability and a longer support lifecycle should stay on the
+2.3 LTS release.
+
+### Highlights
+
+#### Container Runtime Interface (CRI)
+
+* Enable mount manager for image mounts in CRI (#13542)
+* Export sandbox image and CNI directory configuration in CRI plugin info (#13940)
+* Set default runtimeFeatures.UserNamespacesHostNetwork to true (#13162)
+* Support OCI runtime feature introspection for non-runc runtimes (#13504)
+
+#### Image Distribution
+
+* Apply hardening to strip sensitive authentication headers when fetching des
 
 ... (truncated)]]></description>
-    <pubDate>Tue, 15 Sep 2026 19:01:06 GMT</pubDate>
+    <pubDate>Wed, 16 Sep 2026 20:08:21 GMT</pubDate>
   </item>
   <item>
-    <title>[aws/aws-sdk-js-v3] v3.1133.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1133.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1133.0</guid>
-    <description><![CDATA[#### 3.1133.0(2026-09-15)
+    <title>[withastro/astro] astro-vscode@2.17.0</title>
+    <link>https://github.com/withastro/astro/releases/tag/astro-vscode%402.17.0</link>
+    <guid isPermaLink="true">https://github.com/withastro/astro/releases/tag/astro-vscode%402.17.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- #17676 `49d4294` Thanks @Princesseuh! - Improves type checking and editor support for `.astro` files.
+ 
+ The language server now uses our all-new Biome powered `astro2tsx` implementation. This new version has much better support for incomplete syntax, generic types and various edge cases.
+ 
+ In the vast majority of cases, no changes should be required to your code, and any change should be the result of more accurate types or behavior.
+
+### Patch Changes
+
+- #17916 `8eaa4f2` Thanks @matthewp! - Fixes organize imports across frontmatter and multiple script tags
+
+- #17542 `fae64dd` Thanks @IAmYhvr! - Fixes the AstroComponent suffix not being removed from Svelte and Vue imports in `.astro` files.]]></description>
+    <pubDate>Wed, 16 Sep 2026 19:39:32 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-09-16) (release-2026-09-16)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-16</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-16</guid>
+    <description><![CDATA[## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcorecontrol`: [v1.68.0](service/bedrockagentcorecontrol/CHANGELOG.md#v1680-2026-09-16)
+ * **Feature**: Adds support for a new DELETE FAILED status for Bedrock AgentCore Runtimes and Bedrock AgentCore Runtime Endpoints.
+* `github.com/aws/aws-sdk-go-v2/service/connect`: [v1.199.0](service/connect/CHANGELOG.md#v11990-2026-09-16)
+ * **Feature**: Adds support for ContactAnalysis via ListContactReferences.
+* `github.com/aws/aws-sdk-go-v2/service/customerprofiles`: [v1.72.0](service/customerprofiles/CHANGELOG.md#v1720-2026-09-16)
+ * **Feature**: This release introduces the SearchRecommendations API, which retrieves recommendations for a profile identified by a search key.
+* `github.com/aws/aws-sdk-go-v2/service/ec2`: [v1.333.0](service/ec2/CHANGELOG.md#v13330-2026-09-16)
+ * **Feature**: Releasing new EC2 R9g and R9gd memory-optimized instances powered by AWS Graviton5 processors, with up to 25 percent better compute perf
+
+... (truncated)]]></description>
+    <pubDate>Wed, 16 Sep 2026 19:35:32 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1134.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1134.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1134.0</guid>
+    <description><![CDATA[#### 3.1134.0(2026-09-16)
 
 ##### Chores
 
-* **lib-transfer-manager:** add README file (#8291) (4b19968b)
+* **lib-transfer-manager:** apply formatting (#8306) (b8f7c4e4)
 
 ##### New Features
 
-* **client-direct-connect:** AWS Direct Connect is introducing flat-rate pricing, a simplified billing model that gives you a fixed monthly price for dedicated connectivity with no per-gigabyte data transfer out charges within the selected pricing tier. (b9956a5a)
-* **client-bedrock-agentcore-control:** Amazon Bedrock AgentCore Runtime now supports specifying the platform version of an agent runtime through the new platformVersion field on CreateAgentRuntime, UpdateAgentRuntime, and GetAgentRuntime. (d3a50d22)
-* **client-workspaces:** Added support for 4 new graphics-optimized compute types - Graphics.g7 (2xlarge, 4xlarge, 8xlarge, 12xlarge). (271c68d3)
-* **client-transfer:** AWS Transfer Family now preserves the original source IP address using Proxy Protocol v2 when you place a Network Load Balancer in front of your server for SFTP connections. (b1d62fea)
-
-
----
+* **client-customer-profiles:** This release introduces the SearchRecommendations API, which retrieves recommendations for a profile identified by a search key. (a0388656)
+* **client-marketplace-catalog:** This release enhances the ListEntities API to support issuerAccountId and SourceAuthorization filter for ResaleAuthorization entity. (f2379c20)
+* **client-ec2:** Releasing new EC2 R9g and R9gd memory-optimized instances powered by AWS Graviton5 processors, with up to 25 percent better compute performance than R8g instances, faster DDR5 memory, and up to 100 Gbps network and 72 Gbps EBS bandwidth. R9gd instances additionally provide local NVMe SSD storage. (30aea54d)
+* **client-connect:** Adds support for ContactAnalysis via ListContactReferences. (983124f4)
+* **client-elastic-beanstalk:** Adds support to create and manage Elastic Beanstalk Cluster Environments
 
 ... (truncated)]]></description>
-    <pubDate>Tue, 15 Sep 2026 18:53:37 GMT</pubDate>
+    <pubDate>Wed, 16 Sep 2026 19:34:01 GMT</pubDate>
+  </item>
+  <item>
+    <title>[nodejs/node] 2026-09-16, Version 26.9.0 (Current), @aduh95 (v26.9.0)</title>
+    <link>https://github.com/nodejs/node/releases/tag/v26.9.0</link>
+    <guid isPermaLink="true">https://github.com/nodejs/node/releases/tag/v26.9.0</guid>
+    <description><![CDATA[### Notable Changes
+
+* \[`d414624dce`] - **(SEMVER-MINOR)** **crypto**: add a generic MAC API (Filip Skokan) #65553
+* \[`7ac458f802`] - **(SEMVER-MINOR)** **crypto**: discover ciphers from OpenSSL providers (Filip Skokan) #65484
+* \[`7c7e95a3bd`] - **(SEMVER-MINOR)** **crypto**: discover hashes from OpenSSL providers (Filip Skokan) #65484
+* \[`2d2f4f6d1a`] - **(SEMVER-MINOR)** **ffi**: enable module by default (Matteo Collina) #65475
+* \[`657415c6df`] - **(SEMVER-MINOR)** **lib**: implement `node:bench` (James M Snell) #65606
+* \[`ebcfec2f0c`] - **(SEMVER-MINOR)** **perf\_hooks**: implement Histogram `meanCI` API (James M Snell) #65606
+* \[`e1913630c3`] - **(SEMVER-MINOR)** **perf\_hooks**: add CBOR export/import for histogram exchange (James M Snell) #65434
+* \[`8e9151c9f2`] - **(SEMVER-MINOR)** **src**: let embedders supply a builtin code cache without a snapshot (Shelley Vohr) #65352
+* \[`889854f18b`] - **(SEMVER-MINOR)** **src,lib**: implement experimental DTLS API (James M Snell) 
+
+... (truncated)]]></description>
+    <pubDate>Wed, 16 Sep 2026 18:16:39 GMT</pubDate>
+  </item>
+  <item>
+    <title>[runfinch/finch] v1.19.0</title>
+    <link>https://github.com/runfinch/finch/releases/tag/v1.19.0</link>
+    <guid isPermaLink="true">https://github.com/runfinch/finch/releases/tag/v1.19.0</guid>
+    <description><![CDATA[## 1.19.0 (2026-09-16)
+
+
+### Build System or External Dependencies
+
+* **deps:** bump github.com/containerd/containerd/v2 (350e80b)
+* **deps:** bump github.com/containerd/containerd/v2 from 2.2.5 to 2.2.8 (#1809) (350e80b)
+* **deps:** bump google.golang.org/grpc from 1.81.1 to 1.83.1 (#1805) (07d4117)
+
+
+### Features
+
+* warn that Finch VM is not a security boundary on vm init (#1808) (ef69290)
+
+
+### Bug Fixes
+
+* move docker-credential-osxkeychain back to /usr/local/bin (#1803) (8065f30)
+
+---]]></description>
+    <pubDate>Wed, 16 Sep 2026 17:03:57 GMT</pubDate>
+  </item>
+  <item>
+    <title>[sindresorhus/eslint-plugin-unicorn] v75.0.0</title>
+    <link>https://github.com/sindresorhus/eslint-plugin-unicorn/releases/tag/v75.0.0</link>
+    <guid isPermaLink="true">https://github.com/sindresorhus/eslint-plugin-unicorn/releases/tag/v75.0.0</guid>
+    <description><![CDATA[## New rules
+
+- `prefer-combined-guards` (#3680) 5d9d745c
+- `no-unused-iterator-helper` (#3677) 82137379
+- `no-unused-builtin-method-return` (#3676) b3d56a35
+- `prefer-iterator-zip` (#3675) 60d3b53a
+- `no-useless-set-construction` (#3672) 639c9844
+- `prefer-iterator-helpers` (#3670) 4c805e26
+- `prefer-json-import` (#3668) 1df640dd
+- `prefer-temporal-conversion` (#3667) 74bc02e7
+- `no-async-iterator-callback` (#3666) bb6c2450
+- `no-using-resource-escape` (#3663) 34247853
+- `prefer-uint8array-hex` (#3661) 92551329
+- `no-deprecated-css-features` (#3651) e1161021
+- `no-unscoped-css-nesting-selector` (#3650) ebd03bdf
+- `no-duplicate-css-selectors` (#3646) 508d9f50
+- `no-unknown-pseudo-selectors` (#3644) 99492cd7
+- `no-invalid-media-features` (#3643) ef37c1f1
+- `no-unknown-css-annotations` (#3642) 19637ee8
+- `no-nesting-with-mixed-specificity` (#3640) b2f2bf9d
+- `prefer-media-feature-range-syntax` (#3639) 19f112f6
+- `no-duplicate-font-family-names` (#3638) c8f81bc8
+- `n
+
+... (truncated)]]></description>
+    <pubDate>Wed, 16 Sep 2026 06:48:39 GMT</pubDate>
   </item>
   <item>
     <title>[remix-run/react-router] v8.4.0 (react-router@8.4.0)</title>
@@ -344,29 +465,6 @@ This release hardens request configuration and proxy handling, adds caller diagn
  - `fetch-router@0.22.0`
  - `ui@0.9.0`]]></description>
     <pubDate>Tue, 08 Sep 2026 23:07:59 GMT</pubDate>
-  </item>
-  <item>
-    <title>[nodejs/node] 2026-09-08, Version 24.21.0 &apos;Krypton&apos; (LTS), @aduh95 (v24.21.0)</title>
-    <link>https://github.com/nodejs/node/releases/tag/v24.21.0</link>
-    <guid isPermaLink="true">https://github.com/nodejs/node/releases/tag/v24.21.0</guid>
-    <description><![CDATA[### Notable Changes
-
-* \[`71106e1f17`] - **crypto**: update root certificates to NSS 3.126 (Node.js GitHub Bot) #65495
-* \[`afca0a912d`] - **(SEMVER-MINOR)** **crypto**: support loading private keys through STORE loaders (Filip Skokan) #63949
-* \[`6274fccbd9`] - **deps**: update OpenSSL to 3.5.8 (Node.js GitHub Bot) #65542
-* \[`53cba013c7`] - **deps**: update Undici to 7.29.1 (Node.js GitHub Bot) #65789
-* \[`0529772798`] - **(SEMVER-MINOR)** **lib,src**: improve histogram implementation (James M Snell) #65024
-* \[`41c7062b81`] - **(SEMVER-MINOR)** **net**: improve performance of `net.BlockList` (James M Snell) #64974
-* \[`5197b5a3c5`] - **(SEMVER-MINOR)** **perf\_hooks**: add statistical hypothesis testing to histogram (James M Snell) #65416
-* \[`35c635b032`] - **(SEMVER-MINOR)** **util**: add non-throwing `MIMEType.parse` (James M Snell) #64965
-
-### Commits
-
-* \[`84d706cb9b`] - **assert**: improve documentation wording (Kamal Rawal) #64953
-* \[`90d127db33`] - **(SEMVER-MINOR)** **benc
-
-... (truncated)]]></description>
-    <pubDate>Tue, 08 Sep 2026 21:51:09 GMT</pubDate>
   </item>
   <item>
     <title>[mrdoob/three.js] r186</title>
@@ -676,35 +774,6 @@ Full Release Notes]]></description>
     <pubDate>Thu, 03 Sep 2026 10:51:43 GMT</pubDate>
   </item>
   <item>
-    <title>[withastro/astro] @astrojs/cloudflare@14.3.0</title>
-    <link>https://github.com/withastro/astro/releases/tag/%40astrojs/cloudflare%4014.3.0</link>
-    <guid isPermaLink="true">https://github.com/withastro/astro/releases/tag/%40astrojs/cloudflare%4014.3.0</guid>
-    <description><![CDATA[### Minor Changes
-
-- #17795 `15e2deb` Thanks @matthewp! - Adds concurrent rendering support for `experimental.incrementalBuild`, including when using `@astrojs/cloudflare`
-
- Incremental builds no longer disable caching when `build.concurrency` is greater than `1`. Projects that set `build.concurrency: 1` to keep the cache enabled can remove that workaround. Cloudflare builds also reduce serialization overhead for large prerendered pages.
-
-- #17887 `35aa62e` Thanks @matthewp! - Adds a Cloudflare `finalize` response handler for custom request handlers
-
- Call `finalize` to apply cookies and Cloudflare CDN cache defaults to the response from an `astro/fetch` pipeline:
-
- ```ts
- import { astro, FetchState } from 'astro/fetch';
- import { cf, finalize } from '@astrojs/cloudflare/fetch';
-
- export default {
- async fetch(request: Request, env: Env, context: ExecutionContext) {
- const state = new FetchState(request);
- const asset = await cf(state, env, context);
- if (asset) return asset;
-
- return 
-
-... (truncated)]]></description>
-    <pubDate>Thu, 03 Sep 2026 10:29:24 GMT</pubDate>
-  </item>
-  <item>
     <title>[facebook/lexical] v0.50.0</title>
     <link>https://github.com/facebook/lexical/releases/tag/v0.50.0</link>
     <guid isPermaLink="true">https://github.com/facebook/lexical/releases/tag/v0.50.0</guid>
@@ -745,27 +814,6 @@ Full Release Notes]]></description>
 
 ... (truncated)]]></description>
     <pubDate>Wed, 02 Sep 2026 18:13:31 GMT</pubDate>
-  </item>
-  <item>
-    <title>[iii-hq/iii] iii 0.23.0 (iii/v0.23.0)</title>
-    <link>https://github.com/iii-hq/iii/releases/tag/iii/v0.23.0</link>
-    <guid isPermaLink="true">https://github.com/iii-hq/iii/releases/tag/iii/v0.23.0</guid>
-    <description><![CDATA[## What's Changed
-* docs(tech-specs): worker-compose tech pack + interactive deck by @guibeira in 
-* docs(install): provider-picking quickstart panel by @anthonyiscoding in 
-* feat: namespace as a runtime routing dimension (engine + SDKs) by @guibeira in 
-* fix(telemetry): rate-limit heartbeats, aggregate CLI usage, unhash worker names by @anthonyiscoding in 
-* fix(sdk): keep engine invocations in default namespace by @guibeira in 
-* Persist traces on disk + redesigned observability configuration UI by @ytallo in 
-* feat(compose): worker-compose daemon — declare a project, start it as a graph, supervise it by @guibeira in 
-* refactor(observability): trigger-driven trace updates — remove live streams and console polling by @ytallo in 
-* feat(compose): migrate worker lifecycle to Worker Compose by @guibeira in 
-* fix(observability): make trace archive eviction actually reclaim disk by @ytallo in 
-* (MOT-4419) feat(observability): return compact trace summaries by @ytallo in 
-* (MOT-4419)
-
-... (truncated)]]></description>
-    <pubDate>Tue, 01 Sep 2026 17:32:45 GMT</pubDate>
   </item>
   <item>
     <title>[inokawa/virtua] 0.51.0</title>
@@ -962,29 +1010,6 @@ Run `dprint upgrade` or see
 
 * enforce configuration hook contracts (5c4d05b)]]></description>
     <pubDate>Fri, 28 Aug 2026 22:23:03 GMT</pubDate>
-  </item>
-  <item>
-    <title>[sindresorhus/eslint-plugin-unicorn] v74.0.0</title>
-    <link>https://github.com/sindresorhus/eslint-plugin-unicorn/releases/tag/v74.0.0</link>
-    <guid isPermaLink="true">https://github.com/sindresorhus/eslint-plugin-unicorn/releases/tag/v74.0.0</guid>
-    <description><![CDATA[## Improvements
-
-- Improve rule performance (#3618) 4ff2eab9
-- `comment-content`: Handle JSDoc syntax (#3616) bf7dca25
-- `consistent-arrow-return-style`: Fix indentation and `in` operator handling (#3621) 398606c5
-- `consistent-boolean-name`: Support possibly async boolean callbacks (#3624) 823bb1fb
-- `custom-error-definition`: Avoid requiring native `ErrorOptions` for custom bases (#3617) 96fd3710
-- `custom-error-definition`: Support TypeScript parameter properties (#3619) 872fd559
-- `expiring-todo-comments`: Add YAML support (#3625) e437f232
-- `name-replacements`: Allow `ProcessEnv` type (#3608) 2e19a940
-- `no-array-fill-with-reference-type`: Ignore canvas contexts (#3635) d7f5fa12
-- `no-empty-file`: Add YAML support (#3627) 043a5239
-- `no-nonstandard-builtin-properties`: Support stage 4 proposals (#3631) 0a24d748
-- `no-unnecessary-splice`: Fix false positives when the return value is used (#3611) cc58720b
-- `no-useless-else`: Fix false positive in mutable branch condit
-
-... (truncated)]]></description>
-    <pubDate>Fri, 28 Aug 2026 19:44:39 GMT</pubDate>
   </item>
   <item>
     <title>[jestjs/jest] v30.5.0</title>
@@ -1185,35 +1210,6 @@ specify init my-project
 
 ... (truncated)]]></description>
     <pubDate>Fri, 21 Aug 2026 11:40:31 GMT</pubDate>
-  </item>
-  <item>
-    <title>[runfinch/finch] v1.18.0</title>
-    <link>https://github.com/runfinch/finch/releases/tag/v1.18.0</link>
-    <guid isPermaLink="true">https://github.com/runfinch/finch/releases/tag/v1.18.0</guid>
-    <description><![CDATA[## 1.18.0 (2026-08-20)
-
-
-### Build System or External Dependencies
-
-* **deps:** bump golang.org/x/image from 0.38.0 to 0.41.0 (#1782) (ab0df60)
-* **deps:** Bump submodules and dependencies (#1783) (2b40269)
-* **deps:** Bump submodules and dependencies (#1797) (b8b46a5)
-
-
-### Features
-
-* add auto vm init/start on first finch run (#1751) (48c9a8b)
-* gate vmnet behind config, use vzNAT for vz and socket_vmnet for qemu (ff1346b)
-* use vzNAT for vz networking, gate socket_vmnet behind config for qemu (#1749) (ff1346b)
-
-
-### Bug Fixes
-
-* credhelper fixups (#1785) (2299129)
-* **macOS:** prevent self-referential ~/.aws/.aws symlink (#1778) (01fd081)
-
----]]></description>
-    <pubDate>Thu, 20 Aug 2026 22:48:38 GMT</pubDate>
   </item>
 </channel>
 </rss>
