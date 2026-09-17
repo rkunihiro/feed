@@ -5,8 +5,134 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Wed, 16 Sep 2026 22:02:10 GMT</lastBuildDate>
+  <lastBuildDate>Thu, 17 Sep 2026 22:02:20 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[facebook/lexical] v0.51.0</title>
+    <link>https://github.com/facebook/lexical/releases/tag/v0.51.0</link>
+    <guid isPermaLink="true">https://github.com/facebook/lexical/releases/tag/v0.51.0</guid>
+    <description><![CDATA[v0.51.0 is a monthly release with one large new feature: nodes can now declare their JSON serialization as a schema on `$config`. This declarative schema is faster, safer, and more flexible than the hand-written methods. The metadata it provides enables a compact export option with all default values elided, the code generator that provides faster import and export for every node that lexical ships, a new `@lexical/fast-check` package for property-based tests, and it provides a path to future features that rely on knowing the structure of the nodes (e.g. additional codecs and dev tools).
+
+This is a big step towards Lexical 1.0, the next few releases are expected to be focused on moving everything (including docs and examples) to the latest Extension and `$config` APIs and removing deprecated functionality. Two related changes in this release are that we are publishing ESM-only to npm now (cjs builds are still supported in the source tree), and `LexicalComposer` is deprecated for `Lex
+
+... (truncated)]]></description>
+    <pubDate>Thu, 17 Sep 2026 21:05:11 GMT</pubDate>
+  </item>
+  <item>
+    <title>[iii-hq/iii] iii 0.24.0 (iii/v0.24.0)</title>
+    <link>https://github.com/iii-hq/iii/releases/tag/iii/v0.24.0</link>
+    <guid isPermaLink="true">https://github.com/iii-hq/iii/releases/tag/iii/v0.24.0</guid>
+    <description><![CDATA[## What's Changed
+* docs(install): install from the harness template by @anthonyiscoding in 
+* docs(install): no-llm base template, wrap --flags, bring to docs/ by @anthonyiscoding in 
+* docs(install): add providers with compose::add, not worker-compose edits by @anthonyiscoding in 
+* docs(quickstart): remove intro video by @anthonyiscoding in 
+* fix(telemetry): case-insensitive III_TELEMETRY_ENABLED opt-out + docs by @anthonyiscoding in 
+* docs(welcome): remove intro video by @anthonyiscoding in 
+* docs(changelog): add 0.23 release notes by @guibeira in 
+* fix(compose): preserve local dependency workers by @guibeira in 
+* Remove inaccurate 'worker mesh' framing of iii by @anthonyiscoding in 
+* feat(compose): publish reliable mutation completion events by @mfpiccolo in 
+* docs(upgrading): add a coding-agent prompt for the Compose migration by @rohitg00 in 
+* feat(compose): include namespace in Linux process names by @guibeira in 
+* feat(compose): support full container settings in comp
+
+... (truncated)]]></description>
+    <pubDate>Thu, 17 Sep 2026 20:37:38 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-09-17) (release-2026-09-17)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-17</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-17</guid>
+    <description><![CDATA[## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcore`: [v1.49.0](service/bedrockagentcore/CHANGELOG.md#v1490-2026-09-17)
+ * **Feature**: Batch evaluation now supports evaluating specific traces within a session. Each session can specify up to 100 trace IDs to evaluate.
+* `github.com/aws/aws-sdk-go-v2/service/connect`: [v1.200.0](service/connect/CHANGELOG.md#v12000-2026-09-17)
+ * **Feature**: Made the replicaAlias attribute optional in the ReplicateInstance API to support Global routing for Amazon Connect Global Resiliency (ACGR) instances. This change maintains backward compatibility. When onboarding to ACGR without Global routing, you must specify a custom replicaAlias in your API call
+* `github.com/aws/aws-sdk-go-v2/service/ec2`: [v1.334.0](service/ec2/CHANGELOG.md#v13340-2026-09-17)
+ * **Feature**: Adding support for "Tunnel" VPC Endpoint
+* `github.com/aws/aws-sdk-go-v2/service/guardduty`: [v1.93.0](service/guardduty/CHANGELOG.md#v1930-2026-09-17)
+ * **Featu
+
+... (truncated)]]></description>
+    <pubDate>Thu, 17 Sep 2026 19:05:07 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1135.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1135.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1135.0</guid>
+    <description><![CDATA[#### 3.1135.0(2026-09-17)
+
+##### Documentation Changes
+
+* **client-sns:** SNS API reference documentation update (0e22e2d7)
+
+##### New Features
+
+* **client-connect:** Made the replicaAlias attribute optional in the ReplicateInstance API to support Global routing for Amazon Connect Global Resiliency (ACGR) instances. This change maintains backward compatibility. When onboarding to ACGR without Global routing, you must specify a custom replicaAlias in your API call (f134c352)
+* **client-ec2:** Adding support for "Tunnel" VPC Endpoint (cb7c9bc5)
+* **client-notifications:** Added support for attachments on managed notification events. Added support to access and subscribe sensitive managed notification events. (c8a9cc10)
+* **client-guardduty:** This change surfaces AI Protection resources on existing public IAM attack sequences. Customers will now see which model was accessed and whether a guardrail intervened as part of the credential-compromise sequence. (854ccbfa)
+* **client-sesv2:** Ad
+
+... (truncated)]]></description>
+    <pubDate>Thu, 17 Sep 2026 18:54:28 GMT</pubDate>
+  </item>
+  <item>
+    <title>[vercel-labs/skills] v1.7.0</title>
+    <link>https://github.com/vercel-labs/skills/releases/tag/v1.7.0</link>
+    <guid isPermaLink="true">https://github.com/vercel-labs/skills/releases/tag/v1.7.0</guid>
+    <description><![CDATA[## Changelog
+
+
+
+## Contributors]]></description>
+    <pubDate>Thu, 17 Sep 2026 15:00:30 GMT</pubDate>
+  </item>
+  <item>
+    <title>[BabylonJS/Babylon.js] 9.27.0</title>
+    <link>https://github.com/BabylonJS/Babylon.js/releases/tag/9.27.0</link>
+    <guid isPermaLink="true">https://github.com/BabylonJS/Babylon.js/releases/tag/9.27.0</guid>
+    <description><![CDATA[### Core
+
+- Add KHR_interactivity export support - [_New Feature_] by RaananW (#18914)
+
+### Loaders
+
+- Add KHR_interactivity export support - [_New Feature_] by RaananW (#18914)
+
+### Serializers
+
+- Add KHR_interactivity export support - [_New Feature_] by RaananW (#18914)]]></description>
+    <pubDate>Thu, 17 Sep 2026 07:46:12 GMT</pubDate>
+  </item>
+  <item>
+    <title>[jsdom/jsdom] v30.1.0</title>
+    <link>https://github.com/jsdom/jsdom/releases/tag/v30.1.0</link>
+    <guid isPermaLink="true">https://github.com/jsdom/jsdom/releases/tag/v30.1.0</guid>
+    <description><![CDATA[jsdom is feeling the AGI!
+
+This release is dedicated to @scttcper, who unleashed @codex upon jsdom and found tons of performance improvements. Along the way, he found and fixed many correctness issues as well.
+
+We really appreciate his thoughtful PRs, which did a great job following the project's contribution guidelines, and were clearly human-curated, with their PR descriptions edited to be brief and respectful of the maintainers' time.
+
+Thanks to @scttcper, as well as all the other contributors of this release (most of whom were AI-assisted).
+
+- Added named access to elements on `document`, such as `document.myForm` for `<form name="myForm">`. (@vojtisprime11)
+- Added `QuotaExceededError`, including its use for storage quota errors and oversized `crypto.getRandomValues` requests.
+- Added support for the relaxed DOM naming rules when creating elements, attributes, and document types.
+- Improved performance of DOM construction, tree mutations, range operations, and live coll
+
+... (truncated)]]></description>
+    <pubDate>Thu, 17 Sep 2026 01:01:48 GMT</pubDate>
+  </item>
+  <item>
+    <title>[esm-dev/esm.sh] Server v139_1 (v139_1)</title>
+    <link>https://github.com/esm-dev/esm.sh/releases/tag/v139_1</link>
+    <guid isPermaLink="true">https://github.com/esm-dev/esm.sh/releases/tag/v139_1</guid>
+    <description><![CDATA[* Fix build queue stalls caused by uncancellable install locks]]></description>
+    <pubDate>Thu, 17 Sep 2026 00:42:44 GMT</pubDate>
+  </item>
   <item>
     <title>[containerd/containerd] containerd 2.4.0 (v2.4.0)</title>
     <link>https://github.com/containerd/containerd/releases/tag/v2.4.0</link>
@@ -57,44 +183,6 @@ Users prioritizing stability and a longer support lifecycle should stay on the
 
 - #17542 `fae64dd` Thanks @IAmYhvr! - Fixes the AstroComponent suffix not being removed from Svelte and Vue imports in `.astro` files.]]></description>
     <pubDate>Wed, 16 Sep 2026 19:39:32 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-09-16) (release-2026-09-16)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-16</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-16</guid>
-    <description><![CDATA[## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcorecontrol`: [v1.68.0](service/bedrockagentcorecontrol/CHANGELOG.md#v1680-2026-09-16)
- * **Feature**: Adds support for a new DELETE FAILED status for Bedrock AgentCore Runtimes and Bedrock AgentCore Runtime Endpoints.
-* `github.com/aws/aws-sdk-go-v2/service/connect`: [v1.199.0](service/connect/CHANGELOG.md#v11990-2026-09-16)
- * **Feature**: Adds support for ContactAnalysis via ListContactReferences.
-* `github.com/aws/aws-sdk-go-v2/service/customerprofiles`: [v1.72.0](service/customerprofiles/CHANGELOG.md#v1720-2026-09-16)
- * **Feature**: This release introduces the SearchRecommendations API, which retrieves recommendations for a profile identified by a search key.
-* `github.com/aws/aws-sdk-go-v2/service/ec2`: [v1.333.0](service/ec2/CHANGELOG.md#v13330-2026-09-16)
- * **Feature**: Releasing new EC2 R9g and R9gd memory-optimized instances powered by AWS Graviton5 processors, with up to 25 percent better compute perf
-
-... (truncated)]]></description>
-    <pubDate>Wed, 16 Sep 2026 19:35:32 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-js-v3] v3.1134.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1134.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1134.0</guid>
-    <description><![CDATA[#### 3.1134.0(2026-09-16)
-
-##### Chores
-
-* **lib-transfer-manager:** apply formatting (#8306) (b8f7c4e4)
-
-##### New Features
-
-* **client-customer-profiles:** This release introduces the SearchRecommendations API, which retrieves recommendations for a profile identified by a search key. (a0388656)
-* **client-marketplace-catalog:** This release enhances the ListEntities API to support issuerAccountId and SourceAuthorization filter for ResaleAuthorization entity. (f2379c20)
-* **client-ec2:** Releasing new EC2 R9g and R9gd memory-optimized instances powered by AWS Graviton5 processors, with up to 25 percent better compute performance than R8g instances, faster DDR5 memory, and up to 100 Gbps network and 72 Gbps EBS bandwidth. R9gd instances additionally provide local NVMe SSD storage. (30aea54d)
-* **client-connect:** Adds support for ContactAnalysis via ListContactReferences. (983124f4)
-* **client-elastic-beanstalk:** Adds support to create and manage Elastic Beanstalk Cluster Environments
-
-... (truncated)]]></description>
-    <pubDate>Wed, 16 Sep 2026 19:34:01 GMT</pubDate>
   </item>
   <item>
     <title>[nodejs/node] 2026-09-16, Version 26.9.0 (Current), @aduh95 (v26.9.0)</title>
@@ -258,21 +346,6 @@ Explicit clipboard options still take preced
     <pubDate>Mon, 14 Sep 2026 12:12:16 GMT</pubDate>
   </item>
   <item>
-    <title>[esm-dev/esm.sh] Server v139 (v139)</title>
-    <link>https://github.com/esm-dev/esm.sh/releases/tag/v139</link>
-    <guid isPermaLink="true">https://github.com/esm-dev/esm.sh/releases/tag/v139</guid>
-    <description><![CDATA[* Add a cache purge page and API with proof-of-work, optional GitHub login, and Cloudflare cache purging. (#1405 by @steve02081504)
-* Invalidate stale `latest` resolution when a newer explicit version is requested. (#1398 by @steve02081504)
-* Limit GitHub repository installs and fetch raw assets directly. (#1401)
-* Remove the `web` package and consolidate internal helpers. (#1407)
-* Simplify build queue scheduling and shared results. (#1402)
-* Fix filesystem and S3 storage, import maps, and build handling. (#1404)
-* Fix package resolution, module responses, and HTTP caching. (#1403)
-* Fix sub-module duplication for packages with a `sideEffects` field. (#1399 by @leemr)
-* Upgrade `esbuild` to `0.28.2`. (#1408)]]></description>
-    <pubDate>Mon, 14 Sep 2026 09:38:20 GMT</pubDate>
-  </item>
-  <item>
     <title>[webpack/webpack] v5.111.0</title>
     <link>https://github.com/webpack/webpack/releases/tag/v5.111.0</link>
     <guid isPermaLink="true">https://github.com/webpack/webpack/releases/tag/v5.111.0</guid>
@@ -394,36 +467,6 @@ This release hardens request configuration and proxy handling, adds caller diagn
 
 * **proxy:** pre-compile context matchers at server creation (#23263) (8abf700)]]></description>
     <pubDate>Thu, 10 Sep 2026 11:25:16 GMT</pubDate>
-  </item>
-  <item>
-    <title>[BabylonJS/Babylon.js] 9.26.0</title>
-    <link>https://github.com/BabylonJS/Babylon.js/releases/tag/9.26.0</link>
-    <guid isPermaLink="true">https://github.com/BabylonJS/Babylon.js/releases/tag/9.26.0</guid>
-    <description><![CDATA[### Core
-
-- Add OpenUSD WebAssembly scene loader - [_New Feature_] by SergioRZMasson (#18882)
-- Add object ID geometry textures - [_New Feature_] by Popov72 (#18879)
-- Add opt-out for iOS ringer switch audio workaround - [_New Feature_] by RaananW (#18886)
-- WebGPU: key the leftover uniform buffer slots on the draw context, not on draw order - by increasinglyHuman (#18880)
-- Feat: Add IBL Shadows support to ShadowOnlyMaterial - [_New Feature_] by raymondyfei (#18873)
-
-### GUI
-
-- fixes Bounty #9: Add FlexPanel and em/rem GUI units - by Yabuku-xD (#18881)
-
-### Inspector
-
-- Add Gaussian splatting stream diagnostics to Inspector V2 - by CedricGuillemet (#18885)
-- Feat: HDR output & cloudiness for SkyMaterial - by raymondyfei (#18897)
-- Add Inspector v2 Explorer contribution APIs - by ryantrem (#18898)
-- Add initial Babylon Lite support to Inspector v2 - [_New Feature_] by ryantrem (#18889)
-
-### Loaders
-
-- Add Gaussian splatting stream diagnostics to Inspector V2 - by CedricGuillemet (#1888
-
-... (truncated)]]></description>
-    <pubDate>Thu, 10 Sep 2026 10:52:55 GMT</pubDate>
   </item>
   <item>
     <title>[Seldaek/monolog] 3.12.0</title>
@@ -774,20 +817,6 @@ Full Release Notes]]></description>
     <pubDate>Thu, 03 Sep 2026 10:51:43 GMT</pubDate>
   </item>
   <item>
-    <title>[facebook/lexical] v0.50.0</title>
-    <link>https://github.com/facebook/lexical/releases/tag/v0.50.0</link>
-    <guid isPermaLink="true">https://github.com/facebook/lexical/releases/tag/v0.50.0</guid>
-    <description><![CDATA[v0.50.0 is a monthly release with a large number of PRs to improve correctness, accessibility, and performance. It also ships HMR support, compiled keyboard shortcut dispatch, and screen reader announcements for headings and auto-links, and build-time tree-shaking annotations (in a new `@lexical/compiler` package). We have upgraded to pnpm 11, so if you're working directly with the monorepo you will need to upgrade as well.
-
-### Breaking Changes
-
-* `lexical` — `LexicalNode.replace` no longer re-homes a named slot value. A slot value has no parent (its up-link is `__slotHost`), so replacing one through the tree API now fails with an actionable invariant instead of a generic parent error; use `$setSlot` on the owning host. `$setBlocksType` and the block converters skip slot values for the same reason (#8938, #8905, #8901)
-* `@lexical/clipboard` — The Lexical JSON clipboard payload (`application/x-lexical-editor`) now asks `excludeFromCopy('clone')` instead of `'html'`, matching the 
-
-... (truncated)]]></description>
-    <pubDate>Wed, 02 Sep 2026 22:18:26 GMT</pubDate>
-  </item>
-  <item>
     <title>[zed-industries/zed] v1.18.0</title>
     <link>https://github.com/zed-industries/zed/releases/tag/v1.18.0</link>
     <guid isPermaLink="true">https://github.com/zed-industries/zed/releases/tag/v1.18.0</guid>
@@ -1128,88 +1157,6 @@ c
 
 ... (truncated)]]></description>
     <pubDate>Mon, 24 Aug 2026 17:29:10 GMT</pubDate>
-  </item>
-  <item>
-    <title>[chakra-ui/ark] @ark-ui/vue@5.39.0</title>
-    <link>https://github.com/chakra-ui/ark/releases/tag/%40ark-ui/vue%405.39.0</link>
-    <guid isPermaLink="true">https://github.com/chakra-ui/ark/releases/tag/%40ark-ui/vue%405.39.0</guid>
-    <description><![CDATA[# @ark-ui/vue
-
-## [5.39.0] - 2026-08-21
-
-### Added
-
-- **Toc** [New]: Add a table of contents component that tracks which headings are in view as the reader scrolls. Pass
- the headings to `Toc.Root` as `items`, where each entry needs the heading element's `id` as `value` and its level as
- `depth`. Set `scrollEl` when the content scrolls inside a container rather than the page, so tracking observes that
- element instead of the viewport.
- ```tsx
- <Toc.Root items={items} scrollEl={ => contentRef.current}>
- <Toc.Content />
- <Toc.Nav>
- <Toc.Title />
- <Toc.List>
- <Toc.Indicator />
- <Toc.Item item={item}>
- <Toc.Link />
- </Toc.Item>
- </Toc.List>
- </Toc.Nav>
- </Toc.Root>
- ```
- More than one heading can be active at once, so `Toc.Item` carries `data-first` and `data-last` to mark the ends of
- the range, and `Toc.Indicator` spans it. Use `useToc` with `Toc.RootProvider` to reach `activeItems` and `scrollTo`
- from outside the tree. The API may still change while the component is in preview.
-- **Hot
-
-... (truncated)]]></description>
-    <pubDate>Sat, 22 Aug 2026 09:25:27 GMT</pubDate>
-  </item>
-  <item>
-    <title>[ValveSoftware/Proton] Proton 11.0-2 (proton-11.0-2)</title>
-    <link>https://github.com/ValveSoftware/Proton/releases/tag/proton-11.0-2</link>
-    <guid isPermaLink="true">https://github.com/ValveSoftware/Proton/releases/tag/proton-11.0-2</guid>
-    <description><![CDATA[- Now playable:
- - AsteroidsHD
- - Heroes of the Three Kingdoms 7
- - Konkan Coast Pirate Solutions
- - Otherworld Legends 战魂铭人
- - Plain Sight
- - Portal Worlds
- - SMILE GAME BUILDER
- - Tetrageddon Games
- - Warhammer: Dark Omen (Classic)
-- Fixed Proton 11 regressions:
- - CEG-using games should no longer take extra time to start.
- - Command & Conquer: Generals, Command & Conquer: Renegade, Command & Conquer Generals Zero Hour, Command & Conquer Red Alert 3, Command & Conquer Red Alert 3, Command & Conquer 3: Kane's Wrath and Command & Conquer 3: Tiberium Wars should detect custom Steam Workshop levels again.
- - Terraria should no longer perform worse than on Proton 10.
- - Arma 3 workshop mods should no longer unnecessarily update on each launch.
- - Source SDK 2007 and Source SDK 2013 Singleplayer should no longer fail to find gameinfo.txt.
- - Natural Selection 2 should be able to connect to servers again.
- - The Talos Principle and The Talos Principle VR should no longer in
-
-... (truncated)]]></description>
-    <pubDate>Fri, 21 Aug 2026 20:31:08 GMT</pubDate>
-  </item>
-  <item>
-    <title>[github/spec-kit] Spec Kit - 1.0.0 (v1.0.0)</title>
-    <link>https://github.com/github/spec-kit/releases/tag/v1.0.0</link>
-    <guid isPermaLink="true">https://github.com/github/spec-kit/releases/tag/v1.0.0</guid>
-    <description><![CDATA[## Install
-
-```bash
-uv tool install specify-cli --from git+
-specify init my-project
-```
-
-## The promise a 1.0.0 used to make — and why it stopped mattering
-
-> For decades a version number was load-bearing. The `1` in the major slot was insurance, and what it insured against was **the cost of change**. A breaking change meant a human opening every call site by hand, working through a migration guide line by line, praying the tests caught what the eyes missed. That was expensive, so semver turned the cost into a signal: a bumped major meant *budget a bad afternoon — or worse*, a frozen major meant *build on this without fear*. The promise mattered because adapting was the hard part.
->
-> That is the assumption that quietly stopped being true. Adjusting to a breaking change is not a bad afternoon anymore — it is a sentence. You point an agent at the diff — *the catalog format changed these three fields, update every extension in this repo* — and it fixes the call sites in less time than it
-
-... (truncated)]]></description>
-    <pubDate>Fri, 21 Aug 2026 11:40:31 GMT</pubDate>
   </item>
 </channel>
 </rss>
