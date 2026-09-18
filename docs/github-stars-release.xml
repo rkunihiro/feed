@@ -5,8 +5,117 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Thu, 17 Sep 2026 22:02:20 GMT</lastBuildDate>
+  <lastBuildDate>Fri, 18 Sep 2026 22:01:52 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[eslint/eslint] v10.11.0</title>
+    <link>https://github.com/eslint/eslint/releases/tag/v10.11.0</link>
+    <guid isPermaLink="true">https://github.com/eslint/eslint/releases/tag/v10.11.0</guid>
+    <description><![CDATA[## Features
+* `d136fa4` feat: object-shorthand handle quoted properties for `ignoreConstructors` (#21271) (Pavel)
+* `397b3b8` feat: report unsafe labeled `continue` in `no-unsafe-finally` rule (#21316) (electrohyun)
+* `d3dd47f` feat: only exempt `new-cap` built-ins that reference the global (#21290) (sethamus)
+
+## Bug Fixes
+* `22b09f5` fix: ignore `__proto__` properties in `prefer-object-spread` (#21311) (xbinaryx)
+* `b684bb1` fix: make TimePass.parse optional in types and docs (#21313) (ntnyq)
+* `26d11bc` fix: don't report `__proto__` properties in `object-shorthand` (#21310) (xbinaryx)
+
+## Documentation
+* `9ecfdc5` docs: note that --cache can serve stale results for cross-file rules (#21312) (bytedoe)
+* `6c789ff` docs: Update README (GitHub Actions Bot)
+* `5997825` docs: clarify preserve-caught-error known limitation (#21294) (Akinyemi Toluwalase)
+
+## Chores
+* `520dd77` perf: Implement fast paths in critical areas (#21210) (Nicholas C. Zakas)
+* `92086c8` test: update `EMFILE` error g
+
+... (truncated)]]></description>
+    <pubDate>Fri, 18 Sep 2026 20:13:06 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-09-18) (release-2026-09-18)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-18</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-18</guid>
+    <description><![CDATA[## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/service/appintegrations`: [v1.47.0](service/appintegrations/CHANGELOG.md#v1470-2026-09-18)
+ * **Feature**: This release adds support for A2A servers via the ApplicationType and AuthConfig fields, allowing customers to register their agent-to-agent servers with API key authentication.
+* `github.com/aws/aws-sdk-go-v2/service/connect`: [v1.201.0](service/connect/CHANGELOG.md#v12010-2026-09-18)
+ * **Feature**: This release adds the ListSecurityProfileAIAgents API and updates the CreateSecurityProfile and UpdateSecurityProfile APIs to support the AllowedAIAgents field on security profiles, allowing customers to manage the 3P AI agents associated with a security profile for Agent-to-Agent interactions.
+* `github.com/aws/aws-sdk-go-v2/service/datazone`: [v1.75.0](service/datazone/CHANGELOG.md#v1750-2026-09-18)
+ * **Feature**: Adds support for specifying Notebook type
+* `github.com/aws/aws-sdk-go-v2/service/ec2`: [v1.335.0](service/ec2/CHANG
+
+... (truncated)]]></description>
+    <pubDate>Fri, 18 Sep 2026 19:40:33 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1136.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1136.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1136.0</guid>
+    <description><![CDATA[#### 3.1136.0(2026-09-18)
+
+##### New Features
+
+* **client-datazone:** Adds support for specifying Notebook type (dfe90a44)
+* **client-sagemaker:** Adds support for the hub content resource in SageMaker Search. (5733f294)
+* **client-glue:** Introducing AWS Glue Data Quality advanced rule recommendations for faster recommendations. This capability uses Amazon Athena to analyze a sample of table data and Amazon Bedrock to recommend DQDL rules. (984a8422)
+* **client-ec2:** This release adds documentation for the T8i instance family to the EC2 ModifyDefaultCreditSpecification and GetDefaultCreditSpecification APIs. (27cc9e36)
+* **client-appintegrations:** This release adds support for A2A servers via the ApplicationType and AuthConfig fields, allowing customers to register their agent-to-agent servers with API key authentication. (6be76cb1)
+* **client-transcribe:** Amazon Transcribe now lets you encrypt your custom vocabularies, custom vocabulary filters, and custom language models with a c
+
+... (truncated)]]></description>
+    <pubDate>Fri, 18 Sep 2026 19:34:46 GMT</pubDate>
+  </item>
+  <item>
+    <title>[pnpm/pnpm] pnpm 12.5 (v12.5.0)</title>
+    <link>https://github.com/pnpm/pnpm/releases/tag/v12.5.0</link>
+    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v12.5.0</guid>
+    <description><![CDATA[pnpm 12.5.0 makes Python a first-class ecosystem, accepts Package URLs in `pnpm add`, names whole platforms in `supportedArchitectures`, and gives tasks machine-wide concurrency limits. It also fixes an install that could reuse one package's downloaded tarball for another.
+
+## Minor Changes
+
+### Installing packages
+
+- `pnpm add` accepts a Package URL in place of a package name. `pnpm add pkg:npm/express@4.18.2` saves `express` to `package.json`. `pnpm add pkg:cargo/serde@1.0.188` saves `serde` to `Cargo.toml`. `pnpm add pkg:pypi/requests@2.31.0` saves `requests` to `pyproject.toml`. `pkg` is now a reserved specifier prefix, whatever case it is written in, so a named registry can no longer be called `pkg`.
+
+- A `registries` entry can now name the ecosystem it serves.
+
+ ```yaml
+ registries:
+ 
+ ecosystem: pypi
+ 
+ ecosystem: pypi
+ 
+ ecosystem: cargo
+ ```
+
+ `ecosystem` accepts `npm`, `cargo` and `pypi`. An entry that does not name one serves npm, as every entry did befor
+
+... (truncated)]]></description>
+    <pubDate>Fri, 18 Sep 2026 17:02:57 GMT</pubDate>
+  </item>
+  <item>
+    <title>[openai/codex] 0.155.0 (rust-v0.155.0)</title>
+    <link>https://github.com/openai/codex/releases/tag/rust-v0.155.0</link>
+    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.155.0</guid>
+    <description><![CDATA[## New Features
+
+- Added experimental `/voice` conversations with live transcripts and microphone controls on supported builds, enabled through `/experimental`. (#43581, #43651, #44331)
+- The TUI now shows live reasoning summaries in the status row and completion timestamps after successful turns. (#43558, #43921)
+- Added task hiding, archiving, and deletion in the agents overview, plus worktree ownership details and confirmed deletion of clean managed worktrees. (#43942, #44424, #44433)
+- Added Touch ID verification for MCP requests in local TUI sessions on supported Macs. (#43624, #43712, #43715)
+- Added configurable daemon update schedules and `codex app-server daemon update`; saved threads and active goals can recover after daemon restarts. (#43542, #43562, #44314)
+- Amazon Bedrock can now obtain AWS credentials from configured commands, with caching, expiration-based refresh, and authentication recovery. (#44028)
+
+## Bug Fixes
+
+- Accepted prompts are now saved even when compaction
+
+... (truncated)]]></description>
+    <pubDate>Thu, 17 Sep 2026 23:14:43 GMT</pubDate>
+  </item>
   <item>
     <title>[facebook/lexical] v0.51.0</title>
     <link>https://github.com/facebook/lexical/releases/tag/v0.51.0</link>
@@ -39,44 +148,6 @@ This is a big step towards Lexical 1.0, the next few releases are expected to be
 
 ... (truncated)]]></description>
     <pubDate>Thu, 17 Sep 2026 20:37:38 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-09-17) (release-2026-09-17)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-17</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-17</guid>
-    <description><![CDATA[## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcore`: [v1.49.0](service/bedrockagentcore/CHANGELOG.md#v1490-2026-09-17)
- * **Feature**: Batch evaluation now supports evaluating specific traces within a session. Each session can specify up to 100 trace IDs to evaluate.
-* `github.com/aws/aws-sdk-go-v2/service/connect`: [v1.200.0](service/connect/CHANGELOG.md#v12000-2026-09-17)
- * **Feature**: Made the replicaAlias attribute optional in the ReplicateInstance API to support Global routing for Amazon Connect Global Resiliency (ACGR) instances. This change maintains backward compatibility. When onboarding to ACGR without Global routing, you must specify a custom replicaAlias in your API call
-* `github.com/aws/aws-sdk-go-v2/service/ec2`: [v1.334.0](service/ec2/CHANGELOG.md#v13340-2026-09-17)
- * **Feature**: Adding support for "Tunnel" VPC Endpoint
-* `github.com/aws/aws-sdk-go-v2/service/guardduty`: [v1.93.0](service/guardduty/CHANGELOG.md#v1930-2026-09-17)
- * **Featu
-
-... (truncated)]]></description>
-    <pubDate>Thu, 17 Sep 2026 19:05:07 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-js-v3] v3.1135.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1135.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1135.0</guid>
-    <description><![CDATA[#### 3.1135.0(2026-09-17)
-
-##### Documentation Changes
-
-* **client-sns:** SNS API reference documentation update (0e22e2d7)
-
-##### New Features
-
-* **client-connect:** Made the replicaAlias attribute optional in the ReplicateInstance API to support Global routing for Amazon Connect Global Resiliency (ACGR) instances. This change maintains backward compatibility. When onboarding to ACGR without Global routing, you must specify a custom replicaAlias in your API call (f134c352)
-* **client-ec2:** Adding support for "Tunnel" VPC Endpoint (cb7c9bc5)
-* **client-notifications:** Added support for attachments on managed notification events. Added support to access and subscribe sensitive managed notification events. (c8a9cc10)
-* **client-guardduty:** This change surfaces AI Protection resources on existing public IAM attack sequences. Customers will now see which model was accessed and whether a guardrail intervened as part of the credential-compromise sequence. (854ccbfa)
-* **client-sesv2:** Ad
-
-... (truncated)]]></description>
-    <pubDate>Thu, 17 Sep 2026 18:54:28 GMT</pubDate>
   </item>
   <item>
     <title>[vercel-labs/skills] v1.7.0</title>
@@ -407,23 +478,6 @@ This release hardens request configuration and proxy handling, adds caller diagn
     <pubDate>Sun, 13 Sep 2026 16:40:14 GMT</pubDate>
   </item>
   <item>
-    <title>[pnpm/pnpm] pnpm 11.27 (v11.27.0)</title>
-    <link>https://github.com/pnpm/pnpm/releases/tag/v11.27.0</link>
-    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v11.27.0</guid>
-    <description><![CDATA[## Minor Changes
-
-* `nodeDownloadMirrors` can now be set in the global config file (`config.yaml`) and through the `PNPM_CONFIG_NODE_DOWNLOAD_MIRRORS` environment variable, so a Node.js download mirror can be configured once for a machine instead of in every workspace #12124, #13611.
-
- ```sh
- PNPM_CONFIG_NODE_DOWNLOAD_MIRRORS='{"release":""}'
- ```
-
-* Added a new setting `trustPolicyExcludePrune` (default: `false`). When enabled, `pnpm add`, `pnpm update`, and `pnpm remove` prune the entries of `trustPolicyExclude` in `pnpm-workspace.yaml` that the freshly written lockfile no longer resolves: versions that are gone are dropped (an entry is removed once none of its versions remain), and entries for packages that are no longer in the lockfile are removed too. Name patterns (`@scope/*`) are always kept. The cleanup is skipped when the install's lockfile does not cover the whole workspace (`sharedWorkspaceLockfile: false`), since entries another project still needs would look stale.
-
-... (truncated)]]></description>
-    <pubDate>Sat, 12 Sep 2026 21:22:42 GMT</pubDate>
-  </item>
-  <item>
     <title>[bluesky-social/atproto] @atproto-labs/fetch-node@0.4.0</title>
     <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto-labs/fetch-node%400.4.0</link>
     <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto-labs/fetch-node%400.4.0</guid>
@@ -710,30 +764,6 @@ Menu also gets a big upgrade this release: it now supports async loading and emp
 
 Full Release Notes]]></description>
     <pubDate>Fri, 04 Sep 2026 19:44:19 GMT</pubDate>
-  </item>
-  <item>
-    <title>[eslint/eslint] v10.10.0</title>
-    <link>https://github.com/eslint/eslint/releases/tag/v10.10.0</link>
-    <guid isPermaLink="true">https://github.com/eslint/eslint/releases/tag/v10.10.0</guid>
-    <description><![CDATA[## Features
-* `264b434` feat: add `d` and `v` flags to `no-unexpected-multiline` (#21305) (Gihyeon Jeong / 정기현)
-* `c6cc6c5` feat: check `Object.prototype` property names in `new-cap` (#21269) (crimsonjay0)
-* `5661fa6` feat: no-extra-bind false negatives with class fields and static blocks (#21260) (synthex-byte)
-
-## Bug Fixes
-* `bb47dc6` fix: update dependency file-entry-cache to v11 (#20801) (Milos Djermanovic)
-* `427ac0a` fix: use format strings in debug calls (#21247) (Francesco Trotta)
-* `9d81532` fix: support `__proto__` in `/* exported */` comments (#21261) (sethamus)
-* `87e0a08` fix: prefer-object-has-own autofix breaks when Object is shadowed (#21282) (김채영)
-* `8e2cb14` fix: `new-cap` false positive for `UTC` calls with `properties: false` (#21275) (Pixel)
-* `9f4a364` fix: Ignore static imports in no-unreachable (#21276) (Taha Kotil)
-
-## Documentation
-* `2417cad` docs: Update README (GitHub Actions Bot)
-* `9cecb8a` docs: document `\c` control letter escapes in no-control-regex (
-
-... (truncated)]]></description>
-    <pubDate>Fri, 04 Sep 2026 14:30:17 GMT</pubDate>
   </item>
   <item>
     <title>[mui/base-ui] v1.8.0</title>
@@ -1131,32 +1161,6 @@ nest upgrade
 
 ... (truncated)]]></description>
     <pubDate>Wed, 26 Aug 2026 03:42:56 GMT</pubDate>
-  </item>
-  <item>
-    <title>[mongodb/node-mongodb-native] v7.6.0</title>
-    <link>https://github.com/mongodb/node-mongodb-native/releases/tag/v7.6.0</link>
-    <guid isPermaLink="true">https://github.com/mongodb/node-mongodb-native/releases/tag/v7.6.0</guid>
-    <description><![CDATA[## 7.6.0 (2026-08-21)
-
-The MongoDB Node.js team is pleased to announce version 7.6.0 of the `mongodb` package!
-
-## Release Notes
-
-### Support for MongoDB 4.2 is removed
-
-> [!WARNING]
-> When the driver connects to a MongoDB server of version 4.2 or less, it will now throw an error.
-
-### HTTP proxy support for KMS requests in CSFLE and Queryable Encryption
-
-In-use encryption can now route KMS requests through an HTTP proxy. Set `kmsConnectCallback` on your `ClientEncryption` or auto-encryption options to control how the driver connects to a KMS host. The callback receives the target `host` and `port` and returns a connected socket (for example, a tunnel
-opened with HTTP CONNECT); the driver then performs the KMS TLS handshake over that socket using the provider's configured TLS options. This unblocks CSFLE and Queryable Encryption in environments that require an HTTP forward proxy for outbound KMS traffic, which the existing SOCKS5 `proxyOptions` does not cover.
-
-```ts
-c
-
-... (truncated)]]></description>
-    <pubDate>Mon, 24 Aug 2026 17:29:10 GMT</pubDate>
   </item>
 </channel>
 </rss>
