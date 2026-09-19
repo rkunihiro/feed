@@ -5,8 +5,71 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Fri, 18 Sep 2026 22:01:52 GMT</lastBuildDate>
+  <lastBuildDate>Sat, 19 Sep 2026 22:01:54 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[inokawa/virtua] 0.52.0</title>
+    <link>https://github.com/inokawa/virtua/releases/tag/0.52.0</link>
+    <guid isPermaLink="true">https://github.com/inokawa/virtua/releases/tag/0.52.0</guid>
+    <description><![CDATA[## BREAKING CHANGES
+- Rewrite VGrid completely. It's no longer experimental component!
+
+
+
+
+
+- Renamed events of angular components
+
+## What's Changed
+* Refactor e2e by @inokawa in 
+* Refactor e2e by @inokawa in 
+* Rename events of angular components to fix conflicts with browser events by @inokawa in 
+* Stabilize VGrid and bring it to all frameworks by @inokawa in 
+* Refine VGrid props to support section headers by @inokawa in 
+
+
+**Full Changelog**:]]></description>
+    <pubDate>Sat, 19 Sep 2026 12:02:28 GMT</pubDate>
+  </item>
+  <item>
+    <title>[sindresorhus/eslint-plugin-unicorn] v76.0.0</title>
+    <link>https://github.com/sindresorhus/eslint-plugin-unicorn/releases/tag/v76.0.0</link>
+    <guid isPermaLink="true">https://github.com/sindresorhus/eslint-plugin-unicorn/releases/tag/v76.0.0</guid>
+    <description><![CDATA[### Breaking
+
+- `no-immediate-mutation`: Add `checkConditionals` option and default it to off (#3707) 4686e7ef
+- `no-break-in-nested-loop`: Add `checkContinue` option and default it to off (#3712) d8fbfde8
+- `prefer-combined-guards`: Add `checkCompoundConditions` option default it to off (#3710) 
+
+### Improvements
+
+- `prefer-minimal-ternary`: Add autofix (#3716) aaa75a46
+- `prefer-logical-operator-over-ternary`: Handle boolean expressions (#3711)
+- `prefer-ternary`: Preserve readable branches (#3709) f7a35aea
+- `no-typeof-undefined`: Ignore TypeScript ambient variables (#3708) 9245ed87
+- Fix autofixes that hardcoded a tab for inserted indentation (#3721) db20ce1c
+
+---]]></description>
+    <pubDate>Sat, 19 Sep 2026 11:34:29 GMT</pubDate>
+  </item>
+  <item>
+    <title>[remix-run/remix] tar-parser v0.8.0 (tar-parser@0.8.0)</title>
+    <link>https://github.com/remix-run/remix/releases/tag/tar-parser%400.8.0</link>
+    <guid isPermaLink="true">https://github.com/remix-run/remix/releases/tag/tar-parser%400.8.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- BREAKING CHANGE: `parseTarHeader`, `parseTar`, and `TarParser` now default to `pathPolicy: 'relative'`, throwing `TarParseError` for empty entry names or link targets, absolute paths, Windows drive prefixes, backslashes, and embedded NULs. Entry names cannot contain `..` path components. Symlink targets are checked relative to the link's parent directory, and hard-link targets relative to the archive root; `..` components are allowed only when resolution stays within the archive. Valid paths retain their spelling, including nested paths, `./` prefixes, and trailing directory slashes. Applications that need to inspect or process unrestricted archive paths can opt into `pathPolicy: 'preserve'`:
+
+ ```diff
+ -await parseTar(archive, handleEntry)
+ +await parseTar(archive, { pathPolicy: 'preserve' }, handleEntry)
+ ```
+
+ The same option works with `parseTarHeader` and `new TarParser`. It does not disable archive limits or header structure validation. Path validation applie
+
+... (truncated)]]></description>
+    <pubDate>Fri, 18 Sep 2026 22:38:48 GMT</pubDate>
+  </item>
   <item>
     <title>[eslint/eslint] v10.11.0</title>
     <link>https://github.com/eslint/eslint/releases/tag/v10.11.0</link>
@@ -95,26 +158,6 @@
 
 ... (truncated)]]></description>
     <pubDate>Fri, 18 Sep 2026 17:02:57 GMT</pubDate>
-  </item>
-  <item>
-    <title>[openai/codex] 0.155.0 (rust-v0.155.0)</title>
-    <link>https://github.com/openai/codex/releases/tag/rust-v0.155.0</link>
-    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.155.0</guid>
-    <description><![CDATA[## New Features
-
-- Added experimental `/voice` conversations with live transcripts and microphone controls on supported builds, enabled through `/experimental`. (#43581, #43651, #44331)
-- The TUI now shows live reasoning summaries in the status row and completion timestamps after successful turns. (#43558, #43921)
-- Added task hiding, archiving, and deletion in the agents overview, plus worktree ownership details and confirmed deletion of clean managed worktrees. (#43942, #44424, #44433)
-- Added Touch ID verification for MCP requests in local TUI sessions on supported Macs. (#43624, #43712, #43715)
-- Added configurable daemon update schedules and `codex app-server daemon update`; saved threads and active goals can recover after daemon restarts. (#43542, #43562, #44314)
-- Amazon Bedrock can now obtain AWS credentials from configured commands, with caching, expiration-based refresh, and authentication recovery. (#44028)
-
-## Bug Fixes
-
-- Accepted prompts are now saved even when compaction
-
-... (truncated)]]></description>
-    <pubDate>Thu, 17 Sep 2026 23:14:43 GMT</pubDate>
   </item>
   <item>
     <title>[facebook/lexical] v0.51.0</title>
@@ -299,37 +342,6 @@ Users prioritizing stability and a longer support lifecycle should stay on the
 
 ---]]></description>
     <pubDate>Wed, 16 Sep 2026 17:03:57 GMT</pubDate>
-  </item>
-  <item>
-    <title>[sindresorhus/eslint-plugin-unicorn] v75.0.0</title>
-    <link>https://github.com/sindresorhus/eslint-plugin-unicorn/releases/tag/v75.0.0</link>
-    <guid isPermaLink="true">https://github.com/sindresorhus/eslint-plugin-unicorn/releases/tag/v75.0.0</guid>
-    <description><![CDATA[## New rules
-
-- `prefer-combined-guards` (#3680) 5d9d745c
-- `no-unused-iterator-helper` (#3677) 82137379
-- `no-unused-builtin-method-return` (#3676) b3d56a35
-- `prefer-iterator-zip` (#3675) 60d3b53a
-- `no-useless-set-construction` (#3672) 639c9844
-- `prefer-iterator-helpers` (#3670) 4c805e26
-- `prefer-json-import` (#3668) 1df640dd
-- `prefer-temporal-conversion` (#3667) 74bc02e7
-- `no-async-iterator-callback` (#3666) bb6c2450
-- `no-using-resource-escape` (#3663) 34247853
-- `prefer-uint8array-hex` (#3661) 92551329
-- `no-deprecated-css-features` (#3651) e1161021
-- `no-unscoped-css-nesting-selector` (#3650) ebd03bdf
-- `no-duplicate-css-selectors` (#3646) 508d9f50
-- `no-unknown-pseudo-selectors` (#3644) 99492cd7
-- `no-invalid-media-features` (#3643) ef37c1f1
-- `no-unknown-css-annotations` (#3642) 19637ee8
-- `no-nesting-with-mixed-specificity` (#3640) b2f2bf9d
-- `prefer-media-feature-range-syntax` (#3639) 19f112f6
-- `no-duplicate-font-family-names` (#3638) c8f81bc8
-- `n
-
-... (truncated)]]></description>
-    <pubDate>Wed, 16 Sep 2026 06:48:39 GMT</pubDate>
   </item>
   <item>
     <title>[remix-run/react-router] v8.4.0 (react-router@8.4.0)</title>
@@ -533,35 +545,6 @@ This release hardens request configuration and proxy handling, adds caller diagn
 
 **Full Changelog**:]]></description>
     <pubDate>Wed, 09 Sep 2026 08:46:10 GMT</pubDate>
-  </item>
-  <item>
-    <title>[remix-run/remix] render-middleware v0.3.0 (render-middleware@0.3.0)</title>
-    <link>https://github.com/remix-run/remix/releases/tag/render-middleware%400.3.0</link>
-    <guid isPermaLink="true">https://github.com/remix-run/remix/releases/tag/render-middleware%400.3.0</guid>
-    <description><![CDATA[### Minor Changes
-
-- BREAKING CHANGE: `render({ assets })` now uses `assets.getScriptEntry` to resolve client entries from source files so their import maps are included in rendered documents and frame responses. Custom asset server implementations must provide `getScriptEntry` instead of `getHref` and `getPreloads`. It must return a `Promise` resolving to the following `ScriptEntry` shape:
-
- ```ts
- interface ScriptEntry {
- href: string
- preloads: string
- importMap: {
- imports: Record<string, string>
- scopes?: Record<string, Record<string, string>>
- }
- }
- ```
-
- Apps using `createAssetServer` receive this integration automatically. Custom rendering setups can follow the asset server migration steps (see #11706).
-
-### Patch Changes
-
-- Bumped `@remix-run/*` dependencies:
- - `assets@0.7.0`
- - `fetch-router@0.22.0`
- - `ui@0.9.0`]]></description>
-    <pubDate>Tue, 08 Sep 2026 23:07:59 GMT</pubDate>
   </item>
   <item>
     <title>[mrdoob/three.js] r186</title>
@@ -875,29 +858,6 @@ Full Release Notes]]></description>
     <pubDate>Wed, 02 Sep 2026 18:13:31 GMT</pubDate>
   </item>
   <item>
-    <title>[inokawa/virtua] 0.51.0</title>
-    <link>https://github.com/inokawa/virtua/releases/tag/0.51.0</link>
-    <guid isPermaLink="true">https://github.com/inokawa/virtua/releases/tag/0.51.0</guid>
-    <description><![CDATA[## BREAKING CHANGES
-
-Dropped some legacy browser supports. Use polyfills instead.
-
-
-## What's Changed
-* Improve window driver by @inokawa in 
-* Correct jsdoc by @inokawa in 
-* Refactor RTL handling by @inokawa in 
-* Refactor smoke e2e by @inokawa in 
-* Delete store.spec.ts by @inokawa in 
-* Refactor feature detection for smooth scroll by @inokawa in 
-* Fix bug that scroll-behavior: smooth can break programmatic scroll by @inokawa in 
-* Fix bug that scroll position can jump back during fast scrolling by @inokawa in 
-
-
-**Full Changelog**:]]></description>
-    <pubDate>Mon, 31 Aug 2026 13:45:41 GMT</pubDate>
-  </item>
-  <item>
     <title>[servo/servo] v0.5.0</title>
     <link>https://github.com/servo/servo/releases/tag/v0.5.0</link>
     <guid isPermaLink="true">https://github.com/servo/servo/releases/tag/v0.5.0</guid>
@@ -1161,6 +1121,32 @@ nest upgrade
 
 ... (truncated)]]></description>
     <pubDate>Wed, 26 Aug 2026 03:42:56 GMT</pubDate>
+  </item>
+  <item>
+    <title>[mongodb/node-mongodb-native] v7.6.0</title>
+    <link>https://github.com/mongodb/node-mongodb-native/releases/tag/v7.6.0</link>
+    <guid isPermaLink="true">https://github.com/mongodb/node-mongodb-native/releases/tag/v7.6.0</guid>
+    <description><![CDATA[## 7.6.0 (2026-08-21)
+
+The MongoDB Node.js team is pleased to announce version 7.6.0 of the `mongodb` package!
+
+## Release Notes
+
+### Support for MongoDB 4.2 is removed
+
+> [!WARNING]
+> When the driver connects to a MongoDB server of version 4.2 or less, it will now throw an error.
+
+### HTTP proxy support for KMS requests in CSFLE and Queryable Encryption
+
+In-use encryption can now route KMS requests through an HTTP proxy. Set `kmsConnectCallback` on your `ClientEncryption` or auto-encryption options to control how the driver connects to a KMS host. The callback receives the target `host` and `port` and returns a connected socket (for example, a tunnel
+opened with HTTP CONNECT); the driver then performs the KMS TLS handshake over that socket using the provider's configured TLS options. This unblocks CSFLE and Queryable Encryption in environments that require an HTTP forward proxy for outbound KMS traffic, which the existing SOCKS5 `proxyOptions` does not cover.
+
+```ts
+c
+
+... (truncated)]]></description>
+    <pubDate>Mon, 24 Aug 2026 17:29:10 GMT</pubDate>
   </item>
 </channel>
 </rss>
