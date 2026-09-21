@@ -5,8 +5,74 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Sun, 20 Sep 2026 22:01:55 GMT</lastBuildDate>
+  <lastBuildDate>Mon, 21 Sep 2026 22:02:14 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1137.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1137.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1137.0</guid>
+    <description><![CDATA[#### 3.1137.0(2026-09-21)
+
+##### New Features
+
+* **client-sagemaker:** Add support for r6i, m8i, c8i, r8i instance types in Training and Processing (cd872ff2)
+* **client-bedrock-agentcore-control:** Amazon Bedrock AgentCore Harness now supports lifecycle hooks for invocations and tool calls, with Lambda, SNS, and EventBridge targets. This release also adds apiBase for custom OpenAI-compatible endpoints (74c149a8)
+* **client-billingconductor:** Launching Auto Billing Transfer Billing Group Creation Preference feature (16130cc7)
+* **client-docdb:** Add support for CopyTagsToSnapshot field in CreateDbCluster, ModifyDbCluster, RestoreDbClusterFromSnapshot and RestoreDbClusterToPointInTime for DocumentDB. (c02fad3a)
+* **client-bedrock-agentcore:** Amazon Bedrock AgentCore Harness now supports lifecycle hooks for invocations and tool calls, with Lambda, SNS, and EventBridge targets. This release also adds apiBase for custom OpenAI-compatible endpoints. (d665aa0c)
+
+
+---
+
+For list of updated p
+
+... (truncated)]]></description>
+    <pubDate>Mon, 21 Sep 2026 19:00:58 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-09-21) (release-2026-09-21)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-21</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-21</guid>
+    <description><![CDATA[## General Highlights
+* **Dependency Update**: Updated to the latest SDK module versions
+
+## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/service/aiops`: [v1.15.0](service/aiops/CHANGELOG.md#v1150-2026-09-21)
+ * **Feature**: Enable schema-based (de)serialization for this service.
+* `github.com/aws/aws-sdk-go-v2/service/amplifybackend`: [v1.41.0](service/amplifybackend/CHANGELOG.md#v1410-2026-09-21)
+ * **Feature**: Enable schema-based (de)serialization for this service.
+* `github.com/aws/aws-sdk-go-v2/service/amplifyuibuilder`: [v1.37.0](service/amplifyuibuilder/CHANGELOG.md#v1370-2026-09-21)
+ * **Feature**: Enable schema-based (de)serialization for this service.
+* `github.com/aws/aws-sdk-go-v2/service/apigateway`: [v1.48.0](service/apigateway/CHANGELOG.md#v1480-2026-09-21)
+ * **Feature**: Enable schema-based (de)serialization for this service.
+* `github.com/aws/aws-sdk-go-v2/service/apigatewaymanagementapi`: [v1.38.0](service/apigatewaymanagementapi/CHANGELOG.md#v1380-2026-09-21)
+
+
+... (truncated)]]></description>
+    <pubDate>Mon, 21 Sep 2026 18:58:29 GMT</pubDate>
+  </item>
+  <item>
+    <title>[oxc-project/oxc] oxlint v1.85.0 (oxlint_v1.85.0)</title>
+    <link>https://github.com/oxc-project/oxc/releases/tag/oxlint_v1.85.0</link>
+    <guid isPermaLink="true">https://github.com/oxc-project/oxc/releases/tag/oxlint_v1.85.0</guid>
+    <description><![CDATA[### 🚀 Features
+
+- 415b742 oxlint,oxfmt: Do not discover nested config in Vite+ mode (#26763) (leaysgur)]]></description>
+    <pubDate>Mon, 21 Sep 2026 15:31:51 GMT</pubDate>
+  </item>
+  <item>
+    <title>[esm-dev/esm.sh] Server v139_2 (v139_2)</title>
+    <link>https://github.com/esm-dev/esm.sh/releases/tag/v139_2</link>
+    <guid isPermaLink="true">https://github.com/esm-dev/esm.sh/releases/tag/v139_2</guid>
+    <description><![CDATA[* Persist negative package and build records with bbolt. (#1411)
+* Reject cached package 404s before installation and builds. (#1412)
+* Improve TypeScript declaration transformation with concurrent storage requests and cancellation.
+* Fix build queue stalls caused by serialized metadata access and unbounded S3 requests.
+* Reject unsupported native Node.js modules before parsing.
+* Build Docker images from checked-out source and fix Deno's glibc setup.
+* Upgrade Go to 1.27.]]></description>
+    <pubDate>Mon, 21 Sep 2026 09:03:19 GMT</pubDate>
+  </item>
   <item>
     <title>[inokawa/virtua] 0.52.0</title>
     <link>https://github.com/inokawa/virtua/releases/tag/0.52.0</link>
@@ -95,40 +161,6 @@
 
 ... (truncated)]]></description>
     <pubDate>Fri, 18 Sep 2026 20:13:06 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-09-18) (release-2026-09-18)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-18</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-18</guid>
-    <description><![CDATA[## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/appintegrations`: [v1.47.0](service/appintegrations/CHANGELOG.md#v1470-2026-09-18)
- * **Feature**: This release adds support for A2A servers via the ApplicationType and AuthConfig fields, allowing customers to register their agent-to-agent servers with API key authentication.
-* `github.com/aws/aws-sdk-go-v2/service/connect`: [v1.201.0](service/connect/CHANGELOG.md#v12010-2026-09-18)
- * **Feature**: This release adds the ListSecurityProfileAIAgents API and updates the CreateSecurityProfile and UpdateSecurityProfile APIs to support the AllowedAIAgents field on security profiles, allowing customers to manage the 3P AI agents associated with a security profile for Agent-to-Agent interactions.
-* `github.com/aws/aws-sdk-go-v2/service/datazone`: [v1.75.0](service/datazone/CHANGELOG.md#v1750-2026-09-18)
- * **Feature**: Adds support for specifying Notebook type
-* `github.com/aws/aws-sdk-go-v2/service/ec2`: [v1.335.0](service/ec2/CHANG
-
-... (truncated)]]></description>
-    <pubDate>Fri, 18 Sep 2026 19:40:33 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-js-v3] v3.1136.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1136.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1136.0</guid>
-    <description><![CDATA[#### 3.1136.0(2026-09-18)
-
-##### New Features
-
-* **client-datazone:** Adds support for specifying Notebook type (dfe90a44)
-* **client-sagemaker:** Adds support for the hub content resource in SageMaker Search. (5733f294)
-* **client-glue:** Introducing AWS Glue Data Quality advanced rule recommendations for faster recommendations. This capability uses Amazon Athena to analyze a sample of table data and Amazon Bedrock to recommend DQDL rules. (984a8422)
-* **client-ec2:** This release adds documentation for the T8i instance family to the EC2 ModifyDefaultCreditSpecification and GetDefaultCreditSpecification APIs. (27cc9e36)
-* **client-appintegrations:** This release adds support for A2A servers via the ApplicationType and AuthConfig fields, allowing customers to register their agent-to-agent servers with API key authentication. (6be76cb1)
-* **client-transcribe:** Amazon Transcribe now lets you encrypt your custom vocabularies, custom vocabulary filters, and custom language models with a c
-
-... (truncated)]]></description>
-    <pubDate>Fri, 18 Sep 2026 19:34:46 GMT</pubDate>
   </item>
   <item>
     <title>[pnpm/pnpm] pnpm 12.5 (v12.5.0)</title>
@@ -239,13 +271,6 @@ Thanks to @scttcper, as well as all the other contributors of this release (most
 
 ... (truncated)]]></description>
     <pubDate>Thu, 17 Sep 2026 01:01:48 GMT</pubDate>
-  </item>
-  <item>
-    <title>[esm-dev/esm.sh] Server v139_1 (v139_1)</title>
-    <link>https://github.com/esm-dev/esm.sh/releases/tag/v139_1</link>
-    <guid isPermaLink="true">https://github.com/esm-dev/esm.sh/releases/tag/v139_1</guid>
-    <description><![CDATA[* Fix build queue stalls caused by uncancellable install locks]]></description>
-    <pubDate>Thu, 17 Sep 2026 00:42:44 GMT</pubDate>
   </item>
   <item>
     <title>[containerd/containerd] containerd 2.4.0 (v2.4.0)</title>
@@ -399,34 +424,6 @@ Explicit clipboard options still take preced
 
 ... (truncated)]]></description>
     <pubDate>Tue, 15 Sep 2026 04:56:15 GMT</pubDate>
-  </item>
-  <item>
-    <title>[oxc-project/oxc] oxlint v1.83.0 &amp; oxfmt v0.68.0 (apps_v1.83.0)</title>
-    <link>https://github.com/oxc-project/oxc/releases/tag/apps_v1.83.0</link>
-    <guid isPermaLink="true">https://github.com/oxc-project/oxc/releases/tag/apps_v1.83.0</guid>
-    <description><![CDATA[## Table of Contents
-
-- [Oxlint v1.83.0](#oxlint-v1.83.0)
-- [Oxfmt v0.68.0](#oxfmt-v0.68.0)
-
-## Oxlint v1.83.0
-### 🚀 Features
-
-- afe950d linter/react: Update lint rules to accomodate changes in React 19.3 (#26571) (Connor Shea)
-
-### 🐛 Bug Fixes
-
-- fb87ed7 linter/unicorn/prefer-array-flat-map: Report `.filter.flatMap` chains (#26626) (camc314)
-- 336b654 linter/unicorn/prefer-at: Report single-character substring calls (#26623) (camc314)
-- a5bba6d linter/eslint/no-unused-vars: Respect rest params after-used option (#26579) (Bartok)
-- c1470a2 linter/eslint/no-unused-vars: Preserve ambient implicit exports (#26582) (Dex Hunter)
-- 9a469d2 linter/unicorn/prefer-global-this: Preserve window event method references (#26611) (Dex Hunter)
-- aaff758 linter/unicorn/prefer-default-parameters: Report violation for `??=` and `||=` (#26607) (Bartok)
-- 2bed25a linter/unicorn/prefer-array-flat: Skip plain `concat` normalization (#26604) (im10furry)
-- 72bc7f2 oxlint: Replace backlashes path for "no js 
-
-... (truncated)]]></description>
-    <pubDate>Mon, 14 Sep 2026 12:12:16 GMT</pubDate>
   </item>
   <item>
     <title>[webpack/webpack] v5.111.0</title>
