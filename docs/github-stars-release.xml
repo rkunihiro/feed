@@ -5,8 +5,67 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Tue, 22 Sep 2026 22:02:03 GMT</lastBuildDate>
+  <lastBuildDate>Wed, 23 Sep 2026 22:01:56 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[modelcontextprotocol/typescript-sdk] @modelcontextprotocol/server-legacy@2.1.0</title>
+    <link>https://github.com/modelcontextprotocol/typescript-sdk/releases/tag/%40modelcontextprotocol/server-legacy%402.1.0</link>
+    <guid isPermaLink="true">https://github.com/modelcontextprotocol/typescript-sdk/releases/tag/%40modelcontextprotocol/server-legacy%402.1.0</guid>
+    <description><![CDATA[### Patch Changes
+
+- Updated dependencies [`dcc0102`]:
+ - @modelcontextprotocol/core@2.1.0]]></description>
+    <pubDate>Wed, 23 Sep 2026 15:43:20 GMT</pubDate>
+  </item>
+  <item>
+    <title>[zed-industries/zed] v1.21.0</title>
+    <link>https://github.com/zed-industries/zed/releases/tag/v1.21.0</link>
+    <guid isPermaLink="true">https://github.com/zed-industries/zed/releases/tag/v1.21.0</guid>
+    <description><![CDATA[This week's release includes faster rendering in syntax-highlighted files and Markdown code blocks, a language server command picker, a setting that keeps your system awake during long-running agent turns, and BYOK support for Claude Opus 5.5 (Anthropic) and GPT-6 Astra, Sol, and Luna (OpenAI).
+
+## Features
+
+### AI
+
+- Added SuperGrok sign-in so SuperGrok subscribers can use Grok models in the Agent Panel. (#63248; thanks thibaudgg)
+- Added the `agent.prevent_idle_sleep` setting, enabled by default, to prevent idle system sleep while agent threads are running. (#53130; thanks cppcoffee)
+- Added support for DeepSeek Flash 4.1. (#64014; thanks cppcoffee)
+- Added the `agent.threads_sidebar_default_width` setting to configure the width of the Threads Sidebar. (#62883; thanks porada)
+- Added the `agent: rename selected thread` action for renaming the active Terminal Thread from the Agent Panel. (#63660; thanks mauriciord)
+- Added BYOK support for Claude Opus 5.5 with an Anthropic 
+
+... (truncated)]]></description>
+    <pubDate>Wed, 23 Sep 2026 15:42:38 GMT</pubDate>
+  </item>
+  <item>
+    <title>[nestjs/nest] v12.1.0</title>
+    <link>https://github.com/nestjs/nest/releases/tag/v12.1.0</link>
+    <guid isPermaLink="true">https://github.com/nestjs/nest/releases/tag/v12.1.0</guid>
+    <description><![CDATA[## v12.1.0 (2026-09-23)
+
+#### Bug fixes
+* `core`
+ * #17838 fix(core): inherit optional ctor params when the ctor is not redeclared (@kamilmysliwiec)
+ * #17819 fix(core): name the module when metadata entries are invalid (@thekhegay)
+* `microservices`
+ * #17828 fix(microservices): let the redis client retry after a failed connect (@hktitof)
+ * #17810 fix(microservices): fail every pending request when a callback throws (@hktitof)
+
+#### Enhancements
+* `core`
+ * #17846 fix(core): do not skip subsequent middleware after a transient one (@lehafari)
+ * #17840 fix(core): preserve route handler names (@Grmiade)
+* `common`, `core`
+ * #17713 feat(core): add support for array of global prefixes (@micalevisk)
+ * #17834 feat(common,core): add built-in, adapter-agnostic cookies (@kamilmysliwiec)
+* `platform-fastify`
+ * #17824 fix(fastify): honor Nest forceCloseConnections in initHttpServer (@xia-chao)
+* `common`
+ * #17827 fix(common): apply the ParseDatePipe default to every miss
+
+... (truncated)]]></description>
+    <pubDate>Wed, 23 Sep 2026 08:00:20 GMT</pubDate>
+  </item>
   <item>
     <title>[openai/codex] 0.156.0 (rust-v0.156.0)</title>
     <link>https://github.com/openai/codex/releases/tag/rust-v0.156.0</link>
@@ -859,34 +918,6 @@ Full Release Notes]]></description>
     <pubDate>Thu, 03 Sep 2026 10:51:43 GMT</pubDate>
   </item>
   <item>
-    <title>[zed-industries/zed] v1.18.0</title>
-    <link>https://github.com/zed-industries/zed/releases/tag/v1.18.0</link>
-    <guid isPermaLink="true">https://github.com/zed-industries/zed/releases/tag/v1.18.0</guid>
-    <description><![CDATA[This week's release includes refreshed Markdown preview styling, inline debugger values for C and C++, and File Finder history that persists across workspace sessions.
-
-## Shipped by the Zed Guild 🛡️
-
-- Fixed the inline assistant doing nothing when the model emitted reasoning before its tool call. (#61220; thanks aviatesk)
-- Fixed some Pyright and BasedPyright settings not being applied properly. (#62673; thanks lingyaochu)
-- Fixed bookmarks not disappearing from the gutter immediately after clearing all bookmarks. (#62847; thanks austincummings)
-- Fixed the LSP status tooltip to display the target script path for runtime-managed language servers. (#62919; thanks lingyaochu)
-
----
-
-*Learn about the Zed Guild.*
-
-## Features
-
-### AI
-
-- Added support for GPT-5.6's 1M-token context window on Amazon Bedrock. (#63069; thanks 5herlocked)
-- Added Gemini 3.5 Flash-Lite to the Google AI models. (#63129; thanks ArneshBanerjee)
-- Added Grok 4.5 and Grok 4.6 to the xAI models. (#
-
-... (truncated)]]></description>
-    <pubDate>Wed, 02 Sep 2026 18:13:31 GMT</pubDate>
-  </item>
-  <item>
     <title>[servo/servo] v0.5.0</title>
     <link>https://github.com/servo/servo/releases/tag/v0.5.0</link>
     <guid isPermaLink="true">https://github.com/servo/servo/releases/tag/v0.5.0</guid>
@@ -1041,72 +1072,6 @@ Run `dprint upgrade` or see
 
 * enforce configuration hook contracts (5c4d05b)]]></description>
     <pubDate>Fri, 28 Aug 2026 22:23:03 GMT</pubDate>
-  </item>
-  <item>
-    <title>[jestjs/jest] v30.5.0</title>
-    <link>https://github.com/jestjs/jest/releases/tag/v30.5.0</link>
-    <guid isPermaLink="true">https://github.com/jestjs/jest/releases/tag/v30.5.0</guid>
-    <description><![CDATA[On a personal note: King Harald V of Norway passed away this morning. He ascended the throne 35 years ago, two months before I was born. This release is dedicated to his memory. Hvil i fred 🇳🇴
-
----
-
-This is a big release. It touches `jest-runtime`, `jest-resolve` and `jest-haste-map` in many places, and with this many changes there might be regressions 😬. If your suite behaves differently after upgrading, please open an issue.
-
-# Highlights
-
-## `whenCalledWith`
-
-Mock functions can now configure return values per argument list, contributed by @timkindberg (#16053):
-
-```js
-const fn = jest.fn;
-fn.whenCalledWith('apple').mockReturnValue('red');
-fn.whenCalledWith('banana').mockReturnValue('yellow');
-fn.whenCalledWith(expect.any(Number)).mockReturnValue('numeric');
-
-fn('apple'); // 'red'
-fn('banana'); // 'yellow'
-fn(42); // 'numeric'
-fn('grape'); // undefined
-```
-
-The returned object is a real `Mock`, so `mockReturnValueOnce`, `mockResolvedValue`, `mockImplementati
-
-... (truncated)]]></description>
-    <pubDate>Fri, 28 Aug 2026 08:29:30 GMT</pubDate>
-  </item>
-  <item>
-    <title>[nestjs/nest] v12.0.0</title>
-    <link>https://github.com/nestjs/nest/releases/tag/v12.0.0</link>
-    <guid isPermaLink="true">https://github.com/nestjs/nest/releases/tag/v12.0.0</guid>
-    <description><![CDATA[# NestJS v12.0.0
-
-NestJS 12 is centered around **ESM-ready packages**, **first-class Standard Schema support** for validation and serialization, a **rebuilt CLI**, and **native observability** through the new `@nestjs/observe` SDK.
-
-Existing CommonJS applications keep working — migrating your own code to ESM is entirely optional.
-
-📖 Full migration guide 
-
----
-
-## Upgrading
-
-Upgrade the CLI first, since the upgrade command ships with it:
-
-```bash
-npm i -g @nestjs/cli@latest
-```
-
-Then, from the root of your project:
-
-```bash
-nest upgrade
-```
-
-`nest upgrade` moves every `@nestjs/*` package to its v12-compatible major at once and applies the mechanical parts of the migration for you — `nest-cli.json` webpack options, the GraphQL `playground` → `graphiql` rename and subscriptions transport swap, the NATS package replacement, `@nestjs/config` validation options, Jest and Joi bumps — then prints a report of everything it changed and everything you still need to review
-
-... (truncated)]]></description>
-    <pubDate>Thu, 27 Aug 2026 12:23:49 GMT</pubDate>
   </item>
 </channel>
 </rss>
