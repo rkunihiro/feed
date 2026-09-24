@@ -5,8 +5,127 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Wed, 23 Sep 2026 22:01:56 GMT</lastBuildDate>
+  <lastBuildDate>Thu, 24 Sep 2026 22:02:02 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-09-24) (release-2026-09-24)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-24</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-24</guid>
+    <description><![CDATA[## General Highlights
+* **Dependency Update**: Updated to the latest SDK module versions
+
+## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/service/aiops`: [v1.16.0](service/aiops/CHANGELOG.md#v1160-2026-09-24)
+ * **Feature**: Enable schema-based (de)serialization for this service.
+* `github.com/aws/aws-sdk-go-v2/service/amplifybackend`: [v1.42.0](service/amplifybackend/CHANGELOG.md#v1420-2026-09-24)
+ * **Feature**: Enable schema-based (de)serialization for this service.
+* `github.com/aws/aws-sdk-go-v2/service/amplifyuibuilder`: [v1.38.0](service/amplifyuibuilder/CHANGELOG.md#v1380-2026-09-24)
+ * **Feature**: Enable schema-based (de)serialization for this service.
+* `github.com/aws/aws-sdk-go-v2/service/apigateway`: [v1.50.0](service/apigateway/CHANGELOG.md#v1500-2026-09-24)
+ * **Feature**: Enable schema-based (de)serialization for this service.
+* `github.com/aws/aws-sdk-go-v2/service/apigatewaymanagementapi`: [v1.39.0](service/apigatewaymanagementapi/CHANGELOG.md#v1390-2026-09-24)
+
+
+... (truncated)]]></description>
+    <pubDate>Thu, 24 Sep 2026 18:54:20 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1140.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1140.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1140.0</guid>
+    <description><![CDATA[#### 3.1140.0(2026-09-24)
+
+##### Documentation Changes
+
+* **client-route53resolver:** Documentation updates for Route 53 Resolver. Clarifies which Outpost Resolver operations apply to first-generation AWS Outposts and that Resolver is managed automatically on second-generation Outposts. Adds Local Network Interface subnet compatibility notes for Resolver endpoints. (b4432aba)
+* **client-iot:** Fixed ListV2LoggingLevels and DeleteV2LoggingLevel documentation to include all supported target-types (4dcf76d5)
+
+##### New Features
+
+* **clients:** update client endpoints as of 2026-09-24 (29a8566c)
+* **client-eventbridgev2:** Introducing Amazon EventBridge enhanced Custom event bus, a new shareable event bus for organizational-scale event-driven applications feature ordered delivery, deduplication, open event formats, and cross-account bus sharing. (69fbe6a2)
+* **client-datazone:** Amazon DataZone now supports the TOOLING blueprint category on CreateEnvironmentBlueprint, UpdateEnvironmentBlue
+
+... (truncated)]]></description>
+    <pubDate>Thu, 24 Sep 2026 18:53:05 GMT</pubDate>
+  </item>
+  <item>
+    <title>[mrdoob/three.js] r186</title>
+    <link>https://github.com/mrdoob/three.js/releases/tag/r186</link>
+    <guid isPermaLink="true">https://github.com/mrdoob/three.js/releases/tag/r186</guid>
+    <description><![CDATA[- Global
+ - Add linting for tsl/. #34488 (@ycw)
+ - Clean up. #34499 (@Mugen87)
+- AnimationObjectGroup
+ - Fix stale index bookkeeping in uncache and unsubscribe_. #34035 (@sean-kim05, @Mugen87)
+- Backend
+ - `Renderer`: Add `resetState` function. #33877 (@pepperoni505, @Mugen87)
+- Backends
+ - Don't scale render target viewports by the pixel ratio. #34333 (@mrdoob, @claude)
+- BatchedMesh
+ - Mark visibility dirty in setGeometryIdAt. #34096 (@wrangelvid)
+- BezierInterpolant
+ - Make `interpolate_` more robust. #33934 (@Mugen87)
+- Bindings
+ - Remove cached bind groups in `_destroyBindings`. #33954 (@Mugen87)
+ - Fix `_destroyBindings`. #34014 (@Mugen87)
+ - Fix stale storage buffer attributes. #34388 (@Mugen87)
+- BufferGeometry
+ - Clean up serialization/deserilization. #34044 (@Mugen87)
+- Core
+ - Fix some `copy` and `toJSON` implementations. #34083 (@Mugen87)
+ - Don't check against default values in `toJSON`. #34178 (@Mugen87)
+ - Initialize render targets with valid dimens
+
+... (truncated)]]></description>
+    <pubDate>Thu, 24 Sep 2026 14:35:44 GMT</pubDate>
+  </item>
+  <item>
+    <title>[BabylonJS/Babylon.js] 9.28.0</title>
+    <link>https://github.com/BabylonJS/Babylon.js/releases/tag/9.28.0</link>
+    <guid isPermaLink="true">https://github.com/BabylonJS/Babylon.js/releases/tag/9.28.0</guid>
+    <description><![CDATA[### Addons
+
+- Atmosphere: only attach the PBR material plugin to materials in the atmosphere's scene - by increasinglyHuman (#18934)
+
+### Core
+
+- StandardMaterial: depth pre-pass honours every alpha source, and alphaCutOff is bound for all alpha-tested materials - by increasinglyHuman (#18936)
+- Complete cube / prefiltered texture load contract - [_Bug Fix_] by bkaradzic-microsoft (#18874)
+- Add root motion for animation groups: RootMotionClip and RootMotionController - by Pryme8 (#18908)
+- Use nearest sampling for Gaussian Splatting data textures - by luokn (#18933)
+- Fix WGSL vPartIndex redefinition when combining Gaussian Splatting material plugins - by raymondyfei (#18931)
+
+### Loaders
+
+- OBJFileLoader: Fix AssetContainer handling and add opt-in texture loading waits - by noname0310 (#18895)]]></description>
+    <pubDate>Thu, 24 Sep 2026 07:46:15 GMT</pubDate>
+  </item>
+  <item>
+    <title>[bluesky-social/social-app] v1.133.0 (1.133.0)</title>
+    <link>https://github.com/bluesky-social/social-app/releases/tag/1.133.0</link>
+    <guid isPermaLink="true">https://github.com/bluesky-social/social-app/releases/tag/1.133.0</guid>
+    <description><![CDATA[## What's Changed
+* Create Mod Inbox settings screen by @ds-boyce in 
+* Create mod inbox report details screen by @ds-boyce in 
+* Use title case for Starter Pack by @ds-boyce in 
+* APP-3031: Fix contact imports after Expo 57 by @mozzius in 
+* Migrate Expo image manipulator API by @mozzius in 
+* Add carousel Slack alerts for nightly Maestro failures by @mozzius in 
+* Create Mod Inbox action details screen by @ds-boyce in 
+* Bump version from 1.132.0 to 1.133.0 by @mozzius in 
+* Add more data to trending metrics by @ds-boyce in 
+* Fix Android thread number alignment across font scales by @ds-boyce in 
+* Restore expanded post styles by @vineyardbovines in 
+* Move repository instructions to AGENTS.md by @mozzius in 
+* Fix hidden adult content takes time to appear by @abulenok in 
+* Remove content visibility + SP search feature flags by @mozzius in 
+* Remove native Reanimated dependency array by @mozzius in 
+* Use useEffectEvent for effects with deliberately narrow deps by @
+
+... (truncated)]]></description>
+    <pubDate>Wed, 23 Sep 2026 23:26:09 GMT</pubDate>
+  </item>
   <item>
     <title>[modelcontextprotocol/typescript-sdk] @modelcontextprotocol/server-legacy@2.1.0</title>
     <link>https://github.com/modelcontextprotocol/typescript-sdk/releases/tag/%40modelcontextprotocol/server-legacy%402.1.0</link>
@@ -67,26 +186,6 @@
     <pubDate>Wed, 23 Sep 2026 08:00:20 GMT</pubDate>
   </item>
   <item>
-    <title>[openai/codex] 0.156.0 (rust-v0.156.0)</title>
-    <link>https://github.com/openai/codex/releases/tag/rust-v0.156.0</link>
-    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.156.0</guid>
-    <description><![CDATA[## New Features
-
-- Choose an optional fullscreen UI with `/tui` for your next launch, including transcript search, mouse selection, and right-click copying. (#46732, #46734, #46883, #46895)
-- Voice conversations are enabled by default, with an F8 toggle, a `/voice settings` picker, and bundled audio runtimes for Linux and Windows. (#44921, #46071, #44622, #44714, #44922)
-- Explore account usage, token totals, and plugin and skill activity through the `/usage` analytics dashboard. (#45764, #45769)
-- Filter tasks by status and create worktree sessions from the agent command center; worktree support is now enabled by default. (#46839, #45276, #44870)
-- Customize the terminal with six new themes and view supported Mermaid diagrams and display equations directly in responses. (#46504, #46054, #45612)
-- Update the local background server through `/daemon`, or bypass it with `--no-daemon`. (#45854, #46088)
-
-## Bug Fixes
-
-- Preserve streamed answers and plans when turns fail, are interrupted, 
-
-... (truncated)]]></description>
-    <pubDate>Tue, 22 Sep 2026 19:51:01 GMT</pubDate>
-  </item>
-  <item>
     <title>[withastro/astro] @astrojs/ts-content-mapper@0.2.0</title>
     <link>https://github.com/withastro/astro/releases/tag/%40astrojs/ts-content-mapper%400.2.0</link>
     <guid isPermaLink="true">https://github.com/withastro/astro/releases/tag/%40astrojs/ts-content-mapper%400.2.0</guid>
@@ -94,43 +193,6 @@
 
 - #18050 `cea7da5` Thanks @Princesseuh! - Adds the initial release of the TypeScript content mapper for Astro files.]]></description>
     <pubDate>Tue, 22 Sep 2026 18:55:02 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-09-22) (release-2026-09-22)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-22</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-22</guid>
-    <description><![CDATA[## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/apigateway`: [v1.49.0](service/apigateway/CHANGELOG.md#v1490-2026-09-22)
- * **Feature**: API Gateway now supports two new security policies for REST APIs and custom domain names, SecurityPolicy-TLS13-1-2-Ext2-PQ-2025-09 (TLS 1.3 1.2 with post-quantum cryptography) and SecurityPolicy-TLS13-1-2-Ext2-FIPS-PQ-2025-09 (adds FIPS). Both retain legacy algorithms for backward compatibility.
- * **Feature**: Enable schema-based (de)serialization for this service.
-* `github.com/aws/aws-sdk-go-v2/service/cloudwatchomni`: [v1.0.0](service/cloudwatchomni/CHANGELOG.md#v100-2026-09-22)
- * **Release**: New AWS service client module
- * **Feature**: Amazon CloudWatch Omni is now generally available, an AI-powered unified observability for AI agents, applications, and infrastructure. As part of it, organization centralization rules now support cross-account context graph centralization.
-* `github.com/aws/aws-sdk-go-v2/service/ec2`: [v1.336.0](se
-
-... (truncated)]]></description>
-    <pubDate>Tue, 22 Sep 2026 18:50:59 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-js-v3] v3.1138.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1138.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1138.0</guid>
-    <description><![CDATA[#### 3.1138.0(2026-09-22)
-
-##### Chores
-
-* **codegen:** sync for MetricsRecorder support and core error/retry fixes (#8312) (9a104768)
-* **middleware-sdk-s3:** add feature ID 'S3_REGION_REDIRECT' (#8311) (f8b0f8d3)
-
-##### New Features
-
-* **clients:** update client endpoints as of 2026-09-22 (e854d54a)
-* **client-glue:** Adding two new fields for Glue Materialized Views feature - (1) SubObjectsStatistics and (2) SparkPipelineInfo. (32b7228c)
-* **client-cloudwatchomni:** Amazon CloudWatch Omni is now generally available, an AI-powered unified observability for AI agents, applications, and infrastructure. As part of it, organization centralization rules now support cross-account context graph centralization. (f4c9a42a)
-* **client-observabilityadmin:** Amazon CloudWatch Omni is now generally available, an AI-powered unified observability for AI agents, applications, and infrastructure. Centralization now supports context graph for multi-account resource discovery, and dataset integrations 
-
-... (truncated)]]></description>
-    <pubDate>Tue, 22 Sep 2026 18:45:49 GMT</pubDate>
   </item>
   <item>
     <title>[pnpm/pnpm] pnpm 12.6 (v12.6.0)</title>
@@ -363,23 +425,6 @@ This is a big step towards Lexical 1.0, the next few releases are expected to be
 
 ## Contributors]]></description>
     <pubDate>Thu, 17 Sep 2026 15:00:30 GMT</pubDate>
-  </item>
-  <item>
-    <title>[BabylonJS/Babylon.js] 9.27.0</title>
-    <link>https://github.com/BabylonJS/Babylon.js/releases/tag/9.27.0</link>
-    <guid isPermaLink="true">https://github.com/BabylonJS/Babylon.js/releases/tag/9.27.0</guid>
-    <description><![CDATA[### Core
-
-- Add KHR_interactivity export support - [_New Feature_] by RaananW (#18914)
-
-### Loaders
-
-- Add KHR_interactivity export support - [_New Feature_] by RaananW (#18914)
-
-### Serializers
-
-- Add KHR_interactivity export support - [_New Feature_] by RaananW (#18914)]]></description>
-    <pubDate>Thu, 17 Sep 2026 07:46:12 GMT</pubDate>
   </item>
   <item>
     <title>[jsdom/jsdom] v30.1.0</title>
@@ -635,37 +680,6 @@ This release hardens request configuration and proxy handling, adds caller diagn
     <pubDate>Wed, 09 Sep 2026 08:46:10 GMT</pubDate>
   </item>
   <item>
-    <title>[mrdoob/three.js] r186</title>
-    <link>https://github.com/mrdoob/three.js/releases/tag/r186</link>
-    <guid isPermaLink="true">https://github.com/mrdoob/three.js/releases/tag/r186</guid>
-    <description><![CDATA[- Global
- - Add linting for tsl/. #34488 (@ycw)
- - Clean up. #34499 (@Mugen87)
-- AnimationObjectGroup
- - Fix stale index bookkeeping in uncache and unsubscribe_. #34035 (@sean-kim05, @Mugen87)
-- Backend
- - `Renderer`: Add `resetState` function. #33877 (@pepperoni505, @Mugen87)
-- Backends
- - Don't scale render target viewports by the pixel ratio. #34333 (@mrdoob, @claude)
-- BatchedMesh
- - Mark visibility dirty in setGeometryIdAt. #34096 (@wrangelvid)
-- BezierInterpolant
- - Make `interpolate_` more robust. #33934 (@Mugen87)
-- Bindings
- - Remove cached bind groups in `_destroyBindings`. #33954 (@Mugen87)
- - Fix `_destroyBindings`. #34014 (@Mugen87)
- - Fix stale storage buffer attributes. #34388 (@Mugen87)
-- BufferGeometry
- - Clean up serialization/deserilization. #34044 (@Mugen87)
-- Core
- - Fix some `copy` and `toJSON` implementations. #34083 (@Mugen87)
- - Don't check against default values in `toJSON`. #34178 (@Mugen87)
- - Initialize render targets with valid dimens
-
-... (truncated)]]></description>
-    <pubDate>Tue, 08 Sep 2026 19:16:16 GMT</pubDate>
-  </item>
-  <item>
     <title>[typescript-eslint/typescript-eslint] v8.70.0</title>
     <link>https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.70.0</link>
     <guid isPermaLink="true">https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.70.0</guid>
@@ -893,31 +907,6 @@ Full Release Notes]]></description>
     <pubDate>Thu, 03 Sep 2026 16:48:32 GMT</pubDate>
   </item>
   <item>
-    <title>[bluesky-social/social-app] v1.132.0 (1.132.0)</title>
-    <link>https://github.com/bluesky-social/social-app/releases/tag/1.132.0</link>
-    <guid isPermaLink="true">https://github.com/bluesky-social/social-app/releases/tag/1.132.0</guid>
-    <description><![CDATA[## What's Changed
-* Drop package.json version by @vineyardbovines in 
-* Add Blink Prometheus listener by @amckinley in 
-* Fix "Tried to synchronously call a Remote Function" crash by @tomekzaw in 
-* Add graceful shutdown to Blink by @amckinley in 
-* Make Safelink event replay idempotent by @amckinley in 
-* Back to v1.132.0 by @mozzius in 
-* Fix hairline divider not visible by @abulenok in 
-* Reland "Bump React Compiler to stable 1.0.0" by @tomekzaw in 
-* [AA] Set `maxAge: Infinity` on age assurance cache by @mozzius in 
-* Adds a small padding for labeller avatars in group chat 'Add people' selector by @RetroSunstar in 
-* Explain trending topics in options menu by @vineyardbovines in 
-* [APP-2922] Fix cached starter pack navigation by @vineyardbovines in 
-* Overfetch trending topics before filtering by @ds-boyce in 
-* Revert "Send beta user state with AppView requests (#11474)" by @ds-boyce in 
-* Fix iOS message input height after sending by @mozzius in 
-* Send an intege
-
-... (truncated)]]></description>
-    <pubDate>Thu, 03 Sep 2026 10:51:43 GMT</pubDate>
-  </item>
-  <item>
     <title>[servo/servo] v0.5.0</title>
     <link>https://github.com/servo/servo/releases/tag/v0.5.0</link>
     <guid isPermaLink="true">https://github.com/servo/servo/releases/tag/v0.5.0</guid>
@@ -1072,6 +1061,39 @@ Run `dprint upgrade` or see
 
 * enforce configuration hook contracts (5c4d05b)]]></description>
     <pubDate>Fri, 28 Aug 2026 22:23:03 GMT</pubDate>
+  </item>
+  <item>
+    <title>[jestjs/jest] v30.5.0</title>
+    <link>https://github.com/jestjs/jest/releases/tag/v30.5.0</link>
+    <guid isPermaLink="true">https://github.com/jestjs/jest/releases/tag/v30.5.0</guid>
+    <description><![CDATA[On a personal note: King Harald V of Norway passed away this morning. He ascended the throne 35 years ago, two months before I was born. This release is dedicated to his memory. Hvil i fred 🇳🇴
+
+---
+
+This is a big release. It touches `jest-runtime`, `jest-resolve` and `jest-haste-map` in many places, and with this many changes there might be regressions 😬. If your suite behaves differently after upgrading, please open an issue.
+
+# Highlights
+
+## `whenCalledWith`
+
+Mock functions can now configure return values per argument list, contributed by @timkindberg (#16053):
+
+```js
+const fn = jest.fn;
+fn.whenCalledWith('apple').mockReturnValue('red');
+fn.whenCalledWith('banana').mockReturnValue('yellow');
+fn.whenCalledWith(expect.any(Number)).mockReturnValue('numeric');
+
+fn('apple'); // 'red'
+fn('banana'); // 'yellow'
+fn(42); // 'numeric'
+fn('grape'); // undefined
+```
+
+The returned object is a real `Mock`, so `mockReturnValueOnce`, `mockResolvedValue`, `mockImplementati
+
+... (truncated)]]></description>
+    <pubDate>Fri, 28 Aug 2026 08:29:30 GMT</pubDate>
   </item>
 </channel>
 </rss>
