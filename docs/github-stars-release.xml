@@ -5,49 +5,118 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Thu, 24 Sep 2026 22:02:02 GMT</lastBuildDate>
+  <lastBuildDate>Fri, 25 Sep 2026 22:02:12 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
   <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-09-24) (release-2026-09-24)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-24</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-24</guid>
-    <description><![CDATA[## General Highlights
-* **Dependency Update**: Updated to the latest SDK module versions
+    <title>[aws/aws-sdk-js-v3] v3.1141.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1141.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1141.0</guid>
+    <description><![CDATA[#### 3.1141.0(2026-09-25)
 
-## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/aiops`: [v1.16.0](service/aiops/CHANGELOG.md#v1160-2026-09-24)
- * **Feature**: Enable schema-based (de)serialization for this service.
-* `github.com/aws/aws-sdk-go-v2/service/amplifybackend`: [v1.42.0](service/amplifybackend/CHANGELOG.md#v1420-2026-09-24)
- * **Feature**: Enable schema-based (de)serialization for this service.
-* `github.com/aws/aws-sdk-go-v2/service/amplifyuibuilder`: [v1.38.0](service/amplifyuibuilder/CHANGELOG.md#v1380-2026-09-24)
- * **Feature**: Enable schema-based (de)serialization for this service.
-* `github.com/aws/aws-sdk-go-v2/service/apigateway`: [v1.50.0](service/apigateway/CHANGELOG.md#v1500-2026-09-24)
- * **Feature**: Enable schema-based (de)serialization for this service.
-* `github.com/aws/aws-sdk-go-v2/service/apigatewaymanagementapi`: [v1.39.0](service/apigatewaymanagementapi/CHANGELOG.md#v1390-2026-09-24)
+##### Chores
 
-
-... (truncated)]]></description>
-    <pubDate>Thu, 24 Sep 2026 18:54:20 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-js-v3] v3.1140.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1140.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1140.0</guid>
-    <description><![CDATA[#### 3.1140.0(2026-09-24)
-
-##### Documentation Changes
-
-* **client-route53resolver:** Documentation updates for Route 53 Resolver. Clarifies which Outpost Resolver operations apply to first-generation AWS Outposts and that Resolver is managed automatically on second-generation Outposts. Adds Local Network Interface subnet compatibility notes for Resolver endpoints. (b4432aba)
-* **client-iot:** Fixed ListV2LoggingLevels and DeleteV2LoggingLevel documentation to include all supported target-types (4dcf76d5)
+* **codegen:** smithy-aws-typescript-codegen 0.54.0 (#8314) (ad80ce3e)
 
 ##### New Features
 
-* **clients:** update client endpoints as of 2026-09-24 (29a8566c)
-* **client-eventbridgev2:** Introducing Amazon EventBridge enhanced Custom event bus, a new shareable event bus for organizational-scale event-driven applications feature ordered delivery, deduplication, open event formats, and cross-account bus sharing. (69fbe6a2)
-* **client-datazone:** Amazon DataZone now supports the TOOLING blueprint category on CreateEnvironmentBlueprint, UpdateEnvironmentBlue
+* **client-connect:** Agent Privacy During Hold is a new privacy capability for Amazon Connect Voice that prevents agent audio from being captured in call recordings or Contact Lens conversational analytics during hold. When enabled, agents are automatically muted on entering hold and unmuted on resuming the contact (03527f9e)
+* **client-qconnect:** Release shapes for the proactive agentic recommendations and the multi-knowledge base search features. Increases the maximum length of QuickResponseContent. (e008332b)
+* **client-bedrock-agent:** Adds support for calling VPC configuration API's in Bedrock. These configurations allow the use of On Prem connectors in Bedrock Managed Knowledge bases (18524dc6)
+* **client-mediaconnect:** This release adds support for RTMP push router outputs in AWS Elemental MediaConnect. (5bd8d80b)
+* **client-securityagent:** Thi
 
 ... (truncated)]]></description>
-    <pubDate>Thu, 24 Sep 2026 18:53:05 GMT</pubDate>
+    <pubDate>Fri, 25 Sep 2026 18:50:46 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-09-25) (release-2026-09-25)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-25</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-25</guid>
+    <description><![CDATA[## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/service/arcregionswitch`: [v1.20.0](service/arcregionswitch/CHANGELOG.md#v1200-2026-09-25)
+ * **Feature**: Adds a service quota checker to Region switch to verify quota parity between your primary and standby Region, and automatically submit quota limit increases. Adds an optional EC2 Auto Scaling and ECS setting that waits for instances or tasks in the scaled-up Region to be healthy in target groups.
+* `github.com/aws/aws-sdk-go-v2/service/bedrockagent`: [v1.67.0](service/bedrockagent/CHANGELOG.md#v1670-2026-09-25)
+ * **Feature**: Adds support for calling VPC configuration API's in Bedrock. These configurations allow the use of On Prem connectors in Bedrock Managed Knowledge bases
+* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcorecontrol`: [v1.70.0](service/bedrockagentcorecontrol/CHANGELOG.md#v1700-2026-09-25)
+ * **Feature**: Amazon Bedrock AgentCore Payments now supports credential rotation for payment connectors, letting yo
+
+... (truncated)]]></description>
+    <pubDate>Fri, 25 Sep 2026 18:49:23 GMT</pubDate>
+  </item>
+  <item>
+    <title>[pnpm/pnpm] pnpm 11.28 (v11.28.0)</title>
+    <link>https://github.com/pnpm/pnpm/releases/tag/v11.28.0</link>
+    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v11.28.0</guid>
+    <description><![CDATA[pnpm 11.28.0 adds the `forceIgnoresPlatform` setting and `pnpm update --peer`, and fixes many bugs in `pnpm deploy`, `--filter`, `nodeLinker: hoisted`, and custom `modulesDir` setups. This release also carries security fixes for shell completion, bin shims on Nix, lifecycle scripts inside a custom `modulesDir`, and `userAgent` placeholders in `pnpm-workspace.yaml`.
+
+### Minor Changes
+
+* Added the `forceIgnoresPlatform` setting. When it is `false`, `pnpm install --force` skips optional dependencies whose `os`, `cpu` or `libc` do not match the host instead of installing all of them. The default stays `true` #6133.
+
+### Patch Changes
+
+#### Security
+
+* pnpm no longer expands environment variables in a `userAgent` set in a project's `pnpm-workspace.yaml`. A `userAgent` with a placeholder in that file is now ignored. Before this fix, pnpm sent the variable's value to the configured registry #15415.
+
+* pnpm no longer treats packages inside a custom `modulesDir` as workspace projec
+
+... (truncated)]]></description>
+    <pubDate>Fri, 25 Sep 2026 10:39:54 GMT</pubDate>
+  </item>
+  <item>
+    <title>[nodejs/undici] v6.29.0</title>
+    <link>https://github.com/nodejs/undici/releases/tag/v6.29.0</link>
+    <guid isPermaLink="true">https://github.com/nodejs/undici/releases/tag/v6.29.0</guid>
+    <description><![CDATA[## What's Changed
+* [v6.x] fix(retry): settle exposed body on terminal failure by @mcollina in 
+* Backport upgrade diagnostics lifecycle fixes to v6.x by @BridgeAR in 
+* test: synchronize the issue-3356 body timeout by @BridgeAR in 
+
+
+**Full Changelog**:]]></description>
+    <pubDate>Fri, 25 Sep 2026 09:42:48 GMT</pubDate>
+  </item>
+  <item>
+    <title>[bluesky-social/atproto] @atproto/lex-resolver@0.3.0</title>
+    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/lex-resolver%400.3.0</link>
+    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/lex-resolver%400.3.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- #5499 `210907c` Thanks @fatfingers23! - Always trigger the on<Name>Result and on<Name>Error hooks, even when values are resolved from hooks.
+
+- #5499 `210907c` Thanks @fatfingers23! - Perform lexicon document validation after `onFetch`, allowing it not to perform any validation
+
+- #5499 `210907c` Thanks @fatfingers23! - Avoid encoding/decoding of lexicon URIs
+
+### Patch Changes
+
+- #5499 `210907c` Thanks @fatfingers23! - Propagate abort `signal` to `onFetch` hook
+- Updated dependencies [`210907c`]:
+ - @atproto/lex-document@0.1.12]]></description>
+    <pubDate>Fri, 25 Sep 2026 09:29:25 GMT</pubDate>
+  </item>
+  <item>
+    <title>[openai/codex] 0.157.0 (rust-v0.157.0)</title>
+    <link>https://github.com/openai/codex/releases/tag/rust-v0.157.0</link>
+    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.157.0</guid>
+    <description><![CDATA[## New Features
+
+- Added GPT-6 Sol and Luna, including Amazon Bedrock support and migration prompts for older models. (#47332, #47347)
+- Enabled fullscreen transcripts by default and added Shift-click to extend text selections. (#47178, #47414)
+- Enabled automatic background-server startup for eligible interactive sessions, with recovery choices when server settings are incompatible. (#47179, #47318)
+- Added an `f` shortcut to fork conversations open in another app, preserving drafts and queued prompts. (#47185)
+- Made `/import` available in remote sessions and local background-server sessions. (#47317)
+- Improved terminal rendering with Unicode bullets, checkboxes, aligned equations, and optimization notation. (#47191, #47322)
+
+## Bug Fixes
+
+- Preserved active voice conversations when switching threads. (#47381)
+- Recovered unsent question answers into the composer when turns end, without disrupting active history searches. (#47422, #47423)
+- Respected tmux mouse settings and restored
+
+... (truncated)]]></description>
+    <pubDate>Fri, 25 Sep 2026 02:31:06 GMT</pubDate>
   </item>
   <item>
     <title>[mrdoob/three.js] r186</title>
@@ -195,25 +264,6 @@
     <pubDate>Tue, 22 Sep 2026 18:55:02 GMT</pubDate>
   </item>
   <item>
-    <title>[pnpm/pnpm] pnpm 12.6 (v12.6.0)</title>
-    <link>https://github.com/pnpm/pnpm/releases/tag/v12.6.0</link>
-    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v12.6.0</guid>
-    <description><![CDATA[pnpm 12.6.0 ships with automatic dependency deduplication, relocatable node_modules, package.yaml manifest editing, and --save-types support.
-
-### Minor Changes
-
-- `autoDedupe` deduplicates compatible dependency versions during installation #7258. Enable it in `pnpm-workspace.yaml` or use `pnpm install --auto-dedupe` or `pnpm add --auto-dedupe`. Frozen installs leave the lockfile unchanged.
-
-- `pnpm install`, `pnpm run`, and `pnpm exec` on macOS and Linux now reuse a `node_modules` directory and bin shims that moved or were copied together with their project #6937. The first command after the move checks the tree and records its new location, so project commands in `node_modules/.bin` keep working.
-
-- `pnpm add --save-types` saves available `@types/*` packages in `devDependencies` alongside registry dependencies #3868. Packages that declare bundled TypeScript types are skipped. Set `saveTypes: true` in `pnpm-workspace.yaml` to enable this by default.
-
-- `package.yaml` manifes
-
-... (truncated)]]></description>
-    <pubDate>Tue, 22 Sep 2026 17:08:42 GMT</pubDate>
-  </item>
-  <item>
     <title>[azat-io/eslint-plugin-perfectionist] v5.12.0</title>
     <link>https://github.com/azat-io/eslint-plugin-perfectionist/releases/tag/v5.12.0</link>
     <guid isPermaLink="true">https://github.com/azat-io/eslint-plugin-perfectionist/releases/tag/v5.12.0</guid>
@@ -247,29 +297,6 @@
 
 ... (truncated)]]></description>
     <pubDate>Tue, 22 Sep 2026 09:02:46 GMT</pubDate>
-  </item>
-  <item>
-    <title>[nodejs/undici] v8.11.0</title>
-    <link>https://github.com/nodejs/undici/releases/tag/v8.11.0</link>
-    <guid isPermaLink="true">https://github.com/nodejs/undici/releases/tag/v8.11.0</guid>
-    <description><![CDATA[## What's Changed
-* fix: complete upgrade diagnostics lifecycle by @BridgeAR in 
-* build(deps): bump step-security/harden-runner from 2.19.4 to 2.21.0 by @dependabot[bot] in 
-* fix(decompress): join a repeated content-encoding header by @luantaraschi in 
-* fix(cookies): keep a cookie named __proto__ in getCookies by @luantaraschi in 
-* build(deps-dev): bump jest from 30.5.0 to 30.5.1 by @dependabot[bot] in 
-* build(deps): bump got from 15.1.0 to 16.0.0 in /benchmarks by @dependabot[bot] in 
-* fix: selectively re-enable SIMD for ppc64 by @richardlau in 
-* use private fields for brand checks by @KhafraDev in 
-* fix(h2): do not unref a session with open streams by @kjsik11 in 
-* fix(h2): avoid pool fan-out during ALPN negotiation by @mcollina in 
-* fix issue #5715 by @KhafraDev in 
-* ci: extend macOS Node.js workflow timeout by @mcollina in 
-* fix(env-http-proxy-agent): NO_PROXY wildcard semantics by @mcollina in 
-* fix(h2): do not replay a request whose response already started after GOA
-
-... (truncated)]]></description>
-    <pubDate>Tue, 22 Sep 2026 06:51:13 GMT</pubDate>
   </item>
   <item>
     <title>[oxc-project/oxc] oxlint v1.85.0 (oxlint_v1.85.0)</title>
@@ -392,28 +419,6 @@ This is a big step towards Lexical 1.0, the next few releases are expected to be
 
 ... (truncated)]]></description>
     <pubDate>Thu, 17 Sep 2026 21:05:11 GMT</pubDate>
-  </item>
-  <item>
-    <title>[iii-hq/iii] iii 0.24.0 (iii/v0.24.0)</title>
-    <link>https://github.com/iii-hq/iii/releases/tag/iii/v0.24.0</link>
-    <guid isPermaLink="true">https://github.com/iii-hq/iii/releases/tag/iii/v0.24.0</guid>
-    <description><![CDATA[## What's Changed
-* docs(install): install from the harness template by @anthonyiscoding in 
-* docs(install): no-llm base template, wrap --flags, bring to docs/ by @anthonyiscoding in 
-* docs(install): add providers with compose::add, not worker-compose edits by @anthonyiscoding in 
-* docs(quickstart): remove intro video by @anthonyiscoding in 
-* fix(telemetry): case-insensitive III_TELEMETRY_ENABLED opt-out + docs by @anthonyiscoding in 
-* docs(welcome): remove intro video by @anthonyiscoding in 
-* docs(changelog): add 0.23 release notes by @guibeira in 
-* fix(compose): preserve local dependency workers by @guibeira in 
-* Remove inaccurate 'worker mesh' framing of iii by @anthonyiscoding in 
-* feat(compose): publish reliable mutation completion events by @mfpiccolo in 
-* docs(upgrading): add a coding-agent prompt for the Compose migration by @rohitg00 in 
-* feat(compose): include namespace in Linux process names by @guibeira in 
-* feat(compose): support full container settings in comp
-
-... (truncated)]]></description>
-    <pubDate>Thu, 17 Sep 2026 20:37:38 GMT</pubDate>
   </item>
   <item>
     <title>[vercel-labs/skills] v1.7.0</title>
@@ -621,33 +626,6 @@ This release hardens request configuration and proxy handling, adds caller diagn
 
 ... (truncated)]]></description>
     <pubDate>Sun, 13 Sep 2026 16:40:14 GMT</pubDate>
-  </item>
-  <item>
-    <title>[bluesky-social/atproto] @atproto-labs/fetch-node@0.4.0</title>
-    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto-labs/fetch-node%400.4.0</link>
-    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto-labs/fetch-node%400.4.0</guid>
-    <description><![CDATA[### Minor Changes
-
-- #5503 `f88aa58` Thanks @devinivy! - `safeFetchWrap` now applies its url policy — the protocol, custom port,
- hostname, forbidden-domain-name and literal-IP checks — to every request it
- issues, rather than only to the one it was handed. The policy runs again at
- dispatch time, which is the layer that observes each redirect hop, and a hop is
- refused before its connection is made.
-
- The dispatcher is installed even when `ssrfProtection` (or `allowPrivateIps`)
- relaxes the unicast requirement, so relaxing that no longer relaxes the
- remaining checks along with it. As a consequence, a custom `dispatcher` can no
- longer be supplied through the request init in that configuration.
-
- This requires undici's `Dispatcher.compose`, which is feature-detected rather
- than inferred from a version number: on a NodeJS whose bundled undici predates
- it, constructing a safe fetch now throws instead of issuing requests without the
- per-hop checks.
-
- Redirect handling itself is unchan
-
-... (truncated)]]></description>
-    <pubDate>Fri, 11 Sep 2026 01:12:51 GMT</pubDate>
   </item>
   <item>
     <title>[vitejs/vite] v8.3.0</title>
