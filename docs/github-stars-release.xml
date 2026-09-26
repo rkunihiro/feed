@@ -5,7 +5,7 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Fri, 25 Sep 2026 22:02:12 GMT</lastBuildDate>
+  <lastBuildDate>Sat, 26 Sep 2026 22:01:55 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
   <item>
     <title>[aws/aws-sdk-js-v3] v3.1141.0</title>
@@ -95,28 +95,6 @@
 - Updated dependencies [`210907c`]:
  - @atproto/lex-document@0.1.12]]></description>
     <pubDate>Fri, 25 Sep 2026 09:29:25 GMT</pubDate>
-  </item>
-  <item>
-    <title>[openai/codex] 0.157.0 (rust-v0.157.0)</title>
-    <link>https://github.com/openai/codex/releases/tag/rust-v0.157.0</link>
-    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.157.0</guid>
-    <description><![CDATA[## New Features
-
-- Added GPT-6 Sol and Luna, including Amazon Bedrock support and migration prompts for older models. (#47332, #47347)
-- Enabled fullscreen transcripts by default and added Shift-click to extend text selections. (#47178, #47414)
-- Enabled automatic background-server startup for eligible interactive sessions, with recovery choices when server settings are incompatible. (#47179, #47318)
-- Added an `f` shortcut to fork conversations open in another app, preserving drafts and queued prompts. (#47185)
-- Made `/import` available in remote sessions and local background-server sessions. (#47317)
-- Improved terminal rendering with Unicode bullets, checkboxes, aligned equations, and optimization notation. (#47191, #47322)
-
-## Bug Fixes
-
-- Preserved active voice conversations when switching threads. (#47381)
-- Recovered unsent question answers into the composer when turns end, without disrupting active history searches. (#47422, #47423)
-- Respected tmux mouse settings and restored
-
-... (truncated)]]></description>
-    <pubDate>Fri, 25 Sep 2026 02:31:06 GMT</pubDate>
   </item>
   <item>
     <title>[mrdoob/three.js] r186</title>
@@ -1072,6 +1050,32 @@ The returned object is a real `Mock`, so `mockReturnValueOnce`, `mockResolvedVal
 
 ... (truncated)]]></description>
     <pubDate>Fri, 28 Aug 2026 08:29:30 GMT</pubDate>
+  </item>
+  <item>
+    <title>[web-infra-dev/rspack] v2.2.0</title>
+    <link>https://github.com/web-infra-dev/rspack/releases/tag/v2.2.0</link>
+    <guid isPermaLink="true">https://github.com/web-infra-dev/rspack/releases/tag/v2.2.0</guid>
+    <description><![CDATA[## What's Changed
+
+## 🎉 See Announcing Rspack 2.2 for more details.
+
+### New Features 🎉
+* feat: implement generation-based memory cache eviction by @ahabhgk in 
+* feat: add idle cache compaction with interruption handling by @ahabhgk in 
+* feat(css): improve unicode handling and support more css modules cases, boost performance by @intellild in 
+* feat: integrate module code generation to the new cache by @ahabhgk in 
+* feat(cache): add fine-grained new cache options by @hardfist in 
+* feat(ids): add compat-hashed module ids by @LingyuCoder in 
+* feat: analyze dynamic imports in Promise.all destructuring by @JSerFeng in 
+* feat: integrate new cache into source map devtool plugin by @ahabhgk in 
+* feat(core): add compilation.runtimeTemplate by @kakiuwang-ui in 
+* feat(ids): add compact chunk ids by @LingyuCoder in 
+* feat(loader): support opt-in per-loader caching by @intellild in 
+### Performance 🚀
+* perf(binding): cache converted module original source by @SyMind i
+
+... (truncated)]]></description>
+    <pubDate>Wed, 26 Aug 2026 03:42:56 GMT</pubDate>
   </item>
 </channel>
 </rss>
