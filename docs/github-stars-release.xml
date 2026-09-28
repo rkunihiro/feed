@@ -5,64 +5,252 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Sun, 27 Sep 2026 22:01:58 GMT</lastBuildDate>
+  <lastBuildDate>Mon, 28 Sep 2026 22:02:29 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
   <item>
-    <title>[aws/aws-sdk-js-v3] v3.1141.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1141.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1141.0</guid>
-    <description><![CDATA[#### 3.1141.0(2026-09-25)
+    <title>[remix-run/remix] ui v0.11.0 (ui@0.11.0)</title>
+    <link>https://github.com/remix-run/remix/releases/tag/ui%400.11.0</link>
+    <guid isPermaLink="true">https://github.com/remix-run/remix/releases/tag/ui%400.11.0</guid>
+    <description><![CDATA[### Minor Changes
 
-##### Chores
-
-* **codegen:** smithy-aws-typescript-codegen 0.54.0 (#8314) (ad80ce3e)
-
-##### New Features
-
-* **client-connect:** Agent Privacy During Hold is a new privacy capability for Amazon Connect Voice that prevents agent audio from being captured in call recordings or Contact Lens conversational analytics during hold. When enabled, agents are automatically muted on entering hold and unmuted on resuming the contact (03527f9e)
-* **client-qconnect:** Release shapes for the proactive agentic recommendations and the multi-knowledge base search features. Increases the maximum length of QuickResponseContent. (e008332b)
-* **client-bedrock-agent:** Adds support for calling VPC configuration API's in Bedrock. These configurations allow the use of On Prem connectors in Bedrock Managed Knowledge bases (18524dc6)
-* **client-mediaconnect:** This release adds support for RTMP push router outputs in AWS Elemental MediaConnect. (5bd8d80b)
-* **client-securityagent:** Thi
-
-... (truncated)]]></description>
-    <pubDate>Fri, 25 Sep 2026 18:50:46 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-09-25) (release-2026-09-25)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-25</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-25</guid>
-    <description><![CDATA[## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/arcregionswitch`: [v1.20.0](service/arcregionswitch/CHANGELOG.md#v1200-2026-09-25)
- * **Feature**: Adds a service quota checker to Region switch to verify quota parity between your primary and standby Region, and automatically submit quota limit increases. Adds an optional EC2 Auto Scaling and ECS setting that waits for instances or tasks in the scaled-up Region to be healthy in target groups.
-* `github.com/aws/aws-sdk-go-v2/service/bedrockagent`: [v1.67.0](service/bedrockagent/CHANGELOG.md#v1670-2026-09-25)
- * **Feature**: Adds support for calling VPC configuration API's in Bedrock. These configurations allow the use of On Prem connectors in Bedrock Managed Knowledge bases
-* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcorecontrol`: [v1.70.0](service/bedrockagentcorecontrol/CHANGELOG.md#v1700-2026-09-25)
- * **Feature**: Amazon Bedrock AgentCore Payments now supports credential rotation for payment connectors, letting yo
-
-... (truncated)]]></description>
-    <pubDate>Fri, 25 Sep 2026 18:49:23 GMT</pubDate>
-  </item>
-  <item>
-    <title>[pnpm/pnpm] pnpm 11.28 (v11.28.0)</title>
-    <link>https://github.com/pnpm/pnpm/releases/tag/v11.28.0</link>
-    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v11.28.0</guid>
-    <description><![CDATA[pnpm 11.28.0 adds the `forceIgnoresPlatform` setting and `pnpm update --peer`, and fixes many bugs in `pnpm deploy`, `--filter`, `nodeLinker: hoisted`, and custom `modulesDir` setups. This release also carries security fixes for shell completion, bin shims on Nix, lifecycle scripts inside a custom `modulesDir`, and `userAgent` placeholders in `pnpm-workspace.yaml`.
-
-### Minor Changes
-
-* Added the `forceIgnoresPlatform` setting. When it is `false`, `pnpm install --force` skips optional dependencies whose `os`, `cpu` or `libc` do not match the host instead of installing all of them. The default stays `true` #6133.
+- Preserve client-owned attributes during frame reloads with `data-rmx-preserve-attrs="class data-theme"` on any matched element, including `<html>` and `<body>` (see #11809). The named attributes keep their live values or absence while other attributes and children reconcile normally. The incoming HTML controls the list; clearing it or removing a name returns those attributes to normal reconciliation.
 
 ### Patch Changes
 
-#### Security
+- Send `X-Remix-Frame: true` from the default browser resolver for all frame loads, including top-frame navigation and reloads. Named frames also send `X-Remix-Target`, allowing handlers to identify and target frame requests consistently across browser and server rendering (see #11941).
 
-* pnpm no longer expands environment variables in a `userAgent` set in a project's `pnpm-workspace.yaml`. A `userAgent` with a placeholder in that file is now ignored. Before this fix, pnpm sent the variable's value to the configured registry #15415.
+- Treat marker-less HTML that starts with a doctype or `<html>` as a document reload, so pages rendered with `renderToString` can be navigated by the client runtime (see #11808).
 
-* pnpm no longer treats packages inside a custom `modulesDir` as workspace projec
+- Keep hash-only navigations within a fully loaded page and download requests under br
 
 ... (truncated)]]></description>
-    <pubDate>Fri, 25 Sep 2026 10:39:54 GMT</pubDate>
+    <pubDate>Mon, 28 Sep 2026 21:46:01 GMT</pubDate>
+  </item>
+  <item>
+    <title>[modelcontextprotocol/typescript-sdk] @modelcontextprotocol/server@2.2.0</title>
+    <link>https://github.com/modelcontextprotocol/typescript-sdk/releases/tag/%40modelcontextprotocol/server%402.2.0</link>
+    <guid isPermaLink="true">https://github.com/modelcontextprotocol/typescript-sdk/releases/tag/%40modelcontextprotocol/server%402.2.0</guid>
+    <description><![CDATA[### Patch Changes
+
+- #2885 `9dd722f` Thanks @claude! - Sending a notification on a closed connection no longer produces a briefly unhandled promise rejection (seen as `unhandledrejection` on Cloudflare Workers) in addition to the returned rejection.
+
+- #2778 `e3fb9ed` Thanks @vjymisal0! - Fix a stack overflow in `createMcpHandler` when the factory returns the same server instance for more than one request. Returning a fresh instance per request is still required.
+
+- #2651 `c55efa6` Thanks @sushantkumar23! - `createMcpHandler` now ends a `subscriptions/listen` stream right after the acknowledgement when it honored none of the requested notification types, instead of holding the stream open with nothing to deliver. The client receives the acknowledgement and then the `resultType: "complete"` result. Streams that honor at least one type are unchanged.
+
+- Updated dependencies [`edd12e2`]:
+ - @modelcontextprotocol/core@2.2.0]]></description>
+    <pubDate>Mon, 28 Sep 2026 19:07:55 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-09-28) (release-2026-09-28)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-28</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-28</guid>
+    <description><![CDATA[## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/feature/s3/transfermanager`: [v0.4.11](feature/s3/transfermanager/CHANGELOG.md#v0411-2026-09-28)
+ * **Bug Fix**: Add reassembly check for GetObject parts mode so mismatch between response part range and calculated position will throw error
+* `github.com/aws/aws-sdk-go-v2/service/agentregistry`: [v1.7.0](service/agentregistry/CHANGELOG.md#v170-2026-09-28)
+ * **Feature**: AWS Agent Registry adds support for custom metadata. Discovery APIs now return custom metadata on registry records and support filtering by metadata fields. Semantic search includes custom metadata for improved relevance. Filter customMetadata fields using eq, ne, and in operators.
+* `github.com/aws/aws-sdk-go-v2/service/agentregistrycontrol`: [v1.7.0](service/agentregistrycontrol/CHANGELOG.md#v170-2026-09-28)
+ * **Feature**: AWS Agent Registry adds support for custom metadata. Define a typed metadata schema on your registry and attach structured key-value metadata to
+
+... (truncated)]]></description>
+    <pubDate>Mon, 28 Sep 2026 18:58:34 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1142.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1142.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1142.0</guid>
+    <description><![CDATA[#### 3.1142.0(2026-09-28)
+
+##### Chores
+
+* **ci:** add format-check workflow for lint and formatting (#8316) (6f16c433)
+
+##### New Features
+
+* **client-billing:** Adds support for (a) listing Business Support account charges via ListBusinessSupportAccountCharges and (b) subscription history via ListBusinessSupportSubscriptionHistory through the AWS Billing API. (6352ff06)
+* **client-eks:** An optional customer provided prefix used to construct the hostname of the Argo CD server endpoint for EKS Argo CD Capability. (373ebbd8)
+* **client-agent-registry-control:** AWS Agent Registry adds support for custom metadata. Define a typed metadata schema on your registry and attach structured key-value metadata to registry records. Schemas are additive only. Enforcement is progressive. Records show a compliance status computed against the current schema. (19adcfee)
+* **client-ec2:** API changes to AWS Client VPN to support device posture assessment and Cedar authorization policies (6afa3ce4)
+* **
+
+... (truncated)]]></description>
+    <pubDate>Mon, 28 Sep 2026 18:53:23 GMT</pubDate>
+  </item>
+  <item>
+    <title>[typescript-eslint/typescript-eslint] v8.71.0</title>
+    <link>https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.71.0</link>
+    <guid isPermaLink="true">https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.71.0</guid>
+    <description><![CDATA[## 8.71.0 (2026-09-28)
+
+### 🚀 Features
+
+- **eslint-plugin:** [no-unsafe-enum-assignment] add rule (#12732)
+
+### 🩹 Fixes
+
+- **eslint-plugin:** [switch-exhaustiveness-check] always sort literal cases in stable order (#12885)
+- **eslint-plugin:** [unbound-method] respect `this: void` on class properties (7fce9127d)
+- **eslint-plugin:** [no-unnecessary-type-assertion] specialize generic assertion report message (#12832)
+- **eslint-plugin:** [no-misused-promises] handle a return outside of any function (#12912)
+
+### ❤️ Thank You
+
+- Evyatar Daud @StyleShit
+- Fatih Çakır @wfatih
+- Josh Goldberg
+- Josh Goldberg ✨
+- Zamiell @Zamiell
+
+See GitHub Releases for more information.
+
+You can read about our versioning strategy and releases on our website.]]></description>
+    <pubDate>Mon, 28 Sep 2026 17:07:50 GMT</pubDate>
+  </item>
+  <item>
+    <title>[mongodb/node-mongodb-native] v7.7.0</title>
+    <link>https://github.com/mongodb/node-mongodb-native/releases/tag/v7.7.0</link>
+    <guid isPermaLink="true">https://github.com/mongodb/node-mongodb-native/releases/tag/v7.7.0</guid>
+    <description><![CDATA[## 7.7.0 (2026-09-28)
+
+The MongoDB Node.js team is pleased to announce version 7.7.0 of the `mongodb` package!
+
+## Release Notes
+
+### OIDC authentication recovers from a failed token fetch
+
+A single failed OIDC token fetch, such as a cloud metadata endpoint timing out, used to leave the driver's token-fetch mutex holding that failure. Every later operation on the affected `MongoClient` then failed with the original error without attempting a new token fetch, and only restarting the process restored authentication. A failed token fetch now affects only the operation that triggered it.
+
+### Driver dependencies updates
+
+Dependency version changes:
+- `bson`: 7.2.0 -> 7.3.2
+- `mongodb-connection-string-url`: 7.0.1 -> 7.0.2
+- `mongodb-js/saslprep`: 1.4.11 -> 1.5.0
+
+### Features
+
+* **NODE-7670:** update dependencies, including next BSON minor (#5034) (995edbf)
+
+### Bug Fixes
+
+* **NODE-7858:** re-arm OIDC callback lock after a rejection (#5056) (7e953ed)
+## Documentatio
+
+... (truncated)]]></description>
+    <pubDate>Mon, 28 Sep 2026 16:00:18 GMT</pubDate>
+  </item>
+  <item>
+    <title>[mswjs/msw] v3.0.0</title>
+    <link>https://github.com/mswjs/msw/releases/tag/v3.0.0</link>
+    <guid isPermaLink="true">https://github.com/mswjs/msw/releases/tag/v3.0.0</guid>
+    <description><![CDATA[## v3.0.0 (2026-09-28)
+
+- v3.0.0 (#2692) (2bb43428b79ac06f94bb8ea8aeacd6102fe31f56) @kettanaito @Andarist
+
+### ⚠️ BREAKING CHANGES
+
+- **MSW is now ESM-only** (#2765).
+- Deprecate support for Node.js v18 and v20 (#2729). The minimal supported Node.js version is v22.
+- `msw/native` is removed in favor of `@msw/react-native`.
+- Require TypeScript 5.9 as the minimal version.
+- Deprecate support for TypeScript 5.1 and 5.2 (#2730)
+- `worker.stop` returns a Promise (#2724). Awaiting it is relevant only for in-flight critical scenarios.
+- `graphql` is now exported as `msw/graphql` (#2691). GraphQL is now handled as a proper optional peer dependency.
+- Removes the `handleRequest` utility. Please use the `defineNetwork` API instead.
+- `GraphQLLinkHandlers` type has been renamed to `GraphQLLink`.
+- The `file://` requests now throw in Node.js as they normally do (not supported by `fetch`).
+- The `Content-Length` request header is now removed by `bypass`.
+- HTTP-to-WebSocket upgrad
+
+... (truncated)]]></description>
+    <pubDate>Mon, 28 Sep 2026 15:40:54 GMT</pubDate>
+  </item>
+  <item>
+    <title>[facebook/lexical] v0.52.0</title>
+    <link>https://github.com/facebook/lexical/releases/tag/v0.52.0</link>
+    <guid isPermaLink="true">https://github.com/facebook/lexical/releases/tag/v0.52.0</guid>
+    <description><![CDATA[v0.52.0 is an ad-hoc release targeting a few fixes to mobile text input, but carries a number of other updates accumulated in the past week as we move towards Lexical 1.0. We did a pass to modernize the documentation focusing on the latest features. `@lexical/mdast` now uses one configurable `MdastExtension` for import and export, headless editors can be built entirely from extensions, and selection notifications have a consistent timing contract. There are also fixes for deletion, horizontal caret scrolling, drag-and-drop and mobile input.
+
+### Breaking Changes
+
+* `lexical` — **`SELECTION_CHANGE_COMMAND` consistently runs before DOM reconciliation**, inside the pending writable update. This includes automatic `NodeSelection` and `TableSelection` notifications that previously ran after reconciliation. `$getSelection` returns the pending selection; `$getPreviousSelection` returns the last committed selection. Eligible programmatic changes now notify without waiting for a native `sel
+
+... (truncated)]]></description>
+    <pubDate>Mon, 28 Sep 2026 15:31:40 GMT</pubDate>
+  </item>
+  <item>
+    <title>[cloudflare/vinext] @cloudflare/workers-response-store@1.0.0</title>
+    <link>https://github.com/cloudflare/vinext/releases/tag/%40cloudflare/workers-response-store%401.0.0</link>
+    <guid isPermaLink="true">https://github.com/cloudflare/vinext/releases/tag/%40cloudflare/workers-response-store%401.0.0</guid>
+    <description><![CDATA[No release notes provided.]]></description>
+    <pubDate>Mon, 28 Sep 2026 13:00:47 GMT</pubDate>
+  </item>
+  <item>
+    <title>[oxc-project/oxc] oxlint v1.86.0 (oxlint_v1.86.0)</title>
+    <link>https://github.com/oxc-project/oxc/releases/tag/oxlint_v1.86.0</link>
+    <guid isPermaLink="true">https://github.com/oxc-project/oxc/releases/tag/oxlint_v1.86.0</guid>
+    <description><![CDATA[### 🚀 Features
+
+- 9d80eed linter/react/only-export-components: Support `allowCompoundComponents` (#27117) (Kuroda Kayn)
+- e05b155 linter: Add typescript/no-generated-empty-object-type (#26958) (camc314)
+
+### 🐛 Bug Fixes
+
+- 8306aa4 linter/typescript/no-unnecessary-parameter-property-assignment: Account for parameter property reassignment (#26955) (camc314)
+- 42dfbb5 linter/eslint/one-var: Keep `declare` when splitting declarations (#27081) (Cheolhee Lee)
+- 2ba7e33 linter/eslint/require-await: Count `await using` as an await (#27080) (Cheolhee Lee)
+- 611e4ed linter/plugins: Include executing selectors in JS plugin rule timings (#27111) (overlookmotel)
+- 2cac66f react-compiler: Handle recursive function expressions (#26796) (Brennan Butler)
+- e996e6c react-compiler: Treat zero-argument new Date as impure (#26894) (Boshen)
+- 571cfa3 oxlint: Skip type-aware lint rules in type-check-only mode (#27076) (camc314)
+- d0b2462 oxlint: Skip undefined children in CFG walker (#27075) (camc314)
+- 51
+
+... (truncated)]]></description>
+    <pubDate>Mon, 28 Sep 2026 10:29:50 GMT</pubDate>
+  </item>
+  <item>
+    <title>[pnpm/pnpm] pnpm 12.8 (v12.8.0)</title>
+    <link>https://github.com/pnpm/pnpm/releases/tag/v12.8.0</link>
+    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v12.8.0</guid>
+    <description><![CDATA[pnpm 12.8.0 warns when `pnpm pack` or `pnpm publish` would ship a `.env` file that `files` does not list, installs `sharedWorkspaceLockfile: false` workspaces concurrently, applies every setting passed as `--config.<name>=<value>`, and no longer leaves the Windows terminal stuck after Ctrl+C in a script.
+
+### Minor Changes
+
+- `pnpm pack` and `pnpm publish` now warn when the tarball includes a `.env` or `.env.*` file that the `files` field of `package.json` does not list. Templates such as `.env.example` are not reported. List the file in `files` to publish it on purpose, or exclude it in `.npmignore` or `.gitignore` #7826.
+
+- `pnpm pack` now honors `--silent`, `--reporter=silent`, and `--loglevel=silent` to hide the tarball contents and summary. With `--json`, lifecycle script output and the final JSON output remain visible #10297.
+
+### Patch Changes
+
+#### Installing packages
+
+- Installing through a `pnpr` server now records the pnpmfile checksum in the lockfile, so a later
+
+... (truncated)]]></description>
+    <pubDate>Mon, 28 Sep 2026 07:35:50 GMT</pubDate>
+  </item>
+  <item>
+    <title>[openai/codex] 0.158.0 (rust-v0.158.0)</title>
+    <link>https://github.com/openai/codex/releases/tag/rust-v0.158.0</link>
+    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.158.0</guid>
+    <description><![CDATA[## New Features
+
+- Configure copy-on-select and right-click paste in the fullscreen TUI. Copied transcript selections now preserve Markdown formatting. (#47639, #47896, #48118)
+- Connect to MCP servers that require pre-registered OAuth client secrets, including through `codex mcp add --oauth-client-secret`. (#47891)
+- Secure direct exec-server WebSocket connections with bearer tokens, including connections configured through app-server. (#47601, #47648)
+- Image generation and editing can explicitly request transparent backgrounds, and edits now accept file-backed conversation images. (#47484, #47956)
+- Terminal input approval is enabled by default for commands running with elevated permissions; runtime-only grants no longer cause unnecessary reviews. (#47799, #48073)
+
+## Bug Fixes
+
+- Fixed Windows sandbox failures involving ordinary Windows 10 paths, rejected stored credentials, and large permission policies. (#47672, #47695, #47919)
+- Fixed Linux sandbox startup with nested
+
+... (truncated)]]></description>
+    <pubDate>Mon, 28 Sep 2026 05:07:23 GMT</pubDate>
   </item>
   <item>
     <title>[nodejs/undici] v6.29.0</title>
@@ -174,16 +362,6 @@
     <pubDate>Wed, 23 Sep 2026 23:26:09 GMT</pubDate>
   </item>
   <item>
-    <title>[modelcontextprotocol/typescript-sdk] @modelcontextprotocol/server-legacy@2.1.0</title>
-    <link>https://github.com/modelcontextprotocol/typescript-sdk/releases/tag/%40modelcontextprotocol/server-legacy%402.1.0</link>
-    <guid isPermaLink="true">https://github.com/modelcontextprotocol/typescript-sdk/releases/tag/%40modelcontextprotocol/server-legacy%402.1.0</guid>
-    <description><![CDATA[### Patch Changes
-
-- Updated dependencies [`dcc0102`]:
- - @modelcontextprotocol/core@2.1.0]]></description>
-    <pubDate>Wed, 23 Sep 2026 15:43:20 GMT</pubDate>
-  </item>
-  <item>
     <title>[zed-industries/zed] v1.21.0</title>
     <link>https://github.com/zed-industries/zed/releases/tag/v1.21.0</link>
     <guid isPermaLink="true">https://github.com/zed-industries/zed/releases/tag/v1.21.0</guid>
@@ -277,15 +455,6 @@
     <pubDate>Tue, 22 Sep 2026 09:02:46 GMT</pubDate>
   </item>
   <item>
-    <title>[oxc-project/oxc] oxlint v1.85.0 (oxlint_v1.85.0)</title>
-    <link>https://github.com/oxc-project/oxc/releases/tag/oxlint_v1.85.0</link>
-    <guid isPermaLink="true">https://github.com/oxc-project/oxc/releases/tag/oxlint_v1.85.0</guid>
-    <description><![CDATA[### 🚀 Features
-
-- 415b742 oxlint,oxfmt: Do not discover nested config in Vite+ mode (#26763) (leaysgur)]]></description>
-    <pubDate>Mon, 21 Sep 2026 15:31:51 GMT</pubDate>
-  </item>
-  <item>
     <title>[esm-dev/esm.sh] Server v139_2 (v139_2)</title>
     <link>https://github.com/esm-dev/esm.sh/releases/tag/v139_2</link>
     <guid isPermaLink="true">https://github.com/esm-dev/esm.sh/releases/tag/v139_2</guid>
@@ -344,24 +513,6 @@
     <pubDate>Sat, 19 Sep 2026 11:34:29 GMT</pubDate>
   </item>
   <item>
-    <title>[remix-run/remix] tar-parser v0.8.0 (tar-parser@0.8.0)</title>
-    <link>https://github.com/remix-run/remix/releases/tag/tar-parser%400.8.0</link>
-    <guid isPermaLink="true">https://github.com/remix-run/remix/releases/tag/tar-parser%400.8.0</guid>
-    <description><![CDATA[### Minor Changes
-
-- BREAKING CHANGE: `parseTarHeader`, `parseTar`, and `TarParser` now default to `pathPolicy: 'relative'`, throwing `TarParseError` for empty entry names or link targets, absolute paths, Windows drive prefixes, backslashes, and embedded NULs. Entry names cannot contain `..` path components. Symlink targets are checked relative to the link's parent directory, and hard-link targets relative to the archive root; `..` components are allowed only when resolution stays within the archive. Valid paths retain their spelling, including nested paths, `./` prefixes, and trailing directory slashes. Applications that need to inspect or process unrestricted archive paths can opt into `pathPolicy: 'preserve'`:
-
- ```diff
- -await parseTar(archive, handleEntry)
- +await parseTar(archive, { pathPolicy: 'preserve' }, handleEntry)
- ```
-
- The same option works with `parseTarHeader` and `new TarParser`. It does not disable archive limits or header structure validation. Path validation applie
-
-... (truncated)]]></description>
-    <pubDate>Fri, 18 Sep 2026 22:38:48 GMT</pubDate>
-  </item>
-  <item>
     <title>[eslint/eslint] v10.11.0</title>
     <link>https://github.com/eslint/eslint/releases/tag/v10.11.0</link>
     <guid isPermaLink="true">https://github.com/eslint/eslint/releases/tag/v10.11.0</guid>
@@ -386,17 +537,6 @@
 
 ... (truncated)]]></description>
     <pubDate>Fri, 18 Sep 2026 20:13:06 GMT</pubDate>
-  </item>
-  <item>
-    <title>[facebook/lexical] v0.51.0</title>
-    <link>https://github.com/facebook/lexical/releases/tag/v0.51.0</link>
-    <guid isPermaLink="true">https://github.com/facebook/lexical/releases/tag/v0.51.0</guid>
-    <description><![CDATA[v0.51.0 is a monthly release with one large new feature: nodes can now declare their JSON serialization as a schema on `$config`. This declarative schema is faster, safer, and more flexible than the hand-written methods. The metadata it provides enables a compact export option with all default values elided, the code generator that provides faster import and export for every node that lexical ships, a new `@lexical/fast-check` package for property-based tests, and it provides a path to future features that rely on knowing the structure of the nodes (e.g. additional codecs and dev tools).
-
-This is a big step towards Lexical 1.0, the next few releases are expected to be focused on moving everything (including docs and examples) to the latest Extension and `$config` APIs and removing deprecated functionality. Two related changes in this release are that we are publishing ESM-only to npm now (cjs builds are still supported in the source tree), and `LexicalComposer` is deprecated for `Lex
-
-... (truncated)]]></description>
-    <pubDate>Thu, 17 Sep 2026 21:05:11 GMT</pubDate>
   </item>
   <item>
     <title>[vercel-labs/skills] v1.7.0</title>
@@ -634,43 +774,6 @@ This release hardens request configuration and proxy handling, adds caller diagn
 
 **Full Changelog**:]]></description>
     <pubDate>Wed, 09 Sep 2026 08:46:10 GMT</pubDate>
-  </item>
-  <item>
-    <title>[typescript-eslint/typescript-eslint] v8.70.0</title>
-    <link>https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.70.0</link>
-    <guid isPermaLink="true">https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.70.0</guid>
-    <description><![CDATA[## 8.70.0 (2026-09-07)
-
-### 🚀 Features
-
-- **eslint-plugin:** [no-generated-empty-object-type] add rule (#12730)
-- **website:** generate per-page social preview cards (#12734)
-
-### 🩹 Fixes
-
-- use stable release of pnpm 12 (#12808)
-- update pnpm to 12.3.4 and dedupe Docusaurus packages (#12829)
-- **eslint-plugin:** [member-ordering] don't report fields that read fields declared before them (#12729)
-- **eslint-plugin:** [no-unnecessary-condition] no false positive on RHS of a nested logical expression (#12728)
-- **eslint-plugin:** [no-deprecated] report deprecated imported values used in object shorthand properties (#12780)
-- **project-service:** avoid discarded tsserver logs (#12748)
-- **typescript-estree:** clarify the parserOptions.project error message (#12817)
-
-### ❤️ Thank You
-
-- Barry @barry166
-- Evyatar Daud @StyleShit
-- Josh Goldberg
-- Josh Goldberg ✨ @JoshuaKGoldberg
-- Kirk Waiblinger @kirkwaiblinger
-- Ulrich Stark @ulrichstark
-- 송재욱
-
-See GitHub Releases for more information.
-
-
-... (truncated)]]></description>
-    <pubDate>Mon, 07 Sep 2026 17:06:49 GMT</pubDate>
   </item>
   <item>
     <title>[project-tsurugi/tsurugidb] 1.12.0</title>
@@ -957,125 +1060,6 @@ Run `dprint upgrade` or see
 - Added large icons.
 - Added installer version.]]></description>
     <pubDate>Sun, 30 Aug 2026 08:18:53 GMT</pubDate>
-  </item>
-  <item>
-    <title>[sveltejs/svelte] svelte@5.57.0</title>
-    <link>https://github.com/sveltejs/svelte/releases/tag/svelte%405.57.0</link>
-    <guid isPermaLink="true">https://github.com/sveltejs/svelte/releases/tag/svelte%405.57.0</guid>
-    <description><![CDATA[### Minor Changes
-
-- feat: export `RenderOutput`, `SyncRenderOutput`, `Csp` and `Sha256Source` from `svelte/server` (#18648)
-
-- feat: add `has` function to `createContext` (#18472)
-
-- feat: support `defaultValue` on `<select>` (#18591)
-
-- feat: add getOrInsert/getOrInsertComputed to SvelteMap (#18728)
-
-### Patch Changes
-
-- fix: block template store subscriptions on the promise that assigns the store (#18582)
-
-- fix: route $derived teardown errors through invoke_error_boundary (#18486)
-
-- fix: track SvelteDate snapshots in reactions (#18700)
-
-- fix: remove `<svelte:head>` anchors on unmount (#18697)
-
-- fix: warn on undeclared shorthand event handlers on `<svelte:window>`, `<svelte:document>` and `<svelte:body>` (#18480)
-
-- perf: reuse the cached value in the `<option>`/`<select>` value guard (#18713)
-
-- fix: prevent malformed AST output for `<select>` with static `value` attribute (#18449)
-
-- fix: apply ownership mutation ignores to binding assignments (#18718)
-
-- fix: prevent onoutroen
-
-... (truncated)]]></description>
-    <pubDate>Fri, 28 Aug 2026 23:31:40 GMT</pubDate>
-  </item>
-  <item>
-    <title>[panva/node-oidc-provider] v9.12.0</title>
-    <link>https://github.com/panva/node-oidc-provider/releases/tag/v9.12.0</link>
-    <guid isPermaLink="true">https://github.com/panva/node-oidc-provider/releases/tag/v9.12.0</guid>
-    <description><![CDATA[### Features
-
-* add grant helpers for custom grant implementers (ef311dc)
-* graduate Rich Authorization Requests (40d691b), references #1429
-
-### Fixes
-
-* ignore missing interaction policy removals (08a825f)
-
-### Documentation
-
-* generate extensibility contracts (da48c9e)
-* generate typed configuration defaults (feb9500)
-
-### Refactor
-
-* enforce configuration hook contracts (5c4d05b)]]></description>
-    <pubDate>Fri, 28 Aug 2026 22:23:03 GMT</pubDate>
-  </item>
-  <item>
-    <title>[jestjs/jest] v30.5.0</title>
-    <link>https://github.com/jestjs/jest/releases/tag/v30.5.0</link>
-    <guid isPermaLink="true">https://github.com/jestjs/jest/releases/tag/v30.5.0</guid>
-    <description><![CDATA[On a personal note: King Harald V of Norway passed away this morning. He ascended the throne 35 years ago, two months before I was born. This release is dedicated to his memory. Hvil i fred 🇳🇴
-
----
-
-This is a big release. It touches `jest-runtime`, `jest-resolve` and `jest-haste-map` in many places, and with this many changes there might be regressions 😬. If your suite behaves differently after upgrading, please open an issue.
-
-# Highlights
-
-## `whenCalledWith`
-
-Mock functions can now configure return values per argument list, contributed by @timkindberg (#16053):
-
-```js
-const fn = jest.fn;
-fn.whenCalledWith('apple').mockReturnValue('red');
-fn.whenCalledWith('banana').mockReturnValue('yellow');
-fn.whenCalledWith(expect.any(Number)).mockReturnValue('numeric');
-
-fn('apple'); // 'red'
-fn('banana'); // 'yellow'
-fn(42); // 'numeric'
-fn('grape'); // undefined
-```
-
-The returned object is a real `Mock`, so `mockReturnValueOnce`, `mockResolvedValue`, `mockImplementati
-
-... (truncated)]]></description>
-    <pubDate>Fri, 28 Aug 2026 08:29:30 GMT</pubDate>
-  </item>
-  <item>
-    <title>[web-infra-dev/rspack] v2.2.0</title>
-    <link>https://github.com/web-infra-dev/rspack/releases/tag/v2.2.0</link>
-    <guid isPermaLink="true">https://github.com/web-infra-dev/rspack/releases/tag/v2.2.0</guid>
-    <description><![CDATA[## What's Changed
-
-## 🎉 See Announcing Rspack 2.2 for more details.
-
-### New Features 🎉
-* feat: implement generation-based memory cache eviction by @ahabhgk in 
-* feat: add idle cache compaction with interruption handling by @ahabhgk in 
-* feat(css): improve unicode handling and support more css modules cases, boost performance by @intellild in 
-* feat: integrate module code generation to the new cache by @ahabhgk in 
-* feat(cache): add fine-grained new cache options by @hardfist in 
-* feat(ids): add compat-hashed module ids by @LingyuCoder in 
-* feat: analyze dynamic imports in Promise.all destructuring by @JSerFeng in 
-* feat: integrate new cache into source map devtool plugin by @ahabhgk in 
-* feat(core): add compilation.runtimeTemplate by @kakiuwang-ui in 
-* feat(ids): add compact chunk ids by @LingyuCoder in 
-* feat(loader): support opt-in per-loader caching by @intellild in 
-### Performance 🚀
-* perf(binding): cache converted module original source by @SyMind i
-
-... (truncated)]]></description>
-    <pubDate>Wed, 26 Aug 2026 03:42:56 GMT</pubDate>
   </item>
 </channel>
 </rss>
