@@ -5,8 +5,167 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Mon, 28 Sep 2026 22:02:29 GMT</lastBuildDate>
+  <lastBuildDate>Tue, 29 Sep 2026 22:02:10 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-09-29) (release-2026-09-29)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-29</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-29</guid>
+    <description><![CDATA[## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/service/appstream`: [v1.71.0](service/appstream/CHANGELOG.md#v1710-2026-09-29)
+ * **Feature**: Add support for NVIDIA GRID driver version metadata in Workspace Applications image responses through the new ImageSoftwareMetadata field.
+* `github.com/aws/aws-sdk-go-v2/service/bedrockagentruntime`: [v1.64.0](service/bedrockagentruntime/CHANGELOG.md#v1640-2026-09-29)
+ * **Feature**: Amazon Bedrock Agentic Retrieve now supports the Bedrock Mantle (OpenAI Responses) endpoint via a new MantleFoundationModel configuration with an optional projectId.
+* `github.com/aws/aws-sdk-go-v2/service/deadline`: [v1.43.0](service/deadline/CHANGELOG.md#v1430-2026-09-29)
+ * **Feature**: AWS Deadline Cloud now supports Docker software add-ons on service-managed fleets. Adds support for Open Job Description EXPR and Feature Bundle 1 job templates with typed job parameters and job, step, and parameter names up to 512 characters.
+* `github.com/aws/aws-sdk-go-v2
+
+... (truncated)]]></description>
+    <pubDate>Tue, 29 Sep 2026 19:02:57 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1143.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1143.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1143.0</guid>
+    <description><![CDATA[#### 3.1143.0(2026-09-29)
+
+##### New Features
+
+* **client-inspector2:** The ListFindingAggregations API now includes Low, Informational, and Untriaged counts alongside the existing severity counts in SeverityCounts. (523ef402)
+* **client-appstream:** Add support for NVIDIA GRID driver version metadata in Workspace Applications image responses through the new ImageSoftwareMetadata field. (87e9c22f)
+* **client-bedrock-agent-runtime:** Amazon Bedrock Agentic Retrieve now supports the Bedrock Mantle (OpenAI Responses) endpoint via a new MantleFoundationModel configuration with an optional projectId. (9529fe9e)
+* **client-sagemaker:** Adds support for cpu flex type instances on SageMaker Training and Processing. Also contains minor updates to DescribeTrainingPlan to support ARN inputs. (ca45f9e9)
+* **client-opensearch:** Amazon OpenSearch Service now supports advisory pre-validations for domain config changes. Non-critical checks now surface as warnings you can acknowledge (via the new Acce
+
+... (truncated)]]></description>
+    <pubDate>Tue, 29 Sep 2026 19:01:06 GMT</pubDate>
+  </item>
+  <item>
+    <title>[fastapi/fastapi] 0.142.0</title>
+    <link>https://github.com/fastapi/fastapi/releases/tag/0.142.0</link>
+    <guid isPermaLink="true">https://github.com/fastapi/fastapi/releases/tag/0.142.0</guid>
+    <description><![CDATA[### Features
+
+* ✨ Add native OpenTelemetry support. PR #16403 by @tiangolo.
+
+### Refactors
+
+* 📱 Improve mobile responsiveness of conference rail. PR #16196 by @alejsdev.
+* ♻️ Remove conf section and add event banner. PR #16193 by @alejsdev.
+
+### Docs
+
+* 🔥 Remove unused image. PR #16195 by @alejsdev.
+* 🐛 Use buttons for Termynal controls. PR #16132 by @tiangolo.
+
+### Translations
+
+* 🌐 Update translations for hi (update-outdated). PR #16212 by [@pr-submit[bot]].
+* 🌐 Update translations for ru (update-outdated). PR #16210 by [@pr-submit[bot]].
+* 🌐 Update translations for zh-hant (update-outdated). PR #16211 by [@pr-submit[bot]].
+* 🌐 Update translations for uk (update-outdated). PR #16208 by [@pr-submit[bot]].
+* 🌐 Update translations for de (update-outdated). PR #16209 by [@pr-submit[bot]].
+* 🌐 Update translations for tr (update-outdated). PR #16207 by [@pr-submit[bot]].
+* 🌐 Update translations for ja (update-outdated). PR #16206 by [@pr-submit[bot]].
+* 🌐 
+
+... (truncated)]]></description>
+    <pubDate>Tue, 29 Sep 2026 17:56:21 GMT</pubDate>
+  </item>
+  <item>
+    <title>[dprint/dprint] 0.58.0</title>
+    <link>https://github.com/dprint/dprint/releases/tag/0.58.0</link>
+    <guid isPermaLink="true">https://github.com/dprint/dprint/releases/tag/0.58.0</guid>
+    <description><![CDATA[## Changes
+
+* fix(BREAKING): make `--config` file patterns relative to the config file's directory (#1257)
+* feat(BREAKING): evaluate associations and override files in order where the last match wins (#1258)
+* feat: add plugins with `dprint init` when a config file already exists (#1241)
+* feat: additive plugins (#1249)
+* feat: always pre-select a json plugin with `dprint init` (#1252)
+* feat: support `neverPreselect` in the plugin info file (#1253)
+* fix(development): harden range markers in specs (#1256)
+
+This release features a breaking change for glob patterns in config files specified with `--config <file-path>`. Previously in this case, the patterns would be relative to the cwd, but this was bad because it would cause things to work in unexpected ways based on what the cwd is (fragile). See #1257 for workarounds and please open an issue if this really breaks you and I'll try to come up with a solution. Remote configs will continue to work like before where the patterns
+
+... (truncated)]]></description>
+    <pubDate>Tue, 29 Sep 2026 16:29:09 GMT</pubDate>
+  </item>
+  <item>
+    <title>[servo/servo] v0.6.0 (LTS) (v0.6.0)</title>
+    <link>https://github.com/servo/servo/releases/tag/v0.6.0</link>
+    <guid isPermaLink="true">https://github.com/servo/servo/releases/tag/v0.6.0</guid>
+    <description><![CDATA[Servo v0.6 updates our JavaScript engine SpiderMonkey from the ESR 140 branch to the current ESR 153 release. Hence this release is also the base of the next LTS release of servo. The previous 0.1 LTS branch will still receive another update with the last SpiderMonkey ESR 140 upstream release.
+
+## Trying out the Servo Tech Demo
+
+[troubleshooting guide]: 
+
+### Linux
+
+If you see an error `loading shared libraries` when starting servo on Linux, please refer to the [troubleshooting guide].
+
+### HarmonyOS
+
+Please note that the `servo-aarch64-linux-ohos.hap` attached here is signed for OpenHarmony, not HarmonyOS.
+For HarmonyOS self-signing is currently required - You can download the `servo-aarch64-linux-ohos.so` shared library and use DevEco Studio to follow the instructions in the ArkTS Servo Demo repository
+
+## What's Changed
+
+This section will be updated with a link to the August blog-post once it is released with a curated overview over the recent changes.
+For now you 
+
+... (truncated)]]></description>
+    <pubDate>Tue, 29 Sep 2026 15:33:02 GMT</pubDate>
+  </item>
+  <item>
+    <title>[bluesky-social/atproto] @atproto/ozone@0.5.0</title>
+    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/ozone%400.5.0</link>
+    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/ozone%400.5.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- #5459 `136e214` Thanks @gcwill70! - Add an endpoint for creating moderation appeals linked to specific actions.
+
+### Patch Changes
+
+- #5556 `5019f55` Thanks @dependabot! - build(deps-dev): bump the dev-dependencies group across 1 directory with 25 updates
+
+- #5362 `7a85798` Thanks @gcwill70! - Add report lifecycle outcome, action breakdown, handling-time, and resolution-time statistics.
+ 
+ Keep aggregate totals separate from unassigned-moderator groups, restore moderator inbound counts.
+ 
+ Index report closure timestamps for daily statistics and combine null and unmatched queue IDs into a single unqueued group.
+ 
+ Reconstruct historical pending counts at the end of each UTC day from report closure and reopen history. Current-day counts remain live; queue breakdowns use current queue membership.
+- Updated dependencies [`5019f55`]:
+ - @atproto/crypto@0.5.6
+ - @atproto/identity@0.5.15
+ - @atproto/xrpc-server@0.13.3
+ - @atproto/common@0.8.4
+ - @atproto/lex@0.3.13]]></description>
+    <pubDate>Tue, 29 Sep 2026 12:42:21 GMT</pubDate>
+  </item>
+  <item>
+    <title>[openai/codex] 0.159.0 (rust-v0.159.0)</title>
+    <link>https://github.com/openai/codex/releases/tag/rust-v0.159.0</link>
+    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.159.0</guid>
+    <description><![CDATA[## New Features
+
+- Opt-in `instant_interrupt` lets new input steer Codex during model responses or long-running code-mode calls. (#48135, #48141)
+- New sessions get a compact welcome screen and consistent headers, with occasional tips during and after turns. (#48513, #48562, #48352)
+- The warnings viewer dismisses reviewed warnings when closed; press `k` to keep one for later. (#48205, #48206)
+- You can scroll the transcript while deciding whether to implement a plan. (#48805)
+- Native Mermaid rendering supports more flowchart edges, labels, and node groups. (#48814, #48895)
+- App-server clients can paginate thread history from a specific item. (#48151)
+
+## Bug Fixes
+
+- Windows launches avoid stray console windows for MCP servers, code-mode hosts, and piped commands; restrictive launchers can fall back to embedded mode. (#48138, #48238, #48483, #48491)
+- Copying transcript selections preserves Markdown tables, formatting, and significant whitespace. More terminals now copy automaticall
+
+... (truncated)]]></description>
+    <pubDate>Tue, 29 Sep 2026 08:05:42 GMT</pubDate>
+  </item>
   <item>
     <title>[remix-run/remix] ui v0.11.0 (ui@0.11.0)</title>
     <link>https://github.com/remix-run/remix/releases/tag/ui%400.11.0</link>
@@ -41,42 +200,6 @@
 - Updated dependencies [`edd12e2`]:
  - @modelcontextprotocol/core@2.2.0]]></description>
     <pubDate>Mon, 28 Sep 2026 19:07:55 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-09-28) (release-2026-09-28)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-28</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-28</guid>
-    <description><![CDATA[## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/feature/s3/transfermanager`: [v0.4.11](feature/s3/transfermanager/CHANGELOG.md#v0411-2026-09-28)
- * **Bug Fix**: Add reassembly check for GetObject parts mode so mismatch between response part range and calculated position will throw error
-* `github.com/aws/aws-sdk-go-v2/service/agentregistry`: [v1.7.0](service/agentregistry/CHANGELOG.md#v170-2026-09-28)
- * **Feature**: AWS Agent Registry adds support for custom metadata. Discovery APIs now return custom metadata on registry records and support filtering by metadata fields. Semantic search includes custom metadata for improved relevance. Filter customMetadata fields using eq, ne, and in operators.
-* `github.com/aws/aws-sdk-go-v2/service/agentregistrycontrol`: [v1.7.0](service/agentregistrycontrol/CHANGELOG.md#v170-2026-09-28)
- * **Feature**: AWS Agent Registry adds support for custom metadata. Define a typed metadata schema on your registry and attach structured key-value metadata to
-
-... (truncated)]]></description>
-    <pubDate>Mon, 28 Sep 2026 18:58:34 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-js-v3] v3.1142.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1142.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1142.0</guid>
-    <description><![CDATA[#### 3.1142.0(2026-09-28)
-
-##### Chores
-
-* **ci:** add format-check workflow for lint and formatting (#8316) (6f16c433)
-
-##### New Features
-
-* **client-billing:** Adds support for (a) listing Business Support account charges via ListBusinessSupportAccountCharges and (b) subscription history via ListBusinessSupportSubscriptionHistory through the AWS Billing API. (6352ff06)
-* **client-eks:** An optional customer provided prefix used to construct the hostname of the Argo CD server endpoint for EKS Argo CD Capability. (373ebbd8)
-* **client-agent-registry-control:** AWS Agent Registry adds support for custom metadata. Define a typed metadata schema on your registry and attach structured key-value metadata to registry records. Schemas are additive only. Enforcement is progressive. Records show a compliance status computed against the current schema. (19adcfee)
-* **client-ec2:** API changes to AWS Client VPN to support device posture assessment and Cedar authorization policies (6afa3ce4)
-* **
-
-... (truncated)]]></description>
-    <pubDate>Mon, 28 Sep 2026 18:53:23 GMT</pubDate>
   </item>
   <item>
     <title>[typescript-eslint/typescript-eslint] v8.71.0</title>
@@ -233,26 +356,6 @@ Dependency version changes:
     <pubDate>Mon, 28 Sep 2026 07:35:50 GMT</pubDate>
   </item>
   <item>
-    <title>[openai/codex] 0.158.0 (rust-v0.158.0)</title>
-    <link>https://github.com/openai/codex/releases/tag/rust-v0.158.0</link>
-    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.158.0</guid>
-    <description><![CDATA[## New Features
-
-- Configure copy-on-select and right-click paste in the fullscreen TUI. Copied transcript selections now preserve Markdown formatting. (#47639, #47896, #48118)
-- Connect to MCP servers that require pre-registered OAuth client secrets, including through `codex mcp add --oauth-client-secret`. (#47891)
-- Secure direct exec-server WebSocket connections with bearer tokens, including connections configured through app-server. (#47601, #47648)
-- Image generation and editing can explicitly request transparent backgrounds, and edits now accept file-backed conversation images. (#47484, #47956)
-- Terminal input approval is enabled by default for commands running with elevated permissions; runtime-only grants no longer cause unnecessary reviews. (#47799, #48073)
-
-## Bug Fixes
-
-- Fixed Windows sandbox failures involving ordinary Windows 10 paths, rejected stored credentials, and large permission policies. (#47672, #47695, #47919)
-- Fixed Linux sandbox startup with nested
-
-... (truncated)]]></description>
-    <pubDate>Mon, 28 Sep 2026 05:07:23 GMT</pubDate>
-  </item>
-  <item>
     <title>[nodejs/undici] v6.29.0</title>
     <link>https://github.com/nodejs/undici/releases/tag/v6.29.0</link>
     <guid isPermaLink="true">https://github.com/nodejs/undici/releases/tag/v6.29.0</guid>
@@ -264,25 +367,6 @@ Dependency version changes:
 
 **Full Changelog**:]]></description>
     <pubDate>Fri, 25 Sep 2026 09:42:48 GMT</pubDate>
-  </item>
-  <item>
-    <title>[bluesky-social/atproto] @atproto/lex-resolver@0.3.0</title>
-    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/lex-resolver%400.3.0</link>
-    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/lex-resolver%400.3.0</guid>
-    <description><![CDATA[### Minor Changes
-
-- #5499 `210907c` Thanks @fatfingers23! - Always trigger the on<Name>Result and on<Name>Error hooks, even when values are resolved from hooks.
-
-- #5499 `210907c` Thanks @fatfingers23! - Perform lexicon document validation after `onFetch`, allowing it not to perform any validation
-
-- #5499 `210907c` Thanks @fatfingers23! - Avoid encoding/decoding of lexicon URIs
-
-### Patch Changes
-
-- #5499 `210907c` Thanks @fatfingers23! - Propagate abort `signal` to `onFetch` hook
-- Updated dependencies [`210907c`]:
- - @atproto/lex-document@0.1.12]]></description>
-    <pubDate>Fri, 25 Sep 2026 09:29:25 GMT</pubDate>
   </item>
   <item>
     <title>[mrdoob/three.js] r186</title>
@@ -466,30 +550,6 @@ Dependency version changes:
 * Build Docker images from checked-out source and fix Deno's glibc setup.
 * Upgrade Go to 1.27.]]></description>
     <pubDate>Mon, 21 Sep 2026 09:03:19 GMT</pubDate>
-  </item>
-  <item>
-    <title>[inokawa/virtua] 0.52.0</title>
-    <link>https://github.com/inokawa/virtua/releases/tag/0.52.0</link>
-    <guid isPermaLink="true">https://github.com/inokawa/virtua/releases/tag/0.52.0</guid>
-    <description><![CDATA[## BREAKING CHANGES
-- Rewrite VGrid completely. It's no longer experimental component!
-
-
-
-
-
-- Renamed events of angular components
-
-## What's Changed
-* Refactor e2e by @inokawa in 
-* Refactor e2e by @inokawa in 
-* Rename events of angular components to fix conflicts with browser events by @inokawa in 
-* Stabilize VGrid and bring it to all frameworks by @inokawa in 
-* Refine VGrid props to support section headers by @inokawa in 
-
-
-**Full Changelog**:]]></description>
-    <pubDate>Sat, 19 Sep 2026 12:02:28 GMT</pubDate>
   </item>
   <item>
     <title>[sindresorhus/eslint-plugin-unicorn] v76.0.0</title>
@@ -966,40 +1026,6 @@ Full Release Notes]]></description>
     <pubDate>Thu, 03 Sep 2026 16:48:32 GMT</pubDate>
   </item>
   <item>
-    <title>[servo/servo] v0.5.0</title>
-    <link>https://github.com/servo/servo/releases/tag/v0.5.0</link>
-    <guid isPermaLink="true">https://github.com/servo/servo/releases/tag/v0.5.0</guid>
-    <description><![CDATA[See our July blog post for a curated overview of the changes in this release.
-
-## Trying out the Servo Tech Demo
-
-[troubleshooting guide]: 
-
-### Linux
-
-If you see an error `loading shared libraries` when starting servo on Linux, please refer to the [troubleshooting guide].
-
-### HarmonyOS
-
-Please note that the `servo-aarch64-linux-ohos.hap` attached here is signed for OpenHarmony, not HarmonyOS.
-For HarmonyOS self-signing is currently required - You can download the `servo-aarch64-linux-ohos.so` shared library and use DevEco Studio to follow the instructions in the ArkTS Servo Demo repository
-
-## What's Changed
-
-Please check out our July blog post to get a curated overview over the recent changes.
-
-<details>
- <summary>Generated Release notes</summary>
-
-## What's Changed
-* android: Convert refresh button on large screen to Compose UI by @veyndan in 
-* script: Implement importKey and exportKey operation of Ed448 by @kkoyung in 
-* net: Avoid creating empty cookie m
-
-... (truncated)]]></description>
-    <pubDate>Mon, 31 Aug 2026 10:20:07 GMT</pubDate>
-  </item>
-  <item>
     <title>[sindresorhus/got] v16.0.0</title>
     <link>https://github.com/sindresorhus/got/releases/tag/v16.0.0</link>
     <guid isPermaLink="true">https://github.com/sindresorhus/got/releases/tag/v16.0.0</guid>
@@ -1015,36 +1041,6 @@ Please check out our July blog post to get a curated overview over the recent ch
 
 ... (truncated)]]></description>
     <pubDate>Sun, 30 Aug 2026 23:03:47 GMT</pubDate>
-  </item>
-  <item>
-    <title>[dprint/dprint] 0.57.0</title>
-    <link>https://github.com/dprint/dprint/releases/tag/0.57.0</link>
-    <guid isPermaLink="true">https://github.com/dprint/dprint/releases/tag/0.57.0</guid>
-    <description><![CDATA[## Changes
-
-* feat: add a shebangs config for routing extensionless scripts to a plugin (#1230)
-* feat: add `--minimum-dependency-age` for npm dependencies (#1228)
-* feat: add `--diff-format unified` to `dprint check` and `dprint fmt --diff` (#1232)
-* feat: add `dprint check --json` flag (#1231)
-* perf: match glob patterns on the reader threads (#1234)
-* perf: cheaper per-file plugin resolution (#1233)
-
-## Install
-
-Run `dprint upgrade` or see 
-
-## Checksums
-
-|Artifact|SHA-256 Checksum|
-|:--|:--|
-|dprint-x86_64-apple-darwin.zip|41b6bb07d121d0506edd85d8176caf3d3909648089ee6c0b8b4f9c896791c14f|
-|dprint-aarch64-apple-darwin.zip|14bdbfb9b1e3ebd614d5ec08a068b04b0d0370d70c112723003dd9103a4c0c3a|
-|dprint-x86_64-pc-windows-msvc.zip|90e81a6106af4571893587acb4a1b1baa6b0879c60eec36497a08c03127410d1|
-|dprint-x86_64-pc-windows-msvc-installer.exe|f023d1770c2cf8a92471e7c95e2db184359911c14c2c070c9efc6cbb70ccc030|
-|dprint-aarch64-pc-windows-msvc.zip|42db2e31a7434c6d205fb71ec39b76a5d
-
-... (truncated)]]></description>
-    <pubDate>Sun, 30 Aug 2026 21:09:02 GMT</pubDate>
   </item>
   <item>
     <title>[Tatsu-syo/noMeiryoUI] Version 3.5.0 (TAG-3.5.0)</title>
