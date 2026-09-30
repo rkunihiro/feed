@@ -5,40 +5,91 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Tue, 29 Sep 2026 22:02:10 GMT</lastBuildDate>
+  <lastBuildDate>Wed, 30 Sep 2026 22:02:26 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
   <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-09-29) (release-2026-09-29)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-29</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-29</guid>
-    <description><![CDATA[## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/appstream`: [v1.71.0](service/appstream/CHANGELOG.md#v1710-2026-09-29)
- * **Feature**: Add support for NVIDIA GRID driver version metadata in Workspace Applications image responses through the new ImageSoftwareMetadata field.
-* `github.com/aws/aws-sdk-go-v2/service/bedrockagentruntime`: [v1.64.0](service/bedrockagentruntime/CHANGELOG.md#v1640-2026-09-29)
- * **Feature**: Amazon Bedrock Agentic Retrieve now supports the Bedrock Mantle (OpenAI Responses) endpoint via a new MantleFoundationModel configuration with an optional projectId.
-* `github.com/aws/aws-sdk-go-v2/service/deadline`: [v1.43.0](service/deadline/CHANGELOG.md#v1430-2026-09-29)
- * **Feature**: AWS Deadline Cloud now supports Docker software add-ons on service-managed fleets. Adds support for Open Job Description EXPR and Feature Bundle 1 job templates with typed job parameters and job, step, and parameter names up to 512 characters.
-* `github.com/aws/aws-sdk-go-v2
+    <title>[aws/aws-sdk-go-v2] Release (2026-09-30) (release-2026-09-30)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-30</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-30</guid>
+    <description><![CDATA[## General Highlights
+* **Dependency Update**: Updated to the latest SDK module versions
+
+## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/service/account`: [v1.42.0](service/account/CHANGELOG.md#v1420-2026-09-30)
+ * **Feature**: This release adds support for verifying an AWS account's primary contact phone number. SendPhoneNumberVerification sends a one-time code by SMS, VerifyPhoneNumber validates it, and GetContactInformation now returns the verification status.
+* `github.com/aws/aws-sdk-go-v2/service/agentregistry`: [v1.7.1](service/agentregistry/CHANGELOG.md#v171-2026-09-30)
+ * **Documentation**: Minor doc update for the AWS Agent Registry Custom metadata SearchDiscoverableRegistryRecords API
+* `github.com/aws/aws-sdk-go-v2/service/batch`: [v1.78.0](service/batch/CHANGELOG.md#v1780-2026-09-30)
+ * **Feature**: AWS Batch adds support for Amazon EKS access entries on EKS compute environments through the new accessEntry setting in CreateComputeEnvironment and UpdateComputeEnvironm
 
 ... (truncated)]]></description>
-    <pubDate>Tue, 29 Sep 2026 19:02:57 GMT</pubDate>
+    <pubDate>Wed, 30 Sep 2026 18:59:38 GMT</pubDate>
   </item>
   <item>
-    <title>[aws/aws-sdk-js-v3] v3.1143.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1143.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1143.0</guid>
-    <description><![CDATA[#### 3.1143.0(2026-09-29)
+    <title>[aws/aws-sdk-js-v3] v3.1144.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1144.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1144.0</guid>
+    <description><![CDATA[#### 3.1144.0(2026-09-30)
+
+##### Documentation Changes
+
+* **client-agent-registry:** Minor doc update for the AWS Agent Registry Custom metadata SearchDiscoverableRegistryRecords API (fd88a846)
 
 ##### New Features
 
-* **client-inspector2:** The ListFindingAggregations API now includes Low, Informational, and Untriaged counts alongside the existing severity counts in SeverityCounts. (523ef402)
-* **client-appstream:** Add support for NVIDIA GRID driver version metadata in Workspace Applications image responses through the new ImageSoftwareMetadata field. (87e9c22f)
-* **client-bedrock-agent-runtime:** Amazon Bedrock Agentic Retrieve now supports the Bedrock Mantle (OpenAI Responses) endpoint via a new MantleFoundationModel configuration with an optional projectId. (9529fe9e)
-* **client-sagemaker:** Adds support for cpu flex type instances on SageMaker Training and Processing. Also contains minor updates to DescribeTrainingPlan to support ARN inputs. (ca45f9e9)
-* **client-opensearch:** Amazon OpenSearch Service now supports advisory pre-validations for domain config changes. Non-critical checks now surface as warnings you can acknowledge (via the new Acce
+* **clients:** update client endpoints as of 2026-09-30 (d13ef6af)
+* **client-organizations:** Add support for policy operations on the GUARDDUTY POLICY policy type. (407089b4)
+* **client-s3:** Amazon S3 adds a new optional S3 Inventory field, IntelligentTieringReferenceDate, reporting the reference date S3 Intelligent-Tiering uses to evaluate an object's tier-transition eligibility. The value is populated for objects in the Intelligent-Tiering storage class and left blank for others. (82bbbdce)
+* **client-observabilityadmin:** Enablement for Bedrock PaymentManager logs via Observability Admin Telemetry Rule (1f287614)
+* **client-datazone:** Support for setting notebook run notification configurations (e15e2d5b)
+* **client-guardduty:** GuardDuty AWS Organizations policy inte
 
 ... (truncated)]]></description>
-    <pubDate>Tue, 29 Sep 2026 19:01:06 GMT</pubDate>
+    <pubDate>Wed, 30 Sep 2026 18:58:11 GMT</pubDate>
+  </item>
+  <item>
+    <title>[zed-industries/zed] v1.22.0</title>
+    <link>https://github.com/zed-industries/zed/releases/tag/v1.22.0</link>
+    <guid isPermaLink="true">https://github.com/zed-industries/zed/releases/tag/v1.22.0</guid>
+    <description><![CDATA[This week's release includes BYOK support for GPT-6.1 Sol, on-the-fly model selection for new subagents, automatic subagent compaction, a unified/split toggle for diffs opened from the command line, and dynamically fetched OpenCode models.
+
+## Features
+
+### AI
+
+- Added an optional `model` parameter to `spawn_agent` to choose a model for that spawn instead of using the configured subagent model or inheriting the parent model, with the active model shown in its card. (#64498; thanks itsfuad)
+- Added BYOK support for GPT-6.1 Sol with an OpenAI API key. (#64968; thanks ktKongTong)
+- Added Grok 4.7 to the SuperGrok and xAI providers and made it their recommended default. (#64567; thanks raphaelluethy)
+- Added the `agent.threads_sidebar.auto_open` setting to control whether opening a folder in an existing window also opens the Threads Sidebar. (#64259, #64395; thanks jackhwalters and joshkent94)
+- Added support for `"..."` in `edit_predictions.disabled_globs` and `edit_predictions_
+
+... (truncated)]]></description>
+    <pubDate>Wed, 30 Sep 2026 16:03:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>[cli/cli] GitHub CLI 2.102.0 (v2.102.0)</title>
+    <link>https://github.com/cli/cli/releases/tag/v2.102.0</link>
+    <guid isPermaLink="true">https://github.com/cli/cli/releases/tag/v2.102.0</guid>
+    <description><![CDATA[## Security
+
+Four security vulnerabilities have been identified, and fixed, in this release. Users are advised to update gh to version `v2.102.0` as soon as possible.
+
+`gh release download`, `gh run download`, `gh repo read-file --output`, and `gh attestation download` could write remote content to an unintended local file when the destination contained symbolic links.
+
+See for more information.
+
+`gh attestation verify` compared the `--source-ref` value case-insensitively, so an attestation built from a branch whose name differs only in case could satisfy a policy that named a different branch.
+
+See for more information.
+
+Interactive `gh skill search` passed repository paths from search results to `gh skill install` without an option separator, so a search result could inject installer options and change where skill files were written.
+
+See for more information.
+
+`gh attestation verify` matched the `--signer-workflow` value against only the start of the signing certificate's identity, 
+
+... (truncated)]]></description>
+    <pubDate>Wed, 30 Sep 2026 02:40:02 GMT</pubDate>
   </item>
   <item>
     <title>[fastapi/fastapi] 0.142.0</title>
@@ -184,6 +235,62 @@ For now you
 
 ... (truncated)]]></description>
     <pubDate>Mon, 28 Sep 2026 21:46:01 GMT</pubDate>
+  </item>
+  <item>
+    <title>[ollama/ollama] v0.35.0</title>
+    <link>https://github.com/ollama/ollama/releases/tag/v0.35.0</link>
+    <guid isPermaLink="true">https://github.com/ollama/ollama/releases/tag/v0.35.0</guid>
+    <description><![CDATA[## Decision models
+
+Ollama now supports decision models through `/v1/systemone`, based on TypeSafe’s Jev API.
+
+Decision models return choices, probabilities, and scores instead of text. Use them for tasks such as ticket triage, model routing, and content classification.
+
+Available models:
+- **Nimble** from Bespoke Labs
+- **Tev1** from Together AI
+
+```sh
+ollama pull nimble
+```
+
+Send context and one or more questions:
+
+```sh
+curl \
+ -H 'Content-Type: application/json' \
+ -d '{
+ "model": "nimble",
+ "state": "Our checkout has returned 500 errors since 9am.",
+ "questions": {
+ "label": {
+ "type": "choice",
+ "instructions": "Which label fits this ticket?",
+ "criteria": {
+ "billing": "Payments and refunds",
+ "bug": "Software errors",
+ "account": "Login and account access"
+ }
+ }
+ }
+ }'
+```
+
+Example response:
+
+```json
+{
+ "model": "nimble",
+ "answers": {
+ "label": {
+ "type": "choice",
+ "choice": "bug",
+ "probabilities": {
+ "billing": 0.0125,
+ "bug": 
+
+... (truncated)]]></description>
+    <pubDate>Mon, 28 Sep 2026 21:23:22 GMT</pubDate>
   </item>
   <item>
     <title>[modelcontextprotocol/typescript-sdk] @modelcontextprotocol/server@2.2.0</title>
@@ -446,26 +553,6 @@ Dependency version changes:
     <pubDate>Wed, 23 Sep 2026 23:26:09 GMT</pubDate>
   </item>
   <item>
-    <title>[zed-industries/zed] v1.21.0</title>
-    <link>https://github.com/zed-industries/zed/releases/tag/v1.21.0</link>
-    <guid isPermaLink="true">https://github.com/zed-industries/zed/releases/tag/v1.21.0</guid>
-    <description><![CDATA[This week's release includes faster rendering in syntax-highlighted files and Markdown code blocks, a language server command picker, a setting that keeps your system awake during long-running agent turns, and BYOK support for Claude Opus 5.5 (Anthropic) and GPT-6 Astra, Sol, and Luna (OpenAI).
-
-## Features
-
-### AI
-
-- Added SuperGrok sign-in so SuperGrok subscribers can use Grok models in the Agent Panel. (#63248; thanks thibaudgg)
-- Added the `agent.prevent_idle_sleep` setting, enabled by default, to prevent idle system sleep while agent threads are running. (#53130; thanks cppcoffee)
-- Added support for DeepSeek Flash 4.1. (#64014; thanks cppcoffee)
-- Added the `agent.threads_sidebar_default_width` setting to configure the width of the Threads Sidebar. (#62883; thanks porada)
-- Added the `agent: rename selected thread` action for renaming the active Terminal Thread from the Agent Panel. (#63660; thanks mauriciord)
-- Added BYOK support for Claude Opus 5.5 with an Anthropic 
-
-... (truncated)]]></description>
-    <pubDate>Wed, 23 Sep 2026 15:42:38 GMT</pubDate>
-  </item>
-  <item>
     <title>[nestjs/nest] v12.1.0</title>
     <link>https://github.com/nestjs/nest/releases/tag/v12.1.0</link>
     <guid isPermaLink="true">https://github.com/nestjs/nest/releases/tag/v12.1.0</guid>
@@ -695,32 +782,6 @@ Users prioritizing stability and a longer support lifecycle should stay on the
     <pubDate>Tue, 15 Sep 2026 15:22:42 GMT</pubDate>
   </item>
   <item>
-    <title>[cli/cli] GitHub CLI 2.101.0 (v2.101.0)</title>
-    <link>https://github.com/cli/cli/releases/tag/v2.101.0</link>
-    <guid isPermaLink="true">https://github.com/cli/cli/releases/tag/v2.101.0</guid>
-    <description><![CDATA[## Linux package repository signing key rotation
-
-GitHub CLI's APT and RPM repositories, along with individual RPM packages, are now signed only with the new PGP key (fingerprint: `7F38BBB59D064DBCB3D84D725612B36462313325`)
-
-> [!IMPORTANT]
-> Linux users who installed `gh` from the official APT or RPM repositories before April 8, 2026, and have not refreshed their keyring, may now see package installation or update failures. Follow the PGP signing key rotation guidance to check and update your keyring. Users on Windows or macOS, and users who installed `gh` through Homebrew, GitHub Releases, another package manager, or from source, are not affected.
-
-## Copy authentication codes to the clipboard by default
-
-`gh auth login` and `gh auth refresh` now copy OAuth device codes to the clipboard by default, saving a manual copy step during authentication.
-
-To persistently opt out, run:
-
-```shell
-gh config set clipboard disabled
-```
-
-Explicit clipboard options still take preced
-
-... (truncated)]]></description>
-    <pubDate>Tue, 15 Sep 2026 14:24:34 GMT</pubDate>
-  </item>
-  <item>
     <title>[floci-io/floci] 2.1.0</title>
     <link>https://github.com/floci-io/floci/releases/tag/2.1.0</link>
     <guid isPermaLink="true">https://github.com/floci-io/floci/releases/tag/2.1.0</guid>
@@ -868,22 +929,6 @@ The `Source code (zip)` or `Source code (tar.gz)` in `Assets` are automatically 
     <guid isPermaLink="true">https://github.com/lynx-family/lynx/releases/tag/4.1.0</guid>
     <description><![CDATA[No release notes provided.]]></description>
     <pubDate>Mon, 07 Sep 2026 01:47:18 GMT</pubDate>
-  </item>
-  <item>
-    <title>[ollama/ollama] v0.34.0</title>
-    <link>https://github.com/ollama/ollama/releases/tag/v0.34.0</link>
-    <guid isPermaLink="true">https://github.com/ollama/ollama/releases/tag/v0.34.0</guid>
-    <description><![CDATA[## Use Ollama models in ChatGPT Desktop
-
-Ollama models can now be used directly in ChatGPT Desktop, so you can keep your existing workflow while running open models. Setup is available from the Ollama app on MacOS.
-
-<img width="1374" height="1300" alt="CleanShot 2026-09-08 at 11 04 07 AM@2x" src="" />
-
-
-This release also improves structured output performance on Apple Silicon, adds support for OpenAI-compatible client tool search and response compaction.
-
-**Full Changelog**:]]></description>
-    <pubDate>Sat, 05 Sep 2026 23:49:00 GMT</pubDate>
   </item>
   <item>
     <title>[microsoft/playwright] v1.63.0</title>
