@@ -5,47 +5,186 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Wed, 30 Sep 2026 22:02:26 GMT</lastBuildDate>
+  <lastBuildDate>Thu, 01 Oct 2026 22:02:10 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
   <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-09-30) (release-2026-09-30)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-30</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-09-30</guid>
-    <description><![CDATA[## General Highlights
-* **Dependency Update**: Updated to the latest SDK module versions
+    <title>[openai/codex] 0.160.0 (rust-v0.160.0)</title>
+    <link>https://github.com/openai/codex/releases/tag/rust-v0.160.0</link>
+    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.160.0</guid>
+    <description><![CDATA[## New Features
 
-## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/account`: [v1.42.0](service/account/CHANGELOG.md#v1420-2026-09-30)
- * **Feature**: This release adds support for verifying an AWS account's primary contact phone number. SendPhoneNumberVerification sends a one-time code by SMS, VerifyPhoneNumber validates it, and GetContactInformation now returns the verification status.
-* `github.com/aws/aws-sdk-go-v2/service/agentregistry`: [v1.7.1](service/agentregistry/CHANGELOG.md#v171-2026-09-30)
- * **Documentation**: Minor doc update for the AWS Agent Registry Custom metadata SearchDiscoverableRegistryRecords API
-* `github.com/aws/aws-sdk-go-v2/service/batch`: [v1.78.0](service/batch/CHANGELOG.md#v1780-2026-09-30)
- * **Feature**: AWS Batch adds support for Amazon EKS access entries on EKS compute environments through the new accessEntry setting in CreateComputeEnvironment and UpdateComputeEnvironm
+- Browse older tasks in the agent command center with a keyboard-accessible “Show more” action. (#49106)
+- Select transcript text and paste with middle-click in fullscreen mode on supported local Linux X11 terminals. (#49112)
+- Start sessions outside a project with workspace defaults when policy permits, and restore saved permissions when resuming. (#49160)
+- Added opt-in Guardian review capabilities to retrieve earlier user instructions and include context from agent handoffs. (#49036, #49057)
+
+## Bug Fixes
+
+- Unsent queued messages now resume after reconnection once uncertain submissions are resolved, avoiding duplicate sends. (#49105)
+- The terminal UI now preserves server provider, reasoning-summary, and verbosity settings and shows the correct sessions in resume and fork history. (#49144, #49161, #49171)
+- Fixed Windows sandbox PowerShell fallbacks and long-path permission repairs, and suppressed unwanted console windows from background helpers. (#49019, #49058, #
 
 ... (truncated)]]></description>
-    <pubDate>Wed, 30 Sep 2026 18:59:38 GMT</pubDate>
+    <pubDate>Thu, 01 Oct 2026 20:19:13 GMT</pubDate>
   </item>
   <item>
-    <title>[aws/aws-sdk-js-v3] v3.1144.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1144.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1144.0</guid>
-    <description><![CDATA[#### 3.1144.0(2026-09-30)
+    <title>[aws/aws-sdk-go-v2] Release (2026-10-01) (release-2026-10-01)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-01</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-01</guid>
+    <description><![CDATA[## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/service/bedrockagent`: [v1.68.0](service/bedrockagent/CHANGELOG.md#v1680-2026-10-01)
+ * **Feature**: Adds an optional textReadyAt field to ListIngestionJobs and GetIngestionJob for Managed Knowledge Bases data source sync jobs. The field denotes the timestamp at which all the documents in the scope of a sync job had their text content indexed and are available for retrieval.
+* `github.com/aws/aws-sdk-go-v2/service/cloudfront`: [v1.74.0](service/cloudfront/CHANGELOG.md#v1740-2026-10-01)
+ * **Feature**: Added always-amz-auth as a supported signing behavior for Origin Access Control (OAC), enabling CloudFront to authenticate requests to Lambda-Web origins.
+* `github.com/aws/aws-sdk-go-v2/service/ec2`: [v1.338.1](service/ec2/CHANGELOG.md#v13381-2026-10-01)
+ * **Documentation**: This release launches the AMI tag sharing feature, which lets AMI owners share tags alongside their AMIs, eliminating the need to build and maintain custom tag re
+
+... (truncated)]]></description>
+    <pubDate>Thu, 01 Oct 2026 18:53:18 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1145.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1145.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1145.0</guid>
+    <description><![CDATA[#### 3.1145.0(2026-10-01)
+
+##### Chores
+
+* update lock-threads workflow (#8327) (5daff5f2)
 
 ##### Documentation Changes
 
-* **client-agent-registry:** Minor doc update for the AWS Agent Registry Custom metadata SearchDiscoverableRegistryRecords API (fd88a846)
+* **client-ec2:** This release launches the AMI tag sharing feature, which lets AMI owners share tags alongside their AMIs, eliminating the need to build and maintain custom tag replication workflows. (82608f8c)
 
 ##### New Features
 
-* **clients:** update client endpoints as of 2026-09-30 (d13ef6af)
-* **client-organizations:** Add support for policy operations on the GUARDDUTY POLICY policy type. (407089b4)
-* **client-s3:** Amazon S3 adds a new optional S3 Inventory field, IntelligentTieringReferenceDate, reporting the reference date S3 Intelligent-Tiering uses to evaluate an object's tier-transition eligibility. The value is populated for objects in the Intelligent-Tiering storage class and left blank for others. (82bbbdce)
-* **client-observabilityadmin:** Enablement for Bedrock PaymentManager logs via Observability Admin Telemetry Rule (1f287614)
-* **client-datazone:** Support for setting notebook run notification configurations (e15e2d5b)
-* **client-guardduty:** GuardDuty AWS Organizations policy inte
+* **clients:** update client endpoints as of 2026-10-01 (5244c2a9)
+* **client-bedrock-agent:** Adds an optional textReadyAt field to ListIngestionJobs and GetIngestionJob for Managed Knowledge Bases data source sync jobs. The field denotes the timestamp at which all the documents in the scope of a sync job had their text content indexed and are available for retrieval. (a810c753)
+* **client-lambda-web:** Lambda Web Functions GA launch. Lambda Web Functions enable customers to run web applications and API backends (ed0d0540)
+* **client-quicksight:** This release adds HierarchyFilter support for Amazon QuickSight analysis and dashboard and 
 
 ... (truncated)]]></description>
-    <pubDate>Wed, 30 Sep 2026 18:58:11 GMT</pubDate>
+    <pubDate>Thu, 01 Oct 2026 18:53:05 GMT</pubDate>
+  </item>
+  <item>
+    <title>[sveltejs/kit] @sveltejs/package@3.0.0</title>
+    <link>https://github.com/sveltejs/kit/releases/tag/%40sveltejs/package%403.0.0</link>
+    <guid isPermaLink="true">https://github.com/sveltejs/kit/releases/tag/%40sveltejs/package%403.0.0</guid>
+    <description><![CDATA[### Major Changes
+
+- breaking: require Node 22 or newer (#12548)
+
+### Minor Changes
+
+- feat: warn when using a `.server.` file or file inside a `server` directory without importing a server-only module (#16266)
+
+- feat: transform import aliases into relative imports in files (#16360)
+
+### Patch Changes
+
+- chore: remove dependency on sade (#16619)
+
+- chore: bump `svelte2tsx` to 0.7.59 (#16745)
+
+- fix: rewrite `.ts` extensions in `import.meta.glob` patterns when `rewriteRelativeImportExtensions` is enabled (#16776)
+
+- chore: replace private fs helpers with Node built-ins (#16610)
+
+- chore: read the Svelte config via `@sveltejs/load-config` (#17039)
+
+- chore: remove dependency on kleur (#12548)
+
+- fix: import resolved peer dependencies as file URLs so project-relative resolution works on Windows (#16618)
+
+- fix: emit declarations when the tsconfig lives above the package root (#16568)
+
+- chore: bump `svelte2tsx` to 0.7.60 (#16761)
+
+- fix: declare typescript as an optional peer dependency 
+
+... (truncated)]]></description>
+    <pubDate>Thu, 01 Oct 2026 17:21:07 GMT</pubDate>
+  </item>
+  <item>
+    <title>[remix-run/remix] ui v0.12.0 (ui@0.12.0)</title>
+    <link>https://github.com/remix-run/remix/releases/tag/ui%400.12.0</link>
+    <guid isPermaLink="true">https://github.com/remix-run/remix/releases/tag/ui%400.12.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- BREAKING CHANGE: The core component APIs provided by `@remix-run/ui` have now moved to `@remix-run/component`. `@remix-run/ui` now provides headless, accessible UI primitives and animation utilities for Remix components.
+
+ The package root and its JSX runtime, server-rendering, test, development-refresh, and styled-component exports are no longer available. Move runtime imports to `@remix-run/component` or `remix/component`:
+
+ ```diff
+ -import { createRoot, css, on } from '@remix-run/ui'
+ +import { createRoot, css, on } from '@remix-run/component'
+ ```
+
+ If `jsxImportSource` currently points to `@remix-run/ui` or `remix/ui`, move it to the corresponding component entrypoint:
+
+ ```diff
+ {
+ "compilerOptions": {
+ "jsx": "react-jsx",
+ - "jsxImportSource": "@remix-run/ui"
+ + "jsxImportSource": "@remix-run/component"
+ }
+ }
+ ```
+
+ Primitive APIs retain their existing contracts but now use flat package subpaths:
+
+ ```diff
+ -import * as accordion from '@remix-run/ui/accordi
+
+... (truncated)]]></description>
+    <pubDate>Thu, 01 Oct 2026 17:09:19 GMT</pubDate>
+  </item>
+  <item>
+    <title>[rust-lang/rust] Rust 1.99.0 (1.99.0)</title>
+    <link>https://github.com/rust-lang/rust/releases/tag/1.99.0</link>
+    <guid isPermaLink="true">https://github.com/rust-lang/rust/releases/tag/1.99.0</guid>
+    <description><![CDATA[<a id="1.99.0-Language"></a>
+
+## Language
+
+- Add allow-by-default `raw_borrows_via_references` lint that checks for references that decay immediately into raw borrows
+- Extend `unconditional_panic` lint to function calls that panic when the chunks/windows size is zero
+- Stabilize C-variadic function definitions
+- [Stabilize the ability to use `#[unsafe(naked)]` functions to define C-variadic functions (`#![feature(c_variadic_naked_functions)]`).]
+- Trait methods are now resolved on an adjusted never type (producing a FCW)
+- Coerce from inference variables to trait objects if the inference variable is related via subtyping to a type that is known to be `Sized`
+- [Stabilize `#[my_macro] mod foo;`]. This allows outlined modules (`mod foo;`) anywhere in the body of a custom attribute or derive macro.
+- Fix the `overflowing_literals` lint with repeated negation. For instance, it will now no longer lint on `--128_i8`, which is already detected by the `arithmetic_overflow` lint.
+- Add POSIX s
+
+... (truncated)]]></description>
+    <pubDate>Thu, 01 Oct 2026 12:41:12 GMT</pubDate>
+  </item>
+  <item>
+    <title>[BabylonJS/Babylon.js] 9.29.0</title>
+    <link>https://github.com/BabylonJS/Babylon.js/releases/tag/9.29.0</link>
+    <guid isPermaLink="true">https://github.com/BabylonJS/Babylon.js/releases/tag/9.29.0</guid>
+    <description><![CDATA[### Addons
+
+- chore(deps): refresh supported versions and clear security audit - by RaananW (#18961)
+- MSDF Text: release TextRenderer VAO when instance buffers are resized - by marns (#18938)
+
+### Core
+
+- chore(deps): refresh supported versions and clear security audit - by RaananW (#18961)
+- Add frame graph min/max reducer and NRGE block - [_Bug Fix_] by Popov72 (#18958)
+- perf(particles): eliminate per-frame allocations in cpu particles - by LisovskiyIvan (#18946)
+- Add on error on EffectWrapper - by sebavan (#18955)
+- Fix previous world matrix tracking for frame graph velocity outputs - [_Bug Fix_] by Popov72 (#18952)
+- Skip point-light shading outside the light range - by matthargett (#18884)
+- Prevent TargetCamera view collapse after a coincident target - by Shedletsky (#18950)
+- Fix WebGPU 3D texture mipmap generation - by RaananW (#18941)
+- Fix ExtrudePolygon smoothing threshold - [_Bug Fix_] by Popov72 (#18943)
+- Fix ArcRotateCamera movement processing twice per frame - [_Bug 
+
+... (truncated)]]></description>
+    <pubDate>Thu, 01 Oct 2026 07:47:23 GMT</pubDate>
   </item>
   <item>
     <title>[zed-industries/zed] v1.22.0</title>
@@ -195,46 +334,6 @@ For now you
  - @atproto/common@0.8.4
  - @atproto/lex@0.3.13]]></description>
     <pubDate>Tue, 29 Sep 2026 12:42:21 GMT</pubDate>
-  </item>
-  <item>
-    <title>[openai/codex] 0.159.0 (rust-v0.159.0)</title>
-    <link>https://github.com/openai/codex/releases/tag/rust-v0.159.0</link>
-    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.159.0</guid>
-    <description><![CDATA[## New Features
-
-- Opt-in `instant_interrupt` lets new input steer Codex during model responses or long-running code-mode calls. (#48135, #48141)
-- New sessions get a compact welcome screen and consistent headers, with occasional tips during and after turns. (#48513, #48562, #48352)
-- The warnings viewer dismisses reviewed warnings when closed; press `k` to keep one for later. (#48205, #48206)
-- You can scroll the transcript while deciding whether to implement a plan. (#48805)
-- Native Mermaid rendering supports more flowchart edges, labels, and node groups. (#48814, #48895)
-- App-server clients can paginate thread history from a specific item. (#48151)
-
-## Bug Fixes
-
-- Windows launches avoid stray console windows for MCP servers, code-mode hosts, and piped commands; restrictive launchers can fall back to embedded mode. (#48138, #48238, #48483, #48491)
-- Copying transcript selections preserves Markdown tables, formatting, and significant whitespace. More terminals now copy automaticall
-
-... (truncated)]]></description>
-    <pubDate>Tue, 29 Sep 2026 08:05:42 GMT</pubDate>
-  </item>
-  <item>
-    <title>[remix-run/remix] ui v0.11.0 (ui@0.11.0)</title>
-    <link>https://github.com/remix-run/remix/releases/tag/ui%400.11.0</link>
-    <guid isPermaLink="true">https://github.com/remix-run/remix/releases/tag/ui%400.11.0</guid>
-    <description><![CDATA[### Minor Changes
-
-- Preserve client-owned attributes during frame reloads with `data-rmx-preserve-attrs="class data-theme"` on any matched element, including `<html>` and `<body>` (see #11809). The named attributes keep their live values or absence while other attributes and children reconcile normally. The incoming HTML controls the list; clearing it or removing a name returns those attributes to normal reconciliation.
-
-### Patch Changes
-
-- Send `X-Remix-Frame: true` from the default browser resolver for all frame loads, including top-frame navigation and reloads. Named frames also send `X-Remix-Target`, allowing handlers to identify and target frame requests consistently across browser and server rendering (see #11941).
-
-- Treat marker-less HTML that starts with a doctype or `<html>` as a document reload, so pages rendered with `renderToString` can be navigated by the client runtime (see #11808).
-
-- Keep hash-only navigations within a fully loaded page and download requests under br
-
-... (truncated)]]></description>
-    <pubDate>Mon, 28 Sep 2026 21:46:01 GMT</pubDate>
   </item>
   <item>
     <title>[ollama/ollama] v0.35.0</title>
@@ -507,27 +606,6 @@ Dependency version changes:
     <pubDate>Thu, 24 Sep 2026 14:35:44 GMT</pubDate>
   </item>
   <item>
-    <title>[BabylonJS/Babylon.js] 9.28.0</title>
-    <link>https://github.com/BabylonJS/Babylon.js/releases/tag/9.28.0</link>
-    <guid isPermaLink="true">https://github.com/BabylonJS/Babylon.js/releases/tag/9.28.0</guid>
-    <description><![CDATA[### Addons
-
-- Atmosphere: only attach the PBR material plugin to materials in the atmosphere's scene - by increasinglyHuman (#18934)
-
-### Core
-
-- StandardMaterial: depth pre-pass honours every alpha source, and alphaCutOff is bound for all alpha-tested materials - by increasinglyHuman (#18936)
-- Complete cube / prefiltered texture load contract - [_Bug Fix_] by bkaradzic-microsoft (#18874)
-- Add root motion for animation groups: RootMotionClip and RootMotionController - by Pryme8 (#18908)
-- Use nearest sampling for Gaussian Splatting data textures - by luokn (#18933)
-- Fix WGSL vPartIndex redefinition when combining Gaussian Splatting material plugins - by raymondyfei (#18931)
-
-### Loaders
-
-- OBJFileLoader: Fix AssetContainer handling and add opt-in texture loading waits - by noname0310 (#18895)]]></description>
-    <pubDate>Thu, 24 Sep 2026 07:46:15 GMT</pubDate>
-  </item>
-  <item>
     <title>[bluesky-social/social-app] v1.133.0 (1.133.0)</title>
     <link>https://github.com/bluesky-social/social-app/releases/tag/1.133.0</link>
     <guid isPermaLink="true">https://github.com/bluesky-social/social-app/releases/tag/1.133.0</guid>
@@ -580,15 +658,6 @@ Dependency version changes:
 
 ... (truncated)]]></description>
     <pubDate>Wed, 23 Sep 2026 08:00:20 GMT</pubDate>
-  </item>
-  <item>
-    <title>[withastro/astro] @astrojs/ts-content-mapper@0.2.0</title>
-    <link>https://github.com/withastro/astro/releases/tag/%40astrojs/ts-content-mapper%400.2.0</link>
-    <guid isPermaLink="true">https://github.com/withastro/astro/releases/tag/%40astrojs/ts-content-mapper%400.2.0</guid>
-    <description><![CDATA[### Minor Changes
-
-- #18050 `cea7da5` Thanks @Princesseuh! - Adds the initial release of the TypeScript content mapper for Astro files.]]></description>
-    <pubDate>Tue, 22 Sep 2026 18:55:02 GMT</pubDate>
   </item>
   <item>
     <title>[azat-io/eslint-plugin-perfectionist] v5.12.0</title>
@@ -1086,21 +1155,6 @@ Full Release Notes]]></description>
 
 ... (truncated)]]></description>
     <pubDate>Sun, 30 Aug 2026 23:03:47 GMT</pubDate>
-  </item>
-  <item>
-    <title>[Tatsu-syo/noMeiryoUI] Version 3.5.0 (TAG-3.5.0)</title>
-    <link>https://github.com/Tatsu-syo/noMeiryoUI/releases/tag/TAG-3.5.0</link>
-    <guid isPermaLink="true">https://github.com/Tatsu-syo/noMeiryoUI/releases/tag/TAG-3.5.0</guid>
-    <description><![CDATA[- Windows 11 version 26H1の検出方法を修正しました。
-- 大サイズのアイコンを追加しました。
-- インストーラー版を追加しました。
-
-----
-
-- Fix Windows 11 version 26H1 detection.
-- Added large icons.
-- Added installer version.]]></description>
-    <pubDate>Sun, 30 Aug 2026 08:18:53 GMT</pubDate>
   </item>
 </channel>
 </rss>
