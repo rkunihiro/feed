@@ -5,8 +5,169 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Thu, 01 Oct 2026 22:02:10 GMT</lastBuildDate>
+  <lastBuildDate>Fri, 02 Oct 2026 22:02:26 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[bluesky-social/atproto] @atproto/repo@0.11.0</title>
+    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/repo%400.11.0</link>
+    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/repo%400.11.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- #5576 `13b7cb0` Thanks @matthieusieben! - The `BlobStore` interface now extends `AsyncDisposable`, requiring explicit resource management.
+
+### Patch Changes
+
+- #5584 `a6561d5` Thanks @haileyok! - Reject MSTs that reference the same node more than once. Full-tree traversals and diffs now throw `VisitedCidError` instead of re-walking shared subtrees, bounding their cost by the number of unique blocks. `com.atproto.repo.importRepo` returns `InvalidRequest` for such repos.
+- Updated dependencies [`f8ed258`, `e8b89ff`]:
+ - @atproto/crypto@0.5.7
+ - @atproto/lex-data@0.1.8
+ - @atproto/common@0.8.5
+ - @atproto/common-web@0.5.14
+ - @atproto/lex-cbor@0.1.7]]></description>
+    <pubDate>Fri, 02 Oct 2026 21:00:07 GMT</pubDate>
+  </item>
+  <item>
+    <title>[dprint/dprint] 0.59.0</title>
+    <link>https://github.com/dprint/dprint/releases/tag/0.59.0</link>
+    <guid isPermaLink="true">https://github.com/dprint/dprint/releases/tag/0.59.0</guid>
+    <description><![CDATA[## Changes
+
+* fix: canonicalize paths that don't exist in the editor service and lsp (#1260)
+* feat: ensure a stable format for stdin formatting and optionally in editors (#1261)
+* feat(lsp): format jupyter notebook cells (#1262)
+* feat(lsp): format untitled documents (#1265)
+* feat(lsp): support not using the global config by default (#1264)
+* fix(lsp): do not panic on positions that are out of range (#1267)
+* fix(lsp): format files outside the cwd with the global config (#1268)
+* fix(lsp): apply "inherit": true in nested config files (#1269)
+* fix(lsp): keep formatting with other configs after a config changes (#1270)
+* fix(lsp): exit the process after the exit notification (#1272)
+* fix(lsp): log formatting failures to the client (#1273)
+* fix(lsp): rebuild the line index when a change ends in changed lines (#1275)
+* fix(lsp): store the document version when a change is applied (#1276)
+* fix(lsp): pick up gitignore changes without a config change (#1278)
+* fix(lsp): 
+
+... (truncated)]]></description>
+    <pubDate>Fri, 02 Oct 2026 20:31:46 GMT</pubDate>
+  </item>
+  <item>
+    <title>[eslint/eslint] v10.12.0</title>
+    <link>https://github.com/eslint/eslint/releases/tag/v10.12.0</link>
+    <guid isPermaLink="true">https://github.com/eslint/eslint/releases/tag/v10.12.0</guid>
+    <description><![CDATA[## Features
+* `4618052` feat: handle astral letters in `new-cap` (#21357) (sary)
+* `4ec5168` feat: allow `SourceCode#getText` to accept tokens and comments (#21340) (electrohyun)
+
+## Bug Fixes
+* `bc51eee` fix: `prefer-arrow-callback` false positive in conditional test (#21373) (Daniel Pinto)
+* `bbff86c` fix: skip lines with multiple comments in `max-lines-per-function` (#21332) (xbinaryx)
+* `efc4d6b` fix: astral letters in `consistent-return`, `no-eval`, `no-invalid-this` (#21360) (lumir)
+* `93de066` fix: prefer-exponentiation-operator autofix for async function base (#21322) (Vladimir Babin)
+* `02e34ff` fix: add missing space after `else` in `curly` autofix (#21355) (Pixel)
+* `b14b8bc` fix: correct `id-length` message for long private names (#21348) (Pixel)
+* `69aac01` fix: support `TSFunctionType` in `getFunctionHeadLoc` (#21335) (xbinaryx)
+* `686630e` fix: `no-loss-of-precision` false positive with `0.e5` (#21337) (sethamus)
+
+## Documentation
+* `67eb586` docs: Update README (GitHub 
+
+... (truncated)]]></description>
+    <pubDate>Fri, 02 Oct 2026 20:07:11 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-10-02) (release-2026-10-02)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-02</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-02</guid>
+    <description><![CDATA[## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/service/cognitoidentityprovider`: [v1.75.0](service/cognitoidentityprovider/CHANGELOG.md#v1750-2026-10-02)
+ * **Feature**: Amazon Cognito User Pools now supports the OIDC-standard authentication context class reference (ACR) and authentication methods reference (AMR) claims on issued access and Id tokens. Amazon Cognito User Pools also now supports step-up authentication via our existing authentication APIs.
+* `github.com/aws/aws-sdk-go-v2/service/glue`: [v1.167.0](service/glue/CHANGELOG.md#v11670-2026-10-02)
+ * **Feature**: Added refresh token grant type to Glue Connection supported OAuth 2.0 grant types
+ * **Feature**: Enable schema-based (de)serialization for this service.
+* `github.com/aws/aws-sdk-go-v2/service/invoicing`: [v1.22.0](service/invoicing/CHANGELOG.md#v1220-2026-10-02)
+ * **Feature**: API and doc updates related to adding MarketplacePunchOutEnabled and MarketplacePunchOutPreference fields to ProcurementPortalPreferenc
+
+... (truncated)]]></description>
+    <pubDate>Fri, 02 Oct 2026 18:54:46 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1146.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1146.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1146.0</guid>
+    <description><![CDATA[#### 3.1146.0(2026-10-02)
+
+##### Documentation Changes
+
+* **client-lambda-web:** Documentation update for AWS Lambda Web Functions, clarifies that the LambdaWeb APIs are experimental and not yet available to external customers. (de11d1e1)
+
+##### New Features
+
+* **client-mediapackagev2:** Dynamic Multiview enables viewers to watch multiple live video streams in a single combined output. Static filter configuration allows users to configure endpoints with layouts and sources without using query parameters. The number of sources per multiview channel has been increased to 50. (8a1ac09c)
+* **client-invoicing:** API and doc updates related to adding MarketplacePunchOutEnabled and MarketplacePunchOutPreference fields to ProcurementPortalPreferences related APIs (948be4b5)
+* **client-glue:** Added refresh token grant type to Glue Connection supported OAuth 2.0 grant types (6101fef0)
+* **client-cognito-identity-provider:** Amazon Cognito User Pools now supports the OIDC-standard authentication
+
+... (truncated)]]></description>
+    <pubDate>Fri, 02 Oct 2026 18:54:30 GMT</pubDate>
+  </item>
+  <item>
+    <title>[github/spec-kit] Spec Kit - 1.1.0 (v1.1.0)</title>
+    <link>https://github.com/github/spec-kit/releases/tag/v1.1.0</link>
+    <guid isPermaLink="true">https://github.com/github/spec-kit/releases/tag/v1.1.0</guid>
+    <description><![CDATA[## Install
+
+```bash
+uv tool install specify-cli --from git+
+specify init my-project
+```
+
+## What's Changed
+
+- chore: bump version to 1.1.0
+- chore(deps): bump the codeql-action group with 2 updates (#4809)
+- Validate community preset submissions before opening catalog PRs (#4787)
+- fix: use bounded read for workflow catalog HTTP responses (#3766)
+- [extension] Update Archive Extension to v1.4.0 (#4818)
+- [bug-fix] Fix non-latin-feature-names: preserve Unicode feature names (#4780)
+- [extension] Add Conformidad Software Humano extension to community catalog (#4812)
+- Add Software Humano preset to community catalog (#4816)
+- [extension] Add Log Intake (logreduce) extension to community catalog (#4813)
+- Update Quality Gates extension to v0.3.5 (#4814)
+- feat(workflows): install custom step types from local dirs and archives (#4769)
+- fix(integrations): stop dispatching workflow steps to SHAI (#4791)
+- Add September 2026 newsletter (#4811)
+- fix(workflows): split expression operators acro
+
+... (truncated)]]></description>
+    <pubDate>Fri, 02 Oct 2026 18:02:50 GMT</pubDate>
+  </item>
+  <item>
+    <title>[modelcontextprotocol/typescript-sdk] @modelcontextprotocol/client@2.3.0</title>
+    <link>https://github.com/modelcontextprotocol/typescript-sdk/releases/tag/%40modelcontextprotocol/client%402.3.0</link>
+    <guid isPermaLink="true">https://github.com/modelcontextprotocol/typescript-sdk/releases/tag/%40modelcontextprotocol/client%402.3.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- #2901 `433eb41` Thanks @claude! - The HTTP client transports and the OAuth client helpers now follow a redirect only when it stays within the origin of the request (same scheme, host and port, or http to https on the same host with default ports) and keeps the method (a 307 or 308, or any redirect of a GET). Any other redirect is not followed. A transport then fails the request with an error that names the target; the session is kept and later messages still send. OAuth metadata discovery moves on to the next well-known URL, and any other OAuth request fails with an error that gives the status. Same-origin redirects that keep the method keep working on Node, up to five in a row, and no code changes are needed there. If your endpoint redirects to another origin, configure the transport with the URL it redirects to. A `requestInit.redirect` of `'error'` or `'manual'` is passed to fetch as it is for the requests a transport sends to the server (POST, GET and DELETE of
+
+... (truncated)]]></description>
+    <pubDate>Fri, 02 Oct 2026 17:43:42 GMT</pubDate>
+  </item>
+  <item>
+    <title>[remix-run/remix] test v1.0.0 (test@1.0.0)</title>
+    <link>https://github.com/remix-run/remix/releases/tag/test%401.0.0</link>
+    <guid isPermaLink="true">https://github.com/remix-run/remix/releases/tag/test%401.0.0</guid>
+    <description><![CDATA[### Major Changes
+
+- First stable release.
+
+### Patch Changes
+
+- Bumped `@remix-run/*` dependencies:
+ - `node-tsx@1.0.0`
+ - `terminal@1.0.0`]]></description>
+    <pubDate>Thu, 01 Oct 2026 23:08:40 GMT</pubDate>
+  </item>
   <item>
     <title>[openai/codex] 0.160.0 (rust-v0.160.0)</title>
     <link>https://github.com/openai/codex/releases/tag/rust-v0.160.0</link>
@@ -26,45 +187,6 @@
 
 ... (truncated)]]></description>
     <pubDate>Thu, 01 Oct 2026 20:19:13 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-10-01) (release-2026-10-01)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-01</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-01</guid>
-    <description><![CDATA[## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/bedrockagent`: [v1.68.0](service/bedrockagent/CHANGELOG.md#v1680-2026-10-01)
- * **Feature**: Adds an optional textReadyAt field to ListIngestionJobs and GetIngestionJob for Managed Knowledge Bases data source sync jobs. The field denotes the timestamp at which all the documents in the scope of a sync job had their text content indexed and are available for retrieval.
-* `github.com/aws/aws-sdk-go-v2/service/cloudfront`: [v1.74.0](service/cloudfront/CHANGELOG.md#v1740-2026-10-01)
- * **Feature**: Added always-amz-auth as a supported signing behavior for Origin Access Control (OAC), enabling CloudFront to authenticate requests to Lambda-Web origins.
-* `github.com/aws/aws-sdk-go-v2/service/ec2`: [v1.338.1](service/ec2/CHANGELOG.md#v13381-2026-10-01)
- * **Documentation**: This release launches the AMI tag sharing feature, which lets AMI owners share tags alongside their AMIs, eliminating the need to build and maintain custom tag re
-
-... (truncated)]]></description>
-    <pubDate>Thu, 01 Oct 2026 18:53:18 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-js-v3] v3.1145.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1145.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1145.0</guid>
-    <description><![CDATA[#### 3.1145.0(2026-10-01)
-
-##### Chores
-
-* update lock-threads workflow (#8327) (5daff5f2)
-
-##### Documentation Changes
-
-* **client-ec2:** This release launches the AMI tag sharing feature, which lets AMI owners share tags alongside their AMIs, eliminating the need to build and maintain custom tag replication workflows. (82608f8c)
-
-##### New Features
-
-* **clients:** update client endpoints as of 2026-10-01 (5244c2a9)
-* **client-bedrock-agent:** Adds an optional textReadyAt field to ListIngestionJobs and GetIngestionJob for Managed Knowledge Bases data source sync jobs. The field denotes the timestamp at which all the documents in the scope of a sync job had their text content indexed and are available for retrieval. (a810c753)
-* **client-lambda-web:** Lambda Web Functions GA launch. Lambda Web Functions enable customers to run web applications and API backends (ed0d0540)
-* **client-quicksight:** This release adds HierarchyFilter support for Amazon QuickSight analysis and dashboard and 
-
-... (truncated)]]></description>
-    <pubDate>Thu, 01 Oct 2026 18:53:05 GMT</pubDate>
   </item>
   <item>
     <title>[sveltejs/kit] @sveltejs/package@3.0.0</title>
@@ -104,41 +226,6 @@
 
 ... (truncated)]]></description>
     <pubDate>Thu, 01 Oct 2026 17:21:07 GMT</pubDate>
-  </item>
-  <item>
-    <title>[remix-run/remix] ui v0.12.0 (ui@0.12.0)</title>
-    <link>https://github.com/remix-run/remix/releases/tag/ui%400.12.0</link>
-    <guid isPermaLink="true">https://github.com/remix-run/remix/releases/tag/ui%400.12.0</guid>
-    <description><![CDATA[### Minor Changes
-
-- BREAKING CHANGE: The core component APIs provided by `@remix-run/ui` have now moved to `@remix-run/component`. `@remix-run/ui` now provides headless, accessible UI primitives and animation utilities for Remix components.
-
- The package root and its JSX runtime, server-rendering, test, development-refresh, and styled-component exports are no longer available. Move runtime imports to `@remix-run/component` or `remix/component`:
-
- ```diff
- -import { createRoot, css, on } from '@remix-run/ui'
- +import { createRoot, css, on } from '@remix-run/component'
- ```
-
- If `jsxImportSource` currently points to `@remix-run/ui` or `remix/ui`, move it to the corresponding component entrypoint:
-
- ```diff
- {
- "compilerOptions": {
- "jsx": "react-jsx",
- - "jsxImportSource": "@remix-run/ui"
- + "jsxImportSource": "@remix-run/component"
- }
- }
- ```
-
- Primitive APIs retain their existing contracts but now use flat package subpaths:
-
- ```diff
- -import * as accordion from '@remix-run/ui/accordi
-
-... (truncated)]]></description>
-    <pubDate>Thu, 01 Oct 2026 17:09:19 GMT</pubDate>
   </item>
   <item>
     <title>[rust-lang/rust] Rust 1.99.0 (1.99.0)</title>
@@ -263,25 +350,6 @@ See for more information.
     <pubDate>Tue, 29 Sep 2026 17:56:21 GMT</pubDate>
   </item>
   <item>
-    <title>[dprint/dprint] 0.58.0</title>
-    <link>https://github.com/dprint/dprint/releases/tag/0.58.0</link>
-    <guid isPermaLink="true">https://github.com/dprint/dprint/releases/tag/0.58.0</guid>
-    <description><![CDATA[## Changes
-
-* fix(BREAKING): make `--config` file patterns relative to the config file's directory (#1257)
-* feat(BREAKING): evaluate associations and override files in order where the last match wins (#1258)
-* feat: add plugins with `dprint init` when a config file already exists (#1241)
-* feat: additive plugins (#1249)
-* feat: always pre-select a json plugin with `dprint init` (#1252)
-* feat: support `neverPreselect` in the plugin info file (#1253)
-* fix(development): harden range markers in specs (#1256)
-
-This release features a breaking change for glob patterns in config files specified with `--config <file-path>`. Previously in this case, the patterns would be relative to the cwd, but this was bad because it would cause things to work in unexpected ways based on what the cwd is (fragile). See #1257 for workarounds and please open an issue if this really breaks you and I'll try to come up with a solution. Remote configs will continue to work like before where the patterns
-
-... (truncated)]]></description>
-    <pubDate>Tue, 29 Sep 2026 16:29:09 GMT</pubDate>
-  </item>
-  <item>
     <title>[servo/servo] v0.6.0 (LTS) (v0.6.0)</title>
     <link>https://github.com/servo/servo/releases/tag/v0.6.0</link>
     <guid isPermaLink="true">https://github.com/servo/servo/releases/tag/v0.6.0</guid>
@@ -307,33 +375,6 @@ For now you
 
 ... (truncated)]]></description>
     <pubDate>Tue, 29 Sep 2026 15:33:02 GMT</pubDate>
-  </item>
-  <item>
-    <title>[bluesky-social/atproto] @atproto/ozone@0.5.0</title>
-    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/ozone%400.5.0</link>
-    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/ozone%400.5.0</guid>
-    <description><![CDATA[### Minor Changes
-
-- #5459 `136e214` Thanks @gcwill70! - Add an endpoint for creating moderation appeals linked to specific actions.
-
-### Patch Changes
-
-- #5556 `5019f55` Thanks @dependabot! - build(deps-dev): bump the dev-dependencies group across 1 directory with 25 updates
-
-- #5362 `7a85798` Thanks @gcwill70! - Add report lifecycle outcome, action breakdown, handling-time, and resolution-time statistics.
- 
- Keep aggregate totals separate from unassigned-moderator groups, restore moderator inbound counts.
- 
- Index report closure timestamps for daily statistics and combine null and unmatched queue IDs into a single unqueued group.
- 
- Reconstruct historical pending counts at the end of each UTC day from report closure and reopen history. Current-day counts remain live; queue breakdowns use current queue membership.
-- Updated dependencies [`5019f55`]:
- - @atproto/crypto@0.5.6
- - @atproto/identity@0.5.15
- - @atproto/xrpc-server@0.13.3
- - @atproto/common@0.8.4
- - @atproto/lex@0.3.13]]></description>
-    <pubDate>Tue, 29 Sep 2026 12:42:21 GMT</pubDate>
   </item>
   <item>
     <title>[ollama/ollama] v0.35.0</title>
@@ -390,22 +431,6 @@ Example response:
 
 ... (truncated)]]></description>
     <pubDate>Mon, 28 Sep 2026 21:23:22 GMT</pubDate>
-  </item>
-  <item>
-    <title>[modelcontextprotocol/typescript-sdk] @modelcontextprotocol/server@2.2.0</title>
-    <link>https://github.com/modelcontextprotocol/typescript-sdk/releases/tag/%40modelcontextprotocol/server%402.2.0</link>
-    <guid isPermaLink="true">https://github.com/modelcontextprotocol/typescript-sdk/releases/tag/%40modelcontextprotocol/server%402.2.0</guid>
-    <description><![CDATA[### Patch Changes
-
-- #2885 `9dd722f` Thanks @claude! - Sending a notification on a closed connection no longer produces a briefly unhandled promise rejection (seen as `unhandledrejection` on Cloudflare Workers) in addition to the returned rejection.
-
-- #2778 `e3fb9ed` Thanks @vjymisal0! - Fix a stack overflow in `createMcpHandler` when the factory returns the same server instance for more than one request. Returning a fresh instance per request is still required.
-
-- #2651 `c55efa6` Thanks @sushantkumar23! - `createMcpHandler` now ends a `subscriptions/listen` stream right after the acknowledgement when it honored none of the requested notification types, instead of holding the stream open with nothing to deliver. The client receives the acknowledgement and then the `resultType: "complete"` result. Streams that honor at least one type are unchanged.
-
-- Updated dependencies [`edd12e2`]:
- - @modelcontextprotocol/core@2.2.0]]></description>
-    <pubDate>Mon, 28 Sep 2026 19:07:55 GMT</pubDate>
   </item>
   <item>
     <title>[typescript-eslint/typescript-eslint] v8.71.0</title>
@@ -727,32 +752,6 @@ Dependency version changes:
 
 ---]]></description>
     <pubDate>Sat, 19 Sep 2026 11:34:29 GMT</pubDate>
-  </item>
-  <item>
-    <title>[eslint/eslint] v10.11.0</title>
-    <link>https://github.com/eslint/eslint/releases/tag/v10.11.0</link>
-    <guid isPermaLink="true">https://github.com/eslint/eslint/releases/tag/v10.11.0</guid>
-    <description><![CDATA[## Features
-* `d136fa4` feat: object-shorthand handle quoted properties for `ignoreConstructors` (#21271) (Pavel)
-* `397b3b8` feat: report unsafe labeled `continue` in `no-unsafe-finally` rule (#21316) (electrohyun)
-* `d3dd47f` feat: only exempt `new-cap` built-ins that reference the global (#21290) (sethamus)
-
-## Bug Fixes
-* `22b09f5` fix: ignore `__proto__` properties in `prefer-object-spread` (#21311) (xbinaryx)
-* `b684bb1` fix: make TimePass.parse optional in types and docs (#21313) (ntnyq)
-* `26d11bc` fix: don't report `__proto__` properties in `object-shorthand` (#21310) (xbinaryx)
-
-## Documentation
-* `9ecfdc5` docs: note that --cache can serve stale results for cross-file rules (#21312) (bytedoe)
-* `6c789ff` docs: Update README (GitHub Actions Bot)
-* `5997825` docs: clarify preserve-caught-error known limitation (#21294) (Akinyemi Toluwalase)
-
-## Chores
-* `520dd77` perf: Implement fast paths in critical areas (#21210) (Nicholas C. Zakas)
-* `92086c8` test: update `EMFILE` error g
-
-... (truncated)]]></description>
-    <pubDate>Fri, 18 Sep 2026 20:13:06 GMT</pubDate>
   </item>
   <item>
     <title>[vercel-labs/skills] v1.7.0</title>
@@ -1138,23 +1137,6 @@ Full Release Notes]]></description>
 
 ... (truncated)]]></description>
     <pubDate>Thu, 03 Sep 2026 16:48:32 GMT</pubDate>
-  </item>
-  <item>
-    <title>[sindresorhus/got] v16.0.0</title>
-    <link>https://github.com/sindresorhus/got/releases/tag/v16.0.0</link>
-    <guid isPermaLink="true">https://github.com/sindresorhus/got/releases/tag/v16.0.0</guid>
-    <description><![CDATA[## Breaking changes
-
-- Rewrite HTTP/2 support and drop the `http2-wrapper` dependency (#2464) 1e157c4
-	- Got now has a built-in HTTP/2 client: ALPN negotiation, a pooled session cache with multiplexing, `GOAWAY` retirement, request and response trailers, informational (1xx) responses, abort signals, response caching, IPv6 authorities, and `h2c` through `h2session`.
-	- `agent.http2` is no longer an agent slot. It is only an opt-out flag now: pass `false` to skip session pooling. Passing an agent instance throws.
-	- Response headers no longer contain HTTP/2 pseudo-headers. Use `response.statusCode` instead of `response.headers[':status']`.
-	- A custom `agent.https` combined with `http2: true` makes Got use the native HTTP/1.1 path, because the built-in session pool does not support custom HTTPS agents.
-	- HTTP/2 proxy support is gone. It came from `http2-wrapper`. It was very buggy anyway.
-	- If `options.request` returns a request or response, it controls the transport and the HT
-
-... (truncated)]]></description>
-    <pubDate>Sun, 30 Aug 2026 23:03:47 GMT</pubDate>
   </item>
 </channel>
 </rss>
