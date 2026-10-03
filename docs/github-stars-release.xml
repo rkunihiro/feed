@@ -5,8 +5,87 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Fri, 02 Oct 2026 22:02:26 GMT</lastBuildDate>
+  <lastBuildDate>Sat, 03 Oct 2026 22:52:48 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[dprint/dprint] 0.60.0</title>
+    <link>https://github.com/dprint/dprint/releases/tag/0.60.0</link>
+    <guid isPermaLink="true">https://github.com/dprint/dprint/releases/tag/0.60.0</guid>
+    <description><![CDATA[## Changes
+
+* feat: use npm's proxy settings for npm plugins and improve download errors (#1289)
+* feat: use reqwest for downloading (#1291)
+* fix: say when the proxy is what couldn't be connected to (#1292)
+* fix(BREAKING/lsp): only use the global config when opted in and add global config commands (#1288)
+* fix: do not error for plugin config in an extended config that has no matching plugin (#1296)
+* fix: allow un-excluding a node_modules directory with a negated exclude (#1297)
+* fix: support brace expansions that span directories in file patterns (#1298)
+* docs: add missing plugin pages and fix Oxc sidebar label (#1293)
+* docs: document the global config in the vscode extension (#1285)
+* docs: update Oxc plugin docs for newly supported languages (#1286)
+
+
+## Install
+
+Run `dprint upgrade` or see 
+
+## Verification
+
+These artifacts have build provenance attestations.
+Verify a download with the GitHub CLI:
+
+```shell
+gh attestation verify dprint-x86_64-unknown-l
+
+... (truncated)]]></description>
+    <pubDate>Sat, 03 Oct 2026 22:04:28 GMT</pubDate>
+  </item>
+  <item>
+    <title>[sindresorhus/eslint-plugin-unicorn] v77.0.0</title>
+    <link>https://github.com/sindresorhus/eslint-plugin-unicorn/releases/tag/v77.0.0</link>
+    <guid isPermaLink="true">https://github.com/sindresorhus/eslint-plugin-unicorn/releases/tag/v77.0.0</guid>
+    <description><![CDATA[## Breaking
+
+- Move CSS-only rules to `eslint-cssicorn` (#3811) c3697c02
+	- `unicorn/no-deprecated-css-features` → `cssicorn/no-deprecated-features`
+	- `unicorn/no-duplicate-css-selectors` → `cssicorn/no-duplicate-selectors`
+	- `unicorn/no-duplicate-font-family-names` → `cssicorn/no-duplicate-font-family-names`
+	- `unicorn/no-invalid-media-features` → `cssicorn/no-invalid-media-features`
+	- `unicorn/no-nesting-with-mixed-specificity` → `cssicorn/no-nesting-with-mixed-specificity`
+	- `unicorn/no-redundant-nested-style-rules` → `cssicorn/no-redundant-nested-style-rules`
+	- `unicorn/no-unknown-css-annotations` → `cssicorn/no-unknown-annotations`
+	- `unicorn/no-unknown-pseudo-selectors` → `cssicorn/no-unknown-pseudo-selectors`
+	- `unicorn/no-unscoped-css-nesting-selector` → `cssicorn/no-unscoped-nesting-selector`
+	- `unicorn/prefer-explicit-viewport-units` → `cssicorn/prefer-explicit-viewport-units`
+	- `unicorn/prefer-media-feature-range-syntax` → `cssicorn/prefer-media-featur
+
+... (truncated)]]></description>
+    <pubDate>Sat, 03 Oct 2026 10:54:35 GMT</pubDate>
+  </item>
+  <item>
+    <title>[pnpm/pnpm] pnpm 12.9 (v12.9.0)</title>
+    <link>https://github.com/pnpm/pnpm/releases/tag/v12.9.0</link>
+    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v12.9.0</guid>
+    <description><![CDATA[This release runs pnpm in StackBlitz WebContainers, adds a per-registry `networkConcurrency` setting, and records every installed project in the store. It also carries a security fix for `pnpm login`.
+
+### Minor Changes
+
+- pnpm now automatically uses WebAssembly in StackBlitz WebContainers, including when installation scripts are disabled. Native installations continue to use the native executable when installation scripts are enabled.
+
+- A `registries` entry can now set `networkConcurrency`, the most requests pnpm keeps in flight to that registry's origin. Requests to other registries keep the overall limit. The setting may live in `pnpm-workspace.yaml` or the global `config.yaml`.
+
+ ```yaml
+ registries:
+ 
+ scopes: ["@acme"]
+ networkConcurrency: 4
+ ```
+
+- `pnpm install` now records every project it installs in the store's `projects` directory, as a symlink to the project directory. A `--frozen-store` install without the global virtual store still records nothing. Only p
+
+... (truncated)]]></description>
+    <pubDate>Fri, 02 Oct 2026 22:28:05 GMT</pubDate>
+  </item>
   <item>
     <title>[bluesky-social/atproto] @atproto/repo@0.11.0</title>
     <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/repo%400.11.0</link>
@@ -25,31 +104,6 @@
  - @atproto/common-web@0.5.14
  - @atproto/lex-cbor@0.1.7]]></description>
     <pubDate>Fri, 02 Oct 2026 21:00:07 GMT</pubDate>
-  </item>
-  <item>
-    <title>[dprint/dprint] 0.59.0</title>
-    <link>https://github.com/dprint/dprint/releases/tag/0.59.0</link>
-    <guid isPermaLink="true">https://github.com/dprint/dprint/releases/tag/0.59.0</guid>
-    <description><![CDATA[## Changes
-
-* fix: canonicalize paths that don't exist in the editor service and lsp (#1260)
-* feat: ensure a stable format for stdin formatting and optionally in editors (#1261)
-* feat(lsp): format jupyter notebook cells (#1262)
-* feat(lsp): format untitled documents (#1265)
-* feat(lsp): support not using the global config by default (#1264)
-* fix(lsp): do not panic on positions that are out of range (#1267)
-* fix(lsp): format files outside the cwd with the global config (#1268)
-* fix(lsp): apply "inherit": true in nested config files (#1269)
-* fix(lsp): keep formatting with other configs after a config changes (#1270)
-* fix(lsp): exit the process after the exit notification (#1272)
-* fix(lsp): log formatting failures to the client (#1273)
-* fix(lsp): rebuild the line index when a change ends in changed lines (#1275)
-* fix(lsp): store the document version when a change is applied (#1276)
-* fix(lsp): pick up gitignore changes without a config change (#1278)
-* fix(lsp): 
-
-... (truncated)]]></description>
-    <pubDate>Fri, 02 Oct 2026 20:31:46 GMT</pubDate>
   </item>
   <item>
     <title>[eslint/eslint] v10.12.0</title>
@@ -167,26 +221,6 @@ specify init my-project
  - `node-tsx@1.0.0`
  - `terminal@1.0.0`]]></description>
     <pubDate>Thu, 01 Oct 2026 23:08:40 GMT</pubDate>
-  </item>
-  <item>
-    <title>[openai/codex] 0.160.0 (rust-v0.160.0)</title>
-    <link>https://github.com/openai/codex/releases/tag/rust-v0.160.0</link>
-    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.160.0</guid>
-    <description><![CDATA[## New Features
-
-- Browse older tasks in the agent command center with a keyboard-accessible “Show more” action. (#49106)
-- Select transcript text and paste with middle-click in fullscreen mode on supported local Linux X11 terminals. (#49112)
-- Start sessions outside a project with workspace defaults when policy permits, and restore saved permissions when resuming. (#49160)
-- Added opt-in Guardian review capabilities to retrieve earlier user instructions and include context from agent handoffs. (#49036, #49057)
-
-## Bug Fixes
-
-- Unsent queued messages now resume after reconnection once uncertain submissions are resolved, avoiding duplicate sends. (#49105)
-- The terminal UI now preserves server provider, reasoning-summary, and verbosity settings and shows the correct sessions in resume and fork history. (#49144, #49161, #49171)
-- Fixed Windows sandbox PowerShell fallbacks and long-path permission repairs, and suppressed unwanted console windows from background helpers. (#49019, #49058, #
-
-... (truncated)]]></description>
-    <pubDate>Thu, 01 Oct 2026 20:19:13 GMT</pubDate>
   </item>
   <item>
     <title>[sveltejs/kit] @sveltejs/package@3.0.0</title>
@@ -566,27 +600,6 @@ Dependency version changes:
     <pubDate>Mon, 28 Sep 2026 10:29:50 GMT</pubDate>
   </item>
   <item>
-    <title>[pnpm/pnpm] pnpm 12.8 (v12.8.0)</title>
-    <link>https://github.com/pnpm/pnpm/releases/tag/v12.8.0</link>
-    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v12.8.0</guid>
-    <description><![CDATA[pnpm 12.8.0 warns when `pnpm pack` or `pnpm publish` would ship a `.env` file that `files` does not list, installs `sharedWorkspaceLockfile: false` workspaces concurrently, applies every setting passed as `--config.<name>=<value>`, and no longer leaves the Windows terminal stuck after Ctrl+C in a script.
-
-### Minor Changes
-
-- `pnpm pack` and `pnpm publish` now warn when the tarball includes a `.env` or `.env.*` file that the `files` field of `package.json` does not list. Templates such as `.env.example` are not reported. List the file in `files` to publish it on purpose, or exclude it in `.npmignore` or `.gitignore` #7826.
-
-- `pnpm pack` now honors `--silent`, `--reporter=silent`, and `--loglevel=silent` to hide the tarball contents and summary. With `--json`, lifecycle script output and the final JSON output remain visible #10297.
-
-### Patch Changes
-
-#### Installing packages
-
-- Installing through a `pnpr` server now records the pnpmfile checksum in the lockfile, so a later
-
-... (truncated)]]></description>
-    <pubDate>Mon, 28 Sep 2026 07:35:50 GMT</pubDate>
-  </item>
-  <item>
     <title>[nodejs/undici] v6.29.0</title>
     <link>https://github.com/nodejs/undici/releases/tag/v6.29.0</link>
     <guid isPermaLink="true">https://github.com/nodejs/undici/releases/tag/v6.29.0</guid>
@@ -731,27 +744,6 @@ Dependency version changes:
 * Build Docker images from checked-out source and fix Deno's glibc setup.
 * Upgrade Go to 1.27.]]></description>
     <pubDate>Mon, 21 Sep 2026 09:03:19 GMT</pubDate>
-  </item>
-  <item>
-    <title>[sindresorhus/eslint-plugin-unicorn] v76.0.0</title>
-    <link>https://github.com/sindresorhus/eslint-plugin-unicorn/releases/tag/v76.0.0</link>
-    <guid isPermaLink="true">https://github.com/sindresorhus/eslint-plugin-unicorn/releases/tag/v76.0.0</guid>
-    <description><![CDATA[### Breaking
-
-- `no-immediate-mutation`: Add `checkConditionals` option and default it to off (#3707) 4686e7ef
-- `no-break-in-nested-loop`: Add `checkContinue` option and default it to off (#3712) d8fbfde8
-- `prefer-combined-guards`: Add `checkCompoundConditions` option default it to off (#3710) 
-
-### Improvements
-
-- `prefer-minimal-ternary`: Add autofix (#3716) aaa75a46
-- `prefer-logical-operator-over-ternary`: Handle boolean expressions (#3711)
-- `prefer-ternary`: Preserve readable branches (#3709) f7a35aea
-- `no-typeof-undefined`: Ignore TypeScript ambient variables (#3708) 9245ed87
-- Fix autofixes that hardcoded a tab for inserted indentation (#3721) db20ce1c
-
----]]></description>
-    <pubDate>Sat, 19 Sep 2026 11:34:29 GMT</pubDate>
   </item>
   <item>
     <title>[vercel-labs/skills] v1.7.0</title>
@@ -1137,6 +1129,23 @@ Full Release Notes]]></description>
 
 ... (truncated)]]></description>
     <pubDate>Thu, 03 Sep 2026 16:48:32 GMT</pubDate>
+  </item>
+  <item>
+    <title>[sindresorhus/got] v16.0.0</title>
+    <link>https://github.com/sindresorhus/got/releases/tag/v16.0.0</link>
+    <guid isPermaLink="true">https://github.com/sindresorhus/got/releases/tag/v16.0.0</guid>
+    <description><![CDATA[## Breaking changes
+
+- Rewrite HTTP/2 support and drop the `http2-wrapper` dependency (#2464) 1e157c4
+	- Got now has a built-in HTTP/2 client: ALPN negotiation, a pooled session cache with multiplexing, `GOAWAY` retirement, request and response trailers, informational (1xx) responses, abort signals, response caching, IPv6 authorities, and `h2c` through `h2session`.
+	- `agent.http2` is no longer an agent slot. It is only an opt-out flag now: pass `false` to skip session pooling. Passing an agent instance throws.
+	- Response headers no longer contain HTTP/2 pseudo-headers. Use `response.statusCode` instead of `response.headers[':status']`.
+	- A custom `agent.https` combined with `http2: true` makes Got use the native HTTP/1.1 path, because the built-in session pool does not support custom HTTPS agents.
+	- HTTP/2 proxy support is gone. It came from `http2-wrapper`. It was very buggy anyway.
+	- If `options.request` returns a request or response, it controls the transport and the HT
+
+... (truncated)]]></description>
+    <pubDate>Sun, 30 Aug 2026 23:03:47 GMT</pubDate>
   </item>
 </channel>
 </rss>
