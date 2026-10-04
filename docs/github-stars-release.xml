@@ -5,8 +5,37 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Sat, 03 Oct 2026 22:52:48 GMT</lastBuildDate>
+  <lastBuildDate>Sun, 04 Oct 2026 22:02:03 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[inokawa/virtua] 0.53.0</title>
+    <link>https://github.com/inokawa/virtua/releases/tag/0.53.0</link>
+    <guid isPermaLink="true">https://github.com/inokawa/virtua/releases/tag/0.53.0</guid>
+    <description><![CDATA[## What's Changed
+* Refactor e2e by @inokawa in 
+* Refactor e2e by @inokawa in 
+* Add browser tests by @inokawa in 
+* Refactor e2e by @inokawa in 
+* Widen ViewportComponentAttributes to all attrs by @inokawa in 
+* Refactor e2e by @inokawa in 
+* Refactor e2e by @inokawa in 
+* Add browser tests by @inokawa in 
+* Add browser tests by @inokawa in 
+* Improve perf of browser tests by @inokawa in 
+* Refactor e2e by @inokawa in 
+* Refactor e2e by @inokawa in 
+* Refactor e2e by @inokawa in 
+* Refactor e2e by @inokawa in 
+* Refactor e2e by @inokawa in 
+* Remove playwright by @inokawa in 
+* Refactor e2e by @inokawa in 
+* Change default display of horizontal VList to block by @inokawa in 
+* Add VMasonry component by @inokawa in 
+
+
+**Full Changelog**:]]></description>
+    <pubDate>Sun, 04 Oct 2026 16:13:43 GMT</pubDate>
+  </item>
   <item>
     <title>[dprint/dprint] 0.60.0</title>
     <link>https://github.com/dprint/dprint/releases/tag/0.60.0</link>
@@ -1129,23 +1158,6 @@ Full Release Notes]]></description>
 
 ... (truncated)]]></description>
     <pubDate>Thu, 03 Sep 2026 16:48:32 GMT</pubDate>
-  </item>
-  <item>
-    <title>[sindresorhus/got] v16.0.0</title>
-    <link>https://github.com/sindresorhus/got/releases/tag/v16.0.0</link>
-    <guid isPermaLink="true">https://github.com/sindresorhus/got/releases/tag/v16.0.0</guid>
-    <description><![CDATA[## Breaking changes
-
-- Rewrite HTTP/2 support and drop the `http2-wrapper` dependency (#2464) 1e157c4
-	- Got now has a built-in HTTP/2 client: ALPN negotiation, a pooled session cache with multiplexing, `GOAWAY` retirement, request and response trailers, informational (1xx) responses, abort signals, response caching, IPv6 authorities, and `h2c` through `h2session`.
-	- `agent.http2` is no longer an agent slot. It is only an opt-out flag now: pass `false` to skip session pooling. Passing an agent instance throws.
-	- Response headers no longer contain HTTP/2 pseudo-headers. Use `response.statusCode` instead of `response.headers[':status']`.
-	- A custom `agent.https` combined with `http2: true` makes Got use the native HTTP/1.1 path, because the built-in session pool does not support custom HTTPS agents.
-	- HTTP/2 proxy support is gone. It came from `http2-wrapper`. It was very buggy anyway.
-	- If `options.request` returns a request or response, it controls the transport and the HT
-
-... (truncated)]]></description>
-    <pubDate>Sun, 30 Aug 2026 23:03:47 GMT</pubDate>
   </item>
 </channel>
 </rss>
