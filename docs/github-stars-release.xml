@@ -5,8 +5,110 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Sun, 04 Oct 2026 22:02:03 GMT</lastBuildDate>
+  <lastBuildDate>Mon, 05 Oct 2026 22:02:19 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[servo/servo] v0.7.0</title>
+    <link>https://github.com/servo/servo/releases/tag/v0.7.0</link>
+    <guid isPermaLink="true">https://github.com/servo/servo/releases/tag/v0.7.0</guid>
+    <description><![CDATA[Servo v0.7.0 is ready, containing all the changes from September. 
+
+## Trying out the Servo Tech Demo
+
+[troubleshooting guide]: 
+
+### Linux
+
+If you see an error `loading shared libraries` when starting servo on Linux, please refer to the [troubleshooting guide].
+
+### HarmonyOS
+
+Please note that the `servo-aarch64-linux-ohos.hap` attached here is signed for OpenHarmony, not HarmonyOS.
+For HarmonyOS self-signing is currently required - You can download the `servo-aarch64-linux-ohos.so` shared library and use DevEco Studio to follow the instructions in the ArkTS Servo Demo repository
+
+## What's Changed
+
+This section will be updated with a link to the September blog-post once it is released with a curated overview over the recent changes.
+For now you can view the generated release notes below.
+
+<details>
+ <summary>Generated Release notes</summary>
+
+<!-- Release notes generated using configuration in .github/release.yml at release/v0.7 -->
+
+## What's Changed
+* blue
+
+... (truncated)]]></description>
+    <pubDate>Mon, 05 Oct 2026 18:32:02 GMT</pubDate>
+  </item>
+  <item>
+    <title>[bluesky-social/social-app] 1.134.0</title>
+    <link>https://github.com/bluesky-social/social-app/releases/tag/1.134.0</link>
+    <guid isPermaLink="true">https://github.com/bluesky-social/social-app/releases/tag/1.134.0</guid>
+    <description><![CDATA[## What's Changed
+* Fix Android Gradle plugin ordering for Sentry and Bitdrift by @vineyardbovines in 
+* Fix iOS startup crash when app is built with Xcode 27 by @tomekzaw in 
+* APP-3108: Strip Sentry debug code from production bundles by @mozzius in 
+* feat: add Attie link cards by @brittanyellich in 
+* Fix bsky logo appearing during screen back transition by @abulenok in 
+* Fix missing blur when default avatar displayed in the DM screen by @abulenok in 
+* Migrate to expo/ui DatePicker by @abulenok in 
+* Bump version from 1.133.0 to 1.134.0 by @mozzius in 
+* Improve OTA channel notice in drawer by @mozzius in 
+* Fix Oxlint violation in OTA update test by @mozzius in 
+* Show gzip bundle size diff in CI by @mozzius in 
+* APP-3118: Fix Reanimated pager warning by @mozzius in 
+* APP-3120: Restore avatars in iOS chat notifications by @mozzius in 
+* APP-3122: cap tall GIFs in alt-text dialog by @mozzius in 
+* APP-3129: proxy links in profile descriptions by @mozzius in 
+* Re
+
+... (truncated)]]></description>
+    <pubDate>Mon, 05 Oct 2026 16:58:56 GMT</pubDate>
+  </item>
+  <item>
+    <title>[markedjs/marked] v18.1.0</title>
+    <link>https://github.com/markedjs/marked/releases/tag/v18.1.0</link>
+    <guid isPermaLink="true">https://github.com/markedjs/marked/releases/tag/v18.1.0</guid>
+    <description><![CDATA[# 18.1.0 (2026-10-05)
+
+
+### Bug Fixes
+
+* avoid cubic backtracking on unicode whitespace in a link destination (#4106) (0d20220)
+* load CLI configs with top-level await (#4100) (c61543e)
+* reject unbalanced parentheses in link destinations (#4107) (3363c99)
+
+
+### Features
+
+* add linkParenPossible to lexer state to fail fast for link token generation (#4070) (4ee44f7)]]></description>
+    <pubDate>Mon, 05 Oct 2026 15:39:27 GMT</pubDate>
+  </item>
+  <item>
+    <title>[oxc-project/oxc] oxlint v1.87.0 (oxlint_v1.87.0)</title>
+    <link>https://github.com/oxc-project/oxc/releases/tag/oxlint_v1.87.0</link>
+    <guid isPermaLink="true">https://github.com/oxc-project/oxc/releases/tag/oxlint_v1.87.0</guid>
+    <description><![CDATA[### 🚀 Features
+
+- 42dcfd2 linter/react/no-unescaped-entities: Implement suggestion (#27292) (Mikhail Baev)
+- cd4510d linter/unicorn/no-useless-switch-case: Implement suggestion (#27245) (Mikhail Baev)
+- 1a7c902 linter/react/jsx-no-target-blank: Implement suggestion (#27181) (Mikhail Baev)
+
+### 🐛 Bug Fixes
+
+- 176b4b9 linter/jsx-a11y/label-has-associated-control: Validate label attribute values (#27302) (sama Pyb)
+- 7d381c3 linter/jsx-a11y/mouse-events-have-key-events: Handle nullish event handlers (#27306) (sama Pyb)
+- 4e09837 linter/jsx-a11y/lang: Validate lang expression strings (#27304) (sama Pyb)
+- 7d28a66 linter/unicorn/numeric-separators-style: Report misgrouped BigInt literals (#27207) (breken)
+- e928322 linter/unicorn/no-zero-fractions: Parenthesize separator and large integers in fixer (#27206) (breken)
+- 3d61a59 parser: Validate TypeScript type member separators (#27222) (camc314)
+- f08236b linter/eslint/prefer-exponentiation-operator: Preserve autofix precedence (#27150) (c
+
+... (truncated)]]></description>
+    <pubDate>Mon, 05 Oct 2026 11:04:25 GMT</pubDate>
+  </item>
   <item>
     <title>[inokawa/virtua] 0.53.0</title>
     <link>https://github.com/inokawa/virtua/releases/tag/0.53.0</link>
@@ -226,17 +328,6 @@ specify init my-project
     <pubDate>Fri, 02 Oct 2026 18:02:50 GMT</pubDate>
   </item>
   <item>
-    <title>[modelcontextprotocol/typescript-sdk] @modelcontextprotocol/client@2.3.0</title>
-    <link>https://github.com/modelcontextprotocol/typescript-sdk/releases/tag/%40modelcontextprotocol/client%402.3.0</link>
-    <guid isPermaLink="true">https://github.com/modelcontextprotocol/typescript-sdk/releases/tag/%40modelcontextprotocol/client%402.3.0</guid>
-    <description><![CDATA[### Minor Changes
-
-- #2901 `433eb41` Thanks @claude! - The HTTP client transports and the OAuth client helpers now follow a redirect only when it stays within the origin of the request (same scheme, host and port, or http to https on the same host with default ports) and keeps the method (a 307 or 308, or any redirect of a GET). Any other redirect is not followed. A transport then fails the request with an error that names the target; the session is kept and later messages still send. OAuth metadata discovery moves on to the next well-known URL, and any other OAuth request fails with an error that gives the status. Same-origin redirects that keep the method keep working on Node, up to five in a row, and no code changes are needed there. If your endpoint redirects to another origin, configure the transport with the URL it redirects to. A `requestInit.redirect` of `'error'` or `'manual'` is passed to fetch as it is for the requests a transport sends to the server (POST, GET and DELETE of
-
-... (truncated)]]></description>
-    <pubDate>Fri, 02 Oct 2026 17:43:42 GMT</pubDate>
-  </item>
-  <item>
     <title>[remix-run/remix] test v1.0.0 (test@1.0.0)</title>
     <link>https://github.com/remix-run/remix/releases/tag/test%401.0.0</link>
     <guid isPermaLink="true">https://github.com/remix-run/remix/releases/tag/test%401.0.0</guid>
@@ -413,33 +504,6 @@ See for more information.
     <pubDate>Tue, 29 Sep 2026 17:56:21 GMT</pubDate>
   </item>
   <item>
-    <title>[servo/servo] v0.6.0 (LTS) (v0.6.0)</title>
-    <link>https://github.com/servo/servo/releases/tag/v0.6.0</link>
-    <guid isPermaLink="true">https://github.com/servo/servo/releases/tag/v0.6.0</guid>
-    <description><![CDATA[Servo v0.6 updates our JavaScript engine SpiderMonkey from the ESR 140 branch to the current ESR 153 release. Hence this release is also the base of the next LTS release of servo. The previous 0.1 LTS branch will still receive another update with the last SpiderMonkey ESR 140 upstream release.
-
-## Trying out the Servo Tech Demo
-
-[troubleshooting guide]: 
-
-### Linux
-
-If you see an error `loading shared libraries` when starting servo on Linux, please refer to the [troubleshooting guide].
-
-### HarmonyOS
-
-Please note that the `servo-aarch64-linux-ohos.hap` attached here is signed for OpenHarmony, not HarmonyOS.
-For HarmonyOS self-signing is currently required - You can download the `servo-aarch64-linux-ohos.so` shared library and use DevEco Studio to follow the instructions in the ArkTS Servo Demo repository
-
-## What's Changed
-
-This section will be updated with a link to the August blog-post once it is released with a curated overview over the recent changes.
-For now you 
-
-... (truncated)]]></description>
-    <pubDate>Tue, 29 Sep 2026 15:33:02 GMT</pubDate>
-  </item>
-  <item>
     <title>[ollama/ollama] v0.35.0</title>
     <link>https://github.com/ollama/ollama/releases/tag/v0.35.0</link>
     <guid isPermaLink="true">https://github.com/ollama/ollama/releases/tag/v0.35.0</guid>
@@ -605,30 +669,6 @@ Dependency version changes:
     <pubDate>Mon, 28 Sep 2026 13:00:47 GMT</pubDate>
   </item>
   <item>
-    <title>[oxc-project/oxc] oxlint v1.86.0 (oxlint_v1.86.0)</title>
-    <link>https://github.com/oxc-project/oxc/releases/tag/oxlint_v1.86.0</link>
-    <guid isPermaLink="true">https://github.com/oxc-project/oxc/releases/tag/oxlint_v1.86.0</guid>
-    <description><![CDATA[### 🚀 Features
-
-- 9d80eed linter/react/only-export-components: Support `allowCompoundComponents` (#27117) (Kuroda Kayn)
-- e05b155 linter: Add typescript/no-generated-empty-object-type (#26958) (camc314)
-
-### 🐛 Bug Fixes
-
-- 8306aa4 linter/typescript/no-unnecessary-parameter-property-assignment: Account for parameter property reassignment (#26955) (camc314)
-- 42dfbb5 linter/eslint/one-var: Keep `declare` when splitting declarations (#27081) (Cheolhee Lee)
-- 2ba7e33 linter/eslint/require-await: Count `await using` as an await (#27080) (Cheolhee Lee)
-- 611e4ed linter/plugins: Include executing selectors in JS plugin rule timings (#27111) (overlookmotel)
-- 2cac66f react-compiler: Handle recursive function expressions (#26796) (Brennan Butler)
-- e996e6c react-compiler: Treat zero-argument new Date as impure (#26894) (Boshen)
-- 571cfa3 oxlint: Skip type-aware lint rules in type-check-only mode (#27076) (camc314)
-- d0b2462 oxlint: Skip undefined children in CFG walker (#27075) (camc314)
-- 51
-
-... (truncated)]]></description>
-    <pubDate>Mon, 28 Sep 2026 10:29:50 GMT</pubDate>
-  </item>
-  <item>
     <title>[nodejs/undici] v6.29.0</title>
     <link>https://github.com/nodejs/undici/releases/tag/v6.29.0</link>
     <guid isPermaLink="true">https://github.com/nodejs/undici/releases/tag/v6.29.0</guid>
@@ -671,31 +711,6 @@ Dependency version changes:
 
 ... (truncated)]]></description>
     <pubDate>Thu, 24 Sep 2026 14:35:44 GMT</pubDate>
-  </item>
-  <item>
-    <title>[bluesky-social/social-app] v1.133.0 (1.133.0)</title>
-    <link>https://github.com/bluesky-social/social-app/releases/tag/1.133.0</link>
-    <guid isPermaLink="true">https://github.com/bluesky-social/social-app/releases/tag/1.133.0</guid>
-    <description><![CDATA[## What's Changed
-* Create Mod Inbox settings screen by @ds-boyce in 
-* Create mod inbox report details screen by @ds-boyce in 
-* Use title case for Starter Pack by @ds-boyce in 
-* APP-3031: Fix contact imports after Expo 57 by @mozzius in 
-* Migrate Expo image manipulator API by @mozzius in 
-* Add carousel Slack alerts for nightly Maestro failures by @mozzius in 
-* Create Mod Inbox action details screen by @ds-boyce in 
-* Bump version from 1.132.0 to 1.133.0 by @mozzius in 
-* Add more data to trending metrics by @ds-boyce in 
-* Fix Android thread number alignment across font scales by @ds-boyce in 
-* Restore expanded post styles by @vineyardbovines in 
-* Move repository instructions to AGENTS.md by @mozzius in 
-* Fix hidden adult content takes time to appear by @abulenok in 
-* Remove content visibility + SP search feature flags by @mozzius in 
-* Remove native Reanimated dependency array by @mozzius in 
-* Use useEffectEvent for effects with deliberately narrow deps by @
-
-... (truncated)]]></description>
-    <pubDate>Wed, 23 Sep 2026 23:26:09 GMT</pubDate>
   </item>
   <item>
     <title>[nestjs/nest] v12.1.0</title>
