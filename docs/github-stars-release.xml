@@ -5,8 +5,47 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Mon, 05 Oct 2026 22:02:19 GMT</lastBuildDate>
+  <lastBuildDate>Tue, 06 Oct 2026 22:02:26 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[pnpm/pnpm] pnpm 12.10.0 (v12.10.0)</title>
+    <link>https://github.com/pnpm/pnpm/releases/tag/v12.10.0</link>
+    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v12.10.0</guid>
+    <description><![CDATA[This release adds an experimental `loaded` node linker, lets `pnpm-lock.yaml` record resolution settings, and reads cached registry metadata faster. It also carries several security fixes, including one that stops a dependency version from writing files outside the global virtual store.
+
+### Minor Changes
+
+- Added experimental `nodeLinker: { type: loaded }` installation. Compatible dependencies load directly from the content-addressable store through an automatically registered Node.js loader. `nodeLinker.excluded` selects packages and their dependency trees to install in the global virtual store.
+
+- `lockfile.includeResolutionSettings: true` makes `pnpm-lock.yaml` record `autoDedupe`, `dedupeInjectedDeps`, `dedupePeerDependents` and `linkWorkspacePackages`. Installs then treat a lockfile that records other values as outdated. A lockfile that records `autoDedupe` is reused by later installs on any machine, so `pnpm run` after `pnpm install --frozen-lockfile` no longer starts anot
+
+... (truncated)]]></description>
+    <pubDate>Tue, 06 Oct 2026 05:24:45 GMT</pubDate>
+  </item>
+  <item>
+    <title>[floci-io/floci] 2.2.0</title>
+    <link>https://github.com/floci-io/floci/releases/tag/2.2.0</link>
+    <guid isPermaLink="true">https://github.com/floci-io/floci/releases/tag/2.2.0</guid>
+    <description><![CDATA[Full changelog with commit links: CHANGELOG.md · Compare: 2.1.0...2.2.0
+
+### Bug Fixes
+
+* add Scheduler retry backoff and DLQ handling (#3687)
+* **apigateway,appsync:** sandbox VTL rendering with SecureUberspector and execution limits (#3542)
+* **apigateway:** accept a region label before the built-in execute-api suffixes (#4705), closes #4701
+* **apigateway:** capture HTTP proxy greedy suffixes (#4980)
+* **apigateway:** complete API Gateway API key responses (#3817)
+* **apigateway:** create API keys disabled unless enabled is set (#4731)
+* **apigateway:** drop the SigV4 Authorization header before REST integrations (#4567)
+* **apigateway:** format request times with an English locale (#5093)
+* **apigateway:** honor import warnings and strict rollback (#4531)
+* **apigateway:** import x-amazon-apigateway-any-method in the native image and roll back failed imports (#4473)
+* **apigateway:** map authorizer context in HTTP integrations (#4992)
+* **apigateway:** mark custom-do
+
+... (truncated)]]></description>
+    <pubDate>Tue, 06 Oct 2026 05:23:38 GMT</pubDate>
+  </item>
   <item>
     <title>[servo/servo] v0.7.0</title>
     <link>https://github.com/servo/servo/releases/tag/v0.7.0</link>
@@ -194,49 +233,6 @@ gh attestation verify dprint-x86_64-unknown-l
     <pubDate>Sat, 03 Oct 2026 10:54:35 GMT</pubDate>
   </item>
   <item>
-    <title>[pnpm/pnpm] pnpm 12.9 (v12.9.0)</title>
-    <link>https://github.com/pnpm/pnpm/releases/tag/v12.9.0</link>
-    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v12.9.0</guid>
-    <description><![CDATA[This release runs pnpm in StackBlitz WebContainers, adds a per-registry `networkConcurrency` setting, and records every installed project in the store. It also carries a security fix for `pnpm login`.
-
-### Minor Changes
-
-- pnpm now automatically uses WebAssembly in StackBlitz WebContainers, including when installation scripts are disabled. Native installations continue to use the native executable when installation scripts are enabled.
-
-- A `registries` entry can now set `networkConcurrency`, the most requests pnpm keeps in flight to that registry's origin. Requests to other registries keep the overall limit. The setting may live in `pnpm-workspace.yaml` or the global `config.yaml`.
-
- ```yaml
- registries:
- 
- scopes: ["@acme"]
- networkConcurrency: 4
- ```
-
-- `pnpm install` now records every project it installs in the store's `projects` directory, as a symlink to the project directory. A `--frozen-store` install without the global virtual store still records nothing. Only p
-
-... (truncated)]]></description>
-    <pubDate>Fri, 02 Oct 2026 22:28:05 GMT</pubDate>
-  </item>
-  <item>
-    <title>[bluesky-social/atproto] @atproto/repo@0.11.0</title>
-    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/repo%400.11.0</link>
-    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/repo%400.11.0</guid>
-    <description><![CDATA[### Minor Changes
-
-- #5576 `13b7cb0` Thanks @matthieusieben! - The `BlobStore` interface now extends `AsyncDisposable`, requiring explicit resource management.
-
-### Patch Changes
-
-- #5584 `a6561d5` Thanks @haileyok! - Reject MSTs that reference the same node more than once. Full-tree traversals and diffs now throw `VisitedCidError` instead of re-walking shared subtrees, bounding their cost by the number of unique blocks. `com.atproto.repo.importRepo` returns `InvalidRequest` for such repos.
-- Updated dependencies [`f8ed258`, `e8b89ff`]:
- - @atproto/crypto@0.5.7
- - @atproto/lex-data@0.1.8
- - @atproto/common@0.8.5
- - @atproto/common-web@0.5.14
- - @atproto/lex-cbor@0.1.7]]></description>
-    <pubDate>Fri, 02 Oct 2026 21:00:07 GMT</pubDate>
-  </item>
-  <item>
     <title>[eslint/eslint] v10.12.0</title>
     <link>https://github.com/eslint/eslint/releases/tag/v10.12.0</link>
     <guid isPermaLink="true">https://github.com/eslint/eslint/releases/tag/v10.12.0</guid>
@@ -307,6 +303,10 @@ uv tool install specify-cli --from git+
 specify init my-project
 ```
 
+## Deprecation
+
+The core /speckit.taskstoissues command is now deprecated, and you should use the `github` extension for the `taskstoissues ` functionality.
+
 ## What's Changed
 
 - chore: bump version to 1.1.0
@@ -319,10 +319,7 @@ specify init my-project
 - Add Software Humano preset to community catalog (#4816)
 - [extension] Add Log Intake (logreduce) extension to community catalog (#4813)
 - Update Quality Gates extension to v0.3.5 (#4814)
-- feat(workflows): install custom step types from local dirs and archives (#4769)
-- fix(integrations): stop dispatching workflow steps to SHAI (#4791)
-- Add September 2026 newsletter (#4811)
-- fix(workflows): split expression operators acro
+- feat(workflows): install custom step types from local dir
 
 ... (truncated)]]></description>
     <pubDate>Fri, 02 Oct 2026 18:02:50 GMT</pubDate>
@@ -504,62 +501,6 @@ See for more information.
     <pubDate>Tue, 29 Sep 2026 17:56:21 GMT</pubDate>
   </item>
   <item>
-    <title>[ollama/ollama] v0.35.0</title>
-    <link>https://github.com/ollama/ollama/releases/tag/v0.35.0</link>
-    <guid isPermaLink="true">https://github.com/ollama/ollama/releases/tag/v0.35.0</guid>
-    <description><![CDATA[## Decision models
-
-Ollama now supports decision models through `/v1/systemone`, based on TypeSafe’s Jev API.
-
-Decision models return choices, probabilities, and scores instead of text. Use them for tasks such as ticket triage, model routing, and content classification.
-
-Available models:
-- **Nimble** from Bespoke Labs
-- **Tev1** from Together AI
-
-```sh
-ollama pull nimble
-```
-
-Send context and one or more questions:
-
-```sh
-curl \
- -H 'Content-Type: application/json' \
- -d '{
- "model": "nimble",
- "state": "Our checkout has returned 500 errors since 9am.",
- "questions": {
- "label": {
- "type": "choice",
- "instructions": "Which label fits this ticket?",
- "criteria": {
- "billing": "Payments and refunds",
- "bug": "Software errors",
- "account": "Login and account access"
- }
- }
- }
- }'
-```
-
-Example response:
-
-```json
-{
- "model": "nimble",
- "answers": {
- "label": {
- "type": "choice",
- "choice": "bug",
- "probabilities": {
- "billing": 0.0125,
- "bug": 
-
-... (truncated)]]></description>
-    <pubDate>Mon, 28 Sep 2026 21:23:22 GMT</pubDate>
-  </item>
-  <item>
     <title>[typescript-eslint/typescript-eslint] v8.71.0</title>
     <link>https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.71.0</link>
     <guid isPermaLink="true">https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.71.0</guid>
@@ -680,6 +621,33 @@ Dependency version changes:
 
 **Full Changelog**:]]></description>
     <pubDate>Fri, 25 Sep 2026 09:42:48 GMT</pubDate>
+  </item>
+  <item>
+    <title>[ollama/ollama] v0.40.0</title>
+    <link>https://github.com/ollama/ollama/releases/tag/v0.40.0</link>
+    <guid isPermaLink="true">https://github.com/ollama/ollama/releases/tag/v0.40.0</guid>
+    <description><![CDATA[## What's Changed
+
+**Models run on MLX on Apple Silicon by default**
+
+In this release, on Apple Silicon devices, model architectures supported by the MLX runtime will automatically run on MLX.
+
+```
+ollama pull qwen3.8
+ollama run qwen3.8
+```
+
+Additional models include gemma4, qwen3.6 and qwen3.5
+
+Decision models are now available on MLX as well: Nimble tev1 clef clef-flash 
+
+MLX now has support for an embedding model: embeddinggemma-2
+
+We will continue testing and enabling additional models.
+
+
+**Full Changelog**:]]></description>
+    <pubDate>Fri, 25 Sep 2026 03:31:52 GMT</pubDate>
   </item>
   <item>
     <title>[mrdoob/three.js] r186</title>
@@ -884,30 +852,6 @@ Users prioritizing stability and a longer support lifecycle should stay on the
     <guid isPermaLink="true">https://github.com/remix-run/react-router/releases/tag/react-router%408.4.0</guid>
     <description><![CDATA[See the changelog for release notes:]]></description>
     <pubDate>Tue, 15 Sep 2026 15:22:42 GMT</pubDate>
-  </item>
-  <item>
-    <title>[floci-io/floci] 2.1.0</title>
-    <link>https://github.com/floci-io/floci/releases/tag/2.1.0</link>
-    <guid isPermaLink="true">https://github.com/floci-io/floci/releases/tag/2.1.0</guid>
-    <description><![CDATA[# 2.1.0 (2026-09-15)
-
-
-### Bug Fixes
-
-* **acm:** reflect the requested ValidationDomain in DescribeCertificate (#3264) (922eb0b)
-* **acm:** reject RequestCertificate key algorithms real ACM does not support (#3044) (db6c419), closes #3027
-* **acm:** report SUCCESS domain validation once a certificate is issued (#3112) (9b28388)
-* **acm:** stop hex-shaped names becoming bogus IP address SANs (#3335) (7a7531a)
-* **amazonmq:** add configuration for AMQP and console host port ranges (#3315) (2d5a8f7)
-* **apigateway:** add missing authorizer arg to two VtlContext test calls (38056a0), closes #3560
-* **apigateway:** allow idempotent custom-id tags (#3430) (eb62225)
-* **apigateway:** answer an unmatched REST request with 403, not 404/405 (#3547) (fb82fb2)
-* **apigateway:** decode the ~0 JSON Pointer escape in stage method-settings patch paths (#3526) (bc44fc9)
-* **apigateway:** enforce ApiKeyRequired on REST API methods (#3537) (3b31c5a), closes #3507 #3507
-* **apigateway:** enforce AWS_IAM a
-
-... (truncated)]]></description>
-    <pubDate>Tue, 15 Sep 2026 04:56:15 GMT</pubDate>
   </item>
   <item>
     <title>[webpack/webpack] v5.111.0</title>
@@ -1173,6 +1117,23 @@ Full Release Notes]]></description>
 
 ... (truncated)]]></description>
     <pubDate>Thu, 03 Sep 2026 16:48:32 GMT</pubDate>
+  </item>
+  <item>
+    <title>[sindresorhus/got] v16.0.0</title>
+    <link>https://github.com/sindresorhus/got/releases/tag/v16.0.0</link>
+    <guid isPermaLink="true">https://github.com/sindresorhus/got/releases/tag/v16.0.0</guid>
+    <description><![CDATA[## Breaking changes
+
+- Rewrite HTTP/2 support and drop the `http2-wrapper` dependency (#2464) 1e157c4
+	- Got now has a built-in HTTP/2 client: ALPN negotiation, a pooled session cache with multiplexing, `GOAWAY` retirement, request and response trailers, informational (1xx) responses, abort signals, response caching, IPv6 authorities, and `h2c` through `h2session`.
+	- `agent.http2` is no longer an agent slot. It is only an opt-out flag now: pass `false` to skip session pooling. Passing an agent instance throws.
+	- Response headers no longer contain HTTP/2 pseudo-headers. Use `response.statusCode` instead of `response.headers[':status']`.
+	- A custom `agent.https` combined with `http2: true` makes Got use the native HTTP/1.1 path, because the built-in session pool does not support custom HTTPS agents.
+	- HTTP/2 proxy support is gone. It came from `http2-wrapper`. It was very buggy anyway.
+	- If `options.request` returns a request or response, it controls the transport and the HT
+
+... (truncated)]]></description>
+    <pubDate>Sun, 30 Aug 2026 23:03:47 GMT</pubDate>
   </item>
 </channel>
 </rss>
