@@ -5,8 +5,211 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Tue, 06 Oct 2026 22:02:26 GMT</lastBuildDate>
+  <lastBuildDate>Wed, 07 Oct 2026 22:02:13 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[microsoft/playwright] v1.64.0</title>
+    <link>https://github.com/microsoft/playwright/releases/tag/v1.64.0</link>
+    <guid isPermaLink="true">https://github.com/microsoft/playwright/releases/tag/v1.64.0</guid>
+    <description><![CDATA[## 🧰 WebMCP
+
+New page.webmcp and frame.webmcp give access to the tools that a page registers through the experimental WebMCP browser API, so you can test them like any other part of your app:
+
+```js
+const browser = await chromium.launch({ args: ['--enable-features=WebMCP'] });
+const page = await browser.newPage;
+await page.goto('');
+
+for (const tool of await page.webmcp.tools)
+ console.log(tool.name, tool.description);
+
+const result = await page.webmcp.callTool('add', { a: 2, b: 40 });
+console.log(result.content[0].text); // "42"
+```
+
+Playwright MCP also supports WebMCP by default, with page-defined tools offered to the agent as `webmcp_<tool>`. Pass `--no-webmcp` to opt out.
+
+`playwright-cli` exposes them as well:
+
+```bash
+playwright-cli webmcp-list
+playwright-cli webmcp-call search_catalog --params '{"query":"cats"}'
+```
+
+## 🎬 Better videos
+
+Videos can now be recorded at a custom frame rate, and the decorations for actions are styled with plain CSS:
+
+``
+
+... (truncated)]]></description>
+    <pubDate>Wed, 07 Oct 2026 20:40:43 GMT</pubDate>
+  </item>
+  <item>
+    <title>[dprint/dprint] 0.61.0</title>
+    <link>https://github.com/dprint/dprint/releases/tag/0.61.0</link>
+    <guid isPermaLink="true">https://github.com/dprint/dprint/releases/tag/0.61.0</guid>
+    <description><![CDATA[## Changes
+
+* feat: provide a sandboxed subset of WASI to Wasm plugins (#1303)
+
+This is going to enable dprint-plugin-roslyn to be a Wasm plugin and run sandboxed.
+
+## Install
+
+Run `dprint upgrade` or see 
+
+## Verification
+
+These artifacts have build provenance attestations.
+Verify a download with the GitHub CLI:
+
+```shell
+gh attestation verify dprint-x86_64-unknown-linux-gnu.zip --repo dprint/dprint
+```
+
+## Checksums
+
+|Artifact|SHA-256 Checksum|
+|:--|:--|
+|dprint-x86_64-apple-darwin.zip|dede71277f9f48a27d989debb3ddb7da1a1c2dc1c8c64d964d49d6ebc94112be|
+|dprint-aarch64-apple-darwin.zip|397ccc359e3197e11505c9bef40e6bbc46a2f80796658b3b7d13f6fec747ccc9|
+|dprint-x86_64-pc-windows-msvc.zip|31480ef00f2dc3ddea18af9128c6a2edb496396317a94d2b7c11d5169ef0051f|
+|dprint-x86_64-pc-windows-msvc-installer.exe|56cd3455fe1dcf7827d33841d312be0e724ae4285b850b9aeb8159fbd4437f11|
+|dprint-aarch64-pc-windows-msvc.zip|edf2b0a0b45b6a5b761cfe463c588f78af507bf80b899d5663c97cff73b0da43|
+
+
+... (truncated)]]></description>
+    <pubDate>Wed, 07 Oct 2026 16:40:58 GMT</pubDate>
+  </item>
+  <item>
+    <title>[openai/codex] 0.161.0 (rust-v0.161.0)</title>
+    <link>https://github.com/openai/codex/releases/tag/rust-v0.161.0</link>
+    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.161.0</guid>
+    <description><![CDATA[## New Features
+
+- GPT-6.1 Sol is now the default model in the bundled and Amazon Bedrock catalogs. (#49318, #49339)
+- Amazon Bedrock supports multi-agent V2 and Ultra reasoning on compatible models; Bedrock Mantle also accepts AWS GovCloud regions. (#49345, #49813)
+- Sign in to MCP servers from an active terminal session with `/mcp login <name>`. (#49290)
+- Choose your microphone, speaker, and microphone input channels for voice conversations, with preferences saved locally. (#49437, #49836)
+- Daybreak is opt-in through `--enable cli_daybreak` or `features.cli_daybreak=true`; `daybreak=true` alone is insufficient. By default, controls and indicators are hidden, `/daybreak` is unavailable, and automatic Cyber routing is omitted—even for saved Daybreak threads. Saved preferences remain intact. Opt-in routing requires eligible ChatGPT sign-in, the OpenAI provider, and advertised model/program support. (#49856, #49858, #49859, #49861, #51207)
+- Select a Cyber access program per turn with 
+
+... (truncated)]]></description>
+    <pubDate>Wed, 07 Oct 2026 15:58:45 GMT</pubDate>
+  </item>
+  <item>
+    <title>[bluesky-social/atproto] @atproto/ozone@0.6.0</title>
+    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/ozone%400.6.0</link>
+    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/ozone%400.6.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- #5550 `3013430` Thanks @foysalit! - Add viewer-facing moderation inbox reads for configurable account standing, report details, and cursor-paginated action history, with PDS proxy access and read-only moderator previews. Include appeal attribution in moderator event views, structured policy details in takedown actions, and pending, resolved, and unread actioned-subject filters based on appeal report state. Keep moderator notes private.
+ 
+ Page reports through reporter/time indexes with bounded hydration and source ownership validation. Batch subject hydration, reuse indexes for report summaries, and limit latest appeal lookups to one row in SQL. Add non-appeal reporter/time indexes, with the inbox migration ordered after the reporter DID column migration.
+ 
+ Add OZONE_INBOX_START_AT to limit report, action, and appeal history by creation time, with a public subject/action creation-time index. Cover structured policy names, links, and fallback URLs in mapper regress
+
+... (truncated)]]></description>
+    <pubDate>Wed, 07 Oct 2026 15:44:06 GMT</pubDate>
+  </item>
+  <item>
+    <title>[uptrace/uptrace] v2.1.0-rc.1</title>
+    <link>https://github.com/uptrace/uptrace/releases/tag/v2.1.0-rc.1</link>
+    <guid isPermaLink="true">https://github.com/uptrace/uptrace/releases/tag/v2.1.0-rc.1</guid>
+    <description><![CDATA[CHANGELOG]]></description>
+    <pubDate>Wed, 07 Oct 2026 15:04:28 GMT</pubDate>
+  </item>
+  <item>
+    <title>[nodejs/node] 2026-10-07, Version 26.11.0 (Current), @aduh95 (v26.11.0)</title>
+    <link>https://github.com/nodejs/node/releases/tag/v26.11.0</link>
+    <guid isPermaLink="true">https://github.com/nodejs/node/releases/tag/v26.11.0</guid>
+    <description><![CDATA[### Notable Changes
+
+* \[`232f178825`] - **(SEMVER-MINOR)** **buffer**: add `isLatin1` (James M Snell) #66298
+* \[`27778036de`] - **(SEMVER-MINOR)** **buffer**: add `Buffer.stringLength` (Matteo Collina) #66064
+* \[`4f84c4bda2`] - **build, doc**: move to redesign (Aviv Keller) #62045
+* \[`6f6296fef9`] - **(SEMVER-MINOR)** **doc**: promote Alpine Linux to tier 2 support (Stewart X Addison) #63737
+* \[`e998d260d0`] - **(SEMVER-MINOR)** **http**: add `isValidHeaderName` and isValidHeaderValue (James M Snell) #66334
+* \[`7702a50e08`] - **(SEMVER-MINOR)** **http2**: add `connectionWindowSize` option (Tim Perry) #65619
+* \[`e06aa62cec`] - **(SEMVER-MINOR)** **perf\_hooks**: fix truncation of `monitorEventLoopDelay` resolution (James M Snell) #66115
+* \[`ee126e37e8`] - **(SEMVER-MINOR)** **perf\_hooks**: allow `RecordableHistogram` to record 0 (James M Snell) #66114
+* \[`1fef8f54db`] - **(SEMVER-MINOR)** **perf\_hooks**: add `histogram.diff` (James M Snell) #66099
+* \[`f1b9758c4e`] - **(SEMVE
+
+... (truncated)]]></description>
+    <pubDate>Wed, 07 Oct 2026 14:43:59 GMT</pubDate>
+  </item>
+  <item>
+    <title>[vercel/next.js] v16.4.0</title>
+    <link>https://github.com/vercel/next.js/releases/tag/v16.4.0</link>
+    <guid isPermaLink="true">https://github.com/vercel/next.js/releases/tag/v16.4.0</guid>
+    <description><![CDATA[Check out the 16.4 announcement post to get an overview of the changes.
+
+### Core Changes
+
+- Show compiler plugin warning in more situations: #75682
+- fix(scripts): correct typo in rm.mjs error message: #87015
+- docs: improve clarity and punctuation in README: #86096
+- Fix debug build paths Pages Router support entries: #93529
+- bundle-analyzer: record historical snapshots on each analyze run: #93520
+- fix: detect proxy.ts correctly with compound pageExtensions: #93246
+- feat(turbopack): support `false` values for `resolveAlias` config: #93331
+
+### Misc Changes
+
+- docs: correction to dynamicParams migration: #96624
+- docs: proxy event argument: #96435
+- docs: remove experimental note from runtime prefetching: #96615
+- Preserve per-segment prefetching after dynamic navigation: #96583
+- Rename static generation stream option to waitForAllReady: #96564
+- Remove obsolete static generation plumbing: #96563
+- [turbopack] Drop dead writes to `exports`: #96381
+- [turbopack
+
+... (truncated)]]></description>
+    <pubDate>Wed, 07 Oct 2026 10:03:29 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-10-06) (release-2026-10-06)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-06</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-06</guid>
+    <description><![CDATA[## General Highlights
+* **Dependency Update**: Updated to the latest SDK module versions
+
+## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/service/aiops`: [v1.17.0](service/aiops/CHANGELOG.md#v1170-2026-10-06)
+ * **Feature**: Enable schema-based (de)serialization for this service.
+* `github.com/aws/aws-sdk-go-v2/service/amplifybackend`: [v1.43.0](service/amplifybackend/CHANGELOG.md#v1430-2026-10-06)
+ * **Feature**: Enable schema-based (de)serialization for this service.
+* `github.com/aws/aws-sdk-go-v2/service/amplifyuibuilder`: [v1.39.0](service/amplifyuibuilder/CHANGELOG.md#v1390-2026-10-06)
+ * **Feature**: Enable schema-based (de)serialization for this service.
+* `github.com/aws/aws-sdk-go-v2/service/apigateway`: [v1.51.0](service/apigateway/CHANGELOG.md#v1510-2026-10-06)
+ * **Feature**: Enable schema-based (de)serialization for this service.
+* `github.com/aws/aws-sdk-go-v2/service/apigatewaymanagementapi`: [v1.40.0](service/apigatewaymanagementapi/CHANGELOG.md#v1400-2026-10-06)
+
+
+... (truncated)]]></description>
+    <pubDate>Tue, 06 Oct 2026 23:01:21 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1147.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1147.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1147.0</guid>
+    <description><![CDATA[#### 3.1147.0(2026-10-06)
+
+##### New Features
+
+* **clients:** update client endpoints as of 2026-10-06 (c2162728)
+* **client-lambda-web:** Removes operations that are not yet generally available from the Lambda Web. (b9da1cc4)
+* **lib-transfer-manager:** add opt-in O_DIRECT path for file downloads (#8319) (1e414f14)
+
+
+---
+
+For list of updated packages, view **updated-packages.md** in **assets-3.1147.0.zip**]]></description>
+    <pubDate>Tue, 06 Oct 2026 22:54:37 GMT</pubDate>
+  </item>
   <item>
     <title>[pnpm/pnpm] pnpm 12.10.0 (v12.10.0)</title>
     <link>https://github.com/pnpm/pnpm/releases/tag/v12.10.0</link>
@@ -178,39 +381,6 @@ For now you can view the generated release notes below.
     <pubDate>Sun, 04 Oct 2026 16:13:43 GMT</pubDate>
   </item>
   <item>
-    <title>[dprint/dprint] 0.60.0</title>
-    <link>https://github.com/dprint/dprint/releases/tag/0.60.0</link>
-    <guid isPermaLink="true">https://github.com/dprint/dprint/releases/tag/0.60.0</guid>
-    <description><![CDATA[## Changes
-
-* feat: use npm's proxy settings for npm plugins and improve download errors (#1289)
-* feat: use reqwest for downloading (#1291)
-* fix: say when the proxy is what couldn't be connected to (#1292)
-* fix(BREAKING/lsp): only use the global config when opted in and add global config commands (#1288)
-* fix: do not error for plugin config in an extended config that has no matching plugin (#1296)
-* fix: allow un-excluding a node_modules directory with a negated exclude (#1297)
-* fix: support brace expansions that span directories in file patterns (#1298)
-* docs: add missing plugin pages and fix Oxc sidebar label (#1293)
-* docs: document the global config in the vscode extension (#1285)
-* docs: update Oxc plugin docs for newly supported languages (#1286)
-
-
-## Install
-
-Run `dprint upgrade` or see 
-
-## Verification
-
-These artifacts have build provenance attestations.
-Verify a download with the GitHub CLI:
-
-```shell
-gh attestation verify dprint-x86_64-unknown-l
-
-... (truncated)]]></description>
-    <pubDate>Sat, 03 Oct 2026 22:04:28 GMT</pubDate>
-  </item>
-  <item>
     <title>[sindresorhus/eslint-plugin-unicorn] v77.0.0</title>
     <link>https://github.com/sindresorhus/eslint-plugin-unicorn/releases/tag/v77.0.0</link>
     <guid isPermaLink="true">https://github.com/sindresorhus/eslint-plugin-unicorn/releases/tag/v77.0.0</guid>
@@ -255,42 +425,6 @@ gh attestation verify dprint-x86_64-unknown-l
 
 ... (truncated)]]></description>
     <pubDate>Fri, 02 Oct 2026 20:07:11 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-10-02) (release-2026-10-02)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-02</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-02</guid>
-    <description><![CDATA[## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/cognitoidentityprovider`: [v1.75.0](service/cognitoidentityprovider/CHANGELOG.md#v1750-2026-10-02)
- * **Feature**: Amazon Cognito User Pools now supports the OIDC-standard authentication context class reference (ACR) and authentication methods reference (AMR) claims on issued access and Id tokens. Amazon Cognito User Pools also now supports step-up authentication via our existing authentication APIs.
-* `github.com/aws/aws-sdk-go-v2/service/glue`: [v1.167.0](service/glue/CHANGELOG.md#v11670-2026-10-02)
- * **Feature**: Added refresh token grant type to Glue Connection supported OAuth 2.0 grant types
- * **Feature**: Enable schema-based (de)serialization for this service.
-* `github.com/aws/aws-sdk-go-v2/service/invoicing`: [v1.22.0](service/invoicing/CHANGELOG.md#v1220-2026-10-02)
- * **Feature**: API and doc updates related to adding MarketplacePunchOutEnabled and MarketplacePunchOutPreference fields to ProcurementPortalPreferenc
-
-... (truncated)]]></description>
-    <pubDate>Fri, 02 Oct 2026 18:54:46 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-js-v3] v3.1146.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1146.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1146.0</guid>
-    <description><![CDATA[#### 3.1146.0(2026-10-02)
-
-##### Documentation Changes
-
-* **client-lambda-web:** Documentation update for AWS Lambda Web Functions, clarifies that the LambdaWeb APIs are experimental and not yet available to external customers. (de11d1e1)
-
-##### New Features
-
-* **client-mediapackagev2:** Dynamic Multiview enables viewers to watch multiple live video streams in a single combined output. Static filter configuration allows users to configure endpoints with layouts and sources without using query parameters. The number of sources per multiview channel has been increased to 50. (8a1ac09c)
-* **client-invoicing:** API and doc updates related to adding MarketplacePunchOutEnabled and MarketplacePunchOutPreference fields to ProcurementPortalPreferences related APIs (948be4b5)
-* **client-glue:** Added refresh token grant type to Glue Connection supported OAuth 2.0 grant types (6101fef0)
-* **client-cognito-identity-provider:** Amazon Cognito User Pools now supports the OIDC-standard authentication
-
-... (truncated)]]></description>
-    <pubDate>Fri, 02 Oct 2026 18:54:30 GMT</pubDate>
   </item>
   <item>
     <title>[github/spec-kit] Spec Kit - 1.1.0 (v1.1.0)</title>
@@ -725,26 +859,6 @@ We will continue testing and enabling additional models.
     <pubDate>Tue, 22 Sep 2026 14:45:41 GMT</pubDate>
   </item>
   <item>
-    <title>[nodejs/node] 2026-09-22, Version 26.10.0 (Current), @aduh95 (v26.10.0)</title>
-    <link>https://github.com/nodejs/node/releases/tag/v26.10.0</link>
-    <guid isPermaLink="true">https://github.com/nodejs/node/releases/tag/v26.10.0</guid>
-    <description><![CDATA[### Notable Changes
-
-* \[`c0a42d23e5`] - **(SEMVER-MINOR)** **crypto**: add crypto.parsePKCS12 (Brian Muenzenmeyer) #65627
-* \[`eb4fabe81e`] - **doc**: add araujogui to collaborators (Guilherme Araújo) #66090
-* \[`64fb33d791`] - **(SEMVER-MINOR)** **ffi**: load libraries from a mounted VFS (Matteo Collina) #65909
-* \[`2b1701f810`] - **(SEMVER-MINOR)** **fs**: add openAsBlobSync (greenhead) #65644
-* \[`080e76b3d7`] - **(SEMVER-MINOR)** **net**: support sending net.BoundSocket to threads and child processes (Guy Bedford) #64725
-* \[`13e61f6ae6`] - **(SEMVER-MINOR)** **perf\_hooks**: implement SlidingWindowHistogram (James M Snell) #65825
-* \[`a326546094`] - **(SEMVER-MINOR)** **perf\_hooks**: implement qrde analysis support in Histogram (James M Snell) #65806
-* \[`0306b0a71e`] - **(SEMVER-MINOR)** **sqlite**: bind undefined to NULL (Trevor Burnham) #65709
-* \[`3c999edef7`] - **(SEMVER-MINOR)** **src,lib**: add util.markPromiseAsHandled (James M Snell) #65805
-* \[`f7d18ec360`] - **(SEMVER
-
-... (truncated)]]></description>
-    <pubDate>Tue, 22 Sep 2026 09:02:46 GMT</pubDate>
-  </item>
-  <item>
     <title>[esm-dev/esm.sh] Server v139_2 (v139_2)</title>
     <link>https://github.com/esm-dev/esm.sh/releases/tag/v139_2</link>
     <guid isPermaLink="true">https://github.com/esm-dev/esm.sh/releases/tag/v139_2</guid>
@@ -979,41 +1093,6 @@ The `Source code (zip)` or `Source code (tar.gz)` in `Assets` are automatically 
     <pubDate>Mon, 07 Sep 2026 01:47:18 GMT</pubDate>
   </item>
   <item>
-    <title>[microsoft/playwright] v1.63.0</title>
-    <link>https://github.com/microsoft/playwright/releases/tag/v1.63.0</link>
-    <guid isPermaLink="true">https://github.com/microsoft/playwright/releases/tag/v1.63.0</guid>
-    <description><![CDATA[## 🔒 Test locks
-
-Tests that access a shared resource — an external service, a global account setting — can now declare a named `lock`.
-Tests that share a lock name never run concurrently, across files, workers and projects, while
-everything else keeps running in parallel:
-
-```js
-test('update user settings', { lock: 'user-settings' }, async ({ page }) => {
- // never runs at the same time as other tests holding 'user-settings'
-});
-```
-
-A test can hold multiple locks, and test.describe accepts a `lock` for the whole group.
-Learn more about test locks.
-
-## 🪟 Locate across frames
-
-page.frameLocator and frame.frameLocator called without a selector search in any frame of the
-subtree, so you no longer need to locate the iframe first:
-
-```js
-// Finds the button in any frame on the page.
-await page.frameLocator.getByRole('button').click;
-```
-
-The rest of the locator resolves inside a single frame, just like a regular locator, and an error is thrown when it
-matches ele
-
-... (truncated)]]></description>
-    <pubDate>Fri, 04 Sep 2026 22:40:31 GMT</pubDate>
-  </item>
-  <item>
     <title>[mongodb/mongo-go-driver] MongoDB Go Driver 2.9.0 (v2.9.0)</title>
     <link>https://github.com/mongodb/mongo-go-driver/releases/tag/v2.9.0</link>
     <guid isPermaLink="true">https://github.com/mongodb/mongo-go-driver/releases/tag/v2.9.0</guid>
@@ -1050,90 +1129,6 @@ func main {
 
 ... (truncated)]]></description>
     <pubDate>Fri, 04 Sep 2026 22:30:30 GMT</pubDate>
-  </item>
-  <item>
-    <title>[adobe/react-spectrum] React Aria Components v1.21.0 (react-aria-components@1.21.0)</title>
-    <link>https://github.com/adobe/react-spectrum/releases/tag/react-aria-components%401.21.0</link>
-    <guid isPermaLink="true">https://github.com/adobe/react-spectrum/releases/tag/react-aria-components%401.21.0</guid>
-    <description><![CDATA[We're excited to welcome a brand new component to the family! The new NavigationTree component displays a hierarchical set of links, perfect for building sidebars and complex app navigation. It comes fully loaded with keyboard navigation, and support for nested routes.
-
-Menu also gets a big upgrade this release: it now supports async loading and empty states! Load menu items from an API as the user scrolls with the new MenuLoadMoreItem and use renderEmptyState to show an indicator when data is loading or when the menu is empty.
-
-Full Release Notes]]></description>
-    <pubDate>Fri, 04 Sep 2026 19:44:19 GMT</pubDate>
-  </item>
-  <item>
-    <title>[mui/base-ui] v1.8.0</title>
-    <link>https://github.com/mui/base-ui/releases/tag/v1.8.0</link>
-    <guid isPermaLink="true">https://github.com/mui/base-ui/releases/tag/v1.8.0</guid>
-    <description><![CDATA[### General changes
-
-- Fix label association when a control unregisters (#5456) by @atomiks
-- Reduce animation completion work (#5535) by @atomiks
-- Fix prop and ref merging for lazy render elements (#5562) by @atomiks
-- Fix roving focus when items are added or removed (#5447) by @atomiks
-- Fix hover and focus interaction issues (#5037) by @atomiks
-- Improve trigger mount performance (#5426) by @atomiks
-- Fix disabled anchor tracking on scroll (#5478) by @atomiks
-- Fix transform origin for start/end alignment (#5015) by @atomiks
-- Remove duplicate options key from arrow middleware (#5606) by @atomiks
-- Register passive touch listeners (#5572) by @wanxiankai
-
-### Alert Dialog
-
-- Ignore outside clicks from presses that began before open (#5378) by @michaldudak
-
-### Autocomplete
-
-- Render groups with the rowgroup role in grid mode (#5564) by @atomiks
-- Allow opening and browsing the popup while `readOnly` (#5541) by @vikuscz
-- Move `aria-orientation` to the role owner
-
-... (truncated)]]></description>
-    <pubDate>Fri, 04 Sep 2026 08:56:56 GMT</pubDate>
-  </item>
-  <item>
-    <title>[microsoft/windows-rs] 74</title>
-    <link>https://github.com/microsoft/windows-rs/releases/tag/74</link>
-    <guid isPermaLink="true">https://github.com/microsoft/windows-rs/releases/tag/74</guid>
-    <description><![CDATA[More information: 
-
-## What's Changed
-* Add formatter to `windows-rdl` by @riverar in 
-* Add WinRT class support for `windows-rdl` by @kennykerr in 
-* Add delegate support for `windows-rdl` by @kennykerr in 
-* Updated metadata (10.0.26100.7705) by @kennykerr in 
-* Add nested types (structs) for `windows_rdl` by @riverar in 
-* Add generic type support for `windows-rdl` by @kennykerr in 
-* Formatting and type system improvements for `windows-rdl` by @kennykerr in 
-* Add WinRT array support for `windows-rdl` by @kennykerr in 
-* Complete generic parameter support for `windows-rdl` by @kennykerr in 
-* Improve path `super` support for `windows-rdl` by @kennykerr in 
-* Improve leading `super` keyword support for `windows-rdl` by @kennykerr in 
-* Fix nightly clippy warnings by @kennykerr in 
-* Add fixed array support for `windows-rdl` by @kennykerr in 
-* Add split writer and directory reader options for `windows-rdl` by @kennykerr in 
-* Bump actions/upload-artifact from 6 to 7
-
-... (truncated)]]></description>
-    <pubDate>Thu, 03 Sep 2026 16:48:32 GMT</pubDate>
-  </item>
-  <item>
-    <title>[sindresorhus/got] v16.0.0</title>
-    <link>https://github.com/sindresorhus/got/releases/tag/v16.0.0</link>
-    <guid isPermaLink="true">https://github.com/sindresorhus/got/releases/tag/v16.0.0</guid>
-    <description><![CDATA[## Breaking changes
-
-- Rewrite HTTP/2 support and drop the `http2-wrapper` dependency (#2464) 1e157c4
-	- Got now has a built-in HTTP/2 client: ALPN negotiation, a pooled session cache with multiplexing, `GOAWAY` retirement, request and response trailers, informational (1xx) responses, abort signals, response caching, IPv6 authorities, and `h2c` through `h2session`.
-	- `agent.http2` is no longer an agent slot. It is only an opt-out flag now: pass `false` to skip session pooling. Passing an agent instance throws.
-	- Response headers no longer contain HTTP/2 pseudo-headers. Use `response.statusCode` instead of `response.headers[':status']`.
-	- A custom `agent.https` combined with `http2: true` makes Got use the native HTTP/1.1 path, because the built-in session pool does not support custom HTTPS agents.
-	- HTTP/2 proxy support is gone. It came from `http2-wrapper`. It was very buggy anyway.
-	- If `options.request` returns a request or response, it controls the transport and the HT
-
-... (truncated)]]></description>
-    <pubDate>Sun, 30 Aug 2026 23:03:47 GMT</pubDate>
   </item>
 </channel>
 </rss>
