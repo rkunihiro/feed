@@ -5,8 +5,121 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Wed, 07 Oct 2026 22:02:13 GMT</lastBuildDate>
+  <lastBuildDate>Thu, 08 Oct 2026 22:02:20 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[openai/codex] 0.162.0 (rust-v0.162.0)</title>
+    <link>https://github.com/openai/codex/releases/tag/rust-v0.162.0</link>
+    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.162.0</guid>
+    <description><![CDATA[## New Features
+
+- Add tools for creating and listing managed Git worktrees from trusted local projects when the worktrees feature is enabled. (#50148)
+- Pin tasks in the agent Command Center with `p` and keep them in a shared Pinned group when supported by the server. (#51500)
+- Navigate and copy transcript blocks with `/copy`, use `Ctrl+Insert` to copy selections, and tune mouse-wheel scrolling with `tui.mouse_scroll_speed`. (#50434, #50215, #50209)
+- Make URLs clickable in approval headers, questions, MCP prompts, warnings, banners, and verification prompts, including when links wrap across lines. (#51439, #51449, #51450, #51451, #51452, #51458)
+- Configure live web access and remote compaction capabilities for custom Responses-compatible model providers. (#50459)
+- Add JavaScript helpers for streaming promise results as they settle, plus opt-in ranked tool search in Code Mode. (#51126, #51209)
+
+## Bug Fixes
+
+- Respect server model and reasoning-summary defaults for new TUI threads 
+
+... (truncated)]]></description>
+    <pubDate>Thu, 08 Oct 2026 18:55:59 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-10-08) (release-2026-10-08)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-08</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-08</guid>
+    <description><![CDATA[## General Highlights
+* **Dependency Update**: Update to smithy-go v1.28.4.
+* **Dependency Update**: Updated to the latest SDK module versions
+
+## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/service/aiops`: [v1.18.0](service/aiops/CHANGELOG.md#v1180-2026-10-08)
+ * **Feature**: Enable schema-based (de)serialization for this service.
+* `github.com/aws/aws-sdk-go-v2/service/amplifybackend`: [v1.44.0](service/amplifybackend/CHANGELOG.md#v1440-2026-10-08)
+ * **Feature**: Enable schema-based (de)serialization for this service.
+* `github.com/aws/aws-sdk-go-v2/service/amplifyuibuilder`: [v1.40.0](service/amplifyuibuilder/CHANGELOG.md#v1400-2026-10-08)
+ * **Feature**: Enable schema-based (de)serialization for this service.
+* `github.com/aws/aws-sdk-go-v2/service/apigateway`: [v1.52.0](service/apigateway/CHANGELOG.md#v1520-2026-10-08)
+ * **Feature**: Enable schema-based (de)serialization for this service.
+* `github.com/aws/aws-sdk-go-v2/service/apigatewaymanagementapi`: [v1.41.0](service/a
+
+... (truncated)]]></description>
+    <pubDate>Thu, 08 Oct 2026 18:55:50 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1148.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1148.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1148.0</guid>
+    <description><![CDATA[#### 3.1148.0(2026-10-08)
+
+##### Documentation Changes
+
+* **client-sesv2:** SESV2 DEED - Documentation Update (3d227df4)
+
+##### New Features
+
+* **client-pi:** This release adds Smithy RPC v2 CBOR as an additional protocol alongside the existing AWS JSON 1.1. The SDK will prioritize its most performant protocol. (1d99c7c8)
+* **client-marketplace-agreement:** This release adds Smithy RPC v2 CBOR as an additional protocol alongside the existing AWS JSON 1.0. The SDK will prioritize its most performant protocol. (404943ce)
+* **client-emr-serverless:** This release adds support for system profile logs for lakeformation enabled Spark connect sessions . (f9ed2f83)
+* **client-cost-explorer:** Adds a product attribute dimension to GetCostAndUsage, GetCostAndUsageWithResources, and GetDimensionValues, letting customers group, filter, and discover Cost Explorer costs by structured attributes such as Amazon Bedrock model, provider, inference type, and feature. (7e0afd11)
+* **client-guardduty:** Ad
+
+... (truncated)]]></description>
+    <pubDate>Thu, 08 Oct 2026 18:47:53 GMT</pubDate>
+  </item>
+  <item>
+    <title>[fastapi/fastapi] 0.143.0</title>
+    <link>https://github.com/fastapi/fastapi/releases/tag/0.143.0</link>
+    <guid isPermaLink="true">https://github.com/fastapi/fastapi/releases/tag/0.143.0</guid>
+    <description><![CDATA[Automatic OpenTelemetry exporter setup is now opt-in. If you rely on FastAPI to configure exporters from `OTEL_*` environment variables, set `FASTAPI_OTEL_AUTO_CONFIGURE=true` or use `FastAPI(telemetry={"auto_configure": True})` to retain the previous behavior.
+
+Applications that configure their own providers and exporters require no changes. FastAPI Cloud enables automatic setup for you.
+
+### Breaking Changes
+
+* 💥 Require opt-in for automatic OpenTelemetry exporter setup. PR #16476 by @tiangolo.]]></description>
+    <pubDate>Thu, 08 Oct 2026 12:29:29 GMT</pubDate>
+  </item>
+  <item>
+    <title>[BabylonJS/Babylon.js] 9.30.0</title>
+    <link>https://github.com/BabylonJS/Babylon.js/releases/tag/9.30.0</link>
+    <guid isPermaLink="true">https://github.com/BabylonJS/Babylon.js/releases/tag/9.30.0</guid>
+    <description><![CDATA[### Addons
+
+- MSDF Text: guard fwidth denominators in the fragment shaders - [_Bug Fix_] by marns (#18970)
+
+### Core
+
+- Fix AndOrNotEvaluator returning false for "a || b && c" when only a is true - by Arthur031221 (#18968)
+- Remove unused blockMap in flow graph data cycle detection - by irontaek (#18980)
+- Fix GPUParticleSystem leaving instance attribute divisors bound - by redstair (#18975)
+- SubMesh Draw Wrapper Caching Per Pass - by tholub99 (#18972)
+- fix: support image source dimensions on WebGL1 - [_Bug Fix_] by alexchuber (#18971)
+- Fix WebGPU render target sRGB option forwarding - [_Bug Fix_] by RaananW (#18966)
+- Expose WebGPU canvas tone mapping and color space options - [_New Feature_] by RaananW (#18967)
+
+### Loaders
+
+- Fix source-backed interactivity export in Flow Graph Editor - [_Bug Fix_] by RaananW (#18976)]]></description>
+    <pubDate>Thu, 08 Oct 2026 07:52:07 GMT</pubDate>
+  </item>
+  <item>
+    <title>[esm-dev/esm.sh] Server v139_3 (v139_3)</title>
+    <link>https://github.com/esm-dev/esm.sh/releases/tag/v139_3</link>
+    <guid isPermaLink="true">https://github.com/esm-dev/esm.sh/releases/tag/v139_3</guid>
+    <description><![CDATA[* Support PBF asset files. (#1415)
+* Fix incompatible npm package replacements. (#1416)
+* Reject malformed dependency URLs and prevent partial package installs and data races during concurrent builds. (#1419)
+* Fix missing dependency aliases when multiple names resolve to the same package. (#1420)
+* Prevent transform cache collisions and update the browser TSX loader to use the same cache keys. (#1423)
+* Preserve build paths and queries in floating-version redirects and fix caching for floating types-only packages. (#1423)
+* Prevent failed S3 uploads from publishing partial cache entries. (#1418)
+* Report deployment startup failures and honor the configured SSH port. (#1417)]]></description>
+    <pubDate>Thu, 08 Oct 2026 04:54:01 GMT</pubDate>
+  </item>
   <item>
     <title>[microsoft/playwright] v1.64.0</title>
     <link>https://github.com/microsoft/playwright/releases/tag/v1.64.0</link>
@@ -83,22 +196,6 @@ gh attestation verify dprint-x86_64-unknown-linux-gnu.zip --repo dprint/dprint
     <pubDate>Wed, 07 Oct 2026 16:40:58 GMT</pubDate>
   </item>
   <item>
-    <title>[openai/codex] 0.161.0 (rust-v0.161.0)</title>
-    <link>https://github.com/openai/codex/releases/tag/rust-v0.161.0</link>
-    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.161.0</guid>
-    <description><![CDATA[## New Features
-
-- GPT-6.1 Sol is now the default model in the bundled and Amazon Bedrock catalogs. (#49318, #49339)
-- Amazon Bedrock supports multi-agent V2 and Ultra reasoning on compatible models; Bedrock Mantle also accepts AWS GovCloud regions. (#49345, #49813)
-- Sign in to MCP servers from an active terminal session with `/mcp login <name>`. (#49290)
-- Choose your microphone, speaker, and microphone input channels for voice conversations, with preferences saved locally. (#49437, #49836)
-- Daybreak is opt-in through `--enable cli_daybreak` or `features.cli_daybreak=true`; `daybreak=true` alone is insufficient. By default, controls and indicators are hidden, `/daybreak` is unavailable, and automatic Cyber routing is omitted—even for saved Daybreak threads. Saved preferences remain intact. Opt-in routing requires eligible ChatGPT sign-in, the OpenAI provider, and advertised model/program support. (#49856, #49858, #49859, #49861, #51207)
-- Select a Cyber access program per turn with 
-
-... (truncated)]]></description>
-    <pubDate>Wed, 07 Oct 2026 15:58:45 GMT</pubDate>
-  </item>
-  <item>
     <title>[bluesky-social/atproto] @atproto/ozone@0.6.0</title>
     <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/ozone%400.6.0</link>
     <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/ozone%400.6.0</guid>
@@ -169,46 +266,6 @@ gh attestation verify dprint-x86_64-unknown-linux-gnu.zip --repo dprint/dprint
 
 ... (truncated)]]></description>
     <pubDate>Wed, 07 Oct 2026 10:03:29 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-10-06) (release-2026-10-06)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-06</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-06</guid>
-    <description><![CDATA[## General Highlights
-* **Dependency Update**: Updated to the latest SDK module versions
-
-## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/aiops`: [v1.17.0](service/aiops/CHANGELOG.md#v1170-2026-10-06)
- * **Feature**: Enable schema-based (de)serialization for this service.
-* `github.com/aws/aws-sdk-go-v2/service/amplifybackend`: [v1.43.0](service/amplifybackend/CHANGELOG.md#v1430-2026-10-06)
- * **Feature**: Enable schema-based (de)serialization for this service.
-* `github.com/aws/aws-sdk-go-v2/service/amplifyuibuilder`: [v1.39.0](service/amplifyuibuilder/CHANGELOG.md#v1390-2026-10-06)
- * **Feature**: Enable schema-based (de)serialization for this service.
-* `github.com/aws/aws-sdk-go-v2/service/apigateway`: [v1.51.0](service/apigateway/CHANGELOG.md#v1510-2026-10-06)
- * **Feature**: Enable schema-based (de)serialization for this service.
-* `github.com/aws/aws-sdk-go-v2/service/apigatewaymanagementapi`: [v1.40.0](service/apigatewaymanagementapi/CHANGELOG.md#v1400-2026-10-06)
-
-
-... (truncated)]]></description>
-    <pubDate>Tue, 06 Oct 2026 23:01:21 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-js-v3] v3.1147.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1147.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1147.0</guid>
-    <description><![CDATA[#### 3.1147.0(2026-10-06)
-
-##### New Features
-
-* **clients:** update client endpoints as of 2026-10-06 (c2162728)
-* **client-lambda-web:** Removes operations that are not yet generally available from the Lambda Web. (b9da1cc4)
-* **lib-transfer-manager:** add opt-in O_DIRECT path for file downloads (#8319) (1e414f14)
-
-
----
-
-For list of updated packages, view **updated-packages.md** in **assets-3.1147.0.zip**]]></description>
-    <pubDate>Tue, 06 Oct 2026 22:54:37 GMT</pubDate>
   </item>
   <item>
     <title>[pnpm/pnpm] pnpm 12.10.0 (v12.10.0)</title>
@@ -534,31 +591,6 @@ The core /speckit.taskstoissues command is now deprecated, and you should use th
     <pubDate>Thu, 01 Oct 2026 12:41:12 GMT</pubDate>
   </item>
   <item>
-    <title>[BabylonJS/Babylon.js] 9.29.0</title>
-    <link>https://github.com/BabylonJS/Babylon.js/releases/tag/9.29.0</link>
-    <guid isPermaLink="true">https://github.com/BabylonJS/Babylon.js/releases/tag/9.29.0</guid>
-    <description><![CDATA[### Addons
-
-- chore(deps): refresh supported versions and clear security audit - by RaananW (#18961)
-- MSDF Text: release TextRenderer VAO when instance buffers are resized - by marns (#18938)
-
-### Core
-
-- chore(deps): refresh supported versions and clear security audit - by RaananW (#18961)
-- Add frame graph min/max reducer and NRGE block - [_Bug Fix_] by Popov72 (#18958)
-- perf(particles): eliminate per-frame allocations in cpu particles - by LisovskiyIvan (#18946)
-- Add on error on EffectWrapper - by sebavan (#18955)
-- Fix previous world matrix tracking for frame graph velocity outputs - [_Bug Fix_] by Popov72 (#18952)
-- Skip point-light shading outside the light range - by matthargett (#18884)
-- Prevent TargetCamera view collapse after a coincident target - by Shedletsky (#18950)
-- Fix WebGPU 3D texture mipmap generation - by RaananW (#18941)
-- Fix ExtrudePolygon smoothing threshold - [_Bug Fix_] by Popov72 (#18943)
-- Fix ArcRotateCamera movement processing twice per frame - [_Bug 
-
-... (truncated)]]></description>
-    <pubDate>Thu, 01 Oct 2026 07:47:23 GMT</pubDate>
-  </item>
-  <item>
     <title>[zed-industries/zed] v1.22.0</title>
     <link>https://github.com/zed-industries/zed/releases/tag/v1.22.0</link>
     <guid isPermaLink="true">https://github.com/zed-industries/zed/releases/tag/v1.22.0</guid>
@@ -601,38 +633,6 @@ See for more information.
 
 ... (truncated)]]></description>
     <pubDate>Wed, 30 Sep 2026 02:40:02 GMT</pubDate>
-  </item>
-  <item>
-    <title>[fastapi/fastapi] 0.142.0</title>
-    <link>https://github.com/fastapi/fastapi/releases/tag/0.142.0</link>
-    <guid isPermaLink="true">https://github.com/fastapi/fastapi/releases/tag/0.142.0</guid>
-    <description><![CDATA[### Features
-
-* ✨ Add native OpenTelemetry support. PR #16403 by @tiangolo.
-
-### Refactors
-
-* 📱 Improve mobile responsiveness of conference rail. PR #16196 by @alejsdev.
-* ♻️ Remove conf section and add event banner. PR #16193 by @alejsdev.
-
-### Docs
-
-* 🔥 Remove unused image. PR #16195 by @alejsdev.
-* 🐛 Use buttons for Termynal controls. PR #16132 by @tiangolo.
-
-### Translations
-
-* 🌐 Update translations for hi (update-outdated). PR #16212 by [@pr-submit[bot]].
-* 🌐 Update translations for ru (update-outdated). PR #16210 by [@pr-submit[bot]].
-* 🌐 Update translations for zh-hant (update-outdated). PR #16211 by [@pr-submit[bot]].
-* 🌐 Update translations for uk (update-outdated). PR #16208 by [@pr-submit[bot]].
-* 🌐 Update translations for de (update-outdated). PR #16209 by [@pr-submit[bot]].
-* 🌐 Update translations for tr (update-outdated). PR #16207 by [@pr-submit[bot]].
-* 🌐 Update translations for ja (update-outdated). PR #16206 by [@pr-submit[bot]].
-* 🌐 
-
-... (truncated)]]></description>
-    <pubDate>Tue, 29 Sep 2026 17:56:21 GMT</pubDate>
   </item>
   <item>
     <title>[typescript-eslint/typescript-eslint] v8.71.0</title>
@@ -857,19 +857,6 @@ We will continue testing and enabling additional models.
 
 ##### &nbsp;&nbsp;&nbsp;&nbsp;View changes on GitHub]]></description>
     <pubDate>Tue, 22 Sep 2026 14:45:41 GMT</pubDate>
-  </item>
-  <item>
-    <title>[esm-dev/esm.sh] Server v139_2 (v139_2)</title>
-    <link>https://github.com/esm-dev/esm.sh/releases/tag/v139_2</link>
-    <guid isPermaLink="true">https://github.com/esm-dev/esm.sh/releases/tag/v139_2</guid>
-    <description><![CDATA[* Persist negative package and build records with bbolt. (#1411)
-* Reject cached package 404s before installation and builds. (#1412)
-* Improve TypeScript declaration transformation with concurrent storage requests and cancellation.
-* Fix build queue stalls caused by serialized metadata access and unbounded S3 requests.
-* Reject unsupported native Node.js modules before parsing.
-* Build Docker images from checked-out source and fix Deno's glibc setup.
-* Upgrade Go to 1.27.]]></description>
-    <pubDate>Mon, 21 Sep 2026 09:03:19 GMT</pubDate>
   </item>
   <item>
     <title>[vercel-labs/skills] v1.7.0</title>
