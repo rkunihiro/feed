@@ -5,8 +5,192 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Thu, 08 Oct 2026 22:02:20 GMT</lastBuildDate>
+  <lastBuildDate>Fri, 09 Oct 2026 22:02:23 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[TASEmulators/fceux] fceux-2.7.0</title>
+    <link>https://github.com/TASEmulators/fceux/releases/tag/fceux-2.7.0</link>
+    <guid isPermaLink="true">https://github.com/TASEmulators/fceux/releases/tag/fceux-2.7.0</guid>
+    <description><![CDATA[The 2.7.0 release introduces several new features and improvements focused on build system enhancements, media codec support, and developer tooling. Profiling and debugging capabilities have been significantly improved, with support for FFmpeg 9 and enhanced platform compatibility.]]></description>
+    <pubDate>Fri, 09 Oct 2026 21:18:49 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1149.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1149.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1149.0</guid>
+    <description><![CDATA[#### 3.1149.0(2026-10-09)
+
+##### Chores
+
+* **codegen:** sync for endpoint cache fix and pre-schema error fallback (#8341) (5773a751)
+
+##### New Features
+
+* **client-quicksight:** Adds granular custom permissions for the Gong action connector (GongAction, CreateAndUpdateGongAction, ShareGongAction, UseGongAction) and for create, update, and share operations on 45 data source connectors, such as Amazon S3 and Snowflake, through the Custom Permissions APIs. (c5d26e39)
+* **client-deadline:** The new ListMemberships API enables users to discover their memberships across Deadline Cloud resources, enabling scoped users of Deadline resources to discover and interact with the resources they have been provided scoped access to. (0d7406c7)
+* **client-marketplace-metering:** AWS Marketplace Metering Service adds AgreementId to ResolveCustomer API response. (9653f5cc)
+* **client-mediatailor:** Add caching settings to http functions (7ac7530b)
+* **client-securityagent:** Adds a test scope field to s
+
+... (truncated)]]></description>
+    <pubDate>Fri, 09 Oct 2026 20:48:17 GMT</pubDate>
+  </item>
+  <item>
+    <title>[astral-sh/uv] 0.13.0</title>
+    <link>https://github.com/astral-sh/uv/releases/tag/0.13.0</link>
+    <guid isPermaLink="true">https://github.com/astral-sh/uv/releases/tag/0.13.0</guid>
+    <description><![CDATA[## Release Notes
+
+Released on 2026-10-09.
+
+uv 0.13.0 makes Python 3.15 the default stable Python version. We've also included several breaking changes to improve correctness, performance, and compatibility, described below.
+
+**We expect most users to be able to upgrade without making changes.**
+
+While not a breaking change, this release also updates the format of many of uv's cache entries to improve performance. **uv may download or rebuild dependencies after upgrading**, because some cached entries from earlier versions cannot be reused. Multiple versions of uv can still safely share the same cache directory.
+
+There are no breaking changes to the configuration of the uv build backend. If your `[build-system]` table includes an upper bound on `uv_build`, update it to allow `uv_build` 0.13, e.g., `uv_build>=0.13.0,<0.14`.
+
+### Breaking changes
+
+- **Use Python 3.15 as the default stable version**
+
+ The default stable Python version has changed from 3.14 to 3.15. This affects Python down
+
+... (truncated)]]></description>
+    <pubDate>Fri, 09 Oct 2026 19:49:55 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-10-09) (release-2026-10-09)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-09</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-09</guid>
+    <description><![CDATA[## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/service/deadline`: [v1.44.0](service/deadline/CHANGELOG.md#v1440-2026-10-09)
+ * **Feature**: The new ListMemberships API enables users to discover their memberships across Deadline Cloud resources, enabling scoped users of Deadline resources to discover and interact with the resources they have been provided scoped access to.
+* `github.com/aws/aws-sdk-go-v2/service/marketplacemetering`: [v1.46.0](service/marketplacemetering/CHANGELOG.md#v1460-2026-10-09)
+ * **Feature**: AWS Marketplace Metering Service adds AgreementId to ResolveCustomer API response.
+* `github.com/aws/aws-sdk-go-v2/service/mediatailor`: [v1.73.0](service/mediatailor/CHANGELOG.md#v1730-2026-10-09)
+ * **Feature**: Add caching settings to http functions
+* `github.com/aws/aws-sdk-go-v2/service/quicksight`: [v1.137.0](service/quicksight/CHANGELOG.md#v11370-2026-10-09)
+ * **Feature**: Adds granular custom permissions for the Gong action connector (GongAction, CreateAndUpd
+
+... (truncated)]]></description>
+    <pubDate>Fri, 09 Oct 2026 18:47:22 GMT</pubDate>
+  </item>
+  <item>
+    <title>[ValveSoftware/Proton] Proton 11.0-2e (proton-11.0-2e)</title>
+    <link>https://github.com/ValveSoftware/Proton/releases/tag/proton-11.0-2e</link>
+    <guid isPermaLink="true">https://github.com/ValveSoftware/Proton/releases/tag/proton-11.0-2e</guid>
+    <description><![CDATA[A small update for Proton 11.0-2:
+
+- Fixed EA App Launcher login window not being focused properly with Gamescope.
+- Fixed EA App titles not displaying the correct splash image.]]></description>
+    <pubDate>Fri, 09 Oct 2026 17:49:01 GMT</pubDate>
+  </item>
+  <item>
+    <title>[expressjs/express] v5.3.0</title>
+    <link>https://github.com/expressjs/express/releases/tag/v5.3.0</link>
+    <guid isPermaLink="true">https://github.com/expressjs/express/releases/tag/v5.3.0</guid>
+    <description><![CDATA[## Highlights
+
+### 🐞 Bug fixes
+
+- Fixed HTTP header conflict between Content-Length and Transfer-Encoding in res.send - by @YuryShkoda in #4893
+
+
+ Fixed the behavior of `res.send` to prevent conflicts between `Content-Length` and `Transfer-Encoding` HTTP headers in responses. The `Content-Length` header in `res.send` is now only added when a `Transfer-Encoding` header is not present, complying with the HTTP specification that states both headers should not coexist in the same response. ETag generation is unaffected by the presence of a `Transfer-Encoding` header - by @cuishuang in #7459
+
+* Upgrade `qs` to `^6.16.0`, which fixes CVE-2026-2391 (GHSA-w7fw-mjwx-w883), CVE-2026-82417 (GHSA-4mjr-xmp4-gh2g) and CVE-2026-82562 (GHSA-x5fp-wj9c-mxmx): `arrayLimit` bypasses in comma parsing and a denial of service via an attacker-controlled `isBuffer` - by @davetashner in #7057 and #7478, and @cyphercodes in #7305
+
+* Upgrade `proxy-addr` to `^2.0.8`, which fixes CVE-2026-90711 - by @l
+
+... (truncated)]]></description>
+    <pubDate>Fri, 09 Oct 2026 12:50:31 GMT</pubDate>
+  </item>
+  <item>
+    <title>[mui/base-ui] v1.9.0</title>
+    <link>https://github.com/mui/base-ui/releases/tag/v1.9.0</link>
+    <guid isPermaLink="true">https://github.com/mui/base-ui/releases/tag/v1.9.0</guid>
+    <description><![CDATA[### General changes
+
+- Export `CssVariables` and `DataAttributes` types (#5243) by @superhooman
+- Fix stale focused field state (#5345) by @atomiks
+- Fix animation waits retaining detached elements (#5719) by @flaviendelangle
+- Keep item registration in sync when items change under Strict Mode (#5862) by @atomiks
+- Avoid re-rendering inactive triggers on open and close (#5865) by @atomiks
+
+### Accordion
+
+- Fix `<Accordion.Trigger>`'s `data-value` and `data-index` attributes (#5705) by @cpruijsen
+- Apply the native `disabled` attribute to `<Accordion.Trigger>` when using native buttons (#5607) by @atomiks
+- Expand `hiddenUntilFound` panels synchronously on `beforematch` (#5514) by @aarongarciah
+
+### Alert Dialog
+
+- Don't associate a programmatically opened popup with a trigger that did not open it (#5641) by @michaldudak
+
+### Autocomplete
+
+- Fix `autoHighlight` for asynchronous results (#5818) by @atomiks
+- Pass the originating event to `onItemHighlighted`. Pointer 
+
+... (truncated)]]></description>
+    <pubDate>Fri, 09 Oct 2026 08:50:49 GMT</pubDate>
+  </item>
+  <item>
+    <title>[pnpm/pnpm] pnpm 12.11.0 (v12.11.0)</title>
+    <link>https://github.com/pnpm/pnpm/releases/tag/v12.11.0</link>
+    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v12.11.0</guid>
+    <description><![CDATA[This release adds Rust toolchain management, links the agent skills that dependencies ship, adds the `permissions` setting, and keeps the colors of streamed script output.
+
+### Minor Changes
+
+- `pnpm install` now links the agent skills that direct dependencies ship under `skills/<name>/SKILL.md` into the project's agent skill directories, such as `.claude/skills`. A package's skills are linked only after you approve them with `pnpm approve`. The `skills.dirs` setting chooses the directories pnpm/rfcs#35.
+
+ Added the `permissions` setting, which records what each dependency may do. Its `build` capability works like `allowBuilds` and takes precedence over it. `pnpm approve-builds` writes to `permissions` when `pnpm-workspace.yaml` already has it, and to `allowBuilds` otherwise.
+
+ Added `pnpm permissions`, which lists the granted and denied permissions and the packages awaiting approval. `pnpm approve` reviews build scripts and agent skills in one prompt pnpm/rfcs#36.
+
+- pnpm no
+
+... (truncated)]]></description>
+    <pubDate>Fri, 09 Oct 2026 06:43:40 GMT</pubDate>
+  </item>
+  <item>
+    <title>[adobe/react-spectrum] React Aria Components v1.22.0 (react-aria-components@1.22.0)</title>
+    <link>https://github.com/adobe/react-spectrum/releases/tag/react-aria-components%401.22.0</link>
+    <guid isPermaLink="true">https://github.com/adobe/react-spectrum/releases/tag/react-aria-components%401.22.0</guid>
+    <description><![CDATA[This release introduces Sheet, a swipeable overlay that slides in from the edge of the viewport, built on native browser scroll gestures. This component is perfect for implementing touch-friendly trays such as mobile sheets, navigation drawers, and notification banners. Check out our blog post about how it works!
+
+It also adds Turbopack support to @react-aria/optimize-locales-plugin, overlay placement that accounts for the virtual keyboard, and much more!
+
+As always, many thanks to all of our contributors!
+
+Full Release Notes]]></description>
+    <pubDate>Fri, 09 Oct 2026 03:06:51 GMT</pubDate>
+  </item>
+  <item>
+    <title>[cloudflare/vinext] @cloudflare/workers-response-store@1.1.0</title>
+    <link>https://github.com/cloudflare/vinext/releases/tag/%40cloudflare/workers-response-store%401.1.0</link>
+    <guid isPermaLink="true">https://github.com/cloudflare/vinext/releases/tag/%40cloudflare/workers-response-store%401.1.0</guid>
+    <description><![CDATA[### Features
+
+- **Response Store:** mark tag invalidations stale instead of regenerating them (#3712)
+- **Cloudflare:** soft-invalidate Workers Cache for stale-while-revalidate invalidations (#3707)
+
+### Bug Fixes
+
+- **Response Store:** let writers opt hard-expired reads into a miss (#3696)
+
+### Performance
+
+- **Response Store:** match invalidated entries with one query (#3721)
+
+### Contributors
+
+- @james-elicx]]></description>
+    <pubDate>Thu, 08 Oct 2026 23:04:46 GMT</pubDate>
+  </item>
   <item>
     <title>[openai/codex] 0.162.0 (rust-v0.162.0)</title>
     <link>https://github.com/openai/codex/releases/tag/rust-v0.162.0</link>
@@ -26,49 +210,6 @@
 
 ... (truncated)]]></description>
     <pubDate>Thu, 08 Oct 2026 18:55:59 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-10-08) (release-2026-10-08)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-08</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-08</guid>
-    <description><![CDATA[## General Highlights
-* **Dependency Update**: Update to smithy-go v1.28.4.
-* **Dependency Update**: Updated to the latest SDK module versions
-
-## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/aiops`: [v1.18.0](service/aiops/CHANGELOG.md#v1180-2026-10-08)
- * **Feature**: Enable schema-based (de)serialization for this service.
-* `github.com/aws/aws-sdk-go-v2/service/amplifybackend`: [v1.44.0](service/amplifybackend/CHANGELOG.md#v1440-2026-10-08)
- * **Feature**: Enable schema-based (de)serialization for this service.
-* `github.com/aws/aws-sdk-go-v2/service/amplifyuibuilder`: [v1.40.0](service/amplifyuibuilder/CHANGELOG.md#v1400-2026-10-08)
- * **Feature**: Enable schema-based (de)serialization for this service.
-* `github.com/aws/aws-sdk-go-v2/service/apigateway`: [v1.52.0](service/apigateway/CHANGELOG.md#v1520-2026-10-08)
- * **Feature**: Enable schema-based (de)serialization for this service.
-* `github.com/aws/aws-sdk-go-v2/service/apigatewaymanagementapi`: [v1.41.0](service/a
-
-... (truncated)]]></description>
-    <pubDate>Thu, 08 Oct 2026 18:55:50 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-js-v3] v3.1148.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1148.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1148.0</guid>
-    <description><![CDATA[#### 3.1148.0(2026-10-08)
-
-##### Documentation Changes
-
-* **client-sesv2:** SESV2 DEED - Documentation Update (3d227df4)
-
-##### New Features
-
-* **client-pi:** This release adds Smithy RPC v2 CBOR as an additional protocol alongside the existing AWS JSON 1.1. The SDK will prioritize its most performant protocol. (1d99c7c8)
-* **client-marketplace-agreement:** This release adds Smithy RPC v2 CBOR as an additional protocol alongside the existing AWS JSON 1.0. The SDK will prioritize its most performant protocol. (404943ce)
-* **client-emr-serverless:** This release adds support for system profile logs for lakeformation enabled Spark connect sessions . (f9ed2f83)
-* **client-cost-explorer:** Adds a product attribute dimension to GetCostAndUsage, GetCostAndUsageWithResources, and GetDimensionValues, letting customers group, filter, and discover Cost Explorer costs by structured attributes such as Amazon Bedrock model, provider, inference type, and feature. (7e0afd11)
-* **client-guardduty:** Ad
-
-... (truncated)]]></description>
-    <pubDate>Thu, 08 Oct 2026 18:47:53 GMT</pubDate>
   </item>
   <item>
     <title>[fastapi/fastapi] 0.143.0</title>
@@ -196,21 +337,6 @@ gh attestation verify dprint-x86_64-unknown-linux-gnu.zip --repo dprint/dprint
     <pubDate>Wed, 07 Oct 2026 16:40:58 GMT</pubDate>
   </item>
   <item>
-    <title>[bluesky-social/atproto] @atproto/ozone@0.6.0</title>
-    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/ozone%400.6.0</link>
-    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/ozone%400.6.0</guid>
-    <description><![CDATA[### Minor Changes
-
-- #5550 `3013430` Thanks @foysalit! - Add viewer-facing moderation inbox reads for configurable account standing, report details, and cursor-paginated action history, with PDS proxy access and read-only moderator previews. Include appeal attribution in moderator event views, structured policy details in takedown actions, and pending, resolved, and unread actioned-subject filters based on appeal report state. Keep moderator notes private.
- 
- Page reports through reporter/time indexes with bounded hydration and source ownership validation. Batch subject hydration, reuse indexes for report summaries, and limit latest appeal lookups to one row in SQL. Add non-appeal reporter/time indexes, with the inbox migration ordered after the reporter DID column migration.
- 
- Add OZONE_INBOX_START_AT to limit report, action, and appeal history by creation time, with a public subject/action creation-time index. Cover structured policy names, links, and fallback URLs in mapper regress
-
-... (truncated)]]></description>
-    <pubDate>Wed, 07 Oct 2026 15:44:06 GMT</pubDate>
-  </item>
-  <item>
     <title>[uptrace/uptrace] v2.1.0-rc.1</title>
     <link>https://github.com/uptrace/uptrace/releases/tag/v2.1.0-rc.1</link>
     <guid isPermaLink="true">https://github.com/uptrace/uptrace/releases/tag/v2.1.0-rc.1</guid>
@@ -266,21 +392,6 @@ gh attestation verify dprint-x86_64-unknown-linux-gnu.zip --repo dprint/dprint
 
 ... (truncated)]]></description>
     <pubDate>Wed, 07 Oct 2026 10:03:29 GMT</pubDate>
-  </item>
-  <item>
-    <title>[pnpm/pnpm] pnpm 12.10.0 (v12.10.0)</title>
-    <link>https://github.com/pnpm/pnpm/releases/tag/v12.10.0</link>
-    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v12.10.0</guid>
-    <description><![CDATA[This release adds an experimental `loaded` node linker, lets `pnpm-lock.yaml` record resolution settings, and reads cached registry metadata faster. It also carries several security fixes, including one that stops a dependency version from writing files outside the global virtual store.
-
-### Minor Changes
-
-- Added experimental `nodeLinker: { type: loaded }` installation. Compatible dependencies load directly from the content-addressable store through an automatically registered Node.js loader. `nodeLinker.excluded` selects packages and their dependency trees to install in the global virtual store.
-
-- `lockfile.includeResolutionSettings: true` makes `pnpm-lock.yaml` record `autoDedupe`, `dedupeInjectedDeps`, `dedupePeerDependents` and `linkWorkspacePackages`. Installs then treat a lockfile that records other values as outdated. A lockfile that records `autoDedupe` is reused by later installs on any machine, so `pnpm run` after `pnpm install --frozen-lockfile` no longer starts anot
-
-... (truncated)]]></description>
-    <pubDate>Tue, 06 Oct 2026 05:24:45 GMT</pubDate>
   </item>
   <item>
     <title>[floci-io/floci] 2.2.0</title>
@@ -737,13 +848,6 @@ Dependency version changes:
     <pubDate>Mon, 28 Sep 2026 15:31:40 GMT</pubDate>
   </item>
   <item>
-    <title>[cloudflare/vinext] @cloudflare/workers-response-store@1.0.0</title>
-    <link>https://github.com/cloudflare/vinext/releases/tag/%40cloudflare/workers-response-store%401.0.0</link>
-    <guid isPermaLink="true">https://github.com/cloudflare/vinext/releases/tag/%40cloudflare/workers-response-store%401.0.0</guid>
-    <description><![CDATA[No release notes provided.]]></description>
-    <pubDate>Mon, 28 Sep 2026 13:00:47 GMT</pubDate>
-  </item>
-  <item>
     <title>[nodejs/undici] v6.29.0</title>
     <link>https://github.com/nodejs/undici/releases/tag/v6.29.0</link>
     <guid isPermaLink="true">https://github.com/nodejs/undici/releases/tag/v6.29.0</guid>
@@ -1014,108 +1118,6 @@ This release hardens request configuration and proxy handling, adds caller diagn
 
 ... (truncated)]]></description>
     <pubDate>Sun, 13 Sep 2026 16:40:14 GMT</pubDate>
-  </item>
-  <item>
-    <title>[vitejs/vite] v8.3.0</title>
-    <link>https://github.com/vitejs/vite/releases/tag/v8.3.0</link>
-    <guid isPermaLink="true">https://github.com/vitejs/vite/releases/tag/v8.3.0</guid>
-    <description><![CDATA[### Features
-
-* **build:** avoid settling seen preload dependencies for performance (#23446) (e6f6b3e)
-
-### Bug Fixes
-
-* handle CRLF line endings in code frame positions (#23219) (9913672)
-* only treat whole `node_modules` path segments as dependencies (fix #17467) (#23437) (ef0dc17)
-
-### Performance Improvements
-
-* **proxy:** pre-compile context matchers at server creation (#23263) (8abf700)]]></description>
-    <pubDate>Thu, 10 Sep 2026 11:25:16 GMT</pubDate>
-  </item>
-  <item>
-    <title>[Seldaek/monolog] 3.12.0</title>
-    <link>https://github.com/Seldaek/monolog/releases/tag/3.12.0</link>
-    <guid isPermaLink="true">https://github.com/Seldaek/monolog/releases/tag/3.12.0</guid>
-    <description><![CDATA[* Added support for reading the timestamp of new records from a PSR-20 clock, via a new `$clock` constructor param and `Logger::setClock` (#2065)
- * Added support for `#[WithMonologChannel]` on constructor/method parameters, so a channel can be bound to a single argument instead of the whole class (#2068)
- * Fixed `TelegramBotHandler` breaking HTML markup when truncating or splitting long messages, open tags are now closed at the end of a chunk and reopened in the next one (#2066)
- * Fixed `RedactingFormatter` not redacting secrets nested inside array values of sensitive keys (#2067)
-
-**Full Changelog**:]]></description>
-    <pubDate>Wed, 09 Sep 2026 08:46:10 GMT</pubDate>
-  </item>
-  <item>
-    <title>[project-tsurugi/tsurugidb] 1.12.0</title>
-    <link>https://github.com/project-tsurugi/tsurugidb/releases/tag/1.12.0</link>
-    <guid isPermaLink="true">https://github.com/project-tsurugi/tsurugidb/releases/tag/1.12.0</guid>
-    <description><![CDATA[### Release Notes
-- Tsurugi 1.12.0 - Release Notes (en)
-- Tsurugi 1.12.0 - Release Notes (ja)
-- Tsurugi 1.12.0 - Changelog
-- Tsurugi 1.12.0 - Known Issues (en)
-- Tsurugi 1.12.0 - Known Issues (ja)
-
-#### Download installer archive
-
-```sh
-curl -OL 
-```
-
-#### Download Docker image
-
-```sh
-docker pull ghcr.io/project-tsurugi/tsurugidb:1.12.0
-```
-
-> [!WARNING] 
-The `Source code (zip)` or `Source code (tar.gz)` in `Assets` are automatically generated links by GitHub, and these archives does not contain files needed for installation.]]></description>
-    <pubDate>Mon, 07 Sep 2026 05:25:59 GMT</pubDate>
-  </item>
-  <item>
-    <title>[lynx-family/lynx] 4.1.0</title>
-    <link>https://github.com/lynx-family/lynx/releases/tag/4.1.0</link>
-    <guid isPermaLink="true">https://github.com/lynx-family/lynx/releases/tag/4.1.0</guid>
-    <description><![CDATA[No release notes provided.]]></description>
-    <pubDate>Mon, 07 Sep 2026 01:47:18 GMT</pubDate>
-  </item>
-  <item>
-    <title>[mongodb/mongo-go-driver] MongoDB Go Driver 2.9.0 (v2.9.0)</title>
-    <link>https://github.com/mongodb/mongo-go-driver/releases/tag/v2.9.0</link>
-    <guid isPermaLink="true">https://github.com/mongodb/mongo-go-driver/releases/tag/v2.9.0</guid>
-    <description><![CDATA[The MongoDB Go Driver Team is pleased to release version 2.9.0 of the official MongoDB Go Driver.
-
-## Release Highlights
-
-> [!WARNING]
-> The minimum supported MongoDB server version is now 4.4.
-
-> [!WARNING]
-> The minimum supported Go version is now 1.25. The Go Driver supports the last 2 Go minor versions.
-
-### New `ext/awsauth` module
-
-The new `ext/awsauth` module adds support for all AWS authentication methods via the official AWS SDK for Go. Applications running on AWS can now use an `awsauth.CredentialsProvider` in `ClientOptions`, `ClientEncryptionOptions`, and `AutoEncryptionOptions`.
-
-For example, to configure a `mongo.Client` with the new `ext/awsauth` module:
-
-```go
-import (
- "context"
- "log"
-
- "github.com/aws/aws-sdk-go-v2/config"
- "go.mongodb.org/mongo-driver/ext/awsauth"
- "go.mongodb.org/mongo-driver/v2/mongo"
- "go.mongodb.org/mongo-driver/v2/mongo/options"
-)
-
-func main {
-	cfg, err := config.LoadDefaultConfig(context.Background)
-	if err != nil 
-
-... (truncated)]]></description>
-    <pubDate>Fri, 04 Sep 2026 22:30:30 GMT</pubDate>
   </item>
 </channel>
 </rss>
