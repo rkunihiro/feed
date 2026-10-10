@@ -5,8 +5,78 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Fri, 09 Oct 2026 22:02:23 GMT</lastBuildDate>
+  <lastBuildDate>Sat, 10 Oct 2026 22:02:25 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[open-webui/open-webui] v0.12.0</title>
+    <link>https://github.com/open-webui/open-webui/releases/tag/v0.12.0</link>
+    <guid isPermaLink="true">https://github.com/open-webui/open-webui/releases/tag/v0.12.0</guid>
+    <description><![CDATA[### Added
+
+- ☎️ **Realtime voice calls.** Administrators can now switch Call mode in the Voice calls section of Audio settings from Standard to Realtime, so Voice mode talks through an OpenAI Realtime voice model (gpt-realtime-2.1-mini with the Marin voice by default) that handles small talk itself and hands real questions and tasks to the chat's selected model, with its conversation history and tools, before speaking the answer while the full reply appears in the chat. Approvals and questions from tools still have to be answered in the chat, calls need the Allow Call permission and end after an hour, models can set their own Realtime Voice in the model editor, and the settings can also be given with the "AUDIO_REALTIME_ENABLED", "AUDIO_REALTIME_OPENAI_API_BASE_URL", "AUDIO_REALTIME_OPENAI_API_KEY", "AUDIO_REALTIME_MODEL", "AUDIO_REALTIME_VOICE", "AUDIO_REALTIME_TRANSCRIPTION_MODEL" and "REALTIME_CALL_PROMPT_TEMPLATE" environment variables. Commit, Commit, #5894
+- 🕺 **Animated avat
+
+... (truncated)]]></description>
+    <pubDate>Sat, 10 Oct 2026 21:13:24 GMT</pubDate>
+  </item>
+  <item>
+    <title>[anomalyco/opentui] Release v0.6.0 (v0.6.0)</title>
+    <link>https://github.com/anomalyco/opentui/releases/tag/v0.6.0</link>
+    <guid isPermaLink="true">https://github.com/anomalyco/opentui/releases/tag/v0.6.0</guid>
+    <description><![CDATA[OpenTUI 0.5 kept the renderable tree in JavaScript. On each frame, JavaScript
+walked the tree and read each node's position back from Yoga. It then made one
+native call for each draw, so the cost of a frame grew with the number of
+nodes and draws. In 0.6.0, native code owns the tree. Each `Renderable` has a
+node in a native _scene_, which holds the node's Yoga node and paint state.
+Layout and paint setters stage their changes, and Core sends all staged
+changes to native code in one call before each frame step. Native code then
+lays out, clips, and paints the scene and fills the hit grid. It draws most
+built-in renderables without a call to JavaScript. When no visible node has a
+JavaScript hook, one native frame step lays out and paints the whole frame.
+Rendering pipeline follows a
+complete frame.
+
+The built-in renderables and the React and Solid bindings keep their option
+names, but a few option values now throw, such as `enableLayout: false`.
+Custom renderables may need a little work.
+
+... (truncated)]]></description>
+    <pubDate>Sat, 10 Oct 2026 20:13:59 GMT</pubDate>
+  </item>
+  <item>
+    <title>[pnpm/pnpm] pnpm 12.12.0 (v12.12.0)</title>
+    <link>https://github.com/pnpm/pnpm/releases/tag/v12.12.0</link>
+    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v12.12.0</guid>
+    <description><![CDATA[This release shares task results and dependency builds through a remote cache, adds the `addMissingPeerTypes` setting, and lets `pnpm add --config` and `pnpm update` manage configuration dependencies. It also fixes `dangerouslyAllowAllBuilds` running the build scripts of packages that `allowBuilds` denies.
+
+### Minor Changes
+
+- `pnpm pipeline` can share task results between machines. A result is a signed artifact stored on a pnpr server or on a server that speaks the Turborepo Remote Cache API, such as Vercel Remote Cache.
+
+ The remote side-effects cache can also store dependency builds on a Turborepo Remote Cache server. Both caches read the new `remoteCache` setting, which names the server and holds the signing keys. `pnpm pipeline --report` records the run under the organization `remoteCache.org` names.
+
+- Added the `addMissingPeerTypes` setting, which links the `@types` package of a peer dependency next to every package that peer-depends on it. For example, a package that p
+
+... (truncated)]]></description>
+    <pubDate>Sat, 10 Oct 2026 19:52:45 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-10-09.2) (release-2026-10-09.2)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-09.2</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-09.2</guid>
+    <description><![CDATA[## General Highlights
+* **Dependency Update**: Update to smithy-go v1.28.5.
+* **Dependency Update**: Updated to the latest SDK module versions
+
+## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/service/apigateway`: [v1.52.1](service/apigateway/CHANGELOG.md#v1521-2026-10-092)
+ * **Bug Fix**: Fix deserialization failure when `IntegrationResponse.ResponseTemplates` contains a null value.
+* `github.com/aws/aws-sdk-go-v2/service/appstream`: [v1.71.3](service/appstream/CHANGELOG.md#v1713-2026-10-092)
+ * **Bug Fix**: Fix deserialization failure when `Application.Metadata` contains a null value.
+* `github.com/aws/aws-sdk-go-v2/service/athena`: [v1.66.4](service/athena/CHANGELOG.md#v1664-2026-10-092)
+ * **Bug Fix**: Fix deserialization failure when `TableMetadata.Parameters` contains a null value.]]></description>
+    <pubDate>Fri, 09 Oct 2026 23:29:10 GMT</pubDate>
+  </item>
   <item>
     <title>[TASEmulators/fceux] fceux-2.7.0</title>
     <link>https://github.com/TASEmulators/fceux/releases/tag/fceux-2.7.0</link>
@@ -59,23 +129,6 @@ There are no breaking changes to the configuration of the uv build backend. If y
 
 ... (truncated)]]></description>
     <pubDate>Fri, 09 Oct 2026 19:49:55 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-10-09) (release-2026-10-09)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-09</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-09</guid>
-    <description><![CDATA[## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/deadline`: [v1.44.0](service/deadline/CHANGELOG.md#v1440-2026-10-09)
- * **Feature**: The new ListMemberships API enables users to discover their memberships across Deadline Cloud resources, enabling scoped users of Deadline resources to discover and interact with the resources they have been provided scoped access to.
-* `github.com/aws/aws-sdk-go-v2/service/marketplacemetering`: [v1.46.0](service/marketplacemetering/CHANGELOG.md#v1460-2026-10-09)
- * **Feature**: AWS Marketplace Metering Service adds AgreementId to ResolveCustomer API response.
-* `github.com/aws/aws-sdk-go-v2/service/mediatailor`: [v1.73.0](service/mediatailor/CHANGELOG.md#v1730-2026-10-09)
- * **Feature**: Add caching settings to http functions
-* `github.com/aws/aws-sdk-go-v2/service/quicksight`: [v1.137.0](service/quicksight/CHANGELOG.md#v11370-2026-10-09)
- * **Feature**: Adds granular custom permissions for the Gong action connector (GongAction, CreateAndUpd
-
-... (truncated)]]></description>
-    <pubDate>Fri, 09 Oct 2026 18:47:22 GMT</pubDate>
   </item>
   <item>
     <title>[ValveSoftware/Proton] Proton 11.0-2e (proton-11.0-2e)</title>
@@ -136,25 +189,6 @@ There are no breaking changes to the configuration of the uv build backend. If y
 
 ... (truncated)]]></description>
     <pubDate>Fri, 09 Oct 2026 08:50:49 GMT</pubDate>
-  </item>
-  <item>
-    <title>[pnpm/pnpm] pnpm 12.11.0 (v12.11.0)</title>
-    <link>https://github.com/pnpm/pnpm/releases/tag/v12.11.0</link>
-    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v12.11.0</guid>
-    <description><![CDATA[This release adds Rust toolchain management, links the agent skills that dependencies ship, adds the `permissions` setting, and keeps the colors of streamed script output.
-
-### Minor Changes
-
-- `pnpm install` now links the agent skills that direct dependencies ship under `skills/<name>/SKILL.md` into the project's agent skill directories, such as `.claude/skills`. A package's skills are linked only after you approve them with `pnpm approve`. The `skills.dirs` setting chooses the directories pnpm/rfcs#35.
-
- Added the `permissions` setting, which records what each dependency may do. Its `build` capability works like `allowBuilds` and takes precedence over it. `pnpm approve-builds` writes to `permissions` when `pnpm-workspace.yaml` already has it, and to `allowBuilds` otherwise.
-
- Added `pnpm permissions`, which lists the granted and denied permissions and the packages awaiting approval. `pnpm approve` reviews build scripts and agent skills in one prompt pnpm/rfcs#36.
-
-- pnpm no
-
-... (truncated)]]></description>
-    <pubDate>Fri, 09 Oct 2026 06:43:40 GMT</pubDate>
   </item>
   <item>
     <title>[adobe/react-spectrum] React Aria Components v1.22.0 (react-aria-components@1.22.0)</title>
@@ -1086,38 +1120,6 @@ Users prioritizing stability and a longer support lifecycle should stay on the
 
 ... (truncated)]]></description>
     <pubDate>Mon, 14 Sep 2026 06:11:20 GMT</pubDate>
-  </item>
-  <item>
-    <title>[open-circle/valibot] v1.3.0 (i18n) (v1.3.0-i18n)</title>
-    <link>https://github.com/open-circle/valibot/releases/tag/v1.3.0-i18n</link>
-    <guid isPermaLink="true">https://github.com/open-circle/valibot/releases/tag/v1.3.0-i18n</guid>
-    <description><![CDATA[Many thanks to @inkotany and @arvindfroi for contributing to this release.
-
-- Add translations for `codePoints`, `maxCodePoints`, `minCodePoints`, `notCodePoints`, `ksuid` and `isoDateTimeSecond` actions
-- Change Valibot peer dependency and generated JSR imports to v1.5.0
-- Add Kinyarwanda (rw) translations (pull request #1489)
-- Add Norwegian Nynorsk (nn) translations (pull request #1512)]]></description>
-    <pubDate>Mon, 14 Sep 2026 00:53:47 GMT</pubDate>
-  </item>
-  <item>
-    <title>[axios/axios] v0.34.0</title>
-    <link>https://github.com/axios/axios/releases/tag/v0.34.0</link>
-    <guid isPermaLink="true">https://github.com/axios/axios/releases/tag/v0.34.0</guid>
-    <description><![CDATA[## v0.34.0 — September 13, 2026
-
-This release hardens request configuration and proxy handling, adds caller diagnostics and cancellation context, and tightens TypeScript header types.
-
-## ⚠️ Breaking Changes & Deprecations
-
-- Header Types: TypeScript now rejects header values that are Promises, functions, or objects with custom toString methods. Resolve promises, call functions, or explicitly convert objects before assigning header values. Supported scalar, array, and grouped headers remain available. (#11209)
-- Proxy Routing: NO_PROXY / no_proxy entries now support IPv4 and IPv6 CIDR ranges. Previously ineffective ranges now cause matching IP destinations to bypass the proxy; review existing ranges when upgrading. (#11172)
-
-## 🔒 Security Fixes
-
-- Request Configuration: Prevent inherited properties from influencing form serializer options, default request methods, headers on interceptor-returned configs, and HTTP redirect hooks. Applications relying on inherited options mus
-
-... (truncated)]]></description>
-    <pubDate>Sun, 13 Sep 2026 16:40:14 GMT</pubDate>
   </item>
 </channel>
 </rss>
