@@ -5,8 +5,58 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Sat, 10 Oct 2026 22:02:25 GMT</lastBuildDate>
+  <lastBuildDate>Sun, 11 Oct 2026 22:02:09 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[anomalyco/opencode] v1.19.0</title>
+    <link>https://github.com/anomalyco/opencode/releases/tag/v1.19.0</link>
+    <guid isPermaLink="true">https://github.com/anomalyco/opencode/releases/tag/v1.19.0</guid>
+    <description><![CDATA[## Core
+
+### Improvements
+- Run `opencode upgrade --major` to upgrade to OpenCode 2.
+
+### Bugfixes
+- Allow the OpenAI `ultrafast` service tier.
+- Validate PTY connection origins and tickets before checking whether a PTY exists.
+
+## TUI
+
+### Improvements
+- Use `/update` to install OpenCode updates or upgrade to OpenCode 2; updates are no longer installed automatically.
+
+**Thank you to 1 community contributor:**
+- @dc85:
+ - docs(web): add Exo Free to Zen docs (#53622)
+ - fix(stats): attribute exo usage to an unknown provider (#53621)
+ - docs(web): remove Fledge Alpha Free from Zen docs (#53984)]]></description>
+    <pubDate>Sun, 11 Oct 2026 01:39:22 GMT</pubDate>
+  </item>
+  <item>
+    <title>[dprint/dprint] 0.62.0</title>
+    <link>https://github.com/dprint/dprint/releases/tag/0.62.0</link>
+    <guid isPermaLink="true">https://github.com/dprint/dprint/releases/tag/0.62.0</guid>
+    <description><![CDATA[## Changes
+
+* feat: add `--lines` flag to `dprint fmt` for range formatting (#1329)
+* feat: check for newer remote configuration files and add `--reload[=config|plugins]` flag (#1328)
+* feat: support npm specifiers in `extends` (#1332)
+* feat: add riscv64gc-unknown-linux-musl builds (#1323)
+* feat: add s390x-unknown-linux-gnu builds (#1324)
+* feat: add FreeBSD x86_64 and aarch64 builds (#1325)
+* perf: compile wasm plugin functions in parallel (#1315)
+* perf: load cached wasm plugins in parallel (#1316)
+* perf: wake the fs lock keep-alive thread immediately on release (#1317)
+* perf: memory map cached wasm plugins on unix (#1318)
+* perf: read the .npmrc files once per config dir instead of per npm plugin (#1320)
+* fix: format explicit paths outside the `--config` file's directory with only its unanchored patterns (#1314)
+* fix: accept npm: specifiers in the `--plugins` CLI flag (#1319)
+* fix: kill process plugin subprocesses so shutdown cannot hang (#1311)
+* fix: improve
+
+... (truncated)]]></description>
+    <pubDate>Sun, 11 Oct 2026 00:27:47 GMT</pubDate>
+  </item>
   <item>
     <title>[open-webui/open-webui] v0.12.0</title>
     <link>https://github.com/open-webui/open-webui/releases/tag/v0.12.0</link>
@@ -332,43 +382,6 @@ Videos can now be recorded at a custom frame rate, and the decorations for actio
 
 ... (truncated)]]></description>
     <pubDate>Wed, 07 Oct 2026 20:40:43 GMT</pubDate>
-  </item>
-  <item>
-    <title>[dprint/dprint] 0.61.0</title>
-    <link>https://github.com/dprint/dprint/releases/tag/0.61.0</link>
-    <guid isPermaLink="true">https://github.com/dprint/dprint/releases/tag/0.61.0</guid>
-    <description><![CDATA[## Changes
-
-* feat: provide a sandboxed subset of WASI to Wasm plugins (#1303)
-
-This is going to enable dprint-plugin-roslyn to be a Wasm plugin and run sandboxed.
-
-## Install
-
-Run `dprint upgrade` or see 
-
-## Verification
-
-These artifacts have build provenance attestations.
-Verify a download with the GitHub CLI:
-
-```shell
-gh attestation verify dprint-x86_64-unknown-linux-gnu.zip --repo dprint/dprint
-```
-
-## Checksums
-
-|Artifact|SHA-256 Checksum|
-|:--|:--|
-|dprint-x86_64-apple-darwin.zip|dede71277f9f48a27d989debb3ddb7da1a1c2dc1c8c64d964d49d6ebc94112be|
-|dprint-aarch64-apple-darwin.zip|397ccc359e3197e11505c9bef40e6bbc46a2f80796658b3b7d13f6fec747ccc9|
-|dprint-x86_64-pc-windows-msvc.zip|31480ef00f2dc3ddea18af9128c6a2edb496396317a94d2b7c11d5169ef0051f|
-|dprint-x86_64-pc-windows-msvc-installer.exe|56cd3455fe1dcf7827d33841d312be0e724ae4285b850b9aeb8159fbd4437f11|
-|dprint-aarch64-pc-windows-msvc.zip|edf2b0a0b45b6a5b761cfe463c588f78af507bf80b899d5663c97cff73b0da43|
-
-
-... (truncated)]]></description>
-    <pubDate>Wed, 07 Oct 2026 16:40:58 GMT</pubDate>
   </item>
   <item>
     <title>[uptrace/uptrace] v2.1.0-rc.1</title>
@@ -1091,35 +1104,6 @@ Users prioritizing stability and a longer support lifecycle should stay on the
     <guid isPermaLink="true">https://github.com/remix-run/react-router/releases/tag/react-router%408.4.0</guid>
     <description><![CDATA[See the changelog for release notes:]]></description>
     <pubDate>Tue, 15 Sep 2026 15:22:42 GMT</pubDate>
-  </item>
-  <item>
-    <title>[webpack/webpack] v5.111.0</title>
-    <link>https://github.com/webpack/webpack/releases/tag/v5.111.0</link>
-    <guid isPermaLink="true">https://github.com/webpack/webpack/releases/tag/v5.111.0</guid>
-    <description><![CDATA[### Minor Changes
-
-- Enable `output.module` by default with `futureDefaults` on ESM-capable targets. (by @alexander-akait in #22088)
-
-- Remove `experiments.outputModule`, set `output.module` to emit ESM instead. (by @alexander-akait in #22011)
-
-- Add `output.copy` to copy files and directories into the output directory. (by @alexander-akait in #21938)
-
-- Accept a file URL in any spelling Node reads where an absolute path is taken. (by @alexander-akait in #22012)
-
-- Minify inline CSS and JSON via `renderEmbeddedSource`, exporting webpack's own. (by @alexander-akait in #21993)
-
-- Export `cssMinify` and `htmlMinify` on `css.syntax` and `html.syntax`. (by @alexander-akait in #21953)
-
-- Make `processResult` async and let a tap rename the asset it rewrote. (by @alexander-akait in #21854)
-
-- Lower a CSS spelling a target cannot read and write a color fallback before one. (by @alexander-akait in #21926)
-
-- Allow optional filesystem cache build dependencies. (by @xiaoxiaojx in #21849)
-
-- Add `o
-
-... (truncated)]]></description>
-    <pubDate>Mon, 14 Sep 2026 06:11:20 GMT</pubDate>
   </item>
 </channel>
 </rss>
