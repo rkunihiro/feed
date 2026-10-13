@@ -5,8 +5,165 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Mon, 12 Oct 2026 22:02:29 GMT</lastBuildDate>
+  <lastBuildDate>Tue, 13 Oct 2026 22:02:16 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[bluesky-social/atproto] @atproto/ozone@0.8.0</title>
+    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/ozone%400.8.0</link>
+    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/ozone%400.8.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- #5641 `7184ed7` Thanks @foysalit! - Replace the moderation inbox global push preference with independent reports, account, and labels preferences. Support atomic partial updates and preserve existing opt-outs through nullable category columns that inherit the stored global value. Clients must switch to the category fields.
+
+### Patch Changes
+
+- #5644 `dff8990` Thanks @foysalit! - Keep moderation inbox report pages, actioned subject lists and notification visibility checks bounded to the viewer's post-cutoff rows at scale
+
+- #5597 `8c05fa0` Thanks @foysalit! - Associate email events with reports targeted by ID without changing report status. Other email report targeting modes remain no-ops.]]></description>
+    <pubDate>Tue, 13 Oct 2026 21:21:42 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1151.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1151.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1151.0</guid>
+    <description><![CDATA[#### 3.1151.0(2026-10-13)
+
+##### Chores
+
+* **lib-transfer-manager:** move lib-transfer-manager to preview/ folder (#8351) (5037a006)
+* **scripts:** add preview/ folder to build tooling (#8350) (a922905a)
+
+##### Documentation Changes
+
+* **client-lambda-web:** Documentation update to include common use cases. (643507a0)
+
+##### New Features
+
+* **clients:** update client endpoints as of 2026-10-13 (d3994582)
+* **client-lakeformation:** Added new LakeFormation APIs and documentation updates for Simple Row-level Security (RLS). (c7a586fc)
+* **client-agent-registry-control:** AWS Agent Registry is improving recently launched custom metadata schema feature to make shared attributes easier to manage. (ed00d0bb)
+* **client-omics:** With Expanded container registry support, you can use container images from registries such as Seqera (Wave), NVIDIA NGC, and Google Artifact Registry with AWS HealthOmics private workflows, without manually migrating images into Amazon ECR or editing your workflow de
+
+... (truncated)]]></description>
+    <pubDate>Tue, 13 Oct 2026 18:55:44 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-10-13) (release-2026-10-13)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-13</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-13</guid>
+    <description><![CDATA[## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/service/agentregistrycontrol`: [v1.8.0](service/agentregistrycontrol/CHANGELOG.md#v180-2026-10-13)
+ * **Feature**: AWS Agent Registry is improving recently launched custom metadata schema feature to make shared attributes easier to manage.
+* `github.com/aws/aws-sdk-go-v2/service/appintegrations`: [v1.52.0](service/appintegrations/CHANGELOG.md#v1520-2026-10-13)
+ * **Feature**: This release adds the Connect JWT authentication type and the AudienceOverride field to AuthConfig, letting A2A server applications authenticate with JWTs issued by Amazon Connect.
+* `github.com/aws/aws-sdk-go-v2/service/appstream`: [v1.72.0](service/appstream/CHANGELOG.md#v1720-2026-10-13)
+ * **Feature**: Adds support for administrators to require users to re-authenticate OneDrive and Google Drive storage connectors when a streaming session is reused.
+* `github.com/aws/aws-sdk-go-v2/service/arcregionswitch`: [v1.21.0](service/arcregionswitch/CHANGELOG.md#v1210-
+
+... (truncated)]]></description>
+    <pubDate>Tue, 13 Oct 2026 18:50:58 GMT</pubDate>
+  </item>
+  <item>
+    <title>[github/spec-kit] Spec Kit - 1.2.0 (v1.2.0)</title>
+    <link>https://github.com/github/spec-kit/releases/tag/v1.2.0</link>
+    <guid isPermaLink="true">https://github.com/github/spec-kit/releases/tag/v1.2.0</guid>
+    <description><![CDATA[## Install
+
+```bash
+uv tool install specify-cli --from git+
+specify init my-project
+```
+
+## What's Changed
+
+- chore: bump version to 1.2.0
+- fix: explain community submission title mismatches (#4946)
+- fix(workflows): confine workflow and step catalog cache writes (#4931)
+- docs: clarify delivery versus post-delivery spec persistence (#4945)
+- fix(bundles): allow newer packaged patch releases with warnings (#4942)
+- Update Applied Epistemic Engineering extension to v1.4.0 (#4941)
+- Update Applied Epistemic Engineering extension to v1.3.0 (#4936)
+- Persist project symlink policy at command boundaries (#4934)
+- [extension] Update DocGuard — CDD Enforcement extension to v0.44.3 (#4927)
+- fix(workflows): skip the right side of and/or when the left side decides (#4923)
+- Update OpenProject preset to v1.0.3 (#4928)
+- fix: narrow exceptions in get_speckit_version from Exception to specific types (#3917)
+- Update adrkit extension to v0.1.5 (#4932)
+- Update OpenProject Integration extension to 
+
+... (truncated)]]></description>
+    <pubDate>Tue, 13 Oct 2026 15:49:05 GMT</pubDate>
+  </item>
+  <item>
+    <title>[oxc-project/oxc] oxlint v1.88.0 (oxlint_v1.88.0)</title>
+    <link>https://github.com/oxc-project/oxc/releases/tag/oxlint_v1.88.0</link>
+    <guid isPermaLink="true">https://github.com/oxc-project/oxc/releases/tag/oxlint_v1.88.0</guid>
+    <description><![CDATA[### 💥 BREAKING CHANGES
+
+- 7730e14 ast: [**BREAKING**] Refactor comment attachment storage (#27512) (camc314)
+- c904b61 ast: [**BREAKING**] Add comment attachment storage (#27393) (camc314)
+
+### 🚀 Features
+
+- bde9f69 oxlint/lsp: Show config errors to LSP client (#25486) (Sysix)
+- 3c361a7 linter/unicorn/prefer-query-selector: Add `allowWithVariables` option (#27346) (Mikhail Baev)
+
+### 🐛 Bug Fixes
+
+- 82ecc43 linter/sort-keys: Compare natural order like ESLint (#27579) (Dunqing)
+- 598ac03 linter/unicorn/prefer-bigint-literals: Unwrap redundant constructor call; don't auto-fix for lost precision (#25690) (Jacob Bandes-Storch)
+- 2512213 linter: Prevent conflicting type import fixes (#27409) (camc314)
+- 2349a31 oxfmt: Follow symlinked configs in discovery (#27389) (leaysgur)
+- 6e573f9 oxlint,oxfmt: Set stderr blocking (#27363) (leaysgur)
+
+### ⚡ Performance
+
+- 91b588c linter/oxc/bad-array-method-on-arguments: Check arguments references once (#26930) (camc314)
+- c5f47ed linter/plugins: Inli
+
+... (truncated)]]></description>
+    <pubDate>Tue, 13 Oct 2026 09:47:50 GMT</pubDate>
+  </item>
+  <item>
+    <title>[pnpm/pnpm] pnpm 12.13.0 (v12.13.0)</title>
+    <link>https://github.com/pnpm/pnpm/releases/tag/v12.13.0</link>
+    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v12.13.0</guid>
+    <description><![CDATA[This release adds the `pnpm profile` and `pnpm token` commands, the `storeIndexFormat: files` setting for stores shared over a network filesystem, and faster Python dependency resolution.
+
+### Minor Changes
+
+- Added the `pnpm profile` command to view and update registry user profile settings.
+
+- Added `pnpm token` to list, create, and revoke authentication tokens on the registry.
+
+- Added the `storeIndexFormat` setting. Set it to `files` to keep a store's package index as one file per package instead of the SQLite `index.db`, for a store on a network filesystem that several machines use at once. SQLite's locking does not work across machines, so concurrent installs on such a store could corrupt `index.db`.
+
+- Added the `nodePackageMap` setting, which groups the package-map settings. `nodePackageMap.mode: write-only` writes `node_modules/.package-map.json` for other tools without making Node.js load it. `mode: load` also makes Node.js load the map, like `nodeExperimentalPackag
+
+... (truncated)]]></description>
+    <pubDate>Tue, 13 Oct 2026 08:32:10 GMT</pubDate>
+  </item>
+  <item>
+    <title>[sindresorhus/got] v16.1.0</title>
+    <link>https://github.com/sindresorhus/got/releases/tag/v16.1.0</link>
+    <guid isPermaLink="true">https://github.com/sindresorhus/got/releases/tag/v16.1.0</guid>
+    <description><![CDATA[This release is the result of a large bug hunt. Many of the fixes make Got match its documented behavior, so you may notice some of them:
+
+- Invalid options now throw: an empty `method`, a negative or fractional `maxRedirects` or `retry.limit`, a `prefixUrl` with a query string or fragment, and a `handlers` entry that is not a function.
+- A stream with a `body`, `json`, or `form` option now rejects writes, as documented.
+- The promise `response` event now only fires for the final response, not for every retry attempt.
+- `got.extend({body})` (and `json`, `form`) no longer sends the payload with every request of the instance. Payloads are never merged with defaults.
+- `instance.extend` now inherits the parent's `mutableDefaults`, like `got.extend(instance)`.
+- A `HEAD` request is no longer changed to `GET` on a `301`, `302`, or `303` redirect.
+- `response.body` no longer keeps a leading UTF-8 byte order mark, and JSON with a byte order mark now parses.
+
+## Improvements
+
+- Acc
+
+... (truncated)]]></description>
+    <pubDate>Tue, 13 Oct 2026 06:35:29 GMT</pubDate>
+  </item>
   <item>
     <title>[sindresorhus/eslint-plugin-unicorn] v78.0.0</title>
     <link>https://github.com/sindresorhus/eslint-plugin-unicorn/releases/tag/v78.0.0</link>
@@ -31,54 +188,6 @@
 
 ... (truncated)]]></description>
     <pubDate>Mon, 12 Oct 2026 19:05:50 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-10-12) (release-2026-10-12)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-12</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-12</guid>
-    <description><![CDATA[## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcore`: [v1.51.0](service/bedrockagentcore/CHANGELOG.md#v1510-2026-10-12)
- * **Feature**: AgentCore Memory now supports Long-Term Memory Time-to-Live on Batch APIs.
-* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcorecontrol`: [v1.73.0](service/bedrockagentcorecontrol/CHANGELOG.md#v1730-2026-10-12)
- * **Feature**: AgentCore Memory now supports configuring Long-Term Memory Time-to-Live (TTL) on Memory Strategies.
-* `github.com/aws/aws-sdk-go-v2/service/cloudwatchomni`: [v1.1.0](service/cloudwatchomni/CHANGELOG.md#v110-2026-10-12)
- * **Feature**: Adds support for updating agentCoreEvaluationRoleArn in UpdateSpace API
-* `github.com/aws/aws-sdk-go-v2/service/devopsagent`: [v1.19.0](service/devopsagent/CHANGELOG.md#v1190-2026-10-12)
- * **Feature**: Adds support for the includedData field in GetAgentSpace and ListAgentSpaces APIs
-* `github.com/aws/aws-sdk-go-v2/service/glue`: [v1.170.0](service/glue/CHANGELOG.md#v117
-
-... (truncated)]]></description>
-    <pubDate>Mon, 12 Oct 2026 18:44:11 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-js-v3] v3.1150.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1150.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1150.0</guid>
-    <description><![CDATA[#### 3.1150.0(2026-10-12)
-
-##### Documentation Changes
-
-* **client-lambda:** Doc updates to reposition Lambda Functions as Lambda Event Functions (618497da)
-
-##### New Features
-
-* **clients:** update client endpoints as of 2026-10-12 (39b07192)
-* **client-pcs:** Adding scheduler version to RegisterComputeNodeGroup API. A compute node uses this value to run the matching scheduler version. (8085dcda)
-* **client-bedrock-agentcore-control:** AgentCore Memory now supports configuring Long-Term Memory Time-to-Live (TTL) on Memory Strategies. (93d530e9)
-* **client-lambda-core:** Lambda Network Connector now supports Lambda Web Functions, letting them reach private VPC resources, and adds versioning, each connector update creates an immutable version that revisions pin to, so customers can roll out and roll back networking changes without affecting running workloads (7ca09fa2)
-* **client-lambda-web:** Lambda Web Functions GA launch. Lambda Web Functions enable customers to run web applications
-
-... (truncated)]]></description>
-    <pubDate>Mon, 12 Oct 2026 18:36:57 GMT</pubDate>
-  </item>
-  <item>
-    <title>[bluesky-social/atproto] @atproto/ozone@0.7.0</title>
-    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/ozone%400.7.0</link>
-    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/ozone%400.7.0</guid>
-    <description><![CDATA[### Minor Changes
-
-- #5634 `c137c3b` Thanks @foysalit! - Temporarily disable wildcard label queries by default to prevent expensive prefix scans. Set OZONE_LABEL_QUERY_WILDCARDS_ENABLED=true to restore support; exact URI queries remain available.]]></description>
-    <pubDate>Mon, 12 Oct 2026 13:20:04 GMT</pubDate>
   </item>
   <item>
     <title>[go-chi/chi] v5.4.0</title>
@@ -187,23 +296,6 @@ Custom renderables may need a little work.
 
 ... (truncated)]]></description>
     <pubDate>Sat, 10 Oct 2026 20:13:59 GMT</pubDate>
-  </item>
-  <item>
-    <title>[pnpm/pnpm] pnpm 12.12.0 (v12.12.0)</title>
-    <link>https://github.com/pnpm/pnpm/releases/tag/v12.12.0</link>
-    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v12.12.0</guid>
-    <description><![CDATA[This release shares task results and dependency builds through a remote cache, adds the `addMissingPeerTypes` setting, and lets `pnpm add --config` and `pnpm update` manage configuration dependencies. It also fixes `dangerouslyAllowAllBuilds` running the build scripts of packages that `allowBuilds` denies.
-
-### Minor Changes
-
-- `pnpm pipeline` can share task results between machines. A result is a signed artifact stored on a pnpr server or on a server that speaks the Turborepo Remote Cache API, such as Vercel Remote Cache.
-
- The remote side-effects cache can also store dependency builds on a Turborepo Remote Cache server. Both caches read the new `remoteCache` setting, which names the server and holds the signing keys. `pnpm pipeline --report` records the run under the organization `remoteCache.org` names.
-
-- Added the `addMissingPeerTypes` setting, which links the `@types` package of a peer dependency next to every package that peer-depends on it. For example, a package that p
-
-... (truncated)]]></description>
-    <pubDate>Sat, 10 Oct 2026 19:52:45 GMT</pubDate>
   </item>
   <item>
     <title>[TASEmulators/fceux] fceux-2.7.0</title>
@@ -468,36 +560,6 @@ Videos can now be recorded at a custom frame rate, and the decorations for actio
     <pubDate>Wed, 07 Oct 2026 14:43:59 GMT</pubDate>
   </item>
   <item>
-    <title>[vercel/next.js] v16.4.0</title>
-    <link>https://github.com/vercel/next.js/releases/tag/v16.4.0</link>
-    <guid isPermaLink="true">https://github.com/vercel/next.js/releases/tag/v16.4.0</guid>
-    <description><![CDATA[Check out the 16.4 announcement post to get an overview of the changes.
-
-### Core Changes
-
-- Show compiler plugin warning in more situations: #75682
-- fix(scripts): correct typo in rm.mjs error message: #87015
-- docs: improve clarity and punctuation in README: #86096
-- Fix debug build paths Pages Router support entries: #93529
-- bundle-analyzer: record historical snapshots on each analyze run: #93520
-- fix: detect proxy.ts correctly with compound pageExtensions: #93246
-- feat(turbopack): support `false` values for `resolveAlias` config: #93331
-
-### Misc Changes
-
-- docs: correction to dynamicParams migration: #96624
-- docs: proxy event argument: #96435
-- docs: remove experimental note from runtime prefetching: #96615
-- Preserve per-segment prefetching after dynamic navigation: #96583
-- Rename static generation stream option to waitForAllReady: #96564
-- Remove obsolete static generation plumbing: #96563
-- [turbopack] Drop dead writes to `exports`: #96381
-- [turbopack
-
-... (truncated)]]></description>
-    <pubDate>Wed, 07 Oct 2026 10:03:29 GMT</pubDate>
-  </item>
-  <item>
     <title>[floci-io/floci] 2.2.0</title>
     <link>https://github.com/floci-io/floci/releases/tag/2.2.0</link>
     <guid isPermaLink="true">https://github.com/floci-io/floci/releases/tag/2.2.0</guid>
@@ -601,29 +663,6 @@ For now you can view the generated release notes below.
     <pubDate>Mon, 05 Oct 2026 15:39:27 GMT</pubDate>
   </item>
   <item>
-    <title>[oxc-project/oxc] oxlint v1.87.0 (oxlint_v1.87.0)</title>
-    <link>https://github.com/oxc-project/oxc/releases/tag/oxlint_v1.87.0</link>
-    <guid isPermaLink="true">https://github.com/oxc-project/oxc/releases/tag/oxlint_v1.87.0</guid>
-    <description><![CDATA[### 🚀 Features
-
-- 42dcfd2 linter/react/no-unescaped-entities: Implement suggestion (#27292) (Mikhail Baev)
-- cd4510d linter/unicorn/no-useless-switch-case: Implement suggestion (#27245) (Mikhail Baev)
-- 1a7c902 linter/react/jsx-no-target-blank: Implement suggestion (#27181) (Mikhail Baev)
-
-### 🐛 Bug Fixes
-
-- 176b4b9 linter/jsx-a11y/label-has-associated-control: Validate label attribute values (#27302) (sama Pyb)
-- 7d381c3 linter/jsx-a11y/mouse-events-have-key-events: Handle nullish event handlers (#27306) (sama Pyb)
-- 4e09837 linter/jsx-a11y/lang: Validate lang expression strings (#27304) (sama Pyb)
-- 7d28a66 linter/unicorn/numeric-separators-style: Report misgrouped BigInt literals (#27207) (breken)
-- e928322 linter/unicorn/no-zero-fractions: Parenthesize separator and large integers in fixer (#27206) (breken)
-- 3d61a59 parser: Validate TypeScript type member separators (#27222) (camc314)
-- f08236b linter/eslint/prefer-exponentiation-operator: Preserve autofix precedence (#27150) (c
-
-... (truncated)]]></description>
-    <pubDate>Mon, 05 Oct 2026 11:04:25 GMT</pubDate>
-  </item>
-  <item>
     <title>[inokawa/virtua] 0.53.0</title>
     <link>https://github.com/inokawa/virtua/releases/tag/0.53.0</link>
     <guid isPermaLink="true">https://github.com/inokawa/virtua/releases/tag/0.53.0</guid>
@@ -675,38 +714,6 @@ For now you can view the generated release notes below.
 
 ... (truncated)]]></description>
     <pubDate>Fri, 02 Oct 2026 20:07:11 GMT</pubDate>
-  </item>
-  <item>
-    <title>[github/spec-kit] Spec Kit - 1.1.0 (v1.1.0)</title>
-    <link>https://github.com/github/spec-kit/releases/tag/v1.1.0</link>
-    <guid isPermaLink="true">https://github.com/github/spec-kit/releases/tag/v1.1.0</guid>
-    <description><![CDATA[## Install
-
-```bash
-uv tool install specify-cli --from git+
-specify init my-project
-```
-
-## Deprecation
-
-The core /speckit.taskstoissues command is now deprecated, and you should use the `github` extension for the `taskstoissues ` functionality.
-
-## What's Changed
-
-- chore: bump version to 1.1.0
-- chore(deps): bump the codeql-action group with 2 updates (#4809)
-- Validate community preset submissions before opening catalog PRs (#4787)
-- fix: use bounded read for workflow catalog HTTP responses (#3766)
-- [extension] Update Archive Extension to v1.4.0 (#4818)
-- [bug-fix] Fix non-latin-feature-names: preserve Unicode feature names (#4780)
-- [extension] Add Conformidad Software Humano extension to community catalog (#4812)
-- Add Software Humano preset to community catalog (#4816)
-- [extension] Add Log Intake (logreduce) extension to community catalog (#4813)
-- Update Quality Gates extension to v0.3.5 (#4814)
-- feat(workflows): install custom step types from local dir
-
-... (truncated)]]></description>
-    <pubDate>Fri, 02 Oct 2026 18:02:50 GMT</pubDate>
   </item>
   <item>
     <title>[remix-run/remix] test v1.0.0 (test@1.0.0)</title>
