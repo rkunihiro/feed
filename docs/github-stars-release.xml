@@ -5,63 +5,149 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Tue, 13 Oct 2026 22:02:16 GMT</lastBuildDate>
+  <lastBuildDate>Wed, 14 Oct 2026 22:02:29 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
   <item>
-    <title>[bluesky-social/atproto] @atproto/ozone@0.8.0</title>
-    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/ozone%400.8.0</link>
-    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/ozone%400.8.0</guid>
-    <description><![CDATA[### Minor Changes
+    <title>[aws/aws-sdk-go-v2] Release (2026-10-14) (release-2026-10-14)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-14</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-14</guid>
+    <description><![CDATA[## General Highlights
+* **Dependency Update**: Updated to the latest SDK module versions
 
-- #5641 `7184ed7` Thanks @foysalit! - Replace the moderation inbox global push preference with independent reports, account, and labels preferences. Support atomic partial updates and preserve existing opt-outs through nullable category columns that inherit the stored global value. Clients must switch to the category fields.
+## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/feature/dynamodb/attributevalue`: [v1.21.12](feature/dynamodb/attributevalue/CHANGELOG.md#v12112-2026-10-14)
+ * **Bug Fix**: attributevalue marshal to AttributeValueMemberNULL with double pointer when outer pointer is not nil
+* `github.com/aws/aws-sdk-go-v2/feature/dynamodb/expression`: [v1.10.0](feature/dynamodb/expression/CHANGELOG.md#v1100-2026-10-14)
+ * **Feature**: Support multi-attribute key conditions in `expression`. `KeyAnd` now accepts two or more conditions.
+* `github.com/aws/aws-sdk-go-v2/feature/dynamodbstreams/attributevalue`: [v1.20.12](feature/dynamodbstreams/attributevalue/CHANGELOG.md#v12012-2026-10-14)
+ * **Bug Fix**: attributevalue marshal to AttributeValueMemberNULL with double pointer when outer pointer is not nil
+* `github.com/aws/aws-sdk-go-v2/service/arcregionswitch`: [v1.22.0](service/arcregionswitch/CHANGELOG.md#v1220-
 
-### Patch Changes
-
-- #5644 `dff8990` Thanks @foysalit! - Keep moderation inbox report pages, actioned subject lists and notification visibility checks bounded to the viewer's post-cutoff rows at scale
-
-- #5597 `8c05fa0` Thanks @foysalit! - Associate email events with reports targeted by ID without changing report status. Other email report targeting modes remain no-ops.]]></description>
-    <pubDate>Tue, 13 Oct 2026 21:21:42 GMT</pubDate>
+... (truncated)]]></description>
+    <pubDate>Wed, 14 Oct 2026 18:57:14 GMT</pubDate>
   </item>
   <item>
-    <title>[aws/aws-sdk-js-v3] v3.1151.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1151.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1151.0</guid>
-    <description><![CDATA[#### 3.1151.0(2026-10-13)
-
-##### Chores
-
-* **lib-transfer-manager:** move lib-transfer-manager to preview/ folder (#8351) (5037a006)
-* **scripts:** add preview/ folder to build tooling (#8350) (a922905a)
+    <title>[aws/aws-sdk-js-v3] v3.1152.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1152.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1152.0</guid>
+    <description><![CDATA[#### 3.1152.0(2026-10-14)
 
 ##### Documentation Changes
 
-* **client-lambda-web:** Documentation update to include common use cases. (643507a0)
+* **client-marketplace-metering:** Documentation update - added a Get started pointer to the AWS Marketplace AI Metering Agent Skill in the BatchMeterUsage API reference. No API or behavior change. (c97db282)
 
 ##### New Features
 
-* **clients:** update client endpoints as of 2026-10-13 (d3994582)
-* **client-lakeformation:** Added new LakeFormation APIs and documentation updates for Simple Row-level Security (RLS). (c7a586fc)
-* **client-agent-registry-control:** AWS Agent Registry is improving recently launched custom metadata schema feature to make shared attributes easier to manage. (ed00d0bb)
-* **client-omics:** With Expanded container registry support, you can use container images from registries such as Seqera (Wave), NVIDIA NGC, and Google Artifact Registry with AWS HealthOmics private workflows, without manually migrating images into Amazon ECR or editing your workflow de
+* **clients:** update client endpoints as of 2026-10-14 (91a8a07c)
+* **client-imagebuilder:** This release adds parentInstance to infrastructure configurations, so builds can use an already-running instance from an Amazon EC2 Auto Scaling group. It also adds terminateInstanceOnCompletion, which keeps build and test instances running after image creation ends. (e8a5e26b)
+* **client-cloudfront:** This release adds a new "IpAddressType" field to "VPCOriginEndpointConfig", allowing customers to specify whether their VPC origin accepts IPv4-only or dualstack connections. (6bae6413)
+* **client-transfer:** AWS Transfer Family now lets you store SFTP server host keys in AWS Secrets Manager in your own AWS account
 
 ... (truncated)]]></description>
-    <pubDate>Tue, 13 Oct 2026 18:55:44 GMT</pubDate>
+    <pubDate>Wed, 14 Oct 2026 18:43:36 GMT</pubDate>
   </item>
   <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-10-13) (release-2026-10-13)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-13</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-13</guid>
-    <description><![CDATA[## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/agentregistrycontrol`: [v1.8.0](service/agentregistrycontrol/CHANGELOG.md#v180-2026-10-13)
- * **Feature**: AWS Agent Registry is improving recently launched custom metadata schema feature to make shared attributes easier to manage.
-* `github.com/aws/aws-sdk-go-v2/service/appintegrations`: [v1.52.0](service/appintegrations/CHANGELOG.md#v1520-2026-10-13)
- * **Feature**: This release adds the Connect JWT authentication type and the AudienceOverride field to AuthConfig, letting A2A server applications authenticate with JWTs issued by Amazon Connect.
-* `github.com/aws/aws-sdk-go-v2/service/appstream`: [v1.72.0](service/appstream/CHANGELOG.md#v1720-2026-10-13)
- * **Feature**: Adds support for administrators to require users to re-authenticate OneDrive and Google Drive storage connectors when a streaming session is reused.
-* `github.com/aws/aws-sdk-go-v2/service/arcregionswitch`: [v1.21.0](service/arcregionswitch/CHANGELOG.md#v1210-
+    <title>[bluesky-social/atproto] @atproto/ozone@0.9.0</title>
+    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/ozone%400.9.0</link>
+    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/ozone%400.9.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- #5642 `2db2f9d` Thanks @foysalit! - Expose approved or denied outcomes on resolved moderation inbox appeals and snapshot outcomes in appeal resolution notifications. Preserve unknown historical outcomes, record no-action denials, and close targeted appeal reports when reversing a takedown.
+ 
+ Resolve outcomes only after indexed lookups select each subject's latest appeal, keeping page hydration independent of appeal history.
+
+### Patch Changes
+
+- #5640 `b05cf65` Thanks @foysalit! - Cancel queryEvents and queryStatuses listing SQL when the HTTP client disconnects.]]></description>
+    <pubDate>Wed, 14 Oct 2026 15:50:38 GMT</pubDate>
+  </item>
+  <item>
+    <title>[nodejs/node] 2026-10-14, Version 26.12.0 (Current), @richardlau (v26.12.0)</title>
+    <link>https://github.com/nodejs/node/releases/tag/v26.12.0</link>
+    <guid isPermaLink="true">https://github.com/nodejs/node/releases/tag/v26.12.0</guid>
+    <description><![CDATA[### Notable Changes
+
+* \[`1ebd6d3677`] - **(SEMVER-MINOR)** **doc,lib,src**: throw on missing WebAssembly or RX support (Paolo Insogna) #66533
+* \[`7f1937d2b9`] - **(SEMVER-MINOR)** **http**: add websocketMask and websocketUnmask (James M Snell) #66335
+
+### Commits
+
+* \[`30e76bb16a`] - **benchmark**: fix input passed to subtle.digest in webcrypto-digest (Rafael Gonzaga) #66608
+* \[`adef72223a`] - **benchmark**: fix buffer option in buffer read/write benchmarks (Rafael Gonzaga) #66604
+* \[`2f498f08fe`] - **benchmark**: add util.parseArgs benchmark (Rafael Gonzaga) #66599
+* \[`4ce8412e18`] - **benchmark**: fix url-searchparams-sort to sort a fresh list (RafaelGSS) #66535
+* \[`493bd6c66e`] - **benchmark,tools**: fix napi benchmarks on GHA (Nigro Simone) #66423
+* \[`e4515552d6`] - **build**: run QUIC CI for V8 changes (Yuya Inoue) #66602
+* \[`a888e51062`] - **build**: support Python 3.15 (Mike McCready) #65750
+* \[`2afab9a63b`] - **build**: do not include shared gtest in `nod
 
 ... (truncated)]]></description>
-    <pubDate>Tue, 13 Oct 2026 18:50:58 GMT</pubDate>
+    <pubDate>Wed, 14 Oct 2026 15:22:04 GMT</pubDate>
+  </item>
+  <item>
+    <title>[go-chi/chi] v5.5.0</title>
+    <link>https://github.com/go-chi/chi/releases/tag/v5.5.0</link>
+    <guid isPermaLink="true">https://github.com/go-chi/chi/releases/tag/v5.5.0</guid>
+    <description><![CDATA[## What's Changed
+* middleware: add Deprecation (RFC 9745), make Sunset RFC 8594 only by @VojtechVitek in 
+* middleware: test ClientIPFromHeader does not fall back to other headers by @renanmpimentel in 
+* middleware: build Maybe handler once by @lowgame in 
+* middleware: round and clamp Retry-After delays up to whole seconds by @VojtechVitek in 
+* middleware: parse quoted ContentCharset media parameters by @VojtechVitek in 
+* middleware: SupressNotFound must not mutate the request's route context by @VojtechVitek in 
+
+## New Contributors
+* @renanmpimentel made their first contribution in 
+* @lowgame made their first contribution in 
+
+**Full Changelog**:]]></description>
+    <pubDate>Wed, 14 Oct 2026 13:20:54 GMT</pubDate>
+  </item>
+  <item>
+    <title>[cloudflare/vinext] create-vinext-app@1.1.0</title>
+    <link>https://github.com/cloudflare/vinext/releases/tag/create-vinext-app%401.1.0</link>
+    <guid isPermaLink="true">https://github.com/cloudflare/vinext/releases/tag/create-vinext-app%401.1.0</guid>
+    <description><![CDATA[Read the Vinext 1.2 release post for the highlights.
+
+### Features
+
+- **Init:** add --name to set the Cloudflare Worker name (#3863)
+
+### Contributors
+
+- @MattieTK]]></description>
+    <pubDate>Wed, 14 Oct 2026 10:55:44 GMT</pubDate>
+  </item>
+  <item>
+    <title>[nodejs/undici] v8.12.0</title>
+    <link>https://github.com/nodejs/undici/releases/tag/v8.12.0</link>
+    <guid isPermaLink="true">https://github.com/nodejs/undici/releases/tag/v8.12.0</guid>
+    <description><![CDATA[## What's Changed
+* fix(cookies): ignore a numeric expires outside the Date range by @xia-chao in 
+* fix(http2): pause bodyTimeout while applying backpressure by @jasnell in 
+* fix(cache): track cached response abort state by @mcollina in 
+* fix(deduplicate): make terminal callbacks exception-safe by @mcollina in 
+* fix(decompress): stop inflating compress and x-compress by @luantaraschi in 
+* fix(cache): evict least recently used entries in MemoryCacheStore by @jasnell in 
+* fix(eventsource): fix redirect targets in eventsource by @jasnell in 
+* fix(redirect): fix throwOnMaxRedirect edge by @jasnell in 
+* fix: normalize HTTP/2 headers for legacy dispatch handlers by @Knowzzz in 
+* fix(session cache): fix bug in tls session caching by @jasnell in 
+* docs: fix relative links broken by the README move by @v1teka in 
+* fix(redirect): add error code to max redirects error by @mcollina in 
+* fix(eventsource): fix retry wrap bug by @jasnell in 
+* fix(retry): keep request headers when resumin
+
+... (truncated)]]></description>
+    <pubDate>Wed, 14 Oct 2026 09:03:04 GMT</pubDate>
+  </item>
+  <item>
+    <title>[TASEmulators/fceux] fceux-2.7.0</title>
+    <link>https://github.com/TASEmulators/fceux/releases/tag/fceux-2.7.0</link>
+    <guid isPermaLink="true">https://github.com/TASEmulators/fceux/releases/tag/fceux-2.7.0</guid>
+    <description><![CDATA[The 2.7.0 release introduces several new features and improvements focused on build system enhancements, media codec support, and developer tooling. Profiling and debugging capabilities have been significantly improved, with support for FFmpeg 9 and enhanced platform compatibility.
+Note: The tag on this release was bumped once due to a major bug being found shortly after initial release. It has been corrected and new builds are generated, sorry for the inconvenience.]]></description>
+    <pubDate>Wed, 14 Oct 2026 01:18:01 GMT</pubDate>
   </item>
   <item>
     <title>[github/spec-kit] Spec Kit - 1.2.0 (v1.2.0)</title>
@@ -190,30 +276,6 @@ specify init my-project
     <pubDate>Mon, 12 Oct 2026 19:05:50 GMT</pubDate>
   </item>
   <item>
-    <title>[go-chi/chi] v5.4.0</title>
-    <link>https://github.com/go-chi/chi/releases/tag/v5.4.0</link>
-    <guid isPermaLink="true">https://github.com/go-chi/chi/releases/tag/v5.4.0</guid>
-    <description><![CDATA[## What's Changed
-* Improve godoc: add links and titles by @dolmen in 
-* Add Clone method to Context by @VojtechVitek in 
-* middleware: ContentCharset should skip requests without a body by @VojtechVitek in 
-* Update compress middleware support Brotli support documentation by @sm3142 in 
-* fix: panic on Mount when a router is mounted onto itself by @sk-sanjay01 in 
-* test(middleware): Improves test coverage by @nszilard in 
-* Remove superfluous import aliases by @JRaspass in 
-* Bump minimum Go to 1.24, use b.Loop by @JRaspass in 
-* Use slices.Backward where appropriate by @JRaspass in 
-* Replace "interface{}" with "any" by @JRaspass in 
-* Simplify chi.URLParam, call chi.URLParamFromCtx by @JRaspass in 
-* middleware: record response status when flushing by @jakezwang in 
-* middleware: honor Discard when flushing by @LeulTew in 
-* README: point middleware doc links to chi/v5 by @VojtechVitek in 
-* middleware: treat RemoteAddr as the rightmost hop in ClientIPFrom* by @Vojte
-
-... (truncated)]]></description>
-    <pubDate>Mon, 12 Oct 2026 11:22:50 GMT</pubDate>
-  </item>
-  <item>
     <title>[dprint/dprint] 0.63.0</title>
     <link>https://github.com/dprint/dprint/releases/tag/0.63.0</link>
     <guid isPermaLink="true">https://github.com/dprint/dprint/releases/tag/0.63.0</guid>
@@ -296,13 +358,6 @@ Custom renderables may need a little work.
 
 ... (truncated)]]></description>
     <pubDate>Sat, 10 Oct 2026 20:13:59 GMT</pubDate>
-  </item>
-  <item>
-    <title>[TASEmulators/fceux] fceux-2.7.0</title>
-    <link>https://github.com/TASEmulators/fceux/releases/tag/fceux-2.7.0</link>
-    <guid isPermaLink="true">https://github.com/TASEmulators/fceux/releases/tag/fceux-2.7.0</guid>
-    <description><![CDATA[The 2.7.0 release introduces several new features and improvements focused on build system enhancements, media codec support, and developer tooling. Profiling and debugging capabilities have been significantly improved, with support for FFmpeg 9 and enhanced platform compatibility.]]></description>
-    <pubDate>Fri, 09 Oct 2026 21:18:49 GMT</pubDate>
   </item>
   <item>
     <title>[astral-sh/uv] 0.13.0</title>
@@ -403,48 +458,6 @@ Full Release Notes]]></description>
     <pubDate>Fri, 09 Oct 2026 03:06:51 GMT</pubDate>
   </item>
   <item>
-    <title>[cloudflare/vinext] @cloudflare/workers-response-store@1.1.0</title>
-    <link>https://github.com/cloudflare/vinext/releases/tag/%40cloudflare/workers-response-store%401.1.0</link>
-    <guid isPermaLink="true">https://github.com/cloudflare/vinext/releases/tag/%40cloudflare/workers-response-store%401.1.0</guid>
-    <description><![CDATA[### Features
-
-- **Response Store:** mark tag invalidations stale instead of regenerating them (#3712)
-- **Cloudflare:** soft-invalidate Workers Cache for stale-while-revalidate invalidations (#3707)
-
-### Bug Fixes
-
-- **Response Store:** let writers opt hard-expired reads into a miss (#3696)
-
-### Performance
-
-- **Response Store:** match invalidated entries with one query (#3721)
-
-### Contributors
-
-- @james-elicx]]></description>
-    <pubDate>Thu, 08 Oct 2026 23:04:46 GMT</pubDate>
-  </item>
-  <item>
-    <title>[openai/codex] 0.162.0 (rust-v0.162.0)</title>
-    <link>https://github.com/openai/codex/releases/tag/rust-v0.162.0</link>
-    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.162.0</guid>
-    <description><![CDATA[## New Features
-
-- Add tools for creating and listing managed Git worktrees from trusted local projects when the worktrees feature is enabled. (#50148)
-- Pin tasks in the agent Command Center with `p` and keep them in a shared Pinned group when supported by the server. (#51500)
-- Navigate and copy transcript blocks with `/copy`, use `Ctrl+Insert` to copy selections, and tune mouse-wheel scrolling with `tui.mouse_scroll_speed`. (#50434, #50215, #50209)
-- Make URLs clickable in approval headers, questions, MCP prompts, warnings, banners, and verification prompts, including when links wrap across lines. (#51439, #51449, #51450, #51451, #51452, #51458)
-- Configure live web access and remote compaction capabilities for custom Responses-compatible model providers. (#50459)
-- Add JavaScript helpers for streaming promise results as they settle, plus opt-in ranked tool search in Code Mode. (#51126, #51209)
-
-## Bug Fixes
-
-- Respect server model and reasoning-summary defaults for new TUI threads 
-
-... (truncated)]]></description>
-    <pubDate>Thu, 08 Oct 2026 18:55:59 GMT</pubDate>
-  </item>
-  <item>
     <title>[fastapi/fastapi] 0.143.0</title>
     <link>https://github.com/fastapi/fastapi/releases/tag/0.143.0</link>
     <guid isPermaLink="true">https://github.com/fastapi/fastapi/releases/tag/0.143.0</guid>
@@ -538,26 +551,6 @@ Videos can now be recorded at a custom frame rate, and the decorations for actio
     <guid isPermaLink="true">https://github.com/uptrace/uptrace/releases/tag/v2.1.0-rc.1</guid>
     <description><![CDATA[CHANGELOG]]></description>
     <pubDate>Wed, 07 Oct 2026 15:04:28 GMT</pubDate>
-  </item>
-  <item>
-    <title>[nodejs/node] 2026-10-07, Version 26.11.0 (Current), @aduh95 (v26.11.0)</title>
-    <link>https://github.com/nodejs/node/releases/tag/v26.11.0</link>
-    <guid isPermaLink="true">https://github.com/nodejs/node/releases/tag/v26.11.0</guid>
-    <description><![CDATA[### Notable Changes
-
-* \[`232f178825`] - **(SEMVER-MINOR)** **buffer**: add `isLatin1` (James M Snell) #66298
-* \[`27778036de`] - **(SEMVER-MINOR)** **buffer**: add `Buffer.stringLength` (Matteo Collina) #66064
-* \[`4f84c4bda2`] - **build, doc**: move to redesign (Aviv Keller) #62045
-* \[`6f6296fef9`] - **(SEMVER-MINOR)** **doc**: promote Alpine Linux to tier 2 support (Stewart X Addison) #63737
-* \[`e998d260d0`] - **(SEMVER-MINOR)** **http**: add `isValidHeaderName` and isValidHeaderValue (James M Snell) #66334
-* \[`7702a50e08`] - **(SEMVER-MINOR)** **http2**: add `connectionWindowSize` option (Tim Perry) #65619
-* \[`e06aa62cec`] - **(SEMVER-MINOR)** **perf\_hooks**: fix truncation of `monitorEventLoopDelay` resolution (James M Snell) #66115
-* \[`ee126e37e8`] - **(SEMVER-MINOR)** **perf\_hooks**: allow `RecordableHistogram` to record 0 (James M Snell) #66114
-* \[`1fef8f54db`] - **(SEMVER-MINOR)** **perf\_hooks**: add `histogram.diff` (James M Snell) #66099
-* \[`f1b9758c4e`] - **(SEMVE
-
-... (truncated)]]></description>
-    <pubDate>Wed, 07 Oct 2026 14:43:59 GMT</pubDate>
   </item>
   <item>
     <title>[floci-io/floci] 2.2.0</title>
@@ -937,19 +930,6 @@ Dependency version changes:
     <pubDate>Mon, 28 Sep 2026 15:31:40 GMT</pubDate>
   </item>
   <item>
-    <title>[nodejs/undici] v6.29.0</title>
-    <link>https://github.com/nodejs/undici/releases/tag/v6.29.0</link>
-    <guid isPermaLink="true">https://github.com/nodejs/undici/releases/tag/v6.29.0</guid>
-    <description><![CDATA[## What's Changed
-* [v6.x] fix(retry): settle exposed body on terminal failure by @mcollina in 
-* Backport upgrade diagnostics lifecycle fixes to v6.x by @BridgeAR in 
-* test: synchronize the issue-3356 body timeout by @BridgeAR in 
-
-
-**Full Changelog**:]]></description>
-    <pubDate>Fri, 25 Sep 2026 09:42:48 GMT</pubDate>
-  </item>
-  <item>
     <title>[ollama/ollama] v0.40.0</title>
     <link>https://github.com/ollama/ollama/releases/tag/v0.40.0</link>
     <guid isPermaLink="true">https://github.com/ollama/ollama/releases/tag/v0.40.0</guid>
@@ -1113,6 +1093,32 @@ Users prioritizing stability and a longer support lifecycle should stay on the
 
 ... (truncated)]]></description>
     <pubDate>Wed, 16 Sep 2026 20:08:21 GMT</pubDate>
+  </item>
+  <item>
+    <title>[runfinch/finch] v1.19.0</title>
+    <link>https://github.com/runfinch/finch/releases/tag/v1.19.0</link>
+    <guid isPermaLink="true">https://github.com/runfinch/finch/releases/tag/v1.19.0</guid>
+    <description><![CDATA[## 1.19.0 (2026-09-16)
+
+
+### Build System or External Dependencies
+
+* **deps:** bump github.com/containerd/containerd/v2 (350e80b)
+* **deps:** bump github.com/containerd/containerd/v2 from 2.2.5 to 2.2.8 (#1809) (350e80b)
+* **deps:** bump google.golang.org/grpc from 1.81.1 to 1.83.1 (#1805) (07d4117)
+
+
+### Features
+
+* warn that Finch VM is not a security boundary on vm init (#1808) (ef69290)
+
+
+### Bug Fixes
+
+* move docker-credential-osxkeychain back to /usr/local/bin (#1803) (8065f30)
+
+---]]></description>
+    <pubDate>Wed, 16 Sep 2026 17:03:57 GMT</pubDate>
   </item>
 </channel>
 </rss>
