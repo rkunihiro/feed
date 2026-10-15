@@ -5,8 +5,117 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Wed, 14 Oct 2026 22:02:29 GMT</lastBuildDate>
+  <lastBuildDate>Thu, 15 Oct 2026 22:02:20 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[openai/codex] 0.163.0 (rust-v0.163.0)</title>
+    <link>https://github.com/openai/codex/releases/tag/rust-v0.163.0</link>
+    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.163.0</guid>
+    <description><![CDATA[## New Features
+
+- Open `/config` to search preferences across categories, change supported settings immediately, and see which changes require a restart. (#52990, #53429)
+- Send a follow-up while Codex is responding to steer it immediately. Interrupting a turn also stops active Code Mode cells and their nested tool calls. (#51812, #51835)
+- Configure a leader key in `/keymap`. The default is `Ctrl+X`, shortcut hints stay open until you choose or cancel, and voice mute moves to `F9`. (#52273)
+- Restart a managed background server from `/daemon`. Codex warns about work the restart could interrupt, then reconnects automatically. (#53173)
+- Codex can run independent read-only tools in parallel, including skill, memory, and conversation-history lookups. (#52245)
+- Daybreak is enabled by default for eligible accounts. `codex exec` can also select it with an OpenAI API key when the server offers access. (#53701, #53717)
+
+## Bug Fixes
+
+- Resuming a saved thread restores its permissions and ne
+
+... (truncated)]]></description>
+    <pubDate>Thu, 15 Oct 2026 21:30:38 GMT</pubDate>
+  </item>
+  <item>
+    <title>[withastro/astro] @astrojs/vue@7.1.0</title>
+    <link>https://github.com/withastro/astro/releases/tag/%40astrojs/vue%407.1.0</link>
+    <guid isPermaLink="true">https://github.com/withastro/astro/releases/tag/%40astrojs/vue%407.1.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- #18277 `2715958` Thanks @florian-lefebvre! - Increases the minimum Node.js version to 22.22.0
+ 
+ The minimum supported Node.js version is now 22.22.0, the latest Node.js 22 release supported by StackBlitz. This change is in line with Astro's Node.js support policy.]]></description>
+    <pubDate>Thu, 15 Oct 2026 14:46:39 GMT</pubDate>
+  </item>
+  <item>
+    <title>[pnpm/pnpm] pnpm 12.14.0 (v12.14.0)</title>
+    <link>https://github.com/pnpm/pnpm/releases/tag/v12.14.0</link>
+    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v12.14.0</guid>
+    <description><![CDATA[This release adds the `sideEffectsCache.exclude` setting, stops `pnpm install` from waiting on the daily update check, and keeps pnpm from aborting with a core dump when the reader of its output exits.
+
+### Minor Changes
+
+- Added the `sideEffectsCache.exclude` setting for packages whose build depends on something pnpm cannot include in the cache key, such as the system libraries a native addon links against. pnpm builds the listed packages in every project and never restores or saves their builds through the side-effects cache, locally or on a `remoteCache` server. Under the global virtual store, each project gets its own copy of these packages and of the packages that depend on them. Entries use the same `name`, `@scope/*`, and `name@version` patterns as `minimumReleaseAgeExclude` #5271.
+
+- `pnpm login` now prints the `npm-notice` response header during web-based login. Registries use it to show the verification code that completes the sign-in in the browser.
+
+### Patch Change
+
+... (truncated)]]></description>
+    <pubDate>Thu, 15 Oct 2026 13:42:33 GMT</pubDate>
+  </item>
+  <item>
+    <title>[cloudflare/workers-sdk] @cloudflare/containers-shared@0.22.0</title>
+    <link>https://github.com/cloudflare/workers-sdk/releases/tag/%40cloudflare/containers-shared%400.22.0</link>
+    <guid isPermaLink="true">https://github.com/cloudflare/workers-sdk/releases/tag/%40cloudflare/containers-shared%400.22.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- #16262 `fe8ce54` Thanks @jamesopstad! - Export Container planning helpers for native Cloudflare configuration
+
+ Internal consumers can now create local-development and preview Container plans directly from parsed `cloudflare.config.ts` and Build Output configuration using `createContainerDevPlanForCfConfig` and `createContainerPreviewPlanForCfConfig`. The shared image handling also resolves Dockerfile paths consistently and avoids retagging an image to itself when a preview uses its existing reference.]]></description>
+    <pubDate>Thu, 15 Oct 2026 10:04:45 GMT</pubDate>
+  </item>
+  <item>
+    <title>[floci-io/floci] 2.3.0</title>
+    <link>https://github.com/floci-io/floci/releases/tag/2.3.0</link>
+    <guid isPermaLink="true">https://github.com/floci-io/floci/releases/tag/2.3.0</guid>
+    <description><![CDATA[# 2.3.0 (2026-10-15)
+
+
+### Bug Fixes
+
+* **accessanalyzer:** route GetAnalyzer through GET /analyzer/<name> (#5534) (9889910), closes #5353
+* **acm:** reject empty SAN arrays in certificate requests (#5688) (e15c081)
+* **apigateway:** match AWS integration responses by status (#5443) (7b8377f)
+* **apigateway:** refuse EDGE REST APIs outside the commercial partition (#5397) (a1f9045)
+* **apigateway:** require API keys for imported methods (#5450) (77113c7)
+* **apigateway:** resolve component parameter references on REST import (#4855) (0f94d62)
+* **apigateway:** select request models by content type and default (#5530) (e77710d)
+* **apigatewayv2:** honor payload format 1.0 (#5338) (04621d8)
+* **apigatewayv2:** include stage variables in Lambda events (#5416) (22c4c32)
+* **apigatewayv2:** infer the 2.0 response body and answer function errors with a message (#5153) (ecdecf2)
+* **apigatewayv2:** send cookies and comma-joined duplicates in the 2.0 event (#5152) (c6369b3)
+* **apigateway:** v
+
+... (truncated)]]></description>
+    <pubDate>Thu, 15 Oct 2026 05:39:06 GMT</pubDate>
+  </item>
+  <item>
+    <title>[sveltejs/kit] @sveltejs/kit@3.1.0</title>
+    <link>https://github.com/sveltejs/kit/releases/tag/%40sveltejs/kit%403.1.0</link>
+    <guid isPermaLink="true">https://github.com/sveltejs/kit/releases/tag/%40sveltejs/kit%403.1.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- feat: support `report-sha256`/`report-sha384`/`report-sha512` CSP hash-reporting keywords (#17398)
+
+- feat: emit a `sveltekit.endpoint` span for `+server` handlers when server tracing is enabled (#17325)
+
+### Patch Changes
+
+- fix: don't treat every module as server-only when the project is inside a `server` directory (#17376)
+
+- fix: continue deployment recovery when service worker updates fail (#17440)
+
+- fix: infer prerendered MIME types from generated files (#17381)
+
+- fix: leave generated files alone when their contents are unchanged (#17310)
+
+- fix: leave focus in the parent page when an app in an unfocused iframe starts or navigates (#17297)
+
+- fix: don't warn about Storybook's Vite plugins that use `transformIndexHtml` (#17373)]]></description>
+    <pubDate>Wed, 14 Oct 2026 22:32:57 GMT</pubDate>
+  </item>
   <item>
     <title>[aws/aws-sdk-go-v2] Release (2026-10-14) (release-2026-10-14)</title>
     <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-14</link>
@@ -83,6 +192,40 @@
 
 ... (truncated)]]></description>
     <pubDate>Wed, 14 Oct 2026 15:22:04 GMT</pubDate>
+  </item>
+  <item>
+    <title>[TanStack/router] Release 2026-10-14 14:51 (release-2026-10-14-1451)</title>
+    <link>https://github.com/TanStack/router/releases/tag/release-2026-10-14-1451</link>
+    <guid isPermaLink="true">https://github.com/TanStack/router/releases/tag/release-2026-10-14-1451</guid>
+    <description><![CDATA[Release 2026-10-14 14:51
+
+## Changes
+
+### Chore
+
+- deps: bump srvx to ^1.0.0 and @vitejs/plugin-rsc to ^0.5.37 (#8708) (fdc10fa13f) by @Sheraff
+- deps: bump fetchdts to ^0.2.0 (#8710) (71d9694da6) by @Sheraff
+- router-cli: replace yargs with cac (#8711) (a80cd74105) by @Sheraff
+- deps: bump diff to ^9.0.0 (#8709) (923d98b18b) by @Sheraff
+
+
+## Packages
+
+- @tanstack/react-start@1.169.2
+- @tanstack/react-start-rsc@0.1.63
+- @tanstack/react-start-server@1.167.50
+- @tanstack/router-cli@1.167.44
+- @tanstack/router-generator@1.167.44
+- @tanstack/router-plugin@1.168.46
+- @tanstack/router-utils@1.162.4
+- @tanstack/router-vite-plugin@1.167.46
+- @tanstack/solid-start@1.169.2
+- @tanstack/solid-start-server@1.167.48
+- @tanstack/start-plugin-core@1.171.53
+- @tanstack/start-server-core@1.169.43
+- @tanstack/vue-start@1.169.2
+- @tanstack/vue-start-server@1.167.48]]></description>
+    <pubDate>Wed, 14 Oct 2026 14:51:37 GMT</pubDate>
   </item>
   <item>
     <title>[go-chi/chi] v5.5.0</title>
@@ -209,25 +352,6 @@ specify init my-project
 
 ... (truncated)]]></description>
     <pubDate>Tue, 13 Oct 2026 09:47:50 GMT</pubDate>
-  </item>
-  <item>
-    <title>[pnpm/pnpm] pnpm 12.13.0 (v12.13.0)</title>
-    <link>https://github.com/pnpm/pnpm/releases/tag/v12.13.0</link>
-    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v12.13.0</guid>
-    <description><![CDATA[This release adds the `pnpm profile` and `pnpm token` commands, the `storeIndexFormat: files` setting for stores shared over a network filesystem, and faster Python dependency resolution.
-
-### Minor Changes
-
-- Added the `pnpm profile` command to view and update registry user profile settings.
-
-- Added `pnpm token` to list, create, and revoke authentication tokens on the registry.
-
-- Added the `storeIndexFormat` setting. Set it to `files` to keep a store's package index as one file per package instead of the SQLite `index.db`, for a store on a network filesystem that several machines use at once. SQLite's locking does not work across machines, so concurrent installs on such a store could corrupt `index.db`.
-
-- Added the `nodePackageMap` setting, which groups the package-map settings. `nodePackageMap.mode: write-only` writes `node_modules/.package-map.json` for other tools without making Node.js load it. `mode: load` also makes Node.js load the map, like `nodeExperimentalPackag
-
-... (truncated)]]></description>
-    <pubDate>Tue, 13 Oct 2026 08:32:10 GMT</pubDate>
   </item>
   <item>
     <title>[sindresorhus/got] v16.1.0</title>
@@ -553,30 +677,6 @@ Videos can now be recorded at a custom frame rate, and the decorations for actio
     <pubDate>Wed, 07 Oct 2026 15:04:28 GMT</pubDate>
   </item>
   <item>
-    <title>[floci-io/floci] 2.2.0</title>
-    <link>https://github.com/floci-io/floci/releases/tag/2.2.0</link>
-    <guid isPermaLink="true">https://github.com/floci-io/floci/releases/tag/2.2.0</guid>
-    <description><![CDATA[Full changelog with commit links: CHANGELOG.md · Compare: 2.1.0...2.2.0
-
-### Bug Fixes
-
-* add Scheduler retry backoff and DLQ handling (#3687)
-* **apigateway,appsync:** sandbox VTL rendering with SecureUberspector and execution limits (#3542)
-* **apigateway:** accept a region label before the built-in execute-api suffixes (#4705), closes #4701
-* **apigateway:** capture HTTP proxy greedy suffixes (#4980)
-* **apigateway:** complete API Gateway API key responses (#3817)
-* **apigateway:** create API keys disabled unless enabled is set (#4731)
-* **apigateway:** drop the SigV4 Authorization header before REST integrations (#4567)
-* **apigateway:** format request times with an English locale (#5093)
-* **apigateway:** honor import warnings and strict rollback (#4531)
-* **apigateway:** import x-amazon-apigateway-any-method in the native image and roll back failed imports (#4473)
-* **apigateway:** map authorizer context in HTTP integrations (#4992)
-* **apigateway:** mark custom-do
-
-... (truncated)]]></description>
-    <pubDate>Tue, 06 Oct 2026 05:23:38 GMT</pubDate>
-  </item>
-  <item>
     <title>[servo/servo] v0.7.0</title>
     <link>https://github.com/servo/servo/releases/tag/v0.7.0</link>
     <guid isPermaLink="true">https://github.com/servo/servo/releases/tag/v0.7.0</guid>
@@ -722,45 +822,6 @@ For now you can view the generated release notes below.
  - `node-tsx@1.0.0`
  - `terminal@1.0.0`]]></description>
     <pubDate>Thu, 01 Oct 2026 23:08:40 GMT</pubDate>
-  </item>
-  <item>
-    <title>[sveltejs/kit] @sveltejs/package@3.0.0</title>
-    <link>https://github.com/sveltejs/kit/releases/tag/%40sveltejs/package%403.0.0</link>
-    <guid isPermaLink="true">https://github.com/sveltejs/kit/releases/tag/%40sveltejs/package%403.0.0</guid>
-    <description><![CDATA[### Major Changes
-
-- breaking: require Node 22 or newer (#12548)
-
-### Minor Changes
-
-- feat: warn when using a `.server.` file or file inside a `server` directory without importing a server-only module (#16266)
-
-- feat: transform import aliases into relative imports in files (#16360)
-
-### Patch Changes
-
-- chore: remove dependency on sade (#16619)
-
-- chore: bump `svelte2tsx` to 0.7.59 (#16745)
-
-- fix: rewrite `.ts` extensions in `import.meta.glob` patterns when `rewriteRelativeImportExtensions` is enabled (#16776)
-
-- chore: replace private fs helpers with Node built-ins (#16610)
-
-- chore: read the Svelte config via `@sveltejs/load-config` (#17039)
-
-- chore: remove dependency on kleur (#12548)
-
-- fix: import resolved peer dependencies as file URLs so project-relative resolution works on Windows (#16618)
-
-- fix: emit declarations when the tsconfig lives above the package root (#16568)
-
-- chore: bump `svelte2tsx` to 0.7.60 (#16761)
-
-- fix: declare typescript as an optional peer dependency 
-
-... (truncated)]]></description>
-    <pubDate>Thu, 01 Oct 2026 17:21:07 GMT</pubDate>
   </item>
   <item>
     <title>[rust-lang/rust] Rust 1.99.0 (1.99.0)</title>
@@ -1030,95 +1091,6 @@ We will continue testing and enabling additional models.
 
 ##### &nbsp;&nbsp;&nbsp;&nbsp;View changes on GitHub]]></description>
     <pubDate>Tue, 22 Sep 2026 14:45:41 GMT</pubDate>
-  </item>
-  <item>
-    <title>[vercel-labs/skills] v1.7.0</title>
-    <link>https://github.com/vercel-labs/skills/releases/tag/v1.7.0</link>
-    <guid isPermaLink="true">https://github.com/vercel-labs/skills/releases/tag/v1.7.0</guid>
-    <description><![CDATA[## Changelog
-
-
-
-## Contributors]]></description>
-    <pubDate>Thu, 17 Sep 2026 15:00:30 GMT</pubDate>
-  </item>
-  <item>
-    <title>[jsdom/jsdom] v30.1.0</title>
-    <link>https://github.com/jsdom/jsdom/releases/tag/v30.1.0</link>
-    <guid isPermaLink="true">https://github.com/jsdom/jsdom/releases/tag/v30.1.0</guid>
-    <description><![CDATA[jsdom is feeling the AGI!
-
-This release is dedicated to @scttcper, who unleashed @codex upon jsdom and found tons of performance improvements. Along the way, he found and fixed many correctness issues as well.
-
-We really appreciate his thoughtful PRs, which did a great job following the project's contribution guidelines, and were clearly human-curated, with their PR descriptions edited to be brief and respectful of the maintainers' time.
-
-Thanks to @scttcper, as well as all the other contributors of this release (most of whom were AI-assisted).
-
-- Added named access to elements on `document`, such as `document.myForm` for `<form name="myForm">`. (@vojtisprime11)
-- Added `QuotaExceededError`, including its use for storage quota errors and oversized `crypto.getRandomValues` requests.
-- Added support for the relaxed DOM naming rules when creating elements, attributes, and document types.
-- Improved performance of DOM construction, tree mutations, range operations, and live coll
-
-... (truncated)]]></description>
-    <pubDate>Thu, 17 Sep 2026 01:01:48 GMT</pubDate>
-  </item>
-  <item>
-    <title>[containerd/containerd] containerd 2.4.0 (v2.4.0)</title>
-    <link>https://github.com/containerd/containerd/releases/tag/v2.4.0</link>
-    <guid isPermaLink="true">https://github.com/containerd/containerd/releases/tag/v2.4.0</guid>
-    <description><![CDATA[Welcome to the v2.4.0 release of containerd!
-
-containerd 2.4 is a regular (non-LTS) release with a shorter support window,
-intended for users who want to adopt new features sooner. As the release
-following the 2.3 LTS, it is the point in the release cycle where previously
-deprecated features may be removed, so this release may include breaking
-changes; check the notes below and clear any deprecation warnings from your
-current version before upgrading.
-
-Users prioritizing stability and a longer support lifecycle should stay on the
-2.3 LTS release.
-
-### Highlights
-
-#### Container Runtime Interface (CRI)
-
-* Enable mount manager for image mounts in CRI (#13542)
-* Export sandbox image and CNI directory configuration in CRI plugin info (#13940)
-* Set default runtimeFeatures.UserNamespacesHostNetwork to true (#13162)
-* Support OCI runtime feature introspection for non-runc runtimes (#13504)
-
-#### Image Distribution
-
-* Apply hardening to strip sensitive authentication headers when fetching des
-
-... (truncated)]]></description>
-    <pubDate>Wed, 16 Sep 2026 20:08:21 GMT</pubDate>
-  </item>
-  <item>
-    <title>[runfinch/finch] v1.19.0</title>
-    <link>https://github.com/runfinch/finch/releases/tag/v1.19.0</link>
-    <guid isPermaLink="true">https://github.com/runfinch/finch/releases/tag/v1.19.0</guid>
-    <description><![CDATA[## 1.19.0 (2026-09-16)
-
-
-### Build System or External Dependencies
-
-* **deps:** bump github.com/containerd/containerd/v2 (350e80b)
-* **deps:** bump github.com/containerd/containerd/v2 from 2.2.5 to 2.2.8 (#1809) (350e80b)
-* **deps:** bump google.golang.org/grpc from 1.81.1 to 1.83.1 (#1805) (07d4117)
-
-
-### Features
-
-* warn that Finch VM is not a security boundary on vm init (#1808) (ef69290)
-
-
-### Bug Fixes
-
-* move docker-credential-osxkeychain back to /usr/local/bin (#1803) (8065f30)
-
----]]></description>
-    <pubDate>Wed, 16 Sep 2026 17:03:57 GMT</pubDate>
   </item>
 </channel>
 </rss>
