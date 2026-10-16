@@ -5,8 +5,145 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Thu, 15 Oct 2026 22:02:20 GMT</lastBuildDate>
+  <lastBuildDate>Fri, 16 Oct 2026 22:02:12 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[TanStack/router] Release 2026-10-16 21:11 (release-2026-10-16-2111)</title>
+    <link>https://github.com/TanStack/router/releases/tag/release-2026-10-16-2111</link>
+    <guid isPermaLink="true">https://github.com/TanStack/router/releases/tag/release-2026-10-16-2111</guid>
+    <description><![CDATA[Release 2026-10-16 21:11
+
+## Changes
+
+### Performance
+
+- lower manifest script preload priority (#8212) (18154b1c45) by @maxktz
+
+### Chore
+
+- deps: upgrade Vitest to 5 and migrate benchmarks to the bench fixture (#8723) (7a06725038) by @schiller-manuel
+
+
+## Packages
+
+- @tanstack/react-router@1.170.45
+- @tanstack/react-start@1.169.3
+- @tanstack/react-start-client@1.168.43
+- @tanstack/react-start-rsc@0.1.64
+- @tanstack/react-start-server@1.167.51
+- @tanstack/router-cli@1.167.45
+- @tanstack/router-core@1.171.38
+- @tanstack/router-generator@1.167.45
+- @tanstack/router-plugin@1.168.47
+- @tanstack/router-vite-plugin@1.167.47
+- @tanstack/solid-router@1.170.42
+- @tanstack/solid-start@1.169.3
+- @tanstack/solid-start-client@1.168.41
+- @tanstack/solid-start-server@1.167.49
+- @tanstack/start-client-core@1.170.38
+- @tanstack/start-plugin-core@1.171.54
+- @tanstack/start-server-core@1.169.44
+- @tanstack/start-static-server-functions@1.167.43
+- @tanstack/start-storage-context@1.167.40
+- @tanstack/vue-
+
+... (truncated)]]></description>
+    <pubDate>Fri, 16 Oct 2026 21:11:12 GMT</pubDate>
+  </item>
+  <item>
+    <title>[eslint/eslint] v10.13.0</title>
+    <link>https://github.com/eslint/eslint/releases/tag/v10.13.0</link>
+    <guid isPermaLink="true">https://github.com/eslint/eslint/releases/tag/v10.13.0</guid>
+    <description><![CDATA[## Features
+* `48d5cc4` feat: report references inside IIFEs in `no-use-before-define` (#21238) (Irfan fandi)
+* `a39d9fb` feat: add `globalThis` to `no-obj-calls` (#21382) (synthex-byte)
+* `66ac583` feat: check `yield*` expressions in `no-unsafe-optional-chaining` (#21399) (xbinaryx)
+
+## Bug Fixes
+* `87bd2ce` fix: avoid redeclared `let` when `no-var` and `one-var` fix together (#21389) (Daniel Pinto)
+
+## Documentation
+* `4783a68` docs: Update README (GitHub Actions Bot)
+* `43f0ac9` docs: clarify parameter description in `getText` (#21287) (lumir)
+
+## Chores
+* `b59d889` chore: update github/codeql-action action to v4.38.3 (#21412) (renovate[bot])
+* `95e51a0` ci: re-enable `@typescript-eslint/typescript-eslint` in ecosystem tests (#21410) (Francesco Trotta)
+* `317fcb3` chore: update ecosystem plugins (#21409) (ESLint Bot)
+* `b92decf` perf: skip no-redeclare scan for single-declaration variables (#21365) (James Ross)
+* `47b7063` chore: update dependency @eslint/json to ^2.1.1 (#21398) (re
+
+... (truncated)]]></description>
+    <pubDate>Fri, 16 Oct 2026 14:23:23 GMT</pubDate>
+  </item>
+  <item>
+    <title>[cloudflare/workers-sdk] @cloudflare/deploy-helpers@0.21.0</title>
+    <link>https://github.com/cloudflare/workers-sdk/releases/tag/%40cloudflare/deploy-helpers%400.21.0</link>
+    <guid isPermaLink="true">https://github.com/cloudflare/workers-sdk/releases/tag/%40cloudflare/deploy-helpers%400.21.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- #16266 `68f86a3` Thanks @GregBrimble! - Add custom domain traffic settings to experimental programmatic Worker configuration
+
+ Domain objects accept `hostname`, `production`, and `previews` to serve production traffic, Preview traffic, or both. String domains continue to serve production traffic only. Apply hosting settings with a parent Worker or trigger deployment.
+
+### Patch Changes
+
+- Updated dependencies [`e1d1b77`, `68f86a3`]:
+ - miniflare@5.20261012.1-beta
+ - @cloudflare/config@0.27.0
+ - @cloudflare/containers-shared@0.22.1]]></description>
+    <pubDate>Fri, 16 Oct 2026 10:08:39 GMT</pubDate>
+  </item>
+  <item>
+    <title>[bluesky-social/social-app] v1.135.0 (1.135.0)</title>
+    <link>https://github.com/bluesky-social/social-app/releases/tag/1.135.0</link>
+    <guid isPermaLink="true">https://github.com/bluesky-social/social-app/releases/tag/1.135.0</guid>
+    <description><![CDATA[## What's Changed
+* Fix Android Gradle plugin ordering for Sentry and Bitdrift by @vineyardbovines in 
+* Fix iOS startup crash when app is built with Xcode 27 by @tomekzaw in 
+* APP-3108: Strip Sentry debug code from production bundles by @mozzius in 
+* feat: add Attie link cards by @brittanyellich in 
+* Fix bsky logo appearing during screen back transition by @abulenok in 
+* Fix missing blur when default avatar displayed in the DM screen by @abulenok in 
+* Migrate to expo/ui DatePicker by @abulenok in 
+* Bump version from 1.133.0 to 1.134.0 by @mozzius in 
+* Improve OTA channel notice in drawer by @mozzius in 
+* Fix Oxlint violation in OTA update test by @mozzius in 
+* Show gzip bundle size diff in CI by @mozzius in 
+* APP-3118: Fix Reanimated pager warning by @mozzius in 
+* APP-3120: Restore avatars in iOS chat notifications by @mozzius in 
+* APP-3122: cap tall GIFs in alt-text dialog by @mozzius in 
+* APP-3129: proxy links in profile descriptions by @mozzius in 
+* Re
+
+... (truncated)]]></description>
+    <pubDate>Fri, 16 Oct 2026 01:26:33 GMT</pubDate>
+  </item>
+  <item>
+    <title>[webpack/webpack] v5.112.0</title>
+    <link>https://github.com/webpack/webpack/releases/tag/v5.112.0</link>
+    <guid isPermaLink="true">https://github.com/webpack/webpack/releases/tag/v5.112.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- Apply `plugins` set on a multi-configuration array to the `MultiCompiler`. (by @alexander-akait in #22702)
+
+- Add `optimization.minimize.css.dropOverriddenDeclarations`, dropping a declaration a later one overrides where no target is named. (by @alexander-akait in #22175)
+
+- Export more plugins under their scope, move eleven loose exports under theirs, deprecate the old, and expose `template.DependencyTemplate`, `module.NullFactory` and `util.makeSerializable`. (by @alexander-akait in #22261)
+
+- Let `util.makeSerializable` take several requests, current one first. (by @alexander-akait in #22340)
+
+- Emit the source map `scopes` field, so a debugger resolves imported ESM bindings by name. (by @alexander-akait in #21999)
+
+- Add `library.entryExports: "all"` to expose the exports of every entry module. (by @alexander-akait in #22235)
+
+- Recognize a required `const` binding assigned to `exports` as a re-export. (by @hai-x in #22276)
+
+- Accept glob patterns in more path,
+
+... (truncated)]]></description>
+    <pubDate>Thu, 15 Oct 2026 22:22:39 GMT</pubDate>
+  </item>
   <item>
     <title>[openai/codex] 0.163.0 (rust-v0.163.0)</title>
     <link>https://github.com/openai/codex/releases/tag/rust-v0.163.0</link>
@@ -54,17 +191,6 @@
 
 ... (truncated)]]></description>
     <pubDate>Thu, 15 Oct 2026 13:42:33 GMT</pubDate>
-  </item>
-  <item>
-    <title>[cloudflare/workers-sdk] @cloudflare/containers-shared@0.22.0</title>
-    <link>https://github.com/cloudflare/workers-sdk/releases/tag/%40cloudflare/containers-shared%400.22.0</link>
-    <guid isPermaLink="true">https://github.com/cloudflare/workers-sdk/releases/tag/%40cloudflare/containers-shared%400.22.0</guid>
-    <description><![CDATA[### Minor Changes
-
-- #16262 `fe8ce54` Thanks @jamesopstad! - Export Container planning helpers for native Cloudflare configuration
-
- Internal consumers can now create local-development and preview Container plans directly from parsed `cloudflare.config.ts` and Build Output configuration using `createContainerDevPlanForCfConfig` and `createContainerPreviewPlanForCfConfig`. The shared image handling also resolves Dockerfile paths consistently and avoids retagging an image to itself when a preview uses its existing reference.]]></description>
-    <pubDate>Thu, 15 Oct 2026 10:04:45 GMT</pubDate>
   </item>
   <item>
     <title>[floci-io/floci] 2.3.0</title>
@@ -156,21 +282,6 @@
     <pubDate>Wed, 14 Oct 2026 18:43:36 GMT</pubDate>
   </item>
   <item>
-    <title>[bluesky-social/atproto] @atproto/ozone@0.9.0</title>
-    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/ozone%400.9.0</link>
-    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/ozone%400.9.0</guid>
-    <description><![CDATA[### Minor Changes
-
-- #5642 `2db2f9d` Thanks @foysalit! - Expose approved or denied outcomes on resolved moderation inbox appeals and snapshot outcomes in appeal resolution notifications. Preserve unknown historical outcomes, record no-action denials, and close targeted appeal reports when reversing a takedown.
- 
- Resolve outcomes only after indexed lookups select each subject's latest appeal, keeping page hydration independent of appeal history.
-
-### Patch Changes
-
-- #5640 `b05cf65` Thanks @foysalit! - Cancel queryEvents and queryStatuses listing SQL when the HTTP client disconnects.]]></description>
-    <pubDate>Wed, 14 Oct 2026 15:50:38 GMT</pubDate>
-  </item>
-  <item>
     <title>[nodejs/node] 2026-10-14, Version 26.12.0 (Current), @richardlau (v26.12.0)</title>
     <link>https://github.com/nodejs/node/releases/tag/v26.12.0</link>
     <guid isPermaLink="true">https://github.com/nodejs/node/releases/tag/v26.12.0</guid>
@@ -192,40 +303,6 @@
 
 ... (truncated)]]></description>
     <pubDate>Wed, 14 Oct 2026 15:22:04 GMT</pubDate>
-  </item>
-  <item>
-    <title>[TanStack/router] Release 2026-10-14 14:51 (release-2026-10-14-1451)</title>
-    <link>https://github.com/TanStack/router/releases/tag/release-2026-10-14-1451</link>
-    <guid isPermaLink="true">https://github.com/TanStack/router/releases/tag/release-2026-10-14-1451</guid>
-    <description><![CDATA[Release 2026-10-14 14:51
-
-## Changes
-
-### Chore
-
-- deps: bump srvx to ^1.0.0 and @vitejs/plugin-rsc to ^0.5.37 (#8708) (fdc10fa13f) by @Sheraff
-- deps: bump fetchdts to ^0.2.0 (#8710) (71d9694da6) by @Sheraff
-- router-cli: replace yargs with cac (#8711) (a80cd74105) by @Sheraff
-- deps: bump diff to ^9.0.0 (#8709) (923d98b18b) by @Sheraff
-
-
-## Packages
-
-- @tanstack/react-start@1.169.2
-- @tanstack/react-start-rsc@0.1.63
-- @tanstack/react-start-server@1.167.50
-- @tanstack/router-cli@1.167.44
-- @tanstack/router-generator@1.167.44
-- @tanstack/router-plugin@1.168.46
-- @tanstack/router-utils@1.162.4
-- @tanstack/router-vite-plugin@1.167.46
-- @tanstack/solid-start@1.169.2
-- @tanstack/solid-start-server@1.167.48
-- @tanstack/start-plugin-core@1.171.53
-- @tanstack/start-server-core@1.169.43
-- @tanstack/vue-start@1.169.2
-- @tanstack/vue-start-server@1.167.48]]></description>
-    <pubDate>Wed, 14 Oct 2026 14:51:37 GMT</pubDate>
   </item>
   <item>
     <title>[go-chi/chi] v5.5.0</title>
@@ -712,31 +789,6 @@ For now you can view the generated release notes below.
     <pubDate>Mon, 05 Oct 2026 18:32:02 GMT</pubDate>
   </item>
   <item>
-    <title>[bluesky-social/social-app] 1.134.0</title>
-    <link>https://github.com/bluesky-social/social-app/releases/tag/1.134.0</link>
-    <guid isPermaLink="true">https://github.com/bluesky-social/social-app/releases/tag/1.134.0</guid>
-    <description><![CDATA[## What's Changed
-* Fix Android Gradle plugin ordering for Sentry and Bitdrift by @vineyardbovines in 
-* Fix iOS startup crash when app is built with Xcode 27 by @tomekzaw in 
-* APP-3108: Strip Sentry debug code from production bundles by @mozzius in 
-* feat: add Attie link cards by @brittanyellich in 
-* Fix bsky logo appearing during screen back transition by @abulenok in 
-* Fix missing blur when default avatar displayed in the DM screen by @abulenok in 
-* Migrate to expo/ui DatePicker by @abulenok in 
-* Bump version from 1.133.0 to 1.134.0 by @mozzius in 
-* Improve OTA channel notice in drawer by @mozzius in 
-* Fix Oxlint violation in OTA update test by @mozzius in 
-* Show gzip bundle size diff in CI by @mozzius in 
-* APP-3118: Fix Reanimated pager warning by @mozzius in 
-* APP-3120: Restore avatars in iOS chat notifications by @mozzius in 
-* APP-3122: cap tall GIFs in alt-text dialog by @mozzius in 
-* APP-3129: proxy links in profile descriptions by @mozzius in 
-* Re
-
-... (truncated)]]></description>
-    <pubDate>Mon, 05 Oct 2026 16:58:56 GMT</pubDate>
-  </item>
-  <item>
     <title>[markedjs/marked] v18.1.0</title>
     <link>https://github.com/markedjs/marked/releases/tag/v18.1.0</link>
     <guid isPermaLink="true">https://github.com/markedjs/marked/releases/tag/v18.1.0</guid>
@@ -783,30 +835,6 @@ For now you can view the generated release notes below.
 
 **Full Changelog**:]]></description>
     <pubDate>Sun, 04 Oct 2026 16:13:43 GMT</pubDate>
-  </item>
-  <item>
-    <title>[eslint/eslint] v10.12.0</title>
-    <link>https://github.com/eslint/eslint/releases/tag/v10.12.0</link>
-    <guid isPermaLink="true">https://github.com/eslint/eslint/releases/tag/v10.12.0</guid>
-    <description><![CDATA[## Features
-* `4618052` feat: handle astral letters in `new-cap` (#21357) (sary)
-* `4ec5168` feat: allow `SourceCode#getText` to accept tokens and comments (#21340) (electrohyun)
-
-## Bug Fixes
-* `bc51eee` fix: `prefer-arrow-callback` false positive in conditional test (#21373) (Daniel Pinto)
-* `bbff86c` fix: skip lines with multiple comments in `max-lines-per-function` (#21332) (xbinaryx)
-* `efc4d6b` fix: astral letters in `consistent-return`, `no-eval`, `no-invalid-this` (#21360) (lumir)
-* `93de066` fix: prefer-exponentiation-operator autofix for async function base (#21322) (Vladimir Babin)
-* `02e34ff` fix: add missing space after `else` in `curly` autofix (#21355) (Pixel)
-* `b14b8bc` fix: correct `id-length` message for long private names (#21348) (Pixel)
-* `69aac01` fix: support `TSFunctionType` in `getFunctionHeadLoc` (#21335) (xbinaryx)
-* `686630e` fix: `no-loss-of-precision` false positive with `0.e5` (#21337) (sethamus)
-
-## Documentation
-* `67eb586` docs: Update README (GitHub 
-
-... (truncated)]]></description>
-    <pubDate>Fri, 02 Oct 2026 20:07:11 GMT</pubDate>
   </item>
   <item>
     <title>[remix-run/remix] test v1.0.0 (test@1.0.0)</title>
