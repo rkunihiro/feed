@@ -5,8 +5,23 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Fri, 16 Oct 2026 22:02:12 GMT</lastBuildDate>
+  <lastBuildDate>Sat, 17 Oct 2026 22:02:07 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[bluesky-social/atproto] @atproto/bsky@0.3.0</title>
+    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/bsky%400.3.0</link>
+    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/bsky%400.3.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- #5675 `95a4cd5` Thanks @estrattonbailey! - Update Atmosphere Explore recommendations and curated content selection:
+ 
+ - **Breaking:** `app.bsky.unspecced.getAtmosphereExploreTab` returns `articles`, `publications`, `photos`, and `livestreams` as `{ items, recIdStr? }` section objects instead of arrays.
+ - Add the `app.bsky.unspecced.getAtmosphereExploreArticleRecommendations` skeleton lexicon and source articles from Iris behind the `atmosphere_explore:articles:iris:enable` gate, returning the recommendation ID on `articles.recIdStr`. If the Iris request fails or returns a malformed response, fall back to worker-curated articles without a recommendation ID. With the gate off, retain worker-curated articles.
+ - Select curated content by location and request topics, prioritize active featured windows, and cap each curated section at 10 groups before hydrating each group's `canonicalUri`. Every list, including apps, returns at most 10 items, Iris is asked for 10 arti
+
+... (truncated)]]></description>
+    <pubDate>Sat, 17 Oct 2026 00:51:39 GMT</pubDate>
+  </item>
   <item>
     <title>[TanStack/router] Release 2026-10-16 21:11 (release-2026-10-16-2111)</title>
     <link>https://github.com/TanStack/router/releases/tag/release-2026-10-16-2111</link>
@@ -1104,21 +1119,6 @@ We will continue testing and enabling additional models.
 
 ... (truncated)]]></description>
     <pubDate>Wed, 23 Sep 2026 08:00:20 GMT</pubDate>
-  </item>
-  <item>
-    <title>[azat-io/eslint-plugin-perfectionist] v5.12.0</title>
-    <link>https://github.com/azat-io/eslint-plugin-perfectionist/releases/tag/v5.12.0</link>
-    <guid isPermaLink="true">https://github.com/azat-io/eslint-plugin-perfectionist/releases/tag/v5.12.0</guid>
-    <description><![CDATA[### &nbsp;&nbsp;&nbsp;🚀 Features
-
-- Support oxlint without an eslint installation &nbsp;-&nbsp; by @porada <samp>(5488d)</samp>
-
-### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
-
-- Honor eslint-disable directives with a description &nbsp;-&nbsp; by @azat-io <samp>(e3d11)</samp>
-
-##### &nbsp;&nbsp;&nbsp;&nbsp;View changes on GitHub]]></description>
-    <pubDate>Tue, 22 Sep 2026 14:45:41 GMT</pubDate>
   </item>
 </channel>
 </rss>
