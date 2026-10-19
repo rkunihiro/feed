@@ -5,8 +5,227 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Sun, 18 Oct 2026 22:01:58 GMT</lastBuildDate>
+  <lastBuildDate>Mon, 19 Oct 2026 22:02:22 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[bluesky-social/atproto] @atproto/ozone@0.10.0</title>
+    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/ozone%400.10.0</link>
+    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/ozone%400.10.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- #5686 `58f14d6` Thanks @gcwill70! - Add source-aware SafeLink rule synchronization and return rule sources in the API.
+
+### Patch Changes
+
+- #5680 `9f66a7e` Thanks @estrattonbailey! - Add a `social.grain.photo` compatibility override that no longer requires `alt`, so the AppView renders Grain gallery photos that omit it. Ozone resolves the override; the PDS keeps validating writes against the published lexicon.]]></description>
+    <pubDate>Mon, 19 Oct 2026 19:23:03 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-10-19) (release-2026-10-19)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-19</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-19</guid>
+    <description><![CDATA[## General Highlights
+* **Bug Fix**: Allow lists with null values to deserialize into its zero value instead of failing
+* **Dependency Update**: Updated to the latest SDK module versions
+
+## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/feature/s3/transfermanager`: [v0.4.17](feature/s3/transfermanager/CHANGELOG.md#v0417-2026-10-19)
+ * **Bug Fix**: Fix the concurrent reader panic when buffer len is smaller than capacity
+* `github.com/aws/aws-sdk-go-v2/service/amplify`: [v1.49.0](service/amplify/CHANGELOG.md#v1490-2026-10-19)
+ * **Feature**: Documentation update release for AWS service
+* `github.com/aws/aws-sdk-go-v2/service/bedrockagent`: [v1.69.0](service/bedrockagent/CHANGELOG.md#v1690-2026-10-19)
+ * **Feature**: Adds Retrieval Instructions for Amazon Bedrock Knowledge Bases. Create, get, update, delete, list, and version customer-authored instructions that guide how a knowledge base retrieves and answers, with content review before use.
+* `github.com/aws/aws-sdk-go-v2/service/bed
+
+... (truncated)]]></description>
+    <pubDate>Mon, 19 Oct 2026 18:50:02 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1153.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1153.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1153.0</guid>
+    <description><![CDATA[#### 3.1153.0(2026-10-19)
+
+##### Chores
+
+* **core:** consume JSON codec from @smithy/core (#8335) (412d1362)
+* update codeowners (#8365) (00c08848)
+* **codegen:** sync for JSON codec and schema server plugin (#8353) (3e350b59)
+* **scripts:** resolve changelog path by resolved location (#8356) (3f50ee08)
+
+##### New Features
+
+* **client-codepipeline:** Documentation update release for AWS service (75cdc917)
+* **client-devops-agent:** Documentation update release for AWS service (5ff30e27)
+* **client-guardduty:** Adding a new Expected Bucket Owner optional field for GuardDuty publishing destination APIs (2b62c860)
+* **client-cloudwatch:** This release adds ActionConfiguration to PutMetricAlarm, PutCompositeAlarm and PutLogAlarm. It allows customers to include an alarm's tags in its notifications and alarm state change events (ae734907)
+* **client-observabilityadmin:** Adding support for EKS Container Insights Telemetry Rules (3c63647d)
+* **client-xray:** Adds support for encrypting the Tr
+
+... (truncated)]]></description>
+    <pubDate>Mon, 19 Oct 2026 18:44:29 GMT</pubDate>
+  </item>
+  <item>
+    <title>[oxc-project/oxc] oxlint v1.89.0 (oxlint_v1.89.0)</title>
+    <link>https://github.com/oxc-project/oxc/releases/tag/oxlint_v1.89.0</link>
+    <guid isPermaLink="true">https://github.com/oxc-project/oxc/releases/tag/oxlint_v1.89.0</guid>
+    <description><![CDATA[### 💥 BREAKING CHANGES
+
+- e3c1b11 ast: [**BREAKING**] Preserve lone surrogates in static property names (#27095) (Dunqing)
+- a0a987c ast: [**BREAKING**] Preserve lone surrogates in static member names (#26677) (Dunqing)
+
+### 🚀 Features
+
+- 770ada4 linter: Mark vue 3 rules as recommended (#27717) (Cam McHenry)
+- ba38c1d linter: Mark react/react-hooks rules as recommended (#27701) (Cam McHenry)
+- d85a3ba linter: Mark promise rules as recommended (#27693) (Cam McHenry)
+- e71c88a linter: Mark node rule as recommended (#27692) (Cam McHenry)
+- 7213f61 linter: Mark nextjs rules as recommended (#27691) (Cam McHenry)
+- d7c6b26 linter: Mark jsx-a11y rules as recommended (#27690) (Cam McHenry)
+- 199dfdc linter: Mark jsdoc rules as recommended (#27689) (Cam McHenry)
+- 780bff3 linter: Mark jest/vitest rules as recommended (#27672) (Cam McHenry)
+- 6ae6859 linter: Mark import rules as recommended (#27671) (Cam McHenry)
+- b7a1df3 linter: Mark unicorn rules as recommended (#27670) (Cam McHenry)
+- c44a
+
+... (truncated)]]></description>
+    <pubDate>Mon, 19 Oct 2026 17:24:26 GMT</pubDate>
+  </item>
+  <item>
+    <title>[fastapi/fastapi] 0.149.0</title>
+    <link>https://github.com/fastapi/fastapi/releases/tag/0.149.0</link>
+    <guid isPermaLink="true">https://github.com/fastapi/fastapi/releases/tag/0.149.0</guid>
+    <description><![CDATA[Browsers submit empty text inputs as empty strings (`""`). FastAPI now treats empty scalar form values as missing in form models, matching individual `Form` parameters. Required fields return a validation error. Fields with defaults or default factories use them and remain unset in `model_dump(exclude_unset=True)`.
+
+Empty strings inside lists are preserved. Omitted boolean form fields still become `False`. JSON requests and direct Pydantic validation are unchanged.
+
+### Breaking Changes
+
+* 🐛 Treat empty scalar values as missing in form models. PR #16529 by @tiangolo.]]></description>
+    <pubDate>Mon, 19 Oct 2026 17:21:45 GMT</pubDate>
+  </item>
+  <item>
+    <title>[typescript-eslint/typescript-eslint] v8.72.0</title>
+    <link>https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.72.0</link>
+    <guid isPermaLink="true">https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.72.0</guid>
+    <description><![CDATA[## 8.72.0 (2026-10-19)
+
+### 🚀 Features
+
+- **eslint-plugin:** lazy load rules (#13010)
+- **eslint-plugin:** [await-thenable] add `allowMixedPromiseArrays` option (#12992)
+- **typescript-estree:** error on abstract keyword that precedes export (#13019)
+
+### 🩹 Fixes
+
+- **ast-spec:** add `JSXFragment` to `JSXAttribute['value']` (#13051)
+- **eslint-plugin:** [prefer-readonly-parameter-types] check where allowed type aliases are declared (#13016)
+- **eslint-plugin:** [no-deprecated] report deprecated properties in object literals (#12704)
+- **eslint-plugin:** use isTypeLiteralType instead of type.isLiteral to include bigint literals on TS < 5.0 (#13053)
+- **eslint-plugin:** [require-array-sort-compare] check tuples (#13058)
+- **eslint-plugin:** [require-array-sort-compare] ignore extra this type argument on TS < 5.1 (#13055)
+- **type-utils:** discriminateAnyType crashes when calling getAwaitedType on awaited type in TS < 5.0 (#13054)
+- **typescript-estree:** include leading and trailing co
+
+... (truncated)]]></description>
+    <pubDate>Mon, 19 Oct 2026 17:05:43 GMT</pubDate>
+  </item>
+  <item>
+    <title>[tokio-rs/tokio] Tokio v1.54.0 (tokio-1.54.0)</title>
+    <link>https://github.com/tokio-rs/tokio/releases/tag/tokio-1.54.0</link>
+    <guid isPermaLink="true">https://github.com/tokio-rs/tokio/releases/tag/tokio-1.54.0</guid>
+    <description><![CDATA[# 1.54.0 (October 19th, 2026)
+
+The 1.54.0 release includes all changes up to 1.53.3.
+
+The MSRV is increased to 1.85. ([#8514])
+
+### Added
+
+- fs: add `File::set_times`, `File::set_modified`, and `fs::FileTimes` ([#8504])
+- net: implement `Default` for `named_pipe::{ClientOptions, ServerOptions}` ([#8378])
+- runtime: add `Builder::max_io_events_per_busy_tick` ([#8410])
+- runtime: stabilize `tokio::runtime::worker_index` ([#8431])
+- sync: add `SemaphorePermit::semaphore` ([#8482])
+- sync: add `blocking_acquire` methods to `Semaphore` ([#8269])
+- sync: add `watch::Receiver::is_closed` ([#8481])
+- wasm: support JSPI for Emscripten target ([#8285], [#8627])
+- wasm: support the `wasm32-unknown-emscripten` target ([#8281], [#8422], [#8528], [#8628])
+
+### Changed
+
+- fs: reject zero in `File::set_max_buf_size` ([#8449])
+- io: make `copy_buf` cooperative ([#8459])
+- io: panic when `BufReader` or `BufStream` is created with zero capacity ([#8494])
+- io: panic when in-memory 
+
+... (truncated)]]></description>
+    <pubDate>Mon, 19 Oct 2026 16:33:04 GMT</pubDate>
+  </item>
+  <item>
+    <title>[remix-run/react-router] v8.5.0 (react-router@8.5.0)</title>
+    <link>https://github.com/remix-run/react-router/releases/tag/react-router%408.5.0</link>
+    <guid isPermaLink="true">https://github.com/remix-run/react-router/releases/tag/react-router%408.5.0</guid>
+    <description><![CDATA[See the changelog for release notes:]]></description>
+    <pubDate>Mon, 19 Oct 2026 13:48:57 GMT</pubDate>
+  </item>
+  <item>
+    <title>[nestjs/nest] v12.2.0</title>
+    <link>https://github.com/nestjs/nest/releases/tag/v12.2.0</link>
+    <guid isPermaLink="true">https://github.com/nestjs/nest/releases/tag/v12.2.0</guid>
+    <description><![CDATA[## v12.2.0 (2026-10-19)
+
+#### Notable changes
+
+**New options**
+* `@Sse({ maxPendingDataLength })` sets how many characters of event data may wait for a client that is not reading its events (4M by default; `0` or `Infinity` lifts the limit) – 2f05ad954e
+* `IoAdapter` and `WsAdapter` take `maxConcurrentMessages`, the number of a client's messages handled at once (1000 by default; `Infinity` lifts it) – 0bd0810ed7
+* `ValidationPipe` takes `maxErrorMessagesLength` (1,000,000 characters by default); messages past it are replaced by a "Further validation errors were omitted" entry – 086c1c514f
+* Kafka: `parser.maxMessageSize` (16 MiB after decompression by default); larger messages are logged and skipped – 9bdf844fca
+* TCP server: `drainTimeout` (30 s by default, `0` disables) disconnects a peer that leaves its responses unread – 583d6077ad
+* MQTT server: `reconnectOnConnackError` is now enabled by default, so a refused connection attempt is retried; set it to `false` for the prev
+
+... (truncated)]]></description>
+    <pubDate>Mon, 19 Oct 2026 10:50:46 GMT</pubDate>
+  </item>
+  <item>
+    <title>[cloudflare/workers-sdk] @cloudflare/containers-shared@0.23.0</title>
+    <link>https://github.com/cloudflare/workers-sdk/releases/tag/%40cloudflare/containers-shared%400.23.0</link>
+    <guid isPermaLink="true">https://github.com/cloudflare/workers-sdk/releases/tag/%40cloudflare/containers-shared%400.23.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- #16225 `fc51b96` Thanks @dario-piotrowicz! - Decouple shared deployment guidance from Wrangler
+
+ Shared deployment and Container helpers now receive only the command paths and configuration syntax required by each operation. Wrangler reuses the paths that register its command tree, while other consumers can supply their own values without global presentation state or Wrangler-specific fallbacks.]]></description>
+    <pubDate>Mon, 19 Oct 2026 10:45:52 GMT</pubDate>
+  </item>
+  <item>
+    <title>[vitejs/vite] create-vite@9.3.0</title>
+    <link>https://github.com/vitejs/vite/releases/tag/create-vite%409.3.0</link>
+    <guid isPermaLink="true">https://github.com/vitejs/vite/releases/tag/create-vite%409.3.0</guid>
+    <description><![CDATA[### Features
+
+* **create-vite:** print version before scaffolding (#23806) (a3001c5)
+* **create-vite:** use typescript v7 where possible (#23794) (9df8bbc)
+
+### Bug Fixes
+
+* **create-vite:** add router only options for tanstack router/start (#23543) (f155b62)
+* **deps:** update all non-major dependencies (#23482) (3c752c8)
+* **deps:** update all non-major dependencies (#23537) (e8990c4)
+* **deps:** update all non-major dependencies (#23601) (9944fa6)
+* **deps:** update all non-major dependencies (#23648) (8a4c19c)
+* **deps:** update all non-major dependencies (#23731) (cf80aa5)
+* **deps:** update all non-major dependencies (#23826) (77d8373)
+* **deps:** update rolldown-related dependencies (#23483) (9aecbbf)
+* **deps:** update rolldown-related dependencies (#23733) (43f0d05)
+
+### Code Refactoring
+
+* **create-vite:** use `tinyexec` instead of `cross-spawn` (#23541) (e5d9af2)
+* **deps:** replace `@vercel/detect-agent` with `std-env` (#23744) (ce4293f)]]></description>
+    <pubDate>Mon, 19 Oct 2026 08:05:45 GMT</pubDate>
+  </item>
   <item>
     <title>[dprint/dprint] 0.64.0</title>
     <link>https://github.com/dprint/dprint/releases/tag/0.64.0</link>
@@ -44,17 +263,6 @@ gh attestation verify dprint-x86_64-unknown-linux-gnu.zip --repo dprint/dprint
     <pubDate>Sun, 18 Oct 2026 21:08:48 GMT</pubDate>
   </item>
   <item>
-    <title>[fastapi/fastapi] 0.146.0</title>
-    <link>https://github.com/fastapi/fastapi/releases/tag/0.146.0</link>
-    <guid isPermaLink="true">https://github.com/fastapi/fastapi/releases/tag/0.146.0</guid>
-    <description><![CDATA[The `root_path` parameter in `FastAPI` is deprecated. Configure the server with `fastapi run --root-path /api/v1` instead.
-
-### Breaking Changes
-
-* 🗑️ Deprecate the `root_path` parameter in `FastAPI`. PR #16520 by @tiangolo.]]></description>
-    <pubDate>Sun, 18 Oct 2026 15:18:08 GMT</pubDate>
-  </item>
-  <item>
     <title>[wailsapp/wails] Wails v2.17.0 (v2.17.0)</title>
     <link>https://github.com/wailsapp/wails/releases/tag/v2.17.0</link>
     <guid isPermaLink="true">https://github.com/wailsapp/wails/releases/tag/v2.17.0</guid>
@@ -74,21 +282,6 @@ go install github.com/wailsapp/wails/v2/cmd/wails@v2.17.0
 
 ... (truncated)]]></description>
     <pubDate>Sun, 18 Oct 2026 03:53:50 GMT</pubDate>
-  </item>
-  <item>
-    <title>[bluesky-social/atproto] @atproto/bsky@0.3.0</title>
-    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/bsky%400.3.0</link>
-    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/bsky%400.3.0</guid>
-    <description><![CDATA[### Minor Changes
-
-- #5675 `95a4cd5` Thanks @estrattonbailey! - Update Atmosphere Explore recommendations and curated content selection:
- 
- - **Breaking:** `app.bsky.unspecced.getAtmosphereExploreTab` returns `articles`, `publications`, `photos`, and `livestreams` as `{ items, recIdStr? }` section objects instead of arrays.
- - Add the `app.bsky.unspecced.getAtmosphereExploreArticleRecommendations` skeleton lexicon and source articles from Iris behind the `atmosphere_explore:articles:iris:enable` gate, returning the recommendation ID on `articles.recIdStr`. If the Iris request fails or returns a malformed response, fall back to worker-curated articles without a recommendation ID. With the gate off, retain worker-curated articles.
- - Select curated content by location and request topics, prioritize active featured windows, and cap each curated section at 10 groups before hydrating each group's `canonicalUri`. Every list, including apps, returns at most 10 items, Iris is asked for 10 arti
-
-... (truncated)]]></description>
-    <pubDate>Sat, 17 Oct 2026 00:51:39 GMT</pubDate>
   </item>
   <item>
     <title>[TanStack/router] Release 2026-10-16 21:11 (release-2026-10-16-2111)</title>
@@ -158,24 +351,6 @@ go install github.com/wailsapp/wails/v2/cmd/wails@v2.17.0
 
 ... (truncated)]]></description>
     <pubDate>Fri, 16 Oct 2026 14:23:23 GMT</pubDate>
-  </item>
-  <item>
-    <title>[cloudflare/workers-sdk] @cloudflare/deploy-helpers@0.21.0</title>
-    <link>https://github.com/cloudflare/workers-sdk/releases/tag/%40cloudflare/deploy-helpers%400.21.0</link>
-    <guid isPermaLink="true">https://github.com/cloudflare/workers-sdk/releases/tag/%40cloudflare/deploy-helpers%400.21.0</guid>
-    <description><![CDATA[### Minor Changes
-
-- #16266 `68f86a3` Thanks @GregBrimble! - Add custom domain traffic settings to experimental programmatic Worker configuration
-
- Domain objects accept `hostname`, `production`, and `previews` to serve production traffic, Preview traffic, or both. String domains continue to serve production traffic only. Apply hosting settings with a parent Worker or trigger deployment.
-
-### Patch Changes
-
-- Updated dependencies [`e1d1b77`, `68f86a3`]:
- - miniflare@5.20261012.1-beta
- - @cloudflare/config@0.27.0
- - @cloudflare/containers-shared@0.22.1]]></description>
-    <pubDate>Fri, 16 Oct 2026 10:08:39 GMT</pubDate>
   </item>
   <item>
     <title>[bluesky-social/social-app] v1.135.0 (1.135.0)</title>
@@ -326,45 +501,6 @@ go install github.com/wailsapp/wails/v2/cmd/wails@v2.17.0
     <pubDate>Wed, 14 Oct 2026 22:32:57 GMT</pubDate>
   </item>
   <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-10-14) (release-2026-10-14)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-14</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-14</guid>
-    <description><![CDATA[## General Highlights
-* **Dependency Update**: Updated to the latest SDK module versions
-
-## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/feature/dynamodb/attributevalue`: [v1.21.12](feature/dynamodb/attributevalue/CHANGELOG.md#v12112-2026-10-14)
- * **Bug Fix**: attributevalue marshal to AttributeValueMemberNULL with double pointer when outer pointer is not nil
-* `github.com/aws/aws-sdk-go-v2/feature/dynamodb/expression`: [v1.10.0](feature/dynamodb/expression/CHANGELOG.md#v1100-2026-10-14)
- * **Feature**: Support multi-attribute key conditions in `expression`. `KeyAnd` now accepts two or more conditions.
-* `github.com/aws/aws-sdk-go-v2/feature/dynamodbstreams/attributevalue`: [v1.20.12](feature/dynamodbstreams/attributevalue/CHANGELOG.md#v12012-2026-10-14)
- * **Bug Fix**: attributevalue marshal to AttributeValueMemberNULL with double pointer when outer pointer is not nil
-* `github.com/aws/aws-sdk-go-v2/service/arcregionswitch`: [v1.22.0](service/arcregionswitch/CHANGELOG.md#v1220-
-
-... (truncated)]]></description>
-    <pubDate>Wed, 14 Oct 2026 18:57:14 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-js-v3] v3.1152.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1152.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1152.0</guid>
-    <description><![CDATA[#### 3.1152.0(2026-10-14)
-
-##### Documentation Changes
-
-* **client-marketplace-metering:** Documentation update - added a Get started pointer to the AWS Marketplace AI Metering Agent Skill in the BatchMeterUsage API reference. No API or behavior change. (c97db282)
-
-##### New Features
-
-* **clients:** update client endpoints as of 2026-10-14 (91a8a07c)
-* **client-imagebuilder:** This release adds parentInstance to infrastructure configurations, so builds can use an already-running instance from an Amazon EC2 Auto Scaling group. It also adds terminateInstanceOnCompletion, which keeps build and test instances running after image creation ends. (e8a5e26b)
-* **client-cloudfront:** This release adds a new "IpAddressType" field to "VPCOriginEndpointConfig", allowing customers to specify whether their VPC origin accepts IPv4-only or dualstack connections. (6bae6413)
-* **client-transfer:** AWS Transfer Family now lets you store SFTP server host keys in AWS Secrets Manager in your own AWS account
-
-... (truncated)]]></description>
-    <pubDate>Wed, 14 Oct 2026 18:43:36 GMT</pubDate>
-  </item>
-  <item>
     <title>[nodejs/node] 2026-10-14, Version 26.12.0 (Current), @richardlau (v26.12.0)</title>
     <link>https://github.com/nodejs/node/releases/tag/v26.12.0</link>
     <guid isPermaLink="true">https://github.com/nodejs/node/releases/tag/v26.12.0</guid>
@@ -482,36 +618,6 @@ specify init my-project
 
 ... (truncated)]]></description>
     <pubDate>Tue, 13 Oct 2026 15:49:05 GMT</pubDate>
-  </item>
-  <item>
-    <title>[oxc-project/oxc] oxlint v1.88.0 (oxlint_v1.88.0)</title>
-    <link>https://github.com/oxc-project/oxc/releases/tag/oxlint_v1.88.0</link>
-    <guid isPermaLink="true">https://github.com/oxc-project/oxc/releases/tag/oxlint_v1.88.0</guid>
-    <description><![CDATA[### 💥 BREAKING CHANGES
-
-- 7730e14 ast: [**BREAKING**] Refactor comment attachment storage (#27512) (camc314)
-- c904b61 ast: [**BREAKING**] Add comment attachment storage (#27393) (camc314)
-
-### 🚀 Features
-
-- bde9f69 oxlint/lsp: Show config errors to LSP client (#25486) (Sysix)
-- 3c361a7 linter/unicorn/prefer-query-selector: Add `allowWithVariables` option (#27346) (Mikhail Baev)
-
-### 🐛 Bug Fixes
-
-- 82ecc43 linter/sort-keys: Compare natural order like ESLint (#27579) (Dunqing)
-- 598ac03 linter/unicorn/prefer-bigint-literals: Unwrap redundant constructor call; don't auto-fix for lost precision (#25690) (Jacob Bandes-Storch)
-- 2512213 linter: Prevent conflicting type import fixes (#27409) (camc314)
-- 2349a31 oxfmt: Follow symlinked configs in discovery (#27389) (leaysgur)
-- 6e573f9 oxlint,oxfmt: Set stderr blocking (#27363) (leaysgur)
-
-### ⚡ Performance
-
-- 91b588c linter/oxc/bad-array-method-on-arguments: Check arguments references once (#26930) (camc314)
-- c5f47ed linter/plugins: Inli
-
-... (truncated)]]></description>
-    <pubDate>Tue, 13 Oct 2026 09:47:50 GMT</pubDate>
   </item>
   <item>
     <title>[sindresorhus/got] v16.1.0</title>
@@ -964,36 +1070,6 @@ See for more information.
     <pubDate>Wed, 30 Sep 2026 02:40:02 GMT</pubDate>
   </item>
   <item>
-    <title>[typescript-eslint/typescript-eslint] v8.71.0</title>
-    <link>https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.71.0</link>
-    <guid isPermaLink="true">https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.71.0</guid>
-    <description><![CDATA[## 8.71.0 (2026-09-28)
-
-### 🚀 Features
-
-- **eslint-plugin:** [no-unsafe-enum-assignment] add rule (#12732)
-
-### 🩹 Fixes
-
-- **eslint-plugin:** [switch-exhaustiveness-check] always sort literal cases in stable order (#12885)
-- **eslint-plugin:** [unbound-method] respect `this: void` on class properties (7fce9127d)
-- **eslint-plugin:** [no-unnecessary-type-assertion] specialize generic assertion report message (#12832)
-- **eslint-plugin:** [no-misused-promises] handle a return outside of any function (#12912)
-
-### ❤️ Thank You
-
-- Evyatar Daud @StyleShit
-- Fatih Çakır @wfatih
-- Josh Goldberg
-- Josh Goldberg ✨
-- Zamiell @Zamiell
-
-See GitHub Releases for more information.
-
-You can read about our versioning strategy and releases on our website.]]></description>
-    <pubDate>Mon, 28 Sep 2026 17:07:50 GMT</pubDate>
-  </item>
-  <item>
     <title>[mongodb/node-mongodb-native] v7.7.0</title>
     <link>https://github.com/mongodb/node-mongodb-native/releases/tag/v7.7.0</link>
     <guid isPermaLink="true">https://github.com/mongodb/node-mongodb-native/releases/tag/v7.7.0</guid>
@@ -1025,103 +1101,6 @@ Dependency version changes:
 
 ... (truncated)]]></description>
     <pubDate>Mon, 28 Sep 2026 16:00:18 GMT</pubDate>
-  </item>
-  <item>
-    <title>[mswjs/msw] v3.0.0</title>
-    <link>https://github.com/mswjs/msw/releases/tag/v3.0.0</link>
-    <guid isPermaLink="true">https://github.com/mswjs/msw/releases/tag/v3.0.0</guid>
-    <description><![CDATA[## v3.0.0 (2026-09-28)
-
-- v3.0.0 (#2692) (2bb43428b79ac06f94bb8ea8aeacd6102fe31f56) @kettanaito @Andarist
-
-### ⚠️ BREAKING CHANGES
-
-- **MSW is now ESM-only** (#2765).
-- Deprecate support for Node.js v18 and v20 (#2729). The minimal supported Node.js version is v22.
-- `msw/native` is removed in favor of `@msw/react-native`.
-- Require TypeScript 5.9 as the minimal version.
-- Deprecate support for TypeScript 5.1 and 5.2 (#2730)
-- `worker.stop` returns a Promise (#2724). Awaiting it is relevant only for in-flight critical scenarios.
-- `graphql` is now exported as `msw/graphql` (#2691). GraphQL is now handled as a proper optional peer dependency.
-- Removes the `handleRequest` utility. Please use the `defineNetwork` API instead.
-- `GraphQLLinkHandlers` type has been renamed to `GraphQLLink`.
-- The `file://` requests now throw in Node.js as they normally do (not supported by `fetch`).
-- The `Content-Length` request header is now removed by `bypass`.
-- HTTP-to-WebSocket upgrad
-
-... (truncated)]]></description>
-    <pubDate>Mon, 28 Sep 2026 15:40:54 GMT</pubDate>
-  </item>
-  <item>
-    <title>[facebook/lexical] v0.52.0</title>
-    <link>https://github.com/facebook/lexical/releases/tag/v0.52.0</link>
-    <guid isPermaLink="true">https://github.com/facebook/lexical/releases/tag/v0.52.0</guid>
-    <description><![CDATA[v0.52.0 is an ad-hoc release targeting a few fixes to mobile text input, but carries a number of other updates accumulated in the past week as we move towards Lexical 1.0. We did a pass to modernize the documentation focusing on the latest features. `@lexical/mdast` now uses one configurable `MdastExtension` for import and export, headless editors can be built entirely from extensions, and selection notifications have a consistent timing contract. There are also fixes for deletion, horizontal caret scrolling, drag-and-drop and mobile input.
-
-### Breaking Changes
-
-* `lexical` — **`SELECTION_CHANGE_COMMAND` consistently runs before DOM reconciliation**, inside the pending writable update. This includes automatic `NodeSelection` and `TableSelection` notifications that previously ran after reconciliation. `$getSelection` returns the pending selection; `$getPreviousSelection` returns the last committed selection. Eligible programmatic changes now notify without waiting for a native `sel
-
-... (truncated)]]></description>
-    <pubDate>Mon, 28 Sep 2026 15:31:40 GMT</pubDate>
-  </item>
-  <item>
-    <title>[ollama/ollama] v0.40.0</title>
-    <link>https://github.com/ollama/ollama/releases/tag/v0.40.0</link>
-    <guid isPermaLink="true">https://github.com/ollama/ollama/releases/tag/v0.40.0</guid>
-    <description><![CDATA[## What's Changed
-
-**Models run on MLX on Apple Silicon by default**
-
-In this release, on Apple Silicon devices, model architectures supported by the MLX runtime will automatically run on MLX.
-
-```
-ollama pull qwen3.8
-ollama run qwen3.8
-```
-
-Additional models include gemma4, qwen3.6 and qwen3.5
-
-Decision models are now available on MLX as well: Nimble tev1 clef clef-flash 
-
-MLX now has support for an embedding model: embeddinggemma-2
-
-We will continue testing and enabling additional models.
-
-
-**Full Changelog**:]]></description>
-    <pubDate>Fri, 25 Sep 2026 03:31:52 GMT</pubDate>
-  </item>
-  <item>
-    <title>[mrdoob/three.js] r186</title>
-    <link>https://github.com/mrdoob/three.js/releases/tag/r186</link>
-    <guid isPermaLink="true">https://github.com/mrdoob/three.js/releases/tag/r186</guid>
-    <description><![CDATA[- Global
- - Add linting for tsl/. #34488 (@ycw)
- - Clean up. #34499 (@Mugen87)
-- AnimationObjectGroup
- - Fix stale index bookkeeping in uncache and unsubscribe_. #34035 (@sean-kim05, @Mugen87)
-- Backend
- - `Renderer`: Add `resetState` function. #33877 (@pepperoni505, @Mugen87)
-- Backends
- - Don't scale render target viewports by the pixel ratio. #34333 (@mrdoob, @claude)
-- BatchedMesh
- - Mark visibility dirty in setGeometryIdAt. #34096 (@wrangelvid)
-- BezierInterpolant
- - Make `interpolate_` more robust. #33934 (@Mugen87)
-- Bindings
- - Remove cached bind groups in `_destroyBindings`. #33954 (@Mugen87)
- - Fix `_destroyBindings`. #34014 (@Mugen87)
- - Fix stale storage buffer attributes. #34388 (@Mugen87)
-- BufferGeometry
- - Clean up serialization/deserilization. #34044 (@Mugen87)
-- Core
- - Fix some `copy` and `toJSON` implementations. #34083 (@Mugen87)
- - Don't check against default values in `toJSON`. #34178 (@Mugen87)
- - Initialize render targets with valid dimens
-
-... (truncated)]]></description>
-    <pubDate>Thu, 24 Sep 2026 14:35:44 GMT</pubDate>
   </item>
 </channel>
 </rss>
