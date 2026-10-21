@@ -5,53 +5,195 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Tue, 20 Oct 2026 22:02:25 GMT</lastBuildDate>
+  <lastBuildDate>Wed, 21 Oct 2026 22:02:07 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
   <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-10-20) (release-2026-10-20)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-20</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-20</guid>
+    <title>[bluesky-social/social-app] v1.136.0 (1.136.0)</title>
+    <link>https://github.com/bluesky-social/social-app/releases/tag/1.136.0</link>
+    <guid isPermaLink="true">https://github.com/bluesky-social/social-app/releases/tag/1.136.0</guid>
+    <description><![CDATA[## What's Changed
+* Fix Android Gradle plugin ordering for Sentry and Bitdrift by @vineyardbovines in 
+* Fix iOS startup crash when app is built with Xcode 27 by @tomekzaw in 
+* APP-3108: Strip Sentry debug code from production bundles by @mozzius in 
+* feat: add Attie link cards by @brittanyellich in 
+* Fix bsky logo appearing during screen back transition by @abulenok in 
+* Fix missing blur when default avatar displayed in the DM screen by @abulenok in 
+* Migrate to expo/ui DatePicker by @abulenok in 
+* Bump version from 1.133.0 to 1.134.0 by @mozzius in 
+* Improve OTA channel notice in drawer by @mozzius in 
+* Fix Oxlint violation in OTA update test by @mozzius in 
+* Show gzip bundle size diff in CI by @mozzius in 
+* APP-3118: Fix Reanimated pager warning by @mozzius in 
+* APP-3120: Restore avatars in iOS chat notifications by @mozzius in 
+* APP-3122: cap tall GIFs in alt-text dialog by @mozzius in 
+* APP-3129: proxy links in profile descriptions by @mozzius in 
+* Re
+
+... (truncated)]]></description>
+    <pubDate>Wed, 21 Oct 2026 20:13:01 GMT</pubDate>
+  </item>
+  <item>
+    <title>[fastapi/fastapi] 0.159.0</title>
+    <link>https://github.com/fastapi/fastapi/releases/tag/0.159.0</link>
+    <guid isPermaLink="true">https://github.com/fastapi/fastapi/releases/tag/0.159.0</guid>
+    <description><![CDATA[### Features
+
+* ✨ Add support for optional query, header, and cookie parameter models. PR #16584 by @tiangolo.]]></description>
+    <pubDate>Wed, 21 Oct 2026 20:03:57 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1155.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1155.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1155.0</guid>
+    <description><![CDATA[#### 3.1155.0(2026-10-21)
+
+##### Chores
+
+* temporarily disconnect from eclipse for Java formatting (#8375) (6d14aac7)
+* **codegen:** sync for JSON string serializer buffer fix and retryMode docs link (#8373) (5f53137d)
+* **finspace:** Remove finspace and finspace-data clients following the service shutdown (#8369) (48e34c48)
+* **tnb:** Remove tnb clients following shutdown (#8370) (e37bf8c2)
+
+##### New Features
+
+* **client-quicksight:** Adds support for SharePoint and OneDrive two-legged OAuth certificate credentials and Google Workspace service account credentials when creating data sources (d0d47ac9)
+* **client-sfn:** Release minor updates to API model (6bb8593f)
+* **client-network-firewall:** Adds support for Network Firewall Resolved IP validation. (6a634360)
+* **client-datazone:** Added custom designations support with new CRUD APIs. The designation field in project membership and policy grant APIs supports a new enum for custom designations. These APIs also support a new field fo
+
+... (truncated)]]></description>
+    <pubDate>Wed, 21 Oct 2026 18:56:58 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-10-21) (release-2026-10-21)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-21</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-21</guid>
     <description><![CDATA[## General Highlights
 * **Dependency Update**: Updated to the latest SDK module versions
 
 ## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/backupsearch`: [v1.15.0](service/backupsearch/CHANGELOG.md#v1150-2026-10-20)
+* `github.com/aws/aws-sdk-go-v2/aws/protocol/eventstream`: [v1.7.23](aws/protocol/eventstream/CHANGELOG.md#v1723-2026-10-21)
+ * **Bug Fix**: Enforce event stream header key value length limit instead of truncating
+* `github.com/aws/aws-sdk-go-v2/service/autoscaling`: [v1.79.0](service/autoscaling/CHANGELOG.md#v1790-2026-10-21)
+ * **Feature**: EC2 Auto Scaling now supports account settings, letting you manage account-level configuration for Auto Scaling.
+* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcore`: [v1.54.0](service/bedrockagentcore/CHANGELOG.md#v1540-2026-10-21)
  * **Feature**: Enable schema-based (de)serialization for this service.
-* `github.com/aws/aws-sdk-go-v2/service/bedrock`: [v1.74.0](service/bedrock/CHANGELOG.md#v1740-2026-10-20)
- * **Feature**: Amazon Bedrock Guardrails now supports a configurable tier for the contextual grounding policy via a new tier option. Select the Standard tier for grounding that better supports conversations and reasoning, with expanded language coverage.
-* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcore`: [v1.53.0](service/bedrockagentcore/CHANGELOG.md#v1530-2026-10-20)
- * **Feature**: Enable schema-based (de)serialization for this service.
-* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcorecontrol`: [v1.74.0](service/bedrockagentcorecontrol/CHANGELOG.md#v1740-2026-10-20)
+* `github.com/aws/aws-sdk-go-v2/service/connect`: [v1.207.0](service/connect/CHANGELOG.md#v12070-2026-10-21)
+ * **Feature**: Added support for AWS-managed security profiles.
+* `github.com/aws/aws-sdk-go-v2/service/connecthealth`: [v1.
+
+... (truncated)]]></description>
+    <pubDate>Wed, 21 Oct 2026 18:50:14 GMT</pubDate>
+  </item>
+  <item>
+    <title>[cli/cli] GitHub CLI 2.103.0 (v2.103.0)</title>
+    <link>https://github.com/cli/cli/releases/tag/v2.103.0</link>
+    <guid isPermaLink="true">https://github.com/cli/cli/releases/tag/v2.103.0</guid>
+    <description><![CDATA[## Expiring, auto-refreshing OAuth tokens (preview)
+
+`gh` can now sign in with expiring OAuth credentials that it refreshes automatically. When you opt in, `gh` stores a short-lived access token alongside a rotating refresh token and refreshes the access token whenever it is needed, so you stay signed in without having to authenticate again.
+
+To opt in for a single sign-in, run:
+
+```shell
+gh auth login --expiring
+```
+
+To prefer expiring credentials for every sign-in, run:
+
+```shell
+gh config set expiring_credentials enabled
+```
+
+`gh auth status` shows whether a credential is refreshable and when the current access token expires. Both `gh auth status` and `gh auth token` automatically refresh the access token when needed. Expiring tokens are available on github.com and GHE.com; on hosts that do not issue them, `gh` falls back to a regular non-expiring token.
+
+If you use HTTPS as your git protocol, we advise using git 2.46 or newer and letting `gh` act as your git crede
+
+... (truncated)]]></description>
+    <pubDate>Wed, 21 Oct 2026 15:33:31 GMT</pubDate>
+  </item>
+  <item>
+    <title>[pnpm/pnpm] pnpm 12.15 (v12.15.0)</title>
+    <link>https://github.com/pnpm/pnpm/releases/tag/v12.15.0</link>
+    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v12.15.0</guid>
+    <description><![CDATA[This release lets `pnpm-workspace.yaml` delegate settings to other files and config dependencies with `include`, adds `lockfile.integrityTarget: tar` and tar-registry support, accepts zstd-compressed registry responses, and honors `SOURCE_DATE_EPOCH` in `pnpm deploy` and `pnpm install`. It also rejects registry metadata that names a different package than the one requested and speeds up workspace installs and macOS file linking.
+
+### Minor Changes
+
+- `pnpm-workspace.yaml` can now delegate settings to other YAML files and to config dependencies through a new `include` field. Each source may define only the settings the root manifest delegates to it. Every setting has one owner. Commands that change settings write each one to the file that owns it. A relative path in an included file is relative to that file. See Splitting Settings Across Files.
+
+ A config dependency supplies its settings through the YAML file named in the `pnpm.config` field of its `package.json`. The new `bootCon
+
+... (truncated)]]></description>
+    <pubDate>Wed, 21 Oct 2026 11:16:52 GMT</pubDate>
+  </item>
+  <item>
+    <title>[biomejs/biome] JavaScript APIs v6.1.0 (@biomejs/js-api@6.1.0)</title>
+    <link>https://github.com/biomejs/biome/releases/tag/%40biomejs/js-api%406.1.0</link>
+    <guid isPermaLink="true">https://github.com/biomejs/biome/releases/tag/%40biomejs/js-api%406.1.0</guid>
+    <description><![CDATA[## 6.1.0
+
+### Minor Changes
+
+- #9940 `1aefcb1` Thanks @regseb! - Added `spanInBytesToSpanInCodeUnits` helper function in subpath exports of `@biomejs/js-api`.
  
+ ```js
+ import { spanInBytesToSpanInCodeUnits } from "@biomejs/js-api/nodejs";
+ // Or:
+ // import { spanInBytesToSpanInCodeUnits } from "@biomejs/js-api/bundler";
+ // import { spanInBytesToSpanInCodeUnits } from "@biomejs/js-api/web";
+ 
+ const [start, end] = spanInBytesToSpanInCodeUnits(
+ diagnostic.location.span,
+ content
+ );
+ const text = content.slice(start, end); // Correctly extracts the text
+ ```
+
+- #8912 `e9785d8` Thanks @dyc3! - Added GritQL search to `@biomejs/js-api`. Parse a pattern with `parsePattern`, search content with `searchContent`, and release the pattern with `dropPattern`. Matches are returned as UTF-8 byte offsets; use `spanInBytesToSpanInCodeUnits` to convert them before slicing the content.
+ 
+ ```js
+ const patternId = biome.parsePattern("`console.log($message)`", {
+ defaultLanguage: "js",
+ });
+ const { m
 
 ... (truncated)]]></description>
-    <pubDate>Tue, 20 Oct 2026 18:54:55 GMT</pubDate>
+    <pubDate>Wed, 21 Oct 2026 09:49:44 GMT</pubDate>
   </item>
   <item>
-    <title>[aws/aws-sdk-js-v3] v3.1154.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1154.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1154.0</guid>
-    <description><![CDATA[#### 3.1154.0(2026-10-20)
+    <title>[cloudflare/vinext] vinext@1.3.0</title>
+    <link>https://github.com/cloudflare/vinext/releases/tag/vinext%401.3.0</link>
+    <guid isPermaLink="true">https://github.com/cloudflare/vinext/releases/tag/vinext%401.3.0</guid>
+    <description><![CDATA[Read the Vinext 1.3 release post for the highlights.
 
-##### New Features
+### Features
 
-* **client-cloudwatchomni:** Updating max value for maxResults in SearchPrincipals API (b0304f53)
-* **client-rds:** Amazon RDS now supports On-Demand Capacity Reservations for DB instances. (4a9c582b)
-* **client-cloudwatch:** Amazon CloudWatch now supports two new anomaly detector settings. AdaptationSpeed (FAST, NORMAL, SLOW) controls how fast the model adapts to baseline changes, and OutlierFilteringStrength (MINIMAL, MODERATE, STRICT) controls how aggressively outliers are filtered. (4ab39261)
-* **client-dynamodb:** Adds support for disassociating a replica from an Amazon DynamoDB multi-Region eventual consistency global table, so you can keep it as a single-Region table with its existing data. Also adds disassociation protection, on by default, to help prevent accidental disassociation. (47fab49d)
-* **client-bedrock:** Amazon Bedrock Guardrails now supports a configurable tier for the contextual grounding policy via a new tier option. 
+- **Build:** emit hash-only client chunk and CSS file names (#3615)
+- **App Router:** group client references by route (#3697)
+
+### Bug Fixes
+
+#### App
+
+- keep route handler auth challenges after middleware's (#4050)
+- order middleware Set-Cookie before route handler cookies (#4026)
+- keep route handler request.signal aborting after GC (#4022)
+
+#### App Router
+
+- write the history entry before the destination replaces the page (#4127)
+- only ship route handler paths the client needs (#4109)
+- stop CSS-importing pages from reading searchParams in dev (#4031)
+- load the browser route manifest from its own chunk (#4116)
+- read the static export deployment version from the initial page (#3802)
+- read the RSC compatibility ID from the page, not the bundle (#3797)
+- suspend the tree during hard navigations so redirect boundaries can't loop (#4063)
+- use React 19.3's #441 message for sanitized server errors (#4049)
+- keep roo
 
 ... (truncated)]]></description>
-    <pubDate>Tue, 20 Oct 2026 18:44:06 GMT</pubDate>
-  </item>
-  <item>
-    <title>[fastapi/fastapi] 0.156.0</title>
-    <link>https://github.com/fastapi/fastapi/releases/tag/0.156.0</link>
-    <guid isPermaLink="true">https://github.com/fastapi/fastapi/releases/tag/0.156.0</guid>
-    <description><![CDATA[### Fixes
-
-* 🐛 Preserve Pydantic `Field` attributes in request parameters. PR #16547 by @tiangolo.]]></description>
-    <pubDate>Tue, 20 Oct 2026 17:31:33 GMT</pubDate>
+    <pubDate>Tue, 20 Oct 2026 22:56:05 GMT</pubDate>
   </item>
   <item>
     <title>[esm-dev/esm.sh] Server v140 (v140)</title>
@@ -359,31 +501,6 @@ go install github.com/wailsapp/wails/v2/cmd/wails@v2.17.0
     <pubDate>Fri, 16 Oct 2026 14:23:23 GMT</pubDate>
   </item>
   <item>
-    <title>[bluesky-social/social-app] v1.135.0 (1.135.0)</title>
-    <link>https://github.com/bluesky-social/social-app/releases/tag/1.135.0</link>
-    <guid isPermaLink="true">https://github.com/bluesky-social/social-app/releases/tag/1.135.0</guid>
-    <description><![CDATA[## What's Changed
-* Fix Android Gradle plugin ordering for Sentry and Bitdrift by @vineyardbovines in 
-* Fix iOS startup crash when app is built with Xcode 27 by @tomekzaw in 
-* APP-3108: Strip Sentry debug code from production bundles by @mozzius in 
-* feat: add Attie link cards by @brittanyellich in 
-* Fix bsky logo appearing during screen back transition by @abulenok in 
-* Fix missing blur when default avatar displayed in the DM screen by @abulenok in 
-* Migrate to expo/ui DatePicker by @abulenok in 
-* Bump version from 1.133.0 to 1.134.0 by @mozzius in 
-* Improve OTA channel notice in drawer by @mozzius in 
-* Fix Oxlint violation in OTA update test by @mozzius in 
-* Show gzip bundle size diff in CI by @mozzius in 
-* APP-3118: Fix Reanimated pager warning by @mozzius in 
-* APP-3120: Restore avatars in iOS chat notifications by @mozzius in 
-* APP-3122: cap tall GIFs in alt-text dialog by @mozzius in 
-* APP-3129: proxy links in profile descriptions by @mozzius in 
-* Re
-
-... (truncated)]]></description>
-    <pubDate>Fri, 16 Oct 2026 01:26:33 GMT</pubDate>
-  </item>
-  <item>
     <title>[webpack/webpack] v5.112.0</title>
     <link>https://github.com/webpack/webpack/releases/tag/v5.112.0</link>
     <guid isPermaLink="true">https://github.com/webpack/webpack/releases/tag/v5.112.0</guid>
@@ -427,34 +544,6 @@ go install github.com/wailsapp/wails/v2/cmd/wails@v2.17.0
 
 ... (truncated)]]></description>
     <pubDate>Thu, 15 Oct 2026 21:30:38 GMT</pubDate>
-  </item>
-  <item>
-    <title>[withastro/astro] @astrojs/vue@7.1.0</title>
-    <link>https://github.com/withastro/astro/releases/tag/%40astrojs/vue%407.1.0</link>
-    <guid isPermaLink="true">https://github.com/withastro/astro/releases/tag/%40astrojs/vue%407.1.0</guid>
-    <description><![CDATA[### Minor Changes
-
-- #18277 `2715958` Thanks @florian-lefebvre! - Increases the minimum Node.js version to 22.22.0
- 
- The minimum supported Node.js version is now 22.22.0, the latest Node.js 22 release supported by StackBlitz. This change is in line with Astro's Node.js support policy.]]></description>
-    <pubDate>Thu, 15 Oct 2026 14:46:39 GMT</pubDate>
-  </item>
-  <item>
-    <title>[pnpm/pnpm] pnpm 12.14.0 (v12.14.0)</title>
-    <link>https://github.com/pnpm/pnpm/releases/tag/v12.14.0</link>
-    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v12.14.0</guid>
-    <description><![CDATA[This release adds the `sideEffectsCache.exclude` setting, stops `pnpm install` from waiting on the daily update check, and keeps pnpm from aborting with a core dump when the reader of its output exits.
-
-### Minor Changes
-
-- Added the `sideEffectsCache.exclude` setting for packages whose build depends on something pnpm cannot include in the cache key, such as the system libraries a native addon links against. pnpm builds the listed packages in every project and never restores or saves their builds through the side-effects cache, locally or on a `remoteCache` server. Under the global virtual store, each project gets its own copy of these packages and of the packages that depend on them. Entries use the same `name`, `@scope/*`, and `name@version` patterns as `minimumReleaseAgeExclude` #5271.
-
-- `pnpm login` now prints the `npm-notice` response header during web-based login. Registries use it to show the verification code that completes the sign-in in the browser.
-
-### Patch Change
-
-... (truncated)]]></description>
-    <pubDate>Thu, 15 Oct 2026 13:42:33 GMT</pubDate>
   </item>
   <item>
     <title>[floci-io/floci] 2.3.0</title>
@@ -547,21 +636,6 @@ go install github.com/wailsapp/wails/v2/cmd/wails@v2.17.0
 
 **Full Changelog**:]]></description>
     <pubDate>Wed, 14 Oct 2026 13:20:54 GMT</pubDate>
-  </item>
-  <item>
-    <title>[cloudflare/vinext] create-vinext-app@1.1.0</title>
-    <link>https://github.com/cloudflare/vinext/releases/tag/create-vinext-app%401.1.0</link>
-    <guid isPermaLink="true">https://github.com/cloudflare/vinext/releases/tag/create-vinext-app%401.1.0</guid>
-    <description><![CDATA[Read the Vinext 1.2 release post for the highlights.
-
-### Features
-
-- **Init:** add --name to set the Cloudflare Worker name (#3863)
-
-### Contributors
-
-- @MattieTK]]></description>
-    <pubDate>Wed, 14 Oct 2026 10:55:44 GMT</pubDate>
   </item>
   <item>
     <title>[nodejs/undici] v8.12.0</title>
@@ -1016,31 +1090,6 @@ For now you can view the generated release notes below.
 
 ... (truncated)]]></description>
     <pubDate>Thu, 01 Oct 2026 12:41:12 GMT</pubDate>
-  </item>
-  <item>
-    <title>[cli/cli] GitHub CLI 2.102.0 (v2.102.0)</title>
-    <link>https://github.com/cli/cli/releases/tag/v2.102.0</link>
-    <guid isPermaLink="true">https://github.com/cli/cli/releases/tag/v2.102.0</guid>
-    <description><![CDATA[## Security
-
-Four security vulnerabilities have been identified, and fixed, in this release. Users are advised to update gh to version `v2.102.0` as soon as possible.
-
-`gh release download`, `gh run download`, `gh repo read-file --output`, and `gh attestation download` could write remote content to an unintended local file when the destination contained symbolic links.
-
-See for more information.
-
-`gh attestation verify` compared the `--source-ref` value case-insensitively, so an attestation built from a branch whose name differs only in case could satisfy a policy that named a different branch.
-
-See for more information.
-
-Interactive `gh skill search` passed repository paths from search results to `gh skill install` without an option separator, so a search result could inject installer options and change where skill files were written.
-
-See for more information.
-
-`gh attestation verify` matched the `--signer-workflow` value against only the start of the signing certificate's identity, 
-
-... (truncated)]]></description>
-    <pubDate>Wed, 30 Sep 2026 02:40:02 GMT</pubDate>
   </item>
   <item>
     <title>[mongodb/node-mongodb-native] v7.7.0</title>
