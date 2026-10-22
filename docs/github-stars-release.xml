@@ -5,85 +5,157 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Wed, 21 Oct 2026 22:02:07 GMT</lastBuildDate>
+  <lastBuildDate>Thu, 22 Oct 2026 22:02:27 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[TanStack/router] Release 2026-10-22 20:11 (release-2026-10-22-2011)</title>
+    <link>https://github.com/TanStack/router/releases/tag/release-2026-10-22-2011</link>
+    <guid isPermaLink="true">https://github.com/TanStack/router/releases/tag/release-2026-10-22-2011</guid>
+    <description><![CDATA[Release 2026-10-22 20:11
+
+## Changes
+
+### Fix
+
+- start-plugin-core: skip the Rsbuild import-protection loader when disabled (#8748) (ed5577593a) by @guru-irl
+- start-plugin-core: skip unchanged server function resolver rebuilds in Rsbuild dev (#8750) (63a886da90) by @guru-irl
+- react-router: publish agent skills (#8671) (689a7c5419) by @Sheraff
+
+### Performance
+
+- start-plugin-core: skip resolving member calls on non-namespace receivers (#8758) (d9b07e8d3b) by @shkumbinhasani
+
+### Refactor
+
+- router-plugin: remove enableRouteGeneration option (#8737) (647cb737a5) by @Sheraff
+
+### Chore
+
+- update Node.js to 26.12.1 (#8779) (08a419c109) by @Sheraff
+
+
+## Packages
+
+- @tanstack/react-router@1.170.46
+- @tanstack/react-start@1.169.4
+- @tanstack/react-start-client@1.168.44
+- @tanstack/react-start-rsc@0.1.65
+- @tanstack/react-start-server@1.167.52
+- @tanstack/router-cli@1.167.46
+- @tanstack/router-core@1.171.39
+- @tanstack/router-generator@1.167.46
+- @tanstack/router-plugin@1.168.48
+- @tanstack
+
+... (truncated)]]></description>
+    <pubDate>Thu, 22 Oct 2026 20:11:20 GMT</pubDate>
+  </item>
+  <item>
+    <title>[panva/node-oidc-provider] v9.13.0</title>
+    <link>https://github.com/panva/node-oidc-provider/releases/tag/v9.13.0</link>
+    <guid isPermaLink="true">https://github.com/panva/node-oidc-provider/releases/tag/v9.13.0</guid>
+    <description><![CDATA[### Features
+
+* update attestation client auth to draft-12 (aec461c)]]></description>
+    <pubDate>Thu, 22 Oct 2026 19:36:16 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-10-22) (release-2026-10-22)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-22</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-22</guid>
+    <description><![CDATA[## General Highlights
+* **Bug Fix**: Update smithy-go to v1.28.6
+* **Dependency Update**: Updated to the latest SDK module versions
+
+## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/service/backupsearch`: [v1.16.0](service/backupsearch/CHANGELOG.md#v1160-2026-10-22)
+ * **Feature**: Enable schema-based (de)serialization for this service.
+* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcore`: [v1.55.0](service/bedrockagentcore/CHANGELOG.md#v1550-2026-10-22)
+ * **Feature**: Adds the dimension name to evaluation results and batch evaluation summaries. For multi-dimensional LLM-as-a-Judge evaluators, each result and summary now identifies which dimension it corresponds to.
+ * **Feature**: Enable schema-based (de)serialization for this service.
+* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcorecontrol`: [v1.75.0](service/bedrockagentcorecontrol/CHANGELOG.md#v1750-2026-10-22)
+ * **Feature**: Adds model-based routing and fallback to AgentCore Gateway rules. Rules can match the re
+
+... (truncated)]]></description>
+    <pubDate>Thu, 22 Oct 2026 18:47:16 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1156.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1156.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1156.0</guid>
+    <description><![CDATA[#### 3.1156.0(2026-10-22)
+
+##### Documentation Changes
+
+* **client-lambda:** AWS Lambda durable functions now supports payloads up to 1 MB for checkpoints, callback completion, and error details. (cdd6c609)
+
+##### New Features
+
+* **clients:** update client endpoints as of 2026-10-22 (e5cd1562)
+* **client-opensearchserverless:** Adds APIs to create, get, list, and cancel ingestion jobs, and to create, get, list, and delete ingestion streams, for ingesting data from Amazon S3 into OpenSearch Serverless collections. (7712bce0)
+* **client-continuum:** Releasing Continuum for Code Vulnerabilities APIs for SDKs (0cbbd64c)
+* **client-connect:** Adds support for customer queryable replication errors. (4507ef01)
+* **client-ec2:** AWS Transit Gateway now provides managed one-to-one NAT directly on its attachments, through integration with Regional Private NAT Gateway. Use ModifyTransitGatewayAttachmentNatConfiguration to enable NAT and configure NAT rules, and GetTransitGatewayAttachmentNatConfi
+
+... (truncated)]]></description>
+    <pubDate>Thu, 22 Oct 2026 18:43:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>[fastapi/fastapi] 0.161.0</title>
+    <link>https://github.com/fastapi/fastapi/releases/tag/0.161.0</link>
+    <guid isPermaLink="true">https://github.com/fastapi/fastapi/releases/tag/0.161.0</guid>
+    <description><![CDATA[### Features
+
+* ✨ Add support for combining unions of form models. PR #16596 by @tiangolo.]]></description>
+    <pubDate>Thu, 22 Oct 2026 18:30:24 GMT</pubDate>
+  </item>
+  <item>
+    <title>[arktypeio/arktype] @arktype/attest@0.58.0</title>
+    <link>https://github.com/arktypeio/arktype/releases/tag/%40arktype/attest%400.58.0</link>
+    <guid isPermaLink="true">https://github.com/arktypeio/arktype/releases/tag/%40arktype/attest%400.58.0</guid>
+    <description><![CDATA[No release notes provided.]]></description>
+    <pubDate>Thu, 22 Oct 2026 11:31:02 GMT</pubDate>
+  </item>
+  <item>
+    <title>[uptrace/uptrace] v2.1.0-rc.2</title>
+    <link>https://github.com/uptrace/uptrace/releases/tag/v2.1.0-rc.2</link>
+    <guid isPermaLink="true">https://github.com/uptrace/uptrace/releases/tag/v2.1.0-rc.2</guid>
+    <description><![CDATA[CHANGELOG]]></description>
+    <pubDate>Thu, 22 Oct 2026 09:12:02 GMT</pubDate>
+  </item>
+  <item>
+    <title>[BabylonJS/Babylon.js] 9.32.0</title>
+    <link>https://github.com/BabylonJS/Babylon.js/releases/tag/9.32.0</link>
+    <guid isPermaLink="true">https://github.com/BabylonJS/Babylon.js/releases/tag/9.32.0</guid>
+    <description><![CDATA[### Inspector
+
+- Inspector Lite: add debug helpers and capture tools (P7b) - [_New Feature_] by ryantrem (#19016)]]></description>
+    <pubDate>Thu, 22 Oct 2026 08:06:27 GMT</pubDate>
+  </item>
   <item>
     <title>[bluesky-social/social-app] v1.136.0 (1.136.0)</title>
     <link>https://github.com/bluesky-social/social-app/releases/tag/1.136.0</link>
     <guid isPermaLink="true">https://github.com/bluesky-social/social-app/releases/tag/1.136.0</guid>
     <description><![CDATA[## What's Changed
-* Fix Android Gradle plugin ordering for Sentry and Bitdrift by @vineyardbovines in 
-* Fix iOS startup crash when app is built with Xcode 27 by @tomekzaw in 
-* APP-3108: Strip Sentry debug code from production bundles by @mozzius in 
-* feat: add Attie link cards by @brittanyellich in 
-* Fix bsky logo appearing during screen back transition by @abulenok in 
-* Fix missing blur when default avatar displayed in the DM screen by @abulenok in 
-* Migrate to expo/ui DatePicker by @abulenok in 
-* Bump version from 1.133.0 to 1.134.0 by @mozzius in 
-* Improve OTA channel notice in drawer by @mozzius in 
-* Fix Oxlint violation in OTA update test by @mozzius in 
-* Show gzip bundle size diff in CI by @mozzius in 
-* APP-3118: Fix Reanimated pager warning by @mozzius in 
-* APP-3120: Restore avatars in iOS chat notifications by @mozzius in 
-* APP-3122: cap tall GIFs in alt-text dialog by @mozzius in 
-* APP-3129: proxy links in profile descriptions by @mozzius in 
-* Re
+* Wire up Moderation Inbox endpoints by @ds-boyce in 
+* Wire up Moderation Inbox notification settings by @ds-boyce in 
+* Wire up Moderation Inbox report details by @ds-boyce in 
+* Wire up Moderation Inbox notices and appeals by @ds-boyce in 
+* Wire up Moderation Inbox analytics by @ds-boyce in 
+* Add unread count to Moderation and content filters by @ds-boyce in 
+* Add moderation inbox beta feature description by @ds-boyce in 
+* Add profile links by @vineyardbovines in 
+* Report profile links as link records by @vineyardbovines in 
+* Hide profile link editing for age-restricted accounts by @vineyardbovines in 
+* [APP-3405] Match Safelink domain rules on subdomains by @vineyardbovines in 
+* APP-3467: Use design’s unread tints for Notifications v2 in the dark themes by @mozzius in 
+* Bump version to v1.136.0 by @mozzius in 
+* Remove composer layout animations by @mozzius in 
+* Keep Home mounted when opening a link while the app is running by @tomekzaw in 
+* APP-3447: K
 
 ... (truncated)]]></description>
     <pubDate>Wed, 21 Oct 2026 20:13:01 GMT</pubDate>
-  </item>
-  <item>
-    <title>[fastapi/fastapi] 0.159.0</title>
-    <link>https://github.com/fastapi/fastapi/releases/tag/0.159.0</link>
-    <guid isPermaLink="true">https://github.com/fastapi/fastapi/releases/tag/0.159.0</guid>
-    <description><![CDATA[### Features
-
-* ✨ Add support for optional query, header, and cookie parameter models. PR #16584 by @tiangolo.]]></description>
-    <pubDate>Wed, 21 Oct 2026 20:03:57 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-js-v3] v3.1155.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1155.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1155.0</guid>
-    <description><![CDATA[#### 3.1155.0(2026-10-21)
-
-##### Chores
-
-* temporarily disconnect from eclipse for Java formatting (#8375) (6d14aac7)
-* **codegen:** sync for JSON string serializer buffer fix and retryMode docs link (#8373) (5f53137d)
-* **finspace:** Remove finspace and finspace-data clients following the service shutdown (#8369) (48e34c48)
-* **tnb:** Remove tnb clients following shutdown (#8370) (e37bf8c2)
-
-##### New Features
-
-* **client-quicksight:** Adds support for SharePoint and OneDrive two-legged OAuth certificate credentials and Google Workspace service account credentials when creating data sources (d0d47ac9)
-* **client-sfn:** Release minor updates to API model (6bb8593f)
-* **client-network-firewall:** Adds support for Network Firewall Resolved IP validation. (6a634360)
-* **client-datazone:** Added custom designations support with new CRUD APIs. The designation field in project membership and policy grant APIs supports a new enum for custom designations. These APIs also support a new field fo
-
-... (truncated)]]></description>
-    <pubDate>Wed, 21 Oct 2026 18:56:58 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-10-21) (release-2026-10-21)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-21</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-21</guid>
-    <description><![CDATA[## General Highlights
-* **Dependency Update**: Updated to the latest SDK module versions
-
-## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/aws/protocol/eventstream`: [v1.7.23](aws/protocol/eventstream/CHANGELOG.md#v1723-2026-10-21)
- * **Bug Fix**: Enforce event stream header key value length limit instead of truncating
-* `github.com/aws/aws-sdk-go-v2/service/autoscaling`: [v1.79.0](service/autoscaling/CHANGELOG.md#v1790-2026-10-21)
- * **Feature**: EC2 Auto Scaling now supports account settings, letting you manage account-level configuration for Auto Scaling.
-* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcore`: [v1.54.0](service/bedrockagentcore/CHANGELOG.md#v1540-2026-10-21)
- * **Feature**: Enable schema-based (de)serialization for this service.
-* `github.com/aws/aws-sdk-go-v2/service/connect`: [v1.207.0](service/connect/CHANGELOG.md#v12070-2026-10-21)
- * **Feature**: Added support for AWS-managed security profiles.
-* `github.com/aws/aws-sdk-go-v2/service/connecthealth`: [v1.
-
-... (truncated)]]></description>
-    <pubDate>Wed, 21 Oct 2026 18:50:14 GMT</pubDate>
   </item>
   <item>
     <title>[cli/cli] GitHub CLI 2.103.0 (v2.103.0)</title>
@@ -432,49 +504,6 @@ go install github.com/wailsapp/wails/v2/cmd/wails@v2.17.0
     <pubDate>Sun, 18 Oct 2026 03:53:50 GMT</pubDate>
   </item>
   <item>
-    <title>[TanStack/router] Release 2026-10-16 21:11 (release-2026-10-16-2111)</title>
-    <link>https://github.com/TanStack/router/releases/tag/release-2026-10-16-2111</link>
-    <guid isPermaLink="true">https://github.com/TanStack/router/releases/tag/release-2026-10-16-2111</guid>
-    <description><![CDATA[Release 2026-10-16 21:11
-
-## Changes
-
-### Performance
-
-- lower manifest script preload priority (#8212) (18154b1c45) by @maxktz
-
-### Chore
-
-- deps: upgrade Vitest to 5 and migrate benchmarks to the bench fixture (#8723) (7a06725038) by @schiller-manuel
-
-
-## Packages
-
-- @tanstack/react-router@1.170.45
-- @tanstack/react-start@1.169.3
-- @tanstack/react-start-client@1.168.43
-- @tanstack/react-start-rsc@0.1.64
-- @tanstack/react-start-server@1.167.51
-- @tanstack/router-cli@1.167.45
-- @tanstack/router-core@1.171.38
-- @tanstack/router-generator@1.167.45
-- @tanstack/router-plugin@1.168.47
-- @tanstack/router-vite-plugin@1.167.47
-- @tanstack/solid-router@1.170.42
-- @tanstack/solid-start@1.169.3
-- @tanstack/solid-start-client@1.168.41
-- @tanstack/solid-start-server@1.167.49
-- @tanstack/start-client-core@1.170.38
-- @tanstack/start-plugin-core@1.171.54
-- @tanstack/start-server-core@1.169.44
-- @tanstack/start-static-server-functions@1.167.43
-- @tanstack/start-storage-context@1.167.40
-- @tanstack/vue-
-
-... (truncated)]]></description>
-    <pubDate>Fri, 16 Oct 2026 21:11:12 GMT</pubDate>
-  </item>
-  <item>
     <title>[eslint/eslint] v10.13.0</title>
     <link>https://github.com/eslint/eslint/releases/tag/v10.13.0</link>
     <guid isPermaLink="true">https://github.com/eslint/eslint/releases/tag/v10.13.0</guid>
@@ -524,26 +553,6 @@ go install github.com/wailsapp/wails/v2/cmd/wails@v2.17.0
 
 ... (truncated)]]></description>
     <pubDate>Thu, 15 Oct 2026 22:22:39 GMT</pubDate>
-  </item>
-  <item>
-    <title>[openai/codex] 0.163.0 (rust-v0.163.0)</title>
-    <link>https://github.com/openai/codex/releases/tag/rust-v0.163.0</link>
-    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.163.0</guid>
-    <description><![CDATA[## New Features
-
-- Open `/config` to search preferences across categories, change supported settings immediately, and see which changes require a restart. (#52990, #53429)
-- Send a follow-up while Codex is responding to steer it immediately. Interrupting a turn also stops active Code Mode cells and their nested tool calls. (#51812, #51835)
-- Configure a leader key in `/keymap`. The default is `Ctrl+X`, shortcut hints stay open until you choose or cancel, and voice mute moves to `F9`. (#52273)
-- Restart a managed background server from `/daemon`. Codex warns about work the restart could interrupt, then reconnects automatically. (#53173)
-- Codex can run independent read-only tools in parallel, including skill, memory, and conversation-history lookups. (#52245)
-- Daybreak is enabled by default for eligible accounts. `codex exec` can also select it with an OpenAI API key when the server offers access. (#53701, #53717)
-
-## Bug Fixes
-
-- Resuming a saved thread restores its permissions and ne
-
-... (truncated)]]></description>
-    <pubDate>Thu, 15 Oct 2026 21:30:38 GMT</pubDate>
   </item>
   <item>
     <title>[floci-io/floci] 2.3.0</title>
@@ -905,29 +914,6 @@ Full Release Notes]]></description>
     <pubDate>Fri, 09 Oct 2026 03:06:51 GMT</pubDate>
   </item>
   <item>
-    <title>[BabylonJS/Babylon.js] 9.30.0</title>
-    <link>https://github.com/BabylonJS/Babylon.js/releases/tag/9.30.0</link>
-    <guid isPermaLink="true">https://github.com/BabylonJS/Babylon.js/releases/tag/9.30.0</guid>
-    <description><![CDATA[### Addons
-
-- MSDF Text: guard fwidth denominators in the fragment shaders - [_Bug Fix_] by marns (#18970)
-
-### Core
-
-- Fix AndOrNotEvaluator returning false for "a || b && c" when only a is true - by Arthur031221 (#18968)
-- Remove unused blockMap in flow graph data cycle detection - by irontaek (#18980)
-- Fix GPUParticleSystem leaving instance attribute divisors bound - by redstair (#18975)
-- SubMesh Draw Wrapper Caching Per Pass - by tholub99 (#18972)
-- fix: support image source dimensions on WebGL1 - [_Bug Fix_] by alexchuber (#18971)
-- Fix WebGPU render target sRGB option forwarding - [_Bug Fix_] by RaananW (#18966)
-- Expose WebGPU canvas tone mapping and color space options - [_New Feature_] by RaananW (#18967)
-
-### Loaders
-
-- Fix source-backed interactivity export in Flow Graph Editor - [_Bug Fix_] by RaananW (#18976)]]></description>
-    <pubDate>Thu, 08 Oct 2026 07:52:07 GMT</pubDate>
-  </item>
-  <item>
     <title>[microsoft/playwright] v1.64.0</title>
     <link>https://github.com/microsoft/playwright/releases/tag/v1.64.0</link>
     <guid isPermaLink="true">https://github.com/microsoft/playwright/releases/tag/v1.64.0</guid>
@@ -964,13 +950,6 @@ Videos can now be recorded at a custom frame rate, and the decorations for actio
 
 ... (truncated)]]></description>
     <pubDate>Wed, 07 Oct 2026 20:40:43 GMT</pubDate>
-  </item>
-  <item>
-    <title>[uptrace/uptrace] v2.1.0-rc.1</title>
-    <link>https://github.com/uptrace/uptrace/releases/tag/v2.1.0-rc.1</link>
-    <guid isPermaLink="true">https://github.com/uptrace/uptrace/releases/tag/v2.1.0-rc.1</guid>
-    <description><![CDATA[CHANGELOG]]></description>
-    <pubDate>Wed, 07 Oct 2026 15:04:28 GMT</pubDate>
   </item>
   <item>
     <title>[servo/servo] v0.7.0</title>
@@ -1149,19 +1128,6 @@ Dependency version changes:
 
 ... (truncated)]]></description>
     <pubDate>Mon, 28 Sep 2026 15:40:54 GMT</pubDate>
-  </item>
-  <item>
-    <title>[facebook/lexical] v0.52.0</title>
-    <link>https://github.com/facebook/lexical/releases/tag/v0.52.0</link>
-    <guid isPermaLink="true">https://github.com/facebook/lexical/releases/tag/v0.52.0</guid>
-    <description><![CDATA[v0.52.0 is an ad-hoc release targeting a few fixes to mobile text input, but carries a number of other updates accumulated in the past week as we move towards Lexical 1.0. We did a pass to modernize the documentation focusing on the latest features. `@lexical/mdast` now uses one configurable `MdastExtension` for import and export, headless editors can be built entirely from extensions, and selection notifications have a consistent timing contract. There are also fixes for deletion, horizontal caret scrolling, drag-and-drop and mobile input.
-
-### Breaking Changes
-
-* `lexical` — **`SELECTION_CHANGE_COMMAND` consistently runs before DOM reconciliation**, inside the pending writable update. This includes automatic `NodeSelection` and `TableSelection` notifications that previously ran after reconciliation. `$getSelection` returns the pending selection; `$getPreviousSelection` returns the last committed selection. Eligible programmatic changes now notify without waiting for a native `sel
-
-... (truncated)]]></description>
-    <pubDate>Mon, 28 Sep 2026 15:31:40 GMT</pubDate>
   </item>
 </channel>
 </rss>
