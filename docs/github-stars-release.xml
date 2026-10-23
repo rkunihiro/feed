@@ -5,8 +5,147 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Thu, 22 Oct 2026 22:02:27 GMT</lastBuildDate>
+  <lastBuildDate>Fri, 23 Oct 2026 22:02:11 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[fastapi/fastapi] 0.162.0</title>
+    <link>https://github.com/fastapi/fastapi/releases/tag/0.162.0</link>
+    <guid isPermaLink="true">https://github.com/fastapi/fastapi/releases/tag/0.162.0</guid>
+    <description><![CDATA[Omitted `bool` and `bool | None` form fields now use their declared defaults or produce missing-field errors, consistent with other fields and Pydantic behavior. FastAPI no longer infers `False` for omitted booleans. This applies to individual form parameters, form models, and unions of form models.
+
+Omitted boolean model fields are excluded from `model_dump(exclude_unset=True)`, and their defaults no longer count as submitted fields during union selection. Default factories and `validate_default` follow the usual rules.
+
+For HTML checkboxes, declare a boolean with a default of `False`. See Boolean Form Fields.
+
+### Breaking Changes
+
+* 🐛 Restore default handling for omitted boolean form fields. PR #16605 by @tiangolo.]]></description>
+    <pubDate>Fri, 23 Oct 2026 18:47:17 GMT</pubDate>
+  </item>
+  <item>
+    <title>[remix-run/remix] ui v0.13.0 (ui@0.13.0)</title>
+    <link>https://github.com/remix-run/remix/releases/tag/ui%400.13.0</link>
+    <guid isPermaLink="true">https://github.com/remix-run/remix/releases/tag/ui%400.13.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- BREAKING CHANGE: Prop types for the previously removed styled `Accordion`, `Select`, and `Combobox` components have also been removed: `AccordionProps`, `AccordionItemProps`, `AccordionTriggerProps`, `AccordionContentProps`, `SelectProps`, `SelectOptionProps`, `ComboboxProps`, and `ComboboxOptionProps`. Accordion's unused `headingLevel` prop and corresponding context fields, along with the `AccordionHeadingLevel` type, have also been removed. (#11986)
+
+- BREAKING CHANGE: The toggle mixin is now exported as `toggle` instead of `control`. Since `toggle` consists of a single mixin, it can now be called directly as `toggle` rather than grouped under `toggle.control`. (#11986)
+
+ ```diff
+ -import * as toggle from '@remix-run/ui/toggle'
+ +import { toggle } from '@remix-run/ui/toggle'
+
+ -<input mix={toggle.control({ defaultChecked: true })} />
+ +<input mix={toggle({ defaultChecked: true })} />
+ ```
+
+ The options type has also been renamed from `ToggleControlOptions` to `To
+
+... (truncated)]]></description>
+    <pubDate>Fri, 23 Oct 2026 18:42:15 GMT</pubDate>
+  </item>
+  <item>
+    <title>[modelcontextprotocol/typescript-sdk] @modelcontextprotocol/server-legacy@2.4.0</title>
+    <link>https://github.com/modelcontextprotocol/typescript-sdk/releases/tag/%40modelcontextprotocol/server-legacy%402.4.0</link>
+    <guid isPermaLink="true">https://github.com/modelcontextprotocol/typescript-sdk/releases/tag/%40modelcontextprotocol/server-legacy%402.4.0</guid>
+    <description><![CDATA[### Patch Changes
+
+- Updated dependencies [`46d9c99`]:
+ - @modelcontextprotocol/core@2.4.0]]></description>
+    <pubDate>Fri, 23 Oct 2026 18:19:17 GMT</pubDate>
+  </item>
+  <item>
+    <title>[sindresorhus/eslint-plugin-unicorn] v79.0.0</title>
+    <link>https://github.com/sindresorhus/eslint-plugin-unicorn/releases/tag/v79.0.0</link>
+    <guid isPermaLink="true">https://github.com/sindresorhus/eslint-plugin-unicorn/releases/tag/v79.0.0</guid>
+    <description><![CDATA[## Breaking
+
+- `no-top-level-side-effects`: Focus on mutations of globals, and remove it from the `unopinionated` preset (#3915) 24abac48
+	- Unknown calls are no longer reported by default. Enable the new `checkUnknownCalls` option for stricter checking.
+	- Mutations of globals, like `document.title = 'x'` and `Object.assign(globalThis, …)`, are now reported, also in declarations and default exports. You may see new reports.
+
+## Improvements
+
+- Infer types from JSDoc `@type`, `@param`, and `@returns` annotations in rules that use type information (#3941) 2b4bfab0
+- Handle template literals without expressions like strings in more rules (#3943) 8bd8c063
+- Autofix more code that contains comments, while keeping the comments (#3939) 87baf82f
+- Fix autofixes in many rules that could produce broken code or wrong parentheses (#3917) fed7eac2
+- Make autofixes safer in many rules
+	- Fixes that can change behavior in rare cases are now suggestions, for example in `prefer-spread`, `
+
+... (truncated)]]></description>
+    <pubDate>Fri, 23 Oct 2026 16:44:57 GMT</pubDate>
+  </item>
+  <item>
+    <title>[cloudflare/workers-sdk] @cloudflare/vite-plugin@1.65.0</title>
+    <link>https://github.com/cloudflare/workers-sdk/releases/tag/%40cloudflare/vite-plugin%401.65.0</link>
+    <guid isPermaLink="true">https://github.com/cloudflare/workers-sdk/releases/tag/%40cloudflare/vite-plugin%401.65.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- #16363 `d3240f2` Thanks @jamesopstad! - Remove the `experimental.newConfig` option from Vite plugin v1
+
+ Vite plugin v1 now supports Wrangler configuration files only. Projects using `cloudflare.config.ts` for configuration should upgrade to Vite plugin v2 beta.
+
+### Patch Changes
+
+- #16373 `8cc5f87` Thanks @petebacondarwin! - Report unsupported remote bindings under Bun instead of hanging
+
+ Starting remote bindings now fails with an actionable error explaining Bun's unsupported request routing. Use Node.js or disable remote bindings to continue local development.
+
+- #16334 `9cecd09` Thanks @petebacondarwin! - Fix Container setup guidance in Vite development and preview
+
+ Container registry instructions now show the Wrangler command and the configuration location, including Wrangler files and inline Vite configuration.
+
+- #16333 `68d6eec` Thanks @petebacondarwin! - Update the local Workers runtime to the October 19 release
+
+ Include the fix for nested asset paths d
+
+... (truncated)]]></description>
+    <pubDate>Fri, 23 Oct 2026 07:25:28 GMT</pubDate>
+  </item>
+  <item>
+    <title>[openai/codex] 0.164.0 (rust-v0.164.0)</title>
+    <link>https://github.com/openai/codex/releases/tag/rust-v0.164.0</link>
+    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.164.0</guid>
+    <description><![CDATA[## New Features
+
+- Save reusable prompts and slash commands in ten numbered `/presets` slots, with a keyboard menu for quick access. (#54380, #54381)
+- Set model, reasoning effort, speed, and permission profiles directly with inline `/model` and `/permissions` arguments. (#54378, #54383)
+- Preview viewed and generated images in the fullscreen transcript on terminals supporting Kitty or Sixel graphics. (#54216)
+- Authenticate enterprise MCP connections using eligible Codex account grants or dedicated sign-in, including OAuth clients requiring secrets. (#55334, #55859, #56001)
+- Mask credentials during supported remote Bash commands and Zsh snapshot sessions, including credentials from custom providers. (#54309, #54432, #56049)
+- The Amazon Bedrock setup wizard is now enabled by default, with API key entry grouped alongside other AWS sign-in methods when credentials are detected. (#56033, #56023)
+
+## Bug Fixes
+
+- Failed compaction no longer leaves partial summaries in conversation histor
+
+... (truncated)]]></description>
+    <pubDate>Fri, 23 Oct 2026 04:48:10 GMT</pubDate>
+  </item>
+  <item>
+    <title>[iii-hq/iii] iii 0.25.0 (iii/v0.25.0)</title>
+    <link>https://github.com/iii-hq/iii/releases/tag/iii/v0.25.0</link>
+    <guid isPermaLink="true">https://github.com/iii-hq/iii/releases/tag/iii/v0.25.0</guid>
+    <description><![CDATA[## What's Changed
+* docs(changelog): add 0.24.6 release notes by @guibeira in 
+* feat(telemetry): report the harness machine-wide usage events by @anthonyiscoding in 
+* feat(website): OpenCode vs Claude Code vs iii comparison post by @arihantcodes in 
+* feat(infra): route iii.dev/registry to the workers registry by @sergiofilhowz in 
+* Update publication date for blog post by @anthonyiscoding in 
+* docs: add Simplified Chinese README translation (README_zh.md) by @WanderLandWalker in 
+* feat(ci): allow release candidates from unmerged branches by @guibeira in 
+* docs: fix local links after the README translation by @guibeira in 
+* fix(observability): report log lag at most once per 10 s by @sergiofilhowz in 
+* feat(website): list the registry sitemap in robots.txt by @sergiofilhowz in 
+* perf(engine): reduce invocation and trigger dispatch overhead by @guibeira in 
+* fix(deps): bump TLS, vite and markdown-it lockfile entries for Supply Chain advisories by @guibeira in 
+* fix(compose): 
+
+... (truncated)]]></description>
+    <pubDate>Thu, 22 Oct 2026 22:32:57 GMT</pubDate>
+  </item>
   <item>
     <title>[TanStack/router] Release 2026-10-22 20:11 (release-2026-10-22-2011)</title>
     <link>https://github.com/TanStack/router/releases/tag/release-2026-10-22-2011</link>
@@ -99,15 +238,6 @@
 
 ... (truncated)]]></description>
     <pubDate>Thu, 22 Oct 2026 18:43:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>[fastapi/fastapi] 0.161.0</title>
-    <link>https://github.com/fastapi/fastapi/releases/tag/0.161.0</link>
-    <guid isPermaLink="true">https://github.com/fastapi/fastapi/releases/tag/0.161.0</guid>
-    <description><![CDATA[### Features
-
-* ✨ Add support for combining unions of form models. PR #16596 by @tiangolo.]]></description>
-    <pubDate>Thu, 22 Oct 2026 18:30:24 GMT</pubDate>
   </item>
   <item>
     <title>[arktypeio/arktype] @arktype/attest@0.58.0</title>
@@ -730,31 +860,6 @@ specify init my-project
     <pubDate>Tue, 13 Oct 2026 06:35:29 GMT</pubDate>
   </item>
   <item>
-    <title>[sindresorhus/eslint-plugin-unicorn] v78.0.0</title>
-    <link>https://github.com/sindresorhus/eslint-plugin-unicorn/releases/tag/v78.0.0</link>
-    <guid isPermaLink="true">https://github.com/sindresorhus/eslint-plugin-unicorn/releases/tag/v78.0.0</guid>
-    <description><![CDATA[## New rules
-
-- `no-unnecessary-default-arguments` (#3885) 1059f09b
-- `no-repeated-call-wrappers` (#3836) c4fd1feb
-
-## Improvements
-
-- Add SOML support, including a `recommended-soml` preset (#3870) 7419b835
-- Report code that contains comments instead of ignoring it (#3847) 003f0bdc
-	- Many rules skipped code with comments. They now report it, and only withhold fixes that would remove comments. You may see new reports.
-- Fix cyclic resolution in type-aware checks (#3826) 5e77e19e
-- `prefer-default-parameters`: Add `checkFallbackExpressions` option (#3837) 71bbf59a
-- `prefer-ternary`: Add `checkVaryingBase` and `checkComputedMemberAccess` options (#3869) 1af3c2b2
-- `consistent-boolean-name`: Allow `does` prefix by default (#3853) cfad028d
-- `consistent-boolean-name`: Recognize promise-returning functions (#3879) 769e3b87
-- `consistent-boolean-name`: Fix cyclic type parameter resolution (#3821) 5c4808ba
-- `no-asterisk-prefix-in-documentation-comments`: Remove shared inde
-
-... (truncated)]]></description>
-    <pubDate>Mon, 12 Oct 2026 19:05:50 GMT</pubDate>
-  </item>
-  <item>
     <title>[anomalyco/opencode] v1.19.0</title>
     <link>https://github.com/anomalyco/opencode/releases/tag/v1.19.0</link>
     <guid isPermaLink="true">https://github.com/anomalyco/opencode/releases/tag/v1.19.0</guid>
@@ -1004,130 +1109,6 @@ For now you can view the generated release notes below.
 
 * add linkParenPossible to lexer state to fail fast for link token generation (#4070) (4ee44f7)]]></description>
     <pubDate>Mon, 05 Oct 2026 15:39:27 GMT</pubDate>
-  </item>
-  <item>
-    <title>[inokawa/virtua] 0.53.0</title>
-    <link>https://github.com/inokawa/virtua/releases/tag/0.53.0</link>
-    <guid isPermaLink="true">https://github.com/inokawa/virtua/releases/tag/0.53.0</guid>
-    <description><![CDATA[## What's Changed
-* Refactor e2e by @inokawa in 
-* Refactor e2e by @inokawa in 
-* Add browser tests by @inokawa in 
-* Refactor e2e by @inokawa in 
-* Widen ViewportComponentAttributes to all attrs by @inokawa in 
-* Refactor e2e by @inokawa in 
-* Refactor e2e by @inokawa in 
-* Add browser tests by @inokawa in 
-* Add browser tests by @inokawa in 
-* Improve perf of browser tests by @inokawa in 
-* Refactor e2e by @inokawa in 
-* Refactor e2e by @inokawa in 
-* Refactor e2e by @inokawa in 
-* Refactor e2e by @inokawa in 
-* Refactor e2e by @inokawa in 
-* Remove playwright by @inokawa in 
-* Refactor e2e by @inokawa in 
-* Change default display of horizontal VList to block by @inokawa in 
-* Add VMasonry component by @inokawa in 
-
-
-**Full Changelog**:]]></description>
-    <pubDate>Sun, 04 Oct 2026 16:13:43 GMT</pubDate>
-  </item>
-  <item>
-    <title>[remix-run/remix] test v1.0.0 (test@1.0.0)</title>
-    <link>https://github.com/remix-run/remix/releases/tag/test%401.0.0</link>
-    <guid isPermaLink="true">https://github.com/remix-run/remix/releases/tag/test%401.0.0</guid>
-    <description><![CDATA[### Major Changes
-
-- First stable release.
-
-### Patch Changes
-
-- Bumped `@remix-run/*` dependencies:
- - `node-tsx@1.0.0`
- - `terminal@1.0.0`]]></description>
-    <pubDate>Thu, 01 Oct 2026 23:08:40 GMT</pubDate>
-  </item>
-  <item>
-    <title>[rust-lang/rust] Rust 1.99.0 (1.99.0)</title>
-    <link>https://github.com/rust-lang/rust/releases/tag/1.99.0</link>
-    <guid isPermaLink="true">https://github.com/rust-lang/rust/releases/tag/1.99.0</guid>
-    <description><![CDATA[<a id="1.99.0-Language"></a>
-
-## Language
-
-- Add allow-by-default `raw_borrows_via_references` lint that checks for references that decay immediately into raw borrows
-- Extend `unconditional_panic` lint to function calls that panic when the chunks/windows size is zero
-- Stabilize C-variadic function definitions
-- [Stabilize the ability to use `#[unsafe(naked)]` functions to define C-variadic functions (`#![feature(c_variadic_naked_functions)]`).]
-- Trait methods are now resolved on an adjusted never type (producing a FCW)
-- Coerce from inference variables to trait objects if the inference variable is related via subtyping to a type that is known to be `Sized`
-- [Stabilize `#[my_macro] mod foo;`]. This allows outlined modules (`mod foo;`) anywhere in the body of a custom attribute or derive macro.
-- Fix the `overflowing_literals` lint with repeated negation. For instance, it will now no longer lint on `--128_i8`, which is already detected by the `arithmetic_overflow` lint.
-- Add POSIX s
-
-... (truncated)]]></description>
-    <pubDate>Thu, 01 Oct 2026 12:41:12 GMT</pubDate>
-  </item>
-  <item>
-    <title>[mongodb/node-mongodb-native] v7.7.0</title>
-    <link>https://github.com/mongodb/node-mongodb-native/releases/tag/v7.7.0</link>
-    <guid isPermaLink="true">https://github.com/mongodb/node-mongodb-native/releases/tag/v7.7.0</guid>
-    <description><![CDATA[## 7.7.0 (2026-09-28)
-
-The MongoDB Node.js team is pleased to announce version 7.7.0 of the `mongodb` package!
-
-## Release Notes
-
-### OIDC authentication recovers from a failed token fetch
-
-A single failed OIDC token fetch, such as a cloud metadata endpoint timing out, used to leave the driver's token-fetch mutex holding that failure. Every later operation on the affected `MongoClient` then failed with the original error without attempting a new token fetch, and only restarting the process restored authentication. A failed token fetch now affects only the operation that triggered it.
-
-### Driver dependencies updates
-
-Dependency version changes:
-- `bson`: 7.2.0 -> 7.3.2
-- `mongodb-connection-string-url`: 7.0.1 -> 7.0.2
-- `mongodb-js/saslprep`: 1.4.11 -> 1.5.0
-
-### Features
-
-* **NODE-7670:** update dependencies, including next BSON minor (#5034) (995edbf)
-
-### Bug Fixes
-
-* **NODE-7858:** re-arm OIDC callback lock after a rejection (#5056) (7e953ed)
-## Documentatio
-
-... (truncated)]]></description>
-    <pubDate>Mon, 28 Sep 2026 16:00:18 GMT</pubDate>
-  </item>
-  <item>
-    <title>[mswjs/msw] v3.0.0</title>
-    <link>https://github.com/mswjs/msw/releases/tag/v3.0.0</link>
-    <guid isPermaLink="true">https://github.com/mswjs/msw/releases/tag/v3.0.0</guid>
-    <description><![CDATA[## v3.0.0 (2026-09-28)
-
-- v3.0.0 (#2692) (2bb43428b79ac06f94bb8ea8aeacd6102fe31f56) @kettanaito @Andarist
-
-### ⚠️ BREAKING CHANGES
-
-- **MSW is now ESM-only** (#2765).
-- Deprecate support for Node.js v18 and v20 (#2729). The minimal supported Node.js version is v22.
-- `msw/native` is removed in favor of `@msw/react-native`.
-- Require TypeScript 5.9 as the minimal version.
-- Deprecate support for TypeScript 5.1 and 5.2 (#2730)
-- `worker.stop` returns a Promise (#2724). Awaiting it is relevant only for in-flight critical scenarios.
-- `graphql` is now exported as `msw/graphql` (#2691). GraphQL is now handled as a proper optional peer dependency.
-- Removes the `handleRequest` utility. Please use the `defineNetwork` API instead.
-- `GraphQLLinkHandlers` type has been renamed to `GraphQLLink`.
-- The `file://` requests now throw in Node.js as they normally do (not supported by `fetch`).
-- The `Content-Length` request header is now removed by `bypass`.
-- HTTP-to-WebSocket upgrad
-
-... (truncated)]]></description>
-    <pubDate>Mon, 28 Sep 2026 15:40:54 GMT</pubDate>
   </item>
 </channel>
 </rss>
