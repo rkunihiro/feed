@@ -5,8 +5,22 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Fri, 23 Oct 2026 22:02:11 GMT</lastBuildDate>
+  <lastBuildDate>Sat, 24 Oct 2026 22:02:10 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[theMackabu/ant] v16.5.c41757b4.0</title>
+    <link>https://github.com/theMackabu/ant/releases/tag/v16.5.c41757b4.0</link>
+    <guid isPermaLink="true">https://github.com/theMackabu/ant/releases/tag/v16.5.c41757b4.0</guid>
+    <description><![CDATA[> [!IMPORTANT]
+> This release includes fixes for several security issues in fetch, HTTP, TLS, DNS, the sandbox, WebAssembly, FFI, Buffer, and the package manager. Upgrading is recommended for all users.
+
+We now have real threads in Ant. `worker_threads` and the web `Worker` now run on in-process isolates instead of child processes, with Node-compatible messaging, `MessageChannel`, `BroadcastChannel`, and cross-thread `navigator.locks`. The new `ant:isolate` module runs untrusted code under memory limits and timeouts. Several realms can now share one isolate, so `node:vm` contexts get their own intrinsics. Async functions now run in the JIT, async calls are up to 2x cheaper, and `return await` settles in the same tick as in Node.
+
+This release also replaces the Zig package manager with one written in TypeScript on top of upm, which removes Zig from the build. `--watch` now runs on isolates, and the new `--hot` flag reloads changed modules in place. `node:dns` is rewritten, TLS and 
+
+... (truncated)]]></description>
+    <pubDate>Sat, 24 Oct 2026 06:27:15 GMT</pubDate>
+  </item>
   <item>
     <title>[fastapi/fastapi] 0.162.0</title>
     <link>https://github.com/fastapi/fastapi/releases/tag/0.162.0</link>
@@ -1090,25 +1104,6 @@ For now you can view the generated release notes below.
 
 ... (truncated)]]></description>
     <pubDate>Mon, 05 Oct 2026 18:32:02 GMT</pubDate>
-  </item>
-  <item>
-    <title>[markedjs/marked] v18.1.0</title>
-    <link>https://github.com/markedjs/marked/releases/tag/v18.1.0</link>
-    <guid isPermaLink="true">https://github.com/markedjs/marked/releases/tag/v18.1.0</guid>
-    <description><![CDATA[# 18.1.0 (2026-10-05)
-
-
-### Bug Fixes
-
-* avoid cubic backtracking on unicode whitespace in a link destination (#4106) (0d20220)
-* load CLI configs with top-level await (#4100) (c61543e)
-* reject unbalanced parentheses in link destinations (#4107) (3363c99)
-
-
-### Features
-
-* add linkParenPossible to lexer state to fail fast for link token generation (#4070) (4ee44f7)]]></description>
-    <pubDate>Mon, 05 Oct 2026 15:39:27 GMT</pubDate>
   </item>
 </channel>
 </rss>
