@@ -5,8 +5,22 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Sat, 24 Oct 2026 22:02:10 GMT</lastBuildDate>
+  <lastBuildDate>Sun, 25 Oct 2026 22:02:03 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[anomalyco/opentui] Release v0.7.0 (v0.7.0)</title>
+    <link>https://github.com/anomalyco/opentui/releases/tag/v0.7.0</link>
+    <guid isPermaLink="true">https://github.com/anomalyco/opentui/releases/tag/v0.7.0</guid>
+    <description><![CDATA[Before 0.7.0, typing one character in a 10,000-line Textarea laid out all 10,000 lines before the key call returned, and the Yoga measure of the next frame walked them again. Typing and pasting slowed down with the size of the document, and word wrap paid the most. In 0.7.0, an edit only records that the view must scroll to the cursor. The layout runs once, at the next read of the viewport or the visual cursor, or at the next frame. It compares the text with the text of the last layout and lays out only the lines around the change. An insert, a delete, an undo, or a join lays out one line. Enter lays out two lines, and a 100-line paste lays out 101.
+
+A read that needs the layout still pays for it. `visualCursor` lays out the text when an edit is pending. `cursorOffset` reads the logical cursor and does not lay out the text. To check after each key whether the cursor is at the start of the text, compare `cursorOffset`:
+
+```ts
+const atStart = input.cursorOffset === 0 // not input.visualC
+
+... (truncated)]]></description>
+    <pubDate>Sun, 25 Oct 2026 20:49:51 GMT</pubDate>
+  </item>
   <item>
     <title>[theMackabu/ant] v16.5.c41757b4.0</title>
     <link>https://github.com/theMackabu/ant/releases/tag/v16.5.c41757b4.0</link>
@@ -909,30 +923,6 @@ specify init my-project
 
 ... (truncated)]]></description>
     <pubDate>Sat, 10 Oct 2026 21:13:24 GMT</pubDate>
-  </item>
-  <item>
-    <title>[anomalyco/opentui] Release v0.6.0 (v0.6.0)</title>
-    <link>https://github.com/anomalyco/opentui/releases/tag/v0.6.0</link>
-    <guid isPermaLink="true">https://github.com/anomalyco/opentui/releases/tag/v0.6.0</guid>
-    <description><![CDATA[OpenTUI 0.5 kept the renderable tree in JavaScript. On each frame, JavaScript
-walked the tree and read each node's position back from Yoga. It then made one
-native call for each draw, so the cost of a frame grew with the number of
-nodes and draws. In 0.6.0, native code owns the tree. Each `Renderable` has a
-node in a native _scene_, which holds the node's Yoga node and paint state.
-Layout and paint setters stage their changes, and Core sends all staged
-changes to native code in one call before each frame step. Native code then
-lays out, clips, and paints the scene and fills the hit grid. It draws most
-built-in renderables without a call to JavaScript. When no visible node has a
-JavaScript hook, one native frame step lays out and paints the whole frame.
-Rendering pipeline follows a
-complete frame.
-
-The built-in renderables and the React and Solid bindings keep their option
-names, but a few option values now throw, such as `enableLayout: false`.
-Custom renderables may need a little work.
-
-... (truncated)]]></description>
-    <pubDate>Sat, 10 Oct 2026 20:13:59 GMT</pubDate>
   </item>
   <item>
     <title>[astral-sh/uv] 0.13.0</title>
