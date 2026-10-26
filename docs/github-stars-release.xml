@@ -5,8 +5,183 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Sun, 25 Oct 2026 22:02:03 GMT</lastBuildDate>
+  <lastBuildDate>Mon, 26 Oct 2026 22:02:40 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[obsidianmd/pele] 1.11.0</title>
+    <link>https://github.com/obsidianmd/pele/releases/tag/1.11.0</link>
+    <guid isPermaLink="true">https://github.com/obsidianmd/pele/releases/tag/1.11.0</guid>
+    <description><![CDATA[- The new `monospace` option lists the parts of a diagram to draw in the monospace font, sized to fit: class `members`, ER `attributes`, TreeView `files` and sequence `messages`. #12 #96
+- Sequence: with `maxWidth` set, long messages use the spare width when that fits them on fewer lines. #18 #88
+- Treemap: all nodes appear, including boxes in sections too small for their header. Labels fit at the font size their class sets. Tooltips show a box's full name when its label is cut short, and its section's name when the section header is hidden. Crowded treemaps use tighter spacing. #91
+- Block: labels on edges between the same two blocks stack along the edge instead of overlapping. When they don't fit, the gap between the blocks grows. #92
+- Zoom: the first click after a pinch or a long touch pan is no longer ignored. #49]]></description>
+    <pubDate>Mon, 26 Oct 2026 19:40:04 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-10-26) (release-2026-10-26)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-26</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-26</guid>
+    <description><![CDATA[## General Highlights
+* **Dependency Update**: Updated to the latest SDK module versions
+
+## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/feature/s3/transfermanager`: [v0.5.0](feature/s3/transfermanager/CHANGELOG.md#v050-2026-10-26)
+ * **Feature**: Improve DownloadDirectory throughput and memory usage by downloading objects with DownloadObject, and only replace an existing file once its download succeeds.
+* `github.com/aws/aws-sdk-go-v2/service/appstream`: [v1.73.0](service/appstream/CHANGELOG.md#v1730-2026-10-26)
+ * **Feature**: Add Windows 11 to PlatformType enum
+* `github.com/aws/aws-sdk-go-v2/service/billing`: [v1.23.0](service/billing/CHANGELOG.md#v1230-2026-10-26)
+ * **Feature**: Adds support for managing private pricing contracts and contractual investments including listing and associating contracts, retrieving contractual investments and their summaries, and creating, listing, and canceling contractual investment attestations
+* `github.com/aws/aws-sdk-go-v2/service/connec
+
+... (truncated)]]></description>
+    <pubDate>Mon, 26 Oct 2026 18:42:56 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1157.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1157.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1157.0</guid>
+    <description><![CDATA[#### 3.1157.0(2026-10-26)
+
+##### Chores
+
+* **codegen:** sync for service default socket timeout and RPC v2 JSON (#8378) (f9d9119f)
+
+##### Documentation Changes
+
+* **client-deadline:** fix the sdk documenation issue only (e3bf3c6c)
+
+##### New Features
+
+* **clients:** update client endpoints as of 2026-10-26 (a95658fd)
+* **client-connect:** Amazon Connect now automatically saves agents' in-progress email drafts preserving the message, recipients, and subject during browser or network interruptions so agents can return to the mail and continue instead of starting over. (d03e5700)
+* **client-appstream:** Add Windows 11 to PlatformType enum (52666c31)
+* **client-lightsail:** This release adds Web Application Firewall (WAF) support for Lightsail distribution. (1fee104e)
+* **client-marketplace-catalog:** This release adds support for the SubsidiaryAuthorization entity type in the ListEntities operation, including entity-type filters with partial name search, sort options, and a summary return
+
+... (truncated)]]></description>
+    <pubDate>Mon, 26 Oct 2026 18:40:44 GMT</pubDate>
+  </item>
+  <item>
+    <title>[bluesky-social/atproto] @atproto/oauth-provider-ui@0.11.0</title>
+    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/oauth-provider-ui%400.11.0</link>
+    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/oauth-provider-ui%400.11.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- #5687 `943170b` Thanks @matthieusieben! - Support resetting password based on account identifier (in addition to email). When a user attempts to reset password for an Atmosphere account hosted on another service, the user will be notified and show a link to the right service.
+
+### Patch Changes
+
+- #5735 `b7dcaee` Thanks @abcbrookie! - Fix the text color of action buttons. Their custom font size class was mistaken for a text color when merging class names, which dropped the button's own color: primary buttons showed dark text in light mode, and destructive buttons lost their red text.
+
+- #5687 `943170b` Thanks @matthieusieben! - Fix blur behavior on password field
+
+- #5663 `dc47f7b` Thanks @huketo! - Complete the Korean translation
+
+- #5687 `943170b` Thanks @matthieusieben! - Add a placeholder to the `EmailField` component
+
+- #5687 `943170b` Thanks @matthieusieben! - Accept sign-in identifiers filled by password managers (bare names when a sign-in domain is configur
+
+... (truncated)]]></description>
+    <pubDate>Mon, 26 Oct 2026 18:17:31 GMT</pubDate>
+  </item>
+  <item>
+    <title>[cloudflare/workers-sdk] @cloudflare/workers-utils@0.49.0</title>
+    <link>https://github.com/cloudflare/workers-sdk/releases/tag/%40cloudflare/workers-utils%400.49.0</link>
+    <guid isPermaLink="true">https://github.com/cloudflare/workers-sdk/releases/tag/%40cloudflare/workers-utils%400.49.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- #15955 `23ef63a` Thanks @ericclemmons! - Expand dotenv variable references in `--secrets-file` input
+
+ Dotenv files supplied through `--secrets-file` to `deploy`, `versions upload`, and `preview` now expand `$VAR` and `${VAR}` references using process values and earlier file values. Process environment values override matching file keys, including explicitly empty values. Treat dotenv secrets files as trusted input: they can read and upload any process environment value, such as a CI credential referenced by `X=${GITHUB_TOKEN}`. In CI, use secrets files whose contents untrusted contributors cannot modify.
+
+ This changes how existing dotenv secrets files are interpreted: an unset reference becomes an empty string, so `PASSWORD=pa$word` becomes `pa` when `word` is unset. Escape literal dollar signs with a backslash (`PASSWORD=pa\$word`), or use a JSON secrets file to preserve values exactly. JSON input and bulk-secret commands, including piped stdin, retain their exi
+
+... (truncated)]]></description>
+    <pubDate>Mon, 26 Oct 2026 14:33:30 GMT</pubDate>
+  </item>
+  <item>
+    <title>[wailsapp/wails] Wails v3.0.0 (v3.0.0)</title>
+    <link>https://github.com/wailsapp/wails/releases/tag/v3.0.0</link>
+    <guid isPermaLink="true">https://github.com/wailsapp/wails/releases/tag/v3.0.0</guid>
+    <description><![CDATA[# Wails v3.0.0
+
+**Wails v3 is here.** Build desktop and mobile applications with Go and the web frontend you already know, using each platform's native WebView instead of a bundled browser.
+
+v3 is a ground-up rework of Wails. Applications, windows, services, events and platform features are now explicit objects you create and talk to directly, so multiple windows, system trays and background services are a normal part of the model rather than workarounds. It has been nearly four years since the first v3 alpha in January 2023. Thank you to everyone who tested, reported, translated, reviewed and contributed along the way.
+
+📣 **Read the announcement:** Wails v3.0.0 Released
+📚 **Documentation:** wails.io · **Migrating from v2:** v2 to v3 guide
+
+## Install
+
+```bash
+go install github.com/wailsapp/wails/v3/cmd/wails3@v3.0.0
+wails3 setup # guided setup: checks your system and installs what Wails needs
+wails3 init # create a new project
+```
+
+Wails v3 requires **Go 1.26 or newer**. We recommen
+
+... (truncated)]]></description>
+    <pubDate>Mon, 26 Oct 2026 11:15:13 GMT</pubDate>
+  </item>
+  <item>
+    <title>[esm-dev/esm.sh] Server v140_1 (v140_1)</title>
+    <link>https://github.com/esm-dev/esm.sh/releases/tag/v140_1</link>
+    <guid isPermaLink="true">https://github.com/esm-dev/esm.sh/releases/tag/v140_1</guid>
+    <description><![CDATA[* Add `npmStoreMaxSize` and `storage.cacheMaxSize` options to limit the size of local caches. (#1492)
+* Fix automatic cache purging on low disk space and inodes, and retry installs once on `ENOSPC`. (#1483, #1492)
+* Remove abandoned build tasks from the queue and honor cancellation during analysis and module resolution. (#1491)
+* Fix build queue stalls caused by builds waiting for the splitting analysis of other builds. (#1493)]]></description>
+    <pubDate>Mon, 26 Oct 2026 09:27:21 GMT</pubDate>
+  </item>
+  <item>
+    <title>[project-tsurugi/tsurugidb] 1.13.0</title>
+    <link>https://github.com/project-tsurugi/tsurugidb/releases/tag/1.13.0</link>
+    <guid isPermaLink="true">https://github.com/project-tsurugi/tsurugidb/releases/tag/1.13.0</guid>
+    <description><![CDATA[### Release Notes
+- Tsurugi 1.13.0 - Release Notes (en)
+- Tsurugi 1.13.0 - Release Notes (ja)
+- Tsurugi 1.13.0 - Changelog
+- Tsurugi 1.13.0 - Known Issues (en)
+- Tsurugi 1.13.0 - Known Issues (ja)
+
+#### Download installer archive
+
+```sh
+curl -OL 
+```
+
+#### Download Docker image
+
+```sh
+docker pull ghcr.io/project-tsurugi/tsurugidb:1.13.0
+```
+
+> [!WARNING] 
+The `Source code (zip)` or `Source code (tar.gz)` in `Assets` are automatically generated links by GitHub, and these archives does not contain files needed for installation.]]></description>
+    <pubDate>Mon, 26 Oct 2026 07:53:59 GMT</pubDate>
+  </item>
+  <item>
+    <title>[axios/axios] v1.21.0</title>
+    <link>https://github.com/axios/axios/releases/tag/v1.21.0</link>
+    <guid isPermaLink="true">https://github.com/axios/axios/releases/tag/v1.21.0</guid>
+    <description><![CDATA[## v1.21.0 — October 21, 2026
+
+This release adds response timing and opt-in UTF-8 Basic authentication, improves request handling across runtimes, and changes how header defaults are recognized.
+
+## ⚠️ Breaking Changes & Deprecations
+
+* **Header Defaults:** Only plain objects, null-prototype maps, and compatible `AxiosHeaders` instances are treated as common or method-specific defaults; literal headers such as `Link` are now preserved. Applications using custom class instances as defaults must convert them to plain maps, for example `{ post: { ...customDefaults } }`, or compatible `AxiosHeaders`. Otherwise, those instances become literal header values, including on requests using other methods. (__#11156__)
+
+## 🚀 New Features
+
+* **Response Timing:** Added `response.duration`, in milliseconds, including on `error.response` when present. Timing measures adapter execution and excludes interceptors and transforms; streamed responses stop timing when the stream becomes available.
+
+... (truncated)]]></description>
+    <pubDate>Mon, 26 Oct 2026 07:10:45 GMT</pubDate>
+  </item>
   <item>
     <title>[anomalyco/opentui] Release v0.7.0 (v0.7.0)</title>
     <link>https://github.com/anomalyco/opentui/releases/tag/v0.7.0</link>
@@ -106,33 +281,6 @@ For HTML checkboxes, declare a boolean with a default of `False`. See Boolean Fo
     <pubDate>Fri, 23 Oct 2026 16:44:57 GMT</pubDate>
   </item>
   <item>
-    <title>[cloudflare/workers-sdk] @cloudflare/vite-plugin@1.65.0</title>
-    <link>https://github.com/cloudflare/workers-sdk/releases/tag/%40cloudflare/vite-plugin%401.65.0</link>
-    <guid isPermaLink="true">https://github.com/cloudflare/workers-sdk/releases/tag/%40cloudflare/vite-plugin%401.65.0</guid>
-    <description><![CDATA[### Minor Changes
-
-- #16363 `d3240f2` Thanks @jamesopstad! - Remove the `experimental.newConfig` option from Vite plugin v1
-
- Vite plugin v1 now supports Wrangler configuration files only. Projects using `cloudflare.config.ts` for configuration should upgrade to Vite plugin v2 beta.
-
-### Patch Changes
-
-- #16373 `8cc5f87` Thanks @petebacondarwin! - Report unsupported remote bindings under Bun instead of hanging
-
- Starting remote bindings now fails with an actionable error explaining Bun's unsupported request routing. Use Node.js or disable remote bindings to continue local development.
-
-- #16334 `9cecd09` Thanks @petebacondarwin! - Fix Container setup guidance in Vite development and preview
-
- Container registry instructions now show the Wrangler command and the configuration location, including Wrangler files and inline Vite configuration.
-
-- #16333 `68d6eec` Thanks @petebacondarwin! - Update the local Workers runtime to the October 19 release
-
- Include the fix for nested asset paths d
-
-... (truncated)]]></description>
-    <pubDate>Fri, 23 Oct 2026 07:25:28 GMT</pubDate>
-  </item>
-  <item>
     <title>[openai/codex] 0.164.0 (rust-v0.164.0)</title>
     <link>https://github.com/openai/codex/releases/tag/rust-v0.164.0</link>
     <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.164.0</guid>
@@ -225,47 +373,6 @@ For HTML checkboxes, declare a boolean with a default of `False`. See Boolean Fo
 
 * update attestation client auth to draft-12 (aec461c)]]></description>
     <pubDate>Thu, 22 Oct 2026 19:36:16 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-10-22) (release-2026-10-22)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-22</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-22</guid>
-    <description><![CDATA[## General Highlights
-* **Bug Fix**: Update smithy-go to v1.28.6
-* **Dependency Update**: Updated to the latest SDK module versions
-
-## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/backupsearch`: [v1.16.0](service/backupsearch/CHANGELOG.md#v1160-2026-10-22)
- * **Feature**: Enable schema-based (de)serialization for this service.
-* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcore`: [v1.55.0](service/bedrockagentcore/CHANGELOG.md#v1550-2026-10-22)
- * **Feature**: Adds the dimension name to evaluation results and batch evaluation summaries. For multi-dimensional LLM-as-a-Judge evaluators, each result and summary now identifies which dimension it corresponds to.
- * **Feature**: Enable schema-based (de)serialization for this service.
-* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcorecontrol`: [v1.75.0](service/bedrockagentcorecontrol/CHANGELOG.md#v1750-2026-10-22)
- * **Feature**: Adds model-based routing and fallback to AgentCore Gateway rules. Rules can match the re
-
-... (truncated)]]></description>
-    <pubDate>Thu, 22 Oct 2026 18:47:16 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-js-v3] v3.1156.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1156.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1156.0</guid>
-    <description><![CDATA[#### 3.1156.0(2026-10-22)
-
-##### Documentation Changes
-
-* **client-lambda:** AWS Lambda durable functions now supports payloads up to 1 MB for checkpoints, callback completion, and error details. (cdd6c609)
-
-##### New Features
-
-* **clients:** update client endpoints as of 2026-10-22 (e5cd1562)
-* **client-opensearchserverless:** Adds APIs to create, get, list, and cancel ingestion jobs, and to create, get, list, and delete ingestion streams, for ingesting data from Amazon S3 into OpenSearch Serverless collections. (7712bce0)
-* **client-continuum:** Releasing Continuum for Code Vulnerabilities APIs for SDKs (0cbbd64c)
-* **client-connect:** Adds support for customer queryable replication errors. (4507ef01)
-* **client-ec2:** AWS Transit Gateway now provides managed one-to-one NAT directly on its attachments, through integration with Regional Private NAT Gateway. Use ModifyTransitGatewayAttachmentNatConfiguration to enable NAT and configure NAT rules, and GetTransitGatewayAttachmentNatConfi
-
-... (truncated)]]></description>
-    <pubDate>Thu, 22 Oct 2026 18:43:00 GMT</pubDate>
   </item>
   <item>
     <title>[arktypeio/arktype] @arktype/attest@0.58.0</title>
@@ -424,23 +531,6 @@ If you use HTTPS as your git protocol, we advise using git 2.46 or newer and let
 
 ... (truncated)]]></description>
     <pubDate>Tue, 20 Oct 2026 22:56:05 GMT</pubDate>
-  </item>
-  <item>
-    <title>[esm-dev/esm.sh] Server v140 (v140)</title>
-    <link>https://github.com/esm-dev/esm.sh/releases/tag/v140</link>
-    <guid isPermaLink="true">https://github.com/esm-dev/esm.sh/releases/tag/v140</guid>
-    <description><![CDATA[* Add one-day `stale-if-error` and `stale-while-revalidate` cache windows for package responses and floating versions. (#1426, #1428, #1429)
-* Prevent code injection through dependency aliases and cache collisions from malformed build arguments. (#1480)
-* Restrict filesystem storage and relative declaration references to their roots. (#1478, #1480)
-* Serve raw HTML, SVG, and XML files with a sandbox CSP and `nosniff` headers. (#1480)
-* Fix conditional and wildcard exports, private package imports, and extensionless module entries. (#1440, #1442, #1444, #1446, #1447, #1450)
-* Fix dependency aliases, overrides, version conflicts, and imports of published pnpm files. (#1443, #1445, #1451, #1469)
-* Prefer active npm versions for semver ranges and fix date-based version selection. (#1441, #1480)
-* Fix CommonJS export names and dependency retries for `node-fetch`, `vscode-textmate`, `prop-types`, and other packages. (#1448, #1452, #1453, #1460)
-* Preserve optional peer dependencies as lazy i
-
-... (truncated)]]></description>
-    <pubDate>Tue, 20 Oct 2026 06:59:56 GMT</pubDate>
   </item>
   <item>
     <title>[azat-io/eslint-plugin-perfectionist] v5.13.0</title>
@@ -639,27 +729,6 @@ gh attestation verify dprint-x86_64-unknown-linux-gnu.zip --repo dprint/dprint
 
 ... (truncated)]]></description>
     <pubDate>Sun, 18 Oct 2026 21:08:48 GMT</pubDate>
-  </item>
-  <item>
-    <title>[wailsapp/wails] Wails v2.17.0 (v2.17.0)</title>
-    <link>https://github.com/wailsapp/wails/releases/tag/v2.17.0</link>
-    <guid isPermaLink="true">https://github.com/wailsapp/wails/releases/tag/v2.17.0</guid>
-    <description><![CDATA[## Installation
-
-```bash
-go install github.com/wailsapp/wails/v2/cmd/wails@v2.17.0
-```
-
-## Changes
-
-### Security
-
-- Windows notifications no longer fall back to PowerShell when the WinRT toast API fails; the error is returned instead
-- `wails init` now warns that remote templates are code: the `frontend:*` commands in `wails.json` and the scripts they call run during `wails build` and `wails dev`. The warning lists the commands found in the generated `wails.json` and is also shown with `-q`. The template docs now describe this trust boundary.
-- Hardened the `wails dev` server against cross-origin and DNS-rebinding attacks on the IPC WebSocket. It previously accepted any origin and forwarded straight to the bound-method dispatcher, so a malicious page in the developer's browser could connect to `ws://localhost:34115/wails/ipc` and invoke the entire bound Go API. Every request's `Host` header is now checked against an allowlist (localhost, IP literals, the configured bind address, plus a
-
-... (truncated)]]></description>
-    <pubDate>Sun, 18 Oct 2026 03:53:50 GMT</pubDate>
   </item>
   <item>
     <title>[eslint/eslint] v10.13.0</title>
@@ -978,122 +1047,6 @@ There are no breaking changes to the configuration of the uv build backend. If y
 
 ... (truncated)]]></description>
     <pubDate>Fri, 09 Oct 2026 12:50:31 GMT</pubDate>
-  </item>
-  <item>
-    <title>[mui/base-ui] v1.9.0</title>
-    <link>https://github.com/mui/base-ui/releases/tag/v1.9.0</link>
-    <guid isPermaLink="true">https://github.com/mui/base-ui/releases/tag/v1.9.0</guid>
-    <description><![CDATA[### General changes
-
-- Export `CssVariables` and `DataAttributes` types (#5243) by @superhooman
-- Fix stale focused field state (#5345) by @atomiks
-- Fix animation waits retaining detached elements (#5719) by @flaviendelangle
-- Keep item registration in sync when items change under Strict Mode (#5862) by @atomiks
-- Avoid re-rendering inactive triggers on open and close (#5865) by @atomiks
-
-### Accordion
-
-- Fix `<Accordion.Trigger>`'s `data-value` and `data-index` attributes (#5705) by @cpruijsen
-- Apply the native `disabled` attribute to `<Accordion.Trigger>` when using native buttons (#5607) by @atomiks
-- Expand `hiddenUntilFound` panels synchronously on `beforematch` (#5514) by @aarongarciah
-
-### Alert Dialog
-
-- Don't associate a programmatically opened popup with a trigger that did not open it (#5641) by @michaldudak
-
-### Autocomplete
-
-- Fix `autoHighlight` for asynchronous results (#5818) by @atomiks
-- Pass the originating event to `onItemHighlighted`. Pointer 
-
-... (truncated)]]></description>
-    <pubDate>Fri, 09 Oct 2026 08:50:49 GMT</pubDate>
-  </item>
-  <item>
-    <title>[adobe/react-spectrum] React Aria Components v1.22.0 (react-aria-components@1.22.0)</title>
-    <link>https://github.com/adobe/react-spectrum/releases/tag/react-aria-components%401.22.0</link>
-    <guid isPermaLink="true">https://github.com/adobe/react-spectrum/releases/tag/react-aria-components%401.22.0</guid>
-    <description><![CDATA[This release introduces Sheet, a swipeable overlay that slides in from the edge of the viewport, built on native browser scroll gestures. This component is perfect for implementing touch-friendly trays such as mobile sheets, navigation drawers, and notification banners. Check out our blog post about how it works!
-
-It also adds Turbopack support to @react-aria/optimize-locales-plugin, overlay placement that accounts for the virtual keyboard, and much more!
-
-As always, many thanks to all of our contributors!
-
-Full Release Notes]]></description>
-    <pubDate>Fri, 09 Oct 2026 03:06:51 GMT</pubDate>
-  </item>
-  <item>
-    <title>[microsoft/playwright] v1.64.0</title>
-    <link>https://github.com/microsoft/playwright/releases/tag/v1.64.0</link>
-    <guid isPermaLink="true">https://github.com/microsoft/playwright/releases/tag/v1.64.0</guid>
-    <description><![CDATA[## 🧰 WebMCP
-
-New page.webmcp and frame.webmcp give access to the tools that a page registers through the experimental WebMCP browser API, so you can test them like any other part of your app:
-
-```js
-const browser = await chromium.launch({ args: ['--enable-features=WebMCP'] });
-const page = await browser.newPage;
-await page.goto('');
-
-for (const tool of await page.webmcp.tools)
- console.log(tool.name, tool.description);
-
-const result = await page.webmcp.callTool('add', { a: 2, b: 40 });
-console.log(result.content[0].text); // "42"
-```
-
-Playwright MCP also supports WebMCP by default, with page-defined tools offered to the agent as `webmcp_<tool>`. Pass `--no-webmcp` to opt out.
-
-`playwright-cli` exposes them as well:
-
-```bash
-playwright-cli webmcp-list
-playwright-cli webmcp-call search_catalog --params '{"query":"cats"}'
-```
-
-## 🎬 Better videos
-
-Videos can now be recorded at a custom frame rate, and the decorations for actions are styled with plain CSS:
-
-``
-
-... (truncated)]]></description>
-    <pubDate>Wed, 07 Oct 2026 20:40:43 GMT</pubDate>
-  </item>
-  <item>
-    <title>[servo/servo] v0.7.0</title>
-    <link>https://github.com/servo/servo/releases/tag/v0.7.0</link>
-    <guid isPermaLink="true">https://github.com/servo/servo/releases/tag/v0.7.0</guid>
-    <description><![CDATA[Servo v0.7.0 is ready, containing all the changes from September. 
-
-## Trying out the Servo Tech Demo
-
-[troubleshooting guide]: 
-
-### Linux
-
-If you see an error `loading shared libraries` when starting servo on Linux, please refer to the [troubleshooting guide].
-
-### HarmonyOS
-
-Please note that the `servo-aarch64-linux-ohos.hap` attached here is signed for OpenHarmony, not HarmonyOS.
-For HarmonyOS self-signing is currently required - You can download the `servo-aarch64-linux-ohos.so` shared library and use DevEco Studio to follow the instructions in the ArkTS Servo Demo repository
-
-## What's Changed
-
-This section will be updated with a link to the September blog-post once it is released with a curated overview over the recent changes.
-For now you can view the generated release notes below.
-
-<details>
- <summary>Generated Release notes</summary>
-
-<!-- Release notes generated using configuration in .github/release.yml at release/v0.7 -->
-
-## What's Changed
-* blue
-
-... (truncated)]]></description>
-    <pubDate>Mon, 05 Oct 2026 18:32:02 GMT</pubDate>
   </item>
 </channel>
 </rss>
