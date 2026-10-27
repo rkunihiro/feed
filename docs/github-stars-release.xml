@@ -5,62 +5,188 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Mon, 26 Oct 2026 22:02:40 GMT</lastBuildDate>
+  <lastBuildDate>Tue, 27 Oct 2026 22:01:41 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
   <item>
-    <title>[obsidianmd/pele] 1.11.0</title>
-    <link>https://github.com/obsidianmd/pele/releases/tag/1.11.0</link>
-    <guid isPermaLink="true">https://github.com/obsidianmd/pele/releases/tag/1.11.0</guid>
-    <description><![CDATA[- The new `monospace` option lists the parts of a diagram to draw in the monospace font, sized to fit: class `members`, ER `attributes`, TreeView `files` and sequence `messages`. #12 #96
-- Sequence: with `maxWidth` set, long messages use the spare width when that fits them on fewer lines. #18 #88
-- Treemap: all nodes appear, including boxes in sections too small for their header. Labels fit at the font size their class sets. Tooltips show a box's full name when its label is cut short, and its section's name when the section header is hidden. Crowded treemaps use tighter spacing. #91
-- Block: labels on edges between the same two blocks stack along the edge instead of overlapping. When they don't fit, the gap between the blocks grows. #92
-- Zoom: the first click after a pinch or a long touch pan is no longer ignored. #49]]></description>
-    <pubDate>Mon, 26 Oct 2026 19:40:04 GMT</pubDate>
+    <title>[openai/codex] 0.165.0 (rust-v0.165.0)</title>
+    <link>https://github.com/openai/codex/releases/tag/rust-v0.165.0</link>
+    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.165.0</guid>
+    <description><![CDATA[## New Features
+
+- Added a built-in Google Cloud Vertex AI provider, configured with `model_provider = "gcp"`. (#56265)
+- Added GPT-6.1 Terra to the model catalogs. (#57337)
+- Added a repository filter to the session picker and directory grouping to the agent command center, making it easier to navigate sessions across linked worktrees. (#56308)
+- Added experimental attached thread forks to the app-server API. (#56351)
+- Enabled reasoning effort changes during a conversation by default for supported models. (#56163)
+- Enabled memory v2 by default for fresh profiles and added support for importing external-agent memories into it. (#56211, #56414)
+
+## Bug Fixes
+
+- Fixed fresh TUI sessions to honor the server’s default approval reviewer when no explicit override is provided. (#56090)
+- Kept TUI preferences editable and immediately applicable when execution settings are invalid. (#56091)
+- Cancelled remote MCP tool requests when their local response futures are dropped. (#56132)
+- Prevente
+
+... (truncated)]]></description>
+    <pubDate>Tue, 27 Oct 2026 20:09:38 GMT</pubDate>
   </item>
   <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-10-26) (release-2026-10-26)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-26</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-26</guid>
+    <title>[aws/aws-sdk-go-v2] Release (2026-10-27) (release-2026-10-27)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-27</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-27</guid>
     <description><![CDATA[## General Highlights
+* **Dependency Update**: Update to smithy-go v1.28.7.
 * **Dependency Update**: Updated to the latest SDK module versions
 
 ## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/feature/s3/transfermanager`: [v0.5.0](feature/s3/transfermanager/CHANGELOG.md#v050-2026-10-26)
- * **Feature**: Improve DownloadDirectory throughput and memory usage by downloading objects with DownloadObject, and only replace an existing file once its download succeeds.
-* `github.com/aws/aws-sdk-go-v2/service/appstream`: [v1.73.0](service/appstream/CHANGELOG.md#v1730-2026-10-26)
- * **Feature**: Add Windows 11 to PlatformType enum
-* `github.com/aws/aws-sdk-go-v2/service/billing`: [v1.23.0](service/billing/CHANGELOG.md#v1230-2026-10-26)
- * **Feature**: Adds support for managing private pricing contracts and contractual investments including listing and associating contracts, retrieving contractual investments and their summaries, and creating, listing, and canceling contractual investment attestations
-* `github.com/aws/aws-sdk-go-v2/service/connec
+* `github.com/aws/aws-sdk-go-v2/credentials`: [v1.20.12](credentials/CHANGELOG.md#v12012-2026-10-27)
+ * **Bug Fix**: Fixed the login credential panic when a retrieved token missed required fields
+ * **Bug Fix**: Return an error instead of panicking when an STS AssumeRole or AssumeRoleWithWebIdentity response is missing credentials.
+* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcorecontrol`: [v1.76.0](service/bedrockagentcorecontrol/CHANGELOG.md#v1760-2026-10-27)
+ * **Feature**: Adds the ResetTokenVaultKeyMaterial API, which restores a token vault whose customer managed key was deleted by moving it to an AWS owned key. The reset permanently deletes the stored OAuth 2.0 tokens, users must consent again. Adds on-behalf-of token exchange client authentication override option.
+* `github.com/aws/aws-sdk-go-v2/service/ec2`: 
 
 ... (truncated)]]></description>
-    <pubDate>Mon, 26 Oct 2026 18:42:56 GMT</pubDate>
+    <pubDate>Tue, 27 Oct 2026 18:45:51 GMT</pubDate>
   </item>
   <item>
-    <title>[aws/aws-sdk-js-v3] v3.1157.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1157.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1157.0</guid>
-    <description><![CDATA[#### 3.1157.0(2026-10-26)
+    <title>[aws/aws-sdk-js-v3] v3.1158.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1158.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1158.0</guid>
+    <description><![CDATA[#### 3.1158.0(2026-10-27)
 
 ##### Chores
 
-* **codegen:** sync for service default socket timeout and RPC v2 JSON (#8378) (f9d9119f)
-
-##### Documentation Changes
-
-* **client-deadline:** fix the sdk documenation issue only (e3bf3c6c)
+* **codegen:** smithy-aws-typescript-codegen 0.55.0 (#8385) (4a149acb)
 
 ##### New Features
 
-* **clients:** update client endpoints as of 2026-10-26 (a95658fd)
-* **client-connect:** Amazon Connect now automatically saves agents' in-progress email drafts preserving the message, recipients, and subject during browser or network interruptions so agents can return to the mail and continue instead of starting over. (d03e5700)
-* **client-appstream:** Add Windows 11 to PlatformType enum (52666c31)
-* **client-lightsail:** This release adds Web Application Firewall (WAF) support for Lightsail distribution. (1fee104e)
-* **client-marketplace-catalog:** This release adds support for the SubsidiaryAuthorization entity type in the ListEntities operation, including entity-type filters with partial name search, sort options, and a summary return
+* **client-license-manager:** AWS License Manager now supports delegate grants for read-only visibility into license distributions. CreateGrant accepts a new GrantType (BuyerGrant or DelegateGrant) and a desired status at distribution time. (c2b033fe)
+* **client-ecs:** ECS now supports GPU sharing via NVIDIA Multi-Process Service (MPS) on ECS Managed Instances and ECS EC2, allowing multiple ECS tasks to share a single Nvidia GPU for improved utilization. (82c0bea6)
+* **client-bedrock-agentcore-control:** Adds the ResetTokenVaultKeyMaterial API, which restores a token vault whose customer managed key was deleted by moving it to an AWS owned key. The reset permanently deletes the stored OAuth 2.0 tokens, users must consent again. Adds on-behalf-of token exchange client authentication override option. (caa886f6)
+* **client-inspector2:** Adding support for Ma
 
 ... (truncated)]]></description>
-    <pubDate>Mon, 26 Oct 2026 18:40:44 GMT</pubDate>
+    <pubDate>Tue, 27 Oct 2026 18:40:19 GMT</pubDate>
+  </item>
+  <item>
+    <title>[cloudflare/workers-sdk] wrangler@4.154.0</title>
+    <link>https://github.com/cloudflare/workers-sdk/releases/tag/wrangler%404.154.0</link>
+    <guid isPermaLink="true">https://github.com/cloudflare/workers-sdk/releases/tag/wrangler%404.154.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- #16494 `0968b08` Thanks @petebacondarwin! - Enable Miniflare's development registry by default and centralize path resolution
+
+ In Miniflare v5 beta, resolve the registry from `CLOUDFLARE_DEV_REGISTRY_PATH`, then the `unsafeDevRegistryPath` constructor option, then `<Cloudflare config directory>/dev-registry/v5`. The default is independent of legacy Wrangler directories and is scoped to the Miniflare major version. The Vite v2 beta plugin follows this new default, while current Wrangler and `getPlatformProxy` retain Wrangler's legacy default for compatibility with existing Wrangler sessions. Vite v2 and Wrangler therefore require the same `CLOUDFLARE_DEV_REGISTRY_PATH` to discover each other; set it for both processes when mixing these tools.
+
+ Add `enableDevRegistry: false` to disable registration and discovery explicitly. Shared storage now uses the resolved default without requiring an explicit path. As before, shared storage requires an enabled registry to elec
+
+... (truncated)]]></description>
+    <pubDate>Tue, 27 Oct 2026 17:14:42 GMT</pubDate>
+  </item>
+  <item>
+    <title>[lynx-family/lynx] 4.2.0</title>
+    <link>https://github.com/lynx-family/lynx/releases/tag/4.2.0</link>
+    <guid isPermaLink="true">https://github.com/lynx-family/lynx/releases/tag/4.2.0</guid>
+    <description><![CDATA[### Related Dependencies
+
+```js
+// Android:
+org.lynxsdk.lynx:primjs:4.2.1
+
+// iOS
+pod 'PrimJS', '4.2.1', :subspecs => ['quickjs', 'napi']
+
+// Harmony
+@lynx/primjs: 4.2.1
+```]]></description>
+    <pubDate>Tue, 27 Oct 2026 15:44:59 GMT</pubDate>
+  </item>
+  <item>
+    <title>[inokawa/virtua] 0.54.0</title>
+    <link>https://github.com/inokawa/virtua/releases/tag/0.54.0</link>
+    <guid isPermaLink="true">https://github.com/inokawa/virtua/releases/tag/0.54.0</guid>
+    <description><![CDATA[## What's Changed
+* Refactor base offset calculation by @inokawa in 
+* Fix base offset calculation for horizontal WindowVirtualizer in RTL by @inokawa in 
+* Add ssrCount prop to VGrid and VMasonry by @inokawa in 
+* Suppress `ResizeObserver loop completed with undelivered notification… by @inokawa in 
+* Fix jump on removal or reorder of items and broken layout with shift by @inokawa in 
+
+
+**Full Changelog**:]]></description>
+    <pubDate>Tue, 27 Oct 2026 09:42:19 GMT</pubDate>
+  </item>
+  <item>
+    <title>[anomalyco/opencode] v2.2.0</title>
+    <link>https://github.com/anomalyco/opencode/releases/tag/v2.2.0</link>
+    <guid isPermaLink="true">https://github.com/anomalyco/opencode/releases/tag/v2.2.0</guid>
+    <description><![CDATA[### Highlights
+
+- Create, install and share Desktop plugins (experimental) (#55246, #59469, #59489)
+- Refreshed the desktop app experience (#56898, #58865, #55838, #57962)
+- Add experimental image and decision generation APIs to plugins and sdk, allowing image generation or decision model (think typesafe, clef, etc) workflows. (#59190, #59380, #58758)
+- Plugins can now attach and update keyed session instructions with ctx.session.instructions.entry.put/list/remove. Instead of editing the system prompt and busting the prompt cache, each change is added as a small update at the next step. The entries also survive compaction and reverts, and they don't start an extra model turn. (#56550)
+- Restored the Todo tool in desktop via opt-in (#59092)
+- Add configurable prompt cache TTLs per provider/model (#59157)
+
+### Breaking changes
+
+#### `@opencode/ai` root is now the Promise API
+
+`@opencode/ai` now works like `@opencode/sdk` and `@opencode/client`: the package root exports the Promise API, a
+
+... (truncated)]]></description>
+    <pubDate>Tue, 27 Oct 2026 09:04:44 GMT</pubDate>
+  </item>
+  <item>
+    <title>[oxc-project/oxc] oxlint v1.90.0 (oxlint_v1.90.0)</title>
+    <link>https://github.com/oxc-project/oxc/releases/tag/oxlint_v1.90.0</link>
+    <guid isPermaLink="true">https://github.com/oxc-project/oxc/releases/tag/oxlint_v1.90.0</guid>
+    <description><![CDATA[### 🚀 Features
+
+- cf34678 oxlint: Export `Oxlintrc` type (#28132) (Sysix)
+- 831cdf1 oxlint: Require mininum oxlint-tsgolint version v7.0.2005 (#28118) (camc314)
+- d1b00f4 linter/typescript: Implement no-unsafe-enum-assignment rule (#28117) (camc314)
+- 165c91f linter/typescript/await-thenable: Support `allowMixedPromiseArrays` option (#28116) (camc314)
+
+### 🐛 Bug Fixes
+
+- 7f3c908 linter/eslint/array-callback-return: Check callbacks passed with extra arguments (#28133) (sarankumar)
+- 53be530 linter: Filter by type aware rules when looking up tsgolint rule severity (#28138) (NavpreetSSidhu)
+- e0f8937 react-compiler: Compile a `try` whose `catch` is unreachable instead of panicking (#28066) (Dunqing)
+- f5b625f linter/eslint/no-useless-concat: See through parenthesized expressions (#27984) (Rahul Kashyap)
+- 4629bb2 linter/jest/no-conditional-expect: Check function expression callbacks (#28055) (camc314)
+- 5c84098 semantic,linter: Report names with lone surrogates in enum and lint checks (
+
+... (truncated)]]></description>
+    <pubDate>Tue, 27 Oct 2026 05:51:29 GMT</pubDate>
+  </item>
+  <item>
+    <title>[pnpm/pnpm] pnpm 12.16 (v12.16.0)</title>
+    <link>https://github.com/pnpm/pnpm/releases/tag/v12.16.0</link>
+    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v12.16.0</guid>
+    <description><![CDATA[This release adds a global `--env-file` flag, updates to a symlinked `pnpm-lock.yaml`, and `pnpm setup --no-modify-path`. It also fixes two security issues, in zstd decompression and in signing.
+
+### Minor Changes
+
+- Added a repeatable global `--env-file <path>` flag to load environment variables from dotenv-style files before running a command. Later files override earlier files, variables already in the environment are preserved, and loaded variables are visible to user-level `.npmrc` interpolation and lifecycle scripts #7111.
+
+- pnpm can now update a `pnpm-lock.yaml` that is a symlink. List the directories the lockfile may link into in the `symlinkedLockfileTargetDirs` setting, in the global config or with `PNPM_CONFIG_SYMLINKED_LOCKFILE_TARGET_DIRS`. pnpm writes the update to the file the symlink points to if that file is inside one of these directories. The symlink stays in place. pnpm ignores this setting in `pnpm-workspace.yaml` #17222.
+
+- Added a `--no-modify-path` opti
+
+... (truncated)]]></description>
+    <pubDate>Tue, 27 Oct 2026 00:12:44 GMT</pubDate>
+  </item>
+  <item>
+    <title>[obsidianmd/pele] 1.12.0</title>
+    <link>https://github.com/obsidianmd/pele/releases/tag/1.12.0</link>
+    <guid isPermaLink="true">https://github.com/obsidianmd/pele/releases/tag/1.12.0</guid>
+    <description><![CDATA[- Labels on fills a diagram defines with `style`, `classDef`, or a sequence `rect` or `box` use whichever of `--pele-fg-on-light` and `--pele-fg-on-dark` contrasts more with the fill, so they stay readable in dark themes. Edges and arrows on those fills stay readable too. #29
+- Custom fills on subgraphs, composite states, block composites, ER subgraphs and use case boundaries render at full opacity instead of half opacity. #29
+- Percent escapes such as `%20` and `%26` are preserved in links.]]></description>
+    <pubDate>Mon, 26 Oct 2026 23:26:12 GMT</pubDate>
   </item>
   <item>
     <title>[bluesky-social/atproto] @atproto/oauth-provider-ui@0.11.0</title>
@@ -84,21 +210,6 @@
 
 ... (truncated)]]></description>
     <pubDate>Mon, 26 Oct 2026 18:17:31 GMT</pubDate>
-  </item>
-  <item>
-    <title>[cloudflare/workers-sdk] @cloudflare/workers-utils@0.49.0</title>
-    <link>https://github.com/cloudflare/workers-sdk/releases/tag/%40cloudflare/workers-utils%400.49.0</link>
-    <guid isPermaLink="true">https://github.com/cloudflare/workers-sdk/releases/tag/%40cloudflare/workers-utils%400.49.0</guid>
-    <description><![CDATA[### Minor Changes
-
-- #15955 `23ef63a` Thanks @ericclemmons! - Expand dotenv variable references in `--secrets-file` input
-
- Dotenv files supplied through `--secrets-file` to `deploy`, `versions upload`, and `preview` now expand `$VAR` and `${VAR}` references using process values and earlier file values. Process environment values override matching file keys, including explicitly empty values. Treat dotenv secrets files as trusted input: they can read and upload any process environment value, such as a CI credential referenced by `X=${GITHUB_TOKEN}`. In CI, use secrets files whose contents untrusted contributors cannot modify.
-
- This changes how existing dotenv secrets files are interpreted: an unset reference becomes an empty string, so `PASSWORD=pa$word` becomes `pa` when `word` is unset. Escape literal dollar signs with a backslash (`PASSWORD=pa\$word`), or use a JSON secrets file to preserve values exactly. JSON input and bulk-secret commands, including piped stdin, retain their exi
-
-... (truncated)]]></description>
-    <pubDate>Mon, 26 Oct 2026 14:33:30 GMT</pubDate>
   </item>
   <item>
     <title>[wailsapp/wails] Wails v3.0.0 (v3.0.0)</title>
@@ -281,26 +392,6 @@ For HTML checkboxes, declare a boolean with a default of `False`. See Boolean Fo
     <pubDate>Fri, 23 Oct 2026 16:44:57 GMT</pubDate>
   </item>
   <item>
-    <title>[openai/codex] 0.164.0 (rust-v0.164.0)</title>
-    <link>https://github.com/openai/codex/releases/tag/rust-v0.164.0</link>
-    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.164.0</guid>
-    <description><![CDATA[## New Features
-
-- Save reusable prompts and slash commands in ten numbered `/presets` slots, with a keyboard menu for quick access. (#54380, #54381)
-- Set model, reasoning effort, speed, and permission profiles directly with inline `/model` and `/permissions` arguments. (#54378, #54383)
-- Preview viewed and generated images in the fullscreen transcript on terminals supporting Kitty or Sixel graphics. (#54216)
-- Authenticate enterprise MCP connections using eligible Codex account grants or dedicated sign-in, including OAuth clients requiring secrets. (#55334, #55859, #56001)
-- Mask credentials during supported remote Bash commands and Zsh snapshot sessions, including credentials from custom providers. (#54309, #54432, #56049)
-- The Amazon Bedrock setup wizard is now enabled by default, with API key entry grouped alongside other AWS sign-in methods when credentials are detected. (#56033, #56023)
-
-## Bug Fixes
-
-- Failed compaction no longer leaves partial summaries in conversation histor
-
-... (truncated)]]></description>
-    <pubDate>Fri, 23 Oct 2026 04:48:10 GMT</pubDate>
-  </item>
-  <item>
     <title>[iii-hq/iii] iii 0.25.0 (iii/v0.25.0)</title>
     <link>https://github.com/iii-hq/iii/releases/tag/iii/v0.25.0</link>
     <guid isPermaLink="true">https://github.com/iii-hq/iii/releases/tag/iii/v0.25.0</guid>
@@ -450,21 +541,6 @@ If you use HTTPS as your git protocol, we advise using git 2.46 or newer and let
     <pubDate>Wed, 21 Oct 2026 15:33:31 GMT</pubDate>
   </item>
   <item>
-    <title>[pnpm/pnpm] pnpm 12.15 (v12.15.0)</title>
-    <link>https://github.com/pnpm/pnpm/releases/tag/v12.15.0</link>
-    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v12.15.0</guid>
-    <description><![CDATA[This release lets `pnpm-workspace.yaml` delegate settings to other files and config dependencies with `include`, adds `lockfile.integrityTarget: tar` and tar-registry support, accepts zstd-compressed registry responses, and honors `SOURCE_DATE_EPOCH` in `pnpm deploy` and `pnpm install`. It also rejects registry metadata that names a different package than the one requested and speeds up workspace installs and macOS file linking.
-
-### Minor Changes
-
-- `pnpm-workspace.yaml` can now delegate settings to other YAML files and to config dependencies through a new `include` field. Each source may define only the settings the root manifest delegates to it. Every setting has one owner. Commands that change settings write each one to the file that owns it. A relative path in an included file is relative to that file. See Splitting Settings Across Files.
-
- A config dependency supplies its settings through the YAML file named in the `pnpm.config` field of its `package.json`. The new `bootCon
-
-... (truncated)]]></description>
-    <pubDate>Wed, 21 Oct 2026 11:16:52 GMT</pubDate>
-  </item>
-  <item>
     <title>[biomejs/biome] JavaScript APIs v6.1.0 (@biomejs/js-api@6.1.0)</title>
     <link>https://github.com/biomejs/biome/releases/tag/%40biomejs/js-api%406.1.0</link>
     <guid isPermaLink="true">https://github.com/biomejs/biome/releases/tag/%40biomejs/js-api%406.1.0</guid>
@@ -556,32 +632,6 @@ If you use HTTPS as your git protocol, we advise using git 2.46 or newer and let
 
 ... (truncated)]]></description>
     <pubDate>Tue, 20 Oct 2026 06:27:46 GMT</pubDate>
-  </item>
-  <item>
-    <title>[oxc-project/oxc] oxlint v1.89.0 (oxlint_v1.89.0)</title>
-    <link>https://github.com/oxc-project/oxc/releases/tag/oxlint_v1.89.0</link>
-    <guid isPermaLink="true">https://github.com/oxc-project/oxc/releases/tag/oxlint_v1.89.0</guid>
-    <description><![CDATA[### 💥 BREAKING CHANGES
-
-- e3c1b11 ast: [**BREAKING**] Preserve lone surrogates in static property names (#27095) (Dunqing)
-- a0a987c ast: [**BREAKING**] Preserve lone surrogates in static member names (#26677) (Dunqing)
-
-### 🚀 Features
-
-- 770ada4 linter: Mark vue 3 rules as recommended (#27717) (Cam McHenry)
-- ba38c1d linter: Mark react/react-hooks rules as recommended (#27701) (Cam McHenry)
-- d85a3ba linter: Mark promise rules as recommended (#27693) (Cam McHenry)
-- e71c88a linter: Mark node rule as recommended (#27692) (Cam McHenry)
-- 7213f61 linter: Mark nextjs rules as recommended (#27691) (Cam McHenry)
-- d7c6b26 linter: Mark jsx-a11y rules as recommended (#27690) (Cam McHenry)
-- 199dfdc linter: Mark jsdoc rules as recommended (#27689) (Cam McHenry)
-- 780bff3 linter: Mark jest/vitest rules as recommended (#27672) (Cam McHenry)
-- 6ae6859 linter: Mark import rules as recommended (#27671) (Cam McHenry)
-- b7a1df3 linter: Mark unicorn rules as recommended (#27670) (Cam McHenry)
-- c44a
-
-... (truncated)]]></description>
-    <pubDate>Mon, 19 Oct 2026 17:24:26 GMT</pubDate>
   </item>
   <item>
     <title>[typescript-eslint/typescript-eslint] v8.72.0</title>
@@ -957,31 +1007,6 @@ specify init my-project
     <pubDate>Tue, 13 Oct 2026 06:35:29 GMT</pubDate>
   </item>
   <item>
-    <title>[anomalyco/opencode] v1.19.0</title>
-    <link>https://github.com/anomalyco/opencode/releases/tag/v1.19.0</link>
-    <guid isPermaLink="true">https://github.com/anomalyco/opencode/releases/tag/v1.19.0</guid>
-    <description><![CDATA[## Core
-
-### Improvements
-- Run `opencode upgrade --major` to upgrade to OpenCode 2.
-
-### Bugfixes
-- Allow the OpenAI `ultrafast` service tier.
-- Validate PTY connection origins and tickets before checking whether a PTY exists.
-
-## TUI
-
-### Improvements
-- Use `/update` to install OpenCode updates or upgrade to OpenCode 2; updates are no longer installed automatically.
-
-**Thank you to 1 community contributor:**
-- @dc85:
- - docs(web): add Exo Free to Zen docs (#53622)
- - fix(stats): attribute exo usage to an unknown provider (#53621)
- - docs(web): remove Fledge Alpha Free from Zen docs (#53984)]]></description>
-    <pubDate>Sun, 11 Oct 2026 01:39:22 GMT</pubDate>
-  </item>
-  <item>
     <title>[open-webui/open-webui] v0.12.0</title>
     <link>https://github.com/open-webui/open-webui/releases/tag/v0.12.0</link>
     <guid isPermaLink="true">https://github.com/open-webui/open-webui/releases/tag/v0.12.0</guid>
@@ -1017,36 +1042,6 @@ There are no breaking changes to the configuration of the uv build backend. If y
 
 ... (truncated)]]></description>
     <pubDate>Fri, 09 Oct 2026 19:49:55 GMT</pubDate>
-  </item>
-  <item>
-    <title>[ValveSoftware/Proton] Proton 11.0-2e (proton-11.0-2e)</title>
-    <link>https://github.com/ValveSoftware/Proton/releases/tag/proton-11.0-2e</link>
-    <guid isPermaLink="true">https://github.com/ValveSoftware/Proton/releases/tag/proton-11.0-2e</guid>
-    <description><![CDATA[A small update for Proton 11.0-2:
-
-- Fixed EA App Launcher login window not being focused properly with Gamescope.
-- Fixed EA App titles not displaying the correct splash image.]]></description>
-    <pubDate>Fri, 09 Oct 2026 17:49:01 GMT</pubDate>
-  </item>
-  <item>
-    <title>[expressjs/express] v5.3.0</title>
-    <link>https://github.com/expressjs/express/releases/tag/v5.3.0</link>
-    <guid isPermaLink="true">https://github.com/expressjs/express/releases/tag/v5.3.0</guid>
-    <description><![CDATA[## Highlights
-
-### 🐞 Bug fixes
-
-- Fixed HTTP header conflict between Content-Length and Transfer-Encoding in res.send - by @YuryShkoda in #4893
-
-
- Fixed the behavior of `res.send` to prevent conflicts between `Content-Length` and `Transfer-Encoding` HTTP headers in responses. The `Content-Length` header in `res.send` is now only added when a `Transfer-Encoding` header is not present, complying with the HTTP specification that states both headers should not coexist in the same response. ETag generation is unaffected by the presence of a `Transfer-Encoding` header - by @cuishuang in #7459
-
-* Upgrade `qs` to `^6.16.0`, which fixes CVE-2026-2391 (GHSA-w7fw-mjwx-w883), CVE-2026-82417 (GHSA-4mjr-xmp4-gh2g) and CVE-2026-82562 (GHSA-x5fp-wj9c-mxmx): `arrayLimit` bypasses in comma parsing and a denial of service via an attacker-controlled `isBuffer` - by @davetashner in #7057 and #7478, and @cyphercodes in #7305
-
-* Upgrade `proxy-addr` to `^2.0.8`, which fixes CVE-2026-90711 - by @l
-
-... (truncated)]]></description>
-    <pubDate>Fri, 09 Oct 2026 12:50:31 GMT</pubDate>
   </item>
 </channel>
 </rss>
