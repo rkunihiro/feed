@@ -5,8 +5,220 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Tue, 27 Oct 2026 22:01:41 GMT</lastBuildDate>
+  <lastBuildDate>Wed, 28 Oct 2026 22:01:49 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[cloudflare/workers-sdk] wrangler@4.155.0</title>
+    <link>https://github.com/cloudflare/workers-sdk/releases/tag/wrangler%404.155.0</link>
+    <guid isPermaLink="true">https://github.com/cloudflare/workers-sdk/releases/tag/wrangler%404.155.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- #16536 `a95d647` Thanks @WalshyDev! - Support remote Analytics Engine bindings in local development
+
+ Setting `remote: true` on an Analytics Engine dataset now sends `writeDataPoint` calls from `wrangler dev` and the Vite plugin to the real dataset. Without it, writes are still dropped locally.
+
+ ```jsonc
+ {
+ "analytics_engine_datasets": [
+ {
+ "binding": "EVENTS",
+ "dataset": "my-dataset",
+ "remote": true
+ }
+ ]
+ }
+ ```
+
+### Patch Changes
+
+- #16526 `dba0e81` Thanks @petebacondarwin! - Render terminal control characters as visible text in tail output
+
+ Pretty tail and remote-preview output now escape control characters in log strings, exceptions and event metadata. Unicode, tabs and multiline logs remain readable, and JSON output keeps the original structured values.
+
+- #16489 `fc57bc0` Thanks @akshitsinha! - Keep Flagship flag metadata when updating flags
+
+ `wrangler flagship flags` commands that update an existing flag, such as `enable`, `set`, `rollout`, `split`, 
+
+... (truncated)]]></description>
+    <pubDate>Wed, 28 Oct 2026 20:36:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-10-28) (release-2026-10-28)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-28</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-28</guid>
+    <description><![CDATA[## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/service/acm`: [v1.51.0](service/acm/CHANGELOG.md#v1510-2026-10-28)
+ * **Feature**: AWS Certificate Manager now supports the Automatic Certificate Management Environment (ACME) protocol in the AWS GovCloud (US-East) and AWS GovCloud (US-West) Regions.
+* `github.com/aws/aws-sdk-go-v2/service/artifact`: [v1.30.0](service/artifact/CHANGELOG.md#v1300-2026-10-28)
+ * **Feature**: Update support mode for Assurance Assistance
+* `github.com/aws/aws-sdk-go-v2/service/connect`: [v1.210.0](service/connect/CHANGELOG.md#v12100-2026-10-28)
+ * **Feature**: Amazon Connect APIs - CreateTaskTemplate and UpdateTaskTemplate accept a new ContactHooks parameter called WrapUpFlowId to identify the flow module that runs when an agent attempts to disconnect from a task created with the template. Use this to verify an agent's work or update external case repos.
+* `github.com/aws/aws-sdk-go-v2/service/connectparticipant`: [v1.46.0](service/connectparticipant/CHA
+
+... (truncated)]]></description>
+    <pubDate>Wed, 28 Oct 2026 18:48:07 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1159.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1159.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1159.0</guid>
+    <description><![CDATA[#### 3.1159.0(2026-10-28)
+
+##### Chores
+
+* readability, require braces for control flow (#8389) (2a160140)
+
+##### New Features
+
+* **client-connectparticipant:** Amazon Connect Participant Service now supports the optional UrlContentDisposition parameter on GetAttachment, which returns a pre-signed URL that renders a chat attachment inline in the browser instead of forcing a download. (264a9efc)
+* **client-connect:** Amazon Connect APIs - CreateTaskTemplate and UpdateTaskTemplate accept a new ContactHooks parameter called WrapUpFlowId to identify the flow module that runs when an agent attempts to disconnect from a task created with the template. Use this to verify an agent's work or update external case repos. (86f44373)
+* **client-ec2:** Amazon EC2 Capacity Manager adds supportability checks and capacity fulfillment metrics. Use GetCapacityManagerSupportabilityScores to score how well instance types and Availability Zones can support a capacity request, and GetCapacityManagerMetricDat
+
+... (truncated)]]></description>
+    <pubDate>Wed, 28 Oct 2026 18:41:01 GMT</pubDate>
+  </item>
+  <item>
+    <title>[cloudflare/vinext] vinext@1.4.0</title>
+    <link>https://github.com/cloudflare/vinext/releases/tag/vinext%401.4.0</link>
+    <guid isPermaLink="true">https://github.com/cloudflare/vinext/releases/tag/vinext%401.4.0</guid>
+    <description><![CDATA[Read the Vinext 1.4 release post for the highlights.
+
+### Features
+
+#### Cloudflare
+
+- share one Response Store App Router entry across hosts (#3897)
+- store the page's document when an RSC request misses its Response Store entry (#4331)
+- add --vite-config to deploy (#4215)
+
+#### Misc
+
+- **Init:** add --ignore-wrangler-config for Cloudflare init (#4216)
+- **App Router:** store the page's document when an RSC request misses its entry (#4321)
+- **App Router:** regenerate the document when a stale RSC request regenerates its page (#4319)
+
+### Bug Fixes
+
+#### App Router
+
+- assign a router history write's traversal index as it lands (#4376)
+- write router history through the live History API methods (#4354)
+- match Next.js's openGraph and twitter title templates (#4349)
+- keep static prefetches when a Server Action calls refresh (#4281)
+- prefetch visible links again only after router.refresh finishes (#4280)
+- keep a refreshed parallel slot's identity, so a refresh doesn't remount it (#42
+
+... (truncated)]]></description>
+    <pubDate>Wed, 28 Oct 2026 17:49:53 GMT</pubDate>
+  </item>
+  <item>
+    <title>[nodejs/node] 2026-10-28, Version 26.13.0 &apos;Lithium&apos; (LTS), @richardlau (v26.13.0)</title>
+    <link>https://github.com/nodejs/node/releases/tag/v26.13.0</link>
+    <guid isPermaLink="true">https://github.com/nodejs/node/releases/tag/v26.13.0</guid>
+    <description><![CDATA[### Notable Changes
+
+This release marks the transition of Node.js 26.x into Long Term Support (LTS)
+with the codename 'Lithium'. It will continue to receive updates through to
+the end of April 2029.
+
+Other than updating metadata, such as the `process.release` object, to reflect
+that the release is LTS, no further changes from Node.js 26.12.1 are included.
+
+If you are updating from an earlier Long Term Support release (e.g. Node.js 24
+or 22 or earlier) please note that since Node.js 25 the official binaries for
+Linux are linked against libatomic, which may need to be installed separately
+depending on your Linux distribution.]]></description>
+    <pubDate>Wed, 28 Oct 2026 16:57:41 GMT</pubDate>
+  </item>
+  <item>
+    <title>[meta/lexical] v0.53.0</title>
+    <link>https://github.com/meta/lexical/releases/tag/v0.53.0</link>
+    <guid isPermaLink="true">https://github.com/meta/lexical/releases/tag/v0.53.0</guid>
+    <description><![CDATA[v0.53.0 is the monthly release and collects a month of work since v0.52.0. It removes the extensions deprecated as of v0.52.0 and the unchecked node type arguments, starts a curated `CHANGELOG.md` with migration notes, and adds several opt-in, experimental building blocks for structured documents and collaboration: declarative node structure in `$config`, stable block ids, set-valued NodeState with a wrapper-free `MarkStateExtension`, and GFM tables in `@lexical/mdast`. Fixes cover IME composition, spellcheck, inline decorators, iOS taps and drops, tables, Markdown, and the ordering of commit listeners that collaboration depends on.
+
+### Breaking Changes
+
+* **All packages: extensions deprecated as of v0.52.0 are removed** (#9316). Migrate as follows:
+ * `CodeImportExtension` (`@lexical/code-core`): use `CodeExtension`
+ * `CodeHighlighterShikiExtension`, `CodeHighlighterShikiConfig` (`@lexical/code-shiki`): use `CodeShikiExtension` with `{tokenizer}`
+ * `HorizontalRuleImportExtension` (
+
+... (truncated)]]></description>
+    <pubDate>Wed, 28 Oct 2026 15:52:54 GMT</pubDate>
+  </item>
+  <item>
+    <title>[bluesky-social/atproto] @atproto/ozone@0.11.0</title>
+    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/ozone%400.11.0</link>
+    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/ozone%400.11.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- #5756 `54f54ea` Thanks @gcwill70! - Protect assigned and escalated reports from broad moderation-event and batch report closure, including owned subjects.
+
+### Patch Changes
+
+- #5757 `6ed6fe3` Thanks @foysalit! - Allow new appeals when a moderation action follows a resolved appeal.
+
+- #5750 `03a76ee` Thanks @gcwill70! - Allow moderation events to succeed when reportAction.types matches no reports, while retaining strict validation for explicit report IDs.
+
+- #5746 `1c8c3a3` Thanks @matthieusieben! - Update to OpenTelemetry JS SDK 3.x (`@opentelemetry/api` 1.10), which requires Node.js `>=22.15.0`. Event log records are now emitted through `@opentelemetry/api` (`@opentelemetry/api-logs` was removed upstream). The HTTP instrumentation only reports the stable `http.server.request.duration` and `http.client.request.duration` metrics: the legacy `http.server.duration` and `http.client.duration` metrics are gone, and `OTEL_SEMCONV_STABILITY_OPT_IN=http` no longer has any
+
+... (truncated)]]></description>
+    <pubDate>Wed, 28 Oct 2026 14:24:08 GMT</pubDate>
+  </item>
+  <item>
+    <title>[GPUOpen-LibrariesAndSDKs/FidelityFX-SDK] FSR SDK v2.4.0 (v2.4.0)</title>
+    <link>https://github.com/GPUOpen-LibrariesAndSDKs/FidelityFX-SDK/releases/tag/v2.4.0</link>
+    <guid isPermaLink="true">https://github.com/GPUOpen-LibrariesAndSDKs/FidelityFX-SDK/releases/tag/v2.4.0</guid>
+    <description><![CDATA[<h1>What's new in the AMD FSR™ SDK 2.4.0?</h1>
+
+Welcome to the AMD FSR™ SDK. This revision to the SDK updates a number of AMD FSR™ "Redstone" DLL-based ML technologies. 
+
+<h2>New effects and features</h2>
+
+<h3>AMD FSR™ Frame Generation (Swapchain) 4.0.0</h3>
+
+- Driver-Assisted Frame Pacing on DirectX® 12 and Vulkan®. Requires an AMD Radeon™ RX 9000 Series GPU or later and AMD Software: Adrenalin Edition™ driver version 26.10.1 or later. See the [Frame pacing and presentation](Kits/FidelityFX/docs/techniques/frame-interpolation-swap-chain.md#frame-pacing-and-presentation) section for more details;
+- Intel® PresentMon integration for Frame Generation (DX12 only);
+- Vulkan® support at feature parity with DX12 version;
+
+<h2>Updated effects</h2>
+
+<h3>AMD FSR™ Upscaling 4.1.2</h3>
+
+- Added support for AMD FSR™ Upscaling 4.1 on the following hardware:
+ - AMD Radeon™ RX 6000 Series discrete GPUs (AMD RDNA™ 2 architecture);
+ - AMD Ryzen™ AI Max 300 Series processors ("Strix Ha
+
+... (truncated)]]></description>
+    <pubDate>Wed, 28 Oct 2026 13:18:15 GMT</pubDate>
+  </item>
+  <item>
+    <title>[nestjs/nest] v12.3.0</title>
+    <link>https://github.com/nestjs/nest/releases/tag/v12.3.0</link>
+    <guid isPermaLink="true">https://github.com/nestjs/nest/releases/tag/v12.3.0</guid>
+    <description><![CDATA[## v12.3.0 (2026-10-27)
+
+#### Features
+* `platform-node`
+ * #18063 feat(node): add a native node http platform adapter (@kamilmysliwiec)
+
+#### Bug fixes
+* `common`
+ * #18289 fix(common): report the detected file type in file type errors (@DenisCDev)
+ * #18246 fix(common): avoid throwing for arrow prototype constructors (@fengxueweilai)
+ * #18220 fix(common): abort the response when a streamable file fails midway (@thekhegay)
+* `core`
+ * #18276 fix(core): run middleware once for routes that differ only in version (@OmBhandwaldar)
+ * #18262 fix(core): tolerate sse request sockets without tuning methods (@SnowingFox)
+ * #18252 fix(core): read the url protocol from the server (@thekhegay)
+ * #18254 fix(core): name the array and index of undefined module entries (@thekhegay)
+ * #18235 fix(core): discover classes by each of their discovery decorators (@OmBhandwaldar)
+ * #18216 fix(core): read the abort on error option of the app being called (@thekhegay)
+ * #18209 fix(core)
+
+... (truncated)]]></description>
+    <pubDate>Wed, 28 Oct 2026 11:41:13 GMT</pubDate>
+  </item>
   <item>
     <title>[openai/codex] 0.165.0 (rust-v0.165.0)</title>
     <link>https://github.com/openai/codex/releases/tag/rust-v0.165.0</link>
@@ -29,60 +241,6 @@
 
 ... (truncated)]]></description>
     <pubDate>Tue, 27 Oct 2026 20:09:38 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-10-27) (release-2026-10-27)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-27</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-27</guid>
-    <description><![CDATA[## General Highlights
-* **Dependency Update**: Update to smithy-go v1.28.7.
-* **Dependency Update**: Updated to the latest SDK module versions
-
-## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/credentials`: [v1.20.12](credentials/CHANGELOG.md#v12012-2026-10-27)
- * **Bug Fix**: Fixed the login credential panic when a retrieved token missed required fields
- * **Bug Fix**: Return an error instead of panicking when an STS AssumeRole or AssumeRoleWithWebIdentity response is missing credentials.
-* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcorecontrol`: [v1.76.0](service/bedrockagentcorecontrol/CHANGELOG.md#v1760-2026-10-27)
- * **Feature**: Adds the ResetTokenVaultKeyMaterial API, which restores a token vault whose customer managed key was deleted by moving it to an AWS owned key. The reset permanently deletes the stored OAuth 2.0 tokens, users must consent again. Adds on-behalf-of token exchange client authentication override option.
-* `github.com/aws/aws-sdk-go-v2/service/ec2`: 
-
-... (truncated)]]></description>
-    <pubDate>Tue, 27 Oct 2026 18:45:51 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-js-v3] v3.1158.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1158.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1158.0</guid>
-    <description><![CDATA[#### 3.1158.0(2026-10-27)
-
-##### Chores
-
-* **codegen:** smithy-aws-typescript-codegen 0.55.0 (#8385) (4a149acb)
-
-##### New Features
-
-* **client-license-manager:** AWS License Manager now supports delegate grants for read-only visibility into license distributions. CreateGrant accepts a new GrantType (BuyerGrant or DelegateGrant) and a desired status at distribution time. (c2b033fe)
-* **client-ecs:** ECS now supports GPU sharing via NVIDIA Multi-Process Service (MPS) on ECS Managed Instances and ECS EC2, allowing multiple ECS tasks to share a single Nvidia GPU for improved utilization. (82c0bea6)
-* **client-bedrock-agentcore-control:** Adds the ResetTokenVaultKeyMaterial API, which restores a token vault whose customer managed key was deleted by moving it to an AWS owned key. The reset permanently deletes the stored OAuth 2.0 tokens, users must consent again. Adds on-behalf-of token exchange client authentication override option. (caa886f6)
-* **client-inspector2:** Adding support for Ma
-
-... (truncated)]]></description>
-    <pubDate>Tue, 27 Oct 2026 18:40:19 GMT</pubDate>
-  </item>
-  <item>
-    <title>[cloudflare/workers-sdk] wrangler@4.154.0</title>
-    <link>https://github.com/cloudflare/workers-sdk/releases/tag/wrangler%404.154.0</link>
-    <guid isPermaLink="true">https://github.com/cloudflare/workers-sdk/releases/tag/wrangler%404.154.0</guid>
-    <description><![CDATA[### Minor Changes
-
-- #16494 `0968b08` Thanks @petebacondarwin! - Enable Miniflare's development registry by default and centralize path resolution
-
- In Miniflare v5 beta, resolve the registry from `CLOUDFLARE_DEV_REGISTRY_PATH`, then the `unsafeDevRegistryPath` constructor option, then `<Cloudflare config directory>/dev-registry/v5`. The default is independent of legacy Wrangler directories and is scoped to the Miniflare major version. The Vite v2 beta plugin follows this new default, while current Wrangler and `getPlatformProxy` retain Wrangler's legacy default for compatibility with existing Wrangler sessions. Vite v2 and Wrangler therefore require the same `CLOUDFLARE_DEV_REGISTRY_PATH` to discover each other; set it for both processes when mixing these tools.
-
- Add `enableDevRegistry: false` to disable registration and discovery explicitly. Shared storage now uses the resolved default without requiring an explicit path. As before, shared storage requires an enabled registry to elec
-
-... (truncated)]]></description>
-    <pubDate>Tue, 27 Oct 2026 17:14:42 GMT</pubDate>
   </item>
   <item>
     <title>[lynx-family/lynx] 4.2.0</title>
@@ -187,29 +345,6 @@ pod 'PrimJS', '4.2.1', :subspecs => ['quickjs', 'napi']
 - Custom fills on subgraphs, composite states, block composites, ER subgraphs and use case boundaries render at full opacity instead of half opacity. #29
 - Percent escapes such as `%20` and `%26` are preserved in links.]]></description>
     <pubDate>Mon, 26 Oct 2026 23:26:12 GMT</pubDate>
-  </item>
-  <item>
-    <title>[bluesky-social/atproto] @atproto/oauth-provider-ui@0.11.0</title>
-    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/oauth-provider-ui%400.11.0</link>
-    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/oauth-provider-ui%400.11.0</guid>
-    <description><![CDATA[### Minor Changes
-
-- #5687 `943170b` Thanks @matthieusieben! - Support resetting password based on account identifier (in addition to email). When a user attempts to reset password for an Atmosphere account hosted on another service, the user will be notified and show a link to the right service.
-
-### Patch Changes
-
-- #5735 `b7dcaee` Thanks @abcbrookie! - Fix the text color of action buttons. Their custom font size class was mistaken for a text color when merging class names, which dropped the button's own color: primary buttons showed dark text in light mode, and destructive buttons lost their red text.
-
-- #5687 `943170b` Thanks @matthieusieben! - Fix blur behavior on password field
-
-- #5663 `dc47f7b` Thanks @huketo! - Complete the Korean translation
-
-- #5687 `943170b` Thanks @matthieusieben! - Add a placeholder to the `EmailField` component
-
-- #5687 `943170b` Thanks @matthieusieben! - Accept sign-in identifiers filled by password managers (bare names when a sign-in domain is configur
-
-... (truncated)]]></description>
-    <pubDate>Mon, 26 Oct 2026 18:17:31 GMT</pubDate>
   </item>
   <item>
     <title>[wailsapp/wails] Wails v3.0.0 (v3.0.0)</title>
@@ -575,38 +710,26 @@ If you use HTTPS as your git protocol, we advise using git 2.46 or newer and let
     <pubDate>Wed, 21 Oct 2026 09:49:44 GMT</pubDate>
   </item>
   <item>
-    <title>[cloudflare/vinext] vinext@1.3.0</title>
-    <link>https://github.com/cloudflare/vinext/releases/tag/vinext%401.3.0</link>
-    <guid isPermaLink="true">https://github.com/cloudflare/vinext/releases/tag/vinext%401.3.0</guid>
-    <description><![CDATA[Read the Vinext 1.3 release post for the highlights.
+    <title>[aardappel/goose] Goose v2026.3 (v2026.3)</title>
+    <link>https://github.com/aardappel/goose/releases/tag/v2026.3</link>
+    <guid isPermaLink="true">https://github.com/aardappel/goose/releases/tag/v2026.3</guid>
+    <description><![CDATA[Prebuilt compilers with the blessed packages (gfx, audio, ui, physics) compiled in. Unpack anywhere and put the directory on PATH; see "Install a release" in README.md for what each platform needs besides.
 
-### Features
 
-- **Build:** emit hash-only client chunk and CSS file names (#3615)
-- **App Router:** group client references by route (#3697)
-
-### Bug Fixes
-
-#### App
-
-- keep route handler auth challenges after middleware's (#4050)
-- order middleware Set-Cookie before route handler cookies (#4026)
-- keep route handler request.signal aborting after GC (#4022)
-
-#### App Router
-
-- write the history entry before the destination replaces the page (#4127)
-- only ship route handler paths the client needs (#4109)
-- stop CSS-importing pages from reading searchParams in dev (#4031)
-- load the browser route manifest from its own chunk (#4116)
-- read the static export deployment version from the initial page (#3802)
-- read the RSC compatibility ID from the page, not the bundle (#3797)
-- suspend the tree during hard navigations so redirect boundaries can't loop (#4063)
-- use React 19.3's #441 message for sanitized server errors (#4049)
-- keep roo
+## What's Changed
+* Let thread_spawn name a bound worker in a generic from another namespace by @kaitk in 
+* Add thread_spawn_contained, whose aborts end only that worker by @kaitk in 
+* Retry a test run that Linux refuses with Text file busy by @kaitk in 
+* Bound the typed queues, and add a qget with a time limit by @kaitk in 
+* Keep gcc from dropping the stores to a ByteSet the byte search reads by @kaitk in 
+* Let TinyCC find the C library in /usr/lib64 on Fedora and other lib64 systems by @calpeyser in 
+* Keep the print cursor a plain pointer so generated C compiles without const warnings by @calpeyser in 
+* Let a variant without references store anywhere when passed as its enum by @mgasner in 
+* Tree-sitter: initial grammar by @pdoane in 
+* Language server: answer a request af
 
 ... (truncated)]]></description>
-    <pubDate>Tue, 20 Oct 2026 22:56:05 GMT</pubDate>
+    <pubDate>Wed, 21 Oct 2026 05:39:11 GMT</pubDate>
   </item>
   <item>
     <title>[azat-io/eslint-plugin-perfectionist] v5.13.0</title>
@@ -697,25 +820,6 @@ The MSRV is increased to 1.85. ([#8514])
     <guid isPermaLink="true">https://github.com/remix-run/react-router/releases/tag/react-router%408.5.0</guid>
     <description><![CDATA[See the changelog for release notes:]]></description>
     <pubDate>Mon, 19 Oct 2026 13:48:57 GMT</pubDate>
-  </item>
-  <item>
-    <title>[nestjs/nest] v12.2.0</title>
-    <link>https://github.com/nestjs/nest/releases/tag/v12.2.0</link>
-    <guid isPermaLink="true">https://github.com/nestjs/nest/releases/tag/v12.2.0</guid>
-    <description><![CDATA[## v12.2.0 (2026-10-19)
-
-#### Notable changes
-
-**New options**
-* `@Sse({ maxPendingDataLength })` sets how many characters of event data may wait for a client that is not reading its events (4M by default; `0` or `Infinity` lifts the limit) – 2f05ad954e
-* `IoAdapter` and `WsAdapter` take `maxConcurrentMessages`, the number of a client's messages handled at once (1000 by default; `Infinity` lifts it) – 0bd0810ed7
-* `ValidationPipe` takes `maxErrorMessagesLength` (1,000,000 characters by default); messages past it are replaced by a "Further validation errors were omitted" entry – 086c1c514f
-* Kafka: `parser.maxMessageSize` (16 MiB after decompression by default); larger messages are logged and skipped – 9bdf844fca
-* TCP server: `drainTimeout` (30 s by default, `0` disables) disconnects a peer that leaves its responses unread – 583d6077ad
-* MQTT server: `reconnectOnConnackError` is now enabled by default, so a refused connection attempt is retried; set it to `false` for the prev
-
-... (truncated)]]></description>
-    <pubDate>Mon, 19 Oct 2026 10:50:46 GMT</pubDate>
   </item>
   <item>
     <title>[vitejs/vite] create-vite@9.3.0</title>
@@ -882,29 +986,6 @@ gh attestation verify dprint-x86_64-unknown-linux-gnu.zip --repo dprint/dprint
     <pubDate>Wed, 14 Oct 2026 22:32:57 GMT</pubDate>
   </item>
   <item>
-    <title>[nodejs/node] 2026-10-14, Version 26.12.0 (Current), @richardlau (v26.12.0)</title>
-    <link>https://github.com/nodejs/node/releases/tag/v26.12.0</link>
-    <guid isPermaLink="true">https://github.com/nodejs/node/releases/tag/v26.12.0</guid>
-    <description><![CDATA[### Notable Changes
-
-* \[`1ebd6d3677`] - **(SEMVER-MINOR)** **doc,lib,src**: throw on missing WebAssembly or RX support (Paolo Insogna) #66533
-* \[`7f1937d2b9`] - **(SEMVER-MINOR)** **http**: add websocketMask and websocketUnmask (James M Snell) #66335
-
-### Commits
-
-* \[`30e76bb16a`] - **benchmark**: fix input passed to subtle.digest in webcrypto-digest (Rafael Gonzaga) #66608
-* \[`adef72223a`] - **benchmark**: fix buffer option in buffer read/write benchmarks (Rafael Gonzaga) #66604
-* \[`2f498f08fe`] - **benchmark**: add util.parseArgs benchmark (Rafael Gonzaga) #66599
-* \[`4ce8412e18`] - **benchmark**: fix url-searchparams-sort to sort a fresh list (RafaelGSS) #66535
-* \[`493bd6c66e`] - **benchmark,tools**: fix napi benchmarks on GHA (Nigro Simone) #66423
-* \[`e4515552d6`] - **build**: run QUIC CI for V8 changes (Yuya Inoue) #66602
-* \[`a888e51062`] - **build**: support Python 3.15 (Mike McCready) #65750
-* \[`2afab9a63b`] - **build**: do not include shared gtest in `nod
-
-... (truncated)]]></description>
-    <pubDate>Wed, 14 Oct 2026 15:22:04 GMT</pubDate>
-  </item>
-  <item>
     <title>[go-chi/chi] v5.5.0</title>
     <link>https://github.com/go-chi/chi/releases/tag/v5.5.0</link>
     <guid isPermaLink="true">https://github.com/go-chi/chi/releases/tag/v5.5.0</guid>
@@ -984,64 +1065,6 @@ specify init my-project
 
 ... (truncated)]]></description>
     <pubDate>Tue, 13 Oct 2026 15:49:05 GMT</pubDate>
-  </item>
-  <item>
-    <title>[sindresorhus/got] v16.1.0</title>
-    <link>https://github.com/sindresorhus/got/releases/tag/v16.1.0</link>
-    <guid isPermaLink="true">https://github.com/sindresorhus/got/releases/tag/v16.1.0</guid>
-    <description><![CDATA[This release is the result of a large bug hunt. Many of the fixes make Got match its documented behavior, so you may notice some of them:
-
-- Invalid options now throw: an empty `method`, a negative or fractional `maxRedirects` or `retry.limit`, a `prefixUrl` with a query string or fragment, and a `handlers` entry that is not a function.
-- A stream with a `body`, `json`, or `form` option now rejects writes, as documented.
-- The promise `response` event now only fires for the final response, not for every retry attempt.
-- `got.extend({body})` (and `json`, `form`) no longer sends the payload with every request of the instance. Payloads are never merged with defaults.
-- `instance.extend` now inherits the parent's `mutableDefaults`, like `got.extend(instance)`.
-- A `HEAD` request is no longer changed to `GET` on a `301`, `302`, or `303` redirect.
-- `response.body` no longer keeps a leading UTF-8 byte order mark, and JSON with a byte order mark now parses.
-
-## Improvements
-
-- Acc
-
-... (truncated)]]></description>
-    <pubDate>Tue, 13 Oct 2026 06:35:29 GMT</pubDate>
-  </item>
-  <item>
-    <title>[open-webui/open-webui] v0.12.0</title>
-    <link>https://github.com/open-webui/open-webui/releases/tag/v0.12.0</link>
-    <guid isPermaLink="true">https://github.com/open-webui/open-webui/releases/tag/v0.12.0</guid>
-    <description><![CDATA[### Added
-
-- ☎️ **Realtime voice calls.** Administrators can now switch Call mode in the Voice calls section of Audio settings from Standard to Realtime, so Voice mode talks through an OpenAI Realtime voice model (gpt-realtime-2.1-mini with the Marin voice by default) that handles small talk itself and hands real questions and tasks to the chat's selected model, with its conversation history and tools, before speaking the answer while the full reply appears in the chat. Approvals and questions from tools still have to be answered in the chat, calls need the Allow Call permission and end after an hour, models can set their own Realtime Voice in the model editor, and the settings can also be given with the "AUDIO_REALTIME_ENABLED", "AUDIO_REALTIME_OPENAI_API_BASE_URL", "AUDIO_REALTIME_OPENAI_API_KEY", "AUDIO_REALTIME_MODEL", "AUDIO_REALTIME_VOICE", "AUDIO_REALTIME_TRANSCRIPTION_MODEL" and "REALTIME_CALL_PROMPT_TEMPLATE" environment variables. Commit, Commit, #5894
-- 🕺 **Animated avat
-
-... (truncated)]]></description>
-    <pubDate>Sat, 10 Oct 2026 21:13:24 GMT</pubDate>
-  </item>
-  <item>
-    <title>[astral-sh/uv] 0.13.0</title>
-    <link>https://github.com/astral-sh/uv/releases/tag/0.13.0</link>
-    <guid isPermaLink="true">https://github.com/astral-sh/uv/releases/tag/0.13.0</guid>
-    <description><![CDATA[## Release Notes
-
-Released on 2026-10-09.
-
-uv 0.13.0 makes Python 3.15 the default stable Python version. We've also included several breaking changes to improve correctness, performance, and compatibility, described below.
-
-**We expect most users to be able to upgrade without making changes.**
-
-While not a breaking change, this release also updates the format of many of uv's cache entries to improve performance. **uv may download or rebuild dependencies after upgrading**, because some cached entries from earlier versions cannot be reused. Multiple versions of uv can still safely share the same cache directory.
-
-There are no breaking changes to the configuration of the uv build backend. If your `[build-system]` table includes an upper bound on `uv_build`, update it to allow `uv_build` 0.13, e.g., `uv_build>=0.13.0,<0.14`.
-
-### Breaking changes
-
-- **Use Python 3.15 as the default stable version**
-
- The default stable Python version has changed from 3.14 to 3.15. This affects Python down
-
-... (truncated)]]></description>
-    <pubDate>Fri, 09 Oct 2026 19:49:55 GMT</pubDate>
   </item>
 </channel>
 </rss>
