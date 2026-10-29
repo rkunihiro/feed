@@ -5,77 +5,223 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Wed, 28 Oct 2026 22:01:49 GMT</lastBuildDate>
+  <lastBuildDate>Thu, 29 Oct 2026 22:01:37 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
   <item>
-    <title>[cloudflare/workers-sdk] wrangler@4.155.0</title>
-    <link>https://github.com/cloudflare/workers-sdk/releases/tag/wrangler%404.155.0</link>
-    <guid isPermaLink="true">https://github.com/cloudflare/workers-sdk/releases/tag/wrangler%404.155.0</guid>
+    <title>[openai/codex] 0.166.0 (rust-v0.166.0)</title>
+    <link>https://github.com/openai/codex/releases/tag/rust-v0.166.0</link>
+    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.166.0</guid>
+    <description><![CDATA[## New Features
+
+- Added keyboard-driven transcript selection with word, line, and page motions, integrated search, and configurable shortcuts. (#57221, #57222, #57223, #57224)
+- Rendered Markdown consistently in async questions, choices, answers, and transcript replies. (#57259, #57292)
+- Added GPT-6.1 Terra to the bundled, Vertex AI, and Amazon Bedrock model catalogs. (#57293)
+- Added `codex queue --resume` to resume unloaded threads after queueing a message. (#57232)
+- Added clearer safety-block explanations and selectable safer follow-up prompts in the TUI. (#57363, #57365)
+- Added `codex doctor --network-only` for focused configuration, connectivity, and WebSocket diagnostics. (#57606)
+
+## Bug Fixes
+
+- Preserved acknowledged approval and permission settings when resuming or forking threads. (#57227)
+- Preserved local image attachments when restoring killed composer text. (#57502)
+- Fixed standalone release cleanup on macOS when installations are in use or paths contain non-ASCII c
+
+... (truncated)]]></description>
+    <pubDate>Thu, 29 Oct 2026 19:47:53 GMT</pubDate>
+  </item>
+  <item>
+    <title>[cloudflare/workers-sdk] @cloudflare/cli-shared-helpers@0.3.0</title>
+    <link>https://github.com/cloudflare/workers-sdk/releases/tag/%40cloudflare/cli-shared-helpers%400.3.0</link>
+    <guid isPermaLink="true">https://github.com/cloudflare/workers-sdk/releases/tag/%40cloudflare/cli-shared-helpers%400.3.0</guid>
     <description><![CDATA[### Minor Changes
 
-- #16536 `a95d647` Thanks @WalshyDev! - Support remote Analytics Engine bindings in local development
+- #16367 `b4653b4` Thanks @MattieTK! - Support writing `.assetsignore` files that keep local secrets and Pages-only files out of uploaded static assets
 
- Setting `remote: true` on an Analytics Engine dataset now sends `writeDataPoint` calls from `wrangler dev` and the Vite plugin to the real dataset. Without it, writes are still dropped locally.
-
- ```jsonc
- {
- "analytics_engine_datasets": [
- {
- "binding": "EVENTS",
- "dataset": "my-dataset",
- "remote": true
- }
- ]
- }
- ```
+ `maybeAppendWranglerToGitIgnoreLikeFile` now takes an options object. `additionalEntries` appends further entries after the Wrangler ones, skipping any already in the file or already queued. `requireEnvWildcard` makes the helper add `.env*` unless the file already has it, so that a narrower existing entry such as `.env` does not leave `.env.production` or `.env.local` to be uploaded. `PROJECT_ROOT_ASSETS_IGNORE_ENTRIES` lists the entries to add when a project root is used as the static assets directory.
 
 ### Patch Changes
 
-- #16526 `dba0e81` Thanks @petebacondarwin! - Render terminal control characters as visible text in tail output
-
- Pretty tail and remote-preview output now escape control characters in log strings, exceptions and event metadata. Unicode, tabs and multiline logs remain readable, and JSON output keeps the original structured values.
-
-- #16489 `fc57bc0` Thanks @akshitsinha! - Keep Flagship flag metadata when updating flags
-
- `wrangler flagship flags` commands that update an existing flag, such as `enable`, `set`, `rollout`, `split`, 
-
-... (truncated)]]></description>
-    <pubDate>Wed, 28 Oct 2026 20:36:00 GMT</pubDate>
+- Updated dependencies [`8b64bec`]:
+ - @cloudflare/workers-utils@0.50.1]]></description>
+    <pubDate>Thu, 29 Oct 2026 18:50:45 GMT</pubDate>
   </item>
   <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-10-28) (release-2026-10-28)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-28</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-28</guid>
+    <title>[aws/aws-sdk-go-v2] Release (2026-10-29) (release-2026-10-29)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-29</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-29</guid>
     <description><![CDATA[## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/acm`: [v1.51.0](service/acm/CHANGELOG.md#v1510-2026-10-28)
- * **Feature**: AWS Certificate Manager now supports the Automatic Certificate Management Environment (ACME) protocol in the AWS GovCloud (US-East) and AWS GovCloud (US-West) Regions.
-* `github.com/aws/aws-sdk-go-v2/service/artifact`: [v1.30.0](service/artifact/CHANGELOG.md#v1300-2026-10-28)
- * **Feature**: Update support mode for Assurance Assistance
-* `github.com/aws/aws-sdk-go-v2/service/connect`: [v1.210.0](service/connect/CHANGELOG.md#v12100-2026-10-28)
- * **Feature**: Amazon Connect APIs - CreateTaskTemplate and UpdateTaskTemplate accept a new ContactHooks parameter called WrapUpFlowId to identify the flow module that runs when an agent attempts to disconnect from a task created with the template. Use this to verify an agent's work or update external case repos.
-* `github.com/aws/aws-sdk-go-v2/service/connectparticipant`: [v1.46.0](service/connectparticipant/CHA
+* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcore`: [v1.56.0](service/bedrockagentcore/CHANGELOG.md#v1560-2026-10-29)
+ * **Feature**: Adds AgentCore Runtime session endpoint support, including sessionEndpointUrl on the InvokeAgentRuntime response
+* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcorecontrol`: [v1.77.0](service/bedrockagentcorecontrol/CHANGELOG.md#v1770-2026-10-29)
+ * **Feature**: Adds Session Endpoint Feature on AgentCore Runtime
+* `github.com/aws/aws-sdk-go-v2/service/cleanrooms`: [v1.59.0](service/cleanrooms/CHANGELOG.md#v1590-2026-10-29)
+ * **Feature**: Adds support for the PySpark 2.0 analysis template format and for choosing the file format (CSV or Parquet) of protected job results written to Amazon S3, including in a membership's default job result configuration.
+* `github.com/aws/aws-sdk-go-v2/service/imagebuilder`: [v1.68.0](service/imagebuilder/CHANGELOG.md#v1680-2026-10-29)
+ * **Feature**: This release adds support for on-demand 
 
 ... (truncated)]]></description>
-    <pubDate>Wed, 28 Oct 2026 18:48:07 GMT</pubDate>
+    <pubDate>Thu, 29 Oct 2026 18:44:26 GMT</pubDate>
   </item>
   <item>
-    <title>[aws/aws-sdk-js-v3] v3.1159.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1159.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1159.0</guid>
-    <description><![CDATA[#### 3.1159.0(2026-10-28)
-
-##### Chores
-
-* readability, require braces for control flow (#8389) (2a160140)
+    <title>[aws/aws-sdk-js-v3] v3.1160.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1160.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1160.0</guid>
+    <description><![CDATA[#### 3.1160.0(2026-10-29)
 
 ##### New Features
 
-* **client-connectparticipant:** Amazon Connect Participant Service now supports the optional UrlContentDisposition parameter on GetAttachment, which returns a pre-signed URL that renders a chat attachment inline in the browser instead of forcing a download. (264a9efc)
-* **client-connect:** Amazon Connect APIs - CreateTaskTemplate and UpdateTaskTemplate accept a new ContactHooks parameter called WrapUpFlowId to identify the flow module that runs when an agent attempts to disconnect from a task created with the template. Use this to verify an agent's work or update external case repos. (86f44373)
-* **client-ec2:** Amazon EC2 Capacity Manager adds supportability checks and capacity fulfillment metrics. Use GetCapacityManagerSupportabilityScores to score how well instance types and Availability Zones can support a capacity request, and GetCapacityManagerMetricDat
+* **client-cleanrooms:** Adds support for the PySpark 2.0 analysis template format and for choosing the file format (CSV or Parquet) of protected job results written to Amazon S3, including in a membership's default job result configuration. (8cb4c7eb)
+* **client-bedrock-agentcore-control:** Adds Session Endpoint Feature on AgentCore Runtime (07ecbbc3)
+* **client-wafv2:** AWS WAF customers using Targeted Bot Control, ATP, or ACFP managed rule groups can now enable automatic Challenge JavaScript SDK injection. When enabled, Amazon CloudFront injects the script tag into HTML responses on your behalf, removing the need for manual integration. (d4065359)
+* **client-bedrock-agentcore:** Adds AgentCore Runtime session endpoint support, including sessionEndpointUrl on the InvokeAgentRuntime response (dac2f977)
+* **client-lightsail:** This release adds support for instance health status checks and system status checks. (5bf15ec1)
+* **client-imageb
 
 ... (truncated)]]></description>
-    <pubDate>Wed, 28 Oct 2026 18:41:01 GMT</pubDate>
+    <pubDate>Thu, 29 Oct 2026 18:41:09 GMT</pubDate>
+  </item>
+  <item>
+    <title>[chakra-ui/ark] @ark-ui/vue@5.40.0</title>
+    <link>https://github.com/chakra-ui/ark/releases/tag/%40ark-ui/vue%405.40.0</link>
+    <guid isPermaLink="true">https://github.com/chakra-ui/ark/releases/tag/%40ark-ui/vue%405.40.0</guid>
+    <description><![CDATA[# @ark-ui/vue
+
+## [5.40.0] - 2026-10-29
+
+### Added
+
+- Render `Pagination.Item`, `Pagination.PrevTrigger`, `Pagination.NextTrigger`, `Pagination.FirstTrigger` and
+ `Pagination.LastTrigger` as anchors when the machine is `type="link"`. They rendered buttons carrying the `href` the
+ machine emits, which navigates nowhere.
+
+### Fixed
+
+- - **Field**: Fixed helper and error text not being announced on the focused element of Select, TagsInput, ColorPicker,
+ FileUpload, SignaturePad, RatingGroup and PinInput. `PinInput.Control` now renders as a labelled group.
+- - **Field**: Fixed `ids.root` being ignored and `ids.control` being applied to the root element instead of the
+ control.
+- - **FileUpload**: Fixed `Field.Root readOnly` not making the file upload read-only.
+- - **Toc**: Fix `Root` and `Nav` rendering with the same `id`. The `id` and `aria-labelledby` now live only on `Nav`.
+- - **Toc**: Add `getNavProps` to `useToc` and render `Toc.Nav` with it. `Toc.Nav` now has `data-part="nav"` inst
+
+... (truncated)]]></description>
+    <pubDate>Thu, 29 Oct 2026 17:24:30 GMT</pubDate>
+  </item>
+  <item>
+    <title>[googleapis/google-cloud-go] video: v1.36.0 (video/v1.36.0)</title>
+    <link>https://github.com/googleapis/google-cloud-go/releases/tag/video/v1.36.0</link>
+    <guid isPermaLink="true">https://github.com/googleapis/google-cloud-go/releases/tag/video/v1.36.0</guid>
+    <description><![CDATA[## 1.36.0 (2026-10-29)
+
+
+### Features
+
+* Update API sources and regenerate (#20773) (f5f113a)]]></description>
+    <pubDate>Thu, 29 Oct 2026 16:46:58 GMT</pubDate>
+  </item>
+  <item>
+    <title>[anomalyco/opentui] Release v0.8.0 (v0.8.0)</title>
+    <link>https://github.com/anomalyco/opentui/releases/tag/v0.8.0</link>
+    <guid isPermaLink="true">https://github.com/anomalyco/opentui/releases/tag/v0.8.0</guid>
+    <description><![CDATA[Most of 0.8.0 makes each frame cheaper. In 0.7.0, every frame cleared and repainted the whole screen and compared every row with the terminal, even when only a spinner had moved. Now an unchanged frame paints nothing, and a frame with a small change repaints only the rows around it. In OpenCode, a frame with a spinner or a streamed line does about a twentieth of the cell operations it did.
+
+ScrollBox now scrolls and follows new content in native code. Animations share one clock: before, an app with several animations could draw twice as many frames as the animations needed.
+
+The native input parser is still opt-in. It now keeps a mouse wheel report that a slow link splits, which the default parser can type into the focused input as text. To try it, set `OTUI_NATIVE_INPUT_PARSER=1`, or pass `experimental_nativeInput: true` to the renderer.
+
+Wide emoji sequences, such as a family emoji in tmux, draw at their full width, and long wrapped or highlighted lines draw their last rows as fast a
+
+... (truncated)]]></description>
+    <pubDate>Thu, 29 Oct 2026 13:30:09 GMT</pubDate>
+  </item>
+  <item>
+    <title>[composer/composer] 2.11.0</title>
+    <link>https://github.com/composer/composer/releases/tag/2.11.0</link>
+    <guid isPermaLink="true">https://github.com/composer/composer/releases/tag/2.11.0</guid>
+    <description><![CDATA[### Read the Composer 2.11 Release Announcement for more details on the release highlights.
+
+### Full Changelog
+
+ * BC Break: Removed the `source-fallback` config option which was added in 2.10 as a temporary measure, dist installs no longer fall back to source (#13050)
+ * Security: Fixed package names in `vendor/composer/installed.json` being able to escape the vendor directory during install and reinstall (GHSA-c968-33g3-wh7p)
+ * Security: Fixed inline repository HTTP headers, such as API tokens, being written into `composer.lock` (GHSA-fm2w-xgf2-f9fh)
+ * Security: Fixed additional arguments passed to `@composer` scripts not being escaped (#13169)
+ * Security: Fixed svn passwords not being redacted from debug output (#13171)
+ * Security: Sanitize URL-embedded credentials in hg and fossil error output (#13172)
+ * Security: Reject TLS connections presenting distrusted intermediate certificates (the compromised eMudhra ones) even if the system CA store trusts their roots (#131
+
+... (truncated)]]></description>
+    <pubDate>Thu, 29 Oct 2026 09:35:10 GMT</pubDate>
+  </item>
+  <item>
+    <title>[web-infra-dev/rspack] v2.3.0</title>
+    <link>https://github.com/web-infra-dev/rspack/releases/tag/v2.3.0</link>
+    <guid isPermaLink="true">https://github.com/web-infra-dev/rspack/releases/tag/v2.3.0</guid>
+    <description><![CDATA[## What's Changed
+
+## 🎉 See Announcing Rspack 2.3 for more details.
+
+### New Features 🎉
+* feat: rename loader filter.code to codeFilter by @SyMind in 
+* feat: integrate allocative snapshots and profiling skill into Rspack by @intellild in 
+* feat: support module.parser.javascript.dynamicUrl by @HashemKhalifa in 
+* feat(watcher): expose watchpack times API on native and node watch file systems by @stormslowly in 
+* feat(javascript): migrate parser to SWC Next by @LingyuCoder in 
+* feat: add loader codeFilter prefilter by @SyMind in 
+* feat(create-rspack): display version in startup banner by @chenjiahan in 
+* feat(rstest): add origin-aware import.meta.resolve hook by @9aoy in 
+* feat(watch): support mixed ignored patterns by @Perfecto23 in 
+* feat: support es2026 target by @chenjiahan in 
+* feat(cache): expose newCache statistics in Stats JSON by @ahabhgk in 
+### Performance 🚀
+* perf(size): box hot async entry futures to shrink binding size by @stormslowly in 
+* per
+
+... (truncated)]]></description>
+    <pubDate>Thu, 29 Oct 2026 08:12:27 GMT</pubDate>
+  </item>
+  <item>
+    <title>[BabylonJS/Babylon.js] 9.33.0</title>
+    <link>https://github.com/BabylonJS/Babylon.js/releases/tag/9.33.0</link>
+    <guid isPermaLink="true">https://github.com/BabylonJS/Babylon.js/releases/tag/9.33.0</guid>
+    <description><![CDATA[### Core
+
+- Add render-pass command stream batching for native hosts - by matthargett (#19075)
+- Clustered lighting: sheen uses the out-of-scope normalW (WGSL/GLSL compile error) - by increasinglyHuman (#19049)
+- WebGPU: GPU frame time with timestamp writes, read after the frame's submit - by enriqxxx (#19066)
+- Fix WGSL StandardMaterial fresnel blend and area light check - by RizgarOzan (#19074)
+- RenderTargetTexture: a fresh render id before each pass - by enriqxxx (#19073)
+- Temporal view data in the scene uniform buffer for WGSL: camera history and TAA jitter - by enriqxxx (#19038)
+- Meshes: keep no Vector3 per vertex when a mesh's positions are its geometry's - by enriqxxx (#19065)
+- KHR_materials_scatter import/export - [_New Feature_] by MiiBond (#18810)
+- Materials: keep pipeline names and plugin declarations as flat strings - by enriqxxx (#19060)
+- Fix solid particle winding for glTF model meshes - [_Bug Fix_] by Popov72 (#19058)
+- Gaussian Splatting: fix WebGPU texture fetch 
+
+... (truncated)]]></description>
+    <pubDate>Thu, 29 Oct 2026 08:09:55 GMT</pubDate>
+  </item>
+  <item>
+    <title>[bluesky-social/social-app] v1.137.0 (1.137.0)</title>
+    <link>https://github.com/bluesky-social/social-app/releases/tag/1.137.0</link>
+    <guid isPermaLink="true">https://github.com/bluesky-social/social-app/releases/tag/1.137.0</guid>
+    <description><![CDATA[## What's Changed
+* Split the react-native patch into one file per change by @tomekzaw in 
+* Block more shortener and redirect domains in profile links by @vineyardbovines in 
+* Suggest a standard.site blog's own title for profile links by @vineyardbovines in 
+* Fix missing paper plane icon in chat send button by @ds-boyce in 
+* Fix iOS e2e flows (create-account, login, thread-muting) by @mozzius in 
+* APP-3524: Upgrade to React Native 0.88 / Expo SDK 58 by @mozzius in 
+* Use Node 24.22 Docker tags and validate runtime versions by @rafaeleyng in 
+* Fix text entry for TokenField by @ds-boyce in 
+* Update CI certificate handling and Claude Bun runtime by @estrattonbailey in 
+* claude: use Opus 5.5 for PR review workflow by @amckinley in 
+* claude: use Opus 5.5 for mention workflow by @amckinley in 
+* Share bsky.app passwords with bsky.social and add /.well-known/change-password by @matthieusieben in 
+* Avoid per-frame Reanimated commits in the profile header by @tomekzaw in 
+
+... (truncated)]]></description>
+    <pubDate>Thu, 29 Oct 2026 01:39:17 GMT</pubDate>
   </item>
   <item>
     <title>[cloudflare/vinext] vinext@1.4.0</title>
@@ -218,29 +364,6 @@ Welcome to the AMD FSR™ SDK. This revision to the SDK updates a number of AMD 
 
 ... (truncated)]]></description>
     <pubDate>Wed, 28 Oct 2026 11:41:13 GMT</pubDate>
-  </item>
-  <item>
-    <title>[openai/codex] 0.165.0 (rust-v0.165.0)</title>
-    <link>https://github.com/openai/codex/releases/tag/rust-v0.165.0</link>
-    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.165.0</guid>
-    <description><![CDATA[## New Features
-
-- Added a built-in Google Cloud Vertex AI provider, configured with `model_provider = "gcp"`. (#56265)
-- Added GPT-6.1 Terra to the model catalogs. (#57337)
-- Added a repository filter to the session picker and directory grouping to the agent command center, making it easier to navigate sessions across linked worktrees. (#56308)
-- Added experimental attached thread forks to the app-server API. (#56351)
-- Enabled reasoning effort changes during a conversation by default for supported models. (#56163)
-- Enabled memory v2 by default for fresh profiles and added support for importing external-agent memories into it. (#56211, #56414)
-
-## Bug Fixes
-
-- Fixed fresh TUI sessions to honor the server’s default approval reviewer when no explicit override is provided. (#56090)
-- Kept TUI preferences editable and immediately applicable when execution settings are invalid. (#56091)
-- Cancelled remote MCP tool requests when their local response futures are dropped. (#56132)
-- Prevente
-
-... (truncated)]]></description>
-    <pubDate>Tue, 27 Oct 2026 20:09:38 GMT</pubDate>
   </item>
   <item>
     <title>[lynx-family/lynx] 4.2.0</title>
@@ -429,20 +552,6 @@ This release adds response timing and opt-in UTF-8 Basic authentication, improve
     <pubDate>Mon, 26 Oct 2026 07:10:45 GMT</pubDate>
   </item>
   <item>
-    <title>[anomalyco/opentui] Release v0.7.0 (v0.7.0)</title>
-    <link>https://github.com/anomalyco/opentui/releases/tag/v0.7.0</link>
-    <guid isPermaLink="true">https://github.com/anomalyco/opentui/releases/tag/v0.7.0</guid>
-    <description><![CDATA[Before 0.7.0, typing one character in a 10,000-line Textarea laid out all 10,000 lines before the key call returned, and the Yoga measure of the next frame walked them again. Typing and pasting slowed down with the size of the document, and word wrap paid the most. In 0.7.0, an edit only records that the view must scroll to the cursor. The layout runs once, at the next read of the viewport or the visual cursor, or at the next frame. It compares the text with the text of the last layout and lays out only the lines around the change. An insert, a delete, an undo, or a join lays out one line. Enter lays out two lines, and a 100-line paste lays out 101.
-
-A read that needs the layout still pays for it. `visualCursor` lays out the text when an edit is pending. `cursorOffset` reads the logical cursor and does not lay out the text. To check after each key whether the cursor is at the start of the text, compare `cursorOffset`:
-
-```ts
-const atStart = input.cursorOffset === 0 // not input.visualC
-
-... (truncated)]]></description>
-    <pubDate>Sun, 25 Oct 2026 20:49:51 GMT</pubDate>
-  </item>
-  <item>
     <title>[theMackabu/ant] v16.5.c41757b4.0</title>
     <link>https://github.com/theMackabu/ant/releases/tag/v16.5.c41757b4.0</link>
     <guid isPermaLink="true">https://github.com/theMackabu/ant/releases/tag/v16.5.c41757b4.0</guid>
@@ -613,40 +722,6 @@ For HTML checkboxes, declare a boolean with a default of `False`. See Boolean Fo
     <guid isPermaLink="true">https://github.com/uptrace/uptrace/releases/tag/v2.1.0-rc.2</guid>
     <description><![CDATA[CHANGELOG]]></description>
     <pubDate>Thu, 22 Oct 2026 09:12:02 GMT</pubDate>
-  </item>
-  <item>
-    <title>[BabylonJS/Babylon.js] 9.32.0</title>
-    <link>https://github.com/BabylonJS/Babylon.js/releases/tag/9.32.0</link>
-    <guid isPermaLink="true">https://github.com/BabylonJS/Babylon.js/releases/tag/9.32.0</guid>
-    <description><![CDATA[### Inspector
-
-- Inspector Lite: add debug helpers and capture tools (P7b) - [_New Feature_] by ryantrem (#19016)]]></description>
-    <pubDate>Thu, 22 Oct 2026 08:06:27 GMT</pubDate>
-  </item>
-  <item>
-    <title>[bluesky-social/social-app] v1.136.0 (1.136.0)</title>
-    <link>https://github.com/bluesky-social/social-app/releases/tag/1.136.0</link>
-    <guid isPermaLink="true">https://github.com/bluesky-social/social-app/releases/tag/1.136.0</guid>
-    <description><![CDATA[## What's Changed
-* Wire up Moderation Inbox endpoints by @ds-boyce in 
-* Wire up Moderation Inbox notification settings by @ds-boyce in 
-* Wire up Moderation Inbox report details by @ds-boyce in 
-* Wire up Moderation Inbox notices and appeals by @ds-boyce in 
-* Wire up Moderation Inbox analytics by @ds-boyce in 
-* Add unread count to Moderation and content filters by @ds-boyce in 
-* Add moderation inbox beta feature description by @ds-boyce in 
-* Add profile links by @vineyardbovines in 
-* Report profile links as link records by @vineyardbovines in 
-* Hide profile link editing for age-restricted accounts by @vineyardbovines in 
-* [APP-3405] Match Safelink domain rules on subdomains by @vineyardbovines in 
-* APP-3467: Use design’s unread tints for Notifications v2 in the dark themes by @mozzius in 
-* Bump version to v1.136.0 by @mozzius in 
-* Remove composer layout animations by @mozzius in 
-* Keep Home mounted when opening a link while the app is running by @tomekzaw in 
-* APP-3447: K
-
-... (truncated)]]></description>
-    <pubDate>Wed, 21 Oct 2026 20:13:01 GMT</pubDate>
   </item>
   <item>
     <title>[cli/cli] GitHub CLI 2.103.0 (v2.103.0)</title>
@@ -936,6 +1011,30 @@ gh attestation verify dprint-x86_64-unknown-linux-gnu.zip --repo dprint/dprint
     <pubDate>Thu, 15 Oct 2026 22:22:39 GMT</pubDate>
   </item>
   <item>
+    <title>[floci-io/floci-gcp] 0.11.0</title>
+    <link>https://github.com/floci-io/floci-gcp/releases/tag/0.11.0</link>
+    <guid isPermaLink="true">https://github.com/floci-io/floci-gcp/releases/tag/0.11.0</guid>
+    <description><![CDATA[# 0.11.0 (2026-10-15)
+
+
+### Bug Fixes
+
+* **bigquery:** accept expressions as interval step sizes (#325) (4886f1b)
+* **bigquery:** report the DDL target table as the job destination (#348) (4d7d918)
+* **bigquery:** return a NULL array as an empty array (#335) (9f8a65a)
+* **bigquery:** run queries wrapped in parentheses and CTEs inside them (#347) (c96e936)
+* **bigquery:** support null modifiers and LIMIT in ARRAY_AGG (#336) (0a76f84)
+* **cloudrun:** apply resources.limits to workload containers (#351) (d184e58), closes #340
+* **cloudrun:** opt-in Docker security options for workload containers (#342) (f116897), closes #339
+* **cloudrun:** publish runtime container ports on loopback only (#352) (6e0bf67), closes #341
+* **datastore:** compare equality filters for timestamp, key, blob, entity, and array values (#315) (532679c), closes #258
+* **docker:** copy libz into the image built from Dockerfile.native (#378) (131f9e0), closes #377
+* **firestore,datastore:** keep geo point values on wr
+
+... (truncated)]]></description>
+    <pubDate>Thu, 15 Oct 2026 10:10:24 GMT</pubDate>
+  </item>
+  <item>
     <title>[floci-io/floci] 2.3.0</title>
     <link>https://github.com/floci-io/floci/releases/tag/2.3.0</link>
     <guid isPermaLink="true">https://github.com/floci-io/floci/releases/tag/2.3.0</guid>
@@ -959,112 +1058,6 @@ gh attestation verify dprint-x86_64-unknown-linux-gnu.zip --repo dprint/dprint
 
 ... (truncated)]]></description>
     <pubDate>Thu, 15 Oct 2026 05:39:06 GMT</pubDate>
-  </item>
-  <item>
-    <title>[sveltejs/kit] @sveltejs/kit@3.1.0</title>
-    <link>https://github.com/sveltejs/kit/releases/tag/%40sveltejs/kit%403.1.0</link>
-    <guid isPermaLink="true">https://github.com/sveltejs/kit/releases/tag/%40sveltejs/kit%403.1.0</guid>
-    <description><![CDATA[### Minor Changes
-
-- feat: support `report-sha256`/`report-sha384`/`report-sha512` CSP hash-reporting keywords (#17398)
-
-- feat: emit a `sveltekit.endpoint` span for `+server` handlers when server tracing is enabled (#17325)
-
-### Patch Changes
-
-- fix: don't treat every module as server-only when the project is inside a `server` directory (#17376)
-
-- fix: continue deployment recovery when service worker updates fail (#17440)
-
-- fix: infer prerendered MIME types from generated files (#17381)
-
-- fix: leave generated files alone when their contents are unchanged (#17310)
-
-- fix: leave focus in the parent page when an app in an unfocused iframe starts or navigates (#17297)
-
-- fix: don't warn about Storybook's Vite plugins that use `transformIndexHtml` (#17373)]]></description>
-    <pubDate>Wed, 14 Oct 2026 22:32:57 GMT</pubDate>
-  </item>
-  <item>
-    <title>[go-chi/chi] v5.5.0</title>
-    <link>https://github.com/go-chi/chi/releases/tag/v5.5.0</link>
-    <guid isPermaLink="true">https://github.com/go-chi/chi/releases/tag/v5.5.0</guid>
-    <description><![CDATA[## What's Changed
-* middleware: add Deprecation (RFC 9745), make Sunset RFC 8594 only by @VojtechVitek in 
-* middleware: test ClientIPFromHeader does not fall back to other headers by @renanmpimentel in 
-* middleware: build Maybe handler once by @lowgame in 
-* middleware: round and clamp Retry-After delays up to whole seconds by @VojtechVitek in 
-* middleware: parse quoted ContentCharset media parameters by @VojtechVitek in 
-* middleware: SupressNotFound must not mutate the request's route context by @VojtechVitek in 
-
-## New Contributors
-* @renanmpimentel made their first contribution in 
-* @lowgame made their first contribution in 
-
-**Full Changelog**:]]></description>
-    <pubDate>Wed, 14 Oct 2026 13:20:54 GMT</pubDate>
-  </item>
-  <item>
-    <title>[nodejs/undici] v8.12.0</title>
-    <link>https://github.com/nodejs/undici/releases/tag/v8.12.0</link>
-    <guid isPermaLink="true">https://github.com/nodejs/undici/releases/tag/v8.12.0</guid>
-    <description><![CDATA[## What's Changed
-* fix(cookies): ignore a numeric expires outside the Date range by @xia-chao in 
-* fix(http2): pause bodyTimeout while applying backpressure by @jasnell in 
-* fix(cache): track cached response abort state by @mcollina in 
-* fix(deduplicate): make terminal callbacks exception-safe by @mcollina in 
-* fix(decompress): stop inflating compress and x-compress by @luantaraschi in 
-* fix(cache): evict least recently used entries in MemoryCacheStore by @jasnell in 
-* fix(eventsource): fix redirect targets in eventsource by @jasnell in 
-* fix(redirect): fix throwOnMaxRedirect edge by @jasnell in 
-* fix: normalize HTTP/2 headers for legacy dispatch handlers by @Knowzzz in 
-* fix(session cache): fix bug in tls session caching by @jasnell in 
-* docs: fix relative links broken by the README move by @v1teka in 
-* fix(redirect): add error code to max redirects error by @mcollina in 
-* fix(eventsource): fix retry wrap bug by @jasnell in 
-* fix(retry): keep request headers when resumin
-
-... (truncated)]]></description>
-    <pubDate>Wed, 14 Oct 2026 09:03:04 GMT</pubDate>
-  </item>
-  <item>
-    <title>[TASEmulators/fceux] fceux-2.7.0</title>
-    <link>https://github.com/TASEmulators/fceux/releases/tag/fceux-2.7.0</link>
-    <guid isPermaLink="true">https://github.com/TASEmulators/fceux/releases/tag/fceux-2.7.0</guid>
-    <description><![CDATA[The 2.7.0 release introduces several new features and improvements focused on build system enhancements, media codec support, and developer tooling. Profiling and debugging capabilities have been significantly improved, with support for FFmpeg 9 and enhanced platform compatibility.
-Note: The tag on this release was bumped once due to a major bug being found shortly after initial release. It has been corrected and new builds are generated, sorry for the inconvenience.]]></description>
-    <pubDate>Wed, 14 Oct 2026 01:18:01 GMT</pubDate>
-  </item>
-  <item>
-    <title>[github/spec-kit] Spec Kit - 1.2.0 (v1.2.0)</title>
-    <link>https://github.com/github/spec-kit/releases/tag/v1.2.0</link>
-    <guid isPermaLink="true">https://github.com/github/spec-kit/releases/tag/v1.2.0</guid>
-    <description><![CDATA[## Install
-
-```bash
-uv tool install specify-cli --from git+
-specify init my-project
-```
-
-## What's Changed
-
-- chore: bump version to 1.2.0
-- fix: explain community submission title mismatches (#4946)
-- fix(workflows): confine workflow and step catalog cache writes (#4931)
-- docs: clarify delivery versus post-delivery spec persistence (#4945)
-- fix(bundles): allow newer packaged patch releases with warnings (#4942)
-- Update Applied Epistemic Engineering extension to v1.4.0 (#4941)
-- Update Applied Epistemic Engineering extension to v1.3.0 (#4936)
-- Persist project symlink policy at command boundaries (#4934)
-- [extension] Update DocGuard — CDD Enforcement extension to v0.44.3 (#4927)
-- fix(workflows): skip the right side of and/or when the left side decides (#4923)
-- Update OpenProject preset to v1.0.3 (#4928)
-- fix: narrow exceptions in get_speckit_version from Exception to specific types (#3917)
-- Update adrkit extension to v0.1.5 (#4932)
-- Update OpenProject Integration extension to 
-
-... (truncated)]]></description>
-    <pubDate>Tue, 13 Oct 2026 15:49:05 GMT</pubDate>
   </item>
 </channel>
 </rss>
