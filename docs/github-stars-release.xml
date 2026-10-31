@@ -5,8 +5,63 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Fri, 30 Oct 2026 22:01:24 GMT</lastBuildDate>
+  <lastBuildDate>Sat, 31 Oct 2026 22:01:43 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[esm-dev/esm.sh] Server v140_2 (v140_2)</title>
+    <link>https://github.com/esm-dev/esm.sh/releases/tag/v140_2</link>
+    <guid isPermaLink="true">https://github.com/esm-dev/esm.sh/releases/tag/v140_2</guid>
+    <description><![CDATA[* Remove `npmStoreMaxSize`, `storage.cacheMaxSize`, and automatic local S3 cache purging. (#1495, #1501)
+* Expire installed npm packages after 1 idle hour, keep packages used by active requests and builds, and free idle packages before retrying an install on `ENOSPC`. (#1501)
+* Cache S3 build metadata in `{workDir}/meta-cache.db` when `storage.cacheDir` is enabled. (#1498)
+* Reduce deploy downtime by moving startup cleanup to the background and removing old npm directories asynchronously. (#1495, #1501)
+* Free build slots while waiting for package installs and fix concurrent build queue resumes. (#1495, #1503)
+* Honor build timeouts during dependency resolution and storage writes, free timed out build slots immediately, and cache build timeout errors for 10 minutes. (#1497, #1502)
+* Serve cached npm resolutions while refreshing metadata in the background, including during registry outages. (#1488, #1503)
+* Share concurrent registry lookups, cancel waits with the request, and return unc
+
+... (truncated)]]></description>
+    <pubDate>Sat, 31 Oct 2026 14:27:35 GMT</pubDate>
+  </item>
+  <item>
+    <title>[floci-io/floci-gcp] 0.12.0</title>
+    <link>https://github.com/floci-io/floci-gcp/releases/tag/0.12.0</link>
+    <guid isPermaLink="true">https://github.com/floci-io/floci-gcp/releases/tag/0.12.0</guid>
+    <description><![CDATA[# 0.12.0 (2026-10-31)
+
+
+### Bug Fixes
+
+* **bigquery:** accept skipLeadingRows sent as a string in load jobs (#449) (7bcd347)
+* **bigquery:** coerce date-shaped STRING parameters like BigQuery (#514) (d0b1849)
+* **bigquery:** coerce STRING operands of date and time functions (#540) (4388e23)
+* **bigquery:** complete copy job follow-ups (#537) (6aa0074)
+* **bigquery:** expand STRUCT values with .* (#476) (2a6b070)
+* **bigquery:** fail the query when a result array has a NULL element (#412) (2f80ce2), closes #371
+* **bigquery:** keep an implicit alias that follows a query parameter (#522) (202fe97)
+* **bigquery:** keep IS [NOT] DISTINCT FROM out of FROM clause handling (#500) (d1b0133)
+* **bigquery:** keep ROW a keyword in CURRENT ROW window frame bounds (#439) (a9328e0)
+* **bigquery:** name anonymous subquery and CTE columns like BigQuery (#394) (57fcbee), closes #380
+* **bigquery:** preserve row page size (#461) (6570bed)
+* **bigquery:** preserve struct select aliases in clauses (#491) 
+
+... (truncated)]]></description>
+    <pubDate>Sat, 31 Oct 2026 11:02:31 GMT</pubDate>
+  </item>
+  <item>
+    <title>[obsidianmd/pele] 1.13.0</title>
+    <link>https://github.com/obsidianmd/pele/releases/tag/1.13.0</link>
+    <guid isPermaLink="true">https://github.com/obsidianmd/pele/releases/tag/1.13.0</guid>
+    <description><![CDATA[- Series colors follow Mermaid's palette theme variables: `pie1`–`pie8` in pie charts, `git0`–`git7` in git graphs, `cScale0`–`cScale7` in timelines, radar charts and treemaps, `cScale1`–`cScale8` in mindmaps, `venn1`–`venn8` in Venn diagrams, and the first eight colors of `xyChart.plotColorPalette` in XY charts. Shorter Venn and XY palettes repeat. Values that aren't colors keep the theme's color. #55 #98
+- Labels on palette colors in pie charts, git graphs, timelines and treemaps use whichever of `--pele-fg-on-light` and `--pele-fg-on-dark` contrasts more.
+- Edges that cross a subgraph's border bend less near the nodes they meet, and more edges come out straight. #97
+- Unlinked nodes in a subgraph stay lined up when an edge from outside enters one of them, instead of that node dropping a rank.
+- Block: labels in blocks that span several columns use the extra width to fit on fewer lines. #106 #107
+- Quadrant: the `quadrantChart` settings `titleFontSize`, `quadrantLabelFontSize`, 
+
+... (truncated)]]></description>
+    <pubDate>Sat, 31 Oct 2026 00:23:40 GMT</pubDate>
+  </item>
   <item>
     <title>[bluesky-social/atproto] @atproto/ozone@0.12.0</title>
     <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/ozone%400.12.0</link>
@@ -534,15 +589,6 @@ pod 'PrimJS', '4.2.1', :subspecs => ['quickjs', 'napi']
     <pubDate>Tue, 27 Oct 2026 05:51:29 GMT</pubDate>
   </item>
   <item>
-    <title>[obsidianmd/pele] 1.12.0</title>
-    <link>https://github.com/obsidianmd/pele/releases/tag/1.12.0</link>
-    <guid isPermaLink="true">https://github.com/obsidianmd/pele/releases/tag/1.12.0</guid>
-    <description><![CDATA[- Labels on fills a diagram defines with `style`, `classDef`, or a sequence `rect` or `box` use whichever of `--pele-fg-on-light` and `--pele-fg-on-dark` contrasts more with the fill, so they stay readable in dark themes. Edges and arrows on those fills stay readable too. #29
-- Custom fills on subgraphs, composite states, block composites, ER subgraphs and use case boundaries render at full opacity instead of half opacity. #29
-- Percent escapes such as `%20` and `%26` are preserved in links.]]></description>
-    <pubDate>Mon, 26 Oct 2026 23:26:12 GMT</pubDate>
-  </item>
-  <item>
     <title>[wailsapp/wails] Wails v3.0.0 (v3.0.0)</title>
     <link>https://github.com/wailsapp/wails/releases/tag/v3.0.0</link>
     <guid isPermaLink="true">https://github.com/wailsapp/wails/releases/tag/v3.0.0</guid>
@@ -567,16 +613,6 @@ Wails v3 requires **Go 1.26 or newer**. We recommen
 
 ... (truncated)]]></description>
     <pubDate>Mon, 26 Oct 2026 11:15:13 GMT</pubDate>
-  </item>
-  <item>
-    <title>[esm-dev/esm.sh] Server v140_1 (v140_1)</title>
-    <link>https://github.com/esm-dev/esm.sh/releases/tag/v140_1</link>
-    <guid isPermaLink="true">https://github.com/esm-dev/esm.sh/releases/tag/v140_1</guid>
-    <description><![CDATA[* Add `npmStoreMaxSize` and `storage.cacheMaxSize` options to limit the size of local caches. (#1492)
-* Fix automatic cache purging on low disk space and inodes, and retry installs once on `ENOSPC`. (#1483, #1492)
-* Remove abandoned build tasks from the queue and honor cancellation during analysis and module resolution. (#1491)
-* Fix build queue stalls caused by builds waiting for the splitting analysis of other builds. (#1493)]]></description>
-    <pubDate>Mon, 26 Oct 2026 09:27:21 GMT</pubDate>
   </item>
   <item>
     <title>[project-tsurugi/tsurugidb] 1.13.0</title>
@@ -995,42 +1031,6 @@ The MSRV is increased to 1.85. ([#8514])
 * **create-vite:** use `tinyexec` instead of `cross-spawn` (#23541) (e5d9af2)
 * **deps:** replace `@vercel/detect-agent` with `std-env` (#23744) (ce4293f)]]></description>
     <pubDate>Mon, 19 Oct 2026 08:05:45 GMT</pubDate>
-  </item>
-  <item>
-    <title>[dprint/dprint] 0.64.0</title>
-    <link>https://github.com/dprint/dprint/releases/tag/0.64.0</link>
-    <guid isPermaLink="true">https://github.com/dprint/dprint/releases/tag/0.64.0</guid>
-    <description><![CDATA[## Changes
-
-* feat: support config file in a `.config` directory (#1369)
-* feat(init): plugin options, preferred plugins, and adding above existing plugins (#1356)
-* feat: support Wasm plugins that use exception handling (#1371)
-* fix: show download progress for gzip compressed responses (#1358)
-
-## Install
-
-Run `dprint upgrade` or see 
-
-## Verification
-
-These artifacts have build provenance attestations.
-Verify a download with the GitHub CLI:
-
-```shell
-gh attestation verify dprint-x86_64-unknown-linux-gnu.zip --repo dprint/dprint
-```
-
-## Checksums
-
-|Artifact|SHA-256 Checksum|
-|:--|:--|
-|dprint-x86_64-apple-darwin.zip|c5eb2a8b07e12d32818ee9f3c19c708d88be2c974eedaab7c4a31e902e30f429|
-|dprint-aarch64-apple-darwin.zip|791560cf48299933a9fff2aea93b7e42b39e62d8a109634619d01c4f2c1aa68a|
-|dprint-x86_64-pc-windows-msvc.zip|2d0be3f0aa8d3c55e4ae19de324353d2179dade2a05b0eda5bd80bc1b94579cc|
-|dprint-x86_64-pc-windows-msvc-installer.exe|1b826f7205f02d356f4a3072369626aec33d
-
-... (truncated)]]></description>
-    <pubDate>Sun, 18 Oct 2026 21:08:48 GMT</pubDate>
   </item>
 </channel>
 </rss>
