@@ -5,8 +5,79 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Sat, 31 Oct 2026 22:01:43 GMT</lastBuildDate>
+  <lastBuildDate>Sun, 01 Nov 2026 22:01:08 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[wailsapp/wails] Wails v3.1.0 (v3.1.0)</title>
+    <link>https://github.com/wailsapp/wails/releases/tag/v3.1.0</link>
+    <guid isPermaLink="true">https://github.com/wailsapp/wails/releases/tag/v3.1.0</guid>
+    <description><![CDATA[## Wails v3 Weekly Release - v3.1.0
+
+## Added
+- add experimental CGO-free macOS and Linux backends in PR by @taliesin-ai
+- native YAML builds, portable packaging and signing in PR by @taliesin-ai
+
+## Changed
+- avoid copying discarded desktop metadata in PR by @taliesin-ai
+- format content lengths without fmt in PR by @taliesin-ai
+- select index roots without collecting candidates in PR by @taliesin-ai
+- reuse non-seekable file copy buffers in PR by @taliesin-ai
+- avoid allocating a reader for sniffing prefixes in PR by @taliesin-ai
+- skip MIME sniff reads for known extensions in PR by @taliesin-ai
+- prevent queue growth and shrink oscillation in PR by @taliesin-ai
+- avoid allocating discarded request contexts in PR by @taliesin-ai
+- skip disabled debug log preparation in PR by @taliesin-ai
+- allocate MIME sniff buffers lazily in PR by @taliesin-ai
+- reduce hyperlink formatting allocations in PR by @taliesin-ai
+- remove temporary bullet formatting allocations in PR by @taliesin-ai
+- red
+
+... (truncated)]]></description>
+    <pubDate>Sun, 01 Nov 2026 11:57:27 GMT</pubDate>
+  </item>
+  <item>
+    <title>[djkotori/rpgcobo-tool] v0.2.0</title>
+    <link>https://github.com/djkotori/rpgcobo-tool/releases/tag/v0.2.0</link>
+    <guid isPermaLink="true">https://github.com/djkotori/rpgcobo-tool/releases/tag/v0.2.0</guid>
+    <description><![CDATA[This version includes the following bug fixes and feature additions.
+
+- (Key Feature) Now supports building for each platform. It is possible to build for Windows, Steam, Android, and iOS. (Early access and later)
+ - We have made improvements such as being able to specify a theme color when exporting WebGL.
+
+- (Key Feature) Added support for loading external 3D models (glTF). You can place it on the map or use it as a character.
+ - "Resources side menu ⇒ Polygon Model" editor can import and manage polygon models.
+ - Supports skin animation and shape animation.
+ - Material settings are also compatible to some extent, but only basic parameters are supported to prevent the shader from becoming bloated.
+ - Although it is possible to import 3D models in VRM format, VRM-specific functions (Humanoid bones, facial expressions, etc.) are not currently supported. This will be supported in the future.
+ - Currently collision only supports simple shapes. More complex collisions will be su
+
+... (truncated)]]></description>
+    <pubDate>Sun, 01 Nov 2026 07:11:40 GMT</pubDate>
+  </item>
+  <item>
+    <title>[floci-io/floci] 2.4.0</title>
+    <link>https://github.com/floci-io/floci/releases/tag/2.4.0</link>
+    <guid isPermaLink="true">https://github.com/floci-io/floci/releases/tag/2.4.0</guid>
+    <description><![CDATA[# 2.4.0 (2026-10-31)
+
+### Features
+
+* **apigatewayv2:** route VPC link integrations to Cloud Map service instances (#6753) (4fffb5a)
+* **autoscaling:** describe suspended process reasons (#5941) (7ce4b6b)
+* **autoscaling:** implement DescribeTags (#5750) (05153b3)
+* **autoscaling:** support EnterStandby and ExitStandby (#6955) (ead5d4a)
+* **backup:** add CreateLogicallyAirGappedBackupVault (#6015) (65e35ad), closes #4986
+* **cloudformation:** apply AssociatedRoles on RDS clusters and instances (#5656) (ad1b225), closes #5638
+* **cloudformation:** expose RegionalEndpoints of a web function endpoint to Fn::GetAtt (#6907) (c4ae11c)
+* **cloudformation:** provision AWS::EC2::PrefixList (#6481) (6acd906), closes aws/aws-cdk#35360
+* **cloudformation:** provision AWS::WAFv2::IPSet (#5950) (a57c209)
+* **cloudformation:** provision Redshift event subscriptions (#6664) (d3c4732)
+* **cloudformation:** provision SES email identities (#4812) (7f8383d)
+* **cloudformation:** provision SES receipt rule
+
+... (truncated)]]></description>
+    <pubDate>Sat, 31 Oct 2026 22:10:55 GMT</pubDate>
+  </item>
   <item>
     <title>[esm-dev/esm.sh] Server v140_2 (v140_2)</title>
     <link>https://github.com/esm-dev/esm.sh/releases/tag/v140_2</link>
@@ -589,32 +660,6 @@ pod 'PrimJS', '4.2.1', :subspecs => ['quickjs', 'napi']
     <pubDate>Tue, 27 Oct 2026 05:51:29 GMT</pubDate>
   </item>
   <item>
-    <title>[wailsapp/wails] Wails v3.0.0 (v3.0.0)</title>
-    <link>https://github.com/wailsapp/wails/releases/tag/v3.0.0</link>
-    <guid isPermaLink="true">https://github.com/wailsapp/wails/releases/tag/v3.0.0</guid>
-    <description><![CDATA[# Wails v3.0.0
-
-**Wails v3 is here.** Build desktop and mobile applications with Go and the web frontend you already know, using each platform's native WebView instead of a bundled browser.
-
-v3 is a ground-up rework of Wails. Applications, windows, services, events and platform features are now explicit objects you create and talk to directly, so multiple windows, system trays and background services are a normal part of the model rather than workarounds. It has been nearly four years since the first v3 alpha in January 2023. Thank you to everyone who tested, reported, translated, reviewed and contributed along the way.
-
-📣 **Read the announcement:** Wails v3.0.0 Released
-📚 **Documentation:** wails.io · **Migrating from v2:** v2 to v3 guide
-
-## Install
-
-```bash
-go install github.com/wailsapp/wails/v3/cmd/wails3@v3.0.0
-wails3 setup # guided setup: checks your system and installs what Wails needs
-wails3 init # create a new project
-```
-
-Wails v3 requires **Go 1.26 or newer**. We recommen
-
-... (truncated)]]></description>
-    <pubDate>Mon, 26 Oct 2026 11:15:13 GMT</pubDate>
-  </item>
-  <item>
     <title>[project-tsurugi/tsurugidb] 1.13.0</title>
     <link>https://github.com/project-tsurugi/tsurugidb/releases/tag/1.13.0</link>
     <guid isPermaLink="true">https://github.com/project-tsurugi/tsurugidb/releases/tag/1.13.0</guid>
@@ -997,40 +1042,6 @@ The MSRV is increased to 1.85. ([#8514])
 
 ... (truncated)]]></description>
     <pubDate>Mon, 19 Oct 2026 16:33:04 GMT</pubDate>
-  </item>
-  <item>
-    <title>[remix-run/react-router] v8.5.0 (react-router@8.5.0)</title>
-    <link>https://github.com/remix-run/react-router/releases/tag/react-router%408.5.0</link>
-    <guid isPermaLink="true">https://github.com/remix-run/react-router/releases/tag/react-router%408.5.0</guid>
-    <description><![CDATA[See the changelog for release notes:]]></description>
-    <pubDate>Mon, 19 Oct 2026 13:48:57 GMT</pubDate>
-  </item>
-  <item>
-    <title>[vitejs/vite] create-vite@9.3.0</title>
-    <link>https://github.com/vitejs/vite/releases/tag/create-vite%409.3.0</link>
-    <guid isPermaLink="true">https://github.com/vitejs/vite/releases/tag/create-vite%409.3.0</guid>
-    <description><![CDATA[### Features
-
-* **create-vite:** print version before scaffolding (#23806) (a3001c5)
-* **create-vite:** use typescript v7 where possible (#23794) (9df8bbc)
-
-### Bug Fixes
-
-* **create-vite:** add router only options for tanstack router/start (#23543) (f155b62)
-* **deps:** update all non-major dependencies (#23482) (3c752c8)
-* **deps:** update all non-major dependencies (#23537) (e8990c4)
-* **deps:** update all non-major dependencies (#23601) (9944fa6)
-* **deps:** update all non-major dependencies (#23648) (8a4c19c)
-* **deps:** update all non-major dependencies (#23731) (cf80aa5)
-* **deps:** update all non-major dependencies (#23826) (77d8373)
-* **deps:** update rolldown-related dependencies (#23483) (9aecbbf)
-* **deps:** update rolldown-related dependencies (#23733) (43f0d05)
-
-### Code Refactoring
-
-* **create-vite:** use `tinyexec` instead of `cross-spawn` (#23541) (e5d9af2)
-* **deps:** replace `@vercel/detect-agent` with `std-env` (#23744) (ce4293f)]]></description>
-    <pubDate>Mon, 19 Oct 2026 08:05:45 GMT</pubDate>
   </item>
 </channel>
 </rss>
