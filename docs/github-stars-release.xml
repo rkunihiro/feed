@@ -5,8 +5,80 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Sun, 01 Nov 2026 22:01:08 GMT</lastBuildDate>
+  <lastBuildDate>Mon, 02 Nov 2026 22:02:04 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[oxc-project/oxc] oxc crates_v0.157.0 (crates_v0.157.0)</title>
+    <link>https://github.com/oxc-project/oxc/releases/tag/crates_v0.157.0</link>
+    <guid isPermaLink="true">https://github.com/oxc-project/oxc/releases/tag/crates_v0.157.0</guid>
+    <description><![CDATA[### 🚀 Features
+
+- 8dd67a6 transform-react: Expose TypeScript transform options (Tomas Särnhammar)
+- deed7dc parser: More friendly error for duplicate import attribute key (#28262) (sapphi-red)
+
+### 🐛 Bug Fixes
+
+- eaa8e90 ecmascript: Avoid numeric `+` folding when an operand may be a string (#28544) (camc314)
+- b03c7b8 regular_expression: Allow incomplete oversized legacy quantifiers (#28449) (Boshen)
+- 128c67d semantic: Check strict eval and arguments writes by reference flags (#28445) (Boshen)
+- c97c43c parser: Reject TypeScript default exports in JavaScript (#28440) (Boshen)
+- fdd119f span: Count Unicode characters when filtering typo suggestions (#28452) (Boshen)
+- cb64638 regular_expression: Reject incomplete Unicode atom escapes (#28448) (Boshen)
+- fc0eed3 semantic: Stop let-binding scans at arrow functions (#28444) (Boshen)
+- 3421516 parser: Preserve default import names in reexports (#28442) (Boshen)
+- a1e7e5f parser: Reject optional class members in JavaScript (#28439) (Boshe
+
+... (truncated)]]></description>
+    <pubDate>Mon, 02 Nov 2026 19:53:38 GMT</pubDate>
+  </item>
+  <item>
+    <title>[axios/axios] v0.35.0</title>
+    <link>https://github.com/axios/axios/releases/tag/v0.35.0</link>
+    <guid isPermaLink="true">https://github.com/axios/axios/releases/tag/v0.35.0</guid>
+    <description><![CDATA[## v0.35.0 — November 2, 2026
+
+This release aligns request option handling, parameter validation and form serialization across Node and browser runtimes on the v0.x line, with some stricter validation, and moves v0.x CI onto Namespace runners.
+
+## ⚠️ Breaking Changes & Deprecations
+
+- **Parameter Depth Limit:** `params` nested deeper than 100 levels now reject with `ERR_BAD_OPTION_VALUE`. (**#11243**)
+- **Form Index Serialization:** Sparse arrays and non-canonical numeric form indexes, such as `01`, now serialize as keyed objects instead of being collapsed into arrays. (**#11243**)
+- **Native Proxy Agents:** On runtimes with native environment proxy support, agents that override native pool-management or TLS-session lifecycle hooks now reject with `ERR_BAD_OPTION_VALUE`. Use an agent constructed without `proxyEnv` for these configurations. Plain subclasses are still supported, and public type signatures are unchanged. (**#11243**)
+
+## 🐛 Bug Fixes
+
+- **Connection Pools & Ag
+
+... (truncated)]]></description>
+    <pubDate>Mon, 02 Nov 2026 18:24:19 GMT</pubDate>
+  </item>
+  <item>
+    <title>[cloudflare/workers-sdk] @cloudflare/workers-utils@0.51.0</title>
+    <link>https://github.com/cloudflare/workers-sdk/releases/tag/%40cloudflare/workers-utils%400.51.0</link>
+    <guid isPermaLink="true">https://github.com/cloudflare/workers-sdk/releases/tag/%40cloudflare/workers-utils%400.51.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- #16623 `51bbf8b` Thanks @petebacondarwin! - Share compatibility and source-map helpers without loading the Workers runtime
+
+ Move `getNodeCompat`, `NodeJSCompatMode`, and `getFreshSourceMapSupport` into workers-utils, with `/node-compat` and `/sourcemap` entry points. Import the shared helpers directly in deploy-helpers so deployment utilities no longer resolve the platform workerd binary. Startup profiling continues to load the runtime on demand.
+
+- #16424 `1598fd3` Thanks @edmundhung! - Add `DEFAULT_MODULE_RULES`
+
+ These are the module rules Wrangler applies after a Worker's own `rules`, moved from Wrangler so other tools can share them.
+
+- #16424 `1598fd3` Thanks @edmundhung! - Add `splitSqlQuery` and `normalizeSqlLineEndings`
+
+ They're moved from Wrangler, and split a D1 SQL file into its statements, as Wrangler does when executing it.
+
+### Patch Changes
+
+- #16642 `d38cb02` Thanks @dependabot! - Update `DEFAULT_COMPAT_DATE` to 2026-11-02
+
+ Use the bundled worke
+
+... (truncated)]]></description>
+    <pubDate>Mon, 02 Nov 2026 15:42:03 GMT</pubDate>
+  </item>
   <item>
     <title>[wailsapp/wails] Wails v3.1.0 (v3.1.0)</title>
     <link>https://github.com/wailsapp/wails/releases/tag/v3.1.0</link>
@@ -322,22 +394,6 @@ The MongoDB Node.js team is pleased to announce version 7.8.0 of the `mongodb` p
     <pubDate>Thu, 29 Oct 2026 19:47:53 GMT</pubDate>
   </item>
   <item>
-    <title>[cloudflare/workers-sdk] @cloudflare/cli-shared-helpers@0.3.0</title>
-    <link>https://github.com/cloudflare/workers-sdk/releases/tag/%40cloudflare/cli-shared-helpers%400.3.0</link>
-    <guid isPermaLink="true">https://github.com/cloudflare/workers-sdk/releases/tag/%40cloudflare/cli-shared-helpers%400.3.0</guid>
-    <description><![CDATA[### Minor Changes
-
-- #16367 `b4653b4` Thanks @MattieTK! - Support writing `.assetsignore` files that keep local secrets and Pages-only files out of uploaded static assets
-
- `maybeAppendWranglerToGitIgnoreLikeFile` now takes an options object. `additionalEntries` appends further entries after the Wrangler ones, skipping any already in the file or already queued. `requireEnvWildcard` makes the helper add `.env*` unless the file already has it, so that a narrower existing entry such as `.env` does not leave `.env.production` or `.env.local` to be uploaded. `PROJECT_ROOT_ASSETS_IGNORE_ENTRIES` lists the entries to add when a project root is used as the static assets directory.
-
-### Patch Changes
-
-- Updated dependencies [`8b64bec`]:
- - @cloudflare/workers-utils@0.50.1]]></description>
-    <pubDate>Thu, 29 Oct 2026 18:50:45 GMT</pubDate>
-  </item>
-  <item>
     <title>[chakra-ui/ark] @ark-ui/vue@5.40.0</title>
     <link>https://github.com/chakra-ui/ark/releases/tag/%40ark-ui/vue%405.40.0</link>
     <guid isPermaLink="true">https://github.com/chakra-ui/ark/releases/tag/%40ark-ui/vue%405.40.0</guid>
@@ -637,29 +693,6 @@ pod 'PrimJS', '4.2.1', :subspecs => ['quickjs', 'napi']
     <pubDate>Tue, 27 Oct 2026 09:42:19 GMT</pubDate>
   </item>
   <item>
-    <title>[oxc-project/oxc] oxlint v1.90.0 (oxlint_v1.90.0)</title>
-    <link>https://github.com/oxc-project/oxc/releases/tag/oxlint_v1.90.0</link>
-    <guid isPermaLink="true">https://github.com/oxc-project/oxc/releases/tag/oxlint_v1.90.0</guid>
-    <description><![CDATA[### 🚀 Features
-
-- cf34678 oxlint: Export `Oxlintrc` type (#28132) (Sysix)
-- 831cdf1 oxlint: Require mininum oxlint-tsgolint version v7.0.2005 (#28118) (camc314)
-- d1b00f4 linter/typescript: Implement no-unsafe-enum-assignment rule (#28117) (camc314)
-- 165c91f linter/typescript/await-thenable: Support `allowMixedPromiseArrays` option (#28116) (camc314)
-
-### 🐛 Bug Fixes
-
-- 7f3c908 linter/eslint/array-callback-return: Check callbacks passed with extra arguments (#28133) (sarankumar)
-- 53be530 linter: Filter by type aware rules when looking up tsgolint rule severity (#28138) (NavpreetSSidhu)
-- e0f8937 react-compiler: Compile a `try` whose `catch` is unreachable instead of panicking (#28066) (Dunqing)
-- f5b625f linter/eslint/no-useless-concat: See through parenthesized expressions (#27984) (Rahul Kashyap)
-- 4629bb2 linter/jest/no-conditional-expect: Check function expression callbacks (#28055) (camc314)
-- 5c84098 semantic,linter: Report names with lone surrogates in enum and lint checks (
-
-... (truncated)]]></description>
-    <pubDate>Tue, 27 Oct 2026 05:51:29 GMT</pubDate>
-  </item>
-  <item>
     <title>[project-tsurugi/tsurugidb] 1.13.0</title>
     <link>https://github.com/project-tsurugi/tsurugidb/releases/tag/1.13.0</link>
     <guid isPermaLink="true">https://github.com/project-tsurugi/tsurugidb/releases/tag/1.13.0</guid>
@@ -685,25 +718,6 @@ docker pull ghcr.io/project-tsurugi/tsurugidb:1.13.0
 > [!WARNING] 
 The `Source code (zip)` or `Source code (tar.gz)` in `Assets` are automatically generated links by GitHub, and these archives does not contain files needed for installation.]]></description>
     <pubDate>Mon, 26 Oct 2026 07:53:59 GMT</pubDate>
-  </item>
-  <item>
-    <title>[axios/axios] v1.21.0</title>
-    <link>https://github.com/axios/axios/releases/tag/v1.21.0</link>
-    <guid isPermaLink="true">https://github.com/axios/axios/releases/tag/v1.21.0</guid>
-    <description><![CDATA[## v1.21.0 — October 21, 2026
-
-This release adds response timing and opt-in UTF-8 Basic authentication, improves request handling across runtimes, and changes how header defaults are recognized.
-
-## ⚠️ Breaking Changes & Deprecations
-
-* **Header Defaults:** Only plain objects, null-prototype maps, and compatible `AxiosHeaders` instances are treated as common or method-specific defaults; literal headers such as `Link` are now preserved. Applications using custom class instances as defaults must convert them to plain maps, for example `{ post: { ...customDefaults } }`, or compatible `AxiosHeaders`. Otherwise, those instances become literal header values, including on requests using other methods. (__#11156__)
-
-## 🚀 New Features
-
-* **Response Timing:** Added `response.duration`, in milliseconds, including on `error.response` when present. Timing measures adapter execution and excludes interceptors and transforms; streamed responses stop timing when the stream becomes available.
-
-... (truncated)]]></description>
-    <pubDate>Mon, 26 Oct 2026 07:10:45 GMT</pubDate>
   </item>
   <item>
     <title>[theMackabu/ant] v16.5.c41757b4.0</title>
