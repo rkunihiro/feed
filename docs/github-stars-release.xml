@@ -5,31 +5,137 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Mon, 02 Nov 2026 22:02:04 GMT</lastBuildDate>
+  <lastBuildDate>Tue, 03 Nov 2026 22:01:18 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
   <item>
-    <title>[oxc-project/oxc] oxc crates_v0.157.0 (crates_v0.157.0)</title>
-    <link>https://github.com/oxc-project/oxc/releases/tag/crates_v0.157.0</link>
-    <guid isPermaLink="true">https://github.com/oxc-project/oxc/releases/tag/crates_v0.157.0</guid>
+    <title>[googleapis/google-cloud-go] longrunning: v1.5.0 (longrunning/v1.5.0)</title>
+    <link>https://github.com/googleapis/google-cloud-go/releases/tag/longrunning/v1.5.0</link>
+    <guid isPermaLink="true">https://github.com/googleapis/google-cloud-go/releases/tag/longrunning/v1.5.0</guid>
+    <description><![CDATA[## 1.5.0 (2026-11-03)
+
+
+### Features
+
+* **longrunning:** Add a helper for IBV (#20807) (f20abf1)]]></description>
+    <pubDate>Tue, 03 Nov 2026 20:10:32 GMT</pubDate>
+  </item>
+  <item>
+    <title>[github/spec-kit] Spec Kit - 1.3.0 (v1.3.0)</title>
+    <link>https://github.com/github/spec-kit/releases/tag/v1.3.0</link>
+    <guid isPermaLink="true">https://github.com/github/spec-kit/releases/tag/v1.3.0</guid>
+    <description><![CDATA[## Install
+
+```bash
+uv tool install specify-cli --from git+
+specify init my-project
+```
+
+## Removed
+The core /speckit.taskstoissues command has been removed. You should be using the `github` extension
+
+## What's Changed
+
+- chore: bump version to 1.3.0
+- docs: consolidate and correct preset documentation (#5223)
+- [bug-fix] Fix oversized-number-crash: bound Python --number parsing (#5200)
+- docs: consolidate and correct extension documentation (#5221)
+- fix: detect relocated uv and pipx tool installations (#5103)
+- chore(ci): test Python 3.11 and 3.12 (#5220)
+- fix: invoke registered command hook only once (#5219)
+- [Copilot Dreams] Avoid rejecting supported extension submissions (#5216)
+- fix(cline): keep .md extension on speckit.* file names in command bodies (#5168)
+- feat(integrations): add process_registered_command hook with source_id (#5215)
+- [preset] Update A11Y Governance preset to v0.4.6 (#5212)
+- feat!: remove taskstoissues from core (#5053)
+- Add Gui
+
+... (truncated)]]></description>
+    <pubDate>Tue, 03 Nov 2026 18:25:42 GMT</pubDate>
+  </item>
+  <item>
+    <title>[oxc-project/oxc] oxlint v1.91.0 (oxlint_v1.91.0)</title>
+    <link>https://github.com/oxc-project/oxc/releases/tag/oxlint_v1.91.0</link>
+    <guid isPermaLink="true">https://github.com/oxc-project/oxc/releases/tag/oxlint_v1.91.0</guid>
     <description><![CDATA[### 🚀 Features
 
-- 8dd67a6 transform-react: Expose TypeScript transform options (Tomas Särnhammar)
-- deed7dc parser: More friendly error for duplicate import attribute key (#28262) (sapphi-red)
+- 004647a track_memory_allocs: Add allocation tracking for linter rules (#28470) (Cam McHenry)
+- 419c1b0 linter: Add allow and allowPattern options to react/capitalized-calls (Christian Vuerings)
 
 ### 🐛 Bug Fixes
 
-- eaa8e90 ecmascript: Avoid numeric `+` folding when an operand may be a string (#28544) (camc314)
-- b03c7b8 regular_expression: Allow incomplete oversized legacy quantifiers (#28449) (Boshen)
-- 128c67d semantic: Check strict eval and arguments writes by reference flags (#28445) (Boshen)
-- c97c43c parser: Reject TypeScript default exports in JavaScript (#28440) (Boshen)
-- fdd119f span: Count Unicode characters when filtering typo suggestions (#28452) (Boshen)
+- a205cd3 linter/eslint/no-control-regex: Detect raw control characters (#28548) (camc314)
+- 7c65777 linter/unicorn/prefer-global-this: Align typeof and worker API handling (#28549) (camc314)
+- 987d5f1 linter/unicorn/no-invalid-fetch-options: Avoid treating unknown methods as GET (#28547) (camc314)
+- e234dc8 linter/unicorn/no-useless-error-capture-stack-trace: Move to suspicious category (#28545) (camc314)
+- b3dc411 linter/typescript/no-non-null-asserted-nullish-coalescing: Move to suspicious category (#28546) (camc314)
 - cb64638 regular_expression: Reject incomplete Unicode atom escapes (#28448) (Boshen)
-- fc0eed3 semantic: Stop let-binding scans at arrow functions (#28444) (Boshen)
-- 3421516 parser: Preserve default import names in reexports (#28442) (Boshen)
-- a1e7e5f parser: Reject optional class members in JavaScript (#28439) (Boshe
+- c67167e linter: Only run React Compiler rules on files with top-level components or hooks (Boshen)
+- 4c9d5aa linter: Treat Reanimated shared values as re
 
 ... (truncated)]]></description>
-    <pubDate>Mon, 02 Nov 2026 19:53:38 GMT</pubDate>
+    <pubDate>Tue, 03 Nov 2026 14:02:06 GMT</pubDate>
+  </item>
+  <item>
+    <title>[open-webui/open-webui] v0.13.0</title>
+    <link>https://github.com/open-webui/open-webui/releases/tag/v0.13.0</link>
+    <guid isPermaLink="true">https://github.com/open-webui/open-webui/releases/tag/v0.13.0</guid>
+    <description><![CDATA[### Added
+
+- 📑 **Tabbed workspace.** The Tabs button at the top of a chat now opens a workspace for files, multiple terminal sessions, artifacts, previews, voice calls and comments. Add tabs from the + menu, drag to reorder them, and create and save new files directly into the selected terminal. Keep the conversation and its working files together while coding, analyzing data or reviewing generated documents. Commit, Commit, Commit, Commit
+- 🖥️ **Open Terminal Desktop tab for computer use.** Open the Desktop tab from the + menu to view and control the desktop provided by your connected Open Terminal, with mouse, keyboard, clipboard and audio support where available. With a model that can call its desktop tools, you can follow computer-use workflows in the same desktop and step in yourself: operate graphical apps, inspect generated documents or handle a step that needs manual input. Requires an Open Terminal connection with desktop support enabled. Commit, Commit, Commit, Commit
+- 🌐 
+
+... (truncated)]]></description>
+    <pubDate>Tue, 03 Nov 2026 12:23:16 GMT</pubDate>
+  </item>
+  <item>
+    <title>[cloudflare/workers-sdk] wrangler@4.157.0</title>
+    <link>https://github.com/cloudflare/workers-sdk/releases/tag/wrangler%404.157.0</link>
+    <guid isPermaLink="true">https://github.com/cloudflare/workers-sdk/releases/tag/wrangler%404.157.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- #16660 `34f34b3` Thanks @punkeel! - Allow opting into zstd compression for Wrangler-built container image layers with `WRANGLER_CONTAINER_IMAGE_COMPRESSION=zstd`.
+
+### Patch Changes
+
+- #16670 `b14b9dc` Thanks @dependabot! - Update `DEFAULT_COMPAT_DATE` to 2026-11-03
+
+ Use the bundled workerd release's compatibility date by default when scaffolding new projects or when no compatibility date is configured.
+
+- #16011 `44d1ee4` Thanks @wra-sol! - Offer to delete a Worker's Container applications when running `wrangler delete`
+
+ Previously, `wrangler delete` removed only the Worker, leaving the Container applications that `wrangler deploy` created for it running and billing. It now offers to delete them as well. With `--force`, or in CI and other non-interactive contexts, it lists them instead so they can be removed with `wrangler containers delete <id>`.
+
+- #16670 `b14b9dc` Thanks @dependabot! - Update dependencies of "miniflare", "wrangler"
+
+ The following dependency 
+
+... (truncated)]]></description>
+    <pubDate>Tue, 03 Nov 2026 11:58:32 GMT</pubDate>
+  </item>
+  <item>
+    <title>[mongodb/node-mongodb-native] v6.22.0</title>
+    <link>https://github.com/mongodb/node-mongodb-native/releases/tag/v6.22.0</link>
+    <guid isPermaLink="true">https://github.com/mongodb/node-mongodb-native/releases/tag/v6.22.0</guid>
+    <description><![CDATA[## 6.22.0 (2026-11-02)
+
+The MongoDB Node.js team is pleased to announce version 6.22.0 of the `mongodb` package!
+
+## Release Notes
+
+> [!WARNING] 
+> Node Driver versions from v6.11.0 before v6.22.0 (this release) and from v7.0.0 before v7.8.0 are affected by a security issue related to the use of the experimental timeoutMS feature where connection pool desynchronization after operation timeout can expose other users' data (CVE-2026-119179). Users are encouraged to discontinue the use of timeoutMS as soon as possible.
+
+### `timeoutMS` is deprecated and now a no-op
+
+> [!WARNING]
+> `timeoutMS` and `timeoutMode` are deprecated and have no effect starting in this release. They are still accepted and will not throw, but operations will no longer time out because of them. They are slated for removal in a future release.
+
+Use the per-stage timeouts instead: `serverSelectionTimeoutMS`, `waitQueueTimeoutMS`, `socketTimeoutMS`, and `maxTimeMS` for server-side execution.
+### Features
+
+... (truncated)]]></description>
+    <pubDate>Tue, 03 Nov 2026 00:05:23 GMT</pubDate>
   </item>
   <item>
     <title>[axios/axios] v0.35.0</title>
@@ -51,33 +157,6 @@ This release aligns request option handling, parameter validation and form seria
 
 ... (truncated)]]></description>
     <pubDate>Mon, 02 Nov 2026 18:24:19 GMT</pubDate>
-  </item>
-  <item>
-    <title>[cloudflare/workers-sdk] @cloudflare/workers-utils@0.51.0</title>
-    <link>https://github.com/cloudflare/workers-sdk/releases/tag/%40cloudflare/workers-utils%400.51.0</link>
-    <guid isPermaLink="true">https://github.com/cloudflare/workers-sdk/releases/tag/%40cloudflare/workers-utils%400.51.0</guid>
-    <description><![CDATA[### Minor Changes
-
-- #16623 `51bbf8b` Thanks @petebacondarwin! - Share compatibility and source-map helpers without loading the Workers runtime
-
- Move `getNodeCompat`, `NodeJSCompatMode`, and `getFreshSourceMapSupport` into workers-utils, with `/node-compat` and `/sourcemap` entry points. Import the shared helpers directly in deploy-helpers so deployment utilities no longer resolve the platform workerd binary. Startup profiling continues to load the runtime on demand.
-
-- #16424 `1598fd3` Thanks @edmundhung! - Add `DEFAULT_MODULE_RULES`
-
- These are the module rules Wrangler applies after a Worker's own `rules`, moved from Wrangler so other tools can share them.
-
-- #16424 `1598fd3` Thanks @edmundhung! - Add `splitSqlQuery` and `normalizeSqlLineEndings`
-
- They're moved from Wrangler, and split a D1 SQL file into its statements, as Wrangler does when executing it.
-
-### Patch Changes
-
-- #16642 `d38cb02` Thanks @dependabot! - Update `DEFAULT_COMPAT_DATE` to 2026-11-02
-
- Use the bundled worke
-
-... (truncated)]]></description>
-    <pubDate>Mon, 02 Nov 2026 15:42:03 GMT</pubDate>
   </item>
   <item>
     <title>[wailsapp/wails] Wails v3.1.0 (v3.1.0)</title>
@@ -206,21 +285,6 @@ This release aligns request option handling, parameter validation and form seria
     <pubDate>Sat, 31 Oct 2026 00:23:40 GMT</pubDate>
   </item>
   <item>
-    <title>[bluesky-social/atproto] @atproto/ozone@0.12.0</title>
-    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/ozone%400.12.0</link>
-    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/ozone%400.12.0</guid>
-    <description><![CDATA[### Minor Changes
-
-- #5783 `d6e1945` Thanks @estrattonbailey! - Keep `featured` as a required, deprecated compatibility field on `app.bsky.unspecced.getAtmosphereExploreTab` article, publication, photo, and livestream items; it is always `false`. Retired content scheduling no longer selects or orders articles, publications, and photos. Livestreams are shown from `previewAt` (or `startsAt`) until `endsAt`, and are reported inactive until `startsAt`. App cards now include an optional `profile` (`app.bsky.actor.defs#profileViewDetailed`) hydrated from the app's account, whose avatar and banner back `logo` and `backgroundImage`.
-
-### Patch Changes
-
-- #5770 `c2b5ce3` Thanks @foysalit! - Allow configuring the blob diversion size limit, defaulting to 300 MiB.
-
-- #5779 `a2dd244` Thanks @foysalit! - Include tag event durations in moderation event responses.]]></description>
-    <pubDate>Fri, 30 Oct 2026 21:19:31 GMT</pubDate>
-  </item>
-  <item>
     <title>[aws/aws-sdk-go-v2] Release (2026-10-30) (release-2026-10-30)</title>
     <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-30</link>
     <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-30</guid>
@@ -259,30 +323,6 @@ This release aligns request option handling, parameter validation and form seria
 
 ... (truncated)]]></description>
     <pubDate>Fri, 30 Oct 2026 18:41:15 GMT</pubDate>
-  </item>
-  <item>
-    <title>[mongodb/node-mongodb-native] v7.8.0</title>
-    <link>https://github.com/mongodb/node-mongodb-native/releases/tag/v7.8.0</link>
-    <guid isPermaLink="true">https://github.com/mongodb/node-mongodb-native/releases/tag/v7.8.0</guid>
-    <description><![CDATA[## 7.8.0 (2026-10-30)
-
-The MongoDB Node.js team is pleased to announce version 7.8.0 of the `mongodb` package!
-
-## Release Notes
-
-> [!WARNING] 
-> Node Driver versions from v6.11.0 and from v7.0.0 before v7.8.0 (this release) are affected by a security issue related to the use of the experimental timeoutMS feature where connection pool desynchronization after operation timeout can expose other users' data. Users are encouraged to discontinue the use of timeoutMS as soon as possible.
-
-> [!WARNING]
-> Node Driver versions from v3.3.3 before v7.8.0 (this release) are affected by a security issue concerning the verification of host names returned by SRV lookups, which could allow an attacker in control of the DNS response to redirect the driver to a host outside the user's domain. Users using SRV records are encouraged to upgrade to v7.8.0 as soon as possible.
-
-### `timeoutMS` is deprecated and now a no-op
-
-> [!WARNING]
-> `timeoutMS` and `timeoutMode` are deprecated and have n
-
-... (truncated)]]></description>
-    <pubDate>Fri, 30 Oct 2026 16:23:59 GMT</pubDate>
   </item>
   <item>
     <title>[pnpm/pnpm] pnpm 12.17 (v12.17.0)</title>
@@ -419,18 +459,6 @@ The MongoDB Node.js team is pleased to announce version 7.8.0 of the `mongodb` p
 
 ... (truncated)]]></description>
     <pubDate>Thu, 29 Oct 2026 17:24:30 GMT</pubDate>
-  </item>
-  <item>
-    <title>[googleapis/google-cloud-go] video: v1.36.0 (video/v1.36.0)</title>
-    <link>https://github.com/googleapis/google-cloud-go/releases/tag/video/v1.36.0</link>
-    <guid isPermaLink="true">https://github.com/googleapis/google-cloud-go/releases/tag/video/v1.36.0</guid>
-    <description><![CDATA[## 1.36.0 (2026-10-29)
-
-
-### Features
-
-* Update API sources and regenerate (#20773) (f5f113a)]]></description>
-    <pubDate>Thu, 29 Oct 2026 16:46:58 GMT</pubDate>
   </item>
   <item>
     <title>[anomalyco/opentui] Release v0.8.0 (v0.8.0)</title>
@@ -1024,38 +1052,6 @@ If you use HTTPS as your git protocol, we advise using git 2.46 or newer and let
 
 ... (truncated)]]></description>
     <pubDate>Mon, 19 Oct 2026 17:05:43 GMT</pubDate>
-  </item>
-  <item>
-    <title>[tokio-rs/tokio] Tokio v1.54.0 (tokio-1.54.0)</title>
-    <link>https://github.com/tokio-rs/tokio/releases/tag/tokio-1.54.0</link>
-    <guid isPermaLink="true">https://github.com/tokio-rs/tokio/releases/tag/tokio-1.54.0</guid>
-    <description><![CDATA[# 1.54.0 (October 19th, 2026)
-
-The 1.54.0 release includes all changes up to 1.53.3.
-
-The MSRV is increased to 1.85. ([#8514])
-
-### Added
-
-- fs: add `File::set_times`, `File::set_modified`, and `fs::FileTimes` ([#8504])
-- net: implement `Default` for `named_pipe::{ClientOptions, ServerOptions}` ([#8378])
-- runtime: add `Builder::max_io_events_per_busy_tick` ([#8410])
-- runtime: stabilize `tokio::runtime::worker_index` ([#8431])
-- sync: add `SemaphorePermit::semaphore` ([#8482])
-- sync: add `blocking_acquire` methods to `Semaphore` ([#8269])
-- sync: add `watch::Receiver::is_closed` ([#8481])
-- wasm: support JSPI for Emscripten target ([#8285], [#8627])
-- wasm: support the `wasm32-unknown-emscripten` target ([#8281], [#8422], [#8528], [#8628])
-
-### Changed
-
-- fs: reject zero in `File::set_max_buf_size` ([#8449])
-- io: make `copy_buf` cooperative ([#8459])
-- io: panic when `BufReader` or `BufStream` is created with zero capacity ([#8494])
-- io: panic when in-memory 
-
-... (truncated)]]></description>
-    <pubDate>Mon, 19 Oct 2026 16:33:04 GMT</pubDate>
   </item>
 </channel>
 </rss>
