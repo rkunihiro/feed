@@ -5,19 +5,141 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Tue, 03 Nov 2026 22:01:18 GMT</lastBuildDate>
+  <lastBuildDate>Wed, 04 Nov 2026 22:01:47 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
   <item>
-    <title>[googleapis/google-cloud-go] longrunning: v1.5.0 (longrunning/v1.5.0)</title>
-    <link>https://github.com/googleapis/google-cloud-go/releases/tag/longrunning/v1.5.0</link>
-    <guid isPermaLink="true">https://github.com/googleapis/google-cloud-go/releases/tag/longrunning/v1.5.0</guid>
-    <description><![CDATA[## 1.5.0 (2026-11-03)
+    <title>[remix-run/remix] remix v3.2.0 (remix@3.2.0)</title>
+    <link>https://github.com/remix-run/remix/releases/tag/remix%403.2.0</link>
+    <guid isPermaLink="true">https://github.com/remix-run/remix/releases/tag/remix%403.2.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- Protect apps with a nonce-based Content Security Policy using `csp` from `remix/middleware/csp`. Add it before `render` and it generates a nonce for each request along with a matching policy. Generated import maps, module preloads, and `css` styles receive the nonce automatically, and authored tags can read it with `getCspNonce(context)`: (#12098)
+
+ ```ts
+ import { createRouter } from 'remix/router'
+ import { csp } from 'remix/middleware/csp'
+ import { render } from 'remix/middleware/render'
+
+ let router = createRouter({
+ middleware: [
+ csp({
+ policy: ({ nonce }) => ({
+ scriptSrc: [`'nonce-${nonce}'`],
+ styleSrc: [`'nonce-${nonce}'`],
+ }),
+ }),
+ render,
+ ],
+ })
+ ```
+
+ Frames rendered on the server share the document's nonce, and client navigation keeps it across frame and island updates. HMR updates that add imports and `remix/multiple-import-maps-polyfill` also work under a strict policy, including one without `'unsafe-eval'`. The middleware supports report-only p
+
+... (truncated)]]></description>
+    <pubDate>Wed, 04 Nov 2026 21:29:27 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-11-04) (release-2026-11-04)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-04</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-04</guid>
+    <description><![CDATA[## General Highlights
+* **Dependency Update**: Update to smithy-go v1.28.8.
+* **Dependency Update**: Updated to the latest SDK module versions
+
+## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/service/connect`: [v1.212.0](service/connect/CHANGELOG.md#v12120-2026-11-04)
+ * **Feature**: Adds support for retrieving associated cases in contact responses. The Contact object now includes a Cases field containing case IDs and reference numbers linked to the contact.
+* `github.com/aws/aws-sdk-go-v2/service/connectcontactlens`: [v1.44.0](service/connectcontactlens/CHANGELOG.md#v1440-2026-11-04)
+ * **Feature**: Rules TBAC GA (Contact Lens V1) - Adds an optional ListFilter (CategoriesAttributeFilter with OrConditions, AndCondition and TagCondition) to ListRealtimeContactAnalysisSegments. This filters matched categories by rule tags. It also adds an optional RuleId to CategoryDetails in the response.
+* `github.com/aws/aws-sdk-go-v2/service/dynamodb`: [v1.73.0](service/dynamodb/CHANGELOG.md#v17
+
+... (truncated)]]></description>
+    <pubDate>Wed, 04 Nov 2026 20:50:12 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1162.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1162.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1162.0</guid>
+    <description><![CDATA[#### 3.1162.0(2026-11-04)
+
+##### Documentation Changes
+
+* fix typos in credential-providers and xhr-http-handler READMEs (#8400) (13b91575)
+
+##### New Features
+
+* **clients:** update client endpoints as of 2026-11-04 (7b30cd35)
+* **client-lookoutequipment:** Amazon Lookout for Equipment reached end of support on October 7, 2026. All Lookout for Equipment APIs are now marked as deprecated. (9a4a6882)
+* **client-rolesanywhere:** Adds the crlDpRevocationEnabled field to enable automatic revocation checking using CRL distribution points in X.509 certificates. (5c3071ce)
+* **client-marketplace-discovery:** GetListing and SearchListings APIs now return G2 and PeerSpot review sources in review summaries. (cb49279d)
+* **client-ec2:** Add the Unsupported SupportabilityScore to GetCapacityManagerSupportabilityScores. (e8a84dc8)
+* **client-elastic-beanstalk:** Adds DefaultAmiList to DescribePlatformVersion to return the default AMI for each processor architecture that a platform version supports.
+
+... (truncated)]]></description>
+    <pubDate>Wed, 04 Nov 2026 20:47:03 GMT</pubDate>
+  </item>
+  <item>
+    <title>[googleapis/google-cloud-go] pubsub: v1.52.0 (pubsub/v1.52.0)</title>
+    <link>https://github.com/googleapis/google-cloud-go/releases/tag/pubsub/v1.52.0</link>
+    <guid isPermaLink="true">https://github.com/googleapis/google-cloud-go/releases/tag/pubsub/v1.52.0</guid>
+    <description><![CDATA[## 1.52.0 (2026-11-04)
 
 
 ### Features
 
-* **longrunning:** Add a helper for IBV (#20807) (f20abf1)]]></description>
-    <pubDate>Tue, 03 Nov 2026 20:10:32 GMT</pubDate>
+* **all:** Update supported go versions (#20520) (90413d3)
+
+
+### Bug Fixes
+
+* Adds additional validation for REST RPC requests (#20753) (7827181)]]></description>
+    <pubDate>Wed, 04 Nov 2026 19:51:57 GMT</pubDate>
+  </item>
+  <item>
+    <title>[zed-industries/zed] v1.27.0</title>
+    <link>https://github.com/zed-industries/zed/releases/tag/v1.27.0</link>
+    <guid isPermaLink="true">https://github.com/zed-industries/zed/releases/tag/v1.27.0</guid>
+    <description><![CDATA[This week's release includes syntax highlighting for Go 1.27 generic methods, an option to open README files by default, and AI commit messages that follow your repository's recent commit style.
+
+## Features
+
+### AI
+
+- Improved Agent Panel memory usage by loading tool-call diffs and parsing thread message Markdown only when first viewed, instead of when loading a thread. (#65444, #65470; thanks Vanuan)
+- Improved AI commit message generation by using the three most recent repository commit messages as style examples. (#61528; thanks matheuslrd)
+- Improved CPU usage and disk reads while the agent was working, especially with a long thread history. (#66015)
+
+### Git
+
+- Added missing tooltips to the close, commit message, and "View on" buttons in the Git Graph's commit details panel. (#66016; thanks skmanoj322)
+- Improved Git Graph rendering performance. (#66180; thanks RemcoSmitsDev)
+- Improved the Git Panel's error message when a push was rejected because the local branch 
+
+... (truncated)]]></description>
+    <pubDate>Wed, 04 Nov 2026 17:04:23 GMT</pubDate>
+  </item>
+  <item>
+    <title>[jsdom/jsdom] v31.0.0</title>
+    <link>https://github.com/jsdom/jsdom/releases/tag/v31.0.0</link>
+    <guid isPermaLink="true">https://github.com/jsdom/jsdom/releases/tag/v31.0.0</guid>
+    <description><![CDATA[## Breaking changes
+
+- Changed the optional canvas and image decoding backend from `canvas` to `@napi-rs/canvas`. Install `@napi-rs/canvas` v1.0.13 or later in the v1.x series alongside jsdom; installing `canvas` alone no longer enables this support. The new backend provides prebuilt Skia binaries on supported platforms, and rendering and encoded image bytes can differ. Projects using native canvas objects or custom font registration should follow the canvas migration guidance. Added WebP serialization through `canvas.toDataURL` and `canvas.toBlob`. Fixed image loading to wait for decoding before firing `load`, discard obsolete source requests, avoid refetching when dimensions change, and prevent failed images from drawing stale contents. Fixed canvas context and serialization behavior, including unsupported context types, read-only `ctx.canvas`, image-drawing exceptions, MIME type and quality normalization, and asynchronous `null` results from `canvas.toBlob` for empty canvases or enc
+
+... (truncated)]]></description>
+    <pubDate>Wed, 04 Nov 2026 14:15:43 GMT</pubDate>
+  </item>
+  <item>
+    <title>[ant-design/ant-design] 6.7.0</title>
+    <link>https://github.com/ant-design/ant-design/releases/tag/6.7.0</link>
+    <guid isPermaLink="true">https://github.com/ant-design/ant-design/releases/tag/6.7.0</guid>
+    <description><![CDATA[- 🆕 Add Button, Tag, Steps, Alert, and Timeline support for the global ConfigProvider `variant`, and component-specific `divider.variant` configuration for Divider line styles. #59589 #59588 #59578 #59577 #59587 #59576 @QDyanbing
+- 🆕 Add `suffix` to DatePicker, TimePicker, Select, AutoComplete, Cascader, and TreeSelect to customize suffix content, with state-based rendering for selection components. Deprecate `suffixIcon` in favor of `suffix` while retaining compatibility. #59240 #59185 @QDyanbing @meet-student
+- 🆕 Add `allowClear.tabIndex` to Input, Input.TextArea, Mentions, InputNumber, Select, AutoComplete, TreeSelect, Cascader, DatePicker, and TimePicker to control clear-button Tab order. Add `allowClear.label` to Input, Input.TextArea, Mentions, DatePicker, and TimePicker for accessible clear-button names, with field-level ConfigProvider inheritance. #59566 #59567 #59548 @QDyanbing
+- 🆕 Add App Fragment `ref` support with `component={false}` in React 19.3 and later. #59281 @li-
+
+... (truncated)]]></description>
+    <pubDate>Wed, 04 Nov 2026 03:44:43 GMT</pubDate>
   </item>
   <item>
     <title>[github/spec-kit] Spec Kit - 1.3.0 (v1.3.0)</title>
@@ -283,46 +405,6 @@ This release aligns request option handling, parameter validation and form seria
 
 ... (truncated)]]></description>
     <pubDate>Sat, 31 Oct 2026 00:23:40 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-10-30) (release-2026-10-30)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-30</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-10-30</guid>
-    <description><![CDATA[## General Highlights
-* **Bug Fix**: Fix malformed JSON when serializing nil lists or maps in union members, map values, and list elements.
-* **Dependency Update**: Updated to the latest SDK module versions
-
-## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/amp`: [v1.55.0](service/amp/CHANGELOG.md#v1550-2026-10-30)
- * **Feature**: Managed Prometheus collectors now support Amazon MSK consumer-group metrics for Amazon Managed Service for Prometheus and CloudWatch.
-* `github.com/aws/aws-sdk-go-v2/service/bedrockagentruntime`: [v1.66.0](service/bedrockagentruntime/CHANGELOG.md#v1660-2026-10-30)
- * **Feature**: Adds the CodeExecution step and codeExecution action to AgenticRetrieveStream trace events, showing when the agent runs code and which documents it reads.
-* `github.com/aws/aws-sdk-go-v2/service/cloudwatchlogs`: [v1.91.0](service/cloudwatchlogs/CHANGELOG.md#v1910-2026-10-30)
- * **Feature**: Adds support for account-level retention policies in Amazon CloudWatch Logs. Custom
-
-... (truncated)]]></description>
-    <pubDate>Fri, 30 Oct 2026 19:23:28 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-js-v3] v3.1161.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1161.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1161.0</guid>
-    <description><![CDATA[#### 3.1161.0(2026-10-30)
-
-##### Chores
-
-* **codegen:** sync to new smithy handler changes (#8390) (f393101c)
-
-##### New Features
-
-* **clients:** update client endpoints as of 2026-10-30 (757e0255)
-* **client-timestream-influxdb:** Add DeploymentConfiguration field to CreateDbCluster and UpdateDbCluster APIs to support creation of heterogenous InfluxDB v3 Enterprise clusters. (493e1ac8)
-* **client-customer-profiles:** Adds support for template ingestion controls in the GetProfileObjectTypeTemplate API response. (214bd946)
-* **client-lambda:** Adds ConsumptionMode to SelfManagedKafkaEventSourceConfig, letting Lambda event source mappings consume self-managed Apache Kafka topics as a queue. Set ConsumptionMode to Queue when creating an event source mapping. (b7dde404)
-* **client-cloudwatch-logs:** Adds support for account-level retention policies in Amazon CloudWatch Logs. Customers can now use PutAccountPolicy with the new RETENTION POLICY type to set default log retention across all lo
-
-... (truncated)]]></description>
-    <pubDate>Fri, 30 Oct 2026 18:41:15 GMT</pubDate>
   </item>
   <item>
     <title>[pnpm/pnpm] pnpm 12.17 (v12.17.0)</title>
@@ -777,29 +859,6 @@ For HTML checkboxes, declare a boolean with a default of `False`. See Boolean Fo
     <pubDate>Fri, 23 Oct 2026 18:47:17 GMT</pubDate>
   </item>
   <item>
-    <title>[remix-run/remix] ui v0.13.0 (ui@0.13.0)</title>
-    <link>https://github.com/remix-run/remix/releases/tag/ui%400.13.0</link>
-    <guid isPermaLink="true">https://github.com/remix-run/remix/releases/tag/ui%400.13.0</guid>
-    <description><![CDATA[### Minor Changes
-
-- BREAKING CHANGE: Prop types for the previously removed styled `Accordion`, `Select`, and `Combobox` components have also been removed: `AccordionProps`, `AccordionItemProps`, `AccordionTriggerProps`, `AccordionContentProps`, `SelectProps`, `SelectOptionProps`, `ComboboxProps`, and `ComboboxOptionProps`. Accordion's unused `headingLevel` prop and corresponding context fields, along with the `AccordionHeadingLevel` type, have also been removed. (#11986)
-
-- BREAKING CHANGE: The toggle mixin is now exported as `toggle` instead of `control`. Since `toggle` consists of a single mixin, it can now be called directly as `toggle` rather than grouped under `toggle.control`. (#11986)
-
- ```diff
- -import * as toggle from '@remix-run/ui/toggle'
- +import { toggle } from '@remix-run/ui/toggle'
-
- -<input mix={toggle.control({ defaultChecked: true })} />
- +<input mix={toggle({ defaultChecked: true })} />
- ```
-
- The options type has also been renamed from `ToggleControlOptions` to `To
-
-... (truncated)]]></description>
-    <pubDate>Fri, 23 Oct 2026 18:42:15 GMT</pubDate>
-  </item>
-  <item>
     <title>[modelcontextprotocol/typescript-sdk] @modelcontextprotocol/server-legacy@2.4.0</title>
     <link>https://github.com/modelcontextprotocol/typescript-sdk/releases/tag/%40modelcontextprotocol/server-legacy%402.4.0</link>
     <guid isPermaLink="true">https://github.com/modelcontextprotocol/typescript-sdk/releases/tag/%40modelcontextprotocol/server-legacy%402.4.0</guid>
@@ -979,79 +1038,6 @@ If you use HTTPS as your git protocol, we advise using git 2.46 or newer and let
 
 ... (truncated)]]></description>
     <pubDate>Wed, 21 Oct 2026 09:49:44 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aardappel/goose] Goose v2026.3 (v2026.3)</title>
-    <link>https://github.com/aardappel/goose/releases/tag/v2026.3</link>
-    <guid isPermaLink="true">https://github.com/aardappel/goose/releases/tag/v2026.3</guid>
-    <description><![CDATA[Prebuilt compilers with the blessed packages (gfx, audio, ui, physics) compiled in. Unpack anywhere and put the directory on PATH; see "Install a release" in README.md for what each platform needs besides.
-
-
-## What's Changed
-* Let thread_spawn name a bound worker in a generic from another namespace by @kaitk in 
-* Add thread_spawn_contained, whose aborts end only that worker by @kaitk in 
-* Retry a test run that Linux refuses with Text file busy by @kaitk in 
-* Bound the typed queues, and add a qget with a time limit by @kaitk in 
-* Keep gcc from dropping the stores to a ByteSet the byte search reads by @kaitk in 
-* Let TinyCC find the C library in /usr/lib64 on Fedora and other lib64 systems by @calpeyser in 
-* Keep the print cursor a plain pointer so generated C compiles without const warnings by @calpeyser in 
-* Let a variant without references store anywhere when passed as its enum by @mgasner in 
-* Tree-sitter: initial grammar by @pdoane in 
-* Language server: answer a request af
-
-... (truncated)]]></description>
-    <pubDate>Wed, 21 Oct 2026 05:39:11 GMT</pubDate>
-  </item>
-  <item>
-    <title>[azat-io/eslint-plugin-perfectionist] v5.13.0</title>
-    <link>https://github.com/azat-io/eslint-plugin-perfectionist/releases/tag/v5.13.0</link>
-    <guid isPermaLink="true">https://github.com/azat-io/eslint-plugin-perfectionist/releases/tag/v5.13.0</guid>
-    <description><![CDATA[### &nbsp;&nbsp;&nbsp;🚀 Features
-
-- Add sort-constructor-parameters rule &nbsp;-&nbsp; by @hugop95 <samp>(4d542)</samp>
-
-### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
-
-- Restore alphabet reverse method &nbsp;-&nbsp; by @azat-io <samp>(8292c)</samp>
-- Register the exported plugin object in configs &nbsp;-&nbsp; by @azat-io <samp>(a9361)</samp>
-- Stop the tsconfig search at the drive root on windows &nbsp;-&nbsp; by @azat-io <samp>(8a8f4)</samp>
-- Validate setting values and allow partitioning imports by newlines &nbsp;-&nbsp; by @azat-io <samp>(79513)</samp>
-- Support lists of locales in natural sorting &nbsp;-&nbsp; by @azat-io <samp>(f1665)</samp>
-- **sort-imports**: Treat prefix-only modules without prefix as external &nbsp;-&nbsp; by @azat-io <samp>(2e946)</samp>
-- **sort-maps**: Reject newline options combined with partitioning by newlines &nbsp;-&nbsp; by @azat-io <samp>(8c713)</samp>
-
-### &nbsp;&nbsp;&nbsp;🏎 Performance
-
-- Cache disabled lines and narrow dependency scope walks &nbsp;-&nbs
-
-... (truncated)]]></description>
-    <pubDate>Tue, 20 Oct 2026 06:27:46 GMT</pubDate>
-  </item>
-  <item>
-    <title>[typescript-eslint/typescript-eslint] v8.72.0</title>
-    <link>https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.72.0</link>
-    <guid isPermaLink="true">https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.72.0</guid>
-    <description><![CDATA[## 8.72.0 (2026-10-19)
-
-### 🚀 Features
-
-- **eslint-plugin:** lazy load rules (#13010)
-- **eslint-plugin:** [await-thenable] add `allowMixedPromiseArrays` option (#12992)
-- **typescript-estree:** error on abstract keyword that precedes export (#13019)
-
-### 🩹 Fixes
-
-- **ast-spec:** add `JSXFragment` to `JSXAttribute['value']` (#13051)
-- **eslint-plugin:** [prefer-readonly-parameter-types] check where allowed type aliases are declared (#13016)
-- **eslint-plugin:** [no-deprecated] report deprecated properties in object literals (#12704)
-- **eslint-plugin:** use isTypeLiteralType instead of type.isLiteral to include bigint literals on TS < 5.0 (#13053)
-- **eslint-plugin:** [require-array-sort-compare] check tuples (#13058)
-- **eslint-plugin:** [require-array-sort-compare] ignore extra this type argument on TS < 5.1 (#13055)
-- **type-utils:** discriminateAnyType crashes when calling getAwaitedType on awaited type in TS < 5.0 (#13054)
-- **typescript-estree:** include leading and trailing co
-
-... (truncated)]]></description>
-    <pubDate>Mon, 19 Oct 2026 17:05:43 GMT</pubDate>
   </item>
 </channel>
 </rss>
