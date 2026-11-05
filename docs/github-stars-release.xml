@@ -5,8 +5,158 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Wed, 04 Nov 2026 22:01:47 GMT</lastBuildDate>
+  <lastBuildDate>Thu, 05 Nov 2026 22:01:23 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[googleapis/google-cloud-go] agentplatform: v0.23.0 (agentplatform/v0.23.0)</title>
+    <link>https://github.com/googleapis/google-cloud-go/releases/tag/agentplatform/v0.23.0</link>
+    <guid isPermaLink="true">https://github.com/googleapis/google-cloud-go/releases/tag/agentplatform/v0.23.0</guid>
+    <description><![CDATA[## 0.23.0 (2026-11-05)
+
+
+### Features
+
+* Add client.memory_banks.update method. (#20778) (4fb1674)]]></description>
+    <pubDate>Thu, 05 Nov 2026 20:34:35 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-11-05) (release-2026-11-05)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-05</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-05</guid>
+    <description><![CDATA[## General Highlights
+* **Dependency Update**: Updated to the latest SDK module versions
+
+## Module Highlights
+* `github.com/aws/aws-sdk-go-v2`: v1.47.7
+ * **Bug Fix**: Compute the clock skew from the server Date header minus the time the response was received, instead of the midpoint of the request.
+* `github.com/aws/aws-sdk-go-v2/service/accountaccessruntime`: [v1.0.0](service/accountaccessruntime/CHANGELOG.md#v100-2026-11-05)
+ * **Release**: New AWS service client module
+ * **Feature**: Adds SDK support for Account Access user portal operations, enabling users to list out and get credentials for role assignments configured in AWS IAM Account Access Manager.
+* `github.com/aws/aws-sdk-go-v2/service/agentregistrycontrol`: [v1.9.0](service/agentregistrycontrol/CHANGELOG.md#v190-2026-11-05)
+ * **Feature**: Adds support for OAuth2 Authorization Server Metadata (RFC 8414) discovery URLs in custom JWT authorizer.
+* `github.com/aws/aws-sdk-go-v2/service/appintegrations`: [v1.53.0](service/ap
+
+... (truncated)]]></description>
+    <pubDate>Thu, 05 Nov 2026 19:49:18 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1163.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1163.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1163.0</guid>
+    <description><![CDATA[#### 3.1163.0(2026-11-05)
+
+##### New Features
+
+* **clients:** update client endpoints as of 2026-11-05 (57e9f143)
+* **client-bedrock-agentcore-control:** Adds support for OAuth2 Authorization Server Metadata (RFC 8414) discovery URLs in custom JWT authorizer and OAuth2 credential provider configurations. (950c852a)
+* **client-sagemaker:** Fixed the ImageDeleted and ImageVersionDeleted waiters to succeed on the ResourceNotFound error returned by DescribeImage and DescribeImageVersion (6cc77117)
+* **client-wafv2:** AWS WAF customers who monetize AI traffic on Web ACLs can now configure payments through connected accounts (Stripe). (9e7dd06f)
+* **client-appintegrations:** This release adds a LastModifiedRegion field to GetApplication and ListApplications so customers can see which Region an application was last modified in. (878faafe)
+* **client-quicksight:** Amazon QuickSight adds APIs to view account service role settings and switch to or replace a customer-managed IAM role. (98371e60)
+
+
+... (truncated)]]></description>
+    <pubDate>Thu, 05 Nov 2026 19:46:42 GMT</pubDate>
+  </item>
+  <item>
+    <title>[microsoft/playwright] v1.65.0</title>
+    <link>https://github.com/microsoft/playwright/releases/tag/v1.65.0</link>
+    <guid isPermaLink="true">https://github.com/microsoft/playwright/releases/tag/v1.65.0</guid>
+    <description><![CDATA[## 🥟 Run tests with Bun
+
+The test runner now runs under Bun. Bun transpiles your TypeScript test files itself, so Playwright does not use Babel or its compilation cache. Pass the `--bun` flag, because without it `bunx playwright test` runs on Node.js:
+
+```bash
+bunx --bun playwright test
+```
+
+Our CI runs the test runner tests under Bun 1.4.3 on Linux. Some features work differently under Bun:
+
+- There is no watch mode. UI mode does not run tests again when files change, and `--only-changed` does not follow imports.
+- Bun loads modules itself, so `--tsconfig` and the JSX options in `tsconfig.json` have no effect, and custom ESM loaders are not supported.
+- Stack traces do not include async frames, and API names do not include the class name: `click` instead of `locator.click`. This changes some step locations, step titles and error messages.
+- Console output of a test does not get into the trace and UI mode.
+
+## 🚨 Reports with only failures
+
+New `failures` reporter pri
+
+... (truncated)]]></description>
+    <pubDate>Thu, 05 Nov 2026 18:25:45 GMT</pubDate>
+  </item>
+  <item>
+    <title>[anomalyco/opencode] process-daemon v0.5.0 (process-daemon-v0.5.0)</title>
+    <link>https://github.com/anomalyco/opencode/releases/tag/process-daemon-v0.5.0</link>
+    <guid isPermaLink="true">https://github.com/anomalyco/opencode/releases/tag/process-daemon-v0.5.0</guid>
+    <description><![CDATA[opencode-pty 0.5.0 (protocol 8) from packages/process-daemon, published to npm as @opencode/pty@0.5.0.]]></description>
+    <pubDate>Thu, 05 Nov 2026 17:39:04 GMT</pubDate>
+  </item>
+  <item>
+    <title>[jsdom/jsdom] v31.0.0</title>
+    <link>https://github.com/jsdom/jsdom/releases/tag/v31.0.0</link>
+    <guid isPermaLink="true">https://github.com/jsdom/jsdom/releases/tag/v31.0.0</guid>
+    <description><![CDATA[## Breaking changes
+
+- Changed the optional canvas and image decoding backend from `canvas` to `@napi-rs/canvas`. Install `@napi-rs/canvas` v1.0.13 or later in the v1.x series alongside jsdom; installing `canvas` alone no longer enables this support. The new backend provides prebuilt Skia binaries on supported platforms, and rendering and encoded image bytes can differ. Projects using native canvas objects or custom font registration should follow the canvas migration guidance. Added WebP serialization through `canvas.toDataURL` and `canvas.toBlob`. Fixed image loading to wait for decoding before firing `load`, discard obsolete source requests, avoid refetching when dimensions change, and prevent failed images from drawing stale contents. Fixed canvas context and serialization behavior, including unsupported context types, read-only `ctx.canvas`, image-drawing exceptions, MIME type and quality normalization, and asynchronous `null` results from `canvas.toBlob` for empty canvases or enc
+
+... (truncated)]]></description>
+    <pubDate>Thu, 05 Nov 2026 12:12:39 GMT</pubDate>
+  </item>
+  <item>
+    <title>[cloudflare/workers-sdk] @cloudflare/deploy-helpers@0.26.0</title>
+    <link>https://github.com/cloudflare/workers-sdk/releases/tag/%40cloudflare/deploy-helpers%400.26.0</link>
+    <guid isPermaLink="true">https://github.com/cloudflare/workers-sdk/releases/tag/%40cloudflare/deploy-helpers%400.26.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- #16020 `37c3c48` Thanks @penalosa! - Allow custom strict-mode conflict abort messages
+
+ Add an optional `strictModeAbortMessage` to deploy-helpers' pre-1.0 deploy and versions-upload APIs so callers can describe their own override flags when strict mode aborts a conflicting upload in a non-interactive session. Wrangler keeps its existing `--strict` guidance when the message is omitted.
+
+### Patch Changes
+
+- #16695 `b2061f4` Thanks @dependabot! - Update `DEFAULT_COMPAT_DATE` to 2026-11-04
+
+ Use the bundled workerd release's compatibility date by default when scaffolding new projects or when no compatibility date is configured.
+
+- Updated dependencies [`dc35efb`, `dc35efb`, `dc35efb`, `dc35efb`, `dc35efb`, `b8387a5`, `4cde694`, `b2061f4`, `b2061f4`, `f1d81a2`, `4bb491b`, `36e64f2`, `92c4b97`]:
+ - miniflare@5.20261104.0-beta
+ - @cloudflare/workers-utils@0.52.0
+ - @cloudflare/cli-shared-helpers@0.3.4
+ - @cloudflare/config@0.30.2
+ - @cloudflare/containers-shared@0.23.9]]></description>
+    <pubDate>Thu, 05 Nov 2026 10:53:12 GMT</pubDate>
+  </item>
+  <item>
+    <title>[BabylonJS/Babylon.js] 9.34.0</title>
+    <link>https://github.com/BabylonJS/Babylon.js/releases/tag/9.34.0</link>
+    <guid isPermaLink="true">https://github.com/BabylonJS/Babylon.js/releases/tag/9.34.0</guid>
+    <description><![CDATA[### Core
+
+- WebGPU: find cached texture views without building a key string - by enriqxxx (#19091)
+
+### Inspector
+
+- Add Inspector Lite physics inspection - by ryantrem (#19079)]]></description>
+    <pubDate>Thu, 05 Nov 2026 08:54:14 GMT</pubDate>
+  </item>
+  <item>
+    <title>[pnpm/pnpm] pnpm 12.18 (v12.18.0)</title>
+    <link>https://github.com/pnpm/pnpm/releases/tag/v12.18.0</link>
+    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v12.18.0</guid>
+    <description><![CDATA[pnpm 12.18.0 packs, publishes, and installs packages with platform variants on pnpr registries. It also adds per-skill approval of agent skills and `pnpm store add` for offline installs from downloaded tarballs. Repeat installs and `verifyDepsBeforeRun` no longer read the `package.json` of unchanged workspace projects. The release fixes several peer dependency resolution bugs too.
+
+### Minor Changes
+
+#### Agent skills
+
+- pnpm now names the link to a dependency's agent skill after the skill alone. A skill that the `@acme/kit` package ships in `skills/auth/` is linked as `.claude/skills/auth`, not `.claude/skills/pnpm-@acme+kit-auth`. The next install replaces links with the old names. pnpm lists the linked skills in a `# pnpm` block of each agent skill directory's `.gitignore` #17455.
+
+ When two approved packages ship a skill of the same name, or the name is already taken in an agent skill directory, pnpm links the skill as `pnpm-<package>-<skill>`. Before, the install failed.
+
+
+... (truncated)]]></description>
+    <pubDate>Thu, 05 Nov 2026 00:56:45 GMT</pubDate>
+  </item>
   <item>
     <title>[remix-run/remix] remix v3.2.0 (remix@3.2.0)</title>
     <link>https://github.com/remix-run/remix/releases/tag/remix%403.2.0</link>
@@ -39,63 +189,6 @@
     <pubDate>Wed, 04 Nov 2026 21:29:27 GMT</pubDate>
   </item>
   <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-11-04) (release-2026-11-04)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-04</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-04</guid>
-    <description><![CDATA[## General Highlights
-* **Dependency Update**: Update to smithy-go v1.28.8.
-* **Dependency Update**: Updated to the latest SDK module versions
-
-## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/connect`: [v1.212.0](service/connect/CHANGELOG.md#v12120-2026-11-04)
- * **Feature**: Adds support for retrieving associated cases in contact responses. The Contact object now includes a Cases field containing case IDs and reference numbers linked to the contact.
-* `github.com/aws/aws-sdk-go-v2/service/connectcontactlens`: [v1.44.0](service/connectcontactlens/CHANGELOG.md#v1440-2026-11-04)
- * **Feature**: Rules TBAC GA (Contact Lens V1) - Adds an optional ListFilter (CategoriesAttributeFilter with OrConditions, AndCondition and TagCondition) to ListRealtimeContactAnalysisSegments. This filters matched categories by rule tags. It also adds an optional RuleId to CategoryDetails in the response.
-* `github.com/aws/aws-sdk-go-v2/service/dynamodb`: [v1.73.0](service/dynamodb/CHANGELOG.md#v17
-
-... (truncated)]]></description>
-    <pubDate>Wed, 04 Nov 2026 20:50:12 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-js-v3] v3.1162.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1162.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1162.0</guid>
-    <description><![CDATA[#### 3.1162.0(2026-11-04)
-
-##### Documentation Changes
-
-* fix typos in credential-providers and xhr-http-handler READMEs (#8400) (13b91575)
-
-##### New Features
-
-* **clients:** update client endpoints as of 2026-11-04 (7b30cd35)
-* **client-lookoutequipment:** Amazon Lookout for Equipment reached end of support on October 7, 2026. All Lookout for Equipment APIs are now marked as deprecated. (9a4a6882)
-* **client-rolesanywhere:** Adds the crlDpRevocationEnabled field to enable automatic revocation checking using CRL distribution points in X.509 certificates. (5c3071ce)
-* **client-marketplace-discovery:** GetListing and SearchListings APIs now return G2 and PeerSpot review sources in review summaries. (cb49279d)
-* **client-ec2:** Add the Unsupported SupportabilityScore to GetCapacityManagerSupportabilityScores. (e8a84dc8)
-* **client-elastic-beanstalk:** Adds DefaultAmiList to DescribePlatformVersion to return the default AMI for each processor architecture that a platform version supports.
-
-... (truncated)]]></description>
-    <pubDate>Wed, 04 Nov 2026 20:47:03 GMT</pubDate>
-  </item>
-  <item>
-    <title>[googleapis/google-cloud-go] pubsub: v1.52.0 (pubsub/v1.52.0)</title>
-    <link>https://github.com/googleapis/google-cloud-go/releases/tag/pubsub/v1.52.0</link>
-    <guid isPermaLink="true">https://github.com/googleapis/google-cloud-go/releases/tag/pubsub/v1.52.0</guid>
-    <description><![CDATA[## 1.52.0 (2026-11-04)
-
-
-### Features
-
-* **all:** Update supported go versions (#20520) (90413d3)
-
-
-### Bug Fixes
-
-* Adds additional validation for REST RPC requests (#20753) (7827181)]]></description>
-    <pubDate>Wed, 04 Nov 2026 19:51:57 GMT</pubDate>
-  </item>
-  <item>
     <title>[zed-industries/zed] v1.27.0</title>
     <link>https://github.com/zed-industries/zed/releases/tag/v1.27.0</link>
     <guid isPermaLink="true">https://github.com/zed-industries/zed/releases/tag/v1.27.0</guid>
@@ -117,17 +210,6 @@
 
 ... (truncated)]]></description>
     <pubDate>Wed, 04 Nov 2026 17:04:23 GMT</pubDate>
-  </item>
-  <item>
-    <title>[jsdom/jsdom] v31.0.0</title>
-    <link>https://github.com/jsdom/jsdom/releases/tag/v31.0.0</link>
-    <guid isPermaLink="true">https://github.com/jsdom/jsdom/releases/tag/v31.0.0</guid>
-    <description><![CDATA[## Breaking changes
-
-- Changed the optional canvas and image decoding backend from `canvas` to `@napi-rs/canvas`. Install `@napi-rs/canvas` v1.0.13 or later in the v1.x series alongside jsdom; installing `canvas` alone no longer enables this support. The new backend provides prebuilt Skia binaries on supported platforms, and rendering and encoded image bytes can differ. Projects using native canvas objects or custom font registration should follow the canvas migration guidance. Added WebP serialization through `canvas.toDataURL` and `canvas.toBlob`. Fixed image loading to wait for decoding before firing `load`, discard obsolete source requests, avoid refetching when dimensions change, and prevent failed images from drawing stale contents. Fixed canvas context and serialization behavior, including unsupported context types, read-only `ctx.canvas`, image-drawing exceptions, MIME type and quality normalization, and asynchronous `null` results from `canvas.toBlob` for empty canvases or enc
-
-... (truncated)]]></description>
-    <pubDate>Wed, 04 Nov 2026 14:15:43 GMT</pubDate>
   </item>
   <item>
     <title>[ant-design/ant-design] 6.7.0</title>
@@ -209,31 +291,6 @@ The core /speckit.taskstoissues command has been removed. You should be using th
 
 ... (truncated)]]></description>
     <pubDate>Tue, 03 Nov 2026 12:23:16 GMT</pubDate>
-  </item>
-  <item>
-    <title>[cloudflare/workers-sdk] wrangler@4.157.0</title>
-    <link>https://github.com/cloudflare/workers-sdk/releases/tag/wrangler%404.157.0</link>
-    <guid isPermaLink="true">https://github.com/cloudflare/workers-sdk/releases/tag/wrangler%404.157.0</guid>
-    <description><![CDATA[### Minor Changes
-
-- #16660 `34f34b3` Thanks @punkeel! - Allow opting into zstd compression for Wrangler-built container image layers with `WRANGLER_CONTAINER_IMAGE_COMPRESSION=zstd`.
-
-### Patch Changes
-
-- #16670 `b14b9dc` Thanks @dependabot! - Update `DEFAULT_COMPAT_DATE` to 2026-11-03
-
- Use the bundled workerd release's compatibility date by default when scaffolding new projects or when no compatibility date is configured.
-
-- #16011 `44d1ee4` Thanks @wra-sol! - Offer to delete a Worker's Container applications when running `wrangler delete`
-
- Previously, `wrangler delete` removed only the Worker, leaving the Container applications that `wrangler deploy` created for it running and billing. It now offers to delete them as well. With `--force`, or in CI and other non-interactive contexts, it lists them instead so they can be removed with `wrangler containers delete <id>`.
-
-- #16670 `b14b9dc` Thanks @dependabot! - Update dependencies of "miniflare", "wrangler"
-
- The following dependency 
-
-... (truncated)]]></description>
-    <pubDate>Tue, 03 Nov 2026 11:58:32 GMT</pubDate>
   </item>
   <item>
     <title>[mongodb/node-mongodb-native] v6.22.0</title>
@@ -407,23 +464,6 @@ This release aligns request option handling, parameter validation and form seria
     <pubDate>Sat, 31 Oct 2026 00:23:40 GMT</pubDate>
   </item>
   <item>
-    <title>[pnpm/pnpm] pnpm 12.17 (v12.17.0)</title>
-    <link>https://github.com/pnpm/pnpm/releases/tag/v12.17.0</link>
-    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v12.17.0</guid>
-    <description><![CDATA[pnpm 12.17.0 adds `pnpm peers check --global`, dependency-group selectors and wildcards in `overrides`, and runtime, package manager, Cargo, and Python updates in `pnpm outdated` and `pnpm update`. It also fixes files that other users could not read in Docker images, and repeat installs that missed changes to local dependencies.
-
-### Minor Changes
-
-- `pnpm peers check` now accepts `--global` (`-g`) to check globally installed packages. After a global install or update, the peer dependency warning now suggests `pnpm peers check -g` #17504.
-
-- `pnpm outdated` and `pnpm update` now inspect and update package manager and runtime versions in `devEngines.packageManager`, `packageManager`, `devEngines.runtime`, `engines.runtime`, and `runtime:` dependencies. With `cargo.enabled` or `python.enabled`, `pnpm outdated` and `pnpm update` also inspect and update Cargo dependencies in `Cargo.toml` and `Cargo.lock` and Python dependencies in `pyproject.toml` and `pylock.toml`.
-
-- `overrides` 
-
-... (truncated)]]></description>
-    <pubDate>Fri, 30 Oct 2026 14:24:43 GMT</pubDate>
-  </item>
-  <item>
     <title>[eslint/eslint] v10.14.0</title>
     <link>https://github.com/eslint/eslint/releases/tag/v10.14.0</link>
     <guid isPermaLink="true">https://github.com/eslint/eslint/releases/tag/v10.14.0</guid>
@@ -485,35 +525,6 @@ This release aligns request option handling, parameter validation and form seria
 
 ... (truncated)]]></description>
     <pubDate>Fri, 30 Oct 2026 08:03:18 GMT</pubDate>
-  </item>
-  <item>
-    <title>[anomalyco/opencode] process-daemon v0.4.0 (process-daemon-v0.4.0)</title>
-    <link>https://github.com/anomalyco/opencode/releases/tag/process-daemon-v0.4.0</link>
-    <guid isPermaLink="true">https://github.com/anomalyco/opencode/releases/tag/process-daemon-v0.4.0</guid>
-    <description><![CDATA[opencode-pty 0.4.0 (protocol 7) from packages/process-daemon, published to npm as @opencode/pty@0.4.0.]]></description>
-    <pubDate>Thu, 29 Oct 2026 22:01:55 GMT</pubDate>
-  </item>
-  <item>
-    <title>[openai/codex] 0.166.0 (rust-v0.166.0)</title>
-    <link>https://github.com/openai/codex/releases/tag/rust-v0.166.0</link>
-    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.166.0</guid>
-    <description><![CDATA[## New Features
-
-- Added keyboard-driven transcript selection with word, line, and page motions, integrated search, and configurable shortcuts. (#57221, #57222, #57223, #57224)
-- Rendered Markdown consistently in async questions, choices, answers, and transcript replies. (#57259, #57292)
-- Added GPT-6.1 Terra to the bundled, Vertex AI, and Amazon Bedrock model catalogs. (#57293)
-- Added `codex queue --resume` to resume unloaded threads after queueing a message. (#57232)
-- Added clearer safety-block explanations and selectable safer follow-up prompts in the TUI. (#57363, #57365)
-- Added `codex doctor --network-only` for focused configuration, connectivity, and WebSocket diagnostics. (#57606)
-
-## Bug Fixes
-
-- Preserved acknowledged approval and permission settings when resuming or forking threads. (#57227)
-- Preserved local image attachments when restoring killed composer text. (#57502)
-- Fixed standalone release cleanup on macOS when installations are in use or paths contain non-ASCII c
-
-... (truncated)]]></description>
-    <pubDate>Thu, 29 Oct 2026 19:47:53 GMT</pubDate>
   </item>
   <item>
     <title>[chakra-ui/ark] @ark-ui/vue@5.40.0</title>
@@ -602,27 +613,6 @@ Wide emoji sequences, such as a family emoji in tmux, draw at their full width, 
 
 ... (truncated)]]></description>
     <pubDate>Thu, 29 Oct 2026 08:12:27 GMT</pubDate>
-  </item>
-  <item>
-    <title>[BabylonJS/Babylon.js] 9.33.0</title>
-    <link>https://github.com/BabylonJS/Babylon.js/releases/tag/9.33.0</link>
-    <guid isPermaLink="true">https://github.com/BabylonJS/Babylon.js/releases/tag/9.33.0</guid>
-    <description><![CDATA[### Core
-
-- Add render-pass command stream batching for native hosts - by matthargett (#19075)
-- Clustered lighting: sheen uses the out-of-scope normalW (WGSL/GLSL compile error) - by increasinglyHuman (#19049)
-- WebGPU: GPU frame time with timestamp writes, read after the frame's submit - by enriqxxx (#19066)
-- Fix WGSL StandardMaterial fresnel blend and area light check - by RizgarOzan (#19074)
-- RenderTargetTexture: a fresh render id before each pass - by enriqxxx (#19073)
-- Temporal view data in the scene uniform buffer for WGSL: camera history and TAA jitter - by enriqxxx (#19038)
-- Meshes: keep no Vector3 per vertex when a mesh's positions are its geometry's - by enriqxxx (#19065)
-- KHR_materials_scatter import/export - [_New Feature_] by MiiBond (#18810)
-- Materials: keep pipeline names and plugin declarations as flat strings - by enriqxxx (#19060)
-- Fix solid particle winding for glTF model meshes - [_Bug Fix_] by Popov72 (#19058)
-- Gaussian Splatting: fix WebGPU texture fetch 
-
-... (truncated)]]></description>
-    <pubDate>Thu, 29 Oct 2026 08:09:55 GMT</pubDate>
   </item>
   <item>
     <title>[bluesky-social/social-app] v1.137.0 (1.137.0)</title>
@@ -830,6 +820,17 @@ The `Source code (zip)` or `Source code (tar.gz)` in `Assets` are automatically 
     <pubDate>Mon, 26 Oct 2026 07:53:59 GMT</pubDate>
   </item>
   <item>
+    <title>[lambdalisue/cclens] v0.4.0</title>
+    <link>https://github.com/lambdalisue/cclens/releases/tag/v0.4.0</link>
+    <guid isPermaLink="true">https://github.com/lambdalisue/cclens/releases/tag/v0.4.0</guid>
+    <description><![CDATA[## What's Changed
+* fix(config): weigh files a CLAUDE.md pulls in with @imports by @lambdalisue in 
+
+
+**Full Changelog**:]]></description>
+    <pubDate>Sat, 24 Oct 2026 08:07:18 GMT</pubDate>
+  </item>
+  <item>
     <title>[theMackabu/ant] v16.5.c41757b4.0</title>
     <link>https://github.com/theMackabu/ant/releases/tag/v16.5.c41757b4.0</link>
     <guid isPermaLink="true">https://github.com/theMackabu/ant/releases/tag/v16.5.c41757b4.0</guid>
@@ -889,6 +890,29 @@ For HTML checkboxes, declare a boolean with a default of `False`. See Boolean Fo
 
 ... (truncated)]]></description>
     <pubDate>Fri, 23 Oct 2026 16:44:57 GMT</pubDate>
+  </item>
+  <item>
+    <title>[microsoft/apm] v0.35.0</title>
+    <link>https://github.com/microsoft/apm/releases/tag/v0.35.0</link>
+    <guid isPermaLink="true">https://github.com/microsoft/apm/releases/tag/v0.35.0</guid>
+    <description><![CDATA[<!-- Release notes generated using configuration in .github/release.yml at v0.35.0 -->
+
+## What's Changed
+### 🔧 Other Changes
+* fix(hooks): render nested hook metadata as plain JSON by @abhishekacharya200 in 
+* test(hooks): align cursor smoke expectations with native flat handlers by @MohammedAlkindi in 
+* fix: install versioned marketplace package directories by @Pybsama in 
+* fix: keep Codex MCP identity outside native settings by @Pybsama in 
+* fix(cli): report only verified APM build revisions by @danielmeppiel in 
+* fix(hooks): admit and stage hook-only Git-path packages by @danielmeppiel in 
+* fix(hooks): type untyped flat command handlers for Claude by @Parth-Vasave in 
+* Fix native Agent Plugin audit replay for Copilot targets by @bodapatisaikrishna in 
+* test(audit): preserve OpenCode local-bundle lifecycle coverage by @danielmeppiel in 
+* fix(auth): recover private files after API throttling by @danielmeppiel in 
+* fix(audit): preserve Grok Cloud target identity and historic
+
+... (truncated)]]></description>
+    <pubDate>Thu, 22 Oct 2026 22:51:41 GMT</pubDate>
   </item>
   <item>
     <title>[iii-hq/iii] iii 0.25.0 (iii/v0.25.0)</title>
@@ -977,67 +1001,6 @@ For HTML checkboxes, declare a boolean with a default of `False`. See Boolean Fo
     <guid isPermaLink="true">https://github.com/uptrace/uptrace/releases/tag/v2.1.0-rc.2</guid>
     <description><![CDATA[CHANGELOG]]></description>
     <pubDate>Thu, 22 Oct 2026 09:12:02 GMT</pubDate>
-  </item>
-  <item>
-    <title>[cli/cli] GitHub CLI 2.103.0 (v2.103.0)</title>
-    <link>https://github.com/cli/cli/releases/tag/v2.103.0</link>
-    <guid isPermaLink="true">https://github.com/cli/cli/releases/tag/v2.103.0</guid>
-    <description><![CDATA[## Expiring, auto-refreshing OAuth tokens (preview)
-
-`gh` can now sign in with expiring OAuth credentials that it refreshes automatically. When you opt in, `gh` stores a short-lived access token alongside a rotating refresh token and refreshes the access token whenever it is needed, so you stay signed in without having to authenticate again.
-
-To opt in for a single sign-in, run:
-
-```shell
-gh auth login --expiring
-```
-
-To prefer expiring credentials for every sign-in, run:
-
-```shell
-gh config set expiring_credentials enabled
-```
-
-`gh auth status` shows whether a credential is refreshable and when the current access token expires. Both `gh auth status` and `gh auth token` automatically refresh the access token when needed. Expiring tokens are available on github.com and GHE.com; on hosts that do not issue them, `gh` falls back to a regular non-expiring token.
-
-If you use HTTPS as your git protocol, we advise using git 2.46 or newer and letting `gh` act as your git crede
-
-... (truncated)]]></description>
-    <pubDate>Wed, 21 Oct 2026 15:33:31 GMT</pubDate>
-  </item>
-  <item>
-    <title>[biomejs/biome] JavaScript APIs v6.1.0 (@biomejs/js-api@6.1.0)</title>
-    <link>https://github.com/biomejs/biome/releases/tag/%40biomejs/js-api%406.1.0</link>
-    <guid isPermaLink="true">https://github.com/biomejs/biome/releases/tag/%40biomejs/js-api%406.1.0</guid>
-    <description><![CDATA[## 6.1.0
-
-### Minor Changes
-
-- #9940 `1aefcb1` Thanks @regseb! - Added `spanInBytesToSpanInCodeUnits` helper function in subpath exports of `@biomejs/js-api`.
- 
- ```js
- import { spanInBytesToSpanInCodeUnits } from "@biomejs/js-api/nodejs";
- // Or:
- // import { spanInBytesToSpanInCodeUnits } from "@biomejs/js-api/bundler";
- // import { spanInBytesToSpanInCodeUnits } from "@biomejs/js-api/web";
- 
- const [start, end] = spanInBytesToSpanInCodeUnits(
- diagnostic.location.span,
- content
- );
- const text = content.slice(start, end); // Correctly extracts the text
- ```
-
-- #8912 `e9785d8` Thanks @dyc3! - Added GritQL search to `@biomejs/js-api`. Parse a pattern with `parsePattern`, search content with `searchContent`, and release the pattern with `dropPattern`. Matches are returned as UTF-8 byte offsets; use `spanInBytesToSpanInCodeUnits` to convert them before slicing the content.
- 
- ```js
- const patternId = biome.parsePattern("`console.log($message)`", {
- defaultLanguage: "js",
- });
- const { m
-
-... (truncated)]]></description>
-    <pubDate>Wed, 21 Oct 2026 09:49:44 GMT</pubDate>
   </item>
 </channel>
 </rss>
