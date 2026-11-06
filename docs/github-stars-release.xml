@@ -5,8 +5,185 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Thu, 05 Nov 2026 22:01:23 GMT</lastBuildDate>
+  <lastBuildDate>Fri, 06 Nov 2026 22:01:24 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[MasterKale/SimpleWebAuthn] v14.1.0</title>
+    <link>https://github.com/MasterKale/SimpleWebAuthn/releases/tag/v14.1.0</link>
+    <guid isPermaLink="true">https://github.com/MasterKale/SimpleWebAuthn/releases/tag/v14.1.0</guid>
+    <description><![CDATA[**Changes:**
+
+- **[server]** Support for the FIDO Convenience Metadata Service has been added with the new `ConvenienceMetadataService`. See for more info (#812)
+- **[server]** `verifyRegistrationResponse` and `verifyAuthenticationResponse` will now raise a `SimpleWebAuthnError` when `expectedRPID` or `expectedOrigin` are not valid values (#824)
+- **[server]** `"android-key"` attestation statement verification now checks that the `x5c` root certificate is a known one _before_ verifying the certificate chain (#821)
+- **[server]** `"android-key"` attestation statement verification now knows about the new **Google Android Key Attestation CA1** trust anchor (#820)
+- **[server]** `"tpm"` attestation statement verification now properly parses non-`TPM_ALG_NULL` schemes in `pubArea` (#822)]]></description>
+    <pubDate>Fri, 06 Nov 2026 20:23:53 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-11-06) (release-2026-11-06)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-06</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-06</guid>
+    <description><![CDATA[## General Highlights
+* **Dependency Update**: Updated to the latest SDK module versions
+
+## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/service/athena`: [v1.67.0](service/athena/CHANGELOG.md#v1670-2026-11-06)
+ * **Feature**: Added support for Athena System Tables which writes Athena usage data to AWS S3 managed tables in Apache Iceberg format. Adds CreateSystemTableConfiguration, UpdateSystemTableConfiguration, DeleteSystemTableConfiguration, GetSystemTableConfiguration, and ListSystemTableStatuses.
+* `github.com/aws/aws-sdk-go-v2/service/autoscaling`: [v1.80.0](service/autoscaling/CHANGELOG.md#v1800-2026-11-06)
+ * **Feature**: Amazon EC2 Auto Scaling now lets you exclude managed resources from describe API responses using the new optional IncludeManagedResources parameter. Set this parameter to false to exclude managed resources from the response. By default, managed resources are included.
+* `github.com/aws/aws-sdk-go-v2/service/bedrockagent`: [v1.70.0](service/bedrockagent/CH
+
+... (truncated)]]></description>
+    <pubDate>Fri, 06 Nov 2026 20:14:54 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1164.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1164.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1164.0</guid>
+    <description><![CDATA[#### 3.1164.0(2026-11-06)
+
+##### Chores
+
+* **util-endpoints:**
+ * update aws partitions.json (616248b7)
+ * update aws partitions.json (4acce3eb)
+* **endpoints:** update endpoints model (aa699bbb)
+* **models:** update API models (51f69a86)
+
+##### Documentation Changes
+
+* **lib-sqs:** add README (#8405) (c57d0cb5)
+
+##### New Features
+
+* **client-mediaconvert:** Smart subtitling uses AWS Elemental Inference to generate captions from your content's audio, in embedded, burn-in, DVB-Sub, IMSC, SMI, SRT, teletext, TTML, or WebVTT outputs. Also fixes HEVC passthrough writing an incomplete codecs string to DASH and HLS manifests. (cfc598fc)
+* **client-bedrock-agent:** Add support for configuring searchability for metadata fields via UpdateKnowledgeBase request for Managed Knowledge Base. Once a field is marked as searchable it can be queried via query text and is factored into Managed Knowledge Base's ranking algorithm. (c980a42b)
+* **client-connectcases:** Amazon Connect Cases adds two Bulk Ca
+
+... (truncated)]]></description>
+    <pubDate>Fri, 06 Nov 2026 20:10:47 GMT</pubDate>
+  </item>
+  <item>
+    <title>[BabylonJS/Babylon.js] 9.35.0</title>
+    <link>https://github.com/BabylonJS/Babylon.js/releases/tag/9.35.0</link>
+    <guid isPermaLink="true">https://github.com/BabylonJS/Babylon.js/releases/tag/9.35.0</guid>
+    <description><![CDATA[### Core
+
+- Fix WebGL effect samplers being dropped when compiled during context loss - by serdarucel (#19033)
+- Release GPU resources in ProceduralTexture, HDRIrradianceFiltering and DynamicTexture dispose - [_Bug Fix_] by bkaradzic-microsoft (#19121)
+- NativeEngine: Honor MRT attachment mip generation intent - [_Bug Fix_] by bkaradzic-microsoft (#19120)
+- Sample IBL CDF radiance at the icdf bin center - [_Bug Fix_] by bkaradzic-microsoft (#19114)
+- Update HTML-in-Canvas typings to the latest WICG explainer API - by RaananW (#19116)
+- WebGPU/Effect: don't rebuild effects whose shader code is still loading after a context loss - by Deadlywolf712 (#19115)
+
+### Inspector
+
+- Add audio engine inspection to Inspector Lite - [_New Feature_] by ryantrem (#19119)]]></description>
+    <pubDate>Fri, 06 Nov 2026 19:46:06 GMT</pubDate>
+  </item>
+  <item>
+    <title>[oxc-project/oxc] oxlint v1.92.0 (oxlint_v1.92.0)</title>
+    <link>https://github.com/oxc-project/oxc/releases/tag/oxlint_v1.92.0</link>
+    <guid isPermaLink="true">https://github.com/oxc-project/oxc/releases/tag/oxlint_v1.92.0</guid>
+    <description><![CDATA[### 🚀 Features
+
+- 4a52ba2 oxlint: Discover tsrs for type-aware linting (#28751) (camc314)
+- b7d2c75 linter/eslint/no-redeclare: Add `ignoreDeclarationMerge` option (#28816) (Cam McHenry)
+
+### 🐛 Bug Fixes
+
+- fa66fde oxlint,oxfmt: Resolve Vite+ config root from the config file directory (#28801) (MK (fengmk2))
+- 2091564 linter/jsdoc/require-param: Ignore enclosing function JSDoc (#28866) (camc314)
+- c6ec50b linter/react/only-export-components: Classify JSX values as non-components (#28761) (camc314)
+- 3c051ab linter/vitest/prefer-called-exactly-once-with: Preserve neighboring code in autofix (#28864) (camc314)
+- 674b962 linter/eslint/no-misleading-character-class: Use lazy regex for combining marks (#28822) (Sysix)
+- 838d339 linter/vitest/prefer-called-exactly-once-with: Avoid panic on non-ASCII text (#28850) (YT)
+- 8d24c26 linter/jsx-a11y/aria-role: Allow role={undefined} (#28804) (Abhay Godavarthy)
+- a7143bf linter/eslint/no-restricted-imports: Respect allowTypeImports correctly for 
+
+... (truncated)]]></description>
+    <pubDate>Fri, 06 Nov 2026 12:28:40 GMT</pubDate>
+  </item>
+  <item>
+    <title>[nestjs/nest] v12.4.0</title>
+    <link>https://github.com/nestjs/nest/releases/tag/v12.4.0</link>
+    <guid isPermaLink="true">https://github.com/nestjs/nest/releases/tag/v12.4.0</guid>
+    <description><![CDATA[## v12.4.0 (2026-11-06)
+
+#### Features
+* `platform-node`
+ * #18396 feat(node): let the node adapter set locals for every view (@thekhegay)
+
+#### Bug fixes
+* `microservices`
+ * #18418 fix(microservices): ignore an mqtt server's own replies under wildcards (@pavstev)
+ * #18413 fix(microservices): reach handlers whose string pattern reads as json (@pavstev)
+ * #18392 fix(microservices): forward grpc call options on request streams (@DenisCDev)
+ * #18393 fix(microservices): await the mqtt close and reset the client state (@hktitof)
+* `common`
+ * #18419 fix(common): keep the fields of grouped item errors in parse array pipe (@pavstev)
+ * #18402 fix(common): keep console logger from mutating the caller options (@pavstev)
+* `platform-node`
+ * #18417 fix(node): omit the Content-Length of a redirect with a Transfer-Encoding (@hktitof)
+ * #18415 fix(node): give each route that shares a path shape its own params (@pavstev)
+ * #18372 fix(node): strip trailing slashes when resolvi
+
+... (truncated)]]></description>
+    <pubDate>Fri, 06 Nov 2026 10:11:54 GMT</pubDate>
+  </item>
+  <item>
+    <title>[openai/codex] 0.167.0 (rust-v0.167.0)</title>
+    <link>https://github.com/openai/codex/releases/tag/rust-v0.167.0</link>
+    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.167.0</guid>
+    <description><![CDATA[## New Features
+
+- Open the agent command center with `codex agents --no-daemon`. The command center and session picker now mark unread results (#58238, #58239, #58263, #58264).
+- Switch between connected backends from the terminal session picker and keep your drafts when switching (#58280, #58457).
+- Preview local image attachments while composing on supported terminals, and open viewed local images from clickable transcript paths (#58261, #58446).
+- Find API key and cloud provider options under “Sign in another way.” Enable `gcp_setup_wizard` to set up Google Cloud Vertex AI with Application Default Credentials or a credential file (#57857, #58427).
+- Opt into macOS or Windows system proxy settings from `/experimental` (#58157).
+- Expand patch details directly in the transcript while an approval prompt is open (#58281).
+
+## Bug Fixes
+
+- Saved chats stay visible after you switch model providers. If a chat can’t resume, you can read its transcript and prepare an editable prompt to cont
+
+... (truncated)]]></description>
+    <pubDate>Fri, 06 Nov 2026 01:40:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>[rancher-sandbox/rancher-desktop] Rancher Desktop 1.25 (v1.25.0)</title>
+    <link>https://github.com/rancher-sandbox/rancher-desktop/releases/tag/v1.25.0</link>
+    <guid isPermaLink="true">https://github.com/rancher-sandbox/rancher-desktop/releases/tag/v1.25.0</guid>
+    <description><![CDATA[This Rancher Desktop 1.25.0, an open source desktop application to bring Kubernetes and container management to macOS, Windows, and Linux.
+
+## Installers
+
+* Windows
+* macOS x86_64
+* macOS aarch64
+* Linux install notes
+
+## New Contributors
+
+Thank you to our new contributors: @srtdog64, @PlayerNguyen, @Harshavardhan-28, and @Juhantam!
+
+## Release Notes for 1.25.0
+
+### What's New
+
+#### The interface speaks Vietnamese
+
+Pick Vietnamese under Preferences > Application > General. It joins the eight languages that 1.24.0 added, and like them it is experimental, so feedback from native speakers is welcome. The app's usual font lacks most Vietnamese accented letters, so Vietnamese text uses a font installed on your system instead. Thanks to @PlayerNguyen! (#11004)
+
+#### Deleting containers and volumes asks first
+
+The Delete action on the Containers and Volumes pages used to run the moment you clicked it; both pages now ask first, in a dialog that counts the containers or v
+
+... (truncated)]]></description>
+    <pubDate>Thu, 05 Nov 2026 23:41:36 GMT</pubDate>
+  </item>
   <item>
     <title>[googleapis/google-cloud-go] agentplatform: v0.23.0 (agentplatform/v0.23.0)</title>
     <link>https://github.com/googleapis/google-cloud-go/releases/tag/agentplatform/v0.23.0</link>
@@ -20,43 +197,23 @@
     <pubDate>Thu, 05 Nov 2026 20:34:35 GMT</pubDate>
   </item>
   <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-11-05) (release-2026-11-05)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-05</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-05</guid>
-    <description><![CDATA[## General Highlights
-* **Dependency Update**: Updated to the latest SDK module versions
+    <title>[semgrep/semgrep] Release v1.184.0 (v1.184.0)</title>
+    <link>https://github.com/semgrep/semgrep/releases/tag/v1.184.0</link>
+    <guid isPermaLink="true">https://github.com/semgrep/semgrep/releases/tag/v1.184.0</guid>
+    <description><![CDATA[## 1.184.0 - 2026-11-05
 
-## Module Highlights
-* `github.com/aws/aws-sdk-go-v2`: v1.47.7
- * **Bug Fix**: Compute the clock skew from the server Date header minus the time the response was received, instead of the midpoint of the request.
-* `github.com/aws/aws-sdk-go-v2/service/accountaccessruntime`: [v1.0.0](service/accountaccessruntime/CHANGELOG.md#v100-2026-11-05)
- * **Release**: New AWS service client module
- * **Feature**: Adds SDK support for Account Access user portal operations, enabling users to list out and get credentials for role assignments configured in AWS IAM Account Access Manager.
-* `github.com/aws/aws-sdk-go-v2/service/agentregistrycontrol`: [v1.9.0](service/agentregistrycontrol/CHANGELOG.md#v190-2026-11-05)
- * **Feature**: Adds support for OAuth2 Authorization Server Metadata (RFC 8414) discovery URLs in custom JWT authorizer.
-* `github.com/aws/aws-sdk-go-v2/service/appintegrations`: [v1.53.0](service/ap
+### ### Added
 
-... (truncated)]]></description>
-    <pubDate>Thu, 05 Nov 2026 19:49:18 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-js-v3] v3.1163.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1163.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1163.0</guid>
-    <description><![CDATA[#### 3.1163.0(2026-11-05)
+- PHP: Improved virtual call resolution for basic trait composition. (CODE-9176)
+- Supply Chain: a `requirements.txt` dependency declared as a version range (`litellm>=1.10`) or with no version (`flask`) now produces a finding for every advisory whose affected versions overlap the declared range, in both the Python and native resolvers. Such a finding has no single installed version to confirm, so it needs review. A range line next to a pinned copy of the same package produces no finding of its own, since the pinned copy names the installed version. (SC-4243)
+- Set `SEMGREP_LOG_JSON_FILE` to emit structured execution events with scan metadata alongside existing text output. (SMS-3670)
 
-##### New Features
+### ### Changed
 
-* **clients:** update client endpoints as of 2026-11-05 (57e9f143)
-* **client-bedrock-agentcore-control:** Adds support for OAuth2 Authorization Server Metadata (RFC 8414) discovery URLs in custom JWT authorizer and OAuth2 credential provider configurations. (950c852a)
-* **client-sagemaker:** Fixed the ImageDeleted and ImageVersionDeleted waiters to succeed on the ResourceNotFound error returned by DescribeImage and DescribeImageVersion (6cc77117)
-* **client-wafv2:** AWS WAF customers who monetize AI traffic on Web ACLs can now configure payments through connected accounts (Stripe). (9e7dd06f)
-* **client-appintegrations:** This release adds a LastModifiedRegion field to GetApplication and ListApplications so customers can see which Region an application was last modified in. (878faafe)
-* **client-quicksight:** Amazon QuickSight adds APIs to view account service role settings and switch to or replace a customer-managed IAM role. (98371e60)
-
+- Scans are slightly faster. The dataflow analyses build the name of each variable with a plain string join, and no longer with `Printf` and `Format`. On 6 open-source repos, the scan time was a median of 3% lower, with identical findings. (dataflo
 
 ... (truncated)]]></description>
-    <pubDate>Thu, 05 Nov 2026 19:46:42 GMT</pubDate>
+    <pubDate>Thu, 05 Nov 2026 19:17:04 GMT</pubDate>
   </item>
   <item>
     <title>[microsoft/playwright] v1.65.0</title>
@@ -125,19 +282,6 @@ New `failures` reporter pri
  - @cloudflare/config@0.30.2
  - @cloudflare/containers-shared@0.23.9]]></description>
     <pubDate>Thu, 05 Nov 2026 10:53:12 GMT</pubDate>
-  </item>
-  <item>
-    <title>[BabylonJS/Babylon.js] 9.34.0</title>
-    <link>https://github.com/BabylonJS/Babylon.js/releases/tag/9.34.0</link>
-    <guid isPermaLink="true">https://github.com/BabylonJS/Babylon.js/releases/tag/9.34.0</guid>
-    <description><![CDATA[### Core
-
-- WebGPU: find cached texture views without building a key string - by enriqxxx (#19091)
-
-### Inspector
-
-- Add Inspector Lite physics inspection - by ryantrem (#19079)]]></description>
-    <pubDate>Thu, 05 Nov 2026 08:54:14 GMT</pubDate>
   </item>
   <item>
     <title>[pnpm/pnpm] pnpm 12.18 (v12.18.0)</title>
@@ -255,29 +399,6 @@ The core /speckit.taskstoissues command has been removed. You should be using th
 
 ... (truncated)]]></description>
     <pubDate>Tue, 03 Nov 2026 18:25:42 GMT</pubDate>
-  </item>
-  <item>
-    <title>[oxc-project/oxc] oxlint v1.91.0 (oxlint_v1.91.0)</title>
-    <link>https://github.com/oxc-project/oxc/releases/tag/oxlint_v1.91.0</link>
-    <guid isPermaLink="true">https://github.com/oxc-project/oxc/releases/tag/oxlint_v1.91.0</guid>
-    <description><![CDATA[### 🚀 Features
-
-- 004647a track_memory_allocs: Add allocation tracking for linter rules (#28470) (Cam McHenry)
-- 419c1b0 linter: Add allow and allowPattern options to react/capitalized-calls (Christian Vuerings)
-
-### 🐛 Bug Fixes
-
-- a205cd3 linter/eslint/no-control-regex: Detect raw control characters (#28548) (camc314)
-- 7c65777 linter/unicorn/prefer-global-this: Align typeof and worker API handling (#28549) (camc314)
-- 987d5f1 linter/unicorn/no-invalid-fetch-options: Avoid treating unknown methods as GET (#28547) (camc314)
-- e234dc8 linter/unicorn/no-useless-error-capture-stack-trace: Move to suspicious category (#28545) (camc314)
-- b3dc411 linter/typescript/no-non-null-asserted-nullish-coalescing: Move to suspicious category (#28546) (camc314)
-- cb64638 regular_expression: Reject incomplete Unicode atom escapes (#28448) (Boshen)
-- c67167e linter: Only run React Compiler rules on files with top-level components or hooks (Boshen)
-- 4c9d5aa linter: Treat Reanimated shared values as re
-
-... (truncated)]]></description>
-    <pubDate>Tue, 03 Nov 2026 14:02:06 GMT</pubDate>
   </item>
   <item>
     <title>[open-webui/open-webui] v0.13.0</title>
@@ -527,6 +648,35 @@ This release aligns request option handling, parameter validation and form seria
     <pubDate>Fri, 30 Oct 2026 08:03:18 GMT</pubDate>
   </item>
   <item>
+    <title>[nanaism/yomiyasu] v2.5.0</title>
+    <link>https://github.com/nanaism/yomiyasu/releases/tag/v2.5.0</link>
+    <guid isPermaLink="true">https://github.com/nanaism/yomiyasu/releases/tag/v2.5.0</guid>
+    <description><![CDATA[yomiyasu v2.5.0 を公開しました。
+lint の直訳語の型1が、定着した言い方に副詞が挟まった文（「テストがまだ通らない」）に出していた誤った指摘を直し、比喩の「効く」の見落としを減らしたバージョンです。
+AI の文章によく出る言い回しを見つける規則 `ai_phrase` と、直訳語の句を足しました。
+diff と check には、見出しの形の変化と消えた見出し、読点が増えた推敲を示す節を足しました。
+推敲の手順にはコードを説明する文書の擬人化、否定で終わる定義文、漢語の名詞で動作を省いた文、依頼で指定された見出しの形とまとめ、読点を足さない決まりを足しています。
+SKILL.md には付属の lint と check の呼び出しだけを許す `allowed-tools` を入れました。
+
+## 背景と課題
+
+v2.4.0 の公開のあとに、いくつかの報告と提案をいただきました。
+
+- 技術文書をコードから書かせると、比喩や擬人化が混ざるという感想。「この関数は、呼び出し元の事情を知っています」のような文の擬人化に、lint は何も出していませんでした。
+- 直訳語の型1が、「テストが通る」「キャッシュが効く」のような定着した言い方に副詞が挟まると、指摘を出していたこと。
+- 比喩の「効く」が、前の行にキャッシュや最適化の語があるだけで見落とされていたこと。
+- AI の文章によく出る言い回しの候補（「〜という見立てです」「〜に潜むリスク」「今や〜に欠かせない存在」など）。
+- yomiyasu をほかの方法と比べた記事の3点。依頼で見出しの形とまとめを指定しても推敲が直してしまうこと、python3 がない環境で手順のコマンドが動かないこと、承認する人がいない実行で check が許可の確認に止まることです。
+- AI の謎な説明文の直し方を書いた記事にある、否定で終わる定義文と、漢語の名詞で動作を省いた文の直し方。
+
+もう1つ、僕自身から、AI の出力と yomiyasu の出力で読点が多すぎるという指摘をしました。人の文章と AI の生成文を比べた測りでは、読点の数より位置に違いがあり、短い主題や主語のあと（約1.7倍）と、短い目的語の「を、」のあと（約3.4倍）に AI の読点が多く出ていました。
+
+#
+
+... (truncated)]]></description>
+    <pubDate>Fri, 30 Oct 2026 02:21:48 GMT</pubDate>
+  </item>
+  <item>
     <title>[chakra-ui/ark] @ark-ui/vue@5.40.0</title>
     <link>https://github.com/chakra-ui/ark/releases/tag/%40ark-ui/vue%405.40.0</link>
     <guid isPermaLink="true">https://github.com/chakra-ui/ark/releases/tag/%40ark-ui/vue%405.40.0</guid>
@@ -733,33 +883,6 @@ Welcome to the AMD FSR™ SDK. This revision to the SDK updates a number of AMD 
     <pubDate>Wed, 28 Oct 2026 13:18:15 GMT</pubDate>
   </item>
   <item>
-    <title>[nestjs/nest] v12.3.0</title>
-    <link>https://github.com/nestjs/nest/releases/tag/v12.3.0</link>
-    <guid isPermaLink="true">https://github.com/nestjs/nest/releases/tag/v12.3.0</guid>
-    <description><![CDATA[## v12.3.0 (2026-10-27)
-
-#### Features
-* `platform-node`
- * #18063 feat(node): add a native node http platform adapter (@kamilmysliwiec)
-
-#### Bug fixes
-* `common`
- * #18289 fix(common): report the detected file type in file type errors (@DenisCDev)
- * #18246 fix(common): avoid throwing for arrow prototype constructors (@fengxueweilai)
- * #18220 fix(common): abort the response when a streamable file fails midway (@thekhegay)
-* `core`
- * #18276 fix(core): run middleware once for routes that differ only in version (@OmBhandwaldar)
- * #18262 fix(core): tolerate sse request sockets without tuning methods (@SnowingFox)
- * #18252 fix(core): read the url protocol from the server (@thekhegay)
- * #18254 fix(core): name the array and index of undefined module entries (@thekhegay)
- * #18235 fix(core): discover classes by each of their discovery decorators (@OmBhandwaldar)
- * #18216 fix(core): read the abort on error option of the app being called (@thekhegay)
- * #18209 fix(core)
-
-... (truncated)]]></description>
-    <pubDate>Wed, 28 Oct 2026 11:41:13 GMT</pubDate>
-  </item>
-  <item>
     <title>[lynx-family/lynx] 4.2.0</title>
     <link>https://github.com/lynx-family/lynx/releases/tag/4.2.0</link>
     <guid isPermaLink="true">https://github.com/lynx-family/lynx/releases/tag/4.2.0</guid>
@@ -913,94 +1036,6 @@ For HTML checkboxes, declare a boolean with a default of `False`. See Boolean Fo
 
 ... (truncated)]]></description>
     <pubDate>Thu, 22 Oct 2026 22:51:41 GMT</pubDate>
-  </item>
-  <item>
-    <title>[iii-hq/iii] iii 0.25.0 (iii/v0.25.0)</title>
-    <link>https://github.com/iii-hq/iii/releases/tag/iii/v0.25.0</link>
-    <guid isPermaLink="true">https://github.com/iii-hq/iii/releases/tag/iii/v0.25.0</guid>
-    <description><![CDATA[## What's Changed
-* docs(changelog): add 0.24.6 release notes by @guibeira in 
-* feat(telemetry): report the harness machine-wide usage events by @anthonyiscoding in 
-* feat(website): OpenCode vs Claude Code vs iii comparison post by @arihantcodes in 
-* feat(infra): route iii.dev/registry to the workers registry by @sergiofilhowz in 
-* Update publication date for blog post by @anthonyiscoding in 
-* docs: add Simplified Chinese README translation (README_zh.md) by @WanderLandWalker in 
-* feat(ci): allow release candidates from unmerged branches by @guibeira in 
-* docs: fix local links after the README translation by @guibeira in 
-* fix(observability): report log lag at most once per 10 s by @sergiofilhowz in 
-* feat(website): list the registry sitemap in robots.txt by @sergiofilhowz in 
-* perf(engine): reduce invocation and trigger dispatch overhead by @guibeira in 
-* fix(deps): bump TLS, vite and markdown-it lockfile entries for Supply Chain advisories by @guibeira in 
-* fix(compose): 
-
-... (truncated)]]></description>
-    <pubDate>Thu, 22 Oct 2026 22:32:57 GMT</pubDate>
-  </item>
-  <item>
-    <title>[TanStack/router] Release 2026-10-22 20:11 (release-2026-10-22-2011)</title>
-    <link>https://github.com/TanStack/router/releases/tag/release-2026-10-22-2011</link>
-    <guid isPermaLink="true">https://github.com/TanStack/router/releases/tag/release-2026-10-22-2011</guid>
-    <description><![CDATA[Release 2026-10-22 20:11
-
-## Changes
-
-### Fix
-
-- start-plugin-core: skip the Rsbuild import-protection loader when disabled (#8748) (ed5577593a) by @guru-irl
-- start-plugin-core: skip unchanged server function resolver rebuilds in Rsbuild dev (#8750) (63a886da90) by @guru-irl
-- react-router: publish agent skills (#8671) (689a7c5419) by @Sheraff
-
-### Performance
-
-- start-plugin-core: skip resolving member calls on non-namespace receivers (#8758) (d9b07e8d3b) by @shkumbinhasani
-
-### Refactor
-
-- router-plugin: remove enableRouteGeneration option (#8737) (647cb737a5) by @Sheraff
-
-### Chore
-
-- update Node.js to 26.12.1 (#8779) (08a419c109) by @Sheraff
-
-
-## Packages
-
-- @tanstack/react-router@1.170.46
-- @tanstack/react-start@1.169.4
-- @tanstack/react-start-client@1.168.44
-- @tanstack/react-start-rsc@0.1.65
-- @tanstack/react-start-server@1.167.52
-- @tanstack/router-cli@1.167.46
-- @tanstack/router-core@1.171.39
-- @tanstack/router-generator@1.167.46
-- @tanstack/router-plugin@1.168.48
-- @tanstack
-
-... (truncated)]]></description>
-    <pubDate>Thu, 22 Oct 2026 20:11:20 GMT</pubDate>
-  </item>
-  <item>
-    <title>[panva/node-oidc-provider] v9.13.0</title>
-    <link>https://github.com/panva/node-oidc-provider/releases/tag/v9.13.0</link>
-    <guid isPermaLink="true">https://github.com/panva/node-oidc-provider/releases/tag/v9.13.0</guid>
-    <description><![CDATA[### Features
-
-* update attestation client auth to draft-12 (aec461c)]]></description>
-    <pubDate>Thu, 22 Oct 2026 19:36:16 GMT</pubDate>
-  </item>
-  <item>
-    <title>[arktypeio/arktype] @arktype/attest@0.58.0</title>
-    <link>https://github.com/arktypeio/arktype/releases/tag/%40arktype/attest%400.58.0</link>
-    <guid isPermaLink="true">https://github.com/arktypeio/arktype/releases/tag/%40arktype/attest%400.58.0</guid>
-    <description><![CDATA[No release notes provided.]]></description>
-    <pubDate>Thu, 22 Oct 2026 11:31:02 GMT</pubDate>
-  </item>
-  <item>
-    <title>[uptrace/uptrace] v2.1.0-rc.2</title>
-    <link>https://github.com/uptrace/uptrace/releases/tag/v2.1.0-rc.2</link>
-    <guid isPermaLink="true">https://github.com/uptrace/uptrace/releases/tag/v2.1.0-rc.2</guid>
-    <description><![CDATA[CHANGELOG]]></description>
-    <pubDate>Thu, 22 Oct 2026 09:12:02 GMT</pubDate>
   </item>
 </channel>
 </rss>
