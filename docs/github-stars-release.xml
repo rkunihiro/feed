@@ -5,8 +5,62 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Fri, 06 Nov 2026 22:01:24 GMT</lastBuildDate>
+  <lastBuildDate>Sat, 07 Nov 2026 22:01:12 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[mongodb/mongo-go-driver] MongoDB Go Driver 2.10.0 (v2.10.0)</title>
+    <link>https://github.com/mongodb/mongo-go-driver/releases/tag/v2.10.0</link>
+    <guid isPermaLink="true">https://github.com/mongodb/mongo-go-driver/releases/tag/v2.10.0</guid>
+    <description><![CDATA[The MongoDB Go Driver Team is pleased to release version 2.10.0 of the official MongoDB Go Driver.
+
+## Release Highlights
+
+This release fixes a bug that prevented `timeoutMS` from being applied to session and transaction operations, and adds two new options intended for internal use only.
+
+### `addCommandFields` for Collection & IndexView APIs
+> [!WARNING]
+> The `addCommandFields` option is intended for internal use only. It may be changed or removed without notice at any time.
+
+Allows adding arbitrary fields to Collection and IndexView commands.
+
+### `collectionUUID` for Client.BulkWrite
+> [!WARNING]
+> The `collectionUUID` option is intended for internal use only. It may be changed or removed without notice at any time.
+
+Allows specifying a `collectionUUID` for bulk write requests.
+
+<!-- Release notes generated using configuration in .github/release.yml at v2.10.0 -->
+
+## What's Changed
+### ✨ New Features
+* GODRIVER-4000 Extend addCommandFields to all Collection 
+
+... (truncated)]]></description>
+    <pubDate>Sat, 07 Nov 2026 01:44:51 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aardappel/goose] Goose v2026.4 (v2026.4)</title>
+    <link>https://github.com/aardappel/goose/releases/tag/v2026.4</link>
+    <guid isPermaLink="true">https://github.com/aardappel/goose/releases/tag/v2026.4</guid>
+    <description><![CDATA[Prebuilt compilers with the blessed packages (gfx, audio, ui, physics) compiled in. Unpack anywhere and put the directory on PATH; see "Install a release" in README.md for what each platform needs besides.
+
+
+## What's Changed
+* Dynamic externs: extern blocks bound from a shared library by name by @binji in 
+* Preserve CMake archive paths in cc-style response files by @akeit0 in 
+* Add an API to release unused data-stack memory by @KoudelkaB in 
+* Let packagers set TinyCC's runtime and libc paths by @jmqd in 
+* Add math's mul_add: x * y + z rounded once where the code has FMA by @guillochon in 
+* Add goose format, a formatter that keeps the author's line breaks by @binji in 
+* Name the command a mistyped one is close to by @binji in 
+* Report the compiler's version, from git describe or a release's tag by @binji in 
+* Updated subprocess.h to gain support for android by @compilersEllie in 
+* Color errors and warnings on a terminal by @binji in 
+* Add -q, which prints nothing on success b
+
+... (truncated)]]></description>
+    <pubDate>Fri, 06 Nov 2026 23:23:48 GMT</pubDate>
+  </item>
   <item>
     <title>[MasterKale/SimpleWebAuthn] v14.1.0</title>
     <link>https://github.com/MasterKale/SimpleWebAuthn/releases/tag/v14.1.0</link>
@@ -991,51 +1045,6 @@ For HTML checkboxes, declare a boolean with a default of `False`. See Boolean Fo
 - Updated dependencies [`46d9c99`]:
  - @modelcontextprotocol/core@2.4.0]]></description>
     <pubDate>Fri, 23 Oct 2026 18:19:17 GMT</pubDate>
-  </item>
-  <item>
-    <title>[sindresorhus/eslint-plugin-unicorn] v79.0.0</title>
-    <link>https://github.com/sindresorhus/eslint-plugin-unicorn/releases/tag/v79.0.0</link>
-    <guid isPermaLink="true">https://github.com/sindresorhus/eslint-plugin-unicorn/releases/tag/v79.0.0</guid>
-    <description><![CDATA[## Breaking
-
-- `no-top-level-side-effects`: Focus on mutations of globals, and remove it from the `unopinionated` preset (#3915) 24abac48
-	- Unknown calls are no longer reported by default. Enable the new `checkUnknownCalls` option for stricter checking.
-	- Mutations of globals, like `document.title = 'x'` and `Object.assign(globalThis, …)`, are now reported, also in declarations and default exports. You may see new reports.
-
-## Improvements
-
-- Infer types from JSDoc `@type`, `@param`, and `@returns` annotations in rules that use type information (#3941) 2b4bfab0
-- Handle template literals without expressions like strings in more rules (#3943) 8bd8c063
-- Autofix more code that contains comments, while keeping the comments (#3939) 87baf82f
-- Fix autofixes in many rules that could produce broken code or wrong parentheses (#3917) fed7eac2
-- Make autofixes safer in many rules
-	- Fixes that can change behavior in rare cases are now suggestions, for example in `prefer-spread`, `
-
-... (truncated)]]></description>
-    <pubDate>Fri, 23 Oct 2026 16:44:57 GMT</pubDate>
-  </item>
-  <item>
-    <title>[microsoft/apm] v0.35.0</title>
-    <link>https://github.com/microsoft/apm/releases/tag/v0.35.0</link>
-    <guid isPermaLink="true">https://github.com/microsoft/apm/releases/tag/v0.35.0</guid>
-    <description><![CDATA[<!-- Release notes generated using configuration in .github/release.yml at v0.35.0 -->
-
-## What's Changed
-### 🔧 Other Changes
-* fix(hooks): render nested hook metadata as plain JSON by @abhishekacharya200 in 
-* test(hooks): align cursor smoke expectations with native flat handlers by @MohammedAlkindi in 
-* fix: install versioned marketplace package directories by @Pybsama in 
-* fix: keep Codex MCP identity outside native settings by @Pybsama in 
-* fix(cli): report only verified APM build revisions by @danielmeppiel in 
-* fix(hooks): admit and stage hook-only Git-path packages by @danielmeppiel in 
-* fix(hooks): type untyped flat command handlers for Claude by @Parth-Vasave in 
-* Fix native Agent Plugin audit replay for Copilot targets by @bodapatisaikrishna in 
-* test(audit): preserve OpenCode local-bundle lifecycle coverage by @danielmeppiel in 
-* fix(auth): recover private files after API throttling by @danielmeppiel in 
-* fix(audit): preserve Grok Cloud target identity and historic
-
-... (truncated)]]></description>
-    <pubDate>Thu, 22 Oct 2026 22:51:41 GMT</pubDate>
   </item>
 </channel>
 </rss>
