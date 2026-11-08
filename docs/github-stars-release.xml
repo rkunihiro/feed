@@ -5,8 +5,31 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Sat, 07 Nov 2026 22:01:12 GMT</lastBuildDate>
+  <lastBuildDate>Sun, 08 Nov 2026 22:01:17 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[TanStack/router] Release 2026-11-08 01:04 (release-2026-11-08-0104)</title>
+    <link>https://github.com/TanStack/router/releases/tag/release-2026-11-08-0104</link>
+    <guid isPermaLink="true">https://github.com/TanStack/router/releases/tag/release-2026-11-08-0104</guid>
+    <description><![CDATA[Release 2026-11-08 01:04
+
+## Changes
+
+### Fix
+
+- router-devtools-core: restore embedded panel styling (#8888) (bbf9b75808) by @schiller-manuel
+- start-plugin-core: define TSS_SHELL in Rsbuild dev for SPA mode (#8805) (c5320d7ca2) by @pujitha24
+- vue-start: pre-bundle @tanstack/vue-store so a cold dev start doesn't reload the page (#8869) (d05c6c66e7) by @Sheraff
+- router-utils: parse decorators after `export` (#8867) (ff157f0079) by @Sheraff
+- router-plugin: write `import.meta.hot.accept(` out in Vite route HMR (#8870) (f420d4a6da) by @Sheraff
+- start-plugin-core: require exsolve ^1.1.3, and see new entry files after a dev server restart (#8871) (545a8d3790) by @Sheraff
+- router-plugin: omit browser warnings from production bundles (#8269) (1ba19a0445) by @LadyBluenotes
+- start-plugin-core: keep the app's server.compress on Rsbuild (#8863) (01fab5a6c8) by @Sheraff
+- start-plugin-core: pass Start's router options through to the generator and code splitter (#8861) (da8c28c498) by @Sheraf
+
+... (truncated)]]></description>
+    <pubDate>Sun, 08 Nov 2026 01:04:43 GMT</pubDate>
+  </item>
   <item>
     <title>[mongodb/mongo-go-driver] MongoDB Go Driver 2.10.0 (v2.10.0)</title>
     <link>https://github.com/mongodb/mongo-go-driver/releases/tag/v2.10.0</link>
@@ -1035,16 +1058,6 @@ For HTML checkboxes, declare a boolean with a default of `False`. See Boolean Fo
 
 * 🐛 Restore default handling for omitted boolean form fields. PR #16605 by @tiangolo.]]></description>
     <pubDate>Fri, 23 Oct 2026 18:47:17 GMT</pubDate>
-  </item>
-  <item>
-    <title>[modelcontextprotocol/typescript-sdk] @modelcontextprotocol/server-legacy@2.4.0</title>
-    <link>https://github.com/modelcontextprotocol/typescript-sdk/releases/tag/%40modelcontextprotocol/server-legacy%402.4.0</link>
-    <guid isPermaLink="true">https://github.com/modelcontextprotocol/typescript-sdk/releases/tag/%40modelcontextprotocol/server-legacy%402.4.0</guid>
-    <description><![CDATA[### Patch Changes
-
-- Updated dependencies [`46d9c99`]:
- - @modelcontextprotocol/core@2.4.0]]></description>
-    <pubDate>Fri, 23 Oct 2026 18:19:17 GMT</pubDate>
   </item>
 </channel>
 </rss>
