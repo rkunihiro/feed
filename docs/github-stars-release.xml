@@ -5,107 +5,340 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Mon, 09 Nov 2026 22:01:37 GMT</lastBuildDate>
+  <lastBuildDate>Tue, 10 Nov 2026 22:01:41 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
   <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-11-09) (release-2026-11-09)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-09</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-09</guid>
+    <title>[github/spec-kit] Spec Kit - 1.4.0 (v1.4.0)</title>
+    <link>https://github.com/github/spec-kit/releases/tag/v1.4.0</link>
+    <guid isPermaLink="true">https://github.com/github/spec-kit/releases/tag/v1.4.0</guid>
+    <description><![CDATA[## Install
+
+```bash
+uv tool install specify-cli --from git+
+specify init my-project
+```
+
+## What's Changed
+
+- chore: bump version to 1.4.0
+- Use handle-based reads in FileHelper (#5351)
+- chore: limit automatic Python 3.11 tests to Linux (#5367)
+- Harden initial URL validation in HTTP helpers (#5350)
+- Update SpecKit Companion extension to v0.26.0 (#5365)
+- Use handle-based text overwrites in FileHelper (#5353)
+- Require HTTPS consistently for catalog sources (#5355)
+- feat(workflows): workflow functions - project-installed custom pipe filters (#5303)
+- feat(integrations): map reasoning effort and context size for Copilot, Codex, and Claude Code (#5249)
+- [bundle] Update Spec Kit for Azure DevOps bundle to v0.3.2 (#5346)
+- [extension] Add T-Shirt Sizing Gate extension to community catalog (#5332)
+- fix(scripts): treat option-like feature descriptions as text in create-new-feature.sh (#5245)
+- fix(self-upgrade): don't offer a .dev0/.post0 build's base tag as the rollback version (#5358)
+
+... (truncated)]]></description>
+    <pubDate>Tue, 10 Nov 2026 21:26:08 GMT</pubDate>
+  </item>
+  <item>
+    <title>[nanaism/yomiyasu] v3.0.0</title>
+    <link>https://github.com/nanaism/yomiyasu/releases/tag/v3.0.0</link>
+    <guid isPermaLink="true">https://github.com/nanaism/yomiyasu/releases/tag/v3.0.0</guid>
+    <description><![CDATA[yomiyasu v3.0.0 を公開しました。
+SKILL.md を 2.5.0 の46,311字から15,656字に書き直し、推敲の手順を作り直したメジャーバージョンです。
+意味を守る決まりと検査は残し、測って問題が見つかった所に決まりを足しました。
+
+## 背景と課題
+
+きっかけは外から届いた1つの比較と2つの記事でした。
+
+natural-japanese の作者が、natural-japanese v1.6.4、yomiyasu 2.4.0、スキルなしの3つを12本の下書きで比べた推敲の比較を公開しました。2つの AI の判定では、読みやすさの1対1でスキルなしが yomiyasu に23勝1敗でした。意味が変わったという指摘は yomiyasu が2件で3つのうち最も少なかったものの、12本の費用は $10.29 で、スキルなしの $3.39 の約3倍です。
+
+片桐あまねさんの記事は、決まりを多く並べ、直す量の少ないスキルを取り上げ、効き目を素のエージェントや数行の指示と比べて確かめるよう勧めています。いもす研の記事文章のAIっぽさを抑えるプロンプトは、読み手にとっての得を説明できない変更は戻すという進め方を示していました。
+
+そこで、2.5.0 を同じ12本と同じ判定で測りました。読みやすさの平均順位（1が最もよく、3が最も悪い）は、GPT-6.1 Sol の判定で2.67、Claude Opus 5.5 の判定で3.00でした。12本のうち3本では太字のラベルや読点を置換でまとめて直していました。片桐さんの記事のプロンプトを書き換えずに使った監査でも、数行の指示との差は見えず、1本あたりの費用は数行の指示の約3.8倍という結果でした。README の「従来のやり方より良くなる」と読める書き方に根拠がないことも、この監査で指摘されています。
+
+ここから、3.0.0 で向き合う課題が3つ見えました。指示が長く、費用がかかること。12本の比較で意味が変わったと指摘された所が、どれも太字のラベルを文に入れた所か、見出しの語を本文へ移した所だったこと。README が、確かめていない効き目を書いていたことです。
+
+## どう対応したか
+
+### SKILL.md を3分の1の長さに書き直した
+
+意味を守る決まり、作者の好みに合わせた直し、手順、検査、出力の形は
+
+... (truncated)]]></description>
+    <pubDate>Tue, 10 Nov 2026 20:14:40 GMT</pubDate>
+  </item>
+  <item>
+    <title>[podman-container-tools/podman] v6.2.0</title>
+    <link>https://github.com/podman-container-tools/podman/releases/tag/v6.2.0</link>
+    <guid isPermaLink="true">https://github.com/podman-container-tools/podman/releases/tag/v6.2.0</guid>
+    <description><![CDATA[### Security
+- Addresses CVE-2026-121885, untrusted image labels could be used to trick podman auto-update into restarting incorrect systemd units GHSA-55rm-rwr7-q2wr.
+- Addresses CVE-2026-111361, malicious containers images could be able to bypass Digest and Signature validation GHSA-pggw-qqjf-6cxw.
+- Addresses CVE-2026-123876, default seccomp profile socket deny rule could be bypass by a malicious container.
+
+### Features
+- The `podman push` command now supports a new option, `--platform`, which selects and pushes a single platform-specific manifest instead of the entire list.
+- The `podman kube play` command now supports a new option, `--validate`, which determines how unrecognized YAML fields are handled (#18332).
+- The `podman kube play` command now supports a new option, `--label`, to set labels on created containers, pods, volumes, and secrets (#26450).
+- The `podman kube play` command can now create multiple pods if more than 1 replica is requested by a deployment using the new
+
+... (truncated)]]></description>
+    <pubDate>Tue, 10 Nov 2026 20:01:54 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-11-10) (release-2026-11-10)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-10</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-10</guid>
     <description><![CDATA[## General Highlights
+* **Dependency Update**: Update to smithy-go v1.28.9.
 * **Dependency Update**: Updated to the latest SDK module versions
 
 ## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/batch`: [v1.79.0](service/batch/CHANGELOG.md#v1790-2026-11-09)
- * **Feature**: Adds support for additional Amazon EKS security context settings in AWS Batch. Pod-level settings include fsGroup, runAsUser, runAsGroup, runAsNonRoot, and seccompProfile. Container-level settings add Linux capabilities and seccompProfile to existing runAsUser, runAsGroup, and runAsNonRoot support.
-* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcore`: [v1.57.0](service/bedrockagentcore/CHANGELOG.md#v1570-2026-11-09)
- * **Feature**: Adds the InvokeWebSearch API, which searches the web using the AWS-managed web search and returns ranked results with a text extract from each page. Results can be filtered by domain and by publication time.
-* `github.com/aws/aws-sdk-go-v2/service/datazone`: [v1.84.0](service/datazone/CHANGELOG.md#v1840-2026-11-09)
- * **Feature
+* `github.com/aws/aws-sdk-go-v2`: v1.48.0
+ * **Feature**: Make Retry Behavior 2.1 the default for standard and adaptive retry modes and remove the AWS_NEW_RETRIES_2026 flag. A retry costs 14 tokens, or 5 for a throttling error. Backoff uses a 50ms base, or 1s for throttling errors, and honors the x-amz-retry-after header. DynamoDB and DynamoDB Streams default to 4 attempts and a 25ms base. Long-polling operations (SQS ReceiveMessage, SFN GetActivityTask, SWF PollForActivityTask and PollForDecisionTask) back off when the retry quota is exhausted. HTTP 429 responses that don't deserialize to a modeled error type, including those from IMDS, are retried as throttling errors, as are HTTP 429 responses from the endpoint credentials provider. StandardOptions.RetryTimeoutCost and StandardOptions.Timeouts are deprecated and no longe
 
 ... (truncated)]]></description>
-    <pubDate>Mon, 09 Nov 2026 20:18:01 GMT</pubDate>
+    <pubDate>Tue, 10 Nov 2026 19:53:03 GMT</pubDate>
   </item>
   <item>
-    <title>[aws/aws-sdk-js-v3] v3.1165.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1165.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1165.0</guid>
-    <description><![CDATA[#### 3.1165.0(2026-11-09)
+    <title>[aws/aws-sdk-js-v3] v3.1166.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1166.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1166.0</guid>
+    <description><![CDATA[#### 3.1166.0(2026-11-10)
 
 ##### Chores
 
-* **codegen:** Upgrade to Smithy 1.74.1 (#8407) (bb818ca9)
+* **codegen:** sync for 2026 retry defaults (#8415) (4fd26c20)
 
 ##### New Features
 
-* **clients:** update client endpoints as of 2026-11-09 (bc21b51b)
-* **client-opensearch:** Adds cloned blue-green upgrades for Amazon OpenSearch Service domains. UpgradeDomain accepts DeploymentStrategyOptions to upgrade on a cloned cluster, the new UpdateClone API shifts search traffic, cuts over and sets retention, and DescribeDomainChangeProgress reports the upgrade details. (8f619bcb)
-* **client-ecs:** Amazon ECS Managed Instances now supports isolated and confidential tasks, which run in AWS Nitro Sandboxes. Configure them with trustedExecutionConfiguration in task definitions and nitroEnclavesEnabled in capacity providers. (b7887698)
-* **client-glue:** We are releasing five new APIs to allow customers to enable Catalog-level data quality monitoring in AWS Glue Data Catalog, a new feature to perform data quality evaluation on collections of GDC tables selected 
+* **client-verifiedpermissions:** Inconsequential changes to model formatting (bca234e8)
+* **client-marketplace-agreement:** This release adds the freeTrialSummary.trialEndTime field to DescribeAgreement and the freeTrialEndTime field to SearchAgreements results, so you can see when an agreement's free trial ends. (7edd9796)
+* **client-pcs:** Added support for configuring AMIs, Amazon EC2 security groups, SSH key pairs, and launch template modes when creating or updating AWS PCS compute node groups. (f4ea18e7)
+* **client-device-farm:** Adds the NONE insights type to disable insights generation for a run, a testPackageArn field in run details, and a new artifact type for device connect command logs. (9807385f)
+* **client-bedrock-agentcore-control:** Amazon Bedrock AgentCore Gateway now supports domainOverride so JWT-authorized gateways can advertise your public do
 
 ... (truncated)]]></description>
-    <pubDate>Mon, 09 Nov 2026 20:10:58 GMT</pubDate>
+    <pubDate>Tue, 10 Nov 2026 19:37:16 GMT</pubDate>
   </item>
   <item>
-    <title>[aaif-goose/goose] v1.58.0</title>
-    <link>https://github.com/aaif-goose/goose/releases/tag/v1.58.0</link>
-    <guid isPermaLink="true">https://github.com/aaif-goose/goose/releases/tag/v1.58.0</guid>
+    <title>[googleapis/google-cloud-go] vectorsearch: v1.7.0 (vectorsearch/v1.7.0)</title>
+    <link>https://github.com/googleapis/google-cloud-go/releases/tag/vectorsearch/v1.7.0</link>
+    <guid isPermaLink="true">https://github.com/googleapis/google-cloud-go/releases/tag/vectorsearch/v1.7.0</guid>
+    <description><![CDATA[## 1.7.0 (2026-11-09)
+
+
+### Features
+
+* Update API sources and regenerate (#20873) (3ded070)]]></description>
+    <pubDate>Tue, 10 Nov 2026 19:25:10 GMT</pubDate>
+  </item>
+  <item>
+    <title>[vercel-labs/skills] v1.8.0</title>
+    <link>https://github.com/vercel-labs/skills/releases/tag/v1.8.0</link>
+    <guid isPermaLink="true">https://github.com/vercel-labs/skills/releases/tag/v1.8.0</guid>
+    <description><![CDATA[## Changelog
+
+- fix(update): keep locked skill paths inside the clone (#2726)
+- feat(add): skip agents whose install path is a category dir (#2725)
+- fix(installer): check all install targets before writing (#2724)
+- fix(installer): never delete agent category dirs on install (#2723)
+- fix(update): read only locked skill paths for project updates (#2721)
+- test: relax vitest timeouts on windows to reduce flakes (#2720)
+- fix: respect NO_COLOR and TTY detection for all CLI escape codes (#2716)
+- fix(remove): only remove lock-tracked project skills with --all (#2715)
+- refactor: simplify GitHub rename following (#2713)
+- fix(cli): parse subcommand options with util.parseArgs (#2712)
+- feat(add): follow renamed GitHub repos to their canonical owner/repo (#2711)
+- fix(skills): support string metadata.internal values (#2702)
+- chore: keep factory-board.md out of the published npm package (#2691)
+- feat(lock): verifiable, portable computedHash and lock v2 (#2685)
+- fix(remove): remove skills
+
+... (truncated)]]></description>
+    <pubDate>Tue, 10 Nov 2026 18:29:49 GMT</pubDate>
+  </item>
+  <item>
+    <title>[bluesky-social/atproto] @atproto/ozone@0.13.0</title>
+    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/ozone%400.13.0</link>
+    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/ozone%400.13.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- #5828 `c03fb8d` Thanks @gcwill70! - **Breaking:** Treat the labeler service record's `reasonTypes` as an exact allowlist for non-appeal reports through `com.atproto.moderation.createReport` and report events through `tools.ozone.moderation.emitEvent`. A modern non-appeal reason is no longer implicitly accepted when only its mapped legacy reason is listed. Unlisted non-appeal reasons return `InvalidRequest` before creating a report or associated moderation writes.
+ 
+ An omitted `reasonTypes` list continues to accept all reason types. An empty list rejects all non-appeal reasons. Modern (`tools.ozone.report.defs#reasonAppeal`) and legacy (`com.atproto.moderation.defs#reasonAppeal`) appeals bypass the allowlist, including when the list is empty. Appeal ownership and eligibility checks still apply. Explicitly listed modern, legacy, and custom reasons remain valid; existing reports retain their original reasons.
+ 
+ Before upgrading, use the updated Ozone labeler configu
+
+... (truncated)]]></description>
+    <pubDate>Tue, 10 Nov 2026 18:06:01 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aaif-goose/goose] v1.59.0</title>
+    <link>https://github.com/aaif-goose/goose/releases/tag/v1.59.0</link>
+    <guid isPermaLink="true">https://github.com/aaif-goose/goose/releases/tag/v1.59.0</guid>
     <description><![CDATA[## ✨ Features
 
-- Opt-in context relevance operation #12589
-- Context window report and viewer #10462
-- AIHubMix declarative provider #12997
-- RouterPlex declarative provider #13068
-- Lemonade provider #12920
-- Collapse thinking by default with a setting to control it (desktop) #12660
+- Minimal deferred MCP tools in ToolExecutionOperation #13378
+- Configurable and per-start voice instructions for live-voice #13375
+- Configurable GPT-Live endpoint, model and key #13360
+- Filter session/list by client tags (ACP) #13173
+- Stop, approval, and tool hook operations for goose-agent (GDK) #13169
+- Resume completed delegates with a follow-up (subagent) #13106
 
 ## 🐛 Bug Fixes
 
-- Replace retired Spark X2 with Spark X2.5 in iflytek_astron #12772
-- Show current session ID in /status #12607
-- Keep session load on its replay fast path when stopped (desktop) #13190
-- Replay OpenAI Responses reasoning across tool turns #13222
-- Route bare OpenAI GPT IDs to Mantle by ID shape (bedrock) #13211
-- Use supports_vision from /model/info (litellm) #13239
-- Honor Retry-After on 429s mapped outside handle_status #12986
-- Classify typed context_length_exceeded errors as context overflow (openrouter) #13154
-- Report failed manual compaction as an error (acp) #13099
-- Fall back to default inference for Bedrock provider models without document block support #12932
-- Bump zstd to 0.
+- Honor HTTP(S) docs roots in goose-doc-guide #13381
+- Use uncorrelated IN for session keyword search #13373
+- Isolate session database initialization from application pool #13324
+- Refresh Databricks OAuth tokens before they expire #13328
+- Reword compaction prompt that Opus 5.5 refuses as distillation #13340
+- Send Gemini thinking level and drop stream_options for Databricks #13232
+- Address new cargo-deny advisories (zip8) #13309
 
-... (truncated)]]></description>
-    <pubDate>Mon, 09 Nov 2026 19:07:20 GMT</pubDate>
+## 📚 Documentation
+
+- Correct SECURITY_PROMPT_THRESHOLD sensitivity direction #12954
+- Blog post: Same Brain, Different Bill #13197]]></description>
+    <pubDate>Tue, 10 Nov 2026 17:17:02 GMT</pubDate>
   </item>
   <item>
-    <title>[cloudflare/workers-sdk] @cloudflare/workers-auth@0.17.0</title>
-    <link>https://github.com/cloudflare/workers-sdk/releases/tag/%40cloudflare/workers-auth%400.17.0</link>
-    <guid isPermaLink="true">https://github.com/cloudflare/workers-sdk/releases/tag/%40cloudflare/workers-auth%400.17.0</guid>
-    <description><![CDATA[### Minor Changes
-
-- #16683 `6f29f97` Thanks @jamesopstad! - Stop persisting account selections made by `cf` and the Cloudflare Vite and Vitest plugins
-
- Profiles continue to select credentials rather than accounts. If the active credentials can access one account, it is selected automatically. If they can access multiple accounts, `cf` and the Vite and Vitest plugins reuse the selection while running but ask again the next time they start. Configure `accountId` in `cloudflare.config.ts` or set the `CLOUDFLARE_ACCOUNT_ID` environment variable to avoid repeated prompts.
-
- Wrangler's existing persistent account selection remains unchanged.
-
-- #16599 `dee7a1d` Thanks @petebacondarwin! - Support `CLOUDFLARE_AUTH_PROFILE` for shared authentication profile selection
-
- Cloudflare tooling can pass a selected profile to child processes through `CLOUDFLARE_AUTH_PROFILE`. Explicit profile arguments take precedence over the variable, followed by directory bindings and the default profile. The `cf-
-
-... (truncated)]]></description>
-    <pubDate>Mon, 09 Nov 2026 15:07:23 GMT</pubDate>
+    <title>[esm-dev/esm.sh] Server v140_3 (v140_3)</title>
+    <link>https://github.com/esm-dev/esm.sh/releases/tag/v140_3</link>
+    <guid isPermaLink="true">https://github.com/esm-dev/esm.sh/releases/tag/v140_3</guid>
+    <description><![CDATA[* Add `npmStoreTTL` and `NPM_STORE_TTL` to control idle package expiry in seconds. Increase the default from one hour to one day. (#1506)
+* Cache missing S3 keys in memory to reduce repeated requests. This cache assumes one server per bucket. (#1514)
+* Keep type declarations and `?exports` builds only in `storage.cacheDir` when enabled, and cache type declarations read from S3. (#1514)
+* With `storage.cacheDir` enabled, upload source maps on their first request. Remove source maps after seven days without a request. (#1514)
+* Stop duplicate writes of legacy build metadata. (#1514)]]></description>
+    <pubDate>Tue, 10 Nov 2026 14:18:52 GMT</pubDate>
   </item>
   <item>
-    <title>[withastro/astro] @astrojs/ts-plugin@1.11.0</title>
-    <link>https://github.com/withastro/astro/releases/tag/%40astrojs/ts-plugin%401.11.0</link>
-    <guid isPermaLink="true">https://github.com/withastro/astro/releases/tag/%40astrojs/ts-plugin%401.11.0</guid>
+    <title>[cloudflare/workers-sdk] wrangler@4.160.0</title>
+    <link>https://github.com/cloudflare/workers-sdk/releases/tag/wrangler%404.160.0</link>
+    <guid isPermaLink="true">https://github.com/cloudflare/workers-sdk/releases/tag/wrangler%404.160.0</guid>
     <description><![CDATA[### Minor Changes
 
-- #18647 `f1c5a5f` Thanks @florian-lefebvre! - Updates the Node.js version requirement to `^20.19.0 || >=22.12.0`.
+- #16760 `cb9534f` Thanks @petebacondarwin! - Support forwarded Wrangler development server options in the experimental `cf-wrangler` delegate
+
+ `cf dev` can now forward options such as `--inspector-port 9229`, `--ip`, `--var`, and `--persist-to` to the Wrangler development runtime. The delegate reuses Wrangler's dev option definitions and validation while retaining project config discovery, `--mode` environment selection, local development, and its `.cloudflare/state` default. Invalid option combinations produce a single-line usage error and exit code 2 before starting the server.
+
+ Place server options that overlap cf's global options after `--`, for example `cf dev -- --local --persist-to "custom state"`. Config and script overrides, whole-worker remote development, and Wrangler's global options remain unsupported.
+
+- #16739 `6af492e` Thanks @GregBrimble! - Add custom Cloudflare API headers through `CLOUDFLARE_API_HEADERS`
+
+ Set `CLOUDFLARE_API_HEADERS` to a JSON 
+
+... (truncated)]]></description>
+    <pubDate>Tue, 10 Nov 2026 11:11:26 GMT</pubDate>
+  </item>
+  <item>
+    <title>[semgrep/semgrep] Release v1.185.0 (v1.185.0)</title>
+    <link>https://github.com/semgrep/semgrep/releases/tag/v1.185.0</link>
+    <guid isPermaLink="true">https://github.com/semgrep/semgrep/releases/tag/v1.185.0</guid>
+    <description><![CDATA[## 1.185.0 - 2026-11-10
+
+### ### Added
+
+- PHP: Improved virtual call resolution for basic trait composition. (CODE-9176)
+- Supply Chain: a `requirements.txt` dependency declared as a version range (`litellm>=1.10`) or with no version (`flask`) now produces a finding for every advisory whose affected versions overlap the declared range, in both the Python and native resolvers. Such a finding has no single installed version to confirm, so it needs review. A range line next to a pinned copy of the same package produces no finding of its own, since the pinned copy names the installed version. (SC-4243)
+- Secrets: emit structured, privacy-safe telemetry for custom validator HTTP requests (hostname, port, status, latency, rule/scan correlation) (SMS-3122)
+- Set `SEMGREP_LOG_JSON_FILE` to emit structured execution events with scan metadata alongside existing text output. (SMS-3670)
+
+### ### Changed
+
+- Scans are slightly faster. The dataflow analyses build the name of each variable with a plai
+
+... (truncated)]]></description>
+    <pubDate>Tue, 10 Nov 2026 09:32:54 GMT</pubDate>
+  </item>
+  <item>
+    <title>[sveltejs/kit] @sveltejs/kit@3.2.0</title>
+    <link>https://github.com/sveltejs/kit/releases/tag/%40sveltejs/kit%403.2.0</link>
+    <guid isPermaLink="true">https://github.com/sveltejs/kit/releases/tag/%40sveltejs/kit%403.2.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- feat: Add clickable links to remote function invocation in dev server logs (#17547)
 
 ### Patch Changes
 
-- #18647 `f1c5a5f` Thanks @florian-lefebvre! - Fixes TypeScript auto-import suggestions to use the `.astro` component name instead of its generated TSX name.]]></description>
-    <pubDate>Mon, 09 Nov 2026 14:49:56 GMT</pubDate>
+- fix: reject URL inputs in `resolve` (#17627)
+
+- fix: respond with JSON instead of rendering the error page for a `__data.json` request to a missing route (#17630)
+
+- fix: resolve relative paths against the page URL in data requests when `paths.relative` is `true` (#17630)
+
+- fix: reject binary remote forms referencing files with an empty file-offset table as 400 Bad Request (#17579)
+
+- fix: correctly populate route and params for `afterNavigate` during hydration (#17577)
+
+- fix: include assets imported through dynamic imports, remote functions and param matchers in `builder.findServerAssets` so that `read` can find them (#17505)
+
+- fix: set `navigation.from` to `null` in `afterNavigate` on start when SSR is disabled (#17587)
+
+- fix: include remote function name and declaration file in schema validation failure logs (#17495)
+
+- fix: reuse SSR results of remote f
+
+... (truncated)]]></description>
+    <pubDate>Tue, 10 Nov 2026 09:09:39 GMT</pubDate>
+  </item>
+  <item>
+    <title>[pnpm/pnpm] pnpm 12.19 (v12.19.0)</title>
+    <link>https://github.com/pnpm/pnpm/releases/tag/v12.19.0</link>
+    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v12.19.0</guid>
+    <description><![CDATA[pnpm 12.19.0 adds `pnpm fund`, lets the `loaded` node linker handle packages that need a build, and adds the `projectScopedOptionalPeers` setting and an experimental JSON lockfile format. It also includes a security fix: an offline install error no longer prints registry credentials. pnpm now checks the `engines` and platform fields of every workspace project, and many hoisted-linker and frozen-lockfile bugs are fixed.
+
+### Minor Changes
+
+- Added `pnpm fund`, which lists the funding URLs declared by the installed dependencies in the same tree `npm fund` prints. Use `--json` for the `npm fund --json` report and `--recursive` or `--filter` to report on workspace projects. `pnpm fund <pkg>` opens the funding URL of an installed package, and `--which` picks one when it lists several #7354.
+
+- With `nodeLinker.type: loaded`, packages that need a build no longer have to be listed in `nodeLinker.excluded`. A package with a matching side-effects cache entry loads from the store. If side-
+
+... (truncated)]]></description>
+    <pubDate>Tue, 10 Nov 2026 01:25:14 GMT</pubDate>
+  </item>
+  <item>
+    <title>[markedjs/marked] v18.2.0</title>
+    <link>https://github.com/markedjs/marked/releases/tag/v18.2.0</link>
+    <guid isPermaLink="true">https://github.com/markedjs/marked/releases/tag/v18.2.0</guid>
+    <description><![CDATA[# 18.2.0 (2026-11-09)
+
+
+### Bug Fixes
+
+* keep hard line breaks in image alt text (#4187) (ed54c54)
+* let emphasis open after the other delimiter character (#4169) (219492a)
+* let emphasis open and close in angle brackets that are not html (#4190) (7bfa1f7)
+* preserve zero from named extension renderers (#4199) (b81a00a)
+* text after a heading or code block in a nested list item is pulled into the outer item (#4179) (4cb767a)
+
+
+### Features
+
+* add lastToken to lexer state (#4160) (e4ab77f)]]></description>
+    <pubDate>Mon, 09 Nov 2026 23:04:45 GMT</pubDate>
+  </item>
+  <item>
+    <title>[iii-hq/iii] iii 0.26.0 (iii/v0.26.0)</title>
+    <link>https://github.com/iii-hq/iii/releases/tag/iii/v0.26.0</link>
+    <guid isPermaLink="true">https://github.com/iii-hq/iii/releases/tag/iii/v0.26.0</guid>
+    <description><![CDATA[## What's Changed
+* docs(changelog): complete 0.25.0 release notes by @guibeira in 
+* test(rust): give the oversized result_wire case a 30s budget by @guibeira in 
+* fix(python): require websockets>=14.0 by @guibeira in 
+* fix(deps): update Tokio to address RUSTSEC-2026-0386 by @guibeira in 
+* fix(sdk): patch happy-dom and zod security advisories by @guibeira in 
+* docs: move Upgrading group to bottom of sidebar by @anthonyiscoding in 
+* fix(channels): tell the reader when a channel writer aborts (MOT-5538) by @andersonleal in 
+* fix(rust): keep Logger lines under concurrency and close the connection on shutdown by @sergiofilhowz in 
+* fix(sandbox): pass the worker env to libkrun VMs out of band (MOT-5493, MOT-5492) by @guibeira in 
+* fix(release): stop publishing iii-init Darwin aliases by @atirna in 
+* fix(engine): handle trigger teardown races and cancellation by @guibeira in 
+* clarify CLI licensing by @anthonyiscoding in 
+* fix(website): name Motia LLC as the legal entity in site 
+
+... (truncated)]]></description>
+    <pubDate>Mon, 09 Nov 2026 22:44:49 GMT</pubDate>
   </item>
   <item>
     <title>[servo/servo] v0.8.0</title>
@@ -353,37 +586,6 @@ The Delete action on the Containers and Volumes pages used to run the moment you
     <pubDate>Thu, 05 Nov 2026 23:41:36 GMT</pubDate>
   </item>
   <item>
-    <title>[googleapis/google-cloud-go] agentplatform: v0.23.0 (agentplatform/v0.23.0)</title>
-    <link>https://github.com/googleapis/google-cloud-go/releases/tag/agentplatform/v0.23.0</link>
-    <guid isPermaLink="true">https://github.com/googleapis/google-cloud-go/releases/tag/agentplatform/v0.23.0</guid>
-    <description><![CDATA[## 0.23.0 (2026-11-05)
-
-
-### Features
-
-* Add client.memory_banks.update method. (#20778) (4fb1674)]]></description>
-    <pubDate>Thu, 05 Nov 2026 20:34:35 GMT</pubDate>
-  </item>
-  <item>
-    <title>[semgrep/semgrep] Release v1.184.0 (v1.184.0)</title>
-    <link>https://github.com/semgrep/semgrep/releases/tag/v1.184.0</link>
-    <guid isPermaLink="true">https://github.com/semgrep/semgrep/releases/tag/v1.184.0</guid>
-    <description><![CDATA[## 1.184.0 - 2026-11-05
-
-### ### Added
-
-- PHP: Improved virtual call resolution for basic trait composition. (CODE-9176)
-- Supply Chain: a `requirements.txt` dependency declared as a version range (`litellm>=1.10`) or with no version (`flask`) now produces a finding for every advisory whose affected versions overlap the declared range, in both the Python and native resolvers. Such a finding has no single installed version to confirm, so it needs review. A range line next to a pinned copy of the same package produces no finding of its own, since the pinned copy names the installed version. (SC-4243)
-- Set `SEMGREP_LOG_JSON_FILE` to emit structured execution events with scan metadata alongside existing text output. (SMS-3670)
-
-### ### Changed
-
-- Scans are slightly faster. The dataflow analyses build the name of each variable with a plain string join, and no longer with `Printf` and `Format`. On 6 open-source repos, the scan time was a median of 3% lower, with identical findings. (dataflo
-
-... (truncated)]]></description>
-    <pubDate>Thu, 05 Nov 2026 19:17:04 GMT</pubDate>
-  </item>
-  <item>
     <title>[microsoft/playwright] v1.65.0</title>
     <link>https://github.com/microsoft/playwright/releases/tag/v1.65.0</link>
     <guid isPermaLink="true">https://github.com/microsoft/playwright/releases/tag/v1.65.0</guid>
@@ -426,24 +628,6 @@ New `failures` reporter pri
 
 ... (truncated)]]></description>
     <pubDate>Thu, 05 Nov 2026 12:12:39 GMT</pubDate>
-  </item>
-  <item>
-    <title>[pnpm/pnpm] pnpm 12.18 (v12.18.0)</title>
-    <link>https://github.com/pnpm/pnpm/releases/tag/v12.18.0</link>
-    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v12.18.0</guid>
-    <description><![CDATA[pnpm 12.18.0 packs, publishes, and installs packages with platform variants on pnpr registries. It also adds per-skill approval of agent skills and `pnpm store add` for offline installs from downloaded tarballs. Repeat installs and `verifyDepsBeforeRun` no longer read the `package.json` of unchanged workspace projects. The release fixes several peer dependency resolution bugs too.
-
-### Minor Changes
-
-#### Agent skills
-
-- pnpm now names the link to a dependency's agent skill after the skill alone. A skill that the `@acme/kit` package ships in `skills/auth/` is linked as `.claude/skills/auth`, not `.claude/skills/pnpm-@acme+kit-auth`. The next install replaces links with the old names. pnpm lists the linked skills in a `# pnpm` block of each agent skill directory's `.gitignore` #17455.
-
- When two approved packages ship a skill of the same name, or the name is already taken in an agent skill directory, pnpm links the skill as `pnpm-<package>-<skill>`. Before, the install failed.
-
-
-... (truncated)]]></description>
-    <pubDate>Thu, 05 Nov 2026 00:56:45 GMT</pubDate>
   </item>
   <item>
     <title>[remix-run/remix] remix v3.2.0 (remix@3.2.0)</title>
@@ -500,6 +684,18 @@ New `failures` reporter pri
     <pubDate>Wed, 04 Nov 2026 17:04:23 GMT</pubDate>
   </item>
   <item>
+    <title>[Nano-Collective/nanocoder] nanocoder v1.32.0 (v1.32.0)</title>
+    <link>https://github.com/Nano-Collective/nanocoder/releases/tag/v1.32.0</link>
+    <guid isPermaLink="true">https://github.com/Nano-Collective/nanocoder/releases/tag/v1.32.0</guid>
+    <description><![CDATA[## What's Changed
+
+- Nanocoder's ACP agent now honours the `mcpServers` an editor sends on `session/new`, `session/load` and `session/resume`. Stdio and HTTP servers are connected for that session only, so their tools exist in that session (and in subagents it starts) and in no other, and your own MCP configuration is never read or changed. Loading or resuming a session replaces its previous servers, and closing it, or deleting it, disconnects them. A server that fails to connect, or uses SSE, is logged and skipped and the request still succeeds. `initialize` now reports `mcpCapabilities` (`http`). A tool whose name an existing tool already has is skipped, and these tools follow the usual approval rules. Sessions with no servers behave as before.
+- ACP extension requests now use the `_` prefix ACP reserves for custom methods: `_nanocoder/renameSession`, `_nanocoder/timeline/list`, `_nanocoder/timeline/revert` and `_nanocoder/retryTurn`. The bare names still work as deprecated aliases a
+
+... (truncated)]]></description>
+    <pubDate>Wed, 04 Nov 2026 12:43:23 GMT</pubDate>
+  </item>
+  <item>
     <title>[ant-design/ant-design] 6.7.0</title>
     <link>https://github.com/ant-design/ant-design/releases/tag/6.7.0</link>
     <guid isPermaLink="true">https://github.com/ant-design/ant-design/releases/tag/6.7.0</guid>
@@ -510,39 +706,6 @@ New `failures` reporter pri
 
 ... (truncated)]]></description>
     <pubDate>Wed, 04 Nov 2026 03:44:43 GMT</pubDate>
-  </item>
-  <item>
-    <title>[github/spec-kit] Spec Kit - 1.3.0 (v1.3.0)</title>
-    <link>https://github.com/github/spec-kit/releases/tag/v1.3.0</link>
-    <guid isPermaLink="true">https://github.com/github/spec-kit/releases/tag/v1.3.0</guid>
-    <description><![CDATA[## Install
-
-```bash
-uv tool install specify-cli --from git+
-specify init my-project
-```
-
-## Removed
-The core /speckit.taskstoissues command has been removed. You should be using the `github` extension
-
-## What's Changed
-
-- chore: bump version to 1.3.0
-- docs: consolidate and correct preset documentation (#5223)
-- [bug-fix] Fix oversized-number-crash: bound Python --number parsing (#5200)
-- docs: consolidate and correct extension documentation (#5221)
-- fix: detect relocated uv and pipx tool installations (#5103)
-- chore(ci): test Python 3.11 and 3.12 (#5220)
-- fix: invoke registered command hook only once (#5219)
-- [Copilot Dreams] Avoid rejecting supported extension submissions (#5216)
-- fix(cline): keep .md extension on speckit.* file names in command bodies (#5168)
-- feat(integrations): add process_registered_command hook with source_id (#5215)
-- [preset] Update A11Y Governance preset to v0.4.6 (#5212)
-- feat!: remove taskstoissues from core (#5053)
-- Add Gui
-
-... (truncated)]]></description>
-    <pubDate>Tue, 03 Nov 2026 18:25:42 GMT</pubDate>
   </item>
   <item>
     <title>[open-webui/open-webui] v0.13.0</title>
@@ -674,22 +837,6 @@ This release aligns request option handling, parameter validation and form seria
     <pubDate>Sat, 31 Oct 2026 22:10:55 GMT</pubDate>
   </item>
   <item>
-    <title>[esm-dev/esm.sh] Server v140_2 (v140_2)</title>
-    <link>https://github.com/esm-dev/esm.sh/releases/tag/v140_2</link>
-    <guid isPermaLink="true">https://github.com/esm-dev/esm.sh/releases/tag/v140_2</guid>
-    <description><![CDATA[* Remove `npmStoreMaxSize`, `storage.cacheMaxSize`, and automatic local S3 cache purging. (#1495, #1501)
-* Expire installed npm packages after 1 idle hour, keep packages used by active requests and builds, and free idle packages before retrying an install on `ENOSPC`. (#1501)
-* Cache S3 build metadata in `{workDir}/meta-cache.db` when `storage.cacheDir` is enabled. (#1498)
-* Reduce deploy downtime by moving startup cleanup to the background and removing old npm directories asynchronously. (#1495, #1501)
-* Free build slots while waiting for package installs and fix concurrent build queue resumes. (#1495, #1503)
-* Honor build timeouts during dependency resolution and storage writes, free timed out build slots immediately, and cache build timeout errors for 10 minutes. (#1497, #1502)
-* Serve cached npm resolutions while refreshing metadata in the background, including during registry outages. (#1488, #1503)
-* Share concurrent registry lookups, cancel waits with the request, and return unc
-
-... (truncated)]]></description>
-    <pubDate>Sat, 31 Oct 2026 14:27:35 GMT</pubDate>
-  </item>
-  <item>
     <title>[floci-io/floci-gcp] 0.12.0</title>
     <link>https://github.com/floci-io/floci-gcp/releases/tag/0.12.0</link>
     <guid isPermaLink="true">https://github.com/floci-io/floci-gcp/releases/tag/0.12.0</guid>
@@ -790,35 +937,6 @@ This release aligns request option handling, parameter validation and form seria
 
 ... (truncated)]]></description>
     <pubDate>Fri, 30 Oct 2026 08:03:18 GMT</pubDate>
-  </item>
-  <item>
-    <title>[nanaism/yomiyasu] v2.5.0</title>
-    <link>https://github.com/nanaism/yomiyasu/releases/tag/v2.5.0</link>
-    <guid isPermaLink="true">https://github.com/nanaism/yomiyasu/releases/tag/v2.5.0</guid>
-    <description><![CDATA[yomiyasu v2.5.0 を公開しました。
-lint の直訳語の型1が、定着した言い方に副詞が挟まった文（「テストがまだ通らない」）に出していた誤った指摘を直し、比喩の「効く」の見落としを減らしたバージョンです。
-AI の文章によく出る言い回しを見つける規則 `ai_phrase` と、直訳語の句を足しました。
-diff と check には、見出しの形の変化と消えた見出し、読点が増えた推敲を示す節を足しました。
-推敲の手順にはコードを説明する文書の擬人化、否定で終わる定義文、漢語の名詞で動作を省いた文、依頼で指定された見出しの形とまとめ、読点を足さない決まりを足しています。
-SKILL.md には付属の lint と check の呼び出しだけを許す `allowed-tools` を入れました。
-
-## 背景と課題
-
-v2.4.0 の公開のあとに、いくつかの報告と提案をいただきました。
-
-- 技術文書をコードから書かせると、比喩や擬人化が混ざるという感想。「この関数は、呼び出し元の事情を知っています」のような文の擬人化に、lint は何も出していませんでした。
-- 直訳語の型1が、「テストが通る」「キャッシュが効く」のような定着した言い方に副詞が挟まると、指摘を出していたこと。
-- 比喩の「効く」が、前の行にキャッシュや最適化の語があるだけで見落とされていたこと。
-- AI の文章によく出る言い回しの候補（「〜という見立てです」「〜に潜むリスク」「今や〜に欠かせない存在」など）。
-- yomiyasu をほかの方法と比べた記事の3点。依頼で見出しの形とまとめを指定しても推敲が直してしまうこと、python3 がない環境で手順のコマンドが動かないこと、承認する人がいない実行で check が許可の確認に止まることです。
-- AI の謎な説明文の直し方を書いた記事にある、否定で終わる定義文と、漢語の名詞で動作を省いた文の直し方。
-
-もう1つ、僕自身から、AI の出力と yomiyasu の出力で読点が多すぎるという指摘をしました。人の文章と AI の生成文を比べた測りでは、読点の数より位置に違いがあり、短い主題や主語のあと（約1.7倍）と、短い目的語の「を、」のあと（約3.4倍）に AI の読点が多く出ていました。
-
-#
-
-... (truncated)]]></description>
-    <pubDate>Fri, 30 Oct 2026 02:21:48 GMT</pubDate>
   </item>
   <item>
     <title>[chakra-ui/ark] @ark-ui/vue@5.40.0</title>
@@ -931,40 +1049,6 @@ Wide emoji sequences, such as a family emoji in tmux, draw at their full width, 
     <pubDate>Thu, 29 Oct 2026 01:39:17 GMT</pubDate>
   </item>
   <item>
-    <title>[cloudflare/vinext] vinext@1.4.0</title>
-    <link>https://github.com/cloudflare/vinext/releases/tag/vinext%401.4.0</link>
-    <guid isPermaLink="true">https://github.com/cloudflare/vinext/releases/tag/vinext%401.4.0</guid>
-    <description><![CDATA[Read the Vinext 1.4 release post for the highlights.
-
-### Features
-
-#### Cloudflare
-
-- share one Response Store App Router entry across hosts (#3897)
-- store the page's document when an RSC request misses its Response Store entry (#4331)
-- add --vite-config to deploy (#4215)
-
-#### Misc
-
-- **Init:** add --ignore-wrangler-config for Cloudflare init (#4216)
-- **App Router:** store the page's document when an RSC request misses its entry (#4321)
-- **App Router:** regenerate the document when a stale RSC request regenerates its page (#4319)
-
-### Bug Fixes
-
-#### App Router
-
-- assign a router history write's traversal index as it lands (#4376)
-- write router history through the live History API methods (#4354)
-- match Next.js's openGraph and twitter title templates (#4349)
-- keep static prefetches when a Server Action calls refresh (#4281)
-- prefetch visible links again only after router.refresh finishes (#4280)
-- keep a refreshed parallel slot's identity, so a refresh doesn't remount it (#42
-
-... (truncated)]]></description>
-    <pubDate>Wed, 28 Oct 2026 17:49:53 GMT</pubDate>
-  </item>
-  <item>
     <title>[nodejs/node] 2026-10-28, Version 26.13.0 &apos;Lithium&apos; (LTS), @richardlau (v26.13.0)</title>
     <link>https://github.com/nodejs/node/releases/tag/v26.13.0</link>
     <guid isPermaLink="true">https://github.com/nodejs/node/releases/tag/v26.13.0</guid>
@@ -982,109 +1066,6 @@ or 22 or earlier) please note that since Node.js 25 the official binaries for
 Linux are linked against libatomic, which may need to be installed separately
 depending on your Linux distribution.]]></description>
     <pubDate>Wed, 28 Oct 2026 16:57:41 GMT</pubDate>
-  </item>
-  <item>
-    <title>[meta/lexical] v0.53.0</title>
-    <link>https://github.com/meta/lexical/releases/tag/v0.53.0</link>
-    <guid isPermaLink="true">https://github.com/meta/lexical/releases/tag/v0.53.0</guid>
-    <description><![CDATA[v0.53.0 is the monthly release and collects a month of work since v0.52.0. It removes the extensions deprecated as of v0.52.0 and the unchecked node type arguments, starts a curated `CHANGELOG.md` with migration notes, and adds several opt-in, experimental building blocks for structured documents and collaboration: declarative node structure in `$config`, stable block ids, set-valued NodeState with a wrapper-free `MarkStateExtension`, and GFM tables in `@lexical/mdast`. Fixes cover IME composition, spellcheck, inline decorators, iOS taps and drops, tables, Markdown, and the ordering of commit listeners that collaboration depends on.
-
-### Breaking Changes
-
-* **All packages: extensions deprecated as of v0.52.0 are removed** (#9316). Migrate as follows:
- * `CodeImportExtension` (`@lexical/code-core`): use `CodeExtension`
- * `CodeHighlighterShikiExtension`, `CodeHighlighterShikiConfig` (`@lexical/code-shiki`): use `CodeShikiExtension` with `{tokenizer}`
- * `HorizontalRuleImportExtension` (
-
-... (truncated)]]></description>
-    <pubDate>Wed, 28 Oct 2026 15:52:54 GMT</pubDate>
-  </item>
-  <item>
-    <title>[GPUOpen-LibrariesAndSDKs/FidelityFX-SDK] FSR SDK v2.4.0 (v2.4.0)</title>
-    <link>https://github.com/GPUOpen-LibrariesAndSDKs/FidelityFX-SDK/releases/tag/v2.4.0</link>
-    <guid isPermaLink="true">https://github.com/GPUOpen-LibrariesAndSDKs/FidelityFX-SDK/releases/tag/v2.4.0</guid>
-    <description><![CDATA[<h1>What's new in the AMD FSR™ SDK 2.4.0?</h1>
-
-Welcome to the AMD FSR™ SDK. This revision to the SDK updates a number of AMD FSR™ "Redstone" DLL-based ML technologies. 
-
-<h2>New effects and features</h2>
-
-<h3>AMD FSR™ Frame Generation (Swapchain) 4.0.0</h3>
-
-- Driver-Assisted Frame Pacing on DirectX® 12 and Vulkan®. Requires an AMD Radeon™ RX 9000 Series GPU or later and AMD Software: Adrenalin Edition™ driver version 26.10.1 or later. See the [Frame pacing and presentation](Kits/FidelityFX/docs/techniques/frame-interpolation-swap-chain.md#frame-pacing-and-presentation) section for more details;
-- Intel® PresentMon integration for Frame Generation (DX12 only);
-- Vulkan® support at feature parity with DX12 version;
-
-<h2>Updated effects</h2>
-
-<h3>AMD FSR™ Upscaling 4.1.2</h3>
-
-- Added support for AMD FSR™ Upscaling 4.1 on the following hardware:
- - AMD Radeon™ RX 6000 Series discrete GPUs (AMD RDNA™ 2 architecture);
- - AMD Ryzen™ AI Max 300 Series processors ("Strix Ha
-
-... (truncated)]]></description>
-    <pubDate>Wed, 28 Oct 2026 13:18:15 GMT</pubDate>
-  </item>
-  <item>
-    <title>[lynx-family/lynx] 4.2.0</title>
-    <link>https://github.com/lynx-family/lynx/releases/tag/4.2.0</link>
-    <guid isPermaLink="true">https://github.com/lynx-family/lynx/releases/tag/4.2.0</guid>
-    <description><![CDATA[### Related Dependencies
-
-```js
-// Android:
-org.lynxsdk.lynx:primjs:4.2.1
-
-// iOS
-pod 'PrimJS', '4.2.1', :subspecs => ['quickjs', 'napi']
-
-// Harmony
-@lynx/primjs: 4.2.1
-```]]></description>
-    <pubDate>Tue, 27 Oct 2026 15:44:59 GMT</pubDate>
-  </item>
-  <item>
-    <title>[inokawa/virtua] 0.54.0</title>
-    <link>https://github.com/inokawa/virtua/releases/tag/0.54.0</link>
-    <guid isPermaLink="true">https://github.com/inokawa/virtua/releases/tag/0.54.0</guid>
-    <description><![CDATA[## What's Changed
-* Refactor base offset calculation by @inokawa in 
-* Fix base offset calculation for horizontal WindowVirtualizer in RTL by @inokawa in 
-* Add ssrCount prop to VGrid and VMasonry by @inokawa in 
-* Suppress `ResizeObserver loop completed with undelivered notification… by @inokawa in 
-* Fix jump on removal or reorder of items and broken layout with shift by @inokawa in 
-
-
-**Full Changelog**:]]></description>
-    <pubDate>Tue, 27 Oct 2026 09:42:19 GMT</pubDate>
-  </item>
-  <item>
-    <title>[project-tsurugi/tsurugidb] 1.13.0</title>
-    <link>https://github.com/project-tsurugi/tsurugidb/releases/tag/1.13.0</link>
-    <guid isPermaLink="true">https://github.com/project-tsurugi/tsurugidb/releases/tag/1.13.0</guid>
-    <description><![CDATA[### Release Notes
-- Tsurugi 1.13.0 - Release Notes (en)
-- Tsurugi 1.13.0 - Release Notes (ja)
-- Tsurugi 1.13.0 - Changelog
-- Tsurugi 1.13.0 - Known Issues (en)
-- Tsurugi 1.13.0 - Known Issues (ja)
-
-#### Download installer archive
-
-```sh
-curl -OL 
-```
-
-#### Download Docker image
-
-```sh
-docker pull ghcr.io/project-tsurugi/tsurugidb:1.13.0
-```
-
-> [!WARNING] 
-The `Source code (zip)` or `Source code (tar.gz)` in `Assets` are automatically generated links by GitHub, and these archives does not contain files needed for installation.]]></description>
-    <pubDate>Mon, 26 Oct 2026 07:53:59 GMT</pubDate>
   </item>
 </channel>
 </rss>
