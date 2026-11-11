@@ -5,8 +5,125 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Tue, 10 Nov 2026 22:01:41 GMT</lastBuildDate>
+  <lastBuildDate>Wed, 11 Nov 2026 22:01:16 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1167.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1167.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1167.0</guid>
+    <description><![CDATA[#### 3.1167.0(2026-11-11)
+
+##### New Features
+
+* **clients:** update client endpoints as of 2026-11-11 (2059d849)
+* **client-config-service:** AWS Config now supports connectors for Google Cloud. PutConnector accepts a Google Cloud connector configuration, and ListConnectors returns Google Cloud connector details. (a7b3ae15)
+* **client-cognito-identity-provider:** This release adds session management operations that let user pool administrators and users list and revoke active sessions, and configure session tracking, per-user session limits, and SSO session validity per app client. (99c38575)
+* **client-acm-pca:** This release adds Smithy RPC v2 CBOR as an additional protocol alongside the existing AWS JSON 1.1. The SDK will prioritize its most performant protocol. (8c5beb28)
+* **client-direct-connect:** This release adds Smithy RPC v2 CBOR as an additional protocol alongside the existing AWS JSON 1.1. The SDK will prioritize its most performant protocol. (659b280c)
+* **client-directo
+
+... (truncated)]]></description>
+    <pubDate>Wed, 11 Nov 2026 20:07:12 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-11-11) (release-2026-11-11)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-11</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-11</guid>
+    <description><![CDATA[## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/service/acmpca`: [v1.57.0](service/acmpca/CHANGELOG.md#v1570-2026-11-11)
+ * **Feature**: This release adds Smithy RPC v2 CBOR as an additional protocol alongside the existing AWS JSON 1.1. The SDK will prioritize its most performant protocol.
+* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcore`: [v1.58.0](service/bedrockagentcore/CHANGELOG.md#v1580-2026-11-11)
+ * **Feature**: Support SigV4 request signing (cryptographically signed) in the Bedrock AgentCore Harness MCP connector tool.
+* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcorecontrol`: [v1.80.0](service/bedrockagentcorecontrol/CHANGELOG.md#v1800-2026-11-11)
+ * **Feature**: Adds private certificate authority (CA) support for AgentCore Identity custom OAuth2.0 credential providers and custom JWT authorizers, enabling connections to IdPs with private CAs. Support SigV4 request signing (cryptographically signed) in the Bedrock AgentCore Harness MCP connector tool.
+* `gi
+
+... (truncated)]]></description>
+    <pubDate>Wed, 11 Nov 2026 20:01:37 GMT</pubDate>
+  </item>
+  <item>
+    <title>[panva/node-oidc-provider] v9.14.0</title>
+    <link>https://github.com/panva/node-oidc-provider/releases/tag/v9.14.0</link>
+    <guid isPermaLink="true">https://github.com/panva/node-oidc-provider/releases/tag/v9.14.0</guid>
+    <description><![CDATA[### Features
+
+* support OpenID4VCI credential encryption (0e5a377)
+
+### Fixes
+
+* extend dpop replay record retention (9fec9d6)
+* round up jwt client assertion replay expiry (5f95881)
+
+### Documentation
+
+* recommend atomic consumption in adapters (3ed87be)
+
+### Refactor
+
+* own all DefinitelyTyped declarations (9886cea)
+* reject key_ops in provider jwks (c8639cf)]]></description>
+    <pubDate>Wed, 11 Nov 2026 18:27:05 GMT</pubDate>
+  </item>
+  <item>
+    <title>[cloudflare/workers-sdk] @cloudflare/vite-plugin@1.69.0</title>
+    <link>https://github.com/cloudflare/workers-sdk/releases/tag/%40cloudflare/vite-plugin%401.69.0</link>
+    <guid isPermaLink="true">https://github.com/cloudflare/workers-sdk/releases/tag/%40cloudflare/vite-plugin%401.69.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- #16757 `110539e` Thanks @petebacondarwin! - Support auth profile selection for experimental cf-authenticated remote bindings
+
+ Remote binding sessions can select an authentication profile with `CLOUDFLARE_AUTH_PROFILE`. Experimental cf authentication keeps account choices within the session instead of persisting them across invocations. Wrangler authentication retains its existing account persistence.
+
+- #16801 `a1f9218` Thanks @petebacondarwin! - Support custom Cloudflare API headers in Vite development
+
+ Use `CLOUDFLARE_API_HEADERS` to supply additional headers for remote-binding preview uploads, experimental authentication, and Container API requests. Upgrade Wrangler and the shared API helpers together; request diagnostics redact sensitive headers even when log sanitization is disabled.
+
+- #16730 `9792d4f` Thanks @petebacondarwin! - Support local Artifacts bindings in Vite plugin v1
+
+ Set `remote: false` on an Artifacts binding in Wrangler configuration to use 
+
+... (truncated)]]></description>
+    <pubDate>Wed, 11 Nov 2026 15:28:15 GMT</pubDate>
+  </item>
+  <item>
+    <title>[prettier/prettier] 3.10.0</title>
+    <link>https://github.com/prettier/prettier/releases/tag/3.10.0</link>
+    <guid isPermaLink="true">https://github.com/prettier/prettier/releases/tag/3.10.0</guid>
+    <description><![CDATA[diff
+
+🔗 Prettier 3.10: New Flow syntax, new JavaScript syntax, and new plugin powered by Yuku]]></description>
+    <pubDate>Wed, 11 Nov 2026 12:31:23 GMT</pubDate>
+  </item>
+  <item>
+    <title>[bluesky-social/atproto] @atproto/ozone@0.14.0</title>
+    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/ozone%400.14.0</link>
+    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/ozone%400.14.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- #5802 `d930c3b` Thanks @foysalit! - Retire moderation subject statistics and count-based filters. Legacy count-based
+ sorts fall back to last reported time.
+
+### Patch Changes
+
+- #5861 `211c9e8` Thanks @blackmichael! - Use Iris Grain gallery recommendations in Atmosphere Explore behind `atmosphere_explore:galleries:iris:enable`, independently of article recommendations. Return the gallery recommendation ID in `photos.recIdStr`. Retain curated photos when Iris returns an empty list or fails.
+ 
+ Update the shared Explore contract description for recommended photo galleries.
+- Updated dependencies [`b30ea73`]:
+ - @atproto/xrpc-server@0.13.11]]></description>
+    <pubDate>Wed, 11 Nov 2026 03:48:31 GMT</pubDate>
+  </item>
+  <item>
+    <title>[googleapis/google-cloud-go] pubsub: v2.9.0 (pubsub/v2.9.0)</title>
+    <link>https://github.com/googleapis/google-cloud-go/releases/tag/pubsub/v2.9.0</link>
+    <guid isPermaLink="true">https://github.com/googleapis/google-cloud-go/releases/tag/pubsub/v2.9.0</guid>
+    <description><![CDATA[## 2.9.0 (2026-11-10)
+
+
+### Features
+
+* Update API sources and regenerate (#20873) (3ded070)]]></description>
+    <pubDate>Tue, 10 Nov 2026 23:14:41 GMT</pubDate>
+  </item>
   <item>
     <title>[github/spec-kit] Spec Kit - 1.4.0 (v1.4.0)</title>
     <link>https://github.com/github/spec-kit/releases/tag/v1.4.0</link>
@@ -85,54 +202,6 @@ natural-japanese の作者が、natural-japanese v1.6.4、yomiyasu 2.4.0、ス�
     <pubDate>Tue, 10 Nov 2026 20:01:54 GMT</pubDate>
   </item>
   <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-11-10) (release-2026-11-10)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-10</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-10</guid>
-    <description><![CDATA[## General Highlights
-* **Dependency Update**: Update to smithy-go v1.28.9.
-* **Dependency Update**: Updated to the latest SDK module versions
-
-## Module Highlights
-* `github.com/aws/aws-sdk-go-v2`: v1.48.0
- * **Feature**: Make Retry Behavior 2.1 the default for standard and adaptive retry modes and remove the AWS_NEW_RETRIES_2026 flag. A retry costs 14 tokens, or 5 for a throttling error. Backoff uses a 50ms base, or 1s for throttling errors, and honors the x-amz-retry-after header. DynamoDB and DynamoDB Streams default to 4 attempts and a 25ms base. Long-polling operations (SQS ReceiveMessage, SFN GetActivityTask, SWF PollForActivityTask and PollForDecisionTask) back off when the retry quota is exhausted. HTTP 429 responses that don't deserialize to a modeled error type, including those from IMDS, are retried as throttling errors, as are HTTP 429 responses from the endpoint credentials provider. StandardOptions.RetryTimeoutCost and StandardOptions.Timeouts are deprecated and no longe
-
-... (truncated)]]></description>
-    <pubDate>Tue, 10 Nov 2026 19:53:03 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-js-v3] v3.1166.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1166.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1166.0</guid>
-    <description><![CDATA[#### 3.1166.0(2026-11-10)
-
-##### Chores
-
-* **codegen:** sync for 2026 retry defaults (#8415) (4fd26c20)
-
-##### New Features
-
-* **client-verifiedpermissions:** Inconsequential changes to model formatting (bca234e8)
-* **client-marketplace-agreement:** This release adds the freeTrialSummary.trialEndTime field to DescribeAgreement and the freeTrialEndTime field to SearchAgreements results, so you can see when an agreement's free trial ends. (7edd9796)
-* **client-pcs:** Added support for configuring AMIs, Amazon EC2 security groups, SSH key pairs, and launch template modes when creating or updating AWS PCS compute node groups. (f4ea18e7)
-* **client-device-farm:** Adds the NONE insights type to disable insights generation for a run, a testPackageArn field in run details, and a new artifact type for device connect command logs. (9807385f)
-* **client-bedrock-agentcore-control:** Amazon Bedrock AgentCore Gateway now supports domainOverride so JWT-authorized gateways can advertise your public do
-
-... (truncated)]]></description>
-    <pubDate>Tue, 10 Nov 2026 19:37:16 GMT</pubDate>
-  </item>
-  <item>
-    <title>[googleapis/google-cloud-go] vectorsearch: v1.7.0 (vectorsearch/v1.7.0)</title>
-    <link>https://github.com/googleapis/google-cloud-go/releases/tag/vectorsearch/v1.7.0</link>
-    <guid isPermaLink="true">https://github.com/googleapis/google-cloud-go/releases/tag/vectorsearch/v1.7.0</guid>
-    <description><![CDATA[## 1.7.0 (2026-11-09)
-
-
-### Features
-
-* Update API sources and regenerate (#20873) (3ded070)]]></description>
-    <pubDate>Tue, 10 Nov 2026 19:25:10 GMT</pubDate>
-  </item>
-  <item>
     <title>[vercel-labs/skills] v1.8.0</title>
     <link>https://github.com/vercel-labs/skills/releases/tag/v1.8.0</link>
     <guid isPermaLink="true">https://github.com/vercel-labs/skills/releases/tag/v1.8.0</guid>
@@ -156,21 +225,6 @@ natural-japanese の作者が、natural-japanese v1.6.4、yomiyasu 2.4.0、ス�
 
 ... (truncated)]]></description>
     <pubDate>Tue, 10 Nov 2026 18:29:49 GMT</pubDate>
-  </item>
-  <item>
-    <title>[bluesky-social/atproto] @atproto/ozone@0.13.0</title>
-    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/ozone%400.13.0</link>
-    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/ozone%400.13.0</guid>
-    <description><![CDATA[### Minor Changes
-
-- #5828 `c03fb8d` Thanks @gcwill70! - **Breaking:** Treat the labeler service record's `reasonTypes` as an exact allowlist for non-appeal reports through `com.atproto.moderation.createReport` and report events through `tools.ozone.moderation.emitEvent`. A modern non-appeal reason is no longer implicitly accepted when only its mapped legacy reason is listed. Unlisted non-appeal reasons return `InvalidRequest` before creating a report or associated moderation writes.
- 
- An omitted `reasonTypes` list continues to accept all reason types. An empty list rejects all non-appeal reasons. Modern (`tools.ozone.report.defs#reasonAppeal`) and legacy (`com.atproto.moderation.defs#reasonAppeal`) appeals bypass the allowlist, including when the list is empty. Appeal ownership and eligibility checks still apply. Explicitly listed modern, legacy, and custom reasons remain valid; existing reports retain their original reasons.
- 
- Before upgrading, use the updated Ozone labeler configu
-
-... (truncated)]]></description>
-    <pubDate>Tue, 10 Nov 2026 18:06:01 GMT</pubDate>
   </item>
   <item>
     <title>[aaif-goose/goose] v1.59.0</title>
@@ -211,25 +265,6 @@ natural-japanese の作者が、natural-japanese v1.6.4、yomiyasu 2.4.0、ス�
 * With `storage.cacheDir` enabled, upload source maps on their first request. Remove source maps after seven days without a request. (#1514)
 * Stop duplicate writes of legacy build metadata. (#1514)]]></description>
     <pubDate>Tue, 10 Nov 2026 14:18:52 GMT</pubDate>
-  </item>
-  <item>
-    <title>[cloudflare/workers-sdk] wrangler@4.160.0</title>
-    <link>https://github.com/cloudflare/workers-sdk/releases/tag/wrangler%404.160.0</link>
-    <guid isPermaLink="true">https://github.com/cloudflare/workers-sdk/releases/tag/wrangler%404.160.0</guid>
-    <description><![CDATA[### Minor Changes
-
-- #16760 `cb9534f` Thanks @petebacondarwin! - Support forwarded Wrangler development server options in the experimental `cf-wrangler` delegate
-
- `cf dev` can now forward options such as `--inspector-port 9229`, `--ip`, `--var`, and `--persist-to` to the Wrangler development runtime. The delegate reuses Wrangler's dev option definitions and validation while retaining project config discovery, `--mode` environment selection, local development, and its `.cloudflare/state` default. Invalid option combinations produce a single-line usage error and exit code 2 before starting the server.
-
- Place server options that overlap cf's global options after `--`, for example `cf dev -- --local --persist-to "custom state"`. Config and script overrides, whole-worker remote development, and Wrangler's global options remain unsupported.
-
-- #16739 `6af492e` Thanks @GregBrimble! - Add custom Cloudflare API headers through `CLOUDFLARE_API_HEADERS`
-
- Set `CLOUDFLARE_API_HEADERS` to a JSON 
-
-... (truncated)]]></description>
-    <pubDate>Tue, 10 Nov 2026 11:11:26 GMT</pubDate>
   </item>
   <item>
     <title>[semgrep/semgrep] Release v1.185.0 (v1.185.0)</title>
@@ -532,26 +567,6 @@ Allows specifying a `collectionUUID` for bulk write requests.
 
 ... (truncated)]]></description>
     <pubDate>Fri, 06 Nov 2026 10:11:54 GMT</pubDate>
-  </item>
-  <item>
-    <title>[openai/codex] 0.167.0 (rust-v0.167.0)</title>
-    <link>https://github.com/openai/codex/releases/tag/rust-v0.167.0</link>
-    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.167.0</guid>
-    <description><![CDATA[## New Features
-
-- Open the agent command center with `codex agents --no-daemon`. The command center and session picker now mark unread results (#58238, #58239, #58263, #58264).
-- Switch between connected backends from the terminal session picker and keep your drafts when switching (#58280, #58457).
-- Preview local image attachments while composing on supported terminals, and open viewed local images from clickable transcript paths (#58261, #58446).
-- Find API key and cloud provider options under “Sign in another way.” Enable `gcp_setup_wizard` to set up Google Cloud Vertex AI with Application Default Credentials or a credential file (#57857, #58427).
-- Opt into macOS or Windows system proxy settings from `/experimental` (#58157).
-- Expand patch details directly in the transcript while an approval prompt is open (#58281).
-
-## Bug Fixes
-
-- Saved chats stay visible after you switch model providers. If a chat can’t resume, you can read its transcript and prepare an editable prompt to cont
-
-... (truncated)]]></description>
-    <pubDate>Fri, 06 Nov 2026 01:40:00 GMT</pubDate>
   </item>
   <item>
     <title>[rancher-sandbox/rancher-desktop] Rancher Desktop 1.25 (v1.25.0)</title>
@@ -1047,25 +1062,6 @@ Wide emoji sequences, such as a family emoji in tmux, draw at their full width, 
 
 ... (truncated)]]></description>
     <pubDate>Thu, 29 Oct 2026 01:39:17 GMT</pubDate>
-  </item>
-  <item>
-    <title>[nodejs/node] 2026-10-28, Version 26.13.0 &apos;Lithium&apos; (LTS), @richardlau (v26.13.0)</title>
-    <link>https://github.com/nodejs/node/releases/tag/v26.13.0</link>
-    <guid isPermaLink="true">https://github.com/nodejs/node/releases/tag/v26.13.0</guid>
-    <description><![CDATA[### Notable Changes
-
-This release marks the transition of Node.js 26.x into Long Term Support (LTS)
-with the codename 'Lithium'. It will continue to receive updates through to
-the end of April 2029.
-
-Other than updating metadata, such as the `process.release` object, to reflect
-that the release is LTS, no further changes from Node.js 26.12.1 are included.
-
-If you are updating from an earlier Long Term Support release (e.g. Node.js 24
-or 22 or earlier) please note that since Node.js 25 the official binaries for
-Linux are linked against libatomic, which may need to be installed separately
-depending on your Linux distribution.]]></description>
-    <pubDate>Wed, 28 Oct 2026 16:57:41 GMT</pubDate>
   </item>
 </channel>
 </rss>
