@@ -5,41 +5,255 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Wed, 11 Nov 2026 22:01:16 GMT</lastBuildDate>
+  <lastBuildDate>Thu, 12 Nov 2026 22:01:24 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
   <item>
-    <title>[aws/aws-sdk-js-v3] v3.1167.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1167.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1167.0</guid>
-    <description><![CDATA[#### 3.1167.0(2026-11-11)
+    <title>[aws/aws-sdk-go-v2] Release (2026-11-12) (release-2026-11-12)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-12</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-12</guid>
+    <description><![CDATA[## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/service/autoscaling`: [v1.82.0](service/autoscaling/CHANGELOG.md#v1820-2026-11-12)
+ * **Feature**: Amazon EC2 Auto Scaling now supports ASGAverageCPUUtilizationHighResolution as a predefined metric type for target tracking scaling policies.
+* `github.com/aws/aws-sdk-go-v2/service/backup`: [v1.70.0](service/backup/CHANGELOG.md#v1700-2026-11-12)
+ * **Feature**: Adding new notification types for SNS notifications
+* `github.com/aws/aws-sdk-go-v2/service/cleanrooms`: [v1.60.0](service/cleanrooms/CHANGELOG.md#v1600-2026-11-12)
+ * **Feature**: Adds a retry signal to protected query and protected job errors that indicates whether running the same request again might succeed, and defines error codes that identify the category of the failure.
+* `github.com/aws/aws-sdk-go-v2/service/cloudwatch`: [v1.76.0](service/cloudwatch/CHANGELOG.md#v1760-2026-11-12)
+ * **Feature**: Adds support for saving, retrieving, listing, and deleting CloudWatch metri
+
+... (truncated)]]></description>
+    <pubDate>Thu, 12 Nov 2026 20:47:18 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1168.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1168.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1168.0</guid>
+    <description><![CDATA[#### 3.1168.0(2026-11-12)
 
 ##### New Features
 
-* **clients:** update client endpoints as of 2026-11-11 (2059d849)
-* **client-config-service:** AWS Config now supports connectors for Google Cloud. PutConnector accepts a Google Cloud connector configuration, and ListConnectors returns Google Cloud connector details. (a7b3ae15)
-* **client-cognito-identity-provider:** This release adds session management operations that let user pool administrators and users list and revoke active sessions, and configure session tracking, per-user session limits, and SSO session validity per app client. (99c38575)
-* **client-acm-pca:** This release adds Smithy RPC v2 CBOR as an additional protocol alongside the existing AWS JSON 1.1. The SDK will prioritize its most performant protocol. (8c5beb28)
-* **client-direct-connect:** This release adds Smithy RPC v2 CBOR as an additional protocol alongside the existing AWS JSON 1.1. The SDK will prioritize its most performant protocol. (659b280c)
-* **client-directo
+* **client-cloudwatch:** Adds support for saving, retrieving, listing, and deleting CloudWatch metric data query definitions. (63e3b204)
+* **client-ec2:** This release adds support for multiple features, including EC2 Image Builder image recipes and container recipes in AMI usage reports, Amazon EC2 Detailed Monitoring adds opt-in metrics, and Global Accelerator and API Gateway V2 as resource exclusions for VPC Encryption Control. (83c2b64f)
+* **client-guardduty:** Adds the ListInvestigationRecords API, which returns the step-by-step records of a completed investigation. Adds investigation scope details and an optional structured summary to GetInvestigation. Adds filter criteria and investigation type to ListInvestigations. (1ca4d367)
+* **client-emr-containers:** This release updates range of maxInQueueDepth and maxConcurrency limit from 10000 to 1000. (fde1fb8d)
+* **client-mediatailor:** Add post origin manifest hook, add HLS tag processo
 
 ... (truncated)]]></description>
-    <pubDate>Wed, 11 Nov 2026 20:07:12 GMT</pubDate>
+    <pubDate>Thu, 12 Nov 2026 20:12:25 GMT</pubDate>
   </item>
   <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-11-11) (release-2026-11-11)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-11</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-11</guid>
-    <description><![CDATA[## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/acmpca`: [v1.57.0](service/acmpca/CHANGELOG.md#v1570-2026-11-11)
- * **Feature**: This release adds Smithy RPC v2 CBOR as an additional protocol alongside the existing AWS JSON 1.1. The SDK will prioritize its most performant protocol.
-* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcore`: [v1.58.0](service/bedrockagentcore/CHANGELOG.md#v1580-2026-11-11)
- * **Feature**: Support SigV4 request signing (cryptographically signed) in the Bedrock AgentCore Harness MCP connector tool.
-* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcorecontrol`: [v1.80.0](service/bedrockagentcorecontrol/CHANGELOG.md#v1800-2026-11-11)
- * **Feature**: Adds private certificate authority (CA) support for AgentCore Identity custom OAuth2.0 credential providers and custom JWT authorizers, enabling connections to IdPs with private CAs. Support SigV4 request signing (cryptographically signed) in the Bedrock AgentCore Harness MCP connector tool.
-* `gi
+    <title>[cli/cli] GitHub CLI 2.104.0 (v2.104.0)</title>
+    <link>https://github.com/cli/cli/releases/tag/v2.104.0</link>
+    <guid isPermaLink="true">https://github.com/cli/cli/releases/tag/v2.104.0</guid>
+    <description><![CDATA[## Protect private forks when deleting repositories
+
+`gh repo delete` now warns when deleting a private or internal repository will also delete its forks. The additional confirmation is required even with `--yes`.
+
+Non-interactive workflows and agents must explicitly accept the cascading deletion:
+
+```shell
+gh repo delete OWNER/REPO --yes --accept-cascading-deletion-of-private-forks
+```
+
+## What's Changed
+
+### ✨ Features
+
+* Require confirmation before `gh repo delete` deletes private forks by @BagToad in #14858
+
+### 🐛 Fixes
+
+* fix(auth status): surface underlying rate-limit, server, and network errors in terminal output by @babakks and @Copilot in #15009
+* fix(auth): skip token refresh when `gh`'s state directory is not writable by @babakks in #14845
+
+### 📚 Docs & Chores
+
+* Use REST to apply issue triage labels by @BagToad in #15041
+* Prevent repeated Dependabot triage assessments by @BagToad in #15002
+* Apply issue triage labels directly by @BagToad in #1500
 
 ... (truncated)]]></description>
-    <pubDate>Wed, 11 Nov 2026 20:01:37 GMT</pubDate>
+    <pubDate>Thu, 12 Nov 2026 19:03:51 GMT</pubDate>
+  </item>
+  <item>
+    <title>[rust-lang/rust] Rust 1.100.0 (1.100.0)</title>
+    <link>https://github.com/rust-lang/rust/releases/tag/1.100.0</link>
+    <guid isPermaLink="true">https://github.com/rust-lang/rust/releases/tag/1.100.0</guid>
+    <description><![CDATA[<a id="1.100.0-Language"></a>
+
+## Language
+
+- Stabilize never type
+- [Lint against repeated `#[repr(..)]` attributes]
+- Stabilize `extern "custom"`
+- Extend `dropping_references`, `dropping_copy_types` and `undropped_manually_drops` lints to `drop_in_place`
+- [`unfulfilled_lint_expectations` no longer fires on `#[expect(dead_code)]` inside code that is covered by a dead parent's diagnostic]
+- Turn the error for `repr(align)` fields in a `repr(packed)` type into a deny-by-default lint `aligned_fields_in_packed`
+- volatile: allow accesses to non-AM memory to trap
+
+<a id="1.100.0-Compiler"></a>
+
+## Compiler
+
+- Stabilize `-Cprofile-sample-use`
+- Enable next solver by default in orphanck
+
+<a id="1.100.0-Platform-Support"></a>
+
+## Platform Support
+
+- `i686-pc-windows-gnu` is now a tier 2 without host tools target
+- Promote `wasm32-wasip3` to Tier 2
+- Add new Tier 3 target `powerpc64-sony-ps3`
+
+Refer to Rust's platform support page for more information on Rust's tiered platform support.
+
+<a i
+
+... (truncated)]]></description>
+    <pubDate>Thu, 12 Nov 2026 18:19:42 GMT</pubDate>
+  </item>
+  <item>
+    <title>[mongodb/node-mongodb-native] v7.9.0</title>
+    <link>https://github.com/mongodb/node-mongodb-native/releases/tag/v7.9.0</link>
+    <guid isPermaLink="true">https://github.com/mongodb/node-mongodb-native/releases/tag/v7.9.0</guid>
+    <description><![CDATA[## 7.9.0 (2026-11-12)
+
+The MongoDB Node.js team is pleased to announce version 7.9.0 of the `mongodb` package!
+
+## Release Notes
+
+> [!WARNING]
+> Node Driver versions from 6.7.0 before 7.9.0 (this release) are affected by a security issue related to OIDC bearer tokens being inappropriately shared to domains outside those allowlisted by the application (CVE-2026-126835). Users are encouraged to upgrade to the fixed version or mitigate as soon as possible.
+>
+> Applications that use `OIDC_CALLBACK` or `OIDC_HUMAN_CALLBACK` in affected versions can avoid this bearer token leak by refusing connection strings whose `authMechanismProperties` include `ENVIRONMENT`.
+
+### `MongoClient` now throws when both `ENVIRONMENT` and `OIDC_CALLBACK` / `OIDC_HUMAN_CALLBACK` are passed to its constructor
+
+When constructing a `MongoClient`:
+
+- `ENVIRONMENT` can be specified in either the connection string or the options object provided to the `MongoClient` constructor.
+- `OIDC_CALLBACK` and `O
+
+... (truncated)]]></description>
+    <pubDate>Thu, 12 Nov 2026 16:39:12 GMT</pubDate>
+  </item>
+  <item>
+    <title>[cloudflare/workers-sdk] wrangler@4.161.0</title>
+    <link>https://github.com/cloudflare/workers-sdk/releases/tag/wrangler%404.161.0</link>
+    <guid isPermaLink="true">https://github.com/cloudflare/workers-sdk/releases/tag/wrangler%404.161.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- #16840 `8b2a363` Thanks @jamesopstad! - Write source maps in Build Output with `sources` relative to each source map file
+
+ This changes the experimental Build Output that `wrangler build --experimental-cf-build-output` and `cf-wrangler build` write. Their source maps were prepared as if for upload, with `sources` relative to the project root. For Workers that Wrangler does not bundle, leading `../` segments were also removed, which lost the location of some files. They now point from each source map's location in `bundle/` to the original files, like the source maps the Vite plugin writes.
+
+### Patch Changes
+
+- #16833 `5f539b5` Thanks @jamesopstad! - Name `cf` commands and `cloudflare.config.ts` settings in remote bindings errors from `cf-wrangler`
+
+ When `cf` runs development through the `cf-wrangler` delegate and remote bindings cannot be authenticated, the error now tells you to run `cf auth whoami`, `cf auth logout` and `cf auth login` instead of the Wrangler 
+
+... (truncated)]]></description>
+    <pubDate>Thu, 12 Nov 2026 13:46:54 GMT</pubDate>
+  </item>
+  <item>
+    <title>[uptrace/uptrace] v2.1.0-rc.3</title>
+    <link>https://github.com/uptrace/uptrace/releases/tag/v2.1.0-rc.3</link>
+    <guid isPermaLink="true">https://github.com/uptrace/uptrace/releases/tag/v2.1.0-rc.3</guid>
+    <description><![CDATA[CHANGELOG]]></description>
+    <pubDate>Thu, 12 Nov 2026 13:42:40 GMT</pubDate>
+  </item>
+  <item>
+    <title>[nestjs/nest] v12.5.0</title>
+    <link>https://github.com/nestjs/nest/releases/tag/v12.5.0</link>
+    <guid isPermaLink="true">https://github.com/nestjs/nest/releases/tag/v12.5.0</guid>
+    <description><![CDATA[## v12.5.0 (2026-11-12)
+
+#### Notable changes
+
+**New options**
+* `WsAdapter` takes `maxPayload`, the largest message a client may send (1 MB by default, was 100 MB; a gateway's own `maxPayload` takes precedence, `0` lifts the limit); a larger message closes the connection with code 1009 – 109e52cd9b
+* `IoAdapter` takes `maxWaitingMessages`, the number of a client's messages of one event that may wait beyond those being handled (10,000 by default; `Infinity` lifts it) – c98b5f782e
+* TCP server: `maxConcurrentMessages` (1000 per connection by default; `0` lifts it) – 42c619cd69
+* gRPC server: `maxPendingResponses` (1000 by default; `0` disables), after which a streaming call whose client leaves its responses unread fails with `RESOURCE_EXHAUSTED` – ce6d44d858
+* Redis server: `maxWildcardChannelLength` (1024 characters by default; `0` disables) for requests matched through a wildcard subscription – 074dcf7c60
+* RabbitMQ: `maxMessageSize` (16 MiB by default) for messages and replies decode
+
+... (truncated)]]></description>
+    <pubDate>Thu, 12 Nov 2026 13:19:45 GMT</pubDate>
+  </item>
+  <item>
+    <title>[BabylonJS/Babylon.js] 9.36.0</title>
+    <link>https://github.com/BabylonJS/Babylon.js/releases/tag/9.36.0</link>
+    <guid isPermaLink="true">https://github.com/BabylonJS/Babylon.js/releases/tag/9.36.0</guid>
+    <description><![CDATA[### Core
+
+- Native: only filter depth textures that use a comparison function - [_Bug Fix_] by bkaradzic-microsoft (#19153)
+- Native: support alpha-to-coverage - [_Bug Fix_] by bkaradzic-microsoft (#19148)
+- Gaussian Splatting: back streaming atlases with render targets on Native - [_Bug Fix_] by bkaradzic-microsoft (#19144)
+- Native: sort Gaussian splat ranges and compound parts with sortSplatIndices - [_Bug Fix_] by bkaradzic-microsoft (#19141)
+- Support ALPHA_MIN/ALPHA_MAX on NativeEngine - [_Bug Fix_] by bkaradzic-microsoft (#19139)
+- Decode meshopt on the main thread when Worker is unavailable - [_Bug Fix_] by bkaradzic-microsoft (#19138)
+- Apply glTF normalized override when Draco decodes without workers - [_Bug Fix_] by bkaradzic-microsoft (#19137)
+- Fix undefined shader math in SSAO2 and IBL shadow tracing - [_Bug Fix_] by bkaradzic-microsoft (#19136)
+- WebGPU snapshot: encode unchanged draws again from their recorded commands - by enriqxxx (#19089)
+- Deprecate HTML-in-Canvas p
+
+... (truncated)]]></description>
+    <pubDate>Thu, 12 Nov 2026 11:33:38 GMT</pubDate>
+  </item>
+  <item>
+    <title>[nanaism/yomiyasu] v3.1.0</title>
+    <link>https://github.com/nanaism/yomiyasu/releases/tag/v3.1.0</link>
+    <guid isPermaLink="true">https://github.com/nanaism/yomiyasu/releases/tag/v3.1.0</guid>
+    <description><![CDATA[yomiyasu v3.1.0 を公開しました。
+スキルのフォルダから Codex 用のプラグインの設定を外したバージョンです。
+Codex にスキルのフォルダを写して入れている方は、スキルの名前が `yomiyasu:yomiyasu` から `yomiyasu` に変わります。更新したあとに書き換える所は、下の「Codex で使っている方へ」にあります。
+名前が変わるので、パッチではなくマイナーバージョンにしています。
+推敲の手順（SKILL.md と references）は、SKILL.md のバージョンの行を除いて v3.0.1 から変えていません。
+lint、diff、check、フックの出力も、JSON の `tool_version` と `--version` が示すバージョンを除いて v3.0.1 と同じです。
+
+## 背景と課題
+
+パッケージマネージャーの apm で yomiyasu をプロジェクトに入れようとすると失敗する、という報告をいただきました（Hol1kgmg さんの issue #61）。
+
+apm は、依存先を `nanaism/yomiyasu/skills/yomiyasu` のようにフォルダまで書くと、そのフォルダの中身だけを見て種類を決めます。
+apm 0.35.0 からは、フォルダに `.codex-plugin/plugin.json` があると、SKILL.md より先にこれを見て「Codex のプラグイン」と決めるようになりました。
+apm は Codex のプラグインをユーザー単位でしか入れない決まりにしているので、プロジェクト単位の `apm install` が止まります。
+
+このファイルは v2.0.2 で置いたもので、Codex でのスキルの名前を `yomiyasu:yomiyasu` にするための、名前だけの設定です。
+yomiyasu はこれまで、スキルの名前を「バージョンを上げても変えないもの」として扱ってきました。
+名前を保つかぎり、スキルのフォルダは「スキルでもプラグインでもあるもの」のまま残ります。
+
+## v3.1.0 で変わったこと
+
+スキルのフォルダから `.codex-plugin/plugin.json` を外しました。
+スキルのフォルダは、プラグインの設定を持たない、ふつうのス
+
+... (truncated)]]></description>
+    <pubDate>Thu, 12 Nov 2026 00:28:38 GMT</pubDate>
+  </item>
+  <item>
+    <title>[pnpm/pnpm] pnpm 12.20 (v12.20.0)</title>
+    <link>https://github.com/pnpm/pnpm/releases/tag/v12.20.0</link>
+    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v12.20.0</guid>
+    <description><![CDATA[pnpm 12.20.0 records the specifiers of local directory dependencies in the experimental v13 lockfile and fixes several `nodeLinker: hoisted`, peer dependency, and `overrides` bugs. The bundled `node-gyp` no longer ships the undici version that security scanners flag. Remote resolution and shared build caches no longer work with pnpr 0.1.0-alpha.19 or older.
+
+### Minor Changes
+
+- With `lockfile.format: v13`, `pnpm install` records the dependency specifiers of local directory packages. Frozen installs reject changed specifiers even when the locked versions still satisfy them.
+
+### Patch Changes
+
+#### Upgrading and security
+
+- Remote resolution, shared build caches, and release notes no longer work with pnpr 0.1.0-alpha.19 or older. pnpm now reads the capabilities a pnpr server advertises under `pnpr.protocols`. Installs fail when the server does not confirm the requested resolution and verification policies.
+
+- The `node-gyp` bundled with pnpm no longer ships undici 6, which 
+
+... (truncated)]]></description>
+    <pubDate>Thu, 12 Nov 2026 00:23:41 GMT</pubDate>
   </item>
   <item>
     <title>[panva/node-oidc-provider] v9.14.0</title>
@@ -63,27 +277,6 @@
 * own all DefinitelyTyped declarations (9886cea)
 * reject key_ops in provider jwks (c8639cf)]]></description>
     <pubDate>Wed, 11 Nov 2026 18:27:05 GMT</pubDate>
-  </item>
-  <item>
-    <title>[cloudflare/workers-sdk] @cloudflare/vite-plugin@1.69.0</title>
-    <link>https://github.com/cloudflare/workers-sdk/releases/tag/%40cloudflare/vite-plugin%401.69.0</link>
-    <guid isPermaLink="true">https://github.com/cloudflare/workers-sdk/releases/tag/%40cloudflare/vite-plugin%401.69.0</guid>
-    <description><![CDATA[### Minor Changes
-
-- #16757 `110539e` Thanks @petebacondarwin! - Support auth profile selection for experimental cf-authenticated remote bindings
-
- Remote binding sessions can select an authentication profile with `CLOUDFLARE_AUTH_PROFILE`. Experimental cf authentication keeps account choices within the session instead of persisting them across invocations. Wrangler authentication retains its existing account persistence.
-
-- #16801 `a1f9218` Thanks @petebacondarwin! - Support custom Cloudflare API headers in Vite development
-
- Use `CLOUDFLARE_API_HEADERS` to supply additional headers for remote-binding preview uploads, experimental authentication, and Container API requests. Upgrade Wrangler and the shared API helpers together; request diagnostics redact sensitive headers even when log sanitization is disabled.
-
-- #16730 `9792d4f` Thanks @petebacondarwin! - Support local Artifacts bindings in Vite plugin v1
-
- Set `remote: false` on an Artifacts binding in Wrangler configuration to use 
-
-... (truncated)]]></description>
-    <pubDate>Wed, 11 Nov 2026 15:28:15 GMT</pubDate>
   </item>
   <item>
     <title>[prettier/prettier] 3.10.0</title>
@@ -153,35 +346,6 @@ specify init my-project
 
 ... (truncated)]]></description>
     <pubDate>Tue, 10 Nov 2026 21:26:08 GMT</pubDate>
-  </item>
-  <item>
-    <title>[nanaism/yomiyasu] v3.0.0</title>
-    <link>https://github.com/nanaism/yomiyasu/releases/tag/v3.0.0</link>
-    <guid isPermaLink="true">https://github.com/nanaism/yomiyasu/releases/tag/v3.0.0</guid>
-    <description><![CDATA[yomiyasu v3.0.0 を公開しました。
-SKILL.md を 2.5.0 の46,311字から15,656字に書き直し、推敲の手順を作り直したメジャーバージョンです。
-意味を守る決まりと検査は残し、測って問題が見つかった所に決まりを足しました。
-
-## 背景と課題
-
-きっかけは外から届いた1つの比較と2つの記事でした。
-
-natural-japanese の作者が、natural-japanese v1.6.4、yomiyasu 2.4.0、スキルなしの3つを12本の下書きで比べた推敲の比較を公開しました。2つの AI の判定では、読みやすさの1対1でスキルなしが yomiyasu に23勝1敗でした。意味が変わったという指摘は yomiyasu が2件で3つのうち最も少なかったものの、12本の費用は $10.29 で、スキルなしの $3.39 の約3倍です。
-
-片桐あまねさんの記事は、決まりを多く並べ、直す量の少ないスキルを取り上げ、効き目を素のエージェントや数行の指示と比べて確かめるよう勧めています。いもす研の記事文章のAIっぽさを抑えるプロンプトは、読み手にとっての得を説明できない変更は戻すという進め方を示していました。
-
-そこで、2.5.0 を同じ12本と同じ判定で測りました。読みやすさの平均順位（1が最もよく、3が最も悪い）は、GPT-6.1 Sol の判定で2.67、Claude Opus 5.5 の判定で3.00でした。12本のうち3本では太字のラベルや読点を置換でまとめて直していました。片桐さんの記事のプロンプトを書き換えずに使った監査でも、数行の指示との差は見えず、1本あたりの費用は数行の指示の約3.8倍という結果でした。README の「従来のやり方より良くなる」と読める書き方に根拠がないことも、この監査で指摘されています。
-
-ここから、3.0.0 で向き合う課題が3つ見えました。指示が長く、費用がかかること。12本の比較で意味が変わったと指摘された所が、どれも太字のラベルを文に入れた所か、見出しの語を本文へ移した所だったこと。README が、確かめていない効き目を書いていたことです。
-
-## どう対応したか
-
-### SKILL.md を3分の1の長さに書き直した
-
-意味を守る決まり、作者の好みに合わせた直し、手順、検査、出力の形は
-
-... (truncated)]]></description>
-    <pubDate>Tue, 10 Nov 2026 20:14:40 GMT</pubDate>
   </item>
   <item>
     <title>[podman-container-tools/podman] v6.2.0</title>
@@ -316,21 +480,6 @@ natural-japanese の作者が、natural-japanese v1.6.4、yomiyasu 2.4.0、ス�
 
 ... (truncated)]]></description>
     <pubDate>Tue, 10 Nov 2026 09:09:39 GMT</pubDate>
-  </item>
-  <item>
-    <title>[pnpm/pnpm] pnpm 12.19 (v12.19.0)</title>
-    <link>https://github.com/pnpm/pnpm/releases/tag/v12.19.0</link>
-    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v12.19.0</guid>
-    <description><![CDATA[pnpm 12.19.0 adds `pnpm fund`, lets the `loaded` node linker handle packages that need a build, and adds the `projectScopedOptionalPeers` setting and an experimental JSON lockfile format. It also includes a security fix: an offline install error no longer prints registry credentials. pnpm now checks the `engines` and platform fields of every workspace project, and many hoisted-linker and frozen-lockfile bugs are fixed.
-
-### Minor Changes
-
-- Added `pnpm fund`, which lists the funding URLs declared by the installed dependencies in the same tree `npm fund` prints. Use `--json` for the `npm fund --json` report and `--recursive` or `--filter` to report on workspace projects. `pnpm fund <pkg>` opens the funding URL of an installed package, and `--which` picks one when it lists several #7354.
-
-- With `nodeLinker.type: loaded`, packages that need a build no longer have to be listed in `nodeLinker.excluded`. A package with a matching side-effects cache entry loads from the store. If side-
-
-... (truncated)]]></description>
-    <pubDate>Tue, 10 Nov 2026 01:25:14 GMT</pubDate>
   </item>
   <item>
     <title>[markedjs/marked] v18.2.0</title>
@@ -524,51 +673,6 @@ Allows specifying a `collectionUUID` for bulk write requests.
     <pubDate>Fri, 06 Nov 2026 20:23:53 GMT</pubDate>
   </item>
   <item>
-    <title>[BabylonJS/Babylon.js] 9.35.0</title>
-    <link>https://github.com/BabylonJS/Babylon.js/releases/tag/9.35.0</link>
-    <guid isPermaLink="true">https://github.com/BabylonJS/Babylon.js/releases/tag/9.35.0</guid>
-    <description><![CDATA[### Core
-
-- Fix WebGL effect samplers being dropped when compiled during context loss - by serdarucel (#19033)
-- Release GPU resources in ProceduralTexture, HDRIrradianceFiltering and DynamicTexture dispose - [_Bug Fix_] by bkaradzic-microsoft (#19121)
-- NativeEngine: Honor MRT attachment mip generation intent - [_Bug Fix_] by bkaradzic-microsoft (#19120)
-- Sample IBL CDF radiance at the icdf bin center - [_Bug Fix_] by bkaradzic-microsoft (#19114)
-- Update HTML-in-Canvas typings to the latest WICG explainer API - by RaananW (#19116)
-- WebGPU/Effect: don't rebuild effects whose shader code is still loading after a context loss - by Deadlywolf712 (#19115)
-
-### Inspector
-
-- Add audio engine inspection to Inspector Lite - [_New Feature_] by ryantrem (#19119)]]></description>
-    <pubDate>Fri, 06 Nov 2026 19:46:06 GMT</pubDate>
-  </item>
-  <item>
-    <title>[nestjs/nest] v12.4.0</title>
-    <link>https://github.com/nestjs/nest/releases/tag/v12.4.0</link>
-    <guid isPermaLink="true">https://github.com/nestjs/nest/releases/tag/v12.4.0</guid>
-    <description><![CDATA[## v12.4.0 (2026-11-06)
-
-#### Features
-* `platform-node`
- * #18396 feat(node): let the node adapter set locals for every view (@thekhegay)
-
-#### Bug fixes
-* `microservices`
- * #18418 fix(microservices): ignore an mqtt server's own replies under wildcards (@pavstev)
- * #18413 fix(microservices): reach handlers whose string pattern reads as json (@pavstev)
- * #18392 fix(microservices): forward grpc call options on request streams (@DenisCDev)
- * #18393 fix(microservices): await the mqtt close and reset the client state (@hktitof)
-* `common`
- * #18419 fix(common): keep the fields of grouped item errors in parse array pipe (@pavstev)
- * #18402 fix(common): keep console logger from mutating the caller options (@pavstev)
-* `platform-node`
- * #18417 fix(node): omit the Content-Length of a redirect with a Transfer-Encoding (@hktitof)
- * #18415 fix(node): give each route that shares a path shape its own params (@pavstev)
- * #18372 fix(node): strip trailing slashes when resolvi
-
-... (truncated)]]></description>
-    <pubDate>Fri, 06 Nov 2026 10:11:54 GMT</pubDate>
-  </item>
-  <item>
     <title>[rancher-sandbox/rancher-desktop] Rancher Desktop 1.25 (v1.25.0)</title>
     <link>https://github.com/rancher-sandbox/rancher-desktop/releases/tag/v1.25.0</link>
     <guid isPermaLink="true">https://github.com/rancher-sandbox/rancher-desktop/releases/tag/v1.25.0</guid>
@@ -734,30 +838,6 @@ New `failures` reporter pri
 
 ... (truncated)]]></description>
     <pubDate>Tue, 03 Nov 2026 12:23:16 GMT</pubDate>
-  </item>
-  <item>
-    <title>[mongodb/node-mongodb-native] v6.22.0</title>
-    <link>https://github.com/mongodb/node-mongodb-native/releases/tag/v6.22.0</link>
-    <guid isPermaLink="true">https://github.com/mongodb/node-mongodb-native/releases/tag/v6.22.0</guid>
-    <description><![CDATA[## 6.22.0 (2026-11-02)
-
-The MongoDB Node.js team is pleased to announce version 6.22.0 of the `mongodb` package!
-
-## Release Notes
-
-> [!WARNING] 
-> Node Driver versions from v6.11.0 before v6.22.0 (this release) and from v7.0.0 before v7.8.0 are affected by a security issue related to the use of the experimental timeoutMS feature where connection pool desynchronization after operation timeout can expose other users' data (CVE-2026-119179). Users are encouraged to discontinue the use of timeoutMS as soon as possible.
-
-### `timeoutMS` is deprecated and now a no-op
-
-> [!WARNING]
-> `timeoutMS` and `timeoutMode` are deprecated and have no effect starting in this release. They are still accepted and will not throw, but operations will no longer time out because of them. They are slated for removal in a future release.
-
-Use the per-stage timeouts instead: `serverSelectionTimeoutMS`, `waitQueueTimeoutMS`, `socketTimeoutMS`, and `maxTimeMS` for server-side execution.
-### Features
-
-... (truncated)]]></description>
-    <pubDate>Tue, 03 Nov 2026 00:05:23 GMT</pubDate>
   </item>
   <item>
     <title>[axios/axios] v0.35.0</title>
@@ -994,74 +1074,6 @@ Wide emoji sequences, such as a family emoji in tmux, draw at their full width, 
 
 ... (truncated)]]></description>
     <pubDate>Thu, 29 Oct 2026 13:30:09 GMT</pubDate>
-  </item>
-  <item>
-    <title>[composer/composer] 2.11.0</title>
-    <link>https://github.com/composer/composer/releases/tag/2.11.0</link>
-    <guid isPermaLink="true">https://github.com/composer/composer/releases/tag/2.11.0</guid>
-    <description><![CDATA[### Read the Composer 2.11 Release Announcement for more details on the release highlights.
-
-### Full Changelog
-
- * BC Break: Removed the `source-fallback` config option which was added in 2.10 as a temporary measure, dist installs no longer fall back to source (#13050)
- * Security: Fixed package names in `vendor/composer/installed.json` being able to escape the vendor directory during install and reinstall (GHSA-c968-33g3-wh7p)
- * Security: Fixed inline repository HTTP headers, such as API tokens, being written into `composer.lock` (GHSA-fm2w-xgf2-f9fh)
- * Security: Fixed additional arguments passed to `@composer` scripts not being escaped (#13169)
- * Security: Fixed svn passwords not being redacted from debug output (#13171)
- * Security: Sanitize URL-embedded credentials in hg and fossil error output (#13172)
- * Security: Reject TLS connections presenting distrusted intermediate certificates (the compromised eMudhra ones) even if the system CA store trusts their roots (#131
-
-... (truncated)]]></description>
-    <pubDate>Thu, 29 Oct 2026 09:35:10 GMT</pubDate>
-  </item>
-  <item>
-    <title>[web-infra-dev/rspack] v2.3.0</title>
-    <link>https://github.com/web-infra-dev/rspack/releases/tag/v2.3.0</link>
-    <guid isPermaLink="true">https://github.com/web-infra-dev/rspack/releases/tag/v2.3.0</guid>
-    <description><![CDATA[## What's Changed
-
-## 🎉 See Announcing Rspack 2.3 for more details.
-
-### New Features 🎉
-* feat: rename loader filter.code to codeFilter by @SyMind in 
-* feat: integrate allocative snapshots and profiling skill into Rspack by @intellild in 
-* feat: support module.parser.javascript.dynamicUrl by @HashemKhalifa in 
-* feat(watcher): expose watchpack times API on native and node watch file systems by @stormslowly in 
-* feat(javascript): migrate parser to SWC Next by @LingyuCoder in 
-* feat: add loader codeFilter prefilter by @SyMind in 
-* feat(create-rspack): display version in startup banner by @chenjiahan in 
-* feat(rstest): add origin-aware import.meta.resolve hook by @9aoy in 
-* feat(watch): support mixed ignored patterns by @Perfecto23 in 
-* feat: support es2026 target by @chenjiahan in 
-* feat(cache): expose newCache statistics in Stats JSON by @ahabhgk in 
-### Performance 🚀
-* perf(size): box hot async entry futures to shrink binding size by @stormslowly in 
-* per
-
-... (truncated)]]></description>
-    <pubDate>Thu, 29 Oct 2026 08:12:27 GMT</pubDate>
-  </item>
-  <item>
-    <title>[bluesky-social/social-app] v1.137.0 (1.137.0)</title>
-    <link>https://github.com/bluesky-social/social-app/releases/tag/1.137.0</link>
-    <guid isPermaLink="true">https://github.com/bluesky-social/social-app/releases/tag/1.137.0</guid>
-    <description><![CDATA[## What's Changed
-* Split the react-native patch into one file per change by @tomekzaw in 
-* Block more shortener and redirect domains in profile links by @vineyardbovines in 
-* Suggest a standard.site blog's own title for profile links by @vineyardbovines in 
-* Fix missing paper plane icon in chat send button by @ds-boyce in 
-* Fix iOS e2e flows (create-account, login, thread-muting) by @mozzius in 
-* APP-3524: Upgrade to React Native 0.88 / Expo SDK 58 by @mozzius in 
-* Use Node 24.22 Docker tags and validate runtime versions by @rafaeleyng in 
-* Fix text entry for TokenField by @ds-boyce in 
-* Update CI certificate handling and Claude Bun runtime by @estrattonbailey in 
-* claude: use Opus 5.5 for PR review workflow by @amckinley in 
-* claude: use Opus 5.5 for mention workflow by @amckinley in 
-* Share bsky.app passwords with bsky.social and add /.well-known/change-password by @matthieusieben in 
-* Avoid per-frame Reanimated commits in the profile header by @tomekzaw in 
-
-... (truncated)]]></description>
-    <pubDate>Thu, 29 Oct 2026 01:39:17 GMT</pubDate>
   </item>
 </channel>
 </rss>
