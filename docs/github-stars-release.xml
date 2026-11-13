@@ -5,41 +5,179 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Thu, 12 Nov 2026 22:01:24 GMT</lastBuildDate>
+  <lastBuildDate>Fri, 13 Nov 2026 22:01:34 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
   <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-11-12) (release-2026-11-12)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-12</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-12</guid>
-    <description><![CDATA[## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/autoscaling`: [v1.82.0](service/autoscaling/CHANGELOG.md#v1820-2026-11-12)
- * **Feature**: Amazon EC2 Auto Scaling now supports ASGAverageCPUUtilizationHighResolution as a predefined metric type for target tracking scaling policies.
-* `github.com/aws/aws-sdk-go-v2/service/backup`: [v1.70.0](service/backup/CHANGELOG.md#v1700-2026-11-12)
- * **Feature**: Adding new notification types for SNS notifications
-* `github.com/aws/aws-sdk-go-v2/service/cleanrooms`: [v1.60.0](service/cleanrooms/CHANGELOG.md#v1600-2026-11-12)
- * **Feature**: Adds a retry signal to protected query and protected job errors that indicates whether running the same request again might succeed, and defines error codes that identify the category of the failure.
-* `github.com/aws/aws-sdk-go-v2/service/cloudwatch`: [v1.76.0](service/cloudwatch/CHANGELOG.md#v1760-2026-11-12)
- * **Feature**: Adds support for saving, retrieving, listing, and deleting CloudWatch metri
+    <title>[eslint/eslint] v10.15.0</title>
+    <link>https://github.com/eslint/eslint/releases/tag/v10.15.0</link>
+    <guid isPermaLink="true">https://github.com/eslint/eslint/releases/tag/v10.15.0</guid>
+    <description><![CDATA[## Features
+* `ec52157` feat: check __proto__ and assignment targets in `func-names` (#21521) (Lê Văn Xuân Hoàn)
+* `34a8b1b` feat: recognize string and computed keys in `accessor-pairs` descriptors (#21519) (Lê Văn Xuân Hoàn)
+* `663c825` feat: handle TS type assertions in `no-invalid-this` (#21464) (Valentin)
+* `4941015` feat: check individual specifier importKind in `no-shadow` (#21518) (Lê Văn Xuân Hoàn)
+* `17f17cd` feat: update error location to head for `default-case` (#21469) (Tanuj Kanti)
+
+## Bug Fixes
+* `23ac66c` fix: update dependency @eslint/config-array to ^0.23.6 (#21550) (renovate[bot])
+* `df71e34` fix: skip `no-prototype-builtins` suggestion when object is `super` (#21535) (KooYS)
+* `899065e` fix: preserve inline `type` modifier in `no-useless-rename` autofix (#21527) (sethamus)
+* `af4c3a9` fix: preserve TypeScript type parameters in `prefer-arrow-callback` (#21507) (Lê Văn Xuân Hoàn)
+* `b11bcb3` fix: preserve necessary parens in `no-unneeded-ternary` autofix (#21495) (Lê 
 
 ... (truncated)]]></description>
-    <pubDate>Thu, 12 Nov 2026 20:47:18 GMT</pubDate>
+    <pubDate>Fri, 13 Nov 2026 21:29:31 GMT</pubDate>
   </item>
   <item>
-    <title>[aws/aws-sdk-js-v3] v3.1168.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1168.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1168.0</guid>
-    <description><![CDATA[#### 3.1168.0(2026-11-12)
+    <title>[bluesky-social/atproto] @atproto/ozone@0.15.0</title>
+    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/ozone%400.15.0</link>
+    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/ozone%400.15.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- #5900 `f174012` Thanks @gcwill70! - Add admin-only moderator activity history combining human report activities and moderation events in chronological order.]]></description>
+    <pubDate>Fri, 13 Nov 2026 21:11:27 GMT</pubDate>
+  </item>
+  <item>
+    <title>[pnpm/pnpm] pnpm 12.21 (v12.21.0)</title>
+    <link>https://github.com/pnpm/pnpm/releases/tag/v12.21.0</link>
+    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v12.21.0</guid>
+    <description><![CDATA[pnpm 12.21.0 lets `pnpm store add` prepare tarball and git dependencies for offline installs. It also makes repeated installs keep their peer dependency choices and fixes several `lockfile.format: v13`, `nodeLinker: hoisted`, and `pnpm deploy` failures. If a pnpr server refuses a setting, pnpm now resolves locally.
+
+### Minor Changes
+
+- `pnpm store add` run in a project now prepares downloaded tarballs for every lockfile entry that pins them. Besides registry packages, `pnpm install --offline --frozen-lockfile` can then install dependencies on a tarball URL and dependencies on a git host such as GitHub whose lockfile entry records an `integrity`.
+
+### Patch Changes
+
+#### Installs that failed
+
+- pnpm now reads a lockfile with a mapping key longer than 1,024 characters written as `'key':`, without the `? ` marker. Before, `pnpm install` and other commands failed on such a lockfile with `ERR_PNPM_BROKEN_LOCKFILE`.
+
+- With `lockfile.format: v13`, `pnpm install` no longer fails 
+
+... (truncated)]]></description>
+    <pubDate>Fri, 13 Nov 2026 21:02:22 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-11-13) (release-2026-11-13)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-13</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-13</guid>
+    <description><![CDATA[## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/service/appstream`: [v1.74.0](service/appstream/CHANGELOG.md#v1740-2026-11-13)
+ * **Feature**: Amazon WorkSpaces Agent Access now supports image builders, so AI agents can install, configure, and test applications before you create an image. New Replay Session delivers a video of screenshots, a transcript, and a report for each agent session, optionally encrypted with your own KMS key.
+* `github.com/aws/aws-sdk-go-v2/service/cloudformation`: [v1.84.0](service/cloudformation/CHANGELOG.md#v1840-2026-11-13)
+ * **Feature**: AWS CloudFormation introduces stack aliases, which let you refer to an existing stack by a new name without deleting and recreating it. Manage aliases with SetAlias and RemoveAlias, and use an alias in place of the stack name in operations such as UpdateStack.
+* `github.com/aws/aws-sdk-go-v2/service/cognitoidentityprovider`: [v1.77.0](service/cognitoidentityprovider/CHANGELOG.md#v1770-2026-11-13)
+ * **Feature**: Addin
+
+... (truncated)]]></description>
+    <pubDate>Fri, 13 Nov 2026 20:18:31 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1169.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1169.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1169.0</guid>
+    <description><![CDATA[#### 3.1169.0(2026-11-13)
+
+##### Documentation Changes
+
+* **client-docdb:** Update the documentation for the --engine-version flag for cluster creation (0ac0e4c4)
 
 ##### New Features
 
-* **client-cloudwatch:** Adds support for saving, retrieving, listing, and deleting CloudWatch metric data query definitions. (63e3b204)
-* **client-ec2:** This release adds support for multiple features, including EC2 Image Builder image recipes and container recipes in AMI usage reports, Amazon EC2 Detailed Monitoring adds opt-in metrics, and Global Accelerator and API Gateway V2 as resource exclusions for VPC Encryption Control. (83c2b64f)
-* **client-guardduty:** Adds the ListInvestigationRecords API, which returns the step-by-step records of a completed investigation. Adds investigation scope details and an optional structured summary to GetInvestigation. Adds filter criteria and investigation type to ListInvestigations. (1ca4d367)
-* **client-emr-containers:** This release updates range of maxInQueueDepth and maxConcurrency limit from 10000 to 1000. (fde1fb8d)
-* **client-mediatailor:** Add post origin manifest hook, add HLS tag processo
+* **client-qconnect:** Amazon Q in Connect now supports additional message template attributes. You can personalize message templates using case fields, Amazon Connect Customer Profiles calculated attributes, and product recommendations. (2f4fead5)
+* **client-scheduler:** Adds EventBridgePutEventsV2Parameters and EventBridgePutRawEventsParameters to Target so schedules can publish to Amazon EventBridge event bus v2 with PutEvents or PutRawEvents. (d27b4fb7)
+* **client-rolesanywhere:** This release adds resource aliases for IAM Roles Anywhere trust anchors, profiles, and certificate revocation lists (CRLs). Assign an optional, unique alias name to a resource and use its alias ARN wherever an identifier is accepted, including CreateSession. (369a390e)
+* **client-deadline:** AWS Deadline Cloud now supports t
 
 ... (truncated)]]></description>
-    <pubDate>Thu, 12 Nov 2026 20:12:25 GMT</pubDate>
+    <pubDate>Fri, 13 Nov 2026 20:16:17 GMT</pubDate>
+  </item>
+  <item>
+    <title>[panva/openid-client] v6.9.0</title>
+    <link>https://github.com/panva/openid-client/releases/tag/v6.9.0</link>
+    <guid isPermaLink="true">https://github.com/panva/openid-client/releases/tag/v6.9.0</guid>
+    <description><![CDATA[### Features
+
+* add getDecryptedResponses (279212e)]]></description>
+    <pubDate>Fri, 13 Nov 2026 17:34:58 GMT</pubDate>
+  </item>
+  <item>
+    <title>[panva/node-oidc-provider] v9.15.0</title>
+    <link>https://github.com/panva/node-oidc-provider/releases/tag/v9.15.0</link>
+    <guid isPermaLink="true">https://github.com/panva/node-oidc-provider/releases/tag/v9.15.0</guid>
+    <description><![CDATA[### Features
+
+* allow redirect_uri omission with S256 PKCE (ad4cf82)
+* bump CIMD draft to -03 (f8246a1)
+
+### Fixes
+
+* accept multiple spaces in authorization headers (f8d2ad2)
+* correct default refresh token policies (9c0d956)
+* correct token endpoint error codes (4df6076)
+
+### Refactor
+
+* ignore instead of reject query access tokens when disabled (b6ca93b)]]></description>
+    <pubDate>Fri, 13 Nov 2026 17:34:07 GMT</pubDate>
+  </item>
+  <item>
+    <title>[lynx-family/lynx] 4.3.0-rc.1</title>
+    <link>https://github.com/lynx-family/lynx/releases/tag/4.3.0-rc.1</link>
+    <guid isPermaLink="true">https://github.com/lynx-family/lynx/releases/tag/4.3.0-rc.1</guid>
+    <description><![CDATA[No release notes provided.]]></description>
+    <pubDate>Fri, 13 Nov 2026 17:30:26 GMT</pubDate>
+  </item>
+  <item>
+    <title>[cloudflare/workers-sdk] @cloudflare/workers-utils@0.54.0</title>
+    <link>https://github.com/cloudflare/workers-sdk/releases/tag/%40cloudflare/workers-utils%400.54.0</link>
+    <guid isPermaLink="true">https://github.com/cloudflare/workers-sdk/releases/tag/%40cloudflare/workers-utils%400.54.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- #16735 `f005593` Thanks @leostera! - Use the local simulator for Artifacts bindings that omit `remote`
+
+ **Behavior change:** Artifacts bindings now default to the local simulator during development, like KV, R2 and D1. Previously, an omitted `remote` in Wrangler and the Vite plugin used the deployed Artifacts resource. If you want deployed repos in `wrangler dev` or `vite dev`, set `"remote": true` on the binding (`dev: { remote: true }` in `cloudflare.config.ts`). Artifacts is in beta, so this ships as a minor release.
+
+ While `remote` is omitted, `wrangler dev`, `getPlatformProxy` and the Vite plugin warn when remote bindings are enabled, once for each binding rather than on every config reload: "Artifacts binding REPOS uses the local simulator by default. Set `remote: true` to use deployed repos, or `remote: false` to silence this warning." Workers Vitest and `wrangler dev --local` already used the simulator, so they don't warn. Local Artifacts needs no Cloudfl
+
+... (truncated)]]></description>
+    <pubDate>Fri, 13 Nov 2026 17:11:59 GMT</pubDate>
+  </item>
+  <item>
+    <title>[anomalyco/opencode] v2.3.0</title>
+    <link>https://github.com/anomalyco/opencode/releases/tag/v2.3.0</link>
+    <guid isPermaLink="true">https://github.com/anomalyco/opencode/releases/tag/v2.3.0</guid>
+    <description><![CDATA[### Highlights
+
+- **Background Subagents by Default**: Subagents now return immediately, continue in the background, and report back whenever they become idle. You can keep working in the parent session while multiple subagents run concurrently. (#63382)
+- **Quieter Transcripts by Default**: The TUI now summarizes each run of tool calls and thoughts into one collapsible activity row, so the answer is easier to follow. To see every step again, set **Verbosity** to `medium` or `high` in settings, or set `session.verbosity` in your TUI config; an existing setting is kept. (#63207)
+- **Jump to an Earlier Prompt**: In the desktop app, open **Jump to message** from the command palette or press `Cmd+Alt+G` (`Ctrl+Alt+G` on Windows and Linux) to search prompts across the current session and jump directly to one. (#63585)
+
+### Core
+
+#### Improvements
+
+- Subagents now always run in the background, return their session ID immediately, and report results to their parent whenever they become idle. 
+
+... (truncated)]]></description>
+    <pubDate>Fri, 13 Nov 2026 08:55:07 GMT</pubDate>
+  </item>
+  <item>
+    <title>[openai/codex] 0.169.0 (rust-v0.169.0)</title>
+    <link>https://github.com/openai/codex/releases/tag/rust-v0.169.0</link>
+    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.169.0</guid>
+    <description><![CDATA[## New Features
+
+- The opt-in terminal workspace supports multiple side-chat tabs. Switch between them with the keyboard or mouse, and reopen saved local side chats after restarting Codex. (#59784, #60152, #60181)
+- Search older tasks from the agent command center by name, prompt preview, or working directory. (#60286)
+- Turn on **Collapse turn details** in the full-screen transcript to fold completed activity beneath each prompt while keeping answers visible and tool output searchable. (#60554, #60555, #60556, #60557)
+- Add or edit custom model providers from the terminal. With custom gateway onboarding enabled, you can create a provider during sign-in and use a device code for supported gateways over SSH or without a local browser. (#59779, #60009, #60186, #60486, #60662)
+- Press `Ctrl+S` in the terminal report editor to save a diagnostic ZIP locally, even when uploads are disabled. (#60542)
+- With the opt-in Cloud connection on macOS and Linux, send images, choose a model and reason
+
+... (truncated)]]></description>
+    <pubDate>Fri, 13 Nov 2026 08:37:05 GMT</pubDate>
   </item>
   <item>
     <title>[cli/cli] GitHub CLI 2.104.0 (v2.104.0)</title>
@@ -139,25 +277,6 @@ When constructing a `MongoClient`:
     <pubDate>Thu, 12 Nov 2026 16:39:12 GMT</pubDate>
   </item>
   <item>
-    <title>[cloudflare/workers-sdk] wrangler@4.161.0</title>
-    <link>https://github.com/cloudflare/workers-sdk/releases/tag/wrangler%404.161.0</link>
-    <guid isPermaLink="true">https://github.com/cloudflare/workers-sdk/releases/tag/wrangler%404.161.0</guid>
-    <description><![CDATA[### Minor Changes
-
-- #16840 `8b2a363` Thanks @jamesopstad! - Write source maps in Build Output with `sources` relative to each source map file
-
- This changes the experimental Build Output that `wrangler build --experimental-cf-build-output` and `cf-wrangler build` write. Their source maps were prepared as if for upload, with `sources` relative to the project root. For Workers that Wrangler does not bundle, leading `../` segments were also removed, which lost the location of some files. They now point from each source map's location in `bundle/` to the original files, like the source maps the Vite plugin writes.
-
-### Patch Changes
-
-- #16833 `5f539b5` Thanks @jamesopstad! - Name `cf` commands and `cloudflare.config.ts` settings in remote bindings errors from `cf-wrangler`
-
- When `cf` runs development through the `cf-wrangler` delegate and remote bindings cannot be authenticated, the error now tells you to run `cf auth whoami`, `cf auth logout` and `cf auth login` instead of the Wrangler 
-
-... (truncated)]]></description>
-    <pubDate>Thu, 12 Nov 2026 13:46:54 GMT</pubDate>
-  </item>
-  <item>
     <title>[uptrace/uptrace] v2.1.0-rc.3</title>
     <link>https://github.com/uptrace/uptrace/releases/tag/v2.1.0-rc.3</link>
     <guid isPermaLink="true">https://github.com/uptrace/uptrace/releases/tag/v2.1.0-rc.3</guid>
@@ -235,50 +354,6 @@ yomiyasu はこれまで、スキルの名前を「バージョンを上げて�
     <pubDate>Thu, 12 Nov 2026 00:28:38 GMT</pubDate>
   </item>
   <item>
-    <title>[pnpm/pnpm] pnpm 12.20 (v12.20.0)</title>
-    <link>https://github.com/pnpm/pnpm/releases/tag/v12.20.0</link>
-    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v12.20.0</guid>
-    <description><![CDATA[pnpm 12.20.0 records the specifiers of local directory dependencies in the experimental v13 lockfile and fixes several `nodeLinker: hoisted`, peer dependency, and `overrides` bugs. The bundled `node-gyp` no longer ships the undici version that security scanners flag. Remote resolution and shared build caches no longer work with pnpr 0.1.0-alpha.19 or older.
-
-### Minor Changes
-
-- With `lockfile.format: v13`, `pnpm install` records the dependency specifiers of local directory packages. Frozen installs reject changed specifiers even when the locked versions still satisfy them.
-
-### Patch Changes
-
-#### Upgrading and security
-
-- Remote resolution, shared build caches, and release notes no longer work with pnpr 0.1.0-alpha.19 or older. pnpm now reads the capabilities a pnpr server advertises under `pnpr.protocols`. Installs fail when the server does not confirm the requested resolution and verification policies.
-
-- The `node-gyp` bundled with pnpm no longer ships undici 6, which 
-
-... (truncated)]]></description>
-    <pubDate>Thu, 12 Nov 2026 00:23:41 GMT</pubDate>
-  </item>
-  <item>
-    <title>[panva/node-oidc-provider] v9.14.0</title>
-    <link>https://github.com/panva/node-oidc-provider/releases/tag/v9.14.0</link>
-    <guid isPermaLink="true">https://github.com/panva/node-oidc-provider/releases/tag/v9.14.0</guid>
-    <description><![CDATA[### Features
-
-* support OpenID4VCI credential encryption (0e5a377)
-
-### Fixes
-
-* extend dpop replay record retention (9fec9d6)
-* round up jwt client assertion replay expiry (5f95881)
-
-### Documentation
-
-* recommend atomic consumption in adapters (3ed87be)
-
-### Refactor
-
-* own all DefinitelyTyped declarations (9886cea)
-* reject key_ops in provider jwks (c8639cf)]]></description>
-    <pubDate>Wed, 11 Nov 2026 18:27:05 GMT</pubDate>
-  </item>
-  <item>
     <title>[prettier/prettier] 3.10.0</title>
     <link>https://github.com/prettier/prettier/releases/tag/3.10.0</link>
     <guid isPermaLink="true">https://github.com/prettier/prettier/releases/tag/3.10.0</guid>
@@ -286,24 +361,6 @@ yomiyasu はこれまで、スキルの名前を「バージョンを上げて�
 
 🔗 Prettier 3.10: New Flow syntax, new JavaScript syntax, and new plugin powered by Yuku]]></description>
     <pubDate>Wed, 11 Nov 2026 12:31:23 GMT</pubDate>
-  </item>
-  <item>
-    <title>[bluesky-social/atproto] @atproto/ozone@0.14.0</title>
-    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/ozone%400.14.0</link>
-    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/ozone%400.14.0</guid>
-    <description><![CDATA[### Minor Changes
-
-- #5802 `d930c3b` Thanks @foysalit! - Retire moderation subject statistics and count-based filters. Legacy count-based
- sorts fall back to last reported time.
-
-### Patch Changes
-
-- #5861 `211c9e8` Thanks @blackmichael! - Use Iris Grain gallery recommendations in Atmosphere Explore behind `atmosphere_explore:galleries:iris:enable`, independently of article recommendations. Return the gallery recommendation ID in `photos.recIdStr`. Retain curated photos when Iris returns an empty list or fails.
- 
- Update the shared Explore contract description for recommended photo galleries.
-- Updated dependencies [`b30ea73`]:
- - @atproto/xrpc-server@0.13.11]]></description>
-    <pubDate>Wed, 11 Nov 2026 03:48:31 GMT</pubDate>
   </item>
   <item>
     <title>[googleapis/google-cloud-go] pubsub: v2.9.0 (pubsub/v2.9.0)</title>
@@ -316,6 +373,29 @@ yomiyasu はこれまで、スキルの名前を「バージョンを上げて�
 
 * Update API sources and regenerate (#20873) (3ded070)]]></description>
     <pubDate>Tue, 10 Nov 2026 23:14:41 GMT</pubDate>
+  </item>
+  <item>
+    <title>[Comfy-Org/ComfyUI] v0.45.0</title>
+    <link>https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.45.0</link>
+    <guid isPermaLink="true">https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.45.0</guid>
+    <description><![CDATA[## What's Changed
+* Bump comfyui-frontend-package to 1.58.5 by @comfy-pr-bot in 
+* Add better error for when pixel_space VAE wrongly selected. by @comfyanonymous in 
+* Make SeedVR2 VAE slice length adaptive to free memory by @kijai in 
+* [Partner Nodes] feat(Pika): add Pika H3 Flex nodes by @bigcat88 in 
+* [Partner Nodes] feat(Pika): add Pika Soundtrack, SFX and Music nodes by @bigcat88 in 
+* [Partner Nodes] feat(Tencent): add Tencent HY LLM node by @bigcat88 in 
+* Turn on local_web_sso and partner_node_token by default by @dante01yoon in 
+* Update workflow templates to v0.11.102 by @comfyui-wiki in 
+* Update comfy-kitchen version to 0.2.41 by @comfyanonymous in 
+* Fix potential crash. by @comfyanonymous in 
+* Performance improvements for qwen 3.x (Part 4) - Combine Parallel Linear Weights by @rattus128 in 
+* Name comfy-agent without a version in agent_requirements.txt (CORE-692) by @christian-byrne in 
+* Fix Remesh Mesh on imported meshes by @kijai in 
+* Support RelayVSR
+
+... (truncated)]]></description>
+    <pubDate>Tue, 10 Nov 2026 21:42:42 GMT</pubDate>
   </item>
   <item>
     <title>[github/spec-kit] Spec Kit - 1.4.0 (v1.4.0)</title>
@@ -731,13 +811,6 @@ New `failures` reporter pri
     <pubDate>Thu, 05 Nov 2026 18:25:45 GMT</pubDate>
   </item>
   <item>
-    <title>[anomalyco/opencode] process-daemon v0.5.0 (process-daemon-v0.5.0)</title>
-    <link>https://github.com/anomalyco/opencode/releases/tag/process-daemon-v0.5.0</link>
-    <guid isPermaLink="true">https://github.com/anomalyco/opencode/releases/tag/process-daemon-v0.5.0</guid>
-    <description><![CDATA[opencode-pty 0.5.0 (protocol 8) from packages/process-daemon, published to npm as @opencode/pty@0.5.0.]]></description>
-    <pubDate>Thu, 05 Nov 2026 17:39:04 GMT</pubDate>
-  </item>
-  <item>
     <title>[jsdom/jsdom] v31.0.0</title>
     <link>https://github.com/jsdom/jsdom/releases/tag/v31.0.0</link>
     <guid isPermaLink="true">https://github.com/jsdom/jsdom/releases/tag/v31.0.0</guid>
@@ -969,111 +1042,6 @@ This release aligns request option handling, parameter validation and form seria
 
 ... (truncated)]]></description>
     <pubDate>Sat, 31 Oct 2026 00:23:40 GMT</pubDate>
-  </item>
-  <item>
-    <title>[eslint/eslint] v10.14.0</title>
-    <link>https://github.com/eslint/eslint/releases/tag/v10.14.0</link>
-    <guid isPermaLink="true">https://github.com/eslint/eslint/releases/tag/v10.14.0</guid>
-    <description><![CDATA[## Features
-* `d23a7f9` feat: fix property descriptor handling in `func-name-matching` (#21400) (xbinaryx)
-
-## Bug Fixes
-* `4a12580` fix: require minimatch `10.2.6` to avoid vulnerable brace-expansion (#21460) (lumir)
-* `827a8f3` fix: `no-restricted-globals` crash on global objects as property values (#21449) (xbinaryx)
-* `161558a` fix: handle LS, PS and empty hashbang comments (#21419) (lumir)
-* `6194939` fix: `no-invalid-this` crash on `accessor` fields without initializer (#21442) (xbinaryx)
-* `9155e14` fix: Update @humanfs/node dependency version (#21434) (Nicholas C. Zakas)
-* `cb2b9d4` fix: avoid invalid object-shorthand fixes for super methods (#21323) (dvd233)
-* `5ee3915` fix: yoda invalid autofix at statement start (#21424) (Daniel Pinto)
-
-## Documentation
-* `0f94f47` docs: remove `zh-hans` from docs language switcher (#21437) (lumir)
-* `dab466e` docs: Update README (GitHub Actions Bot)
-* `97431f8` docs: replace `--rulesdir` with a virtual plugin in custom rules docs (#21452) (
-
-... (truncated)]]></description>
-    <pubDate>Fri, 30 Oct 2026 14:10:27 GMT</pubDate>
-  </item>
-  <item>
-    <title>[sindresorhus/got] v16.2.0</title>
-    <link>https://github.com/sindresorhus/got/releases/tag/v16.2.0</link>
-    <guid isPermaLink="true">https://github.com/sindresorhus/got/releases/tag/v16.2.0</guid>
-    <description><![CDATA[- Add Standard Schema support to `.json` (#2477) d6fb3bda
-
----]]></description>
-    <pubDate>Fri, 30 Oct 2026 08:46:08 GMT</pubDate>
-  </item>
-  <item>
-    <title>[mrdoob/three.js] r187</title>
-    <link>https://github.com/mrdoob/three.js/releases/tag/r187</link>
-    <guid isPermaLink="true">https://github.com/mrdoob/three.js/releases/tag/r187</guid>
-    <description><![CDATA[- Global
- - Remove code deprecated in r177. #34517 (@linbingquan, @Mugen87)
-- AnimationUtils
- - Fix cubic spline additive reference sampling. #34860 (@gjija)
-- Backend
- - Keep occlusion query results per camera. #35066 (@arodic, @claude)
-- BatchedMesh
- - Clarify geometry compatibility requirements. #34675 (@MikeFernandez-Pro, @Mugen87)
- - Fix sort corruption. #34828 (@Mugen87)
- - Make shadows more node compatible. #34829 (@Mugen87)
- - Fix draw ranges after `setGeometrySize`. #34983 (@MikeFernandez-Pro)
- - Fix memory leak of previous matrix data. #35272 (@Mugen87)
-- Bindings
- - Avoid recreating initial texture bind groups. #34657 (@mrdoob)
- - Avoid cache key allocations in `_update`. #35120 (@Snuble-bot, @Mugen87, @claude)
- - Avoid cache key collision with similar IDs. #35226 (@Mugen87)
-- Box3
- - Use BatchedMesh bounds in precise mode. #34863 (@gjija)
-- BufferAttribute
- - (Interleaved)BufferAttribute: Optimize normalized data access. #34992 (@zeux)
-- BufferGeometry
-
-
-... (truncated)]]></description>
-    <pubDate>Fri, 30 Oct 2026 08:03:18 GMT</pubDate>
-  </item>
-  <item>
-    <title>[chakra-ui/ark] @ark-ui/vue@5.40.0</title>
-    <link>https://github.com/chakra-ui/ark/releases/tag/%40ark-ui/vue%405.40.0</link>
-    <guid isPermaLink="true">https://github.com/chakra-ui/ark/releases/tag/%40ark-ui/vue%405.40.0</guid>
-    <description><![CDATA[# @ark-ui/vue
-
-## [5.40.0] - 2026-10-29
-
-### Added
-
-- Render `Pagination.Item`, `Pagination.PrevTrigger`, `Pagination.NextTrigger`, `Pagination.FirstTrigger` and
- `Pagination.LastTrigger` as anchors when the machine is `type="link"`. They rendered buttons carrying the `href` the
- machine emits, which navigates nowhere.
-
-### Fixed
-
-- - **Field**: Fixed helper and error text not being announced on the focused element of Select, TagsInput, ColorPicker,
- FileUpload, SignaturePad, RatingGroup and PinInput. `PinInput.Control` now renders as a labelled group.
-- - **Field**: Fixed `ids.root` being ignored and `ids.control` being applied to the root element instead of the
- control.
-- - **FileUpload**: Fixed `Field.Root readOnly` not making the file upload read-only.
-- - **Toc**: Fix `Root` and `Nav` rendering with the same `id`. The `id` and `aria-labelledby` now live only on `Nav`.
-- - **Toc**: Add `getNavProps` to `useToc` and render `Toc.Nav` with it. `Toc.Nav` now has `data-part="nav"` inst
-
-... (truncated)]]></description>
-    <pubDate>Thu, 29 Oct 2026 17:24:30 GMT</pubDate>
-  </item>
-  <item>
-    <title>[anomalyco/opentui] Release v0.8.0 (v0.8.0)</title>
-    <link>https://github.com/anomalyco/opentui/releases/tag/v0.8.0</link>
-    <guid isPermaLink="true">https://github.com/anomalyco/opentui/releases/tag/v0.8.0</guid>
-    <description><![CDATA[Most of 0.8.0 makes each frame cheaper. In 0.7.0, every frame cleared and repainted the whole screen and compared every row with the terminal, even when only a spinner had moved. Now an unchanged frame paints nothing, and a frame with a small change repaints only the rows around it. In OpenCode, a frame with a spinner or a streamed line does about a twentieth of the cell operations it did.
-
-ScrollBox now scrolls and follows new content in native code. Animations share one clock: before, an app with several animations could draw twice as many frames as the animations needed.
-
-The native input parser is still opt-in. It now keeps a mouse wheel report that a slow link splits, which the default parser can type into the focused input as text. To try it, set `OTUI_NATIVE_INPUT_PARSER=1`, or pass `experimental_nativeInput: true` to the renderer.
-
-Wide emoji sequences, such as a family emoji in tmux, draw at their full width, and long wrapped or highlighted lines draw their last rows as fast a
-
-... (truncated)]]></description>
-    <pubDate>Thu, 29 Oct 2026 13:30:09 GMT</pubDate>
   </item>
 </channel>
 </rss>
