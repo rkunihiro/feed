@@ -5,8 +5,37 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Fri, 13 Nov 2026 22:01:34 GMT</lastBuildDate>
+  <lastBuildDate>Sat, 14 Nov 2026 22:01:21 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[fastapi/fastapi] 0.163.0</title>
+    <link>https://github.com/fastapi/fastapi/releases/tag/0.163.0</link>
+    <guid isPermaLink="true">https://github.com/fastapi/fastapi/releases/tag/0.163.0</guid>
+    <description><![CDATA[> FastAPI includes an official skill that helps coding agents use new features and recommended patterns for your installed version. Install it with `uvx library-skills` in your project. See Develop with AI.
+
+### Features
+
+* ✨ Add dependency concurrency limits with `Depends(max_concurrency=...)`. PR #16746 by @tiangolo.]]></description>
+    <pubDate>Sat, 14 Nov 2026 16:53:02 GMT</pubDate>
+  </item>
+  <item>
+    <title>[anomalyco/opentui] Release v0.9.0 (v0.9.0)</title>
+    <link>https://github.com/anomalyco/opentui/releases/tag/v0.9.0</link>
+    <guid isPermaLink="true">https://github.com/anomalyco/opentui/releases/tag/v0.9.0</guid>
+    <description><![CDATA[In 0.9.0, Markdown runs on OpenTUI's native engine, the same engine the Rust widget uses. In 0.8.3, `MarkdownRenderable` parsed with `marked` in JavaScript and lexed the open end of the document again on every chunk. In a growing list, the open end is the whole list, so streaming one list took 21,430 million instructions. `MarkdownRenderable` also sent all prose to the Tree-sitter worker for styling. The native engine reads each chunk once and writes paragraphs and headings into their text nodes itself. Streaming the same list now takes 5.9 million instructions. Over one streamed answer, JavaScript's styled-text writes for prose went from 1,595 to 0, and the prose characters sent to the highlighter went from 56,223 to 0.
+
+Because the engine follows CommonMark 0.31.2 and GFM, some documents look different. While streaming, a line that can still change kind, such as a possible table row or a heading underline, waits for its end before it shows. A table appears when its delimiter row arri
+
+... (truncated)]]></description>
+    <pubDate>Sat, 14 Nov 2026 14:43:33 GMT</pubDate>
+  </item>
+  <item>
+    <title>[uptrace/uptrace] v2.1.0</title>
+    <link>https://github.com/uptrace/uptrace/releases/tag/v2.1.0</link>
+    <guid isPermaLink="true">https://github.com/uptrace/uptrace/releases/tag/v2.1.0</guid>
+    <description><![CDATA[CHANGELOG]]></description>
+    <pubDate>Sat, 14 Nov 2026 08:39:17 GMT</pubDate>
+  </item>
   <item>
     <title>[eslint/eslint] v10.15.0</title>
     <link>https://github.com/eslint/eslint/releases/tag/v10.15.0</link>
@@ -275,13 +304,6 @@ When constructing a `MongoClient`:
 
 ... (truncated)]]></description>
     <pubDate>Thu, 12 Nov 2026 16:39:12 GMT</pubDate>
-  </item>
-  <item>
-    <title>[uptrace/uptrace] v2.1.0-rc.3</title>
-    <link>https://github.com/uptrace/uptrace/releases/tag/v2.1.0-rc.3</link>
-    <guid isPermaLink="true">https://github.com/uptrace/uptrace/releases/tag/v2.1.0-rc.3</guid>
-    <description><![CDATA[CHANGELOG]]></description>
-    <pubDate>Thu, 12 Nov 2026 13:42:40 GMT</pubDate>
   </item>
   <item>
     <title>[nestjs/nest] v12.5.0</title>
@@ -1003,45 +1025,6 @@ This release aligns request option handling, parameter validation and form seria
 
 ... (truncated)]]></description>
     <pubDate>Sat, 31 Oct 2026 22:10:55 GMT</pubDate>
-  </item>
-  <item>
-    <title>[floci-io/floci-gcp] 0.12.0</title>
-    <link>https://github.com/floci-io/floci-gcp/releases/tag/0.12.0</link>
-    <guid isPermaLink="true">https://github.com/floci-io/floci-gcp/releases/tag/0.12.0</guid>
-    <description><![CDATA[# 0.12.0 (2026-10-31)
-
-
-### Bug Fixes
-
-* **bigquery:** accept skipLeadingRows sent as a string in load jobs (#449) (7bcd347)
-* **bigquery:** coerce date-shaped STRING parameters like BigQuery (#514) (d0b1849)
-* **bigquery:** coerce STRING operands of date and time functions (#540) (4388e23)
-* **bigquery:** complete copy job follow-ups (#537) (6aa0074)
-* **bigquery:** expand STRUCT values with .* (#476) (2a6b070)
-* **bigquery:** fail the query when a result array has a NULL element (#412) (2f80ce2), closes #371
-* **bigquery:** keep an implicit alias that follows a query parameter (#522) (202fe97)
-* **bigquery:** keep IS [NOT] DISTINCT FROM out of FROM clause handling (#500) (d1b0133)
-* **bigquery:** keep ROW a keyword in CURRENT ROW window frame bounds (#439) (a9328e0)
-* **bigquery:** name anonymous subquery and CTE columns like BigQuery (#394) (57fcbee), closes #380
-* **bigquery:** preserve row page size (#461) (6570bed)
-* **bigquery:** preserve struct select aliases in clauses (#491) 
-
-... (truncated)]]></description>
-    <pubDate>Sat, 31 Oct 2026 11:02:31 GMT</pubDate>
-  </item>
-  <item>
-    <title>[obsidianmd/pele] 1.13.0</title>
-    <link>https://github.com/obsidianmd/pele/releases/tag/1.13.0</link>
-    <guid isPermaLink="true">https://github.com/obsidianmd/pele/releases/tag/1.13.0</guid>
-    <description><![CDATA[- Series colors follow Mermaid's palette theme variables: `pie1`–`pie8` in pie charts, `git0`–`git7` in git graphs, `cScale0`–`cScale7` in timelines, radar charts and treemaps, `cScale1`–`cScale8` in mindmaps, `venn1`–`venn8` in Venn diagrams, and the first eight colors of `xyChart.plotColorPalette` in XY charts. Shorter Venn and XY palettes repeat. Values that aren't colors keep the theme's color. #55 #98
-- Labels on palette colors in pie charts, git graphs, timelines and treemaps use whichever of `--pele-fg-on-light` and `--pele-fg-on-dark` contrasts more.
-- Edges that cross a subgraph's border bend less near the nodes they meet, and more edges come out straight. #97
-- Unlinked nodes in a subgraph stay lined up when an edge from outside enters one of them, instead of that node dropping a rank.
-- Block: labels in blocks that span several columns use the extra width to fit on fewer lines. #106 #107
-- Quadrant: the `quadrantChart` settings `titleFontSize`, `quadrantLabelFontSize`, 
-
-... (truncated)]]></description>
-    <pubDate>Sat, 31 Oct 2026 00:23:40 GMT</pubDate>
   </item>
 </channel>
 </rss>
