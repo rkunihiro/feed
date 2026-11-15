@@ -5,8 +5,100 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Sat, 14 Nov 2026 22:01:21 GMT</lastBuildDate>
+  <lastBuildDate>Sun, 15 Nov 2026 22:01:17 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[sindresorhus/eslint-plugin-unicorn] v80.0.0</title>
+    <link>https://github.com/sindresorhus/eslint-plugin-unicorn/releases/tag/v80.0.0</link>
+    <guid isPermaLink="true">https://github.com/sindresorhus/eslint-plugin-unicorn/releases/tag/v80.0.0</guid>
+    <description><![CDATA[## Breaking
+
+- Require Node.js 22.13 (#3988) 6ae42511
+- `no-async-promise-finally`: Remove it from the `recommended` and `unopinionated` presets (#3989) b6708414
+	- The rule also reports async cleanup that handles its own errors, so it is now opt-in.
+
+## New rules
+
+- `require-spread-parentheses` (#3999) b665c827
+- `prefer-options-parameter` (#3991) d9ddedd7
+- `prefer-regexp-exec` (#3978) d267d614
+
+## Improvements
+
+- Improve import performance by loading rules lazily (#3988) 6ae42511
+- Keep JSDoc type inference when an ESLint directive comment is between the JSDoc comment and the code (#3973) e1b5f7ca
+- `no-immediate-mutation`: Add `checkCollections` option (#3995) d17cfc0a
+- `prefer-smaller-scope`: Add `checkTypeAliases` option (#3955) a6c2fdf9
+- `prefer-ternary`: Add `checkNestedTernaries` option (#3965) 08de7889
+- `prefer-uint8array-base64`, `prefer-uint8array-hex`: Add `checkBufferDecoding` option, and autofix `Buffer.fromBase64` and `Buffer.fromHex` (#3980) d8e24
+
+... (truncated)]]></description>
+    <pubDate>Sun, 15 Nov 2026 16:04:53 GMT</pubDate>
+  </item>
+  <item>
+    <title>[azat-io/eslint-plugin-perfectionist] v5.14.0</title>
+    <link>https://github.com/azat-io/eslint-plugin-perfectionist/releases/tag/v5.14.0</link>
+    <guid isPermaLink="true">https://github.com/azat-io/eslint-plugin-perfectionist/releases/tag/v5.14.0</guid>
+    <description><![CDATA[### &nbsp;&nbsp;&nbsp;🚀 Features
+
+- **sort-modules**: Allow sorting arrow functions &nbsp;-&nbsp; by @azat-io <samp>(17f6a)</samp>
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **sort-modules**: Detect dependencies in decorators &nbsp;-&nbsp; by @azat-io <samp>(f6636)</samp>
+
+##### &nbsp;&nbsp;&nbsp;&nbsp;View changes on GitHub]]></description>
+    <pubDate>Sun, 15 Nov 2026 14:46:51 GMT</pubDate>
+  </item>
+  <item>
+    <title>[floci-io/floci-gcp] 0.13.0</title>
+    <link>https://github.com/floci-io/floci-gcp/releases/tag/0.13.0</link>
+    <guid isPermaLink="true">https://github.com/floci-io/floci-gcp/releases/tag/0.13.0</guid>
+    <description><![CDATA[# 0.13.0 (2026-11-15)
+
+
+### Bug Fixes
+
+* **bigquery:** check job location against the datasets a job writes to (#611) (3aa0ce5)
+* **bigquery:** coerce a STRING or bare NULL value of FORMAT_* to the function's type (#598) (b6a74e5)
+* **bigquery:** coerce a STRING parameter with a time zone name to TIMESTAMP (#617) (906c61f)
+* **bigquery:** evaluate constant expressions as ALTER ... SET OPTIONS values (#563) (7751aa7)
+* **bigquery:** expand STRUCT alias fields from SELECT AS STRUCT and in QUALIFY, and only once (#606) (3eb7166)
+* **bigquery:** fail a missing STRUCT alias field in ORDER BY like BigQuery (#618) (a93d027)
+* **bigquery:** name a set operation's STRUCT fields after its first query like BigQuery (#651) (4a800ec)
+* **bigquery:** print years before 1000 without leading zeros in FORMAT_* (#571) (6866dbc)
+* **bigquery:** read a bare subscript on a visible array as OFFSET (#554) (de88239)
+* **bigquery:** read a bare subscript on a written CAST to ARRAY as OFFSET (#614) (60ad93a)
+* 
+
+... (truncated)]]></description>
+    <pubDate>Sun, 15 Nov 2026 14:12:09 GMT</pubDate>
+  </item>
+  <item>
+    <title>[floci-io/floci] 2.5.0</title>
+    <link>https://github.com/floci-io/floci/releases/tag/2.5.0</link>
+    <guid isPermaLink="true">https://github.com/floci-io/floci/releases/tag/2.5.0</guid>
+    <description><![CDATA[# 2.5.0 (2026-11-15)
+
+### Features
+
+* **accessanalyzer:** add basic ValidatePolicy checks (#7085) (eb65ad8)
+* **account:** implement GetContactInformation and PutContactInformation (#8262) (5f03ff9)
+* add CloudWatch OTLP metrics ingestion (#7781) (2d8cdeb)
+* **apigateway:** add documentation part operations (#7712) (856970a)
+* **apigateway:** trust FLOCI_TLS_EXTRA_CA_PATH for HTTP and HTTP_PROXY integrations (#8285) (b2bdb2b)
+* **apigatewayv2:** support IntegrationSubtype and invoke SQS-SendMessage on HTTP APIs (#7969) (8eaf5bf)
+* **appconfig:** implement UpdateApplication (#7209) (1b87483)
+* **appsync:** execute HTTP data sources and signed local AWS requests (#7609) (d5b7a11)
+* **athena:** run Hive DDL against the Glue catalog (#8411) (cc9b5bf)
+* **athena:** support named queries (#8002) (77587de), closes #8000
+* **bedrock-agentcore:** add the harness control plane (#7387) (2e47b9c)
+* **bedrock-agentcore:** keep runtime endpoint create tags and support tagging them (#7597) (c1a88b8)
+
+
+... (truncated)]]></description>
+    <pubDate>Sun, 15 Nov 2026 06:36:31 GMT</pubDate>
+  </item>
   <item>
     <title>[fastapi/fastapi] 0.163.0</title>
     <link>https://github.com/fastapi/fastapi/releases/tag/0.163.0</link>
@@ -933,98 +1025,6 @@ New `failures` reporter pri
 
 ... (truncated)]]></description>
     <pubDate>Tue, 03 Nov 2026 12:23:16 GMT</pubDate>
-  </item>
-  <item>
-    <title>[axios/axios] v0.35.0</title>
-    <link>https://github.com/axios/axios/releases/tag/v0.35.0</link>
-    <guid isPermaLink="true">https://github.com/axios/axios/releases/tag/v0.35.0</guid>
-    <description><![CDATA[## v0.35.0 — November 2, 2026
-
-This release aligns request option handling, parameter validation and form serialization across Node and browser runtimes on the v0.x line, with some stricter validation, and moves v0.x CI onto Namespace runners.
-
-## ⚠️ Breaking Changes & Deprecations
-
-- **Parameter Depth Limit:** `params` nested deeper than 100 levels now reject with `ERR_BAD_OPTION_VALUE`. (**#11243**)
-- **Form Index Serialization:** Sparse arrays and non-canonical numeric form indexes, such as `01`, now serialize as keyed objects instead of being collapsed into arrays. (**#11243**)
-- **Native Proxy Agents:** On runtimes with native environment proxy support, agents that override native pool-management or TLS-session lifecycle hooks now reject with `ERR_BAD_OPTION_VALUE`. Use an agent constructed without `proxyEnv` for these configurations. Plain subclasses are still supported, and public type signatures are unchanged. (**#11243**)
-
-## 🐛 Bug Fixes
-
-- **Connection Pools & Ag
-
-... (truncated)]]></description>
-    <pubDate>Mon, 02 Nov 2026 18:24:19 GMT</pubDate>
-  </item>
-  <item>
-    <title>[wailsapp/wails] Wails v3.1.0 (v3.1.0)</title>
-    <link>https://github.com/wailsapp/wails/releases/tag/v3.1.0</link>
-    <guid isPermaLink="true">https://github.com/wailsapp/wails/releases/tag/v3.1.0</guid>
-    <description><![CDATA[## Wails v3 Weekly Release - v3.1.0
-
-## Added
-- add experimental CGO-free macOS and Linux backends in PR by @taliesin-ai
-- native YAML builds, portable packaging and signing in PR by @taliesin-ai
-
-## Changed
-- avoid copying discarded desktop metadata in PR by @taliesin-ai
-- format content lengths without fmt in PR by @taliesin-ai
-- select index roots without collecting candidates in PR by @taliesin-ai
-- reuse non-seekable file copy buffers in PR by @taliesin-ai
-- avoid allocating a reader for sniffing prefixes in PR by @taliesin-ai
-- skip MIME sniff reads for known extensions in PR by @taliesin-ai
-- prevent queue growth and shrink oscillation in PR by @taliesin-ai
-- avoid allocating discarded request contexts in PR by @taliesin-ai
-- skip disabled debug log preparation in PR by @taliesin-ai
-- allocate MIME sniff buffers lazily in PR by @taliesin-ai
-- reduce hyperlink formatting allocations in PR by @taliesin-ai
-- remove temporary bullet formatting allocations in PR by @taliesin-ai
-- red
-
-... (truncated)]]></description>
-    <pubDate>Sun, 01 Nov 2026 11:57:27 GMT</pubDate>
-  </item>
-  <item>
-    <title>[djkotori/rpgcobo-tool] v0.2.0</title>
-    <link>https://github.com/djkotori/rpgcobo-tool/releases/tag/v0.2.0</link>
-    <guid isPermaLink="true">https://github.com/djkotori/rpgcobo-tool/releases/tag/v0.2.0</guid>
-    <description><![CDATA[This version includes the following bug fixes and feature additions.
-
-- (Key Feature) Now supports building for each platform. It is possible to build for Windows, Steam, Android, and iOS. (Early access and later)
- - We have made improvements such as being able to specify a theme color when exporting WebGL.
-
-- (Key Feature) Added support for loading external 3D models (glTF). You can place it on the map or use it as a character.
- - "Resources side menu ⇒ Polygon Model" editor can import and manage polygon models.
- - Supports skin animation and shape animation.
- - Material settings are also compatible to some extent, but only basic parameters are supported to prevent the shader from becoming bloated.
- - Although it is possible to import 3D models in VRM format, VRM-specific functions (Humanoid bones, facial expressions, etc.) are not currently supported. This will be supported in the future.
- - Currently collision only supports simple shapes. More complex collisions will be su
-
-... (truncated)]]></description>
-    <pubDate>Sun, 01 Nov 2026 07:11:40 GMT</pubDate>
-  </item>
-  <item>
-    <title>[floci-io/floci] 2.4.0</title>
-    <link>https://github.com/floci-io/floci/releases/tag/2.4.0</link>
-    <guid isPermaLink="true">https://github.com/floci-io/floci/releases/tag/2.4.0</guid>
-    <description><![CDATA[# 2.4.0 (2026-10-31)
-
-### Features
-
-* **apigatewayv2:** route VPC link integrations to Cloud Map service instances (#6753) (4fffb5a)
-* **autoscaling:** describe suspended process reasons (#5941) (7ce4b6b)
-* **autoscaling:** implement DescribeTags (#5750) (05153b3)
-* **autoscaling:** support EnterStandby and ExitStandby (#6955) (ead5d4a)
-* **backup:** add CreateLogicallyAirGappedBackupVault (#6015) (65e35ad), closes #4986
-* **cloudformation:** apply AssociatedRoles on RDS clusters and instances (#5656) (ad1b225), closes #5638
-* **cloudformation:** expose RegionalEndpoints of a web function endpoint to Fn::GetAtt (#6907) (c4ae11c)
-* **cloudformation:** provision AWS::EC2::PrefixList (#6481) (6acd906), closes aws/aws-cdk#35360
-* **cloudformation:** provision AWS::WAFv2::IPSet (#5950) (a57c209)
-* **cloudformation:** provision Redshift event subscriptions (#6664) (d3c4732)
-* **cloudformation:** provision SES email identities (#4812) (7f8383d)
-* **cloudformation:** provision SES receipt rule
-
-... (truncated)]]></description>
-    <pubDate>Sat, 31 Oct 2026 22:10:55 GMT</pubDate>
   </item>
 </channel>
 </rss>
