@@ -5,8 +5,222 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Sun, 15 Nov 2026 22:01:17 GMT</lastBuildDate>
+  <lastBuildDate>Mon, 16 Nov 2026 22:01:32 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-11-16) (release-2026-11-16)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-16</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-16</guid>
+    <description><![CDATA[## General Highlights
+* **Dependency Update**: Updated to the latest SDK module versions
+
+## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/credentials`: [v1.21.1](credentials/CHANGELOG.md#v1211-2026-11-16)
+ * **Bug Fix**: Refresh login credentials in the region stored in the cached token's `signInRegion` field.
+* `github.com/aws/aws-sdk-go-v2/service/athena`: [v1.68.0](service/athena/CHANGELOG.md#v1680-2026-11-16)
+ * **Feature**: Adds an optional AttributesToGet parameter to ListDatabases and ListTableMetadata to return only requested database or table names (and table types) from the AWS Glue Data Catalog, reducing response time for large catalogs.
+* `github.com/aws/aws-sdk-go-v2/service/cognitoidentityprovider`: [v1.78.0](service/cognitoidentityprovider/CHANGELOG.md#v1780-2026-11-16)
+ * **Feature**: Implement OAuth 2.0 Token Exchange (RFC 8693) for Cognito User Pools, enabling services to exchange a user's existing token for a new token that is appropriately scoped and audience-b
+
+... (truncated)]]></description>
+    <pubDate>Mon, 16 Nov 2026 20:07:18 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1170.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1170.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1170.0</guid>
+    <description><![CDATA[#### 3.1170.0(2026-11-16)
+
+##### New Features
+
+* **clients:** update client endpoints as of 2026-11-16 (8a34e226)
+* **client-athena:** Adds an optional AttributesToGet parameter to ListDatabases and ListTableMetadata to return only requested database or table names (and table types) from the AWS Glue Data Catalog, reducing response time for large catalogs. (c92455df)
+* **client-kms:** AWS KMS now supports sharing KMS keys across AWS accounts using AWS Resource Access Manager (AWS RAM). This release adds the optional ResourceOwners parameter to ListKeys, which lists keys owned by the caller's account (SELF), keys shared with the account through AWS RAM, or both. (defc7b78)
+* **client-connectscheduling:** This release adds APIs for Amazon Connect Scheduling. Use them to create, get, approve, reject, and cancel agent time off requests, and to set agent time off balances. (8a1864f5)
+* **client-network-firewall:** Adds support for context-aware stateful rule groups, letting rules reference 
+
+... (truncated)]]></description>
+    <pubDate>Mon, 16 Nov 2026 20:05:01 GMT</pubDate>
+  </item>
+  <item>
+    <title>[BabylonJS/Babylon.js] 9.37.0</title>
+    <link>https://github.com/BabylonJS/Babylon.js/releases/tag/9.37.0</link>
+    <guid isPermaLink="true">https://github.com/BabylonJS/Babylon.js/releases/tag/9.37.0</guid>
+    <description><![CDATA[### Core
+
+- Decode base64 data URLs as UTF-8 when loading text - by SwastikTripathi (#19169)
+- Clamp color components in Color3/Color4 toHexString - by SwastikTripathi (#19162)
+- Gaussian Splatting: keep full and partial texture uploads in call order on Native - by bkaradzic-microsoft (#19157)
+- Add texture previews to Inspector Lite - by ryantrem (#19156)
+- NativeEngine: queue texture deletes behind earlier commands - by bkaradzic-microsoft (#19160)
+- Floating origin: offset projective world matrices correctly (fixes CameraGizmo frustum) - by trymedo (#19152)
+
+### Inspector
+
+- Add texture previews to Inspector Lite - by ryantrem (#19156)
+- Inspect Lite scene renderables - by ryantrem (#19159)
+
+### Procedural Textures
+
+- Use a GPU-independent hash in the procedural textures library - [_Bug Fix_] by bkaradzic-microsoft (#19147)
+
+### Sandbox
+
+- Fix Sandbox tests waiting for loading screens - by ryantrem (#19163)
+
+### Serializers
+
+- Fix(USDZ): decode tangent-space normal maps with scale a
+
+... (truncated)]]></description>
+    <pubDate>Mon, 16 Nov 2026 19:28:24 GMT</pubDate>
+  </item>
+  <item>
+    <title>[typescript-eslint/typescript-eslint] v8.73.0</title>
+    <link>https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.73.0</link>
+    <guid isPermaLink="true">https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.73.0</guid>
+    <description><![CDATA[## 8.73.0 (2026-11-16)
+
+### 🚀 Features
+
+- **eslint-plugin:** [consistent-type-imports] narrow report location (#12924)
+- **eslint-plugin:** [no-unsafe-class-instance-assignment] add rule (#12907)
+- **typescript-estree:** add projectService.EXPERIMENTAL_backend for TypeScript 7.1 native parser support over IPC (#12803)
+
+### ❤️ Thank You
+
+- Eren Batı @erenbati
+- Evyatar Daud @StyleShit
+- Josh Ghoulberg 👻
+- Josh Goldberg
+
+See GitHub Releases for more information.
+
+You can read about our versioning strategy and releases on our website.]]></description>
+    <pubDate>Mon, 16 Nov 2026 17:04:16 GMT</pubDate>
+  </item>
+  <item>
+    <title>[cloudflare/vinext] @cloudflare/workers-response-store@1.2.0</title>
+    <link>https://github.com/cloudflare/vinext/releases/tag/%40cloudflare/workers-response-store%401.2.0</link>
+    <guid isPermaLink="true">https://github.com/cloudflare/vinext/releases/tag/%40cloudflare/workers-response-store%401.2.0</guid>
+    <description><![CDATA[### Features
+
+- **Response Store:** opt-in purgeBatchWindow to batch edge purges (#4674)
+
+### Bug Fixes
+
+- **Response Store:** resend only refused edge requests (#4691)
+
+### Performance
+
+#### Response Store
+
+- drop a fill of a miss another fill already replaced (#4641)
+- skip the edge purge when a put replaces a tombstone whose edge purge completed (#4640)
+- skip the edge purge when a put replaces a stale entry with a revalidator (#4639)
+
+### Contributors
+
+- @james-elicx]]></description>
+    <pubDate>Mon, 16 Nov 2026 14:02:13 GMT</pubDate>
+  </item>
+  <item>
+    <title>[oxc-project/oxc] oxlint v1.94.0 (oxlint_v1.94.0)</title>
+    <link>https://github.com/oxc-project/oxc/releases/tag/oxlint_v1.94.0</link>
+    <guid isPermaLink="true">https://github.com/oxc-project/oxc/releases/tag/oxlint_v1.94.0</guid>
+    <description><![CDATA[### 🚀 Features
+
+- db5bc6b linter: Output recommended flag in `--rules` JSON output (#29338) (Cam McHenry)
+- acd8814 linter/typescript/no-misused-promises: Add `flagUnions` option (#29380) (camc314)
+- fa492d6 minifier: Merge adjacent switch cases with identical bodies (#29316) (camc314)
+- ca3b2cb linter/vue/no-shared-component-data: Implement fixer (#29291) (Mikhail Baev)
+- bfe3498 linter: Mark oxc rules as recommended (#28091) (Cam McHenry)
+- 5da83ae linter/eslint/no-unused-vars: Suggest removing unused type parameters (#28762) (YanYunCY)
+- 6816662 linter/jsdoc/require-param-description: Implement suggestion (#29118) (Mikhail Baev)
+
+### 🐛 Bug Fixes
+
+- 8d49552 linter/vitest/prefer-importing-vitest-globals: Insert imports after shebangs and directives (#29674) (camc314)
+- 4526cae linter: Drop `## Example` headings from overrides config docs (#29670) (oxc-captain[bot])
+- 97ed4b7 linter: Mark undefined argument removal as dangerous (#29266) (周星星同学)
+- 58ef81d linter/typescript/prefer-func
+
+... (truncated)]]></description>
+    <pubDate>Mon, 16 Nov 2026 12:26:24 GMT</pubDate>
+  </item>
+  <item>
+    <title>[cloudflare/workers-sdk] wrangler@4.163.0</title>
+    <link>https://github.com/cloudflare/workers-sdk/releases/tag/wrangler%404.163.0</link>
+    <guid isPermaLink="true">https://github.com/cloudflare/workers-sdk/releases/tag/wrangler%404.163.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- #16917 `d36b39d` Thanks @jamesopstad! - Write Build Output to `.cloudflare/output/v1/` and record the producer
+
+ `vite build` and the experimental `wrangler build --experimental-cf-build-output` now write Build Output v1, with account settings nested under `settings` in the root `config.json`. They also record themselves as the `producer`, so readers can name the tool that wrote the output in error messages. Previews from Build Output read the account settings from their new location.
+
+- #16246 `349fc4e` Thanks @leostera! - Start local Workflows from Artifacts events
+
+ Declare Artifacts events on `exports.workflow({ name, events })` in `cloudflare.config.ts` to start the owning Workflow locally in `cf`, Vite, and Workers Vitest. Wrangler configurations continue to use `triggers.events`. Native config conversion derives those targets from the Workflow export, and `cf migrate` attaches existing event subscriptions to their matching Workflow exports.
+
+ Local Artifacts
+
+... (truncated)]]></description>
+    <pubDate>Mon, 16 Nov 2026 12:14:41 GMT</pubDate>
+  </item>
+  <item>
+    <title>[Seldaek/monolog] 3.13.0</title>
+    <link>https://github.com/Seldaek/monolog/releases/tag/3.13.0</link>
+    <guid isPermaLink="true">https://github.com/Seldaek/monolog/releases/tag/3.13.0</guid>
+    <description><![CDATA[* Security: Fixed `LineFormatter` replacing placeholders found inside logged values, so a message or context value containing e.g. `%context.` could pull other fields into the line or strip everything up to the next `%`, often the whole context (#2099)
+ * Security: Fixed `RedactingFormatter` not redacting sensitive keys inside objects (public properties or `jsonSerialize` output), nor secrets written with unicode/slash JSON escaping or with their line breaks replaced by `LineFormatter` (#2100)
+ * Security: Fixed `SyslogFormatter` writing line breaks in messages as-is, letting a message start what line-based consumers read as a second record, they are now replaced with spaces unless `includeStacktraces` is enabled (#2098)
+ * BC Warning: `SyslogUdpHandler` now writes RFC 3164 timestamps in the record's timezone (the `Logger`'s) instead of UTC, as receivers read them as local time, set the `Logger` timezone to UTC to keep the previous output (#2101)
+ * Added Psalm taint analysis annot
+
+... (truncated)]]></description>
+    <pubDate>Mon, 16 Nov 2026 10:45:34 GMT</pubDate>
+  </item>
+  <item>
+    <title>[vercel-labs/skills] v1.9.0</title>
+    <link>https://github.com/vercel-labs/skills/releases/tag/v1.9.0</link>
+    <guid isPermaLink="true">https://github.com/vercel-labs/skills/releases/tag/v1.9.0</guid>
+    <description><![CDATA[## Changelog
+
+- feat(add): warn when a GitHub rate limit forces the blob fast path to clone (#2761)
+- fix(local-lock): serialize lockfile updates and write atomically (#2750)
+- feat(lock): pin lock entries to the installed commit (#2735)
+- feat(add): install a skill under a new name with --rename (#2722)
+- fix(installer): keep skill links valid when the agent skills dir is a symlink (#2283)
+
+## Contributors
+
+@FredAmartey,@antfu @antfubot,@sivraamkrishnankv @yashh1323]]></description>
+    <pubDate>Mon, 16 Nov 2026 10:28:13 GMT</pubDate>
+  </item>
+  <item>
+    <title>[googleapis/google-cloud-go] storage: v1.71.0 (storage/v1.71.0)</title>
+    <link>https://github.com/googleapis/google-cloud-go/releases/tag/storage/v1.71.0</link>
+    <guid isPermaLink="true">https://github.com/googleapis/google-cloud-go/releases/tag/storage/v1.71.0</guid>
+    <description><![CDATA[## 1.71.0 (2026-11-14)
+
+
+### Features
+
+* **storage:** Add default buffer pool for gRPC parallel uploads (#20719) (69a9ad3)
+* **storage:** Add error.type and gcp.errors.domain to operation spans (#20705) (50cd4a3)
+* **storage:** Add gcp.client.retry.attempt_number to gRPC attempt spans (#20716) (5528a50)
+* **storage:** Add gcp.storage.payload.offset/size_bytes to attempt spans (#20757) (56721d1)
+* **storage:** Add gcp.storage.upload.id attribute for resumable uploads (#20687) (1259592)
+* **storage:** Add gcp.storage.uri trace attribute to object and bucket operation spans (#20606) (dfdddde)
+* **storage:** Add OpenTelemetry tracing for auth credential refreshes (#20677) (3ec4bb2)
+* **storage:** Add RetryBackoff spans for retry backoffs (#20715) (edca405)
+* **storage:** Add rpc.system.name attribute to trace spans (#20655) (7d238ad)
+* **storage:** Add Storage.UploadChunk spans for resumable uploads (#20750) (22c9ad5)
+* **storage:** Align metric names, units, and base labels (#20796) (9e83
+
+... (truncated)]]></description>
+    <pubDate>Mon, 16 Nov 2026 06:39:47 GMT</pubDate>
+  </item>
   <item>
     <title>[sindresorhus/eslint-plugin-unicorn] v80.0.0</title>
     <link>https://github.com/sindresorhus/eslint-plugin-unicorn/releases/tag/v80.0.0</link>
@@ -180,41 +394,6 @@ Because the engine follows CommonMark 0.31.2 and GFM, some documents look differ
     <pubDate>Fri, 13 Nov 2026 21:02:22 GMT</pubDate>
   </item>
   <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-11-13) (release-2026-11-13)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-13</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-13</guid>
-    <description><![CDATA[## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/appstream`: [v1.74.0](service/appstream/CHANGELOG.md#v1740-2026-11-13)
- * **Feature**: Amazon WorkSpaces Agent Access now supports image builders, so AI agents can install, configure, and test applications before you create an image. New Replay Session delivers a video of screenshots, a transcript, and a report for each agent session, optionally encrypted with your own KMS key.
-* `github.com/aws/aws-sdk-go-v2/service/cloudformation`: [v1.84.0](service/cloudformation/CHANGELOG.md#v1840-2026-11-13)
- * **Feature**: AWS CloudFormation introduces stack aliases, which let you refer to an existing stack by a new name without deleting and recreating it. Manage aliases with SetAlias and RemoveAlias, and use an alias in place of the stack name in operations such as UpdateStack.
-* `github.com/aws/aws-sdk-go-v2/service/cognitoidentityprovider`: [v1.77.0](service/cognitoidentityprovider/CHANGELOG.md#v1770-2026-11-13)
- * **Feature**: Addin
-
-... (truncated)]]></description>
-    <pubDate>Fri, 13 Nov 2026 20:18:31 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-js-v3] v3.1169.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1169.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1169.0</guid>
-    <description><![CDATA[#### 3.1169.0(2026-11-13)
-
-##### Documentation Changes
-
-* **client-docdb:** Update the documentation for the --engine-version flag for cluster creation (0ac0e4c4)
-
-##### New Features
-
-* **client-qconnect:** Amazon Q in Connect now supports additional message template attributes. You can personalize message templates using case fields, Amazon Connect Customer Profiles calculated attributes, and product recommendations. (2f4fead5)
-* **client-scheduler:** Adds EventBridgePutEventsV2Parameters and EventBridgePutRawEventsParameters to Target so schedules can publish to Amazon EventBridge event bus v2 with PutEvents or PutRawEvents. (d27b4fb7)
-* **client-rolesanywhere:** This release adds resource aliases for IAM Roles Anywhere trust anchors, profiles, and certificate revocation lists (CRLs). Assign an optional, unique alias name to a resource and use its alias ARN wherever an identifier is accepted, including CreateSession. (369a390e)
-* **client-deadline:** AWS Deadline Cloud now supports t
-
-... (truncated)]]></description>
-    <pubDate>Fri, 13 Nov 2026 20:16:17 GMT</pubDate>
-  </item>
-  <item>
     <title>[panva/openid-client] v6.9.0</title>
     <link>https://github.com/panva/openid-client/releases/tag/v6.9.0</link>
     <guid isPermaLink="true">https://github.com/panva/openid-client/releases/tag/v6.9.0</guid>
@@ -249,21 +428,6 @@ Because the engine follows CommonMark 0.31.2 and GFM, some documents look differ
     <guid isPermaLink="true">https://github.com/lynx-family/lynx/releases/tag/4.3.0-rc.1</guid>
     <description><![CDATA[No release notes provided.]]></description>
     <pubDate>Fri, 13 Nov 2026 17:30:26 GMT</pubDate>
-  </item>
-  <item>
-    <title>[cloudflare/workers-sdk] @cloudflare/workers-utils@0.54.0</title>
-    <link>https://github.com/cloudflare/workers-sdk/releases/tag/%40cloudflare/workers-utils%400.54.0</link>
-    <guid isPermaLink="true">https://github.com/cloudflare/workers-sdk/releases/tag/%40cloudflare/workers-utils%400.54.0</guid>
-    <description><![CDATA[### Minor Changes
-
-- #16735 `f005593` Thanks @leostera! - Use the local simulator for Artifacts bindings that omit `remote`
-
- **Behavior change:** Artifacts bindings now default to the local simulator during development, like KV, R2 and D1. Previously, an omitted `remote` in Wrangler and the Vite plugin used the deployed Artifacts resource. If you want deployed repos in `wrangler dev` or `vite dev`, set `"remote": true` on the binding (`dev: { remote: true }` in `cloudflare.config.ts`). Artifacts is in beta, so this ships as a minor release.
-
- While `remote` is omitted, `wrangler dev`, `getPlatformProxy` and the Vite plugin warn when remote bindings are enabled, once for each binding rather than on every config reload: "Artifacts binding REPOS uses the local simulator by default. Set `remote: true` to use deployed repos, or `remote: false` to silence this warning." Workers Vitest and `wrangler dev --local` already used the simulator, so they don't warn. Local Artifacts needs no Cloudfl
-
-... (truncated)]]></description>
-    <pubDate>Fri, 13 Nov 2026 17:11:59 GMT</pubDate>
   </item>
   <item>
     <title>[anomalyco/opencode] v2.3.0</title>
@@ -417,26 +581,6 @@ When constructing a `MongoClient`:
     <pubDate>Thu, 12 Nov 2026 13:19:45 GMT</pubDate>
   </item>
   <item>
-    <title>[BabylonJS/Babylon.js] 9.36.0</title>
-    <link>https://github.com/BabylonJS/Babylon.js/releases/tag/9.36.0</link>
-    <guid isPermaLink="true">https://github.com/BabylonJS/Babylon.js/releases/tag/9.36.0</guid>
-    <description><![CDATA[### Core
-
-- Native: only filter depth textures that use a comparison function - [_Bug Fix_] by bkaradzic-microsoft (#19153)
-- Native: support alpha-to-coverage - [_Bug Fix_] by bkaradzic-microsoft (#19148)
-- Gaussian Splatting: back streaming atlases with render targets on Native - [_Bug Fix_] by bkaradzic-microsoft (#19144)
-- Native: sort Gaussian splat ranges and compound parts with sortSplatIndices - [_Bug Fix_] by bkaradzic-microsoft (#19141)
-- Support ALPHA_MIN/ALPHA_MAX on NativeEngine - [_Bug Fix_] by bkaradzic-microsoft (#19139)
-- Decode meshopt on the main thread when Worker is unavailable - [_Bug Fix_] by bkaradzic-microsoft (#19138)
-- Apply glTF normalized override when Draco decodes without workers - [_Bug Fix_] by bkaradzic-microsoft (#19137)
-- Fix undefined shader math in SSAO2 and IBL shadow tracing - [_Bug Fix_] by bkaradzic-microsoft (#19136)
-- WebGPU snapshot: encode unchanged draws again from their recorded commands - by enriqxxx (#19089)
-- Deprecate HTML-in-Canvas p
-
-... (truncated)]]></description>
-    <pubDate>Thu, 12 Nov 2026 11:33:38 GMT</pubDate>
-  </item>
-  <item>
     <title>[nanaism/yomiyasu] v3.1.0</title>
     <link>https://github.com/nanaism/yomiyasu/releases/tag/v3.1.0</link>
     <guid isPermaLink="true">https://github.com/nanaism/yomiyasu/releases/tag/v3.1.0</guid>
@@ -475,18 +619,6 @@ yomiyasu はこれまで、スキルの名前を「バージョンを上げて�
 
 🔗 Prettier 3.10: New Flow syntax, new JavaScript syntax, and new plugin powered by Yuku]]></description>
     <pubDate>Wed, 11 Nov 2026 12:31:23 GMT</pubDate>
-  </item>
-  <item>
-    <title>[googleapis/google-cloud-go] pubsub: v2.9.0 (pubsub/v2.9.0)</title>
-    <link>https://github.com/googleapis/google-cloud-go/releases/tag/pubsub/v2.9.0</link>
-    <guid isPermaLink="true">https://github.com/googleapis/google-cloud-go/releases/tag/pubsub/v2.9.0</guid>
-    <description><![CDATA[## 2.9.0 (2026-11-10)
-
-
-### Features
-
-* Update API sources and regenerate (#20873) (3ded070)]]></description>
-    <pubDate>Tue, 10 Nov 2026 23:14:41 GMT</pubDate>
   </item>
   <item>
     <title>[Comfy-Org/ComfyUI] v0.45.0</title>
@@ -558,31 +690,6 @@ specify init my-project
 
 ... (truncated)]]></description>
     <pubDate>Tue, 10 Nov 2026 20:01:54 GMT</pubDate>
-  </item>
-  <item>
-    <title>[vercel-labs/skills] v1.8.0</title>
-    <link>https://github.com/vercel-labs/skills/releases/tag/v1.8.0</link>
-    <guid isPermaLink="true">https://github.com/vercel-labs/skills/releases/tag/v1.8.0</guid>
-    <description><![CDATA[## Changelog
-
-- fix(update): keep locked skill paths inside the clone (#2726)
-- feat(add): skip agents whose install path is a category dir (#2725)
-- fix(installer): check all install targets before writing (#2724)
-- fix(installer): never delete agent category dirs on install (#2723)
-- fix(update): read only locked skill paths for project updates (#2721)
-- test: relax vitest timeouts on windows to reduce flakes (#2720)
-- fix: respect NO_COLOR and TTY detection for all CLI escape codes (#2716)
-- fix(remove): only remove lock-tracked project skills with --all (#2715)
-- refactor: simplify GitHub rename following (#2713)
-- fix(cli): parse subcommand options with util.parseArgs (#2712)
-- feat(add): follow renamed GitHub repos to their canonical owner/repo (#2711)
-- fix(skills): support string metadata.internal values (#2702)
-- chore: keep factory-board.md out of the published npm package (#2691)
-- feat(lock): verifiable, portable computedHash and lock v2 (#2685)
-- fix(remove): remove skills
-
-... (truncated)]]></description>
-    <pubDate>Tue, 10 Nov 2026 18:29:49 GMT</pubDate>
   </item>
   <item>
     <title>[aaif-goose/goose] v1.59.0</title>
@@ -751,30 +858,6 @@ For now you can view the generated release notes below.
 
 ... (truncated)]]></description>
     <pubDate>Mon, 09 Nov 2026 12:29:13 GMT</pubDate>
-  </item>
-  <item>
-    <title>[oxc-project/oxc] oxlint v1.93.0 (oxlint_v1.93.0)</title>
-    <link>https://github.com/oxc-project/oxc/releases/tag/oxlint_v1.93.0</link>
-    <guid isPermaLink="true">https://github.com/oxc-project/oxc/releases/tag/oxlint_v1.93.0</guid>
-    <description><![CDATA[### 🚀 Features
-
-- 6195265 linter/promise/prefer-catch: Implement suggestion (#28919) (Mikhail Baev)
-
-### 🐛 Bug Fixes
-
-- 866664e linter/unicorn/no-useless-undefined: Skip var initializers (#29007) (camc314)
-- 30603cb linter/react/exhaustive-deps: Preserve comments in dependency removals (#29047) (camc314)
-- 4630fe4 linter/unicorn/no-useless-undefined: Narrow return type exemptions (#29000) (camc314)
-- b63870a linter/vitest/expect-expect: Recognize benchmark fixtures (#29044) (camc314)
-- 9c62d2a linter/eslint/no-unreachable-loop: Ignore enclosing finalizers for continues (#29004) (camc314)
-- 6303df1 jsdoc: Preserve param tags after unmatched description delimiters (#28923) (Vishal Punjabi)
-- fe66fa7 linter/eslint/no-lone-blocks: Report redundant blocks in function bodies (#29043) (camc314)
-- e1694bd linter/unicorn/no-useless-undefined: Preserve shadowed bindings (#29046) (camc314)
-- 791b5f5 linter/unicorn/prefer-regexp-test: Restrict automatic argument swaps (#29045) (camc314)
-- e7654f
-
-... (truncated)]]></description>
-    <pubDate>Mon, 09 Nov 2026 11:47:15 GMT</pubDate>
   </item>
   <item>
     <title>[TanStack/router] Release 2026-11-08 01:04 (release-2026-11-08-0104)</title>
@@ -988,43 +1071,6 @@ New `failures` reporter pri
 
 ... (truncated)]]></description>
     <pubDate>Wed, 04 Nov 2026 17:04:23 GMT</pubDate>
-  </item>
-  <item>
-    <title>[Nano-Collective/nanocoder] nanocoder v1.32.0 (v1.32.0)</title>
-    <link>https://github.com/Nano-Collective/nanocoder/releases/tag/v1.32.0</link>
-    <guid isPermaLink="true">https://github.com/Nano-Collective/nanocoder/releases/tag/v1.32.0</guid>
-    <description><![CDATA[## What's Changed
-
-- Nanocoder's ACP agent now honours the `mcpServers` an editor sends on `session/new`, `session/load` and `session/resume`. Stdio and HTTP servers are connected for that session only, so their tools exist in that session (and in subagents it starts) and in no other, and your own MCP configuration is never read or changed. Loading or resuming a session replaces its previous servers, and closing it, or deleting it, disconnects them. A server that fails to connect, or uses SSE, is logged and skipped and the request still succeeds. `initialize` now reports `mcpCapabilities` (`http`). A tool whose name an existing tool already has is skipped, and these tools follow the usual approval rules. Sessions with no servers behave as before.
-- ACP extension requests now use the `_` prefix ACP reserves for custom methods: `_nanocoder/renameSession`, `_nanocoder/timeline/list`, `_nanocoder/timeline/revert` and `_nanocoder/retryTurn`. The bare names still work as deprecated aliases a
-
-... (truncated)]]></description>
-    <pubDate>Wed, 04 Nov 2026 12:43:23 GMT</pubDate>
-  </item>
-  <item>
-    <title>[ant-design/ant-design] 6.7.0</title>
-    <link>https://github.com/ant-design/ant-design/releases/tag/6.7.0</link>
-    <guid isPermaLink="true">https://github.com/ant-design/ant-design/releases/tag/6.7.0</guid>
-    <description><![CDATA[- 🆕 Add Button, Tag, Steps, Alert, and Timeline support for the global ConfigProvider `variant`, and component-specific `divider.variant` configuration for Divider line styles. #59589 #59588 #59578 #59577 #59587 #59576 @QDyanbing
-- 🆕 Add `suffix` to DatePicker, TimePicker, Select, AutoComplete, Cascader, and TreeSelect to customize suffix content, with state-based rendering for selection components. Deprecate `suffixIcon` in favor of `suffix` while retaining compatibility. #59240 #59185 @QDyanbing @meet-student
-- 🆕 Add `allowClear.tabIndex` to Input, Input.TextArea, Mentions, InputNumber, Select, AutoComplete, TreeSelect, Cascader, DatePicker, and TimePicker to control clear-button Tab order. Add `allowClear.label` to Input, Input.TextArea, Mentions, DatePicker, and TimePicker for accessible clear-button names, with field-level ConfigProvider inheritance. #59566 #59567 #59548 @QDyanbing
-- 🆕 Add App Fragment `ref` support with `component={false}` in React 19.3 and later. #59281 @li-
-
-... (truncated)]]></description>
-    <pubDate>Wed, 04 Nov 2026 03:44:43 GMT</pubDate>
-  </item>
-  <item>
-    <title>[open-webui/open-webui] v0.13.0</title>
-    <link>https://github.com/open-webui/open-webui/releases/tag/v0.13.0</link>
-    <guid isPermaLink="true">https://github.com/open-webui/open-webui/releases/tag/v0.13.0</guid>
-    <description><![CDATA[### Added
-
-- 📑 **Tabbed workspace.** The Tabs button at the top of a chat now opens a workspace for files, multiple terminal sessions, artifacts, previews, voice calls and comments. Add tabs from the + menu, drag to reorder them, and create and save new files directly into the selected terminal. Keep the conversation and its working files together while coding, analyzing data or reviewing generated documents. Commit, Commit, Commit, Commit
-- 🖥️ **Open Terminal Desktop tab for computer use.** Open the Desktop tab from the + menu to view and control the desktop provided by your connected Open Terminal, with mouse, keyboard, clipboard and audio support where available. With a model that can call its desktop tools, you can follow computer-use workflows in the same desktop and step in yourself: operate graphical apps, inspect generated documents or handle a step that needs manual input. Requires an Open Terminal connection with desktop support enabled. Commit, Commit, Commit, Commit
-- 🌐 
-
-... (truncated)]]></description>
-    <pubDate>Tue, 03 Nov 2026 12:23:16 GMT</pubDate>
   </item>
 </channel>
 </rss>
