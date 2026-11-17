@@ -5,42 +5,216 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Mon, 16 Nov 2026 22:01:32 GMT</lastBuildDate>
+  <lastBuildDate>Tue, 17 Nov 2026 22:01:33 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
   <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-11-16) (release-2026-11-16)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-16</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-16</guid>
+    <title>[pnpm/pnpm] pnpm 12.22.0 (v12.22.0)</title>
+    <link>https://github.com/pnpm/pnpm/releases/tag/v12.22.0</link>
+    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v12.22.0</guid>
+    <description><![CDATA[pnpm 12.22.0 adds a `globalPackagesConfig` section to the global `config.yaml` for settings that apply only to global packages, adds `pnpm why --ranges`, and lists workspace projects in dependency order in `pnpm list --recursive`. It also includes a security fix. After the default or a scoped registry changed, `pnpm install` could skip the `minimumReleaseAge` and `trustPolicy` checks against the new registry.
+
+### Minor Changes
+
+- Settings under `globalPackagesConfig` in the global `config.yaml` now apply only to commands that act on global packages, such as `pnpm add -g` and `pnpm update -g`. For example, `globalPackagesConfig.trustPolicyExclude` excludes a package from the trust policy for global installs only #18130.
+
+ `pnpm approve-builds -g` and `pnpm add -g --allow-build` now save build decisions under `globalPackagesConfig.permissions`. pnpm still applies build settings from the `pnpm-workspace.yaml` of the global packages directory, with a deprecation warning. The next ap
+
+... (truncated)]]></description>
+    <pubDate>Tue, 17 Nov 2026 20:20:31 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1171.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1171.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1171.0</guid>
+    <description><![CDATA[#### 3.1171.0(2026-11-17)
+
+##### New Features
+
+* **clients:** update client endpoints as of 2026-11-17 (ae5d0930)
+* **client-controltower:** AWS Control Tower now reports source drift when an enabled baseline no longer matches the landing zone's configuration. (a86aeb8f)
+* **client-billing:** Adds the SplitCredit and TransferCredit APIs to split or transfer credits, and adds benefit level sharing for Reserved Instances and Savings Plans to GetBillingPreferences and UpdateBillingPreferences. (97a39059)
+* **client-route53globalresolver:** Adds AWS Cloud WAN support to Route 53 Global Resolver via new core network endpoint APIs to connect a global resolver to a core network, segment-based access sources, and a publicIpStatus setting to disable public IPs so a resolver is reachable only over Cloud WAN. (4c69f639)
+* **client-s3-control:** Adds support for S3 Intelligent Tiering Access Tier and publishing to AWS Billing and Cost Management in S3 Storage Lens (06fd578b)
+* **client-elasticache
+
+... (truncated)]]></description>
+    <pubDate>Tue, 17 Nov 2026 19:48:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-11-17) (release-2026-11-17)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-17</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-17</guid>
     <description><![CDATA[## General Highlights
 * **Dependency Update**: Updated to the latest SDK module versions
 
 ## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/credentials`: [v1.21.1](credentials/CHANGELOG.md#v1211-2026-11-16)
- * **Bug Fix**: Refresh login credentials in the region stored in the cached token's `signInRegion` field.
-* `github.com/aws/aws-sdk-go-v2/service/athena`: [v1.68.0](service/athena/CHANGELOG.md#v1680-2026-11-16)
- * **Feature**: Adds an optional AttributesToGet parameter to ListDatabases and ListTableMetadata to return only requested database or table names (and table types) from the AWS Glue Data Catalog, reducing response time for large catalogs.
-* `github.com/aws/aws-sdk-go-v2/service/cognitoidentityprovider`: [v1.78.0](service/cognitoidentityprovider/CHANGELOG.md#v1780-2026-11-16)
- * **Feature**: Implement OAuth 2.0 Token Exchange (RFC 8693) for Cognito User Pools, enabling services to exchange a user's existing token for a new token that is appropriately scoped and audience-b
+* `github.com/aws/aws-sdk-go-v2/service/apigateway`: [v1.53.0](service/apigateway/CHANGELOG.md#v1530-2026-11-17)
+ * **Feature**: API Gateway now adds support for JWT authorizers on REST APIs.
+* `github.com/aws/aws-sdk-go-v2/service/appstream`: [v1.75.0](service/appstream/CHANGELOG.md#v1750-2026-11-17)
+ * **Feature**: Adds support for In-Session SmartCard Redirection for Windows Multi-Session fleets
+* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcore`: [v1.59.0](service/bedrockagentcore/CHANGELOG.md#v1590-2026-11-17)
+ * **Feature**: Adds support for continuous insights and automatic dataset generation
+* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcorecontrol`: [v1.81.0](service/bedrockagentcorecontrol/CHANGELOG.md#v1810-2026-11-17)
+ * **Feature**: Adds support for agent insight stores that help frame insight evaluators, and dataset source support for batch evaluation
 
 ... (truncated)]]></description>
-    <pubDate>Mon, 16 Nov 2026 20:07:18 GMT</pubDate>
+    <pubDate>Tue, 17 Nov 2026 19:47:46 GMT</pubDate>
   </item>
   <item>
-    <title>[aws/aws-sdk-js-v3] v3.1170.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1170.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1170.0</guid>
-    <description><![CDATA[#### 3.1170.0(2026-11-16)
+    <title>[solidjs/solid] v2.0.0 - The Long Hold (solid-js@2.0.0)</title>
+    <link>https://github.com/solidjs/solid/releases/tag/solid-js%402.0.0</link>
+    <guid isPermaLink="true">https://github.com/solidjs/solid/releases/tag/solid-js%402.0.0</guid>
+    <description><![CDATA[# Solid 2.0 is here
 
-##### New Features
+5 years is a long time to work on anything. Solid 1.0 bet on signals at a time when fine-grained reactivity was a rare position. Today you will find it in Angular, Svelte, Vue Vapor and a TC39 proposal. Solid 2.0 takes the next step, and today it reaches stable.
 
-* **clients:** update client endpoints as of 2026-11-16 (8a34e226)
-* **client-athena:** Adds an optional AttributesToGet parameter to ListDatabases and ListTableMetadata to return only requested database or table names (and table types) from the AWS Glue Data Catalog, reducing response time for large catalogs. (c92455df)
-* **client-kms:** AWS KMS now supports sharing KMS keys across AWS accounts using AWS Resource Access Manager (AWS RAM). This release adds the optional ResourceOwners parameter to ListKeys, which lists keys owned by the caller's account (SELF), keys shared with the account through AWS RAM, or both. (defc7b78)
-* **client-connectscheduling:** This release adds APIs for Amazon Connect Scheduling. Use them to create, get, approve, reject, and cancel agent time off requests, and to set agent time off balances. (8a1864f5)
-* **client-network-firewall:** Adds support for context-aware stateful rule groups, letting rules reference 
+### 📣 Read the announcement: Solid 2.0 - The Long Hold
+
+## What 2.0 brings
+
+- **Async in the graph.** A computation can return a Promise or an async iterator, and everything downstream just handles it. Race conditions are taken care of, optimistic state rolls back so the server stays the source of truth, and `live` streams server functions over persistent connections. Adding async does not mean refactoring your app.
+- **Built to be written by agents.** A fine-grained graph knows exactly what was read, where, and what will update. Development builds report reactive mistakes with a stable code, a source location and a fix, and the same graph catches waterfalls, runaway effects and fan-out that will
 
 ... (truncated)]]></description>
-    <pubDate>Mon, 16 Nov 2026 20:05:01 GMT</pubDate>
+    <pubDate>Tue, 17 Nov 2026 19:17:44 GMT</pubDate>
+  </item>
+  <item>
+    <title>[bluesky-social/atproto] @atproto/oauth-provider@0.26.0</title>
+    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/oauth-provider%400.26.0</link>
+    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/oauth-provider%400.26.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- #5919 `8d84a6c` Thanks @matthieusieben! - Upgrade `ioredis` to 6.x. By default, the Redis clients these packages create stay on RESP2 and skip `CLIENT SETINFO` on connect, as with `ioredis` 5, and take `ioredis` 6's other new defaults:
+ 
+ - `family` is `0` (was `4`): hostnames resolve to IPv4 or IPv6 addresses, not only IPv4.
+ - `retryStrategy` waits 50ms × 2^(attempt − 1), up to 5s, plus up to 200ms of jitter, between reconnection attempts (was 50ms × attempt, up to 2s).
+ - `keepAlive` is `30000`: TCP keepalive probes start after 30s of idle (was off).
+ 
+ The `redis` option of `OAuthProvider` now expects an `ioredis` 6 `Redis` instance, which is used as is, or `RedisOptions`, which can override these defaults.
+
+### Patch Changes
+
+- Updated dependencies :
+ - @atproto/lex-resolver@0.4.6]]></description>
+    <pubDate>Tue, 17 Nov 2026 18:38:29 GMT</pubDate>
+  </item>
+  <item>
+    <title>[microsoft/apm] v0.36.0</title>
+    <link>https://github.com/microsoft/apm/releases/tag/v0.36.0</link>
+    <guid isPermaLink="true">https://github.com/microsoft/apm/releases/tag/v0.36.0</guid>
+    <description><![CDATA[<!-- Release notes generated using configuration in .github/release.yml at v0.36.0 -->
+
+## What's Changed
+### 🔧 Other Changes
+* docs: add public APM adopters list by @danielmeppiel in 
+* fix(deps): place monorepo sibling children in deps tree and why by @danielmeppiel in 
+* fix(install): adopt unchanged committed skills on cold restore by @danielmeppiel in 
+* fix(git): pin core.symlinks=true so package hashes match across platforms by @danielmeppiel in 
+* feat(preflight): gate agent pushes and PRs on a local preflight receipt by @danielmeppiel in 
+* perf(deps): sweep raw CDN across marker probes before any anonymous Contents API call by @ShaoLOWu in 
+* fix(install): resolve transitive deps from the manifest this run installs by @adityaanikam in 
+* docs(producer): explain same-repository branch inheritance by @danielmeppiel in 
+* fix(ci): restore Windows post-merge suite after #3564 by @danielmeppiel in 
+* fix(claude): keep ${VAR} references in project .mcp.json by @Aaryan-Dadu in 
+* f
+
+... (truncated)]]></description>
+    <pubDate>Tue, 17 Nov 2026 18:15:05 GMT</pubDate>
+  </item>
+  <item>
+    <title>[sveltejs/kit] @sveltejs/kit@3.3.0</title>
+    <link>https://github.com/sveltejs/kit/releases/tag/%40sveltejs/kit%403.3.0</link>
+    <guid isPermaLink="true">https://github.com/sveltejs/kit/releases/tag/%40sveltejs/kit%403.3.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- feat: support the Vite DevTools dock in dev (#17787)]]></description>
+    <pubDate>Tue, 17 Nov 2026 16:26:42 GMT</pubDate>
+  </item>
+  <item>
+    <title>[yonaskolb/XcodeGen] 2.47.0</title>
+    <link>https://github.com/yonaskolb/XcodeGen/releases/tag/2.47.0</link>
+    <guid isPermaLink="true">https://github.com/yonaskolb/XcodeGen/releases/tag/2.47.0</guid>
+    <description><![CDATA[### Added
+- Added support for input files in build rules #1650 @GtechGovind
+- Added `buildArchitectures` to scheme build options and target schemes, to control Xcode's "Override Architectures" scheme setting #1642 @arhxam
+- Added FAQ documentation on how to add an Xcode capability, such as In-App Purchase #1644 @Hokila
+- Added `xcode26_3` `projectFormat` option for the Xcode 26.3 project format (`objectVersion = 100`) #1648 @Raymondriter
+- Added `xcode27_0` `projectFormat` option for the Xcode 27.0 project format (`objectVersion = 110`) #1658 @yonaskolb
+
+### Changed
+- Generated schemes now default to `buildArchitectures: matchRunDestination` ("Match Run Destination"), matching Xcode's default for new schemes. Previously schemes used each target's architecture settings. Set `buildArchitectures: useTargetSettings` to keep the previous behaviour #1642 @yonaskolb
+- The default `xcodeVersion` is now `16.0` (previously `14.3`), which sets `LastUpgradeCheck` in generated projects and `LastUpg
+
+... (truncated)]]></description>
+    <pubDate>Tue, 17 Nov 2026 13:45:19 GMT</pubDate>
+  </item>
+  <item>
+    <title>[pbatard/rufus] Rufus 4.16 (v4.16)</title>
+    <link>https://github.com/pbatard/rufus/releases/tag/v4.16</link>
+    <guid isPermaLink="true">https://github.com/pbatard/rufus/releases/tag/v4.16</guid>
+    <description><![CDATA[* Finally work around that stupid AMI NTFS driver bug, so that runtime UEFI media validation can work on the millions of PCs that AMI screwed up
+* Finally report USB 3.2+ devices (USB 3.2 = 20 Gbps, USB 4.0 = 40 Gpbs, USB 4.1 = 80 Gbps &mdash; See, USB Forum, it's really NOT that hard!)
+* Fix the CA 2023 updated files not being taken into account during runtime UEFI media validation
+* Fix the "Silent" installation option being potentially applied even when all dependencies aren't met (#3008)
+* Fix a regression where "Write as ESP" used the whole drive, instead of the expected 1 GB partition
+* Fix WUE timezone duplication for non English locales (#3070, #2499) and reinstate the use of dots in local usernames (#3057)
+* Add classic right click context menu restoration to the QoL improvements option (courtesy of @Fredolx , #3007)
+* Drop the ever problematic use of Group Policies when disabling the _"Do you want to format this drive?"_ prompt (#3042)
+* Improve raw image partition (r
+
+... (truncated)]]></description>
+    <pubDate>Tue, 17 Nov 2026 13:02:46 GMT</pubDate>
+  </item>
+  <item>
+    <title>[cloudflare/workers-sdk] @cloudflare/vite-plugin@1.70.0</title>
+    <link>https://github.com/cloudflare/workers-sdk/releases/tag/%40cloudflare/vite-plugin%401.70.0</link>
+    <guid isPermaLink="true">https://github.com/cloudflare/workers-sdk/releases/tag/%40cloudflare/vite-plugin%401.70.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- #16898 `e1d4554` Thanks @petebacondarwin! - Use the local simulator for Artifacts bindings that omit `remote`
+
+ Artifacts now works locally without Cloudflare credentials by default. Set `remote: true` to use deployed repositories, or `remote: false` to silence the migration warning. The updated Miniflare runtime also supplies Browser Run quick actions and local Artifacts fixes.
+
+- #16929 `319aec4` Thanks @petebacondarwin! - Start local Workflows from Artifacts events
+
+ Configure `triggers.events` in your Wrangler configuration to deliver local Artifacts repository and token events to a Workflow defined by the same Worker. Miniflare 5.20261116.0-beta and Wrangler 4.163.0 support this beta feature through Vite plugin v1. Local push, clone, fetch, and queue subscriptions remain unsupported.
+
+### Patch Changes
+
+- #16818 `befc1ad` Thanks @petebacondarwin! - Remove unsupported CLI flag advice from v1 Container Docker errors
+
+ When Docker is unavailable, suggest disablin
+
+... (truncated)]]></description>
+    <pubDate>Tue, 17 Nov 2026 12:31:09 GMT</pubDate>
+  </item>
+  <item>
+    <title>[anomalyco/opencode] process-daemon v0.6.0 (process-daemon-v0.6.0)</title>
+    <link>https://github.com/anomalyco/opencode/releases/tag/process-daemon-v0.6.0</link>
+    <guid isPermaLink="true">https://github.com/anomalyco/opencode/releases/tag/process-daemon-v0.6.0</guid>
+    <description><![CDATA[opencode-pty 0.6.0 (protocol 9) from packages/process-daemon, published to npm as @opencode/pty@0.6.0.]]></description>
+    <pubDate>Mon, 16 Nov 2026 23:36:04 GMT</pubDate>
+  </item>
+  <item>
+    <title>[dprint/dprint] 0.65.0</title>
+    <link>https://github.com/dprint/dprint/releases/tag/0.65.0</link>
+    <guid isPermaLink="true">https://github.com/dprint/dprint/releases/tag/0.65.0</guid>
+    <description><![CDATA[## Changes
+
+* feat(BREAKING): support checksums on extends and only configure process plugins from trusted configuration (#1396)
+* fix(BREAKING): don't let associations or remote negated excludes override the gitignore (#1393)
+* feat: update npm specifiers in extends with dprint config update (#1464)
+* feat: let plugins say whether they format a range (#1422)
+* feat: add permissions to `dprint lsp` to prevent editor from downloading from untrusted sources and to prevent running process plugins without approval (#1408)
+* feat: publish a signed packslip with each release (#1407)
+* feat(BREAKING): restrict process plugins override config (#1397, #1457)
+* fix: only allow npm package names that npm allows (#1402)
+* fix: explain a missing dynamic loader when a process plugin fails to start (#1403)
+* fix: report a wasm plugin running out of stack as an error for the file, and give wasm 8 MiB of stack (#1463)
+* fix: respect `.git/info/exclude` in a linked git worktree and a submodu
+
+... (truncated)]]></description>
+    <pubDate>Mon, 16 Nov 2026 23:03:48 GMT</pubDate>
   </item>
   <item>
     <title>[BabylonJS/Babylon.js] 9.37.0</title>
@@ -147,25 +321,6 @@ You can read about our versioning strategy and releases on our website.]]></desc
 
 ... (truncated)]]></description>
     <pubDate>Mon, 16 Nov 2026 12:26:24 GMT</pubDate>
-  </item>
-  <item>
-    <title>[cloudflare/workers-sdk] wrangler@4.163.0</title>
-    <link>https://github.com/cloudflare/workers-sdk/releases/tag/wrangler%404.163.0</link>
-    <guid isPermaLink="true">https://github.com/cloudflare/workers-sdk/releases/tag/wrangler%404.163.0</guid>
-    <description><![CDATA[### Minor Changes
-
-- #16917 `d36b39d` Thanks @jamesopstad! - Write Build Output to `.cloudflare/output/v1/` and record the producer
-
- `vite build` and the experimental `wrangler build --experimental-cf-build-output` now write Build Output v1, with account settings nested under `settings` in the root `config.json`. They also record themselves as the `producer`, so readers can name the tool that wrote the output in error messages. Previews from Build Output read the account settings from their new location.
-
-- #16246 `349fc4e` Thanks @leostera! - Start local Workflows from Artifacts events
-
- Declare Artifacts events on `exports.workflow({ name, events })` in `cloudflare.config.ts` to start the owning Workflow locally in `cf`, Vite, and Workers Vitest. Wrangler configurations continue to use `triggers.events`. Native config conversion derives those targets from the Workflow export, and `cf migrate` attaches existing event subscriptions to their matching Workflow exports.
-
- Local Artifacts
-
-... (truncated)]]></description>
-    <pubDate>Mon, 16 Nov 2026 12:14:41 GMT</pubDate>
   </item>
   <item>
     <title>[Seldaek/monolog] 3.13.0</title>
@@ -364,36 +519,6 @@ Because the engine follows CommonMark 0.31.2 and GFM, some documents look differ
     <pubDate>Fri, 13 Nov 2026 21:29:31 GMT</pubDate>
   </item>
   <item>
-    <title>[bluesky-social/atproto] @atproto/ozone@0.15.0</title>
-    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/ozone%400.15.0</link>
-    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/ozone%400.15.0</guid>
-    <description><![CDATA[### Minor Changes
-
-- #5900 `f174012` Thanks @gcwill70! - Add admin-only moderator activity history combining human report activities and moderation events in chronological order.]]></description>
-    <pubDate>Fri, 13 Nov 2026 21:11:27 GMT</pubDate>
-  </item>
-  <item>
-    <title>[pnpm/pnpm] pnpm 12.21 (v12.21.0)</title>
-    <link>https://github.com/pnpm/pnpm/releases/tag/v12.21.0</link>
-    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v12.21.0</guid>
-    <description><![CDATA[pnpm 12.21.0 lets `pnpm store add` prepare tarball and git dependencies for offline installs. It also makes repeated installs keep their peer dependency choices and fixes several `lockfile.format: v13`, `nodeLinker: hoisted`, and `pnpm deploy` failures. If a pnpr server refuses a setting, pnpm now resolves locally.
-
-### Minor Changes
-
-- `pnpm store add` run in a project now prepares downloaded tarballs for every lockfile entry that pins them. Besides registry packages, `pnpm install --offline --frozen-lockfile` can then install dependencies on a tarball URL and dependencies on a git host such as GitHub whose lockfile entry records an `integrity`.
-
-### Patch Changes
-
-#### Installs that failed
-
-- pnpm now reads a lockfile with a mapping key longer than 1,024 characters written as `'key':`, without the `? ` marker. Before, `pnpm install` and other commands failed on such a lockfile with `ERR_PNPM_BROKEN_LOCKFILE`.
-
-- With `lockfile.format: v13`, `pnpm install` no longer fails 
-
-... (truncated)]]></description>
-    <pubDate>Fri, 13 Nov 2026 21:02:22 GMT</pubDate>
-  </item>
-  <item>
     <title>[panva/openid-client] v6.9.0</title>
     <link>https://github.com/panva/openid-client/releases/tag/v6.9.0</link>
     <guid isPermaLink="true">https://github.com/panva/openid-client/releases/tag/v6.9.0</guid>
@@ -428,41 +553,6 @@ Because the engine follows CommonMark 0.31.2 and GFM, some documents look differ
     <guid isPermaLink="true">https://github.com/lynx-family/lynx/releases/tag/4.3.0-rc.1</guid>
     <description><![CDATA[No release notes provided.]]></description>
     <pubDate>Fri, 13 Nov 2026 17:30:26 GMT</pubDate>
-  </item>
-  <item>
-    <title>[anomalyco/opencode] v2.3.0</title>
-    <link>https://github.com/anomalyco/opencode/releases/tag/v2.3.0</link>
-    <guid isPermaLink="true">https://github.com/anomalyco/opencode/releases/tag/v2.3.0</guid>
-    <description><![CDATA[### Highlights
-
-- **Background Subagents by Default**: Subagents now return immediately, continue in the background, and report back whenever they become idle. You can keep working in the parent session while multiple subagents run concurrently. (#63382)
-- **Quieter Transcripts by Default**: The TUI now summarizes each run of tool calls and thoughts into one collapsible activity row, so the answer is easier to follow. To see every step again, set **Verbosity** to `medium` or `high` in settings, or set `session.verbosity` in your TUI config; an existing setting is kept. (#63207)
-- **Jump to an Earlier Prompt**: In the desktop app, open **Jump to message** from the command palette or press `Cmd+Alt+G` (`Ctrl+Alt+G` on Windows and Linux) to search prompts across the current session and jump directly to one. (#63585)
-
-### Core
-
-#### Improvements
-
-- Subagents now always run in the background, return their session ID immediately, and report results to their parent whenever they become idle. 
-
-... (truncated)]]></description>
-    <pubDate>Fri, 13 Nov 2026 08:55:07 GMT</pubDate>
-  </item>
-  <item>
-    <title>[openai/codex] 0.169.0 (rust-v0.169.0)</title>
-    <link>https://github.com/openai/codex/releases/tag/rust-v0.169.0</link>
-    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.169.0</guid>
-    <description><![CDATA[## New Features
-
-- The opt-in terminal workspace supports multiple side-chat tabs. Switch between them with the keyboard or mouse, and reopen saved local side chats after restarting Codex. (#59784, #60152, #60181)
-- Search older tasks from the agent command center by name, prompt preview, or working directory. (#60286)
-- Turn on **Collapse turn details** in the full-screen transcript to fold completed activity beneath each prompt while keeping answers visible and tool output searchable. (#60554, #60555, #60556, #60557)
-- Add or edit custom model providers from the terminal. With custom gateway onboarding enabled, you can create a provider during sign-in and use a device code for supported gateways over SSH or without a local browser. (#59779, #60009, #60186, #60486, #60662)
-- Press `Ctrl+S` in the terminal report editor to save a diagnostic ZIP locally, even when uploads are disabled. (#60542)
-- With the opt-in Cloud connection on macOS and Linux, send images, choose a model and reason
-
-... (truncated)]]></description>
-    <pubDate>Fri, 13 Nov 2026 08:37:05 GMT</pubDate>
   </item>
   <item>
     <title>[cli/cli] GitHub CLI 2.104.0 (v2.104.0)</title>
@@ -752,37 +842,6 @@ specify init my-project
     <pubDate>Tue, 10 Nov 2026 09:32:54 GMT</pubDate>
   </item>
   <item>
-    <title>[sveltejs/kit] @sveltejs/kit@3.2.0</title>
-    <link>https://github.com/sveltejs/kit/releases/tag/%40sveltejs/kit%403.2.0</link>
-    <guid isPermaLink="true">https://github.com/sveltejs/kit/releases/tag/%40sveltejs/kit%403.2.0</guid>
-    <description><![CDATA[### Minor Changes
-
-- feat: Add clickable links to remote function invocation in dev server logs (#17547)
-
-### Patch Changes
-
-- fix: reject URL inputs in `resolve` (#17627)
-
-- fix: respond with JSON instead of rendering the error page for a `__data.json` request to a missing route (#17630)
-
-- fix: resolve relative paths against the page URL in data requests when `paths.relative` is `true` (#17630)
-
-- fix: reject binary remote forms referencing files with an empty file-offset table as 400 Bad Request (#17579)
-
-- fix: correctly populate route and params for `afterNavigate` during hydration (#17577)
-
-- fix: include assets imported through dynamic imports, remote functions and param matchers in `builder.findServerAssets` so that `read` can find them (#17505)
-
-- fix: set `navigation.from` to `null` in `afterNavigate` on start when SSR is disabled (#17587)
-
-- fix: include remote function name and declaration file in schema validation failure logs (#17495)
-
-- fix: reuse SSR results of remote f
-
-... (truncated)]]></description>
-    <pubDate>Tue, 10 Nov 2026 09:09:39 GMT</pubDate>
-  </item>
-  <item>
     <title>[markedjs/marked] v18.2.0</title>
     <link>https://github.com/markedjs/marked/releases/tag/v18.2.0</link>
     <guid isPermaLink="true">https://github.com/markedjs/marked/releases/tag/v18.2.0</guid>
@@ -980,97 +1039,6 @@ The Delete action on the Containers and Volumes pages used to run the moment you
 
 ... (truncated)]]></description>
     <pubDate>Thu, 05 Nov 2026 23:41:36 GMT</pubDate>
-  </item>
-  <item>
-    <title>[microsoft/playwright] v1.65.0</title>
-    <link>https://github.com/microsoft/playwright/releases/tag/v1.65.0</link>
-    <guid isPermaLink="true">https://github.com/microsoft/playwright/releases/tag/v1.65.0</guid>
-    <description><![CDATA[## 🥟 Run tests with Bun
-
-The test runner now runs under Bun. Bun transpiles your TypeScript test files itself, so Playwright does not use Babel or its compilation cache. Pass the `--bun` flag, because without it `bunx playwright test` runs on Node.js:
-
-```bash
-bunx --bun playwright test
-```
-
-Our CI runs the test runner tests under Bun 1.4.3 on Linux. Some features work differently under Bun:
-
-- There is no watch mode. UI mode does not run tests again when files change, and `--only-changed` does not follow imports.
-- Bun loads modules itself, so `--tsconfig` and the JSX options in `tsconfig.json` have no effect, and custom ESM loaders are not supported.
-- Stack traces do not include async frames, and API names do not include the class name: `click` instead of `locator.click`. This changes some step locations, step titles and error messages.
-- Console output of a test does not get into the trace and UI mode.
-
-## 🚨 Reports with only failures
-
-New `failures` reporter pri
-
-... (truncated)]]></description>
-    <pubDate>Thu, 05 Nov 2026 18:25:45 GMT</pubDate>
-  </item>
-  <item>
-    <title>[jsdom/jsdom] v31.0.0</title>
-    <link>https://github.com/jsdom/jsdom/releases/tag/v31.0.0</link>
-    <guid isPermaLink="true">https://github.com/jsdom/jsdom/releases/tag/v31.0.0</guid>
-    <description><![CDATA[## Breaking changes
-
-- Changed the optional canvas and image decoding backend from `canvas` to `@napi-rs/canvas`. Install `@napi-rs/canvas` v1.0.13 or later in the v1.x series alongside jsdom; installing `canvas` alone no longer enables this support. The new backend provides prebuilt Skia binaries on supported platforms, and rendering and encoded image bytes can differ. Projects using native canvas objects or custom font registration should follow the canvas migration guidance. Added WebP serialization through `canvas.toDataURL` and `canvas.toBlob`. Fixed image loading to wait for decoding before firing `load`, discard obsolete source requests, avoid refetching when dimensions change, and prevent failed images from drawing stale contents. Fixed canvas context and serialization behavior, including unsupported context types, read-only `ctx.canvas`, image-drawing exceptions, MIME type and quality normalization, and asynchronous `null` results from `canvas.toBlob` for empty canvases or enc
-
-... (truncated)]]></description>
-    <pubDate>Thu, 05 Nov 2026 12:12:39 GMT</pubDate>
-  </item>
-  <item>
-    <title>[remix-run/remix] remix v3.2.0 (remix@3.2.0)</title>
-    <link>https://github.com/remix-run/remix/releases/tag/remix%403.2.0</link>
-    <guid isPermaLink="true">https://github.com/remix-run/remix/releases/tag/remix%403.2.0</guid>
-    <description><![CDATA[### Minor Changes
-
-- Protect apps with a nonce-based Content Security Policy using `csp` from `remix/middleware/csp`. Add it before `render` and it generates a nonce for each request along with a matching policy. Generated import maps, module preloads, and `css` styles receive the nonce automatically, and authored tags can read it with `getCspNonce(context)`: (#12098)
-
- ```ts
- import { createRouter } from 'remix/router'
- import { csp } from 'remix/middleware/csp'
- import { render } from 'remix/middleware/render'
-
- let router = createRouter({
- middleware: [
- csp({
- policy: ({ nonce }) => ({
- scriptSrc: [`'nonce-${nonce}'`],
- styleSrc: [`'nonce-${nonce}'`],
- }),
- }),
- render,
- ],
- })
- ```
-
- Frames rendered on the server share the document's nonce, and client navigation keeps it across frame and island updates. HMR updates that add imports and `remix/multiple-import-maps-polyfill` also work under a strict policy, including one without `'unsafe-eval'`. The middleware supports report-only p
-
-... (truncated)]]></description>
-    <pubDate>Wed, 04 Nov 2026 21:29:27 GMT</pubDate>
-  </item>
-  <item>
-    <title>[zed-industries/zed] v1.27.0</title>
-    <link>https://github.com/zed-industries/zed/releases/tag/v1.27.0</link>
-    <guid isPermaLink="true">https://github.com/zed-industries/zed/releases/tag/v1.27.0</guid>
-    <description><![CDATA[This week's release includes syntax highlighting for Go 1.27 generic methods, an option to open README files by default, and AI commit messages that follow your repository's recent commit style.
-
-## Features
-
-### AI
-
-- Improved Agent Panel memory usage by loading tool-call diffs and parsing thread message Markdown only when first viewed, instead of when loading a thread. (#65444, #65470; thanks Vanuan)
-- Improved AI commit message generation by using the three most recent repository commit messages as style examples. (#61528; thanks matheuslrd)
-- Improved CPU usage and disk reads while the agent was working, especially with a long thread history. (#66015)
-
-### Git
-
-- Added missing tooltips to the close, commit message, and "View on" buttons in the Git Graph's commit details panel. (#66016; thanks skmanoj322)
-- Improved Git Graph rendering performance. (#66180; thanks RemcoSmitsDev)
-- Improved the Git Panel's error message when a push was rejected because the local branch 
-
-... (truncated)]]></description>
-    <pubDate>Wed, 04 Nov 2026 17:04:23 GMT</pubDate>
   </item>
 </channel>
 </rss>
