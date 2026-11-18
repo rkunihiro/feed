@@ -5,8 +5,323 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Tue, 17 Nov 2026 22:01:33 GMT</lastBuildDate>
+  <lastBuildDate>Wed, 18 Nov 2026 22:01:13 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[cloudflare/workers-sdk] wrangler@4.165.0</title>
+    <link>https://github.com/cloudflare/workers-sdk/releases/tag/wrangler%404.165.0</link>
+    <guid isPermaLink="true">https://github.com/cloudflare/workers-sdk/releases/tag/wrangler%404.165.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- #10598 `24bd3c3` Thanks @Ehbraheem! - Add a new `--force` flag to `d1 migrations apply` which skips the interactive confirmation and applies any pending migrations non-interactively. This is useful for CI and automation.
+
+ Usage example:
+
+ ```
+ wrangler d1 migrations apply <db> --remote --force
+ ```
+
+ Fixes #5017
+
+### Patch Changes
+
+- #16019 `8f26e90` Thanks @penalosa! - Correct the dry-run setup message to say "exiting now" instead of "existing now".
+
+ The previous wording contained a typo and appeared in Wrangler setup output and other consumers of shared autoconfig.
+
+- #17003 `3595295` Thanks @dependabot! - Update `DEFAULT_COMPAT_DATE` to 2026-11-18
+
+ Use the bundled workerd release's compatibility date by default when scaffolding new projects or when no compatibility date is configured.
+
+- #17003 `3595295` Thanks @dependabot! - Update dependencies of "miniflare", "wrangler"
+
+ The following dependency versions have been updated:
+
+ | Dependency | From | To |
+ | -
+
+... (truncated)]]></description>
+    <pubDate>Wed, 18 Nov 2026 21:56:19 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-11-18) (release-2026-11-18)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-18</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-18</guid>
+    <description><![CDATA[## General Highlights
+* **Dependency Update**: Updated to the latest SDK module versions
+
+## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/service/abusesignal`: [v1.0.0](service/abusesignal/CHANGELOG.md#v100-2026-11-18)
+ * **Release**: New AWS service client module
+ * **Feature**: This release introduces the AWS Abuse Signal API, enabling customers to programmatically submit and track AWS abuse reports.
+* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcorecontrol`: [v1.82.0](service/bedrockagentcorecontrol/CHANGELOG.md#v1820-2026-11-18)
+ * **Feature**: Adds s3BucketMount to mount an Amazon S3 bucket as a file system in AgentCore Runtime, with an optional per-session key prefix and adds operatingSystemConfiguration with a Linux privilegeMode (STANDARD or PRIVILEGED) to the capacity provider configuration
+* `github.com/aws/aws-sdk-go-v2/service/braket`: [v1.51.0](service/braket/CHANGELOG.md#v1510-2026-11-18)
+ * **Feature**: Supporting a new PAUSED device status and a DeviceStatusR
+
+... (truncated)]]></description>
+    <pubDate>Wed, 18 Nov 2026 20:06:04 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1172.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1172.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1172.0</guid>
+    <description><![CDATA[#### 3.1172.0(2026-11-18)
+
+##### Documentation Changes
+
+* **client-elastic-load-balancing-v2:** This release adds support for the keyExchange field in CloudTrail tlsDetails, enabling customers to distinguish classical from post-quantum hybrid key exchange for TLS connections on Application Load Balancers. (f9ff6f48)
+
+##### New Features
+
+* **clients:** update client endpoints as of 2026-11-18 (a96a94a2)
+* **client-cloudformation:** AWS CloudFormation StackSets now provides stage-by-stage progress for deployments that span thousands of accounts and AWS Regions, which enables you to see where each deployment stands while it runs (93ebe4f1)
+* **client-support:** Updated endpoint resolution for AWS Support, including FIPS and dual-stack endpoints. (9a0de09c)
+* **client-health:** Adds resource tags functionality to the AWS Health service (c5f9fef3)
+* **client-sesv2:** This release adds support for Spillover Routing in Amazon SES. (f3c70a69)
+* **client-securityagent:** This release adds suppo
+
+... (truncated)]]></description>
+    <pubDate>Wed, 18 Nov 2026 20:01:30 GMT</pubDate>
+  </item>
+  <item>
+    <title>[fastapi/fastapi] 0.165.0</title>
+    <link>https://github.com/fastapi/fastapi/releases/tag/0.165.0</link>
+    <guid isPermaLink="true">https://github.com/fastapi/fastapi/releases/tag/0.165.0</guid>
+    <description><![CDATA[> FastAPI includes an official skill that helps coding agents use new features and recommended patterns for your installed version. Install it with `uvx library-skills` in your project. See Develop with AI.
+
+### Features
+
+* ✨ Add configurable form parsing limits. PR #16784 by @tiangolo.]]></description>
+    <pubDate>Wed, 18 Nov 2026 19:14:20 GMT</pubDate>
+  </item>
+  <item>
+    <title>[inokawa/virtua] 0.55.0</title>
+    <link>https://github.com/inokawa/virtua/releases/tag/0.55.0</link>
+    <guid isPermaLink="true">https://github.com/inokawa/virtua/releases/tag/0.55.0</guid>
+    <description><![CDATA[## What's Changed
+* Refactor subscribe by @inokawa in 
+* Allow virtualizers to be the browser's scroll anchor by @inokawa in 
+* Optimize performance with Fenwick tree by @inokawa in 
+* fix(react): cancel deferred scrollRef observation on cleanup by @peterolkhov in 
+* Fix window scroll alignment inside bordered ancestors by @yunfeizhu in 
+
+## New Contributors
+* @peterolkhov made their first contribution in 
+
+**Full Changelog**:]]></description>
+    <pubDate>Wed, 18 Nov 2026 12:11:03 GMT</pubDate>
+  </item>
+  <item>
+    <title>[lambdalisue/cclens] v0.5.0</title>
+    <link>https://github.com/lambdalisue/cclens/releases/tag/v0.5.0</link>
+    <guid isPermaLink="true">https://github.com/lambdalisue/cclens/releases/tag/v0.5.0</guid>
+    <description><![CDATA[## What's Changed
+* feat: measure which model subagents ran on and who chose it by @lambdalisue in 
+* fix(config): skip a project .claude that is the global config root by @lambdalisue in 
+* feat: measure hooks by their trigger and add the hooks view by @lambdalisue in 
+* feat: measure rule loads to flag never-firing and always-loaded rules by @lambdalisue in 
+* feat: detect failing-check loops and sandbox friction by @lambdalisue in 
+* feat: decompose the always-on residual from the recorded request shape by @lambdalisue in 
+* feat: measure prompt-cache efficiency and attribute cache breaks to surfaces by @lambdalisue in 
+* feat: compare friction before and after a config change by @lambdalisue in 
+
+
+**Full Changelog**:]]></description>
+    <pubDate>Wed, 18 Nov 2026 11:10:39 GMT</pubDate>
+  </item>
+  <item>
+    <title>[sveltejs/svelte] svelte@5.58.0</title>
+    <link>https://github.com/sveltejs/svelte/releases/tag/svelte%405.58.0</link>
+    <guid isPermaLink="true">https://github.com/sveltejs/svelte/releases/tag/svelte%405.58.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- feat: include `snippetName` in `render` entries of the dev `__svelte_meta` stack (#19283)
+
+- feat: include the `component` instance an element was rendered in for Svelte devtools to track (#19286)
+
+### Patch Changes
+
+- perf: let the garbage collector free each component's AST after it is compiled (#19241)
+
+- fix: render the same `<title>` on the server as on the client and ignore titles inside failed boundaries (#19176)
+
+- fix: allow `autocorrect` on all elements (#19105)
+
+- fix: parse snippet type parameters containing arrow function types (#19141)
+
+- fix: keep directive values that match the directive name in `print` (#19229)
+
+- fix: correctly assign dev element locations after components during hydration (#19287)
+
+- perf: don't compare the whole template on every expression when a source is parsed again (#19215)
+
+- docs: avoid binding to read-only current values in Spring and Tween examples (#19226)
+
+- fix: keep positions right after optional properties in templ
+
+... (truncated)]]></description>
+    <pubDate>Wed, 18 Nov 2026 06:54:03 GMT</pubDate>
+  </item>
+  <item>
+    <title>[openai/codex] 0.170.0 (rust-v0.170.0)</title>
+    <link>https://github.com/openai/codex/releases/tag/rust-v0.170.0</link>
+    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.170.0</guid>
+    <description><![CDATA[## New Features
+- Added WebRTC negotiation for realtime voice calls in the TUI. (#61172)
+- Added automatically refreshed authentication headers for OpenTelemetry HTTP exporters. (#61028)
+- Added experimental support for using identically named MCP servers across environments. (#60905)
+
+## Bug Fixes
+- Oversized WebSocket requests now fall back to HTTP without unnecessary retries. (#60840, #60841)
+- Fixed MCP OAuth credential races during cancellation, login, and logout. (#60849, #60981)
+- Improved automatic reconnection for Cloud conversations and preserved active recovery turns when clients reconnect. (#60969, #61014)
+- Fixed Windows file replacement, sandbox permission preservation, and runtime registration recovery. (#60872, #60943, #60944)
+- Fixed permission updates and child threads losing existing sandbox restrictions. (#60936, #61134)
+- Removed duplicate file search results and fixed thread search snippets for queries containing whitespace. (#60845, #60846)
+
+## Documentation
+- Up
+
+... (truncated)]]></description>
+    <pubDate>Wed, 18 Nov 2026 03:40:48 GMT</pubDate>
+  </item>
+  <item>
+    <title>[nanaism/yomiyasu] v3.2.0</title>
+    <link>https://github.com/nanaism/yomiyasu/releases/tag/v3.2.0</link>
+    <guid isPermaLink="true">https://github.com/nanaism/yomiyasu/releases/tag/v3.2.0</guid>
+    <description><![CDATA[yomiyasu v3.2.0 を公開しました。
+読点の検査（lint の `pause_comma`）の誤った指摘と見落としを直し、推敲の前後を比べる diff の「意味が変わる恐れ」を見直したバージョンです。
+推敲の結果が変わるので、マイナーバージョンにしています。
+推敲の手順で直したのは、SKILL.md の読点の段落と、references/slop-catalog.md の読点と言い回しの表だけです。
+
+## nihongo に学んだこと
+
+このバージョンの diff の見直しでは、AnIT さんの nihongo から多くを学びました。
+nihongo は、AI が書く日本語を、その場で人が書く文に近づけるエージェントスキルです。推敲の最後に前と後を比べ、数値、否定、確かさ、強さ、程度の言葉が変わった文を見つけて原文に戻すスクリプトを持っています。
+
+nihongo の考え方を手がかりに yomiyasu の diff を調べ直すと、見落としていた変化がいくつも見つかりました。次の考え方は nihongo から学んだものです。
+
+- 時刻の書き方だけが違う書き換え（18:00 と 18時）を、同じ時刻として扱う
+- 程度を強める語（大幅に、心より など）が消えたら知らせる
+- 「必須ではない」（してもしなくてもよい）と「不要」（しなくてよい）を、違う強さとして分ける
+- 「すべて」「一切」のような範囲の語が消えたら知らせる
+- 「までに」のような期限の語が消えたら知らせる
+- 段落から文が丸ごと消えたら知らせる
+
+「2秒を超えたら」が「2秒以上なら」になるような境目の言い方の変化にも、nihongo のスクリプトの結果を見て気づきました。
+強める語の一覧に足した語は、nihongo が挙げている語を参考に選びました。消えた文を見るときの内容の語の決め方と、その半分以上が消えたら知らせるという目安も、nihongo に倣っています。規則とコードは yomiyasu の diff の作りに合わせて書いたもので、nihongo のコードは含んでいません。
+考え方を公開してくださった AnIT さんに感謝します。
+
+## 背景と課題
+
+v3.1.0 のあとに、読点の扱いと、推敲で落ちた言葉について、記事や例をいくつもいただきました。
+
+読点を減らしたいという要望
+
+... (truncated)]]></description>
+    <pubDate>Wed, 18 Nov 2026 02:15:18 GMT</pubDate>
+  </item>
+  <item>
+    <title>[semgrep/semgrep] Release v1.186.0 (v1.186.0)</title>
+    <link>https://github.com/semgrep/semgrep/releases/tag/v1.186.0</link>
+    <guid isPermaLink="true">https://github.com/semgrep/semgrep/releases/tag/v1.186.0</guid>
+    <description><![CDATA[## 1.186.0 - 2026-11-17
+
+### ### Added
+
+- Secrets findings can include a versioned `secret_hash` when requested (e.g., with `--compute-secret-hash`). This hash comprises the secret value and values used in the validators, to allow for identification of the same secret being present at multiple locations (cf. `match_based_id`, which depends on the location of the finding). (SCRT-987)
+
+### ### Changed
+
+- Semgrep's release binaries are now built with cross-module inlining enabled, so scans use about 5-11% less CPU time. (release-profile)
+
+### ### Fixed
+
+- pro: Rules with `interfile: true` now keep Pro intrafile interprocedural taint analysis when scanning languages without interfile support (e.g. OCaml, Rust), so taint through helper functions in the same file is reported. (interfile-rule-intrafile-fallback)
+- `semgrep mcp` now respects `SEMGREP_SEND_METRICS=off`, which turns off its
+ metrics and tracing like `SEMGREP_MCP_DISABLE_TRACING=true`. Its metrics and
+ logs also no longer include
+
+... (truncated)]]></description>
+    <pubDate>Wed, 18 Nov 2026 00:22:26 GMT</pubDate>
+  </item>
+  <item>
+    <title>[cli/cli] GitHub CLI 2.105.0 (v2.105.0)</title>
+    <link>https://github.com/cli/cli/releases/tag/v2.105.0</link>
+    <guid isPermaLink="true">https://github.com/cli/cli/releases/tag/v2.105.0</guid>
+    <description><![CDATA[## What's Changed
+
+## Subscribe to GitHub Event Streams with `gh event` (preview)
+
+The new `gh event` command set lets agents, integrations, and scripts wait for pull request changes instead of polling GitHub:
+
+```shell
+# Wait for a review event
+gh event listen --resource --event com.github.pull_request.review.submitted.v1 --timeout 30m
+
+# Wait for a check suite completion event
+gh event listen --resource --event com.github.pull_request.check_suite.status.changed.v1 --jq .data.conclusion
+
+# List active event subscriptions
+gh event subscription list
+```
+
+By default, `gh event listen` exits after the first event. Use `--count` to wait for several events or `--follow` to keep listening. Events are printed as CloudEvent JSON objects, with `data.api_url` pointing to the resource that changed.
+
+Supported events include submitted reviews, pull request state and head changes, merge conflicts, and completed check suites. The `subscription create`, `list`, `view`, and `delete`
+
+... (truncated)]]></description>
+    <pubDate>Wed, 18 Nov 2026 00:18:35 GMT</pubDate>
+  </item>
+  <item>
+    <title>[microsoft/WindowsAppSDK] Windows App SDK 2.7.0 (v2.7.0)</title>
+    <link>https://github.com/microsoft/WindowsAppSDK/releases/tag/v2.7.0</link>
+    <guid isPermaLink="true">https://github.com/microsoft/WindowsAppSDK/releases/tag/v2.7.0</guid>
+    <description><![CDATA[Windows App SDK 2.7.0 brings GPU support and richer diagnostics to the on-device language model, updates ONNX Runtime, and fixes issues across input, text controls, styling, windowing, and ARM64EC app startup.
+
+### What's new in WinAppSDK 2.7.0:
+
+- **GPU support for `LanguageModel`.** The language model can now run on devices with a compatible GPU.
+- **LoRA adapter compatibility and model identity.** New `LanguageModelLowRankAdapterResult.Status` and `LanguageModel.ModelName` / `ModelVersion` properties help apps pick the right adapter and identify compatibility warnings or loading failures. Availability of model identity and detailed compatibility results depends on the installed AI components.
+- **Clearer GPU resource errors.** New `LanguageModelResponseStatus.InsufficientVideoRam` and `LanguageModelResponseStatus.BlockedByGameMode` values tell apps when GPU inference stops because video memory is low or Game Mode is active.
+- **Updated ONNX Runtime.** ONNX Runtime is updated 
+
+... (truncated)]]></description>
+    <pubDate>Tue, 17 Nov 2026 23:18:48 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aaif-goose/goose] v1.60.0</title>
+    <link>https://github.com/aaif-goose/goose/releases/tag/v1.60.0</link>
+    <guid isPermaLink="true">https://github.com/aaif-goose/goose/releases/tag/v1.60.0</guid>
+    <description><![CDATA[## ✨ Features
+
+- SkillOperation and drop the Skills extension #13574
+- Executable commands and SlashCommandOperation in oi-kit #13533
+- Bang command operation in oi-kit #13535
+- Steering operation in oi-kit #13502
+- Dutch (nl) translation #13240
+- Cortecs declarative provider #12617
+- Onysoft declarative provider #13582
+- Reusable turn limits in GDK #13194
+
+## 🐛 Bug Fixes
+
+- Restore AGENT and GOOSE_TERMINAL in developer shell #13598
+- Validate cron before changing existing schedules #13599
+- Keep think tags in Ollama XML tool-call arguments #13563
+- Send tool_choice auto when tools are present (OpenAI) #12716
+- Update missing and outdated zh-CN translations #13494
+- Load supporting files for skills under symlinked directories #13531
+- Bound empty response retries in oi-kit #13516
+- Drop thinking blocks bound to a different prefix (Databricks) #13551
+- Handle a closed stdout pipe when exporting a session #13385
+- Build llama.cpp without OpenSSL so goose builds with openssl 4 #13492
+- K
+
+... (truncated)]]></description>
+    <pubDate>Tue, 17 Nov 2026 23:08:54 GMT</pubDate>
+  </item>
   <item>
     <title>[pnpm/pnpm] pnpm 12.22.0 (v12.22.0)</title>
     <link>https://github.com/pnpm/pnpm/releases/tag/v12.22.0</link>
@@ -21,44 +336,6 @@
 
 ... (truncated)]]></description>
     <pubDate>Tue, 17 Nov 2026 20:20:31 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-js-v3] v3.1171.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1171.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1171.0</guid>
-    <description><![CDATA[#### 3.1171.0(2026-11-17)
-
-##### New Features
-
-* **clients:** update client endpoints as of 2026-11-17 (ae5d0930)
-* **client-controltower:** AWS Control Tower now reports source drift when an enabled baseline no longer matches the landing zone's configuration. (a86aeb8f)
-* **client-billing:** Adds the SplitCredit and TransferCredit APIs to split or transfer credits, and adds benefit level sharing for Reserved Instances and Savings Plans to GetBillingPreferences and UpdateBillingPreferences. (97a39059)
-* **client-route53globalresolver:** Adds AWS Cloud WAN support to Route 53 Global Resolver via new core network endpoint APIs to connect a global resolver to a core network, segment-based access sources, and a publicIpStatus setting to disable public IPs so a resolver is reachable only over Cloud WAN. (4c69f639)
-* **client-s3-control:** Adds support for S3 Intelligent Tiering Access Tier and publishing to AWS Billing and Cost Management in S3 Storage Lens (06fd578b)
-* **client-elasticache
-
-... (truncated)]]></description>
-    <pubDate>Tue, 17 Nov 2026 19:48:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-11-17) (release-2026-11-17)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-17</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-17</guid>
-    <description><![CDATA[## General Highlights
-* **Dependency Update**: Updated to the latest SDK module versions
-
-## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/apigateway`: [v1.53.0](service/apigateway/CHANGELOG.md#v1530-2026-11-17)
- * **Feature**: API Gateway now adds support for JWT authorizers on REST APIs.
-* `github.com/aws/aws-sdk-go-v2/service/appstream`: [v1.75.0](service/appstream/CHANGELOG.md#v1750-2026-11-17)
- * **Feature**: Adds support for In-Session SmartCard Redirection for Windows Multi-Session fleets
-* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcore`: [v1.59.0](service/bedrockagentcore/CHANGELOG.md#v1590-2026-11-17)
- * **Feature**: Adds support for continuous insights and automatic dataset generation
-* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcorecontrol`: [v1.81.0](service/bedrockagentcorecontrol/CHANGELOG.md#v1810-2026-11-17)
- * **Feature**: Adds support for agent insight stores that help frame insight evaluators, and dataset source support for batch evaluation
-
-... (truncated)]]></description>
-    <pubDate>Tue, 17 Nov 2026 19:47:46 GMT</pubDate>
   </item>
   <item>
     <title>[solidjs/solid] v2.0.0 - The Long Hold (solid-js@2.0.0)</title>
@@ -164,29 +441,6 @@
 
 ... (truncated)]]></description>
     <pubDate>Tue, 17 Nov 2026 13:02:46 GMT</pubDate>
-  </item>
-  <item>
-    <title>[cloudflare/workers-sdk] @cloudflare/vite-plugin@1.70.0</title>
-    <link>https://github.com/cloudflare/workers-sdk/releases/tag/%40cloudflare/vite-plugin%401.70.0</link>
-    <guid isPermaLink="true">https://github.com/cloudflare/workers-sdk/releases/tag/%40cloudflare/vite-plugin%401.70.0</guid>
-    <description><![CDATA[### Minor Changes
-
-- #16898 `e1d4554` Thanks @petebacondarwin! - Use the local simulator for Artifacts bindings that omit `remote`
-
- Artifacts now works locally without Cloudflare credentials by default. Set `remote: true` to use deployed repositories, or `remote: false` to silence the migration warning. The updated Miniflare runtime also supplies Browser Run quick actions and local Artifacts fixes.
-
-- #16929 `319aec4` Thanks @petebacondarwin! - Start local Workflows from Artifacts events
-
- Configure `triggers.events` in your Wrangler configuration to deliver local Artifacts repository and token events to a Workflow defined by the same Worker. Miniflare 5.20261116.0-beta and Wrangler 4.163.0 support this beta feature through Vite plugin v1. Local push, clone, fetch, and queue subscriptions remain unsupported.
-
-### Patch Changes
-
-- #16818 `befc1ad` Thanks @petebacondarwin! - Remove unsupported CLI flag advice from v1 Container Docker errors
-
- When Docker is unavailable, suggest disablin
-
-... (truncated)]]></description>
-    <pubDate>Tue, 17 Nov 2026 12:31:09 GMT</pubDate>
   </item>
   <item>
     <title>[anomalyco/opencode] process-daemon v0.6.0 (process-daemon-v0.6.0)</title>
@@ -469,17 +723,6 @@ You can read about our versioning strategy and releases on our website.]]></desc
     <pubDate>Sun, 15 Nov 2026 06:36:31 GMT</pubDate>
   </item>
   <item>
-    <title>[fastapi/fastapi] 0.163.0</title>
-    <link>https://github.com/fastapi/fastapi/releases/tag/0.163.0</link>
-    <guid isPermaLink="true">https://github.com/fastapi/fastapi/releases/tag/0.163.0</guid>
-    <description><![CDATA[> FastAPI includes an official skill that helps coding agents use new features and recommended patterns for your installed version. Install it with `uvx library-skills` in your project. See Develop with AI.
-
-### Features
-
-* ✨ Add dependency concurrency limits with `Depends(max_concurrency=...)`. PR #16746 by @tiangolo.]]></description>
-    <pubDate>Sat, 14 Nov 2026 16:53:02 GMT</pubDate>
-  </item>
-  <item>
     <title>[anomalyco/opentui] Release v0.9.0 (v0.9.0)</title>
     <link>https://github.com/anomalyco/opentui/releases/tag/v0.9.0</link>
     <guid isPermaLink="true">https://github.com/anomalyco/opentui/releases/tag/v0.9.0</guid>
@@ -546,47 +789,6 @@ Because the engine follows CommonMark 0.31.2 and GFM, some documents look differ
 
 * ignore instead of reject query access tokens when disabled (b6ca93b)]]></description>
     <pubDate>Fri, 13 Nov 2026 17:34:07 GMT</pubDate>
-  </item>
-  <item>
-    <title>[lynx-family/lynx] 4.3.0-rc.1</title>
-    <link>https://github.com/lynx-family/lynx/releases/tag/4.3.0-rc.1</link>
-    <guid isPermaLink="true">https://github.com/lynx-family/lynx/releases/tag/4.3.0-rc.1</guid>
-    <description><![CDATA[No release notes provided.]]></description>
-    <pubDate>Fri, 13 Nov 2026 17:30:26 GMT</pubDate>
-  </item>
-  <item>
-    <title>[cli/cli] GitHub CLI 2.104.0 (v2.104.0)</title>
-    <link>https://github.com/cli/cli/releases/tag/v2.104.0</link>
-    <guid isPermaLink="true">https://github.com/cli/cli/releases/tag/v2.104.0</guid>
-    <description><![CDATA[## Protect private forks when deleting repositories
-
-`gh repo delete` now warns when deleting a private or internal repository will also delete its forks. The additional confirmation is required even with `--yes`.
-
-Non-interactive workflows and agents must explicitly accept the cascading deletion:
-
-```shell
-gh repo delete OWNER/REPO --yes --accept-cascading-deletion-of-private-forks
-```
-
-## What's Changed
-
-### ✨ Features
-
-* Require confirmation before `gh repo delete` deletes private forks by @BagToad in #14858
-
-### 🐛 Fixes
-
-* fix(auth status): surface underlying rate-limit, server, and network errors in terminal output by @babakks and @Copilot in #15009
-* fix(auth): skip token refresh when `gh`'s state directory is not writable by @babakks in #14845
-
-### 📚 Docs & Chores
-
-* Use REST to apply issue triage labels by @BagToad in #15041
-* Prevent repeated Dependabot triage assessments by @BagToad in #15002
-* Apply issue triage labels directly by @BagToad in #1500
-
-... (truncated)]]></description>
-    <pubDate>Thu, 12 Nov 2026 19:03:51 GMT</pubDate>
   </item>
   <item>
     <title>[rust-lang/rust] Rust 1.100.0 (1.100.0)</title>
@@ -671,37 +873,6 @@ When constructing a `MongoClient`:
     <pubDate>Thu, 12 Nov 2026 13:19:45 GMT</pubDate>
   </item>
   <item>
-    <title>[nanaism/yomiyasu] v3.1.0</title>
-    <link>https://github.com/nanaism/yomiyasu/releases/tag/v3.1.0</link>
-    <guid isPermaLink="true">https://github.com/nanaism/yomiyasu/releases/tag/v3.1.0</guid>
-    <description><![CDATA[yomiyasu v3.1.0 を公開しました。
-スキルのフォルダから Codex 用のプラグインの設定を外したバージョンです。
-Codex にスキルのフォルダを写して入れている方は、スキルの名前が `yomiyasu:yomiyasu` から `yomiyasu` に変わります。更新したあとに書き換える所は、下の「Codex で使っている方へ」にあります。
-名前が変わるので、パッチではなくマイナーバージョンにしています。
-推敲の手順（SKILL.md と references）は、SKILL.md のバージョンの行を除いて v3.0.1 から変えていません。
-lint、diff、check、フックの出力も、JSON の `tool_version` と `--version` が示すバージョンを除いて v3.0.1 と同じです。
-
-## 背景と課題
-
-パッケージマネージャーの apm で yomiyasu をプロジェクトに入れようとすると失敗する、という報告をいただきました（Hol1kgmg さんの issue #61）。
-
-apm は、依存先を `nanaism/yomiyasu/skills/yomiyasu` のようにフォルダまで書くと、そのフォルダの中身だけを見て種類を決めます。
-apm 0.35.0 からは、フォルダに `.codex-plugin/plugin.json` があると、SKILL.md より先にこれを見て「Codex のプラグイン」と決めるようになりました。
-apm は Codex のプラグインをユーザー単位でしか入れない決まりにしているので、プロジェクト単位の `apm install` が止まります。
-
-このファイルは v2.0.2 で置いたもので、Codex でのスキルの名前を `yomiyasu:yomiyasu` にするための、名前だけの設定です。
-yomiyasu はこれまで、スキルの名前を「バージョンを上げても変えないもの」として扱ってきました。
-名前を保つかぎり、スキルのフォルダは「スキルでもプラグインでもあるもの」のまま残ります。
-
-## v3.1.0 で変わったこと
-
-スキルのフォルダから `.codex-plugin/plugin.json` を外しました。
-スキルのフォルダは、プラグインの設定を持たない、ふつうのス
-
-... (truncated)]]></description>
-    <pubDate>Thu, 12 Nov 2026 00:28:38 GMT</pubDate>
-  </item>
-  <item>
     <title>[prettier/prettier] 3.10.0</title>
     <link>https://github.com/prettier/prettier/releases/tag/3.10.0</link>
     <guid isPermaLink="true">https://github.com/prettier/prettier/releases/tag/3.10.0</guid>
@@ -782,35 +953,6 @@ specify init my-project
     <pubDate>Tue, 10 Nov 2026 20:01:54 GMT</pubDate>
   </item>
   <item>
-    <title>[aaif-goose/goose] v1.59.0</title>
-    <link>https://github.com/aaif-goose/goose/releases/tag/v1.59.0</link>
-    <guid isPermaLink="true">https://github.com/aaif-goose/goose/releases/tag/v1.59.0</guid>
-    <description><![CDATA[## ✨ Features
-
-- Minimal deferred MCP tools in ToolExecutionOperation #13378
-- Configurable and per-start voice instructions for live-voice #13375
-- Configurable GPT-Live endpoint, model and key #13360
-- Filter session/list by client tags (ACP) #13173
-- Stop, approval, and tool hook operations for goose-agent (GDK) #13169
-- Resume completed delegates with a follow-up (subagent) #13106
-
-## 🐛 Bug Fixes
-
-- Honor HTTP(S) docs roots in goose-doc-guide #13381
-- Use uncorrelated IN for session keyword search #13373
-- Isolate session database initialization from application pool #13324
-- Refresh Databricks OAuth tokens before they expire #13328
-- Reword compaction prompt that Opus 5.5 refuses as distillation #13340
-- Send Gemini thinking level and drop stream_options for Databricks #13232
-- Address new cargo-deny advisories (zip8) #13309
-
-## 📚 Documentation
-
-- Correct SECURITY_PROMPT_THRESHOLD sensitivity direction #12954
-- Blog post: Same Brain, Different Bill #13197]]></description>
-    <pubDate>Tue, 10 Nov 2026 17:17:02 GMT</pubDate>
-  </item>
-  <item>
     <title>[esm-dev/esm.sh] Server v140_3 (v140_3)</title>
     <link>https://github.com/esm-dev/esm.sh/releases/tag/v140_3</link>
     <guid isPermaLink="true">https://github.com/esm-dev/esm.sh/releases/tag/v140_3</guid>
@@ -820,26 +962,6 @@ specify init my-project
 * With `storage.cacheDir` enabled, upload source maps on their first request. Remove source maps after seven days without a request. (#1514)
 * Stop duplicate writes of legacy build metadata. (#1514)]]></description>
     <pubDate>Tue, 10 Nov 2026 14:18:52 GMT</pubDate>
-  </item>
-  <item>
-    <title>[semgrep/semgrep] Release v1.185.0 (v1.185.0)</title>
-    <link>https://github.com/semgrep/semgrep/releases/tag/v1.185.0</link>
-    <guid isPermaLink="true">https://github.com/semgrep/semgrep/releases/tag/v1.185.0</guid>
-    <description><![CDATA[## 1.185.0 - 2026-11-10
-
-### ### Added
-
-- PHP: Improved virtual call resolution for basic trait composition. (CODE-9176)
-- Supply Chain: a `requirements.txt` dependency declared as a version range (`litellm>=1.10`) or with no version (`flask`) now produces a finding for every advisory whose affected versions overlap the declared range, in both the Python and native resolvers. Such a finding has no single installed version to confirm, so it needs review. A range line next to a pinned copy of the same package produces no finding of its own, since the pinned copy names the installed version. (SC-4243)
-- Secrets: emit structured, privacy-safe telemetry for custom validator HTTP requests (hostname, port, status, latency, rule/scan correlation) (SMS-3122)
-- Set `SEMGREP_LOG_JSON_FILE` to emit structured execution events with scan metadata alongside existing text output. (SMS-3670)
-
-### ### Changed
-
-- Scans are slightly faster. The dataflow analyses build the name of each variable with a plai
-
-... (truncated)]]></description>
-    <pubDate>Tue, 10 Nov 2026 09:32:54 GMT</pubDate>
   </item>
   <item>
     <title>[markedjs/marked] v18.2.0</title>
@@ -940,105 +1062,6 @@ For now you can view the generated release notes below.
 
 ... (truncated)]]></description>
     <pubDate>Sun, 08 Nov 2026 01:04:43 GMT</pubDate>
-  </item>
-  <item>
-    <title>[mongodb/mongo-go-driver] MongoDB Go Driver 2.10.0 (v2.10.0)</title>
-    <link>https://github.com/mongodb/mongo-go-driver/releases/tag/v2.10.0</link>
-    <guid isPermaLink="true">https://github.com/mongodb/mongo-go-driver/releases/tag/v2.10.0</guid>
-    <description><![CDATA[The MongoDB Go Driver Team is pleased to release version 2.10.0 of the official MongoDB Go Driver.
-
-## Release Highlights
-
-This release fixes a bug that prevented `timeoutMS` from being applied to session and transaction operations, and adds two new options intended for internal use only.
-
-### `addCommandFields` for Collection & IndexView APIs
-> [!WARNING]
-> The `addCommandFields` option is intended for internal use only. It may be changed or removed without notice at any time.
-
-Allows adding arbitrary fields to Collection and IndexView commands.
-
-### `collectionUUID` for Client.BulkWrite
-> [!WARNING]
-> The `collectionUUID` option is intended for internal use only. It may be changed or removed without notice at any time.
-
-Allows specifying a `collectionUUID` for bulk write requests.
-
-<!-- Release notes generated using configuration in .github/release.yml at v2.10.0 -->
-
-## What's Changed
-### ✨ New Features
-* GODRIVER-4000 Extend addCommandFields to all Collection 
-
-... (truncated)]]></description>
-    <pubDate>Sat, 07 Nov 2026 01:44:51 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aardappel/goose] Goose v2026.4 (v2026.4)</title>
-    <link>https://github.com/aardappel/goose/releases/tag/v2026.4</link>
-    <guid isPermaLink="true">https://github.com/aardappel/goose/releases/tag/v2026.4</guid>
-    <description><![CDATA[Prebuilt compilers with the blessed packages (gfx, audio, ui, physics) compiled in. Unpack anywhere and put the directory on PATH; see "Install a release" in README.md for what each platform needs besides.
-
-
-## What's Changed
-* Dynamic externs: extern blocks bound from a shared library by name by @binji in 
-* Preserve CMake archive paths in cc-style response files by @akeit0 in 
-* Add an API to release unused data-stack memory by @KoudelkaB in 
-* Let packagers set TinyCC's runtime and libc paths by @jmqd in 
-* Add math's mul_add: x * y + z rounded once where the code has FMA by @guillochon in 
-* Add goose format, a formatter that keeps the author's line breaks by @binji in 
-* Name the command a mistyped one is close to by @binji in 
-* Report the compiler's version, from git describe or a release's tag by @binji in 
-* Updated subprocess.h to gain support for android by @compilersEllie in 
-* Color errors and warnings on a terminal by @binji in 
-* Add -q, which prints nothing on success b
-
-... (truncated)]]></description>
-    <pubDate>Fri, 06 Nov 2026 23:23:48 GMT</pubDate>
-  </item>
-  <item>
-    <title>[MasterKale/SimpleWebAuthn] v14.1.0</title>
-    <link>https://github.com/MasterKale/SimpleWebAuthn/releases/tag/v14.1.0</link>
-    <guid isPermaLink="true">https://github.com/MasterKale/SimpleWebAuthn/releases/tag/v14.1.0</guid>
-    <description><![CDATA[**Changes:**
-
-- **[server]** Support for the FIDO Convenience Metadata Service has been added with the new `ConvenienceMetadataService`. See for more info (#812)
-- **[server]** `verifyRegistrationResponse` and `verifyAuthenticationResponse` will now raise a `SimpleWebAuthnError` when `expectedRPID` or `expectedOrigin` are not valid values (#824)
-- **[server]** `"android-key"` attestation statement verification now checks that the `x5c` root certificate is a known one _before_ verifying the certificate chain (#821)
-- **[server]** `"android-key"` attestation statement verification now knows about the new **Google Android Key Attestation CA1** trust anchor (#820)
-- **[server]** `"tpm"` attestation statement verification now properly parses non-`TPM_ALG_NULL` schemes in `pubArea` (#822)]]></description>
-    <pubDate>Fri, 06 Nov 2026 20:23:53 GMT</pubDate>
-  </item>
-  <item>
-    <title>[rancher-sandbox/rancher-desktop] Rancher Desktop 1.25 (v1.25.0)</title>
-    <link>https://github.com/rancher-sandbox/rancher-desktop/releases/tag/v1.25.0</link>
-    <guid isPermaLink="true">https://github.com/rancher-sandbox/rancher-desktop/releases/tag/v1.25.0</guid>
-    <description><![CDATA[This Rancher Desktop 1.25.0, an open source desktop application to bring Kubernetes and container management to macOS, Windows, and Linux.
-
-## Installers
-
-* Windows
-* macOS x86_64
-* macOS aarch64
-* Linux install notes
-
-## New Contributors
-
-Thank you to our new contributors: @srtdog64, @PlayerNguyen, @Harshavardhan-28, and @Juhantam!
-
-## Release Notes for 1.25.0
-
-### What's New
-
-#### The interface speaks Vietnamese
-
-Pick Vietnamese under Preferences > Application > General. It joins the eight languages that 1.24.0 added, and like them it is experimental, so feedback from native speakers is welcome. The app's usual font lacks most Vietnamese accented letters, so Vietnamese text uses a font installed on your system instead. Thanks to @PlayerNguyen! (#11004)
-
-#### Deleting containers and volumes asks first
-
-The Delete action on the Containers and Volumes pages used to run the moment you clicked it; both pages now ask first, in a dialog that counts the containers or v
-
-... (truncated)]]></description>
-    <pubDate>Thu, 05 Nov 2026 23:41:36 GMT</pubDate>
   </item>
 </channel>
 </rss>
