@@ -5,8 +5,177 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Wed, 18 Nov 2026 22:01:13 GMT</lastBuildDate>
+  <lastBuildDate>Thu, 19 Nov 2026 22:01:29 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[webpack/webpack] v5.113.0</title>
+    <link>https://github.com/webpack/webpack/releases/tag/v5.113.0</link>
+    <guid isPermaLink="true">https://github.com/webpack/webpack/releases/tag/v5.113.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- Treat pure CommonJS exports and `require` of pure modules as side-effect free. (by @hai-x in #21937)
+
+- Add `compilation.hooks.chunkHashDependencies` for chunks naming other chunks. (by @alexander-akait in #22810)
+
+- Add a `sourceTest` condition to `use` items; match `/g` regexps reliably. (by @xiaoxiaojx in #23029)
+
+- Add optional SVG minification and preserve XML values and HTML style boundaries. (by @alexander-akait in #22692)
+
+- Allow `usedExports` and `mangleExports` with `cacheUnaffected`. (by @alexander-akait in #23337)
+
+- Add an `updateManifest` HMR hook so plugins add their own hot update data. (by @alexander-akait in #23008)
+
+- Add a `transport` hook to `webpack.hmr.LazyCompilationPlugin`, so a development server can serve the lazy compilation backend from its own server, and pass the options it settles on to a custom backend, which can bring its own client. (by @alexander-akait in #23435)
+
+- Restore deep import paths Module Federation loads and expose it
+
+... (truncated)]]></description>
+    <pubDate>Thu, 19 Nov 2026 21:33:45 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-11-19) (release-2026-11-19)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-19</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-19</guid>
+    <description><![CDATA[## General Highlights
+* **Dependency Update**: Updated to the latest SDK module versions
+
+## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/service/acm`: [v1.52.0](service/acm/CHANGELOG.md#v1520-2026-11-19)
+ * **Feature**: AWS Certificate Manager now supports the ability to issue certificates from the Amazon N2 certificate authorities (CAs), an Amazon-operated CA hierarchy.
+* `github.com/aws/aws-sdk-go-v2/service/agentregistry`: [v1.8.0](service/agentregistry/CHANGELOG.md#v180-2026-11-19)
+ * **Feature**: BatchGetDiscoverableRegistryRecord returns a short-lived download URL and SHA-256 checksum for approved skill packages. SearchDiscoverableRegistryRecords adds searchType (KEYWORD, SEMANTIC, HYBRID) and pagination. Adds bearer token authentication for registries that use JWT authorization.
+* `github.com/aws/aws-sdk-go-v2/service/agentregistrycontrol`: [v1.10.0](service/agentregistrycontrol/CHANGELOG.md#v1100-2026-11-19)
+ * **Feature**: Adds skill packages and skill source sync for ag
+
+... (truncated)]]></description>
+    <pubDate>Thu, 19 Nov 2026 20:14:57 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1173.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1173.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1173.0</guid>
+    <description><![CDATA[#### 3.1173.0(2026-11-19)
+
+##### New Features
+
+* **clients:** update client endpoints as of 2026-11-19 (695c988d)
+* **client-bedrock-agentcore:** Adds the AWS Billing x402 payment type to ProcessPayment. Agents can purchase x402-enabled AWS Marketplace products and have the charges billed to the AWS account, without a wallet. Requests use the service-managed payment instrument ID aws.agentcorepayments.awsbilling.v1. (831b7b0e)
+* **client-appstream:** Enable stack-level WebAuthn redirection to relay passkey and security-key authentication from a WorkSpaces Applications streaming session to the user's local device. (9076cca7)
+* **client-securityagent:** This release exposes additional per-job metadata within code remediation tasks. (6d3dcab8)
+* **client-pcs:** Added support for Job Submit Plugins in AWS PCS. (188ba8d4)
+* **client-agent-registry-control:** Adds skill packages and skill source sync for agent skill records. Upload a skill package (ZIP) or sync SKILL.md or the full package f
+
+... (truncated)]]></description>
+    <pubDate>Thu, 19 Nov 2026 19:59:36 GMT</pubDate>
+  </item>
+  <item>
+    <title>[yonaskolb/XcodeGen] 2.48.0</title>
+    <link>https://github.com/yonaskolb/XcodeGen/releases/tag/2.48.0</link>
+    <guid isPermaLink="true">https://github.com/yonaskolb/XcodeGen/releases/tag/2.48.0</guid>
+    <description><![CDATA[### Added
+- Added experimental support for Xcode 27.2's JSON project file format. Set `options.projectFileFormat: xcproj` to write `project.xcproj` instead of `project.pbxproj`. It requires Xcode 27 or later and defaults `projectFormat` to `xcode27_0`. Some custom project and target `attributes` can't be stored in this format and are left out #1669 @4brunu
+
+### Changed
+- XcodeGen now requires macOS 14 and Swift 6.1 to build and run, due to the XcodeProj 9.17.8 update #1669 @4brunu
+
+### Fixed
+- Fix files without a build phase, such as `README`, `LICENSE` and `.gitkeep`, being copied into the bundle from `syncedFolder` sources. They are now added to the synced folder's membership exceptions, and `.DS_Store` files are no longer listed there #1668 @4brunu
+- Fix `configFiles` inside a `syncedFolder` getting a random reference ID on every generation. They now reference the synced folder plus a relative path, like Xcode does. Also fixes detecting these files when using `--project` with a diff
+
+... (truncated)]]></description>
+    <pubDate>Thu, 19 Nov 2026 12:41:18 GMT</pubDate>
+  </item>
+  <item>
+    <title>[TanStack/router] Release 2026-11-19 10:24 (release-2026-11-19-1024)</title>
+    <link>https://github.com/TanStack/router/releases/tag/release-2026-11-19-1024</link>
+    <guid isPermaLink="true">https://github.com/TanStack/router/releases/tag/release-2026-11-19-1024</guid>
+    <description><![CDATA[Release 2026-11-19 10:24
+
+## Changes
+
+### Features
+
+- router-devtools: add a trustedTypesPolicy option (#8959) (bb11d90332) by @schiller-manuel
+
+### Fix
+
+- router-devtools-core: replace goober with a static stylesheet (#8954) (e75f0ffb2d) by @schiller-manuel
+- react-start-rsc: bump RSC bundler deps for RSC (#8919) (e7358c36d8) by @DogPawHat
+- start-plugin-core: restore the build of the Rsbuild virtual modules (#8907) (70bbd11025) by @Sheraff
+- start-plugin-core: Rsbuild manifests list only a route's own chunks (#8876) (c156097786) by @Sheraff
+- start-plugin-core: write Rsbuild virtual modules under the app's root, not the working directory (#8868) (df6ac30406) by @Sheraff
+- start-plugin-core: refuse custom server-fn ids that never worked over HTTP, deprecate the rest outside the unreserved set (#8858) (2ebc0f3586) by @Sheraff
+- start-plugin-core: find Start libraries from Vite's root, not the working directory (#8866) (3cc054c374) by @Sheraff
+
+### Performance
+
+- start-plugin-core: coun
+
+... (truncated)]]></description>
+    <pubDate>Thu, 19 Nov 2026 10:24:59 GMT</pubDate>
+  </item>
+  <item>
+    <title>[remix-run/remix] ui v0.14.0 (ui@0.14.0)</title>
+    <link>https://github.com/remix-run/remix/releases/tag/ui%400.14.0</link>
+    <guid isPermaLink="true">https://github.com/remix-run/remix/releases/tag/ui%400.14.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- BREAKING CHANGE: The `animateExit` mixin now starts animations synchronously in `beforeRemove` instead of deferring them to a microtask. This allows `animateLayout` to measure the updated layout when exiting elements are taken out of normal flow. (#12220)
+
+ This is unlikely to be a breaking change for most consumers. Custom mixins used alongside `animateExit` may be affected if they inspect computed styles or call `getAnimations` in `beforeRemove` and rely on the exit animation starting later.
+
+- `animateEntrance` and `animateExit` mixins now support per-property timing and compositing overrides via the `transition` option. (#12220)
+
+- Validate native controls with a shared form schema using `@remix-run/ui/form`. `form.Context` supplies field bindings, and `root`, `control`, `label`, and `error` mixins provide native constraints, validation feedback, and accessible associations. Failed submissions restore values and display errors. Applications own the markup, and 
+
+... (truncated)]]></description>
+    <pubDate>Thu, 19 Nov 2026 03:06:15 GMT</pubDate>
+  </item>
+  <item>
+    <title>[Comfy-Org/ComfyUI] v0.46.0</title>
+    <link>https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.46.0</link>
+    <guid isPermaLink="true">https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.46.0</guid>
+    <description><![CDATA[## What's Changed
+* [Partner Nodes] feat(LTX): add AlphaGen, SDR to HDR, Reframe and Upscale nodes by @bigcat88 in 
+* [Partner Nodes] feat(MiniMax): add MiniMax H3 Image node by @bigcat88 in 
+* Update workflow templates to v0.11.106 by @comfyui-wiki in 
+* Fix for some workflows not working properly. by @comfyanonymous in 
+* Conform Concatenate Video clips to the first clip's frame rate and audio (FRONT-3775) by @jtydhr88 in 
+* [Partner Nodes] feat(Wan): move Wan nodes to Comfy Router by @bigcat88 in 
+* [Partner Nodes] feat(Krea): move Krea nodes to Comfy Router by @bigcat88 in 
+* [Partner Nodes] chore(ByteDance): drop the Seedance 2.5 4k enterprise-only wording by @bigcat88 in 
+* Bump comfyui-frontend-package to 1.59.1 by @comfy-pr-bot in 
+* Remove directml support. by @comfyanonymous in 
+* [Partner Nodes] feat(Gemini-LLM): add Hydrogen/Argon and Carbon models by @bigcat88 in 
+* Update workflow templates to v0.11.107 by @comfyui-wiki in 
+* Support saving single channel PNG
+
+... (truncated)]]></description>
+    <pubDate>Wed, 18 Nov 2026 22:55:32 GMT</pubDate>
+  </item>
+  <item>
+    <title>[sveltejs/kit] @sveltejs/kit@3.4.0</title>
+    <link>https://github.com/sveltejs/kit/releases/tag/%40sveltejs/kit%403.4.0</link>
+    <guid isPermaLink="true">https://github.com/sveltejs/kit/releases/tag/%40sveltejs/kit%403.4.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- feat: allow adapters to disable SvelteKit's Node preview server with `vite.customPreview: true` when providing their own preview implementation (#17750)
+
+- feat: add `sveltekit.remote.call.file` attribute to remote function tracing spans (#17760)
+
+### Patch Changes
+
+- fix: strip trailing route groups when resolving routes with search parameters or fragments (#17808)
+
+- fix: correctly display non-ASCII characters for plain text error messages during development (#17468)
+
+- fix: explain missing TypeScript compiler API instead of crashing with TypeScript 7 (#17539)
+
+- fix: reject remote function requests that use the wrong HTTP method (#17740)
+
+- fix: respect `NO_COLOR` and explicit `FORCE_COLOR` settings in forked build processes (#17618)]]></description>
+    <pubDate>Wed, 18 Nov 2026 22:48:41 GMT</pubDate>
+  </item>
   <item>
     <title>[cloudflare/workers-sdk] wrangler@4.165.0</title>
     <link>https://github.com/cloudflare/workers-sdk/releases/tag/wrangler%404.165.0</link>
@@ -42,47 +211,6 @@
 
 ... (truncated)]]></description>
     <pubDate>Wed, 18 Nov 2026 21:56:19 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-11-18) (release-2026-11-18)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-18</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-18</guid>
-    <description><![CDATA[## General Highlights
-* **Dependency Update**: Updated to the latest SDK module versions
-
-## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/abusesignal`: [v1.0.0](service/abusesignal/CHANGELOG.md#v100-2026-11-18)
- * **Release**: New AWS service client module
- * **Feature**: This release introduces the AWS Abuse Signal API, enabling customers to programmatically submit and track AWS abuse reports.
-* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcorecontrol`: [v1.82.0](service/bedrockagentcorecontrol/CHANGELOG.md#v1820-2026-11-18)
- * **Feature**: Adds s3BucketMount to mount an Amazon S3 bucket as a file system in AgentCore Runtime, with an optional per-session key prefix and adds operatingSystemConfiguration with a Linux privilegeMode (STANDARD or PRIVILEGED) to the capacity provider configuration
-* `github.com/aws/aws-sdk-go-v2/service/braket`: [v1.51.0](service/braket/CHANGELOG.md#v1510-2026-11-18)
- * **Feature**: Supporting a new PAUSED device status and a DeviceStatusR
-
-... (truncated)]]></description>
-    <pubDate>Wed, 18 Nov 2026 20:06:04 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-js-v3] v3.1172.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1172.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1172.0</guid>
-    <description><![CDATA[#### 3.1172.0(2026-11-18)
-
-##### Documentation Changes
-
-* **client-elastic-load-balancing-v2:** This release adds support for the keyExchange field in CloudTrail tlsDetails, enabling customers to distinguish classical from post-quantum hybrid key exchange for TLS connections on Application Load Balancers. (f9ff6f48)
-
-##### New Features
-
-* **clients:** update client endpoints as of 2026-11-18 (a96a94a2)
-* **client-cloudformation:** AWS CloudFormation StackSets now provides stage-by-stage progress for deployments that span thousands of accounts and AWS Regions, which enables you to see where each deployment stands while it runs (93ebe4f1)
-* **client-support:** Updated endpoint resolution for AWS Support, including FIPS and dual-stack endpoints. (9a0de09c)
-* **client-health:** Adds resource tags functionality to the AWS Health service (c5f9fef3)
-* **client-sesv2:** This release adds support for Spillover Routing in Amazon SES. (f3c70a69)
-* **client-securityagent:** This release adds suppo
-
-... (truncated)]]></description>
-    <pubDate>Wed, 18 Nov 2026 20:01:30 GMT</pubDate>
   </item>
   <item>
     <title>[fastapi/fastapi] 0.165.0</title>
@@ -338,24 +466,6 @@ Supported events include submitted reviews, pull request state and head changes,
     <pubDate>Tue, 17 Nov 2026 20:20:31 GMT</pubDate>
   </item>
   <item>
-    <title>[solidjs/solid] v2.0.0 - The Long Hold (solid-js@2.0.0)</title>
-    <link>https://github.com/solidjs/solid/releases/tag/solid-js%402.0.0</link>
-    <guid isPermaLink="true">https://github.com/solidjs/solid/releases/tag/solid-js%402.0.0</guid>
-    <description><![CDATA[# Solid 2.0 is here
-
-5 years is a long time to work on anything. Solid 1.0 bet on signals at a time when fine-grained reactivity was a rare position. Today you will find it in Angular, Svelte, Vue Vapor and a TC39 proposal. Solid 2.0 takes the next step, and today it reaches stable.
-
-### 📣 Read the announcement: Solid 2.0 - The Long Hold
-
-## What 2.0 brings
-
-- **Async in the graph.** A computation can return a Promise or an async iterator, and everything downstream just handles it. Race conditions are taken care of, optimistic state rolls back so the server stays the source of truth, and `live` streams server functions over persistent connections. Adding async does not mean refactoring your app.
-- **Built to be written by agents.** A fine-grained graph knows exactly what was read, where, and what will update. Development builds report reactive mistakes with a stable code, a source location and a fix, and the same graph catches waterfalls, runaway effects and fan-out that will
-
-... (truncated)]]></description>
-    <pubDate>Tue, 17 Nov 2026 19:17:44 GMT</pubDate>
-  </item>
-  <item>
     <title>[bluesky-social/atproto] @atproto/oauth-provider@0.26.0</title>
     <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/oauth-provider%400.26.0</link>
     <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/oauth-provider%400.26.0</guid>
@@ -397,33 +507,6 @@ Supported events include submitted reviews, pull request state and head changes,
 
 ... (truncated)]]></description>
     <pubDate>Tue, 17 Nov 2026 18:15:05 GMT</pubDate>
-  </item>
-  <item>
-    <title>[sveltejs/kit] @sveltejs/kit@3.3.0</title>
-    <link>https://github.com/sveltejs/kit/releases/tag/%40sveltejs/kit%403.3.0</link>
-    <guid isPermaLink="true">https://github.com/sveltejs/kit/releases/tag/%40sveltejs/kit%403.3.0</guid>
-    <description><![CDATA[### Minor Changes
-
-- feat: support the Vite DevTools dock in dev (#17787)]]></description>
-    <pubDate>Tue, 17 Nov 2026 16:26:42 GMT</pubDate>
-  </item>
-  <item>
-    <title>[yonaskolb/XcodeGen] 2.47.0</title>
-    <link>https://github.com/yonaskolb/XcodeGen/releases/tag/2.47.0</link>
-    <guid isPermaLink="true">https://github.com/yonaskolb/XcodeGen/releases/tag/2.47.0</guid>
-    <description><![CDATA[### Added
-- Added support for input files in build rules #1650 @GtechGovind
-- Added `buildArchitectures` to scheme build options and target schemes, to control Xcode's "Override Architectures" scheme setting #1642 @arhxam
-- Added FAQ documentation on how to add an Xcode capability, such as In-App Purchase #1644 @Hokila
-- Added `xcode26_3` `projectFormat` option for the Xcode 26.3 project format (`objectVersion = 100`) #1648 @Raymondriter
-- Added `xcode27_0` `projectFormat` option for the Xcode 27.0 project format (`objectVersion = 110`) #1658 @yonaskolb
-
-### Changed
-- Generated schemes now default to `buildArchitectures: matchRunDestination` ("Match Run Destination"), matching Xcode's default for new schemes. Previously schemes used each target's architecture settings. Set `buildArchitectures: useTargetSettings` to keep the previous behaviour #1642 @yonaskolb
-- The default `xcodeVersion` is now `16.0` (previously `14.3`), which sets `LastUpgradeCheck` in generated projects and `LastUpg
-
-... (truncated)]]></description>
-    <pubDate>Tue, 17 Nov 2026 13:45:19 GMT</pubDate>
   </item>
   <item>
     <title>[pbatard/rufus] Rufus 4.16 (v4.16)</title>
@@ -882,29 +965,6 @@ When constructing a `MongoClient`:
     <pubDate>Wed, 11 Nov 2026 12:31:23 GMT</pubDate>
   </item>
   <item>
-    <title>[Comfy-Org/ComfyUI] v0.45.0</title>
-    <link>https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.45.0</link>
-    <guid isPermaLink="true">https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.45.0</guid>
-    <description><![CDATA[## What's Changed
-* Bump comfyui-frontend-package to 1.58.5 by @comfy-pr-bot in 
-* Add better error for when pixel_space VAE wrongly selected. by @comfyanonymous in 
-* Make SeedVR2 VAE slice length adaptive to free memory by @kijai in 
-* [Partner Nodes] feat(Pika): add Pika H3 Flex nodes by @bigcat88 in 
-* [Partner Nodes] feat(Pika): add Pika Soundtrack, SFX and Music nodes by @bigcat88 in 
-* [Partner Nodes] feat(Tencent): add Tencent HY LLM node by @bigcat88 in 
-* Turn on local_web_sso and partner_node_token by default by @dante01yoon in 
-* Update workflow templates to v0.11.102 by @comfyui-wiki in 
-* Update comfy-kitchen version to 0.2.41 by @comfyanonymous in 
-* Fix potential crash. by @comfyanonymous in 
-* Performance improvements for qwen 3.x (Part 4) - Combine Parallel Linear Weights by @rattus128 in 
-* Name comfy-agent without a version in agent_requirements.txt (CORE-692) by @christian-byrne in 
-* Fix Remesh Mesh on imported meshes by @kijai in 
-* Support RelayVSR
-
-... (truncated)]]></description>
-    <pubDate>Tue, 10 Nov 2026 21:42:42 GMT</pubDate>
-  </item>
-  <item>
     <title>[github/spec-kit] Spec Kit - 1.4.0 (v1.4.0)</title>
     <link>https://github.com/github/spec-kit/releases/tag/v1.4.0</link>
     <guid isPermaLink="true">https://github.com/github/spec-kit/releases/tag/v1.4.0</guid>
@@ -1005,63 +1065,6 @@ specify init my-project
 
 ... (truncated)]]></description>
     <pubDate>Mon, 09 Nov 2026 22:44:49 GMT</pubDate>
-  </item>
-  <item>
-    <title>[servo/servo] v0.8.0</title>
-    <link>https://github.com/servo/servo/releases/tag/v0.8.0</link>
-    <guid isPermaLink="true">https://github.com/servo/servo/releases/tag/v0.8.0</guid>
-    <description><![CDATA[Servo v0.8.0 is ready, containing all the changes from October. 
-
-## Trying out the Servo Tech Demo
-
-[troubleshooting guide]: 
-
-### Linux
-
-If you see an error `loading shared libraries` when starting servo on Linux, please refer to the [troubleshooting guide].
-
-### HarmonyOS
-
-Please note that the `servo-aarch64-linux-ohos.hap` attached here is signed for OpenHarmony, not HarmonyOS.
-For HarmonyOS self-signing is currently required - You can download the `servo-aarch64-linux-ohos.so` shared library and use DevEco Studio to follow the instructions in the ArkTS Servo Demo repository
-
-## What's Changed
-
-This section will be updated with a link to the October blog-post once it is released with a curated overview over the recent changes.
-For now you can view the generated release notes below.
-
-<details>
- <summary>Generated Release notes</summary>
-
-## What's Changed
-* android: Remove `SurfaceHolderCallback` dependence on `ServoView` by @veyndan in 
-* android: Replace d
-
-... (truncated)]]></description>
-    <pubDate>Mon, 09 Nov 2026 12:29:13 GMT</pubDate>
-  </item>
-  <item>
-    <title>[TanStack/router] Release 2026-11-08 01:04 (release-2026-11-08-0104)</title>
-    <link>https://github.com/TanStack/router/releases/tag/release-2026-11-08-0104</link>
-    <guid isPermaLink="true">https://github.com/TanStack/router/releases/tag/release-2026-11-08-0104</guid>
-    <description><![CDATA[Release 2026-11-08 01:04
-
-## Changes
-
-### Fix
-
-- router-devtools-core: restore embedded panel styling (#8888) (bbf9b75808) by @schiller-manuel
-- start-plugin-core: define TSS_SHELL in Rsbuild dev for SPA mode (#8805) (c5320d7ca2) by @pujitha24
-- vue-start: pre-bundle @tanstack/vue-store so a cold dev start doesn't reload the page (#8869) (d05c6c66e7) by @Sheraff
-- router-utils: parse decorators after `export` (#8867) (ff157f0079) by @Sheraff
-- router-plugin: write `import.meta.hot.accept(` out in Vite route HMR (#8870) (f420d4a6da) by @Sheraff
-- start-plugin-core: require exsolve ^1.1.3, and see new entry files after a dev server restart (#8871) (545a8d3790) by @Sheraff
-- router-plugin: omit browser warnings from production bundles (#8269) (1ba19a0445) by @LadyBluenotes
-- start-plugin-core: keep the app's server.compress on Rsbuild (#8863) (01fab5a6c8) by @Sheraff
-- start-plugin-core: pass Start's router options through to the generator and code splitter (#8861) (da8c28c498) by @Sheraf
-
-... (truncated)]]></description>
-    <pubDate>Sun, 08 Nov 2026 01:04:43 GMT</pubDate>
   </item>
 </channel>
 </rss>
