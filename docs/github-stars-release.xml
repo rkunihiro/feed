@@ -5,8 +5,140 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Thu, 19 Nov 2026 22:01:29 GMT</lastBuildDate>
+  <lastBuildDate>Fri, 20 Nov 2026 22:01:42 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-11-20) (release-2026-11-20)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-20</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-20</guid>
+    <description><![CDATA[## General Highlights
+* **Dependency Update**: Updated to the latest SDK module versions
+
+## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/service/agentdiscovery`: [v1.0.0](service/agentdiscovery/CHANGELOG.md#v100-2026-11-20)
+ * **Release**: New AWS service client module
+ * **Feature**: Adds the SearchPublicRecords API, which searches public registry records for AI agents, tools, and skills that their publishers have made discoverable.
+* `github.com/aws/aws-sdk-go-v2/service/agentregistry`: [v1.9.0](service/agentregistry/CHANGELOG.md#v190-2026-11-20)
+ * **Feature**: Adds support for the WEBBOT registry record type
+* `github.com/aws/aws-sdk-go-v2/service/agentregistrycontrol`: [v1.11.0](service/agentregistrycontrol/CHANGELOG.md#v1110-2026-11-20)
+ * **Feature**: Adds APIs to create publishers, verify that a publisher owns a domain, and associate registry records with a publisher. Publishers can approve or reject each association.
+* `github.com/aws/aws-sdk-go-v2/service/apiportal`: [v
+
+... (truncated)]]></description>
+    <pubDate>Fri, 20 Nov 2026 20:32:52 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1174.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1174.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1174.0</guid>
+    <description><![CDATA[#### 3.1174.0(2026-11-20)
+
+##### New Features
+
+* **clients:** update client endpoints as of 2026-11-20 (dd0521b0)
+* **client-network-security-manager:** Adds support for Network Firewall automated internet firewall to Network Security Manager (514d028a)
+* **client-backup:** This release adds ResourceTypeOptInIncremental to the UpdateRegionSettings request and the DescribeRegionSettings response, so customers can opt in to or out of incremental backups. It currently applies only to Amazon DynamoDB table backups. (a801e301)
+* **client-marketplace-discovery:** AWS Marketplace Discovery adds ListListingAttributes, an API for trust center, case study, and specialization details. SearchListings adds summaries, seller engagements and filters. GetListing and GetProduct return purchase indicators when products cannot be subscribed to or require no subscription. (255b63fa)
+* **client-apiportal:** Adds support for API Portal, a new Amazon API Gateway feature that discovers the APIs running behind
+
+... (truncated)]]></description>
+    <pubDate>Fri, 20 Nov 2026 20:32:01 GMT</pubDate>
+  </item>
+  <item>
+    <title>[cloudflare/workers-sdk] @cloudflare/vitest-plugin@1.9.0</title>
+    <link>https://github.com/cloudflare/workers-sdk/releases/tag/%40cloudflare/vitest-plugin%401.9.0</link>
+    <guid isPermaLink="true">https://github.com/cloudflare/workers-sdk/releases/tag/%40cloudflare/vitest-plugin%401.9.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- #16174 `629f135` Thanks @james-elicx! - Remove the dependency on `wrangler`
+
+ The Vitest plugin no longer depends on `wrangler`. Reading the Wrangler configuration file, generating Miniflare options, loading local variables and serving the Pages `ASSETS` binding now use shared workers-sdk packages that are bundled into the plugin. Installing the plugin no longer installs `wrangler` as well. If your project runs the `wrangler` CLI (for example `wrangler types`), add `wrangler` to your own `devDependencies`.
+
+### Patch Changes
+
+- #17031 `95fd4c2` Thanks @dependabot! - Update `DEFAULT_COMPAT_DATE` to 2026-11-19
+
+ Use the bundled workerd release's compatibility date by default when scaffolding new projects or when no compatibility date is configured.
+
+- #17043 `4f5b118` Thanks @petebacondarwin! - Update Undici to 7.30.2 to include upstream security fixes
+
+ This patch includes six upstream security fixes covering caching, redirects, and Subresource Integrity verificatio
+
+... (truncated)]]></description>
+    <pubDate>Fri, 20 Nov 2026 18:22:56 GMT</pubDate>
+  </item>
+  <item>
+    <title>[sveltejs/svelte] svelte@5.59.0</title>
+    <link>https://github.com/sveltejs/svelte/releases/tag/svelte%405.59.0</link>
+    <guid isPermaLink="true">https://github.com/sveltejs/svelte/releases/tag/svelte%405.59.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- feat: custom renderer api (#18042)]]></description>
+    <pubDate>Fri, 20 Nov 2026 14:28:21 GMT</pubDate>
+  </item>
+  <item>
+    <title>[nestjs/nest] v12.6.0</title>
+    <link>https://github.com/nestjs/nest/releases/tag/v12.6.0</link>
+    <guid isPermaLink="true">https://github.com/nestjs/nest/releases/tag/v12.6.0</guid>
+    <description><![CDATA[## v12.6.0 (2026-11-20)
+
+#### Notable changes
+
+**New features**
+* `NestFactory.create` infers the application type from the adapter: `NestFactory.create(AppModule, new FastifyAdapter)` returns a `NestFastifyApplication` with no type argument, and the same goes for `ExpressAdapter` and `NodeAdapter`. An explicit type argument still works. A custom adapter declares its application type as the fourth type argument of `AbstractHttpAdapter` – #18623
+* `WsAdapter` takes `gracefulShutdown` (`false` by default) and `gracePeriod` (10,000 ms by default). With `gracefulShutdown`, closing the application stops accepting connections (an upgrade on a server shared with the HTTP adapter gets a 503), ignores new messages, waits up to `gracePeriod` for message handlers and pending replies, and closes each socket with code 1001 – #18589
+* gRPC server: `gracePeriod` (10,000 ms by default) for `gracefulShutdown` – #18566
+
+**New defaults and behaviour changes**
+* gRPC server with `gracefulShutdown`: closin
+
+... (truncated)]]></description>
+    <pubDate>Fri, 20 Nov 2026 12:51:21 GMT</pubDate>
+  </item>
+  <item>
+    <title>[nodejs/undici] v8.13.0</title>
+    <link>https://github.com/nodejs/undici/releases/tag/v8.13.0</link>
+    <guid isPermaLink="true">https://github.com/nodejs/undici/releases/tag/v8.13.0</guid>
+    <description><![CDATA[## What's Changed
+* docs: fix typos by @tsctx in 
+* fix(test): compare proxy-agent headers as plain objects by @mcollina in 
+* fix(pool): release saturated h2 protocol probes after SETTINGS by @EpicHigh in 
+* fix(h2): preserve transport errors and mismatch causes by @styfle in 
+* test: make test:typescript cross-platform on Windows by @mcollina in 
+* build(deps): bump actions/setup-node from 7.0.0 to 7.1.0 by @dependabot[bot] in 
+* build(deps): bump actions/setup-python from 7.0.0 to 7.1.0 by @dependabot[bot] in 
+* build(deps-dev): bump eslint from 10.13.0 to 10.14.0 by @dependabot[bot] in 
+* test(wpt): fix startup checks and failure logging by @panva in 
+* build(deps-dev): bump @fastify/busboy from 3.2.4 to 3.2.5 by @dependabot[bot] in 
+* build(deps-dev): bump node-forge from 1.4.2 to 1.4.3 by @dependabot[bot] in 
+* build(deps-dev): bump ws from 8.22.0 to 8.22.1 by @dependabot[bot] in 
+* docs: note that SqliteCacheStore stores data unencrypted by @bardrop in 
+* test: avoid setTimeout 
+
+... (truncated)]]></description>
+    <pubDate>Fri, 20 Nov 2026 06:49:08 GMT</pubDate>
+  </item>
+  <item>
+    <title>[openai/codex] 0.171.0 (rust-v0.171.0)</title>
+    <link>https://github.com/openai/codex/releases/tag/rust-v0.171.0</link>
+    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.171.0</guid>
+    <description><![CDATA[## New Features
+
+- Added GPT-6.2 Sol and Astra to model catalogs, with Sol as the default catalog selection. (#62106)
+- Enabled the TUI workspace by default, with searchable document previews, image previews, and subagent transcripts alongside the main conversation. (#61352, #61888, #61889, #61919, #62157)
+- Added configurable undo and redo shortcuts to the non-Vim prompt composer, including restoration of attachments and large pastes. (#61954)
+- Added `codex exec --remote <ADDR>` to start or resume noninteractive sessions on an existing app server. (#61707)
+- Added `/rc` and `/remote` to manage local remote control and display device pairing codes from the TUI. (#62121)
+- Added custom MCP status line selection and authoring through `/statusline` when `tui_extensions_statusline` is enabled. (#61979, #61988, #62037)
+
+## Bug Fixes
+
+- Preserved drafts, queued follow-ups, and interrupted input with their original threads when switching or resuming sessions. (#61216)
+- Kept permission profi
+
+... (truncated)]]></description>
+    <pubDate>Fri, 20 Nov 2026 00:44:47 GMT</pubDate>
+  </item>
   <item>
     <title>[webpack/webpack] v5.113.0</title>
     <link>https://github.com/webpack/webpack/releases/tag/v5.113.0</link>
@@ -31,42 +163,6 @@
 
 ... (truncated)]]></description>
     <pubDate>Thu, 19 Nov 2026 21:33:45 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-11-19) (release-2026-11-19)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-19</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-19</guid>
-    <description><![CDATA[## General Highlights
-* **Dependency Update**: Updated to the latest SDK module versions
-
-## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/acm`: [v1.52.0](service/acm/CHANGELOG.md#v1520-2026-11-19)
- * **Feature**: AWS Certificate Manager now supports the ability to issue certificates from the Amazon N2 certificate authorities (CAs), an Amazon-operated CA hierarchy.
-* `github.com/aws/aws-sdk-go-v2/service/agentregistry`: [v1.8.0](service/agentregistry/CHANGELOG.md#v180-2026-11-19)
- * **Feature**: BatchGetDiscoverableRegistryRecord returns a short-lived download URL and SHA-256 checksum for approved skill packages. SearchDiscoverableRegistryRecords adds searchType (KEYWORD, SEMANTIC, HYBRID) and pagination. Adds bearer token authentication for registries that use JWT authorization.
-* `github.com/aws/aws-sdk-go-v2/service/agentregistrycontrol`: [v1.10.0](service/agentregistrycontrol/CHANGELOG.md#v1100-2026-11-19)
- * **Feature**: Adds skill packages and skill source sync for ag
-
-... (truncated)]]></description>
-    <pubDate>Thu, 19 Nov 2026 20:14:57 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-js-v3] v3.1173.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1173.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1173.0</guid>
-    <description><![CDATA[#### 3.1173.0(2026-11-19)
-
-##### New Features
-
-* **clients:** update client endpoints as of 2026-11-19 (695c988d)
-* **client-bedrock-agentcore:** Adds the AWS Billing x402 payment type to ProcessPayment. Agents can purchase x402-enabled AWS Marketplace products and have the charges billed to the AWS account, without a wallet. Requests use the service-managed payment instrument ID aws.agentcorepayments.awsbilling.v1. (831b7b0e)
-* **client-appstream:** Enable stack-level WebAuthn redirection to relay passkey and security-key authentication from a WorkSpaces Applications streaming session to the user's local device. (9076cca7)
-* **client-securityagent:** This release exposes additional per-job metadata within code remediation tasks. (6d3dcab8)
-* **client-pcs:** Added support for Job Submit Plugins in AWS PCS. (188ba8d4)
-* **client-agent-registry-control:** Adds skill packages and skill source sync for agent skill records. Upload a skill package (ZIP) or sync SKILL.md or the full package f
-
-... (truncated)]]></description>
-    <pubDate>Thu, 19 Nov 2026 19:59:36 GMT</pubDate>
   </item>
   <item>
     <title>[yonaskolb/XcodeGen] 2.48.0</title>
@@ -177,42 +273,6 @@
     <pubDate>Wed, 18 Nov 2026 22:48:41 GMT</pubDate>
   </item>
   <item>
-    <title>[cloudflare/workers-sdk] wrangler@4.165.0</title>
-    <link>https://github.com/cloudflare/workers-sdk/releases/tag/wrangler%404.165.0</link>
-    <guid isPermaLink="true">https://github.com/cloudflare/workers-sdk/releases/tag/wrangler%404.165.0</guid>
-    <description><![CDATA[### Minor Changes
-
-- #10598 `24bd3c3` Thanks @Ehbraheem! - Add a new `--force` flag to `d1 migrations apply` which skips the interactive confirmation and applies any pending migrations non-interactively. This is useful for CI and automation.
-
- Usage example:
-
- ```
- wrangler d1 migrations apply <db> --remote --force
- ```
-
- Fixes #5017
-
-### Patch Changes
-
-- #16019 `8f26e90` Thanks @penalosa! - Correct the dry-run setup message to say "exiting now" instead of "existing now".
-
- The previous wording contained a typo and appeared in Wrangler setup output and other consumers of shared autoconfig.
-
-- #17003 `3595295` Thanks @dependabot! - Update `DEFAULT_COMPAT_DATE` to 2026-11-18
-
- Use the bundled workerd release's compatibility date by default when scaffolding new projects or when no compatibility date is configured.
-
-- #17003 `3595295` Thanks @dependabot! - Update dependencies of "miniflare", "wrangler"
-
- The following dependency versions have been updated:
-
- | Dependency | From | To |
- | -
-
-... (truncated)]]></description>
-    <pubDate>Wed, 18 Nov 2026 21:56:19 GMT</pubDate>
-  </item>
-  <item>
     <title>[fastapi/fastapi] 0.165.0</title>
     <link>https://github.com/fastapi/fastapi/releases/tag/0.165.0</link>
     <guid isPermaLink="true">https://github.com/fastapi/fastapi/releases/tag/0.165.0</guid>
@@ -257,62 +317,6 @@
 
 **Full Changelog**:]]></description>
     <pubDate>Wed, 18 Nov 2026 11:10:39 GMT</pubDate>
-  </item>
-  <item>
-    <title>[sveltejs/svelte] svelte@5.58.0</title>
-    <link>https://github.com/sveltejs/svelte/releases/tag/svelte%405.58.0</link>
-    <guid isPermaLink="true">https://github.com/sveltejs/svelte/releases/tag/svelte%405.58.0</guid>
-    <description><![CDATA[### Minor Changes
-
-- feat: include `snippetName` in `render` entries of the dev `__svelte_meta` stack (#19283)
-
-- feat: include the `component` instance an element was rendered in for Svelte devtools to track (#19286)
-
-### Patch Changes
-
-- perf: let the garbage collector free each component's AST after it is compiled (#19241)
-
-- fix: render the same `<title>` on the server as on the client and ignore titles inside failed boundaries (#19176)
-
-- fix: allow `autocorrect` on all elements (#19105)
-
-- fix: parse snippet type parameters containing arrow function types (#19141)
-
-- fix: keep directive values that match the directive name in `print` (#19229)
-
-- fix: correctly assign dev element locations after components during hydration (#19287)
-
-- perf: don't compare the whole template on every expression when a source is parsed again (#19215)
-
-- docs: avoid binding to read-only current values in Spring and Tween examples (#19226)
-
-- fix: keep positions right after optional properties in templ
-
-... (truncated)]]></description>
-    <pubDate>Wed, 18 Nov 2026 06:54:03 GMT</pubDate>
-  </item>
-  <item>
-    <title>[openai/codex] 0.170.0 (rust-v0.170.0)</title>
-    <link>https://github.com/openai/codex/releases/tag/rust-v0.170.0</link>
-    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.170.0</guid>
-    <description><![CDATA[## New Features
-- Added WebRTC negotiation for realtime voice calls in the TUI. (#61172)
-- Added automatically refreshed authentication headers for OpenTelemetry HTTP exporters. (#61028)
-- Added experimental support for using identically named MCP servers across environments. (#60905)
-
-## Bug Fixes
-- Oversized WebSocket requests now fall back to HTTP without unnecessary retries. (#60840, #60841)
-- Fixed MCP OAuth credential races during cancellation, login, and logout. (#60849, #60981)
-- Improved automatic reconnection for Cloud conversations and preserved active recovery turns when clients reconnect. (#60969, #61014)
-- Fixed Windows file replacement, sandbox permission preservation, and runtime registration recovery. (#60872, #60943, #60944)
-- Fixed permission updates and child threads losing existing sandbox restrictions. (#60936, #61134)
-- Removed duplicate file search results and fixed thread search snippets for queries containing whitespace. (#60845, #60846)
-
-## Documentation
-- Up
-
-... (truncated)]]></description>
-    <pubDate>Wed, 18 Nov 2026 03:40:48 GMT</pubDate>
   </item>
   <item>
     <title>[nanaism/yomiyasu] v3.2.0</title>
@@ -464,26 +468,6 @@ Supported events include submitted reviews, pull request state and head changes,
 
 ... (truncated)]]></description>
     <pubDate>Tue, 17 Nov 2026 20:20:31 GMT</pubDate>
-  </item>
-  <item>
-    <title>[bluesky-social/atproto] @atproto/oauth-provider@0.26.0</title>
-    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/oauth-provider%400.26.0</link>
-    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/oauth-provider%400.26.0</guid>
-    <description><![CDATA[### Minor Changes
-
-- #5919 `8d84a6c` Thanks @matthieusieben! - Upgrade `ioredis` to 6.x. By default, the Redis clients these packages create stay on RESP2 and skip `CLIENT SETINFO` on connect, as with `ioredis` 5, and take `ioredis` 6's other new defaults:
- 
- - `family` is `0` (was `4`): hostnames resolve to IPv4 or IPv6 addresses, not only IPv4.
- - `retryStrategy` waits 50ms × 2^(attempt − 1), up to 5s, plus up to 200ms of jitter, between reconnection attempts (was 50ms × attempt, up to 2s).
- - `keepAlive` is `30000`: TCP keepalive probes start after 30s of idle (was off).
- 
- The `redis` option of `OAuthProvider` now expects an `ioredis` 6 `Redis` instance, which is used as is, or `RedisOptions`, which can override these defaults.
-
-### Patch Changes
-
-- Updated dependencies :
- - @atproto/lex-resolver@0.4.6]]></description>
-    <pubDate>Tue, 17 Nov 2026 18:38:29 GMT</pubDate>
   </item>
   <item>
     <title>[microsoft/apm] v0.36.0</title>
@@ -935,25 +919,6 @@ When constructing a `MongoClient`:
 
 ... (truncated)]]></description>
     <pubDate>Thu, 12 Nov 2026 16:39:12 GMT</pubDate>
-  </item>
-  <item>
-    <title>[nestjs/nest] v12.5.0</title>
-    <link>https://github.com/nestjs/nest/releases/tag/v12.5.0</link>
-    <guid isPermaLink="true">https://github.com/nestjs/nest/releases/tag/v12.5.0</guid>
-    <description><![CDATA[## v12.5.0 (2026-11-12)
-
-#### Notable changes
-
-**New options**
-* `WsAdapter` takes `maxPayload`, the largest message a client may send (1 MB by default, was 100 MB; a gateway's own `maxPayload` takes precedence, `0` lifts the limit); a larger message closes the connection with code 1009 – 109e52cd9b
-* `IoAdapter` takes `maxWaitingMessages`, the number of a client's messages of one event that may wait beyond those being handled (10,000 by default; `Infinity` lifts it) – c98b5f782e
-* TCP server: `maxConcurrentMessages` (1000 per connection by default; `0` lifts it) – 42c619cd69
-* gRPC server: `maxPendingResponses` (1000 by default; `0` disables), after which a streaming call whose client leaves its responses unread fails with `RESOURCE_EXHAUSTED` – ce6d44d858
-* Redis server: `maxWildcardChannelLength` (1024 characters by default; `0` disables) for requests matched through a wildcard subscription – 074dcf7c60
-* RabbitMQ: `maxMessageSize` (16 MiB by default) for messages and replies decode
-
-... (truncated)]]></description>
-    <pubDate>Thu, 12 Nov 2026 13:19:45 GMT</pubDate>
   </item>
   <item>
     <title>[prettier/prettier] 3.10.0</title>
