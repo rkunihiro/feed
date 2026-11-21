@@ -5,44 +5,77 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Fri, 20 Nov 2026 22:01:42 GMT</lastBuildDate>
+  <lastBuildDate>Sat, 21 Nov 2026 22:01:36 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
   <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-11-20) (release-2026-11-20)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-20</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-20</guid>
-    <description><![CDATA[## General Highlights
-* **Dependency Update**: Updated to the latest SDK module versions
+    <title>[uxfront-com/styleframe] @styleframe/plugin@3.5.0</title>
+    <link>https://github.com/uxfront-com/styleframe/releases/tag/%40styleframe/plugin%403.5.0</link>
+    <guid isPermaLink="true">https://github.com/uxfront-com/styleframe/releases/tag/%40styleframe/plugin%403.5.0</guid>
+    <description><![CDATA[### Minor Changes
 
-## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/agentdiscovery`: [v1.0.0](service/agentdiscovery/CHANGELOG.md#v100-2026-11-20)
- * **Release**: New AWS service client module
- * **Feature**: Adds the SearchPublicRecords API, which searches public registry records for AI agents, tools, and skills that their publishers have made discoverable.
-* `github.com/aws/aws-sdk-go-v2/service/agentregistry`: [v1.9.0](service/agentregistry/CHANGELOG.md#v190-2026-11-20)
- * **Feature**: Adds support for the WEBBOT registry record type
-* `github.com/aws/aws-sdk-go-v2/service/agentregistrycontrol`: [v1.11.0](service/agentregistrycontrol/CHANGELOG.md#v1110-2026-11-20)
- * **Feature**: Adds APIs to create publishers, verify that a publisher owns a domain, and associate registry records with a publisher. Publishers can approve or reject each association.
-* `github.com/aws/aws-sdk-go-v2/service/apiportal`: [v
+- #348 `e614db7` Thanks @alexgrozav! - Add `inspect(instance)`, which returns a JSON-serialisable snapshot of what an instance defines: its root variables with the custom property and value they emit, its themes with their selector and overrides, its utilities with their values, class names and modifiers, its modifiers, and its recipes with their variant options and defaults. The CLI gains `styleframe check [entry] [--json]`, which runs `validate` on your configuration without writing any files and exits with `1` when it finds a problem or the config file doesn't exist. With `--json`, it prints one `{ "ok", "diagnostics" }` document on stdout and nothing else. `styleframe build` now prints one warning line per diagnostic, exits with `1` under `strict: true` without writing anything, and exits with `1` when the build fails, where it used to log the error and exit with `0`. The bundler plugin logs each diagnostic once per build as a warning, so builds that use it, Inkl
 
 ... (truncated)]]></description>
-    <pubDate>Fri, 20 Nov 2026 20:32:52 GMT</pubDate>
+    <pubDate>Sat, 21 Nov 2026 15:31:39 GMT</pubDate>
   </item>
   <item>
-    <title>[aws/aws-sdk-js-v3] v3.1174.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1174.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1174.0</guid>
-    <description><![CDATA[#### 3.1174.0(2026-11-20)
+    <title>[microsoft/apm] v0.37.0</title>
+    <link>https://github.com/microsoft/apm/releases/tag/v0.37.0</link>
+    <guid isPermaLink="true">https://github.com/microsoft/apm/releases/tag/v0.37.0</guid>
+    <description><![CDATA[### Highlights
+
+- 0.37 writes lockfile version 4 (security hardening). APM 0.36.1 and older refuse v4 lockfiles, so upgrade every machine and CI runner together. (#4026)
+- **BREAKING:** Copilot project MCP servers move to a root `.mcp.json` shared with Claude Code. (#3875)
+- `apm approve` pins each package's hooks, MCP servers and native plugins to their content. (#3918)
+- Marketplace installs replay from the lockfile and fail closed on rebound aliases and cross-repo `*.ghe.com` sources. (#3915, #3917, #3923)
+- `apm install -g --target claude` installs Claude plugins natively, with MCP, LSP and `bin/` under one approval; non-interactive runs also need `--trust-bin`. (#3290)
+
+### Breaking changes and upgrade notes
+
+- **BREAKING:** `copilot` project MCP servers move to root `.mcp.json`, shared with Claude Code (which ignores `tools` allow-lists); run `apm install`, review static `env:`, commit. (#3875)
+- **BREAKING:** `apm audit --ci` fails MCP servers the lockfile admits but `apm.yml` d
+
+... (truncated)]]></description>
+    <pubDate>Sat, 21 Nov 2026 06:55:29 GMT</pubDate>
+  </item>
+  <item>
+    <title>[TASEmulators/fceux] fceux-2.8.0 (v2.8.0)</title>
+    <link>https://github.com/TASEmulators/fceux/releases/tag/v2.8.0</link>
+    <guid isPermaLink="true">https://github.com/TASEmulators/fceux/releases/tag/v2.8.0</guid>
+    <description><![CDATA[The 2.8.0 release adds RetroAchievements support, a Lua source debugger, a built-in performance profiler, a gamepad-operated user interface, and a large set of Qt GUI improvements including dark mode, dockable tool widgets, and saved window layouts. It also fixes several memory safety issues in ROM, movie, and file parsing.]]></description>
+    <pubDate>Sat, 21 Nov 2026 06:52:02 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-11-21) (release-2026-11-21)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-21</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-21</guid>
+    <description><![CDATA[## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/service/quicksight`: [v1.140.0](service/quicksight/CHANGELOG.md#v11400-2026-11-21)
+ * **Feature**: Quicksight public SDK release for November 20
+* `github.com/aws/aws-sdk-go-v2/service/sagemaker`: [v1.293.0](service/sagemaker/CHANGELOG.md#v12930-2026-11-21)
+ * **Feature**: Amazon SageMaker AI adds APIs to view capacity reservations and their usage.]]></description>
+    <pubDate>Sat, 21 Nov 2026 01:13:43 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1175.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1175.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1175.0</guid>
+    <description><![CDATA[#### 3.1175.0(2026-11-21)
 
 ##### New Features
 
-* **clients:** update client endpoints as of 2026-11-20 (dd0521b0)
-* **client-network-security-manager:** Adds support for Network Firewall automated internet firewall to Network Security Manager (514d028a)
-* **client-backup:** This release adds ResourceTypeOptInIncremental to the UpdateRegionSettings request and the DescribeRegionSettings response, so customers can opt in to or out of incremental backups. It currently applies only to Amazon DynamoDB table backups. (a801e301)
-* **client-marketplace-discovery:** AWS Marketplace Discovery adds ListListingAttributes, an API for trust center, case study, and specialization details. SearchListings adds summaries, seller engagements and filters. GetListing and GetProduct return purchase indicators when products cannot be subscribed to or require no subscription. (255b63fa)
-* **client-apiportal:** Adds support for API Portal, a new Amazon API Gateway feature that discovers the APIs running behind
+* **client-quicksight:** Quicksight public SDK release for November 20 (2d90f502)
+* **client-sagemaker:** Amazon SageMaker AI adds APIs to view capacity reservations and their usage. (eddc9ef7)
 
-... (truncated)]]></description>
-    <pubDate>Fri, 20 Nov 2026 20:32:01 GMT</pubDate>
+##### Bug Fixes
+
+* **core/client:** skip object traversal when NoOpLogger is present (#8433) (6588aa0b)
+
+
+---
+
+For list of updated packages, view **updated-packages.md** in **assets-3.1175.0.zip**]]></description>
+    <pubDate>Sat, 21 Nov 2026 01:07:43 GMT</pubDate>
   </item>
   <item>
     <title>[cloudflare/workers-sdk] @cloudflare/vitest-plugin@1.9.0</title>
@@ -468,29 +501,6 @@ Supported events include submitted reviews, pull request state and head changes,
 
 ... (truncated)]]></description>
     <pubDate>Tue, 17 Nov 2026 20:20:31 GMT</pubDate>
-  </item>
-  <item>
-    <title>[microsoft/apm] v0.36.0</title>
-    <link>https://github.com/microsoft/apm/releases/tag/v0.36.0</link>
-    <guid isPermaLink="true">https://github.com/microsoft/apm/releases/tag/v0.36.0</guid>
-    <description><![CDATA[<!-- Release notes generated using configuration in .github/release.yml at v0.36.0 -->
-
-## What's Changed
-### 🔧 Other Changes
-* docs: add public APM adopters list by @danielmeppiel in 
-* fix(deps): place monorepo sibling children in deps tree and why by @danielmeppiel in 
-* fix(install): adopt unchanged committed skills on cold restore by @danielmeppiel in 
-* fix(git): pin core.symlinks=true so package hashes match across platforms by @danielmeppiel in 
-* feat(preflight): gate agent pushes and PRs on a local preflight receipt by @danielmeppiel in 
-* perf(deps): sweep raw CDN across marker probes before any anonymous Contents API call by @ShaoLOWu in 
-* fix(install): resolve transitive deps from the manifest this run installs by @adityaanikam in 
-* docs(producer): explain same-repository branch inheritance by @danielmeppiel in 
-* fix(ci): restore Windows post-merge suite after #3564 by @danielmeppiel in 
-* fix(claude): keep ${VAR} references in project .mcp.json by @Aaryan-Dadu in 
-* f
-
-... (truncated)]]></description>
-    <pubDate>Tue, 17 Nov 2026 18:15:05 GMT</pubDate>
   </item>
   <item>
     <title>[pbatard/rufus] Rufus 4.16 (v4.16)</title>
@@ -987,49 +997,6 @@ specify init my-project
 * With `storage.cacheDir` enabled, upload source maps on their first request. Remove source maps after seven days without a request. (#1514)
 * Stop duplicate writes of legacy build metadata. (#1514)]]></description>
     <pubDate>Tue, 10 Nov 2026 14:18:52 GMT</pubDate>
-  </item>
-  <item>
-    <title>[markedjs/marked] v18.2.0</title>
-    <link>https://github.com/markedjs/marked/releases/tag/v18.2.0</link>
-    <guid isPermaLink="true">https://github.com/markedjs/marked/releases/tag/v18.2.0</guid>
-    <description><![CDATA[# 18.2.0 (2026-11-09)
-
-
-### Bug Fixes
-
-* keep hard line breaks in image alt text (#4187) (ed54c54)
-* let emphasis open after the other delimiter character (#4169) (219492a)
-* let emphasis open and close in angle brackets that are not html (#4190) (7bfa1f7)
-* preserve zero from named extension renderers (#4199) (b81a00a)
-* text after a heading or code block in a nested list item is pulled into the outer item (#4179) (4cb767a)
-
-
-### Features
-
-* add lastToken to lexer state (#4160) (e4ab77f)]]></description>
-    <pubDate>Mon, 09 Nov 2026 23:04:45 GMT</pubDate>
-  </item>
-  <item>
-    <title>[iii-hq/iii] iii 0.26.0 (iii/v0.26.0)</title>
-    <link>https://github.com/iii-hq/iii/releases/tag/iii/v0.26.0</link>
-    <guid isPermaLink="true">https://github.com/iii-hq/iii/releases/tag/iii/v0.26.0</guid>
-    <description><![CDATA[## What's Changed
-* docs(changelog): complete 0.25.0 release notes by @guibeira in 
-* test(rust): give the oversized result_wire case a 30s budget by @guibeira in 
-* fix(python): require websockets>=14.0 by @guibeira in 
-* fix(deps): update Tokio to address RUSTSEC-2026-0386 by @guibeira in 
-* fix(sdk): patch happy-dom and zod security advisories by @guibeira in 
-* docs: move Upgrading group to bottom of sidebar by @anthonyiscoding in 
-* fix(channels): tell the reader when a channel writer aborts (MOT-5538) by @andersonleal in 
-* fix(rust): keep Logger lines under concurrency and close the connection on shutdown by @sergiofilhowz in 
-* fix(sandbox): pass the worker env to libkrun VMs out of band (MOT-5493, MOT-5492) by @guibeira in 
-* fix(release): stop publishing iii-init Darwin aliases by @atirna in 
-* fix(engine): handle trigger teardown races and cancellation by @guibeira in 
-* clarify CLI licensing by @anthonyiscoding in 
-* fix(website): name Motia LLC as the legal entity in site 
-
-... (truncated)]]></description>
-    <pubDate>Mon, 09 Nov 2026 22:44:49 GMT</pubDate>
   </item>
 </channel>
 </rss>
