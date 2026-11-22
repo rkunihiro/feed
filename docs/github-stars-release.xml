@@ -5,8 +5,29 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Sat, 21 Nov 2026 22:01:36 GMT</lastBuildDate>
+  <lastBuildDate>Sun, 22 Nov 2026 22:01:14 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[pnpm/pnpm] pnpm 11.29 (v11.29.0)</title>
+    <link>https://github.com/pnpm/pnpm/releases/tag/v11.29.0</link>
+    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v11.29.0</guid>
+    <description><![CDATA[pnpm 11.29.0 stops reading `otp` from config files, rejects local filesystem dependencies declared by registry packages, adds the `--minimum-release-age` option, and recreates an incompatible `node_modules` without a TTY. This release carries several security fixes.
+
+### Minor Changes
+
+* `otp` is no longer read from any config file. Pass `--otp` on the command line, or set `PNPM_CONFIG_OTP`. A `pnpm-workspace.yaml` or a global `config.yaml` that carries `otp` is ignored, with a warning naming those two channels. `pnpm config set otp` fails with `ERR_PNPM_CONFIG_SET_NOT_A_FILE_SETTING` instead of writing an entry no loader reads back.
+
+ This closes a way to leak a secret. A repository could write `otp: ${NPM_TOKEN}` beside its own `registry:`, and `pnpm publish` sent that environment variable to the registry the same file named, in the `npm-otp` header of its first request #13542.
+
+### Patch Changes
+
+#### Security
+
+* `pnpm install` now rejects local filesystem dependencies (
+
+... (truncated)]]></description>
+    <pubDate>Sun, 22 Nov 2026 13:58:26 GMT</pubDate>
+  </item>
   <item>
     <title>[uxfront-com/styleframe] @styleframe/plugin@3.5.0</title>
     <link>https://github.com/uxfront-com/styleframe/releases/tag/%40styleframe/plugin%403.5.0</link>
@@ -76,6 +97,33 @@
 
 For list of updated packages, view **updated-packages.md** in **assets-3.1175.0.zip**]]></description>
     <pubDate>Sat, 21 Nov 2026 01:07:43 GMT</pubDate>
+  </item>
+  <item>
+    <title>[OpenHands/OpenHands] v1.43.0</title>
+    <link>https://github.com/OpenHands/OpenHands/releases/tag/v1.43.0</link>
+    <guid isPermaLink="true">https://github.com/OpenHands/OpenHands/releases/tag/v1.43.0</guid>
+    <description><![CDATA[## 1.43.0 (2026-11-20)
+
+<!-- Release notes generated using configuration in .github/release.yml at main -->
+
+## What's Changed
+### Features
+* feat(automations): create automations enabled from the setup wizard by @SaltGardenia in 
+* feat(settings): Features page for experimental user feature flags, with Conversation reactions by @enyst in 
+* feat(chat): render experimental decision cards by @enyst in 
+* feat(chat): show the agent's message edits (experimental) by @enyst in 
+* feat: Show a conversation indicator icon on automation run rows by @tofarr in 
+### Bug Fixes
+* fix(automations): keep the setup form when switching conversations by @ak684 in 
+* fix(settings): list Experimental last, after Secrets by @enyst in 
+### Performance
+* perf(chat): virtualize the conversation message list by @analisaperlengkapan in 
+### Documentation
+* docs(verify-openhands): list Settings → Experimental as pending in Not mapped by @enyst in 
+* docs(verify-openhands): map maintenance 2026-11-19 by @enyst 
+
+... (truncated)]]></description>
+    <pubDate>Fri, 20 Nov 2026 18:51:00 GMT</pubDate>
   </item>
   <item>
     <title>[cloudflare/workers-sdk] @cloudflare/vitest-plugin@1.9.0</title>
@@ -486,21 +534,6 @@ Supported events include submitted reviews, pull request state and head changes,
 
 ... (truncated)]]></description>
     <pubDate>Tue, 17 Nov 2026 23:08:54 GMT</pubDate>
-  </item>
-  <item>
-    <title>[pnpm/pnpm] pnpm 12.22.0 (v12.22.0)</title>
-    <link>https://github.com/pnpm/pnpm/releases/tag/v12.22.0</link>
-    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v12.22.0</guid>
-    <description><![CDATA[pnpm 12.22.0 adds a `globalPackagesConfig` section to the global `config.yaml` for settings that apply only to global packages, adds `pnpm why --ranges`, and lists workspace projects in dependency order in `pnpm list --recursive`. It also includes a security fix. After the default or a scoped registry changed, `pnpm install` could skip the `minimumReleaseAge` and `trustPolicy` checks against the new registry.
-
-### Minor Changes
-
-- Settings under `globalPackagesConfig` in the global `config.yaml` now apply only to commands that act on global packages, such as `pnpm add -g` and `pnpm update -g`. For example, `globalPackagesConfig.trustPolicyExclude` excludes a package from the trust policy for global installs only #18130.
-
- `pnpm approve-builds -g` and `pnpm add -g --allow-build` now save build decisions under `globalPackagesConfig.permissions`. pnpm still applies build settings from the `pnpm-workspace.yaml` of the global packages directory, with a deprecation warning. The next ap
-
-... (truncated)]]></description>
-    <pubDate>Tue, 17 Nov 2026 20:20:31 GMT</pubDate>
   </item>
   <item>
     <title>[pbatard/rufus] Rufus 4.16 (v4.16)</title>
@@ -986,17 +1019,6 @@ specify init my-project
 
 ... (truncated)]]></description>
     <pubDate>Tue, 10 Nov 2026 20:01:54 GMT</pubDate>
-  </item>
-  <item>
-    <title>[esm-dev/esm.sh] Server v140_3 (v140_3)</title>
-    <link>https://github.com/esm-dev/esm.sh/releases/tag/v140_3</link>
-    <guid isPermaLink="true">https://github.com/esm-dev/esm.sh/releases/tag/v140_3</guid>
-    <description><![CDATA[* Add `npmStoreTTL` and `NPM_STORE_TTL` to control idle package expiry in seconds. Increase the default from one hour to one day. (#1506)
-* Cache missing S3 keys in memory to reduce repeated requests. This cache assumes one server per bucket. (#1514)
-* Keep type declarations and `?exports` builds only in `storage.cacheDir` when enabled, and cache type declarations read from S3. (#1514)
-* With `storage.cacheDir` enabled, upload source maps on their first request. Remove source maps after seven days without a request. (#1514)
-* Stop duplicate writes of legacy build metadata. (#1514)]]></description>
-    <pubDate>Tue, 10 Nov 2026 14:18:52 GMT</pubDate>
   </item>
 </channel>
 </rss>
