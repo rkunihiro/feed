@@ -5,8 +5,213 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Sun, 22 Nov 2026 22:01:14 GMT</lastBuildDate>
+  <lastBuildDate>Mon, 23 Nov 2026 22:01:26 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-11-23) (release-2026-11-23)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-23</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-23</guid>
+    <description><![CDATA[## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/service/cloudfront`: [v1.78.0](service/cloudfront/CHANGELOG.md#v1780-2026-11-23)
+ * **Feature**: Launch CloudFront in AWS European Sovereign Cloud.
+* `github.com/aws/aws-sdk-go-v2/service/cloudfrontkeyvaluestore`: [v1.23.0](service/cloudfrontkeyvaluestore/CHANGELOG.md#v1230-2026-11-23)
+ * **Feature**: This release adds support for KVSHQ API in the AWS European Sovereign Cloud. Requests for key value stores in the aws-eusc partition are now routed to account-based endpoints under cloudfront-kvs.global.api.amazonwebservices.eu.
+* `github.com/aws/aws-sdk-go-v2/service/cloudwatchomni`: [v1.5.0](service/cloudwatchomni/CHANGELOG.md#v150-2026-11-23)
+ * **Feature**: Release of the new integration type in CreateIntegration API - Used to add Microsoft Azure resources to the Amazon CloudWatch Omni context graph through an AWS Config connector for your Azure tenant.
+* `github.com/aws/aws-sdk-go-v2/service/fsx`: [v1.76.0](service/fsx/CHANGELOG.md
+
+... (truncated)]]></description>
+    <pubDate>Mon, 23 Nov 2026 20:50:19 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1176.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1176.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1176.0</guid>
+    <description><![CDATA[#### 3.1176.0(2026-11-23)
+
+##### New Features
+
+* **clients:** update client endpoints as of 2026-11-23 (77fb0091)
+* **client-cloudfront-keyvaluestore:** This release adds support for KVSHQ API in the AWS European Sovereign Cloud. Requests for key value stores in the aws-eusc partition are now routed to account-based endpoints under cloudfront-kvs.global.api.amazonwebservices.eu. (14539271)
+* **client-fsx:** Adds support for new FSx for NetApp ONTAP resources (8901af81)
+* **client-cloudwatchomni:** Release of the new integration type in CreateIntegration API - Used to add Microsoft Azure resources to the Amazon CloudWatch Omni context graph through an AWS Config connector for your Azure tenant. (4e3609fe)
+* **client-cloudfront:** Launch CloudFront in AWS European Sovereign Cloud. (c15b5541)
+* **lib-sns:** add modernized sns-validator (#8397) (9dcf7927)
+
+
+---
+
+For list of updated packages, view **updated-packages.md** in **assets-3.1176.0.zip**]]></description>
+    <pubDate>Mon, 23 Nov 2026 20:48:59 GMT</pubDate>
+  </item>
+  <item>
+    <title>[cloudflare/workers-sdk] wrangler@4.167.0</title>
+    <link>https://github.com/cloudflare/workers-sdk/releases/tag/wrangler%404.167.0</link>
+    <guid isPermaLink="true">https://github.com/cloudflare/workers-sdk/releases/tag/wrangler%404.167.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- #17060 `fa50aba` Thanks @petebacondarwin! - Support `--env-file` in the experimental `cf-wrangler dev` delegate
+
+ Wrangler-bundled projects can now use `cf dev -- --env-file ../../.env` to load a shared development file outside the project directory without enabling `CLOUDFLARE_INCLUDE_PROCESS_ENV`. Repeat `--env-file` to load multiple files, with later files overriding earlier values.
+
+- #17093 `310633d` Thanks @for-the-kidz! - Remove the `wrangler dispatch-namespace rename` command
+
+ Renaming a Workers for Platforms dispatch namespace left the namespace name stored in dispatcher bindings out of date, which could make Workers in the namespace impossible to read or delete by name. The Cloudflare API now rejects requests that change a dispatch namespace's name, so the command has been removed. To use a different name, create a new dispatch namespace and redeploy your Workers to it.
+
+### Patch Changes
+
+- #17102 `1e65920` Thanks @samarthyadavv! - Exit with a nonzero s
+
+... (truncated)]]></description>
+    <pubDate>Mon, 23 Nov 2026 19:24:30 GMT</pubDate>
+  </item>
+  <item>
+    <title>[typescript-eslint/typescript-eslint] v8.74.0</title>
+    <link>https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.74.0</link>
+    <guid isPermaLink="true">https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.74.0</guid>
+    <description><![CDATA[## 8.74.0 (2026-11-23)
+
+### 🚀 Features
+
+- **ast-spec:** tighten types of `MethodDefinition` (#13075)
+- **ast-spec:** tighten types of `Property` (#13074)
+- **eslint-plugin:** [adjacent-overload-signatures] add `ignoreAccessors` option (#13011)
+
+### 🩹 Fixes
+
+- **eslint-plugin:** [no-implied-eval] handle calls in a switch discriminant (#13126)
+- **eslint-plugin:** [no-unsafe-enum-assignment] ignore non-enum computed keys (#12968)
+- **eslint-plugin:** [consistent-generic-constructors] place annotation after ? and keep line comments out of type arguments (#13160)
+- **eslint-plugin:** [no-deprecated] report deprecated properties in union types (#13069)
+- **eslint-plugin:** [array-type] invalid autofix in readonly arrays (#13105)
+- **parser:** detect jsxPragma as null for the automatic JSX runtime (#13129)
+
+### ❤️ Thank You
+
+- Ankur Dubey
+- Evyatar Daud @StyleShit
+- Huangshuo Kuang @kkkhs
+- kuanghuangshuo
+- Maksim @maksimgm
+- StyleShit @StyleShit
+- Yohannes Desta @yohannesjoya
+
+See GitHub 
+
+... (truncated)]]></description>
+    <pubDate>Mon, 23 Nov 2026 17:04:20 GMT</pubDate>
+  </item>
+  <item>
+    <title>[oxc-project/oxc] oxlint v1.95.0 (oxlint_v1.95.0)</title>
+    <link>https://github.com/oxc-project/oxc/releases/tag/oxlint_v1.95.0</link>
+    <guid isPermaLink="true">https://github.com/oxc-project/oxc/releases/tag/oxlint_v1.95.0</guid>
+    <description><![CDATA[### 🚀 Features
+
+- a96e2bd linter/typescript/no-unsafe-class-instance-assignment: Add rule (#29982) (Cameron)
+
+### 🐛 Bug Fixes
+
+- 11d16bd linter/eslint/prefer-object-spread: Prefix semicolon when the fix could merge with the previous statement (#30080) (oxc-captain[bot])
+- 106d301 linter/unicorn/prefer-math-trunc: Report `parseInt(String(...), 10)` (#30067) (Lê Văn Xuân Hoàn)
+- 226ba04 linter/unicorn/prefer-import-meta-properties: Stop flagging `fileURLToPath(new URL('.', import.meta.url))` (#30041) (oxc-captain[bot])
+- 04cdaec linter/unicorn/no-useless-spread: Replace holes with `undefined` in spread array literals (#30042) (oxc-captain[bot])
+- 7141c26 linter/eslint/no-implicit-coercion: Skip autofix when coercion constructor is shadowed (#30043) (oxc-captain[bot])
+- f22709d linter/eslint/no-unused-vars: Fixes remove a whole CRLF after an unused import (#30047) (Nicholas Rayburn)
+- 6998259 linter/eslint/max-lines: Report diagnostic at the start of the last character (#300
+
+... (truncated)]]></description>
+    <pubDate>Mon, 23 Nov 2026 16:10:56 GMT</pubDate>
+  </item>
+  <item>
+    <title>[OpenHands/OpenHands] v1.44.0</title>
+    <link>https://github.com/OpenHands/OpenHands/releases/tag/v1.44.0</link>
+    <guid isPermaLink="true">https://github.com/OpenHands/OpenHands/releases/tag/v1.44.0</guid>
+    <description><![CDATA[## 1.44.0 (2026-11-23)
+
+<!-- Release notes generated using configuration in .github/release.yml at main -->
+
+## What's Changed
+### Features
+* feat(chat): conversation mentions, behind the conversation_mentions flag by @enyst in 
+* feat(automations): choose who can see an automation (OHE-4206) by @hieptl in 
+* feat(chat): show a readable error when a budget is reached by @hieptl in 
+* feat: View and edit an automation's key-value store by @tofarr in 
+* feat(factories): add Factories sidebar entry with list and drill-in views by @jpshackelford in 
+### Bug Fixes
+* fix(chat): drop a Home message's pending bubble once history has moved past it (OHE-4121) by @hieptl in 
+* fix(settings): make SettingsDropdownInput clearable by default by @SaltGardenia in 
+* fix(conversation-overview): count diff stats from the longest common subsequence by @LeizhenZhang in 
+### Documentation
+* docs(verify-openhands): list Projects as pending in Not mapped by @enyst in 
+* docs(verify-openhands): map maintenanc
+
+... (truncated)]]></description>
+    <pubDate>Mon, 23 Nov 2026 15:29:47 GMT</pubDate>
+  </item>
+  <item>
+    <title>[anomalyco/opencode] v2.4.0</title>
+    <link>https://github.com/anomalyco/opencode/releases/tag/v2.4.0</link>
+    <guid isPermaLink="true">https://github.com/anomalyco/opencode/releases/tag/v2.4.0</guid>
+    <description><![CDATA[### Highlights
+
+- **Built-In Desktop Browser**: Import your sign-ins and browsing history from Chrome, Edge, Firefox or Safari, and add extensions from Chromium browsers or the Chrome and Edge stores. Everything stays in one persistent desktop profile: chat links open signed in, your tabs survive restarts and the agent can read and drive the same pages without you switching apps. (#63002, #65073)
+- **Automations**: Ask the agent to run a prompt, a script or a shell command on a timer, on a cron schedule or when an MCP server sends an event, and manage them with `/automation`. Set `"automations": false` in your config if you don't want them. (#65296, #65186)
+- **Generate Videos**: When a connected provider has a video model, the agent can make videos with `generate_video`. It keeps working while the video renders and saves the files into your workspace when they're ready. (#63666, #65664)
+- **New TUI Look**: The TUI's new designs are on by default, and the `opencode` theme is the new on
+
+... (truncated)]]></description>
+    <pubDate>Mon, 23 Nov 2026 09:22:21 GMT</pubDate>
+  </item>
+  <item>
+    <title>[microsoft/apm] v0.38.0</title>
+    <link>https://github.com/microsoft/apm/releases/tag/v0.38.0</link>
+    <guid isPermaLink="true">https://github.com/microsoft/apm/releases/tag/v0.38.0</guid>
+    <description><![CDATA[<!-- Release notes generated using configuration in .github/release.yml at v0.38.0 -->
+
+## What's Changed
+### 🔧 Other Changes
+* test(policy): pin the conflicting-prefix refusal and the explicit-policy bypasses by @danielmeppiel in 
+* fix(marketplace): user-scope origin-conflict remedy no longer assumes version control by @danielmeppiel in 
+* ci(apm-action): pin microsoft/apm-action v1.12.0 by @danielmeppiel in 
+* test(lifecycle): fix GATE nightly falsifiers and the codex cache-drift oracle by @danielmeppiel in 
+* [0.38] docs(spec): qualify every remaining catalog target in Part C of the native activation profile by @danielmeppiel in 
+* [0.38] fix(registry): lockfile replay tolerates a mirror URL when the hash matches (#4013) by @danielmeppiel in 
+* [0.38] test(install): S13 asserts the bare global install contract by @danielmeppiel in 
+* [0.38] test(registry): enterprise registry lifecycle stage 1 (#3299) by @danielmeppiel in 
+* test(lifecycle): I9 compares a [!] warning across indent
+
+... (truncated)]]></description>
+    <pubDate>Sun, 22 Nov 2026 23:33:53 GMT</pubDate>
+  </item>
+  <item>
+    <title>[nanaism/yomiyasu] v3.3.0</title>
+    <link>https://github.com/nanaism/yomiyasu/releases/tag/v3.3.0</link>
+    <guid isPermaLink="true">https://github.com/nanaism/yomiyasu/releases/tag/v3.3.0</guid>
+    <description><![CDATA[yomiyasu v3.3.0 を公開しました。
+推敲した文の読点を減らし、主語と述語が離れた文の直し方を足したバージョンです。推敲の手順（SKILL.md）に1つの段落と数文を足し、lint と diff を直しました。
+
+## 背景と課題
+
+yomiyasu の lint には短い主題のすぐあとの読点（「会議の資料は、明日までに送ります」の「は、」）を指摘する規則があります。この規則は文書の種類を指定したときだけ動き、指定しても AI の原稿にあるこうした読点の3割ほどしか拾っていませんでした。
+
+issue #68 では「主語１が主語２がAAAすることをやめさせる」のように主語と述語が離れた文を直せないか、という要望をいただきました。issue #69 では処理の流れの stage を「段」、CI やレビューの gate を「門」と書く直訳語を、型4に足す案をいただきました。
+
+## v3.3.0 で変わったこと
+
+- 読点の規則を、文書の種類を指定しないときも動かし、拾う形を広げました。外してよい読点のうち拾う割合は約3割から約5割になり、指摘の正しさは約9割で変わりません。推敲の出力では、短い主題のあとの読点が1割ほど減りました。
+- SKILL.md に、主語と述語のあいだに別の主語のある節が挟まる文の直し方を書きました。読み手が前に戻らないと誰が何をするかが分からないときだけ、長い節を前に出し、主語を述語のすぐ前に置きます。誰が何をするかや、条件の掛かる範囲が変わる並べ替えはしません。
+- diff は入れ子の文で主語の役が入れ替わった推敲を、意味が変わる恐れとして知らせます。
+- 直訳語の型4に「段」と「門」が入りました。案と実装は kfsky さんの PR #70 です。人の文に誤った指摘が出ないよう、こちらで細かい直しを足しました。
+- Python 3.13 で落ちる試験を直し、CI で 3.13 も流すようにしました。
+
+## 確かめたこと
+
+- 短い主題のあとの読点230か所に2つの確かめ役（どちらも AI）が「外してよい」か「残す」を付けた組で、読点の規則の正しさを測りました。
+- 原稿18本を4回ずつ推敲して比べると、読点が減った一方で、意味が変わったという判定役のモデルの指摘も増えました（4回の合計で7件から17件。増えたのは軽い指摘
+
+... (truncated)]]></description>
+    <pubDate>Sun, 22 Nov 2026 22:25:55 GMT</pubDate>
+  </item>
   <item>
     <title>[pnpm/pnpm] pnpm 11.29 (v11.29.0)</title>
     <link>https://github.com/pnpm/pnpm/releases/tag/v11.29.0</link>
@@ -40,113 +245,11 @@
     <pubDate>Sat, 21 Nov 2026 15:31:39 GMT</pubDate>
   </item>
   <item>
-    <title>[microsoft/apm] v0.37.0</title>
-    <link>https://github.com/microsoft/apm/releases/tag/v0.37.0</link>
-    <guid isPermaLink="true">https://github.com/microsoft/apm/releases/tag/v0.37.0</guid>
-    <description><![CDATA[### Highlights
-
-- 0.37 writes lockfile version 4 (security hardening). APM 0.36.1 and older refuse v4 lockfiles, so upgrade every machine and CI runner together. (#4026)
-- **BREAKING:** Copilot project MCP servers move to a root `.mcp.json` shared with Claude Code. (#3875)
-- `apm approve` pins each package's hooks, MCP servers and native plugins to their content. (#3918)
-- Marketplace installs replay from the lockfile and fail closed on rebound aliases and cross-repo `*.ghe.com` sources. (#3915, #3917, #3923)
-- `apm install -g --target claude` installs Claude plugins natively, with MCP, LSP and `bin/` under one approval; non-interactive runs also need `--trust-bin`. (#3290)
-
-### Breaking changes and upgrade notes
-
-- **BREAKING:** `copilot` project MCP servers move to root `.mcp.json`, shared with Claude Code (which ignores `tools` allow-lists); run `apm install`, review static `env:`, commit. (#3875)
-- **BREAKING:** `apm audit --ci` fails MCP servers the lockfile admits but `apm.yml` d
-
-... (truncated)]]></description>
-    <pubDate>Sat, 21 Nov 2026 06:55:29 GMT</pubDate>
-  </item>
-  <item>
     <title>[TASEmulators/fceux] fceux-2.8.0 (v2.8.0)</title>
     <link>https://github.com/TASEmulators/fceux/releases/tag/v2.8.0</link>
     <guid isPermaLink="true">https://github.com/TASEmulators/fceux/releases/tag/v2.8.0</guid>
     <description><![CDATA[The 2.8.0 release adds RetroAchievements support, a Lua source debugger, a built-in performance profiler, a gamepad-operated user interface, and a large set of Qt GUI improvements including dark mode, dockable tool widgets, and saved window layouts. It also fixes several memory safety issues in ROM, movie, and file parsing.]]></description>
     <pubDate>Sat, 21 Nov 2026 06:52:02 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-11-21) (release-2026-11-21)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-21</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-21</guid>
-    <description><![CDATA[## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/quicksight`: [v1.140.0](service/quicksight/CHANGELOG.md#v11400-2026-11-21)
- * **Feature**: Quicksight public SDK release for November 20
-* `github.com/aws/aws-sdk-go-v2/service/sagemaker`: [v1.293.0](service/sagemaker/CHANGELOG.md#v12930-2026-11-21)
- * **Feature**: Amazon SageMaker AI adds APIs to view capacity reservations and their usage.]]></description>
-    <pubDate>Sat, 21 Nov 2026 01:13:43 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-js-v3] v3.1175.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1175.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1175.0</guid>
-    <description><![CDATA[#### 3.1175.0(2026-11-21)
-
-##### New Features
-
-* **client-quicksight:** Quicksight public SDK release for November 20 (2d90f502)
-* **client-sagemaker:** Amazon SageMaker AI adds APIs to view capacity reservations and their usage. (eddc9ef7)
-
-##### Bug Fixes
-
-* **core/client:** skip object traversal when NoOpLogger is present (#8433) (6588aa0b)
-
-
----
-
-For list of updated packages, view **updated-packages.md** in **assets-3.1175.0.zip**]]></description>
-    <pubDate>Sat, 21 Nov 2026 01:07:43 GMT</pubDate>
-  </item>
-  <item>
-    <title>[OpenHands/OpenHands] v1.43.0</title>
-    <link>https://github.com/OpenHands/OpenHands/releases/tag/v1.43.0</link>
-    <guid isPermaLink="true">https://github.com/OpenHands/OpenHands/releases/tag/v1.43.0</guid>
-    <description><![CDATA[## 1.43.0 (2026-11-20)
-
-<!-- Release notes generated using configuration in .github/release.yml at main -->
-
-## What's Changed
-### Features
-* feat(automations): create automations enabled from the setup wizard by @SaltGardenia in 
-* feat(settings): Features page for experimental user feature flags, with Conversation reactions by @enyst in 
-* feat(chat): render experimental decision cards by @enyst in 
-* feat(chat): show the agent's message edits (experimental) by @enyst in 
-* feat: Show a conversation indicator icon on automation run rows by @tofarr in 
-### Bug Fixes
-* fix(automations): keep the setup form when switching conversations by @ak684 in 
-* fix(settings): list Experimental last, after Secrets by @enyst in 
-### Performance
-* perf(chat): virtualize the conversation message list by @analisaperlengkapan in 
-### Documentation
-* docs(verify-openhands): list Settings → Experimental as pending in Not mapped by @enyst in 
-* docs(verify-openhands): map maintenance 2026-11-19 by @enyst 
-
-... (truncated)]]></description>
-    <pubDate>Fri, 20 Nov 2026 18:51:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>[cloudflare/workers-sdk] @cloudflare/vitest-plugin@1.9.0</title>
-    <link>https://github.com/cloudflare/workers-sdk/releases/tag/%40cloudflare/vitest-plugin%401.9.0</link>
-    <guid isPermaLink="true">https://github.com/cloudflare/workers-sdk/releases/tag/%40cloudflare/vitest-plugin%401.9.0</guid>
-    <description><![CDATA[### Minor Changes
-
-- #16174 `629f135` Thanks @james-elicx! - Remove the dependency on `wrangler`
-
- The Vitest plugin no longer depends on `wrangler`. Reading the Wrangler configuration file, generating Miniflare options, loading local variables and serving the Pages `ASSETS` binding now use shared workers-sdk packages that are bundled into the plugin. Installing the plugin no longer installs `wrangler` as well. If your project runs the `wrangler` CLI (for example `wrangler types`), add `wrangler` to your own `devDependencies`.
-
-### Patch Changes
-
-- #17031 `95fd4c2` Thanks @dependabot! - Update `DEFAULT_COMPAT_DATE` to 2026-11-19
-
- Use the bundled workerd release's compatibility date by default when scaffolding new projects or when no compatibility date is configured.
-
-- #17043 `4f5b118` Thanks @petebacondarwin! - Update Undici to 7.30.2 to include upstream security fixes
-
- This patch includes six upstream security fixes covering caching, redirects, and Subresource Integrity verificatio
-
-... (truncated)]]></description>
-    <pubDate>Fri, 20 Nov 2026 18:22:56 GMT</pubDate>
   </item>
   <item>
     <title>[sveltejs/svelte] svelte@5.59.0</title>
@@ -400,42 +503,6 @@ For list of updated packages, view **updated-packages.md** in **assets-3.1175.0.
     <pubDate>Wed, 18 Nov 2026 11:10:39 GMT</pubDate>
   </item>
   <item>
-    <title>[nanaism/yomiyasu] v3.2.0</title>
-    <link>https://github.com/nanaism/yomiyasu/releases/tag/v3.2.0</link>
-    <guid isPermaLink="true">https://github.com/nanaism/yomiyasu/releases/tag/v3.2.0</guid>
-    <description><![CDATA[yomiyasu v3.2.0 を公開しました。
-読点の検査（lint の `pause_comma`）の誤った指摘と見落としを直し、推敲の前後を比べる diff の「意味が変わる恐れ」を見直したバージョンです。
-推敲の結果が変わるので、マイナーバージョンにしています。
-推敲の手順で直したのは、SKILL.md の読点の段落と、references/slop-catalog.md の読点と言い回しの表だけです。
-
-## nihongo に学んだこと
-
-このバージョンの diff の見直しでは、AnIT さんの nihongo から多くを学びました。
-nihongo は、AI が書く日本語を、その場で人が書く文に近づけるエージェントスキルです。推敲の最後に前と後を比べ、数値、否定、確かさ、強さ、程度の言葉が変わった文を見つけて原文に戻すスクリプトを持っています。
-
-nihongo の考え方を手がかりに yomiyasu の diff を調べ直すと、見落としていた変化がいくつも見つかりました。次の考え方は nihongo から学んだものです。
-
-- 時刻の書き方だけが違う書き換え（18:00 と 18時）を、同じ時刻として扱う
-- 程度を強める語（大幅に、心より など）が消えたら知らせる
-- 「必須ではない」（してもしなくてもよい）と「不要」（しなくてよい）を、違う強さとして分ける
-- 「すべて」「一切」のような範囲の語が消えたら知らせる
-- 「までに」のような期限の語が消えたら知らせる
-- 段落から文が丸ごと消えたら知らせる
-
-「2秒を超えたら」が「2秒以上なら」になるような境目の言い方の変化にも、nihongo のスクリプトの結果を見て気づきました。
-強める語の一覧に足した語は、nihongo が挙げている語を参考に選びました。消えた文を見るときの内容の語の決め方と、その半分以上が消えたら知らせるという目安も、nihongo に倣っています。規則とコードは yomiyasu の diff の作りに合わせて書いたもので、nihongo のコードは含んでいません。
-考え方を公開してくださった AnIT さんに感謝します。
-
-## 背景と課題
-
-v3.1.0 のあとに、読点の扱いと、推敲で落ちた言葉について、記事や例をいくつもいただきました。
-
-読点を減らしたいという要望
-
-... (truncated)]]></description>
-    <pubDate>Wed, 18 Nov 2026 02:15:18 GMT</pubDate>
-  </item>
-  <item>
     <title>[semgrep/semgrep] Release v1.186.0 (v1.186.0)</title>
     <link>https://github.com/semgrep/semgrep/releases/tag/v1.186.0</link>
     <guid isPermaLink="true">https://github.com/semgrep/semgrep/releases/tag/v1.186.0</guid>
@@ -553,13 +620,6 @@ Supported events include submitted reviews, pull request state and head changes,
     <pubDate>Tue, 17 Nov 2026 13:02:46 GMT</pubDate>
   </item>
   <item>
-    <title>[anomalyco/opencode] process-daemon v0.6.0 (process-daemon-v0.6.0)</title>
-    <link>https://github.com/anomalyco/opencode/releases/tag/process-daemon-v0.6.0</link>
-    <guid isPermaLink="true">https://github.com/anomalyco/opencode/releases/tag/process-daemon-v0.6.0</guid>
-    <description><![CDATA[opencode-pty 0.6.0 (protocol 9) from packages/process-daemon, published to npm as @opencode/pty@0.6.0.]]></description>
-    <pubDate>Mon, 16 Nov 2026 23:36:04 GMT</pubDate>
-  </item>
-  <item>
     <title>[dprint/dprint] 0.65.0</title>
     <link>https://github.com/dprint/dprint/releases/tag/0.65.0</link>
     <guid isPermaLink="true">https://github.com/dprint/dprint/releases/tag/0.65.0</guid>
@@ -614,30 +674,6 @@ Supported events include submitted reviews, pull request state and head changes,
     <pubDate>Mon, 16 Nov 2026 19:28:24 GMT</pubDate>
   </item>
   <item>
-    <title>[typescript-eslint/typescript-eslint] v8.73.0</title>
-    <link>https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.73.0</link>
-    <guid isPermaLink="true">https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.73.0</guid>
-    <description><![CDATA[## 8.73.0 (2026-11-16)
-
-### 🚀 Features
-
-- **eslint-plugin:** [consistent-type-imports] narrow report location (#12924)
-- **eslint-plugin:** [no-unsafe-class-instance-assignment] add rule (#12907)
-- **typescript-estree:** add projectService.EXPERIMENTAL_backend for TypeScript 7.1 native parser support over IPC (#12803)
-
-### ❤️ Thank You
-
-- Eren Batı @erenbati
-- Evyatar Daud @StyleShit
-- Josh Ghoulberg 👻
-- Josh Goldberg
-
-See GitHub Releases for more information.
-
-You can read about our versioning strategy and releases on our website.]]></description>
-    <pubDate>Mon, 16 Nov 2026 17:04:16 GMT</pubDate>
-  </item>
-  <item>
     <title>[cloudflare/vinext] @cloudflare/workers-response-store@1.2.0</title>
     <link>https://github.com/cloudflare/vinext/releases/tag/%40cloudflare/workers-response-store%401.2.0</link>
     <guid isPermaLink="true">https://github.com/cloudflare/vinext/releases/tag/%40cloudflare/workers-response-store%401.2.0</guid>
@@ -661,30 +697,6 @@ You can read about our versioning strategy and releases on our website.]]></desc
 
 - @james-elicx]]></description>
     <pubDate>Mon, 16 Nov 2026 14:02:13 GMT</pubDate>
-  </item>
-  <item>
-    <title>[oxc-project/oxc] oxlint v1.94.0 (oxlint_v1.94.0)</title>
-    <link>https://github.com/oxc-project/oxc/releases/tag/oxlint_v1.94.0</link>
-    <guid isPermaLink="true">https://github.com/oxc-project/oxc/releases/tag/oxlint_v1.94.0</guid>
-    <description><![CDATA[### 🚀 Features
-
-- db5bc6b linter: Output recommended flag in `--rules` JSON output (#29338) (Cam McHenry)
-- acd8814 linter/typescript/no-misused-promises: Add `flagUnions` option (#29380) (camc314)
-- fa492d6 minifier: Merge adjacent switch cases with identical bodies (#29316) (camc314)
-- ca3b2cb linter/vue/no-shared-component-data: Implement fixer (#29291) (Mikhail Baev)
-- bfe3498 linter: Mark oxc rules as recommended (#28091) (Cam McHenry)
-- 5da83ae linter/eslint/no-unused-vars: Suggest removing unused type parameters (#28762) (YanYunCY)
-- 6816662 linter/jsdoc/require-param-description: Implement suggestion (#29118) (Mikhail Baev)
-
-### 🐛 Bug Fixes
-
-- 8d49552 linter/vitest/prefer-importing-vitest-globals: Insert imports after shebangs and directives (#29674) (camc314)
-- 4526cae linter: Drop `## Example` headings from overrides config docs (#29670) (oxc-captain[bot])
-- 97ed4b7 linter: Mark undefined argument removal as dangerous (#29266) (周星星同学)
-- 58ef81d linter/typescript/prefer-func
-
-... (truncated)]]></description>
-    <pubDate>Mon, 16 Nov 2026 12:26:24 GMT</pubDate>
   </item>
   <item>
     <title>[Seldaek/monolog] 3.13.0</title>
