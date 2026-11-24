@@ -5,65 +5,243 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Mon, 23 Nov 2026 22:01:26 GMT</lastBuildDate>
+  <lastBuildDate>Tue, 24 Nov 2026 22:01:55 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
   <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-11-23) (release-2026-11-23)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-23</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-23</guid>
-    <description><![CDATA[## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/service/cloudfront`: [v1.78.0](service/cloudfront/CHANGELOG.md#v1780-2026-11-23)
- * **Feature**: Launch CloudFront in AWS European Sovereign Cloud.
-* `github.com/aws/aws-sdk-go-v2/service/cloudfrontkeyvaluestore`: [v1.23.0](service/cloudfrontkeyvaluestore/CHANGELOG.md#v1230-2026-11-23)
- * **Feature**: This release adds support for KVSHQ API in the AWS European Sovereign Cloud. Requests for key value stores in the aws-eusc partition are now routed to account-based endpoints under cloudfront-kvs.global.api.amazonwebservices.eu.
-* `github.com/aws/aws-sdk-go-v2/service/cloudwatchomni`: [v1.5.0](service/cloudwatchomni/CHANGELOG.md#v150-2026-11-23)
- * **Feature**: Release of the new integration type in CreateIntegration API - Used to add Microsoft Azure resources to the Amazon CloudWatch Omni context graph through an AWS Config connector for your Azure tenant.
-* `github.com/aws/aws-sdk-go-v2/service/fsx`: [v1.76.0](service/fsx/CHANGELOG.md
+    <title>[semgrep/semgrep] Release v1.187.0 (v1.187.0)</title>
+    <link>https://github.com/semgrep/semgrep/releases/tag/v1.187.0</link>
+    <guid isPermaLink="true">https://github.com/semgrep/semgrep/releases/tag/v1.187.0</guid>
+    <description><![CDATA[## 1.187.0 - 2026-11-24
 
-... (truncated)]]></description>
-    <pubDate>Mon, 23 Nov 2026 20:50:19 GMT</pubDate>
+### ### Changed
+
+- Reduce scheduling overhead when scanning many small files by assigning files to worker domains in small batches. (chunk-target-dispatch)
+- Improved scan performance for taint rules. (dataflow-fixpoint-equality)
+- File prefilters can answer case-sensitive needle predicates from a per-target prefilter carried by the extended target, keeping their default evaluation behavior otherwise. (prefilter-needle-index)
+- Improved prefilter generation for patterns comprising regex which use character classes to achieve case-insensitivity, e.g., `[fF][oO][oO]`. (regexp-case-class-prefilter)
+- Reduce scan startup overhead by skipping prefilter work that no rule needs and stopping project-wide checks once all required conditions have been found. (skip-idle-startup-work)
+
+### ### Fixed
+
+- Fixed unnecessary directory I/O, introduced in 1.164.0, when scanning only explicitly listed files. (CODE-10318)]]></description>
+    <pubDate>Tue, 24 Nov 2026 21:39:31 GMT</pubDate>
   </item>
   <item>
-    <title>[aws/aws-sdk-js-v3] v3.1176.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1176.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1176.0</guid>
-    <description><![CDATA[#### 3.1176.0(2026-11-23)
+    <title>[aws/aws-sdk-go-v2] Release (2026-11-24) (release-2026-11-24)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-24</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-24</guid>
+    <description><![CDATA[## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/feature/s3/transfermanager`: [v0.5.12](feature/s3/transfermanager/CHANGELOG.md#v0512-2026-11-24)
+ * **Bug Fix**: Fix GetObject and DownloadObject failing or reporting an incorrect length when the requested byte range extends past the end of an S3 object.
+ * **Bug Fix**: Preserve the abort error alongside the original upload error when an S3 multipart upload and its cleanup both fail.
+ * **Bug Fix**: Quick exit GetObject body read for empty buffer so it does not cause deadlock
+ * **Bug Fix**: Retry part body read failures in `GetObject` up to `PartBodyMaxRetries`, matching `DownloadObject`.
+* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcore`: [v1.61.0](service/bedrockagentcore/CHANGELOG.md#v1610-2026-11-24)
+ * **Feature**: Adds the optional userLocation parameter to InvokeWebSearch. Specify a two-letter ISO 3166-1 alpha-2 country code to refine web search results for that country. InvokeWebSearch also accepts search queries in l
+
+... (truncated)]]></description>
+    <pubDate>Tue, 24 Nov 2026 19:41:44 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1177.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1177.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1177.0</guid>
+    <description><![CDATA[#### 3.1177.0(2026-11-24)
+
+##### Chores
+
+* **codegen:** smithy-aws-typescript-codegen 0.56.0 (#8437) (31e0007f)
+
+##### Documentation Changes
+
+* **client-global-accelerator:** AWS Global Accelerator supports Client IP Preservation for NLBs with TLS Listener endpoints. (896b01b2)
 
 ##### New Features
 
-* **clients:** update client endpoints as of 2026-11-23 (77fb0091)
-* **client-cloudfront-keyvaluestore:** This release adds support for KVSHQ API in the AWS European Sovereign Cloud. Requests for key value stores in the aws-eusc partition are now routed to account-based endpoints under cloudfront-kvs.global.api.amazonwebservices.eu. (14539271)
-* **client-fsx:** Adds support for new FSx for NetApp ONTAP resources (8901af81)
-* **client-cloudwatchomni:** Release of the new integration type in CreateIntegration API - Used to add Microsoft Azure resources to the Amazon CloudWatch Omni context graph through an AWS Config connector for your Azure tenant. (4e3609fe)
-* **client-cloudfront:** Launch CloudFront in AWS European Sovereign Cloud. (c15b5541)
-* **lib-sns:** add modernized sns-validator (#8397) (9dcf7927)
+* **client-bedrock-agentcore:** Adds the optional userLocation parameter to InvokeWebSearch. Specify a two-letter ISO 3166-1 alpha-2 country code to refine web search results for that country. InvokeWebSearch also accepts search queries in languages other than English. (185b32f0)
 
 
 ---
 
-For list of updated packages, view **updated-packages.md** in **assets-3.1176.0.zip**]]></description>
-    <pubDate>Mon, 23 Nov 2026 20:48:59 GMT</pubDate>
+For list of updated packages, view **updated-packages.md** in **assets-3.1177.0.zip**]]></description>
+    <pubDate>Tue, 24 Nov 2026 19:40:49 GMT</pubDate>
   </item>
   <item>
-    <title>[cloudflare/workers-sdk] wrangler@4.167.0</title>
-    <link>https://github.com/cloudflare/workers-sdk/releases/tag/wrangler%404.167.0</link>
-    <guid isPermaLink="true">https://github.com/cloudflare/workers-sdk/releases/tag/wrangler%404.167.0</guid>
+    <title>[usebruno/bruno] v4.4.0</title>
+    <link>https://github.com/usebruno/bruno/releases/tag/v4.4.0</link>
+    <guid isPermaLink="true">https://github.com/usebruno/bruno/releases/tag/v4.4.0</guid>
+    <description><![CDATA[# Changelog
+
+### Features
+- feat(export): YAML export functionality with save dialog by @naman-bruno in #9831
+- feat(grpc): enhance URL parsing for loopback addresses by @sanish-bruno in #9769
+- feat(openapi): CLI changes for openapi for setting up authentication and request name source by @sachin-bruno in #9702
+- feat(openapi): Openapi import/sync for setting authentication at collection level and choosing request name source by @sachin-bruno in #9701
+- feat: OpenAPI sync with preserve values by @sachin-bruno in #9664
+- feat(openapi-sync): connect a collection to a spec in the workspace by @sundram-bruno in #9639
+- feat(import): enhance script translation reporting and measurement by @sanish-bruno in #9733
+- feat(api-spec): spec row context menu with generate, reveal, remove and delete by @sundram-bruno in #9309
+- feat: Move writeCollection method to io package. by @morsh-bruno in #9718
+- feat(bruno-js): add jsdoc annotations to Script APIs by @morsh-bruno in #9725
+- feat
+
+... (truncated)]]></description>
+    <pubDate>Tue, 24 Nov 2026 17:37:49 GMT</pubDate>
+  </item>
+  <item>
+    <title>[cloudflare/workers-sdk] wrangler@4.168.0</title>
+    <link>https://github.com/cloudflare/workers-sdk/releases/tag/wrangler%404.168.0</link>
+    <guid isPermaLink="true">https://github.com/cloudflare/workers-sdk/releases/tag/wrangler%404.168.0</guid>
     <description><![CDATA[### Minor Changes
 
-- #17060 `fa50aba` Thanks @petebacondarwin! - Support `--env-file` in the experimental `cf-wrangler dev` delegate
+- #16680 `96e936c` Thanks @mglewis! - Apply `images.url_transformations` when deploying a Worker
 
- Wrangler-bundled projects can now use `cf dev -- --env-file ../../.env` to load a shared development file outside the project directory without enabling `CLOUDFLARE_INCLUDE_PROCESS_ENV`. Repeat `--env-file` to load multiple files, with later files overriding earlier values.
+ `wrangler deploy` and `wrangler versions deploy` now apply the `images.url_transformations` setting to the deployed Worker. The setting is applied after the Worker and its triggers have been deployed. If it can't be applied, the command fails with the reason from the API. Removing `url_transformations` from the configuration leaves the Worker's existing setting in place.
 
-- #17093 `310633d` Thanks @for-the-kidz! - Remove the `wrangler dispatch-namespace rename` command
-
- Renaming a Workers for Platforms dispatch namespace left the namespace name stored in dispatcher bindings out of date, which could make Workers in the namespace impossible to read or delete by name. The Cloudflare API now rejects requests that change a dispatch namespace's name, so the command has been removed. To use a different name, create a new dispatch namespace and redeploy your Workers to it.
+ The setting isn't applied for `--dry-run`, `wrangler versions upload`, or Workers deployed to a dispatch namespace.
 
 ### Patch Changes
 
-- #17102 `1e65920` Thanks @samarthyadavv! - Exit with a nonzero s
+- #17063 `6c45ad7` Thanks @sidharthachatterjee! - Request the billing scopes when logging in with cf and Wrangler
+
+ Include `billing:write` in the default OAuth scopes of cf and Wrangler so they can create account subscriptions, which is how products such as R2 are enabled on an account. cf also requests `billing:read`. Existing OAuth sessions need a new login to requ
 
 ... (truncated)]]></description>
-    <pubDate>Mon, 23 Nov 2026 19:24:30 GMT</pubDate>
+    <pubDate>Tue, 24 Nov 2026 14:00:09 GMT</pubDate>
+  </item>
+  <item>
+    <title>[nanaism/yomiyasu] v3.4.0</title>
+    <link>https://github.com/nanaism/yomiyasu/releases/tag/v3.4.0</link>
+    <guid isPermaLink="true">https://github.com/nanaism/yomiyasu/releases/tag/v3.4.0</guid>
+    <description><![CDATA[yomiyasu v3.4.0 を公開しました。
+スライドの見出しに読点を残さないようにし、推敲の前と後を比べる diff の誤った候補を減らして、話題ごとの入れ替わりを見直しの候補に足したバージョンです。
+
+## 背景と課題
+
+スライドの見出しに読点があると読む気がなくなる、という声がありました。3.3.0 までの lint が見出しで候補に出していたのは、間を作るだけの読点（文頭の「だから」や長い時の句、短い主題のすぐあとのもの）でした。3.3.0 で推敲したスライドにも見出しの読点が残ることがありました。
+
+diff にも直すべき所がありました。3.3.0 で足した入れ子の主語の入れ替わりの候補は、「AすることとBすることを〜」の2つの節の順を入れ替えただけの推敲（意味は同じ）にも出ていました。また、AnIT さんの nihongo の v3.0.0 までのリリースと Issue 2・6 を読んで同じ形を試すと、4つの誤りと見落としが見つかりました。午後3時を15時と書き直しただけの推敲を数値の変化に数える、▲3% が 3% になった推敲を拾わない、一部を伏せた番号の「-」を負の符号に読む、話題ごとの担当の入れ替わりを拾わない、の4つです。
+
+## v3.4.0 で変わったこと
+
+- `--doc-type slides` の `#` で始まる見出し（文書の題を除く）の読点を、カギ括弧や引用符の中と数字の区切りのほかは全部 lint の候補に出し、推敲の手順でも見出しに読点を残さないようにしました。並べた語は「・」でつなぎ、条件や逆接は語を残して読点だけを外すか、語順を変えます。依頼で見出しの形が決まっているときは、その形を保ちます。
+- diff は入れ子の主語の入れ替わりを探すときに、節を並べた文を見なくなりました。
+- diff は午前・午後の時刻を24時制にそろえて比べ、▲と△を負の符号と読むようになりました。伏せた番号の「-」は符号と読まなくなりました。同じ時刻の午前と午後を入れ替えた推敲と、▲や△の符号が消えた推敲や付いた推敲は、意味が変わる恐れとして知らせます。
+- 「初日の受付は田中さん、二日目は鈴木さん」のような文で担当を入れ替えた推敲と、否定が別の話題へ移った推敲を、見直しの候補として出します（`--fail-on` には数えません）。
+-
+
+... (truncated)]]></description>
+    <pubDate>Tue, 24 Nov 2026 11:36:08 GMT</pubDate>
+  </item>
+  <item>
+    <title>[OpenHands/OpenHands] v1.45.0</title>
+    <link>https://github.com/OpenHands/OpenHands/releases/tag/v1.45.0</link>
+    <guid isPermaLink="true">https://github.com/OpenHands/OpenHands/releases/tag/v1.45.0</guid>
+    <description><![CDATA[## 1.45.0 (2026-11-24)
+
+<!-- Release notes generated using configuration in .github/release.yml at main -->
+
+## What's Changed
+### Features
+* feat(factories): show a factory's worklogs, newest first by @jpshackelford in 
+* feat(factories): delete a factory from its page by @jpshackelford in 
+* feat(projects): OpenHands Projects in Canvas (experimental) by @enyst in 
+* feat(projects): project conversations in the sidebar, files and PRs beside the chat by @enyst in 
+* feat(frontend): nest sub-agent conversations under their parent by @neubig in 
+### Bug Fixes
+* fix(automations): wrap the setup draft bar at phone width instead of squeezing its title by @enyst in 
+* fix(automations): keep the setup page's repository menu on screen at phone widths by @enyst in 
+* fix(api): resolve chat upload destination within conversation workspace by @lx3133584 in 
+* fix(settings): keep a typed custom classifier in the Model Router editor by @enyst in 
+* fix(files): refresh tree after terminal file chang
+
+... (truncated)]]></description>
+    <pubDate>Tue, 24 Nov 2026 09:13:54 GMT</pubDate>
+  </item>
+  <item>
+    <title>[ValveSoftware/Proton] Proton 11.0-3 (proton-11.0-3)</title>
+    <link>https://github.com/ValveSoftware/Proton/releases/tag/proton-11.0-3</link>
+    <guid isPermaLink="true">https://github.com/ValveSoftware/Proton/releases/tag/proton-11.0-3</guid>
+    <description><![CDATA[- Now playable:
+ - Hero Plus
+ - City Car Driving
+ - Soul Land: Awakening World
+ - Bloody Zombies
+ - Welcome to Elderfield Demo
+ - The Heroic Legend of America: Second Revolutionary War
+ - Blair Witch VR
+ - Cool People Club
+ - The Eden of Grisaia
+ - The Rabbit's Scroll
+ - Elisa: The Innkeeper - Prequel
+ - Korea. IL-2 Series
+ - One Shot: Fading Memory
+ - Impulse Response
+ - 8Bit Fiesta - The Drinking Game
+- Improved controller support for Far Cry New Dawn, Binding of Isaac: Rebirth and Split/Second when Steam Input is used.
+- Fixed a controller hotplugging regression in Chrono Trigger.
+- Re-enabled Xalia for Deus Ex: Mankind Divided to improve controller support in launcher.
+- Improved Xalia support for Final Fantasy XI launcher to avoid breaking gamepad configuration.
+- Fixed Call of Duty: Modern Warfare 2 (2009) Safe Mode window popup not working with Xalia.
+- Fixed Seed of God displaying a non-fatal error on game launch.
+- Fixed RaceRoom Racing crashing when join
+
+... (truncated)]]></description>
+    <pubDate>Tue, 24 Nov 2026 06:22:02 GMT</pubDate>
+  </item>
+  <item>
+    <title>[markedjs/marked] v18.3.0</title>
+    <link>https://github.com/markedjs/marked/releases/tag/v18.3.0</link>
+    <guid isPermaLink="true">https://github.com/markedjs/marked/releases/tag/v18.3.0</guid>
+    <description><![CDATA[# 18.3.0 (2026-11-24)
+
+
+### Bug Fixes
+
+* allow trailing tabs after closing code fences (#4241) (1e11902)
+* avoid quadratic scan on adjacent inline links (#4274) (f5ffd22)
+* avoid quadratic time on long local part before @ in GFM text (#4225) (c6b22e8)
+* check own properties on extensions.renderers in Parser (#4271) (c572307)
+* honor the CLI end-of-options marker (#4230) (a1ddc72)
+* keep an indented code block after a list item paragraph (#4198) (b9e3824)
+* preserve literal entities in image alt text (#4232) (04f1c6e)
+* reject CLI options missing their values (#4261) (502e658)
+* skip missing optional childTokens properties in walkTokens (#4262) (283f74f)
+* wait for CLI error output before exiting (#4263) (6c2a5ab)
+
+
+### Features
+
+* add inBlockquote to lexer state (#4222) (201bfce), closes #4184 #4221
+
+
+### Performance Improvements
+
+* avoid scanning table bodies for header-only decisions (#4213) (a0925cc)
+* skip paragraph lookahead for initial quoted code (#4233) (171f177)]]></description>
+    <pubDate>Tue, 24 Nov 2026 02:51:23 GMT</pubDate>
+  </item>
+  <item>
+    <title>[openai/codex] 0.172.0 (rust-v0.172.0)</title>
+    <link>https://github.com/openai/codex/releases/tag/rust-v0.172.0</link>
+    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.172.0</guid>
+    <description><![CDATA[## New Features
+
+- Follow thread links from search results and transcripts to open saved conversations and nested agents in the terminal. (#62332)
+- Press `Tab` to complete arguments for supported slash commands. For example, `/mcp lo` completes to `/mcp login`. (#62343)
+- Jump between task groups in the agent command center with `Shift+Up` and `Shift+Down`. (#62200)
+- Optional stdio MCP servers with cached tool lists now start on their first tool call by default. (#62366)
+- Set an approval reviewer for individual connected app tools in `config.toml`. (#62360)
+- App-server clients can select Amazon Bedrock Runtime during setup or sign-in. (#62222)
+
+## Bug Fixes
+
+- `codex exec resume` restores saved sandbox permissions, the working directory, and workspace roots unless explicitly overridden. (#62194)
+- Remote sessions preserve working directories, workspace roots, and writable paths when the client and server run on different operating systems. (#62375, #62376, #62377)
+- Codex reports p
+
+... (truncated)]]></description>
+    <pubDate>Tue, 24 Nov 2026 00:03:55 GMT</pubDate>
   </item>
   <item>
     <title>[typescript-eslint/typescript-eslint] v8.74.0</title>
@@ -123,32 +301,6 @@ See GitHub
     <pubDate>Mon, 23 Nov 2026 16:10:56 GMT</pubDate>
   </item>
   <item>
-    <title>[OpenHands/OpenHands] v1.44.0</title>
-    <link>https://github.com/OpenHands/OpenHands/releases/tag/v1.44.0</link>
-    <guid isPermaLink="true">https://github.com/OpenHands/OpenHands/releases/tag/v1.44.0</guid>
-    <description><![CDATA[## 1.44.0 (2026-11-23)
-
-<!-- Release notes generated using configuration in .github/release.yml at main -->
-
-## What's Changed
-### Features
-* feat(chat): conversation mentions, behind the conversation_mentions flag by @enyst in 
-* feat(automations): choose who can see an automation (OHE-4206) by @hieptl in 
-* feat(chat): show a readable error when a budget is reached by @hieptl in 
-* feat: View and edit an automation's key-value store by @tofarr in 
-* feat(factories): add Factories sidebar entry with list and drill-in views by @jpshackelford in 
-### Bug Fixes
-* fix(chat): drop a Home message's pending bubble once history has moved past it (OHE-4121) by @hieptl in 
-* fix(settings): make SettingsDropdownInput clearable by default by @SaltGardenia in 
-* fix(conversation-overview): count diff stats from the longest common subsequence by @LeizhenZhang in 
-### Documentation
-* docs(verify-openhands): list Projects as pending in Not mapped by @enyst in 
-* docs(verify-openhands): map maintenanc
-
-... (truncated)]]></description>
-    <pubDate>Mon, 23 Nov 2026 15:29:47 GMT</pubDate>
-  </item>
-  <item>
     <title>[anomalyco/opencode] v2.4.0</title>
     <link>https://github.com/anomalyco/opencode/releases/tag/v2.4.0</link>
     <guid isPermaLink="true">https://github.com/anomalyco/opencode/releases/tag/v2.4.0</guid>
@@ -182,35 +334,6 @@ See GitHub
 
 ... (truncated)]]></description>
     <pubDate>Sun, 22 Nov 2026 23:33:53 GMT</pubDate>
-  </item>
-  <item>
-    <title>[nanaism/yomiyasu] v3.3.0</title>
-    <link>https://github.com/nanaism/yomiyasu/releases/tag/v3.3.0</link>
-    <guid isPermaLink="true">https://github.com/nanaism/yomiyasu/releases/tag/v3.3.0</guid>
-    <description><![CDATA[yomiyasu v3.3.0 を公開しました。
-推敲した文の読点を減らし、主語と述語が離れた文の直し方を足したバージョンです。推敲の手順（SKILL.md）に1つの段落と数文を足し、lint と diff を直しました。
-
-## 背景と課題
-
-yomiyasu の lint には短い主題のすぐあとの読点（「会議の資料は、明日までに送ります」の「は、」）を指摘する規則があります。この規則は文書の種類を指定したときだけ動き、指定しても AI の原稿にあるこうした読点の3割ほどしか拾っていませんでした。
-
-issue #68 では「主語１が主語２がAAAすることをやめさせる」のように主語と述語が離れた文を直せないか、という要望をいただきました。issue #69 では処理の流れの stage を「段」、CI やレビューの gate を「門」と書く直訳語を、型4に足す案をいただきました。
-
-## v3.3.0 で変わったこと
-
-- 読点の規則を、文書の種類を指定しないときも動かし、拾う形を広げました。外してよい読点のうち拾う割合は約3割から約5割になり、指摘の正しさは約9割で変わりません。推敲の出力では、短い主題のあとの読点が1割ほど減りました。
-- SKILL.md に、主語と述語のあいだに別の主語のある節が挟まる文の直し方を書きました。読み手が前に戻らないと誰が何をするかが分からないときだけ、長い節を前に出し、主語を述語のすぐ前に置きます。誰が何をするかや、条件の掛かる範囲が変わる並べ替えはしません。
-- diff は入れ子の文で主語の役が入れ替わった推敲を、意味が変わる恐れとして知らせます。
-- 直訳語の型4に「段」と「門」が入りました。案と実装は kfsky さんの PR #70 です。人の文に誤った指摘が出ないよう、こちらで細かい直しを足しました。
-- Python 3.13 で落ちる試験を直し、CI で 3.13 も流すようにしました。
-
-## 確かめたこと
-
-- 短い主題のあとの読点230か所に2つの確かめ役（どちらも AI）が「外してよい」か「残す」を付けた組で、読点の規則の正しさを測りました。
-- 原稿18本を4回ずつ推敲して比べると、読点が減った一方で、意味が変わったという判定役のモデルの指摘も増えました（4回の合計で7件から17件。増えたのは軽い指摘
-
-... (truncated)]]></description>
-    <pubDate>Sun, 22 Nov 2026 22:25:55 GMT</pubDate>
   </item>
   <item>
     <title>[pnpm/pnpm] pnpm 11.29 (v11.29.0)</title>
@@ -303,27 +426,6 @@ issue #68 では「主語１が主語２がAAAすることをやめさせる」�
     <pubDate>Fri, 20 Nov 2026 06:49:08 GMT</pubDate>
   </item>
   <item>
-    <title>[openai/codex] 0.171.0 (rust-v0.171.0)</title>
-    <link>https://github.com/openai/codex/releases/tag/rust-v0.171.0</link>
-    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.171.0</guid>
-    <description><![CDATA[## New Features
-
-- Added GPT-6.2 Sol and Astra to model catalogs, with Sol as the default catalog selection. (#62106)
-- Enabled the TUI workspace by default, with searchable document previews, image previews, and subagent transcripts alongside the main conversation. (#61352, #61888, #61889, #61919, #62157)
-- Added configurable undo and redo shortcuts to the non-Vim prompt composer, including restoration of attachments and large pastes. (#61954)
-- Added `codex exec --remote <ADDR>` to start or resume noninteractive sessions on an existing app server. (#61707)
-- Added `/rc` and `/remote` to manage local remote control and display device pairing codes from the TUI. (#62121)
-- Added custom MCP status line selection and authoring through `/statusline` when `tui_extensions_statusline` is enabled. (#61979, #61988, #62037)
-
-## Bug Fixes
-
-- Preserved drafts, queued follow-ups, and interrupted input with their original threads when switching or resuming sessions. (#61216)
-- Kept permission profi
-
-... (truncated)]]></description>
-    <pubDate>Fri, 20 Nov 2026 00:44:47 GMT</pubDate>
-  </item>
-  <item>
     <title>[webpack/webpack] v5.113.0</title>
     <link>https://github.com/webpack/webpack/releases/tag/v5.113.0</link>
     <guid isPermaLink="true">https://github.com/webpack/webpack/releases/tag/v5.113.0</guid>
@@ -410,6 +512,27 @@ issue #68 では「主語１が主語２がAAAすることをやめさせる」�
 
 ... (truncated)]]></description>
     <pubDate>Thu, 19 Nov 2026 03:06:15 GMT</pubDate>
+  </item>
+  <item>
+    <title>[podman-desktop/podman-desktop] v1.31.0</title>
+    <link>https://github.com/podman-desktop/podman-desktop/releases/tag/v1.31.0</link>
+    <guid isPermaLink="true">https://github.com/podman-desktop/podman-desktop/releases/tag/v1.31.0</guid>
+    <description><![CDATA[## What's Changed
+* refactor(renderer): store VolumeInfoUI instead of VolumeListInfo by @vzhukovs in 
+* chore(ui): fix capitalization of bundled extensions by @cdrage in 
+* chore: 📢 Bump version to 1.31.0 by @podman-desktop-bot in 
+* chore(test): ssh connection broken after svelte 5 migration by @cbr7 in 
+* chore(test): increase some timeouts to help with system lag by @cbr7 in 
+* chore: use ButtonRow in containers components, dashboard, dialog, feedback, kube, and network by @SoniaSandler in 
+* chore: use ButtonRow in image components by @SoniaSandler in 
+* chore(deps-dev): bump typedoc-plugin-markdown from 4.13.0 to 4.13.1 in the typedoc group by @dependabot[bot] in 
+* chore(deps-dev): bump svelte from 5.57.0 to 5.57.1 by @dependabot[bot] in 
+* chore(deps): bump electron from 44.4.2 to 44.4.3 by @dependabot[bot] in 
+* chore(deps): bump eslint from 10.10.0 to 10.11.0 in the eslint group across 1 directory by @dependabot[bot] in 
+* chore(deps-dev): bump @types/node from 24
+
+... (truncated)]]></description>
+    <pubDate>Wed, 18 Nov 2026 23:51:18 GMT</pubDate>
   </item>
   <item>
     <title>[Comfy-Org/ComfyUI] v0.46.0</title>
@@ -501,30 +624,6 @@ issue #68 では「主語１が主語２がAAAすることをやめさせる」�
 
 **Full Changelog**:]]></description>
     <pubDate>Wed, 18 Nov 2026 11:10:39 GMT</pubDate>
-  </item>
-  <item>
-    <title>[semgrep/semgrep] Release v1.186.0 (v1.186.0)</title>
-    <link>https://github.com/semgrep/semgrep/releases/tag/v1.186.0</link>
-    <guid isPermaLink="true">https://github.com/semgrep/semgrep/releases/tag/v1.186.0</guid>
-    <description><![CDATA[## 1.186.0 - 2026-11-17
-
-### ### Added
-
-- Secrets findings can include a versioned `secret_hash` when requested (e.g., with `--compute-secret-hash`). This hash comprises the secret value and values used in the validators, to allow for identification of the same secret being present at multiple locations (cf. `match_based_id`, which depends on the location of the finding). (SCRT-987)
-
-### ### Changed
-
-- Semgrep's release binaries are now built with cross-module inlining enabled, so scans use about 5-11% less CPU time. (release-profile)
-
-### ### Fixed
-
-- pro: Rules with `interfile: true` now keep Pro intrafile interprocedural taint analysis when scanning languages without interfile support (e.g. OCaml, Rust), so taint through helper functions in the same file is reported. (interfile-rule-intrafile-fallback)
-- `semgrep mcp` now respects `SEMGREP_SEND_METRICS=off`, which turns off its
- metrics and tracing like `SEMGREP_MCP_DISABLE_TRACING=true`. Its metrics and
- logs also no longer include
-
-... (truncated)]]></description>
-    <pubDate>Wed, 18 Nov 2026 00:22:26 GMT</pubDate>
   </item>
   <item>
     <title>[cli/cli] GitHub CLI 2.105.0 (v2.105.0)</title>
@@ -949,88 +1048,6 @@ Refer to Rust's platform support page for more information on Rust's tiered plat
 
 ... (truncated)]]></description>
     <pubDate>Thu, 12 Nov 2026 18:19:42 GMT</pubDate>
-  </item>
-  <item>
-    <title>[mongodb/node-mongodb-native] v7.9.0</title>
-    <link>https://github.com/mongodb/node-mongodb-native/releases/tag/v7.9.0</link>
-    <guid isPermaLink="true">https://github.com/mongodb/node-mongodb-native/releases/tag/v7.9.0</guid>
-    <description><![CDATA[## 7.9.0 (2026-11-12)
-
-The MongoDB Node.js team is pleased to announce version 7.9.0 of the `mongodb` package!
-
-## Release Notes
-
-> [!WARNING]
-> Node Driver versions from 6.7.0 before 7.9.0 (this release) are affected by a security issue related to OIDC bearer tokens being inappropriately shared to domains outside those allowlisted by the application (CVE-2026-126835). Users are encouraged to upgrade to the fixed version or mitigate as soon as possible.
->
-> Applications that use `OIDC_CALLBACK` or `OIDC_HUMAN_CALLBACK` in affected versions can avoid this bearer token leak by refusing connection strings whose `authMechanismProperties` include `ENVIRONMENT`.
-
-### `MongoClient` now throws when both `ENVIRONMENT` and `OIDC_CALLBACK` / `OIDC_HUMAN_CALLBACK` are passed to its constructor
-
-When constructing a `MongoClient`:
-
-- `ENVIRONMENT` can be specified in either the connection string or the options object provided to the `MongoClient` constructor.
-- `OIDC_CALLBACK` and `O
-
-... (truncated)]]></description>
-    <pubDate>Thu, 12 Nov 2026 16:39:12 GMT</pubDate>
-  </item>
-  <item>
-    <title>[prettier/prettier] 3.10.0</title>
-    <link>https://github.com/prettier/prettier/releases/tag/3.10.0</link>
-    <guid isPermaLink="true">https://github.com/prettier/prettier/releases/tag/3.10.0</guid>
-    <description><![CDATA[diff
-
-🔗 Prettier 3.10: New Flow syntax, new JavaScript syntax, and new plugin powered by Yuku]]></description>
-    <pubDate>Wed, 11 Nov 2026 12:31:23 GMT</pubDate>
-  </item>
-  <item>
-    <title>[github/spec-kit] Spec Kit - 1.4.0 (v1.4.0)</title>
-    <link>https://github.com/github/spec-kit/releases/tag/v1.4.0</link>
-    <guid isPermaLink="true">https://github.com/github/spec-kit/releases/tag/v1.4.0</guid>
-    <description><![CDATA[## Install
-
-```bash
-uv tool install specify-cli --from git+
-specify init my-project
-```
-
-## What's Changed
-
-- chore: bump version to 1.4.0
-- Use handle-based reads in FileHelper (#5351)
-- chore: limit automatic Python 3.11 tests to Linux (#5367)
-- Harden initial URL validation in HTTP helpers (#5350)
-- Update SpecKit Companion extension to v0.26.0 (#5365)
-- Use handle-based text overwrites in FileHelper (#5353)
-- Require HTTPS consistently for catalog sources (#5355)
-- feat(workflows): workflow functions - project-installed custom pipe filters (#5303)
-- feat(integrations): map reasoning effort and context size for Copilot, Codex, and Claude Code (#5249)
-- [bundle] Update Spec Kit for Azure DevOps bundle to v0.3.2 (#5346)
-- [extension] Add T-Shirt Sizing Gate extension to community catalog (#5332)
-- fix(scripts): treat option-like feature descriptions as text in create-new-feature.sh (#5245)
-- fix(self-upgrade): don't offer a .dev0/.post0 build's base tag as the rollback version (#5358)
-
-... (truncated)]]></description>
-    <pubDate>Tue, 10 Nov 2026 21:26:08 GMT</pubDate>
-  </item>
-  <item>
-    <title>[podman-container-tools/podman] v6.2.0</title>
-    <link>https://github.com/podman-container-tools/podman/releases/tag/v6.2.0</link>
-    <guid isPermaLink="true">https://github.com/podman-container-tools/podman/releases/tag/v6.2.0</guid>
-    <description><![CDATA[### Security
-- Addresses CVE-2026-121885, untrusted image labels could be used to trick podman auto-update into restarting incorrect systemd units GHSA-55rm-rwr7-q2wr.
-- Addresses CVE-2026-111361, malicious containers images could be able to bypass Digest and Signature validation GHSA-pggw-qqjf-6cxw.
-- Addresses CVE-2026-123876, default seccomp profile socket deny rule could be bypass by a malicious container.
-
-### Features
-- The `podman push` command now supports a new option, `--platform`, which selects and pushes a single platform-specific manifest instead of the entire list.
-- The `podman kube play` command now supports a new option, `--validate`, which determines how unrecognized YAML fields are handled (#18332).
-- The `podman kube play` command now supports a new option, `--label`, to set labels on created containers, pods, volumes, and secrets (#26450).
-- The `podman kube play` command can now create multiple pods if more than 1 replica is requested by a deployment using the new
-
-... (truncated)]]></description>
-    <pubDate>Tue, 10 Nov 2026 20:01:54 GMT</pubDate>
   </item>
 </channel>
 </rss>
