@@ -5,8 +5,162 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Tue, 24 Nov 2026 22:01:55 GMT</lastBuildDate>
+  <lastBuildDate>Wed, 25 Nov 2026 22:01:16 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[sveltejs/kit] @sveltejs/adapter-server@0.2.0</title>
+    <link>https://github.com/sveltejs/kit/releases/tag/%40sveltejs/adapter-server%400.2.0</link>
+    <guid isPermaLink="true">https://github.com/sveltejs/kit/releases/tag/%40sveltejs/adapter-server%400.2.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- feat: add `trailingSlashLocation` to `@sveltejs/adapter-server/runtime` (#17861)
+
+### Patch Changes
+
+- fix: percent-encode the `location` header of trailing-slash redirects for prerendered pages (`1648ec3`)]]></description>
+    <pubDate>Wed, 25 Nov 2026 20:51:21 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1178.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1178.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1178.0</guid>
+    <description><![CDATA[#### 3.1178.0(2026-11-25)
+
+##### New Features
+
+* **clients:** update client endpoints as of 2026-11-25 (ef3f797a)
+* **client-wafv2:** AWS WAF added support for associating AWS WAF web ACLs with Elastic Load Balancing proxies. You can now use AssociateWebACL, DisassociateWebACL, GetWebACLForResource, and ListResourcesForWebACL with the ELB PROXY resource type to protect your proxies with AWS WAF (84a72d01)
+* **client-elb-proxy:** Introducing Elastic Load Balancing for Envoy. Run your existing Envoy configurations with AWS integrations, managed scaling, and automatic patching. (7136593d)
+
+
+---
+
+For list of updated packages, view **updated-packages.md** in **assets-3.1178.0.zip**]]></description>
+    <pubDate>Wed, 25 Nov 2026 19:39:50 GMT</pubDate>
+  </item>
+  <item>
+    <title>[OpenHands/OpenHands] v1.46.0</title>
+    <link>https://github.com/OpenHands/OpenHands/releases/tag/v1.46.0</link>
+    <guid isPermaLink="true">https://github.com/OpenHands/OpenHands/releases/tag/v1.46.0</guid>
+    <description><![CDATA[## 1.46.0 (2026-11-25)
+
+<!-- Release notes generated using configuration in .github/release.yml at main -->
+
+## What's Changed
+### Features
+* feat(conversation): list and unshare the conversations shared with a team org (OHE-4205) by @hieptl in 
+* feat: add Feedback button and submission flow by @DevinVinson in 
+* feat(automations): add a Git Sync switch to keep activation status local (OHE-3927) by @hieptl in 
+### Maintenance
+* chore: bump agent-server to 1.63.1, automation to 1.35.1, extensions to 0.44.0 by @openhands-release-bot[bot] in 
+* chore(deps): bump @tanstack/react-virtual from 3.11.3 to 3.14.26 in the tanstack group across 1 directory by @dependabot[bot] in 
+* chore(deps-dev): bump electron from 45.3.2 to 45.3.3 by @dependabot[bot] in 
+* chore(deps-dev): bump the eslint group with 2 updates by @dependabot[bot] in 
+* chore(deps): bump the i18next group with 2 updates by @dependabot[bot] in 
+* chore: bump agent-server to 1.64.0, automation to 1.35.2, extensions to 0.44.0 by @
+
+... (truncated)]]></description>
+    <pubDate>Wed, 25 Nov 2026 14:13:07 GMT</pubDate>
+  </item>
+  <item>
+    <title>[bluesky-social/atproto] @atproto/lex-server@0.3.0</title>
+    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/lex-server%400.3.0</link>
+    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/lex-server%400.3.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- #6024 `59662dd` Thanks @matthieusieben! - **Breaking:** WebSocket compression (permessage-deflate) is now disabled by default on Node.js, as in `ws`. It costs a zlib stream per connection and compresses every message, which limits how many subscribers a process can serve. Enable it with the new `perMessageDeflate` option of `serve`, `createServer`, `toRequestListener` and `sendResponse`, which accepts `ws`'s options, e.g. `{ serverNoContextTakeover: true, threshold: 1024 }`.
+
+### Patch Changes
+
+- #6024 `59662dd` Thanks @matthieusieben! - Subscriptions yield to the event loop at least every 10ms. A handler that yields messages without awaiting, such as one replaying a backlog, no longer blocks I/O and timers, including the server's own termination, for as long as the socket accepts writes.
+
+- #6024 `59662dd` Thanks @matthieusieben! - `terminate` now closes WebSocket connections with a 1001 (Going Away) status code, which aborts their subscription handlers, instead o
+
+... (truncated)]]></description>
+    <pubDate>Wed, 25 Nov 2026 13:50:28 GMT</pubDate>
+  </item>
+  <item>
+    <title>[microsoft/apm] v0.39.0</title>
+    <link>https://github.com/microsoft/apm/releases/tag/v0.39.0</link>
+    <guid isPermaLink="true">https://github.com/microsoft/apm/releases/tag/v0.39.0</guid>
+    <description><![CDATA[## Highlights
+- Faster installs: a fresh install (no lockfile, 50 packages) is 2.4x faster than v0.38.1 on Linux and macOS, and 2x faster on Windows.
+- Re-running `apm install` with nothing to change is about 3x faster than v0.38.1 at 10 packages and 6-7x faster at 50, on Linux, macOS and Windows. `apm install --frozen` with nothing to change is 2.4-2.9x faster at 10 packages and 4.3-4.9x at 50.
+- Claude instructions: install-only projects keep the 0.37 `.claude/rules/` layout; compiled `AGENTS.md` keeps working (#5394).
+- Safer supply chain: checkouts are verified against their commit objects, cached git config is allow-listed, refs must match an origin branch or tag exactly, and APM's helper tools resolve only from outside the project.
+- Install crash recovery: an interrupted install restores the files it changed, or reports the ones it cannot restore.
+- Community: thanks to @AndresDvst (#3737), @anrouxel (#4807), @Yshuro (#5243) and @MohammedAlkindi (#4576, which returns in 0.40 wit
+
+... (truncated)]]></description>
+    <pubDate>Wed, 25 Nov 2026 12:56:03 GMT</pubDate>
+  </item>
+  <item>
+    <title>[iii-hq/iii] iii 0.27.0 (iii/v0.27.0)</title>
+    <link>https://github.com/iii-hq/iii/releases/tag/iii/v0.27.0</link>
+    <guid isPermaLink="true">https://github.com/iii-hq/iii/releases/tag/iii/v0.27.0</guid>
+    <description><![CDATA[## What's Changed
+* feat(subscribe): iii.dev email signup API for iii Cloud by @arihantcodes in 
+* docs(changelog): complete 0.26.0 release notes by @guibeira in 
+* fix(subscribe): install from bun.lock before the worker starts by @arihantcodes in 
+* feat(website): add multi-agent orchestration blog post by @arihantcodes in 
+* fix(subscribe): bind the route with observe for the iii 0.26 engine by @arihantcodes in 
+* fix: license headers on two observer tests and a stale state event in the Python SDK by @ytallo in 
+* perf(compose): resolve the sandbox adapter with the other packages and prepare VM images while they download by @ytallo in 
+* feat(website): iii.dev signups with double opt-in via the iii Cloud subscribe API by @arihantcodes in 
+* fix(sdk-python): track each state subscription by its own token by @ytallo in 
+* fix(website): center the subscribe pages and give them a full screen by @arihantcodes in 
+* chore: remove unused Rust dependencies by @guibeira in 
+* chore: anchor th
+
+... (truncated)]]></description>
+    <pubDate>Wed, 25 Nov 2026 11:44:56 GMT</pubDate>
+  </item>
+  <item>
+    <title>[inokawa/virtua] 0.56.0</title>
+    <link>https://github.com/inokawa/virtua/releases/tag/0.56.0</link>
+    <guid isPermaLink="true">https://github.com/inokawa/virtua/releases/tag/0.56.0</guid>
+    <description><![CDATA[## BREAKING CHANGES
+- Dropped support for Solid v1
+ - `ref?: VirtualizerHandle | ((handle?: VirtualizerHandle) => void)` -> `ref?: VirtualizerHandle`
+ - `as?: ValidComponent` -> `as?: keyof JSX.IntrinsicElements | CustomContainerComponent`
+ - `item?: ValidComponent` -> `item?: keyof JSX.IntrinsicElements | CustomItemComponent`
+
+## What's Changed
+* Migrate to Solid 2 by @inokawa in 
+
+
+**Full Changelog**:]]></description>
+    <pubDate>Wed, 25 Nov 2026 09:51:04 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aaif-goose/goose] v1.61.0</title>
+    <link>https://github.com/aaif-goose/goose/releases/tag/v1.61.0</link>
+    <guid isPermaLink="true">https://github.com/aaif-goose/goose/releases/tag/v1.61.0</guid>
+    <description><![CDATA[## ✨ Features
+
+- Show the provider before the model on the model button #13491
+- Gemini 4 Neon added to the model catalog #13684
+- Treat all headers as secret in mcpServers configs over ACP #13435
+- MCP extension operation for goose-agent #13620
+- Import MCP's server.json format into goose config #11934
+- Compaction operation for goose-agent #13575
+- llmman declarative Ollama-compatible provider #11974
+- amazee.ai declarative provider #12873
+
+## 🐛 Bug Fixes
+
+- End TTFT when the first text, thinking or tool call starts #13780
+- Make providers/inventory/refresh wait for the refresh, drop refresh field from config responses #13740
+- Update Identifier help text to fit all session subcommands #13741
+- Reject non-image attachments when connected to an external backend #13607
+- Time out stalled Databricks OAuth token requests #13710
+- Resolve Ollama Cloud model context window from the daemon #13152
+- Update FriendliAI provider name, description, and docs link #13412
+- Enable the sigstore cry
+
+... (truncated)]]></description>
+    <pubDate>Wed, 25 Nov 2026 03:31:49 GMT</pubDate>
+  </item>
   <item>
     <title>[semgrep/semgrep] Release v1.187.0 (v1.187.0)</title>
     <link>https://github.com/semgrep/semgrep/releases/tag/v1.187.0</link>
@@ -41,30 +195,6 @@
 
 ... (truncated)]]></description>
     <pubDate>Tue, 24 Nov 2026 19:41:44 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-js-v3] v3.1177.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1177.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1177.0</guid>
-    <description><![CDATA[#### 3.1177.0(2026-11-24)
-
-##### Chores
-
-* **codegen:** smithy-aws-typescript-codegen 0.56.0 (#8437) (31e0007f)
-
-##### Documentation Changes
-
-* **client-global-accelerator:** AWS Global Accelerator supports Client IP Preservation for NLBs with TLS Listener endpoints. (896b01b2)
-
-##### New Features
-
-* **client-bedrock-agentcore:** Adds the optional userLocation parameter to InvokeWebSearch. Specify a two-letter ISO 3166-1 alpha-2 country code to refine web search results for that country. InvokeWebSearch also accepts search queries in languages other than English. (185b32f0)
-
-
----
-
-For list of updated packages, view **updated-packages.md** in **assets-3.1177.0.zip**]]></description>
-    <pubDate>Tue, 24 Nov 2026 19:40:49 GMT</pubDate>
   </item>
   <item>
     <title>[usebruno/bruno] v4.4.0</title>
@@ -132,31 +262,6 @@ diff にも直すべき所がありました。3.3.0 で足した入れ子の主
 
 ... (truncated)]]></description>
     <pubDate>Tue, 24 Nov 2026 11:36:08 GMT</pubDate>
-  </item>
-  <item>
-    <title>[OpenHands/OpenHands] v1.45.0</title>
-    <link>https://github.com/OpenHands/OpenHands/releases/tag/v1.45.0</link>
-    <guid isPermaLink="true">https://github.com/OpenHands/OpenHands/releases/tag/v1.45.0</guid>
-    <description><![CDATA[## 1.45.0 (2026-11-24)
-
-<!-- Release notes generated using configuration in .github/release.yml at main -->
-
-## What's Changed
-### Features
-* feat(factories): show a factory's worklogs, newest first by @jpshackelford in 
-* feat(factories): delete a factory from its page by @jpshackelford in 
-* feat(projects): OpenHands Projects in Canvas (experimental) by @enyst in 
-* feat(projects): project conversations in the sidebar, files and PRs beside the chat by @enyst in 
-* feat(frontend): nest sub-agent conversations under their parent by @neubig in 
-### Bug Fixes
-* fix(automations): wrap the setup draft bar at phone width instead of squeezing its title by @enyst in 
-* fix(automations): keep the setup page's repository menu on screen at phone widths by @enyst in 
-* fix(api): resolve chat upload destination within conversation workspace by @lx3133584 in 
-* fix(settings): keep a typed custom classifier in the Model Router editor by @enyst in 
-* fix(files): refresh tree after terminal file chang
-
-... (truncated)]]></description>
-    <pubDate>Tue, 24 Nov 2026 09:13:54 GMT</pubDate>
   </item>
   <item>
     <title>[ValveSoftware/Proton] Proton 11.0-3 (proton-11.0-3)</title>
@@ -313,27 +418,6 @@ See GitHub
 
 ... (truncated)]]></description>
     <pubDate>Mon, 23 Nov 2026 09:22:21 GMT</pubDate>
-  </item>
-  <item>
-    <title>[microsoft/apm] v0.38.0</title>
-    <link>https://github.com/microsoft/apm/releases/tag/v0.38.0</link>
-    <guid isPermaLink="true">https://github.com/microsoft/apm/releases/tag/v0.38.0</guid>
-    <description><![CDATA[<!-- Release notes generated using configuration in .github/release.yml at v0.38.0 -->
-
-## What's Changed
-### 🔧 Other Changes
-* test(policy): pin the conflicting-prefix refusal and the explicit-policy bypasses by @danielmeppiel in 
-* fix(marketplace): user-scope origin-conflict remedy no longer assumes version control by @danielmeppiel in 
-* ci(apm-action): pin microsoft/apm-action v1.12.0 by @danielmeppiel in 
-* test(lifecycle): fix GATE nightly falsifiers and the codex cache-drift oracle by @danielmeppiel in 
-* [0.38] docs(spec): qualify every remaining catalog target in Part C of the native activation profile by @danielmeppiel in 
-* [0.38] fix(registry): lockfile replay tolerates a mirror URL when the hash matches (#4013) by @danielmeppiel in 
-* [0.38] test(install): S13 asserts the bare global install contract by @danielmeppiel in 
-* [0.38] test(registry): enterprise registry lifecycle stage 1 (#3299) by @danielmeppiel in 
-* test(lifecycle): I9 compares a [!] warning across indent
-
-... (truncated)]]></description>
-    <pubDate>Sun, 22 Nov 2026 23:33:53 GMT</pubDate>
   </item>
   <item>
     <title>[pnpm/pnpm] pnpm 11.29 (v11.29.0)</title>
@@ -557,29 +641,6 @@ See GitHub
     <pubDate>Wed, 18 Nov 2026 22:55:32 GMT</pubDate>
   </item>
   <item>
-    <title>[sveltejs/kit] @sveltejs/kit@3.4.0</title>
-    <link>https://github.com/sveltejs/kit/releases/tag/%40sveltejs/kit%403.4.0</link>
-    <guid isPermaLink="true">https://github.com/sveltejs/kit/releases/tag/%40sveltejs/kit%403.4.0</guid>
-    <description><![CDATA[### Minor Changes
-
-- feat: allow adapters to disable SvelteKit's Node preview server with `vite.customPreview: true` when providing their own preview implementation (#17750)
-
-- feat: add `sveltekit.remote.call.file` attribute to remote function tracing spans (#17760)
-
-### Patch Changes
-
-- fix: strip trailing route groups when resolving routes with search parameters or fragments (#17808)
-
-- fix: correctly display non-ASCII characters for plain text error messages during development (#17468)
-
-- fix: explain missing TypeScript compiler API instead of crashing with TypeScript 7 (#17539)
-
-- fix: reject remote function requests that use the wrong HTTP method (#17740)
-
-- fix: respect `NO_COLOR` and explicit `FORCE_COLOR` settings in forked build processes (#17618)]]></description>
-    <pubDate>Wed, 18 Nov 2026 22:48:41 GMT</pubDate>
-  </item>
-  <item>
     <title>[fastapi/fastapi] 0.165.0</title>
     <link>https://github.com/fastapi/fastapi/releases/tag/0.165.0</link>
     <guid isPermaLink="true">https://github.com/fastapi/fastapi/releases/tag/0.165.0</guid>
@@ -589,23 +650,6 @@ See GitHub
 
 * ✨ Add configurable form parsing limits. PR #16784 by @tiangolo.]]></description>
     <pubDate>Wed, 18 Nov 2026 19:14:20 GMT</pubDate>
-  </item>
-  <item>
-    <title>[inokawa/virtua] 0.55.0</title>
-    <link>https://github.com/inokawa/virtua/releases/tag/0.55.0</link>
-    <guid isPermaLink="true">https://github.com/inokawa/virtua/releases/tag/0.55.0</guid>
-    <description><![CDATA[## What's Changed
-* Refactor subscribe by @inokawa in 
-* Allow virtualizers to be the browser's scroll anchor by @inokawa in 
-* Optimize performance with Fenwick tree by @inokawa in 
-* fix(react): cancel deferred scrollRef observation on cleanup by @peterolkhov in 
-* Fix window scroll alignment inside bordered ancestors by @yunfeizhu in 
-
-## New Contributors
-* @peterolkhov made their first contribution in 
-
-**Full Changelog**:]]></description>
-    <pubDate>Wed, 18 Nov 2026 12:11:03 GMT</pubDate>
   </item>
   <item>
     <title>[lambdalisue/cclens] v0.5.0</title>
@@ -668,38 +712,6 @@ Supported events include submitted reviews, pull request state and head changes,
 
 ... (truncated)]]></description>
     <pubDate>Tue, 17 Nov 2026 23:18:48 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aaif-goose/goose] v1.60.0</title>
-    <link>https://github.com/aaif-goose/goose/releases/tag/v1.60.0</link>
-    <guid isPermaLink="true">https://github.com/aaif-goose/goose/releases/tag/v1.60.0</guid>
-    <description><![CDATA[## ✨ Features
-
-- SkillOperation and drop the Skills extension #13574
-- Executable commands and SlashCommandOperation in oi-kit #13533
-- Bang command operation in oi-kit #13535
-- Steering operation in oi-kit #13502
-- Dutch (nl) translation #13240
-- Cortecs declarative provider #12617
-- Onysoft declarative provider #13582
-- Reusable turn limits in GDK #13194
-
-## 🐛 Bug Fixes
-
-- Restore AGENT and GOOSE_TERMINAL in developer shell #13598
-- Validate cron before changing existing schedules #13599
-- Keep think tags in Ollama XML tool-call arguments #13563
-- Send tool_choice auto when tools are present (OpenAI) #12716
-- Update missing and outdated zh-CN translations #13494
-- Load supporting files for skills under symlinked directories #13531
-- Bound empty response retries in oi-kit #13516
-- Drop thinking blocks bound to a different prefix (Databricks) #13551
-- Handle a closed stdout pipe when exporting a session #13385
-- Build llama.cpp without OpenSSL so goose builds with openssl 4 #13492
-- K
-
-... (truncated)]]></description>
-    <pubDate>Tue, 17 Nov 2026 23:08:54 GMT</pubDate>
   </item>
   <item>
     <title>[pbatard/rufus] Rufus 4.16 (v4.16)</title>
@@ -990,64 +1002,6 @@ Because the engine follows CommonMark 0.31.2 and GFM, some documents look differ
 
 * add getDecryptedResponses (279212e)]]></description>
     <pubDate>Fri, 13 Nov 2026 17:34:58 GMT</pubDate>
-  </item>
-  <item>
-    <title>[panva/node-oidc-provider] v9.15.0</title>
-    <link>https://github.com/panva/node-oidc-provider/releases/tag/v9.15.0</link>
-    <guid isPermaLink="true">https://github.com/panva/node-oidc-provider/releases/tag/v9.15.0</guid>
-    <description><![CDATA[### Features
-
-* allow redirect_uri omission with S256 PKCE (ad4cf82)
-* bump CIMD draft to -03 (f8246a1)
-
-### Fixes
-
-* accept multiple spaces in authorization headers (f8d2ad2)
-* correct default refresh token policies (9c0d956)
-* correct token endpoint error codes (4df6076)
-
-### Refactor
-
-* ignore instead of reject query access tokens when disabled (b6ca93b)]]></description>
-    <pubDate>Fri, 13 Nov 2026 17:34:07 GMT</pubDate>
-  </item>
-  <item>
-    <title>[rust-lang/rust] Rust 1.100.0 (1.100.0)</title>
-    <link>https://github.com/rust-lang/rust/releases/tag/1.100.0</link>
-    <guid isPermaLink="true">https://github.com/rust-lang/rust/releases/tag/1.100.0</guid>
-    <description><![CDATA[<a id="1.100.0-Language"></a>
-
-## Language
-
-- Stabilize never type
-- [Lint against repeated `#[repr(..)]` attributes]
-- Stabilize `extern "custom"`
-- Extend `dropping_references`, `dropping_copy_types` and `undropped_manually_drops` lints to `drop_in_place`
-- [`unfulfilled_lint_expectations` no longer fires on `#[expect(dead_code)]` inside code that is covered by a dead parent's diagnostic]
-- Turn the error for `repr(align)` fields in a `repr(packed)` type into a deny-by-default lint `aligned_fields_in_packed`
-- volatile: allow accesses to non-AM memory to trap
-
-<a id="1.100.0-Compiler"></a>
-
-## Compiler
-
-- Stabilize `-Cprofile-sample-use`
-- Enable next solver by default in orphanck
-
-<a id="1.100.0-Platform-Support"></a>
-
-## Platform Support
-
-- `i686-pc-windows-gnu` is now a tier 2 without host tools target
-- Promote `wasm32-wasip3` to Tier 2
-- Add new Tier 3 target `powerpc64-sony-ps3`
-
-Refer to Rust's platform support page for more information on Rust's tiered platform support.
-
-<a i
-
-... (truncated)]]></description>
-    <pubDate>Thu, 12 Nov 2026 18:19:42 GMT</pubDate>
   </item>
 </channel>
 </rss>
