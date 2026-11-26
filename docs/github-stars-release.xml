@@ -5,8 +5,155 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Wed, 25 Nov 2026 22:01:16 GMT</lastBuildDate>
+  <lastBuildDate>Thu, 26 Nov 2026 22:01:35 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[pnpm/pnpm] pnpm 12.24 (v12.24.0)</title>
+    <link>https://github.com/pnpm/pnpm/releases/tag/v12.24.0</link>
+    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v12.24.0</guid>
+    <description><![CDATA[This release adds `pnpm audit deprecations` and `pnpm audit engines`, moves install warnings into a checks footer above `Done in`, and lets global installs link approved agent skills. It carries a security fix: pnpm now reads every package tarball the way npm does, or refuses it. `pnpm approve <pkg>` also no longer grants every permission to a package that has no pending request.
+
+### Minor Changes
+
+- Added `pnpm audit deprecations`, which lists the installed packages that their registry marks as deprecated, with the projects or packages that bring each one in. It exits with code `1` if any package is deprecated. The deprecated line at the end of an install now points to this command.
+
+- Added `pnpm audit engines`, which lists the installed packages that don't support the current Node.js version or platform, with what each one wants and the projects or packages that bring it in. It exits with code `1` if any package is incompatible. The lines about unsupported Node.js versions an
+
+... (truncated)]]></description>
+    <pubDate>Thu, 26 Nov 2026 14:31:19 GMT</pubDate>
+  </item>
+  <item>
+    <title>[cloudflare/vinext] @vinext/cloudflare@1.5.0</title>
+    <link>https://github.com/cloudflare/vinext/releases/tag/%40vinext/cloudflare%401.5.0</link>
+    <guid isPermaLink="true">https://github.com/cloudflare/vinext/releases/tag/%40vinext/cloudflare%401.5.0</guid>
+    <description><![CDATA[### Features
+
+- **Cloudflare:** support custom request headers during --warm-cache deploys (#4787)
+
+### Bug Fixes
+
+- **Build:** guard every output directory that vinext or Vite empties (#4778)
+- **Build:** write the build output under Vite's build.outDir (#4774)
+- **Cloudflare:** warm file-based metadata routes (#4788)
+
+### Contributors
+
+- @james-elicx]]></description>
+    <pubDate>Thu, 26 Nov 2026 13:58:55 GMT</pubDate>
+  </item>
+  <item>
+    <title>[BabylonJS/Babylon.js] 9.38.0</title>
+    <link>https://github.com/BabylonJS/Babylon.js/releases/tag/9.38.0</link>
+    <guid isPermaLink="true">https://github.com/BabylonJS/Babylon.js/releases/tag/9.38.0</guid>
+    <description><![CDATA[### Addons
+
+- Atmosphere depth improvements - by kircher1 (#19226)
+
+### Core
+
+- WebGPU: dispose the pipeline context of every released effect - by vladosskins178 (#19225)
+- Keep Quaternion.toEulerAngles accurate close to a 90 degree pitch - by SwastikTripathi (#19220)
+- Add opt-in WebGL clip control for a depth range - by BarthPaleologue (#19209)
+- NativeEngine: support raw 2D array updates, layer image uploads and mip storage - [_Bug Fix_] by bkaradzic-microsoft (#19219)]]></description>
+    <pubDate>Thu, 26 Nov 2026 13:27:16 GMT</pubDate>
+  </item>
+  <item>
+    <title>[vitejs/vite] create-vite@9.4.0</title>
+    <link>https://github.com/vitejs/vite/releases/tag/create-vite%409.4.0</link>
+    <guid isPermaLink="true">https://github.com/vitejs/vite/releases/tag/create-vite%409.4.0</guid>
+    <description><![CDATA[### Features
+
+* **create-vite:** add devtools option (#23833) (f0a0b5a)
+* **create-vite:** support Vite+ (vp) package manager (#22788) (4d21dc4)
+* **create-vite:** use Solid 2 in solid templates (#24130) (3dfda24)
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies (#24027) (a13aa04)
+* **deps:** update all non-major dependencies (#24103) (c11a671)
+* **deps:** update all non-major dependencies (#24190) (87d8a5a)
+* **deps:** update rolldown-related dependencies (#24028) (a1b813b)
+
+### Documentation
+
+* **create-vite:** recommend `tsrs` instead of `oxlint-tsgolint` (#24201) (39452c4)
+
+### Miscellaneous Chores
+
+* **deps:** update dependency @types/node to v26 (#24029) (dd780cd)
+* enable more lint rules (#24035) (72f86e5)
+* enable vitest style rules in Oxlint (#24053) (b8c8270)
+
+### Code Refactoring
+
+* use `tinyexec` instead of `execa` (#24079) (39c3cb8)]]></description>
+    <pubDate>Thu, 26 Nov 2026 10:59:41 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-11-25) (release-2026-11-25)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-25</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-25</guid>
+    <description><![CDATA[## General Highlights
+* **Dependency Update**: Update to smithy-go v1.28.10.
+* **Dependency Update**: Updated to the latest SDK module versions
+
+## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/aws/protocol/eventstream`: [v1.7.28](aws/protocol/eventstream/CHANGELOG.md#v1728-2026-11-25)
+ * **Bug Fix**: Return an error when encoding an event stream message too long for its 32-bit length field instead of writing a truncated length.
+ * **Bug Fix**: Validate event stream message prelude lengths when decoding.
+* `github.com/aws/aws-sdk-go-v2/service/elbproxy`: [v1.0.0](service/elbproxy/CHANGELOG.md#v100-2026-11-25)
+ * **Release**: New AWS service client module
+ * **Feature**: Introducing Elastic Load Balancing for Envoy. Run your existing Envoy configurations with AWS integrations, managed scaling, and automatic patching.
+* `github.com/aws/aws-sdk-go-v2/service/wafv2`: [v1.88.0](service/wafv2/CHANGELOG.md#v1880-2026-11-25)
+ * **Feature**: AWS WAF added support for associating AWS WAF web
+
+... (truncated)]]></description>
+    <pubDate>Thu, 26 Nov 2026 00:12:01 GMT</pubDate>
+  </item>
+  <item>
+    <title>[yonaskolb/XcodeGen] 2.49.0</title>
+    <link>https://github.com/yonaskolb/XcodeGen/releases/tag/2.49.0</link>
+    <guid isPermaLink="true">https://github.com/yonaskolb/XcodeGen/releases/tag/2.49.0</guid>
+    <description><![CDATA[### Added
+- Spec keys that XcodeGen doesn't recognise are now reported as warnings with their path, at every level of the spec, instead of being silently ignored. For example `Warning: Unknown key "resources" in targets.App will be ignored`, or a typo like `buildphase` in a source entry. Generation still succeeds. Keys starting with `x-` are not reported, so they can hold YAML anchors #1673 @yonaskolb
+
+### Changed
+- `requiresObjCLinking` now defaults to `true` for static frameworks (`framework.static`, or `framework` with `MACH_O_TYPE: staticlib`), including targets from project references, so apps linking them get `-ObjC`. If this causes duplicate symbol errors or larger binaries, for example when several static frameworks share a package with Objective-C code like Firebase, set `requiresObjCLinking: false` on those frameworks #1674 @toyeshhm]]></description>
+    <pubDate>Wed, 25 Nov 2026 22:53:59 GMT</pubDate>
+  </item>
+  <item>
+    <title>[cli/cli] GitHub CLI 2.106.0 (v2.106.0)</title>
+    <link>https://github.com/cli/cli/releases/tag/v2.106.0</link>
+    <guid isPermaLink="true">https://github.com/cli/cli/releases/tag/v2.106.0</guid>
+    <description><![CDATA[## Security
+
+Seven security vulnerabilities have been identified and fixed in this release. Users are advised to update `gh` to version `v2.106.0` as soon as possible.
+
+1. The terminal escape-sequence check used by `gh repo read-file`, `gh api`, and other commands did not recognize C1 control characters, allowing untrusted output to reach a terminal without neutralization.
+
+See for more information.
+
+2. Verbose and API-debug HTTP logging could print untrusted terminal control characters from request and response data.
+
+See for more information.
+
+3. `gh codespace ports` could print untrusted terminal control characters from port labels.
+
+See for more information.
+
+4. `gh agent-task view --log` could print untrusted terminal control characters from tool-call names and arguments.
+
+See for more information.
+
+5. `gh skill update` could install a skill from a different repository that reused the installed skill's name.
+
+See for more information.
+
+6. `gh skill install`
+
+... (truncated)]]></description>
+    <pubDate>Wed, 25 Nov 2026 22:48:46 GMT</pubDate>
+  </item>
   <item>
     <title>[sveltejs/kit] @sveltejs/adapter-server@0.2.0</title>
     <link>https://github.com/sveltejs/kit/releases/tag/%40sveltejs/adapter-server%400.2.0</link>
@@ -179,22 +326,6 @@ For list of updated packages, view **updated-packages.md** in **assets-3.1178.0.
 
 - Fixed unnecessary directory I/O, introduced in 1.164.0, when scanning only explicitly listed files. (CODE-10318)]]></description>
     <pubDate>Tue, 24 Nov 2026 21:39:31 GMT</pubDate>
-  </item>
-  <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-11-24) (release-2026-11-24)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-24</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-24</guid>
-    <description><![CDATA[## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/feature/s3/transfermanager`: [v0.5.12](feature/s3/transfermanager/CHANGELOG.md#v0512-2026-11-24)
- * **Bug Fix**: Fix GetObject and DownloadObject failing or reporting an incorrect length when the requested byte range extends past the end of an S3 object.
- * **Bug Fix**: Preserve the abort error alongside the original upload error when an S3 multipart upload and its cleanup both fail.
- * **Bug Fix**: Quick exit GetObject body read for empty buffer so it does not cause deadlock
- * **Bug Fix**: Retry part body read failures in `GetObject` up to `PartBodyMaxRetries`, matching `DownloadObject`.
-* `github.com/aws/aws-sdk-go-v2/service/bedrockagentcore`: [v1.61.0](service/bedrockagentcore/CHANGELOG.md#v1610-2026-11-24)
- * **Feature**: Adds the optional userLocation parameter to InvokeWebSearch. Specify a two-letter ISO 3166-1 alpha-2 country code to refine web search results for that country. InvokeWebSearch also accepts search queries in l
-
-... (truncated)]]></description>
-    <pubDate>Tue, 24 Nov 2026 19:41:44 GMT</pubDate>
   </item>
   <item>
     <title>[usebruno/bruno] v4.4.0</title>
@@ -420,27 +551,6 @@ See GitHub
     <pubDate>Mon, 23 Nov 2026 09:22:21 GMT</pubDate>
   </item>
   <item>
-    <title>[pnpm/pnpm] pnpm 11.29 (v11.29.0)</title>
-    <link>https://github.com/pnpm/pnpm/releases/tag/v11.29.0</link>
-    <guid isPermaLink="true">https://github.com/pnpm/pnpm/releases/tag/v11.29.0</guid>
-    <description><![CDATA[pnpm 11.29.0 stops reading `otp` from config files, rejects local filesystem dependencies declared by registry packages, adds the `--minimum-release-age` option, and recreates an incompatible `node_modules` without a TTY. This release carries several security fixes.
-
-### Minor Changes
-
-* `otp` is no longer read from any config file. Pass `--otp` on the command line, or set `PNPM_CONFIG_OTP`. A `pnpm-workspace.yaml` or a global `config.yaml` that carries `otp` is ignored, with a warning naming those two channels. `pnpm config set otp` fails with `ERR_PNPM_CONFIG_SET_NOT_A_FILE_SETTING` instead of writing an entry no loader reads back.
-
- This closes a way to leak a secret. A repository could write `otp: ${NPM_TOKEN}` beside its own `registry:`, and `pnpm publish` sent that environment variable to the registry the same file named, in the `npm-otp` header of its first request #13542.
-
-### Patch Changes
-
-#### Security
-
-* `pnpm install` now rejects local filesystem dependencies (
-
-... (truncated)]]></description>
-    <pubDate>Sun, 22 Nov 2026 13:58:26 GMT</pubDate>
-  </item>
-  <item>
     <title>[uxfront-com/styleframe] @styleframe/plugin@3.5.0</title>
     <link>https://github.com/uxfront-com/styleframe/releases/tag/%40styleframe/plugin%403.5.0</link>
     <guid isPermaLink="true">https://github.com/uxfront-com/styleframe/releases/tag/%40styleframe/plugin%403.5.0</guid>
@@ -533,23 +643,6 @@ See GitHub
 
 ... (truncated)]]></description>
     <pubDate>Thu, 19 Nov 2026 21:33:45 GMT</pubDate>
-  </item>
-  <item>
-    <title>[yonaskolb/XcodeGen] 2.48.0</title>
-    <link>https://github.com/yonaskolb/XcodeGen/releases/tag/2.48.0</link>
-    <guid isPermaLink="true">https://github.com/yonaskolb/XcodeGen/releases/tag/2.48.0</guid>
-    <description><![CDATA[### Added
-- Added experimental support for Xcode 27.2's JSON project file format. Set `options.projectFileFormat: xcproj` to write `project.xcproj` instead of `project.pbxproj`. It requires Xcode 27 or later and defaults `projectFormat` to `xcode27_0`. Some custom project and target `attributes` can't be stored in this format and are left out #1669 @4brunu
-
-### Changed
-- XcodeGen now requires macOS 14 and Swift 6.1 to build and run, due to the XcodeProj 9.17.8 update #1669 @4brunu
-
-### Fixed
-- Fix files without a build phase, such as `README`, `LICENSE` and `.gitkeep`, being copied into the bundle from `syncedFolder` sources. They are now added to the synced folder's membership exceptions, and `.DS_Store` files are no longer listed there #1668 @4brunu
-- Fix `configFiles` inside a `syncedFolder` getting a random reference ID on every generation. They now reference the synced folder plus a relative path, like Xcode does. Also fixes detecting these files when using `--project` with a diff
-
-... (truncated)]]></description>
-    <pubDate>Thu, 19 Nov 2026 12:41:18 GMT</pubDate>
   </item>
   <item>
     <title>[TanStack/router] Release 2026-11-19 10:24 (release-2026-11-19-1024)</title>
@@ -670,34 +763,6 @@ See GitHub
     <pubDate>Wed, 18 Nov 2026 11:10:39 GMT</pubDate>
   </item>
   <item>
-    <title>[cli/cli] GitHub CLI 2.105.0 (v2.105.0)</title>
-    <link>https://github.com/cli/cli/releases/tag/v2.105.0</link>
-    <guid isPermaLink="true">https://github.com/cli/cli/releases/tag/v2.105.0</guid>
-    <description><![CDATA[## What's Changed
-
-## Subscribe to GitHub Event Streams with `gh event` (preview)
-
-The new `gh event` command set lets agents, integrations, and scripts wait for pull request changes instead of polling GitHub:
-
-```shell
-# Wait for a review event
-gh event listen --resource --event com.github.pull_request.review.submitted.v1 --timeout 30m
-
-# Wait for a check suite completion event
-gh event listen --resource --event com.github.pull_request.check_suite.status.changed.v1 --jq .data.conclusion
-
-# List active event subscriptions
-gh event subscription list
-```
-
-By default, `gh event listen` exits after the first event. Use `--count` to wait for several events or `--follow` to keep listening. Events are printed as CloudEvent JSON objects, with `data.api_url` pointing to the resource that changed.
-
-Supported events include submitted reviews, pull request state and head changes, merge conflicts, and completed check suites. The `subscription create`, `list`, `view`, and `delete`
-
-... (truncated)]]></description>
-    <pubDate>Wed, 18 Nov 2026 00:18:35 GMT</pubDate>
-  </item>
-  <item>
     <title>[microsoft/WindowsAppSDK] Windows App SDK 2.7.0 (v2.7.0)</title>
     <link>https://github.com/microsoft/WindowsAppSDK/releases/tag/v2.7.0</link>
     <guid isPermaLink="true">https://github.com/microsoft/WindowsAppSDK/releases/tag/v2.7.0</guid>
@@ -750,64 +815,6 @@ Supported events include submitted reviews, pull request state and head changes,
 
 ... (truncated)]]></description>
     <pubDate>Mon, 16 Nov 2026 23:03:48 GMT</pubDate>
-  </item>
-  <item>
-    <title>[BabylonJS/Babylon.js] 9.37.0</title>
-    <link>https://github.com/BabylonJS/Babylon.js/releases/tag/9.37.0</link>
-    <guid isPermaLink="true">https://github.com/BabylonJS/Babylon.js/releases/tag/9.37.0</guid>
-    <description><![CDATA[### Core
-
-- Decode base64 data URLs as UTF-8 when loading text - by SwastikTripathi (#19169)
-- Clamp color components in Color3/Color4 toHexString - by SwastikTripathi (#19162)
-- Gaussian Splatting: keep full and partial texture uploads in call order on Native - by bkaradzic-microsoft (#19157)
-- Add texture previews to Inspector Lite - by ryantrem (#19156)
-- NativeEngine: queue texture deletes behind earlier commands - by bkaradzic-microsoft (#19160)
-- Floating origin: offset projective world matrices correctly (fixes CameraGizmo frustum) - by trymedo (#19152)
-
-### Inspector
-
-- Add texture previews to Inspector Lite - by ryantrem (#19156)
-- Inspect Lite scene renderables - by ryantrem (#19159)
-
-### Procedural Textures
-
-- Use a GPU-independent hash in the procedural textures library - [_Bug Fix_] by bkaradzic-microsoft (#19147)
-
-### Sandbox
-
-- Fix Sandbox tests waiting for loading screens - by ryantrem (#19163)
-
-### Serializers
-
-- Fix(USDZ): decode tangent-space normal maps with scale a
-
-... (truncated)]]></description>
-    <pubDate>Mon, 16 Nov 2026 19:28:24 GMT</pubDate>
-  </item>
-  <item>
-    <title>[cloudflare/vinext] @cloudflare/workers-response-store@1.2.0</title>
-    <link>https://github.com/cloudflare/vinext/releases/tag/%40cloudflare/workers-response-store%401.2.0</link>
-    <guid isPermaLink="true">https://github.com/cloudflare/vinext/releases/tag/%40cloudflare/workers-response-store%401.2.0</guid>
-    <description><![CDATA[### Features
-
-- **Response Store:** opt-in purgeBatchWindow to batch edge purges (#4674)
-
-### Bug Fixes
-
-- **Response Store:** resend only refused edge requests (#4691)
-
-### Performance
-
-#### Response Store
-
-- drop a fill of a miss another fill already replaced (#4641)
-- skip the edge purge when a put replaces a tombstone whose edge purge completed (#4640)
-- skip the edge purge when a put replaces a stale entry with a revalidator (#4639)
-
-### Contributors
-
-- @james-elicx]]></description>
-    <pubDate>Mon, 16 Nov 2026 14:02:13 GMT</pubDate>
   </item>
   <item>
     <title>[Seldaek/monolog] 3.13.0</title>
@@ -993,15 +1000,6 @@ Because the engine follows CommonMark 0.31.2 and GFM, some documents look differ
 
 ... (truncated)]]></description>
     <pubDate>Fri, 13 Nov 2026 21:29:31 GMT</pubDate>
-  </item>
-  <item>
-    <title>[panva/openid-client] v6.9.0</title>
-    <link>https://github.com/panva/openid-client/releases/tag/v6.9.0</link>
-    <guid isPermaLink="true">https://github.com/panva/openid-client/releases/tag/v6.9.0</guid>
-    <description><![CDATA[### Features
-
-* add getDecryptedResponses (279212e)]]></description>
-    <pubDate>Fri, 13 Nov 2026 17:34:58 GMT</pubDate>
   </item>
 </channel>
 </rss>
