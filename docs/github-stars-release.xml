@@ -5,8 +5,208 @@
   <link>https://github.rkunihiro.dev/</link>
   <description>Recent releases from repositories starred by rkunihiro</description>
   <language>ja</language>
-  <lastBuildDate>Thu, 26 Nov 2026 22:01:35 GMT</lastBuildDate>
+  <lastBuildDate>Fri, 27 Nov 2026 22:01:37 GMT</lastBuildDate>
   <atom:link href="https://github.rkunihiro.dev/feed/github-stars-release.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[nodejs/undici] v8.14.0</title>
+    <link>https://github.com/nodejs/undici/releases/tag/v8.14.0</link>
+    <guid isPermaLink="true">https://github.com/nodejs/undici/releases/tag/v8.14.0</guid>
+    <description><![CDATA[## What's Changed
+* fix(deduplicate): do not deduplicate requests with a body by @arshsmith1 in 
+* feat(decompress): add preserveHeaders option by @domenic in 
+* fix(fetch): preserve falsy abort reasons by @rome-xi in 
+* fix(socks5): handle bracketed IPv6 literals for proxy and target hosts by @hoanle0126 in 
+* fix(cache): restore backing list in place on failed batch operations by @hoanle0126 in 
+* build(deps-dev): bump fast-check from 4.10.2 to 4.10.3 by @dependabot[bot] in 
+* build(deps-dev): bump @fastify/busboy from 3.2.5 to 3.2.6 by @dependabot[bot] in 
+* build(deps-dev): bump borp from 1.0.0 to 1.0.1 by @dependabot[bot] in 
+* fix: destroy HTTP/1 sockets on error by @ferhatelmas in 
+* fix(h2): reset aborted streams with CANCEL by @gabedemesa in 
+* fix(http2): dispatch requests before SETTINGS up to the recommended 100 by @MIbtehajNasar in 
+* test(pool): cover a protocol probe whose request is rejected before dispatch by @MIbtehajNasar in 
+* docs: fix the urllib3 advisory and GOAW
+
+... (truncated)]]></description>
+    <pubDate>Fri, 27 Nov 2026 21:33:49 GMT</pubDate>
+  </item>
+  <item>
+    <title>[opencontainers/runc] runc v1.6.0 -- &quot;All&apos;s well that ends well.&quot; (v1.6.0)</title>
+    <link>https://github.com/opencontainers/runc/releases/tag/v1.6.0</link>
+    <guid isPermaLink="true">https://github.com/opencontainers/runc/releases/tag/v1.6.0</guid>
+    <description><![CDATA[This is the first stable release of the 1.6.z release branch of runc.
+It contains a handful of fixes and a few dependency bumps, including
+one fixing a medium security issue.
+
+This release follows our release and support policy (see RELEASES.md
+for more details). This means that, as of this release:
+
+ * The runc 1.3.z (and earlier) release branches are now unsupported.
+ * The runc 1.4.z release branch will now only receive high severity
+ CVE fixes, and will no longer be supported in less than 6 months
+ (end of April 2027).
+ * The runc 1.5.z release branch will now only receive security and
+ "significant" bugfixes.
+ * Users are encouraged to plan migrating to runc 1.6.0 as soon as
+ possible.
+ * Despite this release being delayed by almost a month, users should
+ still expect a runc 1.7.0 release in late April 2027.
+
+### Security ###
+
+This release includes github.com/moby/sys/user v0.5.1, which fixes the
+following medium-severity security issue:
+
+- [CVE-2026-135844]
+
+... (truncated)]]></description>
+    <pubDate>Fri, 27 Nov 2026 21:17:46 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-go-v2] Release (2026-11-27) (release-2026-11-27)</title>
+    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-27</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-27</guid>
+    <description><![CDATA[## General Highlights
+* **Dependency Update**: Update smithy-go to v1.28.11
+* **Dependency Update**: Updated to the latest SDK module versions
+
+## Module Highlights
+* `github.com/aws/aws-sdk-go-v2/service/cloudwatch`: [v1.77.0](service/cloudwatch/CHANGELOG.md#v1770-2026-11-27)
+ * **Feature**: CloudWatch OTel enrichment supports a free basic option and a paid tag enrichment option, using the EnableTagEnrichment flag. Set it to true (default) to enrich vended metrics with resource ARN and tag labels for PromQL queries. Set it to false to get the free basic option without resource tags.
+* `github.com/aws/aws-sdk-go-v2/service/elasticsearchservice`: [v1.53.0](service/elasticsearchservice/CHANGELOG.md#v1530-2026-11-27)
+ * **Feature**: Catalog APIs for Optimized engine domains
+* `github.com/aws/aws-sdk-go-v2/service/marketplaceagreement`: [v1.33.0](service/marketplaceagreement/CHANGELOG.md#v1330-2026-11-27)
+ * **Feature**: This release adds per-Region pricing to AWS Marketplace usage-based p
+
+... (truncated)]]></description>
+    <pubDate>Fri, 27 Nov 2026 20:55:06 GMT</pubDate>
+  </item>
+  <item>
+    <title>[aws/aws-sdk-js-v3] v3.1179.0</title>
+    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1179.0</link>
+    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1179.0</guid>
+    <description><![CDATA[#### 3.1179.0(2026-11-27)
+
+##### New Features
+
+* **client-marketplace-agreement:** This release adds per-Region pricing to AWS Marketplace usage-based pricing terms. Rate card items can now include Region-specific price overrides. When a Regional price is present for an AWS Region, it replaces the default price for that dimension. (3a8c56ff)
+* **client-cloudwatch:** CloudWatch OTel enrichment supports a free basic option and a paid tag enrichment option, using the EnableTagEnrichment flag. Set it to true (default) to enrich vended metrics with resource ARN and tag labels for PromQL queries. Set it to false to get the free basic option without resource tags. (285094c9)
+* **client-elasticsearch-service:** Catalog APIs for Optimized engine domains (0138a34c)
+* **client-opensearch:** Catalog APIs for Optimized engine domains (859fa699)
+* **client-rds:** Aurora PostgreSQL and Aurora MySQL now let you delete a DB cluster and all its instances in a single API call or console action, without d
+
+... (truncated)]]></description>
+    <pubDate>Fri, 27 Nov 2026 19:41:16 GMT</pubDate>
+  </item>
+  <item>
+    <title>[bluesky-social/atproto] @atproto-labs/opentelemetry-node@0.7.0</title>
+    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto-labs/opentelemetry-node%400.7.0</link>
+    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto-labs/opentelemetry-node%400.7.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- #6051 `88bf64a` Thanks @matthieusieben! - Drop the `@opentelemetry/auto-instrumentations-node` dependency. Resource detection now only uses `@opentelemetry/sdk-node`'s local detectors plus the `container` one, so the cloud provider detectors (`alibaba`, `aws`, `azure`, `gcp`) no longer probe metadata endpoints at startup, and `OTEL_NODE_RESOURCE_DETECTORS` ignores their names with a warning.]]></description>
+    <pubDate>Fri, 27 Nov 2026 18:26:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>[eslint/eslint] v10.16.0</title>
+    <link>https://github.com/eslint/eslint/releases/tag/v10.16.0</link>
+    <guid isPermaLink="true">https://github.com/eslint/eslint/releases/tag/v10.16.0</guid>
+    <description><![CDATA[## Features
+* `7fff57a` feat: add suggestions to `no-new-native-nonconstructor` (#21576) (Pixel)
+* `14e3533` feat: suggest comparing with both `null` and `undefined` in `eqeqeq` (#21577) (Pixel)
+* `0e2a431` feat: handle `TSImportEqualsDeclaration` type imports in `no-shadow` (#21564) (Lê Văn Xuân Hoàn)
+* `a6b2c6d` feat: add suggestions to `no-eq-null` (#21512) (Pixel)
+
+## Bug Fixes
+* `0b43c2d` fix: update dependency @eslint/config-array to ^0.23.7 (#21598) (renovate[bot])
+* `f692882` fix: handle trailing commas in no-unused-vars suggestions (#21570) (Lê Văn Xuân Hoàn)
+* `622db83` fix: add `ESLint.CalculatedConfig` type for `calculateConfigForFile` (#21483) (Pixel)
+* `0d401e5` fix: handle heritage and qualified types in `no-use-before-define` (#21536) (Lê Văn Xuân Hoàn)
+* `b377b08` fix: handle circular references when formatting config errors (#21569) (Lê Văn Xuân Hoàn)
+* `4820790` fix: handle TS assertions on callees in `no-invalid-this` (#21540) (Nitin Kumar)
+* `9fe69d8` fix: skip typ
+
+... (truncated)]]></description>
+    <pubDate>Fri, 27 Nov 2026 16:20:20 GMT</pubDate>
+  </item>
+  <item>
+    <title>[cloudflare/workers-sdk] wrangler@4.169.0</title>
+    <link>https://github.com/cloudflare/workers-sdk/releases/tag/wrangler%404.169.0</link>
+    <guid isPermaLink="true">https://github.com/cloudflare/workers-sdk/releases/tag/wrangler%404.169.0</guid>
+    <description><![CDATA[### Minor Changes
+
+- #17183 `ebc7b50` Thanks @gpanders! - Accept `linux/arm64` images in `wrangler containers push` and `wrangler containers build`
+
+ `wrangler containers push` now accepts local images built for `linux/amd64` or `linux/arm64`. `wrangler containers build --platform` accepts the same two platforms. The default platform is still `linux/amd64`.
+
+- #17088 `43da328` Thanks @efalcao! - Add the `oidc_tokens` binding
+
+ An OIDC token binding issues short-lived OpenID Connect tokens for the Worker's own identity, for one audience. Exchange them for cloud credentials, or send them to an API as a bearer token, instead of storing long-lived credentials as secrets:
+
+ ```jsonc
+ "oidc_tokens": [{ "binding": "API_TOKEN", "audience": "" }]
+ ```
+
+ `env.API_TOKEN.getToken` returns a newly signed JWT. Set `"alg": "RS256"` for verifiers that don't accept the default, ES256. Wrangler validates the audience (1 to 2048 printable ASCII characters, no whitespace), uploads the binding, generates i
+
+... (truncated)]]></description>
+    <pubDate>Fri, 27 Nov 2026 14:35:16 GMT</pubDate>
+  </item>
+  <item>
+    <title>[go-sql-driver/mysql] v1.11.0</title>
+    <link>https://github.com/go-sql-driver/mysql/releases/tag/v1.11.0</link>
+    <guid isPermaLink="true">https://github.com/go-sql-driver/mysql/releases/tag/v1.11.0</guid>
+    <description><![CDATA[Changes since v1.10.2.
+
+### Requirements
+
+* The driver now requires Go 1.25 or later. The minimum supported server
+ versions are MySQL 8.0 and MariaDB 10.11. (#1803)
+
+### New features
+
+* Add the `tinyInt1IsBool` DSN parameter and `TinyInt1IsBool` functional option,
+ disabled by default to preserve numeric `TINYINT` behavior. When enabled,
+ signed, non-`ZEROFILL` `TINYINT(1)` columns report `BOOLEAN` and scan types
+ `bool` or `sql.NullBool`; zero is returned as `false` and non-zero values as
+ `true`. This applies to both text-protocol queries and prepared statements.
+ For non-NULL values, enabling the option makes integer scans fail and string
+ scans return `"false"` or `"true"` instead of numeric strings. (#1805, #1845)
+
+* Add a pluggable authentication system with the `AuthPlugin` interface,
+ `AuthContext`, and `RegisterAuthPlugin`. Custom plugins receive the connection
+ context and an immutable snapshot of the selected credentials, established
+ transport, and configured RSA public ke
+
+... (truncated)]]></description>
+    <pubDate>Fri, 27 Nov 2026 12:55:45 GMT</pubDate>
+  </item>
+  <item>
+    <title>[project-tsurugi/tsurugidb] 1.14.0</title>
+    <link>https://github.com/project-tsurugi/tsurugidb/releases/tag/1.14.0</link>
+    <guid isPermaLink="true">https://github.com/project-tsurugi/tsurugidb/releases/tag/1.14.0</guid>
+    <description><![CDATA[### Release Notes
+- Tsurugi 1.14.0 - Release Notes (en)
+- Tsurugi 1.14.0 - Release Notes (ja)
+- Tsurugi 1.14.0 - Changelog
+- Tsurugi 1.14.0 - Known Issues (en)
+- Tsurugi 1.14.0 - Known Issues (ja)
+
+#### Download installer archive
+
+```sh
+curl -OL 
+```
+
+#### Download Docker image
+
+```sh
+docker pull ghcr.io/project-tsurugi/tsurugidb:1.14.0
+```
+
+> [!WARNING] 
+The `Source code (zip)` or `Source code (tar.gz)` in `Assets` are automatically generated links by GitHub, and these archives does not contain files needed for installation.]]></description>
+    <pubDate>Thu, 26 Nov 2026 23:49:52 GMT</pubDate>
+  </item>
   <item>
     <title>[pnpm/pnpm] pnpm 12.24 (v12.24.0)</title>
     <link>https://github.com/pnpm/pnpm/releases/tag/v12.24.0</link>
@@ -90,27 +290,6 @@
     <pubDate>Thu, 26 Nov 2026 10:59:41 GMT</pubDate>
   </item>
   <item>
-    <title>[aws/aws-sdk-go-v2] Release (2026-11-25) (release-2026-11-25)</title>
-    <link>https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-25</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-go-v2/releases/tag/release-2026-11-25</guid>
-    <description><![CDATA[## General Highlights
-* **Dependency Update**: Update to smithy-go v1.28.10.
-* **Dependency Update**: Updated to the latest SDK module versions
-
-## Module Highlights
-* `github.com/aws/aws-sdk-go-v2/aws/protocol/eventstream`: [v1.7.28](aws/protocol/eventstream/CHANGELOG.md#v1728-2026-11-25)
- * **Bug Fix**: Return an error when encoding an event stream message too long for its 32-bit length field instead of writing a truncated length.
- * **Bug Fix**: Validate event stream message prelude lengths when decoding.
-* `github.com/aws/aws-sdk-go-v2/service/elbproxy`: [v1.0.0](service/elbproxy/CHANGELOG.md#v100-2026-11-25)
- * **Release**: New AWS service client module
- * **Feature**: Introducing Elastic Load Balancing for Envoy. Run your existing Envoy configurations with AWS integrations, managed scaling, and automatic patching.
-* `github.com/aws/aws-sdk-go-v2/service/wafv2`: [v1.88.0](service/wafv2/CHANGELOG.md#v1880-2026-11-25)
- * **Feature**: AWS WAF added support for associating AWS WAF web
-
-... (truncated)]]></description>
-    <pubDate>Thu, 26 Nov 2026 00:12:01 GMT</pubDate>
-  </item>
-  <item>
     <title>[yonaskolb/XcodeGen] 2.49.0</title>
     <link>https://github.com/yonaskolb/XcodeGen/releases/tag/2.49.0</link>
     <guid isPermaLink="true">https://github.com/yonaskolb/XcodeGen/releases/tag/2.49.0</guid>
@@ -168,22 +347,17 @@ See for more information.
     <pubDate>Wed, 25 Nov 2026 20:51:21 GMT</pubDate>
   </item>
   <item>
-    <title>[aws/aws-sdk-js-v3] v3.1178.0</title>
-    <link>https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1178.0</link>
-    <guid isPermaLink="true">https://github.com/aws/aws-sdk-js-v3/releases/tag/v3.1178.0</guid>
-    <description><![CDATA[#### 3.1178.0(2026-11-25)
+    <title>[e2e-inc/e2e] @e2e-dev/web@0.17.0</title>
+    <link>https://github.com/e2e-inc/e2e/releases/tag/%40e2e-dev/web%400.17.0</link>
+    <guid isPermaLink="true">https://github.com/e2e-inc/e2e/releases/tag/%40e2e-dev/web%400.17.0</guid>
+    <description><![CDATA[### Minor Changes
 
-##### New Features
+- #1621 `a06b931` Thanks @Varshith-Kali! - **Release:** Chromium launches with its OS sandbox on by default on macOS and Windows, which helps contain a renderer exploit on a page the agent reaches. `web({ chromiumSandbox })` turns it on for Linux, where it stays off by default, or off elsewhere.
 
-* **clients:** update client endpoints as of 2026-11-25 (ef3f797a)
-* **client-wafv2:** AWS WAF added support for associating AWS WAF web ACLs with Elastic Load Balancing proxies. You can now use AssociateWebACL, DisassociateWebACL, GetWebACLForResource, and ListResourcesForWebACL with the ELB PROXY resource type to protect your proxies with AWS WAF (84a72d01)
-* **client-elb-proxy:** Introducing Elastic Load Balancing for Envoy. Run your existing Envoy configurations with AWS integrations, managed scaling, and automatic patching. (7136593d)
+- #2217 `e36bdd2` Thanks @KrzysztofMoch! - **Breaking:** `browser.route`, `unroute`, and `waitForResponse` now read a string pattern as a Playwright URL glob, so some existing patterns match different requests. `?` is literal instead of one character, `{a,b}` matches either instead of the literal text, `''` matches every URL (so `route('')` intercepts every request), a relative pattern such as `'/api/orders'` resolves against the app URL instead of never matching, and a pattern ending in `**` right after the host, such as `route('')`, matches only URLs that end in `/`. A pattern is normalized like a URL, so `''` matches ` its scheme and host match in any case, and `/a/../b` 
 
-
----
-
-For list of updated packages, view **updated-packages.md** in **assets-3.1178.0.zip**]]></description>
-    <pubDate>Wed, 25 Nov 2026 19:39:50 GMT</pubDate>
+... (truncated)]]></description>
+    <pubDate>Wed, 25 Nov 2026 18:14:11 GMT</pubDate>
   </item>
   <item>
     <title>[OpenHands/OpenHands] v1.46.0</title>
@@ -208,23 +382,6 @@ For list of updated packages, view **updated-packages.md** in **assets-3.1178.0.
 
 ... (truncated)]]></description>
     <pubDate>Wed, 25 Nov 2026 14:13:07 GMT</pubDate>
-  </item>
-  <item>
-    <title>[bluesky-social/atproto] @atproto/lex-server@0.3.0</title>
-    <link>https://github.com/bluesky-social/atproto/releases/tag/%40atproto/lex-server%400.3.0</link>
-    <guid isPermaLink="true">https://github.com/bluesky-social/atproto/releases/tag/%40atproto/lex-server%400.3.0</guid>
-    <description><![CDATA[### Minor Changes
-
-- #6024 `59662dd` Thanks @matthieusieben! - **Breaking:** WebSocket compression (permessage-deflate) is now disabled by default on Node.js, as in `ws`. It costs a zlib stream per connection and compresses every message, which limits how many subscribers a process can serve. Enable it with the new `perMessageDeflate` option of `serve`, `createServer`, `toRequestListener` and `sendResponse`, which accepts `ws`'s options, e.g. `{ serverNoContextTakeover: true, threshold: 1024 }`.
-
-### Patch Changes
-
-- #6024 `59662dd` Thanks @matthieusieben! - Subscriptions yield to the event loop at least every 10ms. A handler that yields messages without awaiting, such as one replaying a backlog, no longer blocks I/O and timers, including the server's own termination, for as long as the socket accepts writes.
-
-- #6024 `59662dd` Thanks @matthieusieben! - `terminate` now closes WebSocket connections with a 1001 (Going Away) status code, which aborts their subscription handlers, instead o
-
-... (truncated)]]></description>
-    <pubDate>Wed, 25 Nov 2026 13:50:28 GMT</pubDate>
   </item>
   <item>
     <title>[microsoft/apm] v0.39.0</title>
@@ -350,27 +507,6 @@ For list of updated packages, view **updated-packages.md** in **assets-3.1178.0.
     <pubDate>Tue, 24 Nov 2026 17:37:49 GMT</pubDate>
   </item>
   <item>
-    <title>[cloudflare/workers-sdk] wrangler@4.168.0</title>
-    <link>https://github.com/cloudflare/workers-sdk/releases/tag/wrangler%404.168.0</link>
-    <guid isPermaLink="true">https://github.com/cloudflare/workers-sdk/releases/tag/wrangler%404.168.0</guid>
-    <description><![CDATA[### Minor Changes
-
-- #16680 `96e936c` Thanks @mglewis! - Apply `images.url_transformations` when deploying a Worker
-
- `wrangler deploy` and `wrangler versions deploy` now apply the `images.url_transformations` setting to the deployed Worker. The setting is applied after the Worker and its triggers have been deployed. If it can't be applied, the command fails with the reason from the API. Removing `url_transformations` from the configuration leaves the Worker's existing setting in place.
-
- The setting isn't applied for `--dry-run`, `wrangler versions upload`, or Workers deployed to a dispatch namespace.
-
-### Patch Changes
-
-- #17063 `6c45ad7` Thanks @sidharthachatterjee! - Request the billing scopes when logging in with cf and Wrangler
-
- Include `billing:write` in the default OAuth scopes of cf and Wrangler so they can create account subscriptions, which is how products such as R2 are enabled on an account. cf also requests `billing:read`. Existing OAuth sessions need a new login to requ
-
-... (truncated)]]></description>
-    <pubDate>Tue, 24 Nov 2026 14:00:09 GMT</pubDate>
-  </item>
-  <item>
     <title>[nanaism/yomiyasu] v3.4.0</title>
     <link>https://github.com/nanaism/yomiyasu/releases/tag/v3.4.0</link>
     <guid isPermaLink="true">https://github.com/nanaism/yomiyasu/releases/tag/v3.4.0</guid>
@@ -456,28 +592,6 @@ diff にも直すべき所がありました。3.3.0 で足した入れ子の主
 * avoid scanning table bodies for header-only decisions (#4213) (a0925cc)
 * skip paragraph lookahead for initial quoted code (#4233) (171f177)]]></description>
     <pubDate>Tue, 24 Nov 2026 02:51:23 GMT</pubDate>
-  </item>
-  <item>
-    <title>[openai/codex] 0.172.0 (rust-v0.172.0)</title>
-    <link>https://github.com/openai/codex/releases/tag/rust-v0.172.0</link>
-    <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.172.0</guid>
-    <description><![CDATA[## New Features
-
-- Follow thread links from search results and transcripts to open saved conversations and nested agents in the terminal. (#62332)
-- Press `Tab` to complete arguments for supported slash commands. For example, `/mcp lo` completes to `/mcp login`. (#62343)
-- Jump between task groups in the agent command center with `Shift+Up` and `Shift+Down`. (#62200)
-- Optional stdio MCP servers with cached tool lists now start on their first tool call by default. (#62366)
-- Set an approval reviewer for individual connected app tools in `config.toml`. (#62360)
-- App-server clients can select Amazon Bedrock Runtime during setup or sign-in. (#62222)
-
-## Bug Fixes
-
-- `codex exec resume` restores saved sandbox permissions, the working directory, and workspace roots unless explicitly overridden. (#62194)
-- Remote sessions preserve working directories, workspace roots, and writable paths when the client and server run on different operating systems. (#62375, #62376, #62377)
-- Codex reports p
-
-... (truncated)]]></description>
-    <pubDate>Tue, 24 Nov 2026 00:03:55 GMT</pubDate>
   </item>
   <item>
     <title>[typescript-eslint/typescript-eslint] v8.74.0</title>
@@ -595,29 +709,6 @@ See GitHub
 
 ... (truncated)]]></description>
     <pubDate>Fri, 20 Nov 2026 12:51:21 GMT</pubDate>
-  </item>
-  <item>
-    <title>[nodejs/undici] v8.13.0</title>
-    <link>https://github.com/nodejs/undici/releases/tag/v8.13.0</link>
-    <guid isPermaLink="true">https://github.com/nodejs/undici/releases/tag/v8.13.0</guid>
-    <description><![CDATA[## What's Changed
-* docs: fix typos by @tsctx in 
-* fix(test): compare proxy-agent headers as plain objects by @mcollina in 
-* fix(pool): release saturated h2 protocol probes after SETTINGS by @EpicHigh in 
-* fix(h2): preserve transport errors and mismatch causes by @styfle in 
-* test: make test:typescript cross-platform on Windows by @mcollina in 
-* build(deps): bump actions/setup-node from 7.0.0 to 7.1.0 by @dependabot[bot] in 
-* build(deps): bump actions/setup-python from 7.0.0 to 7.1.0 by @dependabot[bot] in 
-* build(deps-dev): bump eslint from 10.13.0 to 10.14.0 by @dependabot[bot] in 
-* test(wpt): fix startup checks and failure logging by @panva in 
-* build(deps-dev): bump @fastify/busboy from 3.2.4 to 3.2.5 by @dependabot[bot] in 
-* build(deps-dev): bump node-forge from 1.4.2 to 1.4.3 by @dependabot[bot] in 
-* build(deps-dev): bump ws from 8.22.0 to 8.22.1 by @dependabot[bot] in 
-* docs: note that SqliteCacheStore stores data unencrypted by @bardrop in 
-* test: avoid setTimeout 
-
-... (truncated)]]></description>
-    <pubDate>Fri, 20 Nov 2026 06:49:08 GMT</pubDate>
   </item>
   <item>
     <title>[webpack/webpack] v5.113.0</title>
@@ -936,70 +1027,6 @@ See GitHub
 
 ... (truncated)]]></description>
     <pubDate>Sun, 15 Nov 2026 14:12:09 GMT</pubDate>
-  </item>
-  <item>
-    <title>[floci-io/floci] 2.5.0</title>
-    <link>https://github.com/floci-io/floci/releases/tag/2.5.0</link>
-    <guid isPermaLink="true">https://github.com/floci-io/floci/releases/tag/2.5.0</guid>
-    <description><![CDATA[# 2.5.0 (2026-11-15)
-
-### Features
-
-* **accessanalyzer:** add basic ValidatePolicy checks (#7085) (eb65ad8)
-* **account:** implement GetContactInformation and PutContactInformation (#8262) (5f03ff9)
-* add CloudWatch OTLP metrics ingestion (#7781) (2d8cdeb)
-* **apigateway:** add documentation part operations (#7712) (856970a)
-* **apigateway:** trust FLOCI_TLS_EXTRA_CA_PATH for HTTP and HTTP_PROXY integrations (#8285) (b2bdb2b)
-* **apigatewayv2:** support IntegrationSubtype and invoke SQS-SendMessage on HTTP APIs (#7969) (8eaf5bf)
-* **appconfig:** implement UpdateApplication (#7209) (1b87483)
-* **appsync:** execute HTTP data sources and signed local AWS requests (#7609) (d5b7a11)
-* **athena:** run Hive DDL against the Glue catalog (#8411) (cc9b5bf)
-* **athena:** support named queries (#8002) (77587de), closes #8000
-* **bedrock-agentcore:** add the harness control plane (#7387) (2e47b9c)
-* **bedrock-agentcore:** keep runtime endpoint create tags and support tagging them (#7597) (c1a88b8)
-
-
-... (truncated)]]></description>
-    <pubDate>Sun, 15 Nov 2026 06:36:31 GMT</pubDate>
-  </item>
-  <item>
-    <title>[anomalyco/opentui] Release v0.9.0 (v0.9.0)</title>
-    <link>https://github.com/anomalyco/opentui/releases/tag/v0.9.0</link>
-    <guid isPermaLink="true">https://github.com/anomalyco/opentui/releases/tag/v0.9.0</guid>
-    <description><![CDATA[In 0.9.0, Markdown runs on OpenTUI's native engine, the same engine the Rust widget uses. In 0.8.3, `MarkdownRenderable` parsed with `marked` in JavaScript and lexed the open end of the document again on every chunk. In a growing list, the open end is the whole list, so streaming one list took 21,430 million instructions. `MarkdownRenderable` also sent all prose to the Tree-sitter worker for styling. The native engine reads each chunk once and writes paragraphs and headings into their text nodes itself. Streaming the same list now takes 5.9 million instructions. Over one streamed answer, JavaScript's styled-text writes for prose went from 1,595 to 0, and the prose characters sent to the highlighter went from 56,223 to 0.
-
-Because the engine follows CommonMark 0.31.2 and GFM, some documents look different. While streaming, a line that can still change kind, such as a possible table row or a heading underline, waits for its end before it shows. A table appears when its delimiter row arri
-
-... (truncated)]]></description>
-    <pubDate>Sat, 14 Nov 2026 14:43:33 GMT</pubDate>
-  </item>
-  <item>
-    <title>[uptrace/uptrace] v2.1.0</title>
-    <link>https://github.com/uptrace/uptrace/releases/tag/v2.1.0</link>
-    <guid isPermaLink="true">https://github.com/uptrace/uptrace/releases/tag/v2.1.0</guid>
-    <description><![CDATA[CHANGELOG]]></description>
-    <pubDate>Sat, 14 Nov 2026 08:39:17 GMT</pubDate>
-  </item>
-  <item>
-    <title>[eslint/eslint] v10.15.0</title>
-    <link>https://github.com/eslint/eslint/releases/tag/v10.15.0</link>
-    <guid isPermaLink="true">https://github.com/eslint/eslint/releases/tag/v10.15.0</guid>
-    <description><![CDATA[## Features
-* `ec52157` feat: check __proto__ and assignment targets in `func-names` (#21521) (Lê Văn Xuân Hoàn)
-* `34a8b1b` feat: recognize string and computed keys in `accessor-pairs` descriptors (#21519) (Lê Văn Xuân Hoàn)
-* `663c825` feat: handle TS type assertions in `no-invalid-this` (#21464) (Valentin)
-* `4941015` feat: check individual specifier importKind in `no-shadow` (#21518) (Lê Văn Xuân Hoàn)
-* `17f17cd` feat: update error location to head for `default-case` (#21469) (Tanuj Kanti)
-
-## Bug Fixes
-* `23ac66c` fix: update dependency @eslint/config-array to ^0.23.6 (#21550) (renovate[bot])
-* `df71e34` fix: skip `no-prototype-builtins` suggestion when object is `super` (#21535) (KooYS)
-* `899065e` fix: preserve inline `type` modifier in `no-useless-rename` autofix (#21527) (sethamus)
-* `af4c3a9` fix: preserve TypeScript type parameters in `prefer-arrow-callback` (#21507) (Lê Văn Xuân Hoàn)
-* `b11bcb3` fix: preserve necessary parens in `no-unneeded-ternary` autofix (#21495) (Lê 
-
-... (truncated)]]></description>
-    <pubDate>Fri, 13 Nov 2026 21:29:31 GMT</pubDate>
   </item>
 </channel>
 </rss>
